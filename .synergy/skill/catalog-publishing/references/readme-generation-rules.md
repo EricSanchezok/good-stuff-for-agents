@@ -1,21 +1,19 @@
 # README Generation Rules
 
-`README.md` is generated from the catalog. Do not hand-edit catalog sections.
+`README.md` is rendered from catalog entries and should read like a public field guide.
 
 Required content:
 
-- generated banner and frontmatter;
-- repo purpose summary;
-- counts for published packs, indexed skills, tracked sources, and domains;
-- latest catalog hash and generation time;
-- featured/recommended packs when available;
-- recent updates;
-- domain browse links;
-- links to full docs indexes.
+- repository purpose summary for outside visitors;
+- counts for public packs, skills, sources, and domains;
+- navigation links to packs, skills, sources, domains, and reports;
+- featured or recommended packs when public packs exist;
+- friendly empty-state copy when the catalog has no public entries;
+- no fake seed content.
 
 Empty catalog behavior:
 
 - counts are zero;
-- featured/recent sections state that no published packs exist yet;
-- docs links still exist;
-- no fake seed pack is created.
+- featured sections explain that entries will appear when ready;
+- docs links still resolve;
+- no demonstration pack, source, skill, or evaluation is created.

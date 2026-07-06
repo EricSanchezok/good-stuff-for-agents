@@ -1,12 +1,11 @@
 # Domain Page Template
 
-A generated domain page must include:
+A public domain page should include:
 
 - domain summary;
-- published packs;
-- relevant skills;
-- source distribution;
-- coverage gaps;
-- recent changes.
+- public packs;
+- relevant public skills;
+- sources connected to public entries;
+- useful navigation to neighboring catalog areas.
 
-Domains are derived from skill capabilities and published pack domains. Do not create hand-authored domain facts outside catalog records or generated indexes.
+Domains are derived from catalog skill capabilities and public pack domains. Do not create hand-authored domain facts outside catalog records or indexes.

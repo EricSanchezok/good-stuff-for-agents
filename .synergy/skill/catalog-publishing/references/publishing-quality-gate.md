@@ -2,13 +2,14 @@
 
 Publishing is successful only if:
 
-- `catalog-data validate --strict` passes before rendering;
+- strict catalog validation passes before rendering;
 - indexes are current;
 - README and docs render idempotently;
-- all generated pages include banner and frontmatter;
-- no candidate pack appears in docs;
+- public pages contain only visitor-facing catalog content;
+- no candidate-only or failed pack appears in public pages;
 - drift check passes after rendering;
 - link check passes;
-- empty catalog renders without fake packs.
+- public-boundary scan returns no matches;
+- empty catalog renders without fake entries.
 
-If render succeeds but drift remains, treat it as fatal exit code 2 in nightly automation.
+If render succeeds but drift, links, or boundary scan fail, treat the run as blocked. Fix the renderer or upstream records and rerun the publishing checks.

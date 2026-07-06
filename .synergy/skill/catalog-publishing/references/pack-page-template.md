@@ -1,17 +1,16 @@
 # Pack Page Template
 
-A generated pack page must include:
+A public pack page should include:
 
-1. generated banner and frontmatter;
-2. title, status, domain, version, and score;
-3. what this pack is;
-4. when to use it;
-5. member skills with role, stage, pinned version, and inclusion reason;
-6. workflow stages;
-7. why the combination works;
-8. overlap/conflict handling;
-9. source evidence and analysis paths;
-10. evaluation score/status;
-11. version history and stale/superseded banner when relevant.
+1. title, status, domain, version, and score when available;
+2. what this pack is for;
+3. when to use it;
+4. member skills with role, stage, and inclusion reason;
+5. how the workflow fits together;
+6. why the combination works;
+7. overlap and conflict handling;
+8. human-readable evidence and quality summary;
+9. evaluation status;
+10. version or freshness notes when relevant.
 
-Only records in `catalog/packs/published/` may produce pack pages. Candidate and rejected packs never enter docs.
+Only public pack records may produce pack pages. Candidate and rejected packs must not appear in public docs.

@@ -1,14 +1,13 @@
 # Source Page Template
 
-A generated source page must include:
+A public source page should include:
 
 - source overview;
-- status and health;
+- public status;
 - license status;
-- sync strategy;
+- human-readable provenance;
 - tracked skills count;
-- recently changed skills when known;
-- high-value skills when scored;
+- notable public skills when available;
 - packs using skills from this source.
 
-Removed or broken sources remain visible with status banners instead of breaking links.
+Removed or unavailable sources may remain visible with status language when that helps visitors follow provenance. Do not expose internal fetch mechanics or private diagnostics.
