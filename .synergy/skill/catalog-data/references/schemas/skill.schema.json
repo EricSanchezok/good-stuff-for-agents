@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Skill Record",
+  "type": "object",
+  "required": ["schema_version", "canonical_skill_id", "canonical_name", "display_name", "status", "identity", "source", "capabilities", "interfaces", "tools", "risk", "quality", "relations", "analysis", "created_at", "updated_at"],
+  "properties": {
+    "schema_version": { "const": 1 },
+    "canonical_skill_id": { "type": "string", "pattern": "^skl_" },
+    "canonical_name": { "type": "string" },
+    "display_name": { "type": "string" },
+    "status": { "enum": ["candidate", "active", "preview", "deprecated", "removed", "broken", "blocked"] },
+    "identity": { "type": "object" },
+    "source": { "type": "object" },
+    "capabilities": { "type": "object" },
+    "interfaces": { "type": "object" },
+    "tools": { "type": "object" },
+    "risk": { "type": "object" },
+    "quality": { "type": "object" },
+    "relations": { "type": "object" },
+    "analysis": { "type": "object" }
+  }
+}

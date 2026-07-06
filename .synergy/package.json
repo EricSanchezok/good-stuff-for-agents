@@ -1,0 +1,30 @@
+{
+  "name": "good-stuff-for-agents-synergy-tools",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "catalog:validate": "node skill/catalog-data/scripts/validate-catalog.mjs --strict",
+    "catalog:format": "node skill/catalog-data/scripts/format-catalog.mjs",
+    "catalog:index": "node skill/catalog-data/scripts/build-indexes.mjs",
+    "catalog:hash": "node skill/catalog-data/scripts/compute-catalog-hash.mjs",
+    "catalog:impact": "node skill/catalog-data/scripts/detect-impact.mjs",
+    "catalog:migrate": "node skill/catalog-data/scripts/migrate-catalog.mjs",
+    "source:discover": "node skill/source-discovery/scripts/discover-sources.mjs",
+    "source:sync": "node skill/source-sync/scripts/sync-sources.mjs",
+    "skill:extract": "node skill/skill-extraction/scripts/extract-skills.mjs",
+    "skill:normalize": "node skill/skill-normalization/scripts/normalize-skills.mjs",
+    "skill:analyze": "node skill/skill-deep-analysis/scripts/analyze-skills.mjs",
+    "skill:relations": "node skill/skill-dedup-relations/scripts/build-relations.mjs",
+    "pack:synthesize": "node skill/pack-synthesis/scripts/synthesize-pack.mjs",
+    "pack:evaluate": "node skill/catalog-evaluation/scripts/evaluate-candidates.mjs",
+    "publish:render": "node skill/catalog-publishing/scripts/render-docs.mjs",
+    "publish:check": "node skill/catalog-publishing/scripts/check-docs-drift.mjs",
+    "publish:links": "node skill/catalog-publishing/scripts/check-links.mjs",
+    "catalog:status": "node skill/nightly-catalog-ops/scripts/catalog-status.mjs",
+    "nightly": "node skill/nightly-catalog-ops/scripts/nightly.mjs",
+    "check": "npm run catalog:validate && npm run catalog:index && npm run publish:render && npm run publish:check && npm run publish:links"
+  },
+  "dependencies": {},
+  "devDependencies": {}
+}

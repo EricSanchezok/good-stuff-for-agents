@@ -1,0 +1,54 @@
+{
+  // Project permission intent for the Skill Intelligence Catalog.
+  // Keep automation repo-local, deterministic, and non-destructive.
+  "permission": {
+    "read": {
+      "*": "allow",
+      ".env*": "deny",
+      "*credentials*": "deny",
+      "*.pem": "deny"
+    },
+    "edit": {
+      "*": "allow",
+      "workflows/**": "deny",
+      ".synergy/agent/**": "deny",
+      ".synergy/agents/**": "deny"
+    },
+    "write": {
+      "*": "allow",
+      "workflows/**": "deny",
+      ".synergy/agent/**": "deny",
+      ".synergy/agents/**": "deny",
+      ".env*": "deny",
+      "*credentials*": "deny",
+      "*.pem": "deny"
+    },
+    "bash": {
+      "*": "ask",
+      "node .synergy/skill/**/scripts/*.mjs*": "allow",
+      "npm --prefix .synergy*": "allow",
+      "git status*": "allow",
+      "git diff*": "allow",
+      "git add*": "allow",
+      "git commit*": "allow",
+      "git push*": "allow",
+      "git push --force*": "deny",
+      "git reset --hard*": "deny",
+      "git clean*": "deny",
+      "rm -rf*": "deny",
+      "npm install -g*": "deny",
+      "brew install*": "deny",
+      "sudo *": "deny"
+    },
+    "glob": "allow",
+    "grep": "allow",
+    "task": "allow",
+    "webfetch": "allow",
+    "websearch": "allow",
+    "skill": "allow",
+    "dagread": "allow",
+    "dagwrite": "allow",
+    "question": "allow",
+    "external_directory": "deny"
+  }
+}

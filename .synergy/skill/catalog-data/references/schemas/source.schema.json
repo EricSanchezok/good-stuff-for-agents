@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Source Record",
+  "type": "object",
+  "required": ["schema_version", "source_id", "name", "type", "status", "license", "sync", "state"],
+  "properties": {
+    "schema_version": { "const": 1 },
+    "source_id": { "type": "string", "pattern": "^src_" },
+    "name": { "type": "string" },
+    "url": { "type": ["string", "null"] },
+    "type": { "type": "string" },
+    "status": { "enum": ["candidate", "active", "deprecated", "removed", "broken", "blocked"] },
+    "license": { "type": "object" },
+    "sync": { "type": "object" },
+    "state": { "type": "object" }
+  }
+}

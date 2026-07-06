@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Pack Record",
+  "type": "object",
+  "required": ["schema_version", "pack_id", "name", "status", "intent", "domain", "created_by_run", "version", "members", "excluded", "workflow", "compatibility", "evidence", "evaluation", "updated_at"],
+  "properties": {
+    "schema_version": { "const": 1 },
+    "pack_id": { "type": "string", "pattern": "^pack_" },
+    "name": { "type": "string" },
+    "status": { "enum": ["candidate", "rejected", "published", "stale", "superseded", "archived"] },
+    "intent": { "type": "string" },
+    "domain": { "type": "string" },
+    "members": { "type": "array" },
+    "evaluation": { "type": "object" }
+  }
+}

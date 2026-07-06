@@ -1,0 +1,12 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Evaluation Record",
+  "type": "object",
+  "required": ["schema_version", "evaluation_id", "output_id", "kind", "metrics", "overall_score", "passed", "failure_modes", "recommendations", "created_at"],
+  "properties": {
+    "schema_version": { "const": 1 },
+    "evaluation_id": { "type": "string", "pattern": "^eval_" },
+    "overall_score": { "type": "number", "minimum": 0, "maximum": 1 },
+    "passed": { "type": "boolean" }
+  }
+}
