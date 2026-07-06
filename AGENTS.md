@@ -18,13 +18,21 @@ This repository is **not** a generic skill aggregation repo and is **not** a dir
 
 Do not create a root-level `workflows/` directory. Workflows belong in `.synergy/skill/<name>/SKILL.md` and references.
 
+## Public README / Docs Boundary
+
+- `README.md` and `docs/**/*.md` are public-facing catalog surfaces for outside visitors. They must explain what the catalog offers and how to browse it, not how this repository or its automation works.
+- Do not expose implementation principles, internal workflow mechanics, script/helper names, generator names, hashes, machine-readable frontmatter, hidden metadata comments, nightly/automation details, source-of-truth explanations, or generated-file instructions in `README.md` or `docs/**/*.md`.
+- Public pages may describe catalog entries, navigation, human-readable provenance, status, quality, and use cases when those details help visitors choose skills or packs.
+- Internal implementation rules, architecture, workflow contracts, script behavior, generated-file discipline, and maintenance notes belong in `AGENTS.md`, `.synergy/skill/**`, `catalog/**`, or internal reports — not in public README/docs.
+- Publishing scripts must render clean public Markdown with no visible or hidden implementation metadata.
+
 ## Data Rules
 
 - Do not hand-edit canonical `catalog/**/*.yaml` or JSONL records.
 - Use `.synergy/skill/catalog-data/scripts/` for structured writes, formatting, validation, migrations, indexes, hashes, and impact detection.
 - Use `.synergy/skill/catalog-publishing/scripts/` for README/docs rendering, drift checks, and link checks.
 - `catalog/` is the source of truth. `docs/` and `README.md` are generated publication surfaces.
-- Generated docs must include a generated banner and machine-readable frontmatter.
+- Generated docs must remain reproducible from catalog data, but public README/docs must not expose generated banners, hidden frontmatter, generator metadata, hashes, or other implementation details.
 - Candidate packs must not be published unless `catalog-evaluation` passes the publication threshold.
 - Never create fake demonstration packs to make the catalog look populated.
 
