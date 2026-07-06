@@ -1,6 +1,6 @@
 ---
-description: "Synthesize and evaluate a candidate skill pack from catalog evidence"
+description: "Design a candidate skill pack from catalog evidence"
 agent: "synergy"
 ---
 
-Use `pack-synthesis` to create a task-shaped candidate pack from catalog records, analyses, relations, and the requested intent. Then use `catalog-evaluation`; publish only if evaluation passes the configured threshold.
+Load the `pack-synthesis` project skill and follow its SOP. Require an explicit task intent, inspect records, analyses, and relations, write a reviewed pack draft, call only the deterministic candidate writer, validate, and hand the candidate to `catalog-evaluation`.

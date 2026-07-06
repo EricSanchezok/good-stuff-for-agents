@@ -1,6 +1,6 @@
 ---
-description: "Sync approved catalog sources and append source state"
+description: "Synchronize approved Skill Intelligence Catalog sources"
 agent: "synergy"
 ---
 
-Use the `source-sync` project skill to sync approved sources from `catalog/sources/registry.yaml`. Process sources independently, respect license storage policy, append state through `catalog-data`, and validate afterward.
+Load the `source-sync` project skill and follow its SOP. Sync only approved active or preview sources, write snapshot/state artifacts through deterministic helpers, validate the catalog, and hand changed snapshots to `skill-extraction`.

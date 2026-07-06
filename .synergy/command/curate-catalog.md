@@ -1,6 +1,6 @@
 ---
-description: "Run human-owned catalog curation actions"
+description: "Apply reviewed Skill Intelligence Catalog curation decisions"
 agent: "synergy"
 ---
 
-Use `catalog-curation` for source approval/rejection, license resolution, duplicate decisions, status changes, notes, and preview overrides. Apply changes only through catalog-data or curation scripts, then validate.
+Load the `catalog-curation` project skill and follow its SOP. Proceed only from an explicit user or reviewer decision, use narrow catalog-data writers for supported updates, validate after changes, and hand unresolved decisions back to the user.

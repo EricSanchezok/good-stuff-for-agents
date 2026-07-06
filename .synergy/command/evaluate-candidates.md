@@ -3,4 +3,4 @@ description: "Evaluate pending catalog pack candidates"
 agent: "synergy"
 ---
 
-Use `catalog-evaluation` to score pending candidate packs. Write evaluation output through `catalog-data/scripts/write-evaluation.mjs`; do not render docs or promote candidates directly from this command.
+Load the `catalog-evaluation` project skill and follow its SOP. Inspect the candidate pack, member evidence, analyses, relations, and rubrics before writing any evaluation draft. Do not promote or publish from this command.

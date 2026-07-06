@@ -1,6 +1,6 @@
 ---
-description: "Extract, normalize, and deeply analyze changed skill artifacts"
+description: "Extract, normalize, and analyze changed skill artifacts"
 agent: "synergy"
 ---
 
-Run the catalog analysis chain: `skill-extraction` → `skill-normalization` → `skill-deep-analysis`. All canonical records and analysis files must be written through `catalog-data` scripts, followed by strict validation.
+Follow the project skill chain, not a script pipeline: load `skill-extraction`, then `skill-normalization`, then `skill-deep-analysis`. Each phase must follow its SOP, write only reviewed artifacts, run validation, and hand off the exact run ID, skill IDs, analysis paths, and unresolved blockers.

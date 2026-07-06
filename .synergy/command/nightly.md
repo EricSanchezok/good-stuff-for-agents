@@ -1,6 +1,6 @@
 ---
-description: "Run full nightly Skill Intelligence Catalog automation"
+description: "Coordinate Skill Intelligence Catalog maintenance"
 agent: "synergy"
 ---
 
-Use `nightly-catalog-ops` and follow `references/nightly-checklist.md`. Validate at start and end, publish only passing evaluated outputs, write reports, and commit/push only meaningful safe changes with the required synergy-agent co-author footer.
+Load the `nightly-catalog-ops` project skill and follow its SOP. Run deterministic maintenance gates only through helpers, invoke owner skills for semantic phases, and commit or push only when the user or approved automation explicitly authorizes it.
