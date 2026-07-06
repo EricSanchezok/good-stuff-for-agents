@@ -22,7 +22,7 @@ source_type: "readme"
 <p align="center"><strong>A self-updating skill intelligence catalog, built and maintained by agents.</strong></p>
 
 <p align="center">
-  <img src="assets/readme/hero.svg" alt="Good Stuff for Agents — a living skill intelligence catalog" />
+  <img src="assets/readme/hero-ai.png" width="960" alt="Good Stuff for Agents — a cinematic view of a living skill intelligence catalog" />
 </p>
 
 <p align="center">
