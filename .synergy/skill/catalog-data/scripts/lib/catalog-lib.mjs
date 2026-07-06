@@ -30,10 +30,15 @@ export const RELATION_PREDICATES = new Set([
 function findRepoRoot() {
   let current = dirname(fileURLToPath(import.meta.url))
   while (current !== dirname(current)) {
-    if (existsSync(join(current, 'AGENTS.md')) || existsSync(join(current, 'catalog'))) return current
+    if (isCatalogRoot(current)) return current
     current = dirname(current)
   }
-  return process.cwd()
+  if (isCatalogRoot(process.cwd())) return process.cwd()
+  throw new Error('Unable to locate Skill Intelligence Catalog root')
+}
+
+function isCatalogRoot(path) {
+  return existsSync(join(path, 'AGENTS.md')) && existsSync(join(path, 'catalog')) && existsSync(join(path, '.synergy', 'skill'))
 }
 
 export function ensureDir(path) {
