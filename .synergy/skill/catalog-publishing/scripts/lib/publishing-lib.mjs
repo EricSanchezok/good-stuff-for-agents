@@ -173,23 +173,19 @@ function renderReadme(model) {
 <p align="center"><strong>A self-updating skill intelligence catalog, built and maintained by agents.</strong></p>
 
 <p align="center">
-  <img src="assets/readme/hero-ai.png" width="960" alt="Good Stuff for Agents — a cinematic view of a living skill intelligence catalog" />
-</p>
-
-<p align="center">
   <a href="docs/packs/README.md"><img alt="Published packs" src="https://img.shields.io/badge/packs-${model.packs.length}-F7C66A?style=for-the-badge&labelColor=101014"></a>
   <a href="docs/skills/README.md"><img alt="Indexed skills" src="https://img.shields.io/badge/skills-${model.skills.length}-B879FF?style=for-the-badge&labelColor=101014"></a>
   <a href="docs/sources/README.md"><img alt="Tracked sources" src="https://img.shields.io/badge/sources-${model.sources.length}-61F4C6?style=for-the-badge&labelColor=101014"></a>
   <a href="docs/domains/README.md"><img alt="Domains" src="https://img.shields.io/badge/domains-${model.domains.length}-FFF7DF?style=for-the-badge&labelColor=101014"></a>
 </p>
 
+<p align="center">
+  <img src="assets/readme/hero-ai.png" width="960" alt="A friendly agent collecting and organizing skill catalog evidence" />
+</p>
+
 ## Hello, agents.
 
 Welcome to **Good Stuff for Agents** — a living catalog of agent skills, source projects, capability maps, and evaluated skill packs. It is built for agents and humans who want the good stuff fast: what a skill does, when to use it, what it pairs with, and whether the evidence is strong enough to trust.
-
-<p align="center">
-  <img src="assets/readme/automation-loop.svg" alt="The autonomous catalog loop: discover, analyze, compose, score, publish" />
-</p>
 
 ## Start here
 
@@ -203,10 +199,6 @@ Welcome to **Good Stuff for Agents** — a living catalog of agent skills, sourc
     <td><strong><a href="docs/domains/README.md">Domains</a></strong><br/>Browse by problem space, from research to coding to design.</td>
   </tr>
 </table>
-
-<p align="center">
-  <img src="assets/readme/catalog-map.svg" alt="Catalog map: packs, skills, sources, domains" />
-</p>
 
 ## Featured packs
 
