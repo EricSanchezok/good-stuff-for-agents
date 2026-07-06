@@ -50,6 +50,13 @@ Every project skill must follow this shape:
 
 `SKILL.md` frontmatter must contain only `name` and `description`. Put detailed workflows, rubrics, schemas, templates, and quality gates in `references/`. Put deterministic code in `scripts/`. Do not add README, INSTALL, or CHANGELOG files inside skill folders.
 
+## Skill and Helper Ownership
+
+- Project skills are the operating manuals for judgment-heavy work. They must describe the workflow, inputs, outputs, quality bar, failure handling, verification, and handoff in enough detail for an agent to execute the phase.
+- Scripts under `.synergy/skill/**/scripts/` must be deterministic helpers: validate, format, migrate, write reviewed drafts, sync approved source metadata, build indexes, render public pages, check drift/links, or report status.
+- Do not keep scripts whose names imply discovery, normalization, analysis, relation building, pack design, evaluation, or curation if they only perform mechanical writes. Rename them to the deterministic action they actually perform or delete them.
+- `.synergy/command/*.md` files must stay thin. They should load the relevant project skill and point the agent to the SOP instead of duplicating workflow logic.
+
 ## Automation Safety
 
 Nightly automation may read/write repository files, fetch public sources, run deterministic project scripts, and commit/push ordinary updates. It must not:
