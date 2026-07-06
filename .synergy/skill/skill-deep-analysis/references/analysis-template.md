@@ -2,7 +2,7 @@
 
 Canonical analysis files live in `catalog/analyses/<2-char-prefix>/<skill-id>.md` and are written only through `catalog-data/scripts/write-analysis.mjs`.
 
-Required frontmatter:
+Required metadata block:
 
 ```yaml
 ---
