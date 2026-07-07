@@ -42,6 +42,16 @@ for (const source of registry.sources) {
       errors: [],
     }))
   } catch (error) {
+    const failures = (source.state?.consecutive_failures ?? 0) + 1
+    catalogData('write-source-record.mjs', {
+      ...source,
+      state: {
+        last_checked_at: new Date().toISOString(),
+        last_success_at: source.state?.last_success_at ?? null,
+        last_ref: source.state?.last_ref ?? null,
+        consecutive_failures: failures,
+      },
+    })
     states.push(catalogData('append-source-state.mjs', {
       source_id: source.source_id,
       changed: false,
@@ -58,9 +68,10 @@ printResult({ synced: states.length, repo: ROOT, manifests, states })
 async function syncGithubSource(source) {
   const repo = parseGithubRepo(source.url)
   if (!repo) throw new Error(`unsupported source URL for minimal sync: ${source.url}`)
-  const ref = source.sync?.default_ref ?? 'main'
-  const branch = await githubJson(`https://api.github.com/repos/${repo.owner}/${repo.repo}/branches/${encodeURIComponent(ref)}`)
-  const sha = branch.commit?.sha ?? ref
+  const repoInfo = await githubJson(`https://api.github.com/repos/${repo.owner}/${repo.repo}`)
+  const branchName = source.sync?.default_ref ?? repoInfo.default_branch ?? 'main'
+  const branch = await githubJson(`https://api.github.com/repos/${repo.owner}/${repo.repo}/branches/${encodeURIComponent(branchName)}`)
+  const sha = branch.commit?.sha ?? branchName
   const tree = await githubJson(`https://api.github.com/repos/${repo.owner}/${repo.repo}/git/trees/${sha}?recursive=1`)
   const include = source.sync?.include ?? ['**/SKILL.md']
   const exclude = source.sync?.exclude ?? ['node_modules/**']

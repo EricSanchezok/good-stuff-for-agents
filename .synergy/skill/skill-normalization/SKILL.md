@@ -62,10 +62,10 @@ You must leave behind:
 
 ## Workflow
 
-1. **Load candidates and existing records.** You compare candidate IDs, source paths, declared names, current version IDs, and aliases against existing records.
-2. **Resolve identity.** You decide whether each candidate is a new skill, an update to an existing skill, a duplicate needing curation, or a rejected candidate. You document the evidence.
+1. **Load candidates, source snapshots, and existing records.** You compare candidate IDs, source paths, declared names, content digests, and aliases against existing records. You MUST load the snapshot manifest from `catalog/sources/snapshots/<source-id>-<ref>.json` and map each candidate's `source.path` to its `content_digest` in the snapshot's `artifacts` array. This digest becomes `identity.content_digest` in the normalized draft.
+2. **Resolve identity.** You decide whether each candidate is a new skill, an update to an existing skill, a duplicate needing curation, or a rejected candidate. You document the evidence. Every normalized draft MUST include `identity.content_digest` from the snapshot artifact so `write-skill-record.mjs` can compute a stable version hash. Do not supply `v_placeholder` or a guessed version ID.
 3. **Map fields.** You translate platform metadata into canonical name, display name, source, version, capabilities, interfaces, tools, risk, and quality confidence. You leave unknown fields empty or low-confidence rather than guessing.
-4. **Prepare reviewed drafts.** You write draft JSON for records you are ready to create or update. You include identity reasoning in curation notes when helpful.
+4. **Prepare reviewed drafts.** You write draft JSON for records you are ready to create or update. Each draft MUST include `source.source_id`, `source.path`, and `identity.content_digest`. You include identity reasoning in curation notes when helpful.
 5. **Call the writer.** You run `scripts/write-normalized-skills.mjs` or `write-skill-record.mjs` for each complete draft.
 6. **Validate.** You run strict validation and fix structural failures.
 7. **Prepare analysis handoff.** You list records that need deep analysis and any identity questions that remain.

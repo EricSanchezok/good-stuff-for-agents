@@ -7,7 +7,14 @@ const skillId = draft.canonical_skill_id ?? idFor('skl', [draft.canonical_name ?
 const target = skillRecordPath(skillId)
 const previous = existsSync(target) ? parseYamlFile(target) : {}
 const now = nowIso()
-const versionId = draft.identity?.current_version_id ?? draft.version_id ?? sha256(JSON.stringify({ source: draft.source, capabilities: draft.capabilities, interfaces: draft.interfaces, tools: draft.tools }))
+
+// Version identity: prefer content_digest from snapshot artifact, then explicit version_id,
+// then fall back to a hash of source identity (stable across empty capabilities).
+const versionId = draft.identity?.content_digest
+  ?? draft.identity?.current_version_id
+  ?? draft.version_id
+  ?? sha256(JSON.stringify({ source_id: draft.source?.source_id, path: draft.source?.path }))
+
 const record = {
   schema_version: 1,
   canonical_skill_id: skillId,
