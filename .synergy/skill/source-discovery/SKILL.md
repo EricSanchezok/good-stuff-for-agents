@@ -1,7 +1,6 @@
 ---
 name: source-discovery
-description: Discover and qualify candidate upstream sources for the Skill Intelligence Catalog. Use when you need to find, review, approve, reject, or prepare source candidates before catalog-data writes.
----
+description: Discover and qualify candidate upstream sources for the Skill Intelligence Catalog. Use when you need to find, review, approve, reject, or prepare source candidates before catalog-data writes. Accepts user-provided goals or orchestrator-provided discovery briefs from catalog-growth-ops.
 
 # Source Discovery SOP
 
@@ -29,7 +28,8 @@ Do not use this skill to sync approved sources; use `source-sync`. Do not extrac
 
 You should gather:
 
-- the user's discovery goal, target domains, exclusions, and quality threshold;
+- the discovery brief from the user or orchestrator, target domains, exclusions, and quality threshold;
+- when called by `catalog-growth-ops`, use the growth policy (`../catalog-growth-ops/references/autonomous-discovery-policy.md`) and demand scan instead of asking the user for target domains or counts;
 - existing source records and candidates to avoid duplicates;
 - `references/discovery-channels.md`, `references/source-qualification.md`, and `references/candidate-record-format.md`;
 - shared references: `../shared-references/artifact-contract.md`, `../shared-references/integration-contract.md`, and `../shared-references/script-policy.md`;
@@ -62,7 +62,7 @@ You must leave behind:
 
 ## Workflow
 
-1. **Define the search target.** You restate the domain, source types, freshness needs, license constraints, and whether the user wants breadth or a small qualified set.
+1. **Define the search target.** You restate the domain, source types, freshness needs, license constraints, and whether the caller wants breadth or a small qualified set. When called autonomously by `catalog-growth-ops`, use the orchestrator-supplied discovery brief and growth policy instead of asking the user.
 2. **Check existing records first.** You inspect current sources and candidates so you do not re-add duplicates. If a source already exists, you report its status instead of appending a duplicate.
 3. **Search deliberately.** You use appropriate discovery channels and record what you searched. You prefer official repos, docs, widely used libraries, maintained skill collections, and sources with clear license evidence.
 4. **Inspect evidence.** For each promising source, you verify that it contains skill-like artifacts or agent-operational content. You record URLs, file paths, update signals, license evidence, and parseability.

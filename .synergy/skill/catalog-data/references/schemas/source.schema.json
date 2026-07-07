@@ -9,7 +9,7 @@
     "name": { "type": "string" },
     "url": { "type": ["string", "null"] },
     "type": { "type": "string" },
-    "status": { "enum": ["candidate", "active", "deprecated", "removed", "broken", "blocked"] },
+    "status": { "enum": ["candidate", "active", "preview", "deprecated", "removed", "broken", "blocked"] },
     "license": { "type": "object" },
     "sync": { "type": "object" },
     "state": { "type": "object" }

@@ -1,6 +1,16 @@
 # Project Skill Integration Contract
 
-Use this contract whenever you connect one project skill to another project skill or to a deterministic helper.
+This contract describes handoffs across all skill layers in the catalog system.
+
+## Three-Layer Ownership Model
+
+| Layer | Skill | Scope |
+| --- | --- | --- |
+| Maintenance | `catalog-maintenance` | Deterministic validation, sync, indexing, rendering, health checks. No discovery, analysis, or pack work. |
+| Growth | `catalog-growth-ops` | Autonomous source discovery, activation, extraction, normalization, analysis, relations, pack synthesis, and evaluation. Skill-driven; no monolithic scripts. |
+| Total controller | `nightly-catalog-ops` | Delegates to maintenance preflight, growth, final validation/publishing, then writes total run report and commits/pushes when authorized. Does not duplicate phase SOPs. |
+
+Phase skills (`source-discovery`, `source-sync`, `skill-extraction`, `skill-normalization`, `skill-deep-analysis`, `skill-dedup-relations`, `pack-synthesis`, `catalog-evaluation`, `catalog-curation`, `catalog-data`, `catalog-publishing`) accept input from the user or from the orchestrator layer and must not require user interaction during autonomous runs.
 
 ## Activation Predicate
 

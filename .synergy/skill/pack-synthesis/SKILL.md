@@ -16,6 +16,7 @@ You do not evaluate publication quality, curate approvals, or publish public pag
 Use this skill when:
 
 - the user asks for a task-shaped skill pack;
+- `catalog-growth-ops` supplies a demand-scan or catalog-gap intent during autonomous growth;
 - impact detection says a pack may need refresh;
 - analyses and relations are ready for a new pack candidate;
 - an existing candidate needs member, stage, or compatibility redesign;
@@ -23,13 +24,13 @@ Use this skill when:
 
 ## When Not To Use This Skill
 
-Do not use this skill without an explicit intent or evidence base. Do not evaluate pass/fail status; use `catalog-evaluation`. Do not resolve human-owned curation decisions. Do not publish packs directly; use `catalog-publishing` only after evaluation and promotion.
+Do not use this skill without an explicit intent or evidence base. During autonomous growth, only proceed when a demand-scan or catalog-gap intent is supplied by the orchestrator. Do not evaluate pass/fail status; use `catalog-evaluation`. Do not resolve human-owned curation decisions. Do not publish packs directly; use `catalog-publishing` only after evaluation and promotion.
 
 ## Inputs You Should Gather First
 
 You should gather:
 
-- explicit user intent, target user, domain, scope, and exclusions;
+- explicit user intent or orchestrator-supplied demand-scan/catalog-gap intent, target user, domain, scope, and exclusions;
 - canonical skill records and current version IDs;
 - analysis markdown for candidate skills;
 - relation edges, conflicts, complements, and duplicates;

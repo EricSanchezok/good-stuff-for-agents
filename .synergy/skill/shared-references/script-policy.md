@@ -30,9 +30,7 @@ A helper must not:
 - score publication readiness without agent-authored rubric evidence;
 - perform curation decisions that belong to a human or explicit reviewer.
 
-## Naming Rule
-
-Name a helper after the deterministic action it actually performs. Prefer names such as `ingest-source-candidates.mjs`, `write-normalized-skills.mjs`, `write-analysis-drafts.mjs`, `append-relation-drafts.mjs`, `write-pack-candidate.mjs`, `write-evaluation-draft.mjs`, and `maintenance-check.mjs`.
+Name a helper after the deterministic action it actually performs. Prefer names such as `ingest-source-candidates.mjs`, `write-normalized-skills.mjs`, `write-analysis-drafts.mjs`, `append-relation-drafts.mjs`, `write-pack-candidate.mjs`, `write-evaluation-draft.mjs`, `activate-source-candidates.mjs`, and `maintenance-check.mjs`.
 
 Do not keep a legacy name that implies autonomous judgment when the helper only ingests or writes supplied data.
 
@@ -47,3 +45,7 @@ A helper should print JSON with enough detail for an agent to audit what happene
 ## Failure Rule
 
 A helper should fail loudly for malformed input, missing required IDs, unsupported source URLs, schema errors, and drift. It should not silently invent defaults that change meaning.
+
+## Monolithic Script Prohibition
+
+No single script may perform autonomous research, source discovery, curation, normalization, analysis, pack synthesis, or evaluation. Growth and total orchestration are skill-driven and delegate to phase owner skills. The `activate-source-candidates.mjs` helper only consumes reviewed activation drafts — it does not make semantic decisions.

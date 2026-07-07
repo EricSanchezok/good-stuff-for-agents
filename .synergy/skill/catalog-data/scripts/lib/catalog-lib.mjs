@@ -10,7 +10,7 @@ export const CATALOG = join(ROOT, 'catalog')
 export const STATUS = {
   skill: new Set(['candidate', 'active', 'preview', 'deprecated', 'removed', 'broken', 'blocked']),
   pack: new Set(['candidate', 'rejected', 'published', 'stale', 'superseded', 'archived']),
-  source: new Set(['candidate', 'active', 'deprecated', 'removed', 'broken', 'blocked']),
+  source: new Set(['candidate', 'active', 'preview', 'deprecated', 'removed', 'broken', 'blocked']),
 }
 
 export const RELATION_PREDICATES = new Set([

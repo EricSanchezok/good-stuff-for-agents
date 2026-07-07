@@ -67,3 +67,17 @@ Evaluation must include rubric scores, evidence for each score, failure modes, r
 - Public pages: `docs/**/*.md`
 
 Public pages must be clean visitor-facing Markdown. They may describe catalog entries and human-readable provenance, but they must not expose internal mechanics or hidden metadata.
+
+## Growth and Total Run Artifacts
+
+### Growth Run Artifacts
+
+- Growth run report: `reports/catalog-growth-ops/<YYYY-MM-DD>-growth.md`
+
+A growth run report should describe discovery targets, sources activated, skills extracted and normalized, analyses completed, relations built, packs synthesized, evaluation results, and next-run priorities.
+
+### Total Run Artifacts
+
+- Total run report: `reports/nightly-catalog-ops/<YYYY-MM-DD>-run.md`
+
+A total run report should summarize maintenance preflight, growth run, final validation/publishing checks, commit/push status, and any policy blockers.
