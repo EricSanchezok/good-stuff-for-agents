@@ -1,14 +1,22 @@
 # Curation Actions
 
-Curation is human-triggered and writes through catalog-data scripts or approved curation scripts only.
+Curation has two lanes:
 
-Allowed actions:
+1. **Routine autonomous activation** — reversible activation or preview of public sources that pass `autonomous-source-activation.md`.
+2. **Human-owned curation** — risky, ambiguous, irreversible, endorsement-like, license-sensitive, merge/delete, or policy-exception decisions.
 
-- approve or reject source candidates;
-- set or correct license evidence;
-- resolve duplicate candidates as duplicate, variant, or distinct;
-- deprecate, remove, block, or reactivate source/skill/pack records;
-- annotate records with curation notes;
-- approve preview publishing override.
+Allowed routine autonomous actions:
 
-Curation must preserve provenance, aliases, analysis, relation evidence, and published pack references.
+- activate a high-confidence public GitHub source as `active`;
+- mark a safe but lower-confidence public GitHub source as `preview`;
+- leave a source candidate blocked, rejected, or candidate-only with reasons.
+
+Human-owned actions:
+
+- resolve unclear or restrictive license evidence;
+- merge duplicate sources or skills;
+- delete, remove, or irreversibly alter records;
+- approve publication overrides;
+- handle private, credentialed, sensitive, legal, or endorsement-risk sources.
+
+All writes must flow through catalog-data scripts or approved narrow curation scripts. Curation must preserve provenance, aliases, analysis, relation evidence, and published pack references.
