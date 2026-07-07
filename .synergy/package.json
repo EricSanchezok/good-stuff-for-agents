@@ -21,9 +21,10 @@
     "publish:render": "node skill/catalog-publishing/scripts/render-docs.mjs",
     "publish:check": "node skill/catalog-publishing/scripts/check-docs-drift.mjs",
     "publish:links": "node skill/catalog-publishing/scripts/check-links.mjs",
-    "catalog:status": "node skill/nightly-catalog-ops/scripts/catalog-status.mjs",
-    "maintenance:run": "node skill/nightly-catalog-ops/scripts/maintenance-check.mjs",
-    "check": "npm run catalog:validate && npm run catalog:index && npm run publish:render && npm run publish:check && npm run publish:links"
+    "check": "npm run catalog:validate && npm run catalog:index && npm run publish:render && npm run publish:check && npm run publish:links",
+    "catalog:status": "node skill/catalog-maintenance/scripts/catalog-status.mjs",
+    "maintenance:run": "node skill/catalog-maintenance/scripts/maintenance-check.mjs",
+    "source:activate": "node skill/catalog-curation/scripts/activate-source-candidates.mjs"
   },
   "dependencies": {},
   "devDependencies": {}
