@@ -1,6 +1,6 @@
 ---
 name: catalog-maintenance
-description: Run deterministic Skill Intelligence Catalog maintenance only: validation, approved-source sync, indexes, public page rendering checks, status reporting, and maintenance reports. Use when you need巡检 without autonomous discovery or semantic growth work.
+description: "Run deterministic Skill Intelligence Catalog maintenance only: validation, approved-source sync, indexes, public page rendering checks, status reporting, and maintenance reports. Use when you need巡检 without autonomous discovery or semantic growth work."
 ---
 
 # Catalog Maintenance SOP

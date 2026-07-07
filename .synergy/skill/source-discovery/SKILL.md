@@ -1,6 +1,7 @@
 ---
 name: source-discovery
 description: Discover and qualify candidate upstream sources for the Skill Intelligence Catalog. Use when you need to find, review, approve, reject, or prepare source candidates before catalog-data writes. Accepts user-provided goals or orchestrator-provided discovery briefs from catalog-growth-ops.
+---
 
 # Source Discovery SOP
 

@@ -1,6 +1,6 @@
 ---
 name: nightly-catalog-ops
-description: Coordinate the full autonomous Skill Intelligence Catalog run: maintenance preflight, growth, publishing, reporting, and authorized git handling. Use for scheduled or one-shot total catalog operation.
+description: "Coordinate the full autonomous Skill Intelligence Catalog run: maintenance preflight, growth, publishing, reporting, and authorized git handling. Use for scheduled or one-shot total catalog operation."
 ---
 
 # Nightly Catalog Total Controller SOP
