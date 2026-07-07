@@ -8,8 +8,8 @@
 
 <p align="center">
   <a href="docs/packs/README.md"><img alt="Published packs" src="https://img.shields.io/badge/packs-0-F7C66A?style=for-the-badge&labelColor=101014"></a>
-  <a href="docs/skills/README.md"><img alt="Indexed skills" src="https://img.shields.io/badge/skills-0-B879FF?style=for-the-badge&labelColor=101014"></a>
-  <a href="docs/sources/README.md"><img alt="Tracked sources" src="https://img.shields.io/badge/sources-0-61F4C6?style=for-the-badge&labelColor=101014"></a>
+  <a href="docs/skills/README.md"><img alt="Indexed skills" src="https://img.shields.io/badge/skills-26-B879FF?style=for-the-badge&labelColor=101014"></a>
+  <a href="docs/sources/README.md"><img alt="Tracked sources" src="https://img.shields.io/badge/sources-6-61F4C6?style=for-the-badge&labelColor=101014"></a>
   <a href="docs/domains/README.md"><img alt="Domains" src="https://img.shields.io/badge/domains-0-FFF7DF?style=for-the-badge&labelColor=101014"></a>
 </p>
 

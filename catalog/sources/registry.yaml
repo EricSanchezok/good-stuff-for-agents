@@ -1,2 +1,136 @@
 schema_version: 1
-sources: []
+sources:
+- license:
+    evidence: LICENSE file at repo root, MIT
+    spdx: MIT
+    verified: true
+  name: Addy Osmani Agent Skills
+  schema_version: 1
+  source_id: src_https-github-com-addyosmani-agent-skills-addy-osmani-agent-skills_5a07ef94
+  state:
+    consecutive_failures: 0
+    last_checked_at: null
+    last_ref: null
+    last_success_at: null
+  status: active
+  sync:
+    exclude:
+    - evals/**
+    - scripts/**
+    include:
+    - skills/**/SKILL.md
+    - docs/**/*.md
+  type: github_repo
+  updated_at: '2026-07-07T08:03:52.038Z'
+  url: https://github.com/addyosmani/agent-skills
+- license:
+    evidence: README states open source Apache 2.0
+    spdx: Apache-2.0
+    verified: true
+  name: Anthropic Skills
+  schema_version: 1
+  source_id: src_https-github-com-anthropics-skills-anthropic-skills_76e1ad93
+  state:
+    consecutive_failures: 0
+    last_checked_at: '2026-07-07T08:04:08.229Z'
+    last_ref: 9d2f1ae187231d8199c64b5b762e1bdf2244733d
+    last_success_at: '2026-07-07T08:04:08.229Z'
+  status: active
+  sync:
+    exclude:
+    - skills/docx/**
+    - skills/pdf/**
+    - skills/pptx/**
+    - skills/xlsx/**
+    include:
+    - skills/**/SKILL.md
+    - spec/**/*.md
+  type: github_repo
+  updated_at: '2026-07-07T08:03:51.822Z'
+  url: https://github.com/anthropics/skills
+- license:
+    evidence: README states Apache License 2.0
+    spdx: Apache-2.0
+    verified: true
+  name: ComposioHQ Awesome Claude Skills
+  schema_version: 1
+  source_id: src_https-github-com-composiohq-awesome-claude-skills-composiohq-awesome-claude-skills_6e1397e8
+  state:
+    consecutive_failures: 0
+    last_checked_at: null
+    last_ref: null
+    last_success_at: null
+  status: preview
+  sync:
+    exclude: []
+    include:
+    - README.md
+    - '*/SKILL.md'
+  type: github_repo
+  updated_at: '2026-07-07T08:03:52.218Z'
+  url: https://github.com/ComposioHQ/awesome-claude-skills
+- license:
+    evidence: README footer states MIT
+    spdx: MIT
+    verified: true
+  name: YUV.AI Agent Skills
+  schema_version: 1
+  source_id: src_https-github-com-hoodini-ai-agents-skills-yuv-ai-agent-skills_1308ad13
+  state:
+    consecutive_failures: 0
+    last_checked_at: null
+    last_ref: null
+    last_success_at: null
+  status: preview
+  sync:
+    exclude:
+    - templates/**
+    - assets/**
+    include:
+    - skills/**/SKILL.md
+  type: github_repo
+  updated_at: '2026-07-07T08:03:52.312Z'
+  url: https://github.com/hoodini/ai-agents-skills
+- license:
+    evidence: LICENSE file at repo root, MIT
+    spdx: MIT
+    verified: true
+  name: Microsoft Agent Skills
+  schema_version: 1
+  source_id: src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e
+  state:
+    consecutive_failures: 0
+    last_checked_at: '2026-07-07T08:04:10.362Z'
+    last_ref: 079ddaabb53a3f6b6d622bfb02d2e1497f85883e
+    last_success_at: '2026-07-07T08:04:10.362Z'
+  status: active
+  sync:
+    exclude:
+    - tests/**
+    - .vscode/**
+    include:
+    - .github/skills/**/SKILL.md
+    - docs/**/*.md
+  type: github_repo
+  updated_at: '2026-07-07T08:03:51.952Z'
+  url: https://github.com/microsoft/skills
+- license:
+    evidence: LICENSE file at repo root
+    spdx: MIT
+    verified: true
+  name: VoltAgent Awesome Agent Skills
+  schema_version: 1
+  source_id: src_https-github-com-voltagent-awesome-agent-skills-voltagent-awesome-agent-skills_46b45132
+  state:
+    consecutive_failures: 0
+    last_checked_at: '2026-07-07T08:04:11.229Z'
+    last_ref: 2fcbf138f63697e999d26c6266eea597e6564a23
+    last_success_at: '2026-07-07T08:04:11.229Z'
+  status: preview
+  sync:
+    exclude: []
+    include:
+    - README.md
+  type: github_repo
+  updated_at: '2026-07-07T08:03:52.130Z'
+  url: https://github.com/VoltAgent/awesome-agent-skills

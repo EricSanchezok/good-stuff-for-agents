@@ -1,0 +1,46 @@
+schema_version: 1
+canonical_skill_id: skl_brand-guidelines-src-https-github-com-anthropics-skills-anthropic-skills-76e1ad93-skills-brand-guidelines-skill-md_9ed23dae
+canonical_name: brand-guidelines
+display_name: Brand Guidelines
+status: active
+identity:
+  aliases: []
+  current_version_id: v_placeholder
+  source_skill_ids: []
+source:
+  source_id: src_https-github-com-anthropics-skills-anthropic-skills_76e1ad93
+  path: skills/brand-guidelines/SKILL.md
+  type: github_repo
+  license:
+    spdx: Apache-2.0
+    verified: true
+    evidence: README states open source Apache 2.0
+capabilities:
+  domains: []
+  task_types: []
+  workflow_stages: []
+  atomic_capabilities: []
+interfaces:
+  inputs: []
+  outputs: []
+  handoff_outputs: []
+tools:
+  required: []
+  optional: []
+risk:
+  side_effect_level: none
+  risk_surfaces: []
+quality:
+  score: null
+  confidence: unknown
+relations:
+  duplicates: []
+  complements: []
+  conflicts: []
+analysis:
+  path: catalog/analyses/br/skl_brand-guidelines-src-https-github-com-anthropics-skills-anthropic-skills-76e1ad93-skills-brand-guidelines-skill-md_9ed23dae.md
+  hash: null
+curation:
+  notes: []
+created_at: '2026-07-07T08:10:00.000Z'
+updated_at: '2026-07-07T08:10:00.000Z'

@@ -1,0 +1,126 @@
+{
+  "run_id": "2026-07-07",
+  "sources": [
+    {
+      "name": "Anthropic Skills",
+      "url": "https://github.com/anthropics/skills",
+      "type": "github_repo",
+      "evidence": [
+        "Canonical reference implementation of the Agent Skills open standard",
+        "Contains skills/*/SKILL.md files with standard frontmatter format",
+        "159k stars, 18.8k forks, 43 commits",
+        "Diverse skill categories: Creative & Design, Development & Technical, Enterprise & Communication, Document Skills",
+        "Includes the Agent Skills specification under spec/"
+      ],
+      "license": { "spdx": "Apache-2.0", "verified": true, "evidence": "README states 'open source (Apache 2.0)'" },
+      "parseability": "known-synergy-skill-layout",
+      "activity": "maintained (43 commits)",
+      "notes": "Highest-authority source for the Agent Skills ecosystem. Document skills are source-available but not open source."
+    },
+    {
+      "name": "Microsoft Agent Skills",
+      "url": "https://github.com/microsoft/skills",
+      "type": "github_repo",
+      "evidence": [
+        "Contains 175+ skills in .github/skills/*/SKILL.md format",
+        "Covers Azure SDK, Foundry, MCP, custom agents, AGENTS.md templates",
+        "2.7k stars, 304 forks, 662 commits",
+        "Multi-language skills: Python, .NET, TypeScript, Java, Rust",
+        "Includes test harness with 1169 test scenarios across 129 skills"
+      ],
+      "license": { "spdx": "MIT", "verified": true, "evidence": "LICENSE file at repo root, MIT" },
+      "parseability": "known-synergy-skill-layout",
+      "activity": "actively maintained (662 commits)",
+      "notes": "Largest single-vendor skill collection. Enterprise/cloud focused."
+    },
+    {
+      "name": "Addy Osmani Agent Skills",
+      "url": "https://github.com/addyosmani/agent-skills",
+      "type": "github_repo",
+      "evidence": [
+        "Contains 24 skills in skills/*/SKILL.md format",
+        "Production-grade engineering skills: spec-driven-development, TDD, code review, CI/CD, security",
+        "71.3k stars, 7.7k forks, 308 commits",
+        "8 slash commands mapping to full development lifecycle",
+        "Includes agent personas, reference checklists, hooks"
+      ],
+      "license": { "spdx": "MIT", "verified": true, "evidence": "LICENSE file at repo root, MIT" },
+      "parseability": "known-synergy-skill-layout",
+      "activity": "actively maintained (308 commits, latest release 0.6.3 Jul 2026)",
+      "notes": "Highest-quality engineering workflow skills. Opinionated Google engineering culture patterns."
+    },
+    {
+      "name": "VoltAgent Awesome Agent Skills",
+      "url": "https://github.com/VoltAgent/awesome-agent-skills",
+      "type": "github_repo",
+      "evidence": [
+        "Curated collection of 1000+ agent skills from official dev teams and community",
+        "27.5k stars, 2.9k forks, 406 commits",
+        "Includes skills from Anthropic, Google, Vercel, Stripe, Cloudflare, Netlify, Figma, Expo, Hugging Face, Trail of Bits, Sentry, etc.",
+        "README.md lists skills with links to source repos"
+      ],
+      "license": { "spdx": "MIT", "verified": true, "evidence": "LICENSE file at repo root" },
+      "parseability": "reference-index",
+      "activity": "actively maintained (406 commits)",
+      "notes": "This is an awesome-list index, not a direct skill repo. It points to external repos. Valuable as a discovery source for future expansion."
+    },
+    {
+      "name": "ComposioHQ Awesome Claude Skills",
+      "url": "https://github.com/ComposioHQ/awesome-claude-skills",
+      "type": "github_repo",
+      "evidence": [
+        "Curated list of 1000+ Claude Skills and Plugins",
+        "67k stars, 7.5k forks, 75 commits",
+        "README.md lists skills with links to source repos",
+        "Includes some direct SKILL.md folders in the repo (changelog-generator, connect-apps, etc.)"
+      ],
+      "license": { "spdx": "Apache-2.0", "verified": true, "evidence": "README states Apache License 2.0" },
+      "parseability": "reference-index-with-some-skills",
+      "activity": "maintained (75 commits)",
+      "notes": "Primarily an awesome-list index. Contains some direct skills but most are pointers. Valuable as a discovery source for future expansion."
+    },
+    {
+      "name": "YUV.AI Agent Skills",
+      "url": "https://github.com/hoodini/ai-agents-skills",
+      "type": "github_repo",
+      "evidence": [
+        "Contains skills in skills/*/SKILL.md format",
+        "16 skills focused on creative production: video editing, presentations, landing pages, design systems",
+        "243 stars, 58 forks, 73 commits",
+        "Well-structured SKILL.md files with workflows"
+      ],
+      "license": { "spdx": "MIT", "verified": true, "evidence": "README footer states MIT" },
+      "parseability": "known-synergy-skill-layout",
+      "activity": "maintained (73 commits)",
+      "notes": "Heavily branded around one creator's design system. Creative/media-focused skills."
+    },
+    {
+      "name": "Awesome Claude Code and Skills (GetBindu)",
+      "url": "https://github.com/GetBindu/awesome-claude-code-and-skills",
+      "type": "github_repo",
+      "evidence": [
+        "Curated README list of skills and tools",
+        "160 stars, 94 forks, 186 commits",
+        "README.md is a link directory — no SKILL.md files in the repo"
+      ],
+      "license": { "spdx": null, "verified": false, "evidence": "LICENSE file exists but content not inspected" },
+      "parseability": "unsupported-no-skill-artifacts",
+      "activity": "low (links-only repo)",
+      "notes": "Rejected: contains no direct skill artifacts. Pure link directory."
+    },
+    {
+      "name": "Awesome Agent Skills (heilcheng)",
+      "url": "https://github.com/heilcheng/awesome-agent-skills",
+      "type": "github_repo",
+      "evidence": [
+        "Curated directory of agent skills and links",
+        "5.9k stars, 543 forks, 117 commits",
+        "README.md is a link directory — no SKILL.md files in the repo"
+      ],
+      "license": { "spdx": "MIT", "verified": true, "evidence": "LICENSE file at repo root" },
+      "parseability": "unsupported-no-skill-artifacts",
+      "activity": "maintained (117 commits, links-only)",
+      "notes": "Rejected: contains no direct skill artifacts. Pure link directory. Multi-language READMEs."
+    }
+  ]
+}

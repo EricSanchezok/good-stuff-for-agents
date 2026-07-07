@@ -1,0 +1,46 @@
+schema_version: 1
+canonical_skill_id: skl_webapp-testing-src-https-github-com-anthropics-skills-anthropic-skills-76e1ad93-skills-webapp-testing-skill-md_6a349d86
+canonical_name: webapp-testing
+display_name: Webapp Testing
+status: active
+identity:
+  aliases: []
+  current_version_id: v_placeholder
+  source_skill_ids: []
+source:
+  source_id: src_https-github-com-anthropics-skills-anthropic-skills_76e1ad93
+  path: skills/webapp-testing/SKILL.md
+  type: github_repo
+  license:
+    spdx: Apache-2.0
+    verified: true
+    evidence: README states open source Apache 2.0
+capabilities:
+  domains: []
+  task_types: []
+  workflow_stages: []
+  atomic_capabilities: []
+interfaces:
+  inputs: []
+  outputs: []
+  handoff_outputs: []
+tools:
+  required: []
+  optional: []
+risk:
+  side_effect_level: none
+  risk_surfaces: []
+quality:
+  score: null
+  confidence: unknown
+relations:
+  duplicates: []
+  complements: []
+  conflicts: []
+analysis:
+  path: catalog/analyses/we/skl_webapp-testing-src-https-github-com-anthropics-skills-anthropic-skills-76e1ad93-skills-webapp-testing-skill-md_6a349d86.md
+  hash: null
+curation:
+  notes: []
+created_at: '2026-07-07T08:10:00.000Z'
+updated_at: '2026-07-07T08:10:00.000Z'

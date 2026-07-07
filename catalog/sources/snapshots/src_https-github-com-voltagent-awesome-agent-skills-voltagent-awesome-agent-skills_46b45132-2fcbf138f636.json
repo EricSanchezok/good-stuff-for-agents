@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "source_id": "src_https-github-com-voltagent-awesome-agent-skills-voltagent-awesome-agent-skills_46b45132",
+  "upstream_ref": "2fcbf138f63697e999d26c6266eea597e6564a23",
+  "checked_at": "2026-07-07T08:04:11.229Z",
+  "url": "https://github.com/VoltAgent/awesome-agent-skills",
+  "artifacts": [
+    {
+      "source_id": "src_https-github-com-voltagent-awesome-agent-skills-voltagent-awesome-agent-skills_46b45132",
+      "path": "README.md",
+      "declared_name": "README.md",
+      "format": "markdown",
+      "parse_confidence": "medium",
+      "content_digest": "sha256:a85e617b2b30276f05b74cfc6ec181a6ec7cf0ed",
+      "upstream_ref": "2fcbf138f63697e999d26c6266eea597e6564a23",
+      "url": "https://github.com/VoltAgent/awesome-agent-skills/blob/2fcbf138f63697e999d26c6266eea597e6564a23/README.md",
+      "raw_metadata": {
+        "github_blob_sha": "a85e617b2b30276f05b74cfc6ec181a6ec7cf0ed",
+        "size": 237637
+      }
+    }
+  ],
+  "digest": "sha256:7fb36ce22e8b3f8bec6a1e82a26661eb7cea4454e4b36dce92724e329ba86261"
+}
