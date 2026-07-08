@@ -12,6 +12,22 @@ This contract describes handoffs across all skill layers in the catalog system.
 
 Phase skills (`source-discovery`, `source-sync`, `skill-extraction`, `skill-normalization`, `skill-deep-analysis`, `skill-dedup-relations`, `pack-synthesis`, `catalog-evaluation`, `catalog-curation`, `catalog-data`, `catalog-publishing`) accept input from the user or from the orchestrator layer and must not require user interaction during autonomous runs.
 
+## Terminal State Model
+
+Full catalog operations do not have one fixed endpoint such as "publish a new pack." They are complete only when every catalog object touched by the run reaches a terminal state for that run.
+
+Terminal states are:
+
+- **No-op:** inspected and explicitly unchanged because no affected inputs, no sufficient evidence, or no eligible action exists.
+- **Written or updated:** canonical records, analyses, relations, indexes, reports, or public pages were changed and validated.
+- **Evaluated:** pack or public-readiness review produced `passed`, `needs_work`, or `rejected` with evidence and owner-specific recommendations.
+- **Promotion-ready:** evaluation passed and the next deterministic promotion/publishing step is available to the controller.
+- **Promoted or published:** passing pack or public record was promoted through catalog-data and rendered through catalog-publishing checks.
+- **Deprecated or removed:** status was changed only when policy and curation authority allow it.
+- **Blocked:** the next action needs missing evidence, unsafe policy, user-owned authority, unavailable tooling, or a failing validation signal. The blocker must name the owner and exact next action.
+
+A handoff is not a terminal state when the next owner skill is available and no blocker exists. In that case, the controller should load the owner skill and continue.
+
 ## Activation Predicate
 
 Before you start a phase, state why this skill owns it. You should be able to name the catalog object, artifact, or decision that will change. If another skill owns the next action, stop and hand off instead of stretching this skill across boundaries.

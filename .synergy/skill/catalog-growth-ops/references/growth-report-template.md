@@ -44,11 +44,18 @@ Use this structure:
 - Relation edges:
 - Duplicate/merge blockers:
 
-## Packs / Evaluations
+## Pack Lifecycle
 - Pack intents considered:
-- Candidate packs:
-- Evaluations:
-- Promotion handoff:
+- Candidate packs written/updated:
+- Evaluations written:
+- Terminal states:
+  - no-op:
+  - evaluated passed:
+  - evaluated needs_work:
+  - evaluated rejected:
+  - promotion-ready:
+  - blocked:
+- Promotion/publishing handoff:
 
 ## Verification
 - Commands:

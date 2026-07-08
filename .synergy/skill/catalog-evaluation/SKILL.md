@@ -34,7 +34,7 @@ You should gather:
 - relation edges and conflict notes;
 - source records and freshness evidence;
 - `references/pack-evaluation-rubric.md`, `references/publication-thresholds.md`, `references/docs-page-rubric.md`, `references/source-quality-rubric.md`, and `references/failure-modes.md`;
-- shared `artifact-contract.md` and `script-policy.md`.
+- shared `../shared-references/artifact-contract.md` and `../shared-references/script-policy.md`.
 
 ## Outputs You Must Leave Behind
 
@@ -42,8 +42,8 @@ You must leave behind:
 
 - agent-authored evaluation draft under `reports/catalog-evaluation/<pack-id>.json`;
 - evaluation JSON under `catalog/packs/candidates/<pack-id>/evaluation.json` written through catalog-data;
-- clear pass/fail/needs-work rationale;
-- recommendations tied to owning skills;
+- a terminal decision: `passed`, `needs_work`, or `rejected`;
+- recommendations tied to owning skills and the next terminal-state action, such as promote/publish, repair/re-synthesize, retain as needs-work, reject, or block;
 - validation result.
 
 ## References To Read
@@ -67,9 +67,9 @@ You must leave behind:
 1. **Load candidate and evidence.** You inspect the pack, member records, analyses, relations, source quality, and any previous evaluations.
 2. **Score each rubric dimension.** You assign scores for relevance, coverage, non-redundancy, workflow coherence, compatibility, conflict control, evidence quality, actionability, freshness, and page readiness when relevant.
 3. **Write evidence for scores.** You cite the concrete pack member, analysis, relation, or source evidence behind each score. You do not score from member counts alone.
-4. **Apply thresholds.** You determine pass, needs-work, or reject from the configured thresholds and blocking failure modes.
-5. **Write recommendations.** You route recommendations to the owning skill: pack design, relations, analysis, source sync, normalization, or publishing.
-6. **Prepare reviewed draft.** You write a complete evaluation draft with metrics, overall score, pass/fail, failure modes, and recommendations.
+4. **Apply thresholds.** You determine `passed`, `needs_work`, or `rejected` from the configured thresholds and blocking failure modes. Do not leave an evaluation pending when the candidate can be read and scored.
+5. **Write recommendations.** You route recommendations to the owning skill: pack design, relations, analysis, source sync, normalization, promotion/publishing, or curation.
+6. **Prepare reviewed draft.** You write a complete evaluation draft with metrics, overall score, terminal decision, failure modes, and recommendations.
 7. **Call the writer and validate.** You write evaluation output through the helper and run strict validation.
 
 ## Quality Bar

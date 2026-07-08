@@ -17,6 +17,7 @@
     "analysis:write": "node skill/skill-deep-analysis/scripts/write-analysis-drafts.mjs",
     "relations:append": "node skill/skill-dedup-relations/scripts/append-relation-drafts.mjs",
     "pack:write-candidate": "node skill/pack-synthesis/scripts/write-pack-candidate.mjs",
+    "pack:promote": "node skill/catalog-data/scripts/promote-pack-candidates.mjs",
     "evaluation:write": "node skill/catalog-evaluation/scripts/write-evaluation-draft.mjs",
     "publish:render": "node skill/catalog-publishing/scripts/render-docs.mjs",
     "publish:check": "node skill/catalog-publishing/scripts/check-docs-drift.mjs",

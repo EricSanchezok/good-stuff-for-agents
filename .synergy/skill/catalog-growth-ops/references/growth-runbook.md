@@ -15,11 +15,11 @@ Run this sequence for autonomous growth.
 11. Load `skill-deep-analysis` and write analyses for new/changed skills.
 12. Load `skill-dedup-relations` and append reviewed relation edges.
 13. Run catalog impact detection.
-14. Choose pack intents from demand scan, catalog gaps, and analyzed compatible skills.
-15. Load `pack-synthesis` and write candidate packs only with enough evidence.
-16. Load `catalog-evaluation` and write evaluation output.
+14. Resolve pack lifecycle work for every pack intent, candidate pack, stale published pack, or impacted pack touched by the run.
+15. Load `pack-synthesis` when synthesis, repair, or reorganization is the right next action.
+16. Load `catalog-evaluation` when a candidate or changed pack can be scored; write `passed`, `needs_work`, or `rejected` rather than leaving it pending.
 17. Validate catalog and rebuild indexes.
-18. Write the growth report.
-19. Hand final publishing/commit/push to `nightly-catalog-ops`.
+18. Write the growth report with terminal states for touched objects.
+19. Hand final promotion, publishing, commit, and push to `nightly-catalog-ops`.
 
 Skip downstream phases when inputs are absent, but record why. Do not fabricate data to keep the run moving.

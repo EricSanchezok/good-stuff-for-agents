@@ -32,7 +32,15 @@ Use this structure:
 - Demand themes:
 - Sources activated/preview/candidate/blocked/rejected:
 - Skill records/analyses/relations:
-- Pack candidates/evaluations:
+- Pack lifecycle states:
+  - no-op:
+  - written/updated:
+  - evaluated:
+  - promotion-ready:
+  - promoted/published:
+  - needs-work/rejected:
+  - deprecated/removed:
+  - blocked:
 
 ## Publishing and Final Gates
 - Render:

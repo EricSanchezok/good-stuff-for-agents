@@ -9,11 +9,10 @@ Definition of done for a full nightly run:
 
 - maintenance preflight passes;
 - autonomous growth advances every applicable phase with available inputs;
-- new or changed skill records have analyses when analysis inputs are available;
-- relation review runs after analyses exist;
-- if candidate packs are created or changed, `catalog-evaluation` runs in the same nightly and writes evaluation output;
-- unevaluated candidate packs are allowed only when each one has a concrete blocker recorded in the final report;
+- every source, skill, relation, pack, index, or public page touched by the run reaches a terminal state for this run;
+- terminal states follow the shared Terminal State Model in `.synergy/skill/shared-references/integration-contract.md`: no-op, written/updated and validated, evaluated, promotion-ready, promoted/published, deprecated/removed under policy, or blocked with owner and reason;
+- pack lifecycle work reaches an appropriate terminal state: passed packs are promoted and rendered publicly when policy allows, needs-work/rejected packs retain evaluation reasons, stale or impacted published packs are repaired/re-evaluated/re-published or explicitly blocked, and no-op packs explain why no action was needed;
 - final maintenance and publishing gates pass;
 - authorized commit and push complete.
 
-Do not stop at a phase handoff when the next owner skill is available and no blocker exists. Load the owner skill and continue.
+Do not stop at a phase handoff when the next owner skill is available and no blocker exists. Load the owner skill and continue until the touched item has a terminal state.

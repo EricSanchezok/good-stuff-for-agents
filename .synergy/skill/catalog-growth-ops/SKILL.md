@@ -44,6 +44,7 @@ You must leave behind:
 - discovery reports and candidate drafts when sources are inspected;
 - activated source records only when policy passes;
 - source snapshots, skill candidates, normalized records, analyses, relation edges, pack candidates, and evaluations when each phase has sufficient evidence;
+- a terminal-state decision for every source, skill, relation, pack intent, candidate pack, stale published pack, or impacted pack touched by growth;
 - validation and index results;
 - clear next-run priorities and blockers.
 
@@ -85,10 +86,11 @@ You must leave behind:
 10. **Load `skill-deep-analysis`.** You write analysis for new or changed skills.
 11. **Load `skill-dedup-relations`.** You append evidence-backed relation edges and leave merge/delete decisions blocked.
 12. **Run impact detection.** You use catalog-data impact checks for stale published packs.
-13. **Load `pack-synthesis`.** You choose pack intents from demand scan, catalog gaps, and analyzed compatible skills. You skip when evidence is insufficient.
-14. **Load `catalog-evaluation`.** You evaluate candidate packs and write reviewed evaluation output. If this run wrote or changed any candidate pack, evaluation is part of the same growth run, not a next-run priority. Missing or medium-confidence evidence should produce a `needs_work` evaluation rather than an unevaluated pending state.
-15. **Validate and index.** You run catalog validation and index rebuild after writes.
-16. **Write growth report.** You record inspected demand, sources, activated records, phase outputs, skipped items, blockers, and next-run priorities.
+13. **Resolve pack lifecycle work.** For every pack intent, candidate pack, stale published pack, or impacted pack discovered in this run, decide the terminal action for this run: no-op with reason, synthesize/update, evaluate, mark needs-work/rejected, make promotion-ready, or block with owner. Do not leave pack work in raw pending state when an owner skill can continue.
+14. **Load `pack-synthesis` when needed.** You choose pack intents from demand scan, catalog gaps, and analyzed compatible skills. You skip only when evidence is insufficient and record a no-op or blocker.
+15. **Load `catalog-evaluation` when needed.** You evaluate candidate packs and write reviewed evaluation output. Missing or medium-confidence evidence should produce a `needs_work` evaluation rather than an unevaluated pending state.
+16. **Validate and index.** You run catalog validation and index rebuild after writes.
+17. **Write growth report.** You record inspected demand, sources, activated records, phase outputs, pack lifecycle terminal states, skipped items, blockers, and next-run priorities.
 
 ## Quality Bar
 
