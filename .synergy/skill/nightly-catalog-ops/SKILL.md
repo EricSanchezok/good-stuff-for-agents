@@ -40,7 +40,7 @@ You should gather:
 
 You must leave behind:
 
-- total run report under `reports/nightly-catalog-ops/<YYYY-MM-DD>-run.md` for non-trivial runs;
+- total run report under `reports/nightly-catalog-ops/<YYYY-MM-DD-HHmmss>-run.md` for non-trivial runs;
 - maintenance preflight and final check results;
 - growth report reference and summary;
 - public publishing results when public pages changed;

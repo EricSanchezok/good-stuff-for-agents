@@ -36,11 +36,13 @@ You should gather:
 - `references/demand-scan-policy.md`, `references/autonomous-discovery-policy.md`, `references/growth-runbook.md`, `references/source-activation-policy.md`, `references/growth-report-template.md`, and `references/growth-quality-gate.md`;
 - shared `../shared-references/integration-contract.md`, `../shared-references/artifact-contract.md`, and `../shared-references/script-policy.md`.
 
+Use one timestamped run ID for the whole growth run, formatted as `run_<YYYY-MM-DD-HHmmss>`. Use the same timestamp for growth report filenames and pass it to candidate writers that accept `--run-id`.
+
 ## Outputs You Must Leave Behind
 
 You must leave behind:
 
-- growth report under `reports/catalog-growth-ops/<YYYY-MM-DD>-growth.md` for non-trivial runs;
+- growth report under `reports/catalog-growth-ops/<YYYY-MM-DD-HHmmss>-growth.md` for non-trivial runs;
 - discovery reports and candidate drafts when sources are inspected;
 - activated source records only when policy passes;
 - source snapshots, skill candidates, normalized records, analyses, relation edges, pack candidates, and evaluations when each phase has sufficient evidence;

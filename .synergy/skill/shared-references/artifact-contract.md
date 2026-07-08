@@ -72,12 +72,12 @@ Public pages must be clean visitor-facing Markdown. They may describe catalog en
 
 ### Growth Run Artifacts
 
-- Growth run report: `reports/catalog-growth-ops/<YYYY-MM-DD>-growth.md`
+- Growth run report: `reports/catalog-growth-ops/<YYYY-MM-DD-HHmmss>-growth.md`
 
 A growth run report should describe discovery targets, sources activated, skills extracted and normalized, analyses completed, relations built, packs synthesized, evaluation results, and next-run priorities.
 
 ### Total Run Artifacts
 
-- Total run report: `reports/nightly-catalog-ops/<YYYY-MM-DD>-run.md`
+- Total run report: `reports/nightly-catalog-ops/<YYYY-MM-DD-HHmmss>-run.md`
 
 A total run report should summarize maintenance preflight, growth run, final validation/publishing checks, commit/push status, and any policy blockers.

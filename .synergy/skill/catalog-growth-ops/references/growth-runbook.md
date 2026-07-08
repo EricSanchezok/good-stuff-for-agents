@@ -2,6 +2,8 @@
 
 Run this sequence for autonomous growth.
 
+Use one run ID for the whole growth run. Format it as `run_<YYYY-MM-DD-HHmmss>` so multiple runs on the same day do not overwrite reports or append unrelated candidates to the same JSONL file. Pass this run ID to `skill-extraction` with `--run-id`, and use the same timestamp in growth and nightly report filenames.
+
 1. Run maintenance preflight or read the latest maintenance status.
 2. Inspect catalog gaps and previous reports.
 3. Run demand scan and choose growth themes.

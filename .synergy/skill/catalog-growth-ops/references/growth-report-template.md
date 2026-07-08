@@ -3,7 +3,7 @@
 Write internal growth reports under:
 
 ```txt
-reports/catalog-growth-ops/<YYYY-MM-DD>-growth.md
+reports/catalog-growth-ops/<YYYY-MM-DD-HHmmss>-growth.md
 ```
 
 Use this structure:

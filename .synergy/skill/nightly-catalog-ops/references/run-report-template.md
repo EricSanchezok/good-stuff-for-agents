@@ -3,7 +3,7 @@
 Write total run reports under:
 
 ```txt
-reports/nightly-catalog-ops/<YYYY-MM-DD>-run.md
+reports/nightly-catalog-ops/<YYYY-MM-DD-HHmmss>-run.md
 ```
 
 Use this structure:
