@@ -28,10 +28,6 @@ I made this pack for the moment a UI request is still foggy but needs to become 
 
 I trust this shelf pick because I checked that every member skill has analysis behind it, the licenses are recorded as verified, the route draws from 2 sources, and evaluation landed at 0.79. Anthropic design, brand, canvas, and theme skills provide creation support while the Microsoft design-review skill gives the final critique pass. I didn’t find a blocking conflict in the published notes.
 
-## A small note before using it
-
-Freshness note: this passed review, but something it depends on may have changed since then.
-
 ## Version
 
 0.1.0 · Updated 2026-07-08T10:40:19.783Z

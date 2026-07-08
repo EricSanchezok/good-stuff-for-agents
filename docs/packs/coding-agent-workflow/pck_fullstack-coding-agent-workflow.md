@@ -31,10 +31,6 @@ I made this pack as a practical delivery route for coding agents: plan the work,
 
 I trust this shelf pick because I checked that every member skill has analysis behind it, the licenses are recorded as verified, the route draws from 1 source, and evaluation landed at 0.82. All member skills come from the same MIT-licensed source and cover complementary delivery stages from plan to launch. I didn’t find a blocking conflict in the published notes.
 
-## A small note before using it
-
-Freshness note: this passed review, but something it depends on may have changed since then.
-
 ## Version
 
 0.1.0 · Updated 2026-07-08T10:40:19.810Z

@@ -69,7 +69,7 @@ members:
 name: Fullstack Coding Agent Workflow
 pack_id: pck_fullstack-coding-agent-workflow
 schema_version: 1
-status: stale
+status: published
 updated_at: '2026-07-08T10:40:19.810Z'
 version: 0.1.0
 workflow:
