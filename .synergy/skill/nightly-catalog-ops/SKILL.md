@@ -68,6 +68,7 @@ You must leave behind:
 1. **Confirm total-run authorization.** You identify whether the run may write files, commit, and push. Scheduled automation or explicit user instruction can authorize ordinary commits/pushes; otherwise stop before git actions.
 2. **Load `catalog-maintenance` for preflight.** You run or follow maintenance preflight: git status, validation, migration, source sync for approved sources, index/render/check gates as appropriate.
 3. **Load `catalog-growth-ops`.** You run autonomous growth: demand scan, source discovery, activation, sync, extraction, normalization, analysis, relations, pack synthesis, evaluation, and growth report.
+   After growth returns, verify that candidate packs created or changed in this run have evaluation output unless a concrete blocker is recorded. If evaluations are merely pending, load `catalog-evaluation` before finalizing.
 4. **Load `catalog-maintenance` for final gates.** You rerun validation, indexing, public rendering, drift, links, status, and public-boundary scan.
 5. **Load `catalog-publishing` when public output needs focused repair.** You keep public docs visitor-facing and never hand-edit generated public sections as a workaround.
 6. **Write total run report.** You summarize maintenance, growth, publishing, skipped phases, blockers, verification, and git actions.

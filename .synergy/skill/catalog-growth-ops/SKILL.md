@@ -86,7 +86,7 @@ You must leave behind:
 11. **Load `skill-dedup-relations`.** You append evidence-backed relation edges and leave merge/delete decisions blocked.
 12. **Run impact detection.** You use catalog-data impact checks for stale published packs.
 13. **Load `pack-synthesis`.** You choose pack intents from demand scan, catalog gaps, and analyzed compatible skills. You skip when evidence is insufficient.
-14. **Load `catalog-evaluation`.** You evaluate candidate packs and write reviewed evaluation output.
+14. **Load `catalog-evaluation`.** You evaluate candidate packs and write reviewed evaluation output. If this run wrote or changed any candidate pack, evaluation is part of the same growth run, not a next-run priority. Missing or medium-confidence evidence should produce a `needs_work` evaluation rather than an unevaluated pending state.
 15. **Validate and index.** You run catalog validation and index rebuild after writes.
 16. **Write growth report.** You record inspected demand, sources, activated records, phase outputs, skipped items, blockers, and next-run priorities.
 
