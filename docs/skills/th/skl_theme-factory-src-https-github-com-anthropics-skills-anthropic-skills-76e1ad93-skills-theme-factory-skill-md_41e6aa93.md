@@ -4,7 +4,7 @@
 
 ## Summary
 
-Theme Factory — provides agent workflow guidance for frontend-design tasks. Source: src_https-github-com-anthropics-skills-anthropic-skills_76e1ad93.
+Theme Factory — Creates and applies consistent visual themes (CSS tokens, color systems). Sets up palette, typography, spacing, shadows, border-radius, animation tokens. Domains: frontend-design. Triggers: theming, design system setup, color palette.
 
 ## Source
 
@@ -38,7 +38,7 @@ No related skills are public yet.
 
 ## Public Analysis Summary
 
-Theme Factory — provides agent workflow guidance for frontend-design tasks. Source: src_https-github-com-anthropics-skills-anthropic-skills_76e1ad93.
+Theme Factory — Creates and applies consistent visual themes (CSS tokens, color systems). Sets up palette, typography, spacing, shadows, border-radius, animation tokens. Domains: frontend-design. Triggers: theming, design system setup, color palette.
 
 ## Confidence and Limitations
 

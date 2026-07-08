@@ -4,7 +4,7 @@
 
 ## Summary
 
-Internal Comms — provides agent workflow guidance for documentation-content tasks. Source: src_https-github-com-anthropics-skills-anthropic-skills_76e1ad93.
+Internal Comms — Guides agents through crafting company internal communications: status reports, project updates, newsletters, leadership updates. Emphasizes appropriate tone, conciseness, organizational sensitivity. Domains: documentation-content.
 
 ## Source
 
@@ -38,7 +38,7 @@ No related skills are public yet.
 
 ## Public Analysis Summary
 
-Internal Comms — provides agent workflow guidance for documentation-content tasks. Source: src_https-github-com-anthropics-skills-anthropic-skills_76e1ad93.
+Internal Comms — Guides agents through crafting company internal communications: status reports, project updates, newsletters, leadership updates. Emphasizes appropriate tone, conciseness, organizational sensitivity. Domains: documentation-content.
 
 ## Confidence and Limitations
 

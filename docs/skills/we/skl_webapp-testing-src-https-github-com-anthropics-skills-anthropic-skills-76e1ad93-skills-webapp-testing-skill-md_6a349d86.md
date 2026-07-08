@@ -4,7 +4,7 @@
 
 ## Summary
 
-Webapp Testing — provides agent workflow guidance for code-quality tasks. Source: src_https-github-com-anthropics-skills-anthropic-skills_76e1ad93.
+Webapp Testing — Teaches agents to test web applications using Playwright: write tests, inspect DOM, take screenshots, check network requests, verify UI behavior. Domains: browser-testing, code-quality. Triggers: web testing, e2e tests, QA automation.
 
 ## Source
 
@@ -38,7 +38,7 @@ No related skills are public yet.
 
 ## Public Analysis Summary
 
-Webapp Testing — provides agent workflow guidance for code-quality tasks. Source: src_https-github-com-anthropics-skills-anthropic-skills_76e1ad93.
+Webapp Testing — Teaches agents to test web applications using Playwright: write tests, inspect DOM, take screenshots, check network requests, verify UI behavior. Domains: browser-testing, code-quality. Triggers: web testing, e2e tests, QA automation.
 
 ## Confidence and Limitations
 

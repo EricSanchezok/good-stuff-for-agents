@@ -4,7 +4,7 @@
 
 ## Summary
 
-Canvas Design — provides agent workflow guidance for frontend-design tasks. Source: src_https-github-com-anthropics-skills-anthropic-skills_76e1ad93.
+Canvas Design — Creates visual art (.png, .pdf) using design philosophy. Uses HTML canvas, SVG, p5.js. Strong design-opinionated approach: named color palette, intentional typography pairing, distinctive visual identity per brief. Domains: creative-media, frontend-design. Triggers: poster/art/banner design, visual identity.
 
 ## Source
 
@@ -38,7 +38,7 @@ No related skills are public yet.
 
 ## Public Analysis Summary
 
-Canvas Design — provides agent workflow guidance for frontend-design tasks. Source: src_https-github-com-anthropics-skills-anthropic-skills_76e1ad93.
+Canvas Design — Creates visual art (.png, .pdf) using design philosophy. Uses HTML canvas, SVG, p5.js. Strong design-opinionated approach: named color palette, intentional typography pairing, distinctive visual identity per brief. Domains: creative-media, frontend-design. Triggers: poster/art/banner design, visual identity.
 
 ## Confidence and Limitations
 

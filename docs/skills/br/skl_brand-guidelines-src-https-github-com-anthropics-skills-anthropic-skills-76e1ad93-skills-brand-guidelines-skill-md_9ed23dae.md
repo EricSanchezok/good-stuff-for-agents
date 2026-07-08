@@ -4,7 +4,7 @@
 
 ## Summary
 
-Brand Guidelines — provides agent workflow guidance for frontend-design tasks. Source: src_https-github-com-anthropics-skills-anthropic-skills_76e1ad93.
+Brand Guidelines — Applies Anthropic's official brand colors and typography to any artifact (slides, docs, HTML). Loads brand token references: warm-cream (#F4F1EA) background, specific typography scales, logo usage rules. Domains: frontend-design, documentation-content. Triggers: brand-consistent design, company materials.
 
 ## Source
 
@@ -38,7 +38,7 @@ No related skills are public yet.
 
 ## Public Analysis Summary
 
-Brand Guidelines — provides agent workflow guidance for frontend-design tasks. Source: src_https-github-com-anthropics-skills-anthropic-skills_76e1ad93.
+Brand Guidelines — Applies Anthropic's official brand colors and typography to any artifact (slides, docs, HTML). Loads brand token references: warm-cream (#F4F1EA) background, specific typography scales, logo usage rules. Domains: frontend-design, documentation-content. Triggers: brand-consistent design, company materials.
 
 ## Confidence and Limitations
 

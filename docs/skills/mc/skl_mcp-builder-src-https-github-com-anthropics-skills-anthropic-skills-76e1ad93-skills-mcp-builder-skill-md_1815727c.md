@@ -4,7 +4,7 @@
 
 ## Summary
 
-Mcp Builder — provides agent workflow guidance for frontend-design tasks. Source: src_https-github-com-anthropics-skills-anthropic-skills_76e1ad93.
+Mcp Builder — Teaches agents to build MCP (Model Context Protocol) servers. Covers: server architecture, tool registration, resource exposure, prompt templates, transport protocols (stdio/SSE). Python/TypeScript/Go. Domains: api-tooling, agent-ecosystem. Triggers: MCP server creation, tool integration.
 
 ## Source
 
@@ -38,7 +38,7 @@ No published packs use this skill yet.
 
 ## Public Analysis Summary
 
-Mcp Builder — provides agent workflow guidance for frontend-design tasks. Source: src_https-github-com-anthropics-skills-anthropic-skills_76e1ad93.
+Mcp Builder — Teaches agents to build MCP (Model Context Protocol) servers. Covers: server architecture, tool registration, resource exposure, prompt templates, transport protocols (stdio/SSE). Python/TypeScript/Go. Domains: api-tooling, agent-ecosystem. Triggers: MCP server creation, tool integration.
 
 ## Confidence and Limitations
 

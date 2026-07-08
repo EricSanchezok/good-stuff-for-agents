@@ -4,7 +4,7 @@
 
 ## Summary
 
-Doc Coauthoring — provides agent workflow guidance for documentation-content tasks. Source: src_https-github-com-anthropics-skills-anthropic-skills_76e1ad93.
+Doc Coauthoring — Guides agents through collaborative document writing: structured workflow (gather context→draft→review→polish), narrative structure, audience awareness, iterative refinement. Domains: documentation-content. Triggers: long-form writing, proposals, technical docs, co-authoring.
 
 ## Source
 
@@ -38,7 +38,7 @@ No related skills are public yet.
 
 ## Public Analysis Summary
 
-Doc Coauthoring — provides agent workflow guidance for documentation-content tasks. Source: src_https-github-com-anthropics-skills-anthropic-skills_76e1ad93.
+Doc Coauthoring — Guides agents through collaborative document writing: structured workflow (gather context→draft→review→polish), narrative structure, audience awareness, iterative refinement. Domains: documentation-content. Triggers: long-form writing, proposals, technical docs, co-authoring.
 
 ## Confidence and Limitations
 

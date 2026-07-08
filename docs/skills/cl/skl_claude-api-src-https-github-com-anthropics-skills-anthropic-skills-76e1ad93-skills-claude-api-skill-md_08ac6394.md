@@ -4,7 +4,7 @@
 
 ## Summary
 
-Claude Api — provides agent workflow guidance for api-tooling tasks. Source: src_https-github-com-anthropics-skills-anthropic-skills_76e1ad93.
+Claude Api — Comprehensive guide for Claude API usage (74KB skill). Covers: API parameters, message structures, system prompts, tool use, streaming, error handling, rate limits, cost optimization, extended thinking. Domains: api-tooling, agent-ecosystem. Triggers: Claude API integration, API troubleshooting. High tool risk: can make real API calls.
 
 ## Source
 
@@ -38,7 +38,7 @@ No related skills are public yet.
 
 ## Public Analysis Summary
 
-Claude Api — provides agent workflow guidance for api-tooling tasks. Source: src_https-github-com-anthropics-skills-anthropic-skills_76e1ad93.
+Claude Api — Comprehensive guide for Claude API usage (74KB skill). Covers: API parameters, message structures, system prompts, tool use, streaming, error handling, rate limits, cost optimization, extended thinking. Domains: api-tooling, agent-ecosystem. Triggers: Claude API integration, API troubleshooting. High tool risk: can make real API calls.
 
 ## Confidence and Limitations
 

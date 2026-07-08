@@ -4,7 +4,7 @@
 
 ## Summary
 
-Slack Gif Creator — provides agent workflow guidance for creative-media tasks. Source: src_https-github-com-anthropics-skills-anthropic-skills_76e1ad93.
+Slack Gif Creator — Creates animated GIFs for Slack: text animations, countdowns, loading spinners, celebration effects. Uses Canvas/gif.js. Domains: creative-media. Triggers: Slack GIF, animated reaction, team celebration.
 
 ## Source
 
@@ -38,7 +38,7 @@ No related skills are public yet.
 
 ## Public Analysis Summary
 
-Slack Gif Creator — provides agent workflow guidance for creative-media tasks. Source: src_https-github-com-anthropics-skills-anthropic-skills_76e1ad93.
+Slack Gif Creator — Creates animated GIFs for Slack: text animations, countdowns, loading spinners, celebration effects. Uses Canvas/gif.js. Domains: creative-media. Triggers: Slack GIF, animated reaction, team celebration.
 
 ## Confidence and Limitations
 

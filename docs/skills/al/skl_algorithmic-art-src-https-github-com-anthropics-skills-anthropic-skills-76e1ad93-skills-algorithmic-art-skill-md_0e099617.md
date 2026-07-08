@@ -4,7 +4,7 @@
 
 ## Summary
 
-Algorithmic Art — provides agent workflow guidance for frontend-design tasks. Source: src_https-github-com-anthropics-skills-anthropic-skills_76e1ad93.
+Algorithmic Art — Teaches agents to create generative algorithmic art using p5.js. Core workflow: brainstorming concept, writing p5.js code with geometric patterns/particle systems/noise fields, iterating on visual output. Domains: creative-media, frontend-design. Triggers: art generation, creative coding, visual experiments. No elevated tool requirements.
 
 ## Source
 
@@ -38,7 +38,7 @@ No related skills are public yet.
 
 ## Public Analysis Summary
 
-Algorithmic Art — provides agent workflow guidance for frontend-design tasks. Source: src_https-github-com-anthropics-skills-anthropic-skills_76e1ad93.
+Algorithmic Art — Teaches agents to create generative algorithmic art using p5.js. Core workflow: brainstorming concept, writing p5.js code with geometric patterns/particle systems/noise fields, iterating on visual output. Domains: creative-media, frontend-design. Triggers: art generation, creative coding, visual experiments. No elevated tool requirements.
 
 ## Confidence and Limitations
 

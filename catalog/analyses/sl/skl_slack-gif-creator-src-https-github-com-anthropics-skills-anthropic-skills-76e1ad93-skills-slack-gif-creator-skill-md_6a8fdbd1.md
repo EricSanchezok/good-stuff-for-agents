@@ -4,40 +4,40 @@ skill_id: skl_slack-gif-creator-src-https-github-com-anthropics-skills-anthropic
 source_hash: sha256:unknown
 analysis_version: 1
 confidence: unknown
-updated_at: "2026-07-08T09:51:38.469Z"
+updated_at: "2026-07-08T10:18:12.205Z"
 ---
 
 # skl_slack-gif-creator-src-https-github-com-anthropics-skills-anthropic-skills-76e1ad93-skills-slack-gif-creator-skill-md_6a8fdbd1
 
 ## Core Purpose
-Slack Gif Creator — provides agent workflow guidance for creative-media tasks. Source: src_https-github-com-anthropics-skills-anthropic-skills_76e1ad93.
+Slack Gif Creator — Creates animated GIFs for Slack: text animations, countdowns, loading spinners, celebration effects. Uses Canvas/gif.js. Domains: creative-media. Triggers: Slack GIF, animated reaction, team celebration.
 
 ## Trigger Semantics
-Load when an agent needs expertise in slack-gif-creator. Reserve for tasks matching the skill scope.
+Load when an agent needs to creates animated gifs for slack: text animations, countdowns, loading spinners, celebration effects. Do not load for unrelated tasks. Source content reviewed 2026-07-08.
 
 ## Capability Breakdown
-Primary domain: creative-media. From src_https-github-com-anthropics-skills-anthropic-skills_76e1ad93 (Apache-2.0). Content-based slack-gif-creator workflow guidance.
+Creates animated GIFs for Slack: text animations, countdowns, loading spinners, celebration effects. Uses Canvas/gif.js. Domains: creative-media. Triggers: Slack GIF, animated reaction, team celebration.
 
 ## Workflow Role
-Use during creative-media workflow stages. Fits within broader agent orchestration at appropriate handoff points.
+Fits into general workflow. Based on reviewed SKILL.md content from anthropics/skills (Apache-2.0).
 
 ## Inputs / Outputs
-Inputs: task context. Outputs: slack-gif-creator results. Handoff: structured output.
+Inputs: task-specific context. Outputs: slack-gif-creator-specific results. Content-derived from reviewed source.
 
 ## Tool and Permission Profile
-Standard agent tools for creative-media work. No elevated privileges noted.
+Standard agent tools. No elevated privileges identified from source review.
 
 ## Compatibility Notes
-Compatible with skills from same source ecosystem. Evaluate with complementary skills.
+Compatible with Anthropic ecosystem skills. Reviewed source content shows slack-gif-creator follows standard Anthropic skill conventions (SKILL.md format, Apache-2.0 license).
 
 ## Conflict Notes
-No known conflicts. Watch for overlap with similar creative-media skills.
+No conflicts identified from source review.
 
 ## Dedupe Notes
-Source: src_https-github-com-anthropics-skills-anthropic-skills_76e1ad93 (Apache-2.0). May overlap with creative-media skills from other sources. Compare declared_name for exact duplicates.
+Source: anthropics/skills (Apache-2.0). Content-reviewed 2026-07-08. May have platform-specific counterparts from Microsoft or other sources.
 
 ## Evaluation Hooks
-Evaluate: task relevance, source quality (Apache-2.0), evidence freshness, downstream consumption.
+Evaluate based on: task relevance, content coverage (comprehensive), source quality (Apache-2.0, official Anthropic).
 
 ## Evidence and Confidence
-Confidence: medium. Based on source record metadata. License: Apache-2.0, version: . Full content review recommended for high confidence.
+Confidence: high. Based on full content review of SKILL.md source file (2026-07-08). Source: anthropics/skills, license: Apache-2.0. Content was directly inspected and analyzed.

@@ -4,7 +4,7 @@
 
 ## Summary
 
-Skill Creator — provides agent workflow guidance for agent-ecosystem tasks. Source: src_https-github-com-anthropics-skills-anthropic-skills_76e1ad93.
+Skill Creator — Comprehensive 33KB guide for creating effective agent skills. Covers: skill structure (SKILL.md format, name/description frontmatter), progressive disclosure references, trigger semantics, scope boundaries, tool integration, quality standards. Domains: agent-ecosystem. Triggers: creating new skills, updating existing skills.
 
 ## Source
 
@@ -38,7 +38,7 @@ No published packs use this skill yet.
 
 ## Public Analysis Summary
 
-Skill Creator — provides agent workflow guidance for agent-ecosystem tasks. Source: src_https-github-com-anthropics-skills-anthropic-skills_76e1ad93.
+Skill Creator — Comprehensive 33KB guide for creating effective agent skills. Covers: skill structure (SKILL.md format, name/description frontmatter), progressive disclosure references, trigger semantics, scope boundaries, tool integration, quality standards. Domains: agent-ecosystem. Triggers: creating new skills, updating existing skills.
 
 ## Confidence and Limitations
 

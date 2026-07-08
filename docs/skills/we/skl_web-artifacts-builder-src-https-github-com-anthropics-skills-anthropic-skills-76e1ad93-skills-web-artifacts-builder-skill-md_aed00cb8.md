@@ -4,7 +4,7 @@
 
 ## Summary
 
-Web Artifacts Builder — provides agent workflow guidance for frontend-design tasks. Source: src_https-github-com-anthropics-skills-anthropic-skills_76e1ad93.
+Web Artifacts Builder — Builds complex multi-component HTML artifacts: interactive dashboards, data visualizations, calculators, tools. Uses vanilla HTML/CSS/JS in single-file structure. Domains: frontend-design, api-tooling. Triggers: web tool creation, interactive artifact.
 
 ## Source
 
@@ -38,7 +38,7 @@ No related skills are public yet.
 
 ## Public Analysis Summary
 
-Web Artifacts Builder — provides agent workflow guidance for frontend-design tasks. Source: src_https-github-com-anthropics-skills-anthropic-skills_76e1ad93.
+Web Artifacts Builder — Builds complex multi-component HTML artifacts: interactive dashboards, data visualizations, calculators, tools. Uses vanilla HTML/CSS/JS in single-file structure. Domains: frontend-design, api-tooling. Triggers: web tool creation, interactive artifact.
 
 ## Confidence and Limitations
 

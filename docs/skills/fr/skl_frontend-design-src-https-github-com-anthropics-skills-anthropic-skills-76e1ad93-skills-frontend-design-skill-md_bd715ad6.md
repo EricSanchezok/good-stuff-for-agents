@@ -4,7 +4,7 @@
 
 ## Summary
 
-Frontend Design — provides agent workflow guidance for frontend-design tasks. Source: src_https-github-com-anthropics-skills-anthropic-skills_76e1ad93.
+Frontend Design — Guidance for distinctive intentional frontend design. Teaches design philosophy: brainstorm→explore→plan→critique→build→critique again. Avoid AI-generated design defaults (cream bg, dark+acid accent, broadsheet). Emphasis on subject-grounded design, opinionated typography pairing, signature element. Domains: frontend-design. Triggers: UI design, redesign, visual identity.
 
 ## Source
 
@@ -38,7 +38,7 @@ No published packs use this skill yet.
 
 ## Public Analysis Summary
 
-Frontend Design — provides agent workflow guidance for frontend-design tasks. Source: src_https-github-com-anthropics-skills-anthropic-skills_76e1ad93.
+Frontend Design — Guidance for distinctive intentional frontend design. Teaches design philosophy: brainstorm→explore→plan→critique→build→critique again. Avoid AI-generated design defaults (cream bg, dark+acid accent, broadsheet). Emphasis on subject-grounded design, opinionated typography pairing, signature element. Domains: frontend-design. Triggers: UI design, redesign, visual identity.
 
 ## Confidence and Limitations
 
