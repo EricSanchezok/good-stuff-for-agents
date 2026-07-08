@@ -30,7 +30,7 @@ Use when the trigger semantics and workflow stage match the task. Do not use whe
 
 ## Related Packs
 
-No published packs use this skill yet.
+- [Frontend Design and Review](../../packs/frontend-design/pck_frontend-design-and-review.md)
 
 ## Related Skills
 

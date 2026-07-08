@@ -42,4 +42,4 @@
 
 ## Packs Using This Source
 
-No published packs use this source yet.
+- [Fullstack Coding Agent Workflow](../packs/coding-agent-workflow/pck_fullstack-coding-agent-workflow.md)

@@ -7,10 +7,10 @@
 <p align="center"><strong>A friendly field guide to useful agent skills, packs, sources, and domains.</strong></p>
 
 <p align="center">
-  <a href="docs/packs/README.md"><img alt="Published packs" src="https://img.shields.io/badge/packs-0-F7C66A?style=for-the-badge&labelColor=101014"></a>
+  <a href="docs/packs/README.md"><img alt="Published packs" src="https://img.shields.io/badge/packs-2-F7C66A?style=for-the-badge&labelColor=101014"></a>
   <a href="docs/skills/README.md"><img alt="Indexed skills" src="https://img.shields.io/badge/skills-89-B879FF?style=for-the-badge&labelColor=101014"></a>
   <a href="docs/sources/README.md"><img alt="Tracked sources" src="https://img.shields.io/badge/sources-6-61F4C6?style=for-the-badge&labelColor=101014"></a>
-  <a href="docs/domains/README.md"><img alt="Domains" src="https://img.shields.io/badge/domains-0-FFF7DF?style=for-the-badge&labelColor=101014"></a>
+  <a href="docs/domains/README.md"><img alt="Domains" src="https://img.shields.io/badge/domains-2-FFF7DF?style=for-the-badge&labelColor=101014"></a>
 </p>
 
 <p align="center">
@@ -36,8 +36,12 @@ Welcome to **Good Stuff for Agents** — a living catalog of agent skills, sourc
 
 ## Featured packs
 
-> The first public packs are still warming up. Once a pack is ready, it lands here.
+| Pack | Domain | Score |
+| --- | --- | --- |
+| [Frontend Design and Review](docs/packs/frontend-design/pck_frontend-design-and-review.md) | frontend-design | 0.79 |
+| [Fullstack Coding Agent Workflow](docs/packs/coding-agent-workflow/pck_fullstack-coding-agent-workflow.md) | coding-agent-workflow | 0.82 |
 
 ## Browse by domain
 
-> No public domains yet. This section will fill in as the catalog grows.
+- [coding-agent-workflow](docs/domains/coding-agent-workflow.md) · 1 packs · 0 skills
+- [frontend-design](docs/domains/frontend-design.md) · 1 packs · 0 skills

@@ -45,8 +45,8 @@ members:
 name: Frontend Design and Review
 pack_id: pck_frontend-design-and-review
 schema_version: 1
-status: candidate
-updated_at: '2026-07-08T09:55:09.709Z'
+status: stale
+updated_at: '2026-07-08T10:40:19.783Z'
 version: 0.1.0
 workflow: 1) design (brand+theme) → 2) creation (frontend+canvas design) → 3) review
   (design review)

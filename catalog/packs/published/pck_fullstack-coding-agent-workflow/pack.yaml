@@ -60,8 +60,8 @@ members:
 name: Fullstack Coding Agent Workflow
 pack_id: pck_fullstack-coding-agent-workflow
 schema_version: 1
-status: candidate
-updated_at: '2026-07-08T09:55:09.458Z'
+status: stale
+updated_at: '2026-07-08T10:40:19.810Z'
 version: 0.1.0
 workflow: 1) planning → 2) implementation (incremental+TDD) → 3) review (code review+security)
   → 4) deployment (CI/CD+launch)

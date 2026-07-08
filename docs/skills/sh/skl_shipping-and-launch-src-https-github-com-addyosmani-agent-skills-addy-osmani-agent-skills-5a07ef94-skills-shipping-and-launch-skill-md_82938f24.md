@@ -30,7 +30,7 @@ Use when the trigger semantics and workflow stage match the task. Do not use whe
 
 ## Related Packs
 
-No published packs use this skill yet.
+- [Fullstack Coding Agent Workflow](../../packs/coding-agent-workflow/pck_fullstack-coding-agent-workflow.md)
 
 ## Related Skills
 

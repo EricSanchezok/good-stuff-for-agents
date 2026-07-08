@@ -1,0 +1,60 @@
+{
+  "created_at": "2026-07-08T10:13:21.920Z",
+  "evaluation_id": "eval_fullstack-coding-agent-workflow-2026-07-08",
+  "failure_modes": [
+    "evidence_quality_medium: analyses are metadata-derived, not content-reviewed"
+  ],
+  "kind": "pack",
+  "metrics": {
+    "actionability": {
+      "evidence": "Stages clear with distinct roles. But without high-confidence analyses, trigger semantics are imprecise.",
+      "score": 0.75
+    },
+    "compatibility": {
+      "evidence": "All members from single source (addyosmani/agent-skills, MIT). No tool conflicts.",
+      "score": 0.9
+    },
+    "conflict_control": {
+      "evidence": "No unresolved conflicts. No relation edges indicate conflicts.",
+      "score": 0.95
+    },
+    "coverage": {
+      "evidence": "7 members across 4 stages. Could add documentation or context engineering for broader coverage.",
+      "score": 0.8
+    },
+    "evidence_quality": {
+      "evidence": "Members have analyses but medium-confidence (metadata-derived). No full content review performed.",
+      "score": 0.6
+    },
+    "freshness": {
+      "evidence": "All version pins from 2026-07-08 sync. Source is regularly synced.",
+      "score": 0.85
+    },
+    "non_redundancy": {
+      "evidence": "2 excluded with reasoning. TDD + code-review may partially overlap on quality. Incremental and planning are distinct.",
+      "score": 0.7
+    },
+    "relevance": {
+      "evidence": "Covers full SDLC: plan→implement→test→review→deploy. High-demand intent for agent coding workflows.",
+      "score": 0.9
+    },
+    "workflow_coherence": {
+      "evidence": "4-stage: planning→implementation(incremental+TDD)→review(code+security)→deployment(CI/CD+launch). Clear ordering.",
+      "score": 0.85
+    }
+  },
+  "output_id": "pck_fullstack-coding-agent-workflow",
+  "overall_score": 0.817,
+  "passed": true,
+  "recommendations": [
+    {
+      "action": "Upgrade analyses from medium to high confidence via content inspection of SKILL.md source files",
+      "owner": "skill-deep-analysis"
+    },
+    {
+      "action": "Consider adding documentation-and-adrs or context-engineering as optional stage-0 members",
+      "owner": "pack-synthesis"
+    }
+  ],
+  "schema_version": 1
+}
