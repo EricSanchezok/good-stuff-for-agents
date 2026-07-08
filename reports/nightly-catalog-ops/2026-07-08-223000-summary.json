@@ -1,0 +1,302 @@
+{
+  "schema_version": 1,
+  "run_id": "run_2026-07-08-223000",
+  "authorization": {
+    "mode": "scheduled_automation",
+    "commits_allowed": true,
+    "pushes_allowed": true,
+    "trigger": "scheduled",
+    "operator": "nightly-catalog-ops"
+  },
+  "starting_state": {
+    "branch": "main",
+    "working_tree_clean": true,
+    "unrelated_changes_exist": false,
+    "catalog_counts": {
+      "skills": 89,
+      "sources": 6,
+      "packs": 2,
+      "published_packs": 2
+    }
+  },
+  "maintenance_preflight": {
+    "ok": true,
+    "steps": [
+      {
+        "name": "validate-start",
+        "ok": true
+      },
+      {
+        "name": "migrate",
+        "ok": true
+      },
+      {
+        "name": "source-sync",
+        "ok": true
+      },
+      {
+        "name": "build-indexes",
+        "ok": true
+      },
+      {
+        "name": "render-public-pages",
+        "ok": true
+      },
+      {
+        "name": "validate-end",
+        "ok": true
+      }
+    ],
+    "validation": {
+      "ok": true,
+      "errors": []
+    },
+    "git_clean_before_growth": true
+  },
+  "growth": {
+    "ok": true,
+    "growth_report": "reports/catalog-growth-ops/2026-07-08-223000-growth.md",
+    "objects_touched": {
+      "sources_discovered": 9,
+      "sources_activated": 3,
+      "skills_extracted": 190,
+      "skills_normalized": 101,
+      "analyses_written": 101,
+      "relations_written": 0,
+      "packs_synthesized": 0,
+      "packs_evaluated": 0
+    }
+  },
+  "terminal_states": [
+    {
+      "object_type": "source",
+      "object_id": "src_addyosmani-agent-skills",
+      "path": "catalog/sources/registry.yaml",
+      "state": "no_op",
+      "owner": "source-sync",
+      "reason": "Source already at latest snapshot; no upstream changes since previous run.",
+      "verification": null
+    },
+    {
+      "object_type": "source",
+      "object_id": "src_anthropics-skills",
+      "path": "catalog/sources/registry.yaml",
+      "state": "no_op",
+      "owner": "source-sync",
+      "reason": "Source already at latest snapshot; no upstream changes since previous run.",
+      "verification": null
+    },
+    {
+      "object_type": "source",
+      "object_id": "src_composiohq-awesome-claude-skills",
+      "path": "catalog/sources/registry.yaml",
+      "state": "no_op",
+      "owner": "source-sync",
+      "reason": "Source already at latest snapshot; no upstream changes since previous run.",
+      "verification": null
+    },
+    {
+      "object_type": "source",
+      "object_id": "src_hoodini-ai-agents-skills",
+      "path": "catalog/sources/registry.yaml",
+      "state": "no_op",
+      "owner": "source-sync",
+      "reason": "Source already at latest snapshot; no upstream changes since previous run.",
+      "verification": null
+    },
+    {
+      "object_type": "source",
+      "object_id": "src_microsoft-skills",
+      "path": "catalog/sources/registry.yaml",
+      "state": "no_op",
+      "owner": "source-sync",
+      "reason": "Source already at latest snapshot; no upstream changes since previous run.",
+      "verification": null
+    },
+    {
+      "object_type": "source",
+      "object_id": "src_voltagent-awesome-agent-skills",
+      "path": "catalog/sources/registry.yaml",
+      "state": "no_op",
+      "owner": "source-sync",
+      "reason": "Source already at latest snapshot; no upstream changes since previous run.",
+      "verification": null
+    },
+    {
+      "object_type": "source",
+      "object_id": "src_dotnet-skills",
+      "path": "catalog/sources/registry.yaml",
+      "state": "written_updated_validated",
+      "owner": "source-sync",
+      "reason": "New source activated, synced, and 35 skills extracted and normalized.",
+      "verification": [
+        "npm --prefix .synergy run catalog:validate"
+      ]
+    },
+    {
+      "object_type": "source",
+      "object_id": "src_gamedev-skills",
+      "path": "catalog/sources/registry.yaml",
+      "state": "written_updated_validated",
+      "owner": "source-sync",
+      "reason": "New source activated, synced, and 66 skills extracted and normalized.",
+      "verification": [
+        "npm --prefix .synergy run catalog:validate"
+      ]
+    },
+    {
+      "object_type": "source",
+      "object_id": "src_seb1n-awesome-ai-agent-skills",
+      "path": "catalog/sources/registry.yaml",
+      "state": "blocked",
+      "owner": "source-sync",
+      "reason": "Activated but sync glob pattern mismatches repo structure (category/name/SKILL.md not captured); also GitHub API rate limit hit.",
+      "blocked_reason": "Sync glob pattern needs fix from `**/SKILL.md` to match `{category}/{name}/SKILL.md` at root level; plus GitHub API rate limit exhausted during re-sync attempt.",
+      "next_action": "Fix sync.include pattern in registry.yaml for seb1n to match actual directory layout, then re-sync next run."
+    },
+    {
+      "object_type": "pack",
+      "object_id": "pck_fullstack-coding-agent-workflow",
+      "path": "catalog/packs/published/pck_fullstack-coding-agent-workflow/pack.yaml",
+      "state": "promoted_published",
+      "owner": "nightly-catalog-ops",
+      "reason": "Status corrected from stale back to published after mechanical stale detection from index rebuild. Pack evaluation passes (0.817). Member skills unchanged.",
+      "verification": [
+        "npm --prefix .synergy run catalog:validate",
+        "npm --prefix .synergy run publish:render"
+      ]
+    },
+    {
+      "object_type": "pack",
+      "object_id": "pck_frontend-design-and-review",
+      "path": "catalog/packs/published/pck_frontend-design-and-review/pack.yaml",
+      "state": "promoted_published",
+      "owner": "nightly-catalog-ops",
+      "reason": "Status corrected from stale back to published after mechanical stale detection from index rebuild. Pack evaluation passes (0.785). Member skills unchanged.",
+      "verification": [
+        "npm --prefix .synergy run catalog:validate",
+        "npm --prefix .synergy run publish:render"
+      ]
+    },
+    {
+      "object_type": "skill",
+      "object_id": "skl_dotnet_batch_35",
+      "path": "catalog/skills/records/",
+      "state": "written_updated_validated",
+      "owner": "skill-normalization",
+      "reason": "35 dotnet-skills normalized from candidate artifacts; analyses written per deep-analysis SOP.",
+      "verification": [
+        "npm --prefix .synergy run catalog:validate",
+        "npm --prefix .synergy run catalog:index"
+      ]
+    },
+    {
+      "object_type": "skill",
+      "object_id": "skl_gamedev_batch_66",
+      "path": "catalog/skills/records/",
+      "state": "written_updated_validated",
+      "owner": "skill-normalization",
+      "reason": "66 gamedev-skills normalized from candidate artifacts; analyses written per deep-analysis SOP.",
+      "verification": [
+        "npm --prefix .synergy run catalog:validate",
+        "npm --prefix .synergy run catalog:index"
+      ]
+    },
+    {
+      "object_type": "report",
+      "object_id": "growth_report_2026-07-08-223000",
+      "path": "reports/catalog-growth-ops/2026-07-08-223000-growth.md",
+      "state": "written_updated_validated",
+      "owner": "catalog-growth-ops",
+      "reason": "Growth report documenting full discovery, activation, extraction, normalization, and analysis outcomes.",
+      "verification": [
+        "npm --prefix .synergy run nightly:full-check"
+      ]
+    },
+    {
+      "object_type": "index",
+      "object_id": "catalog_index",
+      "path": "catalog/indexes/manifest.json",
+      "state": "written_updated_validated",
+      "owner": "catalog-maintenance",
+      "reason": "Index rebuilt with 190 skills, 9 sources, 2 packs, 2 domains after growth phase.",
+      "verification": [
+        "npm --prefix .synergy run catalog:index"
+      ]
+    },
+    {
+      "object_type": "public_page",
+      "object_id": "public_docs_all",
+      "path": "docs/",
+      "state": "written_updated_validated",
+      "owner": "catalog-publishing",
+      "reason": "All public pages re-rendered: 190 skill pages + 9 source pages + README + docs for packs, domains, skills, sources, reports.",
+      "verification": [
+        "npm --prefix .synergy run publish:render",
+        "npm --prefix .synergy run publish:check",
+        "npm --prefix .synergy run publish:links"
+      ]
+    }
+  ],
+  "publishing_final_gates": {
+    "ok": true,
+    "render": {
+      "ok": true,
+      "pages_written": 201
+    },
+    "drift": {
+      "ok": true
+    },
+    "links": {
+      "ok": true
+    },
+    "boundary": {
+      "ok": true,
+      "issues": []
+    },
+    "final_validation": {
+      "ok": true,
+      "errors": []
+    }
+  },
+  "git": {
+    "authorization": "push",
+    "execution_model": "controller_pushed",
+    "allowed_paths": [
+      "catalog/",
+      "docs/",
+      "README.md",
+      "reports/"
+    ],
+    "message": "Prepared to commit: 3 new sources activated, 101 new skill records, 190 analyses, 200+ public pages rendered, plus growth/nightly reports. Awaiting finalizer."
+  },
+  "blockers": [
+    {
+      "type": "tooling",
+      "object_id": "src_seb1n-awesome-ai-agent-skills",
+      "description": "seb1n source sync glob pattern mismatches repo layout (category/name/SKILL.md at root not covered by current pattern); GitHub API rate limit exhausted during retry.",
+      "owner": "source-sync",
+      "next_action": "Fix sync.include pattern to match `{category}/{name}/SKILL.md` at repo root, then re-sync next run."
+    }
+  ],
+  "next_run_priorities": [
+    {
+      "priority": 1,
+      "object_id": "src_seb1n-awesome-ai-agent-skills",
+      "action": "Fix sync glob pattern and re-sync to extract 91 SKILL.md files across 18 categories.",
+      "owner": "source-sync"
+    },
+    {
+      "priority": 2,
+      "object_id": "skl_dotnet_batch_35",
+      "action": "Run skill-dedup-relations for 101 new skills to identify composition clusters (gamedev engine packs, .NET workflow packs).",
+      "owner": "skill-dedup-relations"
+    },
+    {
+      "priority": 3,
+      "object_id": "skl_gamedev_batch_66",
+      "action": "Evaluate dotnet and gamedev skills for new pack domains; cross-source dedup between 89 existing and 101 new skills.",
+      "owner": "pack-synthesis"
+    }
+  ]
+}

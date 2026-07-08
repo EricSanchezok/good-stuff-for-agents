@@ -1,0 +1,46 @@
+analysis:
+  hash: null
+  path: catalog/analyses/ro/skl_roblox-luau-src-https-github-com-gamedev-skills-awesome-gamedev-agent-skills-gamedev-agent-skills-8ed84037-skills-other-engines-roblox-luau-skill-md_d9d9d808.md
+canonical_name: roblox-luau
+canonical_skill_id: skl_roblox-luau-src-https-github-com-gamedev-skills-awesome-gamedev-agent-skills-gamedev-agent-skills-8ed84037-skills-other-engines-roblox-luau-skill-md_d9d9d808
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-08T22:36:10.000Z'
+curation:
+  notes: []
+display_name: Roblox Luau
+identity:
+  aliases: []
+  current_version_id: sha256:19ff657133039ccdfa11de8c5ed50b3f6d39c5a2
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: LICENSE file at repo root, Apache-2.0
+    spdx: Apache-2.0
+    verified: true
+  path: skills/other-engines/roblox-luau/SKILL.md
+  source_id: src_https-github-com-gamedev-skills-awesome-gamedev-agent-skills-gamedev-agent-skills_8ed84037
+  type: github_repo
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-08T22:36:10.000Z'

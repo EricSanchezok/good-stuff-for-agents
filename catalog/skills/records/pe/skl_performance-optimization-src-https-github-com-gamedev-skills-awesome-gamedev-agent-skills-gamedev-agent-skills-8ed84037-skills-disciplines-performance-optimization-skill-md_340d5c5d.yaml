@@ -1,0 +1,46 @@
+analysis:
+  hash: null
+  path: catalog/analyses/pe/skl_performance-optimization-src-https-github-com-gamedev-skills-awesome-gamedev-agent-skills-gamedev-agent-skills-8ed84037-skills-disciplines-performance-optimization-skill-md_340d5c5d.md
+canonical_name: performance-optimization
+canonical_skill_id: skl_performance-optimization-src-https-github-com-gamedev-skills-awesome-gamedev-agent-skills-gamedev-agent-skills-8ed84037-skills-disciplines-performance-optimization-skill-md_340d5c5d
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-08T22:36:10.000Z'
+curation:
+  notes: []
+display_name: Performance Optimization
+identity:
+  aliases: []
+  current_version_id: sha256:b68d5d7e472c630b23e5bd270e072d11b65b6b68
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: LICENSE file at repo root, Apache-2.0
+    spdx: Apache-2.0
+    verified: true
+  path: skills/disciplines/performance-optimization/SKILL.md
+  source_id: src_https-github-com-gamedev-skills-awesome-gamedev-agent-skills-gamedev-agent-skills_8ed84037
+  type: github_repo
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-08T22:36:10.000Z'

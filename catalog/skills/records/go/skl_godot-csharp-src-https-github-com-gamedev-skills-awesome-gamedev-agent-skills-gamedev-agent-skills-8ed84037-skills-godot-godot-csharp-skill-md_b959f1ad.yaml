@@ -1,0 +1,46 @@
+analysis:
+  hash: null
+  path: catalog/analyses/go/skl_godot-csharp-src-https-github-com-gamedev-skills-awesome-gamedev-agent-skills-gamedev-agent-skills-8ed84037-skills-godot-godot-csharp-skill-md_b959f1ad.md
+canonical_name: godot-csharp
+canonical_skill_id: skl_godot-csharp-src-https-github-com-gamedev-skills-awesome-gamedev-agent-skills-gamedev-agent-skills-8ed84037-skills-godot-godot-csharp-skill-md_b959f1ad
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-08T22:36:10.000Z'
+curation:
+  notes: []
+display_name: Godot Csharp
+identity:
+  aliases: []
+  current_version_id: sha256:38ad32ca030716d5c6218d8effb3471166b95abb
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: LICENSE file at repo root, Apache-2.0
+    spdx: Apache-2.0
+    verified: true
+  path: skills/godot/godot-csharp/SKILL.md
+  source_id: src_https-github-com-gamedev-skills-awesome-gamedev-agent-skills-gamedev-agent-skills_8ed84037
+  type: github_repo
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-08T22:36:10.000Z'

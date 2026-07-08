@@ -1,0 +1,46 @@
+analysis:
+  hash: null
+  path: catalog/analyses/ak/skl_akka-hosting-actor-patterns-src-https-github-com-aaronontheweb-dotnet-skills-dotnet-skills-974322da-skills-akka-hosting-actor-patterns-skill-md_66844335.md
+canonical_name: akka-hosting-actor-patterns
+canonical_skill_id: skl_akka-hosting-actor-patterns-src-https-github-com-aaronontheweb-dotnet-skills-dotnet-skills-974322da-skills-akka-hosting-actor-patterns-skill-md_66844335
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-08T22:36:10.000Z'
+curation:
+  notes: []
+display_name: Akka Hosting Actor Patterns
+identity:
+  aliases: []
+  current_version_id: sha256:4491a4797c427d2ed23553c7f5b44fb438e0e8ce
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: LICENSE file at repo root, MIT
+    spdx: MIT
+    verified: true
+  path: skills/akka-hosting-actor-patterns/SKILL.md
+  source_id: src_https-github-com-aaronontheweb-dotnet-skills-dotnet-skills_974322da
+  type: github_repo
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-08T22:36:10.000Z'

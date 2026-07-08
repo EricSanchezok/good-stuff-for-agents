@@ -1,0 +1,46 @@
+analysis:
+  hash: null
+  path: catalog/analyses/pl/skl_playwright-ci-caching-src-https-github-com-aaronontheweb-dotnet-skills-dotnet-skills-974322da-skills-playwright-ci-caching-skill-md_39d24e3f.md
+canonical_name: playwright-ci-caching
+canonical_skill_id: skl_playwright-ci-caching-src-https-github-com-aaronontheweb-dotnet-skills-dotnet-skills-974322da-skills-playwright-ci-caching-skill-md_39d24e3f
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-08T22:36:10.000Z'
+curation:
+  notes: []
+display_name: Playwright Ci Caching
+identity:
+  aliases: []
+  current_version_id: sha256:abf97eb6a2b46b61d927049eec49ace7395f5542
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: LICENSE file at repo root, MIT
+    spdx: MIT
+    verified: true
+  path: skills/playwright-ci-caching/SKILL.md
+  source_id: src_https-github-com-aaronontheweb-dotnet-skills-dotnet-skills_974322da
+  type: github_repo
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-08T22:36:10.000Z'

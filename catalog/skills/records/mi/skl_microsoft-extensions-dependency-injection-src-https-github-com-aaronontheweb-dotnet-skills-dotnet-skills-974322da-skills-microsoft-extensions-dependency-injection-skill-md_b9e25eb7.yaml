@@ -1,0 +1,46 @@
+analysis:
+  hash: null
+  path: catalog/analyses/mi/skl_microsoft-extensions-dependency-injection-src-https-github-com-aaronontheweb-dotnet-skills-dotnet-skills-974322da-skills-microsoft-extensions-dependency-injection-skill-md_b9e25eb7.md
+canonical_name: microsoft-extensions-dependency-injection
+canonical_skill_id: skl_microsoft-extensions-dependency-injection-src-https-github-com-aaronontheweb-dotnet-skills-dotnet-skills-974322da-skills-microsoft-extensions-dependency-injection-skill-md_b9e25eb7
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-08T22:36:10.000Z'
+curation:
+  notes: []
+display_name: Microsoft Extensions Dependency Injection
+identity:
+  aliases: []
+  current_version_id: sha256:4b516cbf8b5f8188eb19d281ac957bb42775d907
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: LICENSE file at repo root, MIT
+    spdx: MIT
+    verified: true
+  path: skills/microsoft-extensions-dependency-injection/SKILL.md
+  source_id: src_https-github-com-aaronontheweb-dotnet-skills-dotnet-skills_974322da
+  type: github_repo
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-08T22:36:10.000Z'

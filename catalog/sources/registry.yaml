@@ -4,14 +4,37 @@ sources:
     evidence: LICENSE file at repo root, MIT
     spdx: MIT
     verified: true
+  name: dotnet-skills
+  schema_version: 1
+  source_id: src_https-github-com-aaronontheweb-dotnet-skills-dotnet-skills_974322da
+  state:
+    consecutive_failures: 1
+    last_checked_at: '2026-07-08T15:02:57.491Z'
+    last_ref: c2ac7e9808f6636f21e99dd850363224459c5a3f
+    last_success_at: '2026-07-08T14:32:54.198Z'
+  status: active
+  sync:
+    exclude:
+    - docs/**
+    - templates/**
+    - scripts/**
+    include:
+    - skills/**/SKILL.md
+  type: github_repo
+  updated_at: '2026-07-08T14:30:29.038Z'
+  url: https://github.com/Aaronontheweb/dotnet-skills
+- license:
+    evidence: LICENSE file at repo root, MIT
+    spdx: MIT
+    verified: true
   name: Addy Osmani Agent Skills
   schema_version: 1
   source_id: src_https-github-com-addyosmani-agent-skills-addy-osmani-agent-skills_5a07ef94
   state:
-    consecutive_failures: 0
-    last_checked_at: '2026-07-08T14:14:59.433Z'
+    consecutive_failures: 1
+    last_checked_at: '2026-07-08T15:02:57.936Z'
     last_ref: 70b7506ce90e200cb47645ddb3f6b8e84fecc047
-    last_success_at: '2026-07-08T14:14:59.433Z'
+    last_success_at: '2026-07-08T14:32:55.728Z'
   status: active
   sync:
     exclude:
@@ -31,10 +54,10 @@ sources:
   schema_version: 1
   source_id: src_https-github-com-anthropics-skills-anthropic-skills_76e1ad93
   state:
-    consecutive_failures: 0
-    last_checked_at: '2026-07-08T14:15:01.416Z'
+    consecutive_failures: 2
+    last_checked_at: '2026-07-08T15:02:58.148Z'
     last_ref: 9d2f1ae187231d8199c64b5b762e1bdf2244733d
-    last_success_at: '2026-07-08T14:15:01.416Z'
+    last_success_at: '2026-07-08T14:32:10.699Z'
   status: active
   sync:
     exclude:
@@ -56,10 +79,10 @@ sources:
   schema_version: 1
   source_id: src_https-github-com-composiohq-awesome-claude-skills-composiohq-awesome-claude-skills_6e1397e8
   state:
-    consecutive_failures: 0
-    last_checked_at: '2026-07-08T14:15:03.445Z'
+    consecutive_failures: 2
+    last_checked_at: '2026-07-08T15:02:58.368Z'
     last_ref: 92568c1edaff1bde5371154f036d959346c145a8
-    last_success_at: '2026-07-08T14:15:03.445Z'
+    last_success_at: '2026-07-08T14:32:12.199Z'
   status: preview
   sync:
     exclude: []
@@ -70,6 +93,30 @@ sources:
   updated_at: '2026-07-07T08:03:52.218Z'
   url: https://github.com/ComposioHQ/awesome-claude-skills
 - license:
+    evidence: LICENSE file at repo root, Apache-2.0
+    spdx: Apache-2.0
+    verified: true
+  name: GameDev Agent Skills
+  schema_version: 1
+  source_id: src_https-github-com-gamedev-skills-awesome-gamedev-agent-skills-gamedev-agent-skills_8ed84037
+  state:
+    consecutive_failures: 2
+    last_checked_at: '2026-07-08T15:02:58.587Z'
+    last_ref: 9d0fa9612225d51d9a89f0a0c6f0fe15d85e3ee0
+    last_success_at: '2026-07-08T14:32:13.443Z'
+  status: active
+  sync:
+    exclude:
+    - templates/**
+    - docs/**
+    - assets/**
+    - router/**
+    include:
+    - skills/**/SKILL.md
+  type: github_repo
+  updated_at: '2026-07-08T14:30:28.938Z'
+  url: https://github.com/gamedev-skills/awesome-gamedev-agent-skills
+- license:
     evidence: README footer states MIT
     spdx: MIT
     verified: true
@@ -77,10 +124,10 @@ sources:
   schema_version: 1
   source_id: src_https-github-com-hoodini-ai-agents-skills-yuv-ai-agent-skills_1308ad13
   state:
-    consecutive_failures: 0
-    last_checked_at: '2026-07-08T14:15:05.062Z'
+    consecutive_failures: 2
+    last_checked_at: '2026-07-08T15:02:58.803Z'
     last_ref: 83e2083e3ec845e28920da5a6f333e254d8a7392
-    last_success_at: '2026-07-08T14:15:05.062Z'
+    last_success_at: '2026-07-08T14:32:14.795Z'
   status: preview
   sync:
     exclude:
@@ -99,10 +146,10 @@ sources:
   schema_version: 1
   source_id: src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e
   state:
-    consecutive_failures: 0
-    last_checked_at: '2026-07-08T14:15:06.782Z'
+    consecutive_failures: 2
+    last_checked_at: '2026-07-08T15:02:59.014Z'
     last_ref: 5d928f2cc2c62b890eed8656458069fd1ef3cc9b
-    last_success_at: '2026-07-08T14:15:06.782Z'
+    last_success_at: '2026-07-08T14:32:16.376Z'
   status: active
   sync:
     exclude:
@@ -115,6 +162,30 @@ sources:
   updated_at: '2026-07-07T08:03:51.952Z'
   url: https://github.com/microsoft/skills
 - license:
+    evidence: LICENSE file at repo root, MIT
+    spdx: MIT
+    verified: true
+  name: seb1n Awesome AI Agent Skills
+  schema_version: 1
+  source_id: src_https-github-com-seb1n-awesome-ai-agent-skills-seb1n-awesome-ai-agent-skills_b329db6e
+  state:
+    consecutive_failures: 2
+    last_checked_at: '2026-07-08T15:02:59.228Z'
+    last_ref: a6c8c0ef3c240faefe1b0b5cabe1567beaea60fd
+    last_success_at: '2026-07-08T14:32:17.676Z'
+  status: active
+  sync:
+    exclude:
+    - SKILL_TEMPLATE.md
+    - docs/**
+    - assets/**
+    - scripts/**
+    include:
+    - '**/SKILL.md'
+  type: github_repo
+  updated_at: '2026-07-08T14:30:28.754Z'
+  url: https://github.com/seb1n/awesome-ai-agent-skills
+- license:
     evidence: LICENSE file at repo root
     spdx: MIT
     verified: true
@@ -122,10 +193,10 @@ sources:
   schema_version: 1
   source_id: src_https-github-com-voltagent-awesome-agent-skills-voltagent-awesome-agent-skills_46b45132
   state:
-    consecutive_failures: 0
-    last_checked_at: '2026-07-08T14:15:08.116Z'
+    consecutive_failures: 2
+    last_checked_at: '2026-07-08T15:02:59.446Z'
     last_ref: 2fcbf138f63697e999d26c6266eea597e6564a23
-    last_success_at: '2026-07-08T14:15:08.116Z'
+    last_success_at: '2026-07-08T14:32:18.890Z'
   status: preview
   sync:
     exclude: []

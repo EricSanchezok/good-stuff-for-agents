@@ -1,0 +1,73 @@
+{
+  "run": "2026-07-08-223000",
+  "inspected": 10,
+  "candidates": [
+    {
+      "name": "seb1n Awesome AI Agent Skills",
+      "url": "https://github.com/seb1n/awesome-ai-agent-skills",
+      "type": "github_repo",
+      "evidence": [
+        "Contains 91 skills across 18 categories with SKILL.md files in {category}/{skill-name}/SKILL.md layout",
+        "SKILL_TEMPLATE.md at root for contributing new skills",
+        "MIT license verified via GitHub API",
+        "Categories: code-and-development, api-and-integration, communication, context-engineering, customer-success, data-and-analytics, database, design-and-ui-ux, devops-and-infrastructure, finance-and-accounting, legal-and-compliance, marketing-and-seo, productivity-and-workflow, research-and-knowledge, sales, security, ai-ml-operations, writing-and-content",
+        "Sampled code-and-development/code-review/SKILL.md — 10,114 bytes of substantive content",
+        "124 stars, 25 forks, 1 contributor"
+      ],
+      "license": { "spdx": "MIT", "verified": true, "evidence": "LICENSE file at repo root, MIT" },
+      "parseability": "known-synergy-skill-layout",
+      "rejection_reason": null
+    },
+    {
+      "name": "GameDev Agent Skills",
+      "url": "https://github.com/gamedev-skills/awesome-gamedev-agent-skills",
+      "type": "github_repo",
+      "evidence": [
+        "Contains 66 skills organized in skills/{engine-or-category}/{skill-name}/SKILL.md layout",
+        "Categories: godot (15), unity (8), unreal (6), genres (9), web-engines (6), other-engines (5), workflows (4), disciplines (13)",
+        "Apache-2.0 license verified via GitHub API",
+        "Each skill dir contains SKILL.md + references/",
+        "Master router/, templates/, docs included",
+        "Explicit README with installation instructions and .claude-plugin support",
+        "233 stars, 15 forks, last push 2026-06-27 (active)"
+      ],
+      "license": { "spdx": "Apache-2.0", "verified": true, "evidence": "LICENSE file at repo root, Apache-2.0" },
+      "parseability": "known-synergy-skill-layout",
+      "rejection_reason": null
+    },
+    {
+      "name": "dotnet-skills",
+      "url": "https://github.com/Aaronontheweb/dotnet-skills",
+      "type": "github_repo",
+      "evidence": [
+        "Contains 35 skills in skills/{skill-name}/SKILL.md layout",
+        "Skills: csharp-api-design, csharp-coding-standards, csharp-concurrency-patterns, csharp-type-design-performance, efcore-patterns, playwright-blazor, r3-reactive-extensions, serialization, akka-*, aspire-*, etc.",
+        "MIT license verified via GitHub API",
+        "AGENTS.md, CLAUDE.md, .claude-plugin/ at root",
+        "NuGet CLI tool companion for skill management",
+        "1,054 stars, 99 forks, 4 contributors, last push 2026-07-03 (very active)"
+      ],
+      "license": { "spdx": "MIT", "verified": true, "evidence": "LICENSE file at repo root, MIT" },
+      "parseability": "known-synergy-skill-layout",
+      "rejection_reason": null
+    }
+  ],
+  "rejected": [
+    { "name": "SkillsLLM (skillsllm.com)", "reason": "No license on the directory site; no API or programmatic access; scraping-only; very high overlap with existing sources; no original skill content — aggregator of GitHub repos" },
+    { "name": "Prat011/awesome-llm-skills", "reason": "No license file (GitHub API returned null)" },
+    { "name": "skillmatic-ai/awesome-agent-skills", "reason": "CC0-1.0 licensed but README-only — no parseable SKILL.md files" },
+    { "name": "libukai/awesome-agent-skills", "reason": "No license file" },
+    { "name": "JackyST0/awesome-agent-skills", "reason": "CC0-1.0 but README-only Chinese language curated list; no parseable SKILL.md files" }
+  ],
+  "existing_unchanged": [
+    { "name": "heilcheng/awesome-agent-skills", "status": "candidate — already in candidates.jsonl, no change needed" }
+  ],
+  "search_methods": [
+    "GitHub repository search: 'awesome-agent-skills'",
+    "GitHub repository search: 'agent skills SKILL.md'",
+    "GitHub repository search: 'claude code skills'",
+    "GitHub repository search: 'dotnet-skills agent'",
+    "GitHub code search: filename:SKILL.md",
+    "Web search: skillsllm.com"
+  ]
+}

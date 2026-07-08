@@ -1,0 +1,46 @@
+analysis:
+  hash: null
+  path: catalog/analyses/da/skl_database-performance-src-https-github-com-aaronontheweb-dotnet-skills-dotnet-skills-974322da-skills-database-performance-skill-md_ef2a2c0a.md
+canonical_name: database-performance
+canonical_skill_id: skl_database-performance-src-https-github-com-aaronontheweb-dotnet-skills-dotnet-skills-974322da-skills-database-performance-skill-md_ef2a2c0a
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-08T22:36:10.000Z'
+curation:
+  notes: []
+display_name: Database Performance
+identity:
+  aliases: []
+  current_version_id: sha256:38e63cc439d36a48fe2ced7763ec62e3ecf8dcac
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: LICENSE file at repo root, MIT
+    spdx: MIT
+    verified: true
+  path: skills/database-performance/SKILL.md
+  source_id: src_https-github-com-aaronontheweb-dotnet-skills-dotnet-skills_974322da
+  type: github_repo
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-08T22:36:10.000Z'

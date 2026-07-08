@@ -10,7 +10,7 @@
 
 ## Shelf health
 
-I last saw this source respond successfully around 2026-07-08T14:15:06.782Z.
+I have this source on the shelf, but the latest availability check needs another look before treating it as smooth sailing.
 
 ## Tracked Skills
 

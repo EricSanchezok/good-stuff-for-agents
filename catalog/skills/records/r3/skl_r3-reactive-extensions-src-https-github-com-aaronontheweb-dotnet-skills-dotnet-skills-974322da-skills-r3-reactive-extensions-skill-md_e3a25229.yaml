@@ -1,0 +1,46 @@
+analysis:
+  hash: null
+  path: catalog/analyses/r3/skl_r3-reactive-extensions-src-https-github-com-aaronontheweb-dotnet-skills-dotnet-skills-974322da-skills-r3-reactive-extensions-skill-md_e3a25229.md
+canonical_name: r3-reactive-extensions
+canonical_skill_id: skl_r3-reactive-extensions-src-https-github-com-aaronontheweb-dotnet-skills-dotnet-skills-974322da-skills-r3-reactive-extensions-skill-md_e3a25229
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-08T22:36:10.000Z'
+curation:
+  notes: []
+display_name: R3 Reactive Extensions
+identity:
+  aliases: []
+  current_version_id: sha256:85d205c17015a472df1e9e3f9361867150213dec
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: LICENSE file at repo root, MIT
+    spdx: MIT
+    verified: true
+  path: skills/r3-reactive-extensions/SKILL.md
+  source_id: src_https-github-com-aaronontheweb-dotnet-skills-dotnet-skills_974322da
+  type: github_repo
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-08T22:36:10.000Z'

@@ -1,0 +1,46 @@
+analysis:
+  hash: null
+  path: catalog/analyses/sh/skl_shader-programming-src-https-github-com-gamedev-skills-awesome-gamedev-agent-skills-gamedev-agent-skills-8ed84037-skills-disciplines-shader-programming-skill-md_38559ba9.md
+canonical_name: shader-programming
+canonical_skill_id: skl_shader-programming-src-https-github-com-gamedev-skills-awesome-gamedev-agent-skills-gamedev-agent-skills-8ed84037-skills-disciplines-shader-programming-skill-md_38559ba9
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-08T22:36:10.000Z'
+curation:
+  notes: []
+display_name: Shader Programming
+identity:
+  aliases: []
+  current_version_id: sha256:32523cd6609892cf0feb0bbc99edb10f363382d0
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: LICENSE file at repo root, Apache-2.0
+    spdx: Apache-2.0
+    verified: true
+  path: skills/disciplines/shader-programming/SKILL.md
+  source_id: src_https-github-com-gamedev-skills-awesome-gamedev-agent-skills-gamedev-agent-skills_8ed84037
+  type: github_repo
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-08T22:36:10.000Z'

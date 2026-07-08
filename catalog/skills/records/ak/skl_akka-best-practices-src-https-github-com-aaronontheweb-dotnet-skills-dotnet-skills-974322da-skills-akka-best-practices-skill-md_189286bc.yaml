@@ -1,0 +1,46 @@
+analysis:
+  hash: null
+  path: catalog/analyses/ak/skl_akka-best-practices-src-https-github-com-aaronontheweb-dotnet-skills-dotnet-skills-974322da-skills-akka-best-practices-skill-md_189286bc.md
+canonical_name: akka-best-practices
+canonical_skill_id: skl_akka-best-practices-src-https-github-com-aaronontheweb-dotnet-skills-dotnet-skills-974322da-skills-akka-best-practices-skill-md_189286bc
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-08T22:36:10.000Z'
+curation:
+  notes: []
+display_name: Akka Best Practices
+identity:
+  aliases: []
+  current_version_id: sha256:d8795504814810f0ee00ca3c8a49dbaa081f879e
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: LICENSE file at repo root, MIT
+    spdx: MIT
+    verified: true
+  path: skills/akka-best-practices/SKILL.md
+  source_id: src_https-github-com-aaronontheweb-dotnet-skills-dotnet-skills_974322da
+  type: github_repo
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-08T22:36:10.000Z'

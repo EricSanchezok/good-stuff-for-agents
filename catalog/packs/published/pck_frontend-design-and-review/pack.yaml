@@ -54,7 +54,7 @@ name: Frontend Design and Review
 pack_id: pck_frontend-design-and-review
 schema_version: 1
 status: published
-updated_at: '2026-07-08T10:40:19.783Z'
+updated_at: '2026-07-08T15:01:08.732Z'
 version: 0.1.0
 workflow:
   stages:

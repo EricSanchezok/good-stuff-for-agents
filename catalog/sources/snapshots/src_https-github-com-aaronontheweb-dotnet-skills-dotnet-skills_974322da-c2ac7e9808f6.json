@@ -1,0 +1,500 @@
+{
+  "schema_version": 1,
+  "source_id": "src_https-github-com-aaronontheweb-dotnet-skills-dotnet-skills_974322da",
+  "upstream_ref": "c2ac7e9808f6636f21e99dd850363224459c5a3f",
+  "checked_at": "2026-07-08T14:32:54.198Z",
+  "url": "https://github.com/Aaronontheweb/dotnet-skills",
+  "artifacts": [
+    {
+      "source_id": "src_https-github-com-aaronontheweb-dotnet-skills-dotnet-skills_974322da",
+      "path": "skills/akka-aspire-configuration/SKILL.md",
+      "declared_name": "akka-aspire-configuration",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:ec7f15f826f360161ac82e24372107e5d7336062",
+      "upstream_ref": "c2ac7e9808f6636f21e99dd850363224459c5a3f",
+      "url": "https://github.com/Aaronontheweb/dotnet-skills/blob/c2ac7e9808f6636f21e99dd850363224459c5a3f/skills/akka-aspire-configuration/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "ec7f15f826f360161ac82e24372107e5d7336062",
+        "size": 24474
+      }
+    },
+    {
+      "source_id": "src_https-github-com-aaronontheweb-dotnet-skills-dotnet-skills_974322da",
+      "path": "skills/akka-best-practices/SKILL.md",
+      "declared_name": "akka-best-practices",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:d8795504814810f0ee00ca3c8a49dbaa081f879e",
+      "upstream_ref": "c2ac7e9808f6636f21e99dd850363224459c5a3f",
+      "url": "https://github.com/Aaronontheweb/dotnet-skills/blob/c2ac7e9808f6636f21e99dd850363224459c5a3f/skills/akka-best-practices/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "d8795504814810f0ee00ca3c8a49dbaa081f879e",
+        "size": 13286
+      }
+    },
+    {
+      "source_id": "src_https-github-com-aaronontheweb-dotnet-skills-dotnet-skills_974322da",
+      "path": "skills/akka-hosting-actor-patterns/SKILL.md",
+      "declared_name": "akka-hosting-actor-patterns",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:4491a4797c427d2ed23553c7f5b44fb438e0e8ce",
+      "upstream_ref": "c2ac7e9808f6636f21e99dd850363224459c5a3f",
+      "url": "https://github.com/Aaronontheweb/dotnet-skills/blob/c2ac7e9808f6636f21e99dd850363224459c5a3f/skills/akka-hosting-actor-patterns/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "4491a4797c427d2ed23553c7f5b44fb438e0e8ce",
+        "size": 19954
+      }
+    },
+    {
+      "source_id": "src_https-github-com-aaronontheweb-dotnet-skills-dotnet-skills_974322da",
+      "path": "skills/akka-management/SKILL.md",
+      "declared_name": "akka-management",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:6c0d0ab4fedfba8d244f6f055310d96e3e8d2613",
+      "upstream_ref": "c2ac7e9808f6636f21e99dd850363224459c5a3f",
+      "url": "https://github.com/Aaronontheweb/dotnet-skills/blob/c2ac7e9808f6636f21e99dd850363224459c5a3f/skills/akka-management/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "6c0d0ab4fedfba8d244f6f055310d96e3e8d2613",
+        "size": 10831
+      }
+    },
+    {
+      "source_id": "src_https-github-com-aaronontheweb-dotnet-skills-dotnet-skills_974322da",
+      "path": "skills/akka-testing-patterns/SKILL.md",
+      "declared_name": "akka-testing-patterns",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:b6ec12d74b5ed7275c752448a6daac1da6416924",
+      "upstream_ref": "c2ac7e9808f6636f21e99dd850363224459c5a3f",
+      "url": "https://github.com/Aaronontheweb/dotnet-skills/blob/c2ac7e9808f6636f21e99dd850363224459c5a3f/skills/akka-testing-patterns/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "b6ec12d74b5ed7275c752448a6daac1da6416924",
+        "size": 9766
+      }
+    },
+    {
+      "source_id": "src_https-github-com-aaronontheweb-dotnet-skills-dotnet-skills_974322da",
+      "path": "skills/aspire-configuration/SKILL.md",
+      "declared_name": "aspire-configuration",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:e76ab4fc0ec9a2a149d5b55537d58b8f0e1d3c73",
+      "upstream_ref": "c2ac7e9808f6636f21e99dd850363224459c5a3f",
+      "url": "https://github.com/Aaronontheweb/dotnet-skills/blob/c2ac7e9808f6636f21e99dd850363224459c5a3f/skills/aspire-configuration/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "e76ab4fc0ec9a2a149d5b55537d58b8f0e1d3c73",
+        "size": 5089
+      }
+    },
+    {
+      "source_id": "src_https-github-com-aaronontheweb-dotnet-skills-dotnet-skills_974322da",
+      "path": "skills/aspire-integration-testing/SKILL.md",
+      "declared_name": "aspire-integration-testing",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:ca7ac929dee74de7991544937df700131a42545d",
+      "upstream_ref": "c2ac7e9808f6636f21e99dd850363224459c5a3f",
+      "url": "https://github.com/Aaronontheweb/dotnet-skills/blob/c2ac7e9808f6636f21e99dd850363224459c5a3f/skills/aspire-integration-testing/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "ca7ac929dee74de7991544937df700131a42545d",
+        "size": 9604
+      }
+    },
+    {
+      "source_id": "src_https-github-com-aaronontheweb-dotnet-skills-dotnet-skills_974322da",
+      "path": "skills/aspire-mailpit-integration/SKILL.md",
+      "declared_name": "aspire-mailpit-integration",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:25b6c1f5e76fbba1c78a88ff52c6a7acc0146b40",
+      "upstream_ref": "c2ac7e9808f6636f21e99dd850363224459c5a3f",
+      "url": "https://github.com/Aaronontheweb/dotnet-skills/blob/c2ac7e9808f6636f21e99dd850363224459c5a3f/skills/aspire-mailpit-integration/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "25b6c1f5e76fbba1c78a88ff52c6a7acc0146b40",
+        "size": 11384
+      }
+    },
+    {
+      "source_id": "src_https-github-com-aaronontheweb-dotnet-skills-dotnet-skills_974322da",
+      "path": "skills/aspire-service-defaults/SKILL.md",
+      "declared_name": "aspire-service-defaults",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:ef6be3b2dde266222d8861fcd818adc319ea93c5",
+      "upstream_ref": "c2ac7e9808f6636f21e99dd850363224459c5a3f",
+      "url": "https://github.com/Aaronontheweb/dotnet-skills/blob/c2ac7e9808f6636f21e99dd850363224459c5a3f/skills/aspire-service-defaults/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "ef6be3b2dde266222d8861fcd818adc319ea93c5",
+        "size": 10433
+      }
+    },
+    {
+      "source_id": "src_https-github-com-aaronontheweb-dotnet-skills-dotnet-skills_974322da",
+      "path": "skills/crap-analysis/SKILL.md",
+      "declared_name": "crap-analysis",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:fa6d9ccfc666975b0ee7deef4fb53993ff62f000",
+      "upstream_ref": "c2ac7e9808f6636f21e99dd850363224459c5a3f",
+      "url": "https://github.com/Aaronontheweb/dotnet-skills/blob/c2ac7e9808f6636f21e99dd850363224459c5a3f/skills/crap-analysis/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "fa6d9ccfc666975b0ee7deef4fb53993ff62f000",
+        "size": 11520
+      }
+    },
+    {
+      "source_id": "src_https-github-com-aaronontheweb-dotnet-skills-dotnet-skills_974322da",
+      "path": "skills/csharp-api-design/SKILL.md",
+      "declared_name": "csharp-api-design",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:45f066fadae67db938ae6fafaf1c34c8d48eced6",
+      "upstream_ref": "c2ac7e9808f6636f21e99dd850363224459c5a3f",
+      "url": "https://github.com/Aaronontheweb/dotnet-skills/blob/c2ac7e9808f6636f21e99dd850363224459c5a3f/skills/csharp-api-design/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "45f066fadae67db938ae6fafaf1c34c8d48eced6",
+        "size": 10800
+      }
+    },
+    {
+      "source_id": "src_https-github-com-aaronontheweb-dotnet-skills-dotnet-skills_974322da",
+      "path": "skills/csharp-coding-standards/SKILL.md",
+      "declared_name": "csharp-coding-standards",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:89b804c434cd1c3824a87119ee0f067ae170150a",
+      "upstream_ref": "c2ac7e9808f6636f21e99dd850363224459c5a3f",
+      "url": "https://github.com/Aaronontheweb/dotnet-skills/blob/c2ac7e9808f6636f21e99dd850363224459c5a3f/skills/csharp-coding-standards/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "89b804c434cd1c3824a87119ee0f067ae170150a",
+        "size": 10653
+      }
+    },
+    {
+      "source_id": "src_https-github-com-aaronontheweb-dotnet-skills-dotnet-skills_974322da",
+      "path": "skills/csharp-concurrency-patterns/SKILL.md",
+      "declared_name": "csharp-concurrency-patterns",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:e73fb322d473ebedf95e4fac93bc2980bb46539f",
+      "upstream_ref": "c2ac7e9808f6636f21e99dd850363224459c5a3f",
+      "url": "https://github.com/Aaronontheweb/dotnet-skills/blob/c2ac7e9808f6636f21e99dd850363224459c5a3f/skills/csharp-concurrency-patterns/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "e73fb322d473ebedf95e4fac93bc2980bb46539f",
+        "size": 8961
+      }
+    },
+    {
+      "source_id": "src_https-github-com-aaronontheweb-dotnet-skills-dotnet-skills_974322da",
+      "path": "skills/csharp-type-design-performance/SKILL.md",
+      "declared_name": "csharp-type-design-performance",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:1d693bf5cfdd1837c56efb160b37c9340ad83440",
+      "upstream_ref": "c2ac7e9808f6636f21e99dd850363224459c5a3f",
+      "url": "https://github.com/Aaronontheweb/dotnet-skills/blob/c2ac7e9808f6636f21e99dd850363224459c5a3f/skills/csharp-type-design-performance/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "1d693bf5cfdd1837c56efb160b37c9340ad83440",
+        "size": 10003
+      }
+    },
+    {
+      "source_id": "src_https-github-com-aaronontheweb-dotnet-skills-dotnet-skills_974322da",
+      "path": "skills/database-performance/SKILL.md",
+      "declared_name": "database-performance",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:38e63cc439d36a48fe2ced7763ec62e3ecf8dcac",
+      "upstream_ref": "c2ac7e9808f6636f21e99dd850363224459c5a3f",
+      "url": "https://github.com/Aaronontheweb/dotnet-skills/blob/c2ac7e9808f6636f21e99dd850363224459c5a3f/skills/database-performance/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "38e63cc439d36a48fe2ced7763ec62e3ecf8dcac",
+        "size": 14050
+      }
+    },
+    {
+      "source_id": "src_https-github-com-aaronontheweb-dotnet-skills-dotnet-skills_974322da",
+      "path": "skills/dotnet-devcert-trust/SKILL.md",
+      "declared_name": "dotnet-devcert-trust",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:6a530618fdc99a6fbb89773027ecf983bebf836f",
+      "upstream_ref": "c2ac7e9808f6636f21e99dd850363224459c5a3f",
+      "url": "https://github.com/Aaronontheweb/dotnet-skills/blob/c2ac7e9808f6636f21e99dd850363224459c5a3f/skills/dotnet-devcert-trust/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "6a530618fdc99a6fbb89773027ecf983bebf836f",
+        "size": 16539
+      }
+    },
+    {
+      "source_id": "src_https-github-com-aaronontheweb-dotnet-skills-dotnet-skills_974322da",
+      "path": "skills/efcore-patterns/SKILL.md",
+      "declared_name": "efcore-patterns",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:129f403bb0526045eb666ee5404149904eff87a5",
+      "upstream_ref": "c2ac7e9808f6636f21e99dd850363224459c5a3f",
+      "url": "https://github.com/Aaronontheweb/dotnet-skills/blob/c2ac7e9808f6636f21e99dd850363224459c5a3f/skills/efcore-patterns/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "129f403bb0526045eb666ee5404149904eff87a5",
+        "size": 18102
+      }
+    },
+    {
+      "source_id": "src_https-github-com-aaronontheweb-dotnet-skills-dotnet-skills_974322da",
+      "path": "skills/ilspy-decompile/SKILL.md",
+      "declared_name": "ilspy-decompile",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:bfc36df1dd6dc61e02ff9df7f6f0980054e28220",
+      "upstream_ref": "c2ac7e9808f6636f21e99dd850363224459c5a3f",
+      "url": "https://github.com/Aaronontheweb/dotnet-skills/blob/c2ac7e9808f6636f21e99dd850363224459c5a3f/skills/ilspy-decompile/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "bfc36df1dd6dc61e02ff9df7f6f0980054e28220",
+        "size": 2127
+      }
+    },
+    {
+      "source_id": "src_https-github-com-aaronontheweb-dotnet-skills-dotnet-skills_974322da",
+      "path": "skills/local-tools/SKILL.md",
+      "declared_name": "local-tools",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:423e96cd705d8a2dfff194303fc6dc156318caf2",
+      "upstream_ref": "c2ac7e9808f6636f21e99dd850363224459c5a3f",
+      "url": "https://github.com/Aaronontheweb/dotnet-skills/blob/c2ac7e9808f6636f21e99dd850363224459c5a3f/skills/local-tools/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "423e96cd705d8a2dfff194303fc6dc156318caf2",
+        "size": 8912
+      }
+    },
+    {
+      "source_id": "src_https-github-com-aaronontheweb-dotnet-skills-dotnet-skills_974322da",
+      "path": "skills/marketplace-publishing/SKILL.md",
+      "declared_name": "marketplace-publishing",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:ec59f0945008dfe8f042459e853b77c422510b82",
+      "upstream_ref": "c2ac7e9808f6636f21e99dd850363224459c5a3f",
+      "url": "https://github.com/Aaronontheweb/dotnet-skills/blob/c2ac7e9808f6636f21e99dd850363224459c5a3f/skills/marketplace-publishing/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "ec59f0945008dfe8f042459e853b77c422510b82",
+        "size": 6082
+      }
+    },
+    {
+      "source_id": "src_https-github-com-aaronontheweb-dotnet-skills-dotnet-skills_974322da",
+      "path": "skills/microsoft-extensions-configuration/SKILL.md",
+      "declared_name": "microsoft-extensions-configuration",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:3534f77da878314e1d5490b2d61cfb9d9f6a33be",
+      "upstream_ref": "c2ac7e9808f6636f21e99dd850363224459c5a3f",
+      "url": "https://github.com/Aaronontheweb/dotnet-skills/blob/c2ac7e9808f6636f21e99dd850363224459c5a3f/skills/microsoft-extensions-configuration/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "3534f77da878314e1d5490b2d61cfb9d9f6a33be",
+        "size": 9605
+      }
+    },
+    {
+      "source_id": "src_https-github-com-aaronontheweb-dotnet-skills-dotnet-skills_974322da",
+      "path": "skills/microsoft-extensions-dependency-injection/SKILL.md",
+      "declared_name": "microsoft-extensions-dependency-injection",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:4b516cbf8b5f8188eb19d281ac957bb42775d907",
+      "upstream_ref": "c2ac7e9808f6636f21e99dd850363224459c5a3f",
+      "url": "https://github.com/Aaronontheweb/dotnet-skills/blob/c2ac7e9808f6636f21e99dd850363224459c5a3f/skills/microsoft-extensions-dependency-injection/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "4b516cbf8b5f8188eb19d281ac957bb42775d907",
+        "size": 9746
+      }
+    },
+    {
+      "source_id": "src_https-github-com-aaronontheweb-dotnet-skills-dotnet-skills_974322da",
+      "path": "skills/mjml-email-templates/SKILL.md",
+      "declared_name": "mjml-email-templates",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:f9aa8bbf51c09144785b156968a955b73d9a038e",
+      "upstream_ref": "c2ac7e9808f6636f21e99dd850363224459c5a3f",
+      "url": "https://github.com/Aaronontheweb/dotnet-skills/blob/c2ac7e9808f6636f21e99dd850363224459c5a3f/skills/mjml-email-templates/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "f9aa8bbf51c09144785b156968a955b73d9a038e",
+        "size": 10701
+      }
+    },
+    {
+      "source_id": "src_https-github-com-aaronontheweb-dotnet-skills-dotnet-skills_974322da",
+      "path": "skills/opentelementry-dotnet-instrumentation/SKILL.md",
+      "declared_name": "opentelementry-dotnet-instrumentation",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:16d9a64e74e73ede37fdaac331232a347bb6006f",
+      "upstream_ref": "c2ac7e9808f6636f21e99dd850363224459c5a3f",
+      "url": "https://github.com/Aaronontheweb/dotnet-skills/blob/c2ac7e9808f6636f21e99dd850363224459c5a3f/skills/opentelementry-dotnet-instrumentation/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "16d9a64e74e73ede37fdaac331232a347bb6006f",
+        "size": 23531
+      }
+    },
+    {
+      "source_id": "src_https-github-com-aaronontheweb-dotnet-skills-dotnet-skills_974322da",
+      "path": "skills/package-management/SKILL.md",
+      "declared_name": "package-management",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:eafad0bbbd061309f584a69a7303fe3e27e5cee8",
+      "upstream_ref": "c2ac7e9808f6636f21e99dd850363224459c5a3f",
+      "url": "https://github.com/Aaronontheweb/dotnet-skills/blob/c2ac7e9808f6636f21e99dd850363224459c5a3f/skills/package-management/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "eafad0bbbd061309f584a69a7303fe3e27e5cee8",
+        "size": 12136
+      }
+    },
+    {
+      "source_id": "src_https-github-com-aaronontheweb-dotnet-skills-dotnet-skills_974322da",
+      "path": "skills/playwright-blazor/SKILL.md",
+      "declared_name": "playwright-blazor",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:867fe5a2dd69e8121a140d5e4905e82444c19fcc",
+      "upstream_ref": "c2ac7e9808f6636f21e99dd850363224459c5a3f",
+      "url": "https://github.com/Aaronontheweb/dotnet-skills/blob/c2ac7e9808f6636f21e99dd850363224459c5a3f/skills/playwright-blazor/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "867fe5a2dd69e8121a140d5e4905e82444c19fcc",
+        "size": 16953
+      }
+    },
+    {
+      "source_id": "src_https-github-com-aaronontheweb-dotnet-skills-dotnet-skills_974322da",
+      "path": "skills/playwright-ci-caching/SKILL.md",
+      "declared_name": "playwright-ci-caching",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:abf97eb6a2b46b61d927049eec49ace7395f5542",
+      "upstream_ref": "c2ac7e9808f6636f21e99dd850363224459c5a3f",
+      "url": "https://github.com/Aaronontheweb/dotnet-skills/blob/c2ac7e9808f6636f21e99dd850363224459c5a3f/skills/playwright-ci-caching/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "abf97eb6a2b46b61d927049eec49ace7395f5542",
+        "size": 6900
+      }
+    },
+    {
+      "source_id": "src_https-github-com-aaronontheweb-dotnet-skills-dotnet-skills_974322da",
+      "path": "skills/project-structure/SKILL.md",
+      "declared_name": "project-structure",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:944a3bbbd2d4af2e617fdfdf39c25b75eef46313",
+      "upstream_ref": "c2ac7e9808f6636f21e99dd850363224459c5a3f",
+      "url": "https://github.com/Aaronontheweb/dotnet-skills/blob/c2ac7e9808f6636f21e99dd850363224459c5a3f/skills/project-structure/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "944a3bbbd2d4af2e617fdfdf39c25b75eef46313",
+        "size": 15349
+      }
+    },
+    {
+      "source_id": "src_https-github-com-aaronontheweb-dotnet-skills-dotnet-skills_974322da",
+      "path": "skills/r3-reactive-extensions/SKILL.md",
+      "declared_name": "r3-reactive-extensions",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:85d205c17015a472df1e9e3f9361867150213dec",
+      "upstream_ref": "c2ac7e9808f6636f21e99dd850363224459c5a3f",
+      "url": "https://github.com/Aaronontheweb/dotnet-skills/blob/c2ac7e9808f6636f21e99dd850363224459c5a3f/skills/r3-reactive-extensions/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "85d205c17015a472df1e9e3f9361867150213dec",
+        "size": 13761
+      }
+    },
+    {
+      "source_id": "src_https-github-com-aaronontheweb-dotnet-skills-dotnet-skills_974322da",
+      "path": "skills/serialization/SKILL.md",
+      "declared_name": "serialization",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:00abcfc1de633b034bfb63b845c8c890cb790636",
+      "upstream_ref": "c2ac7e9808f6636f21e99dd850363224459c5a3f",
+      "url": "https://github.com/Aaronontheweb/dotnet-skills/blob/c2ac7e9808f6636f21e99dd850363224459c5a3f/skills/serialization/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "00abcfc1de633b034bfb63b845c8c890cb790636",
+        "size": 11138
+      }
+    },
+    {
+      "source_id": "src_https-github-com-aaronontheweb-dotnet-skills-dotnet-skills_974322da",
+      "path": "skills/skills-index-snippets/SKILL.md",
+      "declared_name": "skills-index-snippets",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:f94edf34c0c6a15e38e3668107ec851734f27d4f",
+      "upstream_ref": "c2ac7e9808f6636f21e99dd850363224459c5a3f",
+      "url": "https://github.com/Aaronontheweb/dotnet-skills/blob/c2ac7e9808f6636f21e99dd850363224459c5a3f/skills/skills-index-snippets/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "f94edf34c0c6a15e38e3668107ec851734f27d4f",
+        "size": 4651
+      }
+    },
+    {
+      "source_id": "src_https-github-com-aaronontheweb-dotnet-skills-dotnet-skills_974322da",
+      "path": "skills/slopwatch/SKILL.md",
+      "declared_name": "slopwatch",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:ce89649a990b1eaf089aef4fcd206356ac6c79b5",
+      "upstream_ref": "c2ac7e9808f6636f21e99dd850363224459c5a3f",
+      "url": "https://github.com/Aaronontheweb/dotnet-skills/blob/c2ac7e9808f6636f21e99dd850363224459c5a3f/skills/slopwatch/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "ce89649a990b1eaf089aef4fcd206356ac6c79b5",
+        "size": 8476
+      }
+    },
+    {
+      "source_id": "src_https-github-com-aaronontheweb-dotnet-skills-dotnet-skills_974322da",
+      "path": "skills/snapshot-testing/SKILL.md",
+      "declared_name": "snapshot-testing",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:a30f75f5d86a8902577ebe1f25717dd3d78b373d",
+      "upstream_ref": "c2ac7e9808f6636f21e99dd850363224459c5a3f",
+      "url": "https://github.com/Aaronontheweb/dotnet-skills/blob/c2ac7e9808f6636f21e99dd850363224459c5a3f/skills/snapshot-testing/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "a30f75f5d86a8902577ebe1f25717dd3d78b373d",
+        "size": 9187
+      }
+    },
+    {
+      "source_id": "src_https-github-com-aaronontheweb-dotnet-skills-dotnet-skills_974322da",
+      "path": "skills/testcontainers/SKILL.md",
+      "declared_name": "testcontainers",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:c42428270f15fb23acb0b81ed5f69c53176d27fa",
+      "upstream_ref": "c2ac7e9808f6636f21e99dd850363224459c5a3f",
+      "url": "https://github.com/Aaronontheweb/dotnet-skills/blob/c2ac7e9808f6636f21e99dd850363224459c5a3f/skills/testcontainers/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "c42428270f15fb23acb0b81ed5f69c53176d27fa",
+        "size": 7349
+      }
+    },
+    {
+      "source_id": "src_https-github-com-aaronontheweb-dotnet-skills-dotnet-skills_974322da",
+      "path": "skills/verify-email-snapshots/SKILL.md",
+      "declared_name": "verify-email-snapshots",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:2452608909f2f80dd47951db69d73386d110a669",
+      "upstream_ref": "c2ac7e9808f6636f21e99dd850363224459c5a3f",
+      "url": "https://github.com/Aaronontheweb/dotnet-skills/blob/c2ac7e9808f6636f21e99dd850363224459c5a3f/skills/verify-email-snapshots/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "2452608909f2f80dd47951db69d73386d110a669",
+        "size": 8365
+      }
+    }
+  ],
+  "digest": "sha256:9342a1045b9f30d5939ec387bd288d47f84bf601b8076ea25406cce81e74d043"
+}

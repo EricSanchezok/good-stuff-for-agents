@@ -1,0 +1,46 @@
+analysis:
+  hash: null
+  path: catalog/analyses/lo/skl_local-tools-src-https-github-com-aaronontheweb-dotnet-skills-dotnet-skills-974322da-skills-local-tools-skill-md_1cdd677d.md
+canonical_name: local-tools
+canonical_skill_id: skl_local-tools-src-https-github-com-aaronontheweb-dotnet-skills-dotnet-skills-974322da-skills-local-tools-skill-md_1cdd677d
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-08T22:36:10.000Z'
+curation:
+  notes: []
+display_name: Local Tools
+identity:
+  aliases: []
+  current_version_id: sha256:423e96cd705d8a2dfff194303fc6dc156318caf2
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: LICENSE file at repo root, MIT
+    spdx: MIT
+    verified: true
+  path: skills/local-tools/SKILL.md
+  source_id: src_https-github-com-aaronontheweb-dotnet-skills-dotnet-skills_974322da
+  type: github_repo
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-08T22:36:10.000Z'
