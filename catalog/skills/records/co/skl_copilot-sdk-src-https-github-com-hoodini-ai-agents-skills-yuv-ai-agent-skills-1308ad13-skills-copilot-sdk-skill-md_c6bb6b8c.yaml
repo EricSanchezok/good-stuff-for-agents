@@ -1,0 +1,46 @@
+analysis:
+  hash: null
+  path: catalog/analyses/co/skl_copilot-sdk-src-https-github-com-hoodini-ai-agents-skills-yuv-ai-agent-skills-1308ad13-skills-copilot-sdk-skill-md_c6bb6b8c.md
+canonical_name: copilot-sdk
+canonical_skill_id: skl_copilot-sdk-src-https-github-com-hoodini-ai-agents-skills-yuv-ai-agent-skills-1308ad13-skills-copilot-sdk-skill-md_c6bb6b8c
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-08T09:49:37.488Z'
+curation:
+  notes: []
+display_name: Copilot Sdk
+identity:
+  aliases: []
+  current_version_id: sha256:ea18108eb95d0b4eafbc74e4ee2f42db75527939
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: Repository LICENSE file confirms MIT
+    spdx: MIT
+    verified: true
+  path: skills/copilot-sdk/SKILL.md
+  source_id: src_https-github-com-hoodini-ai-agents-skills-yuv-ai-agent-skills_1308ad13
+  type: github_repo
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-08T09:49:37.488Z'

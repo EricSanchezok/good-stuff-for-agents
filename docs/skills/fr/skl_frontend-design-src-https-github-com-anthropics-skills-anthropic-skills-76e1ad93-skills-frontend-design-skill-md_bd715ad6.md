@@ -4,7 +4,7 @@
 
 ## Summary
 
-Analysis pending.
+Frontend Design — provides agent workflow guidance for frontend-design tasks. Source: src_https-github-com-anthropics-skills-anthropic-skills_76e1ad93.
 
 ## Source
 
@@ -34,11 +34,11 @@ No published packs use this skill yet.
 
 ## Related Skills
 
-No related skills are public yet.
+- complements: [Frontend Design](../fr/skl_frontend-design-review-src-https-github-com-microsoft-skills-microsoft-agent-skills-0215423e-github-skills-frontend-design-review-skill-md_cbd78d70.md)
 
 ## Public Analysis Summary
 
-Analysis pending.
+Frontend Design — provides agent workflow guidance for frontend-design tasks. Source: src_https-github-com-anthropics-skills-anthropic-skills_76e1ad93.
 
 ## Confidence and Limitations
 

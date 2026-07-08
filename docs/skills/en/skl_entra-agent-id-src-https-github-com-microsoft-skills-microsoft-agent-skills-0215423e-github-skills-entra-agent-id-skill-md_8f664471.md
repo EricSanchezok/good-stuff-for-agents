@@ -4,7 +4,7 @@
 
 ## Summary
 
-Analysis pending.
+Entra Agent Id — provides agent workflow guidance for api-tooling tasks. Source: src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e.
 
 ## Source
 
@@ -38,7 +38,7 @@ No related skills are public yet.
 
 ## Public Analysis Summary
 
-Analysis pending.
+Entra Agent Id — provides agent workflow guidance for api-tooling tasks. Source: src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e.
 
 ## Confidence and Limitations
 

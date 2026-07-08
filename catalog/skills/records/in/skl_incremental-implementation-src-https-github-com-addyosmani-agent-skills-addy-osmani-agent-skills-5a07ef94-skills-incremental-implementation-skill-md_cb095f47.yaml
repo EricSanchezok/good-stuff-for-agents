@@ -1,0 +1,46 @@
+analysis:
+  hash: null
+  path: catalog/analyses/in/skl_incremental-implementation-src-https-github-com-addyosmani-agent-skills-addy-osmani-agent-skills-5a07ef94-skills-incremental-implementation-skill-md_cb095f47.md
+canonical_name: incremental-implementation
+canonical_skill_id: skl_incremental-implementation-src-https-github-com-addyosmani-agent-skills-addy-osmani-agent-skills-5a07ef94-skills-incremental-implementation-skill-md_cb095f47
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-08T09:49:28.961Z'
+curation:
+  notes: []
+display_name: Incremental Implementation
+identity:
+  aliases: []
+  current_version_id: sha256:f18acb64e8152c68554b3359203f52afb5715a93
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: Repository LICENSE file confirms MIT
+    spdx: MIT
+    verified: true
+  path: skills/incremental-implementation/SKILL.md
+  source_id: src_https-github-com-addyosmani-agent-skills-addy-osmani-agent-skills_5a07ef94
+  type: github_repo
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-08T09:49:28.961Z'

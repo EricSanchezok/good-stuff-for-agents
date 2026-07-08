@@ -4,7 +4,7 @@
 
 ## Summary
 
-Analysis pending.
+Microsoft Docs — provides agent workflow guidance for documentation-content tasks. Source: src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e.
 
 ## Source
 
@@ -38,7 +38,7 @@ No related skills are public yet.
 
 ## Public Analysis Summary
 
-Analysis pending.
+Microsoft Docs — provides agent workflow guidance for documentation-content tasks. Source: src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e.
 
 ## Confidence and Limitations
 

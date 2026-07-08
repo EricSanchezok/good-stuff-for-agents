@@ -4,7 +4,7 @@
 
 ## Summary
 
-Analysis pending.
+Kql — provides agent workflow guidance for data-analytics tasks. Source: src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e.
 
 ## Source
 
@@ -38,7 +38,7 @@ No related skills are public yet.
 
 ## Public Analysis Summary
 
-Analysis pending.
+Kql — provides agent workflow guidance for data-analytics tasks. Source: src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e.
 
 ## Confidence and Limitations
 

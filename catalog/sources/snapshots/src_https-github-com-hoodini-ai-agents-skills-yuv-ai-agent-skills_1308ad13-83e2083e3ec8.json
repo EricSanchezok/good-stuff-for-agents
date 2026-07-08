@@ -1,0 +1,556 @@
+{
+  "schema_version": 1,
+  "source_id": "src_https-github-com-hoodini-ai-agents-skills-yuv-ai-agent-skills_1308ad13",
+  "upstream_ref": "83e2083e3ec845e28920da5a6f333e254d8a7392",
+  "checked_at": "2026-07-08T09:57:31.657Z",
+  "url": "https://github.com/hoodini/ai-agents-skills",
+  "artifacts": [
+    {
+      "source_id": "src_https-github-com-hoodini-ai-agents-skills-yuv-ai-agent-skills_1308ad13",
+      "path": "skills/analytics-metrics/SKILL.md",
+      "declared_name": "analytics-metrics",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:65d9b228f9b1ac1b5e10eb08cbc50777dda3db7c",
+      "upstream_ref": "83e2083e3ec845e28920da5a6f333e254d8a7392",
+      "url": "https://github.com/hoodini/ai-agents-skills/blob/83e2083e3ec845e28920da5a6f333e254d8a7392/skills/analytics-metrics/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "65d9b228f9b1ac1b5e10eb08cbc50777dda3db7c",
+        "size": 5519
+      }
+    },
+    {
+      "source_id": "src_https-github-com-hoodini-ai-agents-skills-yuv-ai-agent-skills_1308ad13",
+      "path": "skills/aws-account-management/SKILL.md",
+      "declared_name": "aws-account-management",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:bbb74cfb7649376d06748a19e77b3720ffe7ebec",
+      "upstream_ref": "83e2083e3ec845e28920da5a6f333e254d8a7392",
+      "url": "https://github.com/hoodini/ai-agents-skills/blob/83e2083e3ec845e28920da5a6f333e254d8a7392/skills/aws-account-management/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "bbb74cfb7649376d06748a19e77b3720ffe7ebec",
+        "size": 14021
+      }
+    },
+    {
+      "source_id": "src_https-github-com-hoodini-ai-agents-skills-yuv-ai-agent-skills_1308ad13",
+      "path": "skills/aws-agentcore/SKILL.md",
+      "declared_name": "aws-agentcore",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:8cd98a0d7cb823b2105426c818f94a35ba69cfb9",
+      "upstream_ref": "83e2083e3ec845e28920da5a6f333e254d8a7392",
+      "url": "https://github.com/hoodini/ai-agents-skills/blob/83e2083e3ec845e28920da5a6f333e254d8a7392/skills/aws-agentcore/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "8cd98a0d7cb823b2105426c818f94a35ba69cfb9",
+        "size": 5454
+      }
+    },
+    {
+      "source_id": "src_https-github-com-hoodini-ai-agents-skills-yuv-ai-agent-skills_1308ad13",
+      "path": "skills/aws-strands/SKILL.md",
+      "declared_name": "aws-strands",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:511bf07a456c8c42b782eaf58c33d3110d39cf2c",
+      "upstream_ref": "83e2083e3ec845e28920da5a6f333e254d8a7392",
+      "url": "https://github.com/hoodini/ai-agents-skills/blob/83e2083e3ec845e28920da5a6f333e254d8a7392/skills/aws-strands/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "511bf07a456c8c42b782eaf58c33d3110d39cf2c",
+        "size": 5833
+      }
+    },
+    {
+      "source_id": "src_https-github-com-hoodini-ai-agents-skills-yuv-ai-agent-skills_1308ad13",
+      "path": "skills/bun/SKILL.md",
+      "declared_name": "bun",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:cfabb781887e767b1ffd3c35751a26b61ca43c3d",
+      "upstream_ref": "83e2083e3ec845e28920da5a6f333e254d8a7392",
+      "url": "https://github.com/hoodini/ai-agents-skills/blob/83e2083e3ec845e28920da5a6f333e254d8a7392/skills/bun/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "cfabb781887e767b1ffd3c35751a26b61ca43c3d",
+        "size": 11316
+      }
+    },
+    {
+      "source_id": "src_https-github-com-hoodini-ai-agents-skills-yuv-ai-agent-skills_1308ad13",
+      "path": "skills/cinematic-scrub-landing/SKILL.md",
+      "declared_name": "cinematic-scrub-landing",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:d6ec1518330d5621c9decd866794be3acd787d75",
+      "upstream_ref": "83e2083e3ec845e28920da5a6f333e254d8a7392",
+      "url": "https://github.com/hoodini/ai-agents-skills/blob/83e2083e3ec845e28920da5a6f333e254d8a7392/skills/cinematic-scrub-landing/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "d6ec1518330d5621c9decd866794be3acd787d75",
+        "size": 29979
+      }
+    },
+    {
+      "source_id": "src_https-github-com-hoodini-ai-agents-skills-yuv-ai-agent-skills_1308ad13",
+      "path": "skills/cloudflare/SKILL.md",
+      "declared_name": "cloudflare",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:c29a93d6c927830def32b13f6ff9d6296dd0235f",
+      "upstream_ref": "83e2083e3ec845e28920da5a6f333e254d8a7392",
+      "url": "https://github.com/hoodini/ai-agents-skills/blob/83e2083e3ec845e28920da5a6f333e254d8a7392/skills/cloudflare/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "c29a93d6c927830def32b13f6ff9d6296dd0235f",
+        "size": 11944
+      }
+    },
+    {
+      "source_id": "src_https-github-com-hoodini-ai-agents-skills-yuv-ai-agent-skills_1308ad13",
+      "path": "skills/copilot-docs/SKILL.md",
+      "declared_name": "copilot-docs",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:ea339b70a1a26ca7f3a0c443d5b1c5de5dfd2718",
+      "upstream_ref": "83e2083e3ec845e28920da5a6f333e254d8a7392",
+      "url": "https://github.com/hoodini/ai-agents-skills/blob/83e2083e3ec845e28920da5a6f333e254d8a7392/skills/copilot-docs/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "ea339b70a1a26ca7f3a0c443d5b1c5de5dfd2718",
+        "size": 3171
+      }
+    },
+    {
+      "source_id": "src_https-github-com-hoodini-ai-agents-skills-yuv-ai-agent-skills_1308ad13",
+      "path": "skills/copilot-sdk/SKILL.md",
+      "declared_name": "copilot-sdk",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:ea18108eb95d0b4eafbc74e4ee2f42db75527939",
+      "upstream_ref": "83e2083e3ec845e28920da5a6f333e254d8a7392",
+      "url": "https://github.com/hoodini/ai-agents-skills/blob/83e2083e3ec845e28920da5a6f333e254d8a7392/skills/copilot-sdk/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "ea18108eb95d0b4eafbc74e4ee2f42db75527939",
+        "size": 22409
+      }
+    },
+    {
+      "source_id": "src_https-github-com-hoodini-ai-agents-skills-yuv-ai-agent-skills_1308ad13",
+      "path": "skills/director/SKILL.md",
+      "declared_name": "director",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:cc910228033bff7d23abf4767e444479024810b4",
+      "upstream_ref": "83e2083e3ec845e28920da5a6f333e254d8a7392",
+      "url": "https://github.com/hoodini/ai-agents-skills/blob/83e2083e3ec845e28920da5a6f333e254d8a7392/skills/director/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "cc910228033bff7d23abf4767e444479024810b4",
+        "size": 14192
+      }
+    },
+    {
+      "source_id": "src_https-github-com-hoodini-ai-agents-skills-yuv-ai-agent-skills_1308ad13",
+      "path": "skills/fal-ai/SKILL.md",
+      "declared_name": "fal-ai",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:1affdf85068c8db5c5a3d515b97a561f2c07b5f7",
+      "upstream_ref": "83e2083e3ec845e28920da5a6f333e254d8a7392",
+      "url": "https://github.com/hoodini/ai-agents-skills/blob/83e2083e3ec845e28920da5a6f333e254d8a7392/skills/fal-ai/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "1affdf85068c8db5c5a3d515b97a561f2c07b5f7",
+        "size": 8483
+      }
+    },
+    {
+      "source_id": "src_https-github-com-hoodini-ai-agents-skills-yuv-ai-agent-skills_1308ad13",
+      "path": "skills/figma/SKILL.md",
+      "declared_name": "figma",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:2b364ef614f46e4a32c8de044800907e33ae03a0",
+      "upstream_ref": "83e2083e3ec845e28920da5a6f333e254d8a7392",
+      "url": "https://github.com/hoodini/ai-agents-skills/blob/83e2083e3ec845e28920da5a6f333e254d8a7392/skills/figma/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "2b364ef614f46e4a32c8de044800907e33ae03a0",
+        "size": 17923
+      }
+    },
+    {
+      "source_id": "src_https-github-com-hoodini-ai-agents-skills-yuv-ai-agent-skills_1308ad13",
+      "path": "skills/github-trending/SKILL.md",
+      "declared_name": "github-trending",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:100f56be5dbf046f253542609a559e330e538f56",
+      "upstream_ref": "83e2083e3ec845e28920da5a6f333e254d8a7392",
+      "url": "https://github.com/hoodini/ai-agents-skills/blob/83e2083e3ec845e28920da5a6f333e254d8a7392/skills/github-trending/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "100f56be5dbf046f253542609a559e330e538f56",
+        "size": 8639
+      }
+    },
+    {
+      "source_id": "src_https-github-com-hoodini-ai-agents-skills-yuv-ai-agent-skills_1308ad13",
+      "path": "skills/google-workspace-cli/SKILL.md",
+      "declared_name": "google-workspace-cli",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:6fc5cf699680018a3467cb6447a27414ae1eaeb0",
+      "upstream_ref": "83e2083e3ec845e28920da5a6f333e254d8a7392",
+      "url": "https://github.com/hoodini/ai-agents-skills/blob/83e2083e3ec845e28920da5a6f333e254d8a7392/skills/google-workspace-cli/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "6fc5cf699680018a3467cb6447a27414ae1eaeb0",
+        "size": 39930
+      }
+    },
+    {
+      "source_id": "src_https-github-com-hoodini-ai-agents-skills-yuv-ai-agent-skills_1308ad13",
+      "path": "skills/honest-agent/SKILL.md",
+      "declared_name": "honest-agent",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:b3c468449926ba46d836f3b7bf4ed36760ceedec",
+      "upstream_ref": "83e2083e3ec845e28920da5a6f333e254d8a7392",
+      "url": "https://github.com/hoodini/ai-agents-skills/blob/83e2083e3ec845e28920da5a6f333e254d8a7392/skills/honest-agent/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "b3c468449926ba46d836f3b7bf4ed36760ceedec",
+        "size": 4130
+      }
+    },
+    {
+      "source_id": "src_https-github-com-hoodini-ai-agents-skills-yuv-ai-agent-skills_1308ad13",
+      "path": "skills/image-master/SKILL.md",
+      "declared_name": "image-master",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:1e8fa38aed1eb2329507fef70d37d12cb7ac429e",
+      "upstream_ref": "83e2083e3ec845e28920da5a6f333e254d8a7392",
+      "url": "https://github.com/hoodini/ai-agents-skills/blob/83e2083e3ec845e28920da5a6f333e254d8a7392/skills/image-master/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "1e8fa38aed1eb2329507fef70d37d12cb7ac429e",
+        "size": 16747
+      }
+    },
+    {
+      "source_id": "src_https-github-com-hoodini-ai-agents-skills-yuv-ai-agent-skills_1308ad13",
+      "path": "skills/langchain/SKILL.md",
+      "declared_name": "langchain",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:1620aa4d412bce20b9561559e9d9259a590c8127",
+      "upstream_ref": "83e2083e3ec845e28920da5a6f333e254d8a7392",
+      "url": "https://github.com/hoodini/ai-agents-skills/blob/83e2083e3ec845e28920da5a6f333e254d8a7392/skills/langchain/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "1620aa4d412bce20b9561559e9d9259a590c8127",
+        "size": 4906
+      }
+    },
+    {
+      "source_id": "src_https-github-com-hoodini-ai-agents-skills-yuv-ai-agent-skills_1308ad13",
+      "path": "skills/local-llm-router/SKILL.md",
+      "declared_name": "local-llm-router",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:493f5f9e73371185028827af49351fe60b36848c",
+      "upstream_ref": "83e2083e3ec845e28920da5a6f333e254d8a7392",
+      "url": "https://github.com/hoodini/ai-agents-skills/blob/83e2083e3ec845e28920da5a6f333e254d8a7392/skills/local-llm-router/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "493f5f9e73371185028827af49351fe60b36848c",
+        "size": 80484
+      }
+    },
+    {
+      "source_id": "src_https-github-com-hoodini-ai-agents-skills-yuv-ai-agent-skills_1308ad13",
+      "path": "skills/mermaid-diagrams/SKILL.md",
+      "declared_name": "mermaid-diagrams",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:bfaebca3c6bf9557f08b1b3bfe248f17148111d4",
+      "upstream_ref": "83e2083e3ec845e28920da5a6f333e254d8a7392",
+      "url": "https://github.com/hoodini/ai-agents-skills/blob/83e2083e3ec845e28920da5a6f333e254d8a7392/skills/mermaid-diagrams/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "bfaebca3c6bf9557f08b1b3bfe248f17148111d4",
+        "size": 7577
+      }
+    },
+    {
+      "source_id": "src_https-github-com-hoodini-ai-agents-skills-yuv-ai-agent-skills_1308ad13",
+      "path": "skills/meta-ads/SKILL.md",
+      "declared_name": "meta-ads",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:8e920df3000698e08ac596716b36960ab906e80c",
+      "upstream_ref": "83e2083e3ec845e28920da5a6f333e254d8a7392",
+      "url": "https://github.com/hoodini/ai-agents-skills/blob/83e2083e3ec845e28920da5a6f333e254d8a7392/skills/meta-ads/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "8e920df3000698e08ac596716b36960ab906e80c",
+        "size": 17175
+      }
+    },
+    {
+      "source_id": "src_https-github-com-hoodini-ai-agents-skills-yuv-ai-agent-skills_1308ad13",
+      "path": "skills/mobile-responsiveness/SKILL.md",
+      "declared_name": "mobile-responsiveness",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:668827a20a7a986087ef8377ba75a6386d0d3ed7",
+      "upstream_ref": "83e2083e3ec845e28920da5a6f333e254d8a7392",
+      "url": "https://github.com/hoodini/ai-agents-skills/blob/83e2083e3ec845e28920da5a6f333e254d8a7392/skills/mobile-responsiveness/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "668827a20a7a986087ef8377ba75a6386d0d3ed7",
+        "size": 5301
+      }
+    },
+    {
+      "source_id": "src_https-github-com-hoodini-ai-agents-skills-yuv-ai-agent-skills_1308ad13",
+      "path": "skills/mongodb/SKILL.md",
+      "declared_name": "mongodb",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:9d41091043d29da2bd58c442c7107ee18c7e0b8b",
+      "upstream_ref": "83e2083e3ec845e28920da5a6f333e254d8a7392",
+      "url": "https://github.com/hoodini/ai-agents-skills/blob/83e2083e3ec845e28920da5a6f333e254d8a7392/skills/mongodb/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "9d41091043d29da2bd58c442c7107ee18c7e0b8b",
+        "size": 13527
+      }
+    },
+    {
+      "source_id": "src_https-github-com-hoodini-ai-agents-skills-yuv-ai-agent-skills_1308ad13",
+      "path": "skills/nano-banana-pro/SKILL.md",
+      "declared_name": "nano-banana-pro",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:b6a0898905fc92377b467ac566adf682e6dc776e",
+      "upstream_ref": "83e2083e3ec845e28920da5a6f333e254d8a7392",
+      "url": "https://github.com/hoodini/ai-agents-skills/blob/83e2083e3ec845e28920da5a6f333e254d8a7392/skills/nano-banana-pro/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "b6a0898905fc92377b467ac566adf682e6dc776e",
+        "size": 7202
+      }
+    },
+    {
+      "source_id": "src_https-github-com-hoodini-ai-agents-skills-yuv-ai-agent-skills_1308ad13",
+      "path": "skills/owasp-security/SKILL.md",
+      "declared_name": "owasp-security",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:2c2675d511e32daf2e7f715db48c9a80c3e00ba1",
+      "upstream_ref": "83e2083e3ec845e28920da5a6f333e254d8a7392",
+      "url": "https://github.com/hoodini/ai-agents-skills/blob/83e2083e3ec845e28920da5a6f333e254d8a7392/skills/owasp-security/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "2c2675d511e32daf2e7f715db48c9a80c3e00ba1",
+        "size": 13688
+      }
+    },
+    {
+      "source_id": "src_https-github-com-hoodini-ai-agents-skills-yuv-ai-agent-skills_1308ad13",
+      "path": "skills/parallax-landing-page/SKILL.md",
+      "declared_name": "parallax-landing-page",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:c2ffa353aadaa7e74f211d61d33c31dbc21d2008",
+      "upstream_ref": "83e2083e3ec845e28920da5a6f333e254d8a7392",
+      "url": "https://github.com/hoodini/ai-agents-skills/blob/83e2083e3ec845e28920da5a6f333e254d8a7392/skills/parallax-landing-page/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "c2ffa353aadaa7e74f211d61d33c31dbc21d2008",
+        "size": 13008
+      }
+    },
+    {
+      "source_id": "src_https-github-com-hoodini-ai-agents-skills-yuv-ai-agent-skills_1308ad13",
+      "path": "skills/railway/SKILL.md",
+      "declared_name": "railway",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:7e9328ccc8d658b172d43c5dac480048d346ca5b",
+      "upstream_ref": "83e2083e3ec845e28920da5a6f333e254d8a7392",
+      "url": "https://github.com/hoodini/ai-agents-skills/blob/83e2083e3ec845e28920da5a6f333e254d8a7392/skills/railway/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "7e9328ccc8d658b172d43c5dac480048d346ca5b",
+        "size": 3183
+      }
+    },
+    {
+      "source_id": "src_https-github-com-hoodini-ai-agents-skills-yuv-ai-agent-skills_1308ad13",
+      "path": "skills/shabbat-times/SKILL.md",
+      "declared_name": "shabbat-times",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:bc90d6eab7c5f8c51d7c0d5660953fead9628570",
+      "upstream_ref": "83e2083e3ec845e28920da5a6f333e254d8a7392",
+      "url": "https://github.com/hoodini/ai-agents-skills/blob/83e2083e3ec845e28920da5a6f333e254d8a7392/skills/shabbat-times/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "bc90d6eab7c5f8c51d7c0d5660953fead9628570",
+        "size": 4296
+      }
+    },
+    {
+      "source_id": "src_https-github-com-hoodini-ai-agents-skills-yuv-ai-agent-skills_1308ad13",
+      "path": "skills/ux-design-systems/SKILL.md",
+      "declared_name": "ux-design-systems",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:217eb1483c694f496033d569730250ed1aa4bd3f",
+      "upstream_ref": "83e2083e3ec845e28920da5a6f333e254d8a7392",
+      "url": "https://github.com/hoodini/ai-agents-skills/blob/83e2083e3ec845e28920da5a6f333e254d8a7392/skills/ux-design-systems/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "217eb1483c694f496033d569730250ed1aa4bd3f",
+        "size": 4326
+      }
+    },
+    {
+      "source_id": "src_https-github-com-hoodini-ai-agents-skills-yuv-ai-agent-skills_1308ad13",
+      "path": "skills/vercel/SKILL.md",
+      "declared_name": "vercel",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:cb072367fbfd0ff5961ac2d00edbde92c2f01ecd",
+      "upstream_ref": "83e2083e3ec845e28920da5a6f333e254d8a7392",
+      "url": "https://github.com/hoodini/ai-agents-skills/blob/83e2083e3ec845e28920da5a6f333e254d8a7392/skills/vercel/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "cb072367fbfd0ff5961ac2d00edbde92c2f01ecd",
+        "size": 4215
+      }
+    },
+    {
+      "source_id": "src_https-github-com-hoodini-ai-agents-skills-yuv-ai-agent-skills_1308ad13",
+      "path": "skills/video-edit/SKILL.md",
+      "declared_name": "video-edit",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:8b51010766775a7ce309f40059e61a3cd474150a",
+      "upstream_ref": "83e2083e3ec845e28920da5a6f333e254d8a7392",
+      "url": "https://github.com/hoodini/ai-agents-skills/blob/83e2083e3ec845e28920da5a6f333e254d8a7392/skills/video-edit/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "8b51010766775a7ce309f40059e61a3cd474150a",
+        "size": 11458
+      }
+    },
+    {
+      "source_id": "src_https-github-com-hoodini-ai-agents-skills-yuv-ai-agent-skills_1308ad13",
+      "path": "skills/video-to-landing-page/SKILL.md",
+      "declared_name": "video-to-landing-page",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:46e4c3d968f210452b6c9219ca4212980c1297f1",
+      "upstream_ref": "83e2083e3ec845e28920da5a6f333e254d8a7392",
+      "url": "https://github.com/hoodini/ai-agents-skills/blob/83e2083e3ec845e28920da5a6f333e254d8a7392/skills/video-to-landing-page/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "46e4c3d968f210452b6c9219ca4212980c1297f1",
+        "size": 5746
+      }
+    },
+    {
+      "source_id": "src_https-github-com-hoodini-ai-agents-skills-yuv-ai-agent-skills_1308ad13",
+      "path": "skills/web-accessibility/SKILL.md",
+      "declared_name": "web-accessibility",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:010641bec81707b481794f8b34e0327fd19bcfb0",
+      "upstream_ref": "83e2083e3ec845e28920da5a6f333e254d8a7392",
+      "url": "https://github.com/hoodini/ai-agents-skills/blob/83e2083e3ec845e28920da5a6f333e254d8a7392/skills/web-accessibility/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "010641bec81707b481794f8b34e0327fd19bcfb0",
+        "size": 4928
+      }
+    },
+    {
+      "source_id": "src_https-github-com-hoodini-ai-agents-skills-yuv-ai-agent-skills_1308ad13",
+      "path": "skills/x-twitter-scraper/SKILL.md",
+      "declared_name": "x-twitter-scraper",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:0ebfe96e24ac1bbe100202dfcd9783bc112ff101",
+      "upstream_ref": "83e2083e3ec845e28920da5a6f333e254d8a7392",
+      "url": "https://github.com/hoodini/ai-agents-skills/blob/83e2083e3ec845e28920da5a6f333e254d8a7392/skills/x-twitter-scraper/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "0ebfe96e24ac1bbe100202dfcd9783bc112ff101",
+        "size": 2302
+      }
+    },
+    {
+      "source_id": "src_https-github-com-hoodini-ai-agents-skills-yuv-ai-agent-skills_1308ad13",
+      "path": "skills/yuv-decks/SKILL.md",
+      "declared_name": "yuv-decks",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:9b993c210b5d2018e5203ad6155e83d0499f8f55",
+      "upstream_ref": "83e2083e3ec845e28920da5a6f333e254d8a7392",
+      "url": "https://github.com/hoodini/ai-agents-skills/blob/83e2083e3ec845e28920da5a6f333e254d8a7392/skills/yuv-decks/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "9b993c210b5d2018e5203ad6155e83d0499f8f55",
+        "size": 24705
+      }
+    },
+    {
+      "source_id": "src_https-github-com-hoodini-ai-agents-skills-yuv-ai-agent-skills_1308ad13",
+      "path": "skills/yuv-design-system/SKILL.md",
+      "declared_name": "yuv-design-system",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:ba764fee4cb2c1ae6d123637a7407414edb9b46d",
+      "upstream_ref": "83e2083e3ec845e28920da5a6f333e254d8a7392",
+      "url": "https://github.com/hoodini/ai-agents-skills/blob/83e2083e3ec845e28920da5a6f333e254d8a7392/skills/yuv-design-system/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "ba764fee4cb2c1ae6d123637a7407414edb9b46d",
+        "size": 36985
+      }
+    },
+    {
+      "source_id": "src_https-github-com-hoodini-ai-agents-skills-yuv-ai-agent-skills_1308ad13",
+      "path": "skills/yuv-pilot/SKILL.md",
+      "declared_name": "yuv-pilot",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:f656c19c691dc46d095667020d84cbe06b8c8977",
+      "upstream_ref": "83e2083e3ec845e28920da5a6f333e254d8a7392",
+      "url": "https://github.com/hoodini/ai-agents-skills/blob/83e2083e3ec845e28920da5a6f333e254d8a7392/skills/yuv-pilot/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "f656c19c691dc46d095667020d84cbe06b8c8977",
+        "size": 19653
+      }
+    },
+    {
+      "source_id": "src_https-github-com-hoodini-ai-agents-skills-yuv-ai-agent-skills_1308ad13",
+      "path": "skills/yuv-reel-covers/SKILL.md",
+      "declared_name": "yuv-reel-covers",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:f4c2371a6310d9b7549c7bc88113f0039d670acb",
+      "upstream_ref": "83e2083e3ec845e28920da5a6f333e254d8a7392",
+      "url": "https://github.com/hoodini/ai-agents-skills/blob/83e2083e3ec845e28920da5a6f333e254d8a7392/skills/yuv-reel-covers/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "f4c2371a6310d9b7549c7bc88113f0039d670acb",
+        "size": 4671
+      }
+    },
+    {
+      "source_id": "src_https-github-com-hoodini-ai-agents-skills-yuv-ai-agent-skills_1308ad13",
+      "path": "skills/yuv-video-director/SKILL.md",
+      "declared_name": "yuv-video-director",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:18286637cf19009e17e7d5474e78f256d279068f",
+      "upstream_ref": "83e2083e3ec845e28920da5a6f333e254d8a7392",
+      "url": "https://github.com/hoodini/ai-agents-skills/blob/83e2083e3ec845e28920da5a6f333e254d8a7392/skills/yuv-video-director/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "18286637cf19009e17e7d5474e78f256d279068f",
+        "size": 8736
+      }
+    },
+    {
+      "source_id": "src_https-github-com-hoodini-ai-agents-skills-yuv-ai-agent-skills_1308ad13",
+      "path": "skills/yuv-viral-video/SKILL.md",
+      "declared_name": "yuv-viral-video",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:30683368ea18d16a5e34fc049e302c539276f11f",
+      "upstream_ref": "83e2083e3ec845e28920da5a6f333e254d8a7392",
+      "url": "https://github.com/hoodini/ai-agents-skills/blob/83e2083e3ec845e28920da5a6f333e254d8a7392/skills/yuv-viral-video/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "30683368ea18d16a5e34fc049e302c539276f11f",
+        "size": 30216
+      }
+    }
+  ],
+  "digest": "sha256:19de4cb88dfc05dbbae29f48ae5662211a8d6a5eef010232264c7f937d7f9919"
+}

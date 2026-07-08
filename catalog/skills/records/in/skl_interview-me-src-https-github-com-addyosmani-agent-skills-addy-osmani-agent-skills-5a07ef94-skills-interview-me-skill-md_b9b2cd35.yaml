@@ -1,0 +1,46 @@
+analysis:
+  hash: null
+  path: catalog/analyses/in/skl_interview-me-src-https-github-com-addyosmani-agent-skills-addy-osmani-agent-skills-5a07ef94-skills-interview-me-skill-md_b9b2cd35.md
+canonical_name: interview-me
+canonical_skill_id: skl_interview-me-src-https-github-com-addyosmani-agent-skills-addy-osmani-agent-skills-5a07ef94-skills-interview-me-skill-md_b9b2cd35
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-08T09:49:29.016Z'
+curation:
+  notes: []
+display_name: Interview Me
+identity:
+  aliases: []
+  current_version_id: sha256:de5e3aff0c497e2d474e329cde447678632e082b
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: Repository LICENSE file confirms MIT
+    spdx: MIT
+    verified: true
+  path: skills/interview-me/SKILL.md
+  source_id: src_https-github-com-addyosmani-agent-skills-addy-osmani-agent-skills_5a07ef94
+  type: github_repo
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-08T09:49:29.016Z'

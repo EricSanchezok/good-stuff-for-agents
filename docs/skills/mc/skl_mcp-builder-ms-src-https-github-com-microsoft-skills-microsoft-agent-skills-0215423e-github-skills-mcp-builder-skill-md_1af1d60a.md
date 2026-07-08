@@ -4,7 +4,7 @@
 
 ## Summary
 
-Analysis pending.
+Mcp Builder — provides agent workflow guidance for frontend-design tasks. Source: src_https-github-com-anthropics-skills-anthropic-skills_76e1ad93.
 
 ## Source
 
@@ -34,11 +34,11 @@ No published packs use this skill yet.
 
 ## Related Skills
 
-No related skills are public yet.
+- overlaps with: [MCP Builder](../mc/skl_mcp-builder-src-https-github-com-anthropics-skills-anthropic-skills-76e1ad93-skills-mcp-builder-skill-md_1815727c.md)
 
 ## Public Analysis Summary
 
-Analysis pending.
+Mcp Builder — provides agent workflow guidance for frontend-design tasks. Source: src_https-github-com-anthropics-skills-anthropic-skills_76e1ad93.
 
 ## Confidence and Limitations
 

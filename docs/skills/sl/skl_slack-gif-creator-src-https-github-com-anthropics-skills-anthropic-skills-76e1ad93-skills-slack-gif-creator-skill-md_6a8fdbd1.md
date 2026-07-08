@@ -4,7 +4,7 @@
 
 ## Summary
 
-Analysis pending.
+Slack Gif Creator — provides agent workflow guidance for creative-media tasks. Source: src_https-github-com-anthropics-skills-anthropic-skills_76e1ad93.
 
 ## Source
 
@@ -38,7 +38,7 @@ No related skills are public yet.
 
 ## Public Analysis Summary
 
-Analysis pending.
+Slack Gif Creator — provides agent workflow guidance for creative-media tasks. Source: src_https-github-com-anthropics-skills-anthropic-skills_76e1ad93.
 
 ## Confidence and Limitations
 

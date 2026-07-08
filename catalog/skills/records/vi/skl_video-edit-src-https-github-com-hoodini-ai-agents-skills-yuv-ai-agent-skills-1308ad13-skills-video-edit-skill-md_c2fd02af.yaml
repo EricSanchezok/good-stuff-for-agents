@@ -1,0 +1,46 @@
+analysis:
+  hash: null
+  path: catalog/analyses/vi/skl_video-edit-src-https-github-com-hoodini-ai-agents-skills-yuv-ai-agent-skills-1308ad13-skills-video-edit-skill-md_c2fd02af.md
+canonical_name: video-edit
+canonical_skill_id: skl_video-edit-src-https-github-com-hoodini-ai-agents-skills-yuv-ai-agent-skills-1308ad13-skills-video-edit-skill-md_c2fd02af
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-08T09:49:38.644Z'
+curation:
+  notes: []
+display_name: Video Edit
+identity:
+  aliases: []
+  current_version_id: sha256:8b51010766775a7ce309f40059e61a3cd474150a
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: Repository LICENSE file confirms MIT
+    spdx: MIT
+    verified: true
+  path: skills/video-edit/SKILL.md
+  source_id: src_https-github-com-hoodini-ai-agents-skills-yuv-ai-agent-skills_1308ad13
+  type: github_repo
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-08T09:49:38.644Z'

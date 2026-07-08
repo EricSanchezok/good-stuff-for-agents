@@ -1,0 +1,46 @@
+analysis:
+  hash: null
+  path: catalog/analyses/te/skl_test-driven-development-src-https-github-com-addyosmani-agent-skills-addy-osmani-agent-skills-5a07ef94-skills-test-driven-development-skill-md_59c42946.md
+canonical_name: test-driven-development
+canonical_skill_id: skl_test-driven-development-src-https-github-com-addyosmani-agent-skills-addy-osmani-agent-skills-5a07ef94-skills-test-driven-development-skill-md_59c42946
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-08T09:49:29.480Z'
+curation:
+  notes: []
+display_name: Test Driven Development
+identity:
+  aliases: []
+  current_version_id: sha256:c96a67f4560121a4761baad2efeaa51ef1602d7a
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: Repository LICENSE file confirms MIT
+    spdx: MIT
+    verified: true
+  path: skills/test-driven-development/SKILL.md
+  source_id: src_https-github-com-addyosmani-agent-skills-addy-osmani-agent-skills_5a07ef94
+  type: github_repo
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-08T09:49:29.480Z'

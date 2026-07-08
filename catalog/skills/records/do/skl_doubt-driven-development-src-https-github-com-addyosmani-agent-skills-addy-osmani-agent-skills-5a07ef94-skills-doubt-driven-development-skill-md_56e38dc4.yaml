@@ -1,0 +1,46 @@
+analysis:
+  hash: null
+  path: catalog/analyses/do/skl_doubt-driven-development-src-https-github-com-addyosmani-agent-skills-addy-osmani-agent-skills-5a07ef94-skills-doubt-driven-development-skill-md_56e38dc4.md
+canonical_name: doubt-driven-development
+canonical_skill_id: skl_doubt-driven-development-src-https-github-com-addyosmani-agent-skills-addy-osmani-agent-skills-5a07ef94-skills-doubt-driven-development-skill-md_56e38dc4
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-08T09:49:28.743Z'
+curation:
+  notes: []
+display_name: Doubt Driven Development
+identity:
+  aliases: []
+  current_version_id: sha256:f5bc53d01ca0c5bdf178fba1c38c9817b39b63ec
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: Repository LICENSE file confirms MIT
+    spdx: MIT
+    verified: true
+  path: skills/doubt-driven-development/SKILL.md
+  source_id: src_https-github-com-addyosmani-agent-skills-addy-osmani-agent-skills_5a07ef94
+  type: github_repo
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-08T09:49:28.743Z'

@@ -1,0 +1,46 @@
+analysis:
+  hash: null
+  path: catalog/analyses/di/skl_director-src-https-github-com-hoodini-ai-agents-skills-yuv-ai-agent-skills-1308ad13-skills-director-skill-md_759b30fa.md
+canonical_name: director
+canonical_skill_id: skl_director-src-https-github-com-hoodini-ai-agents-skills-yuv-ai-agent-skills-1308ad13-skills-director-skill-md_759b30fa
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-08T09:49:37.543Z'
+curation:
+  notes: []
+display_name: Director
+identity:
+  aliases: []
+  current_version_id: sha256:cc910228033bff7d23abf4767e444479024810b4
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: Repository LICENSE file confirms MIT
+    spdx: MIT
+    verified: true
+  path: skills/director/SKILL.md
+  source_id: src_https-github-com-hoodini-ai-agents-skills-yuv-ai-agent-skills_1308ad13
+  type: github_repo
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-08T09:49:37.543Z'

@@ -4,7 +4,7 @@
 
 ## Summary
 
-Analysis pending.
+Skill Creator — provides agent workflow guidance for agent-ecosystem tasks. Source: src_https-github-com-anthropics-skills-anthropic-skills_76e1ad93.
 
 ## Source
 
@@ -34,11 +34,11 @@ No published packs use this skill yet.
 
 ## Related Skills
 
-No related skills are public yet.
+- overlaps with: [Skill Creator](../sk/skl_skill-creator-src-https-github-com-anthropics-skills-anthropic-skills-76e1ad93-skills-skill-creator-skill-md_32c96fe7.md)
 
 ## Public Analysis Summary
 
-Analysis pending.
+Skill Creator — provides agent workflow guidance for agent-ecosystem tasks. Source: src_https-github-com-anthropics-skills-anthropic-skills_76e1ad93.
 
 ## Confidence and Limitations
 

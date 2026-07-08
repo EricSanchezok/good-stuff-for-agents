@@ -4,7 +4,7 @@
 
 ## Summary
 
-Analysis pending.
+Podcast Generation — provides agent workflow guidance for creative-media tasks. Source: src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e.
 
 ## Source
 
@@ -38,7 +38,7 @@ No related skills are public yet.
 
 ## Public Analysis Summary
 
-Analysis pending.
+Podcast Generation — provides agent workflow guidance for creative-media tasks. Source: src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e.
 
 ## Confidence and Limitations
 

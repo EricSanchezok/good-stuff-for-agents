@@ -4,7 +4,7 @@
 
 ## Summary
 
-Analysis pending.
+Copilot Sdk — provides agent workflow guidance for api-tooling tasks. Source: src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e.
 
 ## Source
 
@@ -34,11 +34,11 @@ No published packs use this skill yet.
 
 ## Related Skills
 
-No related skills are public yet.
+- overlaps with: [Copilot Sdk](../co/skl_copilot-sdk-src-https-github-com-hoodini-ai-agents-skills-yuv-ai-agent-skills-1308ad13-skills-copilot-sdk-skill-md_c6bb6b8c.md)
 
 ## Public Analysis Summary
 
-Analysis pending.
+Copilot Sdk — provides agent workflow guidance for api-tooling tasks. Source: src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e.
 
 ## Confidence and Limitations
 

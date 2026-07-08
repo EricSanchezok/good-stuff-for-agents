@@ -1,0 +1,46 @@
+analysis:
+  hash: null
+  path: catalog/analyses/mo/skl_mongodb-src-https-github-com-hoodini-ai-agents-skills-yuv-ai-agent-skills-1308ad13-skills-mongodb-skill-md_57a37770.md
+canonical_name: mongodb
+canonical_skill_id: skl_mongodb-src-https-github-com-hoodini-ai-agents-skills-yuv-ai-agent-skills-1308ad13-skills-mongodb-skill-md_57a37770
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-08T09:49:38.204Z'
+curation:
+  notes: []
+display_name: Mongodb
+identity:
+  aliases: []
+  current_version_id: sha256:9d41091043d29da2bd58c442c7107ee18c7e0b8b
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: Repository LICENSE file confirms MIT
+    spdx: MIT
+    verified: true
+  path: skills/mongodb/SKILL.md
+  source_id: src_https-github-com-hoodini-ai-agents-skills-yuv-ai-agent-skills_1308ad13
+  type: github_repo
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-08T09:49:38.204Z'

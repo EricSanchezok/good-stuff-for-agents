@@ -1,0 +1,67 @@
+compatibility:
+  notes: All members from same source (addyosmani/agent-skills, MIT). No conflicts.
+    Complementary stages.
+  unresolved: []
+created_by_run: run_manual
+domain: coding-agent-workflow
+evaluation:
+  evaluation_id: null
+  score: null
+  status: pending
+evidence:
+  all_analyzed: true
+  license_verified: true
+  source_count: 1
+excluded:
+- reason: Overlaps with incremental-implementation
+  skill_id: skl_source-driven-development-src-https-github-com-addyosmani-agent-skills-addy-osmani-agent-skills-5a07ef94-skills-source-driven-development-skill-md_3de3b0b7
+- reason: Specialized methodology; pack uses TDD instead
+  skill_id: skl_doubt-driven-development-src-https-github-com-addyosmani-agent-skills-addy-osmani-agent-skills-5a07ef94-skills-doubt-driven-development-skill-md_56e38dc4
+intent: 'Guide an AI coding agent through the full software development lifecycle:
+  planning, implementation, quality, testing, security, and deployment.'
+members:
+- inclusion_reason: Core entry point for breaking down complex tasks into executable
+    pieces
+  role: orchestrator
+  skill_id: skl_planning-and-task-breakdown-src-https-github-com-addyosmani-agent-skills-addy-osmani-agent-skills-5a07ef94-skills-planning-and-task-breakdown-skill-md_553ed924
+  stage: planning
+  version_id: sha256:ada6cbc135055f045960a70ff504f1d5371612f7
+- inclusion_reason: Ensures implementation proceeds in small, verifiable increments
+  role: executor
+  skill_id: skl_incremental-implementation-src-https-github-com-addyosmani-agent-skills-addy-osmani-agent-skills-5a07ef94-skills-incremental-implementation-skill-md_cb095f47
+  stage: implementation
+  version_id: sha256:a625d4a17c0c4a5701494f2c0f7051231af7f59e
+- inclusion_reason: 'TDD workflow: write tests before implementation, verify each
+    step'
+  role: quality
+  skill_id: skl_test-driven-development-src-https-github-com-addyosmani-agent-skills-addy-osmani-agent-skills-5a07ef94-skills-test-driven-development-skill-md_59c42946
+  stage: testing
+  version_id: sha256:c96a67f4560121a4761baad2efeaa51ef1602d7a
+- inclusion_reason: Review code for correctness, style, and maintainability
+  role: quality
+  skill_id: skl_code-review-and-quality-src-https-github-com-addyosmani-agent-skills-addy-osmani-agent-skills-5a07ef94-skills-code-review-and-quality-skill-md_ab59383c
+  stage: review
+  version_id: sha256:5efda7afb5d0e4a5393c5a7da84e15b197f7b5b6
+- inclusion_reason: Security audit and hardening before deployment
+  role: security
+  skill_id: skl_security-and-hardening-src-https-github-com-addyosmani-agent-skills-addy-osmani-agent-skills-5a07ef94-skills-security-and-hardening-skill-md_5d91d151
+  stage: review
+  version_id: sha256:2c641ac9629c85645538763196a8e93628da5ecb
+- inclusion_reason: Automated CI/CD pipeline setup and deployment
+  role: infrastructure
+  skill_id: skl_ci-cd-and-automation-src-https-github-com-addyosmani-agent-skills-addy-osmani-agent-skills-5a07ef94-skills-ci-cd-and-automation-skill-md_8a067615
+  stage: deployment
+  version_id: sha256:118456fcb10225c030769a4fee7815b9c536b0ce
+- inclusion_reason: Pre-launch checklist, release management, go-live
+  role: delivery
+  skill_id: skl_shipping-and-launch-src-https-github-com-addyosmani-agent-skills-addy-osmani-agent-skills-5a07ef94-skills-shipping-and-launch-skill-md_82938f24
+  stage: deployment
+  version_id: sha256:eebcc6cbb1b89d978fef1b594136b6b28990e5eb
+name: Fullstack Coding Agent Workflow
+pack_id: pck_fullstack-coding-agent-workflow
+schema_version: 1
+status: candidate
+updated_at: '2026-07-08T09:55:09.458Z'
+version: 0.1.0
+workflow: 1) planning → 2) implementation (incremental+TDD) → 3) review (code review+security)
+  → 4) deployment (CI/CD+launch)

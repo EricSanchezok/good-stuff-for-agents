@@ -1,0 +1,46 @@
+analysis:
+  hash: null
+  path: catalog/analyses/ci/skl_cinematic-scrub-landing-src-https-github-com-hoodini-ai-agents-skills-yuv-ai-agent-skills-1308ad13-skills-cinematic-scrub-landing-skill-md_2d4e0217.md
+canonical_name: cinematic-scrub-landing
+canonical_skill_id: skl_cinematic-scrub-landing-src-https-github-com-hoodini-ai-agents-skills-yuv-ai-agent-skills-1308ad13-skills-cinematic-scrub-landing-skill-md_2d4e0217
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-08T09:49:37.318Z'
+curation:
+  notes: []
+display_name: Cinematic Scrub Landing
+identity:
+  aliases: []
+  current_version_id: sha256:d6ec1518330d5621c9decd866794be3acd787d75
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: Repository LICENSE file confirms MIT
+    spdx: MIT
+    verified: true
+  path: skills/cinematic-scrub-landing/SKILL.md
+  source_id: src_https-github-com-hoodini-ai-agents-skills-yuv-ai-agent-skills_1308ad13
+  type: github_repo
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-08T09:49:37.318Z'

@@ -1,0 +1,46 @@
+analysis:
+  hash: null
+  path: catalog/analyses/sp/skl_spec-driven-development-src-https-github-com-addyosmani-agent-skills-addy-osmani-agent-skills-5a07ef94-skills-spec-driven-development-skill-md_94d139c4.md
+canonical_name: spec-driven-development
+canonical_skill_id: skl_spec-driven-development-src-https-github-com-addyosmani-agent-skills-addy-osmani-agent-skills-5a07ef94-skills-spec-driven-development-skill-md_94d139c4
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-08T09:49:29.426Z'
+curation:
+  notes: []
+display_name: Spec Driven Development
+identity:
+  aliases: []
+  current_version_id: sha256:569d22321469770385b1ff89bf69f498f2202bc6
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: Repository LICENSE file confirms MIT
+    spdx: MIT
+    verified: true
+  path: skills/spec-driven-development/SKILL.md
+  source_id: src_https-github-com-addyosmani-agent-skills-addy-osmani-agent-skills_5a07ef94
+  type: github_repo
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-08T09:49:29.426Z'

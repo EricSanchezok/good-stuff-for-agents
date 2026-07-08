@@ -1,0 +1,46 @@
+analysis:
+  hash: null
+  path: catalog/analyses/do/skl_documentation-and-adrs-src-https-github-com-addyosmani-agent-skills-addy-osmani-agent-skills-5a07ef94-skills-documentation-and-adrs-skill-md_b9bdbdce.md
+canonical_name: documentation-and-adrs
+canonical_skill_id: skl_documentation-and-adrs-src-https-github-com-addyosmani-agent-skills-addy-osmani-agent-skills-5a07ef94-skills-documentation-and-adrs-skill-md_b9bdbdce
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-08T09:49:28.689Z'
+curation:
+  notes: []
+display_name: Documentation And Adrs
+identity:
+  aliases: []
+  current_version_id: sha256:061c5e1a0a9faf07bd8c65bbd03141fab7b044bd
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: Repository LICENSE file confirms MIT
+    spdx: MIT
+    verified: true
+  path: skills/documentation-and-adrs/SKILL.md
+  source_id: src_https-github-com-addyosmani-agent-skills-addy-osmani-agent-skills_5a07ef94
+  type: github_repo
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-08T09:49:28.689Z'
