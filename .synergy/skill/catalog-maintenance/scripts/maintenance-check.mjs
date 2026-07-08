@@ -3,7 +3,7 @@ import { existsSync } from 'node:fs'
 import { join } from 'node:path'
 import { ROOT, validateCatalog } from '../../catalog-data/scripts/lib/catalog-lib.mjs'
 import { printResult, runScript } from '../../catalog-data/scripts/lib/pipeline-cli.mjs'
-import { checkDocsDrift, checkLinks, renderAll } from '../../catalog-publishing/scripts/lib/publishing-lib.mjs'
+import { checkDocsDrift, checkLinks, checkPublicBoundary, renderAll } from '../../catalog-publishing/scripts/lib/publishing-lib.mjs'
 
 const steps = []
 
@@ -15,6 +15,7 @@ try {
   step('render-public-pages', () => renderAll())
   step('check-public-drift', () => assertOk(checkDocsDrift(), 'public page drift'))
   step('check-public-links', () => assertOk(checkLinks(), 'public links'))
+  step('check-public-boundary', () => assertOk(checkPublicBoundary(), 'public boundary'))
   step('validate-end', () => validateOrThrow())
   printResult({ ok: true, exit_code: 0, git_available: existsSync(join(ROOT, '.git')), committed: false, semantic_phases_run: false, steps })
 } catch (error) {

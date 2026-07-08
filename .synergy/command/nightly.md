@@ -17,3 +17,9 @@ Definition of done for a full nightly run:
 - authorized commit and push complete.
 
 Do not stop at a phase handoff when the next owner skill is available and no blocker exists. Load the owner skill and continue until the touched item has a terminal state.
+
+Deterministic completion gates:
+
+- Run `nightly:full-check` before committing.
+- Run `nightly:report:write` to produce the machine-readable summary and Markdown report, then validate with `nightly:report:check` and `nightly:states:check`.
+- Finalize git with `nightly:git -- --dry-run --authorized` to inspect, then `nightly:git -- --commit --push --authorized` to finalize. Never hand-roll `git add && git commit && git push`.

@@ -24,13 +24,17 @@ Do not show internal mechanics, hidden metadata, maintenance instructions, helpe
 
 ## Required Check
 
-After rendering public pages, search `README.md` and `docs/**/*.md` for this pattern:
+Run the deterministic boundary checker:
 
-```text
-(catalog-publishing|catalog hash|source_hash|source_record|generated_at|generator|regenerated|automation|nightly|script|scripts|npm|source of truth|Do not edit|deterministic|helper|pipeline|workflow|GENERATED|frontmatter|manifest\.json|sha256|quality gate|Evaluation ID|Analysis paths|Relation edges|Consecutive failures|Last ref)
+```bash
+npm --prefix .synergy run publish:boundary
 ```
 
-A clean result means there are no matches. If there is a match, rewrite the renderer or page copy and render again.
+This runs a context-aware checker that distinguishes blocking implementation leaks from legitimate catalog names and public task language. A clean result means zero blocking errors. Warnings for broad public nouns (`workflow`, `automation`, `script`, `pipeline`) do not block, but the agent should review them to confirm they are catalog entry names or public task language, not implementation leaks.
+
+**Blocking errors** mean concrete internal tokens were found in public pages — fix the renderer or page copy and rerun the check.
+
+**Do not use raw grep as a substitute for `publish:boundary`.** The checker accounts for legitimate catalog names and slugs that happen to contain internal-looking words.
 
 ## Drift and Link Checks
 

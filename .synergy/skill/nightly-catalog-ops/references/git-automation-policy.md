@@ -15,14 +15,21 @@ Allowed content:
 
 ## Required Checks
 
-Before committing:
+Before committing, run the deterministic nightly git finalizer:
 
-1. run strict validation;
-2. run public render, drift, and link checks when public pages are touched;
-3. inspect git status and diff;
-4. exclude unrelated user changes;
-5. ensure no secrets or temp files are included;
-6. use the required co-author footer from `AGENTS.md`.
+```bash
+npm --prefix .synergy run nightly:git -- --dry-run --authorized
+```
+
+This script runs required gates (validation, index, render, drift, links, boundary, report state checks), inspects git status, excludes forbidden paths (secrets, temp files, unauthorized directories), rejects committed reports containing `Push: Pending` or `Commits: Pending`, and applies the required co-author footer.
+
+To commit and push:
+
+```bash
+npm --prefix .synergy run nightly:git -- --commit --push --authorized --message "nightly: catalog run summary"
+```
+
+**Do not hand-roll `git add && git commit && git push` for nightly runs.** Use the finalizer.
 
 ## Forbidden
 

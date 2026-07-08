@@ -73,9 +73,9 @@ You must leave behind:
 4. **Resolve touched pack lifecycle states.** After growth returns, inspect candidate, changed, stale, impacted, and published packs touched by this run. Continue with the owning skill when the next step is available and no blocker exists. Passing candidates should be promoted through catalog-data and rendered by publishing; needs-work/rejected packs keep evaluation reasons; stale/impacted packs are updated, re-evaluated, re-published, marked no-op, or blocked with owner and reason.
 5. **Load `catalog-maintenance` for final gates.** You rerun validation, indexing, public rendering, drift, links, status, and public-boundary scan.
 6. **Load `catalog-publishing` when public output needs focused repair.** You keep public docs visitor-facing and never hand-edit generated public sections as a workaround.
-7. **Write total run report.** You summarize maintenance, growth, publishing, touched objects and their terminal states, skipped phases, blockers, verification, and git actions.
-8. **Commit and push only when authorized.** You inspect status/diff, exclude unrelated user changes, commit with the required co-author footer, and push normally. Never force push.
-9. **Handoff or stop.** If the run is blocked, state the owner and exact next action. If complete, state the terminal states reached, commit/push state, and next-run priorities.
+7. **Assemble the summary JSON and write the report.** You build the machine-readable summary with terminal states per `references/run-summary-schema.md`. Write and validate via `nightly:report:write` and `nightly:report:check`, then run `nightly:states:check`.
+8. **Finalize git only when authorized.** Use the deterministic finalizer: `nightly:git -- --dry-run --authorized` to inspect, then `nightly:git -- --commit --push --authorized --message "nightly: ..."` to commit and push. Never hand-roll git commands. The finalizer enforces validation gates, blocks forbidden files, and rejects reports containing pending markers.
+9. **Handoff or stop.** If the run is blocked, state the owner and exact next action. If complete, state the terminal states reached and commit/push state.
 
 ## Quality Bar
 
@@ -103,13 +103,23 @@ A good total run is coherent and auditable. Maintenance proves the repo is healt
 Run the total final gate set:
 
 ```bash
-npm --prefix .synergy run check
-npm --prefix .synergy run maintenance:run
-npm --prefix .synergy run catalog:status
+npm --prefix .synergy run nightly:full-check
 ```
 
-Also run the public-boundary scan from `../shared-references/public-surface-boundary.md` whenever public pages change.
+For report and terminal-state validation, run:
+
+```bash
+npm --prefix .synergy run nightly:report:write -- --input <summary.json>
+npm --prefix .synergy run nightly:report:check -- --input <summary.json>
+npm --prefix .synergy run nightly:states:check -- --input <summary.json>
+```
+
+For git inspection before committing:
+
+```bash
+npm --prefix .synergy run nightly:git -- --dry-run --authorized
+```
 
 ## Handoff
 
-Your final handoff lists maintenance results, growth results, public page results, report paths, validation commands, commits, push state, blockers, and next-run priorities.
+Your final handoff lists maintenance results, growth results, public page results, report paths, terminal-state counts, validation commands, commits, push state, blockers, and next-run priorities.

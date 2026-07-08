@@ -73,7 +73,7 @@ You must leave behind:
 3. **Render from data.** You run the renderer instead of hand-editing pages. If public copy is wrong, change rendering logic or source records at the owner layer.
 4. **Check drift.** You run the drift check. If drift remains, render again or fix the renderer.
 5. **Check links.** You run link checks and repair broken relative paths or rendering assumptions.
-6. **Scan public pages.** You search public pages with the concrete pattern in `../shared-references/public-surface-boundary.md`. Any match is a blocker.
+6. **Scan public pages.** Run the deterministic boundary checker via `npm --prefix .synergy run publish:boundary`. This is a context-aware scan: blocking errors flag concrete implementation leaks (must exit 2 and require repair); warnings for broad public nouns such as `workflow` or `automation` are for review but do not block. Do not use raw grep as a substitute.
 7. **Report public result.** You summarize changed public pages, checks, and any records excluded by eligibility.
 
 ## Quality Bar
@@ -100,16 +100,15 @@ Good publishing output is clean, useful, reproducible, and public-safe. Visitors
 
 ## Verification
 
-Run:
+Run the full publishing gate set:
 
 ```bash
 npm --prefix .synergy run catalog:index
 npm --prefix .synergy run publish:render
 npm --prefix .synergy run publish:check
 npm --prefix .synergy run publish:links
+npm --prefix .synergy run publish:boundary
 ```
-
-Then run the public-boundary scan from `../shared-references/public-surface-boundary.md` against `README.md` and `docs/**/*.md`.
 
 ## Handoff
 

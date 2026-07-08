@@ -22,10 +22,16 @@
     "publish:render": "node skill/catalog-publishing/scripts/render-docs.mjs",
     "publish:check": "node skill/catalog-publishing/scripts/check-docs-drift.mjs",
     "publish:links": "node skill/catalog-publishing/scripts/check-links.mjs",
-    "check": "npm run catalog:validate && npm run catalog:index && npm run publish:render && npm run publish:check && npm run publish:links",
+    "publish:boundary": "node skill/catalog-publishing/scripts/check-public-boundary.mjs",
+    "check": "npm run catalog:validate && npm run catalog:index && npm run publish:render && npm run publish:check && npm run publish:links && npm run publish:boundary",
     "catalog:status": "node skill/catalog-maintenance/scripts/catalog-status.mjs",
     "maintenance:run": "node skill/catalog-maintenance/scripts/maintenance-check.mjs",
-    "source:activate": "node skill/catalog-curation/scripts/activate-source-candidates.mjs"
+    "source:activate": "node skill/catalog-curation/scripts/activate-source-candidates.mjs",
+    "nightly:report:write": "node skill/nightly-catalog-ops/scripts/write-run-report.mjs",
+    "nightly:report:check": "node skill/nightly-catalog-ops/scripts/check-run-report.mjs",
+    "nightly:states:check": "node skill/nightly-catalog-ops/scripts/check-terminal-states.mjs",
+    "nightly:full-check": "npm run maintenance:run && npm run catalog:status && npm run check",
+    "nightly:git": "node skill/nightly-catalog-ops/scripts/finalize-git.mjs"
   },
   "dependencies": {},
   "devDependencies": {}

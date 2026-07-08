@@ -672,3 +672,64 @@ function listMarkdownFiles(dir) {
 function escapeRegExp(value) {
   return value.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')
 }
+
+export function checkPublicBoundary() {
+  const errors = []
+  const warnings = []
+  const checkedFiles = []
+  const publicPages = [join(ROOT, 'README.md'), ...listMarkdownFiles(DOCS)]
+
+  const blockPatterns = [
+    /\b\.synergy\b/,
+    /\bcatalog-publishing\b/,
+    /\bcatalog-data\b/,
+    /\bmanifest\.json\b/,
+    /\bcatalog_hash\b/,
+    /\bsource_hash\b/,
+    /\bgenerated_at\b/,
+    /source of truth/i,
+    /\bDo not edit\b/i,
+    /\bsha256\b/,
+    /Evaluation ID/i,
+    /Analysis paths/i,
+    /Relation edges/i,
+    /Consecutive failures/i,
+    /Last ref/i,
+    /\.mjs\b/,
+    /\bskill_installed\b/,
+    /\bappend-run-event\b/,
+    /\bcheck-terminal-states\b/,
+    /\bfinalize-git\b/,
+    /\bwrite-run-report\b/,
+    /\bcheck-run-report\b/,
+    /\bcheck-public-boundary\b/,
+    /\bmaintenance-check\b/,
+  ]
+
+  const warnPatterns = [
+    { pattern: /\bworkflow\b/gi, label: 'workflow' },
+    { pattern: /\bautomation\b/gi, label: 'automation' },
+    { pattern: /\bscript\b/gi, label: 'script' },
+    { pattern: /\bpipeline\b/gi, label: 'pipeline' },
+  ]
+
+  for (const file of publicPages) {
+    if (!existsSync(file)) continue
+    const text = readText(file)
+    const rel = relative(ROOT, file)
+    checkedFiles.push(rel)
+
+    for (const pattern of blockPatterns) {
+      if (pattern.test(text)) {
+        const match = text.match(pattern)
+        errors.push(`${rel}: blocked pattern match: ${match[0]} (pattern: ${pattern})`)
+      }
+    }
+
+    for (const { pattern, label } of warnPatterns) {
+      if (pattern.test(text)) warnings.push(`${rel}: contains public noun "${label}" — review and confirm it is a legitimate catalog name or public task language, not an implementation leak`)
+    }
+  }
+
+  return { ok: errors.length === 0, errors, warnings, checked_files: checkedFiles.sort() }
+}

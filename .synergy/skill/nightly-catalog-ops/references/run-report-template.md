@@ -46,16 +46,16 @@ Use this structure:
 - Render:
 - Drift:
 - Links:
-- Public-boundary scan:
+- Public-boundary scan (`publish:boundary`):
 - Final validation:
 
 ## Git Actions
-- Commits:
-- Push:
-- Skipped files:
+- Plan: Describe what should be committed — the finalizer handles the actual commit/push.
+- The committed report must never contain `Push: Pending` or `Commits: Pending`. Actual commit SHA and push status are recorded by the git finalizer stdout.
 
 ## Blockers and Next-Run Priorities
 - Blocker:
 - Owner:
-- Next action:
-```
+- Next action (each must reference a completed terminal state or blocker from this run):
+
+Note: The above structure is for the Markdown report. The machine-readable summary JSON follows `references/run-summary-schema.md` and is the authoritative input for `nightly:report:write` and `nightly:states:check`.

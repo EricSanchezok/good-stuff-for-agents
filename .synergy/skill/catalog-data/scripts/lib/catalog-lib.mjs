@@ -1,5 +1,5 @@
 import { createHash, randomUUID } from 'node:crypto'
-import { existsSync, mkdirSync, readdirSync, readFileSync, renameSync, statSync, writeFileSync } from 'node:fs'
+import { existsSync, mkdirSync, readdirSync, readFileSync, renameSync, rmSync, statSync, writeFileSync } from 'node:fs'
 import { dirname, join, relative, resolve } from 'node:path'
 import { fileURLToPath } from 'node:url'
 import { spawnSync } from 'node:child_process'
@@ -340,6 +340,8 @@ function validatePack(pack, errors, label) {
   if (pack.status) errors.push(...enumErrors(STATUS.pack, pack.status, `${label}.status`))
   if (!Array.isArray(pack.members)) errors.push(`${label}.members must be array`)
   for (const [idx, member] of (pack.members || []).entries()) required(member, ['skill_id', 'version_id', 'role', 'stage', 'inclusion_reason'], errors, `${label}.members[${idx}]`)
+  if (label.includes('published') && (pack.status === 'candidate' || pack.status === 'rejected')) errors.push(`${label}: published pack must not have status ${pack.status}`)
+  if (label.includes('candidates') && (pack.status === 'published' || pack.status === 'stale')) errors.push(`${label}: candidate pack must not have status ${pack.status}`)
 }
 
 function validateRelation(edge, errors, label) {
@@ -451,20 +453,42 @@ function writeShards(skills) {
   }
 }
 
-export function promotePassingCandidates() {
+export function promotePassingCandidates(cleanup = false) {
   const changed = []
   for (const { path, record } of loadPackRecords('candidates')) {
-    if (record.evaluation?.status === 'passed' && record.evaluation?.score >= 0.78) {
-      const published = { ...record, status: 'published', updated_at: nowIso() }
-      const target = packRecordPath(record.pack_id, 'published')
-      writeYaml(target, published)
-      const evalSource = evaluationPathForPack(record.pack_id, 'candidate')
-      const evalTarget = evaluationPathForPack(record.pack_id, 'published')
-      if (existsSync(evalSource)) writeTextAtomic(evalTarget, readText(evalSource))
-      const evidenceSource = evidencePathForPack(record.pack_id, 'candidate')
-      const evidenceTarget = evidencePathForPack(record.pack_id, 'published')
-      if (existsSync(evidenceSource)) writeTextAtomic(evidenceTarget, readText(evidenceSource))
-      changed.push(relative(ROOT, target))
+    const evalPath = evaluationPathForPack(record.pack_id, 'candidate')
+    if (existsSync(evalPath)) {
+      try {
+        const evalJson = JSON.parse(readText(evalPath))
+        if (evalJson.status !== 'passed' || (evalJson.overall_score ?? 0) < 0.78) continue
+        if (record.evaluation?.status && record.evaluation.status !== 'passed') continue
+      } catch { continue }
+    } else if (record.evaluation?.status !== 'passed' || (record.evaluation?.score ?? 0) < 0.78) {
+      continue
+    }
+
+    if (!record.evaluation?.status || record.evaluation.status !== 'passed') {
+      record.evaluation = { ...(record.evaluation ?? {}), status: 'passed' }
+      writeYaml(path, record)
+    }
+
+    const published = { ...record, status: 'published', updated_at: nowIso() }
+    const target = packRecordPath(record.pack_id, 'published')
+    writeYaml(target, published)
+    const evalSource = evaluationPathForPack(record.pack_id, 'candidate')
+    const evalTarget = evaluationPathForPack(record.pack_id, 'published')
+    if (existsSync(evalSource)) writeTextAtomic(evalTarget, readText(evalSource))
+    const evidenceSource = evidencePathForPack(record.pack_id, 'candidate')
+    const evidenceTarget = evidencePathForPack(record.pack_id, 'published')
+    if (existsSync(evidenceSource)) writeTextAtomic(evidenceTarget, readText(evidenceSource))
+    changed.push(relative(ROOT, target))
+
+    if (cleanup) {
+      rmSync(path, { force: true })
+      if (existsSync(evalSource)) rmSync(evalSource, { force: true })
+      if (existsSync(evidenceSource)) rmSync(evidenceSource, { force: true })
+      const candidateDir = dirname(path)
+      try { if (existsSync(candidateDir) && readdirSync(candidateDir).length === 0) rmSync(candidateDir, { force: true }) } catch {}
     }
   }
   return changed
