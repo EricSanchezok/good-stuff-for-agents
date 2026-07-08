@@ -42,8 +42,8 @@ These are ready routes, not piles of loose parts.
 
 | Pack | What I made it for | Confidence |
 | --- | --- | --- |
-| [Frontend Design and Review](docs/packs/frontend-design/pck_frontend-design-and-review.md) | Turning fuzzy UI requests into polished, opinionated, reviewable interfaces. | 79% confidence · Ready to use |
-| [Fullstack Coding Agent Workflow](docs/packs/coding-agent-workflow/pck_fullstack-coding-agent-workflow.md) | Moving a coding agent from plan to release with checks along the way. | 82% confidence · Ready to use |
+| [Frontend Design and Review](docs/packs/frontend-design/pck_frontend-design-and-review.md) | Turning fuzzy UI requests into polished, opinionated, reviewable interfaces. | 79% confidence · freshness note inside |
+| [Fullstack Coding Agent Workflow](docs/packs/coding-agent-workflow/pck_fullstack-coding-agent-workflow.md) | Moving a coding agent from plan to release with checks along the way. | 82% confidence · freshness note inside |
 
 ## Browse by domain
 

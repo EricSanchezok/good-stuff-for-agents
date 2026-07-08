@@ -16,11 +16,13 @@ if (!dryRun && !authorized) {
 }
 
 const ALLOWED_GLOBS = [
+  '.synergy/',
   'catalog/',
   'docs/',
   'README.md',
   'reports/',
   'assets/',
+  '.gitignore',
 ]
 
 const FORBIDDEN_PATTERNS = [

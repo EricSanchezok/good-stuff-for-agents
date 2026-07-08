@@ -1,0 +1,192 @@
+{
+  "schema_version": 1,
+  "source_id": "src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e",
+  "upstream_ref": "11f3602026a89b945253144655fd51bf22d8585a",
+  "checked_at": "2026-07-08T16:43:16.950Z",
+  "url": "https://github.com/microsoft/skills",
+  "artifacts": [
+    {
+      "source_id": "src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e",
+      "path": ".github/skills/applicationinsights-web-ts/SKILL.md",
+      "declared_name": "applicationinsights-web-ts",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:e1bfcc76ab8e76060350426a04115dc33de8bbd4",
+      "upstream_ref": "11f3602026a89b945253144655fd51bf22d8585a",
+      "url": "https://github.com/microsoft/skills/blob/11f3602026a89b945253144655fd51bf22d8585a/.github/skills/applicationinsights-web-ts/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "e1bfcc76ab8e76060350426a04115dc33de8bbd4",
+        "size": 20929
+      }
+    },
+    {
+      "source_id": "src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e",
+      "path": ".github/skills/cloud-solution-architect/SKILL.md",
+      "declared_name": "cloud-solution-architect",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:7db4c335fff4c73300a5b17b8d847acc919e72b0",
+      "upstream_ref": "11f3602026a89b945253144655fd51bf22d8585a",
+      "url": "https://github.com/microsoft/skills/blob/11f3602026a89b945253144655fd51bf22d8585a/.github/skills/cloud-solution-architect/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "7db4c335fff4c73300a5b17b8d847acc919e72b0",
+        "size": 17482
+      }
+    },
+    {
+      "source_id": "src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e",
+      "path": ".github/skills/continual-learning/SKILL.md",
+      "declared_name": "continual-learning",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:1de328f9abe0c345c002a80385619aef277c431e",
+      "upstream_ref": "11f3602026a89b945253144655fd51bf22d8585a",
+      "url": "https://github.com/microsoft/skills/blob/11f3602026a89b945253144655fd51bf22d8585a/.github/skills/continual-learning/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "1de328f9abe0c345c002a80385619aef277c431e",
+        "size": 2592
+      }
+    },
+    {
+      "source_id": "src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e",
+      "path": ".github/skills/copilot-sdk/SKILL.md",
+      "declared_name": "copilot-sdk",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:79f42cd0aef9a7a660f96668bc547d998e2485b4",
+      "upstream_ref": "11f3602026a89b945253144655fd51bf22d8585a",
+      "url": "https://github.com/microsoft/skills/blob/11f3602026a89b945253144655fd51bf22d8585a/.github/skills/copilot-sdk/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "79f42cd0aef9a7a660f96668bc547d998e2485b4",
+        "size": 28557
+      }
+    },
+    {
+      "source_id": "src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e",
+      "path": ".github/skills/debugview/SKILL.md",
+      "declared_name": "debugview",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:606e6dd78d6b492d562bc505ecc29161732a58fd",
+      "upstream_ref": "11f3602026a89b945253144655fd51bf22d8585a",
+      "url": "https://github.com/microsoft/skills/blob/11f3602026a89b945253144655fd51bf22d8585a/.github/skills/debugview/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "606e6dd78d6b492d562bc505ecc29161732a58fd",
+        "size": 10691
+      }
+    },
+    {
+      "source_id": "src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e",
+      "path": ".github/skills/entra-agent-id/SKILL.md",
+      "declared_name": "entra-agent-id",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:a8653ea1e50451c43e1ab7dc95f5024543d63658",
+      "upstream_ref": "11f3602026a89b945253144655fd51bf22d8585a",
+      "url": "https://github.com/microsoft/skills/blob/11f3602026a89b945253144655fd51bf22d8585a/.github/skills/entra-agent-id/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "a8653ea1e50451c43e1ab7dc95f5024543d63658",
+        "size": 9454
+      }
+    },
+    {
+      "source_id": "src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e",
+      "path": ".github/skills/frontend-design-review/SKILL.md",
+      "declared_name": "frontend-design-review",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:6fd8fe378026252e3810eae36844704f3c684fe3",
+      "upstream_ref": "11f3602026a89b945253144655fd51bf22d8585a",
+      "url": "https://github.com/microsoft/skills/blob/11f3602026a89b945253144655fd51bf22d8585a/.github/skills/frontend-design-review/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "6fd8fe378026252e3810eae36844704f3c684fe3",
+        "size": 6157
+      }
+    },
+    {
+      "source_id": "src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e",
+      "path": ".github/skills/github-issue-creator/SKILL.md",
+      "declared_name": "github-issue-creator",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:4351dcd35e719b49c81fa3430708f103db9cdf82",
+      "upstream_ref": "11f3602026a89b945253144655fd51bf22d8585a",
+      "url": "https://github.com/microsoft/skills/blob/11f3602026a89b945253144655fd51bf22d8585a/.github/skills/github-issue-creator/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "4351dcd35e719b49c81fa3430708f103db9cdf82",
+        "size": 3640
+      }
+    },
+    {
+      "source_id": "src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e",
+      "path": ".github/skills/kql/SKILL.md",
+      "declared_name": "kql",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:8be2bdeebd4cdfa0937d3457e70128042cd34904",
+      "upstream_ref": "11f3602026a89b945253144655fd51bf22d8585a",
+      "url": "https://github.com/microsoft/skills/blob/11f3602026a89b945253144655fd51bf22d8585a/.github/skills/kql/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "8be2bdeebd4cdfa0937d3457e70128042cd34904",
+        "size": 19096
+      }
+    },
+    {
+      "source_id": "src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e",
+      "path": ".github/skills/mcp-builder/SKILL.md",
+      "declared_name": "mcp-builder",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:792635390fff9f4c0032b1f0e06db1d81affe678",
+      "upstream_ref": "11f3602026a89b945253144655fd51bf22d8585a",
+      "url": "https://github.com/microsoft/skills/blob/11f3602026a89b945253144655fd51bf22d8585a/.github/skills/mcp-builder/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "792635390fff9f4c0032b1f0e06db1d81affe678",
+        "size": 12138
+      }
+    },
+    {
+      "source_id": "src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e",
+      "path": ".github/skills/microsoft-docs/SKILL.md",
+      "declared_name": "microsoft-docs",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:a5129731352a4dcad109b03e6f8e96bbdd00695b",
+      "upstream_ref": "11f3602026a89b945253144655fd51bf22d8585a",
+      "url": "https://github.com/microsoft/skills/blob/11f3602026a89b945253144655fd51bf22d8585a/.github/skills/microsoft-docs/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "a5129731352a4dcad109b03e6f8e96bbdd00695b",
+        "size": 2925
+      }
+    },
+    {
+      "source_id": "src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e",
+      "path": ".github/skills/podcast-generation/SKILL.md",
+      "declared_name": "podcast-generation",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:7f2e72053b725adf289d5438138ddcee55e47012",
+      "upstream_ref": "11f3602026a89b945253144655fd51bf22d8585a",
+      "url": "https://github.com/microsoft/skills/blob/11f3602026a89b945253144655fd51bf22d8585a/.github/skills/podcast-generation/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "7f2e72053b725adf289d5438138ddcee55e47012",
+        "size": 3787
+      }
+    },
+    {
+      "source_id": "src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e",
+      "path": ".github/skills/skill-creator/SKILL.md",
+      "declared_name": "skill-creator",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:8377383735afeb36e4b55a9937876b427785db9e",
+      "upstream_ref": "11f3602026a89b945253144655fd51bf22d8585a",
+      "url": "https://github.com/microsoft/skills/blob/11f3602026a89b945253144655fd51bf22d8585a/.github/skills/skill-creator/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "8377383735afeb36e4b55a9937876b427785db9e",
+        "size": 44997
+      }
+    }
+  ],
+  "digest": "sha256:99527418f53d36456f2438d24ffae5e6aba4e59adacdbbfe6c4fc70f87dcdf9f"
+}

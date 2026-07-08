@@ -8,10 +8,10 @@ sources:
   schema_version: 1
   source_id: src_https-github-com-aaronontheweb-dotnet-skills-dotnet-skills_974322da
   state:
-    consecutive_failures: 1
-    last_checked_at: '2026-07-08T15:02:57.491Z'
+    consecutive_failures: 0
+    last_checked_at: '2026-07-08T16:42:56.004Z'
     last_ref: c2ac7e9808f6636f21e99dd850363224459c5a3f
-    last_success_at: '2026-07-08T14:32:54.198Z'
+    last_success_at: '2026-07-08T16:42:56.004Z'
   status: active
   sync:
     exclude:
@@ -31,10 +31,10 @@ sources:
   schema_version: 1
   source_id: src_https-github-com-addyosmani-agent-skills-addy-osmani-agent-skills_5a07ef94
   state:
-    consecutive_failures: 1
-    last_checked_at: '2026-07-08T15:02:57.936Z'
+    consecutive_failures: 0
+    last_checked_at: '2026-07-08T16:42:57.605Z'
     last_ref: 70b7506ce90e200cb47645ddb3f6b8e84fecc047
-    last_success_at: '2026-07-08T14:32:55.728Z'
+    last_success_at: '2026-07-08T16:42:57.605Z'
   status: active
   sync:
     exclude:
@@ -54,10 +54,10 @@ sources:
   schema_version: 1
   source_id: src_https-github-com-anthropics-skills-anthropic-skills_76e1ad93
   state:
-    consecutive_failures: 2
-    last_checked_at: '2026-07-08T15:02:58.148Z'
+    consecutive_failures: 0
+    last_checked_at: '2026-07-08T16:43:00.272Z'
     last_ref: 9d2f1ae187231d8199c64b5b762e1bdf2244733d
-    last_success_at: '2026-07-08T14:32:10.699Z'
+    last_success_at: '2026-07-08T16:43:00.272Z'
   status: active
   sync:
     exclude:
@@ -79,10 +79,10 @@ sources:
   schema_version: 1
   source_id: src_https-github-com-composiohq-awesome-claude-skills-composiohq-awesome-claude-skills_6e1397e8
   state:
-    consecutive_failures: 2
-    last_checked_at: '2026-07-08T15:02:58.368Z'
+    consecutive_failures: 0
+    last_checked_at: '2026-07-08T16:43:06.131Z'
     last_ref: 92568c1edaff1bde5371154f036d959346c145a8
-    last_success_at: '2026-07-08T14:32:12.199Z'
+    last_success_at: '2026-07-08T16:43:06.131Z'
   status: preview
   sync:
     exclude: []
@@ -100,10 +100,10 @@ sources:
   schema_version: 1
   source_id: src_https-github-com-gamedev-skills-awesome-gamedev-agent-skills-gamedev-agent-skills_8ed84037
   state:
-    consecutive_failures: 2
-    last_checked_at: '2026-07-08T15:02:58.587Z'
+    consecutive_failures: 0
+    last_checked_at: '2026-07-08T16:43:08.552Z'
     last_ref: 9d0fa9612225d51d9a89f0a0c6f0fe15d85e3ee0
-    last_success_at: '2026-07-08T14:32:13.443Z'
+    last_success_at: '2026-07-08T16:43:08.552Z'
   status: active
   sync:
     exclude:
@@ -124,10 +124,10 @@ sources:
   schema_version: 1
   source_id: src_https-github-com-hoodini-ai-agents-skills-yuv-ai-agent-skills_1308ad13
   state:
-    consecutive_failures: 2
-    last_checked_at: '2026-07-08T15:02:58.803Z'
+    consecutive_failures: 0
+    last_checked_at: '2026-07-08T16:43:11.270Z'
     last_ref: 83e2083e3ec845e28920da5a6f333e254d8a7392
-    last_success_at: '2026-07-08T14:32:14.795Z'
+    last_success_at: '2026-07-08T16:43:11.270Z'
   status: preview
   sync:
     exclude:
@@ -146,10 +146,10 @@ sources:
   schema_version: 1
   source_id: src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e
   state:
-    consecutive_failures: 2
-    last_checked_at: '2026-07-08T15:02:59.014Z'
-    last_ref: 5d928f2cc2c62b890eed8656458069fd1ef3cc9b
-    last_success_at: '2026-07-08T14:32:16.376Z'
+    consecutive_failures: 0
+    last_checked_at: '2026-07-08T16:43:16.950Z'
+    last_ref: 11f3602026a89b945253144655fd51bf22d8585a
+    last_success_at: '2026-07-08T16:43:16.950Z'
   status: active
   sync:
     exclude:
@@ -169,10 +169,10 @@ sources:
   schema_version: 1
   source_id: src_https-github-com-seb1n-awesome-ai-agent-skills-seb1n-awesome-ai-agent-skills_b329db6e
   state:
-    consecutive_failures: 2
-    last_checked_at: '2026-07-08T15:02:59.228Z'
+    consecutive_failures: 0
+    last_checked_at: '2026-07-08T16:43:18.931Z'
     last_ref: a6c8c0ef3c240faefe1b0b5cabe1567beaea60fd
-    last_success_at: '2026-07-08T14:32:17.676Z'
+    last_success_at: '2026-07-08T16:43:18.931Z'
   status: active
   sync:
     exclude:
@@ -193,10 +193,10 @@ sources:
   schema_version: 1
   source_id: src_https-github-com-voltagent-awesome-agent-skills-voltagent-awesome-agent-skills_46b45132
   state:
-    consecutive_failures: 2
-    last_checked_at: '2026-07-08T15:02:59.446Z'
+    consecutive_failures: 0
+    last_checked_at: '2026-07-08T16:43:22.034Z'
     last_ref: 2fcbf138f63697e999d26c6266eea597e6564a23
-    last_success_at: '2026-07-08T14:32:18.890Z'
+    last_success_at: '2026-07-08T16:43:22.034Z'
   status: preview
   sync:
     exclude: []
