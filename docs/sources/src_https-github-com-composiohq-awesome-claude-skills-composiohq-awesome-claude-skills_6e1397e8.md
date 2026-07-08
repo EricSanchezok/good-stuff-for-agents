@@ -1,6 +1,6 @@
 # ComposioHQ Awesome Claude Skills
 
-> Status: **preview**
+> Previewing before it goes on the main shelf
 
 ## Overview
 
@@ -8,10 +8,9 @@
 - Type: github_repo
 - License: Apache-2.0 (verified)
 
-## Catalog Status
+## Shelf health
 
-- Last checked: 2026-07-08T09:57:30.000Z
-- Availability: Available
+I last saw this source respond successfully around 2026-07-08T09:57:30.000Z.
 
 ## Tracked Skills
 

@@ -5,7 +5,12 @@ Publishing is successful only if:
 - strict catalog validation passes before rendering;
 - indexes are current;
 - README and docs render idempotently;
+- README first screen explains the catalog in warm human language;
+- pack pages explain what the pack does before showing tables;
+- pack pages use first-person catalog-agent voice where appropriate;
 - public pages contain only visitor-facing catalog content;
+- public pages do not expose raw empty placeholders or raw internal lifecycle labels without human translation;
+- tables supplement narrative; they do not replace the page’s explanation;
 - no candidate-only or failed pack appears in public pages;
 - drift check passes after rendering;
 - link check passes;

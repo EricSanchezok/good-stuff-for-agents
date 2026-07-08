@@ -1,10 +1,10 @@
 # Packs
 
-Curated skill sets for complete agent tasks. Start here when you know the job and want a focused bundle instead of a pile of individual tools.
+Packs are the routes I’ve assembled for a complete agent job. Start here when you know what you want done and would rather grab a focused bundle than wander through every skill on the shelf.
 
-| Pack | Domain | Status | Score |
-| --- | --- | --- | --- |
-| [Frontend Design and Review](frontend-design/pck_frontend-design-and-review.md) | frontend-design | Stale | 0.79 |
-| [Fullstack Coding Agent Workflow](coding-agent-workflow/pck_fullstack-coding-agent-workflow.md) | coding-agent-workflow | Stale | 0.82 |
+| Pack | I’d use it for | Confidence |
+| --- | --- | --- |
+| [Frontend Design and Review](frontend-design/pck_frontend-design-and-review.md) | Turning fuzzy UI requests into polished, opinionated, reviewable interfaces. | 79% confidence · freshness note inside |
+| [Fullstack Coding Agent Workflow](coding-agent-workflow/pck_fullstack-coding-agent-workflow.md) | Moving a coding agent from plan to release with checks along the way. | 82% confidence · freshness note inside |
 
 [Browse skills](../skills/README.md) · [Browse domains](../domains/README.md)

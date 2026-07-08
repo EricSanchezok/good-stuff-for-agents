@@ -13,6 +13,7 @@ Definition of done for a full nightly run:
 - terminal states follow the shared Terminal State Model in `.synergy/skill/shared-references/integration-contract.md`: no-op, written/updated and validated, evaluated, promotion-ready, promoted/published, deprecated/removed under policy, or blocked with owner and reason;
 - pack lifecycle work reaches an appropriate terminal state: passed packs are promoted and rendered publicly when policy allows, needs-work/rejected packs retain evaluation reasons, stale or impacted published packs are repaired/re-evaluated/re-published or explicitly blocked, and no-op packs explain why no action was needed;
 - final maintenance and publishing gates pass;
+- public README/docs read like friendly human-facing catalog pages, not generated record dumps; if rendering exposes placeholders, raw internal labels, or mechanical tables where guidance is needed, fix `catalog-publishing` before finalizing;
 - authorized commit and push complete.
 
 Do not stop at a phase handoff when the next owner skill is available and no blocker exists. Load the owner skill and continue until the touched item has a terminal state.

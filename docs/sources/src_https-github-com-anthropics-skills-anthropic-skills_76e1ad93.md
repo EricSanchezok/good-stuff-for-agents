@@ -1,6 +1,6 @@
 # Anthropic Skills
 
-
+> Ready to use
 
 ## Overview
 
@@ -8,10 +8,9 @@
 - Type: github_repo
 - License: Apache-2.0 (verified)
 
-## Catalog Status
+## Shelf health
 
-- Last checked: 2026-07-08T09:57:27.420Z
-- Availability: Available
+I last saw this source respond successfully around 2026-07-08T09:57:27.420Z.
 
 ## Tracked Skills
 

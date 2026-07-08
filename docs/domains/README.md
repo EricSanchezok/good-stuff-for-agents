@@ -4,7 +4,7 @@ Browse the catalog by problem space. Domains are the map; packs are the routes; 
 
 | Domain | Packs | Skills | Sources |
 | --- | --- | --- | --- |
-| [coding-agent-workflow](coding-agent-workflow.md) | 1 | 0 | 0 |
-| [frontend-design](frontend-design.md) | 1 | 0 | 0 |
+| [Coding Agent Workflow](coding-agent-workflow.md) | 1 | 0 | 0 |
+| [Frontend Design](frontend-design.md) | 1 | 0 | 0 |
 
 [Explore packs](../packs/README.md) · [Explore skills](../skills/README.md)

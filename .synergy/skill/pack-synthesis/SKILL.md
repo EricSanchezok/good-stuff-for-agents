@@ -45,7 +45,8 @@ You must leave behind:
 - agent-authored pack draft under `reports/pack-synthesis/<pack-id>.json`;
 - candidate pack record under `catalog/packs/candidates/<pack-id>/pack.yaml` written through catalog-data;
 - inclusion and exclusion rationale;
-- compatibility summary and unresolved conflicts;
+- structured workflow stages with descriptions and member skill IDs where available;
+- compatibility summary, complements/overlaps/conflicts/unresolved evidence, and no public-facing placeholder fields;
 - validation result.
 
 ## References To Read
@@ -73,7 +74,7 @@ You must leave behind:
 4. **Design stages.** You assign each member a role and workflow stage. You ensure the pack helps an agent execute a coherent process, not just a list of related skills.
 5. **Write inclusion and exclusion reasons.** You explain why each member is included and why plausible alternatives were excluded.
 6. **Pin versions.** You use current version IDs so the pack can be reviewed against stable evidence.
-7. **Prepare the draft.** You write a complete pack draft with intent, domain, members, excluded skills, workflow, compatibility, evidence, and pending evaluation.
+7. **Prepare the draft.** You write a complete pack draft with intent, domain, members, excluded skills, structured `workflow.stages`, compatibility notes/evidence arrays, evidence, and pending evaluation. Do not submit a plain string workflow or shallow compatibility placeholders; publishing uses this data to explain the pack to human visitors.
 8. **Call the writer.** You write the candidate through the pack helper.
 9. **Validate and hand off.** You run validation and hand off to `catalog-evaluation`.
 
@@ -87,6 +88,7 @@ A good pack is intent-specific, minimally sufficient, compatible, evidence-backe
 - Do not let a helper choose skills mechanically.
 - Do not include skills just because they share a domain.
 - Do not hide conflicts or duplicate candidates.
+- Do not write shallow public-facing placeholders; provide structured workflow and compatibility evidence instead.
 - Do not create fake packs to populate the catalog.
 
 ## Failure Handling

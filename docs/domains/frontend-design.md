@@ -1,4 +1,4 @@
-# frontend-design
+# Frontend Design
 
 ## Summary
 

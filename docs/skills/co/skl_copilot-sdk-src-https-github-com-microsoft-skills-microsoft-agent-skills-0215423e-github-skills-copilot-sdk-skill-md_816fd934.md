@@ -1,6 +1,6 @@
 # Copilot SDK
 
-
+> Ready to use
 
 ## Summary
 
@@ -8,19 +8,19 @@ Copilot Sdk — provides agent workflow guidance for api-tooling tasks. Source: 
 
 ## Source
 
-- Source: src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e
+- Source: Microsoft Agent Skills
 - License: MIT (verified)
 
 ## Capabilities
 
 - Domains: —
 - Task types: —
-- Good for: —
+- Best stage: —
 - Capabilities: —
 
 ## Best Used For / Not For
 
-Use when the trigger semantics and workflow stage match the task. Do not use when required tools, permissions, license, or confidence do not fit the current run.
+Use when the trigger semantics and task stage match the job. Do not use when required tools, permissions, license, or confidence do not fit the current run.
 
 ## Inputs / Outputs
 

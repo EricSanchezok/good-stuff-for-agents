@@ -1,6 +1,15 @@
 compatibility:
-  notes: All members from same source (addyosmani/agent-skills, MIT). No conflicts.
-    Complementary stages.
+  complements:
+  - Planning feeds incremental implementation and TDD so the build stays scoped and
+    provable.
+  - Code review and security hardening add separate quality gates before deployment
+    and launch guidance take over.
+  conflicts: []
+  notes: All member skills come from the same MIT-licensed source and cover complementary
+    delivery stages from plan to launch.
+  overlaps:
+  - Source-driven development was excluded because incremental implementation already
+    covers the build-control role for this pack.
   unresolved: []
 created_by_run: run_manual
 domain: coding-agent-workflow
@@ -63,5 +72,30 @@ schema_version: 1
 status: stale
 updated_at: '2026-07-08T10:40:19.810Z'
 version: 0.1.0
-workflow: 1) planning → 2) implementation (incremental+TDD) → 3) review (code review+security)
-  → 4) deployment (CI/CD+launch)
+workflow:
+  stages:
+  - description: Break the request into executable pieces so the agent has a clear
+      path before changing code.
+    member_skill_ids:
+    - skl_planning-and-task-breakdown-src-https-github-com-addyosmani-agent-skills-addy-osmani-agent-skills-5a07ef94-skills-planning-and-task-breakdown-skill-md_553ed924
+    name: Plan the run
+  - description: Implement incrementally and keep tests close so each change has a
+      quick proof point.
+    member_skill_ids:
+    - skl_incremental-implementation-src-https-github-com-addyosmani-agent-skills-addy-osmani-agent-skills-5a07ef94-skills-incremental-implementation-skill-md_cb095f47
+    - skl_test-driven-development-src-https-github-com-addyosmani-agent-skills-addy-osmani-agent-skills-5a07ef94-skills-test-driven-development-skill-md_59c42946
+    name: Build in small bites
+  - description: Check correctness, maintainability, and security before treating
+      the implementation as release-ready.
+    member_skill_ids:
+    - skl_code-review-and-quality-src-https-github-com-addyosmani-agent-skills-addy-osmani-agent-skills-5a07ef94-skills-code-review-and-quality-skill-md_ab59383c
+    - skl_security-and-hardening-src-https-github-com-addyosmani-agent-skills-addy-osmani-agent-skills-5a07ef94-skills-security-and-hardening-skill-md_5d91d151
+    name: Review and harden
+  - description: Use automation and release guidance to get from passing checks to
+      a controlled launch.
+    member_skill_ids:
+    - skl_ci-cd-and-automation-src-https-github-com-addyosmani-agent-skills-addy-osmani-agent-skills-5a07ef94-skills-ci-cd-and-automation-skill-md_8a067615
+    - skl_shipping-and-launch-src-https-github-com-addyosmani-agent-skills-addy-osmani-agent-skills-5a07ef94-skills-shipping-and-launch-skill-md_82938f24
+    name: Launch with a checklist
+  summary: A delivery route from planning through implementation, checks, hardening,
+    and launch.

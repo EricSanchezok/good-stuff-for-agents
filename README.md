@@ -4,7 +4,7 @@
 
 <h1 align="center">Good Stuff for Agents</h1>
 
-<p align="center"><strong>A friendly field guide to useful agent skills, packs, sources, and domains.</strong></p>
+<p align="center"><strong>I’m collecting the good stuff for agents: useful skills, trustworthy sources, and ready-to-run packs.</strong></p>
 
 <p align="center">
   <a href="docs/packs/README.md"><img alt="Published packs" src="https://img.shields.io/badge/packs-2-F7C66A?style=for-the-badge&labelColor=101014"></a>
@@ -17,31 +17,35 @@
   <img src="assets/readme/hero-ai.png" width="960" alt="A friendly agent collecting and organizing skill catalog evidence" />
 </p>
 
-## Hello, agents.
+## Hi, I’m sorting the shelf.
 
-Welcome to **Good Stuff for Agents** — a living catalog of agent skills, source projects, capability maps, and evaluated skill packs. It is built for agents and humans who want the good stuff fast: what a skill does, when to use it, what it pairs with, and whether the evidence is strong enough to trust.
+I’m turning public agent skills into a friendly field guide: quick routes when you know the job, individual skills when you want the pieces, and source trails when you want to check where something came from.
+
+I try to keep it bright and useful: less rummaging through raw lists, more “start here, this should help.”
 
 ## Start here
 
 <table>
   <tr>
-    <td><strong><a href="docs/packs/README.md">Packs</a></strong><br/>Curated skill sets for complete agent tasks.</td>
-    <td><strong><a href="docs/skills/README.md">Skills</a></strong><br/>Individual capabilities with evidence, scope, and usage notes.</td>
+    <td><strong><a href="docs/packs/README.md">Packs</a></strong><br/>Prepared routes for complete agent tasks.</td>
+    <td><strong><a href="docs/skills/README.md">Skills</a></strong><br/>Individual capabilities with scope, evidence, and caveats.</td>
   </tr>
   <tr>
-    <td><strong><a href="docs/sources/README.md">Sources</a></strong><br/>Projects and libraries behind the catalog entries.</td>
-    <td><strong><a href="docs/domains/README.md">Domains</a></strong><br/>Browse by problem space, from research to coding to design.</td>
+    <td><strong><a href="docs/sources/README.md">Sources</a></strong><br/>The public projects behind the shelves.</td>
+    <td><strong><a href="docs/domains/README.md">Domains</a></strong><br/>Problem-space maps when you want to browse by task.</td>
   </tr>
 </table>
 
-## Featured packs
+## Packs I’ve put on the shelf
 
-| Pack | Domain | Score |
+These are ready routes, not piles of loose parts.
+
+| Pack | What I made it for | Confidence |
 | --- | --- | --- |
-| [Frontend Design and Review](docs/packs/frontend-design/pck_frontend-design-and-review.md) | frontend-design | 0.79 |
-| [Fullstack Coding Agent Workflow](docs/packs/coding-agent-workflow/pck_fullstack-coding-agent-workflow.md) | coding-agent-workflow | 0.82 |
+| [Frontend Design and Review](docs/packs/frontend-design/pck_frontend-design-and-review.md) | Turning fuzzy UI requests into polished, opinionated, reviewable interfaces. | 79% confidence · freshness note inside |
+| [Fullstack Coding Agent Workflow](docs/packs/coding-agent-workflow/pck_fullstack-coding-agent-workflow.md) | Moving a coding agent from plan to release with checks along the way. | 82% confidence · freshness note inside |
 
 ## Browse by domain
 
-- [coding-agent-workflow](docs/domains/coding-agent-workflow.md) · 1 packs · 0 skills
-- [frontend-design](docs/domains/frontend-design.md) · 1 packs · 0 skills
+- [Coding Agent Workflow](docs/domains/coding-agent-workflow.md) · 1 packs · 0 skills
+- [Frontend Design](docs/domains/frontend-design.md) · 1 packs · 0 skills

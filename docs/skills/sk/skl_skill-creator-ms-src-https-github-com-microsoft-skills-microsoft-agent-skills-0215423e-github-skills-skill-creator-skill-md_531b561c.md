@@ -1,6 +1,6 @@
 # Skill Creator
 
-
+> Ready to use
 
 ## Summary
 
@@ -8,19 +8,19 @@ Skill Creator — provides agent workflow guidance for agent-ecosystem tasks. So
 
 ## Source
 
-- Source: src_https-github-com-anthropics-skills-anthropic-skills_76e1ad93
+- Source: Anthropic Skills
 - License: Apache-2.0 (verified)
 
 ## Capabilities
 
 - Domains: —
 - Task types: —
-- Good for: —
+- Best stage: —
 - Capabilities: —
 
 ## Best Used For / Not For
 
-Use when the trigger semantics and workflow stage match the task. Do not use when required tools, permissions, license, or confidence do not fit the current run.
+Use when the trigger semantics and task stage match the job. Do not use when required tools, permissions, license, or confidence do not fit the current run.
 
 ## Inputs / Outputs
 

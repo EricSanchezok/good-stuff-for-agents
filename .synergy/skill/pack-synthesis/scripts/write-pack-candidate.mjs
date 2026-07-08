@@ -20,4 +20,31 @@ function assertPackDraft(draft) {
     if (!member.stage) throw new Error(`Pack draft ${draft.pack_id} member ${member.skill_id} is missing stage`)
     if (!member.inclusion_reason) throw new Error(`Pack draft ${draft.pack_id} member ${member.skill_id} is missing inclusion_reason`)
   }
+  if (!draft.workflow || typeof draft.workflow !== 'object' || Array.isArray(draft.workflow)) {
+    throw new Error(`Pack draft ${draft.pack_id} must include structured workflow object with stages`)
+  }
+  if (!Array.isArray(draft.workflow.stages) || draft.workflow.stages.length === 0) {
+    throw new Error(`Pack draft ${draft.pack_id} workflow.stages must be a non-empty array`)
+  }
+  for (const stage of draft.workflow.stages) {
+    if (!stage || typeof stage !== 'object') throw new Error(`Pack draft ${draft.pack_id} has a non-object workflow stage`)
+    if (!stage.name && !stage.stage) throw new Error(`Pack draft ${draft.pack_id} workflow stage is missing name or stage`)
+    if (!stage.description) throw new Error(`Pack draft ${draft.pack_id} workflow stage ${stage.name ?? stage.stage} is missing description`)
+  }
+  const compatibility = draft.compatibility
+  if (!compatibility || typeof compatibility !== 'object' || Array.isArray(compatibility)) {
+    throw new Error(`Pack draft ${draft.pack_id} must include compatibility notes or evidence arrays`)
+  }
+  const hasCompatibilityEvidence = Boolean(compatibility.notes)
+    || nonEmptyArray(compatibility.complements)
+    || nonEmptyArray(compatibility.overlaps)
+    || nonEmptyArray(compatibility.conflicts)
+    || nonEmptyArray(compatibility.unresolved)
+  if (!hasCompatibilityEvidence) {
+    throw new Error(`Pack draft ${draft.pack_id} compatibility must include notes or a non-empty evidence array`)
+  }
+}
+
+function nonEmptyArray(value) {
+  return Array.isArray(value) && value.length > 0
 }

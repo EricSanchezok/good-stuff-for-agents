@@ -1,6 +1,6 @@
 # Source Driven Development
 
-
+> Ready to use
 
 ## Summary
 
@@ -8,19 +8,19 @@ Source Driven Development — provides agent workflow guidance for development-w
 
 ## Source
 
-- Source: src_https-github-com-addyosmani-agent-skills-addy-osmani-agent-skills_5a07ef94
+- Source: Addy Osmani Agent Skills
 - License: MIT (verified)
 
 ## Capabilities
 
 - Domains: —
 - Task types: —
-- Good for: —
+- Best stage: —
 - Capabilities: —
 
 ## Best Used For / Not For
 
-Use when the trigger semantics and workflow stage match the task. Do not use when required tools, permissions, license, or confidence do not fit the current run.
+Use when the trigger semantics and task stage match the job. Do not use when required tools, permissions, license, or confidence do not fit the current run.
 
 ## Inputs / Outputs
 

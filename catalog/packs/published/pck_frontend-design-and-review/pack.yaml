@@ -1,5 +1,13 @@
 compatibility:
-  notes: Anthropic and Microsoft skills complement (design→review). No conflicts.
+  complements:
+  - Brand and theme skills set visual constraints before frontend and canvas design
+    shape the interface.
+  - The review skill complements the creation skills by checking quality after the
+    design pass.
+  conflicts: []
+  notes: Anthropic design, brand, canvas, and theme skills provide creation support
+    while the Microsoft design-review skill gives the final critique pass.
+  overlaps: []
   unresolved: []
 created_by_run: run_manual
 domain: frontend-design
@@ -48,5 +56,23 @@ schema_version: 1
 status: stale
 updated_at: '2026-07-08T10:40:19.783Z'
 version: 0.1.0
-workflow: 1) design (brand+theme) → 2) creation (frontend+canvas design) → 3) review
-  (design review)
+workflow:
+  stages:
+  - description: Start with brand guidance and theme choices so the UI has a clear
+      point of view before layout work begins.
+    member_skill_ids:
+    - skl_brand-guidelines-src-https-github-com-anthropics-skills-anthropic-skills-76e1ad93-skills-brand-guidelines-skill-md_9ed23dae
+    - skl_theme-factory-src-https-github-com-anthropics-skills-anthropic-skills-76e1ad93-skills-theme-factory-skill-md_41e6aa93
+    name: Set the direction
+  - description: Use frontend and canvas design guidance to turn the direction into
+      a polished, human-reviewable interface.
+    member_skill_ids:
+    - skl_frontend-design-src-https-github-com-anthropics-skills-anthropic-skills-76e1ad93-skills-frontend-design-skill-md_bd715ad6
+    - skl_canvas-design-src-https-github-com-anthropics-skills-anthropic-skills-76e1ad93-skills-canvas-design-skill-md_9b2d6295
+    name: Shape the interface
+  - description: Run a structured design review so visual quality, usability, and
+      consistency get checked before the result ships onward.
+    member_skill_ids:
+    - skl_frontend-design-review-src-https-github-com-microsoft-skills-microsoft-agent-skills-0215423e-github-skills-frontend-design-review-skill-md_cbd78d70
+    name: Review before handoff
+  summary: A design-studio route from brand direction to interface shaping to review.

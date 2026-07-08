@@ -1,4 +1,4 @@
-# coding-agent-workflow
+# Coding Agent Workflow
 
 ## Summary
 
