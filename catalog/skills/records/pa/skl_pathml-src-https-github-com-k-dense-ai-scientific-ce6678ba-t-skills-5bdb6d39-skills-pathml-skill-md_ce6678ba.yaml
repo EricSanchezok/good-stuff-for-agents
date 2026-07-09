@@ -1,0 +1,48 @@
+analysis:
+  hash: null
+  path: catalog/analyses/pa/skl_pathml-src-https-github-com-k-dense-ai-scientific-ce6678ba-t-skills-5bdb6d39-skills-pathml-skill-md_ce6678ba.md
+canonical_name: pathml
+canonical_skill_id: skl_pathml-src-https-github-com-k-dense-ai-scientific-ce6678ba-t-skills-5bdb6d39-skills-pathml-skill-md_ce6678ba
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-09T17:22:02.811Z'
+curation:
+  notes: []
+display_name: pathml
+identity:
+  aliases: []
+  current_version_id: sha256:c91fc35a33b27623e2c963d807d6b6d8485a2c89
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: LICENSE.md file in repo root; README states MIT (individual skills may
+      have separate license metadata)
+    spdx: MIT
+    verified: true
+  path: skills/pathml/SKILL.md
+  source_id: src_https-github-com-k-dense-ai-scientific-agent-skills-k-dense-scientific-agent-skills_5bdb6d39
+  upstream_ref: null
+  url: null
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-09T17:22:02.811Z'

@@ -1,0 +1,47 @@
+analysis:
+  hash: null
+  path: catalog/analyses/co/skl_code-review-src-https-github-com-coderabbitai-skil-56e21b29-lls-8f2a22eb-skills-code-review-skill-md_56e21b29.md
+canonical_name: code-review
+canonical_skill_id: skl_code-review-src-https-github-com-coderabbitai-skil-56e21b29-lls-8f2a22eb-skills-code-review-skill-md_56e21b29
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-09T17:22:08.444Z'
+curation:
+  notes: []
+display_name: code-review
+identity:
+  aliases: []
+  current_version_id: sha256:d9fc3f304df4785725febc3050dab2f390874f99
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: LICENSE file in repo root; README states MIT
+    spdx: MIT
+    verified: true
+  path: skills/code-review/SKILL.md
+  source_id: src_https-github-com-coderabbitai-skills-coderabbit-skills_8f2a22eb
+  upstream_ref: null
+  url: null
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-09T17:22:08.444Z'

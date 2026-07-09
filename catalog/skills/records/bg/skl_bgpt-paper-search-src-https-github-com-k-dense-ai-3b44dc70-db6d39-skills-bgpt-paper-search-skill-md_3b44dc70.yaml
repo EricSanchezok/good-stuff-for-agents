@@ -1,0 +1,48 @@
+analysis:
+  hash: null
+  path: catalog/analyses/bg/skl_bgpt-paper-search-src-https-github-com-k-dense-ai-3b44dc70-db6d39-skills-bgpt-paper-search-skill-md_3b44dc70.md
+canonical_name: bgpt-paper-search
+canonical_skill_id: skl_bgpt-paper-search-src-https-github-com-k-dense-ai-3b44dc70-db6d39-skills-bgpt-paper-search-skill-md_3b44dc70
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-09T17:21:57.062Z'
+curation:
+  notes: []
+display_name: bgpt-paper-search
+identity:
+  aliases: []
+  current_version_id: sha256:2eeb8ac48dbb1282f44d828be94aaa3da43c15ba
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: LICENSE.md file in repo root; README states MIT (individual skills may
+      have separate license metadata)
+    spdx: MIT
+    verified: true
+  path: skills/bgpt-paper-search/SKILL.md
+  source_id: src_https-github-com-k-dense-ai-scientific-agent-skills-k-dense-scientific-agent-skills_5bdb6d39
+  upstream_ref: null
+  url: null
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-09T17:21:57.062Z'

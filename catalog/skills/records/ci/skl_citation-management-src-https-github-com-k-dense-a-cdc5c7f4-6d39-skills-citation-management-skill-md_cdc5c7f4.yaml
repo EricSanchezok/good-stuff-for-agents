@@ -1,0 +1,48 @@
+analysis:
+  hash: null
+  path: catalog/analyses/ci/skl_citation-management-src-https-github-com-k-dense-a-cdc5c7f4-6d39-skills-citation-management-skill-md_cdc5c7f4.md
+canonical_name: citation-management
+canonical_skill_id: skl_citation-management-src-https-github-com-k-dense-a-cdc5c7f4-6d39-skills-citation-management-skill-md_cdc5c7f4
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-09T17:21:57.628Z'
+curation:
+  notes: []
+display_name: citation-management
+identity:
+  aliases: []
+  current_version_id: sha256:fbdb1f0d6d45d6f0245a764d4246e8c29c68d64f
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: LICENSE.md file in repo root; README states MIT (individual skills may
+      have separate license metadata)
+    spdx: MIT
+    verified: true
+  path: skills/citation-management/SKILL.md
+  source_id: src_https-github-com-k-dense-ai-scientific-agent-skills-k-dense-scientific-agent-skills_5bdb6d39
+  upstream_ref: null
+  url: null
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-09T17:21:57.628Z'

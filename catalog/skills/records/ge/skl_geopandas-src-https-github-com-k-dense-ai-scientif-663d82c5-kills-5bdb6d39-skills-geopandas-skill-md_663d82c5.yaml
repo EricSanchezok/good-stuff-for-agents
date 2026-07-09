@@ -1,0 +1,48 @@
+analysis:
+  hash: null
+  path: catalog/analyses/ge/skl_geopandas-src-https-github-com-k-dense-ai-scientif-663d82c5-kills-5bdb6d39-skills-geopandas-skill-md_663d82c5.md
+canonical_name: geopandas
+canonical_skill_id: skl_geopandas-src-https-github-com-k-dense-ai-scientif-663d82c5-kills-5bdb6d39-skills-geopandas-skill-md_663d82c5
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-09T17:21:59.582Z'
+curation:
+  notes: []
+display_name: geopandas
+identity:
+  aliases: []
+  current_version_id: sha256:6e27186ce76600709ee1cc3c7d48291bc5217af7
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: LICENSE.md file in repo root; README states MIT (individual skills may
+      have separate license metadata)
+    spdx: MIT
+    verified: true
+  path: skills/geopandas/SKILL.md
+  source_id: src_https-github-com-k-dense-ai-scientific-agent-skills-k-dense-scientific-agent-skills_5bdb6d39
+  upstream_ref: null
+  url: null
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-09T17:21:59.582Z'

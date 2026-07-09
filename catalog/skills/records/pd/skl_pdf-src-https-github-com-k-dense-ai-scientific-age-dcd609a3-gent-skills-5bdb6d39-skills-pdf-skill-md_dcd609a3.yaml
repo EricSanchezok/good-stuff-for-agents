@@ -1,0 +1,48 @@
+analysis:
+  hash: null
+  path: catalog/analyses/pd/skl_pdf-src-https-github-com-k-dense-ai-scientific-age-dcd609a3-gent-skills-5bdb6d39-skills-pdf-skill-md_dcd609a3.md
+canonical_name: pdf
+canonical_skill_id: skl_pdf-src-https-github-com-k-dense-ai-scientific-age-dcd609a3-gent-skills-5bdb6d39-skills-pdf-skill-md_dcd609a3
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-09T17:22:02.962Z'
+curation:
+  notes: []
+display_name: pdf
+identity:
+  aliases: []
+  current_version_id: sha256:a37887efc77f304a7110bf4b01ef654f24be0afe
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: LICENSE.md file in repo root; README states MIT (individual skills may
+      have separate license metadata)
+    spdx: MIT
+    verified: true
+  path: skills/pdf/SKILL.md
+  source_id: src_https-github-com-k-dense-ai-scientific-agent-skills-k-dense-scientific-agent-skills_5bdb6d39
+  upstream_ref: null
+  url: null
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-09T17:22:02.962Z'

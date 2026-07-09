@@ -1,0 +1,47 @@
+analysis:
+  hash: null
+  path: catalog/analyses/az/skl_azure-eventhub-ts-src-https-github-com-microsoft-s-e8f652ef-script-skills-azure-eventhub-ts-skill-md_e8f652ef.md
+canonical_name: azure-eventhub-ts
+canonical_skill_id: skl_azure-eventhub-ts-src-https-github-com-microsoft-s-e8f652ef-script-skills-azure-eventhub-ts-skill-md_e8f652ef
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-09T17:21:49.618Z'
+curation:
+  notes: []
+display_name: azure-eventhub-ts
+identity:
+  aliases: []
+  current_version_id: sha256:fe0cc9ab1db48af480d95c11e72de9db5c7c4645
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: LICENSE file in repo root; README states MIT
+    spdx: MIT
+    verified: true
+  path: .github/plugins/azure-sdk-typescript/skills/azure-eventhub-ts/SKILL.md
+  source_id: src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e
+  upstream_ref: null
+  url: null
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-09T17:21:49.618Z'

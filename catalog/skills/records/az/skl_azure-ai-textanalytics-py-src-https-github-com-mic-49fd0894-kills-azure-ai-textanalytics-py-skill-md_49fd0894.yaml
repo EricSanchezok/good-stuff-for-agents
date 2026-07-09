@@ -1,0 +1,47 @@
+analysis:
+  hash: null
+  path: catalog/analyses/az/skl_azure-ai-textanalytics-py-src-https-github-com-mic-49fd0894-kills-azure-ai-textanalytics-py-skill-md_49fd0894.md
+canonical_name: azure-ai-textanalytics-py
+canonical_skill_id: skl_azure-ai-textanalytics-py-src-https-github-com-mic-49fd0894-kills-azure-ai-textanalytics-py-skill-md_49fd0894
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-09T17:21:45.741Z'
+curation:
+  notes: []
+display_name: azure-ai-textanalytics-py
+identity:
+  aliases: []
+  current_version_id: sha256:dc9d0d92b4770e4d4c1e3cb44f58878898510396
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: LICENSE file in repo root; README states MIT
+    spdx: MIT
+    verified: true
+  path: .github/plugins/azure-sdk-python/skills/azure-ai-textanalytics-py/SKILL.md
+  source_id: src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e
+  upstream_ref: null
+  url: null
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-09T17:21:45.741Z'

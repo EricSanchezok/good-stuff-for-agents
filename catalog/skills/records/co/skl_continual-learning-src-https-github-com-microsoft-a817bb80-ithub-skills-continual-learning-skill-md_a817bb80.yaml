@@ -1,0 +1,47 @@
+analysis:
+  hash: null
+  path: catalog/analyses/co/skl_continual-learning-src-https-github-com-microsoft-a817bb80-ithub-skills-continual-learning-skill-md_a817bb80.md
+canonical_name: continual-learning
+canonical_skill_id: skl_continual-learning-src-https-github-com-microsoft-a817bb80-ithub-skills-continual-learning-skill-md_a817bb80
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-09T17:21:54.808Z'
+curation:
+  notes: []
+display_name: continual-learning
+identity:
+  aliases: []
+  current_version_id: sha256:1de328f9abe0c345c002a80385619aef277c431e
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: LICENSE file in repo root; README states MIT
+    spdx: MIT
+    verified: true
+  path: .github/skills/continual-learning/SKILL.md
+  source_id: src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e
+  upstream_ref: null
+  url: null
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-09T17:21:54.808Z'

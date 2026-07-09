@@ -1,0 +1,47 @@
+analysis:
+  hash: null
+  path: catalog/analyses/az/skl_azure-eventgrid-dotnet-src-https-github-com-micros-e63e226d-t-skills-azure-eventgrid-dotnet-skill-md_e63e226d.md
+canonical_name: azure-eventgrid-dotnet
+canonical_skill_id: skl_azure-eventgrid-dotnet-src-https-github-com-micros-e63e226d-t-skills-azure-eventgrid-dotnet-skill-md_e63e226d
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-09T17:21:41.226Z'
+curation:
+  notes: []
+display_name: azure-eventgrid-dotnet
+identity:
+  aliases: []
+  current_version_id: sha256:3156848ee9bf82dc7f0aabd71934e19574113601
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: LICENSE file in repo root; README states MIT
+    spdx: MIT
+    verified: true
+  path: .github/plugins/azure-sdk-dotnet/skills/azure-eventgrid-dotnet/SKILL.md
+  source_id: src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e
+  upstream_ref: null
+  url: null
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-09T17:21:41.226Z'

@@ -1,0 +1,47 @@
+analysis:
+  hash: null
+  path: catalog/analyses/ag/skl_agent-framework-azure-ai-py-src-https-github-com-m-0c0e4ddc-lls-agent-framework-azure-ai-py-skill-md_0c0e4ddc.md
+canonical_name: agent-framework-azure-ai-py
+canonical_skill_id: skl_agent-framework-azure-ai-py-src-https-github-com-m-0c0e4ddc-lls-agent-framework-azure-ai-py-skill-md_0c0e4ddc
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-09T17:21:45.263Z'
+curation:
+  notes: []
+display_name: agent-framework-azure-ai-py
+identity:
+  aliases: []
+  current_version_id: sha256:04a975fec1379266430f07bc789bae7acd579185
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: LICENSE file in repo root; README states MIT
+    spdx: MIT
+    verified: true
+  path: .github/plugins/azure-sdk-python/skills/agent-framework-azure-ai-py/SKILL.md
+  source_id: src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e
+  upstream_ref: null
+  url: null
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-09T17:21:45.263Z'

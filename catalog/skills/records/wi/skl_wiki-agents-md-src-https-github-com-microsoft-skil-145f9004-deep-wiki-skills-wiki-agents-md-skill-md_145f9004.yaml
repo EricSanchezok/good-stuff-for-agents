@@ -1,0 +1,47 @@
+analysis:
+  hash: null
+  path: catalog/analyses/wi/skl_wiki-agents-md-src-https-github-com-microsoft-skil-145f9004-deep-wiki-skills-wiki-agents-md-skill-md_145f9004.md
+canonical_name: wiki-agents-md
+canonical_skill_id: skl_wiki-agents-md-src-https-github-com-microsoft-skil-145f9004-deep-wiki-skills-wiki-agents-md-skill-md_145f9004
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-09T17:21:53.515Z'
+curation:
+  notes: []
+display_name: wiki-agents-md
+identity:
+  aliases: []
+  current_version_id: sha256:45e93b32d3d7f2120cb9b3b7f51e9271e3e0189c
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: LICENSE file in repo root; README states MIT
+    spdx: MIT
+    verified: true
+  path: .github/plugins/deep-wiki/skills/wiki-agents-md/SKILL.md
+  source_id: src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e
+  upstream_ref: null
+  url: null
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-09T17:21:53.515Z'

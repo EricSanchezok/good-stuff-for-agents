@@ -1,0 +1,47 @@
+analysis:
+  hash: null
+  path: catalog/analyses/pr/skl_preset-src-https-github-com-microsoft-skills-micro-ffb937ce-ndry-models-deploy-model-preset-skill-md_ffb937ce.md
+canonical_name: preset
+canonical_skill_id: skl_preset-src-https-github-com-microsoft-skills-micro-ffb937ce-ndry-models-deploy-model-preset-skill-md_ffb937ce
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-09T17:21:53.291Z'
+curation:
+  notes: []
+display_name: preset
+identity:
+  aliases: []
+  current_version_id: sha256:09fcc94cba4c178ec08650b6e6e1da32437c2701
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: LICENSE file in repo root; README states MIT
+    spdx: MIT
+    verified: true
+  path: .github/plugins/azure-skills/skills/microsoft-foundry/models/deploy-model/preset/SKILL.md
+  source_id: src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e
+  upstream_ref: null
+  url: null
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-09T17:21:53.291Z'

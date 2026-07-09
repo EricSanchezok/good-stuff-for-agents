@@ -1,0 +1,48 @@
+analysis:
+  hash: null
+  path: catalog/analyses/da/skl_database-lookup-src-https-github-com-k-dense-ai-sc-36d0e673-5bdb6d39-skills-database-lookup-skill-md_36d0e673.md
+canonical_name: database-lookup
+canonical_skill_id: skl_database-lookup-src-https-github-com-k-dense-ai-sc-36d0e673-5bdb6d39-skills-database-lookup-skill-md_36d0e673
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-09T17:21:58.107Z'
+curation:
+  notes: []
+display_name: database-lookup
+identity:
+  aliases: []
+  current_version_id: sha256:94632fc658a34680f61ed360e4a305f301825835
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: LICENSE.md file in repo root; README states MIT (individual skills may
+      have separate license metadata)
+    spdx: MIT
+    verified: true
+  path: skills/database-lookup/SKILL.md
+  source_id: src_https-github-com-k-dense-ai-scientific-agent-skills-k-dense-scientific-agent-skills_5bdb6d39
+  upstream_ref: null
+  url: null
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-09T17:21:58.107Z'

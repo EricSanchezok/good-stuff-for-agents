@@ -1,0 +1,48 @@
+analysis:
+  hash: null
+  path: catalog/analyses/py/skl_pytorch-lightning-src-https-github-com-k-dense-ai-9757a6b3-db6d39-skills-pytorch-lightning-skill-md_9757a6b3.md
+canonical_name: pytorch-lightning
+canonical_skill_id: skl_pytorch-lightning-src-https-github-com-k-dense-ai-9757a6b3-db6d39-skills-pytorch-lightning-skill-md_9757a6b3
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-09T17:22:04.726Z'
+curation:
+  notes: []
+display_name: pytorch-lightning
+identity:
+  aliases: []
+  current_version_id: sha256:e2e902ff8fcba8c627f2c24c244a00a4b48afb6d
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: LICENSE.md file in repo root; README states MIT (individual skills may
+      have separate license metadata)
+    spdx: MIT
+    verified: true
+  path: skills/pytorch-lightning/SKILL.md
+  source_id: src_https-github-com-k-dense-ai-scientific-agent-skills-k-dense-scientific-agent-skills_5bdb6d39
+  upstream_ref: null
+  url: null
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-09T17:22:04.726Z'

@@ -1,0 +1,47 @@
+analysis:
+  hash: null
+  path: catalog/analyses/az/skl_azure-monitor-opentelemetry-exporter-java-src-http-c004cb55-tor-opentelemetry-exporter-java-skill-md_c004cb55.md
+canonical_name: azure-monitor-opentelemetry-exporter-java
+canonical_skill_id: skl_azure-monitor-opentelemetry-exporter-java-src-http-c004cb55-tor-opentelemetry-exporter-java-skill-md_c004cb55
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-09T17:21:44.876Z'
+curation:
+  notes: []
+display_name: azure-monitor-opentelemetry-exporter-java
+identity:
+  aliases: []
+  current_version_id: sha256:2be5ec33b16457816e0737dcc99007560fea74d5
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: LICENSE file in repo root; README states MIT
+    spdx: MIT
+    verified: true
+  path: .github/plugins/azure-sdk-java/skills/azure-monitor-opentelemetry-exporter-java/SKILL.md
+  source_id: src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e
+  upstream_ref: null
+  url: null
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-09T17:21:44.876Z'

@@ -1,0 +1,47 @@
+analysis:
+  hash: null
+  path: catalog/analyses/oc/skl_octocat-src-https-github-com-mcollina-skills-matte-b4ed2fd3-skills-faf2f289-skills-octocat-skill-md_b4ed2fd3.md
+canonical_name: octocat
+canonical_skill_id: skl_octocat-src-https-github-com-mcollina-skills-matte-b4ed2fd3-skills-faf2f289-skills-octocat-skill-md_b4ed2fd3
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-09T17:21:56.144Z'
+curation:
+  notes: []
+display_name: octocat
+identity:
+  aliases: []
+  current_version_id: sha256:1d6ea3489d06d79d255dbf4fb34bf8f1130151ff
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: LICENSE file in repo root; README states MIT
+    spdx: MIT
+    verified: true
+  path: skills/octocat/SKILL.md
+  source_id: src_https-github-com-mcollina-skills-matteo-collina-s-skills_faf2f289
+  upstream_ref: null
+  url: null
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-09T17:21:56.144Z'

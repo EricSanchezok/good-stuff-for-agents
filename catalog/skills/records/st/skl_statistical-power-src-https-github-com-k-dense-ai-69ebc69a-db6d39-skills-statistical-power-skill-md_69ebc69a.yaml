@@ -1,0 +1,48 @@
+analysis:
+  hash: null
+  path: catalog/analyses/st/skl_statistical-power-src-https-github-com-k-dense-ai-69ebc69a-db6d39-skills-statistical-power-skill-md_69ebc69a.md
+canonical_name: statistical-power
+canonical_skill_id: skl_statistical-power-src-https-github-com-k-dense-ai-69ebc69a-db6d39-skills-statistical-power-skill-md_69ebc69a
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-09T17:22:06.920Z'
+curation:
+  notes: []
+display_name: statistical-power
+identity:
+  aliases: []
+  current_version_id: sha256:fee7d10337287c286e124ec9ea00f1bb4c131395
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: LICENSE.md file in repo root; README states MIT (individual skills may
+      have separate license metadata)
+    spdx: MIT
+    verified: true
+  path: skills/statistical-power/SKILL.md
+  source_id: src_https-github-com-k-dense-ai-scientific-agent-skills-k-dense-scientific-agent-skills_5bdb6d39
+  upstream_ref: null
+  url: null
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-09T17:22:06.920Z'

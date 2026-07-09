@@ -1,0 +1,48 @@
+analysis:
+  hash: null
+  path: catalog/analyses/ar/skl_arboreto-src-https-github-com-k-dense-ai-scientifi-30006f36-skills-5bdb6d39-skills-arboreto-skill-md_30006f36.md
+canonical_name: arboreto
+canonical_skill_id: skl_arboreto-src-https-github-com-k-dense-ai-scientifi-30006f36-skills-5bdb6d39-skills-arboreto-skill-md_30006f36
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-09T17:21:56.759Z'
+curation:
+  notes: []
+display_name: arboreto
+identity:
+  aliases: []
+  current_version_id: sha256:b53132348273afcb82e8e3112871092ac949f5c3
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: LICENSE.md file in repo root; README states MIT (individual skills may
+      have separate license metadata)
+    spdx: MIT
+    verified: true
+  path: skills/arboreto/SKILL.md
+  source_id: src_https-github-com-k-dense-ai-scientific-agent-skills-k-dense-scientific-agent-skills_5bdb6d39
+  upstream_ref: null
+  url: null
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-09T17:21:56.759Z'

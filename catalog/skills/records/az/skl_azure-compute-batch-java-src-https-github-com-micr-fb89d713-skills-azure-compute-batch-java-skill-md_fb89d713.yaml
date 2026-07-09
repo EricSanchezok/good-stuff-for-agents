@@ -1,0 +1,47 @@
+analysis:
+  hash: null
+  path: catalog/analyses/az/skl_azure-compute-batch-java-src-https-github-com-micr-fb89d713-skills-azure-compute-batch-java-skill-md_fb89d713.md
+canonical_name: azure-compute-batch-java
+canonical_skill_id: skl_azure-compute-batch-java-src-https-github-com-micr-fb89d713-skills-azure-compute-batch-java-skill-md_fb89d713
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-09T17:21:44.248Z'
+curation:
+  notes: []
+display_name: azure-compute-batch-java
+identity:
+  aliases: []
+  current_version_id: sha256:5fc31081115f4710a9b2b961b6662253b0232318
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: LICENSE file in repo root; README states MIT
+    spdx: MIT
+    verified: true
+  path: .github/plugins/azure-sdk-java/skills/azure-compute-batch-java/SKILL.md
+  source_id: src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e
+  upstream_ref: null
+  url: null
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-09T17:21:44.248Z'

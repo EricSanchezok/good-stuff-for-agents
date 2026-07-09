@@ -1,0 +1,47 @@
+analysis:
+  hash: null
+  path: catalog/analyses/az/skl_azure-eventhub-dotnet-src-https-github-com-microso-bb079a9b-et-skills-azure-eventhub-dotnet-skill-md_bb079a9b.md
+canonical_name: azure-eventhub-dotnet
+canonical_skill_id: skl_azure-eventhub-dotnet-src-https-github-com-microso-bb079a9b-et-skills-azure-eventhub-dotnet-skill-md_bb079a9b
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-09T17:21:41.314Z'
+curation:
+  notes: []
+display_name: azure-eventhub-dotnet
+identity:
+  aliases: []
+  current_version_id: sha256:11c2a85610791e40b99dec976b422fe326e4fc9c
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: LICENSE file in repo root; README states MIT
+    spdx: MIT
+    verified: true
+  path: .github/plugins/azure-sdk-dotnet/skills/azure-eventhub-dotnet/SKILL.md
+  source_id: src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e
+  upstream_ref: null
+  url: null
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-09T17:21:41.314Z'

@@ -1,0 +1,47 @@
+analysis:
+  hash: null
+  path: catalog/analyses/az/skl_azure-speech-to-text-rest-py-src-https-github-com-44788c14-ls-azure-speech-to-text-rest-py-skill-md_44788c14.md
+canonical_name: azure-speech-to-text-rest-py
+canonical_skill_id: skl_azure-speech-to-text-rest-py-src-https-github-com-44788c14-ls-azure-speech-to-text-rest-py-skill-md_44788c14
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-09T17:21:47.775Z'
+curation:
+  notes: []
+display_name: azure-speech-to-text-rest-py
+identity:
+  aliases: []
+  current_version_id: sha256:b0f96a3e9b5eac1d898e5b0938e862f164aa0aa1
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: LICENSE file in repo root; README states MIT
+    spdx: MIT
+    verified: true
+  path: .github/plugins/azure-sdk-python/skills/azure-speech-to-text-rest-py/SKILL.md
+  source_id: src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e
+  upstream_ref: null
+  url: null
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-09T17:21:47.775Z'

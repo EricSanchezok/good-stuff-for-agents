@@ -1,0 +1,47 @@
+analysis:
+  hash: null
+  path: catalog/analyses/en/skl_entra-app-registration-src-https-github-com-micros-7d75c3ca-s-skills-entra-app-registration-skill-md_7d75c3ca.md
+canonical_name: entra-app-registration
+canonical_skill_id: skl_entra-app-registration-src-https-github-com-micros-7d75c3ca-s-skills-entra-app-registration-skill-md_7d75c3ca
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-09T17:21:52.834Z'
+curation:
+  notes: []
+display_name: entra-app-registration
+identity:
+  aliases: []
+  current_version_id: sha256:9253ba09a6f71ea5b2bda0dd128d481bec321e52
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: LICENSE file in repo root; README states MIT
+    spdx: MIT
+    verified: true
+  path: .github/plugins/azure-skills/skills/entra-app-registration/SKILL.md
+  source_id: src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e
+  upstream_ref: null
+  url: null
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-09T17:21:52.834Z'

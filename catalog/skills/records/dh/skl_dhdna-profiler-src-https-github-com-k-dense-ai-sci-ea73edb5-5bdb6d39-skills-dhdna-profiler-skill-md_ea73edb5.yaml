@@ -1,0 +1,48 @@
+analysis:
+  hash: null
+  path: catalog/analyses/dh/skl_dhdna-profiler-src-https-github-com-k-dense-ai-sci-ea73edb5-5bdb6d39-skills-dhdna-profiler-skill-md_ea73edb5.md
+canonical_name: dhdna-profiler
+canonical_skill_id: skl_dhdna-profiler-src-https-github-com-k-dense-ai-sci-ea73edb5-5bdb6d39-skills-dhdna-profiler-skill-md_ea73edb5
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-09T17:21:58.497Z'
+curation:
+  notes: []
+display_name: dhdna-profiler
+identity:
+  aliases: []
+  current_version_id: sha256:51c1af6110fc40b26a62d556f1ae0f12da86c015
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: LICENSE.md file in repo root; README states MIT (individual skills may
+      have separate license metadata)
+    spdx: MIT
+    verified: true
+  path: skills/dhdna-profiler/SKILL.md
+  source_id: src_https-github-com-k-dense-ai-scientific-agent-skills-k-dense-scientific-agent-skills_5bdb6d39
+  upstream_ref: null
+  url: null
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-09T17:21:58.497Z'

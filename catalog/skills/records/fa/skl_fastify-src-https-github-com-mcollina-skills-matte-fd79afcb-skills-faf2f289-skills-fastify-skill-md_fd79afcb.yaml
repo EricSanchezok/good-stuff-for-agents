@@ -1,0 +1,47 @@
+analysis:
+  hash: null
+  path: catalog/analyses/fa/skl_fastify-src-https-github-com-mcollina-skills-matte-fd79afcb-skills-faf2f289-skills-fastify-skill-md_fd79afcb.md
+canonical_name: fastify
+canonical_skill_id: skl_fastify-src-https-github-com-mcollina-skills-matte-fd79afcb-skills-faf2f289-skills-fastify-skill-md_fd79afcb
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-09T17:21:55.707Z'
+curation:
+  notes: []
+display_name: fastify
+identity:
+  aliases: []
+  current_version_id: sha256:439e684d678e2ed5fc1e7ec37ac5f332554c8800
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: LICENSE file in repo root; README states MIT
+    spdx: MIT
+    verified: true
+  path: skills/fastify/SKILL.md
+  source_id: src_https-github-com-mcollina-skills-matteo-collina-s-skills_faf2f289
+  upstream_ref: null
+  url: null
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-09T17:21:55.707Z'

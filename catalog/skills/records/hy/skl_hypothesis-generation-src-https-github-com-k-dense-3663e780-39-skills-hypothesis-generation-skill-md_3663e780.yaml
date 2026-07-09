@@ -1,0 +1,48 @@
+analysis:
+  hash: null
+  path: catalog/analyses/hy/skl_hypothesis-generation-src-https-github-com-k-dense-3663e780-39-skills-hypothesis-generation-skill-md_3663e780.md
+canonical_name: hypothesis-generation
+canonical_skill_id: skl_hypothesis-generation-src-https-github-com-k-dense-3663e780-39-skills-hypothesis-generation-skill-md_3663e780
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-09T17:22:00.297Z'
+curation:
+  notes: []
+display_name: hypothesis-generation
+identity:
+  aliases: []
+  current_version_id: sha256:c13ca1773bf99933973d92db6a163be55a442bbc
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: LICENSE.md file in repo root; README states MIT (individual skills may
+      have separate license metadata)
+    spdx: MIT
+    verified: true
+  path: skills/hypothesis-generation/SKILL.md
+  source_id: src_https-github-com-k-dense-ai-scientific-agent-skills-k-dense-scientific-agent-skills_5bdb6d39
+  upstream_ref: null
+  url: null
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-09T17:22:00.297Z'

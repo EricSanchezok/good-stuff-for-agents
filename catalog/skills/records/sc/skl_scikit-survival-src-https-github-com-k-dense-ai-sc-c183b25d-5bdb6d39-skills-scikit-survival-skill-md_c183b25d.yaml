@@ -1,0 +1,48 @@
+analysis:
+  hash: null
+  path: catalog/analyses/sc/skl_scikit-survival-src-https-github-com-k-dense-ai-sc-c183b25d-5bdb6d39-skills-scikit-survival-skill-md_c183b25d.md
+canonical_name: scikit-survival
+canonical_skill_id: skl_scikit-survival-src-https-github-com-k-dense-ai-sc-c183b25d-5bdb6d39-skills-scikit-survival-skill-md_c183b25d
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-09T17:22:06.208Z'
+curation:
+  notes: []
+display_name: scikit-survival
+identity:
+  aliases: []
+  current_version_id: sha256:84674e9381ea0b6694751f3cd8f20c8dbf786615
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: LICENSE.md file in repo root; README states MIT (individual skills may
+      have separate license metadata)
+    spdx: MIT
+    verified: true
+  path: skills/scikit-survival/SKILL.md
+  source_id: src_https-github-com-k-dense-ai-scientific-agent-skills-k-dense-scientific-agent-skills_5bdb6d39
+  upstream_ref: null
+  url: null
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-09T17:22:06.208Z'

@@ -1,0 +1,48 @@
+analysis:
+  hash: null
+  path: catalog/analyses/sc/skl_scvelo-src-https-github-com-k-dense-ai-scientific-1a714b37-t-skills-5bdb6d39-skills-scvelo-skill-md_1a714b37.md
+canonical_name: scvelo
+canonical_skill_id: skl_scvelo-src-https-github-com-k-dense-ai-scientific-1a714b37-t-skills-5bdb6d39-skills-scvelo-skill-md_1a714b37
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-09T17:22:06.296Z'
+curation:
+  notes: []
+display_name: scvelo
+identity:
+  aliases: []
+  current_version_id: sha256:b671810ba9c0f7f5a4b4231022c56ef8cc1ad324
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: LICENSE.md file in repo root; README states MIT (individual skills may
+      have separate license metadata)
+    spdx: MIT
+    verified: true
+  path: skills/scvelo/SKILL.md
+  source_id: src_https-github-com-k-dense-ai-scientific-agent-skills-k-dense-scientific-agent-skills_5bdb6d39
+  upstream_ref: null
+  url: null
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-09T17:22:06.296Z'

@@ -1,0 +1,47 @@
+analysis:
+  hash: null
+  path: catalog/analyses/m3/skl_m365-agent-evaluator-src-https-github-com-microsof-bc987309-kit-skills-m365-agent-evaluator-skill-md_bc987309.md
+canonical_name: m365-agent-evaluator
+canonical_skill_id: skl_m365-agent-evaluator-src-https-github-com-microsof-bc987309-kit-skills-m365-agent-evaluator-skill-md_bc987309
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-09T17:21:54.335Z'
+curation:
+  notes: []
+display_name: m365-agent-evaluator
+identity:
+  aliases: []
+  current_version_id: sha256:f09feb28a91638a7da7da797a0f409de4e690f26
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: LICENSE file in repo root; README states MIT
+    spdx: MIT
+    verified: true
+  path: .github/plugins/microsoft-365-agents-toolkit/skills/m365-agent-evaluator/SKILL.md
+  source_id: src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e
+  upstream_ref: null
+  url: null
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-09T17:21:54.335Z'

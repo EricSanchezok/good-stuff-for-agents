@@ -1,0 +1,48 @@
+analysis:
+  hash: null
+  path: catalog/analyses/sc/skl_scvi-tools-src-https-github-com-k-dense-ai-scienti-0911721d-ills-5bdb6d39-skills-scvi-tools-skill-md_0911721d.md
+canonical_name: scvi-tools
+canonical_skill_id: skl_scvi-tools-src-https-github-com-k-dense-ai-scienti-0911721d-ills-5bdb6d39-skills-scvi-tools-skill-md_0911721d
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-09T17:22:06.386Z'
+curation:
+  notes: []
+display_name: scvi-tools
+identity:
+  aliases: []
+  current_version_id: sha256:678970639eb76884cdd33ddeca9e85dc9785e545
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: LICENSE.md file in repo root; README states MIT (individual skills may
+      have separate license metadata)
+    spdx: MIT
+    verified: true
+  path: skills/scvi-tools/SKILL.md
+  source_id: src_https-github-com-k-dense-ai-scientific-agent-skills-k-dense-scientific-agent-skills_5bdb6d39
+  upstream_ref: null
+  url: null
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-09T17:22:06.386Z'

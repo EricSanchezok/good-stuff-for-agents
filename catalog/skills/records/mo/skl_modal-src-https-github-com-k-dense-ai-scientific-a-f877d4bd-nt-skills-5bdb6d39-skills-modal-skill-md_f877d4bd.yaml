@@ -1,0 +1,48 @@
+analysis:
+  hash: null
+  path: catalog/analyses/mo/skl_modal-src-https-github-com-k-dense-ai-scientific-a-f877d4bd-nt-skills-5bdb6d39-skills-modal-skill-md_f877d4bd.md
+canonical_name: modal
+canonical_skill_id: skl_modal-src-https-github-com-k-dense-ai-scientific-a-f877d4bd-nt-skills-5bdb6d39-skills-modal-skill-md_f877d4bd
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-09T17:22:01.590Z'
+curation:
+  notes: []
+display_name: modal
+identity:
+  aliases: []
+  current_version_id: sha256:95e207635f95b2c90c0d61606da771b0e83e9498
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: LICENSE.md file in repo root; README states MIT (individual skills may
+      have separate license metadata)
+    spdx: MIT
+    verified: true
+  path: skills/modal/SKILL.md
+  source_id: src_https-github-com-k-dense-ai-scientific-agent-skills-k-dense-scientific-agent-skills_5bdb6d39
+  upstream_ref: null
+  url: null
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-09T17:22:01.590Z'

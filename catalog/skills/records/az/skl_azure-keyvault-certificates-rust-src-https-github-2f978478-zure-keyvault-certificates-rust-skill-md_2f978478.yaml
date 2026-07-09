@@ -1,0 +1,47 @@
+analysis:
+  hash: null
+  path: catalog/analyses/az/skl_azure-keyvault-certificates-rust-src-https-github-2f978478-zure-keyvault-certificates-rust-skill-md_2f978478.md
+canonical_name: azure-keyvault-certificates-rust
+canonical_skill_id: skl_azure-keyvault-certificates-rust-src-https-github-2f978478-zure-keyvault-certificates-rust-skill-md_2f978478
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-09T17:21:48.589Z'
+curation:
+  notes: []
+display_name: azure-keyvault-certificates-rust
+identity:
+  aliases: []
+  current_version_id: sha256:04363cf5ad7d2c133ccb0d349db94fe6776118ac
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: LICENSE file in repo root; README states MIT
+    spdx: MIT
+    verified: true
+  path: .github/plugins/azure-sdk-rust/skills/azure-keyvault-certificates-rust/SKILL.md
+  source_id: src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e
+  upstream_ref: null
+  url: null
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-09T17:21:48.589Z'

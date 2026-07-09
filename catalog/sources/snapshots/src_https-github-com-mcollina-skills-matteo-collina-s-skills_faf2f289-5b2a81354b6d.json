@@ -1,0 +1,175 @@
+{
+  "schema_version": 1,
+  "source_id": "src_https-github-com-mcollina-skills-matteo-collina-s-skills_faf2f289",
+  "upstream_ref": "5b2a81354b6d10325da0db9decc9ce5ecc714138",
+  "checked_at": "2026-07-09T17:19:56.812Z",
+  "url": "https://github.com/mcollina/skills",
+  "artifacts": [
+    {
+      "source_id": "src_https-github-com-mcollina-skills-matteo-collina-s-skills_faf2f289",
+      "path": "skills/documentation/SKILL.md",
+      "declared_name": "documentation",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:dae5144584a07b60287eac57f0786665b38b3559",
+      "upstream_ref": "5b2a81354b6d10325da0db9decc9ce5ecc714138",
+      "url": "https://github.com/mcollina/skills/blob/5b2a81354b6d10325da0db9decc9ce5ecc714138/skills/documentation/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/mcollina/skills/5b2a81354b6d10325da0db9decc9ce5ecc714138/skills/documentation/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "dae5144584a07b60287eac57f0786665b38b3559",
+        "size": 5465
+      }
+    },
+    {
+      "source_id": "src_https-github-com-mcollina-skills-matteo-collina-s-skills_faf2f289",
+      "path": "skills/fastify/SKILL.md",
+      "declared_name": "fastify",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:439e684d678e2ed5fc1e7ec37ac5f332554c8800",
+      "upstream_ref": "5b2a81354b6d10325da0db9decc9ce5ecc714138",
+      "url": "https://github.com/mcollina/skills/blob/5b2a81354b6d10325da0db9decc9ce5ecc714138/skills/fastify/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/mcollina/skills/5b2a81354b6d10325da0db9decc9ce5ecc714138/skills/fastify/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "439e684d678e2ed5fc1e7ec37ac5f332554c8800",
+        "size": 3775
+      }
+    },
+    {
+      "source_id": "src_https-github-com-mcollina-skills-matteo-collina-s-skills_faf2f289",
+      "path": "skills/init/SKILL.md",
+      "declared_name": "init",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:8015d567f8d20d2754025def780c1755d5414766",
+      "upstream_ref": "5b2a81354b6d10325da0db9decc9ce5ecc714138",
+      "url": "https://github.com/mcollina/skills/blob/5b2a81354b6d10325da0db9decc9ce5ecc714138/skills/init/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/mcollina/skills/5b2a81354b6d10325da0db9decc9ce5ecc714138/skills/init/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "8015d567f8d20d2754025def780c1755d5414766",
+        "size": 3765
+      }
+    },
+    {
+      "source_id": "src_https-github-com-mcollina-skills-matteo-collina-s-skills_faf2f289",
+      "path": "skills/linting-neostandard-eslint9/SKILL.md",
+      "declared_name": "linting-neostandard-eslint9",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:f4b7f4b528392762c35627e979880c7d9f47a6e3",
+      "upstream_ref": "5b2a81354b6d10325da0db9decc9ce5ecc714138",
+      "url": "https://github.com/mcollina/skills/blob/5b2a81354b6d10325da0db9decc9ce5ecc714138/skills/linting-neostandard-eslint9/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/mcollina/skills/5b2a81354b6d10325da0db9decc9ce5ecc714138/skills/linting-neostandard-eslint9/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "f4b7f4b528392762c35627e979880c7d9f47a6e3",
+        "size": 2673
+      }
+    },
+    {
+      "source_id": "src_https-github-com-mcollina-skills-matteo-collina-s-skills_faf2f289",
+      "path": "skills/node/SKILL.md",
+      "declared_name": "node",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:fd7b63be43a461e9c025f289fe78c27c910c6dc1",
+      "upstream_ref": "5b2a81354b6d10325da0db9decc9ce5ecc714138",
+      "url": "https://github.com/mcollina/skills/blob/5b2a81354b6d10325da0db9decc9ce5ecc714138/skills/node/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/mcollina/skills/5b2a81354b6d10325da0db9decc9ce5ecc714138/skills/node/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "fd7b63be43a461e9c025f289fe78c27c910c6dc1",
+        "size": 6403
+      }
+    },
+    {
+      "source_id": "src_https-github-com-mcollina-skills-matteo-collina-s-skills_faf2f289",
+      "path": "skills/nodejs-core/SKILL.md",
+      "declared_name": "nodejs-core",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:9a88748e9b3c45d3765ecc9be2f1eaf97d7f01a4",
+      "upstream_ref": "5b2a81354b6d10325da0db9decc9ce5ecc714138",
+      "url": "https://github.com/mcollina/skills/blob/5b2a81354b6d10325da0db9decc9ce5ecc714138/skills/nodejs-core/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/mcollina/skills/5b2a81354b6d10325da0db9decc9ce5ecc714138/skills/nodejs-core/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "9a88748e9b3c45d3765ecc9be2f1eaf97d7f01a4",
+        "size": 8198
+      }
+    },
+    {
+      "source_id": "src_https-github-com-mcollina-skills-matteo-collina-s-skills_faf2f289",
+      "path": "skills/oauth/SKILL.md",
+      "declared_name": "oauth",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:dd39a54b63d303e1f94b2d81e1f38cfe685f18f5",
+      "upstream_ref": "5b2a81354b6d10325da0db9decc9ce5ecc714138",
+      "url": "https://github.com/mcollina/skills/blob/5b2a81354b6d10325da0db9decc9ce5ecc714138/skills/oauth/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/mcollina/skills/5b2a81354b6d10325da0db9decc9ce5ecc714138/skills/oauth/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "dd39a54b63d303e1f94b2d81e1f38cfe685f18f5",
+        "size": 6720
+      }
+    },
+    {
+      "source_id": "src_https-github-com-mcollina-skills-matteo-collina-s-skills_faf2f289",
+      "path": "skills/octocat/SKILL.md",
+      "declared_name": "octocat",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:1d6ea3489d06d79d255dbf4fb34bf8f1130151ff",
+      "upstream_ref": "5b2a81354b6d10325da0db9decc9ce5ecc714138",
+      "url": "https://github.com/mcollina/skills/blob/5b2a81354b6d10325da0db9decc9ce5ecc714138/skills/octocat/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/mcollina/skills/5b2a81354b6d10325da0db9decc9ce5ecc714138/skills/octocat/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "1d6ea3489d06d79d255dbf4fb34bf8f1130151ff",
+        "size": 4946
+      }
+    },
+    {
+      "source_id": "src_https-github-com-mcollina-skills-matteo-collina-s-skills_faf2f289",
+      "path": "skills/skill-optimizer/SKILL.md",
+      "declared_name": "skill-optimizer",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:5c4e7d1209c66d8326f6f58db0e597410b69f69d",
+      "upstream_ref": "5b2a81354b6d10325da0db9decc9ce5ecc714138",
+      "url": "https://github.com/mcollina/skills/blob/5b2a81354b6d10325da0db9decc9ce5ecc714138/skills/skill-optimizer/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/mcollina/skills/5b2a81354b6d10325da0db9decc9ce5ecc714138/skills/skill-optimizer/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "5c4e7d1209c66d8326f6f58db0e597410b69f69d",
+        "size": 2327
+      }
+    },
+    {
+      "source_id": "src_https-github-com-mcollina-skills-matteo-collina-s-skills_faf2f289",
+      "path": "skills/snipgrapher/SKILL.md",
+      "declared_name": "snipgrapher",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:8b38341a3626960d3f82cea9d71722690975023d",
+      "upstream_ref": "5b2a81354b6d10325da0db9decc9ce5ecc714138",
+      "url": "https://github.com/mcollina/skills/blob/5b2a81354b6d10325da0db9decc9ce5ecc714138/skills/snipgrapher/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/mcollina/skills/5b2a81354b6d10325da0db9decc9ce5ecc714138/skills/snipgrapher/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "8b38341a3626960d3f82cea9d71722690975023d",
+        "size": 2743
+      }
+    },
+    {
+      "source_id": "src_https-github-com-mcollina-skills-matteo-collina-s-skills_faf2f289",
+      "path": "skills/typescript-magician/SKILL.md",
+      "declared_name": "typescript-magician",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:bbd539a21e1887beed388243971f12c028d9b79a",
+      "upstream_ref": "5b2a81354b6d10325da0db9decc9ce5ecc714138",
+      "url": "https://github.com/mcollina/skills/blob/5b2a81354b6d10325da0db9decc9ce5ecc714138/skills/typescript-magician/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/mcollina/skills/5b2a81354b6d10325da0db9decc9ce5ecc714138/skills/typescript-magician/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "bbd539a21e1887beed388243971f12c028d9b79a",
+        "size": 4516
+      }
+    }
+  ],
+  "digest": "sha256:40728853a43fb22a94ae92f4f5832a9a0f6c8f4eb4d7b0bb5dde28489a340f08"
+}

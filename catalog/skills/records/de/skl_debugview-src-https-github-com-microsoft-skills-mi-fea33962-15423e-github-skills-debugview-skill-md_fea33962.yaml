@@ -1,0 +1,47 @@
+analysis:
+  hash: null
+  path: catalog/analyses/de/skl_debugview-src-https-github-com-microsoft-skills-mi-fea33962-15423e-github-skills-debugview-skill-md_fea33962.md
+canonical_name: debugview
+canonical_skill_id: skl_debugview-src-https-github-com-microsoft-skills-mi-fea33962-15423e-github-skills-debugview-skill-md_fea33962
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-09T17:21:54.956Z'
+curation:
+  notes: []
+display_name: debugview
+identity:
+  aliases: []
+  current_version_id: sha256:606e6dd78d6b492d562bc505ecc29161732a58fd
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: LICENSE file in repo root; README states MIT
+    spdx: MIT
+    verified: true
+  path: .github/skills/debugview/SKILL.md
+  source_id: src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e
+  upstream_ref: null
+  url: null
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-09T17:21:54.956Z'

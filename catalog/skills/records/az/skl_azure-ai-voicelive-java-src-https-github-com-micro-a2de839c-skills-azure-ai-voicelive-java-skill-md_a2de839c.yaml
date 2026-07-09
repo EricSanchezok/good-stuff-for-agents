@@ -1,0 +1,47 @@
+analysis:
+  hash: null
+  path: catalog/analyses/az/skl_azure-ai-voicelive-java-src-https-github-com-micro-a2de839c-skills-azure-ai-voicelive-java-skill-md_a2de839c.md
+canonical_name: azure-ai-voicelive-java
+canonical_skill_id: skl_azure-ai-voicelive-java-src-https-github-com-micro-a2de839c-skills-azure-ai-voicelive-java-skill-md_a2de839c
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-09T17:21:43.678Z'
+curation:
+  notes: []
+display_name: azure-ai-voicelive-java
+identity:
+  aliases: []
+  current_version_id: sha256:584b13e150584b12741a775389b6dab1bdfa82f1
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: LICENSE file in repo root; README states MIT
+    spdx: MIT
+    verified: true
+  path: .github/plugins/azure-sdk-java/skills/azure-ai-voicelive-java/SKILL.md
+  source_id: src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e
+  upstream_ref: null
+  url: null
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-09T17:21:43.678Z'

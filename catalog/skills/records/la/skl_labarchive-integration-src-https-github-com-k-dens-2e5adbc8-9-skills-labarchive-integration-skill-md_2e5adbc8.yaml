@@ -1,0 +1,48 @@
+analysis:
+  hash: null
+  path: catalog/analyses/la/skl_labarchive-integration-src-https-github-com-k-dens-2e5adbc8-9-skills-labarchive-integration-skill-md_2e5adbc8.md
+canonical_name: labarchive-integration
+canonical_skill_id: skl_labarchive-integration-src-https-github-com-k-dens-2e5adbc8-9-skills-labarchive-integration-skill-md_2e5adbc8
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-09T17:22:00.615Z'
+curation:
+  notes: []
+display_name: labarchive-integration
+identity:
+  aliases: []
+  current_version_id: sha256:95502cc21137be0c25aad25a4448d0312f86f0e4
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: LICENSE.md file in repo root; README states MIT (individual skills may
+      have separate license metadata)
+    spdx: MIT
+    verified: true
+  path: skills/labarchive-integration/SKILL.md
+  source_id: src_https-github-com-k-dense-ai-scientific-agent-skills-k-dense-scientific-agent-skills_5bdb6d39
+  upstream_ref: null
+  url: null
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-09T17:22:00.615Z'

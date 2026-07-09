@@ -1,0 +1,48 @@
+analysis:
+  hash: null
+  path: catalog/analyses/gl/skl_glycoengineering-src-https-github-com-k-dense-ai-s-c3698a08-bdb6d39-skills-glycoengineering-skill-md_c3698a08.md
+canonical_name: glycoengineering
+canonical_skill_id: skl_glycoengineering-src-https-github-com-k-dense-ai-s-c3698a08-bdb6d39-skills-glycoengineering-skill-md_c3698a08
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-09T17:21:59.907Z'
+curation:
+  notes: []
+display_name: glycoengineering
+identity:
+  aliases: []
+  current_version_id: sha256:ccd2e66312f7b8b037498e99ebad60cc103e93f2
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: LICENSE.md file in repo root; README states MIT (individual skills may
+      have separate license metadata)
+    spdx: MIT
+    verified: true
+  path: skills/glycoengineering/SKILL.md
+  source_id: src_https-github-com-k-dense-ai-scientific-agent-skills-k-dense-scientific-agent-skills_5bdb6d39
+  upstream_ref: null
+  url: null
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-09T17:21:59.907Z'

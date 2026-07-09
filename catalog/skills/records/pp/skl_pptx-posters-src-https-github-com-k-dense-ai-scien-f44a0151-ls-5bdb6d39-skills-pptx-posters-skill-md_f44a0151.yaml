@@ -1,0 +1,48 @@
+analysis:
+  hash: null
+  path: catalog/analyses/pp/skl_pptx-posters-src-https-github-com-k-dense-ai-scien-f44a0151-ls-5bdb6d39-skills-pptx-posters-skill-md_f44a0151.md
+canonical_name: pptx-posters
+canonical_skill_id: skl_pptx-posters-src-https-github-com-k-dense-ai-scien-f44a0151-ls-5bdb6d39-skills-pptx-posters-skill-md_f44a0151
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-09T17:22:03.495Z'
+curation:
+  notes: []
+display_name: pptx-posters
+identity:
+  aliases: []
+  current_version_id: sha256:4b5a1656a27a8332d70ab2cde8921bada0846036
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: LICENSE.md file in repo root; README states MIT (individual skills may
+      have separate license metadata)
+    spdx: MIT
+    verified: true
+  path: skills/pptx-posters/SKILL.md
+  source_id: src_https-github-com-k-dense-ai-scientific-agent-skills-k-dense-scientific-agent-skills_5bdb6d39
+  upstream_ref: null
+  url: null
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-09T17:22:03.495Z'

@@ -1,0 +1,48 @@
+analysis:
+  hash: null
+  path: catalog/analyses/hi/skl_histolab-src-https-github-com-k-dense-ai-scientifi-baabae46-skills-5bdb6d39-skills-histolab-skill-md_baabae46.md
+canonical_name: histolab
+canonical_skill_id: skl_histolab-src-https-github-com-k-dense-ai-scientifi-baabae46-skills-5bdb6d39-skills-histolab-skill-md_baabae46
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-09T17:22:00.060Z'
+curation:
+  notes: []
+display_name: histolab
+identity:
+  aliases: []
+  current_version_id: sha256:95d6f493bfb19969f5edfd74a062f90b6796fb6b
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: LICENSE.md file in repo root; README states MIT (individual skills may
+      have separate license metadata)
+    spdx: MIT
+    verified: true
+  path: skills/histolab/SKILL.md
+  source_id: src_https-github-com-k-dense-ai-scientific-agent-skills-k-dense-scientific-agent-skills_5bdb6d39
+  upstream_ref: null
+  url: null
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-09T17:22:00.060Z'

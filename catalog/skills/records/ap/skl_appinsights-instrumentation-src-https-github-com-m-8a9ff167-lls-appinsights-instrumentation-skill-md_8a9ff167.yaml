@@ -1,0 +1,47 @@
+analysis:
+  hash: null
+  path: catalog/analyses/ap/skl_appinsights-instrumentation-src-https-github-com-m-8a9ff167-lls-appinsights-instrumentation-skill-md_8a9ff167.md
+canonical_name: appinsights-instrumentation
+canonical_skill_id: skl_appinsights-instrumentation-src-https-github-com-m-8a9ff167-lls-appinsights-instrumentation-skill-md_8a9ff167
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-09T17:21:50.997Z'
+curation:
+  notes: []
+display_name: appinsights-instrumentation
+identity:
+  aliases: []
+  current_version_id: sha256:ca55c310862cb95b5ebcc1f10a070f312718d1cb
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: LICENSE file in repo root; README states MIT
+    spdx: MIT
+    verified: true
+  path: .github/plugins/azure-skills/skills/appinsights-instrumentation/SKILL.md
+  source_id: src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e
+  upstream_ref: null
+  url: null
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-09T17:21:50.997Z'

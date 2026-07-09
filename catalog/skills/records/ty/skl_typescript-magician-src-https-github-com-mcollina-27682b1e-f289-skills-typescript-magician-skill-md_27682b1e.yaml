@@ -1,0 +1,47 @@
+analysis:
+  hash: null
+  path: catalog/analyses/ty/skl_typescript-magician-src-https-github-com-mcollina-27682b1e-f289-skills-typescript-magician-skill-md_27682b1e.md
+canonical_name: typescript-magician
+canonical_skill_id: skl_typescript-magician-src-https-github-com-mcollina-27682b1e-f289-skills-typescript-magician-skill-md_27682b1e
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-09T17:21:56.365Z'
+curation:
+  notes: []
+display_name: typescript-magician
+identity:
+  aliases: []
+  current_version_id: sha256:bbd539a21e1887beed388243971f12c028d9b79a
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: LICENSE file in repo root; README states MIT
+    spdx: MIT
+    verified: true
+  path: skills/typescript-magician/SKILL.md
+  source_id: src_https-github-com-mcollina-skills-matteo-collina-s-skills_faf2f289
+  upstream_ref: null
+  url: null
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-09T17:21:56.365Z'

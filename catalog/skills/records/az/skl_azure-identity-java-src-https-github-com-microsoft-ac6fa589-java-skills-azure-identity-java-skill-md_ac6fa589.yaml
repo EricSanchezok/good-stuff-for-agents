@@ -1,0 +1,47 @@
+analysis:
+  hash: null
+  path: catalog/analyses/az/skl_azure-identity-java-src-https-github-com-microsoft-ac6fa589-java-skills-azure-identity-java-skill-md_ac6fa589.md
+canonical_name: azure-identity-java
+canonical_skill_id: skl_azure-identity-java-src-https-github-com-microsoft-ac6fa589-java-skills-azure-identity-java-skill-md_ac6fa589
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-09T17:21:44.639Z'
+curation:
+  notes: []
+display_name: azure-identity-java
+identity:
+  aliases: []
+  current_version_id: sha256:ffe26b990c0cfbbae77a19345024c45d2ed0c608
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: LICENSE file in repo root; README states MIT
+    spdx: MIT
+    verified: true
+  path: .github/plugins/azure-sdk-java/skills/azure-identity-java/SKILL.md
+  source_id: src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e
+  upstream_ref: null
+  url: null
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-09T17:21:44.639Z'

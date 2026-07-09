@@ -1,0 +1,48 @@
+analysis:
+  hash: null
+  path: catalog/analyses/sh/skl_shap-src-https-github-com-k-dense-ai-scientific-ag-f239617a-ent-skills-5bdb6d39-skills-shap-skill-md_f239617a.md
+canonical_name: shap
+canonical_skill_id: skl_shap-src-https-github-com-k-dense-ai-scientific-ag-f239617a-ent-skills-5bdb6d39-skills-shap-skill-md_f239617a
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-09T17:22:06.564Z'
+curation:
+  notes: []
+display_name: shap
+identity:
+  aliases: []
+  current_version_id: sha256:6ec60140247352c6360a6af7abc74fa63de7a57e
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: LICENSE.md file in repo root; README states MIT (individual skills may
+      have separate license metadata)
+    spdx: MIT
+    verified: true
+  path: skills/shap/SKILL.md
+  source_id: src_https-github-com-k-dense-ai-scientific-agent-skills-k-dense-scientific-agent-skills_5bdb6d39
+  upstream_ref: null
+  url: null
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-09T17:22:06.564Z'

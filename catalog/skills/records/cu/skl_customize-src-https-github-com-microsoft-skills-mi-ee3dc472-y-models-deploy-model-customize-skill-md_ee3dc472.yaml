@@ -1,0 +1,47 @@
+analysis:
+  hash: null
+  path: catalog/analyses/cu/skl_customize-src-https-github-com-microsoft-skills-mi-ee3dc472-y-models-deploy-model-customize-skill-md_ee3dc472.md
+canonical_name: customize
+canonical_skill_id: skl_customize-src-https-github-com-microsoft-skills-mi-ee3dc472-y-models-deploy-model-customize-skill-md_ee3dc472
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-09T17:21:53.216Z'
+curation:
+  notes: []
+display_name: customize
+identity:
+  aliases: []
+  current_version_id: sha256:7c94d5617bf41dd57289fbd6d7e9cf7ea0d811c2
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: LICENSE file in repo root; README states MIT
+    spdx: MIT
+    verified: true
+  path: .github/plugins/azure-skills/skills/microsoft-foundry/models/deploy-model/customize/SKILL.md
+  source_id: src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e
+  upstream_ref: null
+  url: null
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-09T17:21:53.216Z'

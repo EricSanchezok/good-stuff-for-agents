@@ -1,0 +1,48 @@
+analysis:
+  hash: null
+  path: catalog/analyses/ne/skl_networkx-src-https-github-com-k-dense-ai-scientifi-8abcbb68-skills-5bdb6d39-skills-networkx-skill-md_8abcbb68.md
+canonical_name: networkx
+canonical_skill_id: skl_networkx-src-https-github-com-k-dense-ai-scientifi-8abcbb68-skills-5bdb6d39-skills-networkx-skill-md_8abcbb68
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-09T17:22:01.810Z'
+curation:
+  notes: []
+display_name: networkx
+identity:
+  aliases: []
+  current_version_id: sha256:fae5ecda8bf36a22188c4001c37fcaa435fbb616
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: LICENSE.md file in repo root; README states MIT (individual skills may
+      have separate license metadata)
+    spdx: MIT
+    verified: true
+  path: skills/networkx/SKILL.md
+  source_id: src_https-github-com-k-dense-ai-scientific-agent-skills-k-dense-scientific-agent-skills_5bdb6d39
+  upstream_ref: null
+  url: null
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-09T17:22:01.810Z'

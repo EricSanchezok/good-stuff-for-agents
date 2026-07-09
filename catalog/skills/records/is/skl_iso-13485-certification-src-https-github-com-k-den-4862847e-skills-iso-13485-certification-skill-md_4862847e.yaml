@@ -1,0 +1,48 @@
+analysis:
+  hash: null
+  path: catalog/analyses/is/skl_iso-13485-certification-src-https-github-com-k-den-4862847e-skills-iso-13485-certification-skill-md_4862847e.md
+canonical_name: iso-13485-certification
+canonical_skill_id: skl_iso-13485-certification-src-https-github-com-k-den-4862847e-skills-iso-13485-certification-skill-md_4862847e
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-09T17:22:00.537Z'
+curation:
+  notes: []
+display_name: iso-13485-certification
+identity:
+  aliases: []
+  current_version_id: sha256:bf9970ed541cea4bd68a3931f5add7b3d70f1f75
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: LICENSE.md file in repo root; README states MIT (individual skills may
+      have separate license metadata)
+    spdx: MIT
+    verified: true
+  path: skills/iso-13485-certification/SKILL.md
+  source_id: src_https-github-com-k-dense-ai-scientific-agent-skills-k-dense-scientific-agent-skills_5bdb6d39
+  upstream_ref: null
+  url: null
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-09T17:22:00.537Z'

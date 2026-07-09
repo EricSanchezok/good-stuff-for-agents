@@ -1,0 +1,47 @@
+analysis:
+  hash: null
+  path: catalog/analyses/az/skl_azure-ai-voicelive-dotnet-src-https-github-com-mic-dface443-kills-azure-ai-voicelive-dotnet-skill-md_dface443.md
+canonical_name: azure-ai-voicelive-dotnet
+canonical_skill_id: skl_azure-ai-voicelive-dotnet-src-https-github-com-mic-dface443-kills-azure-ai-voicelive-dotnet-skill-md_dface443
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-09T17:21:41.146Z'
+curation:
+  notes: []
+display_name: azure-ai-voicelive-dotnet
+identity:
+  aliases: []
+  current_version_id: sha256:82e101da3649c7f560fff5ac2f96f7e75268e6e1
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: LICENSE file in repo root; README states MIT
+    spdx: MIT
+    verified: true
+  path: .github/plugins/azure-sdk-dotnet/skills/azure-ai-voicelive-dotnet/SKILL.md
+  source_id: src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e
+  upstream_ref: null
+  url: null
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-09T17:21:41.146Z'

@@ -1,0 +1,47 @@
+analysis:
+  hash: null
+  path: catalog/analyses/az/skl_azure-resource-manager-mysql-dotnet-src-https-gith-25fbf0ab-e-resource-manager-mysql-dotnet-skill-md_25fbf0ab.md
+canonical_name: azure-resource-manager-mysql-dotnet
+canonical_skill_id: skl_azure-resource-manager-mysql-dotnet-src-https-gith-25fbf0ab-e-resource-manager-mysql-dotnet-skill-md_25fbf0ab
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-09T17:21:42.328Z'
+curation:
+  notes: []
+display_name: azure-resource-manager-mysql-dotnet
+identity:
+  aliases: []
+  current_version_id: sha256:0be21fefd35b57a803ca6ac43ba2a82c062e2454
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: LICENSE file in repo root; README states MIT
+    spdx: MIT
+    verified: true
+  path: .github/plugins/azure-sdk-dotnet/skills/azure-resource-manager-mysql-dotnet/SKILL.md
+  source_id: src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e
+  upstream_ref: null
+  url: null
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-09T17:21:42.328Z'

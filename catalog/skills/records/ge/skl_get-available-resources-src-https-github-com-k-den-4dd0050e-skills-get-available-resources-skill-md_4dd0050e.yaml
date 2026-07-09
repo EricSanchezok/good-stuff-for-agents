@@ -1,0 +1,48 @@
+analysis:
+  hash: null
+  path: catalog/analyses/ge/skl_get-available-resources-src-https-github-com-k-den-4dd0050e-skills-get-available-resources-skill-md_4dd0050e.md
+canonical_name: get-available-resources
+canonical_skill_id: skl_get-available-resources-src-https-github-com-k-den-4dd0050e-skills-get-available-resources-skill-md_4dd0050e
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-09T17:21:59.664Z'
+curation:
+  notes: []
+display_name: get-available-resources
+identity:
+  aliases: []
+  current_version_id: sha256:21f7a8ce13f122151e1b49b63a596d9f288d7600
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: LICENSE.md file in repo root; README states MIT (individual skills may
+      have separate license metadata)
+    spdx: MIT
+    verified: true
+  path: skills/get-available-resources/SKILL.md
+  source_id: src_https-github-com-k-dense-ai-scientific-agent-skills-k-dense-scientific-agent-skills_5bdb6d39
+  upstream_ref: null
+  url: null
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-09T17:21:59.664Z'

@@ -1,0 +1,47 @@
+analysis:
+  hash: null
+  path: catalog/analyses/az/skl_azure-containerregistry-py-src-https-github-com-mi-621f8a2c-ills-azure-containerregistry-py-skill-md_621f8a2c.md
+canonical_name: azure-containerregistry-py
+canonical_skill_id: skl_azure-containerregistry-py-src-https-github-com-mi-621f8a2c-ills-azure-containerregistry-py-skill-md_621f8a2c
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-09T17:21:46.351Z'
+curation:
+  notes: []
+display_name: azure-containerregistry-py
+identity:
+  aliases: []
+  current_version_id: sha256:e1a8305ccac4d5e8d44e852038907cd516f1f74d
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: LICENSE file in repo root; README states MIT
+    spdx: MIT
+    verified: true
+  path: .github/plugins/azure-sdk-python/skills/azure-containerregistry-py/SKILL.md
+  source_id: src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e
+  upstream_ref: null
+  url: null
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-09T17:21:46.351Z'

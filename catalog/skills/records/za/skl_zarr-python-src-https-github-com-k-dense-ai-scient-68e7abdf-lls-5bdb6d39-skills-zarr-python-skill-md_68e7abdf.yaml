@@ -1,0 +1,48 @@
+analysis:
+  hash: null
+  path: catalog/analyses/za/skl_zarr-python-src-https-github-com-k-dense-ai-scient-68e7abdf-lls-5bdb6d39-skills-zarr-python-skill-md_68e7abdf.md
+canonical_name: zarr-python
+canonical_skill_id: skl_zarr-python-src-https-github-com-k-dense-ai-scient-68e7abdf-lls-5bdb6d39-skills-zarr-python-skill-md_68e7abdf
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-09T17:22:08.286Z'
+curation:
+  notes: []
+display_name: zarr-python
+identity:
+  aliases: []
+  current_version_id: sha256:3f305991035ddc7e05e9e907050b76e10f366acb
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: LICENSE.md file in repo root; README states MIT (individual skills may
+      have separate license metadata)
+    spdx: MIT
+    verified: true
+  path: skills/zarr-python/SKILL.md
+  source_id: src_https-github-com-k-dense-ai-scientific-agent-skills-k-dense-scientific-agent-skills_5bdb6d39
+  upstream_ref: null
+  url: null
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-09T17:22:08.286Z'

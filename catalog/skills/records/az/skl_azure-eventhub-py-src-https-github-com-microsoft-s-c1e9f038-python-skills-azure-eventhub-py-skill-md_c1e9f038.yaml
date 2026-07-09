@@ -1,0 +1,47 @@
+analysis:
+  hash: null
+  path: catalog/analyses/az/skl_azure-eventhub-py-src-https-github-com-microsoft-s-c1e9f038-python-skills-azure-eventhub-py-skill-md_c1e9f038.md
+canonical_name: azure-eventhub-py
+canonical_skill_id: skl_azure-eventhub-py-src-https-github-com-microsoft-s-c1e9f038-python-skills-azure-eventhub-py-skill-md_c1e9f038
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-09T17:21:46.722Z'
+curation:
+  notes: []
+display_name: azure-eventhub-py
+identity:
+  aliases: []
+  current_version_id: sha256:289676f5c80a9f4064980ff98283575502fe1d99
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: LICENSE file in repo root; README states MIT
+    spdx: MIT
+    verified: true
+  path: .github/plugins/azure-sdk-python/skills/azure-eventhub-py/SKILL.md
+  source_id: src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e
+  upstream_ref: null
+  url: null
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-09T17:21:46.722Z'

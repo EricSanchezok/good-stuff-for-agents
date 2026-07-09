@@ -1,0 +1,47 @@
+analysis:
+  hash: null
+  path: catalog/analyses/de/skl_deploy-model-src-https-github-com-microsoft-skills-83b45d2d-oft-foundry-models-deploy-model-skill-md_83b45d2d.md
+canonical_name: deploy-model
+canonical_skill_id: skl_deploy-model-src-https-github-com-microsoft-skills-83b45d2d-oft-foundry-models-deploy-model-skill-md_83b45d2d
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-09T17:21:53.067Z'
+curation:
+  notes: []
+display_name: deploy-model
+identity:
+  aliases: []
+  current_version_id: sha256:322b342762abbcd86eb90a92b2c4cb7dccd6aac6
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: LICENSE file in repo root; README states MIT
+    spdx: MIT
+    verified: true
+  path: .github/plugins/azure-skills/skills/microsoft-foundry/models/deploy-model/SKILL.md
+  source_id: src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e
+  upstream_ref: null
+  url: null
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-09T17:21:53.067Z'

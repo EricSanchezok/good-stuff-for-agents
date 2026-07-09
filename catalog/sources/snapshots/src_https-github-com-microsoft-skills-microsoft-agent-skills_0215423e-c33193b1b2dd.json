@@ -1,0 +1,2875 @@
+{
+  "schema_version": 1,
+  "source_id": "src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e",
+  "upstream_ref": "c33193b1b2dd14d5946e3c6213fd095ffa5b31df",
+  "checked_at": "2026-07-09T17:19:58.352Z",
+  "url": "https://github.com/microsoft/skills",
+  "artifacts": [
+    {
+      "source_id": "src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e",
+      "path": ".github/plugins/azure-sdk-dotnet/skills/azure-ai-agents-persistent-dotnet/SKILL.md",
+      "declared_name": "azure-ai-agents-persistent-dotnet",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:9c9bd87a4bf852157158e2c658218762cfd2130c",
+      "upstream_ref": "c33193b1b2dd14d5946e3c6213fd095ffa5b31df",
+      "url": "https://github.com/microsoft/skills/blob/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-dotnet/skills/azure-ai-agents-persistent-dotnet/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/microsoft/skills/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-dotnet/skills/azure-ai-agents-persistent-dotnet/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "9c9bd87a4bf852157158e2c658218762cfd2130c",
+        "size": 11875
+      }
+    },
+    {
+      "source_id": "src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e",
+      "path": ".github/plugins/azure-sdk-dotnet/skills/azure-ai-document-intelligence-dotnet/SKILL.md",
+      "declared_name": "azure-ai-document-intelligence-dotnet",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:249ebfabf8eef0e94a39079d3968434a56eab4ef",
+      "upstream_ref": "c33193b1b2dd14d5946e3c6213fd095ffa5b31df",
+      "url": "https://github.com/microsoft/skills/blob/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-dotnet/skills/azure-ai-document-intelligence-dotnet/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/microsoft/skills/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-dotnet/skills/azure-ai-document-intelligence-dotnet/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "249ebfabf8eef0e94a39079d3968434a56eab4ef",
+        "size": 11895
+      }
+    },
+    {
+      "source_id": "src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e",
+      "path": ".github/plugins/azure-sdk-dotnet/skills/azure-ai-openai-dotnet/SKILL.md",
+      "declared_name": "azure-ai-openai-dotnet",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:4c15f34a6a12e0a7d1f198ce5a61508168c51d54",
+      "upstream_ref": "c33193b1b2dd14d5946e3c6213fd095ffa5b31df",
+      "url": "https://github.com/microsoft/skills/blob/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-dotnet/skills/azure-ai-openai-dotnet/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/microsoft/skills/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-dotnet/skills/azure-ai-openai-dotnet/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "4c15f34a6a12e0a7d1f198ce5a61508168c51d54",
+        "size": 13485
+      }
+    },
+    {
+      "source_id": "src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e",
+      "path": ".github/plugins/azure-sdk-dotnet/skills/azure-ai-projects-dotnet/SKILL.md",
+      "declared_name": "azure-ai-projects-dotnet",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:80428335ae9036992bc1fda54594380a1c122b18",
+      "upstream_ref": "c33193b1b2dd14d5946e3c6213fd095ffa5b31df",
+      "url": "https://github.com/microsoft/skills/blob/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-dotnet/skills/azure-ai-projects-dotnet/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/microsoft/skills/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-dotnet/skills/azure-ai-projects-dotnet/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "80428335ae9036992bc1fda54594380a1c122b18",
+        "size": 11686
+      }
+    },
+    {
+      "source_id": "src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e",
+      "path": ".github/plugins/azure-sdk-dotnet/skills/azure-ai-voicelive-dotnet/SKILL.md",
+      "declared_name": "azure-ai-voicelive-dotnet",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:82e101da3649c7f560fff5ac2f96f7e75268e6e1",
+      "upstream_ref": "c33193b1b2dd14d5946e3c6213fd095ffa5b31df",
+      "url": "https://github.com/microsoft/skills/blob/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-dotnet/skills/azure-ai-voicelive-dotnet/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/microsoft/skills/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-dotnet/skills/azure-ai-voicelive-dotnet/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "82e101da3649c7f560fff5ac2f96f7e75268e6e1",
+        "size": 9165
+      }
+    },
+    {
+      "source_id": "src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e",
+      "path": ".github/plugins/azure-sdk-dotnet/skills/azure-eventgrid-dotnet/SKILL.md",
+      "declared_name": "azure-eventgrid-dotnet",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:3156848ee9bf82dc7f0aabd71934e19574113601",
+      "upstream_ref": "c33193b1b2dd14d5946e3c6213fd095ffa5b31df",
+      "url": "https://github.com/microsoft/skills/blob/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-dotnet/skills/azure-eventgrid-dotnet/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/microsoft/skills/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-dotnet/skills/azure-eventgrid-dotnet/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "3156848ee9bf82dc7f0aabd71934e19574113601",
+        "size": 14014
+      }
+    },
+    {
+      "source_id": "src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e",
+      "path": ".github/plugins/azure-sdk-dotnet/skills/azure-eventhub-dotnet/SKILL.md",
+      "declared_name": "azure-eventhub-dotnet",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:11c2a85610791e40b99dec976b422fe326e4fc9c",
+      "upstream_ref": "c33193b1b2dd14d5946e3c6213fd095ffa5b31df",
+      "url": "https://github.com/microsoft/skills/blob/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-dotnet/skills/azure-eventhub-dotnet/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/microsoft/skills/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-dotnet/skills/azure-eventhub-dotnet/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "11c2a85610791e40b99dec976b422fe326e4fc9c",
+        "size": 10936
+      }
+    },
+    {
+      "source_id": "src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e",
+      "path": ".github/plugins/azure-sdk-dotnet/skills/azure-identity-dotnet/SKILL.md",
+      "declared_name": "azure-identity-dotnet",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:a851ddfc4dc0fc76cdb9fb45f0604c16d4d59f82",
+      "upstream_ref": "c33193b1b2dd14d5946e3c6213fd095ffa5b31df",
+      "url": "https://github.com/microsoft/skills/blob/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-dotnet/skills/azure-identity-dotnet/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/microsoft/skills/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-dotnet/skills/azure-identity-dotnet/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "a851ddfc4dc0fc76cdb9fb45f0604c16d4d59f82",
+        "size": 9854
+      }
+    },
+    {
+      "source_id": "src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e",
+      "path": ".github/plugins/azure-sdk-dotnet/skills/azure-maps-search-dotnet/SKILL.md",
+      "declared_name": "azure-maps-search-dotnet",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:79897e10e8bd32128b9b6641087b7a0bf14f7507",
+      "upstream_ref": "c33193b1b2dd14d5946e3c6213fd095ffa5b31df",
+      "url": "https://github.com/microsoft/skills/blob/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-dotnet/skills/azure-maps-search-dotnet/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/microsoft/skills/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-dotnet/skills/azure-maps-search-dotnet/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "79897e10e8bd32128b9b6641087b7a0bf14f7507",
+        "size": 15829
+      }
+    },
+    {
+      "source_id": "src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e",
+      "path": ".github/plugins/azure-sdk-dotnet/skills/azure-mgmt-apicenter-dotnet/SKILL.md",
+      "declared_name": "azure-mgmt-apicenter-dotnet",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:c67b575cbc92644e4ef78a7cad695a2944f545bc",
+      "upstream_ref": "c33193b1b2dd14d5946e3c6213fd095ffa5b31df",
+      "url": "https://github.com/microsoft/skills/blob/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-dotnet/skills/azure-mgmt-apicenter-dotnet/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/microsoft/skills/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-dotnet/skills/azure-mgmt-apicenter-dotnet/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "c67b575cbc92644e4ef78a7cad695a2944f545bc",
+        "size": 13524
+      }
+    },
+    {
+      "source_id": "src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e",
+      "path": ".github/plugins/azure-sdk-dotnet/skills/azure-mgmt-apimanagement-dotnet/SKILL.md",
+      "declared_name": "azure-mgmt-apimanagement-dotnet",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:ed3fe2bfa8e016f675066eca950debeafaf056ba",
+      "upstream_ref": "c33193b1b2dd14d5946e3c6213fd095ffa5b31df",
+      "url": "https://github.com/microsoft/skills/blob/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-dotnet/skills/azure-mgmt-apimanagement-dotnet/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/microsoft/skills/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-dotnet/skills/azure-mgmt-apimanagement-dotnet/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "ed3fe2bfa8e016f675066eca950debeafaf056ba",
+        "size": 10443
+      }
+    },
+    {
+      "source_id": "src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e",
+      "path": ".github/plugins/azure-sdk-dotnet/skills/azure-mgmt-applicationinsights-dotnet/SKILL.md",
+      "declared_name": "azure-mgmt-applicationinsights-dotnet",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:97279bfcc7736acd9e3d3772e118bdf9a52fb0b5",
+      "upstream_ref": "c33193b1b2dd14d5946e3c6213fd095ffa5b31df",
+      "url": "https://github.com/microsoft/skills/blob/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-dotnet/skills/azure-mgmt-applicationinsights-dotnet/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/microsoft/skills/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-dotnet/skills/azure-mgmt-applicationinsights-dotnet/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "97279bfcc7736acd9e3d3772e118bdf9a52fb0b5",
+        "size": 18275
+      }
+    },
+    {
+      "source_id": "src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e",
+      "path": ".github/plugins/azure-sdk-dotnet/skills/azure-mgmt-arizeaiobservabilityeval-dotnet/SKILL.md",
+      "declared_name": "azure-mgmt-arizeaiobservabilityeval-dotnet",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:7a820d75e857d1140484b0fe93301bf232f19109",
+      "upstream_ref": "c33193b1b2dd14d5946e3c6213fd095ffa5b31df",
+      "url": "https://github.com/microsoft/skills/blob/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-dotnet/skills/azure-mgmt-arizeaiobservabilityeval-dotnet/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/microsoft/skills/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-dotnet/skills/azure-mgmt-arizeaiobservabilityeval-dotnet/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "7a820d75e857d1140484b0fe93301bf232f19109",
+        "size": 7963
+      }
+    },
+    {
+      "source_id": "src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e",
+      "path": ".github/plugins/azure-sdk-dotnet/skills/azure-mgmt-botservice-dotnet/SKILL.md",
+      "declared_name": "azure-mgmt-botservice-dotnet",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:8549e745271e52eb7e03a2d71a124899f06d2999",
+      "upstream_ref": "c33193b1b2dd14d5946e3c6213fd095ffa5b31df",
+      "url": "https://github.com/microsoft/skills/blob/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-dotnet/skills/azure-mgmt-botservice-dotnet/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/microsoft/skills/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-dotnet/skills/azure-mgmt-botservice-dotnet/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "8549e745271e52eb7e03a2d71a124899f06d2999",
+        "size": 10332
+      }
+    },
+    {
+      "source_id": "src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e",
+      "path": ".github/plugins/azure-sdk-dotnet/skills/azure-mgmt-fabric-dotnet/SKILL.md",
+      "declared_name": "azure-mgmt-fabric-dotnet",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:19e5a3918fdf9d5c978a5181025a2f6a2c342645",
+      "upstream_ref": "c33193b1b2dd14d5946e3c6213fd095ffa5b31df",
+      "url": "https://github.com/microsoft/skills/blob/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-dotnet/skills/azure-mgmt-fabric-dotnet/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/microsoft/skills/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-dotnet/skills/azure-mgmt-fabric-dotnet/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "19e5a3918fdf9d5c978a5181025a2f6a2c342645",
+        "size": 11625
+      }
+    },
+    {
+      "source_id": "src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e",
+      "path": ".github/plugins/azure-sdk-dotnet/skills/azure-mgmt-mongodbatlas-dotnet/SKILL.md",
+      "declared_name": "azure-mgmt-mongodbatlas-dotnet",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:05bdac1c374bbdd03a2ae6c4c173d5d9b18b4160",
+      "upstream_ref": "c33193b1b2dd14d5946e3c6213fd095ffa5b31df",
+      "url": "https://github.com/microsoft/skills/blob/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-dotnet/skills/azure-mgmt-mongodbatlas-dotnet/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/microsoft/skills/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-dotnet/skills/azure-mgmt-mongodbatlas-dotnet/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "05bdac1c374bbdd03a2ae6c4c173d5d9b18b4160",
+        "size": 11832
+      }
+    },
+    {
+      "source_id": "src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e",
+      "path": ".github/plugins/azure-sdk-dotnet/skills/azure-mgmt-weightsandbiases-dotnet/SKILL.md",
+      "declared_name": "azure-mgmt-weightsandbiases-dotnet",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:07adf059989627086c55e5aaa94d2057022b1c2d",
+      "upstream_ref": "c33193b1b2dd14d5946e3c6213fd095ffa5b31df",
+      "url": "https://github.com/microsoft/skills/blob/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-dotnet/skills/azure-mgmt-weightsandbiases-dotnet/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/microsoft/skills/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-dotnet/skills/azure-mgmt-weightsandbiases-dotnet/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "07adf059989627086c55e5aaa94d2057022b1c2d",
+        "size": 11392
+      }
+    },
+    {
+      "source_id": "src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e",
+      "path": ".github/plugins/azure-sdk-dotnet/skills/azure-resource-manager-cosmosdb-dotnet/SKILL.md",
+      "declared_name": "azure-resource-manager-cosmosdb-dotnet",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:3318c2734fa2a69f00d526073fad9b49426d5ef1",
+      "upstream_ref": "c33193b1b2dd14d5946e3c6213fd095ffa5b31df",
+      "url": "https://github.com/microsoft/skills/blob/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-dotnet/skills/azure-resource-manager-cosmosdb-dotnet/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/microsoft/skills/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-dotnet/skills/azure-resource-manager-cosmosdb-dotnet/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "3318c2734fa2a69f00d526073fad9b49426d5ef1",
+        "size": 8631
+      }
+    },
+    {
+      "source_id": "src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e",
+      "path": ".github/plugins/azure-sdk-dotnet/skills/azure-resource-manager-durabletask-dotnet/SKILL.md",
+      "declared_name": "azure-resource-manager-durabletask-dotnet",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:79e685dca8daf9df66c987fbd01525ce34699434",
+      "upstream_ref": "c33193b1b2dd14d5946e3c6213fd095ffa5b31df",
+      "url": "https://github.com/microsoft/skills/blob/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-dotnet/skills/azure-resource-manager-durabletask-dotnet/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/microsoft/skills/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-dotnet/skills/azure-resource-manager-durabletask-dotnet/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "79e685dca8daf9df66c987fbd01525ce34699434",
+        "size": 13059
+      }
+    },
+    {
+      "source_id": "src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e",
+      "path": ".github/plugins/azure-sdk-dotnet/skills/azure-resource-manager-mysql-dotnet/SKILL.md",
+      "declared_name": "azure-resource-manager-mysql-dotnet",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:0be21fefd35b57a803ca6ac43ba2a82c062e2454",
+      "upstream_ref": "c33193b1b2dd14d5946e3c6213fd095ffa5b31df",
+      "url": "https://github.com/microsoft/skills/blob/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-dotnet/skills/azure-resource-manager-mysql-dotnet/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/microsoft/skills/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-dotnet/skills/azure-resource-manager-mysql-dotnet/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "0be21fefd35b57a803ca6ac43ba2a82c062e2454",
+        "size": 14114
+      }
+    },
+    {
+      "source_id": "src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e",
+      "path": ".github/plugins/azure-sdk-dotnet/skills/azure-resource-manager-playwright-dotnet/SKILL.md",
+      "declared_name": "azure-resource-manager-playwright-dotnet",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:f213a2efdca47803023f4ae490c76ef3f671599c",
+      "upstream_ref": "c33193b1b2dd14d5946e3c6213fd095ffa5b31df",
+      "url": "https://github.com/microsoft/skills/blob/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-dotnet/skills/azure-resource-manager-playwright-dotnet/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/microsoft/skills/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-dotnet/skills/azure-resource-manager-playwright-dotnet/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "f213a2efdca47803023f4ae490c76ef3f671599c",
+        "size": 10539
+      }
+    },
+    {
+      "source_id": "src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e",
+      "path": ".github/plugins/azure-sdk-dotnet/skills/azure-resource-manager-postgresql-dotnet/SKILL.md",
+      "declared_name": "azure-resource-manager-postgresql-dotnet",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:05ba9fa8774836eb038e7cafe5cb0118c08f3a9a",
+      "upstream_ref": "c33193b1b2dd14d5946e3c6213fd095ffa5b31df",
+      "url": "https://github.com/microsoft/skills/blob/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-dotnet/skills/azure-resource-manager-postgresql-dotnet/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/microsoft/skills/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-dotnet/skills/azure-resource-manager-postgresql-dotnet/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "05ba9fa8774836eb038e7cafe5cb0118c08f3a9a",
+        "size": 16005
+      }
+    },
+    {
+      "source_id": "src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e",
+      "path": ".github/plugins/azure-sdk-dotnet/skills/azure-resource-manager-redis-dotnet/SKILL.md",
+      "declared_name": "azure-resource-manager-redis-dotnet",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:339db649fa6bda62a6960a585ce334b1617b82f0",
+      "upstream_ref": "c33193b1b2dd14d5946e3c6213fd095ffa5b31df",
+      "url": "https://github.com/microsoft/skills/blob/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-dotnet/skills/azure-resource-manager-redis-dotnet/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/microsoft/skills/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-dotnet/skills/azure-resource-manager-redis-dotnet/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "339db649fa6bda62a6960a585ce334b1617b82f0",
+        "size": 12195
+      }
+    },
+    {
+      "source_id": "src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e",
+      "path": ".github/plugins/azure-sdk-dotnet/skills/azure-resource-manager-sql-dotnet/SKILL.md",
+      "declared_name": "azure-resource-manager-sql-dotnet",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:6eff090401b0b48fb47ecddbdf36554da8fb8ddf",
+      "upstream_ref": "c33193b1b2dd14d5946e3c6213fd095ffa5b31df",
+      "url": "https://github.com/microsoft/skills/blob/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-dotnet/skills/azure-resource-manager-sql-dotnet/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/microsoft/skills/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-dotnet/skills/azure-resource-manager-sql-dotnet/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "6eff090401b0b48fb47ecddbdf36554da8fb8ddf",
+        "size": 10502
+      }
+    },
+    {
+      "source_id": "src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e",
+      "path": ".github/plugins/azure-sdk-dotnet/skills/azure-search-documents-dotnet/SKILL.md",
+      "declared_name": "azure-search-documents-dotnet",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:074a1981b319b9c93327188a3dcbd5ca84888b85",
+      "upstream_ref": "c33193b1b2dd14d5946e3c6213fd095ffa5b31df",
+      "url": "https://github.com/microsoft/skills/blob/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-dotnet/skills/azure-search-documents-dotnet/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/microsoft/skills/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-dotnet/skills/azure-search-documents-dotnet/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "074a1981b319b9c93327188a3dcbd5ca84888b85",
+        "size": 10294
+      }
+    },
+    {
+      "source_id": "src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e",
+      "path": ".github/plugins/azure-sdk-dotnet/skills/azure-security-keyvault-keys-dotnet/SKILL.md",
+      "declared_name": "azure-security-keyvault-keys-dotnet",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:c9ca1f8736980cf682b5ac1306d327442d3260d0",
+      "upstream_ref": "c33193b1b2dd14d5946e3c6213fd095ffa5b31df",
+      "url": "https://github.com/microsoft/skills/blob/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-dotnet/skills/azure-security-keyvault-keys-dotnet/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/microsoft/skills/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-dotnet/skills/azure-security-keyvault-keys-dotnet/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "c9ca1f8736980cf682b5ac1306d327442d3260d0",
+        "size": 12637
+      }
+    },
+    {
+      "source_id": "src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e",
+      "path": ".github/plugins/azure-sdk-dotnet/skills/azure-servicebus-dotnet/SKILL.md",
+      "declared_name": "azure-servicebus-dotnet",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:00c292ca53d47563837745e1952110982f949e77",
+      "upstream_ref": "c33193b1b2dd14d5946e3c6213fd095ffa5b31df",
+      "url": "https://github.com/microsoft/skills/blob/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-dotnet/skills/azure-servicebus-dotnet/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/microsoft/skills/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-dotnet/skills/azure-servicebus-dotnet/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "00c292ca53d47563837745e1952110982f949e77",
+        "size": 11165
+      }
+    },
+    {
+      "source_id": "src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e",
+      "path": ".github/plugins/azure-sdk-dotnet/skills/m365-agents-dotnet/SKILL.md",
+      "declared_name": "m365-agents-dotnet",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:d914cd1443fa3df60bddee1e061870f0dd404917",
+      "upstream_ref": "c33193b1b2dd14d5946e3c6213fd095ffa5b31df",
+      "url": "https://github.com/microsoft/skills/blob/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-dotnet/skills/m365-agents-dotnet/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/microsoft/skills/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-dotnet/skills/m365-agents-dotnet/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "d914cd1443fa3df60bddee1e061870f0dd404917",
+        "size": 10045
+      }
+    },
+    {
+      "source_id": "src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e",
+      "path": ".github/plugins/azure-sdk-dotnet/skills/microsoft-azure-webjobs-extensions-authentication-events-dotnet/SKILL.md",
+      "declared_name": "microsoft-azure-webjobs-extensions-authentication-events-dotnet",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:a90ab71b73b33f9953ba9f95a556b451849ff4ba",
+      "upstream_ref": "c33193b1b2dd14d5946e3c6213fd095ffa5b31df",
+      "url": "https://github.com/microsoft/skills/blob/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-dotnet/skills/microsoft-azure-webjobs-extensions-authentication-events-dotnet/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/microsoft/skills/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-dotnet/skills/microsoft-azure-webjobs-extensions-authentication-events-dotnet/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "a90ab71b73b33f9953ba9f95a556b451849ff4ba",
+        "size": 15080
+      }
+    },
+    {
+      "source_id": "src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e",
+      "path": ".github/plugins/azure-sdk-java/skills/azure-ai-agents-persistent-java/SKILL.md",
+      "declared_name": "azure-ai-agents-persistent-java",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:6345044117d177e1aa06a392c54d70e0850cd5e9",
+      "upstream_ref": "c33193b1b2dd14d5946e3c6213fd095ffa5b31df",
+      "url": "https://github.com/microsoft/skills/blob/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-java/skills/azure-ai-agents-persistent-java/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/microsoft/skills/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-java/skills/azure-ai-agents-persistent-java/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "6345044117d177e1aa06a392c54d70e0850cd5e9",
+        "size": 4417
+      }
+    },
+    {
+      "source_id": "src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e",
+      "path": ".github/plugins/azure-sdk-java/skills/azure-ai-anomalydetector-java/SKILL.md",
+      "declared_name": "azure-ai-anomalydetector-java",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:1720bde7863898eca16efd3be18d3e072f57bcf1",
+      "upstream_ref": "c33193b1b2dd14d5946e3c6213fd095ffa5b31df",
+      "url": "https://github.com/microsoft/skills/blob/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-java/skills/azure-ai-anomalydetector-java/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/microsoft/skills/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-java/skills/azure-ai-anomalydetector-java/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "1720bde7863898eca16efd3be18d3e072f57bcf1",
+        "size": 9052
+      }
+    },
+    {
+      "source_id": "src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e",
+      "path": ".github/plugins/azure-sdk-java/skills/azure-ai-contentsafety-java/SKILL.md",
+      "declared_name": "azure-ai-contentsafety-java",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:d9a4e8f157e635c0962744d019f9d3e4d02d58ec",
+      "upstream_ref": "c33193b1b2dd14d5946e3c6213fd095ffa5b31df",
+      "url": "https://github.com/microsoft/skills/blob/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-java/skills/azure-ai-contentsafety-java/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/microsoft/skills/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-java/skills/azure-ai-contentsafety-java/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "d9a4e8f157e635c0962744d019f9d3e4d02d58ec",
+        "size": 8510
+      }
+    },
+    {
+      "source_id": "src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e",
+      "path": ".github/plugins/azure-sdk-java/skills/azure-ai-formrecognizer-java/SKILL.md",
+      "declared_name": "azure-ai-formrecognizer-java",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:9ebbe26711148505aa6b53738036f058fb523f2c",
+      "upstream_ref": "c33193b1b2dd14d5946e3c6213fd095ffa5b31df",
+      "url": "https://github.com/microsoft/skills/blob/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-java/skills/azure-ai-formrecognizer-java/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/microsoft/skills/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-java/skills/azure-ai-formrecognizer-java/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "9ebbe26711148505aa6b53738036f058fb523f2c",
+        "size": 13404
+      }
+    },
+    {
+      "source_id": "src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e",
+      "path": ".github/plugins/azure-sdk-java/skills/azure-ai-projects-java/SKILL.md",
+      "declared_name": "azure-ai-projects-java",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:a28cc004322d021cafc17518c27755a28c1141cc",
+      "upstream_ref": "c33193b1b2dd14d5946e3c6213fd095ffa5b31df",
+      "url": "https://github.com/microsoft/skills/blob/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-java/skills/azure-ai-projects-java/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/microsoft/skills/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-java/skills/azure-ai-projects-java/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "a28cc004322d021cafc17518c27755a28c1141cc",
+        "size": 5518
+      }
+    },
+    {
+      "source_id": "src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e",
+      "path": ".github/plugins/azure-sdk-java/skills/azure-ai-vision-imageanalysis-java/SKILL.md",
+      "declared_name": "azure-ai-vision-imageanalysis-java",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:5ec2d2d5592e6a71ec707b03b4a5d64643b5a491",
+      "upstream_ref": "c33193b1b2dd14d5946e3c6213fd095ffa5b31df",
+      "url": "https://github.com/microsoft/skills/blob/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-java/skills/azure-ai-vision-imageanalysis-java/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/microsoft/skills/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-java/skills/azure-ai-vision-imageanalysis-java/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "5ec2d2d5592e6a71ec707b03b4a5d64643b5a491",
+        "size": 8730
+      }
+    },
+    {
+      "source_id": "src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e",
+      "path": ".github/plugins/azure-sdk-java/skills/azure-ai-voicelive-java/SKILL.md",
+      "declared_name": "azure-ai-voicelive-java",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:584b13e150584b12741a775389b6dab1bdfa82f1",
+      "upstream_ref": "c33193b1b2dd14d5946e3c6213fd095ffa5b31df",
+      "url": "https://github.com/microsoft/skills/blob/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-java/skills/azure-ai-voicelive-java/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/microsoft/skills/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-java/skills/azure-ai-voicelive-java/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "584b13e150584b12741a775389b6dab1bdfa82f1",
+        "size": 8131
+      }
+    },
+    {
+      "source_id": "src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e",
+      "path": ".github/plugins/azure-sdk-java/skills/azure-appconfiguration-java/SKILL.md",
+      "declared_name": "azure-appconfiguration-java",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:a27cd0325fe6fba6009923912c5174ee364bd2c5",
+      "upstream_ref": "c33193b1b2dd14d5946e3c6213fd095ffa5b31df",
+      "url": "https://github.com/microsoft/skills/blob/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-java/skills/azure-appconfiguration-java/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/microsoft/skills/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-java/skills/azure-appconfiguration-java/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "a27cd0325fe6fba6009923912c5174ee364bd2c5",
+        "size": 13881
+      }
+    },
+    {
+      "source_id": "src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e",
+      "path": ".github/plugins/azure-sdk-java/skills/azure-communication-callautomation-java/SKILL.md",
+      "declared_name": "azure-communication-callautomation-java",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:75b1857c6d21a89385b07a2c39b0643704be00d4",
+      "upstream_ref": "c33193b1b2dd14d5946e3c6213fd095ffa5b31df",
+      "url": "https://github.com/microsoft/skills/blob/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-java/skills/azure-communication-callautomation-java/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/microsoft/skills/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-java/skills/azure-communication-callautomation-java/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "75b1857c6d21a89385b07a2c39b0643704be00d4",
+        "size": 9277
+      }
+    },
+    {
+      "source_id": "src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e",
+      "path": ".github/plugins/azure-sdk-java/skills/azure-communication-callingserver-java/SKILL.md",
+      "declared_name": "azure-communication-callingserver-java",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:c2bde1986d3ace215f6a28e923e5399326a9882e",
+      "upstream_ref": "c33193b1b2dd14d5946e3c6213fd095ffa5b31df",
+      "url": "https://github.com/microsoft/skills/blob/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-java/skills/azure-communication-callingserver-java/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/microsoft/skills/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-java/skills/azure-communication-callingserver-java/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "c2bde1986d3ace215f6a28e923e5399326a9882e",
+        "size": 2864
+      }
+    },
+    {
+      "source_id": "src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e",
+      "path": ".github/plugins/azure-sdk-java/skills/azure-communication-chat-java/SKILL.md",
+      "declared_name": "azure-communication-chat-java",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:22e9dd0e2e8cbcfc5ce26c59d14b4b5c4a8ce0c9",
+      "upstream_ref": "c33193b1b2dd14d5946e3c6213fd095ffa5b31df",
+      "url": "https://github.com/microsoft/skills/blob/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-java/skills/azure-communication-chat-java/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/microsoft/skills/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-java/skills/azure-communication-chat-java/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "22e9dd0e2e8cbcfc5ce26c59d14b4b5c4a8ce0c9",
+        "size": 9550
+      }
+    },
+    {
+      "source_id": "src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e",
+      "path": ".github/plugins/azure-sdk-java/skills/azure-communication-common-java/SKILL.md",
+      "declared_name": "azure-communication-common-java",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:b7b13710db6b54f823a5af8dbae652a427b1e776",
+      "upstream_ref": "c33193b1b2dd14d5946e3c6213fd095ffa5b31df",
+      "url": "https://github.com/microsoft/skills/blob/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-java/skills/azure-communication-common-java/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/microsoft/skills/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-java/skills/azure-communication-common-java/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "b7b13710db6b54f823a5af8dbae652a427b1e776",
+        "size": 9680
+      }
+    },
+    {
+      "source_id": "src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e",
+      "path": ".github/plugins/azure-sdk-java/skills/azure-communication-sms-java/SKILL.md",
+      "declared_name": "azure-communication-sms-java",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:d2dfd5056562193e7cbda6be6c7fd6c6faecdfe8",
+      "upstream_ref": "c33193b1b2dd14d5946e3c6213fd095ffa5b31df",
+      "url": "https://github.com/microsoft/skills/blob/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-java/skills/azure-communication-sms-java/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/microsoft/skills/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-java/skills/azure-communication-sms-java/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "d2dfd5056562193e7cbda6be6c7fd6c6faecdfe8",
+        "size": 8993
+      }
+    },
+    {
+      "source_id": "src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e",
+      "path": ".github/plugins/azure-sdk-java/skills/azure-compute-batch-java/SKILL.md",
+      "declared_name": "azure-compute-batch-java",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:5fc31081115f4710a9b2b961b6662253b0232318",
+      "upstream_ref": "c33193b1b2dd14d5946e3c6213fd095ffa5b31df",
+      "url": "https://github.com/microsoft/skills/blob/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-java/skills/azure-compute-batch-java/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/microsoft/skills/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-java/skills/azure-compute-batch-java/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "5fc31081115f4710a9b2b961b6662253b0232318",
+        "size": 11914
+      }
+    },
+    {
+      "source_id": "src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e",
+      "path": ".github/plugins/azure-sdk-java/skills/azure-cosmos-java/SKILL.md",
+      "declared_name": "azure-cosmos-java",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:21a14dce1c668ef29e3267b262be6123533eb92e",
+      "upstream_ref": "c33193b1b2dd14d5946e3c6213fd095ffa5b31df",
+      "url": "https://github.com/microsoft/skills/blob/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-java/skills/azure-cosmos-java/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/microsoft/skills/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-java/skills/azure-cosmos-java/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "21a14dce1c668ef29e3267b262be6123533eb92e",
+        "size": 7499
+      }
+    },
+    {
+      "source_id": "src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e",
+      "path": ".github/plugins/azure-sdk-java/skills/azure-data-tables-java/SKILL.md",
+      "declared_name": "azure-data-tables-java",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:0fbad66ba89446a1481d848c0aa2ed8df0efa897",
+      "upstream_ref": "c33193b1b2dd14d5946e3c6213fd095ffa5b31df",
+      "url": "https://github.com/microsoft/skills/blob/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-java/skills/azure-data-tables-java/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/microsoft/skills/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-java/skills/azure-data-tables-java/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "0fbad66ba89446a1481d848c0aa2ed8df0efa897",
+        "size": 9873
+      }
+    },
+    {
+      "source_id": "src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e",
+      "path": ".github/plugins/azure-sdk-java/skills/azure-eventgrid-java/SKILL.md",
+      "declared_name": "azure-eventgrid-java",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:75586f26f80854bd65a750a06de00ceb6ff3eb38",
+      "upstream_ref": "c33193b1b2dd14d5946e3c6213fd095ffa5b31df",
+      "url": "https://github.com/microsoft/skills/blob/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-java/skills/azure-eventgrid-java/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/microsoft/skills/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-java/skills/azure-eventgrid-java/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "75586f26f80854bd65a750a06de00ceb6ff3eb38",
+        "size": 9240
+      }
+    },
+    {
+      "source_id": "src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e",
+      "path": ".github/plugins/azure-sdk-java/skills/azure-eventhub-java/SKILL.md",
+      "declared_name": "azure-eventhub-java",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:9399c5d62cc5d5b395e65ad0fc5aaa780e03242e",
+      "upstream_ref": "c33193b1b2dd14d5946e3c6213fd095ffa5b31df",
+      "url": "https://github.com/microsoft/skills/blob/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-java/skills/azure-eventhub-java/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/microsoft/skills/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-java/skills/azure-eventhub-java/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "9399c5d62cc5d5b395e65ad0fc5aaa780e03242e",
+        "size": 11294
+      }
+    },
+    {
+      "source_id": "src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e",
+      "path": ".github/plugins/azure-sdk-java/skills/azure-identity-java/SKILL.md",
+      "declared_name": "azure-identity-java",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:ffe26b990c0cfbbae77a19345024c45d2ed0c608",
+      "upstream_ref": "c33193b1b2dd14d5946e3c6213fd095ffa5b31df",
+      "url": "https://github.com/microsoft/skills/blob/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-java/skills/azure-identity-java/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/microsoft/skills/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-java/skills/azure-identity-java/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "ffe26b990c0cfbbae77a19345024c45d2ed0c608",
+        "size": 10977
+      }
+    },
+    {
+      "source_id": "src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e",
+      "path": ".github/plugins/azure-sdk-java/skills/azure-messaging-webpubsub-java/SKILL.md",
+      "declared_name": "azure-messaging-webpubsub-java",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:b8b8a3fe22a62ad01c34ddff759dad55aa0c5e14",
+      "upstream_ref": "c33193b1b2dd14d5946e3c6213fd095ffa5b31df",
+      "url": "https://github.com/microsoft/skills/blob/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-java/skills/azure-messaging-webpubsub-java/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/microsoft/skills/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-java/skills/azure-messaging-webpubsub-java/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "b8b8a3fe22a62ad01c34ddff759dad55aa0c5e14",
+        "size": 9509
+      }
+    },
+    {
+      "source_id": "src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e",
+      "path": ".github/plugins/azure-sdk-java/skills/azure-monitor-ingestion-java/SKILL.md",
+      "declared_name": "azure-monitor-ingestion-java",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:fdafd0a6c66489ff4096732c092c8e17671527e7",
+      "upstream_ref": "c33193b1b2dd14d5946e3c6213fd095ffa5b31df",
+      "url": "https://github.com/microsoft/skills/blob/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-java/skills/azure-monitor-ingestion-java/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/microsoft/skills/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-java/skills/azure-monitor-ingestion-java/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "fdafd0a6c66489ff4096732c092c8e17671527e7",
+        "size": 8031
+      }
+    },
+    {
+      "source_id": "src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e",
+      "path": ".github/plugins/azure-sdk-java/skills/azure-monitor-opentelemetry-exporter-java/SKILL.md",
+      "declared_name": "azure-monitor-opentelemetry-exporter-java",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:2be5ec33b16457816e0737dcc99007560fea74d5",
+      "upstream_ref": "c33193b1b2dd14d5946e3c6213fd095ffa5b31df",
+      "url": "https://github.com/microsoft/skills/blob/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-java/skills/azure-monitor-opentelemetry-exporter-java/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/microsoft/skills/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-java/skills/azure-monitor-opentelemetry-exporter-java/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "2be5ec33b16457816e0737dcc99007560fea74d5",
+        "size": 8772
+      }
+    },
+    {
+      "source_id": "src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e",
+      "path": ".github/plugins/azure-sdk-java/skills/azure-monitor-query-java/SKILL.md",
+      "declared_name": "azure-monitor-query-java",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:4f9d8cfec9d6a166cd5bd18fc91fabc53dc7f343",
+      "upstream_ref": "c33193b1b2dd14d5946e3c6213fd095ffa5b31df",
+      "url": "https://github.com/microsoft/skills/blob/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-java/skills/azure-monitor-query-java/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/microsoft/skills/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-java/skills/azure-monitor-query-java/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "4f9d8cfec9d6a166cd5bd18fc91fabc53dc7f343",
+        "size": 13944
+      }
+    },
+    {
+      "source_id": "src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e",
+      "path": ".github/plugins/azure-sdk-java/skills/azure-security-keyvault-keys-java/SKILL.md",
+      "declared_name": "azure-security-keyvault-keys-java",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:632c3607d93b81d7625969555520be8d873ee2d7",
+      "upstream_ref": "c33193b1b2dd14d5946e3c6213fd095ffa5b31df",
+      "url": "https://github.com/microsoft/skills/blob/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-java/skills/azure-security-keyvault-keys-java/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/microsoft/skills/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-java/skills/azure-security-keyvault-keys-java/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "632c3607d93b81d7625969555520be8d873ee2d7",
+        "size": 11671
+      }
+    },
+    {
+      "source_id": "src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e",
+      "path": ".github/plugins/azure-sdk-java/skills/azure-security-keyvault-secrets-java/SKILL.md",
+      "declared_name": "azure-security-keyvault-secrets-java",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:a2a9f62f50111cc5aa13556b20cc29b2aa37be06",
+      "upstream_ref": "c33193b1b2dd14d5946e3c6213fd095ffa5b31df",
+      "url": "https://github.com/microsoft/skills/blob/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-java/skills/azure-security-keyvault-secrets-java/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/microsoft/skills/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-java/skills/azure-security-keyvault-secrets-java/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "a2a9f62f50111cc5aa13556b20cc29b2aa37be06",
+        "size": 12229
+      }
+    },
+    {
+      "source_id": "src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e",
+      "path": ".github/plugins/azure-sdk-java/skills/azure-storage-blob-java/SKILL.md",
+      "declared_name": "azure-storage-blob-java",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:9202207d800886e1fbe56673a54f7f77b723e114",
+      "upstream_ref": "c33193b1b2dd14d5946e3c6213fd095ffa5b31df",
+      "url": "https://github.com/microsoft/skills/blob/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-java/skills/azure-storage-blob-java/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/microsoft/skills/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-java/skills/azure-storage-blob-java/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "9202207d800886e1fbe56673a54f7f77b723e114",
+        "size": 10888
+      }
+    },
+    {
+      "source_id": "src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e",
+      "path": ".github/plugins/azure-sdk-python/skills/agent-framework-azure-ai-py/SKILL.md",
+      "declared_name": "agent-framework-azure-ai-py",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:04a975fec1379266430f07bc789bae7acd579185",
+      "upstream_ref": "c33193b1b2dd14d5946e3c6213fd095ffa5b31df",
+      "url": "https://github.com/microsoft/skills/blob/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-python/skills/agent-framework-azure-ai-py/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/microsoft/skills/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-python/skills/agent-framework-azure-ai-py/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "04a975fec1379266430f07bc789bae7acd579185",
+        "size": 12289
+      }
+    },
+    {
+      "source_id": "src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e",
+      "path": ".github/plugins/azure-sdk-python/skills/azure-ai-contentsafety-py/SKILL.md",
+      "declared_name": "azure-ai-contentsafety-py",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:f48d8a11589e972787c9907e5698119fe61cdfd8",
+      "upstream_ref": "c33193b1b2dd14d5946e3c6213fd095ffa5b31df",
+      "url": "https://github.com/microsoft/skills/blob/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-python/skills/azure-ai-contentsafety-py/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/microsoft/skills/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-python/skills/azure-ai-contentsafety-py/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "f48d8a11589e972787c9907e5698119fe61cdfd8",
+        "size": 8641
+      }
+    },
+    {
+      "source_id": "src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e",
+      "path": ".github/plugins/azure-sdk-python/skills/azure-ai-contentunderstanding-py/SKILL.md",
+      "declared_name": "azure-ai-contentunderstanding-py",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:1998fba384207417789f37846f85548defd1f7b9",
+      "upstream_ref": "c33193b1b2dd14d5946e3c6213fd095ffa5b31df",
+      "url": "https://github.com/microsoft/skills/blob/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-python/skills/azure-ai-contentunderstanding-py/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/microsoft/skills/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-python/skills/azure-ai-contentunderstanding-py/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "1998fba384207417789f37846f85548defd1f7b9",
+        "size": 10177
+      }
+    },
+    {
+      "source_id": "src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e",
+      "path": ".github/plugins/azure-sdk-python/skills/azure-ai-language-conversations-py/SKILL.md",
+      "declared_name": "azure-ai-language-conversations-py",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:74a373cb7fbf503416d1b3769c2e7d50a569f963",
+      "upstream_ref": "c33193b1b2dd14d5946e3c6213fd095ffa5b31df",
+      "url": "https://github.com/microsoft/skills/blob/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-python/skills/azure-ai-language-conversations-py/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/microsoft/skills/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-python/skills/azure-ai-language-conversations-py/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "74a373cb7fbf503416d1b3769c2e7d50a569f963",
+        "size": 5149
+      }
+    },
+    {
+      "source_id": "src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e",
+      "path": ".github/plugins/azure-sdk-python/skills/azure-ai-ml-py/SKILL.md",
+      "declared_name": "azure-ai-ml-py",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:64ae23817a4661484e10a2e28eb89ba99c7f4afa",
+      "upstream_ref": "c33193b1b2dd14d5946e3c6213fd095ffa5b31df",
+      "url": "https://github.com/microsoft/skills/blob/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-python/skills/azure-ai-ml-py/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/microsoft/skills/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-python/skills/azure-ai-ml-py/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "64ae23817a4661484e10a2e28eb89ba99c7f4afa",
+        "size": 8462
+      }
+    },
+    {
+      "source_id": "src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e",
+      "path": ".github/plugins/azure-sdk-python/skills/azure-ai-projects-py/SKILL.md",
+      "declared_name": "azure-ai-projects-py",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:83a80c385301e88f89e67e9a192085f4302994c2",
+      "upstream_ref": "c33193b1b2dd14d5946e3c6213fd095ffa5b31df",
+      "url": "https://github.com/microsoft/skills/blob/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-python/skills/azure-ai-projects-py/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/microsoft/skills/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-python/skills/azure-ai-projects-py/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "83a80c385301e88f89e67e9a192085f4302994c2",
+        "size": 11070
+      }
+    },
+    {
+      "source_id": "src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e",
+      "path": ".github/plugins/azure-sdk-python/skills/azure-ai-textanalytics-py/SKILL.md",
+      "declared_name": "azure-ai-textanalytics-py",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:dc9d0d92b4770e4d4c1e3cb44f58878898510396",
+      "upstream_ref": "c33193b1b2dd14d5946e3c6213fd095ffa5b31df",
+      "url": "https://github.com/microsoft/skills/blob/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-python/skills/azure-ai-textanalytics-py/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/microsoft/skills/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-python/skills/azure-ai-textanalytics-py/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "dc9d0d92b4770e4d4c1e3cb44f58878898510396",
+        "size": 9222
+      }
+    },
+    {
+      "source_id": "src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e",
+      "path": ".github/plugins/azure-sdk-python/skills/azure-ai-transcription-py/SKILL.md",
+      "declared_name": "azure-ai-transcription-py",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:a6fd15e733a567c832962e5c4dc71998cc2ebcde",
+      "upstream_ref": "c33193b1b2dd14d5946e3c6213fd095ffa5b31df",
+      "url": "https://github.com/microsoft/skills/blob/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-python/skills/azure-ai-transcription-py/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/microsoft/skills/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-python/skills/azure-ai-transcription-py/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "a6fd15e733a567c832962e5c4dc71998cc2ebcde",
+        "size": 2858
+      }
+    },
+    {
+      "source_id": "src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e",
+      "path": ".github/plugins/azure-sdk-python/skills/azure-ai-translation-document-py/SKILL.md",
+      "declared_name": "azure-ai-translation-document-py",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:07379f43a72014ebb5472b2a612b7b9a75dfe42c",
+      "upstream_ref": "c33193b1b2dd14d5946e3c6213fd095ffa5b31df",
+      "url": "https://github.com/microsoft/skills/blob/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-python/skills/azure-ai-translation-document-py/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/microsoft/skills/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-python/skills/azure-ai-translation-document-py/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "07379f43a72014ebb5472b2a612b7b9a75dfe42c",
+        "size": 9603
+      }
+    },
+    {
+      "source_id": "src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e",
+      "path": ".github/plugins/azure-sdk-python/skills/azure-ai-translation-text-py/SKILL.md",
+      "declared_name": "azure-ai-translation-text-py",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:11d6f6fc3785593fff88b3e9ef3ea492575e7ef9",
+      "upstream_ref": "c33193b1b2dd14d5946e3c6213fd095ffa5b31df",
+      "url": "https://github.com/microsoft/skills/blob/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-python/skills/azure-ai-translation-text-py/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/microsoft/skills/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-python/skills/azure-ai-translation-text-py/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "11d6f6fc3785593fff88b3e9ef3ea492575e7ef9",
+        "size": 10532
+      }
+    },
+    {
+      "source_id": "src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e",
+      "path": ".github/plugins/azure-sdk-python/skills/azure-ai-vision-imageanalysis-py/SKILL.md",
+      "declared_name": "azure-ai-vision-imageanalysis-py",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:ba1393b7cac8d834c1f9e099e5346b1afab2a604",
+      "upstream_ref": "c33193b1b2dd14d5946e3c6213fd095ffa5b31df",
+      "url": "https://github.com/microsoft/skills/blob/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-python/skills/azure-ai-vision-imageanalysis-py/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/microsoft/skills/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-python/skills/azure-ai-vision-imageanalysis-py/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "ba1393b7cac8d834c1f9e099e5346b1afab2a604",
+        "size": 9618
+      }
+    },
+    {
+      "source_id": "src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e",
+      "path": ".github/plugins/azure-sdk-python/skills/azure-ai-voicelive-py/SKILL.md",
+      "declared_name": "azure-ai-voicelive-py",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:1a3f3aa129ef79ff45c6d0fc25160971d9c62a6c",
+      "upstream_ref": "c33193b1b2dd14d5946e3c6213fd095ffa5b31df",
+      "url": "https://github.com/microsoft/skills/blob/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-python/skills/azure-ai-voicelive-py/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/microsoft/skills/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-python/skills/azure-ai-voicelive-py/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "1a3f3aa129ef79ff45c6d0fc25160971d9c62a6c",
+        "size": 11589
+      }
+    },
+    {
+      "source_id": "src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e",
+      "path": ".github/plugins/azure-sdk-python/skills/azure-appconfiguration-py/SKILL.md",
+      "declared_name": "azure-appconfiguration-py",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:9fe7feb9863c970d079423025959856f70f56e87",
+      "upstream_ref": "c33193b1b2dd14d5946e3c6213fd095ffa5b31df",
+      "url": "https://github.com/microsoft/skills/blob/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-python/skills/azure-appconfiguration-py/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/microsoft/skills/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-python/skills/azure-appconfiguration-py/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "9fe7feb9863c970d079423025959856f70f56e87",
+        "size": 7368
+      }
+    },
+    {
+      "source_id": "src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e",
+      "path": ".github/plugins/azure-sdk-python/skills/azure-containerregistry-py/SKILL.md",
+      "declared_name": "azure-containerregistry-py",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:e1a8305ccac4d5e8d44e852038907cd516f1f74d",
+      "upstream_ref": "c33193b1b2dd14d5946e3c6213fd095ffa5b31df",
+      "url": "https://github.com/microsoft/skills/blob/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-python/skills/azure-containerregistry-py/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/microsoft/skills/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-python/skills/azure-containerregistry-py/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "e1a8305ccac4d5e8d44e852038907cd516f1f74d",
+        "size": 8365
+      }
+    },
+    {
+      "source_id": "src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e",
+      "path": ".github/plugins/azure-sdk-python/skills/azure-cosmos-db-py/SKILL.md",
+      "declared_name": "azure-cosmos-db-py",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:9fcb9385f93da33da00cd2354df18948c5113956",
+      "upstream_ref": "c33193b1b2dd14d5946e3c6213fd095ffa5b31df",
+      "url": "https://github.com/microsoft/skills/blob/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-python/skills/azure-cosmos-db-py/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/microsoft/skills/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-python/skills/azure-cosmos-db-py/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "9fcb9385f93da33da00cd2354df18948c5113956",
+        "size": 11931
+      }
+    },
+    {
+      "source_id": "src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e",
+      "path": ".github/plugins/azure-sdk-python/skills/azure-cosmos-py/SKILL.md",
+      "declared_name": "azure-cosmos-py",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:9800d67e64c753e221128e38c43a81bfabdff944",
+      "upstream_ref": "c33193b1b2dd14d5946e3c6213fd095ffa5b31df",
+      "url": "https://github.com/microsoft/skills/blob/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-python/skills/azure-cosmos-py/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/microsoft/skills/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-python/skills/azure-cosmos-py/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "9800d67e64c753e221128e38c43a81bfabdff944",
+        "size": 9316
+      }
+    },
+    {
+      "source_id": "src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e",
+      "path": ".github/plugins/azure-sdk-python/skills/azure-data-tables-py/SKILL.md",
+      "declared_name": "azure-data-tables-py",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:ef513ce507818533f5bee1477d07dab5c3bf3fdd",
+      "upstream_ref": "c33193b1b2dd14d5946e3c6213fd095ffa5b31df",
+      "url": "https://github.com/microsoft/skills/blob/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-python/skills/azure-data-tables-py/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/microsoft/skills/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-python/skills/azure-data-tables-py/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "ef513ce507818533f5bee1477d07dab5c3bf3fdd",
+        "size": 8070
+      }
+    },
+    {
+      "source_id": "src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e",
+      "path": ".github/plugins/azure-sdk-python/skills/azure-eventgrid-py/SKILL.md",
+      "declared_name": "azure-eventgrid-py",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:907ee84b85bfaa87cc2dada271d27e03ae5dae28",
+      "upstream_ref": "c33193b1b2dd14d5946e3c6213fd095ffa5b31df",
+      "url": "https://github.com/microsoft/skills/blob/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-python/skills/azure-eventgrid-py/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/microsoft/skills/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-python/skills/azure-eventgrid-py/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "907ee84b85bfaa87cc2dada271d27e03ae5dae28",
+        "size": 7005
+      }
+    },
+    {
+      "source_id": "src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e",
+      "path": ".github/plugins/azure-sdk-python/skills/azure-eventhub-py/SKILL.md",
+      "declared_name": "azure-eventhub-py",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:289676f5c80a9f4064980ff98283575502fe1d99",
+      "upstream_ref": "c33193b1b2dd14d5946e3c6213fd095ffa5b31df",
+      "url": "https://github.com/microsoft/skills/blob/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-python/skills/azure-eventhub-py/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/microsoft/skills/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-python/skills/azure-eventhub-py/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "289676f5c80a9f4064980ff98283575502fe1d99",
+        "size": 9291
+      }
+    },
+    {
+      "source_id": "src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e",
+      "path": ".github/plugins/azure-sdk-python/skills/azure-identity-py/SKILL.md",
+      "declared_name": "azure-identity-py",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:37e6a034b861e30c675b7b2029e391612f69a535",
+      "upstream_ref": "c33193b1b2dd14d5946e3c6213fd095ffa5b31df",
+      "url": "https://github.com/microsoft/skills/blob/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-python/skills/azure-identity-py/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/microsoft/skills/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-python/skills/azure-identity-py/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "37e6a034b861e30c675b7b2029e391612f69a535",
+        "size": 16430
+      }
+    },
+    {
+      "source_id": "src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e",
+      "path": ".github/plugins/azure-sdk-python/skills/azure-keyvault-py/SKILL.md",
+      "declared_name": "azure-keyvault-py",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:20c836c7b6e903dfce8d3fb90cc38c57892d0154",
+      "upstream_ref": "c33193b1b2dd14d5946e3c6213fd095ffa5b31df",
+      "url": "https://github.com/microsoft/skills/blob/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-python/skills/azure-keyvault-py/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/microsoft/skills/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-python/skills/azure-keyvault-py/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "20c836c7b6e903dfce8d3fb90cc38c57892d0154",
+        "size": 9251
+      }
+    },
+    {
+      "source_id": "src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e",
+      "path": ".github/plugins/azure-sdk-python/skills/azure-messaging-webpubsubservice-py/SKILL.md",
+      "declared_name": "azure-messaging-webpubsubservice-py",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:8cdd7c32a64a02842a322e5a19607bf6c991dfbb",
+      "upstream_ref": "c33193b1b2dd14d5946e3c6213fd095ffa5b31df",
+      "url": "https://github.com/microsoft/skills/blob/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-python/skills/azure-messaging-webpubsubservice-py/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/microsoft/skills/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-python/skills/azure-messaging-webpubsubservice-py/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "8cdd7c32a64a02842a322e5a19607bf6c991dfbb",
+        "size": 7758
+      }
+    },
+    {
+      "source_id": "src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e",
+      "path": ".github/plugins/azure-sdk-python/skills/azure-mgmt-apicenter-py/SKILL.md",
+      "declared_name": "azure-mgmt-apicenter-py",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:99f050f552d6aa7c18f0f49615a754b063c998fc",
+      "upstream_ref": "c33193b1b2dd14d5946e3c6213fd095ffa5b31df",
+      "url": "https://github.com/microsoft/skills/blob/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-python/skills/azure-mgmt-apicenter-py/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/microsoft/skills/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-python/skills/azure-mgmt-apicenter-py/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "99f050f552d6aa7c18f0f49615a754b063c998fc",
+        "size": 8520
+      }
+    },
+    {
+      "source_id": "src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e",
+      "path": ".github/plugins/azure-sdk-python/skills/azure-mgmt-apimanagement-py/SKILL.md",
+      "declared_name": "azure-mgmt-apimanagement-py",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:23cccf5a75db3eff3a6e263347caf1e5fab5a495",
+      "upstream_ref": "c33193b1b2dd14d5946e3c6213fd095ffa5b31df",
+      "url": "https://github.com/microsoft/skills/blob/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-python/skills/azure-mgmt-apimanagement-py/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/microsoft/skills/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-python/skills/azure-mgmt-apimanagement-py/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "23cccf5a75db3eff3a6e263347caf1e5fab5a495",
+        "size": 8930
+      }
+    },
+    {
+      "source_id": "src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e",
+      "path": ".github/plugins/azure-sdk-python/skills/azure-mgmt-botservice-py/SKILL.md",
+      "declared_name": "azure-mgmt-botservice-py",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:ec8513afbdbced86f7cbfe007f4430fdb849aa25",
+      "upstream_ref": "c33193b1b2dd14d5946e3c6213fd095ffa5b31df",
+      "url": "https://github.com/microsoft/skills/blob/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-python/skills/azure-mgmt-botservice-py/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/microsoft/skills/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-python/skills/azure-mgmt-botservice-py/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "ec8513afbdbced86f7cbfe007f4430fdb849aa25",
+        "size": 9923
+      }
+    },
+    {
+      "source_id": "src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e",
+      "path": ".github/plugins/azure-sdk-python/skills/azure-mgmt-fabric-py/SKILL.md",
+      "declared_name": "azure-mgmt-fabric-py",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:fbb6c37b8289f216596a6f00ad798d78f93b75be",
+      "upstream_ref": "c33193b1b2dd14d5946e3c6213fd095ffa5b31df",
+      "url": "https://github.com/microsoft/skills/blob/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-python/skills/azure-mgmt-fabric-py/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/microsoft/skills/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-python/skills/azure-mgmt-fabric-py/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "fbb6c37b8289f216596a6f00ad798d78f93b75be",
+        "size": 8547
+      }
+    },
+    {
+      "source_id": "src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e",
+      "path": ".github/plugins/azure-sdk-python/skills/azure-monitor-ingestion-py/SKILL.md",
+      "declared_name": "azure-monitor-ingestion-py",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:b6146061c7cb223503d1de4b4c12864c643e4c1b",
+      "upstream_ref": "c33193b1b2dd14d5946e3c6213fd095ffa5b31df",
+      "url": "https://github.com/microsoft/skills/blob/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-python/skills/azure-monitor-ingestion-py/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/microsoft/skills/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-python/skills/azure-monitor-ingestion-py/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "b6146061c7cb223503d1de4b4c12864c643e4c1b",
+        "size": 7695
+      }
+    },
+    {
+      "source_id": "src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e",
+      "path": ".github/plugins/azure-sdk-python/skills/azure-monitor-opentelemetry-exporter-py/SKILL.md",
+      "declared_name": "azure-monitor-opentelemetry-exporter-py",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:bd9553c42ef1863efcf87aebd92225f305786934",
+      "upstream_ref": "c33193b1b2dd14d5946e3c6213fd095ffa5b31df",
+      "url": "https://github.com/microsoft/skills/blob/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-python/skills/azure-monitor-opentelemetry-exporter-py/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/microsoft/skills/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-python/skills/azure-monitor-opentelemetry-exporter-py/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "bd9553c42ef1863efcf87aebd92225f305786934",
+        "size": 8461
+      }
+    },
+    {
+      "source_id": "src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e",
+      "path": ".github/plugins/azure-sdk-python/skills/azure-monitor-opentelemetry-py/SKILL.md",
+      "declared_name": "azure-monitor-opentelemetry-py",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:00f1d7534e6d2b49e3bf0e5b4ec4977fac99df69",
+      "upstream_ref": "c33193b1b2dd14d5946e3c6213fd095ffa5b31df",
+      "url": "https://github.com/microsoft/skills/blob/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-python/skills/azure-monitor-opentelemetry-py/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/microsoft/skills/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-python/skills/azure-monitor-opentelemetry-py/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "00f1d7534e6d2b49e3bf0e5b4ec4977fac99df69",
+        "size": 6963
+      }
+    },
+    {
+      "source_id": "src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e",
+      "path": ".github/plugins/azure-sdk-python/skills/azure-monitor-query-py/SKILL.md",
+      "declared_name": "azure-monitor-query-py",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:95defd74b998e686aa9d28ec8d5ecfc0cb2141bf",
+      "upstream_ref": "c33193b1b2dd14d5946e3c6213fd095ffa5b31df",
+      "url": "https://github.com/microsoft/skills/blob/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-python/skills/azure-monitor-query-py/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/microsoft/skills/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-python/skills/azure-monitor-query-py/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "95defd74b998e686aa9d28ec8d5ecfc0cb2141bf",
+        "size": 8221
+      }
+    },
+    {
+      "source_id": "src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e",
+      "path": ".github/plugins/azure-sdk-python/skills/azure-search-documents-py/SKILL.md",
+      "declared_name": "azure-search-documents-py",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:41ed03ad443be379d3cd39a3df18ff29634f1940",
+      "upstream_ref": "c33193b1b2dd14d5946e3c6213fd095ffa5b31df",
+      "url": "https://github.com/microsoft/skills/blob/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-python/skills/azure-search-documents-py/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/microsoft/skills/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-python/skills/azure-search-documents-py/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "41ed03ad443be379d3cd39a3df18ff29634f1940",
+        "size": 17752
+      }
+    },
+    {
+      "source_id": "src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e",
+      "path": ".github/plugins/azure-sdk-python/skills/azure-servicebus-py/SKILL.md",
+      "declared_name": "azure-servicebus-py",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:df06c9281cd34c06b0e8021517019267d9ae3a4c",
+      "upstream_ref": "c33193b1b2dd14d5946e3c6213fd095ffa5b31df",
+      "url": "https://github.com/microsoft/skills/blob/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-python/skills/azure-servicebus-py/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/microsoft/skills/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-python/skills/azure-servicebus-py/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "df06c9281cd34c06b0e8021517019267d9ae3a4c",
+        "size": 10353
+      }
+    },
+    {
+      "source_id": "src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e",
+      "path": ".github/plugins/azure-sdk-python/skills/azure-speech-to-text-rest-py/SKILL.md",
+      "declared_name": "azure-speech-to-text-rest-py",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:b0f96a3e9b5eac1d898e5b0938e862f164aa0aa1",
+      "upstream_ref": "c33193b1b2dd14d5946e3c6213fd095ffa5b31df",
+      "url": "https://github.com/microsoft/skills/blob/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-python/skills/azure-speech-to-text-rest-py/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/microsoft/skills/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-python/skills/azure-speech-to-text-rest-py/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "b0f96a3e9b5eac1d898e5b0938e862f164aa0aa1",
+        "size": 11198
+      }
+    },
+    {
+      "source_id": "src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e",
+      "path": ".github/plugins/azure-sdk-python/skills/azure-storage-blob-py/SKILL.md",
+      "declared_name": "azure-storage-blob-py",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:45cb839141133f317683e77f2f3ecae2c8206a41",
+      "upstream_ref": "c33193b1b2dd14d5946e3c6213fd095ffa5b31df",
+      "url": "https://github.com/microsoft/skills/blob/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-python/skills/azure-storage-blob-py/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/microsoft/skills/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-python/skills/azure-storage-blob-py/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "45cb839141133f317683e77f2f3ecae2c8206a41",
+        "size": 8824
+      }
+    },
+    {
+      "source_id": "src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e",
+      "path": ".github/plugins/azure-sdk-python/skills/azure-storage-file-datalake-py/SKILL.md",
+      "declared_name": "azure-storage-file-datalake-py",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:cbf9de12757e9718d6ff120bc4275b27c4118873",
+      "upstream_ref": "c33193b1b2dd14d5946e3c6213fd095ffa5b31df",
+      "url": "https://github.com/microsoft/skills/blob/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-python/skills/azure-storage-file-datalake-py/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/microsoft/skills/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-python/skills/azure-storage-file-datalake-py/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "cbf9de12757e9718d6ff120bc4275b27c4118873",
+        "size": 7827
+      }
+    },
+    {
+      "source_id": "src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e",
+      "path": ".github/plugins/azure-sdk-python/skills/azure-storage-file-share-py/SKILL.md",
+      "declared_name": "azure-storage-file-share-py",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:5200889a0df5498bfe704c12358e2f2c1465c84f",
+      "upstream_ref": "c33193b1b2dd14d5946e3c6213fd095ffa5b31df",
+      "url": "https://github.com/microsoft/skills/blob/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-python/skills/azure-storage-file-share-py/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/microsoft/skills/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-python/skills/azure-storage-file-share-py/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "5200889a0df5498bfe704c12358e2f2c1465c84f",
+        "size": 6909
+      }
+    },
+    {
+      "source_id": "src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e",
+      "path": ".github/plugins/azure-sdk-python/skills/azure-storage-queue-py/SKILL.md",
+      "declared_name": "azure-storage-queue-py",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:2e953c26116a950325eb44150571ceb784631420",
+      "upstream_ref": "c33193b1b2dd14d5946e3c6213fd095ffa5b31df",
+      "url": "https://github.com/microsoft/skills/blob/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-python/skills/azure-storage-queue-py/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/microsoft/skills/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-python/skills/azure-storage-queue-py/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "2e953c26116a950325eb44150571ceb784631420",
+        "size": 7453
+      }
+    },
+    {
+      "source_id": "src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e",
+      "path": ".github/plugins/azure-sdk-python/skills/fastapi-router-py/SKILL.md",
+      "declared_name": "fastapi-router-py",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:0d6f32e61e78dc533e0673791c1112e9ecce927e",
+      "upstream_ref": "c33193b1b2dd14d5946e3c6213fd095ffa5b31df",
+      "url": "https://github.com/microsoft/skills/blob/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-python/skills/fastapi-router-py/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/microsoft/skills/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-python/skills/fastapi-router-py/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "0d6f32e61e78dc533e0673791c1112e9ecce927e",
+        "size": 1966
+      }
+    },
+    {
+      "source_id": "src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e",
+      "path": ".github/plugins/azure-sdk-python/skills/m365-agents-py/SKILL.md",
+      "declared_name": "m365-agents-py",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:743e9ac137dc5a5427436a270982824fcb3b2ace",
+      "upstream_ref": "c33193b1b2dd14d5946e3c6213fd095ffa5b31df",
+      "url": "https://github.com/microsoft/skills/blob/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-python/skills/m365-agents-py/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/microsoft/skills/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-python/skills/m365-agents-py/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "743e9ac137dc5a5427436a270982824fcb3b2ace",
+        "size": 13178
+      }
+    },
+    {
+      "source_id": "src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e",
+      "path": ".github/plugins/azure-sdk-python/skills/pydantic-models-py/SKILL.md",
+      "declared_name": "pydantic-models-py",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:56de5e4008552b3db86354a352a2105e26f59394",
+      "upstream_ref": "c33193b1b2dd14d5946e3c6213fd095ffa5b31df",
+      "url": "https://github.com/microsoft/skills/blob/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-python/skills/pydantic-models-py/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/microsoft/skills/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-python/skills/pydantic-models-py/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "56de5e4008552b3db86354a352a2105e26f59394",
+        "size": 1778
+      }
+    },
+    {
+      "source_id": "src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e",
+      "path": ".github/plugins/azure-sdk-rust/skills/azure-cosmos-rust/SKILL.md",
+      "declared_name": "azure-cosmos-rust",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:4464932137813f02b495a56f9db25c3d17125067",
+      "upstream_ref": "c33193b1b2dd14d5946e3c6213fd095ffa5b31df",
+      "url": "https://github.com/microsoft/skills/blob/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-rust/skills/azure-cosmos-rust/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/microsoft/skills/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-rust/skills/azure-cosmos-rust/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "4464932137813f02b495a56f9db25c3d17125067",
+        "size": 5871
+      }
+    },
+    {
+      "source_id": "src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e",
+      "path": ".github/plugins/azure-sdk-rust/skills/azure-eventhub-rust/SKILL.md",
+      "declared_name": "azure-eventhub-rust",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:6b728d857b1100fe2f8b43c4c07c6a2d041c7665",
+      "upstream_ref": "c33193b1b2dd14d5946e3c6213fd095ffa5b31df",
+      "url": "https://github.com/microsoft/skills/blob/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-rust/skills/azure-eventhub-rust/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/microsoft/skills/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-rust/skills/azure-eventhub-rust/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "6b728d857b1100fe2f8b43c4c07c6a2d041c7665",
+        "size": 5903
+      }
+    },
+    {
+      "source_id": "src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e",
+      "path": ".github/plugins/azure-sdk-rust/skills/azure-identity-rust/SKILL.md",
+      "declared_name": "azure-identity-rust",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:317dc60da7d51ca0d479fb7720fc81b38630d05a",
+      "upstream_ref": "c33193b1b2dd14d5946e3c6213fd095ffa5b31df",
+      "url": "https://github.com/microsoft/skills/blob/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-rust/skills/azure-identity-rust/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/microsoft/skills/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-rust/skills/azure-identity-rust/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "317dc60da7d51ca0d479fb7720fc81b38630d05a",
+        "size": 5752
+      }
+    },
+    {
+      "source_id": "src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e",
+      "path": ".github/plugins/azure-sdk-rust/skills/azure-keyvault-certificates-rust/SKILL.md",
+      "declared_name": "azure-keyvault-certificates-rust",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:04363cf5ad7d2c133ccb0d349db94fe6776118ac",
+      "upstream_ref": "c33193b1b2dd14d5946e3c6213fd095ffa5b31df",
+      "url": "https://github.com/microsoft/skills/blob/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-rust/skills/azure-keyvault-certificates-rust/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/microsoft/skills/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-rust/skills/azure-keyvault-certificates-rust/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "04363cf5ad7d2c133ccb0d349db94fe6776118ac",
+        "size": 7523
+      }
+    },
+    {
+      "source_id": "src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e",
+      "path": ".github/plugins/azure-sdk-rust/skills/azure-keyvault-keys-rust/SKILL.md",
+      "declared_name": "azure-keyvault-keys-rust",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:c82708f0d858473533f8be28619e1d5bb0e0997c",
+      "upstream_ref": "c33193b1b2dd14d5946e3c6213fd095ffa5b31df",
+      "url": "https://github.com/microsoft/skills/blob/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-rust/skills/azure-keyvault-keys-rust/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/microsoft/skills/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-rust/skills/azure-keyvault-keys-rust/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "c82708f0d858473533f8be28619e1d5bb0e0997c",
+        "size": 7205
+      }
+    },
+    {
+      "source_id": "src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e",
+      "path": ".github/plugins/azure-sdk-rust/skills/azure-keyvault-secrets-rust/SKILL.md",
+      "declared_name": "azure-keyvault-secrets-rust",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:e9a908362d0ebb80cba0c885910264bd08d66d39",
+      "upstream_ref": "c33193b1b2dd14d5946e3c6213fd095ffa5b31df",
+      "url": "https://github.com/microsoft/skills/blob/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-rust/skills/azure-keyvault-secrets-rust/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/microsoft/skills/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-rust/skills/azure-keyvault-secrets-rust/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "e9a908362d0ebb80cba0c885910264bd08d66d39",
+        "size": 5634
+      }
+    },
+    {
+      "source_id": "src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e",
+      "path": ".github/plugins/azure-sdk-rust/skills/azure-servicebus-rust/SKILL.md",
+      "declared_name": "azure-servicebus-rust",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:365a93a6c3f94310d78791a73e9a3b2891775861",
+      "upstream_ref": "c33193b1b2dd14d5946e3c6213fd095ffa5b31df",
+      "url": "https://github.com/microsoft/skills/blob/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-rust/skills/azure-servicebus-rust/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/microsoft/skills/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-rust/skills/azure-servicebus-rust/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "365a93a6c3f94310d78791a73e9a3b2891775861",
+        "size": 7143
+      }
+    },
+    {
+      "source_id": "src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e",
+      "path": ".github/plugins/azure-sdk-rust/skills/azure-storage-blob-rust/SKILL.md",
+      "declared_name": "azure-storage-blob-rust",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:94abf8afbad19acbbc27b1367214fad98052381e",
+      "upstream_ref": "c33193b1b2dd14d5946e3c6213fd095ffa5b31df",
+      "url": "https://github.com/microsoft/skills/blob/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-rust/skills/azure-storage-blob-rust/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/microsoft/skills/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-rust/skills/azure-storage-blob-rust/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "94abf8afbad19acbbc27b1367214fad98052381e",
+        "size": 8348
+      }
+    },
+    {
+      "source_id": "src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e",
+      "path": ".github/plugins/azure-sdk-rust/skills/azure-storage-queue-rust/SKILL.md",
+      "declared_name": "azure-storage-queue-rust",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:4ce6336f70c96323d064db7dc0486d6a621af9c9",
+      "upstream_ref": "c33193b1b2dd14d5946e3c6213fd095ffa5b31df",
+      "url": "https://github.com/microsoft/skills/blob/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-rust/skills/azure-storage-queue-rust/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/microsoft/skills/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-rust/skills/azure-storage-queue-rust/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "4ce6336f70c96323d064db7dc0486d6a621af9c9",
+        "size": 6882
+      }
+    },
+    {
+      "source_id": "src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e",
+      "path": ".github/plugins/azure-sdk-typescript/skills/applicationinsights-web-ts/SKILL.md",
+      "declared_name": "applicationinsights-web-ts",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:e1bfcc76ab8e76060350426a04115dc33de8bbd4",
+      "upstream_ref": "c33193b1b2dd14d5946e3c6213fd095ffa5b31df",
+      "url": "https://github.com/microsoft/skills/blob/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-typescript/skills/applicationinsights-web-ts/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/microsoft/skills/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-typescript/skills/applicationinsights-web-ts/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "e1bfcc76ab8e76060350426a04115dc33de8bbd4",
+        "size": 20929
+      }
+    },
+    {
+      "source_id": "src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e",
+      "path": ".github/plugins/azure-sdk-typescript/skills/azure-ai-contentsafety-ts/SKILL.md",
+      "declared_name": "azure-ai-contentsafety-ts",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:e038281439bf7d5b738ff6a6c9fd211281582e73",
+      "upstream_ref": "c33193b1b2dd14d5946e3c6213fd095ffa5b31df",
+      "url": "https://github.com/microsoft/skills/blob/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-typescript/skills/azure-ai-contentsafety-ts/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/microsoft/skills/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-typescript/skills/azure-ai-contentsafety-ts/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "e038281439bf7d5b738ff6a6c9fd211281582e73",
+        "size": 8304
+      }
+    },
+    {
+      "source_id": "src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e",
+      "path": ".github/plugins/azure-sdk-typescript/skills/azure-ai-document-intelligence-ts/SKILL.md",
+      "declared_name": "azure-ai-document-intelligence-ts",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:a0c47d3b3c4a9428fb344f519e1d5a1a1f38c7bd",
+      "upstream_ref": "c33193b1b2dd14d5946e3c6213fd095ffa5b31df",
+      "url": "https://github.com/microsoft/skills/blob/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-typescript/skills/azure-ai-document-intelligence-ts/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/microsoft/skills/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-typescript/skills/azure-ai-document-intelligence-ts/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "a0c47d3b3c4a9428fb344f519e1d5a1a1f38c7bd",
+        "size": 9740
+      }
+    },
+    {
+      "source_id": "src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e",
+      "path": ".github/plugins/azure-sdk-typescript/skills/azure-ai-projects-ts/SKILL.md",
+      "declared_name": "azure-ai-projects-ts",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:baea6df8c76732e7a6ee9268a1de80cd52cb76e1",
+      "upstream_ref": "c33193b1b2dd14d5946e3c6213fd095ffa5b31df",
+      "url": "https://github.com/microsoft/skills/blob/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-typescript/skills/azure-ai-projects-ts/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/microsoft/skills/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-typescript/skills/azure-ai-projects-ts/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "baea6df8c76732e7a6ee9268a1de80cd52cb76e1",
+        "size": 7556
+      }
+    },
+    {
+      "source_id": "src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e",
+      "path": ".github/plugins/azure-sdk-typescript/skills/azure-ai-translation-ts/SKILL.md",
+      "declared_name": "azure-ai-translation-ts",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:fa832211c5a8a90e6ca63b241314dd0437c96946",
+      "upstream_ref": "c33193b1b2dd14d5946e3c6213fd095ffa5b31df",
+      "url": "https://github.com/microsoft/skills/blob/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-typescript/skills/azure-ai-translation-ts/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/microsoft/skills/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-typescript/skills/azure-ai-translation-ts/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "fa832211c5a8a90e6ca63b241314dd0437c96946",
+        "size": 7880
+      }
+    },
+    {
+      "source_id": "src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e",
+      "path": ".github/plugins/azure-sdk-typescript/skills/azure-ai-voicelive-ts/SKILL.md",
+      "declared_name": "azure-ai-voicelive-ts",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:64ca766cb56c16b7d2b015cd3684834e25f076db",
+      "upstream_ref": "c33193b1b2dd14d5946e3c6213fd095ffa5b31df",
+      "url": "https://github.com/microsoft/skills/blob/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-typescript/skills/azure-ai-voicelive-ts/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/microsoft/skills/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-typescript/skills/azure-ai-voicelive-ts/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "64ca766cb56c16b7d2b015cd3684834e25f076db",
+        "size": 13839
+      }
+    },
+    {
+      "source_id": "src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e",
+      "path": ".github/plugins/azure-sdk-typescript/skills/azure-appconfiguration-ts/SKILL.md",
+      "declared_name": "azure-appconfiguration-ts",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:82d0e0ffe52ac030cbe98560e85665bdcab52fcf",
+      "upstream_ref": "c33193b1b2dd14d5946e3c6213fd095ffa5b31df",
+      "url": "https://github.com/microsoft/skills/blob/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-typescript/skills/azure-appconfiguration-ts/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/microsoft/skills/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-typescript/skills/azure-appconfiguration-ts/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "82d0e0ffe52ac030cbe98560e85665bdcab52fcf",
+        "size": 8941
+      }
+    },
+    {
+      "source_id": "src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e",
+      "path": ".github/plugins/azure-sdk-typescript/skills/azure-cosmos-ts/SKILL.md",
+      "declared_name": "azure-cosmos-ts",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:33fcce60f1488fbf7e3d1cef4656adb693f215f2",
+      "upstream_ref": "c33193b1b2dd14d5946e3c6213fd095ffa5b31df",
+      "url": "https://github.com/microsoft/skills/blob/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-typescript/skills/azure-cosmos-ts/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/microsoft/skills/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-typescript/skills/azure-cosmos-ts/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "33fcce60f1488fbf7e3d1cef4656adb693f215f2",
+        "size": 11916
+      }
+    },
+    {
+      "source_id": "src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e",
+      "path": ".github/plugins/azure-sdk-typescript/skills/azure-eventhub-ts/SKILL.md",
+      "declared_name": "azure-eventhub-ts",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:fe0cc9ab1db48af480d95c11e72de9db5c7c4645",
+      "upstream_ref": "c33193b1b2dd14d5946e3c6213fd095ffa5b31df",
+      "url": "https://github.com/microsoft/skills/blob/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-typescript/skills/azure-eventhub-ts/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/microsoft/skills/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-typescript/skills/azure-eventhub-ts/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "fe0cc9ab1db48af480d95c11e72de9db5c7c4645",
+        "size": 7743
+      }
+    },
+    {
+      "source_id": "src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e",
+      "path": ".github/plugins/azure-sdk-typescript/skills/azure-identity-ts/SKILL.md",
+      "declared_name": "azure-identity-ts",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:50b8b57d4f064c88ddd3c35976511952bcdeba05",
+      "upstream_ref": "c33193b1b2dd14d5946e3c6213fd095ffa5b31df",
+      "url": "https://github.com/microsoft/skills/blob/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-typescript/skills/azure-identity-ts/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/microsoft/skills/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-typescript/skills/azure-identity-ts/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "50b8b57d4f064c88ddd3c35976511952bcdeba05",
+        "size": 7954
+      }
+    },
+    {
+      "source_id": "src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e",
+      "path": ".github/plugins/azure-sdk-typescript/skills/azure-keyvault-keys-ts/SKILL.md",
+      "declared_name": "azure-keyvault-keys-ts",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:c995e4c598f385ba4aca948ff8ef2c57dae1bb01",
+      "upstream_ref": "c33193b1b2dd14d5946e3c6213fd095ffa5b31df",
+      "url": "https://github.com/microsoft/skills/blob/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-typescript/skills/azure-keyvault-keys-ts/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/microsoft/skills/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-typescript/skills/azure-keyvault-keys-ts/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "c995e4c598f385ba4aca948ff8ef2c57dae1bb01",
+        "size": 6806
+      }
+    },
+    {
+      "source_id": "src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e",
+      "path": ".github/plugins/azure-sdk-typescript/skills/azure-keyvault-secrets-ts/SKILL.md",
+      "declared_name": "azure-keyvault-secrets-ts",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:1f236a2b4c8d9ddab0e808d253c029a32193fcdd",
+      "upstream_ref": "c33193b1b2dd14d5946e3c6213fd095ffa5b31df",
+      "url": "https://github.com/microsoft/skills/blob/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-typescript/skills/azure-keyvault-secrets-ts/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/microsoft/skills/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-typescript/skills/azure-keyvault-secrets-ts/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "1f236a2b4c8d9ddab0e808d253c029a32193fcdd",
+        "size": 6799
+      }
+    },
+    {
+      "source_id": "src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e",
+      "path": ".github/plugins/azure-sdk-typescript/skills/azure-microsoft-playwright-testing-ts/SKILL.md",
+      "declared_name": "azure-microsoft-playwright-testing-ts",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:b784591d64f11644dde1f7b165411792751f284a",
+      "upstream_ref": "c33193b1b2dd14d5946e3c6213fd095ffa5b31df",
+      "url": "https://github.com/microsoft/skills/blob/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-typescript/skills/azure-microsoft-playwright-testing-ts/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/microsoft/skills/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-typescript/skills/azure-microsoft-playwright-testing-ts/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "b784591d64f11644dde1f7b165411792751f284a",
+        "size": 8806
+      }
+    },
+    {
+      "source_id": "src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e",
+      "path": ".github/plugins/azure-sdk-typescript/skills/azure-monitor-opentelemetry-ts/SKILL.md",
+      "declared_name": "azure-monitor-opentelemetry-ts",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:538f028b72746103fa2314ba625acad23c934fce",
+      "upstream_ref": "c33193b1b2dd14d5946e3c6213fd095ffa5b31df",
+      "url": "https://github.com/microsoft/skills/blob/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-typescript/skills/azure-monitor-opentelemetry-ts/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/microsoft/skills/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-typescript/skills/azure-monitor-opentelemetry-ts/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "538f028b72746103fa2314ba625acad23c934fce",
+        "size": 8962
+      }
+    },
+    {
+      "source_id": "src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e",
+      "path": ".github/plugins/azure-sdk-typescript/skills/azure-postgres-ts/SKILL.md",
+      "declared_name": "azure-postgres-ts",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:1a2000157b776a125c355b1350f97dac0f11b3b3",
+      "upstream_ref": "c33193b1b2dd14d5946e3c6213fd095ffa5b31df",
+      "url": "https://github.com/microsoft/skills/blob/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-typescript/skills/azure-postgres-ts/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/microsoft/skills/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-typescript/skills/azure-postgres-ts/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "1a2000157b776a125c355b1350f97dac0f11b3b3",
+        "size": 13376
+      }
+    },
+    {
+      "source_id": "src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e",
+      "path": ".github/plugins/azure-sdk-typescript/skills/azure-search-documents-ts/SKILL.md",
+      "declared_name": "azure-search-documents-ts",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:b31e05d49593682d54727deec69b10e5394c1f6f",
+      "upstream_ref": "c33193b1b2dd14d5946e3c6213fd095ffa5b31df",
+      "url": "https://github.com/microsoft/skills/blob/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-typescript/skills/azure-search-documents-ts/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/microsoft/skills/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-typescript/skills/azure-search-documents-ts/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "b31e05d49593682d54727deec69b10e5394c1f6f",
+        "size": 7236
+      }
+    },
+    {
+      "source_id": "src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e",
+      "path": ".github/plugins/azure-sdk-typescript/skills/azure-servicebus-ts/SKILL.md",
+      "declared_name": "azure-servicebus-ts",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:43e5acb47b8db2aee786f02a19f6c0db19556713",
+      "upstream_ref": "c33193b1b2dd14d5946e3c6213fd095ffa5b31df",
+      "url": "https://github.com/microsoft/skills/blob/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-typescript/skills/azure-servicebus-ts/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/microsoft/skills/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-typescript/skills/azure-servicebus-ts/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "43e5acb47b8db2aee786f02a19f6c0db19556713",
+        "size": 7246
+      }
+    },
+    {
+      "source_id": "src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e",
+      "path": ".github/plugins/azure-sdk-typescript/skills/azure-storage-blob-ts/SKILL.md",
+      "declared_name": "azure-storage-blob-ts",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:5f9b967cebe6e1821e5a43749ff6f7f7d626c591",
+      "upstream_ref": "c33193b1b2dd14d5946e3c6213fd095ffa5b31df",
+      "url": "https://github.com/microsoft/skills/blob/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-typescript/skills/azure-storage-blob-ts/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/microsoft/skills/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-typescript/skills/azure-storage-blob-ts/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "5f9b967cebe6e1821e5a43749ff6f7f7d626c591",
+        "size": 13154
+      }
+    },
+    {
+      "source_id": "src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e",
+      "path": ".github/plugins/azure-sdk-typescript/skills/azure-storage-file-share-ts/SKILL.md",
+      "declared_name": "azure-storage-file-share-ts",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:ba358bca21670775d73dce057668e8784624662b",
+      "upstream_ref": "c33193b1b2dd14d5946e3c6213fd095ffa5b31df",
+      "url": "https://github.com/microsoft/skills/blob/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-typescript/skills/azure-storage-file-share-ts/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/microsoft/skills/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-typescript/skills/azure-storage-file-share-ts/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "ba358bca21670775d73dce057668e8784624662b",
+        "size": 12845
+      }
+    },
+    {
+      "source_id": "src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e",
+      "path": ".github/plugins/azure-sdk-typescript/skills/azure-storage-queue-ts/SKILL.md",
+      "declared_name": "azure-storage-queue-ts",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:130dd9277b2d87f7095f959d4d5fa93f41af6310",
+      "upstream_ref": "c33193b1b2dd14d5946e3c6213fd095ffa5b31df",
+      "url": "https://github.com/microsoft/skills/blob/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-typescript/skills/azure-storage-queue-ts/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/microsoft/skills/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-typescript/skills/azure-storage-queue-ts/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "130dd9277b2d87f7095f959d4d5fa93f41af6310",
+        "size": 13932
+      }
+    },
+    {
+      "source_id": "src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e",
+      "path": ".github/plugins/azure-sdk-typescript/skills/azure-web-pubsub-ts/SKILL.md",
+      "declared_name": "azure-web-pubsub-ts",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:175e519e8d39e7fe5c2eaa34013f73f53641c1b5",
+      "upstream_ref": "c33193b1b2dd14d5946e3c6213fd095ffa5b31df",
+      "url": "https://github.com/microsoft/skills/blob/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-typescript/skills/azure-web-pubsub-ts/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/microsoft/skills/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-typescript/skills/azure-web-pubsub-ts/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "175e519e8d39e7fe5c2eaa34013f73f53641c1b5",
+        "size": 8393
+      }
+    },
+    {
+      "source_id": "src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e",
+      "path": ".github/plugins/azure-sdk-typescript/skills/frontend-ui-dark-ts/SKILL.md",
+      "declared_name": "frontend-ui-dark-ts",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:4ff865e3c1cc60d8e5999cf950a016d7c9f019d2",
+      "upstream_ref": "c33193b1b2dd14d5946e3c6213fd095ffa5b31df",
+      "url": "https://github.com/microsoft/skills/blob/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-typescript/skills/frontend-ui-dark-ts/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/microsoft/skills/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-typescript/skills/frontend-ui-dark-ts/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "4ff865e3c1cc60d8e5999cf950a016d7c9f019d2",
+        "size": 14770
+      }
+    },
+    {
+      "source_id": "src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e",
+      "path": ".github/plugins/azure-sdk-typescript/skills/m365-agents-ts/SKILL.md",
+      "declared_name": "m365-agents-ts",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:00169cce10c70508375fc9300513a7600c7f75f8",
+      "upstream_ref": "c33193b1b2dd14d5946e3c6213fd095ffa5b31df",
+      "url": "https://github.com/microsoft/skills/blob/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-typescript/skills/m365-agents-ts/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/microsoft/skills/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-typescript/skills/m365-agents-ts/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "00169cce10c70508375fc9300513a7600c7f75f8",
+        "size": 6879
+      }
+    },
+    {
+      "source_id": "src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e",
+      "path": ".github/plugins/azure-sdk-typescript/skills/react-flow-node-ts/SKILL.md",
+      "declared_name": "react-flow-node-ts",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:ab4e1a6a5a4c1bf03f4d9b49dee6285e9ce0457d",
+      "upstream_ref": "c33193b1b2dd14d5946e3c6213fd095ffa5b31df",
+      "url": "https://github.com/microsoft/skills/blob/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-typescript/skills/react-flow-node-ts/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/microsoft/skills/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-typescript/skills/react-flow-node-ts/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "ab4e1a6a5a4c1bf03f4d9b49dee6285e9ce0457d",
+        "size": 2011
+      }
+    },
+    {
+      "source_id": "src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e",
+      "path": ".github/plugins/azure-sdk-typescript/skills/zustand-store-ts/SKILL.md",
+      "declared_name": "zustand-store-ts",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:fe9aca17683b17d3c86c78cb3473f52a10b38f3d",
+      "upstream_ref": "c33193b1b2dd14d5946e3c6213fd095ffa5b31df",
+      "url": "https://github.com/microsoft/skills/blob/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-typescript/skills/zustand-store-ts/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/microsoft/skills/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-sdk-typescript/skills/zustand-store-ts/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "fe9aca17683b17d3c86c78cb3473f52a10b38f3d",
+        "size": 1761
+      }
+    },
+    {
+      "source_id": "src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e",
+      "path": ".github/plugins/azure-skills/skills/airunway-aks-setup/SKILL.md",
+      "declared_name": "airunway-aks-setup",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:26bbd92815116826696fb6380d37446a285496b9",
+      "upstream_ref": "c33193b1b2dd14d5946e3c6213fd095ffa5b31df",
+      "url": "https://github.com/microsoft/skills/blob/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-skills/skills/airunway-aks-setup/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/microsoft/skills/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-skills/skills/airunway-aks-setup/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "26bbd92815116826696fb6380d37446a285496b9",
+        "size": 4107
+      }
+    },
+    {
+      "source_id": "src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e",
+      "path": ".github/plugins/azure-skills/skills/appinsights-instrumentation/SKILL.md",
+      "declared_name": "appinsights-instrumentation",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:ca55c310862cb95b5ebcc1f10a070f312718d1cb",
+      "upstream_ref": "c33193b1b2dd14d5946e3c6213fd095ffa5b31df",
+      "url": "https://github.com/microsoft/skills/blob/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-skills/skills/appinsights-instrumentation/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/microsoft/skills/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-skills/skills/appinsights-instrumentation/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "ca55c310862cb95b5ebcc1f10a070f312718d1cb",
+        "size": 3738
+      }
+    },
+    {
+      "source_id": "src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e",
+      "path": ".github/plugins/azure-skills/skills/azure-ai/SKILL.md",
+      "declared_name": "azure-ai",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:6cce5b319f57f98f81772e4c8627c573d89e8571",
+      "upstream_ref": "c33193b1b2dd14d5946e3c6213fd095ffa5b31df",
+      "url": "https://github.com/microsoft/skills/blob/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-skills/skills/azure-ai/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/microsoft/skills/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-skills/skills/azure-ai/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "6cce5b319f57f98f81772e4c8627c573d89e8571",
+        "size": 3268
+      }
+    },
+    {
+      "source_id": "src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e",
+      "path": ".github/plugins/azure-skills/skills/azure-aigateway/SKILL.md",
+      "declared_name": "azure-aigateway",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:a8df9f45fae25501acf7fee988047f808d191fa5",
+      "upstream_ref": "c33193b1b2dd14d5946e3c6213fd095ffa5b31df",
+      "url": "https://github.com/microsoft/skills/blob/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-skills/skills/azure-aigateway/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/microsoft/skills/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-skills/skills/azure-aigateway/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "a8df9f45fae25501acf7fee988047f808d191fa5",
+        "size": 5029
+      }
+    },
+    {
+      "source_id": "src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e",
+      "path": ".github/plugins/azure-skills/skills/azure-cloud-migrate/SKILL.md",
+      "declared_name": "azure-cloud-migrate",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:b1634cf629d9358eb70a95c089b309c304f9c42c",
+      "upstream_ref": "c33193b1b2dd14d5946e3c6213fd095ffa5b31df",
+      "url": "https://github.com/microsoft/skills/blob/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-skills/skills/azure-cloud-migrate/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/microsoft/skills/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-skills/skills/azure-cloud-migrate/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "b1634cf629d9358eb70a95c089b309c304f9c42c",
+        "size": 4355
+      }
+    },
+    {
+      "source_id": "src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e",
+      "path": ".github/plugins/azure-skills/skills/azure-compliance/SKILL.md",
+      "declared_name": "azure-compliance",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:5beb9da33c90ceff1b69ff78bdba78c326fd7a39",
+      "upstream_ref": "c33193b1b2dd14d5946e3c6213fd095ffa5b31df",
+      "url": "https://github.com/microsoft/skills/blob/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-skills/skills/azure-compliance/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/microsoft/skills/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-skills/skills/azure-compliance/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "5beb9da33c90ceff1b69ff78bdba78c326fd7a39",
+        "size": 4739
+      }
+    },
+    {
+      "source_id": "src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e",
+      "path": ".github/plugins/azure-skills/skills/azure-compute/SKILL.md",
+      "declared_name": "azure-compute",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:fce17d1f64f4013e21ab1f53636852ca0251a5f2",
+      "upstream_ref": "c33193b1b2dd14d5946e3c6213fd095ffa5b31df",
+      "url": "https://github.com/microsoft/skills/blob/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-skills/skills/azure-compute/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/microsoft/skills/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-skills/skills/azure-compute/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "fce17d1f64f4013e21ab1f53636852ca0251a5f2",
+        "size": 3323
+      }
+    },
+    {
+      "source_id": "src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e",
+      "path": ".github/plugins/azure-skills/skills/azure-cost/SKILL.md",
+      "declared_name": "azure-cost",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:8755e1c4db79a8e1bc44d6d1cdd1d3c55e5976e4",
+      "upstream_ref": "c33193b1b2dd14d5946e3c6213fd095ffa5b31df",
+      "url": "https://github.com/microsoft/skills/blob/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-skills/skills/azure-cost/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/microsoft/skills/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-skills/skills/azure-cost/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "8755e1c4db79a8e1bc44d6d1cdd1d3c55e5976e4",
+        "size": 1886
+      }
+    },
+    {
+      "source_id": "src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e",
+      "path": ".github/plugins/azure-skills/skills/azure-deploy/SKILL.md",
+      "declared_name": "azure-deploy",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:23815db4c7c5946913b10ac1cd706ea2bf6727fe",
+      "upstream_ref": "c33193b1b2dd14d5946e3c6213fd095ffa5b31df",
+      "url": "https://github.com/microsoft/skills/blob/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-skills/skills/azure-deploy/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/microsoft/skills/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-skills/skills/azure-deploy/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "23815db4c7c5946913b10ac1cd706ea2bf6727fe",
+        "size": 6632
+      }
+    },
+    {
+      "source_id": "src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e",
+      "path": ".github/plugins/azure-skills/skills/azure-diagnostics/SKILL.md",
+      "declared_name": "azure-diagnostics",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:693487020cc7c409f4c8387974cef122b5fe692c",
+      "upstream_ref": "c33193b1b2dd14d5946e3c6213fd095ffa5b31df",
+      "url": "https://github.com/microsoft/skills/blob/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-skills/skills/azure-diagnostics/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/microsoft/skills/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-skills/skills/azure-diagnostics/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "693487020cc7c409f4c8387974cef122b5fe692c",
+        "size": 5680
+      }
+    },
+    {
+      "source_id": "src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e",
+      "path": ".github/plugins/azure-skills/skills/azure-enterprise-infra-planner/SKILL.md",
+      "declared_name": "azure-enterprise-infra-planner",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:a261c21ed056be1958902cf23f6ae4879001b404",
+      "upstream_ref": "c33193b1b2dd14d5946e3c6213fd095ffa5b31df",
+      "url": "https://github.com/microsoft/skills/blob/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-skills/skills/azure-enterprise-infra-planner/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/microsoft/skills/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-skills/skills/azure-enterprise-infra-planner/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "a261c21ed056be1958902cf23f6ae4879001b404",
+        "size": 3629
+      }
+    },
+    {
+      "source_id": "src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e",
+      "path": ".github/plugins/azure-skills/skills/azure-kubernetes/SKILL.md",
+      "declared_name": "azure-kubernetes",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:3c5a448a679dafed5e0e747d28bd95cead4e8dec",
+      "upstream_ref": "c33193b1b2dd14d5946e3c6213fd095ffa5b31df",
+      "url": "https://github.com/microsoft/skills/blob/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-skills/skills/azure-kubernetes/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/microsoft/skills/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-skills/skills/azure-kubernetes/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "3c5a448a679dafed5e0e747d28bd95cead4e8dec",
+        "size": 10537
+      }
+    },
+    {
+      "source_id": "src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e",
+      "path": ".github/plugins/azure-skills/skills/azure-kubernetes/azure-kubernetes-automatic-readiness/SKILL.md",
+      "declared_name": "azure-kubernetes-automatic-readiness",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:452449d067b912207e88e2e4c0358571aba6ec66",
+      "upstream_ref": "c33193b1b2dd14d5946e3c6213fd095ffa5b31df",
+      "url": "https://github.com/microsoft/skills/blob/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-skills/skills/azure-kubernetes/azure-kubernetes-automatic-readiness/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/microsoft/skills/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-skills/skills/azure-kubernetes/azure-kubernetes-automatic-readiness/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "452449d067b912207e88e2e4c0358571aba6ec66",
+        "size": 14890
+      }
+    },
+    {
+      "source_id": "src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e",
+      "path": ".github/plugins/azure-skills/skills/azure-kusto/SKILL.md",
+      "declared_name": "azure-kusto",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:76e6b1764da1d7352dd3d6056571751f4395c746",
+      "upstream_ref": "c33193b1b2dd14d5946e3c6213fd095ffa5b31df",
+      "url": "https://github.com/microsoft/skills/blob/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-skills/skills/azure-kusto/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/microsoft/skills/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-skills/skills/azure-kusto/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "76e6b1764da1d7352dd3d6056571751f4395c746",
+        "size": 8602
+      }
+    },
+    {
+      "source_id": "src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e",
+      "path": ".github/plugins/azure-skills/skills/azure-messaging/SKILL.md",
+      "declared_name": "azure-messaging",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:512147e502149117b33fed6c0a367606f1829e1e",
+      "upstream_ref": "c33193b1b2dd14d5946e3c6213fd095ffa5b31df",
+      "url": "https://github.com/microsoft/skills/blob/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-skills/skills/azure-messaging/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/microsoft/skills/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-skills/skills/azure-messaging/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "512147e502149117b33fed6c0a367606f1829e1e",
+        "size": 3282
+      }
+    },
+    {
+      "source_id": "src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e",
+      "path": ".github/plugins/azure-skills/skills/azure-prepare/SKILL.md",
+      "declared_name": "azure-prepare",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:51b159b1ac60446e41d5dbe468259b471060983d",
+      "upstream_ref": "c33193b1b2dd14d5946e3c6213fd095ffa5b31df",
+      "url": "https://github.com/microsoft/skills/blob/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-skills/skills/azure-prepare/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/microsoft/skills/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-skills/skills/azure-prepare/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "51b159b1ac60446e41d5dbe468259b471060983d",
+        "size": 12696
+      }
+    },
+    {
+      "source_id": "src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e",
+      "path": ".github/plugins/azure-skills/skills/azure-quotas/SKILL.md",
+      "declared_name": "azure-quotas",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:cbd67b6c336362ee343390e713b91b5662841038",
+      "upstream_ref": "c33193b1b2dd14d5946e3c6213fd095ffa5b31df",
+      "url": "https://github.com/microsoft/skills/blob/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-skills/skills/azure-quotas/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/microsoft/skills/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-skills/skills/azure-quotas/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "cbd67b6c336362ee343390e713b91b5662841038",
+        "size": 12065
+      }
+    },
+    {
+      "source_id": "src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e",
+      "path": ".github/plugins/azure-skills/skills/azure-rbac/SKILL.md",
+      "declared_name": "azure-rbac",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:02ac75d2ba22b4d7aa1e74469b01575281f05ddc",
+      "upstream_ref": "c33193b1b2dd14d5946e3c6213fd095ffa5b31df",
+      "url": "https://github.com/microsoft/skills/blob/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-skills/skills/azure-rbac/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/microsoft/skills/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-skills/skills/azure-rbac/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "02ac75d2ba22b4d7aa1e74469b01575281f05ddc",
+        "size": 1686
+      }
+    },
+    {
+      "source_id": "src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e",
+      "path": ".github/plugins/azure-skills/skills/azure-reliability/SKILL.md",
+      "declared_name": "azure-reliability",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:835bc5e854d9cabfc6021a9bfc6d7fbb8c594abb",
+      "upstream_ref": "c33193b1b2dd14d5946e3c6213fd095ffa5b31df",
+      "url": "https://github.com/microsoft/skills/blob/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-skills/skills/azure-reliability/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/microsoft/skills/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-skills/skills/azure-reliability/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "835bc5e854d9cabfc6021a9bfc6d7fbb8c594abb",
+        "size": 25045
+      }
+    },
+    {
+      "source_id": "src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e",
+      "path": ".github/plugins/azure-skills/skills/azure-resource-lookup/SKILL.md",
+      "declared_name": "azure-resource-lookup",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:d16d74bd6369fd15f8d96ff0b637ac361c7d6e13",
+      "upstream_ref": "c33193b1b2dd14d5946e3c6213fd095ffa5b31df",
+      "url": "https://github.com/microsoft/skills/blob/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-skills/skills/azure-resource-lookup/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/microsoft/skills/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-skills/skills/azure-resource-lookup/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "d16d74bd6369fd15f8d96ff0b637ac361c7d6e13",
+        "size": 5526
+      }
+    },
+    {
+      "source_id": "src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e",
+      "path": ".github/plugins/azure-skills/skills/azure-resource-visualizer/SKILL.md",
+      "declared_name": "azure-resource-visualizer",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:dc60b612a54d125bca4feb92b2bfead2ee757873",
+      "upstream_ref": "c33193b1b2dd14d5946e3c6213fd095ffa5b31df",
+      "url": "https://github.com/microsoft/skills/blob/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-skills/skills/azure-resource-visualizer/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/microsoft/skills/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-skills/skills/azure-resource-visualizer/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "dc60b612a54d125bca4feb92b2bfead2ee757873",
+        "size": 8528
+      }
+    },
+    {
+      "source_id": "src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e",
+      "path": ".github/plugins/azure-skills/skills/azure-storage/SKILL.md",
+      "declared_name": "azure-storage",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:21bdc643b63e040a9b1efe7422474cfb393ddc85",
+      "upstream_ref": "c33193b1b2dd14d5946e3c6213fd095ffa5b31df",
+      "url": "https://github.com/microsoft/skills/blob/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-skills/skills/azure-storage/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/microsoft/skills/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-skills/skills/azure-storage/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "21bdc643b63e040a9b1efe7422474cfb393ddc85",
+        "size": 4898
+      }
+    },
+    {
+      "source_id": "src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e",
+      "path": ".github/plugins/azure-skills/skills/azure-upgrade/SKILL.md",
+      "declared_name": "azure-upgrade",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:6b87a36c181440dd213443b19a2a58d25504a1ba",
+      "upstream_ref": "c33193b1b2dd14d5946e3c6213fd095ffa5b31df",
+      "url": "https://github.com/microsoft/skills/blob/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-skills/skills/azure-upgrade/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/microsoft/skills/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-skills/skills/azure-upgrade/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "6b87a36c181440dd213443b19a2a58d25504a1ba",
+        "size": 6191
+      }
+    },
+    {
+      "source_id": "src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e",
+      "path": ".github/plugins/azure-skills/skills/azure-validate/SKILL.md",
+      "declared_name": "azure-validate",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:e852edd0519414ed61ee39d786b50bd8a8b0d389",
+      "upstream_ref": "c33193b1b2dd14d5946e3c6213fd095ffa5b31df",
+      "url": "https://github.com/microsoft/skills/blob/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-skills/skills/azure-validate/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/microsoft/skills/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-skills/skills/azure-validate/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "e852edd0519414ed61ee39d786b50bd8a8b0d389",
+        "size": 3833
+      }
+    },
+    {
+      "source_id": "src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e",
+      "path": ".github/plugins/azure-skills/skills/entra-agent-id/SKILL.md",
+      "declared_name": "entra-agent-id",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:5aaf917945171757112bdb341fb593b4517542cd",
+      "upstream_ref": "c33193b1b2dd14d5946e3c6213fd095ffa5b31df",
+      "url": "https://github.com/microsoft/skills/blob/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-skills/skills/entra-agent-id/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/microsoft/skills/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-skills/skills/entra-agent-id/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "5aaf917945171757112bdb341fb593b4517542cd",
+        "size": 16065
+      }
+    },
+    {
+      "source_id": "src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e",
+      "path": ".github/plugins/azure-skills/skills/entra-app-registration/SKILL.md",
+      "declared_name": "entra-app-registration",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:9253ba09a6f71ea5b2bda0dd128d481bec321e52",
+      "upstream_ref": "c33193b1b2dd14d5946e3c6213fd095ffa5b31df",
+      "url": "https://github.com/microsoft/skills/blob/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-skills/skills/entra-app-registration/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/microsoft/skills/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-skills/skills/entra-app-registration/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "9253ba09a6f71ea5b2bda0dd128d481bec321e52",
+        "size": 8272
+      }
+    },
+    {
+      "source_id": "src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e",
+      "path": ".github/plugins/azure-skills/skills/microsoft-foundry/SKILL.md",
+      "declared_name": "microsoft-foundry",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:e1fc765f314cb56ee62077df469ea5cf74b5191d",
+      "upstream_ref": "c33193b1b2dd14d5946e3c6213fd095ffa5b31df",
+      "url": "https://github.com/microsoft/skills/blob/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-skills/skills/microsoft-foundry/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/microsoft/skills/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-skills/skills/microsoft-foundry/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "e1fc765f314cb56ee62077df469ea5cf74b5191d",
+        "size": 23323
+      }
+    },
+    {
+      "source_id": "src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e",
+      "path": ".github/plugins/azure-skills/skills/microsoft-foundry/finetuning/SKILL.md",
+      "declared_name": "finetuning",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:68ad2dc82e4e38b5bdc07170ae1a2aa477b0a277",
+      "upstream_ref": "c33193b1b2dd14d5946e3c6213fd095ffa5b31df",
+      "url": "https://github.com/microsoft/skills/blob/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-skills/skills/microsoft-foundry/finetuning/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/microsoft/skills/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-skills/skills/microsoft-foundry/finetuning/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "68ad2dc82e4e38b5bdc07170ae1a2aa477b0a277",
+        "size": 5507
+      }
+    },
+    {
+      "source_id": "src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e",
+      "path": ".github/plugins/azure-skills/skills/microsoft-foundry/models/deploy-model/SKILL.md",
+      "declared_name": "deploy-model",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:322b342762abbcd86eb90a92b2c4cb7dccd6aac6",
+      "upstream_ref": "c33193b1b2dd14d5946e3c6213fd095ffa5b31df",
+      "url": "https://github.com/microsoft/skills/blob/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-skills/skills/microsoft-foundry/models/deploy-model/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/microsoft/skills/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-skills/skills/microsoft-foundry/models/deploy-model/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "322b342762abbcd86eb90a92b2c4cb7dccd6aac6",
+        "size": 7330
+      }
+    },
+    {
+      "source_id": "src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e",
+      "path": ".github/plugins/azure-skills/skills/microsoft-foundry/models/deploy-model/capacity/SKILL.md",
+      "declared_name": "capacity",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:46935315ebdf18fbc93771efb72e7f8f9e9980ac",
+      "upstream_ref": "c33193b1b2dd14d5946e3c6213fd095ffa5b31df",
+      "url": "https://github.com/microsoft/skills/blob/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-skills/skills/microsoft-foundry/models/deploy-model/capacity/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/microsoft/skills/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-skills/skills/microsoft-foundry/models/deploy-model/capacity/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "46935315ebdf18fbc93771efb72e7f8f9e9980ac",
+        "size": 7011
+      }
+    },
+    {
+      "source_id": "src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e",
+      "path": ".github/plugins/azure-skills/skills/microsoft-foundry/models/deploy-model/customize/SKILL.md",
+      "declared_name": "customize",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:7c94d5617bf41dd57289fbd6d7e9cf7ea0d811c2",
+      "upstream_ref": "c33193b1b2dd14d5946e3c6213fd095ffa5b31df",
+      "url": "https://github.com/microsoft/skills/blob/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-skills/skills/microsoft-foundry/models/deploy-model/customize/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/microsoft/skills/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-skills/skills/microsoft-foundry/models/deploy-model/customize/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "7c94d5617bf41dd57289fbd6d7e9cf7ea0d811c2",
+        "size": 8986
+      }
+    },
+    {
+      "source_id": "src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e",
+      "path": ".github/plugins/azure-skills/skills/microsoft-foundry/models/deploy-model/preset/SKILL.md",
+      "declared_name": "preset",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:09fcc94cba4c178ec08650b6e6e1da32437c2701",
+      "upstream_ref": "c33193b1b2dd14d5946e3c6213fd095ffa5b31df",
+      "url": "https://github.com/microsoft/skills/blob/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-skills/skills/microsoft-foundry/models/deploy-model/preset/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/microsoft/skills/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-skills/skills/microsoft-foundry/models/deploy-model/preset/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "09fcc94cba4c178ec08650b6e6e1da32437c2701",
+        "size": 4932
+      }
+    },
+    {
+      "source_id": "src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e",
+      "path": ".github/plugins/azure-skills/skills/python-appservice-deploy/SKILL.md",
+      "declared_name": "python-appservice-deploy",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:ac25db692762945d0e3e9ed2016dcfa29fbfa610",
+      "upstream_ref": "c33193b1b2dd14d5946e3c6213fd095ffa5b31df",
+      "url": "https://github.com/microsoft/skills/blob/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-skills/skills/python-appservice-deploy/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/microsoft/skills/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/azure-skills/skills/python-appservice-deploy/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "ac25db692762945d0e3e9ed2016dcfa29fbfa610",
+        "size": 2787
+      }
+    },
+    {
+      "source_id": "src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e",
+      "path": ".github/plugins/deep-wiki/skills/wiki-ado-convert/SKILL.md",
+      "declared_name": "wiki-ado-convert",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:9c030896cd815faef45a314774d37480329e1f34",
+      "upstream_ref": "c33193b1b2dd14d5946e3c6213fd095ffa5b31df",
+      "url": "https://github.com/microsoft/skills/blob/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/deep-wiki/skills/wiki-ado-convert/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/microsoft/skills/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/deep-wiki/skills/wiki-ado-convert/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "9c030896cd815faef45a314774d37480329e1f34",
+        "size": 9364
+      }
+    },
+    {
+      "source_id": "src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e",
+      "path": ".github/plugins/deep-wiki/skills/wiki-agents-md/SKILL.md",
+      "declared_name": "wiki-agents-md",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:45e93b32d3d7f2120cb9b3b7f51e9271e3e0189c",
+      "upstream_ref": "c33193b1b2dd14d5946e3c6213fd095ffa5b31df",
+      "url": "https://github.com/microsoft/skills/blob/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/deep-wiki/skills/wiki-agents-md/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/microsoft/skills/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/deep-wiki/skills/wiki-agents-md/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "45e93b32d3d7f2120cb9b3b7f51e9271e3e0189c",
+        "size": 12946
+      }
+    },
+    {
+      "source_id": "src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e",
+      "path": ".github/plugins/deep-wiki/skills/wiki-architect/SKILL.md",
+      "declared_name": "wiki-architect",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:53bcf7016efbba50e4f634a7a4b4a40cddcb2234",
+      "upstream_ref": "c33193b1b2dd14d5946e3c6213fd095ffa5b31df",
+      "url": "https://github.com/microsoft/skills/blob/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/deep-wiki/skills/wiki-architect/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/microsoft/skills/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/deep-wiki/skills/wiki-architect/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "53bcf7016efbba50e4f634a7a4b4a40cddcb2234",
+        "size": 4068
+      }
+    },
+    {
+      "source_id": "src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e",
+      "path": ".github/plugins/deep-wiki/skills/wiki-changelog/SKILL.md",
+      "declared_name": "wiki-changelog",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:cd5c1cd2825da88b0d370d33a329b0d74f727855",
+      "upstream_ref": "c33193b1b2dd14d5946e3c6213fd095ffa5b31df",
+      "url": "https://github.com/microsoft/skills/blob/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/deep-wiki/skills/wiki-changelog/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/microsoft/skills/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/deep-wiki/skills/wiki-changelog/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "cd5c1cd2825da88b0d370d33a329b0d74f727855",
+        "size": 1827
+      }
+    },
+    {
+      "source_id": "src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e",
+      "path": ".github/plugins/deep-wiki/skills/wiki-llms-txt/SKILL.md",
+      "declared_name": "wiki-llms-txt",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:f9eaf717a42a1206bdde938219f1d8cfbb1c64c4",
+      "upstream_ref": "c33193b1b2dd14d5946e3c6213fd095ffa5b31df",
+      "url": "https://github.com/microsoft/skills/blob/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/deep-wiki/skills/wiki-llms-txt/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/microsoft/skills/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/deep-wiki/skills/wiki-llms-txt/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "f9eaf717a42a1206bdde938219f1d8cfbb1c64c4",
+        "size": 5167
+      }
+    },
+    {
+      "source_id": "src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e",
+      "path": ".github/plugins/deep-wiki/skills/wiki-onboarding/SKILL.md",
+      "declared_name": "wiki-onboarding",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:c708309fd6314cb58788dcacc40216675024b989",
+      "upstream_ref": "c33193b1b2dd14d5946e3c6213fd095ffa5b31df",
+      "url": "https://github.com/microsoft/skills/blob/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/deep-wiki/skills/wiki-onboarding/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/microsoft/skills/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/deep-wiki/skills/wiki-onboarding/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "c708309fd6314cb58788dcacc40216675024b989",
+        "size": 13573
+      }
+    },
+    {
+      "source_id": "src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e",
+      "path": ".github/plugins/deep-wiki/skills/wiki-page-writer/SKILL.md",
+      "declared_name": "wiki-page-writer",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:bb203da412a56c38cd457612bc0f46b91f046216",
+      "upstream_ref": "c33193b1b2dd14d5946e3c6213fd095ffa5b31df",
+      "url": "https://github.com/microsoft/skills/blob/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/deep-wiki/skills/wiki-page-writer/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/microsoft/skills/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/deep-wiki/skills/wiki-page-writer/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "bb203da412a56c38cd457612bc0f46b91f046216",
+        "size": 5869
+      }
+    },
+    {
+      "source_id": "src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e",
+      "path": ".github/plugins/deep-wiki/skills/wiki-qa/SKILL.md",
+      "declared_name": "wiki-qa",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:2568639d0204aff644b86563342487fec78eb332",
+      "upstream_ref": "c33193b1b2dd14d5946e3c6213fd095ffa5b31df",
+      "url": "https://github.com/microsoft/skills/blob/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/deep-wiki/skills/wiki-qa/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/microsoft/skills/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/deep-wiki/skills/wiki-qa/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "2568639d0204aff644b86563342487fec78eb332",
+        "size": 2358
+      }
+    },
+    {
+      "source_id": "src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e",
+      "path": ".github/plugins/deep-wiki/skills/wiki-researcher/SKILL.md",
+      "declared_name": "wiki-researcher",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:b4ccf2ca851d10c1b7395e49f39534af26ad5bce",
+      "upstream_ref": "c33193b1b2dd14d5946e3c6213fd095ffa5b31df",
+      "url": "https://github.com/microsoft/skills/blob/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/deep-wiki/skills/wiki-researcher/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/microsoft/skills/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/deep-wiki/skills/wiki-researcher/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "b4ccf2ca851d10c1b7395e49f39534af26ad5bce",
+        "size": 4520
+      }
+    },
+    {
+      "source_id": "src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e",
+      "path": ".github/plugins/deep-wiki/skills/wiki-vitepress/SKILL.md",
+      "declared_name": "wiki-vitepress",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:b29a15e05917cb599592604643827c4fc7b6190e",
+      "upstream_ref": "c33193b1b2dd14d5946e3c6213fd095ffa5b31df",
+      "url": "https://github.com/microsoft/skills/blob/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/deep-wiki/skills/wiki-vitepress/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/microsoft/skills/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/deep-wiki/skills/wiki-vitepress/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "b29a15e05917cb599592604643827c4fc7b6190e",
+        "size": 4533
+      }
+    },
+    {
+      "source_id": "src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e",
+      "path": ".github/plugins/microsoft-365-agents-toolkit/skills/declarative-agent-developer/SKILL.md",
+      "declared_name": "declarative-agent-developer",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:a974c332cdbed595eed80f79285ba12d7946f61e",
+      "upstream_ref": "c33193b1b2dd14d5946e3c6213fd095ffa5b31df",
+      "url": "https://github.com/microsoft/skills/blob/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/microsoft-365-agents-toolkit/skills/declarative-agent-developer/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/microsoft/skills/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/microsoft-365-agents-toolkit/skills/declarative-agent-developer/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "a974c332cdbed595eed80f79285ba12d7946f61e",
+        "size": 12900
+      }
+    },
+    {
+      "source_id": "src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e",
+      "path": ".github/plugins/microsoft-365-agents-toolkit/skills/install-atk/SKILL.md",
+      "declared_name": "install-atk",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:44afbcbbd76801317776563a96d034574716e949",
+      "upstream_ref": "c33193b1b2dd14d5946e3c6213fd095ffa5b31df",
+      "url": "https://github.com/microsoft/skills/blob/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/microsoft-365-agents-toolkit/skills/install-atk/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/microsoft/skills/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/microsoft-365-agents-toolkit/skills/install-atk/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "44afbcbbd76801317776563a96d034574716e949",
+        "size": 2678
+      }
+    },
+    {
+      "source_id": "src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e",
+      "path": ".github/plugins/microsoft-365-agents-toolkit/skills/m365-agent-evaluator/SKILL.md",
+      "declared_name": "m365-agent-evaluator",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:f09feb28a91638a7da7da797a0f409de4e690f26",
+      "upstream_ref": "c33193b1b2dd14d5946e3c6213fd095ffa5b31df",
+      "url": "https://github.com/microsoft/skills/blob/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/microsoft-365-agents-toolkit/skills/m365-agent-evaluator/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/microsoft/skills/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/microsoft-365-agents-toolkit/skills/m365-agent-evaluator/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "f09feb28a91638a7da7da797a0f409de4e690f26",
+        "size": 8124
+      }
+    },
+    {
+      "source_id": "src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e",
+      "path": ".github/plugins/microsoft-365-agents-toolkit/skills/teams-app-developer/SKILL.md",
+      "declared_name": "teams-app-developer",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:04d194383e9863d8167d8005747cf6a3933ddc26",
+      "upstream_ref": "c33193b1b2dd14d5946e3c6213fd095ffa5b31df",
+      "url": "https://github.com/microsoft/skills/blob/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/microsoft-365-agents-toolkit/skills/teams-app-developer/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/microsoft/skills/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/microsoft-365-agents-toolkit/skills/teams-app-developer/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "04d194383e9863d8167d8005747cf6a3933ddc26",
+        "size": 7766
+      }
+    },
+    {
+      "source_id": "src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e",
+      "path": ".github/plugins/microsoft-365-agents-toolkit/skills/teams-app-developer/slack-to-teams/SKILL.md",
+      "declared_name": "slack-to-teams",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:11dfd2b3b069b8ae77d835c7317c3698d94346f0",
+      "upstream_ref": "c33193b1b2dd14d5946e3c6213fd095ffa5b31df",
+      "url": "https://github.com/microsoft/skills/blob/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/microsoft-365-agents-toolkit/skills/teams-app-developer/slack-to-teams/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/microsoft/skills/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/microsoft-365-agents-toolkit/skills/teams-app-developer/slack-to-teams/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "11dfd2b3b069b8ae77d835c7317c3698d94346f0",
+        "size": 9109
+      }
+    },
+    {
+      "source_id": "src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e",
+      "path": ".github/plugins/microsoft-365-agents-toolkit/skills/ui-widget-developer/SKILL.md",
+      "declared_name": "ui-widget-developer",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:1240df9af50396f6420e83ea7fad62a920edbbb0",
+      "upstream_ref": "c33193b1b2dd14d5946e3c6213fd095ffa5b31df",
+      "url": "https://github.com/microsoft/skills/blob/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/microsoft-365-agents-toolkit/skills/ui-widget-developer/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/microsoft/skills/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/plugins/microsoft-365-agents-toolkit/skills/ui-widget-developer/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "1240df9af50396f6420e83ea7fad62a920edbbb0",
+        "size": 23342
+      }
+    },
+    {
+      "source_id": "src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e",
+      "path": ".github/skills/applicationinsights-web-ts/SKILL.md",
+      "declared_name": "applicationinsights-web-ts",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:e1bfcc76ab8e76060350426a04115dc33de8bbd4",
+      "upstream_ref": "c33193b1b2dd14d5946e3c6213fd095ffa5b31df",
+      "url": "https://github.com/microsoft/skills/blob/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/skills/applicationinsights-web-ts/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/microsoft/skills/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/skills/applicationinsights-web-ts/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "e1bfcc76ab8e76060350426a04115dc33de8bbd4",
+        "size": 20929
+      }
+    },
+    {
+      "source_id": "src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e",
+      "path": ".github/skills/cloud-solution-architect/SKILL.md",
+      "declared_name": "cloud-solution-architect",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:7db4c335fff4c73300a5b17b8d847acc919e72b0",
+      "upstream_ref": "c33193b1b2dd14d5946e3c6213fd095ffa5b31df",
+      "url": "https://github.com/microsoft/skills/blob/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/skills/cloud-solution-architect/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/microsoft/skills/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/skills/cloud-solution-architect/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "7db4c335fff4c73300a5b17b8d847acc919e72b0",
+        "size": 17482
+      }
+    },
+    {
+      "source_id": "src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e",
+      "path": ".github/skills/continual-learning/SKILL.md",
+      "declared_name": "continual-learning",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:1de328f9abe0c345c002a80385619aef277c431e",
+      "upstream_ref": "c33193b1b2dd14d5946e3c6213fd095ffa5b31df",
+      "url": "https://github.com/microsoft/skills/blob/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/skills/continual-learning/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/microsoft/skills/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/skills/continual-learning/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "1de328f9abe0c345c002a80385619aef277c431e",
+        "size": 2592
+      }
+    },
+    {
+      "source_id": "src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e",
+      "path": ".github/skills/copilot-sdk/SKILL.md",
+      "declared_name": "copilot-sdk",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:79f42cd0aef9a7a660f96668bc547d998e2485b4",
+      "upstream_ref": "c33193b1b2dd14d5946e3c6213fd095ffa5b31df",
+      "url": "https://github.com/microsoft/skills/blob/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/skills/copilot-sdk/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/microsoft/skills/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/skills/copilot-sdk/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "79f42cd0aef9a7a660f96668bc547d998e2485b4",
+        "size": 28557
+      }
+    },
+    {
+      "source_id": "src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e",
+      "path": ".github/skills/debugview/SKILL.md",
+      "declared_name": "debugview",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:606e6dd78d6b492d562bc505ecc29161732a58fd",
+      "upstream_ref": "c33193b1b2dd14d5946e3c6213fd095ffa5b31df",
+      "url": "https://github.com/microsoft/skills/blob/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/skills/debugview/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/microsoft/skills/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/skills/debugview/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "606e6dd78d6b492d562bc505ecc29161732a58fd",
+        "size": 10691
+      }
+    },
+    {
+      "source_id": "src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e",
+      "path": ".github/skills/entra-agent-id/SKILL.md",
+      "declared_name": "entra-agent-id",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:a8653ea1e50451c43e1ab7dc95f5024543d63658",
+      "upstream_ref": "c33193b1b2dd14d5946e3c6213fd095ffa5b31df",
+      "url": "https://github.com/microsoft/skills/blob/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/skills/entra-agent-id/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/microsoft/skills/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/skills/entra-agent-id/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "a8653ea1e50451c43e1ab7dc95f5024543d63658",
+        "size": 9454
+      }
+    },
+    {
+      "source_id": "src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e",
+      "path": ".github/skills/frontend-design-review/SKILL.md",
+      "declared_name": "frontend-design-review",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:6fd8fe378026252e3810eae36844704f3c684fe3",
+      "upstream_ref": "c33193b1b2dd14d5946e3c6213fd095ffa5b31df",
+      "url": "https://github.com/microsoft/skills/blob/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/skills/frontend-design-review/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/microsoft/skills/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/skills/frontend-design-review/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "6fd8fe378026252e3810eae36844704f3c684fe3",
+        "size": 6157
+      }
+    },
+    {
+      "source_id": "src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e",
+      "path": ".github/skills/github-issue-creator/SKILL.md",
+      "declared_name": "github-issue-creator",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:4351dcd35e719b49c81fa3430708f103db9cdf82",
+      "upstream_ref": "c33193b1b2dd14d5946e3c6213fd095ffa5b31df",
+      "url": "https://github.com/microsoft/skills/blob/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/skills/github-issue-creator/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/microsoft/skills/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/skills/github-issue-creator/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "4351dcd35e719b49c81fa3430708f103db9cdf82",
+        "size": 3640
+      }
+    },
+    {
+      "source_id": "src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e",
+      "path": ".github/skills/kql/SKILL.md",
+      "declared_name": "kql",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:8be2bdeebd4cdfa0937d3457e70128042cd34904",
+      "upstream_ref": "c33193b1b2dd14d5946e3c6213fd095ffa5b31df",
+      "url": "https://github.com/microsoft/skills/blob/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/skills/kql/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/microsoft/skills/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/skills/kql/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "8be2bdeebd4cdfa0937d3457e70128042cd34904",
+        "size": 19096
+      }
+    },
+    {
+      "source_id": "src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e",
+      "path": ".github/skills/mcp-builder/SKILL.md",
+      "declared_name": "mcp-builder",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:792635390fff9f4c0032b1f0e06db1d81affe678",
+      "upstream_ref": "c33193b1b2dd14d5946e3c6213fd095ffa5b31df",
+      "url": "https://github.com/microsoft/skills/blob/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/skills/mcp-builder/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/microsoft/skills/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/skills/mcp-builder/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "792635390fff9f4c0032b1f0e06db1d81affe678",
+        "size": 12138
+      }
+    },
+    {
+      "source_id": "src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e",
+      "path": ".github/skills/microsoft-docs/SKILL.md",
+      "declared_name": "microsoft-docs",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:a5129731352a4dcad109b03e6f8e96bbdd00695b",
+      "upstream_ref": "c33193b1b2dd14d5946e3c6213fd095ffa5b31df",
+      "url": "https://github.com/microsoft/skills/blob/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/skills/microsoft-docs/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/microsoft/skills/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/skills/microsoft-docs/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "a5129731352a4dcad109b03e6f8e96bbdd00695b",
+        "size": 2925
+      }
+    },
+    {
+      "source_id": "src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e",
+      "path": ".github/skills/podcast-generation/SKILL.md",
+      "declared_name": "podcast-generation",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:7f2e72053b725adf289d5438138ddcee55e47012",
+      "upstream_ref": "c33193b1b2dd14d5946e3c6213fd095ffa5b31df",
+      "url": "https://github.com/microsoft/skills/blob/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/skills/podcast-generation/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/microsoft/skills/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/skills/podcast-generation/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "7f2e72053b725adf289d5438138ddcee55e47012",
+        "size": 3787
+      }
+    },
+    {
+      "source_id": "src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e",
+      "path": ".github/skills/skill-creator/SKILL.md",
+      "declared_name": "skill-creator",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:8377383735afeb36e4b55a9937876b427785db9e",
+      "upstream_ref": "c33193b1b2dd14d5946e3c6213fd095ffa5b31df",
+      "url": "https://github.com/microsoft/skills/blob/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/skills/skill-creator/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/microsoft/skills/c33193b1b2dd14d5946e3c6213fd095ffa5b31df/.github/skills/skill-creator/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "8377383735afeb36e4b55a9937876b427785db9e",
+        "size": 44997
+      }
+    }
+  ],
+  "digest": "sha256:aff8ba3770733be7cbb25f565df573b0f8a260bc6588d21e3a45826e12f1fb71"
+}

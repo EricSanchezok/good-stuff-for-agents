@@ -1,0 +1,47 @@
+analysis:
+  hash: null
+  path: catalog/analyses/az/skl_azure-ai-ml-py-src-https-github-com-microsoft-skil-f17eed9f-dk-python-skills-azure-ai-ml-py-skill-md_f17eed9f.md
+canonical_name: azure-ai-ml-py
+canonical_skill_id: skl_azure-ai-ml-py-src-https-github-com-microsoft-skil-f17eed9f-dk-python-skills-azure-ai-ml-py-skill-md_f17eed9f
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-09T17:21:45.584Z'
+curation:
+  notes: []
+display_name: azure-ai-ml-py
+identity:
+  aliases: []
+  current_version_id: sha256:64ae23817a4661484e10a2e28eb89ba99c7f4afa
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: LICENSE file in repo root; README states MIT
+    spdx: MIT
+    verified: true
+  path: .github/plugins/azure-sdk-python/skills/azure-ai-ml-py/SKILL.md
+  source_id: src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e
+  upstream_ref: null
+  url: null
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-09T17:21:45.584Z'

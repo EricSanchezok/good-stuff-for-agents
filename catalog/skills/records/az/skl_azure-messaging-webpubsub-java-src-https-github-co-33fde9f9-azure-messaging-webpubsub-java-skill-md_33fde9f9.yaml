@@ -1,0 +1,47 @@
+analysis:
+  hash: null
+  path: catalog/analyses/az/skl_azure-messaging-webpubsub-java-src-https-github-co-33fde9f9-azure-messaging-webpubsub-java-skill-md_33fde9f9.md
+canonical_name: azure-messaging-webpubsub-java
+canonical_skill_id: skl_azure-messaging-webpubsub-java-src-https-github-co-33fde9f9-azure-messaging-webpubsub-java-skill-md_33fde9f9
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-09T17:21:44.717Z'
+curation:
+  notes: []
+display_name: azure-messaging-webpubsub-java
+identity:
+  aliases: []
+  current_version_id: sha256:b8b8a3fe22a62ad01c34ddff759dad55aa0c5e14
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: LICENSE file in repo root; README states MIT
+    spdx: MIT
+    verified: true
+  path: .github/plugins/azure-sdk-java/skills/azure-messaging-webpubsub-java/SKILL.md
+  source_id: src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e
+  upstream_ref: null
+  url: null
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-09T17:21:44.717Z'

@@ -1,0 +1,47 @@
+analysis:
+  hash: null
+  path: catalog/analyses/oa/skl_oauth-src-https-github-com-mcollina-skills-matteo-collina-s-skills-faf2f289-skills-oauth-skill-md_2d1681f6.md
+canonical_name: oauth
+canonical_skill_id: skl_oauth-src-https-github-com-mcollina-skills-matteo-collina-s-skills-faf2f289-skills-oauth-skill-md_2d1681f6
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-09T17:21:56.070Z'
+curation:
+  notes: []
+display_name: oauth
+identity:
+  aliases: []
+  current_version_id: sha256:dd39a54b63d303e1f94b2d81e1f38cfe685f18f5
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: LICENSE file in repo root; README states MIT
+    spdx: MIT
+    verified: true
+  path: skills/oauth/SKILL.md
+  source_id: src_https-github-com-mcollina-skills-matteo-collina-s-skills_faf2f289
+  upstream_ref: null
+  url: null
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-09T17:21:56.070Z'

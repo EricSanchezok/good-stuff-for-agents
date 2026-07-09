@@ -1,0 +1,48 @@
+analysis:
+  hash: null
+  path: catalog/analyses/ce/skl_cellxgene-census-src-https-github-com-k-dense-ai-s-7d8fdd5f-bdb6d39-skills-cellxgene-census-skill-md_7d8fdd5f.md
+canonical_name: cellxgene-census
+canonical_skill_id: skl_cellxgene-census-src-https-github-com-k-dense-ai-s-7d8fdd5f-bdb6d39-skills-cellxgene-census-skill-md_7d8fdd5f
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-09T17:21:57.470Z'
+curation:
+  notes: []
+display_name: cellxgene-census
+identity:
+  aliases: []
+  current_version_id: sha256:4324ac74c0855b070dd8663061fa62d31b3553c6
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: LICENSE.md file in repo root; README states MIT (individual skills may
+      have separate license metadata)
+    spdx: MIT
+    verified: true
+  path: skills/cellxgene-census/SKILL.md
+  source_id: src_https-github-com-k-dense-ai-scientific-agent-skills-k-dense-scientific-agent-skills_5bdb6d39
+  upstream_ref: null
+  url: null
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-09T17:21:57.470Z'

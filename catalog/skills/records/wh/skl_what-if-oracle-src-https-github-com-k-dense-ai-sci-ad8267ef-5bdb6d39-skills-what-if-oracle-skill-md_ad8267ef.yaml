@@ -1,0 +1,48 @@
+analysis:
+  hash: null
+  path: catalog/analyses/wh/skl_what-if-oracle-src-https-github-com-k-dense-ai-sci-ad8267ef-5bdb6d39-skills-what-if-oracle-skill-md_ad8267ef.md
+canonical_name: what-if-oracle
+canonical_skill_id: skl_what-if-oracle-src-https-github-com-k-dense-ai-sci-ad8267ef-5bdb6d39-skills-what-if-oracle-skill-md_ad8267ef
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-09T17:22:08.130Z'
+curation:
+  notes: []
+display_name: what-if-oracle
+identity:
+  aliases: []
+  current_version_id: sha256:1b19327cf3461891428db940e339b0c5b0c5cb07
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: LICENSE.md file in repo root; README states MIT (individual skills may
+      have separate license metadata)
+    spdx: MIT
+    verified: true
+  path: skills/what-if-oracle/SKILL.md
+  source_id: src_https-github-com-k-dense-ai-scientific-agent-skills-k-dense-scientific-agent-skills_5bdb6d39
+  upstream_ref: null
+  url: null
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-09T17:22:08.130Z'

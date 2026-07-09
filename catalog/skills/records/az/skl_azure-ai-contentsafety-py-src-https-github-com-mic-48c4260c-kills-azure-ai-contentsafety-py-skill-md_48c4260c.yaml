@@ -1,0 +1,47 @@
+analysis:
+  hash: null
+  path: catalog/analyses/az/skl_azure-ai-contentsafety-py-src-https-github-com-mic-48c4260c-kills-azure-ai-contentsafety-py-skill-md_48c4260c.md
+canonical_name: azure-ai-contentsafety-py
+canonical_skill_id: skl_azure-ai-contentsafety-py-src-https-github-com-mic-48c4260c-kills-azure-ai-contentsafety-py-skill-md_48c4260c
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-09T17:21:45.338Z'
+curation:
+  notes: []
+display_name: azure-ai-contentsafety-py
+identity:
+  aliases: []
+  current_version_id: sha256:f48d8a11589e972787c9907e5698119fe61cdfd8
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: LICENSE file in repo root; README states MIT
+    spdx: MIT
+    verified: true
+  path: .github/plugins/azure-sdk-python/skills/azure-ai-contentsafety-py/SKILL.md
+  source_id: src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e
+  upstream_ref: null
+  url: null
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-09T17:21:45.338Z'

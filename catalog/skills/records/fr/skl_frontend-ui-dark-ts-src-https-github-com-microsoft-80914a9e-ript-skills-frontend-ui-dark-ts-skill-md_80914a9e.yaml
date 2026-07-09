@@ -1,0 +1,47 @@
+analysis:
+  hash: null
+  path: catalog/analyses/fr/skl_frontend-ui-dark-ts-src-https-github-com-microsoft-80914a9e-ript-skills-frontend-ui-dark-ts-skill-md_80914a9e.md
+canonical_name: frontend-ui-dark-ts
+canonical_skill_id: skl_frontend-ui-dark-ts-src-https-github-com-microsoft-80914a9e-ript-skills-frontend-ui-dark-ts-skill-md_80914a9e
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-09T17:21:50.608Z'
+curation:
+  notes: []
+display_name: frontend-ui-dark-ts
+identity:
+  aliases: []
+  current_version_id: sha256:4ff865e3c1cc60d8e5999cf950a016d7c9f019d2
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: LICENSE file in repo root; README states MIT
+    spdx: MIT
+    verified: true
+  path: .github/plugins/azure-sdk-typescript/skills/frontend-ui-dark-ts/SKILL.md
+  source_id: src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e
+  upstream_ref: null
+  url: null
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-09T17:21:50.608Z'

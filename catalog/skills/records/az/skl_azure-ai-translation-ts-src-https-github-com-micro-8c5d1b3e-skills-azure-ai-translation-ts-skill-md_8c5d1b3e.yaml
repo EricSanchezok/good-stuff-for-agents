@@ -1,0 +1,47 @@
+analysis:
+  hash: null
+  path: catalog/analyses/az/skl_azure-ai-translation-ts-src-https-github-com-micro-8c5d1b3e-skills-azure-ai-translation-ts-skill-md_8c5d1b3e.md
+canonical_name: azure-ai-translation-ts
+canonical_skill_id: skl_azure-ai-translation-ts-src-https-github-com-micro-8c5d1b3e-skills-azure-ai-translation-ts-skill-md_8c5d1b3e
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-09T17:21:49.323Z'
+curation:
+  notes: []
+display_name: azure-ai-translation-ts
+identity:
+  aliases: []
+  current_version_id: sha256:fa832211c5a8a90e6ca63b241314dd0437c96946
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: LICENSE file in repo root; README states MIT
+    spdx: MIT
+    verified: true
+  path: .github/plugins/azure-sdk-typescript/skills/azure-ai-translation-ts/SKILL.md
+  source_id: src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e
+  upstream_ref: null
+  url: null
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-09T17:21:49.323Z'

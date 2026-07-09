@@ -1,0 +1,47 @@
+analysis:
+  hash: null
+  path: catalog/analyses/az/skl_azure-storage-queue-rust-src-https-github-com-micr-9918cfac-skills-azure-storage-queue-rust-skill-md_9918cfac.md
+canonical_name: azure-storage-queue-rust
+canonical_skill_id: skl_azure-storage-queue-rust-src-https-github-com-micr-9918cfac-skills-azure-storage-queue-rust-skill-md_9918cfac
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-09T17:21:48.955Z'
+curation:
+  notes: []
+display_name: azure-storage-queue-rust
+identity:
+  aliases: []
+  current_version_id: sha256:4ce6336f70c96323d064db7dc0486d6a621af9c9
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: LICENSE file in repo root; README states MIT
+    spdx: MIT
+    verified: true
+  path: .github/plugins/azure-sdk-rust/skills/azure-storage-queue-rust/SKILL.md
+  source_id: src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e
+  upstream_ref: null
+  url: null
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-09T17:21:48.955Z'

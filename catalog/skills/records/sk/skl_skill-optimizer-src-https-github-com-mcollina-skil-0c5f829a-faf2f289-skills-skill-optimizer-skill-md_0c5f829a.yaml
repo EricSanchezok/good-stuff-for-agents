@@ -1,0 +1,47 @@
+analysis:
+  hash: null
+  path: catalog/analyses/sk/skl_skill-optimizer-src-https-github-com-mcollina-skil-0c5f829a-faf2f289-skills-skill-optimizer-skill-md_0c5f829a.md
+canonical_name: skill-optimizer
+canonical_skill_id: skl_skill-optimizer-src-https-github-com-mcollina-skil-0c5f829a-faf2f289-skills-skill-optimizer-skill-md_0c5f829a
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-09T17:21:56.217Z'
+curation:
+  notes: []
+display_name: skill-optimizer
+identity:
+  aliases: []
+  current_version_id: sha256:5c4e7d1209c66d8326f6f58db0e597410b69f69d
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: LICENSE file in repo root; README states MIT
+    spdx: MIT
+    verified: true
+  path: skills/skill-optimizer/SKILL.md
+  source_id: src_https-github-com-mcollina-skills-matteo-collina-s-skills_faf2f289
+  upstream_ref: null
+  url: null
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-09T17:21:56.217Z'

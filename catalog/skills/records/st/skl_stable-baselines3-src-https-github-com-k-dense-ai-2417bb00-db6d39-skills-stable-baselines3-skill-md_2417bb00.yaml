@@ -1,0 +1,48 @@
+analysis:
+  hash: null
+  path: catalog/analyses/st/skl_stable-baselines3-src-https-github-com-k-dense-ai-2417bb00-db6d39-skills-stable-baselines3-skill-md_2417bb00.md
+canonical_name: stable-baselines3
+canonical_skill_id: skl_stable-baselines3-src-https-github-com-k-dense-ai-2417bb00-db6d39-skills-stable-baselines3-skill-md_2417bb00
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-09T17:22:06.750Z'
+curation:
+  notes: []
+display_name: stable-baselines3
+identity:
+  aliases: []
+  current_version_id: sha256:21656297e8bb02b5ce3c8b6508d41582da55eddc
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: LICENSE.md file in repo root; README states MIT (individual skills may
+      have separate license metadata)
+    spdx: MIT
+    verified: true
+  path: skills/stable-baselines3/SKILL.md
+  source_id: src_https-github-com-k-dense-ai-scientific-agent-skills-k-dense-scientific-agent-skills_5bdb6d39
+  upstream_ref: null
+  url: null
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-09T17:22:06.750Z'

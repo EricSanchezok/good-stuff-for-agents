@@ -1,0 +1,48 @@
+analysis:
+  hash: null
+  path: catalog/analyses/pe/skl_peer-review-src-https-github-com-k-dense-ai-scient-878b0c99-lls-5bdb6d39-skills-peer-review-skill-md_878b0c99.md
+canonical_name: peer-review
+canonical_skill_id: skl_peer-review-src-https-github-com-k-dense-ai-scient-878b0c99-lls-5bdb6d39-skills-peer-review-skill-md_878b0c99
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-09T17:22:03.036Z'
+curation:
+  notes: []
+display_name: peer-review
+identity:
+  aliases: []
+  current_version_id: sha256:2d8c80edbf187784a13d03cd81bd0d21085f5c96
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: LICENSE.md file in repo root; README states MIT (individual skills may
+      have separate license metadata)
+    spdx: MIT
+    verified: true
+  path: skills/peer-review/SKILL.md
+  source_id: src_https-github-com-k-dense-ai-scientific-agent-skills-k-dense-scientific-agent-skills_5bdb6d39
+  upstream_ref: null
+  url: null
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-09T17:22:03.036Z'

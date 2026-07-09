@@ -1,0 +1,47 @@
+analysis:
+  hash: null
+  path: catalog/analyses/az/skl_azure-mgmt-arizeaiobservabilityeval-dotnet-src-htt-eff36b4b-arizeaiobservabilityeval-dotnet-skill-md_eff36b4b.md
+canonical_name: azure-mgmt-arizeaiobservabilityeval-dotnet
+canonical_skill_id: skl_azure-mgmt-arizeaiobservabilityeval-dotnet-src-htt-eff36b4b-arizeaiobservabilityeval-dotnet-skill-md_eff36b4b
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-09T17:21:41.794Z'
+curation:
+  notes: []
+display_name: azure-mgmt-arizeaiobservabilityeval-dotnet
+identity:
+  aliases: []
+  current_version_id: sha256:7a820d75e857d1140484b0fe93301bf232f19109
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: LICENSE file in repo root; README states MIT
+    spdx: MIT
+    verified: true
+  path: .github/plugins/azure-sdk-dotnet/skills/azure-mgmt-arizeaiobservabilityeval-dotnet/SKILL.md
+  source_id: src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e
+  upstream_ref: null
+  url: null
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-09T17:21:41.794Z'

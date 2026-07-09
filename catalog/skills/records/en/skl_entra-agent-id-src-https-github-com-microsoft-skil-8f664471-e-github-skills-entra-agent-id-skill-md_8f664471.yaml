@@ -1,0 +1,47 @@
+analysis:
+  hash: null
+  path: catalog/analyses/en/skl_entra-agent-id-src-https-github-com-microsoft-skil-8f664471-e-github-skills-entra-agent-id-skill-md_8f664471.md
+canonical_name: entra-agent-id
+canonical_skill_id: skl_entra-agent-id-src-https-github-com-microsoft-skil-8f664471-e-github-skills-entra-agent-id-skill-md_8f664471
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-09T17:21:55.028Z'
+curation:
+  notes: []
+display_name: entra-agent-id
+identity:
+  aliases: []
+  current_version_id: sha256:a8653ea1e50451c43e1ab7dc95f5024543d63658
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: LICENSE file in repo root; README states MIT
+    spdx: MIT
+    verified: true
+  path: .github/skills/entra-agent-id/SKILL.md
+  source_id: src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e
+  upstream_ref: null
+  url: null
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-09T17:21:55.028Z'

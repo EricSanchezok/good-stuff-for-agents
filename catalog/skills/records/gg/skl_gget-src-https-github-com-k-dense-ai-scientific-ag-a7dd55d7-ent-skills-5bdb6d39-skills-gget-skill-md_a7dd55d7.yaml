@@ -1,0 +1,48 @@
+analysis:
+  hash: null
+  path: catalog/analyses/gg/skl_gget-src-https-github-com-k-dense-ai-scientific-ag-a7dd55d7-ent-skills-5bdb6d39-skills-gget-skill-md_a7dd55d7.md
+canonical_name: gget
+canonical_skill_id: skl_gget-src-https-github-com-k-dense-ai-scientific-ag-a7dd55d7-ent-skills-5bdb6d39-skills-gget-skill-md_a7dd55d7
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-09T17:21:59.749Z'
+curation:
+  notes: []
+display_name: gget
+identity:
+  aliases: []
+  current_version_id: sha256:da43fd9ec48ae2a87184aa81ab238d38dd05be5e
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: LICENSE.md file in repo root; README states MIT (individual skills may
+      have separate license metadata)
+    spdx: MIT
+    verified: true
+  path: skills/gget/SKILL.md
+  source_id: src_https-github-com-k-dense-ai-scientific-agent-skills-k-dense-scientific-agent-skills_5bdb6d39
+  upstream_ref: null
+  url: null
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-09T17:21:59.749Z'

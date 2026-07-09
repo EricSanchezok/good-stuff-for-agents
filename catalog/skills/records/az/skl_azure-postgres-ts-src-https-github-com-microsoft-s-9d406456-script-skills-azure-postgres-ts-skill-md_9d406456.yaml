@@ -1,0 +1,47 @@
+analysis:
+  hash: null
+  path: catalog/analyses/az/skl_azure-postgres-ts-src-https-github-com-microsoft-s-9d406456-script-skills-azure-postgres-ts-skill-md_9d406456.md
+canonical_name: azure-postgres-ts
+canonical_skill_id: skl_azure-postgres-ts-src-https-github-com-microsoft-s-9d406456-script-skills-azure-postgres-ts-skill-md_9d406456
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-09T17:21:50.086Z'
+curation:
+  notes: []
+display_name: azure-postgres-ts
+identity:
+  aliases: []
+  current_version_id: sha256:1a2000157b776a125c355b1350f97dac0f11b3b3
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: LICENSE file in repo root; README states MIT
+    spdx: MIT
+    verified: true
+  path: .github/plugins/azure-sdk-typescript/skills/azure-postgres-ts/SKILL.md
+  source_id: src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e
+  upstream_ref: null
+  url: null
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-09T17:21:50.086Z'

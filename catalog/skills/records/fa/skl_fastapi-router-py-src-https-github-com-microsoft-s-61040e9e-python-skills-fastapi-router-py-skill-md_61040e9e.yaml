@@ -1,0 +1,47 @@
+analysis:
+  hash: null
+  path: catalog/analyses/fa/skl_fastapi-router-py-src-https-github-com-microsoft-s-61040e9e-python-skills-fastapi-router-py-skill-md_61040e9e.md
+canonical_name: fastapi-router-py
+canonical_skill_id: skl_fastapi-router-py-src-https-github-com-microsoft-s-61040e9e-python-skills-fastapi-router-py-skill-md_61040e9e
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-09T17:21:48.143Z'
+curation:
+  notes: []
+display_name: fastapi-router-py
+identity:
+  aliases: []
+  current_version_id: sha256:0d6f32e61e78dc533e0673791c1112e9ecce927e
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: LICENSE file in repo root; README states MIT
+    spdx: MIT
+    verified: true
+  path: .github/plugins/azure-sdk-python/skills/fastapi-router-py/SKILL.md
+  source_id: src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e
+  upstream_ref: null
+  url: null
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-09T17:21:48.143Z'

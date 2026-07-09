@@ -1,0 +1,47 @@
+analysis:
+  hash: null
+  path: catalog/analyses/fr/skl_frontend-design-review-src-https-github-com-micros-cbd78d70-b-skills-frontend-design-review-skill-md_cbd78d70.md
+canonical_name: frontend-design-review
+canonical_skill_id: skl_frontend-design-review-src-https-github-com-micros-cbd78d70-b-skills-frontend-design-review-skill-md_cbd78d70
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-09T17:21:55.101Z'
+curation:
+  notes: []
+display_name: frontend-design-review
+identity:
+  aliases: []
+  current_version_id: sha256:6fd8fe378026252e3810eae36844704f3c684fe3
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: LICENSE file in repo root; README states MIT
+    spdx: MIT
+    verified: true
+  path: .github/skills/frontend-design-review/SKILL.md
+  source_id: src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e
+  upstream_ref: null
+  url: null
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-09T17:21:55.101Z'

@@ -1,0 +1,47 @@
+analysis:
+  hash: null
+  path: catalog/analyses/az/skl_azure-messaging-src-https-github-com-microsoft-ski-0bbc781d-e-skills-skills-azure-messaging-skill-md_0bbc781d.md
+canonical_name: azure-messaging
+canonical_skill_id: skl_azure-messaging-src-https-github-com-microsoft-ski-0bbc781d-e-skills-skills-azure-messaging-skill-md_0bbc781d
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-09T17:21:51.968Z'
+curation:
+  notes: []
+display_name: azure-messaging
+identity:
+  aliases: []
+  current_version_id: sha256:512147e502149117b33fed6c0a367606f1829e1e
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: LICENSE file in repo root; README states MIT
+    spdx: MIT
+    verified: true
+  path: .github/plugins/azure-skills/skills/azure-messaging/SKILL.md
+  source_id: src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e
+  upstream_ref: null
+  url: null
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-09T17:21:51.968Z'

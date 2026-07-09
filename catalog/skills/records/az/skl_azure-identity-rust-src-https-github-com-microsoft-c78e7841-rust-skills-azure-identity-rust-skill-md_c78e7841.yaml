@@ -1,0 +1,47 @@
+analysis:
+  hash: null
+  path: catalog/analyses/az/skl_azure-identity-rust-src-https-github-com-microsoft-c78e7841-rust-skills-azure-identity-rust-skill-md_c78e7841.md
+canonical_name: azure-identity-rust
+canonical_skill_id: skl_azure-identity-rust-src-https-github-com-microsoft-c78e7841-rust-skills-azure-identity-rust-skill-md_c78e7841
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-09T17:21:48.514Z'
+curation:
+  notes: []
+display_name: azure-identity-rust
+identity:
+  aliases: []
+  current_version_id: sha256:317dc60da7d51ca0d479fb7720fc81b38630d05a
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: LICENSE file in repo root; README states MIT
+    spdx: MIT
+    verified: true
+  path: .github/plugins/azure-sdk-rust/skills/azure-identity-rust/SKILL.md
+  source_id: src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e
+  upstream_ref: null
+  url: null
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-09T17:21:48.514Z'

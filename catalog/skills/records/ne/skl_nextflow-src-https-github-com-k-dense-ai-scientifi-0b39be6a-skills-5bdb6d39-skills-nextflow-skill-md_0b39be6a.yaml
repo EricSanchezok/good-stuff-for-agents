@@ -1,0 +1,48 @@
+analysis:
+  hash: null
+  path: catalog/analyses/ne/skl_nextflow-src-https-github-com-k-dense-ai-scientifi-0b39be6a-skills-5bdb6d39-skills-nextflow-skill-md_0b39be6a.md
+canonical_name: nextflow
+canonical_skill_id: skl_nextflow-src-https-github-com-k-dense-ai-scientifi-0b39be6a-skills-5bdb6d39-skills-nextflow-skill-md_0b39be6a
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-09T17:22:02.031Z'
+curation:
+  notes: []
+display_name: nextflow
+identity:
+  aliases: []
+  current_version_id: sha256:5b89843cd9d6882abf85bb5903fe4517b4fe0411
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: LICENSE.md file in repo root; README states MIT (individual skills may
+      have separate license metadata)
+    spdx: MIT
+    verified: true
+  path: skills/nextflow/SKILL.md
+  source_id: src_https-github-com-k-dense-ai-scientific-agent-skills-k-dense-scientific-agent-skills_5bdb6d39
+  upstream_ref: null
+  url: null
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-09T17:22:02.031Z'

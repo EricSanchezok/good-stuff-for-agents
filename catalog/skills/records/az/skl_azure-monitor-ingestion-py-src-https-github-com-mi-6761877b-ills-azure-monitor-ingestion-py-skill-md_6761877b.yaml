@@ -1,0 +1,47 @@
+analysis:
+  hash: null
+  path: catalog/analyses/az/skl_azure-monitor-ingestion-py-src-https-github-com-mi-6761877b-ills-azure-monitor-ingestion-py-skill-md_6761877b.md
+canonical_name: azure-monitor-ingestion-py
+canonical_skill_id: skl_azure-monitor-ingestion-py-src-https-github-com-mi-6761877b-ills-azure-monitor-ingestion-py-skill-md_6761877b
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-09T17:21:47.320Z'
+curation:
+  notes: []
+display_name: azure-monitor-ingestion-py
+identity:
+  aliases: []
+  current_version_id: sha256:b6146061c7cb223503d1de4b4c12864c643e4c1b
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: LICENSE file in repo root; README states MIT
+    spdx: MIT
+    verified: true
+  path: .github/plugins/azure-sdk-python/skills/azure-monitor-ingestion-py/SKILL.md
+  source_id: src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e
+  upstream_ref: null
+  url: null
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-09T17:21:47.320Z'

@@ -1,0 +1,47 @@
+analysis:
+  hash: null
+  path: catalog/analyses/cl/skl_cloud-solution-architect-src-https-github-com-micr-fdee9a93-skills-cloud-solution-architect-skill-md_fdee9a93.md
+canonical_name: cloud-solution-architect
+canonical_skill_id: skl_cloud-solution-architect-src-https-github-com-micr-fdee9a93-skills-cloud-solution-architect-skill-md_fdee9a93
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-09T17:21:54.734Z'
+curation:
+  notes: []
+display_name: cloud-solution-architect
+identity:
+  aliases: []
+  current_version_id: sha256:7db4c335fff4c73300a5b17b8d847acc919e72b0
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: LICENSE file in repo root; README states MIT
+    spdx: MIT
+    verified: true
+  path: .github/skills/cloud-solution-architect/SKILL.md
+  source_id: src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e
+  upstream_ref: null
+  url: null
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-09T17:21:54.734Z'

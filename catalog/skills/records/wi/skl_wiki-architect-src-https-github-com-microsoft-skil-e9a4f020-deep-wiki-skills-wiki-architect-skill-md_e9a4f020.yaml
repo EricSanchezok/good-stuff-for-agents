@@ -1,0 +1,47 @@
+analysis:
+  hash: null
+  path: catalog/analyses/wi/skl_wiki-architect-src-https-github-com-microsoft-skil-e9a4f020-deep-wiki-skills-wiki-architect-skill-md_e9a4f020.md
+canonical_name: wiki-architect
+canonical_skill_id: skl_wiki-architect-src-https-github-com-microsoft-skil-e9a4f020-deep-wiki-skills-wiki-architect-skill-md_e9a4f020
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-09T17:21:53.597Z'
+curation:
+  notes: []
+display_name: wiki-architect
+identity:
+  aliases: []
+  current_version_id: sha256:53bcf7016efbba50e4f634a7a4b4a40cddcb2234
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: LICENSE file in repo root; README states MIT
+    spdx: MIT
+    verified: true
+  path: .github/plugins/deep-wiki/skills/wiki-architect/SKILL.md
+  source_id: src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e
+  upstream_ref: null
+  url: null
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-09T17:21:53.597Z'

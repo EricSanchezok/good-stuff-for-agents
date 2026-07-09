@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "source_id": "src_https-github-com-coderabbitai-skills-coderabbit-skills_8f2a22eb",
+  "upstream_ref": "2fd091d9582deccf19929e21f934921d0e8f686e",
+  "checked_at": "2026-07-09T17:19:54.322Z",
+  "url": "https://github.com/coderabbitai/skills",
+  "artifacts": [
+    {
+      "source_id": "src_https-github-com-coderabbitai-skills-coderabbit-skills_8f2a22eb",
+      "path": "skills/autofix/SKILL.md",
+      "declared_name": "autofix",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:04e1f0ae7090f8cbf8467bcb613c062dba70387e",
+      "upstream_ref": "2fd091d9582deccf19929e21f934921d0e8f686e",
+      "url": "https://github.com/coderabbitai/skills/blob/2fd091d9582deccf19929e21f934921d0e8f686e/skills/autofix/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/coderabbitai/skills/2fd091d9582deccf19929e21f934921d0e8f686e/skills/autofix/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "04e1f0ae7090f8cbf8467bcb613c062dba70387e",
+        "size": 11589
+      }
+    },
+    {
+      "source_id": "src_https-github-com-coderabbitai-skills-coderabbit-skills_8f2a22eb",
+      "path": "skills/code-review/SKILL.md",
+      "declared_name": "code-review",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:d9fc3f304df4785725febc3050dab2f390874f99",
+      "upstream_ref": "2fd091d9582deccf19929e21f934921d0e8f686e",
+      "url": "https://github.com/coderabbitai/skills/blob/2fd091d9582deccf19929e21f934921d0e8f686e/skills/code-review/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/coderabbitai/skills/2fd091d9582deccf19929e21f934921d0e8f686e/skills/code-review/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "d9fc3f304df4785725febc3050dab2f390874f99",
+        "size": 5253
+      }
+    }
+  ],
+  "digest": "sha256:fda79770b9a9ef92667154c1eb95f5e2582ac2de3f0f5cb805201929bac4018a"
+}

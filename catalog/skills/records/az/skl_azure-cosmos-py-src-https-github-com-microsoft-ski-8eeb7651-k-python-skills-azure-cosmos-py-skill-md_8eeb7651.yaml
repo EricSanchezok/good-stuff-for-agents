@@ -1,0 +1,47 @@
+analysis:
+  hash: null
+  path: catalog/analyses/az/skl_azure-cosmos-py-src-https-github-com-microsoft-ski-8eeb7651-k-python-skills-azure-cosmos-py-skill-md_8eeb7651.md
+canonical_name: azure-cosmos-py
+canonical_skill_id: skl_azure-cosmos-py-src-https-github-com-microsoft-ski-8eeb7651-k-python-skills-azure-cosmos-py-skill-md_8eeb7651
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-09T17:21:46.497Z'
+curation:
+  notes: []
+display_name: azure-cosmos-py
+identity:
+  aliases: []
+  current_version_id: sha256:9800d67e64c753e221128e38c43a81bfabdff944
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: LICENSE file in repo root; README states MIT
+    spdx: MIT
+    verified: true
+  path: .github/plugins/azure-sdk-python/skills/azure-cosmos-py/SKILL.md
+  source_id: src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e
+  upstream_ref: null
+  url: null
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-09T17:21:46.497Z'

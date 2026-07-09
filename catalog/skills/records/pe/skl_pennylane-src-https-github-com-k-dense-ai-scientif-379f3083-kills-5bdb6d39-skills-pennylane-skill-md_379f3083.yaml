@@ -1,0 +1,48 @@
+analysis:
+  hash: null
+  path: catalog/analyses/pe/skl_pennylane-src-https-github-com-k-dense-ai-scientif-379f3083-kills-5bdb6d39-skills-pennylane-skill-md_379f3083.md
+canonical_name: pennylane
+canonical_skill_id: skl_pennylane-src-https-github-com-k-dense-ai-scientif-379f3083-kills-5bdb6d39-skills-pennylane-skill-md_379f3083
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-09T17:22:03.111Z'
+curation:
+  notes: []
+display_name: pennylane
+identity:
+  aliases: []
+  current_version_id: sha256:37b4b03eff1d0583e12187aa878d1d1f8379f735
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: LICENSE.md file in repo root; README states MIT (individual skills may
+      have separate license metadata)
+    spdx: MIT
+    verified: true
+  path: skills/pennylane/SKILL.md
+  source_id: src_https-github-com-k-dense-ai-scientific-agent-skills-k-dense-scientific-agent-skills_5bdb6d39
+  upstream_ref: null
+  url: null
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-09T17:22:03.111Z'

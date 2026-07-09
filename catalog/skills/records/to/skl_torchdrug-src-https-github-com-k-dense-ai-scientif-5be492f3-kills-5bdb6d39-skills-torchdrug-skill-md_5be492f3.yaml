@@ -1,0 +1,48 @@
+analysis:
+  hash: null
+  path: catalog/analyses/to/skl_torchdrug-src-https-github-com-k-dense-ai-scientif-5be492f3-kills-5bdb6d39-skills-torchdrug-skill-md_5be492f3.md
+canonical_name: torchdrug
+canonical_skill_id: skl_torchdrug-src-https-github-com-k-dense-ai-scientif-5be492f3-kills-5bdb6d39-skills-torchdrug-skill-md_5be492f3
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-09T17:22:07.551Z'
+curation:
+  notes: []
+display_name: torchdrug
+identity:
+  aliases: []
+  current_version_id: sha256:bfc4952ba6c1914a98f5bcff9283961a442baf45
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: LICENSE.md file in repo root; README states MIT (individual skills may
+      have separate license metadata)
+    spdx: MIT
+    verified: true
+  path: skills/torchdrug/SKILL.md
+  source_id: src_https-github-com-k-dense-ai-scientific-agent-skills-k-dense-scientific-agent-skills_5bdb6d39
+  upstream_ref: null
+  url: null
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-09T17:22:07.551Z'

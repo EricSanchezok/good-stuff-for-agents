@@ -1,0 +1,47 @@
+analysis:
+  hash: null
+  path: catalog/analyses/az/skl_azure-monitor-opentelemetry-py-src-https-github-co-6f62526d-azure-monitor-opentelemetry-py-skill-md_6f62526d.md
+canonical_name: azure-monitor-opentelemetry-py
+canonical_skill_id: skl_azure-monitor-opentelemetry-py-src-https-github-co-6f62526d-azure-monitor-opentelemetry-py-skill-md_6f62526d
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-09T17:21:47.475Z'
+curation:
+  notes: []
+display_name: azure-monitor-opentelemetry-py
+identity:
+  aliases: []
+  current_version_id: sha256:00f1d7534e6d2b49e3bf0e5b4ec4977fac99df69
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: LICENSE file in repo root; README states MIT
+    spdx: MIT
+    verified: true
+  path: .github/plugins/azure-sdk-python/skills/azure-monitor-opentelemetry-py/SKILL.md
+  source_id: src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e
+  upstream_ref: null
+  url: null
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-09T17:21:47.475Z'

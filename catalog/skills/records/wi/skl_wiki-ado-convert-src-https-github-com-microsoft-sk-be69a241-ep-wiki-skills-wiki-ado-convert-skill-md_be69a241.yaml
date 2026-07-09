@@ -1,0 +1,47 @@
+analysis:
+  hash: null
+  path: catalog/analyses/wi/skl_wiki-ado-convert-src-https-github-com-microsoft-sk-be69a241-ep-wiki-skills-wiki-ado-convert-skill-md_be69a241.md
+canonical_name: wiki-ado-convert
+canonical_skill_id: skl_wiki-ado-convert-src-https-github-com-microsoft-sk-be69a241-ep-wiki-skills-wiki-ado-convert-skill-md_be69a241
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-09T17:21:53.441Z'
+curation:
+  notes: []
+display_name: wiki-ado-convert
+identity:
+  aliases: []
+  current_version_id: sha256:9c030896cd815faef45a314774d37480329e1f34
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: LICENSE file in repo root; README states MIT
+    spdx: MIT
+    verified: true
+  path: .github/plugins/deep-wiki/skills/wiki-ado-convert/SKILL.md
+  source_id: src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e
+  upstream_ref: null
+  url: null
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-09T17:21:53.441Z'

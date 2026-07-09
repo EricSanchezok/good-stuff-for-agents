@@ -1,0 +1,47 @@
+analysis:
+  hash: null
+  path: catalog/analyses/wi/skl_wiki-qa-src-https-github-com-microsoft-skills-micr-2f18a7e5-lugins-deep-wiki-skills-wiki-qa-skill-md_2f18a7e5.md
+canonical_name: wiki-qa
+canonical_skill_id: skl_wiki-qa-src-https-github-com-microsoft-skills-micr-2f18a7e5-lugins-deep-wiki-skills-wiki-qa-skill-md_2f18a7e5
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-09T17:21:53.967Z'
+curation:
+  notes: []
+display_name: wiki-qa
+identity:
+  aliases: []
+  current_version_id: sha256:2568639d0204aff644b86563342487fec78eb332
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: LICENSE file in repo root; README states MIT
+    spdx: MIT
+    verified: true
+  path: .github/plugins/deep-wiki/skills/wiki-qa/SKILL.md
+  source_id: src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e
+  upstream_ref: null
+  url: null
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-09T17:21:53.967Z'

@@ -1,0 +1,47 @@
+analysis:
+  hash: null
+  path: catalog/analyses/az/skl_azure-storage-queue-py-src-https-github-com-micros-a05c6321-n-skills-azure-storage-queue-py-skill-md_a05c6321.md
+canonical_name: azure-storage-queue-py
+canonical_skill_id: skl_azure-storage-queue-py-src-https-github-com-micros-a05c6321-n-skills-azure-storage-queue-py-skill-md_a05c6321
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-09T17:21:48.071Z'
+curation:
+  notes: []
+display_name: azure-storage-queue-py
+identity:
+  aliases: []
+  current_version_id: sha256:2e953c26116a950325eb44150571ceb784631420
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: LICENSE file in repo root; README states MIT
+    spdx: MIT
+    verified: true
+  path: .github/plugins/azure-sdk-python/skills/azure-storage-queue-py/SKILL.md
+  source_id: src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e
+  upstream_ref: null
+  url: null
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-09T17:21:48.071Z'

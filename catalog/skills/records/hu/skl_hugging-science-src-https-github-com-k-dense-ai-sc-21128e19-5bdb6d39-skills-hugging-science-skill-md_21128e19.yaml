@@ -1,0 +1,48 @@
+analysis:
+  hash: null
+  path: catalog/analyses/hu/skl_hugging-science-src-https-github-com-k-dense-ai-sc-21128e19-5bdb6d39-skills-hugging-science-skill-md_21128e19.md
+canonical_name: hugging-science
+canonical_skill_id: skl_hugging-science-src-https-github-com-k-dense-ai-sc-21128e19-5bdb6d39-skills-hugging-science-skill-md_21128e19
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-09T17:22:00.136Z'
+curation:
+  notes: []
+display_name: hugging-science
+identity:
+  aliases: []
+  current_version_id: sha256:86005e90787e07347021fd2e78a27701be83d67b
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: LICENSE.md file in repo root; README states MIT (individual skills may
+      have separate license metadata)
+    spdx: MIT
+    verified: true
+  path: skills/hugging-science/SKILL.md
+  source_id: src_https-github-com-k-dense-ai-scientific-agent-skills-k-dense-scientific-agent-skills_5bdb6d39
+  upstream_ref: null
+  url: null
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-09T17:22:00.136Z'

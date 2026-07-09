@@ -1,0 +1,47 @@
+analysis:
+  hash: null
+  path: catalog/analyses/az/skl_azure-microsoft-playwright-testing-ts-src-https-gi-2f905693-microsoft-playwright-testing-ts-skill-md_2f905693.md
+canonical_name: azure-microsoft-playwright-testing-ts
+canonical_skill_id: skl_azure-microsoft-playwright-testing-ts-src-https-gi-2f905693-microsoft-playwright-testing-ts-skill-md_2f905693
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-09T17:21:49.926Z'
+curation:
+  notes: []
+display_name: azure-microsoft-playwright-testing-ts
+identity:
+  aliases: []
+  current_version_id: sha256:b784591d64f11644dde1f7b165411792751f284a
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: LICENSE file in repo root; README states MIT
+    spdx: MIT
+    verified: true
+  path: .github/plugins/azure-sdk-typescript/skills/azure-microsoft-playwright-testing-ts/SKILL.md
+  source_id: src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e
+  upstream_ref: null
+  url: null
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-09T17:21:49.926Z'

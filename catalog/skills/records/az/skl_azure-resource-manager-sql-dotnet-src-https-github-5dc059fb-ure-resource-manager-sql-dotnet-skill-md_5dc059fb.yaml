@@ -1,0 +1,47 @@
+analysis:
+  hash: null
+  path: catalog/analyses/az/skl_azure-resource-manager-sql-dotnet-src-https-github-5dc059fb-ure-resource-manager-sql-dotnet-skill-md_5dc059fb.md
+canonical_name: azure-resource-manager-sql-dotnet
+canonical_skill_id: skl_azure-resource-manager-sql-dotnet-src-https-github-5dc059fb-ure-resource-manager-sql-dotnet-skill-md_5dc059fb
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-09T17:21:42.637Z'
+curation:
+  notes: []
+display_name: azure-resource-manager-sql-dotnet
+identity:
+  aliases: []
+  current_version_id: sha256:6eff090401b0b48fb47ecddbdf36554da8fb8ddf
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: LICENSE file in repo root; README states MIT
+    spdx: MIT
+    verified: true
+  path: .github/plugins/azure-sdk-dotnet/skills/azure-resource-manager-sql-dotnet/SKILL.md
+  source_id: src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e
+  upstream_ref: null
+  url: null
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-09T17:21:42.637Z'

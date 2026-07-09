@@ -1,0 +1,47 @@
+analysis:
+  hash: null
+  path: catalog/analyses/az/skl_azure-web-pubsub-ts-src-https-github-com-microsoft-a5478476-ript-skills-azure-web-pubsub-ts-skill-md_a5478476.md
+canonical_name: azure-web-pubsub-ts
+canonical_skill_id: skl_azure-web-pubsub-ts-src-https-github-com-microsoft-a5478476-ript-skills-azure-web-pubsub-ts-skill-md_a5478476
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-09T17:21:50.532Z'
+curation:
+  notes: []
+display_name: azure-web-pubsub-ts
+identity:
+  aliases: []
+  current_version_id: sha256:175e519e8d39e7fe5c2eaa34013f73f53641c1b5
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: LICENSE file in repo root; README states MIT
+    spdx: MIT
+    verified: true
+  path: .github/plugins/azure-sdk-typescript/skills/azure-web-pubsub-ts/SKILL.md
+  source_id: src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e
+  upstream_ref: null
+  url: null
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-09T17:21:50.532Z'

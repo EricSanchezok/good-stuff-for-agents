@@ -1,0 +1,47 @@
+analysis:
+  hash: null
+  path: catalog/analyses/wi/skl_wiki-changelog-src-https-github-com-microsoft-skil-aa88a1a9-deep-wiki-skills-wiki-changelog-skill-md_aa88a1a9.md
+canonical_name: wiki-changelog
+canonical_skill_id: skl_wiki-changelog-src-https-github-com-microsoft-skil-aa88a1a9-deep-wiki-skills-wiki-changelog-skill-md_aa88a1a9
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-09T17:21:53.672Z'
+curation:
+  notes: []
+display_name: wiki-changelog
+identity:
+  aliases: []
+  current_version_id: sha256:cd5c1cd2825da88b0d370d33a329b0d74f727855
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: LICENSE file in repo root; README states MIT
+    spdx: MIT
+    verified: true
+  path: .github/plugins/deep-wiki/skills/wiki-changelog/SKILL.md
+  source_id: src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e
+  upstream_ref: null
+  url: null
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-09T17:21:53.672Z'

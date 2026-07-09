@@ -1,0 +1,47 @@
+analysis:
+  hash: null
+  path: catalog/analyses/az/skl_azure-servicebus-py-src-https-github-com-microsoft-d202fbfa-thon-skills-azure-servicebus-py-skill-md_d202fbfa.md
+canonical_name: azure-servicebus-py
+canonical_skill_id: skl_azure-servicebus-py-src-https-github-com-microsoft-d202fbfa-thon-skills-azure-servicebus-py-skill-md_d202fbfa
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-09T17:21:47.701Z'
+curation:
+  notes: []
+display_name: azure-servicebus-py
+identity:
+  aliases: []
+  current_version_id: sha256:df06c9281cd34c06b0e8021517019267d9ae3a4c
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: LICENSE file in repo root; README states MIT
+    spdx: MIT
+    verified: true
+  path: .github/plugins/azure-sdk-python/skills/azure-servicebus-py/SKILL.md
+  source_id: src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e
+  upstream_ref: null
+  url: null
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-09T17:21:47.701Z'

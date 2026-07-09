@@ -1,0 +1,48 @@
+analysis:
+  hash: null
+  path: catalog/analyses/py/skl_pyopenms-src-https-github-com-k-dense-ai-scientifi-4d048629-skills-5bdb6d39-skills-pyopenms-skill-md_4d048629.md
+canonical_name: pyopenms
+canonical_skill_id: skl_pyopenms-src-https-github-com-k-dense-ai-scientifi-4d048629-skills-5bdb6d39-skills-pyopenms-skill-md_4d048629
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-09T17:22:04.471Z'
+curation:
+  notes: []
+display_name: pyopenms
+identity:
+  aliases: []
+  current_version_id: sha256:faf4697d7acdba0fae5aa8b896a93dd0ed4298c3
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: LICENSE.md file in repo root; README states MIT (individual skills may
+      have separate license metadata)
+    spdx: MIT
+    verified: true
+  path: skills/pyopenms/SKILL.md
+  source_id: src_https-github-com-k-dense-ai-scientific-agent-skills-k-dense-scientific-agent-skills_5bdb6d39
+  upstream_ref: null
+  url: null
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-09T17:22:04.471Z'

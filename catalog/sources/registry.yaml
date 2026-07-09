@@ -1,0 +1,110 @@
+schema_version: 1
+sources:
+- license:
+    evidence: LICENSE file in repo root; README states MIT
+    spdx: MIT
+    verified: true
+  name: CodeRabbit Skills
+  schema_version: 1
+  source_id: src_https-github-com-coderabbitai-skills-coderabbit-skills_8f2a22eb
+  state:
+    consecutive_failures: 0
+    last_checked_at: '2026-07-09T17:19:54.322Z'
+    last_ref: 2fd091d9582deccf19929e21f934921d0e8f686e
+    last_success_at: '2026-07-09T17:19:54.322Z'
+  status: active
+  sync:
+    default_ref: main
+    exclude:
+    - node_modules/**
+    - .git/**
+    - assets/**
+    frequency: daily
+    include:
+    - '**/SKILL.md'
+    strategy: git
+  type: github_repo
+  updated_at: '2026-07-09T17:19:39.155Z'
+  url: https://github.com/coderabbitai/skills
+- license:
+    evidence: LICENSE.md file in repo root; README states MIT (individual skills may
+      have separate license metadata)
+    spdx: MIT
+    verified: true
+  name: K-Dense Scientific Agent Skills
+  schema_version: 1
+  source_id: src_https-github-com-k-dense-ai-scientific-agent-skills-k-dense-scientific-agent-skills_5bdb6d39
+  state:
+    consecutive_failures: 0
+    last_checked_at: '2026-07-09T17:19:55.615Z'
+    last_ref: 4d97e293dc6f604fb6b63dcd49b9028df413d65b
+    last_success_at: '2026-07-09T17:19:55.615Z'
+  status: active
+  sync:
+    default_ref: main
+    exclude:
+    - node_modules/**
+    - .git/**
+    - docs/**
+    - .github/**
+    frequency: daily
+    include:
+    - '**/SKILL.md'
+    strategy: git
+  type: github_repo
+  updated_at: '2026-07-09T17:19:39.330Z'
+  url: https://github.com/K-Dense-AI/scientific-agent-skills
+- license:
+    evidence: LICENSE file in repo root; README states MIT
+    spdx: MIT
+    verified: true
+  name: Matteo Collina's Skills
+  schema_version: 1
+  source_id: src_https-github-com-mcollina-skills-matteo-collina-s-skills_faf2f289
+  state:
+    consecutive_failures: 0
+    last_checked_at: '2026-07-09T17:19:56.812Z'
+    last_ref: 5b2a81354b6d10325da0db9decc9ce5ecc714138
+    last_success_at: '2026-07-09T17:19:56.812Z'
+  status: active
+  sync:
+    default_ref: main
+    exclude:
+    - node_modules/**
+    - .git/**
+    - docs/**
+    - src/**
+    frequency: daily
+    include:
+    - '**/SKILL.md'
+    strategy: git
+  type: github_repo
+  updated_at: '2026-07-09T17:19:39.242Z'
+  url: https://github.com/mcollina/skills
+- license:
+    evidence: LICENSE file in repo root; README states MIT
+    spdx: MIT
+    verified: true
+  name: Microsoft Agent Skills
+  schema_version: 1
+  source_id: src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e
+  state:
+    consecutive_failures: 0
+    last_checked_at: '2026-07-09T17:19:58.352Z'
+    last_ref: c33193b1b2dd14d5946e3c6213fd095ffa5b31df
+    last_success_at: '2026-07-09T17:19:58.352Z'
+  status: active
+  sync:
+    default_ref: main
+    exclude:
+    - node_modules/**
+    - .git/**
+    - tests/**
+    - docs/**
+    frequency: daily
+    include:
+    - '**/SKILL.md'
+    strategy: git
+  type: github_repo
+  updated_at: '2026-07-09T17:19:39.028Z'
+  url: https://github.com/microsoft/skills

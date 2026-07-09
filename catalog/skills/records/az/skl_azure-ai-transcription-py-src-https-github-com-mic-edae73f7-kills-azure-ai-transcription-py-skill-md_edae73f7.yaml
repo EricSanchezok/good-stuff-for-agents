@@ -1,0 +1,47 @@
+analysis:
+  hash: null
+  path: catalog/analyses/az/skl_azure-ai-transcription-py-src-https-github-com-mic-edae73f7-kills-azure-ai-transcription-py-skill-md_edae73f7.md
+canonical_name: azure-ai-transcription-py
+canonical_skill_id: skl_azure-ai-transcription-py-src-https-github-com-mic-edae73f7-kills-azure-ai-transcription-py-skill-md_edae73f7
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-09T17:21:45.820Z'
+curation:
+  notes: []
+display_name: azure-ai-transcription-py
+identity:
+  aliases: []
+  current_version_id: sha256:a6fd15e733a567c832962e5c4dc71998cc2ebcde
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: LICENSE file in repo root; README states MIT
+    spdx: MIT
+    verified: true
+  path: .github/plugins/azure-sdk-python/skills/azure-ai-transcription-py/SKILL.md
+  source_id: src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e
+  upstream_ref: null
+  url: null
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-09T17:21:45.820Z'

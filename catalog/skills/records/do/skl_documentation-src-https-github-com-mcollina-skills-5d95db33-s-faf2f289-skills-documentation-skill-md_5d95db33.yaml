@@ -1,0 +1,47 @@
+analysis:
+  hash: null
+  path: catalog/analyses/do/skl_documentation-src-https-github-com-mcollina-skills-5d95db33-s-faf2f289-skills-documentation-skill-md_5d95db33.md
+canonical_name: documentation
+canonical_skill_id: skl_documentation-src-https-github-com-mcollina-skills-5d95db33-s-faf2f289-skills-documentation-skill-md_5d95db33
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-09T17:21:55.632Z'
+curation:
+  notes: []
+display_name: documentation
+identity:
+  aliases: []
+  current_version_id: sha256:dae5144584a07b60287eac57f0786665b38b3559
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: LICENSE file in repo root; README states MIT
+    spdx: MIT
+    verified: true
+  path: skills/documentation/SKILL.md
+  source_id: src_https-github-com-mcollina-skills-matteo-collina-s-skills_faf2f289
+  upstream_ref: null
+  url: null
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-09T17:21:55.632Z'

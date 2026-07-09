@@ -1,0 +1,48 @@
+analysis:
+  hash: null
+  path: catalog/analyses/py/skl_pydicom-src-https-github-com-k-dense-ai-scientific-7e2145a3-skills-5bdb6d39-skills-pydicom-skill-md_7e2145a3.md
+canonical_name: pydicom
+canonical_skill_id: skl_pydicom-src-https-github-com-k-dense-ai-scientific-7e2145a3-skills-5bdb6d39-skills-pydicom-skill-md_7e2145a3
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-09T17:22:03.992Z'
+curation:
+  notes: []
+display_name: pydicom
+identity:
+  aliases: []
+  current_version_id: sha256:93ab7b64269782dec84ba4b8990a69972500369e
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: LICENSE.md file in repo root; README states MIT (individual skills may
+      have separate license metadata)
+    spdx: MIT
+    verified: true
+  path: skills/pydicom/SKILL.md
+  source_id: src_https-github-com-k-dense-ai-scientific-agent-skills-k-dense-scientific-agent-skills_5bdb6d39
+  upstream_ref: null
+  url: null
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-09T17:22:03.992Z'

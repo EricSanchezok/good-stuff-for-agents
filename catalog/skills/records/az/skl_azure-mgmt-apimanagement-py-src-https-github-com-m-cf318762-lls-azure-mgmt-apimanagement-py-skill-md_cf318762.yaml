@@ -1,0 +1,47 @@
+analysis:
+  hash: null
+  path: catalog/analyses/az/skl_azure-mgmt-apimanagement-py-src-https-github-com-m-cf318762-lls-azure-mgmt-apimanagement-py-skill-md_cf318762.md
+canonical_name: azure-mgmt-apimanagement-py
+canonical_skill_id: skl_azure-mgmt-apimanagement-py-src-https-github-com-m-cf318762-lls-azure-mgmt-apimanagement-py-skill-md_cf318762
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-09T17:21:47.094Z'
+curation:
+  notes: []
+display_name: azure-mgmt-apimanagement-py
+identity:
+  aliases: []
+  current_version_id: sha256:23cccf5a75db3eff3a6e263347caf1e5fab5a495
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: LICENSE file in repo root; README states MIT
+    spdx: MIT
+    verified: true
+  path: .github/plugins/azure-sdk-python/skills/azure-mgmt-apimanagement-py/SKILL.md
+  source_id: src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e
+  upstream_ref: null
+  url: null
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-09T17:21:47.094Z'

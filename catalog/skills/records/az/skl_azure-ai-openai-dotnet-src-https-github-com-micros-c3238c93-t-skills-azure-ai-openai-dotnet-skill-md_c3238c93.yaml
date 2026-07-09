@@ -1,0 +1,47 @@
+analysis:
+  hash: null
+  path: catalog/analyses/az/skl_azure-ai-openai-dotnet-src-https-github-com-micros-c3238c93-t-skills-azure-ai-openai-dotnet-skill-md_c3238c93.md
+canonical_name: azure-ai-openai-dotnet
+canonical_skill_id: skl_azure-ai-openai-dotnet-src-https-github-com-micros-c3238c93-t-skills-azure-ai-openai-dotnet-skill-md_c3238c93
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-09T17:21:40.990Z'
+curation:
+  notes: []
+display_name: azure-ai-openai-dotnet
+identity:
+  aliases: []
+  current_version_id: sha256:4c15f34a6a12e0a7d1f198ce5a61508168c51d54
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: LICENSE file in repo root; README states MIT
+    spdx: MIT
+    verified: true
+  path: .github/plugins/azure-sdk-dotnet/skills/azure-ai-openai-dotnet/SKILL.md
+  source_id: src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e
+  upstream_ref: null
+  url: null
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-09T17:21:40.990Z'

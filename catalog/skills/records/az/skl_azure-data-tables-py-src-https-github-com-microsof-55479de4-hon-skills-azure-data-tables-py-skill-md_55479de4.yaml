@@ -1,0 +1,47 @@
+analysis:
+  hash: null
+  path: catalog/analyses/az/skl_azure-data-tables-py-src-https-github-com-microsof-55479de4-hon-skills-azure-data-tables-py-skill-md_55479de4.md
+canonical_name: azure-data-tables-py
+canonical_skill_id: skl_azure-data-tables-py-src-https-github-com-microsof-55479de4-hon-skills-azure-data-tables-py-skill-md_55479de4
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-09T17:21:46.572Z'
+curation:
+  notes: []
+display_name: azure-data-tables-py
+identity:
+  aliases: []
+  current_version_id: sha256:ef513ce507818533f5bee1477d07dab5c3bf3fdd
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: LICENSE file in repo root; README states MIT
+    spdx: MIT
+    verified: true
+  path: .github/plugins/azure-sdk-python/skills/azure-data-tables-py/SKILL.md
+  source_id: src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e
+  upstream_ref: null
+  url: null
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-09T17:21:46.572Z'

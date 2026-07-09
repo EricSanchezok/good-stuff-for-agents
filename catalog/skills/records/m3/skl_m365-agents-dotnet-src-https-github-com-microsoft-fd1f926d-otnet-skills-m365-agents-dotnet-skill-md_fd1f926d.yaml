@@ -1,0 +1,47 @@
+analysis:
+  hash: null
+  path: catalog/analyses/m3/skl_m365-agents-dotnet-src-https-github-com-microsoft-fd1f926d-otnet-skills-m365-agents-dotnet-skill-md_fd1f926d.md
+canonical_name: m365-agents-dotnet
+canonical_skill_id: skl_m365-agents-dotnet-src-https-github-com-microsoft-fd1f926d-otnet-skills-m365-agents-dotnet-skill-md_fd1f926d
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-09T17:21:42.977Z'
+curation:
+  notes: []
+display_name: m365-agents-dotnet
+identity:
+  aliases: []
+  current_version_id: sha256:d914cd1443fa3df60bddee1e061870f0dd404917
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: LICENSE file in repo root; README states MIT
+    spdx: MIT
+    verified: true
+  path: .github/plugins/azure-sdk-dotnet/skills/m365-agents-dotnet/SKILL.md
+  source_id: src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e
+  upstream_ref: null
+  url: null
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-09T17:21:42.977Z'

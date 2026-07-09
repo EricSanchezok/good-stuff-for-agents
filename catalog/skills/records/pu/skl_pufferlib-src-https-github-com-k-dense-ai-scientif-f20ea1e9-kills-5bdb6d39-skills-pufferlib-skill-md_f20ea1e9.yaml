@@ -1,0 +1,48 @@
+analysis:
+  hash: null
+  path: catalog/analyses/pu/skl_pufferlib-src-https-github-com-k-dense-ai-scientif-f20ea1e9-kills-5bdb6d39-skills-pufferlib-skill-md_f20ea1e9.md
+canonical_name: pufferlib
+canonical_skill_id: skl_pufferlib-src-https-github-com-k-dense-ai-scientif-f20ea1e9-kills-5bdb6d39-skills-pufferlib-skill-md_f20ea1e9
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-09T17:22:03.818Z'
+curation:
+  notes: []
+display_name: pufferlib
+identity:
+  aliases: []
+  current_version_id: sha256:631c0d0821204212fd129e0149ebbc57413a58c9
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: LICENSE.md file in repo root; README states MIT (individual skills may
+      have separate license metadata)
+    spdx: MIT
+    verified: true
+  path: skills/pufferlib/SKILL.md
+  source_id: src_https-github-com-k-dense-ai-scientific-agent-skills-k-dense-scientific-agent-skills_5bdb6d39
+  upstream_ref: null
+  url: null
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-09T17:22:03.818Z'

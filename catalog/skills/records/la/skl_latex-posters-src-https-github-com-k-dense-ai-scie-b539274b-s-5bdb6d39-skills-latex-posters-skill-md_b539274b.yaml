@@ -1,0 +1,48 @@
+analysis:
+  hash: null
+  path: catalog/analyses/la/skl_latex-posters-src-https-github-com-k-dense-ai-scie-b539274b-s-5bdb6d39-skills-latex-posters-skill-md_b539274b.md
+canonical_name: latex-posters
+canonical_skill_id: skl_latex-posters-src-https-github-com-k-dense-ai-scie-b539274b-s-5bdb6d39-skills-latex-posters-skill-md_b539274b
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-09T17:22:00.846Z'
+curation:
+  notes: []
+display_name: latex-posters
+identity:
+  aliases: []
+  current_version_id: sha256:7706b3d9cf00d083c497526254dcc0b8ec46ec7d
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: LICENSE.md file in repo root; README states MIT (individual skills may
+      have separate license metadata)
+    spdx: MIT
+    verified: true
+  path: skills/latex-posters/SKILL.md
+  source_id: src_https-github-com-k-dense-ai-scientific-agent-skills-k-dense-scientific-agent-skills_5bdb6d39
+  upstream_ref: null
+  url: null
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-09T17:22:00.846Z'

@@ -1,0 +1,48 @@
+analysis:
+  hash: null
+  path: catalog/analyses/as/skl_astropy-src-https-github-com-k-dense-ai-scientific-1d293705-skills-5bdb6d39-skills-astropy-skill-md_1d293705.md
+canonical_name: astropy
+canonical_skill_id: skl_astropy-src-https-github-com-k-dense-ai-scientific-1d293705-skills-5bdb6d39-skills-astropy-skill-md_1d293705
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-09T17:21:56.837Z'
+curation:
+  notes: []
+display_name: astropy
+identity:
+  aliases: []
+  current_version_id: sha256:5dceba30fd260d0dfff683d96d517658b6ef3f15
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: LICENSE.md file in repo root; README states MIT (individual skills may
+      have separate license metadata)
+    spdx: MIT
+    verified: true
+  path: skills/astropy/SKILL.md
+  source_id: src_https-github-com-k-dense-ai-scientific-agent-skills-k-dense-scientific-agent-skills_5bdb6d39
+  upstream_ref: null
+  url: null
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-09T17:21:56.837Z'

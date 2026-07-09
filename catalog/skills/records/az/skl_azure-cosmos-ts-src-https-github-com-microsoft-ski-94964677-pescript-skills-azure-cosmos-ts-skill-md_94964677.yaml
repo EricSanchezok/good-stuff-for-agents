@@ -1,0 +1,47 @@
+analysis:
+  hash: null
+  path: catalog/analyses/az/skl_azure-cosmos-ts-src-https-github-com-microsoft-ski-94964677-pescript-skills-azure-cosmos-ts-skill-md_94964677.md
+canonical_name: azure-cosmos-ts
+canonical_skill_id: skl_azure-cosmos-ts-src-https-github-com-microsoft-ski-94964677-pescript-skills-azure-cosmos-ts-skill-md_94964677
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-09T17:21:49.543Z'
+curation:
+  notes: []
+display_name: azure-cosmos-ts
+identity:
+  aliases: []
+  current_version_id: sha256:33fcce60f1488fbf7e3d1cef4656adb693f215f2
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: LICENSE file in repo root; README states MIT
+    spdx: MIT
+    verified: true
+  path: .github/plugins/azure-sdk-typescript/skills/azure-cosmos-ts/SKILL.md
+  source_id: src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e
+  upstream_ref: null
+  url: null
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-09T17:21:49.543Z'

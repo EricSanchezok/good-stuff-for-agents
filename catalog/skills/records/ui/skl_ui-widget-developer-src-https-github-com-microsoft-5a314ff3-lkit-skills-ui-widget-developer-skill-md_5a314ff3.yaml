@@ -1,0 +1,47 @@
+analysis:
+  hash: null
+  path: catalog/analyses/ui/skl_ui-widget-developer-src-https-github-com-microsoft-5a314ff3-lkit-skills-ui-widget-developer-skill-md_5a314ff3.md
+canonical_name: ui-widget-developer
+canonical_skill_id: skl_ui-widget-developer-src-https-github-com-microsoft-5a314ff3-lkit-skills-ui-widget-developer-skill-md_5a314ff3
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-09T17:21:54.574Z'
+curation:
+  notes: []
+display_name: ui-widget-developer
+identity:
+  aliases: []
+  current_version_id: sha256:1240df9af50396f6420e83ea7fad62a920edbbb0
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: LICENSE file in repo root; README states MIT
+    spdx: MIT
+    verified: true
+  path: .github/plugins/microsoft-365-agents-toolkit/skills/ui-widget-developer/SKILL.md
+  source_id: src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e
+  upstream_ref: null
+  url: null
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-09T17:21:54.574Z'

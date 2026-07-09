@@ -1,0 +1,47 @@
+analysis:
+  hash: null
+  path: catalog/analyses/az/skl_azure-monitor-query-py-src-https-github-com-micros-89ede37e-n-skills-azure-monitor-query-py-skill-md_89ede37e.md
+canonical_name: azure-monitor-query-py
+canonical_skill_id: skl_azure-monitor-query-py-src-https-github-com-micros-89ede37e-n-skills-azure-monitor-query-py-skill-md_89ede37e
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-09T17:21:47.552Z'
+curation:
+  notes: []
+display_name: azure-monitor-query-py
+identity:
+  aliases: []
+  current_version_id: sha256:95defd74b998e686aa9d28ec8d5ecfc0cb2141bf
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: LICENSE file in repo root; README states MIT
+    spdx: MIT
+    verified: true
+  path: .github/plugins/azure-sdk-python/skills/azure-monitor-query-py/SKILL.md
+  source_id: src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e
+  upstream_ref: null
+  url: null
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-09T17:21:47.552Z'

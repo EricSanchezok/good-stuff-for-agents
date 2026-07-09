@@ -1,0 +1,47 @@
+analysis:
+  hash: null
+  path: catalog/analyses/az/skl_azure-communication-common-java-src-https-github-c-c3d85d47-azure-communication-common-java-skill-md_c3d85d47.md
+canonical_name: azure-communication-common-java
+canonical_skill_id: skl_azure-communication-common-java-src-https-github-c-c3d85d47-azure-communication-common-java-skill-md_c3d85d47
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-09T17:21:44.089Z'
+curation:
+  notes: []
+display_name: azure-communication-common-java
+identity:
+  aliases: []
+  current_version_id: sha256:b7b13710db6b54f823a5af8dbae652a427b1e776
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: LICENSE file in repo root; README states MIT
+    spdx: MIT
+    verified: true
+  path: .github/plugins/azure-sdk-java/skills/azure-communication-common-java/SKILL.md
+  source_id: src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e
+  upstream_ref: null
+  url: null
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-09T17:21:44.089Z'

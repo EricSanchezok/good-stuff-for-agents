@@ -1,0 +1,47 @@
+analysis:
+  hash: null
+  path: catalog/analyses/wi/skl_wiki-vitepress-src-https-github-com-microsoft-skil-3670de21-deep-wiki-skills-wiki-vitepress-skill-md_3670de21.md
+canonical_name: wiki-vitepress
+canonical_skill_id: skl_wiki-vitepress-src-https-github-com-microsoft-skil-3670de21-deep-wiki-skills-wiki-vitepress-skill-md_3670de21
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-09T17:21:54.114Z'
+curation:
+  notes: []
+display_name: wiki-vitepress
+identity:
+  aliases: []
+  current_version_id: sha256:b29a15e05917cb599592604643827c4fc7b6190e
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: LICENSE file in repo root; README states MIT
+    spdx: MIT
+    verified: true
+  path: .github/plugins/deep-wiki/skills/wiki-vitepress/SKILL.md
+  source_id: src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e
+  upstream_ref: null
+  url: null
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-09T17:21:54.114Z'

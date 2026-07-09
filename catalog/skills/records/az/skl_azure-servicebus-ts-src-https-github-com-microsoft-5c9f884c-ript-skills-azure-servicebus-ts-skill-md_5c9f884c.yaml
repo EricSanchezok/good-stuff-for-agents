@@ -1,0 +1,47 @@
+analysis:
+  hash: null
+  path: catalog/analyses/az/skl_azure-servicebus-ts-src-https-github-com-microsoft-5c9f884c-ript-skills-azure-servicebus-ts-skill-md_5c9f884c.md
+canonical_name: azure-servicebus-ts
+canonical_skill_id: skl_azure-servicebus-ts-src-https-github-com-microsoft-5c9f884c-ript-skills-azure-servicebus-ts-skill-md_5c9f884c
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-09T17:21:50.234Z'
+curation:
+  notes: []
+display_name: azure-servicebus-ts
+identity:
+  aliases: []
+  current_version_id: sha256:43e5acb47b8db2aee786f02a19f6c0db19556713
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: LICENSE file in repo root; README states MIT
+    spdx: MIT
+    verified: true
+  path: .github/plugins/azure-sdk-typescript/skills/azure-servicebus-ts/SKILL.md
+  source_id: src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e
+  upstream_ref: null
+  url: null
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-09T17:21:50.234Z'
