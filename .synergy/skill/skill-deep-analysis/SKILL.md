@@ -88,27 +88,40 @@ For each selected skill, prepare the dispatch information:
 
 You now have a list of `(skill_id, raw_url, content_digest, output_path)` tuples ready for dispatch. All values in this tuple come from upstream SCP stages — none are computed or derived in deep analysis.
 
-### Step 3: Dispatch to skill-analyzer subagents in parallel
+### Step 3: Batch dispatch to skill-analyzer subagents in parallel
 
-For each skill in the batch, dispatch a `skill-analyzer` subagent:
+Group the batch into sub-batches of 2-3 skills per subagent. For each sub-batch, dispatch a single `skill-analyzer` subagent with all 2-3 skills' information listed:
 
 ```
 task(
   subagent_type: "skill-analyzer",
   background: true,
-  prompt: "Analyze this skill's source artifact. Follow your 6-question analysis standard.
-Write the result directly to the output path.
+  prompt: "Analyze each skill below. Follow your 6-question analysis standard.
+Write each result directly to its output path. Process them one at a time.
 
-Skill ID: <skill_id>
-Source URL: <raw_url> (direct-download URL from sync; fetch directly, do not convert)
-Source hash: <content_digest> (authoritative hash from sync; use directly, do not recompute)
-Output path: <output_path>"
+Skill 1:
+  ID: <skill_id>
+  URL: <raw_url>
+  Hash: <content_digest>
+  Output: <output_path>
+
+Skill 2:
+  ID: <skill_id>
+  URL: <raw_url>
+  Hash: <content_digest>
+  Output: <output_path>
+
+Skill 3:
+  ID: <skill_id>
+  URL: <raw_url>
+  Hash: <content_digest>
+  Output: <output_path>"
 )
 ```
 
-The subagent will fetch the source, analyze it, write the result (with YAML frontmatter) to the output path, and run validation. You do not need to do any of this yourself.
+Each subagent will fetch each skill's source, analyze it, write the result to disk, and run validation — then move to the next. You do not need to do any of this yourself.
 
-Dispatch all concurrently. Keep at most 5–10 subagents running in parallel. If the batch is larger, dispatch in waves.
+Dispatch all sub-batches concurrently. Keep at most 5-10 subagents running in parallel (each handling 2-3 skills, for 10-30 skills per wave). If the batch is larger, dispatch in waves.
 
 ### Step 4: Review quality
 
