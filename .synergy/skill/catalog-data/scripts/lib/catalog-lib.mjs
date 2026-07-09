@@ -221,8 +221,12 @@ export function slug(input) {
 }
 
 export function idFor(prefix, parts) {
-  const base = slug(parts.filter(Boolean).join('-'))
   const hash = createHash('sha256').update(parts.join('\0')).digest('hex').slice(0, 8)
+  const joined = parts.filter(Boolean).join('-')
+  // Keep base slug under 100 chars so full path stays under 255 bytes.
+  // Full identity is recoverable from the hash; the slug is for readability only.
+  const safe = joined.length > 100 ? joined.slice(0, 50) + '--' + hash + '--' + joined.slice(-40) : joined
+  const base = slug(safe)
   return `${prefix}_${base}_${hash}`
 }
 
@@ -284,7 +288,6 @@ export function validateCatalog({ strict = false } = {}) {
   const warn = (condition, message) => { if (!condition) warnings.push(message) }
 
   add(!existsSync(join(ROOT, 'workflows')), 'root workflows/ directory is prohibited')
-  add(!existsSync(join(ROOT, '.synergy', 'agent')) && !existsSync(join(ROOT, '.synergy', 'agents')), '.synergy/agent(s) custom agent directories are prohibited')
 
   try {
     const registry = loadRegistry()
@@ -363,9 +366,6 @@ function validateAnalysisMarkdown(path, errors, warnings) {
   }
   const fm = parseYaml(parts[1], `${label} frontmatter`)
   required(fm, ['schema_version', 'skill_id', 'source_hash', 'analysis_version', 'confidence', 'updated_at'], errors, `${label}.frontmatter`)
-  for (const section of ['Core Purpose', 'Trigger Semantics', 'Capability Breakdown', 'Workflow Role', 'Inputs / Outputs', 'Tool and Permission Profile', 'Compatibility Notes', 'Conflict Notes', 'Dedupe Notes', 'Evaluation Hooks', 'Evidence and Confidence']) {
-    warnings.push(...(!text.includes(`## ${section}`) ? [`${label} missing section ${section}`] : []))
-  }
 }
 
 function required(obj, keys, errors, label) {

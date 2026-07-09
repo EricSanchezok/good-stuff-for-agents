@@ -87,6 +87,7 @@ async function syncGithubSource(source) {
       content_digest: `sha256:${item.sha}`,
       upstream_ref: sha,
       url: `https://github.com/${repo.owner}/${repo.repo}/blob/${sha}/${item.path}`,
+      raw_url: `https://raw.githubusercontent.com/${repo.owner}/${repo.repo}/${sha}/${item.path}`,
       raw_metadata: { github_blob_sha: item.sha, size: item.size ?? null },
     }))
   const manifest = {
@@ -121,7 +122,18 @@ function matchesAny(path, globs) {
 
 function globMatch(path, glob) {
   if (glob === '**/SKILL.md') return path === 'SKILL.md' || path.endsWith('/SKILL.md')
+  if (glob === '**/*.md') return path.endsWith('.md')
   if (glob === 'node_modules/**') return path === 'node_modules' || path.startsWith('node_modules/') || path.includes('/node_modules/')
-  const escaped = glob.split('**').map((part) => part.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')).join('.*')
-  return new RegExp(`^${escaped}$`).test(path)
+  // Support wildcard: *.ext → equivalent to **/*.ext
+  if (glob.startsWith('*.')) return path.endsWith(glob.slice(1))
+  // Support trailing directory: skills/ → skills/**
+  const normalized = glob.includes('**') ? glob : (glob.endsWith('/') ? glob + '**' : glob + '/**')
+  const parts = normalized.split('**').map(part => part.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'))
+  const pattern = '^' + parts.join('.*') + '$'
+  // For directory patterns like skills/**, also match direct children: skills/*.md
+  const dirSuffix = '/**'
+  const altPattern = normalized.endsWith(dirSuffix)
+    ? '^' + parts.slice(0, -1).join('.*').replace(/\/$/, '') + '(?:/.*)?$'
+    : null
+  return new RegExp(pattern).test(path) || (altPattern ? new RegExp(altPattern).test(path) : false)
 }

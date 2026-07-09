@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-import { analysisPath, idFor, nowIso, parseYamlFile, readDraft, sha256, skillRecordPath, writeYaml } from './lib/catalog-lib.mjs'
+import { analysisPath, idFor, loadRegistry, nowIso, parseYamlFile, readDraft, sha256, skillRecordPath, writeYaml } from './lib/catalog-lib.mjs'
 import { existsSync } from 'node:fs'
 
 const draft = readDraft(process.argv.slice(2))
@@ -37,6 +37,18 @@ const record = {
   curation: draft.curation ?? previous.curation ?? { notes: [] },
   created_at: previous.created_at ?? draft.created_at ?? now,
   updated_at: draft.updated_at ?? now,
+}
+// Auto-inherit license from source registry when draft provides no license
+if (!record.source.license || !record.source.license.spdx) {
+  const registry = loadRegistry()
+  const src = registry.sources.find(s => s.source_id === record.source.source_id)
+  if (src?.license) {
+    record.source.license = {
+      spdx: src.license.spdx ?? null,
+      verified: src.license.verified ?? false,
+      evidence: src.license.evidence ?? null,
+    }
+  }
 }
 writeYaml(target, record)
 console.log(JSON.stringify(record, null, 2))
