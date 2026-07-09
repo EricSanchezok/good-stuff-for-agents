@@ -107,7 +107,10 @@ if ! $KEEP_DOCS; then
   REPORT_PATTERNS+=("docs/")
 fi
 
-ALL_PATTERNS=("${GROWTH_PATTERNS[@]}" "${INDEX_PATTERNS[@]}" "${REPORT_PATTERNS[@]}")
+ALL_PATTERNS=()
+for pat in "${GROWTH_PATTERNS[@]:-}" "${INDEX_PATTERNS[@]:-}" "${REPORT_PATTERNS[@]:-}"; do
+  [ -n "$pat" ] && ALL_PATTERNS+=("$pat")
+done
 
 # ── 3. 预览 ──
 ALL_FILES_TMP=$(mktemp)
