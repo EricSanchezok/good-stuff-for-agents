@@ -1,0 +1,45 @@
+analysis:
+  hash: null
+  path: catalog/analyses/sk/skill_legendaryabhi-agent-skills-hub-agent-skills-hub-ag-senior-fullstack.md
+canonical_name: senior-fullstack
+canonical_skill_id: skill_legendaryabhi-agent-skills-hub-agent-skills-hub-ag-senior-fullstack
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-09T10:22:49.602Z'
+curation:
+  notes: []
+display_name: senior-fullstack
+identity:
+  aliases: []
+  current_version_id: sha256:43f9d9e6a2da03c04aeb2e8ba05c57f708b5fbb0
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: LICENSE + ATTRIBUTION.md for upstream sources
+    spdx: MIT
+    verified: true
+  path: skills/senior-fullstack/SKILL.md
+  source_id: src_https-github-com-legendaryabhi-agent-skills-hub-agent-skills-hub-agent-skills-hub_231e1728
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-09T10:22:49.602Z'

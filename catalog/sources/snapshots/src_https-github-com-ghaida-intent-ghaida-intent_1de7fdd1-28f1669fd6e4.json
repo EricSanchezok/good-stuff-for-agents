@@ -1,0 +1,346 @@
+{
+  "schema_version": 1,
+  "source_id": "src_https-github-com-ghaida-intent-ghaida-intent_1de7fdd1",
+  "upstream_ref": "28f1669fd6e473b596757673b9a71a1c38828390",
+  "checked_at": "2026-07-09T10:16:47.892Z",
+  "url": "https://github.com/ghaida/intent",
+  "artifacts": [
+    {
+      "source_id": "src_https-github-com-ghaida-intent-ghaida-intent_1de7fdd1",
+      "path": "skills/articulate/SKILL.md",
+      "declared_name": "articulate",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:001a0e3519cdcb715e34a597ca5a97f0d5900f65",
+      "upstream_ref": "28f1669fd6e473b596757673b9a71a1c38828390",
+      "url": "https://github.com/ghaida/intent/blob/28f1669fd6e473b596757673b9a71a1c38828390/skills/articulate/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "001a0e3519cdcb715e34a597ca5a97f0d5900f65",
+        "size": 22827
+      }
+    },
+    {
+      "source_id": "src_https-github-com-ghaida-intent-ghaida-intent_1de7fdd1",
+      "path": "skills/blueprint/SKILL.md",
+      "declared_name": "blueprint",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:ff128aab1ad7eb8dd925858334d305995c0e7df2",
+      "upstream_ref": "28f1669fd6e473b596757673b9a71a1c38828390",
+      "url": "https://github.com/ghaida/intent/blob/28f1669fd6e473b596757673b9a71a1c38828390/skills/blueprint/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "ff128aab1ad7eb8dd925858334d305995c0e7df2",
+        "size": 28982
+      }
+    },
+    {
+      "source_id": "src_https-github-com-ghaida-intent-ghaida-intent_1de7fdd1",
+      "path": "skills/evaluate/SKILL.md",
+      "declared_name": "evaluate",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:d4626506d7e75e7601399d863cd2bc977a1532ad",
+      "upstream_ref": "28f1669fd6e473b596757673b9a71a1c38828390",
+      "url": "https://github.com/ghaida/intent/blob/28f1669fd6e473b596757673b9a71a1c38828390/skills/evaluate/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "d4626506d7e75e7601399d863cd2bc977a1532ad",
+        "size": 27307
+      }
+    },
+    {
+      "source_id": "src_https-github-com-ghaida-intent-ghaida-intent_1de7fdd1",
+      "path": "skills/fortify/SKILL.md",
+      "declared_name": "fortify",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:343ca8069daacf90fb8e49640c59ee785e6b93bc",
+      "upstream_ref": "28f1669fd6e473b596757673b9a71a1c38828390",
+      "url": "https://github.com/ghaida/intent/blob/28f1669fd6e473b596757673b9a71a1c38828390/skills/fortify/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "343ca8069daacf90fb8e49640c59ee785e6b93bc",
+        "size": 22499
+      }
+    },
+    {
+      "source_id": "src_https-github-com-ghaida-intent-ghaida-intent_1de7fdd1",
+      "path": "skills/include/SKILL.md",
+      "declared_name": "include",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:5e4c37855f8f77842ebfa48beff638c588aebc98",
+      "upstream_ref": "28f1669fd6e473b596757673b9a71a1c38828390",
+      "url": "https://github.com/ghaida/intent/blob/28f1669fd6e473b596757673b9a71a1c38828390/skills/include/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "5e4c37855f8f77842ebfa48beff638c588aebc98",
+        "size": 31718
+      }
+    },
+    {
+      "source_id": "src_https-github-com-ghaida-intent-ghaida-intent_1de7fdd1",
+      "path": "skills/intent/SKILL.md",
+      "declared_name": "intent",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:83754c13ce7b20ec9282773ad3273b838c984833",
+      "upstream_ref": "28f1669fd6e473b596757673b9a71a1c38828390",
+      "url": "https://github.com/ghaida/intent/blob/28f1669fd6e473b596757673b9a71a1c38828390/skills/intent/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "83754c13ce7b20ec9282773ad3273b838c984833",
+        "size": 42940
+      }
+    },
+    {
+      "source_id": "src_https-github-com-ghaida-intent-ghaida-intent_1de7fdd1",
+      "path": "skills/intent/references/accessibility-foundations.md",
+      "declared_name": "references",
+      "format": "markdown",
+      "parse_confidence": "medium",
+      "content_digest": "sha256:f02c42a14c0d23b0e3d4336b24472e1129858b6b",
+      "upstream_ref": "28f1669fd6e473b596757673b9a71a1c38828390",
+      "url": "https://github.com/ghaida/intent/blob/28f1669fd6e473b596757673b9a71a1c38828390/skills/intent/references/accessibility-foundations.md",
+      "raw_metadata": {
+        "github_blob_sha": "f02c42a14c0d23b0e3d4336b24472e1129858b6b",
+        "size": 16702
+      }
+    },
+    {
+      "source_id": "src_https-github-com-ghaida-intent-ghaida-intent_1de7fdd1",
+      "path": "skills/intent/references/content-strategy.md",
+      "declared_name": "references",
+      "format": "markdown",
+      "parse_confidence": "medium",
+      "content_digest": "sha256:88d1f27c6551cca1fb706be3c1fd74c8f6262cdd",
+      "upstream_ref": "28f1669fd6e473b596757673b9a71a1c38828390",
+      "url": "https://github.com/ghaida/intent/blob/28f1669fd6e473b596757673b9a71a1c38828390/skills/intent/references/content-strategy.md",
+      "raw_metadata": {
+        "github_blob_sha": "88d1f27c6551cca1fb706be3c1fd74c8f6262cdd",
+        "size": 15127
+      }
+    },
+    {
+      "source_id": "src_https-github-com-ghaida-intent-ghaida-intent_1de7fdd1",
+      "path": "skills/intent/references/ethical-design.md",
+      "declared_name": "references",
+      "format": "markdown",
+      "parse_confidence": "medium",
+      "content_digest": "sha256:c074527bddc57147d036413e61905464793698f9",
+      "upstream_ref": "28f1669fd6e473b596757673b9a71a1c38828390",
+      "url": "https://github.com/ghaida/intent/blob/28f1669fd6e473b596757673b9a71a1c38828390/skills/intent/references/ethical-design.md",
+      "raw_metadata": {
+        "github_blob_sha": "c074527bddc57147d036413e61905464793698f9",
+        "size": 16224
+      }
+    },
+    {
+      "source_id": "src_https-github-com-ghaida-intent-ghaida-intent_1de7fdd1",
+      "path": "skills/intent/references/information-architecture.md",
+      "declared_name": "references",
+      "format": "markdown",
+      "parse_confidence": "medium",
+      "content_digest": "sha256:4ce2dda817a1bf658cc531d6b256a9dcc48d685d",
+      "upstream_ref": "28f1669fd6e473b596757673b9a71a1c38828390",
+      "url": "https://github.com/ghaida/intent/blob/28f1669fd6e473b596757673b9a71a1c38828390/skills/intent/references/information-architecture.md",
+      "raw_metadata": {
+        "github_blob_sha": "4ce2dda817a1bf658cc531d6b256a9dcc48d685d",
+        "size": 15598
+      }
+    },
+    {
+      "source_id": "src_https-github-com-ghaida-intent-ghaida-intent_1de7fdd1",
+      "path": "skills/intent/references/interaction-patterns.md",
+      "declared_name": "references",
+      "format": "markdown",
+      "parse_confidence": "medium",
+      "content_digest": "sha256:ae819134ca3aaf7bd9fb7a9a039873f2709f2364",
+      "upstream_ref": "28f1669fd6e473b596757673b9a71a1c38828390",
+      "url": "https://github.com/ghaida/intent/blob/28f1669fd6e473b596757673b9a71a1c38828390/skills/intent/references/interaction-patterns.md",
+      "raw_metadata": {
+        "github_blob_sha": "ae819134ca3aaf7bd9fb7a9a039873f2709f2364",
+        "size": 16196
+      }
+    },
+    {
+      "source_id": "src_https-github-com-ghaida-intent-ghaida-intent_1de7fdd1",
+      "path": "skills/intent/references/measurement-frameworks.md",
+      "declared_name": "references",
+      "format": "markdown",
+      "parse_confidence": "medium",
+      "content_digest": "sha256:e1d21ccf688f86419a547d0735a887ab8d577d59",
+      "upstream_ref": "28f1669fd6e473b596757673b9a71a1c38828390",
+      "url": "https://github.com/ghaida/intent/blob/28f1669fd6e473b596757673b9a71a1c38828390/skills/intent/references/measurement-frameworks.md",
+      "raw_metadata": {
+        "github_blob_sha": "e1d21ccf688f86419a547d0735a887ab8d577d59",
+        "size": 17045
+      }
+    },
+    {
+      "source_id": "src_https-github-com-ghaida-intent-ghaida-intent_1de7fdd1",
+      "path": "skills/intent/references/research-methods.md",
+      "declared_name": "references",
+      "format": "markdown",
+      "parse_confidence": "medium",
+      "content_digest": "sha256:4f71c1b561e68cf4d40293894b63a154e5641f82",
+      "upstream_ref": "28f1669fd6e473b596757673b9a71a1c38828390",
+      "url": "https://github.com/ghaida/intent/blob/28f1669fd6e473b596757673b9a71a1c38828390/skills/intent/references/research-methods.md",
+      "raw_metadata": {
+        "github_blob_sha": "4f71c1b561e68cf4d40293894b63a154e5641f82",
+        "size": 16827
+      }
+    },
+    {
+      "source_id": "src_https-github-com-ghaida-intent-ghaida-intent_1de7fdd1",
+      "path": "skills/intent/references/service-design.md",
+      "declared_name": "references",
+      "format": "markdown",
+      "parse_confidence": "medium",
+      "content_digest": "sha256:927caa1c82fe4f125abc71899856e0917611bb45",
+      "upstream_ref": "28f1669fd6e473b596757673b9a71a1c38828390",
+      "url": "https://github.com/ghaida/intent/blob/28f1669fd6e473b596757673b9a71a1c38828390/skills/intent/references/service-design.md",
+      "raw_metadata": {
+        "github_blob_sha": "927caa1c82fe4f125abc71899856e0917611bb45",
+        "size": 15063
+      }
+    },
+    {
+      "source_id": "src_https-github-com-ghaida-intent-ghaida-intent_1de7fdd1",
+      "path": "skills/investigate/SKILL.md",
+      "declared_name": "investigate",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:2bd0442c866344e542ffab44acbb65670bbe5c43",
+      "upstream_ref": "28f1669fd6e473b596757673b9a71a1c38828390",
+      "url": "https://github.com/ghaida/intent/blob/28f1669fd6e473b596757673b9a71a1c38828390/skills/investigate/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "2bd0442c866344e542ffab44acbb65670bbe5c43",
+        "size": 29165
+      }
+    },
+    {
+      "source_id": "src_https-github-com-ghaida-intent-ghaida-intent_1de7fdd1",
+      "path": "skills/journey/SKILL.md",
+      "declared_name": "journey",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:f50d9c17b80c0884fc3b877342c39c4209407f1f",
+      "upstream_ref": "28f1669fd6e473b596757673b9a71a1c38828390",
+      "url": "https://github.com/ghaida/intent/blob/28f1669fd6e473b596757673b9a71a1c38828390/skills/journey/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "f50d9c17b80c0884fc3b877342c39c4209407f1f",
+        "size": 30048
+      }
+    },
+    {
+      "source_id": "src_https-github-com-ghaida-intent-ghaida-intent_1de7fdd1",
+      "path": "skills/localize/SKILL.md",
+      "declared_name": "localize",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:08333897a2e43994041e12643ebc8e11e3201388",
+      "upstream_ref": "28f1669fd6e473b596757673b9a71a1c38828390",
+      "url": "https://github.com/ghaida/intent/blob/28f1669fd6e473b596757673b9a71a1c38828390/skills/localize/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "08333897a2e43994041e12643ebc8e11e3201388",
+        "size": 18194
+      }
+    },
+    {
+      "source_id": "src_https-github-com-ghaida-intent-ghaida-intent_1de7fdd1",
+      "path": "skills/measure/SKILL.md",
+      "declared_name": "measure",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:6de53c0914f9706c1ec938bbc72bc5f77287d46a",
+      "upstream_ref": "28f1669fd6e473b596757673b9a71a1c38828390",
+      "url": "https://github.com/ghaida/intent/blob/28f1669fd6e473b596757673b9a71a1c38828390/skills/measure/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "6de53c0914f9706c1ec938bbc72bc5f77287d46a",
+        "size": 20630
+      }
+    },
+    {
+      "source_id": "src_https-github-com-ghaida-intent-ghaida-intent_1de7fdd1",
+      "path": "skills/organize/SKILL.md",
+      "declared_name": "organize",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:cb4e5a63a87893981c86c0d8a277e43d62479a9e",
+      "upstream_ref": "28f1669fd6e473b596757673b9a71a1c38828390",
+      "url": "https://github.com/ghaida/intent/blob/28f1669fd6e473b596757673b9a71a1c38828390/skills/organize/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "cb4e5a63a87893981c86c0d8a277e43d62479a9e",
+        "size": 32214
+      }
+    },
+    {
+      "source_id": "src_https-github-com-ghaida-intent-ghaida-intent_1de7fdd1",
+      "path": "skills/philosopher/SKILL.md",
+      "declared_name": "philosopher",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:f549e81f4015ed1773fe5f57e0a62f5284e8c449",
+      "upstream_ref": "28f1669fd6e473b596757673b9a71a1c38828390",
+      "url": "https://github.com/ghaida/intent/blob/28f1669fd6e473b596757673b9a71a1c38828390/skills/philosopher/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "f549e81f4015ed1773fe5f57e0a62f5284e8c449",
+        "size": 18130
+      }
+    },
+    {
+      "source_id": "src_https-github-com-ghaida-intent-ghaida-intent_1de7fdd1",
+      "path": "skills/specify/SKILL.md",
+      "declared_name": "specify",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:6b87d9a5f89cd15f76f7b8fc18a120a08be097d6",
+      "upstream_ref": "28f1669fd6e473b596757673b9a71a1c38828390",
+      "url": "https://github.com/ghaida/intent/blob/28f1669fd6e473b596757673b9a71a1c38828390/skills/specify/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "6b87d9a5f89cd15f76f7b8fc18a120a08be097d6",
+        "size": 15531
+      }
+    },
+    {
+      "source_id": "src_https-github-com-ghaida-intent-ghaida-intent_1de7fdd1",
+      "path": "skills/storytelling/SKILL.md",
+      "declared_name": "storytelling",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:ad05a4150c5b4d4aecbe497f9f2e15ebc4873a54",
+      "upstream_ref": "28f1669fd6e473b596757673b9a71a1c38828390",
+      "url": "https://github.com/ghaida/intent/blob/28f1669fd6e473b596757673b9a71a1c38828390/skills/storytelling/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "ad05a4150c5b4d4aecbe497f9f2e15ebc4873a54",
+        "size": 13698
+      }
+    },
+    {
+      "source_id": "src_https-github-com-ghaida-intent-ghaida-intent_1de7fdd1",
+      "path": "skills/strategize/SKILL.md",
+      "declared_name": "strategize",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:c9a5ca450e92c2cb05e60eea4346383cfb435501",
+      "upstream_ref": "28f1669fd6e473b596757673b9a71a1c38828390",
+      "url": "https://github.com/ghaida/intent/blob/28f1669fd6e473b596757673b9a71a1c38828390/skills/strategize/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "c9a5ca450e92c2cb05e60eea4346383cfb435501",
+        "size": 24436
+      }
+    },
+    {
+      "source_id": "src_https-github-com-ghaida-intent-ghaida-intent_1de7fdd1",
+      "path": "skills/transpose/SKILL.md",
+      "declared_name": "transpose",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:53b60844f3eab16100886579735270e794bbc66c",
+      "upstream_ref": "28f1669fd6e473b596757673b9a71a1c38828390",
+      "url": "https://github.com/ghaida/intent/blob/28f1669fd6e473b596757673b9a71a1c38828390/skills/transpose/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "53b60844f3eab16100886579735270e794bbc66c",
+        "size": 15701
+      }
+    }
+  ],
+  "digest": "sha256:b32b3ddb8bcaec3ad95c5df88c11f4641be1fc3ce3c4744ba198931f0b475610"
+}

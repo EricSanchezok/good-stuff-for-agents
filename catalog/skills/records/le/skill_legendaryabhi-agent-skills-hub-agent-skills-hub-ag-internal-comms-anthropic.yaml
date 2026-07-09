@@ -1,0 +1,45 @@
+analysis:
+  hash: null
+  path: catalog/analyses/sk/skill_legendaryabhi-agent-skills-hub-agent-skills-hub-ag-internal-comms-anthropic.md
+canonical_name: internal-comms-anthropic
+canonical_skill_id: skill_legendaryabhi-agent-skills-hub-agent-skills-hub-ag-internal-comms-anthropic
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-09T10:22:34.094Z'
+curation:
+  notes: []
+display_name: internal-comms-anthropic
+identity:
+  aliases: []
+  current_version_id: sha256:56ea935b74f371bfeb4c7d3c19d5139df866e73b
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: LICENSE + ATTRIBUTION.md for upstream sources
+    spdx: MIT
+    verified: true
+  path: skills/internal-comms-anthropic/SKILL.md
+  source_id: src_https-github-com-legendaryabhi-agent-skills-hub-agent-skills-hub-agent-skills-hub_231e1728
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-09T10:22:34.094Z'

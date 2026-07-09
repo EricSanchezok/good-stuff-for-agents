@@ -1,0 +1,45 @@
+analysis:
+  hash: null
+  path: catalog/analyses/sk/skill_addyosmani-agent-skills-addyosmani-agent-skills-ec-debugging-and-error-recovery.md
+canonical_name: debugging-and-error-recovery
+canonical_skill_id: skill_addyosmani-agent-skills-addyosmani-agent-skills-ec-debugging-and-error-recovery
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-09T10:23:01.011Z'
+curation:
+  notes: []
+display_name: debugging-and-error-recovery
+identity:
+  aliases: []
+  current_version_id: sha256:51743d47c2f9ddb699a6d8084c29b709d017b529
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: LICENSE file in repo root
+    spdx: MIT
+    verified: true
+  path: skills/debugging-and-error-recovery/SKILL.md
+  source_id: src_https-github-com-addyosmani-agent-skills-addyosmani-agent-skills_ec0a2dc8
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-09T10:23:01.011Z'

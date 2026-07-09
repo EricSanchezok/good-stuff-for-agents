@@ -1,0 +1,45 @@
+analysis:
+  hash: null
+  path: catalog/analyses/sk/skill_legendaryabhi-agent-skills-hub-agent-skills-hub-ag-nestjs-expert.md
+canonical_name: nestjs-expert
+canonical_skill_id: skill_legendaryabhi-agent-skills-hub-agent-skills-hub-ag-nestjs-expert
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-09T10:22:39.172Z'
+curation:
+  notes: []
+display_name: nestjs-expert
+identity:
+  aliases: []
+  current_version_id: sha256:e224f672eef68391d8c5834d56c13fe438b69494
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: LICENSE + ATTRIBUTION.md for upstream sources
+    spdx: MIT
+    verified: true
+  path: skills/nestjs-expert/SKILL.md
+  source_id: src_https-github-com-legendaryabhi-agent-skills-hub-agent-skills-hub-agent-skills-hub_231e1728
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-09T10:22:39.172Z'

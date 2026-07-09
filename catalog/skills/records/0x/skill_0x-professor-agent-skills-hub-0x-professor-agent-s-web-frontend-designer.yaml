@@ -1,0 +1,45 @@
+analysis:
+  hash: null
+  path: catalog/analyses/sk/skill_0x-professor-agent-skills-hub-0x-professor-agent-s-web-frontend-designer.md
+canonical_name: web-frontend-designer
+canonical_skill_id: skill_0x-professor-agent-skills-hub-0x-professor-agent-s-web-frontend-designer
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-09T10:23:04.544Z'
+curation:
+  notes: []
+display_name: web-frontend-designer
+identity:
+  aliases: []
+  current_version_id: sha256:ed9fa1702c4d27e13f925e6f086bc2bc9705fbab
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: LICENSE file in repo root
+    spdx: Apache-2.0
+    verified: true
+  path: skills/web-frontend-designer/SKILL.md
+  source_id: src_https-github-com-0x-professor-agent-skills-hub-0x-professor-agent-skills-hub_cd705ae8
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-09T10:23:04.544Z'

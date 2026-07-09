@@ -1,0 +1,45 @@
+analysis:
+  hash: null
+  path: catalog/analyses/sk/skill_legendaryabhi-agent-skills-hub-agent-skills-hub-ag-ab-test-setup.md
+canonical_name: ab-test-setup
+canonical_skill_id: skill_legendaryabhi-agent-skills-hub-agent-skills-hub-ag-ab-test-setup
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-09T10:22:12.137Z'
+curation:
+  notes: []
+display_name: ab-test-setup
+identity:
+  aliases: []
+  current_version_id: sha256:1039a92731af2e2f0a70be27a9398060141680e7
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: LICENSE + ATTRIBUTION.md for upstream sources
+    spdx: MIT
+    verified: true
+  path: skills/ab-test-setup/SKILL.md
+  source_id: src_https-github-com-legendaryabhi-agent-skills-hub-agent-skills-hub-agent-skills-hub_231e1728
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-09T10:22:12.137Z'

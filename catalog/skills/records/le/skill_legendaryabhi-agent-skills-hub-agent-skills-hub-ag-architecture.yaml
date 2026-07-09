@@ -1,0 +1,45 @@
+analysis:
+  hash: null
+  path: catalog/analyses/sk/skill_legendaryabhi-agent-skills-hub-agent-skills-hub-ag-architecture.md
+canonical_name: architecture
+canonical_skill_id: skill_legendaryabhi-agent-skills-hub-agent-skills-hub-ag-architecture
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-09T10:22:14.799Z'
+curation:
+  notes: []
+display_name: architecture
+identity:
+  aliases: []
+  current_version_id: sha256:3e4f6ad3411d31cd53c90f3d7e1d6e266cd211f8
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: LICENSE + ATTRIBUTION.md for upstream sources
+    spdx: MIT
+    verified: true
+  path: skills/architecture/SKILL.md
+  source_id: src_https-github-com-legendaryabhi-agent-skills-hub-agent-skills-hub-agent-skills-hub_231e1728
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-09T10:22:14.799Z'

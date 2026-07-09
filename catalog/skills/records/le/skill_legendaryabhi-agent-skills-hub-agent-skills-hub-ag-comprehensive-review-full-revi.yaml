@@ -1,0 +1,45 @@
+analysis:
+  hash: null
+  path: catalog/analyses/sk/skill_legendaryabhi-agent-skills-hub-agent-skills-hub-ag-comprehensive-review-full-revi.md
+canonical_name: comprehensive-review-full-review
+canonical_skill_id: skill_legendaryabhi-agent-skills-hub-agent-skills-hub-ag-comprehensive-review-full-revi
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-09T10:22:20.892Z'
+curation:
+  notes: []
+display_name: comprehensive-review-full-review
+identity:
+  aliases: []
+  current_version_id: sha256:ec52bb9c653ef3eb33f603904a96f441df6ae0d6
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: LICENSE + ATTRIBUTION.md for upstream sources
+    spdx: MIT
+    verified: true
+  path: skills/comprehensive-review-full-review/SKILL.md
+  source_id: src_https-github-com-legendaryabhi-agent-skills-hub-agent-skills-hub-agent-skills-hub_231e1728
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-09T10:22:20.892Z'

@@ -1,0 +1,45 @@
+analysis:
+  hash: null
+  path: catalog/analyses/sk/skill_legendaryabhi-agent-skills-hub-agent-skills-hub-ag-c4-architecture-c4-architectur.md
+canonical_name: c4-architecture-c4-architecture
+canonical_skill_id: skill_legendaryabhi-agent-skills-hub-agent-skills-hub-ag-c4-architecture-c4-architectur
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-09T10:22:17.855Z'
+curation:
+  notes: []
+display_name: c4-architecture-c4-architecture
+identity:
+  aliases: []
+  current_version_id: sha256:bf5386d94fd1684bb29ca8a142110299708e53bb
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: LICENSE + ATTRIBUTION.md for upstream sources
+    spdx: MIT
+    verified: true
+  path: skills/c4-architecture-c4-architecture/SKILL.md
+  source_id: src_https-github-com-legendaryabhi-agent-skills-hub-agent-skills-hub-agent-skills-hub_231e1728
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-09T10:22:17.855Z'

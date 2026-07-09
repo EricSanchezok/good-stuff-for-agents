@@ -1,0 +1,45 @@
+analysis:
+  hash: null
+  path: catalog/analyses/sk/skill_0x-professor-agent-skills-hub-0x-professor-agent-s-ml-experiment-tracker.md
+canonical_name: ml-experiment-tracker
+canonical_skill_id: skill_0x-professor-agent-skills-hub-0x-professor-agent-s-ml-experiment-tracker
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-09T10:23:02.494Z'
+curation:
+  notes: []
+display_name: ml-experiment-tracker
+identity:
+  aliases: []
+  current_version_id: sha256:e35e314163a86a0c680a4b67047a4af977e56078
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: LICENSE file in repo root
+    spdx: Apache-2.0
+    verified: true
+  path: skills/ml-experiment-tracker/SKILL.md
+  source_id: src_https-github-com-0x-professor-agent-skills-hub-0x-professor-agent-skills-hub_cd705ae8
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-09T10:23:02.494Z'

@@ -1,0 +1,45 @@
+analysis:
+  hash: null
+  path: catalog/analyses/sk/skill_legendaryabhi-agent-skills-hub-agent-skills-hub-ag-observability-monitoring-slo-i.md
+canonical_name: observability-monitoring-slo-implement
+canonical_skill_id: skill_legendaryabhi-agent-skills-hub-agent-skills-hub-ag-observability-monitoring-slo-i
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-09T10:22:40.369Z'
+curation:
+  notes: []
+display_name: observability-monitoring-slo-implement
+identity:
+  aliases: []
+  current_version_id: sha256:0513fb9882c7c39c344fbab77d4a1a011b55b265
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: LICENSE + ATTRIBUTION.md for upstream sources
+    spdx: MIT
+    verified: true
+  path: skills/observability-monitoring-slo-implement/SKILL.md
+  source_id: src_https-github-com-legendaryabhi-agent-skills-hub-agent-skills-hub-agent-skills-hub_231e1728
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-09T10:22:40.369Z'

@@ -1,0 +1,346 @@
+{
+  "schema_version": 1,
+  "source_id": "src_https-github-com-addyosmani-agent-skills-addyosmani-agent-skills_ec0a2dc8",
+  "upstream_ref": "0e63d8ea962ecac51637421d8fff63702fac766b",
+  "checked_at": "2026-07-09T10:16:46.801Z",
+  "url": "https://github.com/addyosmani/agent-skills",
+  "artifacts": [
+    {
+      "source_id": "src_https-github-com-addyosmani-agent-skills-addyosmani-agent-skills_ec0a2dc8",
+      "path": "skills/api-and-interface-design/SKILL.md",
+      "declared_name": "api-and-interface-design",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:012c8b68ccc5eca5924c2686202700387b38b72f",
+      "upstream_ref": "0e63d8ea962ecac51637421d8fff63702fac766b",
+      "url": "https://github.com/addyosmani/agent-skills/blob/0e63d8ea962ecac51637421d8fff63702fac766b/skills/api-and-interface-design/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "012c8b68ccc5eca5924c2686202700387b38b72f",
+        "size": 10307
+      }
+    },
+    {
+      "source_id": "src_https-github-com-addyosmani-agent-skills-addyosmani-agent-skills_ec0a2dc8",
+      "path": "skills/browser-testing-with-devtools/SKILL.md",
+      "declared_name": "browser-testing-with-devtools",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:9864d2724e273e1164d62ab10b73590ae00fd6a8",
+      "upstream_ref": "0e63d8ea962ecac51637421d8fff63702fac766b",
+      "url": "https://github.com/addyosmani/agent-skills/blob/0e63d8ea962ecac51637421d8fff63702fac766b/skills/browser-testing-with-devtools/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "9864d2724e273e1164d62ab10b73590ae00fd6a8",
+        "size": 14539
+      }
+    },
+    {
+      "source_id": "src_https-github-com-addyosmani-agent-skills-addyosmani-agent-skills_ec0a2dc8",
+      "path": "skills/ci-cd-and-automation/SKILL.md",
+      "declared_name": "ci-cd-and-automation",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:118456fcb10225c030769a4fee7815b9c536b0ce",
+      "upstream_ref": "0e63d8ea962ecac51637421d8fff63702fac766b",
+      "url": "https://github.com/addyosmani/agent-skills/blob/0e63d8ea962ecac51637421d8fff63702fac766b/skills/ci-cd-and-automation/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "118456fcb10225c030769a4fee7815b9c536b0ce",
+        "size": 11332
+      }
+    },
+    {
+      "source_id": "src_https-github-com-addyosmani-agent-skills-addyosmani-agent-skills_ec0a2dc8",
+      "path": "skills/code-review-and-quality/SKILL.md",
+      "declared_name": "code-review-and-quality",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:5efda7afb5d0e4a5393c5a7da84e15b197f7b5b6",
+      "upstream_ref": "0e63d8ea962ecac51637421d8fff63702fac766b",
+      "url": "https://github.com/addyosmani/agent-skills/blob/0e63d8ea962ecac51637421d8fff63702fac766b/skills/code-review-and-quality/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "5efda7afb5d0e4a5393c5a7da84e15b197f7b5b6",
+        "size": 18456
+      }
+    },
+    {
+      "source_id": "src_https-github-com-addyosmani-agent-skills-addyosmani-agent-skills_ec0a2dc8",
+      "path": "skills/code-simplification/SKILL.md",
+      "declared_name": "code-simplification",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:239b2848489511de30d9e63b0bd183adc4b01347",
+      "upstream_ref": "0e63d8ea962ecac51637421d8fff63702fac766b",
+      "url": "https://github.com/addyosmani/agent-skills/blob/0e63d8ea962ecac51637421d8fff63702fac766b/skills/code-simplification/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "239b2848489511de30d9e63b0bd183adc4b01347",
+        "size": 13545
+      }
+    },
+    {
+      "source_id": "src_https-github-com-addyosmani-agent-skills-addyosmani-agent-skills_ec0a2dc8",
+      "path": "skills/context-engineering/SKILL.md",
+      "declared_name": "context-engineering",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:be991103fe2b13f7e5f6f5da9d3c6029ad30ac64",
+      "upstream_ref": "0e63d8ea962ecac51637421d8fff63702fac766b",
+      "url": "https://github.com/addyosmani/agent-skills/blob/0e63d8ea962ecac51637421d8fff63702fac766b/skills/context-engineering/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "be991103fe2b13f7e5f6f5da9d3c6029ad30ac64",
+        "size": 11070
+      }
+    },
+    {
+      "source_id": "src_https-github-com-addyosmani-agent-skills-addyosmani-agent-skills_ec0a2dc8",
+      "path": "skills/debugging-and-error-recovery/SKILL.md",
+      "declared_name": "debugging-and-error-recovery",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:51743d47c2f9ddb699a6d8084c29b709d017b529",
+      "upstream_ref": "0e63d8ea962ecac51637421d8fff63702fac766b",
+      "url": "https://github.com/addyosmani/agent-skills/blob/0e63d8ea962ecac51637421d8fff63702fac766b/skills/debugging-and-error-recovery/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "51743d47c2f9ddb699a6d8084c29b709d017b529",
+        "size": 10603
+      }
+    },
+    {
+      "source_id": "src_https-github-com-addyosmani-agent-skills-addyosmani-agent-skills_ec0a2dc8",
+      "path": "skills/deprecation-and-migration/SKILL.md",
+      "declared_name": "deprecation-and-migration",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:258e2a0396c9c2cb639cff84a9db64753740be96",
+      "upstream_ref": "0e63d8ea962ecac51637421d8fff63702fac766b",
+      "url": "https://github.com/addyosmani/agent-skills/blob/0e63d8ea962ecac51637421d8fff63702fac766b/skills/deprecation-and-migration/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "258e2a0396c9c2cb639cff84a9db64753740be96",
+        "size": 9000
+      }
+    },
+    {
+      "source_id": "src_https-github-com-addyosmani-agent-skills-addyosmani-agent-skills_ec0a2dc8",
+      "path": "skills/documentation-and-adrs/SKILL.md",
+      "declared_name": "documentation-and-adrs",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:061c5e1a0a9faf07bd8c65bbd03141fab7b044bd",
+      "upstream_ref": "0e63d8ea962ecac51637421d8fff63702fac766b",
+      "url": "https://github.com/addyosmani/agent-skills/blob/0e63d8ea962ecac51637421d8fff63702fac766b/skills/documentation-and-adrs/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "061c5e1a0a9faf07bd8c65bbd03141fab7b044bd",
+        "size": 8734
+      }
+    },
+    {
+      "source_id": "src_https-github-com-addyosmani-agent-skills-addyosmani-agent-skills_ec0a2dc8",
+      "path": "skills/doubt-driven-development/SKILL.md",
+      "declared_name": "doubt-driven-development",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:f5bc53d01ca0c5bdf178fba1c38c9817b39b63ec",
+      "upstream_ref": "0e63d8ea962ecac51637421d8fff63702fac766b",
+      "url": "https://github.com/addyosmani/agent-skills/blob/0e63d8ea962ecac51637421d8fff63702fac766b/skills/doubt-driven-development/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "f5bc53d01ca0c5bdf178fba1c38c9817b39b63ec",
+        "size": 16487
+      }
+    },
+    {
+      "source_id": "src_https-github-com-addyosmani-agent-skills-addyosmani-agent-skills_ec0a2dc8",
+      "path": "skills/frontend-ui-engineering/SKILL.md",
+      "declared_name": "frontend-ui-engineering",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:d4973d4a9e84ad882cf5e52deeed41ebbe8f81ee",
+      "upstream_ref": "0e63d8ea962ecac51637421d8fff63702fac766b",
+      "url": "https://github.com/addyosmani/agent-skills/blob/0e63d8ea962ecac51637421d8fff63702fac766b/skills/frontend-ui-engineering/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "d4973d4a9e84ad882cf5e52deeed41ebbe8f81ee",
+        "size": 10639
+      }
+    },
+    {
+      "source_id": "src_https-github-com-addyosmani-agent-skills-addyosmani-agent-skills_ec0a2dc8",
+      "path": "skills/git-workflow-and-versioning/SKILL.md",
+      "declared_name": "git-workflow-and-versioning",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:6b33aefe602eee4d43ae77e12329827eba5b70cc",
+      "upstream_ref": "0e63d8ea962ecac51637421d8fff63702fac766b",
+      "url": "https://github.com/addyosmani/agent-skills/blob/0e63d8ea962ecac51637421d8fff63702fac766b/skills/git-workflow-and-versioning/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "6b33aefe602eee4d43ae77e12329827eba5b70cc",
+        "size": 14000
+      }
+    },
+    {
+      "source_id": "src_https-github-com-addyosmani-agent-skills-addyosmani-agent-skills_ec0a2dc8",
+      "path": "skills/idea-refine/SKILL.md",
+      "declared_name": "idea-refine",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:38955e8943f2ea68c041f10ef1902d94bdfb1cb9",
+      "upstream_ref": "0e63d8ea962ecac51637421d8fff63702fac766b",
+      "url": "https://github.com/addyosmani/agent-skills/blob/0e63d8ea962ecac51637421d8fff63702fac766b/skills/idea-refine/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "38955e8943f2ea68c041f10ef1902d94bdfb1cb9",
+        "size": 8111
+      }
+    },
+    {
+      "source_id": "src_https-github-com-addyosmani-agent-skills-addyosmani-agent-skills_ec0a2dc8",
+      "path": "skills/incremental-implementation/SKILL.md",
+      "declared_name": "incremental-implementation",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:f18acb64e8152c68554b3359203f52afb5715a93",
+      "upstream_ref": "0e63d8ea962ecac51637421d8fff63702fac766b",
+      "url": "https://github.com/addyosmani/agent-skills/blob/0e63d8ea962ecac51637421d8fff63702fac766b/skills/incremental-implementation/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "f18acb64e8152c68554b3359203f52afb5715a93",
+        "size": 9249
+      }
+    },
+    {
+      "source_id": "src_https-github-com-addyosmani-agent-skills-addyosmani-agent-skills_ec0a2dc8",
+      "path": "skills/interview-me/SKILL.md",
+      "declared_name": "interview-me",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:de5e3aff0c497e2d474e329cde447678632e082b",
+      "upstream_ref": "0e63d8ea962ecac51637421d8fff63702fac766b",
+      "url": "https://github.com/addyosmani/agent-skills/blob/0e63d8ea962ecac51637421d8fff63702fac766b/skills/interview-me/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "de5e3aff0c497e2d474e329cde447678632e082b",
+        "size": 14359
+      }
+    },
+    {
+      "source_id": "src_https-github-com-addyosmani-agent-skills-addyosmani-agent-skills_ec0a2dc8",
+      "path": "skills/observability-and-instrumentation/SKILL.md",
+      "declared_name": "observability-and-instrumentation",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:c151387152bf203eee2e7f44b16f3d90341d26f2",
+      "upstream_ref": "0e63d8ea962ecac51637421d8fff63702fac766b",
+      "url": "https://github.com/addyosmani/agent-skills/blob/0e63d8ea962ecac51637421d8fff63702fac766b/skills/observability-and-instrumentation/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "c151387152bf203eee2e7f44b16f3d90341d26f2",
+        "size": 11047
+      }
+    },
+    {
+      "source_id": "src_https-github-com-addyosmani-agent-skills-addyosmani-agent-skills_ec0a2dc8",
+      "path": "skills/performance-optimization/SKILL.md",
+      "declared_name": "performance-optimization",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:dcc37e047cbd9e95f15c06dfa9bff860214acf92",
+      "upstream_ref": "0e63d8ea962ecac51637421d8fff63702fac766b",
+      "url": "https://github.com/addyosmani/agent-skills/blob/0e63d8ea962ecac51637421d8fff63702fac766b/skills/performance-optimization/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "dcc37e047cbd9e95f15c06dfa9bff860214acf92",
+        "size": 11593
+      }
+    },
+    {
+      "source_id": "src_https-github-com-addyosmani-agent-skills-addyosmani-agent-skills_ec0a2dc8",
+      "path": "skills/planning-and-task-breakdown/SKILL.md",
+      "declared_name": "planning-and-task-breakdown",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:ada6cbc135055f045960a70ff504f1d5371612f7",
+      "upstream_ref": "0e63d8ea962ecac51637421d8fff63702fac766b",
+      "url": "https://github.com/addyosmani/agent-skills/blob/0e63d8ea962ecac51637421d8fff63702fac766b/skills/planning-and-task-breakdown/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "ada6cbc135055f045960a70ff504f1d5371612f7",
+        "size": 7632
+      }
+    },
+    {
+      "source_id": "src_https-github-com-addyosmani-agent-skills-addyosmani-agent-skills_ec0a2dc8",
+      "path": "skills/security-and-hardening/SKILL.md",
+      "declared_name": "security-and-hardening",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:2c641ac9629c85645538763196a8e93628da5ecb",
+      "upstream_ref": "0e63d8ea962ecac51637421d8fff63702fac766b",
+      "url": "https://github.com/addyosmani/agent-skills/blob/0e63d8ea962ecac51637421d8fff63702fac766b/skills/security-and-hardening/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "2c641ac9629c85645538763196a8e93628da5ecb",
+        "size": 18878
+      }
+    },
+    {
+      "source_id": "src_https-github-com-addyosmani-agent-skills-addyosmani-agent-skills_ec0a2dc8",
+      "path": "skills/shipping-and-launch/SKILL.md",
+      "declared_name": "shipping-and-launch",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:eebcc6cbb1b89d978fef1b594136b6b28990e5eb",
+      "upstream_ref": "0e63d8ea962ecac51637421d8fff63702fac766b",
+      "url": "https://github.com/addyosmani/agent-skills/blob/0e63d8ea962ecac51637421d8fff63702fac766b/skills/shipping-and-launch/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "eebcc6cbb1b89d978fef1b594136b6b28990e5eb",
+        "size": 10045
+      }
+    },
+    {
+      "source_id": "src_https-github-com-addyosmani-agent-skills-addyosmani-agent-skills_ec0a2dc8",
+      "path": "skills/source-driven-development/SKILL.md",
+      "declared_name": "source-driven-development",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:9ef02877e446bd2d31862006ef4e3a79d5c38b9a",
+      "upstream_ref": "0e63d8ea962ecac51637421d8fff63702fac766b",
+      "url": "https://github.com/addyosmani/agent-skills/blob/0e63d8ea962ecac51637421d8fff63702fac766b/skills/source-driven-development/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "9ef02877e446bd2d31862006ef4e3a79d5c38b9a",
+        "size": 8204
+      }
+    },
+    {
+      "source_id": "src_https-github-com-addyosmani-agent-skills-addyosmani-agent-skills_ec0a2dc8",
+      "path": "skills/spec-driven-development/SKILL.md",
+      "declared_name": "spec-driven-development",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:569d22321469770385b1ff89bf69f498f2202bc6",
+      "upstream_ref": "0e63d8ea962ecac51637421d8fff63702fac766b",
+      "url": "https://github.com/addyosmani/agent-skills/blob/0e63d8ea962ecac51637421d8fff63702fac766b/skills/spec-driven-development/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "569d22321469770385b1ff89bf69f498f2202bc6",
+        "size": 8527
+      }
+    },
+    {
+      "source_id": "src_https-github-com-addyosmani-agent-skills-addyosmani-agent-skills_ec0a2dc8",
+      "path": "skills/test-driven-development/SKILL.md",
+      "declared_name": "test-driven-development",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:c96a67f4560121a4761baad2efeaa51ef1602d7a",
+      "upstream_ref": "0e63d8ea962ecac51637421d8fff63702fac766b",
+      "url": "https://github.com/addyosmani/agent-skills/blob/0e63d8ea962ecac51637421d8fff63702fac766b/skills/test-driven-development/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "c96a67f4560121a4761baad2efeaa51ef1602d7a",
+        "size": 14976
+      }
+    },
+    {
+      "source_id": "src_https-github-com-addyosmani-agent-skills-addyosmani-agent-skills_ec0a2dc8",
+      "path": "skills/using-agent-skills/SKILL.md",
+      "declared_name": "using-agent-skills",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:975fb5c2569c036d62985aeacdf9368d0fac0771",
+      "upstream_ref": "0e63d8ea962ecac51637421d8fff63702fac766b",
+      "url": "https://github.com/addyosmani/agent-skills/blob/0e63d8ea962ecac51637421d8fff63702fac766b/skills/using-agent-skills/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "975fb5c2569c036d62985aeacdf9368d0fac0771",
+        "size": 10337
+      }
+    }
+  ],
+  "digest": "sha256:61867ca2e1c53612065c2de253f0bbdc46b7f2e772756ef0a79cb051d2f8dd38"
+}

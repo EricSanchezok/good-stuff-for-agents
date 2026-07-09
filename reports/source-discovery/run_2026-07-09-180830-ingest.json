@@ -1,0 +1,56 @@
+{
+  "sources": [
+    {
+      "name": "addyosmani/agent-skills",
+      "url": "https://github.com/addyosmani/agent-skills",
+      "type": "github_repo",
+      "evidence": [
+        "skills/ directory with 24 SKILL.md files in structured name/SKILL.md layout",
+        "Multi-agent compatibility: .claude/skills/, .codex-plugin/, .gemini/commands/",
+        "4 agent personas, 5 reference checklists, anti-rationalization tables",
+        "75.3k stars, 50 contributors, 5 releases, last push 2026-07-08"
+      ],
+      "license": { "spdx": "MIT", "verified": true, "evidence": "LICENSE in repo root" },
+      "parseability": "structured"
+    },
+    {
+      "name": "ghaida/intent",
+      "url": "https://github.com/ghaida/intent",
+      "type": "github_repo",
+      "evidence": [
+        "16 skills + 6 agents for UX design, strategy, research, QA, engineering handoff",
+        "Structured .claude/skills/ layout, 8 deep reference documents",
+        "72+ anti-patterns cataloged (deceptive, addictive, manipulative)",
+        "71 stars, 8 releases, CC0-1.0 license, last push 2026-05-31"
+      ],
+      "license": { "spdx": "CC0-1.0", "verified": true, "evidence": "LICENSE in repo (Creative Commons Zero)" },
+      "parseability": "structured"
+    },
+    {
+      "name": "0x-Professor/Agent-Skills-Hub",
+      "url": "https://github.com/0x-Professor/Agent-Skills-Hub",
+      "type": "github_repo",
+      "evidence": [
+        "44 skills: cybersecurity, pentesting, web engineering, ML/DL, agentic AI, daily automation",
+        "Standardized contract: SKILL.md + agents/openai.yaml + deterministic CLI contract",
+        "Pentest skills have authorization gates: --scope, --target, --i-have-authorization",
+        "Apache-2.0, CI with smoke/scenario/security tests, last push 2026-02-26"
+      ],
+      "license": { "spdx": "Apache-2.0", "verified": true, "evidence": "LICENSE in repo root" },
+      "parseability": "structured"
+    },
+    {
+      "name": "agent-skills-hub/agent-skills-hub",
+      "url": "https://github.com/legendaryabhi/agent-skills-hub",
+      "type": "github_repo",
+      "evidence": [
+        "790+ skills: architecture, dev, security, ops, business, scientific (120+), marketing",
+        "NPX-first CLI with multi-agent targeted installs (8+ agents)",
+        "Clear ATTRIBUTION.md for upstream sources (antigravity-awesome-skills, claude-scientific-skills, marketingskills)",
+        "61 stars, 29 forks, MIT license, last push 2026-05-20"
+      ],
+      "license": { "spdx": "MIT", "verified": true, "evidence": "LICENSE + ATTRIBUTION.md" },
+      "parseability": "structured"
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+analysis:
+  hash: null
+  path: catalog/analyses/sk/skill_legendaryabhi-agent-skills-hub-agent-skills-hub-ag-tdd-workflows-tdd-cycle.md
+canonical_name: tdd-workflows-tdd-cycle
+canonical_skill_id: skill_legendaryabhi-agent-skills-hub-agent-skills-hub-ag-tdd-workflows-tdd-cycle
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-09T10:22:53.454Z'
+curation:
+  notes: []
+display_name: tdd-workflows-tdd-cycle
+identity:
+  aliases: []
+  current_version_id: sha256:bdce6b14a0a668842cc8677beb7e45a77da23a11
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: LICENSE + ATTRIBUTION.md for upstream sources
+    spdx: MIT
+    verified: true
+  path: skills/tdd-workflows-tdd-cycle/SKILL.md
+  source_id: src_https-github-com-legendaryabhi-agent-skills-hub-agent-skills-hub-agent-skills-hub_231e1728
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-09T10:22:53.454Z'

@@ -1,0 +1,45 @@
+analysis:
+  hash: null
+  path: catalog/analyses/sk/skill_ghaida-intent-ghaida-intent-1de7fdd1-specify.md
+canonical_name: specify
+canonical_skill_id: skill_ghaida-intent-ghaida-intent-1de7fdd1-specify
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-09T10:23:00.445Z'
+curation:
+  notes: []
+display_name: specify
+identity:
+  aliases: []
+  current_version_id: sha256:6b87d9a5f89cd15f76f7b8fc18a120a08be097d6
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: LICENSE in repo (Creative Commons Zero)
+    spdx: CC0-1.0
+    verified: true
+  path: skills/specify/SKILL.md
+  source_id: src_https-github-com-ghaida-intent-ghaida-intent_1de7fdd1
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-09T10:23:00.445Z'

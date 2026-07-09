@@ -1,0 +1,45 @@
+analysis:
+  hash: null
+  path: catalog/analyses/sk/skill_legendaryabhi-agent-skills-hub-agent-skills-hub-ag-multi-platform-apps-multi-plat.md
+canonical_name: multi-platform-apps-multi-platform
+canonical_skill_id: skill_legendaryabhi-agent-skills-hub-agent-skills-hub-ag-multi-platform-apps-multi-plat
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-09T10:22:38.825Z'
+curation:
+  notes: []
+display_name: multi-platform-apps-multi-platform
+identity:
+  aliases: []
+  current_version_id: sha256:ca29bfce35b198d7a641a23282d62a39242ddafd
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: LICENSE + ATTRIBUTION.md for upstream sources
+    spdx: MIT
+    verified: true
+  path: skills/multi-platform-apps-multi-platform/SKILL.md
+  source_id: src_https-github-com-legendaryabhi-agent-skills-hub-agent-skills-hub-agent-skills-hub_231e1728
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-09T10:22:38.825Z'

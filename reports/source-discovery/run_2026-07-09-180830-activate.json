@@ -1,0 +1,90 @@
+{
+  "sources": [
+    {
+      "source_id": "src_https-github-com-addyosmani-agent-skills-addyosmani-agent-skills_ec0a2dc8",
+      "name": "addyosmani/agent-skills",
+      "url": "https://github.com/addyosmani/agent-skills",
+      "type": "github_repo",
+      "status": "active",
+      "license": { "spdx": "MIT", "verified": true, "evidence": "LICENSE file in repo root" },
+      "sync": {
+        "include": ["skills/**/SKILL.md", "skills/**/references/**", "agents/**/*.md", "references/**/*.md", "*.md"],
+        "exclude": [".github/**", "node_modules/**", "docs/**", "evals/**", "hooks/**", "scripts/**", "commands/**", ".agents/**", ".claude/**", ".codex-plugin/**", ".gemini/**", ".opencode/**", "plugin.json"]
+      },
+      "activation_reason": "Highest-quality structured engineering skill collection (24 skills, 75k stars, MIT). Full dev lifecycle: spec→plan→build→test→review→ship. Unique anti-rationalization and verification-gate patterns. 50 contributors, very active (last push 2026-07-08). Meets all autonomous activation criteria.",
+      "activation_evidence": [
+        "skills/ directory with 24 SKILL.md files in structured skill-name/SKILL.md format with consistent frontmatter anatomy",
+        "MIT license confirmed via LICENSE file",
+        "Public GitHub repo, no credentials or private access needed",
+        "75.3k stars, 435 watchers, 50 contributors, 5 releases",
+        "Last push 2026-07-08 — actively maintained",
+        "Multi-agent compatibility documented: Claude Code, Cursor, Codex, Gemini, Windsurf, OpenCode, Copilot, Antigravity, Kiro"
+      ]
+    },
+    {
+      "source_id": "src_https-github-com-ghaida-intent-ghaida-intent_1de7fdd1",
+      "name": "ghaida/intent",
+      "url": "https://github.com/ghaida/intent",
+      "type": "github_repo",
+      "status": "active",
+      "license": { "spdx": "CC0-1.0", "verified": true, "evidence": "LICENSE in repo (Creative Commons Zero — maximally permissive)" },
+      "sync": {
+        "include": [".claude/skills/**/SKILL.md", ".claude/skills/**/references/**", "agents/**/*.md", "*.md"],
+        "exclude": [".github/**", "node_modules/**", "assets/**", "docs/**"]
+      },
+      "activation_reason": "Unique UX design domain with zero catalog coverage. 16 skills + 6 specialist agents covering product design practice: strategy, research, experience design, QA, engineering handoff. CC0-1.0 license (maximally permissive). 71 stars, 8 releases. Fills a major non-engineering gap in the catalog.",
+      "activation_evidence": [
+        "16 SKILL.md files in structured .claude/skills/ layout",
+        "6 agent personas (Noor, Ember, Wren, Vigil, Rune, Sage) with skill composition",
+        "CC0-1.0 license confirmed — maximally permissive public domain dedication",
+        "72+ anti-patterns cataloged in intent/references/",
+        "8 deep reference documents: research methods, IA, interaction patterns, content strategy, accessibility, service design, measurement, ethical design",
+        "Public GitHub repo, no credentials needed",
+        "Last push 2026-05-31 — actively maintained"
+      ]
+    },
+    {
+      "source_id": "src_https-github-com-0x-professor-agent-skills-hub-0x-professor-agent-skills-hub_cd705ae8",
+      "name": "0x-Professor/Agent-Skills-Hub",
+      "url": "https://github.com/0x-Professor/Agent-Skills-Hub",
+      "type": "github_repo",
+      "status": "preview",
+      "license": { "spdx": "Apache-2.0", "verified": true, "evidence": "LICENSE file in repo root" },
+      "sync": {
+        "include": ["skills/**/SKILL.md", "skills/**/agents/openai.yaml", "skills/**/references/**", "skills/**/scripts/**", "skills/**/assets/**", "*.md"],
+        "exclude": [".github/**", "node_modules/**", "tests/**", "tools/**", "releases/**"]
+      },
+      "activation_reason": "Only source covering cybersecurity/pentesting domain (zero catalog coverage). 44 skills with standardized contract including authorization gates. Apache-2.0 license. Preview status because last activity was 4+ months ago (2026-02-26), so semantic freshness needs confirmation by downstream analysis.",
+      "activation_evidence": [
+        "44 SKILL.md files in structured skills/ layout with standardized contract (SKILL.md + agents/openai.yaml)",
+        "Pentest skills include security gates: --scope, --target, --i-have-authorization flags",
+        "Apache-2.0 license confirmed via LICENSE file",
+        "CI/CD with GitHub Actions: smoke tests, scenario tests, security regression checks",
+        "Public GitHub repo, no credentials needed",
+        "Last push 2026-02-26 — acceptable for preview but not active"
+      ]
+    },
+    {
+      "source_id": "src_https-github-com-legendaryabhi-agent-skills-hub-agent-skills-hub-agent-skills-hub_231e1728",
+      "name": "agent-skills-hub/agent-skills-hub",
+      "url": "https://github.com/legendaryabhi/agent-skills-hub",
+      "type": "github_repo",
+      "status": "preview",
+      "license": { "spdx": "MIT", "verified": true, "evidence": "LICENSE + ATTRIBUTION.md for upstream sources" },
+      "sync": {
+        "include": ["skills/**/SKILL.md", "skills/**/references/**", "*.md", "CATALOG.md", "skills_index.json"],
+        "exclude": [".github/**", "node_modules/**", "bin/**", "data/**", "docs/**", "lib/**", "scripts/**", "tools/**", "assets/**", "package.json", "package-lock.json"]
+      },
+      "activation_reason": "Broad multi-domain registry (790+ skills) with substantial non-engineering coverage: scientific (120+), marketing, plus standard engineering domains. Clear attribution to upstream sources. MIT license. Preview because many skills are derivations from upstream; extraction/normalization must determine unique vs. derivative value.",
+      "activation_evidence": [
+        "790+ SKILL.md files in structured skills/ directory",
+        "Clear ATTRIBUTION.md listing upstream sources: antigravity-awesome-skills, claude-scientific-skills, marketingskills",
+        "MIT license confirmed via LICENSE file",
+        "NPX-first CLI for multi-agent installation (8+ agent targets)",
+        "Non-engineering domains: scientific skills (120+), marketing skills",
+        "Public GitHub repo, no credentials needed",
+        "Last push 2026-05-20 — actively maintained"
+      ]
+    }
+  ]
+}

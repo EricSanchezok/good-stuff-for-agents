@@ -1,0 +1,45 @@
+analysis:
+  hash: null
+  path: catalog/analyses/sk/skill_addyosmani-agent-skills-addyosmani-agent-skills-ec-planning-and-task-breakdown.md
+canonical_name: planning-and-task-breakdown
+canonical_skill_id: skill_addyosmani-agent-skills-addyosmani-agent-skills-ec-planning-and-task-breakdown
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-09T10:23:01.635Z'
+curation:
+  notes: []
+display_name: planning-and-task-breakdown
+identity:
+  aliases: []
+  current_version_id: sha256:ada6cbc135055f045960a70ff504f1d5371612f7
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: LICENSE file in repo root
+    spdx: MIT
+    verified: true
+  path: skills/planning-and-task-breakdown/SKILL.md
+  source_id: src_https-github-com-addyosmani-agent-skills-addyosmani-agent-skills_ec0a2dc8
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-09T10:23:01.635Z'

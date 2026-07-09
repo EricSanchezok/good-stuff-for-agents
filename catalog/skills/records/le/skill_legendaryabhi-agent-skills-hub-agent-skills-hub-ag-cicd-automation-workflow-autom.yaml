@@ -1,0 +1,45 @@
+analysis:
+  hash: null
+  path: catalog/analyses/sk/skill_legendaryabhi-agent-skills-hub-agent-skills-hub-ag-cicd-automation-workflow-autom.md
+canonical_name: cicd-automation-workflow-automate
+canonical_skill_id: skill_legendaryabhi-agent-skills-hub-agent-skills-hub-ag-cicd-automation-workflow-autom
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-09T10:22:18.870Z'
+curation:
+  notes: []
+display_name: cicd-automation-workflow-automate
+identity:
+  aliases: []
+  current_version_id: sha256:2567dcdc3aef14d4b5f695e020c4febfd2fe9707
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: LICENSE + ATTRIBUTION.md for upstream sources
+    spdx: MIT
+    verified: true
+  path: skills/cicd-automation-workflow-automate/SKILL.md
+  source_id: src_https-github-com-legendaryabhi-agent-skills-hub-agent-skills-hub-agent-skills-hub_231e1728
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-09T10:22:18.870Z'
