@@ -9,7 +9,7 @@
 #   bash scripts/reset-catalog.sh --keep all           # 不清除任何目录内容
 #
 # --keep 可选值：
-#   growth   — 保留 sources / skills / analyses / relations / packs / candidates（pipeline 产出）
+#   growth   — 保留 pipeline 产出 + reports + indexes（仅清 docs/README）
 #   reports  — 保留所有 reports/ 内容
 #   docs     — 保留 docs/ 内容 + 不重置 README.md
 #   indexes  — 保留 catalog/indexes/
@@ -37,7 +37,7 @@ for arg in "$@"; do
       IFS=',' read -ra KEEPS <<< "${arg#--keep=}"
       for k in "${KEEPS[@]}"; do
         case "$k" in
-          growth)  KEEP_GROWTH=true ;;
+          growth)  KEEP_GROWTH=true; KEEP_REPORTS=true; KEEP_INDEXES=true ;;
           reports) KEEP_REPORTS=true ;;
           docs)    KEEP_DOCS=true ;;
           indexes) KEEP_INDEXES=true ;;
