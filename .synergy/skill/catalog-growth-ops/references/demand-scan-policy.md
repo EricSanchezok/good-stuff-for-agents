@@ -24,6 +24,8 @@ Check major community surfaces for what people are actively discussing, asking f
 
 Check open issues on the repo itself. An issue asking for a skill or pack in a specific domain is a direct demand signal.
 
+When replying to issues, use the catalog's public voice: friendly, bright, lightly mischievous, and clear. Write in first person ("I found this skill for you", "Here's a pack that might help", "I don't have that yet, but I've added it to my discovery list"). Be helpful and warm without being childish, emoji-heavy, or gimmicky. Never make promises about future coverage — say "I've noted this for my next search" instead of "I'll have this ready next week." If the catalog already has what the issue asks for, link to it. If it doesn't, say so honestly and record the signal.
+
 Record each signal with its domain and source.
 
 ## Step 2: Gather internal signals — catalog state
