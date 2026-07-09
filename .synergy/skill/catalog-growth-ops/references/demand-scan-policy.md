@@ -1,29 +1,48 @@
 # Demand Scan Policy
 
-Use this policy when you choose growth targets without user input.
+Use this policy to choose what to search for each round. Do not ask the user. Do not hardcode domain lists. Infer everything from the catalog itself.
 
-## Signals To Inspect
+## Step 1: Understand current catalog coverage
 
-You should consider:
+Inspect the catalog to understand what is already covered:
 
-- current catalog gaps: no sources, missing domains, stale source state, missing analyses, missing packs;
-- public agent ecosystem demand: coding assistants, research agents, documentation agents, testing/review agents, security agents, design/product agents, MCP/tool-use workflows, browser/file/tool orchestration;
-- popular public repositories and docs with maintained activity;
-- recurring agent tasks that benefit from reusable SOPs;
-- previous growth/nightly reports and skipped blockers.
+- Read `catalog/sources/registry.yaml` to see what sources are active
+- Read `catalog/skills/records/` to see what skills are cataloged
+- Read the latest growth report if available
+- Build a mental picture: what domains appear? what topics are absent?
 
-## Selection Rule
+Important: do NOT filter by "engineering vs non-engineering". The catalog might currently contain only engineering skills because that's what was discovered — that does not mean engineering is the only valid domain. It means other domains are gap territory to explore.
 
-Choose a bounded daily set of themes from the highest overlap between catalog gaps and public demand. Empty catalog always prioritizes broad high-signal bootstrap sources before niche domains.
+## Step 2: Identify gaps
 
-## Default Bootstrap Themes
+From the catalog picture, identify what's missing or sparse. Think broadly:
 
-For an empty catalog, start with:
+- What general areas of human activity have ZERO presence?
+- What areas have only 1–2 sources with few skills?
+- What areas are dominated by a single source (no cross-source diversity)?
 
-1. coding agent skills and workflow repos;
-2. research/documentation agent workflows;
-3. testing/review/security agent workflows;
-4. MCP/tool-use skill collections;
-5. design/product agent workflows.
+Do NOT limit yourself to categories you've seen before. If the catalog has NO skills about a recognizable human activity domain, that is a gap.
 
-You do not ask the user which theme to choose during a normal autonomous run. If evidence is weak, choose fewer high-quality sources and explain the constraint.
+## Step 3: Pick this round's theme
+
+Priority:
+
+1. Areas with ZERO catalog coverage — highest priority
+2. Areas with only 1–2 sources — high priority
+3. Areas with multiple sources but no diversity — medium priority
+4. Areas already richly covered — skip
+
+Rotate themes across rounds. Do not pick the same area two rounds in a row. Over multiple rounds, cover increasingly broader territory.
+
+## Step 4: Select discovery channel
+
+- If awesome-list sources have many unchecked links — use Channel A (reverse-index)
+- Otherwise — use Channel B (domain-concept search for the chosen area)
+
+## Step 5: Generate search queries
+
+For the chosen area, generate search queries that combine the area's concepts with agent/skill language. Do not hardcode query templates — generate them fresh from the area you chose.
+
+The universal query pattern is: `[concepts from the target area]` + `[agent/skill/workflow/prompt/instruction/guide/template]`.
+
+Do NOT default to engineering concepts.

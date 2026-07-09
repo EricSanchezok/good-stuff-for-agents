@@ -32,6 +32,7 @@ You should gather:
 - the discovery brief from the user or orchestrator, target domains, exclusions, and quality threshold;
 - when called by `catalog-growth-ops`, use the growth policy (`../catalog-growth-ops/references/autonomous-discovery-policy.md`) and demand scan instead of asking the user for target domains or counts;
 - existing source records and candidates to avoid duplicates;
+- `catalog/skills/records/` overview of existing skills (for pre-filter dedup comparison);
 - `references/discovery-channels.md`, `references/source-qualification.md`, and `references/candidate-record-format.md`;
 - shared references: `../shared-references/artifact-contract.md`, `../shared-references/integration-contract.md`, and `../shared-references/script-policy.md`;
 - source URLs, license pages, evidence links, file trees, docs pages, and examples of skill-like content.
@@ -65,16 +66,28 @@ You must leave behind:
 
 1. **Define the search target.** You restate the domain, source types, freshness needs, license constraints, and whether the caller wants breadth or a small qualified set. When called autonomously by `catalog-growth-ops`, use the orchestrator-supplied discovery brief and growth policy instead of asking the user.
 2. **Check existing records first.** You inspect current sources and candidates so you do not re-add duplicates. If a source already exists, you report its status instead of appending a duplicate.
-3. **Search deliberately.** You use appropriate discovery channels and record what you searched. You prefer official repos, docs, widely used libraries, maintained skill collections, and sources with clear license evidence.
-4. **Inspect evidence.** For each promising source, you verify that it contains skill-like artifacts or agent-operational content. You record URLs, file paths, update signals, license evidence, and parseability.
-5. **Classify each source.** You mark each inspected source as candidate, rejected, or blocked. Candidate means evidence is sufficient. Rejected means evidence is insufficient or out of scope. Blocked means a user or license decision is needed.
-6. **Write a draft.** You create `reports/source-discovery/<run-id>-candidates.json` with only reviewed candidates. You do not include speculative sources.
-7. **Call the writer.** You append candidates through `scripts/ingest-source-candidates.mjs` or the catalog-data append helper.
-8. **Validate and report.** You run strict validation and write a report naming candidates, rejected sources, blockers, helper calls, and next step.
+3. **Search deliberately.** You use appropriate discovery channels from `references/discovery-channels.md` and record what you searched. Do not limit yourself to official repos or engineering domains — any domain with agent-skill content is in scope.
+4. **Inspect evidence.** For each promising source, you verify that it contains skill-like content per `references/source-qualification.md`. You record URLs, file paths, update signals, license evidence, and parseability. Do not reject a source just because it lacks SKILL.md or because the domain is unfamiliar.
+5. **Pre-filter by catalog overlap.** Before classifying a source, do a lightweight dedup check:
+   - For each skill-like artifact in the source, write a short signature: what task, what domain, what approach (1–2 sentences).
+   - Compare against signatures of already-cataloged skills in `catalog/skills/records/`.
+   - Mark each artifact as new, variant, or duplicate per the thresholds in `references/source-qualification.md`.
+   - If ALL artifacts are duplicates, skip the source. If at least 1 is new or variant, proceed.
+   - Err on the side of inclusion — the detailed dedup happens downstream in relations.
+6. **Classify each source.** You mark each inspected source (that passed pre-filter) as candidate, rejected, or blocked. Candidate means evidence is sufficient and not 100% duplicate. Rejected means evidence is insufficient or out of scope. Blocked means a user or license decision is needed.
+7. **Write a draft.** You create `reports/source-discovery/<run-id>-candidates.json` with only reviewed candidates. You do not include speculative sources.
+8. **Call the writer.** You append candidates through `scripts/ingest-source-candidates.mjs` or the catalog-data append helper.
+9. **Validate and report.** You run strict validation and write a report naming candidates, rejected sources, blockers, dedup outcomes, helper calls, and next step.
 
 ## Quality Bar
 
 A good discovery result has strong evidence for each candidate, no duplicates, clear license status, parseability notes, and rejection reasons. Another agent should be able to inspect your report and understand why each source entered or did not enter the candidate queue.
+
+Additional quality requirements:
+- Do not reject a source just because it lacks a SKILL.md file — semi-structured content is valid.
+- Do not reject or skip a source because its domain is unfamiliar or non-technical.
+- Discovery layer must perform pre-filter dedup before classify — do not push dedup downstream.
+- Each round has a clear domain theme derived from catalog gaps; do not repeat the same domain across consecutive rounds.
 
 ## Bad Patterns To Avoid
 
@@ -83,6 +96,9 @@ A good discovery result has strong evidence for each candidate, no duplicates, c
 - Do not guess license status.
 - Do not append rejected or blocked sources as candidates.
 - Do not run a helper as a substitute for source qualification.
+- Do not reject a source just because it has no SKILL.md or because the domain is unfamiliar.
+- Do not limit searches to engineering domains or filename-based queries.
+- Do not push dedup to downstream relations — pre-filter at discovery time.
 
 ## Failure Handling
 
