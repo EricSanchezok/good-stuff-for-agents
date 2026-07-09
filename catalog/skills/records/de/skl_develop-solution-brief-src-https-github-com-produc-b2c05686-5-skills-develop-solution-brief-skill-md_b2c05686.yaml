@@ -1,0 +1,45 @@
+analysis:
+  hash: null
+  path: catalog/analyses/de/skl_develop-solution-brief-src-https-github-com-produc-b2c05686-5-skills-develop-solution-brief-skill-md_b2c05686.md
+canonical_name: develop-solution-brief
+canonical_skill_id: skl_develop-solution-brief-src-https-github-com-produc-b2c05686-5-skills-develop-solution-brief-skill-md_b2c05686
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-09T19:02:38.268Z'
+curation:
+  notes: []
+display_name: develop-solution-brief
+identity:
+  aliases: []
+  current_version_id: sha256:3b30f88e9d5dff7c62dcb76e4308ede942a5ea28
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: LICENSE file in repo root; README states Apache 2.0
+    spdx: Apache-2.0
+    verified: true
+  path: skills/develop-solution-brief/SKILL.md
+  source_id: src_https-github-com-product-on-purpose-pm-skills-pm-skills-product-on-purpose_f2ce15e5
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-09T19:02:38.268Z'

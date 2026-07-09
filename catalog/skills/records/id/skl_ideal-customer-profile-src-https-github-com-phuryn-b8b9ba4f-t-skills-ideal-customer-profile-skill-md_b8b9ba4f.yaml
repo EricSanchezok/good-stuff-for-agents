@@ -1,0 +1,45 @@
+analysis:
+  hash: null
+  path: catalog/analyses/id/skl_ideal-customer-profile-src-https-github-com-phuryn-b8b9ba4f-t-skills-ideal-customer-profile-skill-md_b8b9ba4f.md
+canonical_name: ideal-customer-profile
+canonical_skill_id: skl_ideal-customer-profile-src-https-github-com-phuryn-b8b9ba4f-t-skills-ideal-customer-profile-skill-md_b8b9ba4f
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-09T19:02:45.275Z'
+curation:
+  notes: []
+display_name: ideal-customer-profile
+identity:
+  aliases: []
+  current_version_id: sha256:b07c067e84307a14b66f37e0a4633172cdb47ed9
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: LICENSE file in repo root; README badge confirms MIT
+    spdx: MIT
+    verified: true
+  path: pm-go-to-market/skills/ideal-customer-profile/SKILL.md
+  source_id: src_https-github-com-phuryn-pm-skills-pm-skills-marketplace-phuryn_8ac36372
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-09T19:02:45.275Z'

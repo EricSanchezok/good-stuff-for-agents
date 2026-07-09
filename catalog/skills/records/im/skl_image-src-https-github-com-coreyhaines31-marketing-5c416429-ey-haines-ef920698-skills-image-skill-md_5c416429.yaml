@@ -1,0 +1,45 @@
+analysis:
+  hash: null
+  path: catalog/analyses/im/skl_image-src-https-github-com-coreyhaines31-marketing-5c416429-ey-haines-ef920698-skills-image-skill-md_5c416429.md
+canonical_name: image
+canonical_skill_id: skl_image-src-https-github-com-coreyhaines31-marketing-5c416429-ey-haines-ef920698-skills-image-skill-md_5c416429
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-09T19:02:50.339Z'
+curation:
+  notes: []
+display_name: image
+identity:
+  aliases: []
+  current_version_id: sha256:4ec01425410a26518a3f6ba8b0b5d8dd9fc85bbc
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: LICENSE file in repo root; README states MIT
+    spdx: MIT
+    verified: true
+  path: skills/image/SKILL.md
+  source_id: src_https-github-com-coreyhaines31-marketingskills-marketing-skills-corey-haines_ef920698
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-09T19:02:50.339Z'

@@ -1,0 +1,45 @@
+analysis:
+  hash: null
+  path: catalog/analyses/re/skl_research-digest-src-https-github-com-thatrebeccara-68d9aed7-8a108923-skills-research-digest-skill-md_68d9aed7.md
+canonical_name: research-digest
+canonical_skill_id: skl_research-digest-src-https-github-com-thatrebeccara-68d9aed7-8a108923-skills-research-digest-skill-md_68d9aed7
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-09T19:02:35.229Z'
+curation:
+  notes: []
+display_name: research-digest
+identity:
+  aliases: []
+  current_version_id: sha256:2f34b822e2a72079fc7e7c23a4c841af2eaea291
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: LICENSE file in repo root; README states MIT
+    spdx: MIT
+    verified: true
+  path: skills/research-digest/SKILL.md
+  source_id: src_https-github-com-thatrebeccarae-claude-marketing-claude-marketing-rebecca-rae-barton_8a108923
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-09T19:02:35.229Z'

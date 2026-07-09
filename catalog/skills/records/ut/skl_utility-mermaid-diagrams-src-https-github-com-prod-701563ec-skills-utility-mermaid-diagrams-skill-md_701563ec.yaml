@@ -1,0 +1,45 @@
+analysis:
+  hash: null
+  path: catalog/analyses/ut/skl_utility-mermaid-diagrams-src-https-github-com-prod-701563ec-skills-utility-mermaid-diagrams-skill-md_701563ec.md
+canonical_name: utility-mermaid-diagrams
+canonical_skill_id: skl_utility-mermaid-diagrams-src-https-github-com-prod-701563ec-skills-utility-mermaid-diagrams-skill-md_701563ec
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-09T19:02:42.141Z'
+curation:
+  notes: []
+display_name: utility-mermaid-diagrams
+identity:
+  aliases: []
+  current_version_id: sha256:abbba2b381d082c0dd1757a3c6b0c3d38bf8e18f
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: LICENSE file in repo root; README states Apache 2.0
+    spdx: Apache-2.0
+    verified: true
+  path: skills/utility-mermaid-diagrams/SKILL.md
+  source_id: src_https-github-com-product-on-purpose-pm-skills-pm-skills-product-on-purpose_f2ce15e5
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-09T19:02:42.141Z'

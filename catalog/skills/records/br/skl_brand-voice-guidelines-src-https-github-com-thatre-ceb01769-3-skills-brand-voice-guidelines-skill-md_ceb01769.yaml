@@ -1,0 +1,45 @@
+analysis:
+  hash: null
+  path: catalog/analyses/br/skl_brand-voice-guidelines-src-https-github-com-thatre-ceb01769-3-skills-brand-voice-guidelines-skill-md_ceb01769.md
+canonical_name: brand-voice-guidelines
+canonical_skill_id: skl_brand-voice-guidelines-src-https-github-com-thatre-ceb01769-3-skills-brand-voice-guidelines-skill-md_ceb01769
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-09T19:02:31.994Z'
+curation:
+  notes: []
+display_name: brand-voice-guidelines
+identity:
+  aliases: []
+  current_version_id: sha256:b59878a6f63b48e37220b1338b3b2cd83de99305
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: LICENSE file in repo root; README states MIT
+    spdx: MIT
+    verified: true
+  path: skills/brand-voice-guidelines/SKILL.md
+  source_id: src_https-github-com-thatrebeccarae-claude-marketing-claude-marketing-rebecca-rae-barton_8a108923
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-09T19:02:31.994Z'

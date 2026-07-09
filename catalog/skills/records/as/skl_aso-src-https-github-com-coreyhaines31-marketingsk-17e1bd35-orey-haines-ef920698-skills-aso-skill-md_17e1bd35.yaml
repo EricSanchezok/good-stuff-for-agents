@@ -1,0 +1,45 @@
+analysis:
+  hash: null
+  path: catalog/analyses/as/skl_aso-src-https-github-com-coreyhaines31-marketingsk-17e1bd35-orey-haines-ef920698-skills-aso-skill-md_17e1bd35.md
+canonical_name: aso
+canonical_skill_id: skl_aso-src-https-github-com-coreyhaines31-marketingsk-17e1bd35-orey-haines-ef920698-skills-aso-skill-md_17e1bd35
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-09T19:02:49.121Z'
+curation:
+  notes: []
+display_name: aso
+identity:
+  aliases: []
+  current_version_id: sha256:bd699a13e3d245b72bda63337ed0406f459774fe
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: LICENSE file in repo root; README states MIT
+    spdx: MIT
+    verified: true
+  path: skills/aso/SKILL.md
+  source_id: src_https-github-com-coreyhaines31-marketingskills-marketing-skills-corey-haines_ef920698
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-09T19:02:49.121Z'

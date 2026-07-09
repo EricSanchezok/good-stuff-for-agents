@@ -1,0 +1,45 @@
+analysis:
+  hash: null
+  path: catalog/analyses/gt/skl_gtm-strategy-src-https-github-com-phuryn-pm-skills-8a49017f-o-to-market-skills-gtm-strategy-skill-md_8a49017f.md
+canonical_name: gtm-strategy
+canonical_skill_id: skl_gtm-strategy-src-https-github-com-phuryn-pm-skills-8a49017f-o-to-market-skills-gtm-strategy-skill-md_8a49017f
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-09T19:02:45.193Z'
+curation:
+  notes: []
+display_name: gtm-strategy
+identity:
+  aliases: []
+  current_version_id: sha256:5992ae5fd38c05665ddbcaf17250980a0eda6517
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: LICENSE file in repo root; README badge confirms MIT
+    spdx: MIT
+    verified: true
+  path: pm-go-to-market/skills/gtm-strategy/SKILL.md
+  source_id: src_https-github-com-phuryn-pm-skills-pm-skills-marketplace-phuryn_8ac36372
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-09T19:02:45.193Z'

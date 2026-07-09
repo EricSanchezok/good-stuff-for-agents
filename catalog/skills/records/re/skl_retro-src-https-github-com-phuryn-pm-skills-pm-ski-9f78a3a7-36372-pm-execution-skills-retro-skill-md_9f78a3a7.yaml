@@ -1,0 +1,45 @@
+analysis:
+  hash: null
+  path: catalog/analyses/re/skl_retro-src-https-github-com-phuryn-pm-skills-pm-ski-9f78a3a7-36372-pm-execution-skills-retro-skill-md_9f78a3a7.md
+canonical_name: retro
+canonical_skill_id: skl_retro-src-https-github-com-phuryn-pm-skills-pm-ski-9f78a3a7-36372-pm-execution-skills-retro-skill-md_9f78a3a7
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-09T19:02:44.208Z'
+curation:
+  notes: []
+display_name: retro
+identity:
+  aliases: []
+  current_version_id: sha256:f90eeb5f1121ca6ed4cf5780e09060d1cb983210
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: LICENSE file in repo root; README badge confirms MIT
+    spdx: MIT
+    verified: true
+  path: pm-execution/skills/retro/SKILL.md
+  source_id: src_https-github-com-phuryn-pm-skills-pm-skills-marketplace-phuryn_8ac36372
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-09T19:02:44.208Z'

@@ -1,0 +1,45 @@
+analysis:
+  hash: null
+  path: catalog/analyses/de/skl_define-opportunity-tree-src-https-github-com-produ-192caa7b-skills-define-opportunity-tree-skill-md_192caa7b.md
+canonical_name: define-opportunity-tree
+canonical_skill_id: skl_define-opportunity-tree-src-https-github-com-produ-192caa7b-skills-define-opportunity-tree-skill-md_192caa7b
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-09T19:02:37.221Z'
+curation:
+  notes: []
+display_name: define-opportunity-tree
+identity:
+  aliases: []
+  current_version_id: sha256:ce6d44d1a00218fc842ed7ab42eda69b59ac5f71
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: LICENSE file in repo root; README states Apache 2.0
+    spdx: Apache-2.0
+    verified: true
+  path: skills/define-opportunity-tree/SKILL.md
+  source_id: src_https-github-com-product-on-purpose-pm-skills-pm-skills-product-on-purpose_f2ce15e5
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-09T19:02:37.221Z'

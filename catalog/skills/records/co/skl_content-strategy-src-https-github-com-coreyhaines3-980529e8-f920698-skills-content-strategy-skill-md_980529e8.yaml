@@ -1,0 +1,45 @@
+analysis:
+  hash: null
+  path: catalog/analyses/co/skl_content-strategy-src-https-github-com-coreyhaines3-980529e8-f920698-skills-content-strategy-skill-md_980529e8.md
+canonical_name: content-strategy
+canonical_skill_id: skl_content-strategy-src-https-github-com-coreyhaines3-980529e8-f920698-skills-content-strategy-skill-md_980529e8
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-09T19:02:49.699Z'
+curation:
+  notes: []
+display_name: content-strategy
+identity:
+  aliases: []
+  current_version_id: sha256:3a54e3f7b0b23d35d1e4c7f2f608fa947d19061f
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: LICENSE file in repo root; README states MIT
+    spdx: MIT
+    verified: true
+  path: skills/content-strategy/SKILL.md
+  source_id: src_https-github-com-coreyhaines31-marketingskills-marketing-skills-corey-haines_ef920698
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-09T19:02:49.699Z'

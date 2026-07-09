@@ -1,0 +1,45 @@
+analysis:
+  hash: null
+  path: catalog/analyses/of/skl_offers-src-https-github-com-coreyhaines31-marketin-c8790b8f-y-haines-ef920698-skills-offers-skill-md_c8790b8f.md
+canonical_name: offers
+canonical_skill_id: skl_offers-src-https-github-com-coreyhaines31-marketin-c8790b8f-y-haines-ef920698-skills-offers-skill-md_c8790b8f
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-09T19:02:51.030Z'
+curation:
+  notes: []
+display_name: offers
+identity:
+  aliases: []
+  current_version_id: sha256:7776009bcb766e3f388681b8612c069459b94096
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: LICENSE file in repo root; README states MIT
+    spdx: MIT
+    verified: true
+  path: skills/offers/SKILL.md
+  source_id: src_https-github-com-coreyhaines31-marketingskills-marketing-skills-corey-haines_ef920698
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-09T19:02:51.030Z'

@@ -1,0 +1,45 @@
+analysis:
+  hash: null
+  path: catalog/analyses/to/skl_tool-note-and-vote-src-https-github-com-product-on-cd00a0d1-e15e5-skills-tool-note-and-vote-skill-md_cd00a0d1.md
+canonical_name: tool-note-and-vote
+canonical_skill_id: skl_tool-note-and-vote-src-https-github-com-product-on-cd00a0d1-e15e5-skills-tool-note-and-vote-skill-md_cd00a0d1
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-09T19:02:42.059Z'
+curation:
+  notes: []
+display_name: tool-note-and-vote
+identity:
+  aliases: []
+  current_version_id: sha256:f93ef8dc2e0fc31df7b24cd5b1056db37bd11565
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: LICENSE file in repo root; README states Apache 2.0
+    spdx: Apache-2.0
+    verified: true
+  path: skills/tool-note-and-vote/SKILL.md
+  source_id: src_https-github-com-product-on-purpose-pm-skills-pm-skills-product-on-purpose_f2ce15e5
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-09T19:02:42.059Z'

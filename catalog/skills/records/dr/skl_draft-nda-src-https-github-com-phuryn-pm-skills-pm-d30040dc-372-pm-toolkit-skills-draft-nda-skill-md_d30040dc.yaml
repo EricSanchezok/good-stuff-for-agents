@@ -1,0 +1,45 @@
+analysis:
+  hash: null
+  path: catalog/analyses/dr/skl_draft-nda-src-https-github-com-phuryn-pm-skills-pm-d30040dc-372-pm-toolkit-skills-draft-nda-skill-md_d30040dc.md
+canonical_name: draft-nda
+canonical_skill_id: skl_draft-nda-src-https-github-com-phuryn-pm-skills-pm-d30040dc-372-pm-toolkit-skills-draft-nda-skill-md_d30040dc
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-09T19:02:48.414Z'
+curation:
+  notes: []
+display_name: draft-nda
+identity:
+  aliases: []
+  current_version_id: sha256:00e4208dd746dd6af5f25ca2843a25e386076376
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: LICENSE file in repo root; README badge confirms MIT
+    spdx: MIT
+    verified: true
+  path: pm-toolkit/skills/draft-nda/SKILL.md
+  source_id: src_https-github-com-phuryn-pm-skills-pm-skills-marketplace-phuryn_8ac36372
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-09T19:02:48.414Z'

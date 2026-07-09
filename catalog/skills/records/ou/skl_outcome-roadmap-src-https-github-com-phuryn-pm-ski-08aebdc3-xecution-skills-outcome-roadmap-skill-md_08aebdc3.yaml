@@ -1,0 +1,45 @@
+analysis:
+  hash: null
+  path: catalog/analyses/ou/skl_outcome-roadmap-src-https-github-com-phuryn-pm-ski-08aebdc3-xecution-skills-outcome-roadmap-skill-md_08aebdc3.md
+canonical_name: outcome-roadmap
+canonical_skill_id: skl_outcome-roadmap-src-https-github-com-phuryn-pm-ski-08aebdc3-xecution-skills-outcome-roadmap-skill-md_08aebdc3
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-09T19:02:43.881Z'
+curation:
+  notes: []
+display_name: outcome-roadmap
+identity:
+  aliases: []
+  current_version_id: sha256:c51cfa226a50ab9f14367adc4c54af14b2562da9
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: LICENSE file in repo root; README badge confirms MIT
+    spdx: MIT
+    verified: true
+  path: pm-execution/skills/outcome-roadmap/SKILL.md
+  source_id: src_https-github-com-phuryn-pm-skills-pm-skills-marketplace-phuryn_8ac36372
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-09T19:02:43.881Z'

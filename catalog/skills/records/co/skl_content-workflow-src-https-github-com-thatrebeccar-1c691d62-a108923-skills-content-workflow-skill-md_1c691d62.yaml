@@ -1,0 +1,45 @@
+analysis:
+  hash: null
+  path: catalog/analyses/co/skl_content-workflow-src-https-github-com-thatrebeccar-1c691d62-a108923-skills-content-workflow-skill-md_1c691d62.md
+canonical_name: content-workflow
+canonical_skill_id: skl_content-workflow-src-https-github-com-thatrebeccar-1c691d62-a108923-skills-content-workflow-skill-md_1c691d62
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-09T19:02:32.478Z'
+curation:
+  notes: []
+display_name: content-workflow
+identity:
+  aliases: []
+  current_version_id: sha256:5e860f211ec50ab1a0c88a243d2bd33765ec7d2d
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: LICENSE file in repo root; README states MIT
+    spdx: MIT
+    verified: true
+  path: skills/content-workflow/SKILL.md
+  source_id: src_https-github-com-thatrebeccarae-claude-marketing-claude-marketing-rebecca-rae-barton_8a108923
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-09T19:02:32.478Z'

@@ -1,0 +1,45 @@
+analysis:
+  hash: null
+  path: catalog/analyses/co/skl_cohort-analysis-src-https-github-com-phuryn-pm-ski-64af3cb7-nalytics-skills-cohort-analysis-skill-md_64af3cb7.md
+canonical_name: cohort-analysis
+canonical_skill_id: skl_cohort-analysis-src-https-github-com-phuryn-pm-ski-64af3cb7-nalytics-skills-cohort-analysis-skill-md_64af3cb7
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-09T19:02:43.389Z'
+curation:
+  notes: []
+display_name: cohort-analysis
+identity:
+  aliases: []
+  current_version_id: sha256:e2d7b0e9fb83e04d7ff584747efedd4d0701d6fd
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: LICENSE file in repo root; README badge confirms MIT
+    spdx: MIT
+    verified: true
+  path: pm-data-analytics/skills/cohort-analysis/SKILL.md
+  source_id: src_https-github-com-phuryn-pm-skills-pm-skills-marketplace-phuryn_8ac36372
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-09T19:02:43.389Z'

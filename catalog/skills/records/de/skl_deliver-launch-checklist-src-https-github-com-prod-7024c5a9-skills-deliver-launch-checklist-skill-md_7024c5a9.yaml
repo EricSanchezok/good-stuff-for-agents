@@ -1,0 +1,45 @@
+analysis:
+  hash: null
+  path: catalog/analyses/de/skl_deliver-launch-checklist-src-https-github-com-prod-7024c5a9-skills-deliver-launch-checklist-skill-md_7024c5a9.md
+canonical_name: deliver-launch-checklist
+canonical_skill_id: skl_deliver-launch-checklist-src-https-github-com-prod-7024c5a9-skills-deliver-launch-checklist-skill-md_7024c5a9
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-09T19:02:37.696Z'
+curation:
+  notes: []
+display_name: deliver-launch-checklist
+identity:
+  aliases: []
+  current_version_id: sha256:859bee4a17a72bd7cc5fa136a935f6dde12ad8a7
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: LICENSE file in repo root; README states Apache 2.0
+    spdx: Apache-2.0
+    verified: true
+  path: skills/deliver-launch-checklist/SKILL.md
+  source_id: src_https-github-com-product-on-purpose-pm-skills-pm-skills-product-on-purpose_f2ce15e5
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-09T19:02:37.696Z'

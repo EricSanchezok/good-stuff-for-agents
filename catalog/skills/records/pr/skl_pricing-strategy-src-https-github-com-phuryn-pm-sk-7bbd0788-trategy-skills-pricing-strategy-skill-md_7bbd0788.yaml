@@ -1,0 +1,45 @@
+analysis:
+  hash: null
+  path: catalog/analyses/pr/skl_pricing-strategy-src-https-github-com-phuryn-pm-sk-7bbd0788-trategy-skills-pricing-strategy-skill-md_7bbd0788.md
+canonical_name: pricing-strategy
+canonical_skill_id: skl_pricing-strategy-src-https-github-com-phuryn-pm-sk-7bbd0788-trategy-skills-pricing-strategy-skill-md_7bbd0788
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-09T19:02:47.944Z'
+curation:
+  notes: []
+display_name: pricing-strategy
+identity:
+  aliases: []
+  current_version_id: sha256:26298a3d461e7d218c3a60bdb992d5b9ba03a917
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: LICENSE file in repo root; README badge confirms MIT
+    spdx: MIT
+    verified: true
+  path: pm-product-strategy/skills/pricing-strategy/SKILL.md
+  source_id: src_https-github-com-phuryn-pm-skills-pm-skills-marketplace-phuryn_8ac36372
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-09T19:02:47.944Z'

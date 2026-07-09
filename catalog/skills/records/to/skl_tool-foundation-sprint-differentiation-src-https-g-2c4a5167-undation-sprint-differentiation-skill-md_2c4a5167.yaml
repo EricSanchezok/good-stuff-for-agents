@@ -1,0 +1,45 @@
+analysis:
+  hash: null
+  path: catalog/analyses/to/skl_tool-foundation-sprint-differentiation-src-https-g-2c4a5167-undation-sprint-differentiation-skill-md_2c4a5167.md
+canonical_name: tool-foundation-sprint-differentiation
+canonical_skill_id: skl_tool-foundation-sprint-differentiation-src-https-g-2c4a5167-undation-sprint-differentiation-skill-md_2c4a5167
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-09T19:02:41.734Z'
+curation:
+  notes: []
+display_name: tool-foundation-sprint-differentiation
+identity:
+  aliases: []
+  current_version_id: sha256:7e973ae349f86498f19ceef9cd5b76e4612bbb24
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: LICENSE file in repo root; README states Apache 2.0
+    spdx: Apache-2.0
+    verified: true
+  path: skills/tool-foundation-sprint-differentiation/SKILL.md
+  source_id: src_https-github-com-product-on-purpose-pm-skills-pm-skills-product-on-purpose_f2ce15e5
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-09T19:02:41.734Z'

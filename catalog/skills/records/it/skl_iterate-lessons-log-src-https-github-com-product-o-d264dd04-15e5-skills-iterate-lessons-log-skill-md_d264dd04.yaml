@@ -1,0 +1,45 @@
+analysis:
+  hash: null
+  path: catalog/analyses/it/skl_iterate-lessons-log-src-https-github-com-product-o-d264dd04-15e5-skills-iterate-lessons-log-skill-md_d264dd04.md
+canonical_name: iterate-lessons-log
+canonical_skill_id: skl_iterate-lessons-log-src-https-github-com-product-o-d264dd04-15e5-skills-iterate-lessons-log-skill-md_d264dd04
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-09T19:02:39.761Z'
+curation:
+  notes: []
+display_name: iterate-lessons-log
+identity:
+  aliases: []
+  current_version_id: sha256:3ace1abac3d5d0bd7124aef8bfbe8448a5cfa97b
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: LICENSE file in repo root; README states Apache 2.0
+    spdx: Apache-2.0
+    verified: true
+  path: skills/iterate-lessons-log/SKILL.md
+  source_id: src_https-github-com-product-on-purpose-pm-skills-pm-skills-product-on-purpose_f2ce15e5
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-09T19:02:39.761Z'

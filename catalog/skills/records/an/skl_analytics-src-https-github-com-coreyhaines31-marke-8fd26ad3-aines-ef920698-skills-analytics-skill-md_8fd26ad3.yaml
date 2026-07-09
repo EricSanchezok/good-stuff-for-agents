@@ -1,0 +1,45 @@
+analysis:
+  hash: null
+  path: catalog/analyses/an/skl_analytics-src-https-github-com-coreyhaines31-marke-8fd26ad3-aines-ef920698-skills-analytics-skill-md_8fd26ad3.md
+canonical_name: analytics
+canonical_skill_id: skl_analytics-src-https-github-com-coreyhaines31-marke-8fd26ad3-aines-ef920698-skills-analytics-skill-md_8fd26ad3
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-09T19:02:49.041Z'
+curation:
+  notes: []
+display_name: analytics
+identity:
+  aliases: []
+  current_version_id: sha256:da39c1dc1586bc6cb06758e72426198493d00797
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: LICENSE file in repo root; README states MIT
+    spdx: MIT
+    verified: true
+  path: skills/analytics/SKILL.md
+  source_id: src_https-github-com-coreyhaines31-marketingskills-marketing-skills-corey-haines_ef920698
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-09T19:02:49.041Z'

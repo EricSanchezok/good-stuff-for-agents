@@ -1,0 +1,45 @@
+analysis:
+  hash: null
+  path: catalog/analyses/po/skl_porters-five-forces-src-https-github-com-phuryn-pm-7c41e3c1-tegy-skills-porters-five-forces-skill-md_7c41e3c1.md
+canonical_name: porters-five-forces
+canonical_skill_id: skl_porters-five-forces-src-https-github-com-phuryn-pm-7c41e3c1-tegy-skills-porters-five-forces-skill-md_7c41e3c1
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-09T19:02:47.862Z'
+curation:
+  notes: []
+display_name: porters-five-forces
+identity:
+  aliases: []
+  current_version_id: sha256:82fd3592e2af142907674214296ef86cc11d6478
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: LICENSE file in repo root; README badge confirms MIT
+    spdx: MIT
+    verified: true
+  path: pm-product-strategy/skills/porters-five-forces/SKILL.md
+  source_id: src_https-github-com-phuryn-pm-skills-pm-skills-marketplace-phuryn_8ac36372
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-09T19:02:47.862Z'

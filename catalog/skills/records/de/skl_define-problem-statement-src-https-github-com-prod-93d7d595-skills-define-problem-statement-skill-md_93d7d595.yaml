@@ -1,0 +1,45 @@
+analysis:
+  hash: null
+  path: catalog/analyses/de/skl_define-problem-statement-src-https-github-com-prod-93d7d595-skills-define-problem-statement-skill-md_93d7d595.md
+canonical_name: define-problem-statement
+canonical_skill_id: skl_define-problem-statement-src-https-github-com-prod-93d7d595-skills-define-problem-statement-skill-md_93d7d595
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-09T19:02:37.409Z'
+curation:
+  notes: []
+display_name: define-problem-statement
+identity:
+  aliases: []
+  current_version_id: sha256:a0ab828277b1d311f117ba41efaf6df750da7ce5
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: LICENSE file in repo root; README states Apache 2.0
+    spdx: Apache-2.0
+    verified: true
+  path: skills/define-problem-statement/SKILL.md
+  source_id: src_https-github-com-product-on-purpose-pm-skills-pm-skills-product-on-purpose_f2ce15e5
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-09T19:02:37.409Z'

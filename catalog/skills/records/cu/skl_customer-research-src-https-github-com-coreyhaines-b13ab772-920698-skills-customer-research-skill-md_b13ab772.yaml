@@ -1,0 +1,45 @@
+analysis:
+  hash: null
+  path: catalog/analyses/cu/skl_customer-research-src-https-github-com-coreyhaines-b13ab772-920698-skills-customer-research-skill-md_b13ab772.md
+canonical_name: customer-research
+canonical_skill_id: skl_customer-research-src-https-github-com-coreyhaines-b13ab772-920698-skills-customer-research-skill-md_b13ab772
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-09T19:02:50.019Z'
+curation:
+  notes: []
+display_name: customer-research
+identity:
+  aliases: []
+  current_version_id: sha256:54577ef2871a00ecb4088e53313170ed17bf8d76
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: LICENSE file in repo root; README states MIT
+    spdx: MIT
+    verified: true
+  path: skills/customer-research/SKILL.md
+  source_id: src_https-github-com-coreyhaines31-marketingskills-marketing-skills-corey-haines_ef920698
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-09T19:02:50.019Z'

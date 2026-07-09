@@ -1,0 +1,45 @@
+analysis:
+  hash: null
+  path: catalog/analyses/in/skl_interview-script-src-https-github-com-phuryn-pm-sk-9f3dbf2b-scovery-skills-interview-script-skill-md_9f3dbf2b.md
+canonical_name: interview-script
+canonical_skill_id: skl_interview-script-src-https-github-com-phuryn-pm-sk-9f3dbf2b-scovery-skills-interview-script-skill-md_9f3dbf2b
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-09T19:02:46.946Z'
+curation:
+  notes: []
+display_name: interview-script
+identity:
+  aliases: []
+  current_version_id: sha256:7ec574e0d107507cb6c1926d2620e2ac822c00b6
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: LICENSE file in repo root; README badge confirms MIT
+    spdx: MIT
+    verified: true
+  path: pm-product-discovery/skills/interview-script/SKILL.md
+  source_id: src_https-github-com-phuryn-pm-skills-pm-skills-marketplace-phuryn_8ac36372
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-09T19:02:46.946Z'

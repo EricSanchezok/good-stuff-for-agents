@@ -1,0 +1,45 @@
+analysis:
+  hash: null
+  path: catalog/analyses/ai/skl_ai-seo-src-https-github-com-coreyhaines31-marketin-b71a257e-y-haines-ef920698-skills-ai-seo-skill-md_b71a257e.md
+canonical_name: ai-seo
+canonical_skill_id: skl_ai-seo-src-https-github-com-coreyhaines31-marketin-b71a257e-y-haines-ef920698-skills-ai-seo-skill-md_b71a257e
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-09T19:02:48.962Z'
+curation:
+  notes: []
+display_name: ai-seo
+identity:
+  aliases: []
+  current_version_id: sha256:de9dfbd7717f281511c800c10302f9268ad1ebbd
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: LICENSE file in repo root; README states MIT
+    spdx: MIT
+    verified: true
+  path: skills/ai-seo/SKILL.md
+  source_id: src_https-github-com-coreyhaines31-marketingskills-marketing-skills-corey-haines_ef920698
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-09T19:02:48.962Z'

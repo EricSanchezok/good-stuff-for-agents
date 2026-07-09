@@ -1,0 +1,45 @@
+analysis:
+  hash: null
+  path: catalog/analyses/co/skl_competitors-src-https-github-com-coreyhaines31-mar-6cfafef2-nes-ef920698-skills-competitors-skill-md_6cfafef2.md
+canonical_name: competitors
+canonical_skill_id: skl_competitors-src-https-github-com-coreyhaines31-mar-6cfafef2-nes-ef920698-skills-competitors-skill-md_6cfafef2
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-09T19:02:49.613Z'
+curation:
+  notes: []
+display_name: competitors
+identity:
+  aliases: []
+  current_version_id: sha256:49ef0ffb7f165fe7af8a6a89627e51c2cdc23aa6
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: LICENSE file in repo root; README states MIT
+    spdx: MIT
+    verified: true
+  path: skills/competitors/SKILL.md
+  source_id: src_https-github-com-coreyhaines31-marketingskills-marketing-skills-corey-haines_ef920698
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-09T19:02:49.613Z'

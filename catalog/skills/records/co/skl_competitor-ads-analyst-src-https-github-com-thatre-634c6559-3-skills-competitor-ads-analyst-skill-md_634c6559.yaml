@@ -1,0 +1,45 @@
+analysis:
+  hash: null
+  path: catalog/analyses/co/skl_competitor-ads-analyst-src-https-github-com-thatre-634c6559-3-skills-competitor-ads-analyst-skill-md_634c6559.md
+canonical_name: competitor-ads-analyst
+canonical_skill_id: skl_competitor-ads-analyst-src-https-github-com-thatre-634c6559-3-skills-competitor-ads-analyst-skill-md_634c6559
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-09T19:02:32.236Z'
+curation:
+  notes: []
+display_name: competitor-ads-analyst
+identity:
+  aliases: []
+  current_version_id: sha256:1e46046df213020cbcd51b76f3e5090f35578a39
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: LICENSE file in repo root; README states MIT
+    spdx: MIT
+    verified: true
+  path: skills/competitor-ads-analyst/SKILL.md
+  source_id: src_https-github-com-thatrebeccarae-claude-marketing-claude-marketing-rebecca-rae-barton_8a108923
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-09T19:02:32.236Z'

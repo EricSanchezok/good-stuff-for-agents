@@ -1,0 +1,45 @@
+analysis:
+  hash: null
+  path: catalog/analyses/ab/skl_ab-test-analysis-src-https-github-com-phuryn-pm-sk-c1cc18c6-alytics-skills-ab-test-analysis-skill-md_c1cc18c6.md
+canonical_name: ab-test-analysis
+canonical_skill_id: skl_ab-test-analysis-src-https-github-com-phuryn-pm-sk-c1cc18c6-alytics-skills-ab-test-analysis-skill-md_c1cc18c6
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-09T19:02:43.298Z'
+curation:
+  notes: []
+display_name: ab-test-analysis
+identity:
+  aliases: []
+  current_version_id: sha256:58c239714c0e20e19167fcde3d4cd3a608578754
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: LICENSE file in repo root; README badge confirms MIT
+    spdx: MIT
+    verified: true
+  path: pm-data-analytics/skills/ab-test-analysis/SKILL.md
+  source_id: src_https-github-com-phuryn-pm-skills-pm-skills-marketplace-phuryn_8ac36372
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-09T19:02:43.298Z'

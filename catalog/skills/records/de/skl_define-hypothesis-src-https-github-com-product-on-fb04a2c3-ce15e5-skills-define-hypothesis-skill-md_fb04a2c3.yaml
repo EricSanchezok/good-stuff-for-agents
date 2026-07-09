@@ -1,0 +1,45 @@
+analysis:
+  hash: null
+  path: catalog/analyses/de/skl_define-hypothesis-src-https-github-com-product-on-fb04a2c3-ce15e5-skills-define-hypothesis-skill-md_fb04a2c3.md
+canonical_name: define-hypothesis
+canonical_skill_id: skl_define-hypothesis-src-https-github-com-product-on-fb04a2c3-ce15e5-skills-define-hypothesis-skill-md_fb04a2c3
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-09T19:02:37.054Z'
+curation:
+  notes: []
+display_name: define-hypothesis
+identity:
+  aliases: []
+  current_version_id: sha256:d10e3405859c13fb187357061a512a01a92f8197
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: LICENSE file in repo root; README states Apache 2.0
+    spdx: Apache-2.0
+    verified: true
+  path: skills/define-hypothesis/SKILL.md
+  source_id: src_https-github-com-product-on-purpose-pm-skills-pm-skills-product-on-purpose_f2ce15e5
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-09T19:02:37.054Z'

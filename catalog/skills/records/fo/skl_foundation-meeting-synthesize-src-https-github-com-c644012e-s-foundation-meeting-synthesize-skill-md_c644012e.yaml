@@ -1,0 +1,45 @@
+analysis:
+  hash: null
+  path: catalog/analyses/fo/skl_foundation-meeting-synthesize-src-https-github-com-c644012e-s-foundation-meeting-synthesize-skill-md_c644012e.md
+canonical_name: foundation-meeting-synthesize
+canonical_skill_id: skl_foundation-meeting-synthesize-src-https-github-com-c644012e-s-foundation-meeting-synthesize-skill-md_c644012e
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-09T19:02:39.265Z'
+curation:
+  notes: []
+display_name: foundation-meeting-synthesize
+identity:
+  aliases: []
+  current_version_id: sha256:09d9c675f9cbe57e48288916bcdac21588943270
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: LICENSE file in repo root; README states Apache 2.0
+    spdx: Apache-2.0
+    verified: true
+  path: skills/foundation-meeting-synthesize/SKILL.md
+  source_id: src_https-github-com-product-on-purpose-pm-skills-pm-skills-product-on-purpose_f2ce15e5
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-09T19:02:39.265Z'

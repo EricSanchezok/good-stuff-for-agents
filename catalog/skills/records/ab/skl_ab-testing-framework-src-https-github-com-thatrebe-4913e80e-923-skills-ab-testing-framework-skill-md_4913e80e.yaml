@@ -1,0 +1,45 @@
+analysis:
+  hash: null
+  path: catalog/analyses/ab/skl_ab-testing-framework-src-https-github-com-thatrebe-4913e80e-923-skills-ab-testing-framework-skill-md_4913e80e.md
+canonical_name: ab-testing-framework
+canonical_skill_id: skl_ab-testing-framework-src-https-github-com-thatrebe-4913e80e-923-skills-ab-testing-framework-skill-md_4913e80e
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-09T19:02:31.618Z'
+curation:
+  notes: []
+display_name: ab-testing-framework
+identity:
+  aliases: []
+  current_version_id: sha256:6442aed5e6a66e8756643453fc85ba648beaf3cf
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: LICENSE file in repo root; README states MIT
+    spdx: MIT
+    verified: true
+  path: skills/ab-testing-framework/SKILL.md
+  source_id: src_https-github-com-thatrebeccarae-claude-marketing-claude-marketing-rebecca-rae-barton_8a108923
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-09T19:02:31.618Z'

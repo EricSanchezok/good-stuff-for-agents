@@ -10,9 +10,9 @@ sources:
   source_id: src_https-github-com-anthropics-skills-anthropic-agent-skills_04f79b56
   state:
     consecutive_failures: 0
-    last_checked_at: '2026-07-09T18:08:47.476Z'
+    last_checked_at: '2026-07-09T19:00:24.667Z'
     last_ref: 9d2f1ae187231d8199c64b5b762e1bdf2244733d
-    last_success_at: '2026-07-09T18:08:47.476Z'
+    last_success_at: '2026-07-09T19:00:24.667Z'
   status: active
   sync:
     default_ref: main
@@ -35,9 +35,9 @@ sources:
   source_id: src_https-github-com-coderabbitai-skills-coderabbit-skills_8f2a22eb
   state:
     consecutive_failures: 0
-    last_checked_at: '2026-07-09T18:08:48.749Z'
+    last_checked_at: '2026-07-09T19:00:25.921Z'
     last_ref: 2fd091d9582deccf19929e21f934921d0e8f686e
-    last_success_at: '2026-07-09T18:08:48.749Z'
+    last_success_at: '2026-07-09T19:00:25.921Z'
   status: active
   sync:
     default_ref: main
@@ -53,6 +53,31 @@ sources:
   updated_at: '2026-07-09T17:19:39.155Z'
   url: https://github.com/coderabbitai/skills
 - license:
+    evidence: LICENSE file in repo root; README states MIT
+    spdx: MIT
+    verified: true
+  name: Marketing Skills (Corey Haines)
+  schema_version: 1
+  source_id: src_https-github-com-coreyhaines31-marketingskills-marketing-skills-corey-haines_ef920698
+  state:
+    consecutive_failures: 0
+    last_checked_at: '2026-07-09T19:00:27.130Z'
+    last_ref: 33218ff1ca025b977da902ecb18d40e808f00c26
+    last_success_at: '2026-07-09T19:00:27.130Z'
+  status: active
+  sync:
+    default_ref: main
+    exclude:
+    - node_modules/**
+    - .git/**
+    frequency: daily
+    include:
+    - '**/SKILL.md'
+    strategy: git
+  type: github_repo
+  updated_at: '2026-07-09T18:59:58.698Z'
+  url: https://github.com/coreyhaines31/marketingskills
+- license:
     evidence: Repo governed by Figma Developer Terms. Skills are downloadable and
       usable by any agentic tool. Beta feature, free during beta.
     spdx: LicenseRef-Figma-Developer-Terms
@@ -62,9 +87,9 @@ sources:
   source_id: src_https-github-com-figma-mcp-server-guide-figma-mcp-skills_dde79ddd
   state:
     consecutive_failures: 0
-    last_checked_at: '2026-07-09T18:08:50.000Z'
+    last_checked_at: '2026-07-09T19:00:28.504Z'
     last_ref: 864d2111a3fb990323d73e38133f297345b3ea38
-    last_success_at: '2026-07-09T18:08:50.000Z'
+    last_success_at: '2026-07-09T19:00:28.504Z'
   status: preview
   sync:
     default_ref: main
@@ -88,9 +113,9 @@ sources:
   source_id: src_https-github-com-k-dense-ai-scientific-agent-skills-k-dense-scientific-agent-skills_5bdb6d39
   state:
     consecutive_failures: 0
-    last_checked_at: '2026-07-09T18:08:51.241Z'
+    last_checked_at: '2026-07-09T19:00:29.777Z'
     last_ref: 4d97e293dc6f604fb6b63dcd49b9028df413d65b
-    last_success_at: '2026-07-09T18:08:51.241Z'
+    last_success_at: '2026-07-09T19:00:29.777Z'
   status: active
   sync:
     default_ref: main
@@ -115,9 +140,9 @@ sources:
   source_id: src_https-github-com-kozz36-frontend-designer-skill-frontend-designer-skill_929a1309
   state:
     consecutive_failures: 0
-    last_checked_at: '2026-07-09T18:08:52.561Z'
+    last_checked_at: '2026-07-09T19:00:30.972Z'
     last_ref: 5e4dc12811bd106e3184a863656e141aed398a3f
-    last_success_at: '2026-07-09T18:08:52.561Z'
+    last_success_at: '2026-07-09T19:00:30.972Z'
   status: preview
   sync:
     default_ref: main
@@ -140,9 +165,9 @@ sources:
   source_id: src_https-github-com-mcollina-skills-matteo-collina-s-skills_faf2f289
   state:
     consecutive_failures: 0
-    last_checked_at: '2026-07-09T18:08:53.765Z'
+    last_checked_at: '2026-07-09T19:00:32.152Z'
     last_ref: 5b2a81354b6d10325da0db9decc9ce5ecc714138
-    last_success_at: '2026-07-09T18:08:53.765Z'
+    last_success_at: '2026-07-09T19:00:32.152Z'
   status: active
   sync:
     default_ref: main
@@ -167,9 +192,9 @@ sources:
   source_id: src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e
   state:
     consecutive_failures: 0
-    last_checked_at: '2026-07-09T18:08:55.072Z'
+    last_checked_at: '2026-07-09T19:00:33.464Z'
     last_ref: c33193b1b2dd14d5946e3c6213fd095ffa5b31df
-    last_success_at: '2026-07-09T18:08:55.072Z'
+    last_success_at: '2026-07-09T19:00:33.464Z'
   status: active
   sync:
     default_ref: main
@@ -186,6 +211,59 @@ sources:
   updated_at: '2026-07-09T17:19:39.028Z'
   url: https://github.com/microsoft/skills
 - license:
+    evidence: LICENSE file in repo root; README badge confirms MIT
+    spdx: MIT
+    verified: true
+  name: PM Skills Marketplace (phuryn)
+  schema_version: 1
+  source_id: src_https-github-com-phuryn-pm-skills-pm-skills-marketplace-phuryn_8ac36372
+  state:
+    consecutive_failures: 0
+    last_checked_at: '2026-07-09T19:00:34.654Z'
+    last_ref: 18468a95b427e70e258b51389796367c6f684e7d
+    last_success_at: '2026-07-09T19:00:34.654Z'
+  status: active
+  sync:
+    default_ref: main
+    exclude:
+    - node_modules/**
+    - .git/**
+    frequency: daily
+    include:
+    - '**/SKILL.md'
+    strategy: git
+  type: github_repo
+  updated_at: '2026-07-09T18:59:58.978Z'
+  url: https://github.com/phuryn/pm-skills
+- license:
+    evidence: LICENSE file in repo root; README states Apache 2.0
+    spdx: Apache-2.0
+    verified: true
+  name: PM Skills (Product on Purpose)
+  schema_version: 1
+  source_id: src_https-github-com-product-on-purpose-pm-skills-pm-skills-product-on-purpose_f2ce15e5
+  state:
+    consecutive_failures: 0
+    last_checked_at: '2026-07-09T19:00:35.895Z'
+    last_ref: eee2ef7fea55f29b491e03c198134e496edd7a03
+    last_success_at: '2026-07-09T19:00:35.895Z'
+  status: preview
+  sync:
+    default_ref: main
+    exclude:
+    - node_modules/**
+    - .git/**
+    - docs/**
+    - .github/**
+    - site/**
+    frequency: daily
+    include:
+    - '**/SKILL.md'
+    strategy: git
+  type: github_repo
+  updated_at: '2026-07-09T18:59:59.065Z'
+  url: https://github.com/product-on-purpose/pm-skills
+- license:
     evidence: LICENSE file in repo root confirms MIT
     spdx: MIT
     verified: true
@@ -194,9 +272,9 @@ sources:
   source_id: src_https-github-com-southleft-skills-for-figma-skills-for-figma-southleft_ea9f2b3d
   state:
     consecutive_failures: 0
-    last_checked_at: '2026-07-09T18:08:56.363Z'
+    last_checked_at: '2026-07-09T19:00:37.066Z'
     last_ref: 79bda1e76044d1e9d9b60bb211507e64833af92b
-    last_success_at: '2026-07-09T18:08:56.363Z'
+    last_success_at: '2026-07-09T19:00:37.066Z'
   status: preview
   sync:
     default_ref: main
@@ -210,3 +288,30 @@ sources:
   type: github_repo
   updated_at: '2026-07-09T18:08:30.929Z'
   url: https://github.com/southleft/skills-for-figma
+- license:
+    evidence: LICENSE file in repo root; README states MIT
+    spdx: MIT
+    verified: true
+  name: Claude Marketing (Rebecca Rae Barton)
+  schema_version: 1
+  source_id: src_https-github-com-thatrebeccarae-claude-marketing-claude-marketing-rebecca-rae-barton_8a108923
+  state:
+    consecutive_failures: 0
+    last_checked_at: '2026-07-09T19:00:38.308Z'
+    last_ref: a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba
+    last_success_at: '2026-07-09T19:00:38.308Z'
+  status: preview
+  sync:
+    default_ref: main
+    exclude:
+    - node_modules/**
+    - .git/**
+    - examples/**
+    - skill-packs/**
+    frequency: daily
+    include:
+    - '**/SKILL.md'
+    strategy: git
+  type: github_repo
+  updated_at: '2026-07-09T18:59:58.891Z'
+  url: https://github.com/thatrebeccarae/claude-marketing

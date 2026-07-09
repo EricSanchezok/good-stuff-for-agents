@@ -1,0 +1,45 @@
+analysis:
+  hash: null
+  path: catalog/analyses/de/skl_deliver-y-src-https-github-com-product-on-purpose-d543ed13-hooks-fixtures-skills-deliver-y-skill-md_d543ed13.md
+canonical_name: deliver-y
+canonical_skill_id: skl_deliver-y-src-https-github-com-product-on-purpose-d543ed13-hooks-fixtures-skills-deliver-y-skill-md_d543ed13
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-09T19:02:36.481Z'
+curation:
+  notes: []
+display_name: deliver-y
+identity:
+  aliases: []
+  current_version_id: sha256:bdb933bf5fa254d1ff6758c057e6aa3d263c5019
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: LICENSE file in repo root; README states Apache 2.0
+    spdx: Apache-2.0
+    verified: true
+  path: hooks/fixtures/skills/deliver-y/SKILL.md
+  source_id: src_https-github-com-product-on-purpose-pm-skills-pm-skills-product-on-purpose_f2ce15e5
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-09T19:02:36.481Z'

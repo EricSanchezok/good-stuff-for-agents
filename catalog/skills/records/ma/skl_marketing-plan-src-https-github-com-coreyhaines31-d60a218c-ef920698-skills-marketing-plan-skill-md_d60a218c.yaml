@@ -1,0 +1,45 @@
+analysis:
+  hash: null
+  path: catalog/analyses/ma/skl_marketing-plan-src-https-github-com-coreyhaines31-d60a218c-ef920698-skills-marketing-plan-skill-md_d60a218c.md
+canonical_name: marketing-plan
+canonical_skill_id: skl_marketing-plan-src-https-github-com-coreyhaines31-d60a218c-ef920698-skills-marketing-plan-skill-md_d60a218c
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-09T19:02:50.854Z'
+curation:
+  notes: []
+display_name: marketing-plan
+identity:
+  aliases: []
+  current_version_id: sha256:a647a520f6981032a3174dc988f75c9a71558831
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: LICENSE file in repo root; README states MIT
+    spdx: MIT
+    verified: true
+  path: skills/marketing-plan/SKILL.md
+  source_id: src_https-github-com-coreyhaines31-marketingskills-marketing-skills-corey-haines_ef920698
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-09T19:02:50.854Z'

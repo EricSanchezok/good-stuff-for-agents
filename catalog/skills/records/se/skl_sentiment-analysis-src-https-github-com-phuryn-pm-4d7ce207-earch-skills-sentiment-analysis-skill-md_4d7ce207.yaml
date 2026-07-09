@@ -1,0 +1,45 @@
+analysis:
+  hash: null
+  path: catalog/analyses/se/skl_sentiment-analysis-src-https-github-com-phuryn-pm-4d7ce207-earch-skills-sentiment-analysis-skill-md_4d7ce207.md
+canonical_name: sentiment-analysis
+canonical_skill_id: skl_sentiment-analysis-src-https-github-com-phuryn-pm-4d7ce207-earch-skills-sentiment-analysis-skill-md_4d7ce207
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-09T19:02:45.683Z'
+curation:
+  notes: []
+display_name: sentiment-analysis
+identity:
+  aliases: []
+  current_version_id: sha256:9368b74ce9d15cb865a704dab3d8d22bca65483d
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: LICENSE file in repo root; README badge confirms MIT
+    spdx: MIT
+    verified: true
+  path: pm-market-research/skills/sentiment-analysis/SKILL.md
+  source_id: src_https-github-com-phuryn-pm-skills-pm-skills-marketplace-phuryn_8ac36372
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-09T19:02:45.683Z'

@@ -1,0 +1,45 @@
+analysis:
+  hash: null
+  path: catalog/analyses/kl/skl_klaviyo-analyst-src-https-github-com-thatrebeccara-1e5f87ae-8a108923-skills-klaviyo-analyst-skill-md_1e5f87ae.md
+canonical_name: klaviyo-analyst
+canonical_skill_id: skl_klaviyo-analyst-src-https-github-com-thatrebeccara-1e5f87ae-8a108923-skills-klaviyo-analyst-skill-md_1e5f87ae
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-09T19:02:33.788Z'
+curation:
+  notes: []
+display_name: klaviyo-analyst
+identity:
+  aliases: []
+  current_version_id: sha256:d948d2c7bf35b2b8e4a6101f90a6373088478f50
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: LICENSE file in repo root; README states MIT
+    spdx: MIT
+    verified: true
+  path: skills/klaviyo-analyst/SKILL.md
+  source_id: src_https-github-com-thatrebeccarae-claude-marketing-claude-marketing-rebecca-rae-barton_8a108923
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-09T19:02:33.788Z'

@@ -1,0 +1,45 @@
+analysis:
+  hash: null
+  path: catalog/analyses/di/skl_directory-submissions-src-https-github-com-coreyha-46127a6b-98-skills-directory-submissions-skill-md_46127a6b.md
+canonical_name: directory-submissions
+canonical_skill_id: skl_directory-submissions-src-https-github-com-coreyha-46127a6b-98-skills-directory-submissions-skill-md_46127a6b
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-09T19:02:50.098Z'
+curation:
+  notes: []
+display_name: directory-submissions
+identity:
+  aliases: []
+  current_version_id: sha256:9abacadbdca03bb9c72d2232a5e5a0c5de8013b0
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: LICENSE file in repo root; README states MIT
+    spdx: MIT
+    verified: true
+  path: skills/directory-submissions/SKILL.md
+  source_id: src_https-github-com-coreyhaines31-marketingskills-marketing-skills-corey-haines_ef920698
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-09T19:02:50.098Z'

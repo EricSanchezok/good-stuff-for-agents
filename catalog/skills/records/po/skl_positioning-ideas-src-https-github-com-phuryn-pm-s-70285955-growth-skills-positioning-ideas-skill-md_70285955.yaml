@@ -1,0 +1,45 @@
+analysis:
+  hash: null
+  path: catalog/analyses/po/skl_positioning-ideas-src-https-github-com-phuryn-pm-s-70285955-growth-skills-positioning-ideas-skill-md_70285955.md
+canonical_name: positioning-ideas
+canonical_skill_id: skl_positioning-ideas-src-https-github-com-phuryn-pm-s-70285955-growth-skills-positioning-ideas-skill-md_70285955
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-09T19:02:46.103Z'
+curation:
+  notes: []
+display_name: positioning-ideas
+identity:
+  aliases: []
+  current_version_id: sha256:d3f225a0c8b1f5a99cb5ba2b93f7804ab810127d
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: LICENSE file in repo root; README badge confirms MIT
+    spdx: MIT
+    verified: true
+  path: pm-marketing-growth/skills/positioning-ideas/SKILL.md
+  source_id: src_https-github-com-phuryn-pm-skills-pm-skills-marketplace-phuryn_8ac36372
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-09T19:02:46.103Z'

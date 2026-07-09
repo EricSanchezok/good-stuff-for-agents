@@ -1,0 +1,45 @@
+analysis:
+  hash: null
+  path: catalog/analyses/re/skl_release-notes-src-https-github-com-thatrebeccarae-7b438880-n-8a108923-skills-release-notes-skill-md_7b438880.md
+canonical_name: release-notes
+canonical_skill_id: skl_release-notes-src-https-github-com-thatrebeccarae-7b438880-n-8a108923-skills-release-notes-skill-md_7b438880
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-09T19:02:34.897Z'
+curation:
+  notes: []
+display_name: release-notes
+identity:
+  aliases: []
+  current_version_id: sha256:d499448154cae637d642af2c445d320709cda99e
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: LICENSE file in repo root; README states MIT
+    spdx: MIT
+    verified: true
+  path: skills/release-notes/SKILL.md
+  source_id: src_https-github-com-thatrebeccarae-claude-marketing-claude-marketing-rebecca-rae-barton_8a108923
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-09T19:02:34.897Z'

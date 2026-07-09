@@ -1,0 +1,45 @@
+analysis:
+  hash: null
+  path: catalog/analyses/su/skl_summarize-interview-src-https-github-com-phuryn-pm-c7146b54-very-skills-summarize-interview-skill-md_c7146b54.md
+canonical_name: summarize-interview
+canonical_skill_id: skl_summarize-interview-src-https-github-com-phuryn-pm-c7146b54-very-skills-summarize-interview-skill-md_c7146b54
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-09T19:02:47.357Z'
+curation:
+  notes: []
+display_name: summarize-interview
+identity:
+  aliases: []
+  current_version_id: sha256:b4fee4359979f565a785f9ee704ab6d9ee48d54a
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: LICENSE file in repo root; README badge confirms MIT
+    spdx: MIT
+    verified: true
+  path: pm-product-discovery/skills/summarize-interview/SKILL.md
+  source_id: src_https-github-com-phuryn-pm-skills-pm-skills-marketplace-phuryn_8ac36372
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-09T19:02:47.357Z'

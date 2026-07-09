@@ -1,0 +1,45 @@
+analysis:
+  hash: null
+  path: catalog/analyses/br/skl_brainstorm-okrs-src-https-github-com-phuryn-pm-ski-3c19ec2b-xecution-skills-brainstorm-okrs-skill-md_3c19ec2b.md
+canonical_name: brainstorm-okrs
+canonical_skill_id: skl_brainstorm-okrs-src-https-github-com-phuryn-pm-ski-3c19ec2b-xecution-skills-brainstorm-okrs-skill-md_3c19ec2b
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-09T19:02:43.553Z'
+curation:
+  notes: []
+display_name: brainstorm-okrs
+identity:
+  aliases: []
+  current_version_id: sha256:74709d80c461458ff4dab3712586f90ee5ec8cc1
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: LICENSE file in repo root; README badge confirms MIT
+    spdx: MIT
+    verified: true
+  path: pm-execution/skills/brainstorm-okrs/SKILL.md
+  source_id: src_https-github-com-phuryn-pm-skills-pm-skills-marketplace-phuryn_8ac36372
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-09T19:02:43.553Z'

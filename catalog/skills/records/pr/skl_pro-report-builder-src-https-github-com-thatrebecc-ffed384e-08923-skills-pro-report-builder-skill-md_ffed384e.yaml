@@ -1,0 +1,45 @@
+analysis:
+  hash: null
+  path: catalog/analyses/pr/skl_pro-report-builder-src-https-github-com-thatrebecc-ffed384e-08923-skills-pro-report-builder-skill-md_ffed384e.md
+canonical_name: pro-report-builder
+canonical_skill_id: skl_pro-report-builder-src-https-github-com-thatrebecc-ffed384e-08923-skills-pro-report-builder-skill-md_ffed384e
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-09T19:02:34.731Z'
+curation:
+  notes: []
+display_name: pro-report-builder
+identity:
+  aliases: []
+  current_version_id: sha256:6d79e89f5524da1888a28ff4e541c236a2697034
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: LICENSE file in repo root; README states MIT
+    spdx: MIT
+    verified: true
+  path: skills/pro-report-builder/SKILL.md
+  source_id: src_https-github-com-thatrebeccarae-claude-marketing-claude-marketing-rebecca-rae-barton_8a108923
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-09T19:02:34.731Z'

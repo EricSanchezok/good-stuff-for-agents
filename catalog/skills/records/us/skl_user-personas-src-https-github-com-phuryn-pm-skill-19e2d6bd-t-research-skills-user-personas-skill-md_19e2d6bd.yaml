@@ -1,0 +1,45 @@
+analysis:
+  hash: null
+  path: catalog/analyses/us/skl_user-personas-src-https-github-com-phuryn-pm-skill-19e2d6bd-t-research-skills-user-personas-skill-md_19e2d6bd.md
+canonical_name: user-personas
+canonical_skill_id: skl_user-personas-src-https-github-com-phuryn-pm-skill-19e2d6bd-t-research-skills-user-personas-skill-md_19e2d6bd
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-09T19:02:45.766Z'
+curation:
+  notes: []
+display_name: user-personas
+identity:
+  aliases: []
+  current_version_id: sha256:dd486a376020209c3ef62f2e19224e982b731dab
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: LICENSE file in repo root; README badge confirms MIT
+    spdx: MIT
+    verified: true
+  path: pm-market-research/skills/user-personas/SKILL.md
+  source_id: src_https-github-com-phuryn-pm-skills-pm-skills-marketplace-phuryn_8ac36372
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-09T19:02:45.766Z'

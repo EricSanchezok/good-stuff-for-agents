@@ -1,0 +1,45 @@
+analysis:
+  hash: null
+  path: catalog/analyses/co/skl_cold-email-outreach-src-https-github-com-thatrebec-caa430be-8923-skills-cold-email-outreach-skill-md_caa430be.md
+canonical_name: cold-email-outreach
+canonical_skill_id: skl_cold-email-outreach-src-https-github-com-thatrebec-caa430be-8923-skills-cold-email-outreach-skill-md_caa430be
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-09T19:02:32.155Z'
+curation:
+  notes: []
+display_name: cold-email-outreach
+identity:
+  aliases: []
+  current_version_id: sha256:b01574734da9c18104ace6829b32e67baf5f9c62
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: LICENSE file in repo root; README states MIT
+    spdx: MIT
+    verified: true
+  path: skills/cold-email-outreach/SKILL.md
+  source_id: src_https-github-com-thatrebeccarae-claude-marketing-claude-marketing-rebecca-rae-barton_8a108923
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-09T19:02:32.155Z'

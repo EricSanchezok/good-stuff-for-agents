@@ -1,0 +1,45 @@
+analysis:
+  hash: null
+  path: catalog/analyses/fo/skl_foundation-persona-src-https-github-com-product-on-80fcbbb2-e15e5-skills-foundation-persona-skill-md_80fcbbb2.md
+canonical_name: foundation-persona
+canonical_skill_id: skl_foundation-persona-src-https-github-com-product-on-80fcbbb2-e15e5-skills-foundation-persona-skill-md_80fcbbb2
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-09T19:02:39.436Z'
+curation:
+  notes: []
+display_name: foundation-persona
+identity:
+  aliases: []
+  current_version_id: sha256:d9d7edc1a3ab517e9de08f811725ad3d3e6a4790
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: LICENSE file in repo root; README states Apache 2.0
+    spdx: Apache-2.0
+    verified: true
+  path: skills/foundation-persona/SKILL.md
+  source_id: src_https-github-com-product-on-purpose-pm-skills-pm-skills-product-on-purpose_f2ce15e5
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-09T19:02:39.436Z'

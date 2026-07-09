@@ -1,0 +1,45 @@
+analysis:
+  hash: null
+  path: catalog/analyses/si/skl_site-architecture-src-https-github-com-coreyhaines-1d500952-920698-skills-site-architecture-skill-md_1d500952.md
+canonical_name: site-architecture
+canonical_skill_id: skl_site-architecture-src-https-github-com-coreyhaines-1d500952-920698-skills-site-architecture-skill-md_1d500952
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-09T19:02:52.407Z'
+curation:
+  notes: []
+display_name: site-architecture
+identity:
+  aliases: []
+  current_version_id: sha256:b7658d5f3035a77be3474be2cf25065e9b6df713
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: LICENSE file in repo root; README states MIT
+    spdx: MIT
+    verified: true
+  path: skills/site-architecture/SKILL.md
+  source_id: src_https-github-com-coreyhaines31-marketingskills-marketing-skills-corey-haines_ef920698
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-09T19:02:52.407Z'

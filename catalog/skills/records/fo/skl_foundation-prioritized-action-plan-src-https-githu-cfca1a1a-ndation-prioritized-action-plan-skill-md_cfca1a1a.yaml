@@ -1,0 +1,45 @@
+analysis:
+  hash: null
+  path: catalog/analyses/fo/skl_foundation-prioritized-action-plan-src-https-githu-cfca1a1a-ndation-prioritized-action-plan-skill-md_cfca1a1a.md
+canonical_name: foundation-prioritized-action-plan
+canonical_skill_id: skl_foundation-prioritized-action-plan-src-https-githu-cfca1a1a-ndation-prioritized-action-plan-skill-md_cfca1a1a
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-09T19:02:39.515Z'
+curation:
+  notes: []
+display_name: foundation-prioritized-action-plan
+identity:
+  aliases: []
+  current_version_id: sha256:a3371cf6231694e617f0fe55f7e36dd534b305b3
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: LICENSE file in repo root; README states Apache 2.0
+    spdx: Apache-2.0
+    verified: true
+  path: skills/foundation-prioritized-action-plan/SKILL.md
+  source_id: src_https-github-com-product-on-purpose-pm-skills-pm-skills-product-on-purpose_f2ce15e5
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-09T19:02:39.515Z'

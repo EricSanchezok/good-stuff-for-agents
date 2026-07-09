@@ -1,0 +1,45 @@
+analysis:
+  hash: null
+  path: catalog/analyses/di/skl_discover-journey-map-src-https-github-com-product-790e876d-5e5-skills-discover-journey-map-skill-md_790e876d.md
+canonical_name: discover-journey-map
+canonical_skill_id: skl_discover-journey-map-src-https-github-com-product-790e876d-5e5-skills-discover-journey-map-skill-md_790e876d
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-09T19:02:38.596Z'
+curation:
+  notes: []
+display_name: discover-journey-map
+identity:
+  aliases: []
+  current_version_id: sha256:071b6f4c46d18ef1b640dbabb49996cdb9e24b00
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: LICENSE file in repo root; README states Apache 2.0
+    spdx: Apache-2.0
+    verified: true
+  path: skills/discover-journey-map/SKILL.md
+  source_id: src_https-github-com-product-on-purpose-pm-skills-pm-skills-product-on-purpose_f2ce15e5
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-09T19:02:38.596Z'

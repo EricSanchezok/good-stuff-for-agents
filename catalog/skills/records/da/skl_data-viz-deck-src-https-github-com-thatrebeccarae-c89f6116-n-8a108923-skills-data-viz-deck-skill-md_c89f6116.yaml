@@ -1,0 +1,45 @@
+analysis:
+  hash: null
+  path: catalog/analyses/da/skl_data-viz-deck-src-https-github-com-thatrebeccarae-c89f6116-n-8a108923-skills-data-viz-deck-skill-md_c89f6116.md
+canonical_name: data-viz-deck
+canonical_skill_id: skl_data-viz-deck-src-https-github-com-thatrebeccarae-c89f6116-n-8a108923-skills-data-viz-deck-skill-md_c89f6116
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-09T19:02:32.879Z'
+curation:
+  notes: []
+display_name: data-viz-deck
+identity:
+  aliases: []
+  current_version_id: sha256:42135d2b5abe9502c9f98c2d7142b3fe048f7071
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: LICENSE file in repo root; README states MIT
+    spdx: MIT
+    verified: true
+  path: skills/data-viz-deck/SKILL.md
+  source_id: src_https-github-com-thatrebeccarae-claude-marketing-claude-marketing-rebecca-rae-barton_8a108923
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-09T19:02:32.879Z'

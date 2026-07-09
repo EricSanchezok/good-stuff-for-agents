@@ -1,0 +1,45 @@
+analysis:
+  hash: null
+  path: catalog/analyses/pe/skl_pestle-analysis-src-https-github-com-phuryn-pm-ski-53bf7eaa-strategy-skills-pestle-analysis-skill-md_53bf7eaa.md
+canonical_name: pestle-analysis
+canonical_skill_id: skl_pestle-analysis-src-https-github-com-phuryn-pm-ski-53bf7eaa-strategy-skills-pestle-analysis-skill-md_53bf7eaa
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-09T19:02:47.781Z'
+curation:
+  notes: []
+display_name: pestle-analysis
+identity:
+  aliases: []
+  current_version_id: sha256:bf2636f5cd9af3dd29ee54b8f3bd721444eda556
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: LICENSE file in repo root; README badge confirms MIT
+    spdx: MIT
+    verified: true
+  path: pm-product-strategy/skills/pestle-analysis/SKILL.md
+  source_id: src_https-github-com-phuryn-pm-skills-pm-skills-marketplace-phuryn_8ac36372
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-09T19:02:47.781Z'

@@ -1,0 +1,45 @@
+analysis:
+  hash: null
+  path: catalog/analyses/bu/skl_business-model-src-https-github-com-phuryn-pm-skil-58f416c0-strategy-skills-business-model-skill-md_58f416c0.md
+canonical_name: business-model
+canonical_skill_id: skl_business-model-src-https-github-com-phuryn-pm-skil-58f416c0-strategy-skills-business-model-skill-md_58f416c0
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-09T19:02:47.513Z'
+curation:
+  notes: []
+display_name: business-model
+identity:
+  aliases: []
+  current_version_id: sha256:237f1f290ee32464fb7c79bde4583fd9465738fa
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: LICENSE file in repo root; README badge confirms MIT
+    spdx: MIT
+    verified: true
+  path: pm-product-strategy/skills/business-model/SKILL.md
+  source_id: src_https-github-com-phuryn-pm-skills-pm-skills-marketplace-phuryn_8ac36372
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-09T19:02:47.513Z'

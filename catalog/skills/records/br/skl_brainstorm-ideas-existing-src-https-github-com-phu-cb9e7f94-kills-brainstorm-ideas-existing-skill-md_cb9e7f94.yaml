@@ -1,0 +1,45 @@
+analysis:
+  hash: null
+  path: catalog/analyses/br/skl_brainstorm-ideas-existing-src-https-github-com-phu-cb9e7f94-kills-brainstorm-ideas-existing-skill-md_cb9e7f94.md
+canonical_name: brainstorm-ideas-existing
+canonical_skill_id: skl_brainstorm-ideas-existing-src-https-github-com-phu-cb9e7f94-kills-brainstorm-ideas-existing-skill-md_cb9e7f94
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-09T19:02:46.607Z'
+curation:
+  notes: []
+display_name: brainstorm-ideas-existing
+identity:
+  aliases: []
+  current_version_id: sha256:2228dd7097debad34abd05874d8c709fdac68d54
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: LICENSE file in repo root; README badge confirms MIT
+    spdx: MIT
+    verified: true
+  path: pm-product-discovery/skills/brainstorm-ideas-existing/SKILL.md
+  source_id: src_https-github-com-phuryn-pm-skills-pm-skills-marketplace-phuryn_8ac36372
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-09T19:02:46.607Z'

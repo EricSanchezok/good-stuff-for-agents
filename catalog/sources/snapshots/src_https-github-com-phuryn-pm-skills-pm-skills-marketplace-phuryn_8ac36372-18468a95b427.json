@@ -1,0 +1,1030 @@
+{
+  "schema_version": 1,
+  "source_id": "src_https-github-com-phuryn-pm-skills-pm-skills-marketplace-phuryn_8ac36372",
+  "upstream_ref": "18468a95b427e70e258b51389796367c6f684e7d",
+  "checked_at": "2026-07-09T19:00:34.654Z",
+  "url": "https://github.com/phuryn/pm-skills",
+  "artifacts": [
+    {
+      "source_id": "src_https-github-com-phuryn-pm-skills-pm-skills-marketplace-phuryn_8ac36372",
+      "path": "pm-ai-shipping/skills/intended-vs-implemented/SKILL.md",
+      "declared_name": "intended-vs-implemented",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:fd52d028afd1de556725e74e5b78280d1a6f0fe6",
+      "upstream_ref": "18468a95b427e70e258b51389796367c6f684e7d",
+      "url": "https://github.com/phuryn/pm-skills/blob/18468a95b427e70e258b51389796367c6f684e7d/pm-ai-shipping/skills/intended-vs-implemented/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/phuryn/pm-skills/18468a95b427e70e258b51389796367c6f684e7d/pm-ai-shipping/skills/intended-vs-implemented/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "fd52d028afd1de556725e74e5b78280d1a6f0fe6",
+        "size": 3815
+      }
+    },
+    {
+      "source_id": "src_https-github-com-phuryn-pm-skills-pm-skills-marketplace-phuryn_8ac36372",
+      "path": "pm-ai-shipping/skills/shipping-artifacts/SKILL.md",
+      "declared_name": "shipping-artifacts",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:5586c9179f64610e676d28e125d63729f80f4799",
+      "upstream_ref": "18468a95b427e70e258b51389796367c6f684e7d",
+      "url": "https://github.com/phuryn/pm-skills/blob/18468a95b427e70e258b51389796367c6f684e7d/pm-ai-shipping/skills/shipping-artifacts/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/phuryn/pm-skills/18468a95b427e70e258b51389796367c6f684e7d/pm-ai-shipping/skills/shipping-artifacts/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "5586c9179f64610e676d28e125d63729f80f4799",
+        "size": 8836
+      }
+    },
+    {
+      "source_id": "src_https-github-com-phuryn-pm-skills-pm-skills-marketplace-phuryn_8ac36372",
+      "path": "pm-data-analytics/skills/ab-test-analysis/SKILL.md",
+      "declared_name": "ab-test-analysis",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:58c239714c0e20e19167fcde3d4cd3a608578754",
+      "upstream_ref": "18468a95b427e70e258b51389796367c6f684e7d",
+      "url": "https://github.com/phuryn/pm-skills/blob/18468a95b427e70e258b51389796367c6f684e7d/pm-data-analytics/skills/ab-test-analysis/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/phuryn/pm-skills/18468a95b427e70e258b51389796367c6f684e7d/pm-data-analytics/skills/ab-test-analysis/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "58c239714c0e20e19167fcde3d4cd3a608578754",
+        "size": 3587
+      }
+    },
+    {
+      "source_id": "src_https-github-com-phuryn-pm-skills-pm-skills-marketplace-phuryn_8ac36372",
+      "path": "pm-data-analytics/skills/cohort-analysis/SKILL.md",
+      "declared_name": "cohort-analysis",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:e2d7b0e9fb83e04d7ff584747efedd4d0701d6fd",
+      "upstream_ref": "18468a95b427e70e258b51389796367c6f684e7d",
+      "url": "https://github.com/phuryn/pm-skills/blob/18468a95b427e70e258b51389796367c6f684e7d/pm-data-analytics/skills/cohort-analysis/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/phuryn/pm-skills/18468a95b427e70e258b51389796367c6f684e7d/pm-data-analytics/skills/cohort-analysis/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "e2d7b0e9fb83e04d7ff584747efedd4d0701d6fd",
+        "size": 5026
+      }
+    },
+    {
+      "source_id": "src_https-github-com-phuryn-pm-skills-pm-skills-marketplace-phuryn_8ac36372",
+      "path": "pm-data-analytics/skills/sql-queries/SKILL.md",
+      "declared_name": "sql-queries",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:7780d95a33f2a493a4a8e66d6b523aa089ef97ed",
+      "upstream_ref": "18468a95b427e70e258b51389796367c6f684e7d",
+      "url": "https://github.com/phuryn/pm-skills/blob/18468a95b427e70e258b51389796367c6f684e7d/pm-data-analytics/skills/sql-queries/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/phuryn/pm-skills/18468a95b427e70e258b51389796367c6f684e7d/pm-data-analytics/skills/sql-queries/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "7780d95a33f2a493a4a8e66d6b523aa089ef97ed",
+        "size": 3628
+      }
+    },
+    {
+      "source_id": "src_https-github-com-phuryn-pm-skills-pm-skills-marketplace-phuryn_8ac36372",
+      "path": "pm-execution/skills/brainstorm-okrs/SKILL.md",
+      "declared_name": "brainstorm-okrs",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:74709d80c461458ff4dab3712586f90ee5ec8cc1",
+      "upstream_ref": "18468a95b427e70e258b51389796367c6f684e7d",
+      "url": "https://github.com/phuryn/pm-skills/blob/18468a95b427e70e258b51389796367c6f684e7d/pm-execution/skills/brainstorm-okrs/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/phuryn/pm-skills/18468a95b427e70e258b51389796367c6f684e7d/pm-execution/skills/brainstorm-okrs/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "74709d80c461458ff4dab3712586f90ee5ec8cc1",
+        "size": 4341
+      }
+    },
+    {
+      "source_id": "src_https-github-com-phuryn-pm-skills-pm-skills-marketplace-phuryn_8ac36372",
+      "path": "pm-execution/skills/create-prd/SKILL.md",
+      "declared_name": "create-prd",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:68c8b26690db8e826782f3029c24b88340ec570e",
+      "upstream_ref": "18468a95b427e70e258b51389796367c6f684e7d",
+      "url": "https://github.com/phuryn/pm-skills/blob/18468a95b427e70e258b51389796367c6f684e7d/pm-execution/skills/create-prd/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/phuryn/pm-skills/18468a95b427e70e258b51389796367c6f684e7d/pm-execution/skills/create-prd/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "68c8b26690db8e826782f3029c24b88340ec570e",
+        "size": 3551
+      }
+    },
+    {
+      "source_id": "src_https-github-com-phuryn-pm-skills-pm-skills-marketplace-phuryn_8ac36372",
+      "path": "pm-execution/skills/dummy-dataset/SKILL.md",
+      "declared_name": "dummy-dataset",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:f324581b591b02762b52d9b9c66df7f4839f9b2c",
+      "upstream_ref": "18468a95b427e70e258b51389796367c6f684e7d",
+      "url": "https://github.com/phuryn/pm-skills/blob/18468a95b427e70e258b51389796367c6f684e7d/pm-execution/skills/dummy-dataset/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/phuryn/pm-skills/18468a95b427e70e258b51389796367c6f684e7d/pm-execution/skills/dummy-dataset/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "f324581b591b02762b52d9b9c66df7f4839f9b2c",
+        "size": 3930
+      }
+    },
+    {
+      "source_id": "src_https-github-com-phuryn-pm-skills-pm-skills-marketplace-phuryn_8ac36372",
+      "path": "pm-execution/skills/job-stories/SKILL.md",
+      "declared_name": "job-stories",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:767c3f7978ce2fd1c69b566ec665bf9d7ca0235c",
+      "upstream_ref": "18468a95b427e70e258b51389796367c6f684e7d",
+      "url": "https://github.com/phuryn/pm-skills/blob/18468a95b427e70e258b51389796367c6f684e7d/pm-execution/skills/job-stories/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/phuryn/pm-skills/18468a95b427e70e258b51389796367c6f684e7d/pm-execution/skills/job-stories/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "767c3f7978ce2fd1c69b566ec665bf9d7ca0235c",
+        "size": 2969
+      }
+    },
+    {
+      "source_id": "src_https-github-com-phuryn-pm-skills-pm-skills-marketplace-phuryn_8ac36372",
+      "path": "pm-execution/skills/outcome-roadmap/SKILL.md",
+      "declared_name": "outcome-roadmap",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:c51cfa226a50ab9f14367adc4c54af14b2562da9",
+      "upstream_ref": "18468a95b427e70e258b51389796367c6f684e7d",
+      "url": "https://github.com/phuryn/pm-skills/blob/18468a95b427e70e258b51389796367c6f684e7d/pm-execution/skills/outcome-roadmap/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/phuryn/pm-skills/18468a95b427e70e258b51389796367c6f684e7d/pm-execution/skills/outcome-roadmap/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "c51cfa226a50ab9f14367adc4c54af14b2562da9",
+        "size": 3601
+      }
+    },
+    {
+      "source_id": "src_https-github-com-phuryn-pm-skills-pm-skills-marketplace-phuryn_8ac36372",
+      "path": "pm-execution/skills/pre-mortem/SKILL.md",
+      "declared_name": "pre-mortem",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:3a22d36b4dfac5685ccbc73486686ea6e7df6452",
+      "upstream_ref": "18468a95b427e70e258b51389796367c6f684e7d",
+      "url": "https://github.com/phuryn/pm-skills/blob/18468a95b427e70e258b51389796367c6f684e7d/pm-execution/skills/pre-mortem/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/phuryn/pm-skills/18468a95b427e70e258b51389796367c6f684e7d/pm-execution/skills/pre-mortem/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "3a22d36b4dfac5685ccbc73486686ea6e7df6452",
+        "size": 4082
+      }
+    },
+    {
+      "source_id": "src_https-github-com-phuryn-pm-skills-pm-skills-marketplace-phuryn_8ac36372",
+      "path": "pm-execution/skills/prioritization-frameworks/SKILL.md",
+      "declared_name": "prioritization-frameworks",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:de34f2b4ba2ea114e6848e2f8a5c031d09601b47",
+      "upstream_ref": "18468a95b427e70e258b51389796367c6f684e7d",
+      "url": "https://github.com/phuryn/pm-skills/blob/18468a95b427e70e258b51389796367c6f684e7d/pm-execution/skills/prioritization-frameworks/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/phuryn/pm-skills/18468a95b427e70e258b51389796367c6f684e7d/pm-execution/skills/prioritization-frameworks/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "de34f2b4ba2ea114e6848e2f8a5c031d09601b47",
+        "size": 4235
+      }
+    },
+    {
+      "source_id": "src_https-github-com-phuryn-pm-skills-pm-skills-marketplace-phuryn_8ac36372",
+      "path": "pm-execution/skills/release-notes/SKILL.md",
+      "declared_name": "release-notes",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:148bf1cb176851d13531a54facc207824b22f493",
+      "upstream_ref": "18468a95b427e70e258b51389796367c6f684e7d",
+      "url": "https://github.com/phuryn/pm-skills/blob/18468a95b427e70e258b51389796367c6f684e7d/pm-execution/skills/release-notes/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/phuryn/pm-skills/18468a95b427e70e258b51389796367c6f684e7d/pm-execution/skills/release-notes/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "148bf1cb176851d13531a54facc207824b22f493",
+        "size": 2569
+      }
+    },
+    {
+      "source_id": "src_https-github-com-phuryn-pm-skills-pm-skills-marketplace-phuryn_8ac36372",
+      "path": "pm-execution/skills/retro/SKILL.md",
+      "declared_name": "retro",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:f90eeb5f1121ca6ed4cf5780e09060d1cb983210",
+      "upstream_ref": "18468a95b427e70e258b51389796367c6f684e7d",
+      "url": "https://github.com/phuryn/pm-skills/blob/18468a95b427e70e258b51389796367c6f684e7d/pm-execution/skills/retro/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/phuryn/pm-skills/18468a95b427e70e258b51389796367c6f684e7d/pm-execution/skills/retro/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "f90eeb5f1121ca6ed4cf5780e09060d1cb983210",
+        "size": 2809
+      }
+    },
+    {
+      "source_id": "src_https-github-com-phuryn-pm-skills-pm-skills-marketplace-phuryn_8ac36372",
+      "path": "pm-execution/skills/sprint-plan/SKILL.md",
+      "declared_name": "sprint-plan",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:05c49f8c1806e95c3681536cd0e48ca3f2c4d07c",
+      "upstream_ref": "18468a95b427e70e258b51389796367c6f684e7d",
+      "url": "https://github.com/phuryn/pm-skills/blob/18468a95b427e70e258b51389796367c6f684e7d/pm-execution/skills/sprint-plan/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/phuryn/pm-skills/18468a95b427e70e258b51389796367c6f684e7d/pm-execution/skills/sprint-plan/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "05c49f8c1806e95c3681536cd0e48ca3f2c4d07c",
+        "size": 2365
+      }
+    },
+    {
+      "source_id": "src_https-github-com-phuryn-pm-skills-pm-skills-marketplace-phuryn_8ac36372",
+      "path": "pm-execution/skills/stakeholder-map/SKILL.md",
+      "declared_name": "stakeholder-map",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:08e5ad24a830a8faef9942a6fd9acdd274261835",
+      "upstream_ref": "18468a95b427e70e258b51389796367c6f684e7d",
+      "url": "https://github.com/phuryn/pm-skills/blob/18468a95b427e70e258b51389796367c6f684e7d/pm-execution/skills/stakeholder-map/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/phuryn/pm-skills/18468a95b427e70e258b51389796367c6f684e7d/pm-execution/skills/stakeholder-map/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "08e5ad24a830a8faef9942a6fd9acdd274261835",
+        "size": 2510
+      }
+    },
+    {
+      "source_id": "src_https-github-com-phuryn-pm-skills-pm-skills-marketplace-phuryn_8ac36372",
+      "path": "pm-execution/skills/strategy-red-team/SKILL.md",
+      "declared_name": "strategy-red-team",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:fe7b7feaaa7a7662d72aac226d40d3abea7e0596",
+      "upstream_ref": "18468a95b427e70e258b51389796367c6f684e7d",
+      "url": "https://github.com/phuryn/pm-skills/blob/18468a95b427e70e258b51389796367c6f684e7d/pm-execution/skills/strategy-red-team/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/phuryn/pm-skills/18468a95b427e70e258b51389796367c6f684e7d/pm-execution/skills/strategy-red-team/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "fe7b7feaaa7a7662d72aac226d40d3abea7e0596",
+        "size": 4515
+      }
+    },
+    {
+      "source_id": "src_https-github-com-phuryn-pm-skills-pm-skills-marketplace-phuryn_8ac36372",
+      "path": "pm-execution/skills/summarize-meeting/SKILL.md",
+      "declared_name": "summarize-meeting",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:a103503d8002be02efaff273dcad1777b55f3fd7",
+      "upstream_ref": "18468a95b427e70e258b51389796367c6f684e7d",
+      "url": "https://github.com/phuryn/pm-skills/blob/18468a95b427e70e258b51389796367c6f684e7d/pm-execution/skills/summarize-meeting/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/phuryn/pm-skills/18468a95b427e70e258b51389796367c6f684e7d/pm-execution/skills/summarize-meeting/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "a103503d8002be02efaff273dcad1777b55f3fd7",
+        "size": 2997
+      }
+    },
+    {
+      "source_id": "src_https-github-com-phuryn-pm-skills-pm-skills-marketplace-phuryn_8ac36372",
+      "path": "pm-execution/skills/test-scenarios/SKILL.md",
+      "declared_name": "test-scenarios",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:d5a25a7185d1681f97c1506d2ff1ccc083a7ce95",
+      "upstream_ref": "18468a95b427e70e258b51389796367c6f684e7d",
+      "url": "https://github.com/phuryn/pm-skills/blob/18468a95b427e70e258b51389796367c6f684e7d/pm-execution/skills/test-scenarios/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/phuryn/pm-skills/18468a95b427e70e258b51389796367c6f684e7d/pm-execution/skills/test-scenarios/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "d5a25a7185d1681f97c1506d2ff1ccc083a7ce95",
+        "size": 3472
+      }
+    },
+    {
+      "source_id": "src_https-github-com-phuryn-pm-skills-pm-skills-marketplace-phuryn_8ac36372",
+      "path": "pm-execution/skills/user-stories/SKILL.md",
+      "declared_name": "user-stories",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:325d74bbe166460bab9f5e5dbfb01f200649a409",
+      "upstream_ref": "18468a95b427e70e258b51389796367c6f684e7d",
+      "url": "https://github.com/phuryn/pm-skills/blob/18468a95b427e70e258b51389796367c6f684e7d/pm-execution/skills/user-stories/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/phuryn/pm-skills/18468a95b427e70e258b51389796367c6f684e7d/pm-execution/skills/user-stories/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "325d74bbe166460bab9f5e5dbfb01f200649a409",
+        "size": 2991
+      }
+    },
+    {
+      "source_id": "src_https-github-com-phuryn-pm-skills-pm-skills-marketplace-phuryn_8ac36372",
+      "path": "pm-execution/skills/wwas/SKILL.md",
+      "declared_name": "wwas",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:75ebf6bc77f4fff3d26b4b5352f58015c2d5e762",
+      "upstream_ref": "18468a95b427e70e258b51389796367c6f684e7d",
+      "url": "https://github.com/phuryn/pm-skills/blob/18468a95b427e70e258b51389796367c6f684e7d/pm-execution/skills/wwas/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/phuryn/pm-skills/18468a95b427e70e258b51389796367c6f684e7d/pm-execution/skills/wwas/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "75ebf6bc77f4fff3d26b4b5352f58015c2d5e762",
+        "size": 3086
+      }
+    },
+    {
+      "source_id": "src_https-github-com-phuryn-pm-skills-pm-skills-marketplace-phuryn_8ac36372",
+      "path": "pm-go-to-market/skills/beachhead-segment/SKILL.md",
+      "declared_name": "beachhead-segment",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:f9062151ea756462de19109d5268a65e046c0fcc",
+      "upstream_ref": "18468a95b427e70e258b51389796367c6f684e7d",
+      "url": "https://github.com/phuryn/pm-skills/blob/18468a95b427e70e258b51389796367c6f684e7d/pm-go-to-market/skills/beachhead-segment/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/phuryn/pm-skills/18468a95b427e70e258b51389796367c6f684e7d/pm-go-to-market/skills/beachhead-segment/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "f9062151ea756462de19109d5268a65e046c0fcc",
+        "size": 5876
+      }
+    },
+    {
+      "source_id": "src_https-github-com-phuryn-pm-skills-pm-skills-marketplace-phuryn_8ac36372",
+      "path": "pm-go-to-market/skills/competitive-battlecard/SKILL.md",
+      "declared_name": "competitive-battlecard",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:cc0d13b0401d26b24db6647ecd4e35829d6769ef",
+      "upstream_ref": "18468a95b427e70e258b51389796367c6f684e7d",
+      "url": "https://github.com/phuryn/pm-skills/blob/18468a95b427e70e258b51389796367c6f684e7d/pm-go-to-market/skills/competitive-battlecard/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/phuryn/pm-skills/18468a95b427e70e258b51389796367c6f684e7d/pm-go-to-market/skills/competitive-battlecard/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "cc0d13b0401d26b24db6647ecd4e35829d6769ef",
+        "size": 2886
+      }
+    },
+    {
+      "source_id": "src_https-github-com-phuryn-pm-skills-pm-skills-marketplace-phuryn_8ac36372",
+      "path": "pm-go-to-market/skills/growth-loops/SKILL.md",
+      "declared_name": "growth-loops",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:f6ff788a378318d6138ccf865f69882f525e3ae9",
+      "upstream_ref": "18468a95b427e70e258b51389796367c6f684e7d",
+      "url": "https://github.com/phuryn/pm-skills/blob/18468a95b427e70e258b51389796367c6f684e7d/pm-go-to-market/skills/growth-loops/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/phuryn/pm-skills/18468a95b427e70e258b51389796367c6f684e7d/pm-go-to-market/skills/growth-loops/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "f6ff788a378318d6138ccf865f69882f525e3ae9",
+        "size": 5788
+      }
+    },
+    {
+      "source_id": "src_https-github-com-phuryn-pm-skills-pm-skills-marketplace-phuryn_8ac36372",
+      "path": "pm-go-to-market/skills/gtm-motions/SKILL.md",
+      "declared_name": "gtm-motions",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:ad4dcdc24141925d2a668376076201be1af3bb3a",
+      "upstream_ref": "18468a95b427e70e258b51389796367c6f684e7d",
+      "url": "https://github.com/phuryn/pm-skills/blob/18468a95b427e70e258b51389796367c6f684e7d/pm-go-to-market/skills/gtm-motions/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/phuryn/pm-skills/18468a95b427e70e258b51389796367c6f684e7d/pm-go-to-market/skills/gtm-motions/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "ad4dcdc24141925d2a668376076201be1af3bb3a",
+        "size": 7556
+      }
+    },
+    {
+      "source_id": "src_https-github-com-phuryn-pm-skills-pm-skills-marketplace-phuryn_8ac36372",
+      "path": "pm-go-to-market/skills/gtm-strategy/SKILL.md",
+      "declared_name": "gtm-strategy",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:5992ae5fd38c05665ddbcaf17250980a0eda6517",
+      "upstream_ref": "18468a95b427e70e258b51389796367c6f684e7d",
+      "url": "https://github.com/phuryn/pm-skills/blob/18468a95b427e70e258b51389796367c6f684e7d/pm-go-to-market/skills/gtm-strategy/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/phuryn/pm-skills/18468a95b427e70e258b51389796367c6f684e7d/pm-go-to-market/skills/gtm-strategy/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "5992ae5fd38c05665ddbcaf17250980a0eda6517",
+        "size": 4047
+      }
+    },
+    {
+      "source_id": "src_https-github-com-phuryn-pm-skills-pm-skills-marketplace-phuryn_8ac36372",
+      "path": "pm-go-to-market/skills/ideal-customer-profile/SKILL.md",
+      "declared_name": "ideal-customer-profile",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:b07c067e84307a14b66f37e0a4633172cdb47ed9",
+      "upstream_ref": "18468a95b427e70e258b51389796367c6f684e7d",
+      "url": "https://github.com/phuryn/pm-skills/blob/18468a95b427e70e258b51389796367c6f684e7d/pm-go-to-market/skills/ideal-customer-profile/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/phuryn/pm-skills/18468a95b427e70e258b51389796367c6f684e7d/pm-go-to-market/skills/ideal-customer-profile/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "b07c067e84307a14b66f37e0a4633172cdb47ed9",
+        "size": 6002
+      }
+    },
+    {
+      "source_id": "src_https-github-com-phuryn-pm-skills-pm-skills-marketplace-phuryn_8ac36372",
+      "path": "pm-market-research/skills/competitor-analysis/SKILL.md",
+      "declared_name": "competitor-analysis",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:b9cafee194fc0e7560781d4538e05081c112282c",
+      "upstream_ref": "18468a95b427e70e258b51389796367c6f684e7d",
+      "url": "https://github.com/phuryn/pm-skills/blob/18468a95b427e70e258b51389796367c6f684e7d/pm-market-research/skills/competitor-analysis/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/phuryn/pm-skills/18468a95b427e70e258b51389796367c6f684e7d/pm-market-research/skills/competitor-analysis/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "b9cafee194fc0e7560781d4538e05081c112282c",
+        "size": 4814
+      }
+    },
+    {
+      "source_id": "src_https-github-com-phuryn-pm-skills-pm-skills-marketplace-phuryn_8ac36372",
+      "path": "pm-market-research/skills/customer-journey-map/SKILL.md",
+      "declared_name": "customer-journey-map",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:6df20664f09803b20bef6c28ccb1eb435d7fae7f",
+      "upstream_ref": "18468a95b427e70e258b51389796367c6f684e7d",
+      "url": "https://github.com/phuryn/pm-skills/blob/18468a95b427e70e258b51389796367c6f684e7d/pm-market-research/skills/customer-journey-map/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/phuryn/pm-skills/18468a95b427e70e258b51389796367c6f684e7d/pm-market-research/skills/customer-journey-map/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "6df20664f09803b20bef6c28ccb1eb435d7fae7f",
+        "size": 3268
+      }
+    },
+    {
+      "source_id": "src_https-github-com-phuryn-pm-skills-pm-skills-marketplace-phuryn_8ac36372",
+      "path": "pm-market-research/skills/market-segments/SKILL.md",
+      "declared_name": "market-segments",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:9393012c8a4487e8e13fc037284d209bdfc34fbb",
+      "upstream_ref": "18468a95b427e70e258b51389796367c6f684e7d",
+      "url": "https://github.com/phuryn/pm-skills/blob/18468a95b427e70e258b51389796367c6f684e7d/pm-market-research/skills/market-segments/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/phuryn/pm-skills/18468a95b427e70e258b51389796367c6f684e7d/pm-market-research/skills/market-segments/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "9393012c8a4487e8e13fc037284d209bdfc34fbb",
+        "size": 3623
+      }
+    },
+    {
+      "source_id": "src_https-github-com-phuryn-pm-skills-pm-skills-marketplace-phuryn_8ac36372",
+      "path": "pm-market-research/skills/market-sizing/SKILL.md",
+      "declared_name": "market-sizing",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:58cc6c2de00e10cbdc94d976448812a7c6a79feb",
+      "upstream_ref": "18468a95b427e70e258b51389796367c6f684e7d",
+      "url": "https://github.com/phuryn/pm-skills/blob/18468a95b427e70e258b51389796367c6f684e7d/pm-market-research/skills/market-sizing/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/phuryn/pm-skills/18468a95b427e70e258b51389796367c6f684e7d/pm-market-research/skills/market-sizing/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "58cc6c2de00e10cbdc94d976448812a7c6a79feb",
+        "size": 4424
+      }
+    },
+    {
+      "source_id": "src_https-github-com-phuryn-pm-skills-pm-skills-marketplace-phuryn_8ac36372",
+      "path": "pm-market-research/skills/sentiment-analysis/SKILL.md",
+      "declared_name": "sentiment-analysis",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:9368b74ce9d15cb865a704dab3d8d22bca65483d",
+      "upstream_ref": "18468a95b427e70e258b51389796367c6f684e7d",
+      "url": "https://github.com/phuryn/pm-skills/blob/18468a95b427e70e258b51389796367c6f684e7d/pm-market-research/skills/sentiment-analysis/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/phuryn/pm-skills/18468a95b427e70e258b51389796367c6f684e7d/pm-market-research/skills/sentiment-analysis/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "9368b74ce9d15cb865a704dab3d8d22bca65483d",
+        "size": 3500
+      }
+    },
+    {
+      "source_id": "src_https-github-com-phuryn-pm-skills-pm-skills-marketplace-phuryn_8ac36372",
+      "path": "pm-market-research/skills/user-personas/SKILL.md",
+      "declared_name": "user-personas",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:dd486a376020209c3ef62f2e19224e982b731dab",
+      "upstream_ref": "18468a95b427e70e258b51389796367c6f684e7d",
+      "url": "https://github.com/phuryn/pm-skills/blob/18468a95b427e70e258b51389796367c6f684e7d/pm-market-research/skills/user-personas/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/phuryn/pm-skills/18468a95b427e70e258b51389796367c6f684e7d/pm-market-research/skills/user-personas/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "dd486a376020209c3ef62f2e19224e982b731dab",
+        "size": 3047
+      }
+    },
+    {
+      "source_id": "src_https-github-com-phuryn-pm-skills-pm-skills-marketplace-phuryn_8ac36372",
+      "path": "pm-market-research/skills/user-segmentation/SKILL.md",
+      "declared_name": "user-segmentation",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:cf94ddde154142740113c60b2e559e5a8cc7c68a",
+      "upstream_ref": "18468a95b427e70e258b51389796367c6f684e7d",
+      "url": "https://github.com/phuryn/pm-skills/blob/18468a95b427e70e258b51389796367c6f684e7d/pm-market-research/skills/user-segmentation/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/phuryn/pm-skills/18468a95b427e70e258b51389796367c6f684e7d/pm-market-research/skills/user-segmentation/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "cf94ddde154142740113c60b2e559e5a8cc7c68a",
+        "size": 4102
+      }
+    },
+    {
+      "source_id": "src_https-github-com-phuryn-pm-skills-pm-skills-marketplace-phuryn_8ac36372",
+      "path": "pm-marketing-growth/skills/marketing-ideas/SKILL.md",
+      "declared_name": "marketing-ideas",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:026abcfa1206ba0d5cfcbf738798ccce96c93480",
+      "upstream_ref": "18468a95b427e70e258b51389796367c6f684e7d",
+      "url": "https://github.com/phuryn/pm-skills/blob/18468a95b427e70e258b51389796367c6f684e7d/pm-marketing-growth/skills/marketing-ideas/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/phuryn/pm-skills/18468a95b427e70e258b51389796367c6f684e7d/pm-marketing-growth/skills/marketing-ideas/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "026abcfa1206ba0d5cfcbf738798ccce96c93480",
+        "size": 2178
+      }
+    },
+    {
+      "source_id": "src_https-github-com-phuryn-pm-skills-pm-skills-marketplace-phuryn_8ac36372",
+      "path": "pm-marketing-growth/skills/north-star-metric/SKILL.md",
+      "declared_name": "north-star-metric",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:e7cf1cc8aa0d49f1718f81dac357fcad2556a8d5",
+      "upstream_ref": "18468a95b427e70e258b51389796367c6f684e7d",
+      "url": "https://github.com/phuryn/pm-skills/blob/18468a95b427e70e258b51389796367c6f684e7d/pm-marketing-growth/skills/north-star-metric/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/phuryn/pm-skills/18468a95b427e70e258b51389796367c6f684e7d/pm-marketing-growth/skills/north-star-metric/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "e7cf1cc8aa0d49f1718f81dac357fcad2556a8d5",
+        "size": 4152
+      }
+    },
+    {
+      "source_id": "src_https-github-com-phuryn-pm-skills-pm-skills-marketplace-phuryn_8ac36372",
+      "path": "pm-marketing-growth/skills/positioning-ideas/SKILL.md",
+      "declared_name": "positioning-ideas",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:d3f225a0c8b1f5a99cb5ba2b93f7804ab810127d",
+      "upstream_ref": "18468a95b427e70e258b51389796367c6f684e7d",
+      "url": "https://github.com/phuryn/pm-skills/blob/18468a95b427e70e258b51389796367c6f684e7d/pm-marketing-growth/skills/positioning-ideas/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/phuryn/pm-skills/18468a95b427e70e258b51389796367c6f684e7d/pm-marketing-growth/skills/positioning-ideas/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "d3f225a0c8b1f5a99cb5ba2b93f7804ab810127d",
+        "size": 3002
+      }
+    },
+    {
+      "source_id": "src_https-github-com-phuryn-pm-skills-pm-skills-marketplace-phuryn_8ac36372",
+      "path": "pm-marketing-growth/skills/product-name/SKILL.md",
+      "declared_name": "product-name",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:2fff74a3dbbd08309714b53639a8f9906b820275",
+      "upstream_ref": "18468a95b427e70e258b51389796367c6f684e7d",
+      "url": "https://github.com/phuryn/pm-skills/blob/18468a95b427e70e258b51389796367c6f684e7d/pm-marketing-growth/skills/product-name/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/phuryn/pm-skills/18468a95b427e70e258b51389796367c6f684e7d/pm-marketing-growth/skills/product-name/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "2fff74a3dbbd08309714b53639a8f9906b820275",
+        "size": 2196
+      }
+    },
+    {
+      "source_id": "src_https-github-com-phuryn-pm-skills-pm-skills-marketplace-phuryn_8ac36372",
+      "path": "pm-marketing-growth/skills/value-prop-statements/SKILL.md",
+      "declared_name": "value-prop-statements",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:7f3eae0e8c12712d8470e51b89d6e5e026b4c41a",
+      "upstream_ref": "18468a95b427e70e258b51389796367c6f684e7d",
+      "url": "https://github.com/phuryn/pm-skills/blob/18468a95b427e70e258b51389796367c6f684e7d/pm-marketing-growth/skills/value-prop-statements/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/phuryn/pm-skills/18468a95b427e70e258b51389796367c6f684e7d/pm-marketing-growth/skills/value-prop-statements/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "7f3eae0e8c12712d8470e51b89d6e5e026b4c41a",
+        "size": 3032
+      }
+    },
+    {
+      "source_id": "src_https-github-com-phuryn-pm-skills-pm-skills-marketplace-phuryn_8ac36372",
+      "path": "pm-product-discovery/skills/analyze-feature-requests/SKILL.md",
+      "declared_name": "analyze-feature-requests",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:755b5cae934fb0fb8c334fdef10bbb358ed1492d",
+      "upstream_ref": "18468a95b427e70e258b51389796367c6f684e7d",
+      "url": "https://github.com/phuryn/pm-skills/blob/18468a95b427e70e258b51389796367c6f684e7d/pm-product-discovery/skills/analyze-feature-requests/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/phuryn/pm-skills/18468a95b427e70e258b51389796367c6f684e7d/pm-product-discovery/skills/analyze-feature-requests/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "755b5cae934fb0fb8c334fdef10bbb358ed1492d",
+        "size": 2274
+      }
+    },
+    {
+      "source_id": "src_https-github-com-phuryn-pm-skills-pm-skills-marketplace-phuryn_8ac36372",
+      "path": "pm-product-discovery/skills/brainstorm-experiments-existing/SKILL.md",
+      "declared_name": "brainstorm-experiments-existing",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:cf151f5c2a8761dfc4bdf5a8c5b326775689437a",
+      "upstream_ref": "18468a95b427e70e258b51389796367c6f684e7d",
+      "url": "https://github.com/phuryn/pm-skills/blob/18468a95b427e70e258b51389796367c6f684e7d/pm-product-discovery/skills/brainstorm-experiments-existing/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/phuryn/pm-skills/18468a95b427e70e258b51389796367c6f684e7d/pm-product-discovery/skills/brainstorm-experiments-existing/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "cf151f5c2a8761dfc4bdf5a8c5b326775689437a",
+        "size": 2408
+      }
+    },
+    {
+      "source_id": "src_https-github-com-phuryn-pm-skills-pm-skills-marketplace-phuryn_8ac36372",
+      "path": "pm-product-discovery/skills/brainstorm-experiments-new/SKILL.md",
+      "declared_name": "brainstorm-experiments-new",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:8c946a51839c85b7ffb666c268ca4b06513166ed",
+      "upstream_ref": "18468a95b427e70e258b51389796367c6f684e7d",
+      "url": "https://github.com/phuryn/pm-skills/blob/18468a95b427e70e258b51389796367c6f684e7d/pm-product-discovery/skills/brainstorm-experiments-new/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/phuryn/pm-skills/18468a95b427e70e258b51389796367c6f684e7d/pm-product-discovery/skills/brainstorm-experiments-new/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "8c946a51839c85b7ffb666c268ca4b06513166ed",
+        "size": 2538
+      }
+    },
+    {
+      "source_id": "src_https-github-com-phuryn-pm-skills-pm-skills-marketplace-phuryn_8ac36372",
+      "path": "pm-product-discovery/skills/brainstorm-ideas-existing/SKILL.md",
+      "declared_name": "brainstorm-ideas-existing",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:2228dd7097debad34abd05874d8c709fdac68d54",
+      "upstream_ref": "18468a95b427e70e258b51389796367c6f684e7d",
+      "url": "https://github.com/phuryn/pm-skills/blob/18468a95b427e70e258b51389796367c6f684e7d/pm-product-discovery/skills/brainstorm-ideas-existing/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/phuryn/pm-skills/18468a95b427e70e258b51389796367c6f684e7d/pm-product-discovery/skills/brainstorm-ideas-existing/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "2228dd7097debad34abd05874d8c709fdac68d54",
+        "size": 2951
+      }
+    },
+    {
+      "source_id": "src_https-github-com-phuryn-pm-skills-pm-skills-marketplace-phuryn_8ac36372",
+      "path": "pm-product-discovery/skills/brainstorm-ideas-new/SKILL.md",
+      "declared_name": "brainstorm-ideas-new",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:449ef41b53a1218261fb192053c56b233a28e1db",
+      "upstream_ref": "18468a95b427e70e258b51389796367c6f684e7d",
+      "url": "https://github.com/phuryn/pm-skills/blob/18468a95b427e70e258b51389796367c6f684e7d/pm-product-discovery/skills/brainstorm-ideas-new/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/phuryn/pm-skills/18468a95b427e70e258b51389796367c6f684e7d/pm-product-discovery/skills/brainstorm-ideas-new/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "449ef41b53a1218261fb192053c56b233a28e1db",
+        "size": 2437
+      }
+    },
+    {
+      "source_id": "src_https-github-com-phuryn-pm-skills-pm-skills-marketplace-phuryn_8ac36372",
+      "path": "pm-product-discovery/skills/identify-assumptions-existing/SKILL.md",
+      "declared_name": "identify-assumptions-existing",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:66da6c92e1a0722791882f325734d1de3d98e5b2",
+      "upstream_ref": "18468a95b427e70e258b51389796367c6f684e7d",
+      "url": "https://github.com/phuryn/pm-skills/blob/18468a95b427e70e258b51389796367c6f684e7d/pm-product-discovery/skills/identify-assumptions-existing/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/phuryn/pm-skills/18468a95b427e70e258b51389796367c6f684e7d/pm-product-discovery/skills/identify-assumptions-existing/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "66da6c92e1a0722791882f325734d1de3d98e5b2",
+        "size": 2102
+      }
+    },
+    {
+      "source_id": "src_https-github-com-phuryn-pm-skills-pm-skills-marketplace-phuryn_8ac36372",
+      "path": "pm-product-discovery/skills/identify-assumptions-new/SKILL.md",
+      "declared_name": "identify-assumptions-new",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:3ddc8bc514b2a05cf5f0914635f144940797f5ac",
+      "upstream_ref": "18468a95b427e70e258b51389796367c6f684e7d",
+      "url": "https://github.com/phuryn/pm-skills/blob/18468a95b427e70e258b51389796367c6f684e7d/pm-product-discovery/skills/identify-assumptions-new/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/phuryn/pm-skills/18468a95b427e70e258b51389796367c6f684e7d/pm-product-discovery/skills/identify-assumptions-new/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "3ddc8bc514b2a05cf5f0914635f144940797f5ac",
+        "size": 3227
+      }
+    },
+    {
+      "source_id": "src_https-github-com-phuryn-pm-skills-pm-skills-marketplace-phuryn_8ac36372",
+      "path": "pm-product-discovery/skills/interview-script/SKILL.md",
+      "declared_name": "interview-script",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:7ec574e0d107507cb6c1926d2620e2ac822c00b6",
+      "upstream_ref": "18468a95b427e70e258b51389796367c6f684e7d",
+      "url": "https://github.com/phuryn/pm-skills/blob/18468a95b427e70e258b51389796367c6f684e7d/pm-product-discovery/skills/interview-script/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/phuryn/pm-skills/18468a95b427e70e258b51389796367c6f684e7d/pm-product-discovery/skills/interview-script/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "7ec574e0d107507cb6c1926d2620e2ac822c00b6",
+        "size": 4817
+      }
+    },
+    {
+      "source_id": "src_https-github-com-phuryn-pm-skills-pm-skills-marketplace-phuryn_8ac36372",
+      "path": "pm-product-discovery/skills/metrics-dashboard/SKILL.md",
+      "declared_name": "metrics-dashboard",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:636990e363dfdf6204a17ef1325b488d724fcdcc",
+      "upstream_ref": "18468a95b427e70e258b51389796367c6f684e7d",
+      "url": "https://github.com/phuryn/pm-skills/blob/18468a95b427e70e258b51389796367c6f684e7d/pm-product-discovery/skills/metrics-dashboard/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/phuryn/pm-skills/18468a95b427e70e258b51389796367c6f684e7d/pm-product-discovery/skills/metrics-dashboard/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "636990e363dfdf6204a17ef1325b488d724fcdcc",
+        "size": 5754
+      }
+    },
+    {
+      "source_id": "src_https-github-com-phuryn-pm-skills-pm-skills-marketplace-phuryn_8ac36372",
+      "path": "pm-product-discovery/skills/opportunity-solution-tree/SKILL.md",
+      "declared_name": "opportunity-solution-tree",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:d62668118be00de5626e08488673ec22e7f83491",
+      "upstream_ref": "18468a95b427e70e258b51389796367c6f684e7d",
+      "url": "https://github.com/phuryn/pm-skills/blob/18468a95b427e70e258b51389796367c6f684e7d/pm-product-discovery/skills/opportunity-solution-tree/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/phuryn/pm-skills/18468a95b427e70e258b51389796367c6f684e7d/pm-product-discovery/skills/opportunity-solution-tree/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "d62668118be00de5626e08488673ec22e7f83491",
+        "size": 4281
+      }
+    },
+    {
+      "source_id": "src_https-github-com-phuryn-pm-skills-pm-skills-marketplace-phuryn_8ac36372",
+      "path": "pm-product-discovery/skills/prioritize-assumptions/SKILL.md",
+      "declared_name": "prioritize-assumptions",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:bf7ed8a8ba9522cba14a7d5d0080fcfb69282e6b",
+      "upstream_ref": "18468a95b427e70e258b51389796367c6f684e7d",
+      "url": "https://github.com/phuryn/pm-skills/blob/18468a95b427e70e258b51389796367c6f684e7d/pm-product-discovery/skills/prioritize-assumptions/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/phuryn/pm-skills/18468a95b427e70e258b51389796367c6f684e7d/pm-product-discovery/skills/prioritize-assumptions/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "bf7ed8a8ba9522cba14a7d5d0080fcfb69282e6b",
+        "size": 2311
+      }
+    },
+    {
+      "source_id": "src_https-github-com-phuryn-pm-skills-pm-skills-marketplace-phuryn_8ac36372",
+      "path": "pm-product-discovery/skills/prioritize-features/SKILL.md",
+      "declared_name": "prioritize-features",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:e58190d88a63f2f429ad04743dc6427751476ba7",
+      "upstream_ref": "18468a95b427e70e258b51389796367c6f684e7d",
+      "url": "https://github.com/phuryn/pm-skills/blob/18468a95b427e70e258b51389796367c6f684e7d/pm-product-discovery/skills/prioritize-features/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/phuryn/pm-skills/18468a95b427e70e258b51389796367c6f684e7d/pm-product-discovery/skills/prioritize-features/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "e58190d88a63f2f429ad04743dc6427751476ba7",
+        "size": 2497
+      }
+    },
+    {
+      "source_id": "src_https-github-com-phuryn-pm-skills-pm-skills-marketplace-phuryn_8ac36372",
+      "path": "pm-product-discovery/skills/summarize-interview/SKILL.md",
+      "declared_name": "summarize-interview",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:b4fee4359979f565a785f9ee704ab6d9ee48d54a",
+      "upstream_ref": "18468a95b427e70e258b51389796367c6f684e7d",
+      "url": "https://github.com/phuryn/pm-skills/blob/18468a95b427e70e258b51389796367c6f684e7d/pm-product-discovery/skills/summarize-interview/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/phuryn/pm-skills/18468a95b427e70e258b51389796367c6f684e7d/pm-product-discovery/skills/summarize-interview/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "b4fee4359979f565a785f9ee704ab6d9ee48d54a",
+        "size": 2036
+      }
+    },
+    {
+      "source_id": "src_https-github-com-phuryn-pm-skills-pm-skills-marketplace-phuryn_8ac36372",
+      "path": "pm-product-strategy/skills/ansoff-matrix/SKILL.md",
+      "declared_name": "ansoff-matrix",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:19eba3cf58ea03a181c00c7de1bc093f0526f333",
+      "upstream_ref": "18468a95b427e70e258b51389796367c6f684e7d",
+      "url": "https://github.com/phuryn/pm-skills/blob/18468a95b427e70e258b51389796367c6f684e7d/pm-product-strategy/skills/ansoff-matrix/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/phuryn/pm-skills/18468a95b427e70e258b51389796367c6f684e7d/pm-product-strategy/skills/ansoff-matrix/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "19eba3cf58ea03a181c00c7de1bc093f0526f333",
+        "size": 5684
+      }
+    },
+    {
+      "source_id": "src_https-github-com-phuryn-pm-skills-pm-skills-marketplace-phuryn_8ac36372",
+      "path": "pm-product-strategy/skills/business-model/SKILL.md",
+      "declared_name": "business-model",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:237f1f290ee32464fb7c79bde4583fd9465738fa",
+      "upstream_ref": "18468a95b427e70e258b51389796367c6f684e7d",
+      "url": "https://github.com/phuryn/pm-skills/blob/18468a95b427e70e258b51389796367c6f684e7d/pm-product-strategy/skills/business-model/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/phuryn/pm-skills/18468a95b427e70e258b51389796367c6f684e7d/pm-product-strategy/skills/business-model/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "237f1f290ee32464fb7c79bde4583fd9465738fa",
+        "size": 5784
+      }
+    },
+    {
+      "source_id": "src_https-github-com-phuryn-pm-skills-pm-skills-marketplace-phuryn_8ac36372",
+      "path": "pm-product-strategy/skills/lean-canvas/SKILL.md",
+      "declared_name": "lean-canvas",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:482791e799d425c3ffb8581c7bd24cb5397b40da",
+      "upstream_ref": "18468a95b427e70e258b51389796367c6f684e7d",
+      "url": "https://github.com/phuryn/pm-skills/blob/18468a95b427e70e258b51389796367c6f684e7d/pm-product-strategy/skills/lean-canvas/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/phuryn/pm-skills/18468a95b427e70e258b51389796367c6f684e7d/pm-product-strategy/skills/lean-canvas/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "482791e799d425c3ffb8581c7bd24cb5397b40da",
+        "size": 4860
+      }
+    },
+    {
+      "source_id": "src_https-github-com-phuryn-pm-skills-pm-skills-marketplace-phuryn_8ac36372",
+      "path": "pm-product-strategy/skills/monetization-strategy/SKILL.md",
+      "declared_name": "monetization-strategy",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:4a2c486c1305dac79f24e60f7462cc94798b6683",
+      "upstream_ref": "18468a95b427e70e258b51389796367c6f684e7d",
+      "url": "https://github.com/phuryn/pm-skills/blob/18468a95b427e70e258b51389796367c6f684e7d/pm-product-strategy/skills/monetization-strategy/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/phuryn/pm-skills/18468a95b427e70e258b51389796367c6f684e7d/pm-product-strategy/skills/monetization-strategy/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "4a2c486c1305dac79f24e60f7462cc94798b6683",
+        "size": 6660
+      }
+    },
+    {
+      "source_id": "src_https-github-com-phuryn-pm-skills-pm-skills-marketplace-phuryn_8ac36372",
+      "path": "pm-product-strategy/skills/pestle-analysis/SKILL.md",
+      "declared_name": "pestle-analysis",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:bf2636f5cd9af3dd29ee54b8f3bd721444eda556",
+      "upstream_ref": "18468a95b427e70e258b51389796367c6f684e7d",
+      "url": "https://github.com/phuryn/pm-skills/blob/18468a95b427e70e258b51389796367c6f684e7d/pm-product-strategy/skills/pestle-analysis/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/phuryn/pm-skills/18468a95b427e70e258b51389796367c6f684e7d/pm-product-strategy/skills/pestle-analysis/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "bf2636f5cd9af3dd29ee54b8f3bd721444eda556",
+        "size": 4647
+      }
+    },
+    {
+      "source_id": "src_https-github-com-phuryn-pm-skills-pm-skills-marketplace-phuryn_8ac36372",
+      "path": "pm-product-strategy/skills/porters-five-forces/SKILL.md",
+      "declared_name": "porters-five-forces",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:82fd3592e2af142907674214296ef86cc11d6478",
+      "upstream_ref": "18468a95b427e70e258b51389796367c6f684e7d",
+      "url": "https://github.com/phuryn/pm-skills/blob/18468a95b427e70e258b51389796367c6f684e7d/pm-product-strategy/skills/porters-five-forces/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/phuryn/pm-skills/18468a95b427e70e258b51389796367c6f684e7d/pm-product-strategy/skills/porters-five-forces/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "82fd3592e2af142907674214296ef86cc11d6478",
+        "size": 8185
+      }
+    },
+    {
+      "source_id": "src_https-github-com-phuryn-pm-skills-pm-skills-marketplace-phuryn_8ac36372",
+      "path": "pm-product-strategy/skills/pricing-strategy/SKILL.md",
+      "declared_name": "pricing-strategy",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:26298a3d461e7d218c3a60bdb992d5b9ba03a917",
+      "upstream_ref": "18468a95b427e70e258b51389796367c6f684e7d",
+      "url": "https://github.com/phuryn/pm-skills/blob/18468a95b427e70e258b51389796367c6f684e7d/pm-product-strategy/skills/pricing-strategy/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/phuryn/pm-skills/18468a95b427e70e258b51389796367c6f684e7d/pm-product-strategy/skills/pricing-strategy/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "26298a3d461e7d218c3a60bdb992d5b9ba03a917",
+        "size": 3666
+      }
+    },
+    {
+      "source_id": "src_https-github-com-phuryn-pm-skills-pm-skills-marketplace-phuryn_8ac36372",
+      "path": "pm-product-strategy/skills/product-strategy/SKILL.md",
+      "declared_name": "product-strategy",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:b92514e84b3f1c122255628ac48acbc7403913f8",
+      "upstream_ref": "18468a95b427e70e258b51389796367c6f684e7d",
+      "url": "https://github.com/phuryn/pm-skills/blob/18468a95b427e70e258b51389796367c6f684e7d/pm-product-strategy/skills/product-strategy/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/phuryn/pm-skills/18468a95b427e70e258b51389796367c6f684e7d/pm-product-strategy/skills/product-strategy/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "b92514e84b3f1c122255628ac48acbc7403913f8",
+        "size": 4833
+      }
+    },
+    {
+      "source_id": "src_https-github-com-phuryn-pm-skills-pm-skills-marketplace-phuryn_8ac36372",
+      "path": "pm-product-strategy/skills/product-vision/SKILL.md",
+      "declared_name": "product-vision",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:a6443edb2bf108e583ddb339a9163dc6de05b9da",
+      "upstream_ref": "18468a95b427e70e258b51389796367c6f684e7d",
+      "url": "https://github.com/phuryn/pm-skills/blob/18468a95b427e70e258b51389796367c6f684e7d/pm-product-strategy/skills/product-vision/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/phuryn/pm-skills/18468a95b427e70e258b51389796367c6f684e7d/pm-product-strategy/skills/product-vision/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "a6443edb2bf108e583ddb339a9163dc6de05b9da",
+        "size": 2518
+      }
+    },
+    {
+      "source_id": "src_https-github-com-phuryn-pm-skills-pm-skills-marketplace-phuryn_8ac36372",
+      "path": "pm-product-strategy/skills/startup-canvas/SKILL.md",
+      "declared_name": "startup-canvas",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:7c98302acedf89cd83ea2c119621e031c7e64c39",
+      "upstream_ref": "18468a95b427e70e258b51389796367c6f684e7d",
+      "url": "https://github.com/phuryn/pm-skills/blob/18468a95b427e70e258b51389796367c6f684e7d/pm-product-strategy/skills/startup-canvas/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/phuryn/pm-skills/18468a95b427e70e258b51389796367c6f684e7d/pm-product-strategy/skills/startup-canvas/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "7c98302acedf89cd83ea2c119621e031c7e64c39",
+        "size": 6346
+      }
+    },
+    {
+      "source_id": "src_https-github-com-phuryn-pm-skills-pm-skills-marketplace-phuryn_8ac36372",
+      "path": "pm-product-strategy/skills/swot-analysis/SKILL.md",
+      "declared_name": "swot-analysis",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:c54dd1963d2bfba02916d21a3a5ae34ef46fd1c2",
+      "upstream_ref": "18468a95b427e70e258b51389796367c6f684e7d",
+      "url": "https://github.com/phuryn/pm-skills/blob/18468a95b427e70e258b51389796367c6f684e7d/pm-product-strategy/skills/swot-analysis/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/phuryn/pm-skills/18468a95b427e70e258b51389796367c6f684e7d/pm-product-strategy/skills/swot-analysis/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "c54dd1963d2bfba02916d21a3a5ae34ef46fd1c2",
+        "size": 3813
+      }
+    },
+    {
+      "source_id": "src_https-github-com-phuryn-pm-skills-pm-skills-marketplace-phuryn_8ac36372",
+      "path": "pm-product-strategy/skills/value-proposition/SKILL.md",
+      "declared_name": "value-proposition",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:c96c645ca3a2d3696b7b5b54be0e7abb1ee43bd3",
+      "upstream_ref": "18468a95b427e70e258b51389796367c6f684e7d",
+      "url": "https://github.com/phuryn/pm-skills/blob/18468a95b427e70e258b51389796367c6f684e7d/pm-product-strategy/skills/value-proposition/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/phuryn/pm-skills/18468a95b427e70e258b51389796367c6f684e7d/pm-product-strategy/skills/value-proposition/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "c96c645ca3a2d3696b7b5b54be0e7abb1ee43bd3",
+        "size": 5836
+      }
+    },
+    {
+      "source_id": "src_https-github-com-phuryn-pm-skills-pm-skills-marketplace-phuryn_8ac36372",
+      "path": "pm-toolkit/skills/draft-nda/SKILL.md",
+      "declared_name": "draft-nda",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:00e4208dd746dd6af5f25ca2843a25e386076376",
+      "upstream_ref": "18468a95b427e70e258b51389796367c6f684e7d",
+      "url": "https://github.com/phuryn/pm-skills/blob/18468a95b427e70e258b51389796367c6f684e7d/pm-toolkit/skills/draft-nda/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/phuryn/pm-skills/18468a95b427e70e258b51389796367c6f684e7d/pm-toolkit/skills/draft-nda/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "00e4208dd746dd6af5f25ca2843a25e386076376",
+        "size": 7484
+      }
+    },
+    {
+      "source_id": "src_https-github-com-phuryn-pm-skills-pm-skills-marketplace-phuryn_8ac36372",
+      "path": "pm-toolkit/skills/grammar-check/SKILL.md",
+      "declared_name": "grammar-check",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:2770da59b9ba78faa4c9d170a67b00d64be7f299",
+      "upstream_ref": "18468a95b427e70e258b51389796367c6f684e7d",
+      "url": "https://github.com/phuryn/pm-skills/blob/18468a95b427e70e258b51389796367c6f684e7d/pm-toolkit/skills/grammar-check/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/phuryn/pm-skills/18468a95b427e70e258b51389796367c6f684e7d/pm-toolkit/skills/grammar-check/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "2770da59b9ba78faa4c9d170a67b00d64be7f299",
+        "size": 9673
+      }
+    },
+    {
+      "source_id": "src_https-github-com-phuryn-pm-skills-pm-skills-marketplace-phuryn_8ac36372",
+      "path": "pm-toolkit/skills/privacy-policy/SKILL.md",
+      "declared_name": "privacy-policy",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:100a06b4a3f8ccafb36a51e7f710449ec9b729b4",
+      "upstream_ref": "18468a95b427e70e258b51389796367c6f684e7d",
+      "url": "https://github.com/phuryn/pm-skills/blob/18468a95b427e70e258b51389796367c6f684e7d/pm-toolkit/skills/privacy-policy/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/phuryn/pm-skills/18468a95b427e70e258b51389796367c6f684e7d/pm-toolkit/skills/privacy-policy/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "100a06b4a3f8ccafb36a51e7f710449ec9b729b4",
+        "size": 10699
+      }
+    },
+    {
+      "source_id": "src_https-github-com-phuryn-pm-skills-pm-skills-marketplace-phuryn_8ac36372",
+      "path": "pm-toolkit/skills/review-resume/SKILL.md",
+      "declared_name": "review-resume",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:e4620d5e64261cd453724f3c714791562adabc1a",
+      "upstream_ref": "18468a95b427e70e258b51389796367c6f684e7d",
+      "url": "https://github.com/phuryn/pm-skills/blob/18468a95b427e70e258b51389796367c6f684e7d/pm-toolkit/skills/review-resume/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/phuryn/pm-skills/18468a95b427e70e258b51389796367c6f684e7d/pm-toolkit/skills/review-resume/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "e4620d5e64261cd453724f3c714791562adabc1a",
+        "size": 11301
+      }
+    }
+  ],
+  "digest": "sha256:f0362ddee654ab85fd305fb41e2a21f02dc2c9835e6dd23309a5f616be567e6d"
+}

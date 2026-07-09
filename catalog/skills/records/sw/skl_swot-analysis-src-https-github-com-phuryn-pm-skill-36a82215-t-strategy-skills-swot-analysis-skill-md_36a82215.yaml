@@ -1,0 +1,45 @@
+analysis:
+  hash: null
+  path: catalog/analyses/sw/skl_swot-analysis-src-https-github-com-phuryn-pm-skill-36a82215-t-strategy-skills-swot-analysis-skill-md_36a82215.md
+canonical_name: swot-analysis
+canonical_skill_id: skl_swot-analysis-src-https-github-com-phuryn-pm-skill-36a82215-t-strategy-skills-swot-analysis-skill-md_36a82215
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-09T19:02:48.255Z'
+curation:
+  notes: []
+display_name: swot-analysis
+identity:
+  aliases: []
+  current_version_id: sha256:c54dd1963d2bfba02916d21a3a5ae34ef46fd1c2
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: LICENSE file in repo root; README badge confirms MIT
+    spdx: MIT
+    verified: true
+  path: pm-product-strategy/skills/swot-analysis/SKILL.md
+  source_id: src_https-github-com-phuryn-pm-skills-pm-skills-marketplace-phuryn_8ac36372
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-09T19:02:48.255Z'

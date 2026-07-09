@@ -1,0 +1,45 @@
+analysis:
+  hash: null
+  path: catalog/analyses/to/skl_tool-design-sprint-test-and-score-src-https-github-f764e49b-ol-design-sprint-test-and-score-skill-md_f764e49b.md
+canonical_name: tool-design-sprint-test-and-score
+canonical_skill_id: skl_tool-design-sprint-test-and-score-src-https-github-f764e49b-ol-design-sprint-test-and-score-skill-md_f764e49b
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-09T19:02:41.398Z'
+curation:
+  notes: []
+display_name: tool-design-sprint-test-and-score
+identity:
+  aliases: []
+  current_version_id: sha256:ea50e8e1949bf7d2e68d93fb2d81aa96d0a8a402
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: LICENSE file in repo root; README states Apache 2.0
+    spdx: Apache-2.0
+    verified: true
+  path: skills/tool-design-sprint-test-and-score/SKILL.md
+  source_id: src_https-github-com-product-on-purpose-pm-skills-pm-skills-product-on-purpose_f2ce15e5
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-09T19:02:41.398Z'

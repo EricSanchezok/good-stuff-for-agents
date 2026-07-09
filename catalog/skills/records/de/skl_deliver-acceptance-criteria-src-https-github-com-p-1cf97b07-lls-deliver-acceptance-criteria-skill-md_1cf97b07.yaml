@@ -1,0 +1,45 @@
+analysis:
+  hash: null
+  path: catalog/analyses/de/skl_deliver-acceptance-criteria-src-https-github-com-p-1cf97b07-lls-deliver-acceptance-criteria-skill-md_1cf97b07.md
+canonical_name: deliver-acceptance-criteria
+canonical_skill_id: skl_deliver-acceptance-criteria-src-https-github-com-p-1cf97b07-lls-deliver-acceptance-criteria-skill-md_1cf97b07
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-09T19:02:37.505Z'
+curation:
+  notes: []
+display_name: deliver-acceptance-criteria
+identity:
+  aliases: []
+  current_version_id: sha256:014b1e46d22d3c3d573ca46aeb2affcd206aec73
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: LICENSE file in repo root; README states Apache 2.0
+    spdx: Apache-2.0
+    verified: true
+  path: skills/deliver-acceptance-criteria/SKILL.md
+  source_id: src_https-github-com-product-on-purpose-pm-skills-pm-skills-product-on-purpose_f2ce15e5
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-09T19:02:37.505Z'

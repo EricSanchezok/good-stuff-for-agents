@@ -1,0 +1,45 @@
+analysis:
+  hash: null
+  path: catalog/analyses/pr/skl_product-name-src-https-github-com-phuryn-pm-skills-7792edb3-ting-growth-skills-product-name-skill-md_7792edb3.md
+canonical_name: product-name
+canonical_skill_id: skl_product-name-src-https-github-com-phuryn-pm-skills-7792edb3-ting-growth-skills-product-name-skill-md_7792edb3
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-09T19:02:46.187Z'
+curation:
+  notes: []
+display_name: product-name
+identity:
+  aliases: []
+  current_version_id: sha256:2fff74a3dbbd08309714b53639a8f9906b820275
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: LICENSE file in repo root; README badge confirms MIT
+    spdx: MIT
+    verified: true
+  path: pm-marketing-growth/skills/product-name/SKILL.md
+  source_id: src_https-github-com-phuryn-pm-skills-pm-skills-marketplace-phuryn_8ac36372
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-09T19:02:46.187Z'

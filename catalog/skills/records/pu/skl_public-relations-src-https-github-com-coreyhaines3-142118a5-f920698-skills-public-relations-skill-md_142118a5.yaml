@@ -1,0 +1,45 @@
+analysis:
+  hash: null
+  path: catalog/analyses/pu/skl_public-relations-src-https-github-com-coreyhaines3-142118a5-f920698-skills-public-relations-skill-md_142118a5.md
+canonical_name: public-relations
+canonical_skill_id: skl_public-relations-src-https-github-com-coreyhaines3-142118a5-f920698-skills-public-relations-skill-md_142118a5
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-09T19:02:51.749Z'
+curation:
+  notes: []
+display_name: public-relations
+identity:
+  aliases: []
+  current_version_id: sha256:3d6de7aa11fb1216311ef25f207694ef081ebd2b
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: LICENSE file in repo root; README states MIT
+    spdx: MIT
+    verified: true
+  path: skills/public-relations/SKILL.md
+  source_id: src_https-github-com-coreyhaines31-marketingskills-marketing-skills-corey-haines_ef920698
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-09T19:02:51.749Z'

@@ -1,0 +1,45 @@
+analysis:
+  hash: null
+  path: catalog/analyses/va/skl_value-prop-statements-src-https-github-com-phuryn-53741c16-th-skills-value-prop-statements-skill-md_53741c16.md
+canonical_name: value-prop-statements
+canonical_skill_id: skl_value-prop-statements-src-https-github-com-phuryn-53741c16-th-skills-value-prop-statements-skill-md_53741c16
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-09T19:02:46.270Z'
+curation:
+  notes: []
+display_name: value-prop-statements
+identity:
+  aliases: []
+  current_version_id: sha256:7f3eae0e8c12712d8470e51b89d6e5e026b4c41a
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: LICENSE file in repo root; README badge confirms MIT
+    spdx: MIT
+    verified: true
+  path: pm-marketing-growth/skills/value-prop-statements/SKILL.md
+  source_id: src_https-github-com-phuryn-pm-skills-pm-skills-marketplace-phuryn_8ac36372
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-09T19:02:46.270Z'

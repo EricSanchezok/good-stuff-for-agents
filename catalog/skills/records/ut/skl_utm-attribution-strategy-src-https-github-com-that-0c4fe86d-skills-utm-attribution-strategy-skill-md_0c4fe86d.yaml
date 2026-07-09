@@ -1,0 +1,45 @@
+analysis:
+  hash: null
+  path: catalog/analyses/ut/skl_utm-attribution-strategy-src-https-github-com-that-0c4fe86d-skills-utm-attribution-strategy-skill-md_0c4fe86d.md
+canonical_name: utm-attribution-strategy
+canonical_skill_id: skl_utm-attribution-strategy-src-https-github-com-that-0c4fe86d-skills-utm-attribution-strategy-skill-md_0c4fe86d
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-09T19:02:36.220Z'
+curation:
+  notes: []
+display_name: utm-attribution-strategy
+identity:
+  aliases: []
+  current_version_id: sha256:a81c5735fa1ddb6786a8a26ca6982bf1ab917d57
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: LICENSE file in repo root; README states MIT
+    spdx: MIT
+    verified: true
+  path: skills/utm-attribution-strategy/SKILL.md
+  source_id: src_https-github-com-thatrebeccarae-claude-marketing-claude-marketing-rebecca-rae-barton_8a108923
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-09T19:02:36.220Z'

@@ -1,0 +1,45 @@
+analysis:
+  hash: null
+  path: catalog/analyses/cr/skl_cro-src-https-github-com-coreyhaines31-marketingsk-e9567f9f-orey-haines-ef920698-skills-cro-skill-md_e9567f9f.md
+canonical_name: cro
+canonical_skill_id: skl_cro-src-https-github-com-coreyhaines31-marketingsk-e9567f9f-orey-haines-ef920698-skills-cro-skill-md_e9567f9f
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-09T19:02:49.940Z'
+curation:
+  notes: []
+display_name: cro
+identity:
+  aliases: []
+  current_version_id: sha256:74a2394f838e0f07a5a5f06eee99047b8a5adcd6
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: LICENSE file in repo root; README states MIT
+    spdx: MIT
+    verified: true
+  path: skills/cro/SKILL.md
+  source_id: src_https-github-com-coreyhaines31-marketingskills-marketing-skills-corey-haines_ef920698
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-09T19:02:49.940Z'

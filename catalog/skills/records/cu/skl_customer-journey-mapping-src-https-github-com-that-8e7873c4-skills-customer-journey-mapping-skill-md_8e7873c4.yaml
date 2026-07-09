@@ -1,0 +1,45 @@
+analysis:
+  hash: null
+  path: catalog/analyses/cu/skl_customer-journey-mapping-src-https-github-com-that-8e7873c4-skills-customer-journey-mapping-skill-md_8e7873c4.md
+canonical_name: customer-journey-mapping
+canonical_skill_id: skl_customer-journey-mapping-src-https-github-com-that-8e7873c4-skills-customer-journey-mapping-skill-md_8e7873c4
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-09T19:02:32.797Z'
+curation:
+  notes: []
+display_name: customer-journey-mapping
+identity:
+  aliases: []
+  current_version_id: sha256:2f3e4f7c5235735809eba12ac2cda335d7a7bc0e
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: LICENSE file in repo root; README states MIT
+    spdx: MIT
+    verified: true
+  path: skills/customer-journey-mapping/SKILL.md
+  source_id: src_https-github-com-thatrebeccarae-claude-marketing-claude-marketing-rebecca-rae-barton_8a108923
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-09T19:02:32.797Z'

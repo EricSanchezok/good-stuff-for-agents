@@ -1,0 +1,45 @@
+analysis:
+  hash: null
+  path: catalog/analyses/po/skl_popups-src-https-github-com-coreyhaines31-marketin-5e63de9e-y-haines-ef920698-skills-popups-skill-md_5e63de9e.md
+canonical_name: popups
+canonical_skill_id: skl_popups-src-https-github-com-coreyhaines31-marketin-5e63de9e-y-haines-ef920698-skills-popups-skill-md_5e63de9e
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-09T19:02:51.300Z'
+curation:
+  notes: []
+display_name: popups
+identity:
+  aliases: []
+  current_version_id: sha256:398b3329e4a7cea4b610edf143a5896466287d51
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: LICENSE file in repo root; README states MIT
+    spdx: MIT
+    verified: true
+  path: skills/popups/SKILL.md
+  source_id: src_https-github-com-coreyhaines31-marketingskills-marketing-skills-corey-haines_ef920698
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-09T19:02:51.300Z'

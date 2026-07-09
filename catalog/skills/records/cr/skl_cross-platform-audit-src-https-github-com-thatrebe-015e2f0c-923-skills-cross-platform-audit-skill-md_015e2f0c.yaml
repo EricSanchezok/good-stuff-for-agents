@@ -1,0 +1,45 @@
+analysis:
+  hash: null
+  path: catalog/analyses/cr/skl_cross-platform-audit-src-https-github-com-thatrebe-015e2f0c-923-skills-cross-platform-audit-skill-md_015e2f0c.md
+canonical_name: cross-platform-audit
+canonical_skill_id: skl_cross-platform-audit-src-https-github-com-thatrebe-015e2f0c-923-skills-cross-platform-audit-skill-md_015e2f0c
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-09T19:02:32.717Z'
+curation:
+  notes: []
+display_name: cross-platform-audit
+identity:
+  aliases: []
+  current_version_id: sha256:a41f6b95fd6a075c16df998f53588bee227dd2a6
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: LICENSE file in repo root; README states MIT
+    spdx: MIT
+    verified: true
+  path: skills/cross-platform-audit/SKILL.md
+  source_id: src_https-github-com-thatrebeccarae-claude-marketing-claude-marketing-rebecca-rae-barton_8a108923
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-09T19:02:32.717Z'

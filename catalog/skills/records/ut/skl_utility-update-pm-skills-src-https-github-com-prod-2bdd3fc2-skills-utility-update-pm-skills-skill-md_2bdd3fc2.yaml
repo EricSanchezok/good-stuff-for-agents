@@ -1,0 +1,45 @@
+analysis:
+  hash: null
+  path: catalog/analyses/ut/skl_utility-update-pm-skills-src-https-github-com-prod-2bdd3fc2-skills-utility-update-pm-skills-skill-md_2bdd3fc2.md
+canonical_name: utility-update-pm-skills
+canonical_skill_id: skl_utility-update-pm-skills-src-https-github-com-prod-2bdd3fc2-skills-utility-update-pm-skills-skill-md_2bdd3fc2
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-09T19:02:43.037Z'
+curation:
+  notes: []
+display_name: utility-update-pm-skills
+identity:
+  aliases: []
+  current_version_id: sha256:27ac02dc1529923d318f11d9e7be9e58f5ac688c
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: LICENSE file in repo root; README states Apache 2.0
+    spdx: Apache-2.0
+    verified: true
+  path: skills/utility-update-pm-skills/SKILL.md
+  source_id: src_https-github-com-product-on-purpose-pm-skills-pm-skills-product-on-purpose_f2ce15e5
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-09T19:02:43.037Z'

@@ -1,0 +1,45 @@
+analysis:
+  hash: null
+  path: catalog/analyses/va/skl_value-proposition-src-https-github-com-phuryn-pm-s-9011d707-rategy-skills-value-proposition-skill-md_9011d707.md
+canonical_name: value-proposition
+canonical_skill_id: skl_value-proposition-src-https-github-com-phuryn-pm-s-9011d707-rategy-skills-value-proposition-skill-md_9011d707
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-09T19:02:48.335Z'
+curation:
+  notes: []
+display_name: value-proposition
+identity:
+  aliases: []
+  current_version_id: sha256:c96c645ca3a2d3696b7b5b54be0e7abb1ee43bd3
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: LICENSE file in repo root; README badge confirms MIT
+    spdx: MIT
+    verified: true
+  path: pm-product-strategy/skills/value-proposition/SKILL.md
+  source_id: src_https-github-com-phuryn-pm-skills-pm-skills-marketplace-phuryn_8ac36372
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-09T19:02:48.335Z'

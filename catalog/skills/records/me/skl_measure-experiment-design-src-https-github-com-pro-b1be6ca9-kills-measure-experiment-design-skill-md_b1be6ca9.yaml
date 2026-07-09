@@ -1,0 +1,45 @@
+analysis:
+  hash: null
+  path: catalog/analyses/me/skl_measure-experiment-design-src-https-github-com-pro-b1be6ca9-kills-measure-experiment-design-skill-md_b1be6ca9.md
+canonical_name: measure-experiment-design
+canonical_skill_id: skl_measure-experiment-design-src-https-github-com-pro-b1be6ca9-kills-measure-experiment-design-skill-md_b1be6ca9
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-09T19:02:40.177Z'
+curation:
+  notes: []
+display_name: measure-experiment-design
+identity:
+  aliases: []
+  current_version_id: sha256:2cff99bad5fecc60708da904934515265934d827
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: LICENSE file in repo root; README states Apache 2.0
+    spdx: Apache-2.0
+    verified: true
+  path: skills/measure-experiment-design/SKILL.md
+  source_id: src_https-github-com-product-on-purpose-pm-skills-pm-skills-product-on-purpose_f2ce15e5
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-09T19:02:40.177Z'

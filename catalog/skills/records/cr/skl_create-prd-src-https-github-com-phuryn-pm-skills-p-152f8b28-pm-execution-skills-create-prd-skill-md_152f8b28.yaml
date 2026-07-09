@@ -1,0 +1,45 @@
+analysis:
+  hash: null
+  path: catalog/analyses/cr/skl_create-prd-src-https-github-com-phuryn-pm-skills-p-152f8b28-pm-execution-skills-create-prd-skill-md_152f8b28.md
+canonical_name: create-prd
+canonical_skill_id: skl_create-prd-src-https-github-com-phuryn-pm-skills-p-152f8b28-pm-execution-skills-create-prd-skill-md_152f8b28
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-09T19:02:43.634Z'
+curation:
+  notes: []
+display_name: create-prd
+identity:
+  aliases: []
+  current_version_id: sha256:68c8b26690db8e826782f3029c24b88340ec570e
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: LICENSE file in repo root; README badge confirms MIT
+    spdx: MIT
+    verified: true
+  path: pm-execution/skills/create-prd/SKILL.md
+  source_id: src_https-github-com-phuryn-pm-skills-pm-skills-marketplace-phuryn_8ac36372
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-09T19:02:43.634Z'

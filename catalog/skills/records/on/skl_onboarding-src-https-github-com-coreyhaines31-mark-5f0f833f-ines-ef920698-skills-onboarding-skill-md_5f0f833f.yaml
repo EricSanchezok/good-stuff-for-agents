@@ -1,0 +1,45 @@
+analysis:
+  hash: null
+  path: catalog/analyses/on/skl_onboarding-src-https-github-com-coreyhaines31-mark-5f0f833f-ines-ef920698-skills-onboarding-skill-md_5f0f833f.md
+canonical_name: onboarding
+canonical_skill_id: skl_onboarding-src-https-github-com-coreyhaines31-mark-5f0f833f-ines-ef920698-skills-onboarding-skill-md_5f0f833f
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-09T19:02:51.116Z'
+curation:
+  notes: []
+display_name: onboarding
+identity:
+  aliases: []
+  current_version_id: sha256:f8ba58a3527ec6b4d01232339f5fdee4683a9a67
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: LICENSE file in repo root; README states MIT
+    spdx: MIT
+    verified: true
+  path: skills/onboarding/SKILL.md
+  source_id: src_https-github-com-coreyhaines31-marketingskills-marketing-skills-corey-haines_ef920698
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-09T19:02:51.116Z'

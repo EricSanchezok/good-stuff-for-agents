@@ -1,0 +1,45 @@
+analysis:
+  hash: null
+  path: catalog/analyses/di/skl_discover-stakeholder-summary-src-https-github-com-e568212c-ls-discover-stakeholder-summary-skill-md_e568212c.md
+canonical_name: discover-stakeholder-summary
+canonical_skill_id: skl_discover-stakeholder-summary-src-https-github-com-e568212c-ls-discover-stakeholder-summary-skill-md_e568212c
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-09T19:02:38.757Z'
+curation:
+  notes: []
+display_name: discover-stakeholder-summary
+identity:
+  aliases: []
+  current_version_id: sha256:73c8759320a0d11390e712705cabcc52b1364e25
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: LICENSE file in repo root; README states Apache 2.0
+    spdx: Apache-2.0
+    verified: true
+  path: skills/discover-stakeholder-summary/SKILL.md
+  source_id: src_https-github-com-product-on-purpose-pm-skills-pm-skills-product-on-purpose_f2ce15e5
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-09T19:02:38.757Z'

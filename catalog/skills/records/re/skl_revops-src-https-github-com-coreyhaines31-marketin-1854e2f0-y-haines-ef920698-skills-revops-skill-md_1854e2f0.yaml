@@ -1,0 +1,45 @@
+analysis:
+  hash: null
+  path: catalog/analyses/re/skl_revops-src-https-github-com-coreyhaines31-marketin-1854e2f0-y-haines-ef920698-skills-revops-skill-md_1854e2f0.md
+canonical_name: revops
+canonical_skill_id: skl_revops-src-https-github-com-coreyhaines31-marketin-1854e2f0-y-haines-ef920698-skills-revops-skill-md_1854e2f0
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-09T19:02:51.933Z'
+curation:
+  notes: []
+display_name: revops
+identity:
+  aliases: []
+  current_version_id: sha256:fba4dc188fa79cc094ba8f3dd878c0791331d1a0
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: LICENSE file in repo root; README states MIT
+    spdx: MIT
+    verified: true
+  path: skills/revops/SKILL.md
+  source_id: src_https-github-com-coreyhaines31-marketingskills-marketing-skills-corey-haines_ef920698
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-09T19:02:51.933Z'

@@ -1,0 +1,45 @@
+analysis:
+  hash: null
+  path: catalog/analyses/sa/skl_safe-push-src-https-github-com-thatrebeccarae-clau-5e2641f2-arton-8a108923-skills-safe-push-skill-md_5e2641f2.md
+canonical_name: safe-push
+canonical_skill_id: skl_safe-push-src-https-github-com-thatrebeccarae-clau-5e2641f2-arton-8a108923-skills-safe-push-skill-md_5e2641f2
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-09T19:02:35.392Z'
+curation:
+  notes: []
+display_name: safe-push
+identity:
+  aliases: []
+  current_version_id: sha256:e13f50e8bb2c0896c83daac4026374bc76a2d589
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: LICENSE file in repo root; README states MIT
+    spdx: MIT
+    verified: true
+  path: skills/safe-push/SKILL.md
+  source_id: src_https-github-com-thatrebeccarae-claude-marketing-claude-marketing-rebecca-rae-barton_8a108923
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-09T19:02:35.392Z'

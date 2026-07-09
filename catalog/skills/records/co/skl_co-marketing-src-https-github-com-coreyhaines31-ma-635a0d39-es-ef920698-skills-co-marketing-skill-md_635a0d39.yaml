@@ -1,0 +1,45 @@
+analysis:
+  hash: null
+  path: catalog/analyses/co/skl_co-marketing-src-https-github-com-coreyhaines31-ma-635a0d39-es-ef920698-skills-co-marketing-skill-md_635a0d39.md
+canonical_name: co-marketing
+canonical_skill_id: skl_co-marketing-src-https-github-com-coreyhaines31-ma-635a0d39-es-ef920698-skills-co-marketing-skill-md_635a0d39
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-09T19:02:49.288Z'
+curation:
+  notes: []
+display_name: co-marketing
+identity:
+  aliases: []
+  current_version_id: sha256:6788b644f675024e4f4135f561da33d11ec6830d
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: LICENSE file in repo root; README states MIT
+    spdx: MIT
+    verified: true
+  path: skills/co-marketing/SKILL.md
+  source_id: src_https-github-com-coreyhaines31-marketingskills-marketing-skills-corey-haines_ef920698
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-09T19:02:49.288Z'

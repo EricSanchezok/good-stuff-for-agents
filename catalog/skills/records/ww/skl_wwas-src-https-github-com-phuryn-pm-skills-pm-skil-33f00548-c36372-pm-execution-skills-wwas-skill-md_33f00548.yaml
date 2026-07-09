@@ -1,0 +1,45 @@
+analysis:
+  hash: null
+  path: catalog/analyses/ww/skl_wwas-src-https-github-com-phuryn-pm-skills-pm-skil-33f00548-c36372-pm-execution-skills-wwas-skill-md_33f00548.md
+canonical_name: wwas
+canonical_skill_id: skl_wwas-src-https-github-com-phuryn-pm-skills-pm-skil-33f00548-c36372-pm-execution-skills-wwas-skill-md_33f00548
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-09T19:02:44.774Z'
+curation:
+  notes: []
+display_name: wwas
+identity:
+  aliases: []
+  current_version_id: sha256:75ebf6bc77f4fff3d26b4b5352f58015c2d5e762
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: LICENSE file in repo root; README badge confirms MIT
+    spdx: MIT
+    verified: true
+  path: pm-execution/skills/wwas/SKILL.md
+  source_id: src_https-github-com-phuryn-pm-skills-pm-skills-marketplace-phuryn_8ac36372
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-09T19:02:44.774Z'

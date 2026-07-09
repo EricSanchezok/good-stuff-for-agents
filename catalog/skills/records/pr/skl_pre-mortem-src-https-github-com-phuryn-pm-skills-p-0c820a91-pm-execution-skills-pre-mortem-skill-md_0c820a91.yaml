@@ -1,0 +1,45 @@
+analysis:
+  hash: null
+  path: catalog/analyses/pr/skl_pre-mortem-src-https-github-com-phuryn-pm-skills-p-0c820a91-pm-execution-skills-pre-mortem-skill-md_0c820a91.md
+canonical_name: pre-mortem
+canonical_skill_id: skl_pre-mortem-src-https-github-com-phuryn-pm-skills-p-0c820a91-pm-execution-skills-pre-mortem-skill-md_0c820a91
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-09T19:02:43.962Z'
+curation:
+  notes: []
+display_name: pre-mortem
+identity:
+  aliases: []
+  current_version_id: sha256:3a22d36b4dfac5685ccbc73486686ea6e7df6452
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: LICENSE file in repo root; README badge confirms MIT
+    spdx: MIT
+    verified: true
+  path: pm-execution/skills/pre-mortem/SKILL.md
+  source_id: src_https-github-com-phuryn-pm-skills-pm-skills-marketplace-phuryn_8ac36372
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-09T19:02:43.962Z'

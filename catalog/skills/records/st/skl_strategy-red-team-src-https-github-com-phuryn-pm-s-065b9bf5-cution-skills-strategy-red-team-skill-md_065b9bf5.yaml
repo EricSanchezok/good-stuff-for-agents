@@ -1,0 +1,45 @@
+analysis:
+  hash: null
+  path: catalog/analyses/st/skl_strategy-red-team-src-https-github-com-phuryn-pm-s-065b9bf5-cution-skills-strategy-red-team-skill-md_065b9bf5.md
+canonical_name: strategy-red-team
+canonical_skill_id: skl_strategy-red-team-src-https-github-com-phuryn-pm-s-065b9bf5-cution-skills-strategy-red-team-skill-md_065b9bf5
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-09T19:02:44.453Z'
+curation:
+  notes: []
+display_name: strategy-red-team
+identity:
+  aliases: []
+  current_version_id: sha256:fe7b7feaaa7a7662d72aac226d40d3abea7e0596
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: LICENSE file in repo root; README badge confirms MIT
+    spdx: MIT
+    verified: true
+  path: pm-execution/skills/strategy-red-team/SKILL.md
+  source_id: src_https-github-com-phuryn-pm-skills-pm-skills-marketplace-phuryn_8ac36372
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-09T19:02:44.453Z'

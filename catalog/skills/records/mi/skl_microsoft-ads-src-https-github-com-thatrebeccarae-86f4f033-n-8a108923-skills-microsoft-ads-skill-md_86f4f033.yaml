@@ -1,0 +1,45 @@
+analysis:
+  hash: null
+  path: catalog/analyses/mi/skl_microsoft-ads-src-https-github-com-thatrebeccarae-86f4f033-n-8a108923-skills-microsoft-ads-skill-md_86f4f033.md
+canonical_name: microsoft-ads
+canonical_skill_id: skl_microsoft-ads-src-https-github-com-thatrebeccarae-86f4f033-n-8a108923-skills-microsoft-ads-skill-md_86f4f033
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-09T19:02:34.439Z'
+curation:
+  notes: []
+display_name: microsoft-ads
+identity:
+  aliases: []
+  current_version_id: sha256:168d43333d8a22ab711329676cdb5d47edc373e4
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: LICENSE file in repo root; README states MIT
+    spdx: MIT
+    verified: true
+  path: skills/microsoft-ads/SKILL.md
+  source_id: src_https-github-com-thatrebeccarae-claude-marketing-claude-marketing-rebecca-rae-barton_8a108923
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-09T19:02:34.439Z'

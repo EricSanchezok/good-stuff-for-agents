@@ -1,0 +1,45 @@
+analysis:
+  hash: null
+  path: catalog/analyses/gr/skl_growth-loops-src-https-github-com-phuryn-pm-skills-19e88cab-o-to-market-skills-growth-loops-skill-md_19e88cab.md
+canonical_name: growth-loops
+canonical_skill_id: skl_growth-loops-src-https-github-com-phuryn-pm-skills-19e88cab-o-to-market-skills-growth-loops-skill-md_19e88cab
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-09T19:02:45.024Z'
+curation:
+  notes: []
+display_name: growth-loops
+identity:
+  aliases: []
+  current_version_id: sha256:f6ff788a378318d6138ccf865f69882f525e3ae9
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: LICENSE file in repo root; README badge confirms MIT
+    spdx: MIT
+    verified: true
+  path: pm-go-to-market/skills/growth-loops/SKILL.md
+  source_id: src_https-github-com-phuryn-pm-skills-pm-skills-marketplace-phuryn_8ac36372
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-09T19:02:45.024Z'

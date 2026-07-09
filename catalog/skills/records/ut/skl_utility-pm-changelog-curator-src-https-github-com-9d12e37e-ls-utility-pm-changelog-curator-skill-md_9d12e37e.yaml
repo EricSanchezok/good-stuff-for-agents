@@ -1,0 +1,45 @@
+analysis:
+  hash: null
+  path: catalog/analyses/ut/skl_utility-pm-changelog-curator-src-https-github-com-9d12e37e-ls-utility-pm-changelog-curator-skill-md_9d12e37e.md
+canonical_name: utility-pm-changelog-curator
+canonical_skill_id: skl_utility-pm-changelog-curator-src-https-github-com-9d12e37e-ls-utility-pm-changelog-curator-skill-md_9d12e37e
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-09T19:02:42.224Z'
+curation:
+  notes: []
+display_name: utility-pm-changelog-curator
+identity:
+  aliases: []
+  current_version_id: sha256:2f94589fea1da618702d535ce18f26dc6ec079f1
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: LICENSE file in repo root; README states Apache 2.0
+    spdx: Apache-2.0
+    verified: true
+  path: skills/utility-pm-changelog-curator/SKILL.md
+  source_id: src_https-github-com-product-on-purpose-pm-skills-pm-skills-product-on-purpose_f2ce15e5
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-09T19:02:42.224Z'

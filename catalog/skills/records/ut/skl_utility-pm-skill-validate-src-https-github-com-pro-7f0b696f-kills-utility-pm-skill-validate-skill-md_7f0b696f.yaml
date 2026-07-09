@@ -1,0 +1,45 @@
+analysis:
+  hash: null
+  path: catalog/analyses/ut/skl_utility-pm-skill-validate-src-https-github-com-pro-7f0b696f-kills-utility-pm-skill-validate-skill-md_7f0b696f.md
+canonical_name: utility-pm-skill-validate
+canonical_skill_id: skl_utility-pm-skill-validate-src-https-github-com-pro-7f0b696f-kills-utility-pm-skill-validate-skill-md_7f0b696f
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-09T19:02:42.713Z'
+curation:
+  notes: []
+display_name: utility-pm-skill-validate
+identity:
+  aliases: []
+  current_version_id: sha256:31a72171d4b645f70ac3b9848f2d9bb93cba8ce3
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: LICENSE file in repo root; README states Apache 2.0
+    spdx: Apache-2.0
+    verified: true
+  path: skills/utility-pm-skill-validate/SKILL.md
+  source_id: src_https-github-com-product-on-purpose-pm-skills-pm-skills-product-on-purpose_f2ce15e5
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-09T19:02:42.713Z'

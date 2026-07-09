@@ -1,0 +1,45 @@
+analysis:
+  hash: null
+  path: catalog/analyses/pr/skl_product-vision-src-https-github-com-phuryn-pm-skil-e9f510b3-strategy-skills-product-vision-skill-md_e9f510b3.md
+canonical_name: product-vision
+canonical_skill_id: skl_product-vision-src-https-github-com-phuryn-pm-skil-e9f510b3-strategy-skills-product-vision-skill-md_e9f510b3
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-09T19:02:48.100Z'
+curation:
+  notes: []
+display_name: product-vision
+identity:
+  aliases: []
+  current_version_id: sha256:a6443edb2bf108e583ddb339a9163dc6de05b9da
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: LICENSE file in repo root; README badge confirms MIT
+    spdx: MIT
+    verified: true
+  path: pm-product-strategy/skills/product-vision/SKILL.md
+  source_id: src_https-github-com-phuryn-pm-skills-pm-skills-marketplace-phuryn_8ac36372
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-09T19:02:48.100Z'

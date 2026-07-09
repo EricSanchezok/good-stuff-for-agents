@@ -1,0 +1,45 @@
+analysis:
+  hash: null
+  path: catalog/analyses/to/skl_tool-design-sprint-decide-and-storyboard-src-https-d8c46329-gn-sprint-decide-and-storyboard-skill-md_d8c46329.md
+canonical_name: tool-design-sprint-decide-and-storyboard
+canonical_skill_id: skl_tool-design-sprint-decide-and-storyboard-src-https-d8c46329-gn-sprint-decide-and-storyboard-skill-md_d8c46329
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-09T19:02:40.926Z'
+curation:
+  notes: []
+display_name: tool-design-sprint-decide-and-storyboard
+identity:
+  aliases: []
+  current_version_id: sha256:934729adc602dbb56ca959b4eb20dce960352d53
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: LICENSE file in repo root; README states Apache 2.0
+    spdx: Apache-2.0
+    verified: true
+  path: skills/tool-design-sprint-decide-and-storyboard/SKILL.md
+  source_id: src_https-github-com-product-on-purpose-pm-skills-pm-skills-product-on-purpose_f2ce15e5
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-09T19:02:40.926Z'

@@ -1,0 +1,45 @@
+analysis:
+  hash: null
+  path: catalog/analyses/id/skl_identify-assumptions-existing-src-https-github-com-609ee0fc-s-identify-assumptions-existing-skill-md_609ee0fc.md
+canonical_name: identify-assumptions-existing
+canonical_skill_id: skl_identify-assumptions-existing-src-https-github-com-609ee0fc-s-identify-assumptions-existing-skill-md_609ee0fc
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-09T19:02:46.773Z'
+curation:
+  notes: []
+display_name: identify-assumptions-existing
+identity:
+  aliases: []
+  current_version_id: sha256:66da6c92e1a0722791882f325734d1de3d98e5b2
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: LICENSE file in repo root; README badge confirms MIT
+    spdx: MIT
+    verified: true
+  path: pm-product-discovery/skills/identify-assumptions-existing/SKILL.md
+  source_id: src_https-github-com-phuryn-pm-skills-pm-skills-marketplace-phuryn_8ac36372
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-09T19:02:46.773Z'

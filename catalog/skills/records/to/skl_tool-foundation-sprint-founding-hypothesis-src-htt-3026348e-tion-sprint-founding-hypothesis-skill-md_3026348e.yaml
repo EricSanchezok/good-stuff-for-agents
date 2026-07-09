@@ -1,0 +1,45 @@
+analysis:
+  hash: null
+  path: catalog/analyses/to/skl_tool-foundation-sprint-founding-hypothesis-src-htt-3026348e-tion-sprint-founding-hypothesis-skill-md_3026348e.md
+canonical_name: tool-foundation-sprint-founding-hypothesis
+canonical_skill_id: skl_tool-foundation-sprint-founding-hypothesis-src-htt-3026348e-tion-sprint-founding-hypothesis-skill-md_3026348e
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-09T19:02:41.817Z'
+curation:
+  notes: []
+display_name: tool-foundation-sprint-founding-hypothesis
+identity:
+  aliases: []
+  current_version_id: sha256:e1955cf5d5cb0da127535c04170f140954254328
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: LICENSE file in repo root; README states Apache 2.0
+    spdx: Apache-2.0
+    verified: true
+  path: skills/tool-foundation-sprint-founding-hypothesis/SKILL.md
+  source_id: src_https-github-com-product-on-purpose-pm-skills-pm-skills-product-on-purpose_f2ce15e5
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-09T19:02:41.817Z'

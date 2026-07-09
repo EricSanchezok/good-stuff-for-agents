@@ -1,0 +1,45 @@
+analysis:
+  hash: null
+  path: catalog/analyses/de/skl_deliver-user-stories-src-https-github-com-product-eb6b7baf-5e5-skills-deliver-user-stories-skill-md_eb6b7baf.md
+canonical_name: deliver-user-stories
+canonical_skill_id: skl_deliver-user-stories-src-https-github-com-product-eb6b7baf-5e5-skills-deliver-user-stories-skill-md_eb6b7baf
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-09T19:02:38.002Z'
+curation:
+  notes: []
+display_name: deliver-user-stories
+identity:
+  aliases: []
+  current_version_id: sha256:40a476c401001507a405c38815c5f2d39fbc2a0a
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: LICENSE file in repo root; README states Apache 2.0
+    spdx: Apache-2.0
+    verified: true
+  path: skills/deliver-user-stories/SKILL.md
+  source_id: src_https-github-com-product-on-purpose-pm-skills-pm-skills-product-on-purpose_f2ce15e5
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-09T19:02:38.002Z'

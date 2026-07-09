@@ -1,0 +1,45 @@
+analysis:
+  hash: null
+  path: catalog/analyses/co/skl_copywriting-frameworks-src-https-github-com-thatre-88656ba3-3-skills-copywriting-frameworks-skill-md_88656ba3.md
+canonical_name: copywriting-frameworks
+canonical_skill_id: skl_copywriting-frameworks-src-https-github-com-thatre-88656ba3-3-skills-copywriting-frameworks-skill-md_88656ba3
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-09T19:02:32.559Z'
+curation:
+  notes: []
+display_name: copywriting-frameworks
+identity:
+  aliases: []
+  current_version_id: sha256:abb1bdc03f04308887d9f4387a84e65f009fe9d1
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: LICENSE file in repo root; README states MIT
+    spdx: MIT
+    verified: true
+  path: skills/copywriting-frameworks/SKILL.md
+  source_id: src_https-github-com-thatrebeccarae-claude-marketing-claude-marketing-rebecca-rae-barton_8a108923
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-09T19:02:32.559Z'

@@ -1,0 +1,45 @@
+analysis:
+  hash: null
+  path: catalog/analyses/si/skl_signup-src-https-github-com-coreyhaines31-marketin-2c67a188-y-haines-ef920698-skills-signup-skill-md_2c67a188.md
+canonical_name: signup
+canonical_skill_id: skl_signup-src-https-github-com-coreyhaines31-marketin-2c67a188-y-haines-ef920698-skills-signup-skill-md_2c67a188
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-09T19:02:52.315Z'
+curation:
+  notes: []
+display_name: signup
+identity:
+  aliases: []
+  current_version_id: sha256:3ef89f8e51f7a58b3994d2c0bdd8754980425db2
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: LICENSE file in repo root; README states MIT
+    spdx: MIT
+    verified: true
+  path: skills/signup/SKILL.md
+  source_id: src_https-github-com-coreyhaines31-marketingskills-marketing-skills-corey-haines_ef920698
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-09T19:02:52.315Z'

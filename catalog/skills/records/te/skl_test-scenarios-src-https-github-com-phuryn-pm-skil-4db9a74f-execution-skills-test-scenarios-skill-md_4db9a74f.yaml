@@ -1,0 +1,45 @@
+analysis:
+  hash: null
+  path: catalog/analyses/te/skl_test-scenarios-src-https-github-com-phuryn-pm-skil-4db9a74f-execution-skills-test-scenarios-skill-md_4db9a74f.md
+canonical_name: test-scenarios
+canonical_skill_id: skl_test-scenarios-src-https-github-com-phuryn-pm-skil-4db9a74f-execution-skills-test-scenarios-skill-md_4db9a74f
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-09T19:02:44.613Z'
+curation:
+  notes: []
+display_name: test-scenarios
+identity:
+  aliases: []
+  current_version_id: sha256:d5a25a7185d1681f97c1506d2ff1ccc083a7ce95
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: LICENSE file in repo root; README badge confirms MIT
+    spdx: MIT
+    verified: true
+  path: pm-execution/skills/test-scenarios/SKILL.md
+  source_id: src_https-github-com-phuryn-pm-skills-pm-skills-marketplace-phuryn_8ac36372
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-09T19:02:44.613Z'

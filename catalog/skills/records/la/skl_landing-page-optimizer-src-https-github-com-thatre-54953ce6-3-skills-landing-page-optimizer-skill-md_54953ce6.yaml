@@ -1,0 +1,45 @@
+analysis:
+  hash: null
+  path: catalog/analyses/la/skl_landing-page-optimizer-src-https-github-com-thatre-54953ce6-3-skills-landing-page-optimizer-skill-md_54953ce6.md
+canonical_name: landing-page-optimizer
+canonical_skill_id: skl_landing-page-optimizer-src-https-github-com-thatre-54953ce6-3-skills-landing-page-optimizer-skill-md_54953ce6
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-09T19:02:33.952Z'
+curation:
+  notes: []
+display_name: landing-page-optimizer
+identity:
+  aliases: []
+  current_version_id: sha256:3dc5a9dd71a4dab080c8f3a3dbb86caa3520664a
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: LICENSE file in repo root; README states MIT
+    spdx: MIT
+    verified: true
+  path: skills/landing-page-optimizer/SKILL.md
+  source_id: src_https-github-com-thatrebeccarae-claude-marketing-claude-marketing-rebecca-rae-barton_8a108923
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-09T19:02:33.952Z'

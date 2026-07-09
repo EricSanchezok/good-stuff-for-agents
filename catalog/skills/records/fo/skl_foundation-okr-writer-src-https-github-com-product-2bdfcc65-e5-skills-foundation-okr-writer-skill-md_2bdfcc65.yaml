@@ -1,0 +1,45 @@
+analysis:
+  hash: null
+  path: catalog/analyses/fo/skl_foundation-okr-writer-src-https-github-com-product-2bdfcc65-e5-skills-foundation-okr-writer-skill-md_2bdfcc65.md
+canonical_name: foundation-okr-writer
+canonical_skill_id: skl_foundation-okr-writer-src-https-github-com-product-2bdfcc65-e5-skills-foundation-okr-writer-skill-md_2bdfcc65
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-09T19:02:39.355Z'
+curation:
+  notes: []
+display_name: foundation-okr-writer
+identity:
+  aliases: []
+  current_version_id: sha256:ab96529c008341297b64ef7dfa156d24925738e2
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: LICENSE file in repo root; README states Apache 2.0
+    spdx: Apache-2.0
+    verified: true
+  path: skills/foundation-okr-writer/SKILL.md
+  source_id: src_https-github-com-product-on-purpose-pm-skills-pm-skills-product-on-purpose_f2ce15e5
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-09T19:02:39.355Z'

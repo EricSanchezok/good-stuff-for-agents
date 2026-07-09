@@ -1,0 +1,45 @@
+analysis:
+  hash: null
+  path: catalog/analyses/go/skl_google-tag-manager-src-https-github-com-thatrebecc-e4ce7707-08923-skills-google-tag-manager-skill-md_e4ce7707.md
+canonical_name: google-tag-manager
+canonical_skill_id: skl_google-tag-manager-src-https-github-com-thatrebecc-e4ce7707-08923-skills-google-tag-manager-skill-md_e4ce7707
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-09T19:02:33.530Z'
+curation:
+  notes: []
+display_name: google-tag-manager
+identity:
+  aliases: []
+  current_version_id: sha256:25f73a0cc4604d0fa3d3b4c66298febbd0d59628
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: LICENSE file in repo root; README states MIT
+    spdx: MIT
+    verified: true
+  path: skills/google-tag-manager/SKILL.md
+  source_id: src_https-github-com-thatrebeccarae-claude-marketing-claude-marketing-rebecca-rae-barton_8a108923
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-09T19:02:33.530Z'

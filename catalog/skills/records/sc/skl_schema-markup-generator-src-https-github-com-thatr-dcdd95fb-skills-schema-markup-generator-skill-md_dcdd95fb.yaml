@@ -1,0 +1,45 @@
+analysis:
+  hash: null
+  path: catalog/analyses/sc/skl_schema-markup-generator-src-https-github-com-thatr-dcdd95fb-skills-schema-markup-generator-skill-md_dcdd95fb.md
+canonical_name: schema-markup-generator
+canonical_skill_id: skl_schema-markup-generator-src-https-github-com-thatr-dcdd95fb-skills-schema-markup-generator-skill-md_dcdd95fb
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-09T19:02:35.474Z'
+curation:
+  notes: []
+display_name: schema-markup-generator
+identity:
+  aliases: []
+  current_version_id: sha256:b1e90ba5140d653afc08ccd3db191a5b908f499a
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: LICENSE file in repo root; README states MIT
+    spdx: MIT
+    verified: true
+  path: skills/schema-markup-generator/SKILL.md
+  source_id: src_https-github-com-thatrebeccarae-claude-marketing-claude-marketing-rebecca-rae-barton_8a108923
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-09T19:02:35.474Z'

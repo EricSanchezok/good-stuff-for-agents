@@ -1,0 +1,45 @@
+analysis:
+  hash: null
+  path: catalog/analyses/ma/skl_market-research-src-https-github-com-thatrebeccara-38b131e2-8a108923-skills-market-research-skill-md_38b131e2.md
+canonical_name: market-research
+canonical_skill_id: skl_market-research-src-https-github-com-thatrebeccara-38b131e2-8a108923-skills-market-research-skill-md_38b131e2
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-09T19:02:34.347Z'
+curation:
+  notes: []
+display_name: market-research
+identity:
+  aliases: []
+  current_version_id: sha256:e9f57d76ca37c042064f01795a8b12214a356814
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: LICENSE file in repo root; README states MIT
+    spdx: MIT
+    verified: true
+  path: skills/market-research/SKILL.md
+  source_id: src_https-github-com-thatrebeccarae-claude-marketing-claude-marketing-rebecca-rae-barton_8a108923
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-09T19:02:34.347Z'

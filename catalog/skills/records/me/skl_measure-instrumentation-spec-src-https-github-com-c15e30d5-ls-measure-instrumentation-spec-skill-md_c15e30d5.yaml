@@ -1,0 +1,45 @@
+analysis:
+  hash: null
+  path: catalog/analyses/me/skl_measure-instrumentation-spec-src-https-github-com-c15e30d5-ls-measure-instrumentation-spec-skill-md_c15e30d5.md
+canonical_name: measure-instrumentation-spec
+canonical_skill_id: skl_measure-instrumentation-spec-src-https-github-com-c15e30d5-ls-measure-instrumentation-spec-skill-md_c15e30d5
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-09T19:02:40.344Z'
+curation:
+  notes: []
+display_name: measure-instrumentation-spec
+identity:
+  aliases: []
+  current_version_id: sha256:b4355bb9097a73c5536bbf589386301a2695c58a
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: LICENSE file in repo root; README states Apache 2.0
+    spdx: Apache-2.0
+    verified: true
+  path: skills/measure-instrumentation-spec/SKILL.md
+  source_id: src_https-github-com-product-on-purpose-pm-skills-pm-skills-product-on-purpose_f2ce15e5
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-09T19:02:40.344Z'

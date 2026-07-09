@@ -1,0 +1,45 @@
+analysis:
+  hash: null
+  path: catalog/analyses/it/skl_iterate-pivot-decision-src-https-github-com-produc-95b2546d-5-skills-iterate-pivot-decision-skill-md_95b2546d.md
+canonical_name: iterate-pivot-decision
+canonical_skill_id: skl_iterate-pivot-decision-src-https-github-com-produc-95b2546d-5-skills-iterate-pivot-decision-skill-md_95b2546d
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-09T19:02:39.845Z'
+curation:
+  notes: []
+display_name: iterate-pivot-decision
+identity:
+  aliases: []
+  current_version_id: sha256:23d921a8e98418997591ad1c07a8d25479ae4b86
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: LICENSE file in repo root; README states Apache 2.0
+    spdx: Apache-2.0
+    verified: true
+  path: skills/iterate-pivot-decision/SKILL.md
+  source_id: src_https-github-com-product-on-purpose-pm-skills-pm-skills-product-on-purpose_f2ce15e5
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-09T19:02:39.845Z'

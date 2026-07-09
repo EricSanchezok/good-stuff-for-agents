@@ -1,0 +1,45 @@
+analysis:
+  hash: null
+  path: catalog/analyses/go/skl_google-ads-src-https-github-com-thatrebeccarae-cla-cc659ddc-rton-8a108923-skills-google-ads-skill-md_cc659ddc.md
+canonical_name: google-ads
+canonical_skill_id: skl_google-ads-src-https-github-com-thatrebeccarae-cla-cc659ddc-rton-8a108923-skills-google-ads-skill-md_cc659ddc
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-09T19:02:33.362Z'
+curation:
+  notes: []
+display_name: google-ads
+identity:
+  aliases: []
+  current_version_id: sha256:e9b9ee62aa5fd345d55f59af2b66791a854d78ba
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: LICENSE file in repo root; README states MIT
+    spdx: MIT
+    verified: true
+  path: skills/google-ads/SKILL.md
+  source_id: src_https-github-com-thatrebeccarae-claude-marketing-claude-marketing-rebecca-rae-barton_8a108923
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-09T19:02:33.362Z'

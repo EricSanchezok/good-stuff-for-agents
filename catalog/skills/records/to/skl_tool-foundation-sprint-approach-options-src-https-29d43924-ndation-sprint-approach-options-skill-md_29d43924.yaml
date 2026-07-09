@@ -1,0 +1,45 @@
+analysis:
+  hash: null
+  path: catalog/analyses/to/skl_tool-foundation-sprint-approach-options-src-https-29d43924-ndation-sprint-approach-options-skill-md_29d43924.md
+canonical_name: tool-foundation-sprint-approach-options
+canonical_skill_id: skl_tool-foundation-sprint-approach-options-src-https-29d43924-ndation-sprint-approach-options-skill-md_29d43924
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-09T19:02:41.486Z'
+curation:
+  notes: []
+display_name: tool-foundation-sprint-approach-options
+identity:
+  aliases: []
+  current_version_id: sha256:ed35981ccd67ba8a2c10d9b16a23592bd5c1bd55
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: LICENSE file in repo root; README states Apache 2.0
+    spdx: Apache-2.0
+    verified: true
+  path: skills/tool-foundation-sprint-approach-options/SKILL.md
+  source_id: src_https-github-com-product-on-purpose-pm-skills-pm-skills-product-on-purpose_f2ce15e5
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-09T19:02:41.486Z'

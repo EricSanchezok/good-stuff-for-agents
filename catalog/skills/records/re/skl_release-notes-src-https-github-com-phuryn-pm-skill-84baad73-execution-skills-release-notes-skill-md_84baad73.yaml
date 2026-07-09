@@ -1,0 +1,45 @@
+analysis:
+  hash: null
+  path: catalog/analyses/re/skl_release-notes-src-https-github-com-phuryn-pm-skill-84baad73-execution-skills-release-notes-skill-md_84baad73.md
+canonical_name: release-notes
+canonical_skill_id: skl_release-notes-src-https-github-com-phuryn-pm-skill-84baad73-execution-skills-release-notes-skill-md_84baad73
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-09T19:02:44.128Z'
+curation:
+  notes: []
+display_name: release-notes
+identity:
+  aliases: []
+  current_version_id: sha256:148bf1cb176851d13531a54facc207824b22f493
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: LICENSE file in repo root; README badge confirms MIT
+    spdx: MIT
+    verified: true
+  path: pm-execution/skills/release-notes/SKILL.md
+  source_id: src_https-github-com-phuryn-pm-skills-pm-skills-marketplace-phuryn_8ac36372
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-09T19:02:44.128Z'

@@ -1,0 +1,45 @@
+analysis:
+  hash: null
+  path: catalog/analyses/de/skl_develop-design-rationale-src-https-github-com-prod-9e4343a0-skills-develop-design-rationale-skill-md_9e4343a0.md
+canonical_name: develop-design-rationale
+canonical_skill_id: skl_develop-design-rationale-src-https-github-com-prod-9e4343a0-skills-develop-design-rationale-skill-md_9e4343a0
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-09T19:02:38.186Z'
+curation:
+  notes: []
+display_name: develop-design-rationale
+identity:
+  aliases: []
+  current_version_id: sha256:0059edd35fe1b3b816d6d5d135b31b2ba7d5b980
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: LICENSE file in repo root; README states Apache 2.0
+    spdx: Apache-2.0
+    verified: true
+  path: skills/develop-design-rationale/SKILL.md
+  source_id: src_https-github-com-product-on-purpose-pm-skills-pm-skills-product-on-purpose_f2ce15e5
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-09T19:02:38.186Z'

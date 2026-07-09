@@ -1,0 +1,45 @@
+analysis:
+  hash: null
+  path: catalog/analyses/to/skl_tool-design-sprint-readiness-src-https-github-com-1e0c1c85-ls-tool-design-sprint-readiness-skill-md_1e0c1c85.md
+canonical_name: tool-design-sprint-readiness
+canonical_skill_id: skl_tool-design-sprint-readiness-src-https-github-com-1e0c1c85-ls-tool-design-sprint-readiness-skill-md_1e0c1c85
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-09T19:02:41.227Z'
+curation:
+  notes: []
+display_name: tool-design-sprint-readiness
+identity:
+  aliases: []
+  current_version_id: sha256:0e912a79929a51912d538c8be09588171dab31e3
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: LICENSE file in repo root; README states Apache 2.0
+    spdx: Apache-2.0
+    verified: true
+  path: skills/tool-design-sprint-readiness/SKILL.md
+  source_id: src_https-github-com-product-on-purpose-pm-skills-pm-skills-product-on-purpose_f2ce15e5
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-09T19:02:41.227Z'

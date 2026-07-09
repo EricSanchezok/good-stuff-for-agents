@@ -1,0 +1,45 @@
+analysis:
+  hash: null
+  path: catalog/analyses/pr/skl_prioritize-assumptions-src-https-github-com-phuryn-1a85e46f-y-skills-prioritize-assumptions-skill-md_1a85e46f.md
+canonical_name: prioritize-assumptions
+canonical_skill_id: skl_prioritize-assumptions-src-https-github-com-phuryn-1a85e46f-y-skills-prioritize-assumptions-skill-md_1a85e46f
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-09T19:02:47.198Z'
+curation:
+  notes: []
+display_name: prioritize-assumptions
+identity:
+  aliases: []
+  current_version_id: sha256:bf7ed8a8ba9522cba14a7d5d0080fcfb69282e6b
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: LICENSE file in repo root; README badge confirms MIT
+    spdx: MIT
+    verified: true
+  path: pm-product-discovery/skills/prioritize-assumptions/SKILL.md
+  source_id: src_https-github-com-phuryn-pm-skills-pm-skills-marketplace-phuryn_8ac36372
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-09T19:02:47.198Z'

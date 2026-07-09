@@ -1,0 +1,45 @@
+analysis:
+  hash: null
+  path: catalog/analyses/sm/skl_sms-src-https-github-com-coreyhaines31-marketingsk-8d95e9ce-orey-haines-ef920698-skills-sms-skill-md_8d95e9ce.md
+canonical_name: sms
+canonical_skill_id: skl_sms-src-https-github-com-coreyhaines31-marketingsk-8d95e9ce-orey-haines-ef920698-skills-sms-skill-md_8d95e9ce
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-09T19:02:52.497Z'
+curation:
+  notes: []
+display_name: sms
+identity:
+  aliases: []
+  current_version_id: sha256:50cfa8d32c434ca948fecaa596aa5cd23f91d8cd
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: LICENSE file in repo root; README states MIT
+    spdx: MIT
+    verified: true
+  path: skills/sms/SKILL.md
+  source_id: src_https-github-com-coreyhaines31-marketingskills-marketing-skills-corey-haines_ef920698
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-09T19:02:52.497Z'

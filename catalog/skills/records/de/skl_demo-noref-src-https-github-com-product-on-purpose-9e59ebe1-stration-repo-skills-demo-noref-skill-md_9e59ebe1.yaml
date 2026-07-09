@@ -1,0 +1,45 @@
+analysis:
+  hash: null
+  path: catalog/analyses/de/skl_demo-noref-src-https-github-com-product-on-purpose-9e59ebe1-stration-repo-skills-demo-noref-skill-md_9e59ebe1.md
+canonical_name: demo-noref
+canonical_skill_id: skl_demo-noref-src-https-github-com-product-on-purpose-9e59ebe1-stration-repo-skills-demo-noref-skill-md_9e59ebe1
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-09T19:02:36.573Z'
+curation:
+  notes: []
+display_name: demo-noref
+identity:
+  aliases: []
+  current_version_id: sha256:aa3df01383068ae20189a3f4d8a2d16c1a557f77
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: LICENSE file in repo root; README states Apache 2.0
+    spdx: Apache-2.0
+    verified: true
+  path: scripts/fixtures/family-registration/repo/skills/demo-noref/SKILL.md
+  source_id: src_https-github-com-product-on-purpose-pm-skills-pm-skills-product-on-purpose_f2ce15e5
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-09T19:02:36.573Z'

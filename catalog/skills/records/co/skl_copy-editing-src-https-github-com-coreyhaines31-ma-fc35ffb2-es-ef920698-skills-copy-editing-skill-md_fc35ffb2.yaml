@@ -1,0 +1,45 @@
+analysis:
+  hash: null
+  path: catalog/analyses/co/skl_copy-editing-src-https-github-com-coreyhaines31-ma-fc35ffb2-es-ef920698-skills-copy-editing-skill-md_fc35ffb2.md
+canonical_name: copy-editing
+canonical_skill_id: skl_copy-editing-src-https-github-com-coreyhaines31-ma-fc35ffb2-es-ef920698-skills-copy-editing-skill-md_fc35ffb2
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-09T19:02:49.780Z'
+curation:
+  notes: []
+display_name: copy-editing
+identity:
+  aliases: []
+  current_version_id: sha256:33110f4bb1be5f2152f838d95191705328760ddd
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: LICENSE file in repo root; README states MIT
+    spdx: MIT
+    verified: true
+  path: skills/copy-editing/SKILL.md
+  source_id: src_https-github-com-coreyhaines31-marketingskills-marketing-skills-corey-haines_ef920698
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-09T19:02:49.780Z'

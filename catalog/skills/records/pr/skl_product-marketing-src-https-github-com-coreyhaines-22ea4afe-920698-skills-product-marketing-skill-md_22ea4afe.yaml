@@ -1,0 +1,45 @@
+analysis:
+  hash: null
+  path: catalog/analyses/pr/skl_product-marketing-src-https-github-com-coreyhaines-22ea4afe-920698-skills-product-marketing-skill-md_22ea4afe.md
+canonical_name: product-marketing
+canonical_skill_id: skl_product-marketing-src-https-github-com-coreyhaines-22ea4afe-920698-skills-product-marketing-skill-md_22ea4afe
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-09T19:02:51.484Z'
+curation:
+  notes: []
+display_name: product-marketing
+identity:
+  aliases: []
+  current_version_id: sha256:850235c1957884521c6753045009c6cb09723a32
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: LICENSE file in repo root; README states MIT
+    spdx: MIT
+    verified: true
+  path: skills/product-marketing/SKILL.md
+  source_id: src_https-github-com-coreyhaines31-marketingskills-marketing-skills-corey-haines_ef920698
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-09T19:02:51.484Z'

@@ -1,0 +1,45 @@
+analysis:
+  hash: null
+  path: catalog/analyses/s-/skl_s-one-src-https-github-com-product-on-purpose-pm-s-db9525c3-shell-parity-repo-skills-s-one-skill-md_db9525c3.md
+canonical_name: s-one
+canonical_skill_id: skl_s-one-src-https-github-com-product-on-purpose-pm-s-db9525c3-shell-parity-repo-skills-s-one-skill-md_db9525c3
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-09T19:02:36.764Z'
+curation:
+  notes: []
+display_name: s-one
+identity:
+  aliases: []
+  current_version_id: sha256:982a261287eb6560b31414e38967f0a4ca612824
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: LICENSE file in repo root; README states Apache 2.0
+    spdx: Apache-2.0
+    verified: true
+  path: scripts/fixtures/shell-parity/repo/skills/s-one/SKILL.md
+  source_id: src_https-github-com-product-on-purpose-pm-skills-pm-skills-product-on-purpose_f2ce15e5
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-09T19:02:36.764Z'

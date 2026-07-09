@@ -1,0 +1,45 @@
+analysis:
+  hash: null
+  path: catalog/analyses/ae/skl_aeo-geo-optimizer-src-https-github-com-thatrebecca-ead408e9-108923-skills-aeo-geo-optimizer-skill-md_ead408e9.md
+canonical_name: aeo-geo-optimizer
+canonical_skill_id: skl_aeo-geo-optimizer-src-https-github-com-thatrebecca-ead408e9-108923-skills-aeo-geo-optimizer-skill-md_ead408e9
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-09T19:02:31.821Z'
+curation:
+  notes: []
+display_name: aeo-geo-optimizer
+identity:
+  aliases: []
+  current_version_id: sha256:2b39f8ac3c0f018f711fccd74a02b9537cff5165
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: LICENSE file in repo root; README states MIT
+    spdx: MIT
+    verified: true
+  path: skills/aeo-geo-optimizer/SKILL.md
+  source_id: src_https-github-com-thatrebeccarae-claude-marketing-claude-marketing-rebecca-rae-barton_8a108923
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-09T19:02:31.821Z'

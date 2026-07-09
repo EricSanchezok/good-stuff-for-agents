@@ -1,0 +1,45 @@
+analysis:
+  hash: null
+  path: catalog/analyses/gr/skl_grammar-check-src-https-github-com-phuryn-pm-skill-5acd788f-pm-toolkit-skills-grammar-check-skill-md_5acd788f.md
+canonical_name: grammar-check
+canonical_skill_id: skl_grammar-check-src-https-github-com-phuryn-pm-skill-5acd788f-pm-toolkit-skills-grammar-check-skill-md_5acd788f
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-09T19:02:48.492Z'
+curation:
+  notes: []
+display_name: grammar-check
+identity:
+  aliases: []
+  current_version_id: sha256:2770da59b9ba78faa4c9d170a67b00d64be7f299
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: LICENSE file in repo root; README badge confirms MIT
+    spdx: MIT
+    verified: true
+  path: pm-toolkit/skills/grammar-check/SKILL.md
+  source_id: src_https-github-com-phuryn-pm-skills-pm-skills-marketplace-phuryn_8ac36372
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-09T19:02:48.492Z'

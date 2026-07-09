@@ -1,0 +1,45 @@
+analysis:
+  hash: null
+  path: catalog/analyses/pr/skl_pricing-strategy-src-https-github-com-thatrebeccar-85b26fed-a108923-skills-pricing-strategy-skill-md_85b26fed.md
+canonical_name: pricing-strategy
+canonical_skill_id: skl_pricing-strategy-src-https-github-com-thatrebeccar-85b26fed-a108923-skills-pricing-strategy-skill-md_85b26fed
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-09T19:02:34.536Z'
+curation:
+  notes: []
+display_name: pricing-strategy
+identity:
+  aliases: []
+  current_version_id: sha256:f33d5d043549d582c0e586f285b66d08dfec7574
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: LICENSE file in repo root; README states MIT
+    spdx: MIT
+    verified: true
+  path: skills/pricing-strategy/SKILL.md
+  source_id: src_https-github-com-thatrebeccarae-claude-marketing-claude-marketing-rebecca-rae-barton_8a108923
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-09T19:02:34.536Z'

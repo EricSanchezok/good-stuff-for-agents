@@ -1,0 +1,45 @@
+analysis:
+  hash: null
+  path: catalog/analyses/de/skl_dep-audit-src-https-github-com-thatrebeccarae-clau-5117f671-arton-8a108923-skills-dep-audit-skill-md_5117f671.md
+canonical_name: dep-audit
+canonical_skill_id: skl_dep-audit-src-https-github-com-thatrebeccarae-clau-5117f671-arton-8a108923-skills-dep-audit-skill-md_5117f671
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-09T19:02:32.959Z'
+curation:
+  notes: []
+display_name: dep-audit
+identity:
+  aliases: []
+  current_version_id: sha256:f4727917de4e5538b0f0dbb1f1c5290a9d377781
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: LICENSE file in repo root; README states MIT
+    spdx: MIT
+    verified: true
+  path: skills/dep-audit/SKILL.md
+  source_id: src_https-github-com-thatrebeccarae-claude-marketing-claude-marketing-rebecca-rae-barton_8a108923
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-09T19:02:32.959Z'

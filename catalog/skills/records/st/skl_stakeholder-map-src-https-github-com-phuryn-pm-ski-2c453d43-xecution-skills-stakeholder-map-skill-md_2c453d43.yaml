@@ -1,0 +1,45 @@
+analysis:
+  hash: null
+  path: catalog/analyses/st/skl_stakeholder-map-src-https-github-com-phuryn-pm-ski-2c453d43-xecution-skills-stakeholder-map-skill-md_2c453d43.md
+canonical_name: stakeholder-map
+canonical_skill_id: skl_stakeholder-map-src-https-github-com-phuryn-pm-ski-2c453d43-xecution-skills-stakeholder-map-skill-md_2c453d43
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-09T19:02:44.371Z'
+curation:
+  notes: []
+display_name: stakeholder-map
+identity:
+  aliases: []
+  current_version_id: sha256:08e5ad24a830a8faef9942a6fd9acdd274261835
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: LICENSE file in repo root; README badge confirms MIT
+    spdx: MIT
+    verified: true
+  path: pm-execution/skills/stakeholder-map/SKILL.md
+  source_id: src_https-github-com-phuryn-pm-skills-pm-skills-marketplace-phuryn_8ac36372
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-09T19:02:44.371Z'
