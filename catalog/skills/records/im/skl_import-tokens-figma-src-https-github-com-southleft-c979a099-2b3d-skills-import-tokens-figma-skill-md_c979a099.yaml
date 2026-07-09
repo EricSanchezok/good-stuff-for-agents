@@ -1,0 +1,45 @@
+analysis:
+  hash: null
+  path: catalog/analyses/im/skl_import-tokens-figma-src-https-github-com-southleft-c979a099-2b3d-skills-import-tokens-figma-skill-md_c979a099.md
+canonical_name: import-tokens-figma
+canonical_skill_id: skl_import-tokens-figma-src-https-github-com-southleft-c979a099-2b3d-skills-import-tokens-figma-skill-md_c979a099
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-09T18:10:42.689Z'
+curation:
+  notes: []
+display_name: import-tokens-figma
+identity:
+  aliases: []
+  current_version_id: sha256:7953b305748e964184f1c35bd320613a3a164e71
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: LICENSE file in repo root confirms MIT
+    spdx: MIT
+    verified: true
+  path: skills/import-tokens-figma/SKILL.md
+  source_id: src_https-github-com-southleft-skills-for-figma-skills-for-figma-southleft_ea9f2b3d
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-09T18:10:42.689Z'

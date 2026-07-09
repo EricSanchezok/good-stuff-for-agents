@@ -1,0 +1,55 @@
+{
+  "schema_version": 1,
+  "source_id": "src_https-github-com-kozz36-frontend-designer-skill-frontend-designer-skill_929a1309",
+  "upstream_ref": "5e4dc12811bd106e3184a863656e141aed398a3f",
+  "checked_at": "2026-07-09T18:08:52.561Z",
+  "url": "https://github.com/kozz36/frontend-designer-skill",
+  "artifacts": [
+    {
+      "source_id": "src_https-github-com-kozz36-frontend-designer-skill-frontend-designer-skill_929a1309",
+      "path": "versions/v1.0-lite/SKILL.md",
+      "declared_name": "v1.0-lite",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:f499789e5614c1880bab7e45adcdb534fc9df2d1",
+      "upstream_ref": "5e4dc12811bd106e3184a863656e141aed398a3f",
+      "url": "https://github.com/kozz36/frontend-designer-skill/blob/5e4dc12811bd106e3184a863656e141aed398a3f/versions/v1.0-lite/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/kozz36/frontend-designer-skill/5e4dc12811bd106e3184a863656e141aed398a3f/versions/v1.0-lite/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "f499789e5614c1880bab7e45adcdb534fc9df2d1",
+        "size": 13513
+      }
+    },
+    {
+      "source_id": "src_https-github-com-kozz36-frontend-designer-skill-frontend-designer-skill_929a1309",
+      "path": "versions/v1.0/SKILL.md",
+      "declared_name": "v1.0",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:7464c1a3580b6dcd1d62ac4d67e4394e051948d5",
+      "upstream_ref": "5e4dc12811bd106e3184a863656e141aed398a3f",
+      "url": "https://github.com/kozz36/frontend-designer-skill/blob/5e4dc12811bd106e3184a863656e141aed398a3f/versions/v1.0/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/kozz36/frontend-designer-skill/5e4dc12811bd106e3184a863656e141aed398a3f/versions/v1.0/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "7464c1a3580b6dcd1d62ac4d67e4394e051948d5",
+        "size": 35397
+      }
+    },
+    {
+      "source_id": "src_https-github-com-kozz36-frontend-designer-skill-frontend-designer-skill_929a1309",
+      "path": "versions/v3.0/SKILL.md",
+      "declared_name": "v3.0",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:1d6b1b06be636d4b70701e8cae0b97aace5e2517",
+      "upstream_ref": "5e4dc12811bd106e3184a863656e141aed398a3f",
+      "url": "https://github.com/kozz36/frontend-designer-skill/blob/5e4dc12811bd106e3184a863656e141aed398a3f/versions/v3.0/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/kozz36/frontend-designer-skill/5e4dc12811bd106e3184a863656e141aed398a3f/versions/v3.0/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "1d6b1b06be636d4b70701e8cae0b97aace5e2517",
+        "size": 2686
+      }
+    }
+  ],
+  "digest": "sha256:8b432522c5cd992bed3bfe7e5e0a35a4b0f99fb3c40e04ec9ed6578279756b81"
+}

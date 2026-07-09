@@ -1,0 +1,46 @@
+analysis:
+  hash: null
+  path: catalog/analyses/fi/skl_figma-create-new-file-src-https-github-com-figma-m-1e250f5a-dd-skills-figma-create-new-file-skill-md_1e250f5a.md
+canonical_name: figma-create-new-file
+canonical_skill_id: skl_figma-create-new-file-src-https-github-com-figma-m-1e250f5a-dd-skills-figma-create-new-file-skill-md_1e250f5a
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-09T18:11:17.005Z'
+curation:
+  notes: []
+display_name: figma-create-new-file
+identity:
+  aliases: []
+  current_version_id: sha256:5de12596d9c2b5c5292876f07ff44de10087cd52
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: Repo governed by Figma Developer Terms. Skills are downloadable and
+      usable by any agentic tool. Beta feature, free during beta.
+    spdx: LicenseRef-Figma-Developer-Terms
+    verified: true
+  path: skills/figma-create-new-file/SKILL.md
+  source_id: src_https-github-com-figma-mcp-server-guide-figma-mcp-skills_dde79ddd
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-09T18:11:17.005Z'

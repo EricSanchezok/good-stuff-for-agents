@@ -1,0 +1,45 @@
+analysis:
+  hash: null
+  path: catalog/analyses/cr/skl_create-figjam-content-src-https-github-com-southle-6d11eaf9-3d-skills-create-figjam-content-skill-md_6d11eaf9.md
+canonical_name: create-figjam-content
+canonical_skill_id: skl_create-figjam-content-src-https-github-com-southle-6d11eaf9-3d-skills-create-figjam-content-skill-md_6d11eaf9
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-09T18:10:42.326Z'
+curation:
+  notes: []
+display_name: create-figjam-content
+identity:
+  aliases: []
+  current_version_id: sha256:6d422e01a80034d20313a1e12cdadc308b3229c0
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: LICENSE file in repo root confirms MIT
+    spdx: MIT
+    verified: true
+  path: skills/create-figjam-content/SKILL.md
+  source_id: src_https-github-com-southleft-skills-for-figma-skills-for-figma-southleft_ea9f2b3d
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-09T18:10:42.326Z'

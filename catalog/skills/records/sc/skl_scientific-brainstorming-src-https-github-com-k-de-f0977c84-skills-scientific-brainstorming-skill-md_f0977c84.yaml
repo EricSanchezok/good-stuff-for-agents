@@ -39,10 +39,8 @@ source:
     verified: true
   path: skills/scientific-brainstorming/SKILL.md
   source_id: src_https-github-com-k-dense-ai-scientific-agent-skills-k-dense-scientific-agent-skills_5bdb6d39
-  upstream_ref: null
-  url: null
 status: active
 tools:
   optional: []
   required: []
-updated_at: '2026-07-09T17:22:05.548Z'
+updated_at: '2026-07-09T18:11:13.488Z'

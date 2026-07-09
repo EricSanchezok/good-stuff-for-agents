@@ -1,0 +1,46 @@
+analysis:
+  hash: null
+  path: catalog/analyses/sl/skl_slack-gif-creator-src-https-github-com-anthropics-6c7fc1d7-f79b56-skills-slack-gif-creator-skill-md_6c7fc1d7.md
+canonical_name: slack-gif-creator
+canonical_skill_id: skl_slack-gif-creator-src-https-github-com-anthropics-6c7fc1d7-f79b56-skills-slack-gif-creator-skill-md_6c7fc1d7
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-09T18:11:19.103Z'
+curation:
+  notes: []
+display_name: slack-gif-creator
+identity:
+  aliases: []
+  current_version_id: sha256:16660d8ceb77af47986bba1c9176c2ff3f287a91
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: Apache 2.0 for most skills per README; document skills (docx/pdf/pptx/xlsx)
+      are source-available not open source, packaged as reference implementations
+    spdx: Apache-2.0
+    verified: true
+  path: skills/slack-gif-creator/SKILL.md
+  source_id: src_https-github-com-anthropics-skills-anthropic-agent-skills_04f79b56
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-09T18:11:19.103Z'

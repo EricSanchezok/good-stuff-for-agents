@@ -1,0 +1,46 @@
+analysis:
+  hash: null
+  path: catalog/analyses/sk/skl_skill-creator-src-https-github-com-anthropics-skil-2644ed13-s-04f79b56-skills-skill-creator-skill-md_2644ed13.md
+canonical_name: skill-creator
+canonical_skill_id: skl_skill-creator-src-https-github-com-anthropics-skil-2644ed13-s-04f79b56-skills-skill-creator-skill-md_2644ed13
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-09T18:11:19.028Z'
+curation:
+  notes: []
+display_name: skill-creator
+identity:
+  aliases: []
+  current_version_id: sha256:65b3a402dbd09b8e83f9d637c6b553875189085c
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: Apache 2.0 for most skills per README; document skills (docx/pdf/pptx/xlsx)
+      are source-available not open source, packaged as reference implementations
+    spdx: Apache-2.0
+    verified: true
+  path: skills/skill-creator/SKILL.md
+  source_id: src_https-github-com-anthropics-skills-anthropic-agent-skills_04f79b56
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-09T18:11:19.028Z'

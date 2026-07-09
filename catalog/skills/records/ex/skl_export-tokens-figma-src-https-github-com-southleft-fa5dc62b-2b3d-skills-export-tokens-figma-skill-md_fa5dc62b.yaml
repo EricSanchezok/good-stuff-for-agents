@@ -1,0 +1,45 @@
+analysis:
+  hash: null
+  path: catalog/analyses/ex/skl_export-tokens-figma-src-https-github-com-southleft-fa5dc62b-2b3d-skills-export-tokens-figma-skill-md_fa5dc62b.md
+canonical_name: export-tokens-figma
+canonical_skill_id: skl_export-tokens-figma-src-https-github-com-southleft-fa5dc62b-2b3d-skills-export-tokens-figma-skill-md_fa5dc62b
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-09T18:10:42.547Z'
+curation:
+  notes: []
+display_name: export-tokens-figma
+identity:
+  aliases: []
+  current_version_id: sha256:f83345484abb109532700c7aebe375f849442b41
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: LICENSE file in repo root confirms MIT
+    spdx: MIT
+    verified: true
+  path: skills/export-tokens-figma/SKILL.md
+  source_id: src_https-github-com-southleft-skills-for-figma-skills-for-figma-southleft_ea9f2b3d
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-09T18:10:42.547Z'

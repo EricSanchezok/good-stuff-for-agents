@@ -1,0 +1,46 @@
+analysis:
+  hash: null
+  path: catalog/analyses/we/skl_webapp-testing-src-https-github-com-anthropics-ski-3c43994c-04f79b56-skills-webapp-testing-skill-md_3c43994c.md
+canonical_name: webapp-testing
+canonical_skill_id: skl_webapp-testing-src-https-github-com-anthropics-ski-3c43994c-04f79b56-skills-webapp-testing-skill-md_3c43994c
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-09T18:11:19.359Z'
+curation:
+  notes: []
+display_name: webapp-testing
+identity:
+  aliases: []
+  current_version_id: sha256:4726215301db64a0cc4d41fc3219c61f37a30f4a
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: Apache 2.0 for most skills per README; document skills (docx/pdf/pptx/xlsx)
+      are source-available not open source, packaged as reference implementations
+    spdx: Apache-2.0
+    verified: true
+  path: skills/webapp-testing/SKILL.md
+  source_id: src_https-github-com-anthropics-skills-anthropic-agent-skills_04f79b56
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-09T18:11:19.359Z'

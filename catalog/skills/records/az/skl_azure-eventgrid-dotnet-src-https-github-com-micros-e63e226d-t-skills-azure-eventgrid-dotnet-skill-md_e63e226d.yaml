@@ -38,10 +38,8 @@ source:
     verified: true
   path: .github/plugins/azure-sdk-dotnet/skills/azure-eventgrid-dotnet/SKILL.md
   source_id: src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e
-  upstream_ref: null
-  url: null
 status: active
 tools:
   optional: []
   required: []
-updated_at: '2026-07-09T17:21:41.226Z'
+updated_at: '2026-07-09T18:10:43.614Z'

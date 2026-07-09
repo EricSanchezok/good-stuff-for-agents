@@ -1,0 +1,220 @@
+{
+  "schema_version": 1,
+  "source_id": "src_https-github-com-figma-mcp-server-guide-figma-mcp-skills_dde79ddd",
+  "upstream_ref": "864d2111a3fb990323d73e38133f297345b3ea38",
+  "checked_at": "2026-07-09T18:08:50.000Z",
+  "url": "https://github.com/figma/mcp-server-guide",
+  "artifacts": [
+    {
+      "source_id": "src_https-github-com-figma-mcp-server-guide-figma-mcp-skills_dde79ddd",
+      "path": "skills/figma-code-connect/SKILL.md",
+      "declared_name": "figma-code-connect",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:2394c2ce93be173dba5289ad99945d246317dd0a",
+      "upstream_ref": "864d2111a3fb990323d73e38133f297345b3ea38",
+      "url": "https://github.com/figma/mcp-server-guide/blob/864d2111a3fb990323d73e38133f297345b3ea38/skills/figma-code-connect/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/figma/mcp-server-guide/864d2111a3fb990323d73e38133f297345b3ea38/skills/figma-code-connect/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "2394c2ce93be173dba5289ad99945d246317dd0a",
+        "size": 25658
+      }
+    },
+    {
+      "source_id": "src_https-github-com-figma-mcp-server-guide-figma-mcp-skills_dde79ddd",
+      "path": "skills/figma-create-new-file/SKILL.md",
+      "declared_name": "figma-create-new-file",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:5de12596d9c2b5c5292876f07ff44de10087cd52",
+      "upstream_ref": "864d2111a3fb990323d73e38133f297345b3ea38",
+      "url": "https://github.com/figma/mcp-server-guide/blob/864d2111a3fb990323d73e38133f297345b3ea38/skills/figma-create-new-file/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/figma/mcp-server-guide/864d2111a3fb990323d73e38133f297345b3ea38/skills/figma-create-new-file/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "5de12596d9c2b5c5292876f07ff44de10087cd52",
+        "size": 3946
+      }
+    },
+    {
+      "source_id": "src_https-github-com-figma-mcp-server-guide-figma-mcp-skills_dde79ddd",
+      "path": "skills/figma-design-to-code/SKILL.md",
+      "declared_name": "figma-design-to-code",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:f3a848bb4cd0f40fa30e08a399a34c4600c5dd89",
+      "upstream_ref": "864d2111a3fb990323d73e38133f297345b3ea38",
+      "url": "https://github.com/figma/mcp-server-guide/blob/864d2111a3fb990323d73e38133f297345b3ea38/skills/figma-design-to-code/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/figma/mcp-server-guide/864d2111a3fb990323d73e38133f297345b3ea38/skills/figma-design-to-code/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "f3a848bb4cd0f40fa30e08a399a34c4600c5dd89",
+        "size": 3703
+      }
+    },
+    {
+      "source_id": "src_https-github-com-figma-mcp-server-guide-figma-mcp-skills_dde79ddd",
+      "path": "skills/figma-generate-design/SKILL.md",
+      "declared_name": "figma-generate-design",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:9caefe45f875572a34f8857f2eb1a1e6bfbb253d",
+      "upstream_ref": "864d2111a3fb990323d73e38133f297345b3ea38",
+      "url": "https://github.com/figma/mcp-server-guide/blob/864d2111a3fb990323d73e38133f297345b3ea38/skills/figma-generate-design/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/figma/mcp-server-guide/864d2111a3fb990323d73e38133f297345b3ea38/skills/figma-generate-design/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "9caefe45f875572a34f8857f2eb1a1e6bfbb253d",
+        "size": 33206
+      }
+    },
+    {
+      "source_id": "src_https-github-com-figma-mcp-server-guide-figma-mcp-skills_dde79ddd",
+      "path": "skills/figma-generate-diagram/SKILL.md",
+      "declared_name": "figma-generate-diagram",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:28db4f55e5c2bdc287e68f34ed97235dd4d460a8",
+      "upstream_ref": "864d2111a3fb990323d73e38133f297345b3ea38",
+      "url": "https://github.com/figma/mcp-server-guide/blob/864d2111a3fb990323d73e38133f297345b3ea38/skills/figma-generate-diagram/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/figma/mcp-server-guide/864d2111a3fb990323d73e38133f297345b3ea38/skills/figma-generate-diagram/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "28db4f55e5c2bdc287e68f34ed97235dd4d460a8",
+        "size": 10272
+      }
+    },
+    {
+      "source_id": "src_https-github-com-figma-mcp-server-guide-figma-mcp-skills_dde79ddd",
+      "path": "skills/figma-generate-library/SKILL.md",
+      "declared_name": "figma-generate-library",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:80db1621f429613b3d518582ad9c25b8615f3003",
+      "upstream_ref": "864d2111a3fb990323d73e38133f297345b3ea38",
+      "url": "https://github.com/figma/mcp-server-guide/blob/864d2111a3fb990323d73e38133f297345b3ea38/skills/figma-generate-library/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/figma/mcp-server-guide/864d2111a3fb990323d73e38133f297345b3ea38/skills/figma-generate-library/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "80db1621f429613b3d518582ad9c25b8615f3003",
+        "size": 22877
+      }
+    },
+    {
+      "source_id": "src_https-github-com-figma-mcp-server-guide-figma-mcp-skills_dde79ddd",
+      "path": "skills/figma-implement-motion/SKILL.md",
+      "declared_name": "figma-implement-motion",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:1732d9bf2bb069eaf3def1f202986e518c2e9fc5",
+      "upstream_ref": "864d2111a3fb990323d73e38133f297345b3ea38",
+      "url": "https://github.com/figma/mcp-server-guide/blob/864d2111a3fb990323d73e38133f297345b3ea38/skills/figma-implement-motion/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/figma/mcp-server-guide/864d2111a3fb990323d73e38133f297345b3ea38/skills/figma-implement-motion/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "1732d9bf2bb069eaf3def1f202986e518c2e9fc5",
+        "size": 23279
+      }
+    },
+    {
+      "source_id": "src_https-github-com-figma-mcp-server-guide-figma-mcp-skills_dde79ddd",
+      "path": "skills/figma-swiftui/SKILL.md",
+      "declared_name": "figma-swiftui",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:60ca47143059a2e0e358df261f0558de459a0b1e",
+      "upstream_ref": "864d2111a3fb990323d73e38133f297345b3ea38",
+      "url": "https://github.com/figma/mcp-server-guide/blob/864d2111a3fb990323d73e38133f297345b3ea38/skills/figma-swiftui/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/figma/mcp-server-guide/864d2111a3fb990323d73e38133f297345b3ea38/skills/figma-swiftui/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "60ca47143059a2e0e358df261f0558de459a0b1e",
+        "size": 4049
+      }
+    },
+    {
+      "source_id": "src_https-github-com-figma-mcp-server-guide-figma-mcp-skills_dde79ddd",
+      "path": "skills/figma-use-figjam/SKILL.md",
+      "declared_name": "figma-use-figjam",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:846c2897d4e83f1518d32770a47f1ee1c09cf89c",
+      "upstream_ref": "864d2111a3fb990323d73e38133f297345b3ea38",
+      "url": "https://github.com/figma/mcp-server-guide/blob/864d2111a3fb990323d73e38133f297345b3ea38/skills/figma-use-figjam/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/figma/mcp-server-guide/864d2111a3fb990323d73e38133f297345b3ea38/skills/figma-use-figjam/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "846c2897d4e83f1518d32770a47f1ee1c09cf89c",
+        "size": 7089
+      }
+    },
+    {
+      "source_id": "src_https-github-com-figma-mcp-server-guide-figma-mcp-skills_dde79ddd",
+      "path": "skills/figma-use-motion/SKILL.md",
+      "declared_name": "figma-use-motion",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:a1228c948067d198a8d51484d7ec1be1a9f00529",
+      "upstream_ref": "864d2111a3fb990323d73e38133f297345b3ea38",
+      "url": "https://github.com/figma/mcp-server-guide/blob/864d2111a3fb990323d73e38133f297345b3ea38/skills/figma-use-motion/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/figma/mcp-server-guide/864d2111a3fb990323d73e38133f297345b3ea38/skills/figma-use-motion/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "a1228c948067d198a8d51484d7ec1be1a9f00529",
+        "size": 6910
+      }
+    },
+    {
+      "source_id": "src_https-github-com-figma-mcp-server-guide-figma-mcp-skills_dde79ddd",
+      "path": "skills/figma-use-slides/SKILL.md",
+      "declared_name": "figma-use-slides",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:4df533d022de9b19b51104693110d179b600053c",
+      "upstream_ref": "864d2111a3fb990323d73e38133f297345b3ea38",
+      "url": "https://github.com/figma/mcp-server-guide/blob/864d2111a3fb990323d73e38133f297345b3ea38/skills/figma-use-slides/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/figma/mcp-server-guide/864d2111a3fb990323d73e38133f297345b3ea38/skills/figma-use-slides/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "4df533d022de9b19b51104693110d179b600053c",
+        "size": 22033
+      }
+    },
+    {
+      "source_id": "src_https-github-com-figma-mcp-server-guide-figma-mcp-skills_dde79ddd",
+      "path": "skills/figma-use/SKILL.md",
+      "declared_name": "figma-use",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:21a6c5ecb638f607329aa1f6cad5419ca8d4825d",
+      "upstream_ref": "864d2111a3fb990323d73e38133f297345b3ea38",
+      "url": "https://github.com/figma/mcp-server-guide/blob/864d2111a3fb990323d73e38133f297345b3ea38/skills/figma-use/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/figma/mcp-server-guide/864d2111a3fb990323d73e38133f297345b3ea38/skills/figma-use/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "21a6c5ecb638f607329aa1f6cad5419ca8d4825d",
+        "size": 34270
+      }
+    },
+    {
+      "source_id": "src_https-github-com-figma-mcp-server-guide-figma-mcp-skills_dde79ddd",
+      "path": "workflow-skills/generate-project-plan/SKILL.md",
+      "declared_name": "generate-project-plan",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:1707b2e44cf5676cc6f0313caded807937ed353a",
+      "upstream_ref": "864d2111a3fb990323d73e38133f297345b3ea38",
+      "url": "https://github.com/figma/mcp-server-guide/blob/864d2111a3fb990323d73e38133f297345b3ea38/workflow-skills/generate-project-plan/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/figma/mcp-server-guide/864d2111a3fb990323d73e38133f297345b3ea38/workflow-skills/generate-project-plan/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "1707b2e44cf5676cc6f0313caded807937ed353a",
+        "size": 27518
+      }
+    },
+    {
+      "source_id": "src_https-github-com-figma-mcp-server-guide-figma-mcp-skills_dde79ddd",
+      "path": "workflow-skills/video-interaction-mapper/SKILL.md",
+      "declared_name": "video-interaction-mapper",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:93d80e2d80e303298e095d6191732d3a0e92231c",
+      "upstream_ref": "864d2111a3fb990323d73e38133f297345b3ea38",
+      "url": "https://github.com/figma/mcp-server-guide/blob/864d2111a3fb990323d73e38133f297345b3ea38/workflow-skills/video-interaction-mapper/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/figma/mcp-server-guide/864d2111a3fb990323d73e38133f297345b3ea38/workflow-skills/video-interaction-mapper/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "93d80e2d80e303298e095d6191732d3a0e92231c",
+        "size": 12943
+      }
+    }
+  ],
+  "digest": "sha256:fae3a48a77da27839084354d326fe5829924e85cee21253f6db68a617c2c2fad"
+}

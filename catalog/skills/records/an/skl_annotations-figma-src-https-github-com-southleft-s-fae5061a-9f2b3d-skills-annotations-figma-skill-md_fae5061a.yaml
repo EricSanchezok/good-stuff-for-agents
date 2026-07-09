@@ -1,0 +1,45 @@
+analysis:
+  hash: null
+  path: catalog/analyses/an/skl_annotations-figma-src-https-github-com-southleft-s-fae5061a-9f2b3d-skills-annotations-figma-skill-md_fae5061a.md
+canonical_name: annotations-figma
+canonical_skill_id: skl_annotations-figma-src-https-github-com-southleft-s-fae5061a-9f2b3d-skills-annotations-figma-skill-md_fae5061a
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-09T18:10:41.894Z'
+curation:
+  notes: []
+display_name: annotations-figma
+identity:
+  aliases: []
+  current_version_id: sha256:2a5833f4827e941cf28d899b4be6eb7fd33d95f2
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: LICENSE file in repo root confirms MIT
+    spdx: MIT
+    verified: true
+  path: skills/annotations-figma/SKILL.md
+  source_id: src_https-github-com-southleft-skills-for-figma-skills-for-figma-southleft_ea9f2b3d
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-09T18:10:41.894Z'

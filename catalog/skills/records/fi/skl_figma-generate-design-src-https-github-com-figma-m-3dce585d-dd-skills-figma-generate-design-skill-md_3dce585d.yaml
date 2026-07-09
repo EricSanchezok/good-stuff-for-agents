@@ -1,0 +1,46 @@
+analysis:
+  hash: null
+  path: catalog/analyses/fi/skl_figma-generate-design-src-https-github-com-figma-m-3dce585d-dd-skills-figma-generate-design-skill-md_3dce585d.md
+canonical_name: figma-generate-design
+canonical_skill_id: skl_figma-generate-design-src-https-github-com-figma-m-3dce585d-dd-skills-figma-generate-design-skill-md_3dce585d
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-09T18:11:17.182Z'
+curation:
+  notes: []
+display_name: figma-generate-design
+identity:
+  aliases: []
+  current_version_id: sha256:9caefe45f875572a34f8857f2eb1a1e6bfbb253d
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: Repo governed by Figma Developer Terms. Skills are downloadable and
+      usable by any agentic tool. Beta feature, free during beta.
+    spdx: LicenseRef-Figma-Developer-Terms
+    verified: true
+  path: skills/figma-generate-design/SKILL.md
+  source_id: src_https-github-com-figma-mcp-server-guide-figma-mcp-skills_dde79ddd
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-09T18:11:17.182Z'

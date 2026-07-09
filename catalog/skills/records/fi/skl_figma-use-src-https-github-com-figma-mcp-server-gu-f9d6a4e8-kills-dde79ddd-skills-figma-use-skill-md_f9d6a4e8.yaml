@@ -1,0 +1,46 @@
+analysis:
+  hash: null
+  path: catalog/analyses/fi/skl_figma-use-src-https-github-com-figma-mcp-server-gu-f9d6a4e8-kills-dde79ddd-skills-figma-use-skill-md_f9d6a4e8.md
+canonical_name: figma-use
+canonical_skill_id: skl_figma-use-src-https-github-com-figma-mcp-server-gu-f9d6a4e8-kills-dde79ddd-skills-figma-use-skill-md_f9d6a4e8
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-09T18:11:17.783Z'
+curation:
+  notes: []
+display_name: figma-use
+identity:
+  aliases: []
+  current_version_id: sha256:21a6c5ecb638f607329aa1f6cad5419ca8d4825d
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: Repo governed by Figma Developer Terms. Skills are downloadable and
+      usable by any agentic tool. Beta feature, free during beta.
+    spdx: LicenseRef-Figma-Developer-Terms
+    verified: true
+  path: skills/figma-use/SKILL.md
+  source_id: src_https-github-com-figma-mcp-server-guide-figma-mcp-skills_dde79ddd
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-09T18:11:17.783Z'

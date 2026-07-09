@@ -1,0 +1,46 @@
+analysis:
+  hash: null
+  path: catalog/analyses/al/skl_algorithmic-art-src-https-github-com-anthropics-sk-e78e79bb-04f79b56-skills-algorithmic-art-skill-md_e78e79bb.md
+canonical_name: algorithmic-art
+canonical_skill_id: skl_algorithmic-art-src-https-github-com-anthropics-sk-e78e79bb-04f79b56-skills-algorithmic-art-skill-md_e78e79bb
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-09T18:11:18.200Z'
+curation:
+  notes: []
+display_name: algorithmic-art
+identity:
+  aliases: []
+  current_version_id: sha256:634f6fa42e4e697fa6afd293acd7fb8246574876
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: Apache 2.0 for most skills per README; document skills (docx/pdf/pptx/xlsx)
+      are source-available not open source, packaged as reference implementations
+    spdx: Apache-2.0
+    verified: true
+  path: skills/algorithmic-art/SKILL.md
+  source_id: src_https-github-com-anthropics-skills-anthropic-agent-skills_04f79b56
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-09T18:11:18.200Z'

@@ -1,6 +1,32 @@
 schema_version: 1
 sources:
 - license:
+    evidence: Apache 2.0 for most skills per README; document skills (docx/pdf/pptx/xlsx)
+      are source-available not open source, packaged as reference implementations
+    spdx: Apache-2.0
+    verified: true
+  name: Anthropic Agent Skills
+  schema_version: 1
+  source_id: src_https-github-com-anthropics-skills-anthropic-agent-skills_04f79b56
+  state:
+    consecutive_failures: 0
+    last_checked_at: '2026-07-09T18:08:47.476Z'
+    last_ref: 9d2f1ae187231d8199c64b5b762e1bdf2244733d
+    last_success_at: '2026-07-09T18:08:47.476Z'
+  status: active
+  sync:
+    default_ref: main
+    exclude:
+    - node_modules/**
+    - .git/**
+    frequency: daily
+    include:
+    - '**/SKILL.md'
+    strategy: git
+  type: github_repo
+  updated_at: '2026-07-09T18:08:30.645Z'
+  url: https://github.com/anthropics/skills
+- license:
     evidence: LICENSE file in repo root; README states MIT
     spdx: MIT
     verified: true
@@ -9,9 +35,9 @@ sources:
   source_id: src_https-github-com-coderabbitai-skills-coderabbit-skills_8f2a22eb
   state:
     consecutive_failures: 0
-    last_checked_at: '2026-07-09T17:19:54.322Z'
+    last_checked_at: '2026-07-09T18:08:48.749Z'
     last_ref: 2fd091d9582deccf19929e21f934921d0e8f686e
-    last_success_at: '2026-07-09T17:19:54.322Z'
+    last_success_at: '2026-07-09T18:08:48.749Z'
   status: active
   sync:
     default_ref: main
@@ -27,6 +53,32 @@ sources:
   updated_at: '2026-07-09T17:19:39.155Z'
   url: https://github.com/coderabbitai/skills
 - license:
+    evidence: Repo governed by Figma Developer Terms. Skills are downloadable and
+      usable by any agentic tool. Beta feature, free during beta.
+    spdx: LicenseRef-Figma-Developer-Terms
+    verified: true
+  name: Figma MCP Skills
+  schema_version: 1
+  source_id: src_https-github-com-figma-mcp-server-guide-figma-mcp-skills_dde79ddd
+  state:
+    consecutive_failures: 0
+    last_checked_at: '2026-07-09T18:08:50.000Z'
+    last_ref: 864d2111a3fb990323d73e38133f297345b3ea38
+    last_success_at: '2026-07-09T18:08:50.000Z'
+  status: preview
+  sync:
+    default_ref: main
+    exclude:
+    - node_modules/**
+    - .git/**
+    frequency: daily
+    include:
+    - '**/SKILL.md'
+    strategy: git
+  type: github_repo
+  updated_at: '2026-07-09T18:08:30.843Z'
+  url: https://github.com/figma/mcp-server-guide
+- license:
     evidence: LICENSE.md file in repo root; README states MIT (individual skills may
       have separate license metadata)
     spdx: MIT
@@ -36,9 +88,9 @@ sources:
   source_id: src_https-github-com-k-dense-ai-scientific-agent-skills-k-dense-scientific-agent-skills_5bdb6d39
   state:
     consecutive_failures: 0
-    last_checked_at: '2026-07-09T17:19:55.615Z'
+    last_checked_at: '2026-07-09T18:08:51.241Z'
     last_ref: 4d97e293dc6f604fb6b63dcd49b9028df413d65b
-    last_success_at: '2026-07-09T17:19:55.615Z'
+    last_success_at: '2026-07-09T18:08:51.241Z'
   status: active
   sync:
     default_ref: main
@@ -55,6 +107,31 @@ sources:
   updated_at: '2026-07-09T17:19:39.330Z'
   url: https://github.com/K-Dense-AI/scientific-agent-skills
 - license:
+    evidence: LICENSE file in repo root confirms Apache License 2.0
+    spdx: Apache-2.0
+    verified: true
+  name: Frontend Designer Skill
+  schema_version: 1
+  source_id: src_https-github-com-kozz36-frontend-designer-skill-frontend-designer-skill_929a1309
+  state:
+    consecutive_failures: 0
+    last_checked_at: '2026-07-09T18:08:52.561Z'
+    last_ref: 5e4dc12811bd106e3184a863656e141aed398a3f
+    last_success_at: '2026-07-09T18:08:52.561Z'
+  status: preview
+  sync:
+    default_ref: main
+    exclude:
+    - node_modules/**
+    - .git/**
+    frequency: daily
+    include:
+    - '**/SKILL.md'
+    strategy: git
+  type: github_repo
+  updated_at: '2026-07-09T18:08:31.016Z'
+  url: https://github.com/kozz36/frontend-designer-skill
+- license:
     evidence: LICENSE file in repo root; README states MIT
     spdx: MIT
     verified: true
@@ -63,9 +140,9 @@ sources:
   source_id: src_https-github-com-mcollina-skills-matteo-collina-s-skills_faf2f289
   state:
     consecutive_failures: 0
-    last_checked_at: '2026-07-09T17:19:56.812Z'
+    last_checked_at: '2026-07-09T18:08:53.765Z'
     last_ref: 5b2a81354b6d10325da0db9decc9ce5ecc714138
-    last_success_at: '2026-07-09T17:19:56.812Z'
+    last_success_at: '2026-07-09T18:08:53.765Z'
   status: active
   sync:
     default_ref: main
@@ -90,9 +167,9 @@ sources:
   source_id: src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e
   state:
     consecutive_failures: 0
-    last_checked_at: '2026-07-09T17:19:58.352Z'
+    last_checked_at: '2026-07-09T18:08:55.072Z'
     last_ref: c33193b1b2dd14d5946e3c6213fd095ffa5b31df
-    last_success_at: '2026-07-09T17:19:58.352Z'
+    last_success_at: '2026-07-09T18:08:55.072Z'
   status: active
   sync:
     default_ref: main
@@ -108,3 +185,28 @@ sources:
   type: github_repo
   updated_at: '2026-07-09T17:19:39.028Z'
   url: https://github.com/microsoft/skills
+- license:
+    evidence: LICENSE file in repo root confirms MIT
+    spdx: MIT
+    verified: true
+  name: Skills for Figma (Southleft)
+  schema_version: 1
+  source_id: src_https-github-com-southleft-skills-for-figma-skills-for-figma-southleft_ea9f2b3d
+  state:
+    consecutive_failures: 0
+    last_checked_at: '2026-07-09T18:08:56.363Z'
+    last_ref: 79bda1e76044d1e9d9b60bb211507e64833af92b
+    last_success_at: '2026-07-09T18:08:56.363Z'
+  status: preview
+  sync:
+    default_ref: main
+    exclude:
+    - node_modules/**
+    - .git/**
+    frequency: daily
+    include:
+    - '**/SKILL.md'
+    strategy: git
+  type: github_repo
+  updated_at: '2026-07-09T18:08:30.929Z'
+  url: https://github.com/southleft/skills-for-figma

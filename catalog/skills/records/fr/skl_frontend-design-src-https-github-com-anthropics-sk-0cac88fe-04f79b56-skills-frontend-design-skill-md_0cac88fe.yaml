@@ -1,0 +1,46 @@
+analysis:
+  hash: null
+  path: catalog/analyses/fr/skl_frontend-design-src-https-github-com-anthropics-sk-0cac88fe-04f79b56-skills-frontend-design-skill-md_0cac88fe.md
+canonical_name: frontend-design
+canonical_skill_id: skl_frontend-design-src-https-github-com-anthropics-sk-0cac88fe-04f79b56-skills-frontend-design-skill-md_0cac88fe
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-09T18:11:18.643Z'
+curation:
+  notes: []
+display_name: frontend-design
+identity:
+  aliases: []
+  current_version_id: sha256:decdff43d05908b4c1fc2cfd2d80fc5743440934
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: Apache 2.0 for most skills per README; document skills (docx/pdf/pptx/xlsx)
+      are source-available not open source, packaged as reference implementations
+    spdx: Apache-2.0
+    verified: true
+  path: skills/frontend-design/SKILL.md
+  source_id: src_https-github-com-anthropics-skills-anthropic-agent-skills_04f79b56
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-09T18:11:18.643Z'

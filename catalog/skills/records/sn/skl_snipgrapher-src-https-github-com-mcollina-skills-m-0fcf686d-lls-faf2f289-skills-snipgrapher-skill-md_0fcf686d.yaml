@@ -38,10 +38,8 @@ source:
     verified: true
   path: skills/snipgrapher/SKILL.md
   source_id: src_https-github-com-mcollina-skills-matteo-collina-s-skills_faf2f289
-  upstream_ref: null
-  url: null
 status: active
 tools:
   optional: []
   required: []
-updated_at: '2026-07-09T17:21:56.290Z'
+updated_at: '2026-07-09T18:11:02.159Z'

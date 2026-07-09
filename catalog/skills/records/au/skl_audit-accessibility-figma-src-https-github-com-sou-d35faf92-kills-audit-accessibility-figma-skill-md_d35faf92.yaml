@@ -1,0 +1,45 @@
+analysis:
+  hash: null
+  path: catalog/analyses/au/skl_audit-accessibility-figma-src-https-github-com-sou-d35faf92-kills-audit-accessibility-figma-skill-md_d35faf92.md
+canonical_name: audit-accessibility-figma
+canonical_skill_id: skl_audit-accessibility-figma-src-https-github-com-sou-d35faf92-kills-audit-accessibility-figma-skill-md_d35faf92
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-09T18:10:42.040Z'
+curation:
+  notes: []
+display_name: audit-accessibility-figma
+identity:
+  aliases: []
+  current_version_id: sha256:74a27f1b5a205c42963d3898c0be6277072b0738
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: LICENSE file in repo root confirms MIT
+    spdx: MIT
+    verified: true
+  path: skills/audit-accessibility-figma/SKILL.md
+  source_id: src_https-github-com-southleft-skills-for-figma-skills-for-figma-southleft_ea9f2b3d
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-09T18:10:42.040Z'

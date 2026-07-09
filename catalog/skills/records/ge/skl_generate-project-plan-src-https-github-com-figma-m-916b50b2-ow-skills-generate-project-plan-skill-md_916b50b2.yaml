@@ -1,0 +1,46 @@
+analysis:
+  hash: null
+  path: catalog/analyses/ge/skl_generate-project-plan-src-https-github-com-figma-m-916b50b2-ow-skills-generate-project-plan-skill-md_916b50b2.md
+canonical_name: generate-project-plan
+canonical_skill_id: skl_generate-project-plan-src-https-github-com-figma-m-916b50b2-ow-skills-generate-project-plan-skill-md_916b50b2
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-09T18:11:17.857Z'
+curation:
+  notes: []
+display_name: generate-project-plan
+identity:
+  aliases: []
+  current_version_id: sha256:1707b2e44cf5676cc6f0313caded807937ed353a
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: Repo governed by Figma Developer Terms. Skills are downloadable and
+      usable by any agentic tool. Beta feature, free during beta.
+    spdx: LicenseRef-Figma-Developer-Terms
+    verified: true
+  path: workflow-skills/generate-project-plan/SKILL.md
+  source_id: src_https-github-com-figma-mcp-server-guide-figma-mcp-skills_dde79ddd
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-09T18:11:17.857Z'

@@ -1,0 +1,45 @@
+analysis:
+  hash: null
+  path: catalog/analyses/co/skl_component-properties-figma-src-https-github-com-so-bb64e5ce-ills-component-properties-figma-skill-md_bb64e5ce.md
+canonical_name: component-properties-figma
+canonical_skill_id: skl_component-properties-figma-src-https-github-com-so-bb64e5ce-ills-component-properties-figma-skill-md_bb64e5ce
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-09T18:10:42.254Z'
+curation:
+  notes: []
+display_name: component-properties-figma
+identity:
+  aliases: []
+  current_version_id: sha256:666861a78fea4b2b554a449b826636fb4b0f13c6
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: LICENSE file in repo root confirms MIT
+    spdx: MIT
+    verified: true
+  path: skills/component-properties-figma/SKILL.md
+  source_id: src_https-github-com-southleft-skills-for-figma-skills-for-figma-southleft_ea9f2b3d
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-09T18:10:42.254Z'

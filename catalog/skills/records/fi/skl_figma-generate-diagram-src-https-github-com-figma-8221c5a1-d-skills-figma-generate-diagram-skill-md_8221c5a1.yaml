@@ -1,0 +1,46 @@
+analysis:
+  hash: null
+  path: catalog/analyses/fi/skl_figma-generate-diagram-src-https-github-com-figma-8221c5a1-d-skills-figma-generate-diagram-skill-md_8221c5a1.md
+canonical_name: figma-generate-diagram
+canonical_skill_id: skl_figma-generate-diagram-src-https-github-com-figma-8221c5a1-d-skills-figma-generate-diagram-skill-md_8221c5a1
+capabilities:
+  atomic_capabilities: []
+  domains: []
+  task_types: []
+  workflow_stages: []
+created_at: '2026-07-09T18:11:17.257Z'
+curation:
+  notes: []
+display_name: figma-generate-diagram
+identity:
+  aliases: []
+  current_version_id: sha256:28db4f55e5c2bdc287e68f34ed97235dd4d460a8
+  source_skill_ids: []
+interfaces:
+  handoff_outputs: []
+  inputs: []
+  outputs: []
+quality:
+  confidence: unknown
+  score: null
+relations:
+  complements: []
+  conflicts: []
+  duplicates: []
+risk:
+  risk_surfaces: []
+  side_effect_level: none
+schema_version: 1
+source:
+  license:
+    evidence: Repo governed by Figma Developer Terms. Skills are downloadable and
+      usable by any agentic tool. Beta feature, free during beta.
+    spdx: LicenseRef-Figma-Developer-Terms
+    verified: true
+  path: skills/figma-generate-diagram/SKILL.md
+  source_id: src_https-github-com-figma-mcp-server-guide-figma-mcp-skills_dde79ddd
+status: active
+tools:
+  optional: []
+  required: []
+updated_at: '2026-07-09T18:11:17.257Z'

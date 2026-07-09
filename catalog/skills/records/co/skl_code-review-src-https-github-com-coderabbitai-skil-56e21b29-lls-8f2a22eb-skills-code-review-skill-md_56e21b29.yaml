@@ -38,10 +38,8 @@ source:
     verified: true
   path: skills/code-review/SKILL.md
   source_id: src_https-github-com-coderabbitai-skills-coderabbit-skills_8f2a22eb
-  upstream_ref: null
-  url: null
 status: active
 tools:
   optional: []
   required: []
-updated_at: '2026-07-09T17:22:08.444Z'
+updated_at: '2026-07-09T18:11:18.127Z'
