@@ -1,12 +1,12 @@
-# seb1n Awesome AI Agent Skills
+# DevOps SRE Skills
 
-> Ready to use
+> Previewing before it goes on the main shelf
 
 ## Overview
 
-- URL: https://github.com/seb1n/awesome-ai-agent-skills
+- URL: https://github.com/bregman-arie/devops-sre-skills
 - Type: github_repo
-- License: MIT (verified)
+- License: Apache-2.0 (verified)
 
 ## Shelf health
 

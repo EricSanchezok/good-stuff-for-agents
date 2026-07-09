@@ -1,12 +1,12 @@
-# seb1n Awesome AI Agent Skills
+# Anthropic Cybersecurity Skills
 
 > Ready to use
 
 ## Overview
 
-- URL: https://github.com/seb1n/awesome-ai-agent-skills
+- URL: https://github.com/mukul975/Anthropic-Cybersecurity-Skills
 - Type: github_repo
-- License: MIT (verified)
+- License: Apache-2.0 (verified)
 
 ## Shelf health
 

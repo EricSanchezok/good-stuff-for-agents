@@ -1,0 +1,248 @@
+{
+  "schema_version": 1,
+  "source_id": "src_https-github-com-bregman-arie-devops-sre-skills-devops-sre-skills_9c3ec396",
+  "upstream_ref": "94d5acb9816a15c30523da85a74bbfe87a978679",
+  "checked_at": "2026-07-09T02:19:47.720Z",
+  "url": "https://github.com/bregman-arie/devops-sre-skills",
+  "artifacts": [
+    {
+      "source_id": "src_https-github-com-bregman-arie-devops-sre-skills-devops-sre-skills_9c3ec396",
+      "path": "skills/_template/SKILL.md",
+      "declared_name": "_template",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:baf6cbc36b032d5c6ecaac1540e58c520861e146",
+      "upstream_ref": "94d5acb9816a15c30523da85a74bbfe87a978679",
+      "url": "https://github.com/bregman-arie/devops-sre-skills/blob/94d5acb9816a15c30523da85a74bbfe87a978679/skills/_template/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "baf6cbc36b032d5c6ecaac1540e58c520861e146",
+        "size": 526
+      }
+    },
+    {
+      "source_id": "src_https-github-com-bregman-arie-devops-sre-skills-devops-sre-skills_9c3ec396",
+      "path": "skills/argocd/triage-app-outofsync/SKILL.md",
+      "declared_name": "triage-app-outofsync",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:bc3a7aea8ba497d256e0201527a36d22b34a6769",
+      "upstream_ref": "94d5acb9816a15c30523da85a74bbfe87a978679",
+      "url": "https://github.com/bregman-arie/devops-sre-skills/blob/94d5acb9816a15c30523da85a74bbfe87a978679/skills/argocd/triage-app-outofsync/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "bc3a7aea8ba497d256e0201527a36d22b34a6769",
+        "size": 1805
+      }
+    },
+    {
+      "source_id": "src_https-github-com-bregman-arie-devops-sre-skills-devops-sre-skills_9c3ec396",
+      "path": "skills/aws/triage-access-denied/SKILL.md",
+      "declared_name": "triage-access-denied",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:ec9aa289af9e9c8a0835c3f8b97962c788e13251",
+      "upstream_ref": "94d5acb9816a15c30523da85a74bbfe87a978679",
+      "url": "https://github.com/bregman-arie/devops-sre-skills/blob/94d5acb9816a15c30523da85a74bbfe87a978679/skills/aws/triage-access-denied/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "ec9aa289af9e9c8a0835c3f8b97962c788e13251",
+        "size": 2137
+      }
+    },
+    {
+      "source_id": "src_https-github-com-bregman-arie-devops-sre-skills-devops-sre-skills_9c3ec396",
+      "path": "skills/aws/triage-eks-node-notready/SKILL.md",
+      "declared_name": "triage-eks-node-notready",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:d504e83759f152e5b95e870371441c3d9a42539d",
+      "upstream_ref": "94d5acb9816a15c30523da85a74bbfe87a978679",
+      "url": "https://github.com/bregman-arie/devops-sre-skills/blob/94d5acb9816a15c30523da85a74bbfe87a978679/skills/aws/triage-eks-node-notready/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "d504e83759f152e5b95e870371441c3d9a42539d",
+        "size": 1792
+      }
+    },
+    {
+      "source_id": "src_https-github-com-bregman-arie-devops-sre-skills-devops-sre-skills_9c3ec396",
+      "path": "skills/cost/triage-cost-spike/SKILL.md",
+      "declared_name": "triage-cost-spike",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:683c28d4f222cb033c0291edb0c7a9cdf7e038d2",
+      "upstream_ref": "94d5acb9816a15c30523da85a74bbfe87a978679",
+      "url": "https://github.com/bregman-arie/devops-sre-skills/blob/94d5acb9816a15c30523da85a74bbfe87a978679/skills/cost/triage-cost-spike/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "683c28d4f222cb033c0291edb0c7a9cdf7e038d2",
+        "size": 1903
+      }
+    },
+    {
+      "source_id": "src_https-github-com-bregman-arie-devops-sre-skills-devops-sre-skills_9c3ec396",
+      "path": "skills/gcp/triage-quota-exceeded/SKILL.md",
+      "declared_name": "triage-quota-exceeded",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:b30f566fe30f6dd13dfeb42201d38d3d40ba4a12",
+      "upstream_ref": "94d5acb9816a15c30523da85a74bbfe87a978679",
+      "url": "https://github.com/bregman-arie/devops-sre-skills/blob/94d5acb9816a15c30523da85a74bbfe87a978679/skills/gcp/triage-quota-exceeded/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "b30f566fe30f6dd13dfeb42201d38d3d40ba4a12",
+        "size": 1808
+      }
+    },
+    {
+      "source_id": "src_https-github-com-bregman-arie-devops-sre-skills-devops-sre-skills_9c3ec396",
+      "path": "skills/incident/sev1-first-15-minutes/SKILL.md",
+      "declared_name": "sev1-first-15-minutes",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:490306fe4bde4ee789500b9c566dae5e26395bc0",
+      "upstream_ref": "94d5acb9816a15c30523da85a74bbfe87a978679",
+      "url": "https://github.com/bregman-arie/devops-sre-skills/blob/94d5acb9816a15c30523da85a74bbfe87a978679/skills/incident/sev1-first-15-minutes/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "490306fe4bde4ee789500b9c566dae5e26395bc0",
+        "size": 1786
+      }
+    },
+    {
+      "source_id": "src_https-github-com-bregman-arie-devops-sre-skills-devops-sre-skills_9c3ec396",
+      "path": "skills/kubernetes/diagnose-crashloop/SKILL.md",
+      "declared_name": "diagnose-crashloop",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:10bed1c420a124b8fbcd14270e7a75955e3c842d",
+      "upstream_ref": "94d5acb9816a15c30523da85a74bbfe87a978679",
+      "url": "https://github.com/bregman-arie/devops-sre-skills/blob/94d5acb9816a15c30523da85a74bbfe87a978679/skills/kubernetes/diagnose-crashloop/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "10bed1c420a124b8fbcd14270e7a75955e3c842d",
+        "size": 2200
+      }
+    },
+    {
+      "source_id": "src_https-github-com-bregman-arie-devops-sre-skills-devops-sre-skills_9c3ec396",
+      "path": "skills/kubernetes/diagnose-imagepullbackoff/SKILL.md",
+      "declared_name": "diagnose-imagepullbackoff",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:ca58bcd9bde3699583268dc357caf50ea72f10fa",
+      "upstream_ref": "94d5acb9816a15c30523da85a74bbfe87a978679",
+      "url": "https://github.com/bregman-arie/devops-sre-skills/blob/94d5acb9816a15c30523da85a74bbfe87a978679/skills/kubernetes/diagnose-imagepullbackoff/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "ca58bcd9bde3699583268dc357caf50ea72f10fa",
+        "size": 1747
+      }
+    },
+    {
+      "source_id": "src_https-github-com-bregman-arie-devops-sre-skills-devops-sre-skills_9c3ec396",
+      "path": "skills/kubernetes/triage-node-pressure/SKILL.md",
+      "declared_name": "triage-node-pressure",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:2c7fac341cc7f1f183898e96b061f006be197c66",
+      "upstream_ref": "94d5acb9816a15c30523da85a74bbfe87a978679",
+      "url": "https://github.com/bregman-arie/devops-sre-skills/blob/94d5acb9816a15c30523da85a74bbfe87a978679/skills/kubernetes/triage-node-pressure/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "2c7fac341cc7f1f183898e96b061f006be197c66",
+        "size": 2057
+      }
+    },
+    {
+      "source_id": "src_https-github-com-bregman-arie-devops-sre-skills-devops-sre-skills_9c3ec396",
+      "path": "skills/kubernetes/triage-pending-pods/SKILL.md",
+      "declared_name": "triage-pending-pods",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:d8f55476d49314d9d21cf3f384e2c0579070adef",
+      "upstream_ref": "94d5acb9816a15c30523da85a74bbfe87a978679",
+      "url": "https://github.com/bregman-arie/devops-sre-skills/blob/94d5acb9816a15c30523da85a74bbfe87a978679/skills/kubernetes/triage-pending-pods/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "d8f55476d49314d9d21cf3f384e2c0579070adef",
+        "size": 1921
+      }
+    },
+    {
+      "source_id": "src_https-github-com-bregman-arie-devops-sre-skills-devops-sre-skills_9c3ec396",
+      "path": "skills/kubernetes/triage-service-dns/SKILL.md",
+      "declared_name": "triage-service-dns",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:3f4977767f30e03e672cecfcbaac6a65db9daf11",
+      "upstream_ref": "94d5acb9816a15c30523da85a74bbfe87a978679",
+      "url": "https://github.com/bregman-arie/devops-sre-skills/blob/94d5acb9816a15c30523da85a74bbfe87a978679/skills/kubernetes/triage-service-dns/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "3f4977767f30e03e672cecfcbaac6a65db9daf11",
+        "size": 2049
+      }
+    },
+    {
+      "source_id": "src_https-github-com-bregman-arie-devops-sre-skills-devops-sre-skills_9c3ec396",
+      "path": "skills/observability/triage-error-budget-burn/SKILL.md",
+      "declared_name": "triage-error-budget-burn",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:91c5aae5940a3f3a071dd0fa11b7b942d977682d",
+      "upstream_ref": "94d5acb9816a15c30523da85a74bbfe87a978679",
+      "url": "https://github.com/bregman-arie/devops-sre-skills/blob/94d5acb9816a15c30523da85a74bbfe87a978679/skills/observability/triage-error-budget-burn/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "91c5aae5940a3f3a071dd0fa11b7b942d977682d",
+        "size": 1741
+      }
+    },
+    {
+      "source_id": "src_https-github-com-bregman-arie-devops-sre-skills-devops-sre-skills_9c3ec396",
+      "path": "skills/observability/triage-latency-regression/SKILL.md",
+      "declared_name": "triage-latency-regression",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:7b10c3dc846ca2968d14966284ec5eea34e7cc64",
+      "upstream_ref": "94d5acb9816a15c30523da85a74bbfe87a978679",
+      "url": "https://github.com/bregman-arie/devops-sre-skills/blob/94d5acb9816a15c30523da85a74bbfe87a978679/skills/observability/triage-latency-regression/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "7b10c3dc846ca2968d14966284ec5eea34e7cc64",
+        "size": 1803
+      }
+    },
+    {
+      "source_id": "src_https-github-com-bregman-arie-devops-sre-skills-devops-sre-skills_9c3ec396",
+      "path": "skills/security/triage-suspected-secret-exposure/SKILL.md",
+      "declared_name": "triage-suspected-secret-exposure",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:c510b269ac1469799060801d875f943cc8d21165",
+      "upstream_ref": "94d5acb9816a15c30523da85a74bbfe87a978679",
+      "url": "https://github.com/bregman-arie/devops-sre-skills/blob/94d5acb9816a15c30523da85a74bbfe87a978679/skills/security/triage-suspected-secret-exposure/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "c510b269ac1469799060801d875f943cc8d21165",
+        "size": 2036
+      }
+    },
+    {
+      "source_id": "src_https-github-com-bregman-arie-devops-sre-skills-devops-sre-skills_9c3ec396",
+      "path": "skills/terraform/investigate-drift/SKILL.md",
+      "declared_name": "investigate-drift",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:60afdfae0553644a6dd617f8ad09c8b2527721da",
+      "upstream_ref": "94d5acb9816a15c30523da85a74bbfe87a978679",
+      "url": "https://github.com/bregman-arie/devops-sre-skills/blob/94d5acb9816a15c30523da85a74bbfe87a978679/skills/terraform/investigate-drift/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "60afdfae0553644a6dd617f8ad09c8b2527721da",
+        "size": 1928
+      }
+    },
+    {
+      "source_id": "src_https-github-com-bregman-arie-devops-sre-skills-devops-sre-skills_9c3ec396",
+      "path": "skills/terraform/recover-state-lock/SKILL.md",
+      "declared_name": "recover-state-lock",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:b1f41bc17aa0871e87b64aa0b3965a9766881e09",
+      "upstream_ref": "94d5acb9816a15c30523da85a74bbfe87a978679",
+      "url": "https://github.com/bregman-arie/devops-sre-skills/blob/94d5acb9816a15c30523da85a74bbfe87a978679/skills/terraform/recover-state-lock/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "b1f41bc17aa0871e87b64aa0b3965a9766881e09",
+        "size": 1827
+      }
+    }
+  ],
+  "digest": "sha256:091d92f4c33dc66d072a6b358e8174dfdba490a542d714c7cac412d77d9da395"
+}

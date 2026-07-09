@@ -1,0 +1,2292 @@
+{
+  "schema_version": 1,
+  "source_id": "src_https-github-com-bagelhole-devops-security-agent-skills-devops-security-agent-skills_6949282e",
+  "upstream_ref": "0365f57a079b1332f95cf26e31dd2d5332a8399f",
+  "checked_at": "2026-07-09T02:19:45.732Z",
+  "url": "https://github.com/BagelHole/DevOps-Security-Agent-Skills",
+  "artifacts": [
+    {
+      "source_id": "src_https-github-com-bagelhole-devops-security-agent-skills-devops-security-agent-skills_6949282e",
+      "path": "compliance/auditing/audit-logging/SKILL.md",
+      "declared_name": "audit-logging",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:22cb2e010bb7c568c219f5e7318c89810480d646",
+      "upstream_ref": "0365f57a079b1332f95cf26e31dd2d5332a8399f",
+      "url": "https://github.com/BagelHole/DevOps-Security-Agent-Skills/blob/0365f57a079b1332f95cf26e31dd2d5332a8399f/compliance/auditing/audit-logging/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "22cb2e010bb7c568c219f5e7318c89810480d646",
+        "size": 12822
+      }
+    },
+    {
+      "source_id": "src_https-github-com-bagelhole-devops-security-agent-skills-devops-security-agent-skills_6949282e",
+      "path": "compliance/auditing/aws-cloudtrail/SKILL.md",
+      "declared_name": "aws-cloudtrail",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:4fc934324d8e26398ef95a295126023290a0a87b",
+      "upstream_ref": "0365f57a079b1332f95cf26e31dd2d5332a8399f",
+      "url": "https://github.com/BagelHole/DevOps-Security-Agent-Skills/blob/0365f57a079b1332f95cf26e31dd2d5332a8399f/compliance/auditing/aws-cloudtrail/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "4fc934324d8e26398ef95a295126023290a0a87b",
+        "size": 15597
+      }
+    },
+    {
+      "source_id": "src_https-github-com-bagelhole-devops-security-agent-skills-devops-security-agent-skills_6949282e",
+      "path": "compliance/auditing/azure-monitor-audit/SKILL.md",
+      "declared_name": "azure-monitor-audit",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:cc1ba1b1f57d779c5bd051613a7db9d5b56b788b",
+      "upstream_ref": "0365f57a079b1332f95cf26e31dd2d5332a8399f",
+      "url": "https://github.com/BagelHole/DevOps-Security-Agent-Skills/blob/0365f57a079b1332f95cf26e31dd2d5332a8399f/compliance/auditing/azure-monitor-audit/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "cc1ba1b1f57d779c5bd051613a7db9d5b56b788b",
+        "size": 13411
+      }
+    },
+    {
+      "source_id": "src_https-github-com-bagelhole-devops-security-agent-skills-devops-security-agent-skills_6949282e",
+      "path": "compliance/auditing/gcp-audit-logs/SKILL.md",
+      "declared_name": "gcp-audit-logs",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:1af5cd991782b63b88c589dedfb97b6db9fe0a95",
+      "upstream_ref": "0365f57a079b1332f95cf26e31dd2d5332a8399f",
+      "url": "https://github.com/BagelHole/DevOps-Security-Agent-Skills/blob/0365f57a079b1332f95cf26e31dd2d5332a8399f/compliance/auditing/gcp-audit-logs/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "1af5cd991782b63b88c589dedfb97b6db9fe0a95",
+        "size": 16524
+      }
+    },
+    {
+      "source_id": "src_https-github-com-bagelhole-devops-security-agent-skills-devops-security-agent-skills_6949282e",
+      "path": "compliance/continuity/business-continuity/SKILL.md",
+      "declared_name": "business-continuity",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:23c8a4d47245cc99a290a0cc5112bbb0bfd4b9ee",
+      "upstream_ref": "0365f57a079b1332f95cf26e31dd2d5332a8399f",
+      "url": "https://github.com/BagelHole/DevOps-Security-Agent-Skills/blob/0365f57a079b1332f95cf26e31dd2d5332a8399f/compliance/continuity/business-continuity/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "23c8a4d47245cc99a290a0cc5112bbb0bfd4b9ee",
+        "size": 15312
+      }
+    },
+    {
+      "source_id": "src_https-github-com-bagelhole-devops-security-agent-skills-devops-security-agent-skills_6949282e",
+      "path": "compliance/continuity/disaster-recovery/SKILL.md",
+      "declared_name": "disaster-recovery",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:c3467e28758a658247c05538aba57436625407e0",
+      "upstream_ref": "0365f57a079b1332f95cf26e31dd2d5332a8399f",
+      "url": "https://github.com/BagelHole/DevOps-Security-Agent-Skills/blob/0365f57a079b1332f95cf26e31dd2d5332a8399f/compliance/continuity/disaster-recovery/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "c3467e28758a658247c05538aba57436625407e0",
+        "size": 17860
+      }
+    },
+    {
+      "source_id": "src_https-github-com-bagelhole-devops-security-agent-skills-devops-security-agent-skills_6949282e",
+      "path": "compliance/continuity/incident-management/SKILL.md",
+      "declared_name": "incident-management",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:8309bc70a679eb33ba3bbc06b4d34c3724ef9a6a",
+      "upstream_ref": "0365f57a079b1332f95cf26e31dd2d5332a8399f",
+      "url": "https://github.com/BagelHole/DevOps-Security-Agent-Skills/blob/0365f57a079b1332f95cf26e31dd2d5332a8399f/compliance/continuity/incident-management/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "8309bc70a679eb33ba3bbc06b4d34c3724ef9a6a",
+        "size": 16887
+      }
+    },
+    {
+      "source_id": "src_https-github-com-bagelhole-devops-security-agent-skills-devops-security-agent-skills_6949282e",
+      "path": "compliance/continuity/runbook-creation/SKILL.md",
+      "declared_name": "runbook-creation",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:20dd35a40bf8ea29ae334c4a00bdaeb9c2982695",
+      "upstream_ref": "0365f57a079b1332f95cf26e31dd2d5332a8399f",
+      "url": "https://github.com/BagelHole/DevOps-Security-Agent-Skills/blob/0365f57a079b1332f95cf26e31dd2d5332a8399f/compliance/continuity/runbook-creation/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "20dd35a40bf8ea29ae334c4a00bdaeb9c2982695",
+        "size": 13183
+      }
+    },
+    {
+      "source_id": "src_https-github-com-bagelhole-devops-security-agent-skills-devops-security-agent-skills_6949282e",
+      "path": "compliance/frameworks/fedramp-compliance/SKILL.md",
+      "declared_name": "fedramp-compliance",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:00b67ddc34705ed35f54e6957dbefe5c42bc9b24",
+      "upstream_ref": "0365f57a079b1332f95cf26e31dd2d5332a8399f",
+      "url": "https://github.com/BagelHole/DevOps-Security-Agent-Skills/blob/0365f57a079b1332f95cf26e31dd2d5332a8399f/compliance/frameworks/fedramp-compliance/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "00b67ddc34705ed35f54e6957dbefe5c42bc9b24",
+        "size": 15455
+      }
+    },
+    {
+      "source_id": "src_https-github-com-bagelhole-devops-security-agent-skills-devops-security-agent-skills_6949282e",
+      "path": "compliance/frameworks/gdpr-compliance/SKILL.md",
+      "declared_name": "gdpr-compliance",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:e751e332e599b6f355ded1afe0646d0f51b3b108",
+      "upstream_ref": "0365f57a079b1332f95cf26e31dd2d5332a8399f",
+      "url": "https://github.com/BagelHole/DevOps-Security-Agent-Skills/blob/0365f57a079b1332f95cf26e31dd2d5332a8399f/compliance/frameworks/gdpr-compliance/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "e751e332e599b6f355ded1afe0646d0f51b3b108",
+        "size": 21060
+      }
+    },
+    {
+      "source_id": "src_https-github-com-bagelhole-devops-security-agent-skills-devops-security-agent-skills_6949282e",
+      "path": "compliance/frameworks/hipaa-compliance/SKILL.md",
+      "declared_name": "hipaa-compliance",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:d746a8f6c558c75c60d8f84f5fc8d5290fc10cb2",
+      "upstream_ref": "0365f57a079b1332f95cf26e31dd2d5332a8399f",
+      "url": "https://github.com/BagelHole/DevOps-Security-Agent-Skills/blob/0365f57a079b1332f95cf26e31dd2d5332a8399f/compliance/frameworks/hipaa-compliance/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "d746a8f6c558c75c60d8f84f5fc8d5290fc10cb2",
+        "size": 16390
+      }
+    },
+    {
+      "source_id": "src_https-github-com-bagelhole-devops-security-agent-skills-devops-security-agent-skills_6949282e",
+      "path": "compliance/frameworks/iso27001-compliance/SKILL.md",
+      "declared_name": "iso27001-compliance",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:99cd3183f07935e5cdf5005ad78bd28c8e623dbc",
+      "upstream_ref": "0365f57a079b1332f95cf26e31dd2d5332a8399f",
+      "url": "https://github.com/BagelHole/DevOps-Security-Agent-Skills/blob/0365f57a079b1332f95cf26e31dd2d5332a8399f/compliance/frameworks/iso27001-compliance/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "99cd3183f07935e5cdf5005ad78bd28c8e623dbc",
+        "size": 15746
+      }
+    },
+    {
+      "source_id": "src_https-github-com-bagelhole-devops-security-agent-skills-devops-security-agent-skills_6949282e",
+      "path": "compliance/frameworks/pci-dss-compliance/SKILL.md",
+      "declared_name": "pci-dss-compliance",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:6009a58f37400feff6600378005c3b51da71936b",
+      "upstream_ref": "0365f57a079b1332f95cf26e31dd2d5332a8399f",
+      "url": "https://github.com/BagelHole/DevOps-Security-Agent-Skills/blob/0365f57a079b1332f95cf26e31dd2d5332a8399f/compliance/frameworks/pci-dss-compliance/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "6009a58f37400feff6600378005c3b51da71936b",
+        "size": 17767
+      }
+    },
+    {
+      "source_id": "src_https-github-com-bagelhole-devops-security-agent-skills-devops-security-agent-skills_6949282e",
+      "path": "compliance/frameworks/soc2-compliance/SKILL.md",
+      "declared_name": "soc2-compliance",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:1d259a0d9897c9a3f81f4983be51ab55f5dbe362",
+      "upstream_ref": "0365f57a079b1332f95cf26e31dd2d5332a8399f",
+      "url": "https://github.com/BagelHole/DevOps-Security-Agent-Skills/blob/0365f57a079b1332f95cf26e31dd2d5332a8399f/compliance/frameworks/soc2-compliance/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "1d259a0d9897c9a3f81f4983be51ab55f5dbe362",
+        "size": 14340
+      }
+    },
+    {
+      "source_id": "src_https-github-com-bagelhole-devops-security-agent-skills-devops-security-agent-skills_6949282e",
+      "path": "compliance/governance/access-review/SKILL.md",
+      "declared_name": "access-review",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:9c9a7dd8b6b86fd92c442baa7ce1a696cc13d6be",
+      "upstream_ref": "0365f57a079b1332f95cf26e31dd2d5332a8399f",
+      "url": "https://github.com/BagelHole/DevOps-Security-Agent-Skills/blob/0365f57a079b1332f95cf26e31dd2d5332a8399f/compliance/governance/access-review/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "9c9a7dd8b6b86fd92c442baa7ce1a696cc13d6be",
+        "size": 17591
+      }
+    },
+    {
+      "source_id": "src_https-github-com-bagelhole-devops-security-agent-skills-devops-security-agent-skills_6949282e",
+      "path": "compliance/governance/asset-inventory/SKILL.md",
+      "declared_name": "asset-inventory",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:3c7e61126e24916b3d220901341f4c361bd334a4",
+      "upstream_ref": "0365f57a079b1332f95cf26e31dd2d5332a8399f",
+      "url": "https://github.com/BagelHole/DevOps-Security-Agent-Skills/blob/0365f57a079b1332f95cf26e31dd2d5332a8399f/compliance/governance/asset-inventory/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "3c7e61126e24916b3d220901341f4c361bd334a4",
+        "size": 17438
+      }
+    },
+    {
+      "source_id": "src_https-github-com-bagelhole-devops-security-agent-skills-devops-security-agent-skills_6949282e",
+      "path": "compliance/governance/change-management/SKILL.md",
+      "declared_name": "change-management",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:4a91dff796f60c9776fa91fc9ea2e4899ab13ca9",
+      "upstream_ref": "0365f57a079b1332f95cf26e31dd2d5332a8399f",
+      "url": "https://github.com/BagelHole/DevOps-Security-Agent-Skills/blob/0365f57a079b1332f95cf26e31dd2d5332a8399f/compliance/governance/change-management/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "4a91dff796f60c9776fa91fc9ea2e4899ab13ca9",
+        "size": 16389
+      }
+    },
+    {
+      "source_id": "src_https-github-com-bagelhole-devops-security-agent-skills-devops-security-agent-skills_6949282e",
+      "path": "compliance/governance/policy-as-code/SKILL.md",
+      "declared_name": "policy-as-code",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:f63a66035ff4c566ee3f732c95988ad24f51c4e8",
+      "upstream_ref": "0365f57a079b1332f95cf26e31dd2d5332a8399f",
+      "url": "https://github.com/BagelHole/DevOps-Security-Agent-Skills/blob/0365f57a079b1332f95cf26e31dd2d5332a8399f/compliance/governance/policy-as-code/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "f63a66035ff4c566ee3f732c95988ad24f51c4e8",
+        "size": 17367
+      }
+    },
+    {
+      "source_id": "src_https-github-com-bagelhole-devops-security-agent-skills-devops-security-agent-skills_6949282e",
+      "path": "compliance/governance/vendor-management/SKILL.md",
+      "declared_name": "vendor-management",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:4083f8d4c82b8ad6967f342ed3cf478ec2ae9b06",
+      "upstream_ref": "0365f57a079b1332f95cf26e31dd2d5332a8399f",
+      "url": "https://github.com/BagelHole/DevOps-Security-Agent-Skills/blob/0365f57a079b1332f95cf26e31dd2d5332a8399f/compliance/governance/vendor-management/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "4083f8d4c82b8ad6967f342ed3cf478ec2ae9b06",
+        "size": 18238
+      }
+    },
+    {
+      "source_id": "src_https-github-com-bagelhole-devops-security-agent-skills-devops-security-agent-skills_6949282e",
+      "path": "devops/ai/agent-evals/SKILL.md",
+      "declared_name": "agent-evals",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:b6a6538b4dab28ea5dc3f5cad97761c0730fb239",
+      "upstream_ref": "0365f57a079b1332f95cf26e31dd2d5332a8399f",
+      "url": "https://github.com/BagelHole/DevOps-Security-Agent-Skills/blob/0365f57a079b1332f95cf26e31dd2d5332a8399f/devops/ai/agent-evals/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "b6a6538b4dab28ea5dc3f5cad97761c0730fb239",
+        "size": 11462
+      }
+    },
+    {
+      "source_id": "src_https-github-com-bagelhole-devops-security-agent-skills-devops-security-agent-skills_6949282e",
+      "path": "devops/ai/agent-observability/SKILL.md",
+      "declared_name": "agent-observability",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:128083434a4807c09d9f8871d1b9221185e4e369",
+      "upstream_ref": "0365f57a079b1332f95cf26e31dd2d5332a8399f",
+      "url": "https://github.com/BagelHole/DevOps-Security-Agent-Skills/blob/0365f57a079b1332f95cf26e31dd2d5332a8399f/devops/ai/agent-observability/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "128083434a4807c09d9f8871d1b9221185e4e369",
+        "size": 35444
+      }
+    },
+    {
+      "source_id": "src_https-github-com-bagelhole-devops-security-agent-skills-devops-security-agent-skills_6949282e",
+      "path": "devops/ai/ai-pipeline-orchestration/SKILL.md",
+      "declared_name": "ai-pipeline-orchestration",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:4edb1338a379acd26ac5fc027c66e48128f8b4bd",
+      "upstream_ref": "0365f57a079b1332f95cf26e31dd2d5332a8399f",
+      "url": "https://github.com/BagelHole/DevOps-Security-Agent-Skills/blob/0365f57a079b1332f95cf26e31dd2d5332a8399f/devops/ai/ai-pipeline-orchestration/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "4edb1338a379acd26ac5fc027c66e48128f8b4bd",
+        "size": 9192
+      }
+    },
+    {
+      "source_id": "src_https-github-com-bagelhole-devops-security-agent-skills-devops-security-agent-skills_6949282e",
+      "path": "devops/ai/ai-sre-incident-response/SKILL.md",
+      "declared_name": "ai-sre-incident-response",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:87e5a04222d0004ba27b8b5cc540aba954aed7e9",
+      "upstream_ref": "0365f57a079b1332f95cf26e31dd2d5332a8399f",
+      "url": "https://github.com/BagelHole/DevOps-Security-Agent-Skills/blob/0365f57a079b1332f95cf26e31dd2d5332a8399f/devops/ai/ai-sre-incident-response/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "87e5a04222d0004ba27b8b5cc540aba954aed7e9",
+        "size": 11035
+      }
+    },
+    {
+      "source_id": "src_https-github-com-bagelhole-devops-security-agent-skills-devops-security-agent-skills_6949282e",
+      "path": "devops/ai/llm-caching/SKILL.md",
+      "declared_name": "llm-caching",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:72dff54b4fe94f2e3561b3bae7e2d2d10528f33b",
+      "upstream_ref": "0365f57a079b1332f95cf26e31dd2d5332a8399f",
+      "url": "https://github.com/BagelHole/DevOps-Security-Agent-Skills/blob/0365f57a079b1332f95cf26e31dd2d5332a8399f/devops/ai/llm-caching/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "72dff54b4fe94f2e3561b3bae7e2d2d10528f33b",
+        "size": 10478
+      }
+    },
+    {
+      "source_id": "src_https-github-com-bagelhole-devops-security-agent-skills-devops-security-agent-skills_6949282e",
+      "path": "devops/ai/llm-cost-optimization/SKILL.md",
+      "declared_name": "llm-cost-optimization",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:e8fc9904bfea5a76269d86f1c1a1dce044ee96d7",
+      "upstream_ref": "0365f57a079b1332f95cf26e31dd2d5332a8399f",
+      "url": "https://github.com/BagelHole/DevOps-Security-Agent-Skills/blob/0365f57a079b1332f95cf26e31dd2d5332a8399f/devops/ai/llm-cost-optimization/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "e8fc9904bfea5a76269d86f1c1a1dce044ee96d7",
+        "size": 9014
+      }
+    },
+    {
+      "source_id": "src_https-github-com-bagelhole-devops-security-agent-skills-devops-security-agent-skills_6949282e",
+      "path": "devops/ai/llmops-platform-engineering/SKILL.md",
+      "declared_name": "llmops-platform-engineering",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:b2424306df92ea3de027ef57559ddee3a956b2a3",
+      "upstream_ref": "0365f57a079b1332f95cf26e31dd2d5332a8399f",
+      "url": "https://github.com/BagelHole/DevOps-Security-Agent-Skills/blob/0365f57a079b1332f95cf26e31dd2d5332a8399f/devops/ai/llmops-platform-engineering/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "b2424306df92ea3de027ef57559ddee3a956b2a3",
+        "size": 12795
+      }
+    },
+    {
+      "source_id": "src_https-github-com-bagelhole-devops-security-agent-skills-devops-security-agent-skills_6949282e",
+      "path": "devops/ai/model-registry-governance/SKILL.md",
+      "declared_name": "model-registry-governance",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:12a51136bb38a7d5947d1069cb0264d8807197ec",
+      "upstream_ref": "0365f57a079b1332f95cf26e31dd2d5332a8399f",
+      "url": "https://github.com/BagelHole/DevOps-Security-Agent-Skills/blob/0365f57a079b1332f95cf26e31dd2d5332a8399f/devops/ai/model-registry-governance/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "12a51136bb38a7d5947d1069cb0264d8807197ec",
+        "size": 14539
+      }
+    },
+    {
+      "source_id": "src_https-github-com-bagelhole-devops-security-agent-skills-devops-security-agent-skills_6949282e",
+      "path": "devops/ai/rag-observability-evals/SKILL.md",
+      "declared_name": "rag-observability-evals",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:754f70825f2c9cd938e170d7bc20bbcbfa83aa17",
+      "upstream_ref": "0365f57a079b1332f95cf26e31dd2d5332a8399f",
+      "url": "https://github.com/BagelHole/DevOps-Security-Agent-Skills/blob/0365f57a079b1332f95cf26e31dd2d5332a8399f/devops/ai/rag-observability-evals/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "754f70825f2c9cd938e170d7bc20bbcbfa83aa17",
+        "size": 14418
+      }
+    },
+    {
+      "source_id": "src_https-github-com-bagelhole-devops-security-agent-skills-devops-security-agent-skills_6949282e",
+      "path": "devops/ci-cd/azure-devops/SKILL.md",
+      "declared_name": "azure-devops",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:5a0f671636a3ad429bf85a8fbbfbf4fef00af162",
+      "upstream_ref": "0365f57a079b1332f95cf26e31dd2d5332a8399f",
+      "url": "https://github.com/BagelHole/DevOps-Security-Agent-Skills/blob/0365f57a079b1332f95cf26e31dd2d5332a8399f/devops/ci-cd/azure-devops/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "5a0f671636a3ad429bf85a8fbbfbf4fef00af162",
+        "size": 8444
+      }
+    },
+    {
+      "source_id": "src_https-github-com-bagelhole-devops-security-agent-skills-devops-security-agent-skills_6949282e",
+      "path": "devops/ci-cd/circleci/SKILL.md",
+      "declared_name": "circleci",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:358bd6f6bcc10811002f56b340d64bc60faee2bd",
+      "upstream_ref": "0365f57a079b1332f95cf26e31dd2d5332a8399f",
+      "url": "https://github.com/BagelHole/DevOps-Security-Agent-Skills/blob/0365f57a079b1332f95cf26e31dd2d5332a8399f/devops/ci-cd/circleci/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "358bd6f6bcc10811002f56b340d64bc60faee2bd",
+        "size": 8364
+      }
+    },
+    {
+      "source_id": "src_https-github-com-bagelhole-devops-security-agent-skills-devops-security-agent-skills_6949282e",
+      "path": "devops/ci-cd/github-actions/SKILL.md",
+      "declared_name": "github-actions",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:3dbe453b150e3131e8193f2ee0fe4fefc41e6081",
+      "upstream_ref": "0365f57a079b1332f95cf26e31dd2d5332a8399f",
+      "url": "https://github.com/BagelHole/DevOps-Security-Agent-Skills/blob/0365f57a079b1332f95cf26e31dd2d5332a8399f/devops/ci-cd/github-actions/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "3dbe453b150e3131e8193f2ee0fe4fefc41e6081",
+        "size": 6732
+      }
+    },
+    {
+      "source_id": "src_https-github-com-bagelhole-devops-security-agent-skills-devops-security-agent-skills_6949282e",
+      "path": "devops/ci-cd/gitlab-ci/SKILL.md",
+      "declared_name": "gitlab-ci",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:c3d41b970b713c0d85e4c7f915792e857e9ee3ac",
+      "upstream_ref": "0365f57a079b1332f95cf26e31dd2d5332a8399f",
+      "url": "https://github.com/BagelHole/DevOps-Security-Agent-Skills/blob/0365f57a079b1332f95cf26e31dd2d5332a8399f/devops/ci-cd/gitlab-ci/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "c3d41b970b713c0d85e4c7f915792e857e9ee3ac",
+        "size": 5862
+      }
+    },
+    {
+      "source_id": "src_https-github-com-bagelhole-devops-security-agent-skills-devops-security-agent-skills_6949282e",
+      "path": "devops/ci-cd/jenkins/SKILL.md",
+      "declared_name": "jenkins",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:e36d16978d93a417ed426f97c4ff708944ab7ea3",
+      "upstream_ref": "0365f57a079b1332f95cf26e31dd2d5332a8399f",
+      "url": "https://github.com/BagelHole/DevOps-Security-Agent-Skills/blob/0365f57a079b1332f95cf26e31dd2d5332a8399f/devops/ci-cd/jenkins/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "e36d16978d93a417ed426f97c4ff708944ab7ea3",
+        "size": 9255
+      }
+    },
+    {
+      "source_id": "src_https-github-com-bagelhole-devops-security-agent-skills-devops-security-agent-skills_6949282e",
+      "path": "devops/containers/container-registries/SKILL.md",
+      "declared_name": "container-registries",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:b07a3b1abc554125e2b0a35568ba0a20be72c2a2",
+      "upstream_ref": "0365f57a079b1332f95cf26e31dd2d5332a8399f",
+      "url": "https://github.com/BagelHole/DevOps-Security-Agent-Skills/blob/0365f57a079b1332f95cf26e31dd2d5332a8399f/devops/containers/container-registries/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "b07a3b1abc554125e2b0a35568ba0a20be72c2a2",
+        "size": 8620
+      }
+    },
+    {
+      "source_id": "src_https-github-com-bagelhole-devops-security-agent-skills-devops-security-agent-skills_6949282e",
+      "path": "devops/containers/docker-compose/SKILL.md",
+      "declared_name": "docker-compose",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:aa9fe76f9432ed455459c3800841ec026bbde6e8",
+      "upstream_ref": "0365f57a079b1332f95cf26e31dd2d5332a8399f",
+      "url": "https://github.com/BagelHole/DevOps-Security-Agent-Skills/blob/0365f57a079b1332f95cf26e31dd2d5332a8399f/devops/containers/docker-compose/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "aa9fe76f9432ed455459c3800841ec026bbde6e8",
+        "size": 8127
+      }
+    },
+    {
+      "source_id": "src_https-github-com-bagelhole-devops-security-agent-skills-devops-security-agent-skills_6949282e",
+      "path": "devops/containers/docker-management/SKILL.md",
+      "declared_name": "docker-management",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:b47227a030a441279ae3412e843b6c8a8280b525",
+      "upstream_ref": "0365f57a079b1332f95cf26e31dd2d5332a8399f",
+      "url": "https://github.com/BagelHole/DevOps-Security-Agent-Skills/blob/0365f57a079b1332f95cf26e31dd2d5332a8399f/devops/containers/docker-management/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "b47227a030a441279ae3412e843b6c8a8280b525",
+        "size": 8112
+      }
+    },
+    {
+      "source_id": "src_https-github-com-bagelhole-devops-security-agent-skills-devops-security-agent-skills_6949282e",
+      "path": "devops/containers/podman/SKILL.md",
+      "declared_name": "podman",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:51c7f507b8c27a770d4c318270f8d7c3b430306f",
+      "upstream_ref": "0365f57a079b1332f95cf26e31dd2d5332a8399f",
+      "url": "https://github.com/BagelHole/DevOps-Security-Agent-Skills/blob/0365f57a079b1332f95cf26e31dd2d5332a8399f/devops/containers/podman/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "51c7f507b8c27a770d4c318270f8d7c3b430306f",
+        "size": 7790
+      }
+    },
+    {
+      "source_id": "src_https-github-com-bagelhole-devops-security-agent-skills-devops-security-agent-skills_6949282e",
+      "path": "devops/developer-experience/devcontainers-nix/SKILL.md",
+      "declared_name": "devcontainers-nix",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:38324e3755df5aceb1ea3b3a669e64d52cb11e71",
+      "upstream_ref": "0365f57a079b1332f95cf26e31dd2d5332a8399f",
+      "url": "https://github.com/BagelHole/DevOps-Security-Agent-Skills/blob/0365f57a079b1332f95cf26e31dd2d5332a8399f/devops/developer-experience/devcontainers-nix/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "38324e3755df5aceb1ea3b3a669e64d52cb11e71",
+        "size": 9168
+      }
+    },
+    {
+      "source_id": "src_https-github-com-bagelhole-devops-security-agent-skills-devops-security-agent-skills_6949282e",
+      "path": "devops/observability/alerting-oncall/SKILL.md",
+      "declared_name": "alerting-oncall",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:4febdd189ac679f5322ed5647a4eeb1ecff12a9b",
+      "upstream_ref": "0365f57a079b1332f95cf26e31dd2d5332a8399f",
+      "url": "https://github.com/BagelHole/DevOps-Security-Agent-Skills/blob/0365f57a079b1332f95cf26e31dd2d5332a8399f/devops/observability/alerting-oncall/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "4febdd189ac679f5322ed5647a4eeb1ecff12a9b",
+        "size": 12068
+      }
+    },
+    {
+      "source_id": "src_https-github-com-bagelhole-devops-security-agent-skills-devops-security-agent-skills_6949282e",
+      "path": "devops/observability/datadog/SKILL.md",
+      "declared_name": "datadog",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:051cf007569bccfa13206d9183f0591470357c57",
+      "upstream_ref": "0365f57a079b1332f95cf26e31dd2d5332a8399f",
+      "url": "https://github.com/BagelHole/DevOps-Security-Agent-Skills/blob/0365f57a079b1332f95cf26e31dd2d5332a8399f/devops/observability/datadog/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "051cf007569bccfa13206d9183f0591470357c57",
+        "size": 9882
+      }
+    },
+    {
+      "source_id": "src_https-github-com-bagelhole-devops-security-agent-skills-devops-security-agent-skills_6949282e",
+      "path": "devops/observability/ebpf-observability/SKILL.md",
+      "declared_name": "ebpf-observability",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:0c4f8abf15fd9f11ecbe7d935d95d80448c8d07a",
+      "upstream_ref": "0365f57a079b1332f95cf26e31dd2d5332a8399f",
+      "url": "https://github.com/BagelHole/DevOps-Security-Agent-Skills/blob/0365f57a079b1332f95cf26e31dd2d5332a8399f/devops/observability/ebpf-observability/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "0c4f8abf15fd9f11ecbe7d935d95d80448c8d07a",
+        "size": 25320
+      }
+    },
+    {
+      "source_id": "src_https-github-com-bagelhole-devops-security-agent-skills-devops-security-agent-skills_6949282e",
+      "path": "devops/observability/elk-stack/SKILL.md",
+      "declared_name": "elk-stack",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:095b14de2304d0a4fde781b94996aae280e65097",
+      "upstream_ref": "0365f57a079b1332f95cf26e31dd2d5332a8399f",
+      "url": "https://github.com/BagelHole/DevOps-Security-Agent-Skills/blob/0365f57a079b1332f95cf26e31dd2d5332a8399f/devops/observability/elk-stack/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "095b14de2304d0a4fde781b94996aae280e65097",
+        "size": 9353
+      }
+    },
+    {
+      "source_id": "src_https-github-com-bagelhole-devops-security-agent-skills-devops-security-agent-skills_6949282e",
+      "path": "devops/observability/loki-logging/SKILL.md",
+      "declared_name": "loki-logging",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:fb5698ac68a3ea589ef3e560f05ff62f6350b690",
+      "upstream_ref": "0365f57a079b1332f95cf26e31dd2d5332a8399f",
+      "url": "https://github.com/BagelHole/DevOps-Security-Agent-Skills/blob/0365f57a079b1332f95cf26e31dd2d5332a8399f/devops/observability/loki-logging/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "fb5698ac68a3ea589ef3e560f05ff62f6350b690",
+        "size": 9907
+      }
+    },
+    {
+      "source_id": "src_https-github-com-bagelhole-devops-security-agent-skills-devops-security-agent-skills_6949282e",
+      "path": "devops/observability/new-relic/SKILL.md",
+      "declared_name": "new-relic",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:b41ed898d1e448c14bbd1a3500a031681b716ccb",
+      "upstream_ref": "0365f57a079b1332f95cf26e31dd2d5332a8399f",
+      "url": "https://github.com/BagelHole/DevOps-Security-Agent-Skills/blob/0365f57a079b1332f95cf26e31dd2d5332a8399f/devops/observability/new-relic/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "b41ed898d1e448c14bbd1a3500a031681b716ccb",
+        "size": 9827
+      }
+    },
+    {
+      "source_id": "src_https-github-com-bagelhole-devops-security-agent-skills-devops-security-agent-skills_6949282e",
+      "path": "devops/observability/opentelemetry/SKILL.md",
+      "declared_name": "opentelemetry",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:6799a02df8811207b2e7e23bf22904262706b349",
+      "upstream_ref": "0365f57a079b1332f95cf26e31dd2d5332a8399f",
+      "url": "https://github.com/BagelHole/DevOps-Security-Agent-Skills/blob/0365f57a079b1332f95cf26e31dd2d5332a8399f/devops/observability/opentelemetry/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "6799a02df8811207b2e7e23bf22904262706b349",
+        "size": 14492
+      }
+    },
+    {
+      "source_id": "src_https-github-com-bagelhole-devops-security-agent-skills-devops-security-agent-skills_6949282e",
+      "path": "devops/observability/prometheus-grafana/SKILL.md",
+      "declared_name": "prometheus-grafana",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:311e02e5ea1c67b78292f87e688040a125da00e1",
+      "upstream_ref": "0365f57a079b1332f95cf26e31dd2d5332a8399f",
+      "url": "https://github.com/BagelHole/DevOps-Security-Agent-Skills/blob/0365f57a079b1332f95cf26e31dd2d5332a8399f/devops/observability/prometheus-grafana/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "311e02e5ea1c67b78292f87e688040a125da00e1",
+        "size": 10063
+      }
+    },
+    {
+      "source_id": "src_https-github-com-bagelhole-devops-security-agent-skills-devops-security-agent-skills_6949282e",
+      "path": "devops/observability/sre-dashboards/SKILL.md",
+      "declared_name": "sre-dashboards",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:65127502f1abdc7e66f8bc9ac0dbcdb4ac401a37",
+      "upstream_ref": "0365f57a079b1332f95cf26e31dd2d5332a8399f",
+      "url": "https://github.com/BagelHole/DevOps-Security-Agent-Skills/blob/0365f57a079b1332f95cf26e31dd2d5332a8399f/devops/observability/sre-dashboards/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "65127502f1abdc7e66f8bc9ac0dbcdb4ac401a37",
+        "size": 3610
+      }
+    },
+    {
+      "source_id": "src_https-github-com-bagelhole-devops-security-agent-skills-devops-security-agent-skills_6949282e",
+      "path": "devops/orchestration/argocd-gitops/SKILL.md",
+      "declared_name": "argocd-gitops",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:6351b04e9ee5d48ae3f658120a165b9f81378487",
+      "upstream_ref": "0365f57a079b1332f95cf26e31dd2d5332a8399f",
+      "url": "https://github.com/BagelHole/DevOps-Security-Agent-Skills/blob/0365f57a079b1332f95cf26e31dd2d5332a8399f/devops/orchestration/argocd-gitops/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "6351b04e9ee5d48ae3f658120a165b9f81378487",
+        "size": 9662
+      }
+    },
+    {
+      "source_id": "src_https-github-com-bagelhole-devops-security-agent-skills-devops-security-agent-skills_6949282e",
+      "path": "devops/orchestration/helm-charts/SKILL.md",
+      "declared_name": "helm-charts",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:153bafff7ac9ed5164364b1eeb8dd85f9cae90e0",
+      "upstream_ref": "0365f57a079b1332f95cf26e31dd2d5332a8399f",
+      "url": "https://github.com/BagelHole/DevOps-Security-Agent-Skills/blob/0365f57a079b1332f95cf26e31dd2d5332a8399f/devops/orchestration/helm-charts/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "153bafff7ac9ed5164364b1eeb8dd85f9cae90e0",
+        "size": 9528
+      }
+    },
+    {
+      "source_id": "src_https-github-com-bagelhole-devops-security-agent-skills-devops-security-agent-skills_6949282e",
+      "path": "devops/orchestration/kubernetes-ops/SKILL.md",
+      "declared_name": "kubernetes-ops",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:160707712754884ccc51ef8e58b23d7f6fd9c848",
+      "upstream_ref": "0365f57a079b1332f95cf26e31dd2d5332a8399f",
+      "url": "https://github.com/BagelHole/DevOps-Security-Agent-Skills/blob/0365f57a079b1332f95cf26e31dd2d5332a8399f/devops/orchestration/kubernetes-ops/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "160707712754884ccc51ef8e58b23d7f6fd9c848",
+        "size": 9284
+      }
+    },
+    {
+      "source_id": "src_https-github-com-bagelhole-devops-security-agent-skills-devops-security-agent-skills_6949282e",
+      "path": "devops/orchestration/kustomize/SKILL.md",
+      "declared_name": "kustomize",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:e77ea62d1245eef0531fb897b91a5494adf76900",
+      "upstream_ref": "0365f57a079b1332f95cf26e31dd2d5332a8399f",
+      "url": "https://github.com/BagelHole/DevOps-Security-Agent-Skills/blob/0365f57a079b1332f95cf26e31dd2d5332a8399f/devops/orchestration/kustomize/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "e77ea62d1245eef0531fb897b91a5494adf76900",
+        "size": 8371
+      }
+    },
+    {
+      "source_id": "src_https-github-com-bagelhole-devops-security-agent-skills-devops-security-agent-skills_6949282e",
+      "path": "devops/orchestration/model-serving-kubernetes/SKILL.md",
+      "declared_name": "model-serving-kubernetes",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:b052df042823033e99bc12a54c4f4c1f05ab7e28",
+      "upstream_ref": "0365f57a079b1332f95cf26e31dd2d5332a8399f",
+      "url": "https://github.com/BagelHole/DevOps-Security-Agent-Skills/blob/0365f57a079b1332f95cf26e31dd2d5332a8399f/devops/orchestration/model-serving-kubernetes/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "b052df042823033e99bc12a54c4f4c1f05ab7e28",
+        "size": 8481
+      }
+    },
+    {
+      "source_id": "src_https-github-com-bagelhole-devops-security-agent-skills-devops-security-agent-skills_6949282e",
+      "path": "devops/orchestration/openshift/SKILL.md",
+      "declared_name": "openshift",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:6dd6d07fd2717ce887a133b1bbc7f54fc1a00d39",
+      "upstream_ref": "0365f57a079b1332f95cf26e31dd2d5332a8399f",
+      "url": "https://github.com/BagelHole/DevOps-Security-Agent-Skills/blob/0365f57a079b1332f95cf26e31dd2d5332a8399f/devops/orchestration/openshift/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "6dd6d07fd2717ce887a133b1bbc7f54fc1a00d39",
+        "size": 8827
+      }
+    },
+    {
+      "source_id": "src_https-github-com-bagelhole-devops-security-agent-skills-devops-security-agent-skills_6949282e",
+      "path": "devops/platforms/platform-engineering/SKILL.md",
+      "declared_name": "platform-engineering",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:357e328da4cb2aee644e05e282eb65947402a72b",
+      "upstream_ref": "0365f57a079b1332f95cf26e31dd2d5332a8399f",
+      "url": "https://github.com/BagelHole/DevOps-Security-Agent-Skills/blob/0365f57a079b1332f95cf26e31dd2d5332a8399f/devops/platforms/platform-engineering/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "357e328da4cb2aee644e05e282eb65947402a72b",
+        "size": 31730
+      }
+    },
+    {
+      "source_id": "src_https-github-com-bagelhole-devops-security-agent-skills-devops-security-agent-skills_6949282e",
+      "path": "devops/release/blue-green-deploy/SKILL.md",
+      "declared_name": "blue-green-deploy",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:9fc436bfcc536cc7482df8f23bf31fac60511ec6",
+      "upstream_ref": "0365f57a079b1332f95cf26e31dd2d5332a8399f",
+      "url": "https://github.com/BagelHole/DevOps-Security-Agent-Skills/blob/0365f57a079b1332f95cf26e31dd2d5332a8399f/devops/release/blue-green-deploy/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "9fc436bfcc536cc7482df8f23bf31fac60511ec6",
+        "size": 12623
+      }
+    },
+    {
+      "source_id": "src_https-github-com-bagelhole-devops-security-agent-skills-devops-security-agent-skills_6949282e",
+      "path": "devops/release/feature-flags/SKILL.md",
+      "declared_name": "feature-flags",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:3f91e77e7b02a6c9125acbd9b7a16deb739a89b1",
+      "upstream_ref": "0365f57a079b1332f95cf26e31dd2d5332a8399f",
+      "url": "https://github.com/BagelHole/DevOps-Security-Agent-Skills/blob/0365f57a079b1332f95cf26e31dd2d5332a8399f/devops/release/feature-flags/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "3f91e77e7b02a6c9125acbd9b7a16deb739a89b1",
+        "size": 11302
+      }
+    },
+    {
+      "source_id": "src_https-github-com-bagelhole-devops-security-agent-skills-devops-security-agent-skills_6949282e",
+      "path": "devops/release/git-workflow/SKILL.md",
+      "declared_name": "git-workflow",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:18371b2c5694b9eb85833f15668644c509433e8c",
+      "upstream_ref": "0365f57a079b1332f95cf26e31dd2d5332a8399f",
+      "url": "https://github.com/BagelHole/DevOps-Security-Agent-Skills/blob/0365f57a079b1332f95cf26e31dd2d5332a8399f/devops/release/git-workflow/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "18371b2c5694b9eb85833f15668644c509433e8c",
+        "size": 10068
+      }
+    },
+    {
+      "source_id": "src_https-github-com-bagelhole-devops-security-agent-skills-devops-security-agent-skills_6949282e",
+      "path": "devops/release/semantic-versioning/SKILL.md",
+      "declared_name": "semantic-versioning",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:a44d856655b9ae2d45707f0f587c4c7c0745d710",
+      "upstream_ref": "0365f57a079b1332f95cf26e31dd2d5332a8399f",
+      "url": "https://github.com/BagelHole/DevOps-Security-Agent-Skills/blob/0365f57a079b1332f95cf26e31dd2d5332a8399f/devops/release/semantic-versioning/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "a44d856655b9ae2d45707f0f587c4c7c0745d710",
+        "size": 10657
+      }
+    },
+    {
+      "source_id": "src_https-github-com-bagelhole-devops-security-agent-skills-devops-security-agent-skills_6949282e",
+      "path": "infrastructure/cloud-aws/aws-cost-optimization/SKILL.md",
+      "declared_name": "aws-cost-optimization",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:121c98f50ce2f62c7292e703bfd42b1292b66590",
+      "upstream_ref": "0365f57a079b1332f95cf26e31dd2d5332a8399f",
+      "url": "https://github.com/BagelHole/DevOps-Security-Agent-Skills/blob/0365f57a079b1332f95cf26e31dd2d5332a8399f/infrastructure/cloud-aws/aws-cost-optimization/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "121c98f50ce2f62c7292e703bfd42b1292b66590",
+        "size": 10488
+      }
+    },
+    {
+      "source_id": "src_https-github-com-bagelhole-devops-security-agent-skills-devops-security-agent-skills_6949282e",
+      "path": "infrastructure/cloud-aws/aws-ec2/SKILL.md",
+      "declared_name": "aws-ec2",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:c0aff92be3c5268135c8ce16a1978b99c09fecfb",
+      "upstream_ref": "0365f57a079b1332f95cf26e31dd2d5332a8399f",
+      "url": "https://github.com/BagelHole/DevOps-Security-Agent-Skills/blob/0365f57a079b1332f95cf26e31dd2d5332a8399f/infrastructure/cloud-aws/aws-ec2/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "c0aff92be3c5268135c8ce16a1978b99c09fecfb",
+        "size": 12932
+      }
+    },
+    {
+      "source_id": "src_https-github-com-bagelhole-devops-security-agent-skills-devops-security-agent-skills_6949282e",
+      "path": "infrastructure/cloud-aws/aws-ecs-fargate/SKILL.md",
+      "declared_name": "aws-ecs-fargate",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:cbde0d6962f2239035243fbeec367fc23a41e7fe",
+      "upstream_ref": "0365f57a079b1332f95cf26e31dd2d5332a8399f",
+      "url": "https://github.com/BagelHole/DevOps-Security-Agent-Skills/blob/0365f57a079b1332f95cf26e31dd2d5332a8399f/infrastructure/cloud-aws/aws-ecs-fargate/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "cbde0d6962f2239035243fbeec367fc23a41e7fe",
+        "size": 11269
+      }
+    },
+    {
+      "source_id": "src_https-github-com-bagelhole-devops-security-agent-skills-devops-security-agent-skills_6949282e",
+      "path": "infrastructure/cloud-aws/aws-iam/SKILL.md",
+      "declared_name": "aws-iam",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:782c3a17614e4016e0d20ceed52deaec1e192f6a",
+      "upstream_ref": "0365f57a079b1332f95cf26e31dd2d5332a8399f",
+      "url": "https://github.com/BagelHole/DevOps-Security-Agent-Skills/blob/0365f57a079b1332f95cf26e31dd2d5332a8399f/infrastructure/cloud-aws/aws-iam/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "782c3a17614e4016e0d20ceed52deaec1e192f6a",
+        "size": 12974
+      }
+    },
+    {
+      "source_id": "src_https-github-com-bagelhole-devops-security-agent-skills-devops-security-agent-skills_6949282e",
+      "path": "infrastructure/cloud-aws/aws-lambda/SKILL.md",
+      "declared_name": "aws-lambda",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:db9c72f35afd64b7735dfe82fb7a07e912cb8329",
+      "upstream_ref": "0365f57a079b1332f95cf26e31dd2d5332a8399f",
+      "url": "https://github.com/BagelHole/DevOps-Security-Agent-Skills/blob/0365f57a079b1332f95cf26e31dd2d5332a8399f/infrastructure/cloud-aws/aws-lambda/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "db9c72f35afd64b7735dfe82fb7a07e912cb8329",
+        "size": 12475
+      }
+    },
+    {
+      "source_id": "src_https-github-com-bagelhole-devops-security-agent-skills-devops-security-agent-skills_6949282e",
+      "path": "infrastructure/cloud-aws/aws-rds/SKILL.md",
+      "declared_name": "aws-rds",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:00af826e56f190711b6d112bee5f80df7ab9a3ca",
+      "upstream_ref": "0365f57a079b1332f95cf26e31dd2d5332a8399f",
+      "url": "https://github.com/BagelHole/DevOps-Security-Agent-Skills/blob/0365f57a079b1332f95cf26e31dd2d5332a8399f/infrastructure/cloud-aws/aws-rds/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "00af826e56f190711b6d112bee5f80df7ab9a3ca",
+        "size": 12679
+      }
+    },
+    {
+      "source_id": "src_https-github-com-bagelhole-devops-security-agent-skills-devops-security-agent-skills_6949282e",
+      "path": "infrastructure/cloud-aws/aws-s3/SKILL.md",
+      "declared_name": "aws-s3",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:740750535ced65071961f8393e324ccbde2c5a62",
+      "upstream_ref": "0365f57a079b1332f95cf26e31dd2d5332a8399f",
+      "url": "https://github.com/BagelHole/DevOps-Security-Agent-Skills/blob/0365f57a079b1332f95cf26e31dd2d5332a8399f/infrastructure/cloud-aws/aws-s3/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "740750535ced65071961f8393e324ccbde2c5a62",
+        "size": 11877
+      }
+    },
+    {
+      "source_id": "src_https-github-com-bagelhole-devops-security-agent-skills-devops-security-agent-skills_6949282e",
+      "path": "infrastructure/cloud-aws/aws-vpc/SKILL.md",
+      "declared_name": "aws-vpc",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:04ff267c86965ea47342a4a0347c2637688ca022",
+      "upstream_ref": "0365f57a079b1332f95cf26e31dd2d5332a8399f",
+      "url": "https://github.com/BagelHole/DevOps-Security-Agent-Skills/blob/0365f57a079b1332f95cf26e31dd2d5332a8399f/infrastructure/cloud-aws/aws-vpc/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "04ff267c86965ea47342a4a0347c2637688ca022",
+        "size": 15329
+      }
+    },
+    {
+      "source_id": "src_https-github-com-bagelhole-devops-security-agent-skills-devops-security-agent-skills_6949282e",
+      "path": "infrastructure/cloud-aws/cloudformation/SKILL.md",
+      "declared_name": "cloudformation",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:e13bd41f9282bc306b19a12b769a909e9a64418e",
+      "upstream_ref": "0365f57a079b1332f95cf26e31dd2d5332a8399f",
+      "url": "https://github.com/BagelHole/DevOps-Security-Agent-Skills/blob/0365f57a079b1332f95cf26e31dd2d5332a8399f/infrastructure/cloud-aws/cloudformation/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "e13bd41f9282bc306b19a12b769a909e9a64418e",
+        "size": 13791
+      }
+    },
+    {
+      "source_id": "src_https-github-com-bagelhole-devops-security-agent-skills-devops-security-agent-skills_6949282e",
+      "path": "infrastructure/cloud-aws/terraform-aws/SKILL.md",
+      "declared_name": "terraform-aws",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:f45aa85f2270f4821e8ed7dec39746dc68831ee8",
+      "upstream_ref": "0365f57a079b1332f95cf26e31dd2d5332a8399f",
+      "url": "https://github.com/BagelHole/DevOps-Security-Agent-Skills/blob/0365f57a079b1332f95cf26e31dd2d5332a8399f/infrastructure/cloud-aws/terraform-aws/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "f45aa85f2270f4821e8ed7dec39746dc68831ee8",
+        "size": 1838
+      }
+    },
+    {
+      "source_id": "src_https-github-com-bagelhole-devops-security-agent-skills-devops-security-agent-skills_6949282e",
+      "path": "infrastructure/cloud-azure/arm-templates/SKILL.md",
+      "declared_name": "arm-templates",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:7541ca9febeb05e4cc85acd7ecf9b182b9db8ff7",
+      "upstream_ref": "0365f57a079b1332f95cf26e31dd2d5332a8399f",
+      "url": "https://github.com/BagelHole/DevOps-Security-Agent-Skills/blob/0365f57a079b1332f95cf26e31dd2d5332a8399f/infrastructure/cloud-azure/arm-templates/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "7541ca9febeb05e4cc85acd7ecf9b182b9db8ff7",
+        "size": 12034
+      }
+    },
+    {
+      "source_id": "src_https-github-com-bagelhole-devops-security-agent-skills-devops-security-agent-skills_6949282e",
+      "path": "infrastructure/cloud-azure/azure-aks/SKILL.md",
+      "declared_name": "azure-aks",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:6d0677626e580efd2a7f1e2598ca485cf1ceb695",
+      "upstream_ref": "0365f57a079b1332f95cf26e31dd2d5332a8399f",
+      "url": "https://github.com/BagelHole/DevOps-Security-Agent-Skills/blob/0365f57a079b1332f95cf26e31dd2d5332a8399f/infrastructure/cloud-azure/azure-aks/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "6d0677626e580efd2a7f1e2598ca485cf1ceb695",
+        "size": 11254
+      }
+    },
+    {
+      "source_id": "src_https-github-com-bagelhole-devops-security-agent-skills-devops-security-agent-skills_6949282e",
+      "path": "infrastructure/cloud-azure/azure-functions/SKILL.md",
+      "declared_name": "azure-functions",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:aefe66029342b8a5f0bc418e55c4367fadc24284",
+      "upstream_ref": "0365f57a079b1332f95cf26e31dd2d5332a8399f",
+      "url": "https://github.com/BagelHole/DevOps-Security-Agent-Skills/blob/0365f57a079b1332f95cf26e31dd2d5332a8399f/infrastructure/cloud-azure/azure-functions/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "aefe66029342b8a5f0bc418e55c4367fadc24284",
+        "size": 12175
+      }
+    },
+    {
+      "source_id": "src_https-github-com-bagelhole-devops-security-agent-skills-devops-security-agent-skills_6949282e",
+      "path": "infrastructure/cloud-azure/azure-networking/SKILL.md",
+      "declared_name": "azure-networking",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:e182aa67c4bd85a6e1dd628e6c9cd506455e3132",
+      "upstream_ref": "0365f57a079b1332f95cf26e31dd2d5332a8399f",
+      "url": "https://github.com/BagelHole/DevOps-Security-Agent-Skills/blob/0365f57a079b1332f95cf26e31dd2d5332a8399f/infrastructure/cloud-azure/azure-networking/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "e182aa67c4bd85a6e1dd628e6c9cd506455e3132",
+        "size": 16713
+      }
+    },
+    {
+      "source_id": "src_https-github-com-bagelhole-devops-security-agent-skills-devops-security-agent-skills_6949282e",
+      "path": "infrastructure/cloud-azure/azure-sql/SKILL.md",
+      "declared_name": "azure-sql",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:1fd7d2115b16b6b230ab0b77c6ee5cc4d592d2fd",
+      "upstream_ref": "0365f57a079b1332f95cf26e31dd2d5332a8399f",
+      "url": "https://github.com/BagelHole/DevOps-Security-Agent-Skills/blob/0365f57a079b1332f95cf26e31dd2d5332a8399f/infrastructure/cloud-azure/azure-sql/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "1fd7d2115b16b6b230ab0b77c6ee5cc4d592d2fd",
+        "size": 14221
+      }
+    },
+    {
+      "source_id": "src_https-github-com-bagelhole-devops-security-agent-skills-devops-security-agent-skills_6949282e",
+      "path": "infrastructure/cloud-azure/azure-vms/SKILL.md",
+      "declared_name": "azure-vms",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:e67a06bc7cc49aac3f215e6d783eb34b1b3a9e0e",
+      "upstream_ref": "0365f57a079b1332f95cf26e31dd2d5332a8399f",
+      "url": "https://github.com/BagelHole/DevOps-Security-Agent-Skills/blob/0365f57a079b1332f95cf26e31dd2d5332a8399f/infrastructure/cloud-azure/azure-vms/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "e67a06bc7cc49aac3f215e6d783eb34b1b3a9e0e",
+        "size": 13745
+      }
+    },
+    {
+      "source_id": "src_https-github-com-bagelhole-devops-security-agent-skills-devops-security-agent-skills_6949282e",
+      "path": "infrastructure/cloud-azure/terraform-azure/SKILL.md",
+      "declared_name": "terraform-azure",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:6dd856f5772a1d668025c21af471ac3bf9e7f3f1",
+      "upstream_ref": "0365f57a079b1332f95cf26e31dd2d5332a8399f",
+      "url": "https://github.com/BagelHole/DevOps-Security-Agent-Skills/blob/0365f57a079b1332f95cf26e31dd2d5332a8399f/infrastructure/cloud-azure/terraform-azure/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "6dd856f5772a1d668025c21af471ac3bf9e7f3f1",
+        "size": 16620
+      }
+    },
+    {
+      "source_id": "src_https-github-com-bagelhole-devops-security-agent-skills-devops-security-agent-skills_6949282e",
+      "path": "infrastructure/cloud-gcp/gcp-cloud-functions/SKILL.md",
+      "declared_name": "gcp-cloud-functions",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:655c3deeab8d96602c80268205a48f4cacc86471",
+      "upstream_ref": "0365f57a079b1332f95cf26e31dd2d5332a8399f",
+      "url": "https://github.com/BagelHole/DevOps-Security-Agent-Skills/blob/0365f57a079b1332f95cf26e31dd2d5332a8399f/infrastructure/cloud-gcp/gcp-cloud-functions/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "655c3deeab8d96602c80268205a48f4cacc86471",
+        "size": 8653
+      }
+    },
+    {
+      "source_id": "src_https-github-com-bagelhole-devops-security-agent-skills-devops-security-agent-skills_6949282e",
+      "path": "infrastructure/cloud-gcp/gcp-cloud-sql/SKILL.md",
+      "declared_name": "gcp-cloud-sql",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:9511cde4c1f0b6f3ffabc27cc5e7b075b49f2fef",
+      "upstream_ref": "0365f57a079b1332f95cf26e31dd2d5332a8399f",
+      "url": "https://github.com/BagelHole/DevOps-Security-Agent-Skills/blob/0365f57a079b1332f95cf26e31dd2d5332a8399f/infrastructure/cloud-gcp/gcp-cloud-sql/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "9511cde4c1f0b6f3ffabc27cc5e7b075b49f2fef",
+        "size": 9029
+      }
+    },
+    {
+      "source_id": "src_https-github-com-bagelhole-devops-security-agent-skills-devops-security-agent-skills_6949282e",
+      "path": "infrastructure/cloud-gcp/gcp-compute/SKILL.md",
+      "declared_name": "gcp-compute",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:57d50c5b5dc0a38f32472941d49bb5e7d0e875f2",
+      "upstream_ref": "0365f57a079b1332f95cf26e31dd2d5332a8399f",
+      "url": "https://github.com/BagelHole/DevOps-Security-Agent-Skills/blob/0365f57a079b1332f95cf26e31dd2d5332a8399f/infrastructure/cloud-gcp/gcp-compute/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "57d50c5b5dc0a38f32472941d49bb5e7d0e875f2",
+        "size": 9662
+      }
+    },
+    {
+      "source_id": "src_https-github-com-bagelhole-devops-security-agent-skills-devops-security-agent-skills_6949282e",
+      "path": "infrastructure/cloud-gcp/gcp-gke/SKILL.md",
+      "declared_name": "gcp-gke",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:c8674948ef96a623767609649ed6263bb964839d",
+      "upstream_ref": "0365f57a079b1332f95cf26e31dd2d5332a8399f",
+      "url": "https://github.com/BagelHole/DevOps-Security-Agent-Skills/blob/0365f57a079b1332f95cf26e31dd2d5332a8399f/infrastructure/cloud-gcp/gcp-gke/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "c8674948ef96a623767609649ed6263bb964839d",
+        "size": 9395
+      }
+    },
+    {
+      "source_id": "src_https-github-com-bagelhole-devops-security-agent-skills-devops-security-agent-skills_6949282e",
+      "path": "infrastructure/cloud-gcp/gcp-networking/SKILL.md",
+      "declared_name": "gcp-networking",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:6533257d4d1e274b7cf64eb1ad60b280c02cdf96",
+      "upstream_ref": "0365f57a079b1332f95cf26e31dd2d5332a8399f",
+      "url": "https://github.com/BagelHole/DevOps-Security-Agent-Skills/blob/0365f57a079b1332f95cf26e31dd2d5332a8399f/infrastructure/cloud-gcp/gcp-networking/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "6533257d4d1e274b7cf64eb1ad60b280c02cdf96",
+        "size": 9654
+      }
+    },
+    {
+      "source_id": "src_https-github-com-bagelhole-devops-security-agent-skills-devops-security-agent-skills_6949282e",
+      "path": "infrastructure/cloud-gcp/terraform-gcp/SKILL.md",
+      "declared_name": "terraform-gcp",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:4d53b5cc49288f991b2d8aa03c59e399d4a0cf62",
+      "upstream_ref": "0365f57a079b1332f95cf26e31dd2d5332a8399f",
+      "url": "https://github.com/BagelHole/DevOps-Security-Agent-Skills/blob/0365f57a079b1332f95cf26e31dd2d5332a8399f/infrastructure/cloud-gcp/terraform-gcp/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "4d53b5cc49288f991b2d8aa03c59e399d4a0cf62",
+        "size": 11639
+      }
+    },
+    {
+      "source_id": "src_https-github-com-bagelhole-devops-security-agent-skills-devops-security-agent-skills_6949282e",
+      "path": "infrastructure/cloudflare/cloudflare-pages/SKILL.md",
+      "declared_name": "cloudflare-pages",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:e31030580f9e7dad3e1266a66259d4904998d1c5",
+      "upstream_ref": "0365f57a079b1332f95cf26e31dd2d5332a8399f",
+      "url": "https://github.com/BagelHole/DevOps-Security-Agent-Skills/blob/0365f57a079b1332f95cf26e31dd2d5332a8399f/infrastructure/cloudflare/cloudflare-pages/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "e31030580f9e7dad3e1266a66259d4904998d1c5",
+        "size": 8935
+      }
+    },
+    {
+      "source_id": "src_https-github-com-bagelhole-devops-security-agent-skills-devops-security-agent-skills_6949282e",
+      "path": "infrastructure/cloudflare/cloudflare-r2/SKILL.md",
+      "declared_name": "cloudflare-r2",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:143ee3889c17836178fb9df0fa766626103e18d2",
+      "upstream_ref": "0365f57a079b1332f95cf26e31dd2d5332a8399f",
+      "url": "https://github.com/BagelHole/DevOps-Security-Agent-Skills/blob/0365f57a079b1332f95cf26e31dd2d5332a8399f/infrastructure/cloudflare/cloudflare-r2/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "143ee3889c17836178fb9df0fa766626103e18d2",
+        "size": 9517
+      }
+    },
+    {
+      "source_id": "src_https-github-com-bagelhole-devops-security-agent-skills-devops-security-agent-skills_6949282e",
+      "path": "infrastructure/cloudflare/cloudflare-workers/SKILL.md",
+      "declared_name": "cloudflare-workers",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:f83eedf3dfeb569148a7e48f397e8161357929fa",
+      "upstream_ref": "0365f57a079b1332f95cf26e31dd2d5332a8399f",
+      "url": "https://github.com/BagelHole/DevOps-Security-Agent-Skills/blob/0365f57a079b1332f95cf26e31dd2d5332a8399f/infrastructure/cloudflare/cloudflare-workers/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "f83eedf3dfeb569148a7e48f397e8161357929fa",
+        "size": 10118
+      }
+    },
+    {
+      "source_id": "src_https-github-com-bagelhole-devops-security-agent-skills-devops-security-agent-skills_6949282e",
+      "path": "infrastructure/cloudflare/cloudflare-zero-trust/SKILL.md",
+      "declared_name": "cloudflare-zero-trust",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:77ff20d27b931517541bafeb82d9ae2ca53c0b83",
+      "upstream_ref": "0365f57a079b1332f95cf26e31dd2d5332a8399f",
+      "url": "https://github.com/BagelHole/DevOps-Security-Agent-Skills/blob/0365f57a079b1332f95cf26e31dd2d5332a8399f/infrastructure/cloudflare/cloudflare-zero-trust/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "77ff20d27b931517541bafeb82d9ae2ca53c0b83",
+        "size": 10617
+      }
+    },
+    {
+      "source_id": "src_https-github-com-bagelhole-devops-security-agent-skills-devops-security-agent-skills_6949282e",
+      "path": "infrastructure/databases/database-backups/SKILL.md",
+      "declared_name": "database-backups",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:a512aa53fc2e8703c9bd3b551a8a548d8aa08b21",
+      "upstream_ref": "0365f57a079b1332f95cf26e31dd2d5332a8399f",
+      "url": "https://github.com/BagelHole/DevOps-Security-Agent-Skills/blob/0365f57a079b1332f95cf26e31dd2d5332a8399f/infrastructure/databases/database-backups/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "a512aa53fc2e8703c9bd3b551a8a548d8aa08b21",
+        "size": 11653
+      }
+    },
+    {
+      "source_id": "src_https-github-com-bagelhole-devops-security-agent-skills-devops-security-agent-skills_6949282e",
+      "path": "infrastructure/databases/mongodb/SKILL.md",
+      "declared_name": "mongodb",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:a856fc89fddec8df0d45134e96ac10ed02f3a49d",
+      "upstream_ref": "0365f57a079b1332f95cf26e31dd2d5332a8399f",
+      "url": "https://github.com/BagelHole/DevOps-Security-Agent-Skills/blob/0365f57a079b1332f95cf26e31dd2d5332a8399f/infrastructure/databases/mongodb/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "a856fc89fddec8df0d45134e96ac10ed02f3a49d",
+        "size": 10089
+      }
+    },
+    {
+      "source_id": "src_https-github-com-bagelhole-devops-security-agent-skills-devops-security-agent-skills_6949282e",
+      "path": "infrastructure/databases/mysql/SKILL.md",
+      "declared_name": "mysql",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:520bc3cf94240918e66d9820edc2bca6cfb94c12",
+      "upstream_ref": "0365f57a079b1332f95cf26e31dd2d5332a8399f",
+      "url": "https://github.com/BagelHole/DevOps-Security-Agent-Skills/blob/0365f57a079b1332f95cf26e31dd2d5332a8399f/infrastructure/databases/mysql/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "520bc3cf94240918e66d9820edc2bca6cfb94c12",
+        "size": 9913
+      }
+    },
+    {
+      "source_id": "src_https-github-com-bagelhole-devops-security-agent-skills-devops-security-agent-skills_6949282e",
+      "path": "infrastructure/databases/planetscale/SKILL.md",
+      "declared_name": "planetscale",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:a3ed80f8c962637eb117bc45d472adce1963dd52",
+      "upstream_ref": "0365f57a079b1332f95cf26e31dd2d5332a8399f",
+      "url": "https://github.com/BagelHole/DevOps-Security-Agent-Skills/blob/0365f57a079b1332f95cf26e31dd2d5332a8399f/infrastructure/databases/planetscale/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "a3ed80f8c962637eb117bc45d472adce1963dd52",
+        "size": 8160
+      }
+    },
+    {
+      "source_id": "src_https-github-com-bagelhole-devops-security-agent-skills-devops-security-agent-skills_6949282e",
+      "path": "infrastructure/databases/postgresql/SKILL.md",
+      "declared_name": "postgresql",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:1913df7fe4c68a5f41191125d0cbb6856bf6e2d3",
+      "upstream_ref": "0365f57a079b1332f95cf26e31dd2d5332a8399f",
+      "url": "https://github.com/BagelHole/DevOps-Security-Agent-Skills/blob/0365f57a079b1332f95cf26e31dd2d5332a8399f/infrastructure/databases/postgresql/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "1913df7fe4c68a5f41191125d0cbb6856bf6e2d3",
+        "size": 9178
+      }
+    },
+    {
+      "source_id": "src_https-github-com-bagelhole-devops-security-agent-skills-devops-security-agent-skills_6949282e",
+      "path": "infrastructure/databases/redis/SKILL.md",
+      "declared_name": "redis",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:8297ce7806b8f8c8b91c005e54c1782c595ee9a4",
+      "upstream_ref": "0365f57a079b1332f95cf26e31dd2d5332a8399f",
+      "url": "https://github.com/BagelHole/DevOps-Security-Agent-Skills/blob/0365f57a079b1332f95cf26e31dd2d5332a8399f/infrastructure/databases/redis/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "8297ce7806b8f8c8b91c005e54c1782c595ee9a4",
+        "size": 9745
+      }
+    },
+    {
+      "source_id": "src_https-github-com-bagelhole-devops-security-agent-skills-devops-security-agent-skills_6949282e",
+      "path": "infrastructure/databases/vector-database-ops/SKILL.md",
+      "declared_name": "vector-database-ops",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:f38d81fd7a43025e040fd62813986bc54c5e5852",
+      "upstream_ref": "0365f57a079b1332f95cf26e31dd2d5332a8399f",
+      "url": "https://github.com/BagelHole/DevOps-Security-Agent-Skills/blob/0365f57a079b1332f95cf26e31dd2d5332a8399f/infrastructure/databases/vector-database-ops/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "f38d81fd7a43025e040fd62813986bc54c5e5852",
+        "size": 8509
+      }
+    },
+    {
+      "source_id": "src_https-github-com-bagelhole-devops-security-agent-skills-devops-security-agent-skills_6949282e",
+      "path": "infrastructure/iac/opentofu-migration/SKILL.md",
+      "declared_name": "opentofu-migration",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:83efed08ea846b66ebaf5927a902a45fcd97dcea",
+      "upstream_ref": "0365f57a079b1332f95cf26e31dd2d5332a8399f",
+      "url": "https://github.com/BagelHole/DevOps-Security-Agent-Skills/blob/0365f57a079b1332f95cf26e31dd2d5332a8399f/infrastructure/iac/opentofu-migration/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "83efed08ea846b66ebaf5927a902a45fcd97dcea",
+        "size": 7450
+      }
+    },
+    {
+      "source_id": "src_https-github-com-bagelhole-devops-security-agent-skills-devops-security-agent-skills_6949282e",
+      "path": "infrastructure/it/identity-access-management/SKILL.md",
+      "declared_name": "identity-access-management",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:290e5c6a38379147c3ec966900ae706f9141b5dd",
+      "upstream_ref": "0365f57a079b1332f95cf26e31dd2d5332a8399f",
+      "url": "https://github.com/BagelHole/DevOps-Security-Agent-Skills/blob/0365f57a079b1332f95cf26e31dd2d5332a8399f/infrastructure/it/identity-access-management/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "290e5c6a38379147c3ec966900ae706f9141b5dd",
+        "size": 28477
+      }
+    },
+    {
+      "source_id": "src_https-github-com-bagelhole-devops-security-agent-skills-devops-security-agent-skills_6949282e",
+      "path": "infrastructure/it/mdm-device-management/SKILL.md",
+      "declared_name": "mdm-device-management",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:c9d103491ae5dac1b187498c8bd8a2414f598c58",
+      "upstream_ref": "0365f57a079b1332f95cf26e31dd2d5332a8399f",
+      "url": "https://github.com/BagelHole/DevOps-Security-Agent-Skills/blob/0365f57a079b1332f95cf26e31dd2d5332a8399f/infrastructure/it/mdm-device-management/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "c9d103491ae5dac1b187498c8bd8a2414f598c58",
+        "size": 22894
+      }
+    },
+    {
+      "source_id": "src_https-github-com-bagelhole-devops-security-agent-skills-devops-security-agent-skills_6949282e",
+      "path": "infrastructure/it/saas-security-posture/SKILL.md",
+      "declared_name": "saas-security-posture",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:1d8d392b46ffb90bca095ae8843a2a721b3ded0f",
+      "upstream_ref": "0365f57a079b1332f95cf26e31dd2d5332a8399f",
+      "url": "https://github.com/BagelHole/DevOps-Security-Agent-Skills/blob/0365f57a079b1332f95cf26e31dd2d5332a8399f/infrastructure/it/saas-security-posture/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "1d8d392b46ffb90bca095ae8843a2a721b3ded0f",
+        "size": 13840
+      }
+    },
+    {
+      "source_id": "src_https-github-com-bagelhole-devops-security-agent-skills-devops-security-agent-skills_6949282e",
+      "path": "infrastructure/it/startup-it-troubleshooting/SKILL.md",
+      "declared_name": "startup-it-troubleshooting",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:750df3fcfd9db2edf648bd50b332961dc0db2dfc",
+      "upstream_ref": "0365f57a079b1332f95cf26e31dd2d5332a8399f",
+      "url": "https://github.com/BagelHole/DevOps-Security-Agent-Skills/blob/0365f57a079b1332f95cf26e31dd2d5332a8399f/infrastructure/it/startup-it-troubleshooting/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "750df3fcfd9db2edf648bd50b332961dc0db2dfc",
+        "size": 13673
+      }
+    },
+    {
+      "source_id": "src_https-github-com-bagelhole-devops-security-agent-skills-devops-security-agent-skills_6949282e",
+      "path": "infrastructure/local-ai/gpu-kubernetes-operations/SKILL.md",
+      "declared_name": "gpu-kubernetes-operations",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:c0e50e329af91c0bc372792ff1cbcc7f8f6f1aa8",
+      "upstream_ref": "0365f57a079b1332f95cf26e31dd2d5332a8399f",
+      "url": "https://github.com/BagelHole/DevOps-Security-Agent-Skills/blob/0365f57a079b1332f95cf26e31dd2d5332a8399f/infrastructure/local-ai/gpu-kubernetes-operations/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "c0e50e329af91c0bc372792ff1cbcc7f8f6f1aa8",
+        "size": 12202
+      }
+    },
+    {
+      "source_id": "src_https-github-com-bagelhole-devops-security-agent-skills-devops-security-agent-skills_6949282e",
+      "path": "infrastructure/local-ai/llm-fine-tuning/SKILL.md",
+      "declared_name": "llm-fine-tuning",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:9f53ae598ee7da569f49066cadde26db969a7aba",
+      "upstream_ref": "0365f57a079b1332f95cf26e31dd2d5332a8399f",
+      "url": "https://github.com/BagelHole/DevOps-Security-Agent-Skills/blob/0365f57a079b1332f95cf26e31dd2d5332a8399f/infrastructure/local-ai/llm-fine-tuning/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "9f53ae598ee7da569f49066cadde26db969a7aba",
+        "size": 8810
+      }
+    },
+    {
+      "source_id": "src_https-github-com-bagelhole-devops-security-agent-skills-devops-security-agent-skills_6949282e",
+      "path": "infrastructure/local-ai/llm-inference-scaling/SKILL.md",
+      "declared_name": "llm-inference-scaling",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:08387c964ee1486343f036eb7cd259fd33c694b5",
+      "upstream_ref": "0365f57a079b1332f95cf26e31dd2d5332a8399f",
+      "url": "https://github.com/BagelHole/DevOps-Security-Agent-Skills/blob/0365f57a079b1332f95cf26e31dd2d5332a8399f/infrastructure/local-ai/llm-inference-scaling/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "08387c964ee1486343f036eb7cd259fd33c694b5",
+        "size": 7912
+      }
+    },
+    {
+      "source_id": "src_https-github-com-bagelhole-devops-security-agent-skills-devops-security-agent-skills_6949282e",
+      "path": "infrastructure/local-ai/mac-mini-llm-lab/SKILL.md",
+      "declared_name": "mac-mini-llm-lab",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:254943d1f844ce1f44af3340d499ee07aebed2b8",
+      "upstream_ref": "0365f57a079b1332f95cf26e31dd2d5332a8399f",
+      "url": "https://github.com/BagelHole/DevOps-Security-Agent-Skills/blob/0365f57a079b1332f95cf26e31dd2d5332a8399f/infrastructure/local-ai/mac-mini-llm-lab/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "254943d1f844ce1f44af3340d499ee07aebed2b8",
+        "size": 8351
+      }
+    },
+    {
+      "source_id": "src_https-github-com-bagelhole-devops-security-agent-skills-devops-security-agent-skills_6949282e",
+      "path": "infrastructure/local-ai/multi-tenant-llm-hosting/SKILL.md",
+      "declared_name": "multi-tenant-llm-hosting",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:5c47b5b3683b3cf693f55adbe9e38dbf8a203dee",
+      "upstream_ref": "0365f57a079b1332f95cf26e31dd2d5332a8399f",
+      "url": "https://github.com/BagelHole/DevOps-Security-Agent-Skills/blob/0365f57a079b1332f95cf26e31dd2d5332a8399f/infrastructure/local-ai/multi-tenant-llm-hosting/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "5c47b5b3683b3cf693f55adbe9e38dbf8a203dee",
+        "size": 17212
+      }
+    },
+    {
+      "source_id": "src_https-github-com-bagelhole-devops-security-agent-skills-devops-security-agent-skills_6949282e",
+      "path": "infrastructure/local-ai/ollama-stack/SKILL.md",
+      "declared_name": "ollama-stack",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:84be505acbe144e77ccd8bad18879f9d07eace6d",
+      "upstream_ref": "0365f57a079b1332f95cf26e31dd2d5332a8399f",
+      "url": "https://github.com/BagelHole/DevOps-Security-Agent-Skills/blob/0365f57a079b1332f95cf26e31dd2d5332a8399f/infrastructure/local-ai/ollama-stack/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "84be505acbe144e77ccd8bad18879f9d07eace6d",
+        "size": 9240
+      }
+    },
+    {
+      "source_id": "src_https-github-com-bagelhole-devops-security-agent-skills-devops-security-agent-skills_6949282e",
+      "path": "infrastructure/local-ai/openclaw-local-mac-mini/SKILL.md",
+      "declared_name": "openclaw-local-mac-mini",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:eae4290be1de4c16a789f98c5c8f68fc1db3f406",
+      "upstream_ref": "0365f57a079b1332f95cf26e31dd2d5332a8399f",
+      "url": "https://github.com/BagelHole/DevOps-Security-Agent-Skills/blob/0365f57a079b1332f95cf26e31dd2d5332a8399f/infrastructure/local-ai/openclaw-local-mac-mini/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "eae4290be1de4c16a789f98c5c8f68fc1db3f406",
+        "size": 16647
+      }
+    },
+    {
+      "source_id": "src_https-github-com-bagelhole-devops-security-agent-skills-devops-security-agent-skills_6949282e",
+      "path": "infrastructure/local-ai/openclaw-security-hardening/SKILL.md",
+      "declared_name": "openclaw-security-hardening",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:03b27fc3a890241060ac5e644e42e66068b3dbf5",
+      "upstream_ref": "0365f57a079b1332f95cf26e31dd2d5332a8399f",
+      "url": "https://github.com/BagelHole/DevOps-Security-Agent-Skills/blob/0365f57a079b1332f95cf26e31dd2d5332a8399f/infrastructure/local-ai/openclaw-security-hardening/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "03b27fc3a890241060ac5e644e42e66068b3dbf5",
+        "size": 4015
+      }
+    },
+    {
+      "source_id": "src_https-github-com-bagelhole-devops-security-agent-skills-devops-security-agent-skills_6949282e",
+      "path": "infrastructure/local-ai/rag-infrastructure/SKILL.md",
+      "declared_name": "rag-infrastructure",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:eb6341fc864d52ef0add8aba863d8a5489d34a22",
+      "upstream_ref": "0365f57a079b1332f95cf26e31dd2d5332a8399f",
+      "url": "https://github.com/BagelHole/DevOps-Security-Agent-Skills/blob/0365f57a079b1332f95cf26e31dd2d5332a8399f/infrastructure/local-ai/rag-infrastructure/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "eb6341fc864d52ef0add8aba863d8a5489d34a22",
+        "size": 8251
+      }
+    },
+    {
+      "source_id": "src_https-github-com-bagelhole-devops-security-agent-skills-devops-security-agent-skills_6949282e",
+      "path": "infrastructure/local-ai/vllm-server/SKILL.md",
+      "declared_name": "vllm-server",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:5c195bb49cfa4ceb76f5e4ddfd9ad222528a42bf",
+      "upstream_ref": "0365f57a079b1332f95cf26e31dd2d5332a8399f",
+      "url": "https://github.com/BagelHole/DevOps-Security-Agent-Skills/blob/0365f57a079b1332f95cf26e31dd2d5332a8399f/infrastructure/local-ai/vllm-server/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "5c195bb49cfa4ceb76f5e4ddfd9ad222528a42bf",
+        "size": 6223
+      }
+    },
+    {
+      "source_id": "src_https-github-com-bagelhole-devops-security-agent-skills-devops-security-agent-skills_6949282e",
+      "path": "infrastructure/networking/ai-inference-service-mesh/SKILL.md",
+      "declared_name": "ai-inference-service-mesh",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:e6da1e1c58c0efdcbefa5b80790bbdd331de084d",
+      "upstream_ref": "0365f57a079b1332f95cf26e31dd2d5332a8399f",
+      "url": "https://github.com/BagelHole/DevOps-Security-Agent-Skills/blob/0365f57a079b1332f95cf26e31dd2d5332a8399f/infrastructure/networking/ai-inference-service-mesh/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "e6da1e1c58c0efdcbefa5b80790bbdd331de084d",
+        "size": 9887
+      }
+    },
+    {
+      "source_id": "src_https-github-com-bagelhole-devops-security-agent-skills-devops-security-agent-skills_6949282e",
+      "path": "infrastructure/networking/cdn-setup/SKILL.md",
+      "declared_name": "cdn-setup",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:3939c59d85a6633257e6496f25e3e4e03ccde54e",
+      "upstream_ref": "0365f57a079b1332f95cf26e31dd2d5332a8399f",
+      "url": "https://github.com/BagelHole/DevOps-Security-Agent-Skills/blob/0365f57a079b1332f95cf26e31dd2d5332a8399f/infrastructure/networking/cdn-setup/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "3939c59d85a6633257e6496f25e3e4e03ccde54e",
+        "size": 10953
+      }
+    },
+    {
+      "source_id": "src_https-github-com-bagelhole-devops-security-agent-skills-devops-security-agent-skills_6949282e",
+      "path": "infrastructure/networking/dns-management/SKILL.md",
+      "declared_name": "dns-management",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:037c7ef24deeb6101090bab8d944251886b872a3",
+      "upstream_ref": "0365f57a079b1332f95cf26e31dd2d5332a8399f",
+      "url": "https://github.com/BagelHole/DevOps-Security-Agent-Skills/blob/0365f57a079b1332f95cf26e31dd2d5332a8399f/infrastructure/networking/dns-management/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "037c7ef24deeb6101090bab8d944251886b872a3",
+        "size": 10249
+      }
+    },
+    {
+      "source_id": "src_https-github-com-bagelhole-devops-security-agent-skills-devops-security-agent-skills_6949282e",
+      "path": "infrastructure/networking/llm-gateway/SKILL.md",
+      "declared_name": "llm-gateway",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:d74340257df031d99fa112883b3e4d9097775e99",
+      "upstream_ref": "0365f57a079b1332f95cf26e31dd2d5332a8399f",
+      "url": "https://github.com/BagelHole/DevOps-Security-Agent-Skills/blob/0365f57a079b1332f95cf26e31dd2d5332a8399f/infrastructure/networking/llm-gateway/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "d74340257df031d99fa112883b3e4d9097775e99",
+        "size": 7957
+      }
+    },
+    {
+      "source_id": "src_https-github-com-bagelhole-devops-security-agent-skills-devops-security-agent-skills_6949282e",
+      "path": "infrastructure/networking/load-balancing/SKILL.md",
+      "declared_name": "load-balancing",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:0266c2a993d6cbedcbcafc229674b8bff7da3d16",
+      "upstream_ref": "0365f57a079b1332f95cf26e31dd2d5332a8399f",
+      "url": "https://github.com/BagelHole/DevOps-Security-Agent-Skills/blob/0365f57a079b1332f95cf26e31dd2d5332a8399f/infrastructure/networking/load-balancing/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "0266c2a993d6cbedcbcafc229674b8bff7da3d16",
+        "size": 11131
+      }
+    },
+    {
+      "source_id": "src_https-github-com-bagelhole-devops-security-agent-skills-devops-security-agent-skills_6949282e",
+      "path": "infrastructure/networking/reverse-proxy/SKILL.md",
+      "declared_name": "reverse-proxy",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:7e5100b08810a118f653e3009301baeec7076a63",
+      "upstream_ref": "0365f57a079b1332f95cf26e31dd2d5332a8399f",
+      "url": "https://github.com/BagelHole/DevOps-Security-Agent-Skills/blob/0365f57a079b1332f95cf26e31dd2d5332a8399f/infrastructure/networking/reverse-proxy/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "7e5100b08810a118f653e3009301baeec7076a63",
+        "size": 10607
+      }
+    },
+    {
+      "source_id": "src_https-github-com-bagelhole-devops-security-agent-skills-devops-security-agent-skills_6949282e",
+      "path": "infrastructure/networking/service-mesh/SKILL.md",
+      "declared_name": "service-mesh",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:5f53f7e0dec8ec5d6681668d94ca48197467d0db",
+      "upstream_ref": "0365f57a079b1332f95cf26e31dd2d5332a8399f",
+      "url": "https://github.com/BagelHole/DevOps-Security-Agent-Skills/blob/0365f57a079b1332f95cf26e31dd2d5332a8399f/infrastructure/networking/service-mesh/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "5f53f7e0dec8ec5d6681668d94ca48197467d0db",
+        "size": 9879
+      }
+    },
+    {
+      "source_id": "src_https-github-com-bagelhole-devops-security-agent-skills-devops-security-agent-skills_6949282e",
+      "path": "infrastructure/platforms/convex-backend/SKILL.md",
+      "declared_name": "convex-backend",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:4ed396e6fae5ab50aae3b31286ccf281f20c85e7",
+      "upstream_ref": "0365f57a079b1332f95cf26e31dd2d5332a8399f",
+      "url": "https://github.com/BagelHole/DevOps-Security-Agent-Skills/blob/0365f57a079b1332f95cf26e31dd2d5332a8399f/infrastructure/platforms/convex-backend/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "4ed396e6fae5ab50aae3b31286ccf281f20c85e7",
+        "size": 8211
+      }
+    },
+    {
+      "source_id": "src_https-github-com-bagelhole-devops-security-agent-skills-devops-security-agent-skills_6949282e",
+      "path": "infrastructure/platforms/firebase-app-platform/SKILL.md",
+      "declared_name": "firebase-app-platform",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:fd22669922f6b3eed6f80e47930f809ad43386a6",
+      "upstream_ref": "0365f57a079b1332f95cf26e31dd2d5332a8399f",
+      "url": "https://github.com/BagelHole/DevOps-Security-Agent-Skills/blob/0365f57a079b1332f95cf26e31dd2d5332a8399f/infrastructure/platforms/firebase-app-platform/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "fd22669922f6b3eed6f80e47930f809ad43386a6",
+        "size": 9793
+      }
+    },
+    {
+      "source_id": "src_https-github-com-bagelhole-devops-security-agent-skills-devops-security-agent-skills_6949282e",
+      "path": "infrastructure/platforms/vercel-deployments/SKILL.md",
+      "declared_name": "vercel-deployments",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:02d043d23e5f77933495e229c97365f01ceac619",
+      "upstream_ref": "0365f57a079b1332f95cf26e31dd2d5332a8399f",
+      "url": "https://github.com/BagelHole/DevOps-Security-Agent-Skills/blob/0365f57a079b1332f95cf26e31dd2d5332a8399f/infrastructure/platforms/vercel-deployments/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "02d043d23e5f77933495e229c97365f01ceac619",
+        "size": 7199
+      }
+    },
+    {
+      "source_id": "src_https-github-com-bagelhole-devops-security-agent-skills-devops-security-agent-skills_6949282e",
+      "path": "infrastructure/servers/gpu-server-management/SKILL.md",
+      "declared_name": "gpu-server-management",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:c1a27ac72390e23d8467c96cc584d4f0539b8b15",
+      "upstream_ref": "0365f57a079b1332f95cf26e31dd2d5332a8399f",
+      "url": "https://github.com/BagelHole/DevOps-Security-Agent-Skills/blob/0365f57a079b1332f95cf26e31dd2d5332a8399f/infrastructure/servers/gpu-server-management/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "c1a27ac72390e23d8467c96cc584d4f0539b8b15",
+        "size": 7522
+      }
+    },
+    {
+      "source_id": "src_https-github-com-bagelhole-devops-security-agent-skills-devops-security-agent-skills_6949282e",
+      "path": "infrastructure/servers/linux-administration/SKILL.md",
+      "declared_name": "linux-administration",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:645d771d89a27e54440236382f4217b3828139a8",
+      "upstream_ref": "0365f57a079b1332f95cf26e31dd2d5332a8399f",
+      "url": "https://github.com/BagelHole/DevOps-Security-Agent-Skills/blob/0365f57a079b1332f95cf26e31dd2d5332a8399f/infrastructure/servers/linux-administration/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "645d771d89a27e54440236382f4217b3828139a8",
+        "size": 8755
+      }
+    },
+    {
+      "source_id": "src_https-github-com-bagelhole-devops-security-agent-skills-devops-security-agent-skills_6949282e",
+      "path": "infrastructure/servers/performance-tuning/SKILL.md",
+      "declared_name": "performance-tuning",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:26795a54aed0f273fd90d35dca02284088344ae8",
+      "upstream_ref": "0365f57a079b1332f95cf26e31dd2d5332a8399f",
+      "url": "https://github.com/BagelHole/DevOps-Security-Agent-Skills/blob/0365f57a079b1332f95cf26e31dd2d5332a8399f/infrastructure/servers/performance-tuning/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "26795a54aed0f273fd90d35dca02284088344ae8",
+        "size": 12157
+      }
+    },
+    {
+      "source_id": "src_https-github-com-bagelhole-devops-security-agent-skills-devops-security-agent-skills_6949282e",
+      "path": "infrastructure/servers/ssh-configuration/SKILL.md",
+      "declared_name": "ssh-configuration",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:eb106b08c18c969feabf7bfd2534f24957d42c50",
+      "upstream_ref": "0365f57a079b1332f95cf26e31dd2d5332a8399f",
+      "url": "https://github.com/BagelHole/DevOps-Security-Agent-Skills/blob/0365f57a079b1332f95cf26e31dd2d5332a8399f/infrastructure/servers/ssh-configuration/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "eb106b08c18c969feabf7bfd2534f24957d42c50",
+        "size": 9292
+      }
+    },
+    {
+      "source_id": "src_https-github-com-bagelhole-devops-security-agent-skills-devops-security-agent-skills_6949282e",
+      "path": "infrastructure/servers/systemd-services/SKILL.md",
+      "declared_name": "systemd-services",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:2eb7afd6c2343d5bf4aacd83a74015ad68ef85f1",
+      "upstream_ref": "0365f57a079b1332f95cf26e31dd2d5332a8399f",
+      "url": "https://github.com/BagelHole/DevOps-Security-Agent-Skills/blob/0365f57a079b1332f95cf26e31dd2d5332a8399f/infrastructure/servers/systemd-services/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "2eb7afd6c2343d5bf4aacd83a74015ad68ef85f1",
+        "size": 9157
+      }
+    },
+    {
+      "source_id": "src_https-github-com-bagelhole-devops-security-agent-skills-devops-security-agent-skills_6949282e",
+      "path": "infrastructure/servers/user-management/SKILL.md",
+      "declared_name": "user-management",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:fac8f632dd299662eb5aa21829c5886055970271",
+      "upstream_ref": "0365f57a079b1332f95cf26e31dd2d5332a8399f",
+      "url": "https://github.com/BagelHole/DevOps-Security-Agent-Skills/blob/0365f57a079b1332f95cf26e31dd2d5332a8399f/infrastructure/servers/user-management/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "fac8f632dd299662eb5aa21829c5886055970271",
+        "size": 10445
+      }
+    },
+    {
+      "source_id": "src_https-github-com-bagelhole-devops-security-agent-skills-devops-security-agent-skills_6949282e",
+      "path": "infrastructure/servers/windows-server/SKILL.md",
+      "declared_name": "windows-server",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:1e3264d4e2e3c53fd03a38539a2186f75bcfdb9d",
+      "upstream_ref": "0365f57a079b1332f95cf26e31dd2d5332a8399f",
+      "url": "https://github.com/BagelHole/DevOps-Security-Agent-Skills/blob/0365f57a079b1332f95cf26e31dd2d5332a8399f/infrastructure/servers/windows-server/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "1e3264d4e2e3c53fd03a38539a2186f75bcfdb9d",
+        "size": 10933
+      }
+    },
+    {
+      "source_id": "src_https-github-com-bagelhole-devops-security-agent-skills-devops-security-agent-skills_6949282e",
+      "path": "infrastructure/storage/backup-recovery/SKILL.md",
+      "declared_name": "backup-recovery",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:e5705300031a20ac6c65ede7986fee53e800ffda",
+      "upstream_ref": "0365f57a079b1332f95cf26e31dd2d5332a8399f",
+      "url": "https://github.com/BagelHole/DevOps-Security-Agent-Skills/blob/0365f57a079b1332f95cf26e31dd2d5332a8399f/infrastructure/storage/backup-recovery/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "e5705300031a20ac6c65ede7986fee53e800ffda",
+        "size": 11246
+      }
+    },
+    {
+      "source_id": "src_https-github-com-bagelhole-devops-security-agent-skills-devops-security-agent-skills_6949282e",
+      "path": "infrastructure/storage/block-storage/SKILL.md",
+      "declared_name": "block-storage",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:24c8c59d0d36e939e9d51bf3b0f5954d24146aa5",
+      "upstream_ref": "0365f57a079b1332f95cf26e31dd2d5332a8399f",
+      "url": "https://github.com/BagelHole/DevOps-Security-Agent-Skills/blob/0365f57a079b1332f95cf26e31dd2d5332a8399f/infrastructure/storage/block-storage/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "24c8c59d0d36e939e9d51bf3b0f5954d24146aa5",
+        "size": 10270
+      }
+    },
+    {
+      "source_id": "src_https-github-com-bagelhole-devops-security-agent-skills-devops-security-agent-skills_6949282e",
+      "path": "infrastructure/storage/nfs-storage/SKILL.md",
+      "declared_name": "nfs-storage",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:327f3622553b6ee1a17717f5f14ce0809f304d0c",
+      "upstream_ref": "0365f57a079b1332f95cf26e31dd2d5332a8399f",
+      "url": "https://github.com/BagelHole/DevOps-Security-Agent-Skills/blob/0365f57a079b1332f95cf26e31dd2d5332a8399f/infrastructure/storage/nfs-storage/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "327f3622553b6ee1a17717f5f14ce0809f304d0c",
+        "size": 10857
+      }
+    },
+    {
+      "source_id": "src_https-github-com-bagelhole-devops-security-agent-skills-devops-security-agent-skills_6949282e",
+      "path": "infrastructure/storage/object-storage/SKILL.md",
+      "declared_name": "object-storage",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:15feaf861131979082c5e3e3f4ffa87b6a54cdf7",
+      "upstream_ref": "0365f57a079b1332f95cf26e31dd2d5332a8399f",
+      "url": "https://github.com/BagelHole/DevOps-Security-Agent-Skills/blob/0365f57a079b1332f95cf26e31dd2d5332a8399f/infrastructure/storage/object-storage/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "15feaf861131979082c5e3e3f4ffa87b6a54cdf7",
+        "size": 9919
+      }
+    },
+    {
+      "source_id": "src_https-github-com-bagelhole-devops-security-agent-skills-devops-security-agent-skills_6949282e",
+      "path": "security/ai/ai-agent-security/SKILL.md",
+      "declared_name": "ai-agent-security",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:6c4be74de5e282fab840b8d0d014b1a91583729e",
+      "upstream_ref": "0365f57a079b1332f95cf26e31dd2d5332a8399f",
+      "url": "https://github.com/BagelHole/DevOps-Security-Agent-Skills/blob/0365f57a079b1332f95cf26e31dd2d5332a8399f/security/ai/ai-agent-security/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "6c4be74de5e282fab840b8d0d014b1a91583729e",
+        "size": 42651
+      }
+    },
+    {
+      "source_id": "src_https-github-com-bagelhole-devops-security-agent-skills-devops-security-agent-skills_6949282e",
+      "path": "security/ai/ai-coding-agent-guardrails/SKILL.md",
+      "declared_name": "ai-coding-agent-guardrails",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:b9c76940c5e72865bf48f66665d210220747b85c",
+      "upstream_ref": "0365f57a079b1332f95cf26e31dd2d5332a8399f",
+      "url": "https://github.com/BagelHole/DevOps-Security-Agent-Skills/blob/0365f57a079b1332f95cf26e31dd2d5332a8399f/security/ai/ai-coding-agent-guardrails/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "b9c76940c5e72865bf48f66665d210220747b85c",
+        "size": 32269
+      }
+    },
+    {
+      "source_id": "src_https-github-com-bagelhole-devops-security-agent-skills-devops-security-agent-skills_6949282e",
+      "path": "security/ai/ai-red-teaming/SKILL.md",
+      "declared_name": "ai-red-teaming",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:e30357d4cf17826eede1c57bac18a207c07b9662",
+      "upstream_ref": "0365f57a079b1332f95cf26e31dd2d5332a8399f",
+      "url": "https://github.com/BagelHole/DevOps-Security-Agent-Skills/blob/0365f57a079b1332f95cf26e31dd2d5332a8399f/security/ai/ai-red-teaming/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "e30357d4cf17826eede1c57bac18a207c07b9662",
+        "size": 14375
+      }
+    },
+    {
+      "source_id": "src_https-github-com-bagelhole-devops-security-agent-skills-devops-security-agent-skills_6949282e",
+      "path": "security/ai/ai-security-hardening/SKILL.md",
+      "declared_name": "ai-security-hardening",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:963408214ffcf7043c7f829fd35309b7c563c2d6",
+      "upstream_ref": "0365f57a079b1332f95cf26e31dd2d5332a8399f",
+      "url": "https://github.com/BagelHole/DevOps-Security-Agent-Skills/blob/0365f57a079b1332f95cf26e31dd2d5332a8399f/security/ai/ai-security-hardening/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "963408214ffcf7043c7f829fd35309b7c563c2d6",
+        "size": 10226
+      }
+    },
+    {
+      "source_id": "src_https-github-com-bagelhole-devops-security-agent-skills-devops-security-agent-skills_6949282e",
+      "path": "security/ai/llm-app-security/SKILL.md",
+      "declared_name": "llm-app-security",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:8a9b2c9aef8d0a2bc5a313ce032dbd416d7a7dda",
+      "upstream_ref": "0365f57a079b1332f95cf26e31dd2d5332a8399f",
+      "url": "https://github.com/BagelHole/DevOps-Security-Agent-Skills/blob/0365f57a079b1332f95cf26e31dd2d5332a8399f/security/ai/llm-app-security/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "8a9b2c9aef8d0a2bc5a313ce032dbd416d7a7dda",
+        "size": 32511
+      }
+    },
+    {
+      "source_id": "src_https-github-com-bagelhole-devops-security-agent-skills-devops-security-agent-skills_6949282e",
+      "path": "security/ai/mcp-server-security/SKILL.md",
+      "declared_name": "mcp-server-security",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:d5d51549b96a412e67f27f4522db3eb5590532bb",
+      "upstream_ref": "0365f57a079b1332f95cf26e31dd2d5332a8399f",
+      "url": "https://github.com/BagelHole/DevOps-Security-Agent-Skills/blob/0365f57a079b1332f95cf26e31dd2d5332a8399f/security/ai/mcp-server-security/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "d5d51549b96a412e67f27f4522db3eb5590532bb",
+        "size": 30451
+      }
+    },
+    {
+      "source_id": "src_https-github-com-bagelhole-devops-security-agent-skills-devops-security-agent-skills_6949282e",
+      "path": "security/ai/model-supply-chain-security/SKILL.md",
+      "declared_name": "model-supply-chain-security",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:11d9584ac8a20296a5ab41459b2070fa2174336b",
+      "upstream_ref": "0365f57a079b1332f95cf26e31dd2d5332a8399f",
+      "url": "https://github.com/BagelHole/DevOps-Security-Agent-Skills/blob/0365f57a079b1332f95cf26e31dd2d5332a8399f/security/ai/model-supply-chain-security/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "11d9584ac8a20296a5ab41459b2070fa2174336b",
+        "size": 12420
+      }
+    },
+    {
+      "source_id": "src_https-github-com-bagelhole-devops-security-agent-skills-devops-security-agent-skills_6949282e",
+      "path": "security/ai/prompt-injection-defense/SKILL.md",
+      "declared_name": "prompt-injection-defense",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:ee4234a7d40184b456c442142245f3e62638bd84",
+      "upstream_ref": "0365f57a079b1332f95cf26e31dd2d5332a8399f",
+      "url": "https://github.com/BagelHole/DevOps-Security-Agent-Skills/blob/0365f57a079b1332f95cf26e31dd2d5332a8399f/security/ai/prompt-injection-defense/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "ee4234a7d40184b456c442142245f3e62638bd84",
+        "size": 15829
+      }
+    },
+    {
+      "source_id": "src_https-github-com-bagelhole-devops-security-agent-skills-devops-security-agent-skills_6949282e",
+      "path": "security/hardening/cis-benchmarks/SKILL.md",
+      "declared_name": "cis-benchmarks",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:c542a7cc6a53f6c23e376175f2aa3865d5ee1be8",
+      "upstream_ref": "0365f57a079b1332f95cf26e31dd2d5332a8399f",
+      "url": "https://github.com/BagelHole/DevOps-Security-Agent-Skills/blob/0365f57a079b1332f95cf26e31dd2d5332a8399f/security/hardening/cis-benchmarks/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "c542a7cc6a53f6c23e376175f2aa3865d5ee1be8",
+        "size": 2471
+      }
+    },
+    {
+      "source_id": "src_https-github-com-bagelhole-devops-security-agent-skills-devops-security-agent-skills_6949282e",
+      "path": "security/hardening/container-hardening/SKILL.md",
+      "declared_name": "container-hardening",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:21c3f3795b6686138674b579dc197f66d35fba53",
+      "upstream_ref": "0365f57a079b1332f95cf26e31dd2d5332a8399f",
+      "url": "https://github.com/BagelHole/DevOps-Security-Agent-Skills/blob/0365f57a079b1332f95cf26e31dd2d5332a8399f/security/hardening/container-hardening/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "21c3f3795b6686138674b579dc197f66d35fba53",
+        "size": 2116
+      }
+    },
+    {
+      "source_id": "src_https-github-com-bagelhole-devops-security-agent-skills-devops-security-agent-skills_6949282e",
+      "path": "security/hardening/kubernetes-hardening/SKILL.md",
+      "declared_name": "kubernetes-hardening",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:51ed4c88c1d61793ce278534dadd05149813c16c",
+      "upstream_ref": "0365f57a079b1332f95cf26e31dd2d5332a8399f",
+      "url": "https://github.com/BagelHole/DevOps-Security-Agent-Skills/blob/0365f57a079b1332f95cf26e31dd2d5332a8399f/security/hardening/kubernetes-hardening/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "51ed4c88c1d61793ce278534dadd05149813c16c",
+        "size": 2526
+      }
+    },
+    {
+      "source_id": "src_https-github-com-bagelhole-devops-security-agent-skills-devops-security-agent-skills_6949282e",
+      "path": "security/hardening/linux-hardening/SKILL.md",
+      "declared_name": "linux-hardening",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:8751949f4de75232863f8fd59fb40cc276cb7ddf",
+      "upstream_ref": "0365f57a079b1332f95cf26e31dd2d5332a8399f",
+      "url": "https://github.com/BagelHole/DevOps-Security-Agent-Skills/blob/0365f57a079b1332f95cf26e31dd2d5332a8399f/security/hardening/linux-hardening/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "8751949f4de75232863f8fd59fb40cc276cb7ddf",
+        "size": 2645
+      }
+    },
+    {
+      "source_id": "src_https-github-com-bagelhole-devops-security-agent-skills-devops-security-agent-skills_6949282e",
+      "path": "security/hardening/openclaw-deployment-hardening/SKILL.md",
+      "declared_name": "openclaw-deployment-hardening",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:14a8a7d580c674809790947a7173c16bff0f6973",
+      "upstream_ref": "0365f57a079b1332f95cf26e31dd2d5332a8399f",
+      "url": "https://github.com/BagelHole/DevOps-Security-Agent-Skills/blob/0365f57a079b1332f95cf26e31dd2d5332a8399f/security/hardening/openclaw-deployment-hardening/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "14a8a7d580c674809790947a7173c16bff0f6973",
+        "size": 3287
+      }
+    },
+    {
+      "source_id": "src_https-github-com-bagelhole-devops-security-agent-skills-devops-security-agent-skills_6949282e",
+      "path": "security/hardening/windows-hardening/SKILL.md",
+      "declared_name": "windows-hardening",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:7b615a94f38d4035fceda13e4d3dd0043cfd61b5",
+      "upstream_ref": "0365f57a079b1332f95cf26e31dd2d5332a8399f",
+      "url": "https://github.com/BagelHole/DevOps-Security-Agent-Skills/blob/0365f57a079b1332f95cf26e31dd2d5332a8399f/security/hardening/windows-hardening/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "7b615a94f38d4035fceda13e4d3dd0043cfd61b5",
+        "size": 24552
+      }
+    },
+    {
+      "source_id": "src_https-github-com-bagelhole-devops-security-agent-skills-devops-security-agent-skills_6949282e",
+      "path": "security/network/firewall-config/SKILL.md",
+      "declared_name": "firewall-config",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:40cbc4f8a59ad5dad2e033b4e3d85397254ec3a0",
+      "upstream_ref": "0365f57a079b1332f95cf26e31dd2d5332a8399f",
+      "url": "https://github.com/BagelHole/DevOps-Security-Agent-Skills/blob/0365f57a079b1332f95cf26e31dd2d5332a8399f/security/network/firewall-config/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "40cbc4f8a59ad5dad2e033b4e3d85397254ec3a0",
+        "size": 11689
+      }
+    },
+    {
+      "source_id": "src_https-github-com-bagelhole-devops-security-agent-skills-devops-security-agent-skills_6949282e",
+      "path": "security/network/ssl-tls-management/SKILL.md",
+      "declared_name": "ssl-tls-management",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:94ef4ccbcf32030e85b3bcb4acfb09287d965e67",
+      "upstream_ref": "0365f57a079b1332f95cf26e31dd2d5332a8399f",
+      "url": "https://github.com/BagelHole/DevOps-Security-Agent-Skills/blob/0365f57a079b1332f95cf26e31dd2d5332a8399f/security/network/ssl-tls-management/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "94ef4ccbcf32030e85b3bcb4acfb09287d965e67",
+        "size": 13195
+      }
+    },
+    {
+      "source_id": "src_https-github-com-bagelhole-devops-security-agent-skills-devops-security-agent-skills_6949282e",
+      "path": "security/network/vpn-setup/SKILL.md",
+      "declared_name": "vpn-setup",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:96ced65edd26e60cd86c87e9f4d1b700d744ed1b",
+      "upstream_ref": "0365f57a079b1332f95cf26e31dd2d5332a8399f",
+      "url": "https://github.com/BagelHole/DevOps-Security-Agent-Skills/blob/0365f57a079b1332f95cf26e31dd2d5332a8399f/security/network/vpn-setup/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "96ced65edd26e60cd86c87e9f4d1b700d744ed1b",
+        "size": 11052
+      }
+    },
+    {
+      "source_id": "src_https-github-com-bagelhole-devops-security-agent-skills-devops-security-agent-skills_6949282e",
+      "path": "security/network/waf-setup/SKILL.md",
+      "declared_name": "waf-setup",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:06c9de186d9aee8efefa4491babd64f3d211a118",
+      "upstream_ref": "0365f57a079b1332f95cf26e31dd2d5332a8399f",
+      "url": "https://github.com/BagelHole/DevOps-Security-Agent-Skills/blob/0365f57a079b1332f95cf26e31dd2d5332a8399f/security/network/waf-setup/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "06c9de186d9aee8efefa4491babd64f3d211a118",
+        "size": 15204
+      }
+    },
+    {
+      "source_id": "src_https-github-com-bagelhole-devops-security-agent-skills-devops-security-agent-skills_6949282e",
+      "path": "security/network/zero-trust/SKILL.md",
+      "declared_name": "zero-trust",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:1cf24b361daa122d3d3fc751c61e544f3cac5af5",
+      "upstream_ref": "0365f57a079b1332f95cf26e31dd2d5332a8399f",
+      "url": "https://github.com/BagelHole/DevOps-Security-Agent-Skills/blob/0365f57a079b1332f95cf26e31dd2d5332a8399f/security/network/zero-trust/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "1cf24b361daa122d3d3fc751c61e544f3cac5af5",
+        "size": 11971
+      }
+    },
+    {
+      "source_id": "src_https-github-com-bagelhole-devops-security-agent-skills-devops-security-agent-skills_6949282e",
+      "path": "security/operations/incident-response/SKILL.md",
+      "declared_name": "incident-response",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:a2edb5d4a0702351d5322cd03d04ddd788f8b751",
+      "upstream_ref": "0365f57a079b1332f95cf26e31dd2d5332a8399f",
+      "url": "https://github.com/BagelHole/DevOps-Security-Agent-Skills/blob/0365f57a079b1332f95cf26e31dd2d5332a8399f/security/operations/incident-response/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "a2edb5d4a0702351d5322cd03d04ddd788f8b751",
+        "size": 18112
+      }
+    },
+    {
+      "source_id": "src_https-github-com-bagelhole-devops-security-agent-skills-devops-security-agent-skills_6949282e",
+      "path": "security/operations/penetration-testing/SKILL.md",
+      "declared_name": "penetration-testing",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:18a8de60beb095944326192591f1bc72259623ef",
+      "upstream_ref": "0365f57a079b1332f95cf26e31dd2d5332a8399f",
+      "url": "https://github.com/BagelHole/DevOps-Security-Agent-Skills/blob/0365f57a079b1332f95cf26e31dd2d5332a8399f/security/operations/penetration-testing/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "18a8de60beb095944326192591f1bc72259623ef",
+        "size": 2106
+      }
+    },
+    {
+      "source_id": "src_https-github-com-bagelhole-devops-security-agent-skills-devops-security-agent-skills_6949282e",
+      "path": "security/operations/security-automation/SKILL.md",
+      "declared_name": "security-automation",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:cd3c9baa9b21766f65bbeb104dc13021c61d577d",
+      "upstream_ref": "0365f57a079b1332f95cf26e31dd2d5332a8399f",
+      "url": "https://github.com/BagelHole/DevOps-Security-Agent-Skills/blob/0365f57a079b1332f95cf26e31dd2d5332a8399f/security/operations/security-automation/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "cd3c9baa9b21766f65bbeb104dc13021c61d577d",
+        "size": 2860
+      }
+    },
+    {
+      "source_id": "src_https-github-com-bagelhole-devops-security-agent-skills-devops-security-agent-skills_6949282e",
+      "path": "security/operations/threat-modeling/SKILL.md",
+      "declared_name": "threat-modeling",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:95c2283913f556e24466ea4727dc91b0e696488f",
+      "upstream_ref": "0365f57a079b1332f95cf26e31dd2d5332a8399f",
+      "url": "https://github.com/BagelHole/DevOps-Security-Agent-Skills/blob/0365f57a079b1332f95cf26e31dd2d5332a8399f/security/operations/threat-modeling/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "95c2283913f556e24466ea4727dc91b0e696488f",
+        "size": 16144
+      }
+    },
+    {
+      "source_id": "src_https-github-com-bagelhole-devops-security-agent-skills-devops-security-agent-skills_6949282e",
+      "path": "security/scanning/container-scanning/SKILL.md",
+      "declared_name": "container-scanning",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:c44177dc2124595a912f44880720420ec4dce2e4",
+      "upstream_ref": "0365f57a079b1332f95cf26e31dd2d5332a8399f",
+      "url": "https://github.com/BagelHole/DevOps-Security-Agent-Skills/blob/0365f57a079b1332f95cf26e31dd2d5332a8399f/security/scanning/container-scanning/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "c44177dc2124595a912f44880720420ec4dce2e4",
+        "size": 8042
+      }
+    },
+    {
+      "source_id": "src_https-github-com-bagelhole-devops-security-agent-skills-devops-security-agent-skills_6949282e",
+      "path": "security/scanning/dast-scanning/SKILL.md",
+      "declared_name": "dast-scanning",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:fc0995259853b0d28c5c9b5d168cacc8177d05f4",
+      "upstream_ref": "0365f57a079b1332f95cf26e31dd2d5332a8399f",
+      "url": "https://github.com/BagelHole/DevOps-Security-Agent-Skills/blob/0365f57a079b1332f95cf26e31dd2d5332a8399f/security/scanning/dast-scanning/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "fc0995259853b0d28c5c9b5d168cacc8177d05f4",
+        "size": 9193
+      }
+    },
+    {
+      "source_id": "src_https-github-com-bagelhole-devops-security-agent-skills-devops-security-agent-skills_6949282e",
+      "path": "security/scanning/dependency-scanning/SKILL.md",
+      "declared_name": "dependency-scanning",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:4dc0f6f85a9c992810ec3a988fe0b5f78a01d84a",
+      "upstream_ref": "0365f57a079b1332f95cf26e31dd2d5332a8399f",
+      "url": "https://github.com/BagelHole/DevOps-Security-Agent-Skills/blob/0365f57a079b1332f95cf26e31dd2d5332a8399f/security/scanning/dependency-scanning/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "4dc0f6f85a9c992810ec3a988fe0b5f78a01d84a",
+        "size": 8757
+      }
+    },
+    {
+      "source_id": "src_https-github-com-bagelhole-devops-security-agent-skills-devops-security-agent-skills_6949282e",
+      "path": "security/scanning/sast-scanning/SKILL.md",
+      "declared_name": "sast-scanning",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:0604e5fcaeb313a3d414667254dd5ed9dce6fc76",
+      "upstream_ref": "0365f57a079b1332f95cf26e31dd2d5332a8399f",
+      "url": "https://github.com/BagelHole/DevOps-Security-Agent-Skills/blob/0365f57a079b1332f95cf26e31dd2d5332a8399f/security/scanning/sast-scanning/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "0604e5fcaeb313a3d414667254dd5ed9dce6fc76",
+        "size": 8806
+      }
+    },
+    {
+      "source_id": "src_https-github-com-bagelhole-devops-security-agent-skills-devops-security-agent-skills_6949282e",
+      "path": "security/scanning/sbom-supply-chain/SKILL.md",
+      "declared_name": "sbom-supply-chain",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:d07a26f6862c845f496ae7ce7491bc7e75be4073",
+      "upstream_ref": "0365f57a079b1332f95cf26e31dd2d5332a8399f",
+      "url": "https://github.com/BagelHole/DevOps-Security-Agent-Skills/blob/0365f57a079b1332f95cf26e31dd2d5332a8399f/security/scanning/sbom-supply-chain/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "d07a26f6862c845f496ae7ce7491bc7e75be4073",
+        "size": 12305
+      }
+    },
+    {
+      "source_id": "src_https-github-com-bagelhole-devops-security-agent-skills-devops-security-agent-skills_6949282e",
+      "path": "security/scanning/supply-chain-attack-response/SKILL.md",
+      "declared_name": "supply-chain-attack-response",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:b3baa01d18848784ff7923cc538ef4cf5f5c07c8",
+      "upstream_ref": "0365f57a079b1332f95cf26e31dd2d5332a8399f",
+      "url": "https://github.com/BagelHole/DevOps-Security-Agent-Skills/blob/0365f57a079b1332f95cf26e31dd2d5332a8399f/security/scanning/supply-chain-attack-response/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "b3baa01d18848784ff7923cc538ef4cf5f5c07c8",
+        "size": 23208
+      }
+    },
+    {
+      "source_id": "src_https-github-com-bagelhole-devops-security-agent-skills-devops-security-agent-skills_6949282e",
+      "path": "security/scanning/vulnerability-scanning/SKILL.md",
+      "declared_name": "vulnerability-scanning",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:63bd2c7a05aab6f5143b967f017a07f18b2cddd4",
+      "upstream_ref": "0365f57a079b1332f95cf26e31dd2d5332a8399f",
+      "url": "https://github.com/BagelHole/DevOps-Security-Agent-Skills/blob/0365f57a079b1332f95cf26e31dd2d5332a8399f/security/scanning/vulnerability-scanning/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "63bd2c7a05aab6f5143b967f017a07f18b2cddd4",
+        "size": 9576
+      }
+    },
+    {
+      "source_id": "src_https-github-com-bagelhole-devops-security-agent-skills-devops-security-agent-skills_6949282e",
+      "path": "security/secrets/aws-secrets-manager/SKILL.md",
+      "declared_name": "aws-secrets-manager",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:536dd57b5f63ab9dc01e06bd04fabd339a612293",
+      "upstream_ref": "0365f57a079b1332f95cf26e31dd2d5332a8399f",
+      "url": "https://github.com/BagelHole/DevOps-Security-Agent-Skills/blob/0365f57a079b1332f95cf26e31dd2d5332a8399f/security/secrets/aws-secrets-manager/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "536dd57b5f63ab9dc01e06bd04fabd339a612293",
+        "size": 14808
+      }
+    },
+    {
+      "source_id": "src_https-github-com-bagelhole-devops-security-agent-skills-devops-security-agent-skills_6949282e",
+      "path": "security/secrets/azure-keyvault/SKILL.md",
+      "declared_name": "azure-keyvault",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:60529733dda9fad54a36a73832564b230e54f34d",
+      "upstream_ref": "0365f57a079b1332f95cf26e31dd2d5332a8399f",
+      "url": "https://github.com/BagelHole/DevOps-Security-Agent-Skills/blob/0365f57a079b1332f95cf26e31dd2d5332a8399f/security/secrets/azure-keyvault/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "60529733dda9fad54a36a73832564b230e54f34d",
+        "size": 14921
+      }
+    },
+    {
+      "source_id": "src_https-github-com-bagelhole-devops-security-agent-skills-devops-security-agent-skills_6949282e",
+      "path": "security/secrets/gcp-secret-manager/SKILL.md",
+      "declared_name": "gcp-secret-manager",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:611d0d02127a59ac58abe6809298fce4ca842fe0",
+      "upstream_ref": "0365f57a079b1332f95cf26e31dd2d5332a8399f",
+      "url": "https://github.com/BagelHole/DevOps-Security-Agent-Skills/blob/0365f57a079b1332f95cf26e31dd2d5332a8399f/security/secrets/gcp-secret-manager/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "611d0d02127a59ac58abe6809298fce4ca842fe0",
+        "size": 16114
+      }
+    },
+    {
+      "source_id": "src_https-github-com-bagelhole-devops-security-agent-skills-devops-security-agent-skills_6949282e",
+      "path": "security/secrets/hashicorp-vault/SKILL.md",
+      "declared_name": "hashicorp-vault",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:58a727cff0c3cd79bf6b83ed1d635fb8c4d8b6e9",
+      "upstream_ref": "0365f57a079b1332f95cf26e31dd2d5332a8399f",
+      "url": "https://github.com/BagelHole/DevOps-Security-Agent-Skills/blob/0365f57a079b1332f95cf26e31dd2d5332a8399f/security/secrets/hashicorp-vault/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "58a727cff0c3cd79bf6b83ed1d635fb8c4d8b6e9",
+        "size": 7925
+      }
+    },
+    {
+      "source_id": "src_https-github-com-bagelhole-devops-security-agent-skills-devops-security-agent-skills_6949282e",
+      "path": "security/secrets/sops-encryption/SKILL.md",
+      "declared_name": "sops-encryption",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:c4c518303ac3997a60d5a84796e0759bc809cc2f",
+      "upstream_ref": "0365f57a079b1332f95cf26e31dd2d5332a8399f",
+      "url": "https://github.com/BagelHole/DevOps-Security-Agent-Skills/blob/0365f57a079b1332f95cf26e31dd2d5332a8399f/security/secrets/sops-encryption/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "c4c518303ac3997a60d5a84796e0759bc809cc2f",
+        "size": 2154
+      }
+    }
+  ],
+  "digest": "sha256:72b40e87045ded455f93df973cb1077744ea31616d03d0cb1c891c8e36056f44"
+}

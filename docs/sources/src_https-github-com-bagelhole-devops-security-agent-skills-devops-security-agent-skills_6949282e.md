@@ -1,10 +1,10 @@
-# seb1n Awesome AI Agent Skills
+# DevOps Security Agent Skills
 
 > Ready to use
 
 ## Overview
 
-- URL: https://github.com/seb1n/awesome-ai-agent-skills
+- URL: https://github.com/BagelHole/DevOps-Security-Agent-Skills
 - Type: github_repo
 - License: MIT (verified)
 
