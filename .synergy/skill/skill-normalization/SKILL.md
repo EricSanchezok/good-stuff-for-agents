@@ -1,28 +1,32 @@
 ---
 name: skill-normalization
-description: Normalize extracted skill candidates into canonical Skill Intelligence Catalog skill records. Use when converting candidate artifacts to catalog/skills/records YAML, mapping platform-specific fields, generating stable source_skill_id/version_id/canonical_skill_id, preserving analysis/curation fields, and writing only through catalog-data scripts.
+description: Normalize extracted skill candidates into stable canonical identity records. Use when candidates need deterministic skill IDs, source/version mapping, duplicate/update/block decisions, and minimal schema-valid records before deep analysis. Do not perform deep semantic interpretation here.
 ---
 
 # Skill Normalization SOP
 
 ## What You Own
 
-You own the agent judgment that turns extracted candidates into canonical skill records with stable identity, source mapping, interfaces, tool profile, risk profile, and initial quality confidence.
+You own identity, provenance, and version stability.
 
-You do not own upstream extraction, deep qualitative analysis, relation decisions, pack design, or final publication. You write canonical records only from reviewed normalized drafts.
+Your job is to answer: is this candidate a new canonical skill, an update to an existing skill, a duplicate/variant that needs curation, a rejected artifact, or a blocked artifact? You preserve enough source mapping for downstream deep analysis to read the original content.
+
+You do not own the real semantic interpretation of the skill. Do not decide deep capability meaning, workflow value, tool risk, pack fit, final quality, or whether the skill deserves recommendation. Those judgments belong to `skill-deep-analysis` after it reads the original artifact.
 
 ## When To Use This Skill
 
 Use this skill when:
 
-- `catalog/skills/candidates/<run-id>.jsonl` contains reviewed candidates ready for canonical records;
-- a platform-specific skill format needs mapping into the catalog schema;
+- `catalog/skills/candidates/<run-id>.jsonl` contains reviewed candidates ready for identity normalization;
+- a candidate needs deterministic source_skill_id, version_id, and canonical_skill_id mapping;
 - an existing skill record needs identity-preserving updates after upstream changes;
-- candidate duplicates need to be blocked for curation before canonical write.
+- candidate duplicates, variants, rejects, or ambiguous identities need to be reported before canonical write.
 
 ## When Not To Use This Skill
 
 Do not use this skill to create candidate shells; use `skill-extraction`. Do not write deep analysis sections; use `skill-deep-analysis`. Do not decide relation edges; use `skill-dedup-relations`. Do not approve questionable merges alone; use `catalog-curation`.
+
+Do not use this skill as mini-analysis. If you find yourself deciding what the skill is good for, what hidden assumptions it makes, what risks it carries in practice, or whether it is high quality, stop. That belongs downstream.
 
 ## Inputs You Should Gather First
 
@@ -30,7 +34,7 @@ You should gather:
 
 - candidate JSONL path and run ID;
 - source records and snapshot manifests;
-- existing skill records that may match the same source path, declared name, or digest;
+- existing skill records that may match the same source path, declared name, content digest, or source_skill_id;
 - `references/platform-mapping.md`, `references/normalization-rules.md`, and `references/normalization-quality-gate.md`;
 - `../catalog-data/references/identity-rules.md` and schema references;
 - shared `artifact-contract.md` and `script-policy.md`.
@@ -41,14 +45,15 @@ You must leave behind:
 
 - normalized draft JSON under `reports/skill-normalization/<skill-id>.json` for non-trivial records;
 - canonical skill YAML under `catalog/skills/records/<prefix>/<skill-id>.yaml` written through catalog-data;
-- blocked/duplicate report entries when records are not written;
+- blocked/duplicate/rejected report entries when records are not written;
+- analysis handoff list with skill IDs, source paths, and content digests;
 - validation result.
 
 ## References To Read
 
-- `references/platform-mapping.md` to map upstream fields.
-- `references/normalization-rules.md` for canonical names, aliases, and identity preservation.
-- `references/normalization-quality-gate.md` before writing active records.
+- `references/platform-mapping.md` for explicit platform metadata mapping only.
+- `references/normalization-rules.md` for identity, provenance, and version stability.
+- `references/normalization-quality-gate.md` before writing records.
 - `../catalog-data/references/identity-rules.md` before creating or changing IDs.
 - `../shared-references/artifact-contract.md` for handoff paths.
 
@@ -62,32 +67,39 @@ You must leave behind:
 
 ## Workflow
 
-1. **Load candidates, source snapshots, and existing records.** You compare candidate IDs, source paths, declared names, content digests, and aliases against existing records. You MUST load the snapshot manifest from `catalog/sources/snapshots/<source-id>-<ref>.json` and map each candidate's `source.path` to its `content_digest` in the snapshot's `artifacts` array. This digest becomes `identity.content_digest` in the normalized draft.
-2. **Resolve identity.** You decide whether each candidate is a new skill, an update to an existing skill, a duplicate needing curation, or a rejected candidate. You document the evidence. Every normalized draft MUST include `identity.content_digest` from the snapshot artifact so `write-skill-record.mjs` can compute a stable version hash. Do not supply `v_placeholder` or a guessed version ID.
-3. **Map fields.** You translate platform metadata into canonical name, display name, source, version, capabilities, interfaces, tools, risk, and quality confidence. You leave unknown fields empty or low-confidence rather than guessing.
-4. **Prepare reviewed drafts.** You write draft JSON for records you are ready to create or update. Each draft MUST include `source.source_id`, `source.path`, and `identity.content_digest`. You include identity reasoning in curation notes when helpful.
-5. **Call the writer.** You run `scripts/write-normalized-skills.mjs` or `write-skill-record.mjs` for each complete draft.
-6. **Validate.** You run strict validation and fix structural failures.
-7. **Prepare analysis handoff.** You list records that need deep analysis and any identity questions that remain.
+1. **Load candidates and evidence.** Read candidate JSONL, source records, snapshot manifests, and existing records. Confirm that every candidate can be traced back to `source_id` + `source.path` + `content_digest`. If that evidence thread is broken, block the candidate and return it to sync/extraction repair.
+2. **Resolve identity.** Decide new, update, duplicate-needs-curation, rejected, or blocked using source ID, source path, declared name, content digest, and existing records. Do not use filename alone. Do not silently merge possible duplicates.
+3. **Create minimal canonical record.** Fill stable ID, display/canonical name from explicit metadata, source mapping, version/content digest, status, and schema-required empty/unknown fields. Keep the record schema-valid without pretending to understand the skill deeply.
+4. **Avoid semantic inflation.** Leave capabilities, interfaces, tools, and risk empty/unknown unless the candidate explicitly states them. Do not infer from title, filename, source popularity, or your guess about the domain.
+5. **Write records through helper.** Use existing writer scripts only after the identity decision is clear and the draft preserves source provenance and content digest.
+6. **Validate.** Run strict validation and fix structural failures without weakening identity requirements.
+7. **Hand off to deep analysis.** Provide skill IDs plus source paths/content digests. State identity uncertainties, duplicate suspicions, rejected candidates, and blocked candidates. Deep analysis must be able to recover the original artifact from your handoff.
 
 ## Quality Bar
 
-Good normalization preserves stable identity, records source evidence, avoids guessed capability inflation, and makes downstream analysis possible. Existing records are updated without losing curation notes, analysis references, aliases, or stable IDs.
+Good normalization preserves stable identity, records source evidence, avoids guessed semantic inflation, and makes downstream analysis possible. Existing records are updated without losing curation notes, analysis references, aliases, duplicate resolutions, pack references, or stable IDs.
+
+A normalized record is allowed to be semantically sparse. Sparse is honest when deep analysis has not happened yet. A richly filled record based on guesses is worse than a minimal record with a perfect evidence thread.
 
 ## Bad Patterns To Avoid
 
 - Do not derive canonical identity from filename alone.
-- Do not mark a record active when evidence is too weak.
+- Do not treat normalization as mini-analysis.
+- Do not fill capability/tool/risk fields because downstream wants richer records.
+- Do not infer semantic meaning from source popularity, folder naming, or vague descriptions.
+- Do not summarize away the source content; deep analysis must read the original artifact.
+- Do not block clear identity records just because semantic quality is unknown.
 - Do not overwrite existing analysis or curation data accidentally.
 - Do not silently merge possible duplicates.
 - Do not fill empty capabilities to make a skill look useful.
 
 ## Failure Handling
 
-- If identity is ambiguous, block the candidate and hand off to `catalog-curation`.
-- If source license or path is missing, return to `source-sync` or `skill-extraction`.
+- If identity is ambiguous, block the candidate and hand off to `catalog-curation` with the exact ambiguity.
+- If source path or content digest is missing, return to `source-sync` or `skill-extraction` rather than guessing.
+- If source license or source record context is missing, return to source activation/sync owners.
 - If a draft fails validation, repair the draft rather than weakening the schema.
-- If only some candidates are ready, write ready records and report blocked ones.
+- If only some candidates are ready, write ready identity records and report blocked/deferred ones with explicit reasons.
 
 ## Verification
 
@@ -102,4 +114,6 @@ If you added or changed public-eligible records, expect `catalog-publishing` to 
 
 ## Handoff
 
-Hand off to `skill-deep-analysis` with skill IDs, source paths, version IDs, blocked candidates, identity concerns, and validation result.
+Hand off to `skill-deep-analysis` with skill IDs, source paths, content digests, version IDs, blocked candidates, duplicate/update concerns, identity uncertainties, and validation result.
+
+Make clear that the normalized record is a routing/identity artifact. It is not the semantic source of truth for the skill.

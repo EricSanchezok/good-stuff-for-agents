@@ -1,6 +1,6 @@
 ---
 name: source-sync
-description: Synchronize approved upstream sources in the Skill Intelligence Catalog. Use for source freshness checks, deterministic source snapshots, state logging, license storage policy, source deletion/private-source handling, and preparing changed source snapshots for skill extraction.
+description: Synchronize approved upstream sources in the Skill Intelligence Catalog. Use for source freshness checks, deterministic source snapshots, state logging, license storage policy, source deletion/private-source handling, and preserving recoverable artifact evidence for skill extraction and deep analysis.
 ---
 
 # Source Sync SOP
@@ -9,7 +9,9 @@ description: Synchronize approved upstream sources in the Skill Intelligence Cat
 
 You own deterministic synchronization for sources that are already approved as active or preview. You fetch upstream metadata, write snapshot manifests, update source state, and report failures without deciding whether new sources should exist.
 
-You do not discover new sources, approve source candidates, interpret skill usefulness, or normalize skill records. You produce source snapshots that `skill-extraction` can consume.
+You also own evidence preservation. A successful sync does not merely prove that a source exists; it leaves enough artifact evidence for extraction and deep analysis to recover what was actually read upstream.
+
+You do not discover new sources, approve source candidates, interpret skill usefulness, rank artifacts, or normalize skill records. You produce source snapshots that `skill-extraction` can consume and `skill-deep-analysis` can later trace back to original artifact content.
 
 ## When To Use This Skill
 
@@ -20,17 +22,19 @@ Use this skill when you need to:
 - record source state events;
 - check whether upstream refs changed;
 - handle unavailable, deleted, private, or unsupported sources;
-- prepare artifact manifests for extraction.
+- prepare artifact manifests and recoverable content evidence for extraction and analysis.
 
 ## When Not To Use This Skill
 
 Do not use this skill for candidate discovery; use `source-discovery`. Do not approve or reject candidates; use `catalog-curation`. Do not parse artifacts into skill candidates; use `skill-extraction`. Do not publish public pages; use `catalog-publishing` after downstream records are ready.
 
+Do not use sync as semantic filtering. If a source is approved and safe to fetch, your job is to preserve evidence, not to decide whether the artifacts are good skills.
+
 ## Inputs You Should Gather First
 
 You should gather:
 
-- approved source records from `catalog/sources/records/**`;
+- approved source records from `catalog/sources/records/**` or the current source registry;
 - source state history from `catalog/sources/state.jsonl`;
 - `references/sync-strategies.md`, `references/source-state-format.md`, `references/license-storage-policy.md`, and `references/source-deletion-policy.md`;
 - shared `artifact-contract.md` and `script-policy.md`;
@@ -41,6 +45,7 @@ You should gather:
 You must leave behind:
 
 - snapshot manifests under `catalog/sources/snapshots/` for successful syncs;
+- enough artifact evidence for downstream agents to recover original content: source-relative path, digest, retrieval location, and provenance;
 - source state events for success, skipped, or failed sources;
 - updated source records when last checked, last success, or upstream ref changes;
 - a summary of synced, skipped, and failed sources;
@@ -64,23 +69,29 @@ You must leave behind:
 
 ## Workflow
 
-1. **Select sources.** You inspect approved source records and decide the sync scope. You skip rejected or candidate sources and record why.
+1. **Select sources.** You inspect approved active/preview source records and decide the sync scope. You skip rejected or candidate sources and record why.
 2. **Check policy.** You read sync and deletion policies before fetching. If a source is private, deleted, or unsupported, you record a state event instead of forcing a fetch.
 3. **Run deterministic sync.** You call `scripts/sync-sources.mjs` for supported sources. The helper may fetch upstream metadata and write snapshot manifests, but it must not decide whether artifacts are useful skills.
-4. **Inspect results.** You review the JSON summary, snapshot paths, state events, and failures. You distinguish transient fetch errors from policy blockers.
-5. **Validate records.** You run strict validation. If validation fails, you fix source state or source record shape.
-6. **Prepare extraction handoff.** You list changed snapshot manifests and artifact counts for `skill-extraction`.
+4. **Inspect artifact evidence.** You review the JSON summary, snapshot paths, state events, and artifact entries. Confirm that potentially skill-like artifacts have source-relative paths, content digests, and a retrieval location or provenance trail that will allow extraction and deep analysis to recover the original content.
+5. **Classify sync failures only.** You distinguish transient fetch errors from policy blockers. You do not classify artifact quality, domain value, or skill usefulness.
+6. **Validate records.** You run strict validation. If validation fails, you fix source state or source record shape.
+7. **Prepare extraction handoff.** You list changed snapshot manifests, source IDs, artifact counts, and any evidence-preservation gaps for `skill-extraction`.
 
 ## Quality Bar
 
-Good sync work is reproducible, source-scoped, and explicit about failures. Every active source has either a current snapshot/state event or a clear reason it was skipped. Snapshot manifests include enough artifact metadata for extraction without semantic guessing.
+Good sync work is reproducible, source-scoped, and explicit about failures. Every active source has either a current snapshot/state event or a clear reason it was skipped.
+
+A good snapshot manifest tells downstream agents not only what changed, but where each artifact's original content can be recovered. If deep analysis cannot find the original artifact from your sync output, the sync handoff is incomplete.
 
 ## Bad Patterns To Avoid
 
 - Do not sync unapproved candidates.
 - Do not treat fetch failures as source rejection decisions.
 - Do not rewrite license evidence without proof.
-- Do not parse or rank skills inside sync.
+- Do not parse, rank, summarize, or semantically judge skills inside sync.
+- Do not let sync become semantic filtering; preserve evidence, do not judge usefulness.
+- Do not produce digest-only snapshots when downstream analysis needs readable artifacts.
+- Do not collapse multiple artifacts into a source-level summary.
 - Do not hide partial failures behind an overall success message.
 
 ## Failure Handling
@@ -88,6 +99,7 @@ Good sync work is reproducible, source-scoped, and explicit about failures. Ever
 - If a source URL is unsupported, append an error state and report the unsupported type.
 - If a network request fails, record the source failure and continue with other sources.
 - If a source is deleted or private, follow deletion policy and do not remove records without curation.
+- If an artifact cannot be preserved in a recoverable form, report the evidence gap rather than pretending the snapshot is complete.
 - If validation fails, repair state record shape before continuing downstream.
 
 ## Verification
@@ -107,4 +119,4 @@ npm --prefix .synergy run catalog:index
 
 ## Handoff
 
-Hand off to `skill-extraction` with snapshot manifest paths, source IDs, artifact counts, failed sources, and validation result. If a source needs approval, deletion, or license judgment, hand off to `catalog-curation` instead.
+Hand off to `skill-extraction` with snapshot manifest paths, source IDs, artifact counts, failed sources, validation result, and any artifact evidence gaps. If a source needs approval, deletion, or license judgment, hand off to `catalog-curation` instead.

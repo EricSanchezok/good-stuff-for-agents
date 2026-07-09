@@ -90,7 +90,7 @@ Do NOT assign high confidence to a skill you only read the metadata for. Do NOT 
 
 ## The final gate
 
-Before you hand off your analysis, answer these four questions. If any answer is "no", rewrite the analysis:
+Before you hand off your analysis, answer these five questions. If any answer is "no", rewrite the analysis:
 
 1. **Would another agent trust this?** — If you handed this analysis and the original SKILL.md to an agent, and the agent read your analysis first, would it trust your analysis enough to decide whether to load the skill without reading the original? Or would it feel the need to verify everything you said?
 
@@ -100,4 +100,6 @@ Before you hand off your analysis, answer these four questions. If any answer is
 
 4. **Is mediocrity visible?** — If this skill is nothing special, is that fact obvious from your analysis? Or would a reader come away thinking "sounds solid" when they should be thinking "nothing remarkable here"?
 
-If all four answers are "yes", your analysis is ready. Hand it off.
+5. **Did you use the original artifact?** — Did you base this analysis on the source SKILL.md / workflow artifact itself, not just the normalized record? If not, the analysis fails regardless of how polished it sounds.
+
+If all five answers are "yes", your analysis is ready. Hand it off.

@@ -4,6 +4,8 @@ This is not a form. This is not a summary. This is your judgment, written down s
 
 When you finish reading a skill's source content (the actual SKILL.md file, the full text, not just a metadata record), you are going to write a short note about what you actually think. Not what the skill claims about itself — what you, after reading it carefully, believe to be true about it.
 
+The source of truth is the original artifact, not the normalized skill record. The normalized record tells you which skill this is; it does not tell you what to think about it. Treat normalized capabilities, tools, risks, descriptions, and summaries as routing hints only. If the normalized record and the source artifact disagree, trust the source artifact and mention the discrepancy.
+
 The old 11-section template is dead. Do not use it. Do not try to map old sections to new ones. Start fresh every time.
 
 ## Metadata (unchanged)

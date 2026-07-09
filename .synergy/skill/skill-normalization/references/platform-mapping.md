@@ -1,13 +1,22 @@
 # Platform Mapping
 
-Preserve platform-specific fields rather than forcing all skills into Synergy format.
+Preserve explicit platform-specific fields. Do not force all skills into Synergy-style semantic interpretation during normalization.
 
-Map common fields:
+## Map Only Explicit Fields
 
-- frontmatter `name` → `canonical_name` and `display_name` candidate.
-- frontmatter `description` → trigger semantics and summary evidence.
-- folder/path → source identity.
-- referenced tools or permissions → `tools` and `risk`.
-- workflow steps → capabilities and workflow stages.
+- frontmatter `name` → canonical/display name candidate;
+- frontmatter `description` → raw metadata or summary hint, not final analysis;
+- folder/path → source identity;
+- declared tools/permissions → provisional tool/risk hints only when explicitly stated;
+- declared inputs/outputs → provisional schema fields only when explicit;
+- workflow steps → raw metadata hint, not normalized capability taxonomy.
 
-Unmapped fields stay in raw metadata or analysis notes.
+## What To Preserve
+
+Preserve unmapped fields in raw metadata or curation notes when useful for downstream analysis. The goal is to keep evidence available, not to force a complete semantic model now.
+
+## What Not To Infer
+
+Do not convert workflow prose into capability arrays during normalization. Do not infer risk from a tool name unless the artifact explicitly describes the tool or permission. Do not infer domain taxonomy from a folder name alone.
+
+Deep analysis owns semantic interpretation after reading the full artifact.
