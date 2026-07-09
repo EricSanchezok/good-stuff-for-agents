@@ -107,9 +107,9 @@ echo ""
 
 # ── 4. 删除文件 ──
 while IFS= read -r f; do
-  rm -f -- "$f"
+  [ -n "$f" ] && rm -f -- "$f"
 done < "$ALL_FILES_TMP"
-git add -A -- "${REMOVABLE_PATTERNS[@]}"
+git add -u -- "${REMOVABLE_PATTERNS[@]}" 2>/dev/null || true
 
 # ── 5. 重置 README.md ──
 cat > README.md << 'READMEEOF'
