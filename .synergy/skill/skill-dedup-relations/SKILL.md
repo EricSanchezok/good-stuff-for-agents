@@ -62,30 +62,51 @@ You must leave behind:
 
 Count analysis files in `catalog/analyses/`. If fewer than 10 exist, stop and report "insufficient analysis evidence for relations — need at least 10 analyzed skills". Do not proceed.
 
-### Step 1: Select scope (autonomous — do not ask the user)
+### Step 1: Group skills and dispatch relation-analyzer subagents
 
 1. List all skills that have an analysis in `catalog/analyses/`. Only these skills are eligible for relations.
-2. Group the skills by `source.source_id` from the normalized records (for routing only).
-3. Within each source group, read the analysis files for every pair and look for:
-   - `chains_with`: one analysis describes producing output that another analysis describes as natural input. Sequential handoff, not just format compatibility.
-   - `strengthens`: one analysis describes providing quality validation, cross-checking, or enhancement that another analysis could benefit from.
-   - `alternatives`: two analyses describe solving the same core task with different methods or depth.
-   - `conflicts_with`: the hidden assumptions or tool requirements described in one analysis contradict those in another.
-4. Cross-source: after within-source edges are complete, compare skills across sources using the same evidence rules. Cross-domain edges are expected and encouraged — a scientific analysis skill can chain with a visualization skill from a different source.
-5. If no edges have sufficient evidence, report this and hand off. Noise edges are worse than no edges.
+2. Group the skills by `source.source_id` from the normalized records (for routing only). Each group typically contains 3–15 skills.
+3. For each source group, prepare the group's information:
+   - Group label (source_id or source name)
+   - List of `(skill_id, analysis_path)` pairs
+   - Output path for the edge file: `reports/skill-relations/<run-id>-group-<N>.jsonl`
+4. Dispatch one `relation-analyzer` subagent per group, all concurrently:
 
-### Step 2: Classify and write evidence
+```
+task(
+  subagent_type: "relation-analyzer",
+  background: true,
+  prompt: "Analyze this source group for skill relations.
 
-For each relationship you find:
+Group: <source_id>
+Skills:
+  - <skill_id> → <analysis_path>
+  - <skill_id> → <analysis_path>
+  ...
+Output: <output_path>"
+)
+```
 
-1. Name the predicate (`chains_with`, `strengthens`, `alternatives`, `conflicts_with`).
-2. Write evidence that cites specific claims from both analysis files. Format: `"<skill-name> analysis: '...'. <skill-name> analysis: '...'. Conclusion: ..."`.
-3. Assign weight: 0.9+ for explicit handoff or contradiction, 0.7–0.9 for strong complement with minor inference, 0.5–0.7 for plausible complement needing more evidence.
-4. Mark as candidate (do not write) if evidence is below 0.7. Report it as a candidate finding without appending an edge.
+Each subagent independently reads the group's analyses, finds edges, and writes them as JSONL to its output path. The primary agent does not do the within-group pairwise comparison — the subagents are purpose-built for this.
 
-### Step 3: Prepare and append edges
+### Step 2: Collect group results and do cross-source comparison
 
-Create edge JSON with `subject`, `predicate`, `object`, `weight`, `evidence`, `source`, `schema_version`, and `created_at`. Call `scripts/append-relation-drafts.mjs` only after all edges in the batch are reviewed.
+As each subagent completes, collect its output:
+
+- Read each group's JSONL file for the edges it found.
+- Review quality: spot-check a few edges per group. Are the evidence quotes real? Does the substitution test pass? If a subagent produced suspicious edges, flag that group for re-dispatch.
+
+After collecting all within-group edges, perform cross-source comparison:
+
+- Take skills that have at least one within-group edge (these are the "connected" skills).
+- Compare them across source groups using the same four predicates.
+- Cross-source comparison is done by the primary agent because the number of skills involved is much smaller (only the connected ones).
+
+### Step 3: Merge and append all edges
+
+Merge all within-group edges (from subagent JSONL files) and cross-source edges (from primary agent) into a single batch. Call `scripts/append-relation-drafts.mjs` to write them to `catalog/relations/edges-00000.jsonl`.
+
+If no edges have sufficient evidence across all groups and cross-source, report this and hand off. Noise edges are worse than no edges.
 
 ### Step 4: Validate and hand off
 
