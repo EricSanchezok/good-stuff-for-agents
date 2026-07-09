@@ -70,72 +70,61 @@ Read these in order before you start:
 
 ## Workflow
 
-### Step 1: Select skills to analyze
+### Step 1: Select a batch of skills to analyze
 
-Choose skill IDs based on: new skill records with no analysis, changed version IDs, analyses flagged as stale, or downstream requests from pack synthesis or relations. Do not try to analyze every skill at once — a few deep analyses are worth more than fifty shallow ones.
+Choose skill IDs based on: new skill records with no analysis, changed version IDs, analyses flagged as stale, or downstream requests from pack synthesis or relations. Pick a batch size of 5–15 — enough to parallelize across subagents, not so many that review becomes unmanageable.
 
-### Step 2: Read the full source content
+### Step 2: Resolve source URLs and output paths for the batch
 
-This is the step that determines whether your analysis has any value. Do not skip it. Do not skim. Do not rely on summaries or metadata records.
+For each selected skill, prepare the dispatch information:
 
-Find the upstream SKILL.md, workflow document, or original artifact — either from the source snapshot in `catalog/sources/snapshots/`, from the skill candidate record, or from the upstream repository directly. Read the entire file. Every section. Every instruction. You are reading as if the author is in the room and you will have to explain their work to a colleague afterward.
+1. Read the normalized skill record from `catalog/skills/records/<prefix>/<skill-id>.yaml`.
+2. Note `source.source_id` and `source.path`.
+3. Find the matching snapshot manifest in `catalog/sources/snapshots/` — look for a `.json` file whose filename starts with that `source_id`.
+4. In the snapshot's `artifacts` array, find the entry whose `path` matches `source.path`.
+5. Read the artifact's `url` field.
+6. Read the artifact's `content_digest` field — this is the source hash. Pass it to the subagent so it does not waste time re-computing it.
+7. Convert the URL for raw fetching: `github.com/<owner>/<repo>/blob/<ref>/<path>` → `raw.githubusercontent.com/<owner>/<repo>/<ref>/<path>`.
+8. Determine the output path: `catalog/analyses/<2-char-prefix>/<skill-id>.md`. The 2-char prefix is the first two characters of the skill ID (e.g. `ad` for `skl_addyosmani-...`).
 
-Do not treat normalized capabilities, tools, risk, descriptions, or summaries as authoritative. They are routing hints. Your analysis must be based on the original artifact. If the normalized record and source content disagree, trust the source content and note the discrepancy.
+You now have a list of `(skill_id, raw_url, content_digest, output_path)` tuples ready for dispatch.
 
-As you read, ask yourself:
+### Step 3: Dispatch to skill-analyzer subagents in parallel
 
-- What is the author actually trying to help agents accomplish?
-- What does the author seem particularly careful or opinionated about?
-- What does the author gloss over or skip entirely?
-- What would a user need to already have or already know for this to work?
-- Is there anything in here that surprises me or contradicts my expectations?
+For each skill in the batch, dispatch a `skill-analyzer` subagent:
 
-If you finish reading and cannot answer at least three of these questions, you were skimming. Go back and read again. Deep analysis requires deep reading.
+```
+task(
+  subagent_type: "skill-analyzer",
+  background: true,
+  prompt: "Analyze this skill's source artifact. Follow your 6-question analysis standard.
+Write the result directly to the output path.
 
-### Step 3: Form your own judgment
+Skill ID: <skill_id>
+Source URL: <raw_url>
+Source hash: <content_digest>
+Output path: <output_path>"
+)
+```
 
-Before you open the template, before you write a single word, stop and think. Put the source content aside. Ask yourself:
+The subagent will fetch the source, analyze it, write the result (with YAML frontmatter) to the output path, and run validation. You do not need to do any of this yourself.
 
-- **What is my gut reaction?** Did this skill impress me? Bore me? Confuse me? Alarm me? Your gut reaction is real data — if a skill bored you, the analysis should reflect that. If it confused you, that is a finding worth reporting.
-- **What is one thing this skill does differently from what I expected?** If the answer is "nothing", that is a finding too — it means this is a standard, interchangeable skill. Say that.
-- **When would I, personally, choose to use this skill? When would I, personally, refuse to?** Be specific. Imagine real projects, real deadlines, real constraints.
-- **What is the skill not telling me?** What does it assume I already have? What would go wrong if I did not have it?
-- **Is this skill worth remembering?** If I read 50 skills today and came back next week, would I remember this one? Why or why not?
+Dispatch all concurrently. Keep at most 5–10 subagents running in parallel. If the batch is larger, dispatch in waves.
 
-If you cannot answer these questions with conviction, you have not formed a judgment yet. Do not start writing. Go back to the source or accept that this skill will get a low-confidence analysis and be honest about why.
+### Step 4: Review quality
 
-### Step 4: Write the analysis
+As each subagent completes, read its output file from the output path and check against these quick review criteria:
 
-Now open `references/analysis-template.md`. Answer the six questions, in order, in your own words.
+- Did it cover all 6 questions?
+- Does it pass the substitution test at a glance?
+- Are there any banned phrases?
+- Is the confidence level justified?
 
-Rules while writing:
+If an analysis is clearly hollow, generic, or contains banned phrases, delete the file and re-dispatch the subagent with specific feedback on what to fix.
 
-- Do not look at the SKILL.md while you write. You already read it. Now write from your understanding and your judgment. If you need to check a specific detail (a file path, a tool name), check it quickly and then look away again. The analysis should sound like your voice, not like the source document reformatted.
-- Write short. Each of the six sections should be 2-5 sentences. If you are writing a paragraph, make sure every sentence earns its place. If you find yourself writing filler, delete it and say what you mean in fewer words.
-- Be decisive. "It depends" is not an answer. "I am not sure because I could not access the full source" is an answer — it is an honest one. Prefer honest uncertainty to fake certainty.
-- Use the banned phrase list from the template. If you catch yourself writing any of those phrases, stop. You are on autopilot. Refocus and write something real.
+### Step 5: Validate and hand off
 
-After you finish all six sections, read your analysis aloud (in your head is fine). Does it sound like a person who read a skill and has opinions? Or does it sound like a form that was filled out? If the latter, rewrite the sections that sound hollow.
-
-### Step 5: Self-check with the rubric
-
-Open `references/analysis-rubric.md`. Score yourself on all five dimensions. Be harsh — the downstream agent will be.
-
-Apply the substitution test: replace the skill name with another skill's name. Does most of your analysis still work? If yes, your analysis is generic and needs rewriting.
-
-Apply the five final-gate questions:
-
-1. Would another agent trust this?
-2. Could this discriminate between near-duplicates?
-3. Are the warnings actionable?
-4. Is mediocrity visible?
-5. Did you base the analysis on the original artifact, not just the normalized record?
-
-If any answer is "no", go back to step 4 and fix the relevant sections.
-
-### Step 6: Call the writer and validate
-
-Write the analysis markdown through `scripts/write-analysis-drafts.mjs` (or the catalog-data alternative). Run `catalog:validate` immediately after. Fix any validation errors. If validation passes, hand off.
+Run `npm --prefix .synergy run catalog:validate`. If validation passes, mark the batch complete and hand off. Any subagent that failed to produce a valid analysis should have already been caught in Step 4 — re-dispatch or mark as blocked with a reason.
 
 ## Quality Bar
 
