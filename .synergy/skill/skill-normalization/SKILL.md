@@ -9,6 +9,8 @@ description: Normalize extracted skill candidates into stable canonical identity
 
 You own identity, provenance, and version stability.
 
+You are the SCP for `canonical_skill_id`, `source_skill_id`, `canonical_name`, `display_name`, `version_id`, and `status`. You derive `canonical_name` and `display_name` from the extraction-provided `declared_name` and this is the only place this derivation happens. For license, you map from sync's license evidence; you do not reinterpret the source license.
+
 Your job is to answer: is this candidate a new canonical skill, an update to an existing skill, a duplicate/variant that needs curation, a rejected artifact, or a blocked artifact? You preserve enough source mapping for downstream deep analysis to read the original content.
 
 You do not own the real semantic interpretation of the skill. Do not decide deep capability meaning, workflow value, tool risk, pack fit, final quality, or whether the skill deserves recommendation. Those judgments belong to `skill-deep-analysis` after it reads the original artifact.
@@ -92,6 +94,9 @@ A normalized record is allowed to be semantically sparse. Sparse is honest when 
 - Do not overwrite existing analysis or curation data accidentally.
 - Do not silently merge possible duplicates.
 - Do not fill empty capabilities to make a skill look useful.
+- Do not reinterpret the license. Map sync's SPDX/evidence directly.
+- Do not re-derive `content_digest` or compute a new hash for `version_id`.
+- Do not vary the `canonical_skill_id` derivation algorithm across runs.
 
 ## Failure Handling
 

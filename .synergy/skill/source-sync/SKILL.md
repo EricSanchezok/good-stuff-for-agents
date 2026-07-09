@@ -11,6 +11,8 @@ You own deterministic synchronization for sources that are already approved as a
 
 You also own evidence preservation. A successful sync does not merely prove that a source exists; it leaves enough artifact evidence for extraction and deep analysis to recover what was actually read upstream.
 
+You are the SCP for `content_digest`, `raw_url`, and license evidence. No downstream stage may recompute or reinterpret these values. If a downstream stage cannot consume them as-is, the bug is in sync, not downstream.
+
 You do not discover new sources, approve source candidates, interpret skill usefulness, rank artifacts, or normalize skill records. You produce source snapshots that `skill-extraction` can consume and `skill-deep-analysis` can later trace back to original artifact content.
 
 ## When To Use This Skill
@@ -45,7 +47,7 @@ You should gather:
 You must leave behind:
 
 - snapshot manifests under `catalog/sources/snapshots/` for successful syncs;
-- enough artifact evidence for downstream agents to recover original content: source-relative path, digest, retrieval location, and provenance;
+- enough artifact evidence for downstream agents to recover original content: source-relative path, `content_digest`, `raw_url`, retrieval location, and provenance;
 - source state events for success, skipped, or failed sources;
 - updated source records when last checked, last success, or upstream ref changes;
 - a summary of synced, skipped, and failed sources;
@@ -72,7 +74,7 @@ You must leave behind:
 1. **Select sources.** You inspect approved active/preview source records and decide the sync scope. You skip rejected or candidate sources and record why.
 2. **Check policy.** You read sync and deletion policies before fetching. If a source is private, deleted, or unsupported, you record a state event instead of forcing a fetch.
 3. **Run deterministic sync.** You call `scripts/sync-sources.mjs` for supported sources. The helper may fetch upstream metadata and write snapshot manifests, but it must not decide whether artifacts are useful skills.
-4. **Inspect artifact evidence.** You review the JSON summary, snapshot paths, state events, and artifact entries. Confirm that potentially skill-like artifacts have source-relative paths, content digests, and a retrieval location or provenance trail that will allow extraction and deep analysis to recover the original content.
+4. **Inspect artifact evidence.** You review the JSON summary, snapshot paths, state events, and artifact entries. Confirm that potentially skill-like artifacts have source-relative paths, `content_digest`, `raw_url`, and a retrieval location or provenance trail that will allow extraction and deep analysis to recover the original content. For each artifact, compute and store `raw_url` — the direct-download URL (for example, `raw.githubusercontent.com/...`). The `url` field (GitHub blob URL) is for human browsing; the `raw_url` field is for machine consumption. Both are required.
 5. **Classify sync failures only.** You distinguish transient fetch errors from policy blockers. You do not classify artifact quality, domain value, or skill usefulness.
 6. **Validate records.** You run strict validation. If validation fails, you fix source state or source record shape.
 7. **Prepare extraction handoff.** You list changed snapshot manifests, source IDs, artifact counts, and any evidence-preservation gaps for `skill-extraction`.
@@ -90,7 +92,9 @@ A good snapshot manifest tells downstream agents not only what changed, but wher
 - Do not rewrite license evidence without proof.
 - Do not parse, rank, summarize, or semantically judge skills inside sync.
 - Do not let sync become semantic filtering; preserve evidence, do not judge usefulness.
+- Do not produce artifacts without a `raw_url`. A GitHub blob URL alone is not consumable by downstream fetch.
 - Do not produce digest-only snapshots when downstream analysis needs readable artifacts.
+- Do not produce license evidence that requires reinterpretation. Use SPDX identifiers where possible.
 - Do not collapse multiple artifacts into a source-level summary.
 - Do not hide partial failures behind an overall success message.
 

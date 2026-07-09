@@ -24,6 +24,18 @@ source candidate
 
 Do not let a stage replace original source evidence with summaries. Summaries are convenience. Original artifacts are the source of truth.
 
+## Single Computation Point (SCP) Rule
+
+Every value in the catalog is computed exactly once. The SCP table defines which stage owns each value. For the authoritative full table, see `single-computation-points.md`.
+
+| Value | Computed by | Consumed by |
+|---|---|---|
+| `content_digest`, `raw_url`, `license` | `source-sync` | `skill-extraction`, `skill-normalization`, `skill-deep-analysis`, `skill-analyzer` |
+| `declared_name` | `skill-extraction` (preserved as-is) | `skill-normalization` |
+| `canonical_skill_id`, `canonical_name`, `display_name`, `version_id`, `source_skill_id`, `status` | `skill-normalization` | `skill-deep-analysis`, relations, packs, publishing, all downstream |
+
+No stage may recompute or reinterpret a value owned by an upstream SCP. If a value is missing or incorrect, the bug is in the SCP stage, not in the consumer. Return to the SCP owner for repair; do not work around it by recomputing.
+
 ## Stage Boundary Rule
 
 - `source-discovery` finds broad candidate sources and records why they may be worth tracking.

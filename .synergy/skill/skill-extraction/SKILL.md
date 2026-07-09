@@ -9,6 +9,8 @@ description: Extract skill-like artifacts from synced source content for the Ski
 
 You own artifact-level evidence preservation. You turn synced source artifacts into candidate records that point back to the original content. You identify parseable or plausibly reusable skill-like artifacts and write candidate shells with source IDs, paths, declared names, formats, digests, parse confidence, and raw metadata.
 
+You preserve `content_digest` and `declared_name` exactly as provided by the snapshot manifest/artifact. You do not recompute, trim, transform, or reinterpret these values. Extraction is the consumer of sync's SCP values; it is not a computation stage for hash, URL, or license.
+
 You do not decide whether the skill is good, important, unique enough, pack-worthy, semantically rich, or worth recommending. You do not decide final canonical identity, capability taxonomy, deep analysis, duplicate status, relation edges, or pack membership. Those decisions happen downstream.
 
 ## When To Use This Skill
@@ -67,7 +69,7 @@ You must leave behind:
 1. **Choose the run scope.** You select a run ID and source scope. You prefer changed snapshots from the latest sync when available.
 2. **Read supported formats and extraction rules.** You inspect format rules before classifying artifacts. You treat parseable presence as candidate evidence, not as proof of quality.
 3. **Inspect manifests.** You review snapshot artifacts for supported filenames, folder conventions, declared names, metadata, content digests, and retrieval locations.
-4. **Prepare candidate shells.** Preserve source ID, source-relative path, declared name/title, format, parse confidence, content digest, and raw metadata. Preserve enough information for normalization to identify the artifact and for deep analysis to recover the original content. Do not infer domains, capabilities, tools, risks, workflow role, final canonical names, or quality.
+4. **Prepare candidate shells.** Preserve source ID, source-relative path, declared name/title, format, parse confidence, `content_digest`, and raw metadata. Preserve `content_digest` from the snapshot artifact. Do not compute a new hash. If the snapshot lacks a `content_digest`, block and return to sync. Preserve enough information for normalization to identify the artifact and for deep analysis to recover the original content. Do not infer domains, capabilities, tools, risks, workflow role, final canonical names, or quality.
 5. **Call the writer.** You run `scripts/write-skill-candidates.mjs` or the catalog-data append helper.
 6. **Record skips.** You document unsupported formats, missing digests, unrecoverable artifacts, duplicate artifacts, and low-confidence parse cases.
 7. **Validate and hand off.** You run strict validation and pass candidate JSONL to `skill-normalization` with source IDs, skipped artifacts, parse confidence notes, and evidence-preservation issues.
@@ -82,6 +84,8 @@ Good extraction keeps the semantic aperture wide. If a source has a semi-structu
 
 - Do not create canonical skill records from extraction.
 - Do not fill capability arrays during extraction.
+- Do not trim, slugify, or case-transform `declared_name`. Preserve the exact string from the artifact.
+- Do not compute a new hash when `content_digest` is already present in the snapshot.
 - Do not infer tool/risk/workflow role from titles or filenames.
 - Do not use a filename as proof of semantic identity.
 - Do not discard skipped artifacts silently.
@@ -91,7 +95,7 @@ Good extraction keeps the semantic aperture wide. If a source has a semi-structu
 ## Failure Handling
 
 - If no snapshots exist, block and request `source-sync` first.
-- If a snapshot lacks artifact digests, compute deterministic digests only from manifest content or block for sync repair.
+- If a snapshot lacks artifact digests, block for sync repair. Do not compute a fallback digest in extraction.
 - If an artifact is malformed but still recoverable, skip it with a reason or mark low parse confidence rather than guessing.
 - If an artifact cannot be recovered from the snapshot/source evidence, report the evidence gap and hand back to `source-sync`.
 - If validation fails, repair candidate shape before normalization.

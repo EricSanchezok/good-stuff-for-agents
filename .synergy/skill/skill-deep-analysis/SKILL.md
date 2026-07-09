@@ -82,12 +82,11 @@ For each selected skill, prepare the dispatch information:
 2. Note `source.source_id` and `source.path`.
 3. Find the matching snapshot manifest in `catalog/sources/snapshots/` — look for a `.json` file whose filename starts with that `source_id`.
 4. In the snapshot's `artifacts` array, find the entry whose `path` matches `source.path`.
-5. Read the artifact's `url` field.
-6. Read the artifact's `content_digest` field — this is the source hash. Pass it to the subagent so it does not waste time re-computing it.
-7. Convert the URL for raw fetching: `github.com/<owner>/<repo>/blob/<ref>/<path>` → `raw.githubusercontent.com/<owner>/<repo>/<ref>/<path>`.
-8. Determine the output path: `catalog/analyses/<2-char-prefix>/<skill-id>.md`. The 2-char prefix is the first two characters of the skill ID (e.g. `ad` for `skl_addyosmani-...`).
+5. Read the artifact's `raw_url` field — this is the direct-download URL computed by sync, and it is the authoritative URL. Do not convert or re-derive it. If `raw_url` is absent, return to sync for repair.
+6. Read the artifact's `content_digest` field — this is the authoritative source hash computed by sync. Pass it to the subagent so it does not waste time re-computing it.
+7. Determine the output path: `catalog/analyses/<2-char-prefix>/<skill-id>.md`. The 2-char prefix is the first two characters of the skill ID (e.g. `ad` for `skl_addyosmani-...`).
 
-You now have a list of `(skill_id, raw_url, content_digest, output_path)` tuples ready for dispatch.
+You now have a list of `(skill_id, raw_url, content_digest, output_path)` tuples ready for dispatch. All values in this tuple come from upstream SCP stages — none are computed or derived in deep analysis.
 
 ### Step 3: Dispatch to skill-analyzer subagents in parallel
 
@@ -101,8 +100,8 @@ task(
 Write the result directly to the output path.
 
 Skill ID: <skill_id>
-Source URL: <raw_url>
-Source hash: <content_digest>
+Source URL: <raw_url> (direct-download URL from sync; fetch directly, do not convert)
+Source hash: <content_digest> (authoritative hash from sync; use directly, do not recompute)
 Output path: <output_path>"
 )
 ```
