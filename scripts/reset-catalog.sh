@@ -60,11 +60,14 @@ if ! git diff-index --quiet HEAD -- 2>/dev/null; then
 fi
 
 # ── 2. 构建删除清单 ──
+# 所有数组在此处预声明，避免 set -euo pipefail 下的 unbound variable 错误
+
+GROWTH_PATTERNS=()
+INDEX_PATTERNS=()
+REPORT_PATTERNS=()
 
 # GROWTH_DEL — pipeline 产出
-if $KEEP_GROWTH; then
-  GROWTH_PATTERNS=()
-else
+if ! $KEEP_GROWTH; then
   GROWTH_PATTERNS=(
     "catalog/analyses/"
     "catalog/skills/records/"
@@ -82,9 +85,7 @@ else
 fi
 
 # INDEX_DEL — indexes（独立粒度）
-if $KEEP_INDEXES; then
-  INDEX_PATTERNS=()
-else
+if ! $KEEP_INDEXES; then
   INDEX_PATTERNS=(
     "catalog/indexes/domain-catalog.jsonl"
     "catalog/indexes/skill-catalog.jsonl"
@@ -94,9 +95,6 @@ else
     "catalog/indexes/shards/"
   )
 fi
-
-# REPORT_DEL — 报告 + 文档
-REPORT_PATTERNS=()
 if ! $KEEP_REPORTS; then
   REPORT_PATTERNS+=(
     "reports/nightly-catalog-ops/"
