@@ -61,7 +61,7 @@ Per-cycle thresholds:
 
 - Activate 3–5 sources per run.
 - Keep extraction to ≤50 candidates per extraction batch.
-- Deep Analysis should focus on new/changed, high-potential or batch-prioritized skills; all remaining candidates must have an explicit deferred reason.
+- Analyze 30–50 skills per run via parallel subagent batches (5–10 subagents × 3–5 skills each). All remaining candidates must have an explicit deferred reason.
 
 ## Run Sequence
 
