@@ -1,0 +1,257 @@
+{
+  "schema_version": 1,
+  "run_id": "run_2026-07-10-141402",
+  "authorization": {
+    "mode": "push",
+    "commits_allowed": true,
+    "pushes_allowed": true,
+    "trigger": "user_request",
+    "operator": "synergy-agent"
+  },
+  "starting_state": {
+    "branch": "main",
+    "working_tree_clean": true,
+    "unrelated_changes_exist": false,
+    "catalog_counts": {
+      "skills": 652,
+      "sources": 12,
+      "packs": 0,
+      "published_packs": 0
+    }
+  },
+  "maintenance_preflight": {
+    "ok": true,
+    "steps": [
+      { "name": "validate-start", "ok": true },
+      { "name": "migrate", "ok": true },
+      { "name": "source-sync", "ok": true },
+      { "name": "index", "ok": true },
+      { "name": "publish-render", "ok": true },
+      { "name": "publish-check", "ok": true },
+      { "name": "publish-links", "ok": true },
+      { "name": "publish-boundary", "ok": true },
+      { "name": "validate-end", "ok": true }
+    ],
+    "validation": { "ok": true, "errors": [] },
+    "git_clean_before_growth": false
+  },
+  "growth": {
+    "ok": true,
+    "growth_report": "reports/catalog-growth-ops/2026-07-10-135228-growth.md",
+    "objects_touched": {
+      "sources_discovered": 4,
+      "sources_activated": 1,
+      "skills_extracted": 0,
+      "skills_normalized": 0,
+      "analyses_written": 24,
+      "relations_written": 0,
+      "packs_synthesized": 0,
+      "packs_evaluated": 0
+    }
+  },
+  "terminal_states": [
+    {
+      "object_type": "source",
+      "object_id": "src_https-github-com-openclaw-agent-skills-openclaw-agent-skills_088582b8",
+      "path": "catalog/sources/registry.yaml",
+      "state": "written_updated_validated",
+      "owner": "catalog-curation",
+      "reason": "Activated as preview source (MIT, 875 stars, 6 SKILL.md). Sync hit GitHub rate limit — deferred to next run.",
+      "verification": ["npm --prefix .synergy run catalog:validate"]
+    },
+    {
+      "object_type": "source",
+      "object_id": "src_https-github-com-openclaw-agent-skills-openclaw-agent-skills_088582b8:sync",
+      "path": "catalog/sources/state.jsonl",
+      "state": "blocked",
+      "owner": "source-sync",
+      "reason": "GitHub API rate limit (403) during sync. Source record exists, snapshot pending.",
+      "blocked_reason": "Rate limit on GitHub API — retry in next run",
+      "next_action": "Retry source:sync in next nightly run when GitHub API rate limits reset"
+    },
+    {
+      "object_type": "source",
+      "object_id": "source_discovery_rejected_sandiiarov_skill_creator",
+      "path": "reports/source-discovery/run_2026-07-10-135228.md",
+      "state": "no_op",
+      "owner": "source-discovery",
+      "reason": "Rejected: single-skill repo wrapping API-to-skill CLI, pattern already represented by Anthropic and Microsoft skill-creator variants.",
+      "verification": null
+    },
+    {
+      "object_type": "source",
+      "object_id": "source_discovery_rejected_francy_agent_skill_creator",
+      "path": "reports/source-discovery/run_2026-07-10-135228.md",
+      "state": "no_op",
+      "owner": "source-discovery",
+      "reason": "Rejected: skill generator tool, not a skill collection. Single SKILL.md.",
+      "verification": null
+    },
+    {
+      "object_type": "source",
+      "object_id": "source_discovery_rejected_jayrha_agentskills",
+      "path": "reports/source-discovery/run_2026-07-10-135228.md",
+      "state": "no_op",
+      "owner": "source-discovery",
+      "reason": "Not qualified as independent source: 3 stars, undifferentiated content, heavy overlap with existing catalog. May revisit if it gains community traction.",
+      "verification": null
+    },
+    {
+      "object_type": "analysis",
+      "object_id": "batch_2026-07-10_marketing_coreyhaines31",
+      "path": "catalog/analyses/",
+      "state": "written_updated_validated",
+      "owner": "skill-deep-analysis",
+      "reason": "5 new marketing analyses written (ad-creative, analytics, aso, content-strategy, cro) under catalog/analyses/. 4/5 earn or conditionally earn catalog spots.",
+      "verification": ["npm --prefix .synergy run catalog:validate"]
+    },
+    {
+      "object_type": "analysis",
+      "object_id": "batch_2026-07-10_marketing_thatrebeccarae",
+      "path": "catalog/analyses/",
+      "state": "written_updated_validated",
+      "owner": "skill-deep-analysis",
+      "reason": "5 new marketing analyses written (facebook-ads, linkedin-ads, tiktok-ads, google-ads, landing-page-optimizer). 3/5 earn catalog spots.",
+      "verification": ["npm --prefix .synergy run catalog:validate"]
+    },
+    {
+      "object_type": "analysis",
+      "object_id": "batch_2026-07-10_pm_phuryn",
+      "path": "catalog/analyses/",
+      "state": "written_updated_validated",
+      "owner": "skill-deep-analysis",
+      "reason": "5 new PM analyses written (outcome-roadmap, retro, release-notes, review-resume, analyze-feature-requests). All 5 earn catalog spots at varying confidence.",
+      "verification": ["npm --prefix .synergy run catalog:validate"]
+    },
+    {
+      "object_type": "analysis",
+      "object_id": "batch_2026-07-10_design_figma_microsoft",
+      "path": "catalog/analyses/",
+      "state": "written_updated_validated",
+      "owner": "skill-deep-analysis",
+      "reason": "5 new design/figma analyses written (claude-api, library-variables-figma, lint-design-figma, entra-agent-id, frontend-design-review). 5/5 earn places.",
+      "verification": ["npm --prefix .synergy run catalog:validate"]
+    },
+    {
+      "object_type": "analysis",
+      "object_id": "batch_2026-07-10_scientific_dev",
+      "path": "catalog/analyses/",
+      "state": "written_updated_validated",
+      "owner": "skill-deep-analysis",
+      "reason": "4 new analyses written (anndata, oauth, linting-neostandard-eslint9, literature-review). 1 skipped (existing analysis). 2/4 earn spots.",
+      "verification": ["npm --prefix .synergy run catalog:validate"]
+    },
+    {
+      "object_type": "relation",
+      "object_id": "relations_all",
+      "path": "catalog/analyses/",
+      "state": "no_op",
+      "owner": "skill-dedup-relations",
+      "reason": "73 total analyses but no single domain reaches 30+ threshold. First relations should target skill-creator and mcp-builder variant pairs (4 analyses ready). Deferred to next run.",
+      "verification": null
+    },
+    {
+      "object_type": "pack",
+      "object_id": "pack_synthesis_all",
+      "path": "catalog/packs/",
+      "state": "no_op",
+      "owner": "pack-synthesis",
+      "reason": "73/652 analyses (11.2%), 0 relations. No domain has dense enough analysis coverage for meaningful pack synthesis. Three natural pack intents identified (Marketing Core, PM Foundations, Figma Design Workflow).",
+      "verification": null
+    },
+    {
+      "object_type": "pack",
+      "object_id": "pack_evaluation_all",
+      "path": "catalog/packs/",
+      "state": "no_op",
+      "owner": "catalog-evaluation",
+      "reason": "No candidate packs to evaluate. 0 packs synthesized, 0 packs to evaluate.",
+      "verification": null
+    },
+    {
+      "object_type": "report",
+      "object_id": "run_2026-07-10-135228_growth",
+      "path": "reports/catalog-growth-ops/2026-07-10-135228-growth.md",
+      "state": "written_updated_validated",
+      "owner": "catalog-growth-ops",
+      "reason": "Growth report documenting discovery (1 activated, 3 rejected), 24 analyses across 5 batches, relations and pack no-ops.",
+      "verification": ["npm --prefix .synergy run catalog:validate", "npm --prefix .synergy run nightly:full-check"]
+    },
+    {
+      "object_type": "report",
+      "object_id": "run_2026-07-10-135228_discovery",
+      "path": "reports/source-discovery/run_2026-07-10-135228.md",
+      "state": "written_updated_validated",
+      "owner": "source-discovery",
+      "reason": "Discovery report for meta-domain theme: 1 qualified, 3 rejected, candidate ingested and activated.",
+      "verification": ["npm --prefix .synergy run catalog:validate"]
+    },
+    {
+      "object_type": "index",
+      "object_id": "catalog_indexes",
+      "path": "catalog/indexes/",
+      "state": "written_updated_validated",
+      "owner": "catalog-data",
+      "reason": "Indexes rebuilt after all growth writes. 652 skills, 13 sources, 73 analyses, 0 packs.",
+      "verification": ["npm --prefix .synergy run catalog:index"]
+    },
+    {
+      "object_type": "public_page",
+      "object_id": "docs_all",
+      "path": "docs/",
+      "state": "written_updated_validated",
+      "owner": "catalog-publishing",
+      "reason": "All public pages re-rendered after growth and maintenance writes. Includes new openclaw source page.",
+      "verification": ["npm --prefix .synergy run publish:render", "npm --prefix .synergy run publish:check", "npm --prefix .synergy run publish:links", "npm --prefix .synergy run publish:boundary"]
+    }
+  ],
+  "publishing_final_gates": {
+    "ok": true,
+    "render": { "ok": true, "pages_written": 669 },
+    "drift": { "ok": true },
+    "links": { "ok": true },
+    "boundary": { "ok": true, "issues": [] },
+    "final_validation": { "ok": true, "errors": [] }
+  },
+  "git": {
+    "authorization": "push",
+    "execution_model": "controller_pushed",
+    "allowed_paths": ["catalog/", "docs/", "reports/", "README.md"],
+    "message": "Committed catalog growth (1 source, 24 analyses), public pages, coverage update, and run reports. Pushed to main."
+  },
+  "blockers": [
+    {
+      "type": "tooling",
+      "object_id": "src_https-github-com-openclaw-agent-skills-openclaw-agent-skills_088582b8",
+      "description": "GitHub API rate limit (403) prevented first snapshot sync of newly activated openclaw/agent-skills source. Source record exists, snapshot pending.",
+      "owner": "source-sync",
+      "next_action": "Retry source:sync in next nightly run when rate limits reset."
+    }
+  ],
+  "next_run_priorities": [
+    {
+      "priority": 1,
+      "object_id": "src_https-github-com-openclaw-agent-skills-openclaw-agent-skills_088582b8",
+      "action": "Retry source sync and extract skill candidates from first snapshot.",
+      "owner": "source-sync"
+    },
+    {
+      "priority": 2,
+      "object_id": "relations_all",
+      "action": "Run first cross-source relations on skill-creator and mcp-builder variant pairs (both have analyses ready).",
+      "owner": "skill-dedup-relations"
+    },
+    {
+      "priority": 3,
+      "object_id": "batch_2026-07-10_marketing_coreyhaines31",
+      "action": "Continue deferred analysis backlog — rotate to science or writing domain per diversity constraint.",
+      "owner": "skill-deep-analysis"
+    },
+    {
+      "priority": 4,
+      "object_id": "source_discovery_rejected_jayrha_agentskills",
+      "action": "Next domain rotation: science or writing (both at 0 visits, highest priority per diversity constraint).",
+      "owner": "source-discovery"
+    }
+  ]
+}

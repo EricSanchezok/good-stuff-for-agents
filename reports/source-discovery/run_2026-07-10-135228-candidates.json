@@ -1,0 +1,26 @@
+{
+  "sources": [
+    {
+      "name": "OpenClaw Agent Skills",
+      "url": "https://github.com/openclaw/agent-skills",
+      "type": "github_repo",
+      "evidence": [
+        "Contains 6 structured SKILL.md files in skills/ directory",
+        "Skills: agent-transcript, autoreview, behavior-validator, crabbox, handoff, session-viewer",
+        "MIT license verified in repo root",
+        "875 stars, 20 contributors, last push 2026-06-19",
+        "Canonical shared skills source for OpenClaw ecosystem (382k+ stars parent project)",
+        "Dedup: zero overlap with existing catalog sources — agent review/orchestration workflow is novel domain"
+      ],
+      "license": {
+        "spdx": "MIT",
+        "verified": true,
+        "evidence": "LICENSE file in repo root confirms MIT"
+      },
+      "parseability": "structured",
+      "domain": "meta",
+      "stars": 875,
+      "last_push": "2026-06-19"
+    }
+  ]
+}

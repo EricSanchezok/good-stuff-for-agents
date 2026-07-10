@@ -1,0 +1,52 @@
+---
+schema_version: 1
+skill_id: skl_analyze-feature-requests-src-https-github-com-phur-80ef1368-skills-analyze-feature-requests-skill-md_80ef1368
+source_hash: sha256:755b5cae934fb0fb8c334fdef10bbb358ed1492d
+analysis_version: 1
+confidence: high
+updated_at: "2026-07-10T13:46:00.000Z"
+---
+
+# analyze-feature-requests
+
+A feature-request triage skill that guides the agent through a product discovery workflow: categorize requests into themes, assess strategic alignment against stated goals, prioritize the top 3 by impact/effort/risk/alignment, and for each winner, identify assumptions and how to test them. The methodology anchor is Dan Olsen's Opportunity Score framework.
+
+## Why it matters
+
+This is the strongest of the five phuryn/pm-skills analyzed in this batch, and it earns that position on the strength of a single instruction: "Never allow customers to design solutions. Prioritize opportunities (problems), not features." That line encodes a real product philosophy — one that distinguishes competent PMs from feature factories — and the skill structures its entire workflow around it.
+
+The workflow is logically sound: categorization finds patterns, strategic alignment filters noise, prioritization picks winners, and assumption-testing prevents the PM from committing to the wrong winners. This is a reasonable approximation of a real product discovery process, not just a template. The reference to Opportunity Score (Importance × (1 − Satisfaction)) gives the prioritization step a defensible methodology rather than gut-feel ranking.
+
+The skill is also honest about its limits — it explicitly defers to the `prioritization-frameworks` skill for full scoring methodology, acknowledging that it doesn't contain everything needed for the prioritization step.
+
+## Where it helps, where it hurts
+
+**Best case**: A PM has 50-100 customer feature requests collected over several months from sales calls, support tickets, user interviews, and feedback forms. The requests range from "add dark mode" to multi-paragraph descriptions of workflow problems. The PM also has a clear product goal (e.g., "increase enterprise customer retention in Q3"). The skill groups the chaos into 5-7 themes, filters out requests misaligned with the enterprise-retention goal, scores the remaining themes on the Opportunity framework, identifies the top 3, and — crucially — for each one asks "what assumption, if false, would make this the wrong bet?" The PM walks away with a prioritized, testable shortlist and a clear rationale for each choice. This is real PM work, done well.
+
+**Worst case**: The PM provides a CSV export from a CRM with 200 one-line requests like "better search," "faster export," and "dark mode" — no problem statements, no customer context, no indication of who requested what or why. The skill attempts thematic grouping based on keyword matching ("search" appears 15 times → "Search Improvements" theme), scores themes using Opportunity Score without actual importance or satisfaction data, and produces a prioritization that looks rigorous but is based entirely on text-frequency pattern matching. The PM acts on it and builds the wrong thing. The structured output — themes, scores, top 3 with rationale — creates an illusion of analytical rigor that makes it harder, not easier, to recognize that the underlying data was insufficient.
+
+## What it quietly assumes
+
+The skill assumes feature requests contain enough context to extract underlying problems. Real feature requests are often solution suggestions ("add a bulk edit button") without any problem statement. The skill's instruction to prioritize opportunities, not features, is correct but depends on the agent's ability to reverse-engineer problems from solutions — an unreliable process when the input is one sentence.
+
+It assumes the PM can obtain or estimate Importance and Satisfaction scores for the Opportunity Score framework. Many PMs won't have satisfaction data; many won't have systematically scored importance. Without real data, the agent will estimate — and estimates from an agent with no customer contact are barely better than random.
+
+It assumes "top 3" is the right number of features to prioritize. For a two-week sprint, maybe. For a quarterly roadmap, almost certainly too few. The fixed number is arbitrary.
+
+The skill defers to `prioritization-frameworks` for full methodology. If that companion skill isn't loaded, the agent has incomplete context for the scoring step but may not realize it — producing prioritizations with the framework's name but not its methodology.
+
+It assumes the PM can describe their product goal clearly and that the goal is stable enough to use as a prioritization filter. Products in reactive mode (responding to competitive pressure, security incidents, leadership pivots) don't have stable goals to align against.
+
+## What could go wrong
+
+Tool risks are low — file reading and markdown output only. The real risk is decision-theater: producing a prioritization with the trappings of rigor (named frameworks, numeric scores, structured rationale) that is actually based on the agent's pattern matching against thin data. This is more dangerous than an obviously bad prioritization because it's harder to challenge. A PM who says "I prioritized based on gut feel" invites scrutiny; a PM who says "I used the Opportunity Score framework" with a clean output document appears to have done real analysis.
+
+The assumption-testing step is the skill's safety net, but it's weakly specified — "How to test those assumptions with minimal effort" is a single instruction without methodology. The agent may suggest impractical tests (e.g., "run an A/B test" for a feature that would take months to build) or generic ones ("talk to 5 customers") without guidance on which customers or what to ask.
+
+## Bottom line
+
+I would pick this over a generic backlog-prioritization skill. The "problems, not features" philosophy and the structured workflow (categorize → align → prioritize → test assumptions) encode real product thinking that a bare prompt wouldn't reliably produce. The single biggest risk is rigor-theater from thin input data — the skill produces output that looks more analytical than it is when fed low-quality requests. The single biggest benefit is the assumption-testing step, which is where most feature-request processes stop and this one keeps going. Earns a catalog spot, though it should ideally be paired with `prioritization-frameworks` for the scoring step to be defensible.
+
+## Confidence: high
+
+The source is clear about its methodology and limitations. The PM domain (feature prioritization, product discovery) is well-understood, and the Opportunity Score framework is a known, defensible methodology.

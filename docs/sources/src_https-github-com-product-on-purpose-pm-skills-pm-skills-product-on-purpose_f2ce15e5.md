@@ -1,0 +1,95 @@
+# PM Skills (Product on Purpose)
+
+> Previewing before it goes on the main shelf
+
+## Overview
+
+- URL: https://github.com/product-on-purpose/pm-skills
+- Type: github_repo
+- License: Apache-2.0 (verified)
+
+## Shelf health
+
+I have this source on the shelf, but the latest availability check needs another look before treating it as smooth sailing.
+
+## Tracked Skills
+
+- [define-hypothesis](../skills/de/skl_define-hypothesis-src-https-github-com-product-on-fb04a2c3-ce15e5-skills-define-hypothesis-skill-md_fb04a2c3.md)
+- [define-jtbd-canvas](../skills/de/skl_define-jtbd-canvas-src-https-github-com-product-on-402b7b67-e15e5-skills-define-jtbd-canvas-skill-md_402b7b67.md)
+- [define-opportunity-tree](../skills/de/skl_define-opportunity-tree-src-https-github-com-produ-192caa7b-skills-define-opportunity-tree-skill-md_192caa7b.md)
+- [define-prioritization-framework](../skills/de/skl_define-prioritization-framework-src-https-github-c-4429a8d5-define-prioritization-framework-skill-md_4429a8d5.md)
+- [define-problem-statement](../skills/de/skl_define-problem-statement-src-https-github-com-prod-93d7d595-skills-define-problem-statement-skill-md_93d7d595.md)
+- [define-x](../skills/de/skl_define-x-src-https-github-com-product-on-purpose-p-d3c83f4e-hooks-fixtures-skills-define-x-skill-md_d3c83f4e.md)
+- [deliver-acceptance-criteria](../skills/de/skl_deliver-acceptance-criteria-src-https-github-com-p-1cf97b07-lls-deliver-acceptance-criteria-skill-md_1cf97b07.md)
+- [deliver-edge-cases](../skills/de/skl_deliver-edge-cases-src-https-github-com-product-on-488c3128-e15e5-skills-deliver-edge-cases-skill-md_488c3128.md)
+- [deliver-launch-checklist](../skills/de/skl_deliver-launch-checklist-src-https-github-com-prod-7024c5a9-skills-deliver-launch-checklist-skill-md_7024c5a9.md)
+- [deliver-prd](../skills/de/skl_deliver-prd-src-https-github-com-product-on-purpos-f3cad5c7-ose-f2ce15e5-skills-deliver-prd-skill-md_f3cad5c7.md)
+- [deliver-release-notes](../skills/de/skl_deliver-release-notes-src-https-github-com-product-8ad11ed2-e5-skills-deliver-release-notes-skill-md_8ad11ed2.md)
+- [deliver-user-stories](../skills/de/skl_deliver-user-stories-src-https-github-com-product-eb6b7baf-5e5-skills-deliver-user-stories-skill-md_eb6b7baf.md)
+- [deliver-y](../skills/de/skl_deliver-y-src-https-github-com-product-on-purpose-d543ed13-hooks-fixtures-skills-deliver-y-skill-md_d543ed13.md)
+- [demo-noref](../skills/de/skl_demo-noref-src-https-github-com-product-on-purpose-9e59ebe1-stration-repo-skills-demo-noref-skill-md_9e59ebe1.md)
+- [demo-present](../skills/de/skl_demo-present-src-https-github-com-product-on-purpo-f17bef48-ration-repo-skills-demo-present-skill-md_f17bef48.md)
+- [develop-adr](../skills/de/skl_develop-adr-src-https-github-com-product-on-purpos-d542cd25-ose-f2ce15e5-skills-develop-adr-skill-md_d542cd25.md)
+- [develop-design-rationale](../skills/de/skl_develop-design-rationale-src-https-github-com-prod-9e4343a0-skills-develop-design-rationale-skill-md_9e4343a0.md)
+- [develop-solution-brief](../skills/de/skl_develop-solution-brief-src-https-github-com-produc-b2c05686-5-skills-develop-solution-brief-skill-md_b2c05686.md)
+- [develop-spike-summary](../skills/de/skl_develop-spike-summary-src-https-github-com-product-e6398626-e5-skills-develop-spike-summary-skill-md_e6398626.md)
+- [discover-competitive-analysis](../skills/di/skl_discover-competitive-analysis-src-https-github-com-8688ef32-s-discover-competitive-analysis-skill-md_8688ef32.md)
+- [discover-interview-synthesis](../skills/di/skl_discover-interview-synthesis-src-https-github-com-ef79db60-ls-discover-interview-synthesis-skill-md_ef79db60.md)
+- [discover-journey-map](../skills/di/skl_discover-journey-map-src-https-github-com-product-790e876d-5e5-skills-discover-journey-map-skill-md_790e876d.md)
+- [discover-market-sizing](../skills/di/skl_discover-market-sizing-src-https-github-com-produc-1a1dc51a-5-skills-discover-market-sizing-skill-md_1a1dc51a.md)
+- [discover-stakeholder-summary](../skills/di/skl_discover-stakeholder-summary-src-https-github-com-e568212c-ls-discover-stakeholder-summary-skill-md_e568212c.md)
+- [foundation-build-risk-review](../skills/fo/skl_foundation-build-risk-review-src-https-github-com-5c4dc4ad-ls-foundation-build-risk-review-skill-md_5c4dc4ad.md)
+- [foundation-lean-canvas](../skills/fo/skl_foundation-lean-canvas-src-https-github-com-produc-4c746278-5-skills-foundation-lean-canvas-skill-md_4c746278.md)
+- [foundation-meeting-agenda](../skills/fo/skl_foundation-meeting-agenda-src-https-github-com-pro-a09323e3-kills-foundation-meeting-agenda-skill-md_a09323e3.md)
+- [foundation-meeting-brief](../skills/fo/skl_foundation-meeting-brief-src-https-github-com-prod-f90bce37-skills-foundation-meeting-brief-skill-md_f90bce37.md)
+- [foundation-meeting-recap](../skills/fo/skl_foundation-meeting-recap-src-https-github-com-prod-40f5acc7-skills-foundation-meeting-recap-skill-md_40f5acc7.md)
+- [foundation-meeting-synthesize](../skills/fo/skl_foundation-meeting-synthesize-src-https-github-com-c644012e-s-foundation-meeting-synthesize-skill-md_c644012e.md)
+- [foundation-okr-writer](../skills/fo/skl_foundation-okr-writer-src-https-github-com-product-2bdfcc65-e5-skills-foundation-okr-writer-skill-md_2bdfcc65.md)
+- [foundation-persona](../skills/fo/skl_foundation-persona-src-https-github-com-product-on-80fcbbb2-e15e5-skills-foundation-persona-skill-md_80fcbbb2.md)
+- [foundation-prioritized-action-plan](../skills/fo/skl_foundation-prioritized-action-plan-src-https-githu-cfca1a1a-ndation-prioritized-action-plan-skill-md_cfca1a1a.md)
+- [foundation-stakeholder-briefings](../skills/fo/skl_foundation-stakeholder-briefings-src-https-github-e8f9ba1c-oundation-stakeholder-briefings-skill-md_e8f9ba1c.md)
+- [foundation-stakeholder-update](../skills/fo/skl_foundation-stakeholder-update-src-https-github-com-a6397108-s-foundation-stakeholder-update-skill-md_a6397108.md)
+- [iterate-lessons-log](../skills/it/skl_iterate-lessons-log-src-https-github-com-product-o-d264dd04-15e5-skills-iterate-lessons-log-skill-md_d264dd04.md)
+- [iterate-pivot-decision](../skills/it/skl_iterate-pivot-decision-src-https-github-com-produc-95b2546d-5-skills-iterate-pivot-decision-skill-md_95b2546d.md)
+- [iterate-refinement-notes](../skills/it/skl_iterate-refinement-notes-src-https-github-com-prod-b892de6a-skills-iterate-refinement-notes-skill-md_b892de6a.md)
+- [iterate-retrospective](../skills/it/skl_iterate-retrospective-src-https-github-com-product-6c28e8b2-e5-skills-iterate-retrospective-skill-md_6c28e8b2.md)
+- [measure-dashboard-requirements](../skills/me/skl_measure-dashboard-requirements-src-https-github-co-f2837556-measure-dashboard-requirements-skill-md_f2837556.md)
+- [measure-experiment-design](../skills/me/skl_measure-experiment-design-src-https-github-com-pro-b1be6ca9-kills-measure-experiment-design-skill-md_b1be6ca9.md)
+- [measure-experiment-results](../skills/me/skl_measure-experiment-results-src-https-github-com-pr-6582405c-ills-measure-experiment-results-skill-md_6582405c.md)
+- [measure-instrumentation-spec](../skills/me/skl_measure-instrumentation-spec-src-https-github-com-c15e30d5-ls-measure-instrumentation-spec-skill-md_c15e30d5.md)
+- [measure-okr-grader](../skills/me/skl_measure-okr-grader-src-https-github-com-product-on-fb573854-e15e5-skills-measure-okr-grader-skill-md_fb573854.md)
+- [measure-survey-analysis](../skills/me/skl_measure-survey-analysis-src-https-github-com-produ-e20b5b43-skills-measure-survey-analysis-skill-md_e20b5b43.md)
+- [s-one](../skills/sx/skl_s-one-src-https-github-com-product-on-purpose-pm-s-db9525c3-shell-parity-repo-skills-s-one-skill-md_db9525c3.md)
+- [s-three](../skills/sx/skl_s-three-src-https-github-com-product-on-purpose-pm-2b471b52-hell-parity-repo-skills-s-three-skill-md_2b471b52.md)
+- [s-two](../skills/sx/skl_s-two-src-https-github-com-product-on-purpose-pm-s-0476b08d-shell-parity-repo-skills-s-two-skill-md_0476b08d.md)
+- [tool-design-sprint-brief](../skills/to/skl_tool-design-sprint-brief-src-https-github-com-prod-d20777e7-skills-tool-design-sprint-brief-skill-md_d20777e7.md)
+- [tool-design-sprint-decide-and-storyboard](../skills/to/skl_tool-design-sprint-decide-and-storyboard-src-https-d8c46329-gn-sprint-decide-and-storyboard-skill-md_d8c46329.md)
+- [tool-design-sprint-map-and-target](../skills/to/skl_tool-design-sprint-map-and-target-src-https-github-a492e206-ol-design-sprint-map-and-target-skill-md_a492e206.md)
+- [tool-design-sprint-prototype-plan](../skills/to/skl_tool-design-sprint-prototype-plan-src-https-github-1b499fb6-ol-design-sprint-prototype-plan-skill-md_1b499fb6.md)
+- [tool-design-sprint-readiness](../skills/to/skl_tool-design-sprint-readiness-src-https-github-com-1e0c1c85-ls-tool-design-sprint-readiness-skill-md_1e0c1c85.md)
+- [tool-design-sprint-sketch](../skills/to/skl_tool-design-sprint-sketch-src-https-github-com-pro-0746cad7-kills-tool-design-sprint-sketch-skill-md_0746cad7.md)
+- [tool-design-sprint-test-and-score](../skills/to/skl_tool-design-sprint-test-and-score-src-https-github-f764e49b-ol-design-sprint-test-and-score-skill-md_f764e49b.md)
+- [tool-foundation-sprint-approach-options](../skills/to/skl_tool-foundation-sprint-approach-options-src-https-29d43924-ndation-sprint-approach-options-skill-md_29d43924.md)
+- [tool-foundation-sprint-basics](../skills/to/skl_tool-foundation-sprint-basics-src-https-github-com-bbcd84ec-s-tool-foundation-sprint-basics-skill-md_bbcd84ec.md)
+- [tool-foundation-sprint-brief](../skills/to/skl_tool-foundation-sprint-brief-src-https-github-com-6a722ab3-ls-tool-foundation-sprint-brief-skill-md_6a722ab3.md)
+- [tool-foundation-sprint-differentiation](../skills/to/skl_tool-foundation-sprint-differentiation-src-https-g-2c4a5167-undation-sprint-differentiation-skill-md_2c4a5167.md)
+- [tool-foundation-sprint-founding-hypothesis](../skills/to/skl_tool-foundation-sprint-founding-hypothesis-src-htt-3026348e-tion-sprint-founding-hypothesis-skill-md_3026348e.md)
+- [tool-foundation-sprint-magic-lenses](../skills/to/skl_tool-foundation-sprint-magic-lenses-src-https-gith-f095bc6d-foundation-sprint-magic-lenses-skill-md_f095bc6d.md)
+- [tool-foundation-sprint-readiness](../skills/to/skl_tool-foundation-sprint-readiness-src-https-github-fedd2b99-ool-foundation-sprint-readiness-skill-md_fedd2b99.md)
+- [tool-note-and-vote](../skills/to/skl_tool-note-and-vote-src-https-github-com-product-on-cd00a0d1-e15e5-skills-tool-note-and-vote-skill-md_cd00a0d1.md)
+- [utility-mermaid-diagrams](../skills/ut/skl_utility-mermaid-diagrams-src-https-github-com-prod-701563ec-skills-utility-mermaid-diagrams-skill-md_701563ec.md)
+- [utility-pm-changelog-curator](../skills/ut/skl_utility-pm-changelog-curator-src-https-github-com-9d12e37e-ls-utility-pm-changelog-curator-skill-md_9d12e37e.md)
+- [utility-pm-critic](../skills/ut/skl_utility-pm-critic-src-https-github-com-product-on-f122fe02-ce15e5-skills-utility-pm-critic-skill-md_f122fe02.md)
+- [utility-pm-release-conductor](../skills/ut/skl_utility-pm-release-conductor-src-https-github-com-b6635cbd-ls-utility-pm-release-conductor-skill-md_b6635cbd.md)
+- [utility-pm-skill-auditor](../skills/ut/skl_utility-pm-skill-auditor-src-https-github-com-prod-2ab7a308-skills-utility-pm-skill-auditor-skill-md_2ab7a308.md)
+- [utility-pm-skill-builder](../skills/ut/skl_utility-pm-skill-builder-src-https-github-com-prod-12da10ee-skills-utility-pm-skill-builder-skill-md_12da10ee.md)
+- [utility-pm-skill-iterate](../skills/ut/skl_utility-pm-skill-iterate-src-https-github-com-prod-6b817446-skills-utility-pm-skill-iterate-skill-md_6b817446.md)
+- [utility-pm-skill-validate](../skills/ut/skl_utility-pm-skill-validate-src-https-github-com-pro-7f0b696f-kills-utility-pm-skill-validate-skill-md_7f0b696f.md)
+- [utility-pm-workflow-builder](../skills/ut/skl_utility-pm-workflow-builder-src-https-github-com-p-1b0db087-lls-utility-pm-workflow-builder-skill-md_1b0db087.md)
+- [utility-pm-workflow-orchestrator](../skills/ut/skl_utility-pm-workflow-orchestrator-src-https-github-e3cb7c26-tility-pm-workflow-orchestrator-skill-md_e3cb7c26.md)
+- [utility-slideshow-creator](../skills/ut/skl_utility-slideshow-creator-src-https-github-com-pro-364d8cfa-kills-utility-slideshow-creator-skill-md_364d8cfa.md)
+- [utility-update-pm-skills](../skills/ut/skl_utility-update-pm-skills-src-https-github-com-prod-2bdd3fc2-skills-utility-update-pm-skills-skill-md_2bdd3fc2.md)
+
+## Packs Using This Source
+
+No published packs use this source yet.

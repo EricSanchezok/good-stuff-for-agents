@@ -4,27 +4,44 @@
 
 <h1 align="center">Good Stuff for Agents</h1>
 
-<p align="center"><strong>A catalog of useful agent skills, trustworthy sources, and ready-to-run packs.</strong></p>
+<p align="center"><strong>I’m collecting the good stuff for agents: useful skills, trustworthy sources, and ready-to-run packs.</strong></p>
+
+<p align="center">
+  <a href="docs/packs/README.md"><img alt="Published packs" src="https://img.shields.io/badge/packs-0-F7C66A?style=for-the-badge&labelColor=101014"></a>
+  <a href="docs/skills/README.md"><img alt="Indexed skills" src="https://img.shields.io/badge/skills-652-B879FF?style=for-the-badge&labelColor=101014"></a>
+  <a href="docs/sources/README.md"><img alt="Tracked sources" src="https://img.shields.io/badge/sources-13-61F4C6?style=for-the-badge&labelColor=101014"></a>
+  <a href="docs/domains/README.md"><img alt="Domains" src="https://img.shields.io/badge/domains-0-FFF7DF?style=for-the-badge&labelColor=101014"></a>
+</p>
 
 <p align="center">
   <img src="assets/readme/hero-ai.png" width="960" alt="A friendly agent collecting and organizing skill catalog evidence" />
 </p>
 
-## What this is
+## Hi, I’m sorting the shelf.
 
-This repository is a Skill Intelligence Catalog: a collection of agent skills from public sources, organized so agents (and people) can discover what's available, where it came from, and how skills work together.
+I’m turning public agent skills into a friendly field guide: quick routes when you know the job, individual skills when you want the pieces, and source trails when you want to check where something came from.
 
-The catalog is built and maintained by automation — skills are discovered, extracted, analyzed, and packaged by agents, not by hand.
+I try to keep it bright and useful: less rummaging through raw lists, more “start here, this should help.”
 
-## How to browse
+## Start here
 
-Once the catalog is populated, browse by:
+<table>
+  <tr>
+    <td><strong><a href="docs/packs/README.md">Packs</a></strong><br/>Prepared routes for complete agent tasks.</td>
+    <td><strong><a href="docs/skills/README.md">Skills</a></strong><br/>Individual capabilities with scope, evidence, and caveats.</td>
+  </tr>
+  <tr>
+    <td><strong><a href="docs/sources/README.md">Sources</a></strong><br/>The public projects behind the shelves.</td>
+    <td><strong><a href="docs/domains/README.md">Domains</a></strong><br/>Problem-space maps when you want to browse by task.</td>
+  </tr>
+</table>
 
-- **Packs** — ready-to-run routes for complete agent tasks
-- **Skills** — individual capabilities with scope and evidence
-- **Sources** — the public projects behind the skills
-- **Domains** — browse by problem space
+## Packs I’ve put on the shelf
 
-## Status
+These are ready routes, not piles of loose parts.
 
-The catalog is freshly initialized. No data has been collected yet. Run the nightly pipeline to start discovery.
+> I’m still warming up the first public packs. Once I trust a route, I’ll set it here on the shelf.
+
+## Browse by domain
+
+> No public domains yet. I’ll draw the map as the shelves fill in.
