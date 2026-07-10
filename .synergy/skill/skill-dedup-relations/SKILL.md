@@ -60,7 +60,9 @@ You must leave behind:
 
 ### Step 0: Readiness gate
 
-Count analysis files in `catalog/analyses/`. If fewer than 10 exist, stop and report "insufficient analysis evidence for relations — need at least 10 analyzed skills". Do not proceed.
+Count analysis files in `catalog/analyses/`. If fewer than 10 exist, stop and report. Otherwise, relations is mandatory this run — do not skip.
+
+The gate is a total count across all domains, not a per-domain threshold. Cross-source comparisons between skills from different sources (e.g., skill-creator from anthropics vs skill-creator from microsoft) work with as few as 2 analyzed skills in the same functional area. Any source group with at least 2 analyzed skills is worth a dispatch. Do not invent per-domain minimums.
 
 ### Step 1: Group skills and dispatch relation-analyzer subagents
 
@@ -123,7 +125,7 @@ Good relation work is sparse, evidence-backed, and useful to Pack Synthesis. Eve
 - Do not create edges without citing at least one specific claim from each skill's analysis.
 - Do not create `alternatives` when the core task is different. "Both use Python" does not make them alternatives.
 - Do not create `conflicts_with` when there is only a superficial difference. Two skills disagreeing on a style preference is not a conflict.
-- Do not re-read source artifacts. The evidence lives in the analysis files. If an analysis is insufficient to determine a relationship, report the gap — do not go back to the original SKILL.md.
+- Do not skip relations because analyses are spread across multiple domains. The gate is a total count. A source group with 2 analyzed skills is enough to dispatch.
 - Do not let pack design goals bias relationship labels. Relations are evidence, not marketing.
 
 ## Failure Handling
