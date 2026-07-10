@@ -70,3 +70,53 @@ Choose a discovery channel based on the theme:
 Generate search queries in the language of the target domain. Do not force every domain into "agent workflow" or "skill template" terminology. Use the concepts and vocabulary that people in that domain actually use.
 
 Do not default to engineering concepts. Do not default to GitHub-only search. Do not only search for "SKILL.md".
+
+## Step 6: Enforce domain diversity
+
+Before finalizing this round's theme selection, apply the diversity constraint.
+
+### Read the coverage state
+
+Read `catalog/coverage.json`. This file tracks per-domain search history across all
+growth rounds. The domain taxonomy and file schema are defined in
+`references/coverage-state-format.md`.
+
+If the file does not exist yet, treat every domain as 0 visits and proceed.
+
+### Constraint rules
+
+From the coverage state, identify:
+
+- **Depleted** — domains visited in EACH of the last 3 rounds
+- **Neglected** — domains with 0 visits ever, or no visit in 5+ rounds
+- **Normal** — everything else
+
+Apply these rules in priority order:
+
+1. If any domain is **Neglected**, your top-ranked theme MUST come from the Neglected
+   list. If multiple domains are Neglected, pick the one with the strongest demand
+   signal.
+
+2. **Depleted** domains are forbidden for this round — do not select them even if
+   demand signals are strong.
+
+3. If neither Neglected nor Depleted constraints fire, proceed with normal ranking.
+
+### When diversity constraint conflicts with quality
+
+If the top Neglected domain has genuinely zero discoverable sources after
+reasonable search effort (10+ queries, multiple channels), you may skip it for
+this round. Record the skip in the growth report with evidence of search effort.
+The skipped domain remains Neglected and will be retried in the next round.
+
+### Record this round's choice
+
+After you finalize this round's discovery theme(s), update `catalog/coverage.json`:
+
+- Increment the visit count for each domain used
+- Set `last_used` to the current UTC timestamp
+- Set `first_used` if this is the domain's first visit
+- Add new domain entries if a domain is not yet in the file
+
+Use `catalog-data/scripts/update-coverage.mjs` if it exists; otherwise write
+the JSON directly following the schema in `references/coverage-state-format.md`.

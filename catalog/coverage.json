@@ -1,0 +1,62 @@
+{
+  "version": 1,
+  "updated_at": "2026-07-10T07:00:00Z",
+  "domains": {
+    "design": {
+      "visits": 2,
+      "last_used": "2026-07-10T02:02:55Z",
+      "first_used": "2026-07-09T18:55:36Z",
+      "sources_discovered": 4,
+      "skills_discovered": 53
+    },
+    "dev": {
+      "visits": 1,
+      "last_used": "2026-07-09T18:55:36Z",
+      "first_used": "2026-07-09T18:55:36Z",
+      "sources_discovered": 4,
+      "skills_discovered": 204
+    },
+    "pm": {
+      "visits": 0,
+      "last_used": null,
+      "first_used": null,
+      "sources_discovered": 0,
+      "skills_discovered": 0
+    },
+    "marketing": {
+      "visits": 0,
+      "last_used": null,
+      "first_used": null,
+      "sources_discovered": 0,
+      "skills_discovered": 0
+    },
+    "science": {
+      "visits": 0,
+      "last_used": null,
+      "first_used": null,
+      "sources_discovered": 0,
+      "skills_discovered": 0
+    },
+    "writing": {
+      "visits": 0,
+      "last_used": null,
+      "first_used": null,
+      "sources_discovered": 0,
+      "skills_discovered": 0
+    },
+    "enterprise": {
+      "visits": 0,
+      "last_used": null,
+      "first_used": null,
+      "sources_discovered": 0,
+      "skills_discovered": 0
+    },
+    "meta": {
+      "visits": 0,
+      "last_used": null,
+      "first_used": null,
+      "sources_discovered": 0,
+      "skills_discovered": 0
+    }
+  }
+}
