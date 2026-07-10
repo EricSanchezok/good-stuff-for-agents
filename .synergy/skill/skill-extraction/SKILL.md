@@ -66,7 +66,7 @@ You must leave behind:
 
 ## Workflow
 
-1. **Choose the run scope.** You select a run ID and source scope. You prefer changed snapshots from the latest sync when available.
+1. **Choose the run scope.** You select a run ID and source scope. You prefer changed snapshots from the latest sync when available. Keep extraction to ≤50 candidates per run — if a source would produce more, split across multiple runs.
 2. **Read supported formats and extraction rules.** You inspect format rules before classifying artifacts. You treat parseable presence as candidate evidence, not as proof of quality.
 3. **Inspect manifests.** You review snapshot artifacts for supported filenames, folder conventions, declared names, metadata, content digests, and retrieval locations.
 4. **Prepare candidate shells.** Preserve source ID, source-relative path, declared name/title, format, parse confidence, `content_digest`, and raw metadata. Preserve `content_digest` from the snapshot artifact. Do not compute a new hash. If the snapshot lacks a `content_digest`, block and return to sync. Preserve enough information for normalization to identify the artifact and for deep analysis to recover the original content. Do not infer domains, capabilities, tools, risks, workflow role, final canonical names, or quality.

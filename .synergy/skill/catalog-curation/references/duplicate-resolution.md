@@ -2,8 +2,7 @@
 
 Resolution outcomes:
 
-- `same_as` — approved logical duplicate; keep aliases and provenance.
-- `variant_of` — related variant; keep separate canonical skill IDs.
+- `duplicate` — identity overlap confirmed by normalization (source_id + path + digest match); handled in `skill-normalization`.
 - `distinct` — not a duplicate; record reason to avoid repeated false positives.
 - `blocked` — insufficient evidence or license prevents decision.
 

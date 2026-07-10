@@ -32,7 +32,7 @@ You should gather:
 - canonical skill records for the skills those analyses reference (for routing only — not for semantic evidence);
 - existing relation edges in `catalog/relations/`;
 - `references/relation-types.md`, `references/dedupe-rules.md`, `references/conflict-detection.md`, and `references/relation-quality-gate.md`;
-- shared `artifact-contract.md` and `script-policy.md`.
+- shared `../shared-references/artifact-contract.md` and `../shared-references/script-policy.md`.
 
 ## Outputs You Must Leave Behind
 
@@ -106,7 +106,9 @@ After collecting all within-group edges, perform cross-source comparison:
 
 ### Step 3: Merge and append all edges
 
-Merge all within-group edges (from subagent JSONL files) and cross-source edges (from primary agent) into a single batch. Call `scripts/append-relation-drafts.mjs` to write them to `catalog/relations/edges-00000.jsonl`.
+Merge all within-group edges (from subagent JSONL files) and cross-source edges (from primary agent) into a single batch.
+
+The subagents write intermediate JSONL files to their output paths (`reports/skill-relations/<run-id>-group-<N>.jsonl`). The primary agent reads these, merges them with cross-source edges, and calls `scripts/append-relation-drafts.mjs` to write them to the canonical edge file at `catalog/relations/edges-00000.jsonl`. The subagent output paths are temporary staging — the catalog-data helper is the single write path to the canonical edge file.
 
 If no edges have sufficient evidence across all groups and cross-source, report this and hand off. Noise edges are worse than no edges.
 

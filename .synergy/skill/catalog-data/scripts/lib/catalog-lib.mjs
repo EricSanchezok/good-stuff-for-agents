@@ -14,17 +14,10 @@ export const STATUS = {
 }
 
 export const RELATION_PREDICATES = new Set([
-  'same_as',
-  'variant_of',
-  'fork_of',
-  'supersedes',
-  'overlaps_with',
-  'complements',
+  'chains_with',
+  'strengthens',
+  'alternatives',
   'conflicts_with',
-  'requires_tool',
-  'fits_workflow_stage',
-  'input_enables',
-  'belongs_to_domain',
 ])
 
 function findRepoRoot() {

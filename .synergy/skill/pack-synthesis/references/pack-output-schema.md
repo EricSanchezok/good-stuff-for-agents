@@ -27,8 +27,9 @@ Minimum draft fields:
   },
   "compatibility": {
     "notes": "Human-readable compatibility summary.",
-    "complements": [],
-    "overlaps": [],
+    "chains": [],
+    "strengthens": [],
+    "alternatives": [],
     "conflicts": [],
     "unresolved": []
   },
@@ -37,6 +38,6 @@ Minimum draft fields:
 }
 ```
 
-Every member must include `skill_id`, pinned `version_id`, role, stage, and inclusion reason. `workflow.stages` must be non-empty, and every stage must include a name or stage plus a description. Compatibility must include `notes` or at least one non-empty complements, overlaps, conflicts, or unresolved array. Candidate evidence belongs next to the pack; publication happens only after evaluation passes.
+Every member must include `skill_id`, pinned `version_id`, role, stage, and inclusion reason. `workflow.stages` must be non-empty, and every stage must include a name or stage plus a description. Compatibility must include `notes` or at least one non-empty chains, strengthens, alternatives, conflicts, or unresolved array. Candidate evidence belongs next to the pack; publication happens only after evaluation passes.
 
 Do not submit plain-string `workflow` values for new pack drafts. Public rendering depends on structured workflow and compatibility evidence so the page can explain the pack to a human visitor without placeholder text.

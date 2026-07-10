@@ -132,7 +132,7 @@ function loadAnalysisSummary(path) {
   const full = join(ROOT, path)
   if (!existsSync(full)) return { available: false, summary: 'Analysis pending.' }
   const text = readText(full)
-  const purpose = section(text, 'Core Purpose')
+  const purpose = section(text, 'Core Purpose') || section(text, 'What does it actually do?') || section(text, 'Why it matters')
   return { available: true, summary: purpose || 'Analysis available.', hash: sha256(text) }
 }
 
@@ -521,8 +521,9 @@ function normalizeWorkflowForPublishing(workflow) {
 function normalizeCompatibilityForPublishing(compatibility) {
   return {
     notes: compatibility?.notes ?? '',
-    complements: Array.isArray(compatibility?.complements) ? compatibility.complements : [],
-    overlaps: Array.isArray(compatibility?.overlaps) ? compatibility.overlaps : [],
+    chains: Array.isArray(compatibility?.chains) ? compatibility.chains : [],
+    strengthens: Array.isArray(compatibility?.strengthens) ? compatibility.strengthens : [],
+    alternatives: Array.isArray(compatibility?.alternatives) ? compatibility.alternatives : [],
     conflicts: Array.isArray(compatibility?.conflicts) ? compatibility.conflicts : [],
     unresolved: Array.isArray(compatibility?.unresolved) ? compatibility.unresolved : [],
   }

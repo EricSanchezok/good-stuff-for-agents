@@ -42,7 +42,7 @@ Before you write a single word of analysis, you must have:
 - any existing analysis for this skill (so you do not unknowingly repeat or contradict without reason);
 - these references: `references/analysis-template.md`, `references/analysis-rubric.md`, `references/capability-taxonomy.md`, `references/tool-risk-taxonomy.md`;
 - relation records if they exist (for context on what this skill overlaps or conflicts with);
-- the shared `artifact-contract.md` and `script-policy.md` references.
+- the shared `../shared-references/artifact-contract.md` and `../shared-references/script-policy.md` references.
 
 ## Outputs You Must Leave Behind
 
@@ -186,6 +186,7 @@ These are the patterns that produced the hollow analyses we are replacing. Recog
 ## Failure Handling
 
 - If the full source content is unavailable and you cannot access the actual SKILL.md, you may write a low-confidence analysis ONLY if the skill record provides enough information to say something meaningful. Otherwise, block the analysis and note "source content unavailable" as the reason. Do not fabricate a medium or high confidence analysis from metadata alone.
+- If the per-run batch budget (30–50 skills) is exhausted for this run, mark remaining candidates as **deferred** with an explicit reason (e.g., "deferred due to batch budget — next run priority"). Deferred is a terminal state for the run; the batch continues in the next growth run.
 - If a skill record is malformed, return to `skill-normalization` or `catalog-data`. Do not try to analyze a broken record.
 - If a tool risk is genuinely unclear (the skill hints at external actions but does not specify them), mark it as unresolved in the tool risks section and lower confidence accordingly. Do not pretend clarity where there is none.
 - If the analysis writing script fails, fix the draft format and rerun. Do not bypass the script and hand-write analysis files — the catalog-data integrity depends on script-mediated writes.

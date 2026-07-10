@@ -42,13 +42,15 @@ updated_at: "<ISO 8601 timestamp>"
 
 After the frontmatter, write your analysis markdown body in the format specified below.
 
-After writing the file, run the validation script so the primary agent doesn't need to:
+After writing the file, run the validation script to confirm integrity:
 
 ```bash
 npm --prefix .synergy run catalog:validate
 ```
 
 If validation fails, fix the file and re-validate. Do not hand back to the primary agent with validation errors.
+
+Note: the primary agent will also run validation as a final gate after collecting all subagent results. Your validation is an early check; the primary agent's validation is the final gate.
 
 ## What you produce
 

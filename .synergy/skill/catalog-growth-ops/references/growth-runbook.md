@@ -30,7 +30,9 @@ Every value in the catalog is computed exactly once. The SCP table defines which
 
 | Value | Computed by | Consumed by |
 |---|---|---|
-| `content_digest`, `raw_url`, `license` | `source-sync` | `skill-extraction`, `skill-normalization`, `skill-deep-analysis`, `skill-analyzer` |
+| `content_digest` | `source-sync` | `skill-extraction`, `skill-normalization`, `skill-deep-analysis`, `skill-analyzer` |
+| `raw_url` | `source-sync` | `skill-deep-analysis`, `skill-analyzer` |
+| `license` | `source-sync` | `skill-normalization`, downstream catalog consumers |
 | `declared_name` | `skill-extraction` (preserved as-is) | `skill-normalization` |
 | `canonical_skill_id`, `canonical_name`, `display_name`, `version_id`, `source_skill_id`, `status` | `skill-normalization` | `skill-deep-analysis`, relations, packs, publishing, all downstream |
 
@@ -39,7 +41,7 @@ No stage may recompute or reinterpret a value owned by an upstream SCP. If a val
 ## Stage Boundary Rule
 
 - `source-discovery` finds broad candidate sources and records why they may be worth tracking.
-- `source-activation` checks safety, access, license posture, and syncability. It is not a quality gate.
+- Activation (applying `source-activation-policy` via `catalog-curation`) checks safety, access, license posture, and syncability. It is not a quality gate.
 - `source-sync` preserves recoverable artifact evidence.
 - `skill-extraction` preserves candidate artifacts without semantic inflation.
 - `skill-normalization` creates stable identity records and duplicate/update/block decisions.
