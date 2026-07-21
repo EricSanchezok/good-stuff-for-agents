@@ -4,7 +4,7 @@
 
 ## Summary
 
-Analysis available.
+This is a design-direction skill for AI agents — not a code generator, not a component library enforcer. Its job is to steer an agent away from the visual clichés that plague AI-generated frontends and toward intentional, distinctive design choices. Think of it as a creative director whispering in the agent's ear: "don't reach for the cream background and terracotta accent just because every other AI does."
 
 ## Source
 
@@ -38,7 +38,7 @@ No related skills are public yet.
 
 ## Public Analysis Summary
 
-Analysis available.
+For greenfield visual design where distinctiveness is the goal, this is one of the best guidance skills available — the catalogue of AI defaults alone is worth the cost of loading it. For anything constrained by a design system, brand guidelines, or functional-UI priorities, it is actively counterproductive. The biggest benefit is the anti-template inoculation; the biggest risk is applying it to the wrong kind of frontend work and getting overwrought designs where plain would have been better.
 
 ## Confidence and Limitations
 

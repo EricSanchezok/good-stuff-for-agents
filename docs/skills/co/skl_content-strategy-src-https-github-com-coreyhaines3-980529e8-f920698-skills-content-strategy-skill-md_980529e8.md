@@ -4,7 +4,7 @@
 
 ## Summary
 
-Analysis available.
+This skill teaches an agent to think like a content strategist — not just to generate blog post ideas, but to evaluate ideas against customer research, competitive gaps, search potential, and resource constraints using a structured scoring framework. It's the most intellectually honest skill in the marketingskills collection because it tells you not to build dedicated pillar pages unless you actually need them, which is the opposite of what most content strategy advice does.
 
 ## Source
 
@@ -38,7 +38,7 @@ No related skills are public yet.
 
 ## Public Analysis Summary
 
-Analysis available.
+Compared to alternatives, I'd pick this one for any team that has customer research to feed it and needs to turn scattered content production into a deliberate strategy. If the catalog could only keep 100 skills, this one makes the cut — content strategy is a common need and most alternatives are either too shallow (five blog post ideas) or too complex (full SEO platform integration). This hits the middle: structured enough to produce real output, simple enough to use without a specialist.
 
 ## Confidence and Limitations
 

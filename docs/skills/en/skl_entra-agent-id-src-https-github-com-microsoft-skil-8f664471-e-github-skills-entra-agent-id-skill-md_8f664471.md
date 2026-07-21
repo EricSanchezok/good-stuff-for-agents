@@ -4,7 +4,7 @@
 
 ## Summary
 
-Analysis available.
+A preview-phase Microsoft Graph skill for provisioning OAuth2-capable identities specifically for AI agents. It walks through creating Agent Identity Blueprints (application objects), BlueprintPrincipals (service principals), and individual Agent Identities — all through the `/beta` Microsoft Graph API. It's not about building agents; it's about creating the identity infrastructure that agents need to authenticate against Azure resources.
 
 ## Source
 
@@ -38,7 +38,7 @@ No related skills are public yet.
 
 ## Public Analysis Summary
 
-Analysis available.
+This is a narrow, well-documented skill for a niche preview feature. It's essential if you're provisioning agent identities on Azure Entra and don't want to spend hours debugging opaque 403 errors. But it's irrelevant to anyone not on Azure, not using Microsoft Graph, or not building agent identity infrastructure. The biggest risk is orphaned cloud credentials with over-scoped permissions; the biggest benefit is the collection of gotcha documentation that saves hours of debugging.
 
 ## Confidence and Limitations
 

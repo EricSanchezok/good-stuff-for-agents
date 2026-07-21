@@ -1,7 +1,7 @@
 import { spawnSync } from 'node:child_process'
 import { existsSync, readFileSync } from 'node:fs'
-import { join, resolve } from 'node:path'
-import { ROOT } from './catalog-lib.mjs'
+import { join } from 'node:path'
+import { resolveWithin, ROOT } from './catalog-lib.mjs'
 
 export function option(name, fallback = null) {
   const index = process.argv.indexOf(name)
@@ -27,7 +27,7 @@ export function positional() {
 
 export function readJsonInput(defaultValue = null) {
   const inputPath = option('--input') ?? positional()[0]
-  if (inputPath) return JSON.parse(readFileSync(resolve(ROOT, inputPath), 'utf8'))
+  if (inputPath) return JSON.parse(readFileSync(resolveWithin(ROOT, inputPath), 'utf8'))
   try {
     if (!process.stdin.isTTY) {
       const text = readFileSync(0, 'utf8').trim()

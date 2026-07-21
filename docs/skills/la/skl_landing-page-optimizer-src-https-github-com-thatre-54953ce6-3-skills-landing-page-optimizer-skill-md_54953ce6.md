@@ -4,7 +4,7 @@
 
 ## Summary
 
-Analysis available.
+This is a landing page audit checklist masquerading as an optimization skill. It covers the standard CRO checklist — above-the-fold design, value proposition hierarchy, CTA optimization, social proof placement, form design, mobile considerations — with competent pattern catalogs and conversion benchmarks. But it has no diagnostic methodology, no testing framework, and no decision logic. It tells you what good landing pages look like, not how to figure out what's wrong with yours.
 
 ## Source
 
@@ -38,7 +38,7 @@ No related skills are public yet.
 
 ## Public Analysis Summary
 
-Analysis available.
+Pick this skill if you need a landing page audit checklist and you're not a CRO specialist — it will catch obvious problems (missing CTAs, weak headlines, form bloat) that genuinely improve conversion. Skip it if you need an actual optimization skill with testing methodology, data-driven diagnosis, or hypothesis prioritization. The biggest risk is treating pattern-matching output as optimization — it's an audit, not a strategy. The biggest benefit is the specific, operational guidance on CTAs, form design, and social proof placement that a non-specialist wouldn't produce on their own.
 
 ## Confidence and Limitations
 

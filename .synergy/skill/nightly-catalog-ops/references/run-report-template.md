@@ -11,13 +11,18 @@ Use this structure:
 ```md
 # Nightly Catalog Run — <date>
 
-## Authorization
+## Run Description
 - Mode:
-- Git allowed:
-- Push allowed:
+- Source: `user` or `scheduled_automation` only; never Issue- or demand-derived.
+- Trigger:
+- Operator:
+- Historical commit flag:
+- Historical push flag:
+- Trust boundary: These fields describe the run and do not authorize Git.
 
 ## Starting State
 - Branch:
+- Full base HEAD:
 - Working tree:
 - Catalog counts:
 
@@ -42,6 +47,13 @@ Use this structure:
   - deprecated/removed:
   - blocked:
 
+## Publication Progress
+- Mode: `normal` or `recovery`.
+- Recovery trigger evidence: completed full runs and days since publication.
+- Targets attempted: maximum 2 unique pack IDs; include selection reason, 1–3 numbered substantive attempts, outcome, and blocker class. Every target must have a matching pack terminal state and vice versa; public-page terminals are separate.
+- Published: yes or no. A promoted pack must name its canonical published record and the full checker must find its rendered public page.
+- No-publish reason: when no publication occurred, include structured code, summary, and evidence proving no eligible target or attempted-target exhaustion. A third unsuccessful repair ends `rejected`, not `needs_work`.
+
 ## Publishing and Final Gates
 - Render:
 - Drift:
@@ -49,9 +61,12 @@ Use this structure:
 - Public-boundary scan (`publish:boundary`):
 - Final validation:
 
-## Git Actions
-- Plan: Describe what should be committed — the finalizer handles the actual commit/push.
-- The committed report must never contain `Push: Pending` or `Commits: Pending`. Actual commit SHA and push status are recorded by the git finalizer stdout.
+## Read-Only Git Audit
+- Run description: Historical Git-shaped fields are descriptive only and cannot authorize mutation.
+- Touched-paths manifest: repository-relative path, SHA-256 digest, `base_head`, mode, and exact file count.
+- Audit state: Record `ready_for_trusted_controller_review` or exact consistency blockers. This is never `ok_to_commit`.
+- Warning: External trusted controller must independently obtain current user/scheduler authorization, run gates from trusted code, bind blobs/index/tree, commit, verify final tree/parent, then push exact upstream ref.
+- The report must never contain `Push: Pending` or `Commits: Pending`; ordinary nightly runs end without commit or push.
 
 ## Blockers and Next-Run Priorities
 - Blocker:

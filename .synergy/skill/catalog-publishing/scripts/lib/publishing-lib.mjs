@@ -1,4 +1,4 @@
-import { existsSync, mkdirSync, readdirSync, rmSync, statSync } from 'node:fs'
+import { existsSync } from 'node:fs'
 import { dirname, join, relative } from 'node:path'
 import {
   CATALOG,
@@ -11,10 +11,13 @@ import {
   prefixFor,
   readJsonl,
   readText,
+  removeSafeContainedPath,
   sha256,
   slug,
   stableStringify,
   validateCatalog,
+  ensureDir,
+  listFiles,
   writeTextAtomic,
 } from '../../../catalog-data/scripts/lib/catalog-lib.mjs'
 
@@ -30,7 +33,7 @@ export function renderAll() {
   const model = loadModel(manifest)
   const pages = buildRenderedPages(model)
   cleanGeneratedMarkdown(pages)
-  for (const [path, content] of pages.entries()) writeTextAtomic(path, content)
+  for (const [path, content] of pages.entries()) writeTextAtomic(path, content, path === join(ROOT, 'README.md') ? ROOT : DOCS)
   ensureGeneratedDirectories()
   return { catalog_hash: model.catalogHash, generated_at: model.generatedAt, written: [...pages.keys()].map((path) => relative(ROOT, path)).sort() }
 }
@@ -128,12 +131,82 @@ function deriveDomains(skills, packs) {
 }
 
 function loadAnalysisSummary(path) {
-  if (!path) return { available: false, summary: 'Analysis pending.' }
+  if (!path) return { available: false, summary: 'Analysis pending.', publicSummary: null }
   const full = join(ROOT, path)
-  if (!existsSync(full)) return { available: false, summary: 'Analysis pending.' }
+  if (!existsSync(full)) return { available: false, summary: 'Analysis pending.', publicSummary: null }
   const text = readText(full)
-  const purpose = section(text, 'Core Purpose') || section(text, 'What does it actually do?') || section(text, 'Why it matters')
-  return { available: true, summary: purpose || 'Analysis available.', hash: sha256(text) }
+  return { available: true, ...analysisSummariesFromText(text), hash: sha256(text) }
+}
+
+export function analysisSummariesFromText(text) {
+  const summary = firstPublicAnalysisCandidate([
+    analysisIntroduction(text),
+    section(text, 'Core Purpose'),
+    section(text, 'What does it actually do?'),
+    section(text, 'Why it matters'),
+  ]) || 'Analysis available.'
+  const publicSummary = firstPublicAnalysisCandidate([
+    section(text, 'Bottom line'),
+    section(text, 'Bottom Line'),
+    section(text, 'Why it matters'),
+    section(text, 'What makes it genuinely distinctive'),
+  ], summary)
+  return { summary, publicSummary: publicSummary || null }
+}
+
+function firstPublicAnalysisCandidate(candidates, excluded = '') {
+  const excludedKey = normalizePublicAnalysisText(excluded)
+  for (const candidate of candidates) {
+    const cleaned = cleanPublicAnalysisText(candidate)
+    if (cleaned && normalizePublicAnalysisText(cleaned) !== excludedKey) return cleaned
+  }
+  return ''
+}
+
+function cleanPublicAnalysisText(text) {
+  return String(text ?? '')
+    .split(/\n{2,}/)
+    .map((paragraph) => paragraph
+      .split(/(?<=[.!?])\s+(?=[A-Z0-9`*_])/)
+      .map(cleanPublicAnalysisSentence)
+      .filter(Boolean)
+      .join(' '))
+    .filter(Boolean)
+    .join('\n\n')
+}
+
+function cleanPublicAnalysisSentence(sentence) {
+  const withoutBatchSuperlative = sentence.replace(/^(?:The\s+)?(?:most|least|best|worst|strongest|weakest|largest|smallest)\b[^:]*\bin this batch\s*:\s*/i, '')
+  if (withoutBatchSuperlative !== sentence) return capitalizeSentence(withoutBatchSuperlative)
+  const withoutReviewerFlag = sentence.replace(/^(?:But\s+)?I(?:'d| would) flag that\s+/i, '')
+  if (withoutReviewerFlag !== sentence) return capitalizeSentence(withoutReviewerFlag)
+  if (containsInternalAnalysisLanguage(sentence)) return ''
+  return sentence.trim()
+}
+
+export function containsInternalAnalysisLanguage(text) {
+  return [
+    /\bin this batch\b/i,
+    /\b(?:of|among)\s+the\s+\d+\b[^.!?\n]*(?:analy[sz]ed|reviewed)\b/i,
+    /\bin (?:a )?tight(?: \d+-skill)? catalog\b/i,
+    /\b(?:earns?|deserves?) (?:a|its) (?:catalog )?spot\b/i,
+    /\bI(?:'d| would) keep this\b[^.!?\n]*\bcatalog\b/i,
+  ].some((pattern) => pattern.test(text))
+}
+
+function normalizePublicAnalysisText(text) {
+  return String(text ?? '').replace(/\s+/g, ' ').trim().toLocaleLowerCase('en')
+}
+
+function capitalizeSentence(text) {
+  const trimmed = text.trim()
+  return trimmed ? `${trimmed[0].toLocaleUpperCase('en')}${trimmed.slice(1)}` : ''
+}
+
+function analysisIntroduction(text) {
+  const withoutFrontmatter = text.replace(/^---\n[\s\S]*?\n---\n/, '').trimStart()
+  const withoutTitle = withoutFrontmatter.replace(/^# [^\n]+\n+/, '')
+  return withoutTitle.split(/\n## /, 1)[0].trim()
 }
 
 function section(text, heading) {
@@ -325,11 +398,7 @@ ${relatedPacks.length ? bulletList(relatedPacks.map((pack) => `[${pack.name}](${
 
 ${relatedEdges.length ? bulletList(relatedEdges.slice(0, 12).map((edge) => relatedSkillLabel(edge, skill, model)).filter(Boolean)) : 'No related skills are public yet.'}
 
-## Public Analysis Summary
-
-${analysis?.summary ?? 'Analysis pending.'}
-
-## Confidence and Limitations
+${analysis?.publicSummary ? `## Public Analysis Summary\n\n${analysis.publicSummary}\n\n` : ''}## Confidence and Limitations
 
 - Quality score: ${score(skill.quality?.score)}
 - Confidence: ${skill.quality?.confidence ?? 'unknown'}
@@ -647,27 +716,19 @@ function score(value) {
 }
 
 
-function cleanGeneratedMarkdown(expected) {
-  for (const path of listMarkdownFiles(DOCS)) {
-    if (!expected.has(path)) rmSync(path, { force: true })
+export function cleanGeneratedMarkdown(expected, docsRoot = DOCS) {
+  for (const path of listMarkdownFiles(docsRoot)) {
+    if (!expected.has(path)) removeSafeContainedPath(docsRoot, path, { force: true, type: 'file' })
   }
 }
 
 function ensureGeneratedDirectories() {
-  for (const dir of [join(DOCS, 'packs', 'by-domain'), join(DOCS, 'skills', 'by-domain'), join(DOCS, 'skills', 'by-source')]) mkdirSync(dir, { recursive: true })
+  for (const dir of [join(DOCS, 'packs', 'by-domain'), join(DOCS, 'skills', 'by-domain'), join(DOCS, 'skills', 'by-source')]) ensureDir(dir, DOCS)
 }
 
 
 function listMarkdownFiles(dir) {
-  if (!existsSync(dir)) return []
-  const out = []
-  for (const entry of readdirSync(dir)) {
-    const path = join(dir, entry)
-    const stat = statSync(path)
-    if (stat.isDirectory()) out.push(...listMarkdownFiles(path))
-    else if (path.endsWith('.md')) out.push(path)
-  }
-  return out.sort()
+  return listFiles(dir, (path) => path.endsWith('.md'))
 }
 
 function escapeRegExp(value) {
@@ -705,6 +766,11 @@ export function checkPublicBoundary() {
     /\bcheck-run-report\b/,
     /\bcheck-public-boundary\b/,
     /\bmaintenance-check\b/,
+    /\bin this batch\b/i,
+    /\b(?:of|among)\s+the\s+\d+\b[^.!?\n]*(?:analy[sz]ed|reviewed)\b/i,
+    /\bin (?:a )?tight(?: \d+-skill)? catalog\b/i,
+    /\b(?:earns?|deserves?) (?:a|its) (?:catalog )?spot\b/i,
+    /\bI(?:'d| would) keep this\b[^.!?\n]*\bcatalog\b/i,
   ]
 
   const warnPatterns = [

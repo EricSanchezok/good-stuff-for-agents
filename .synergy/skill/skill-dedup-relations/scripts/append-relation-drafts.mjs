@@ -1,11 +1,10 @@
 #!/usr/bin/env node
 import { readFileSync } from 'node:fs'
-import { resolve } from 'node:path'
-import { ROOT } from '../../catalog-data/scripts/lib/catalog-lib.mjs'
+import { resolveWithin, ROOT } from '../../catalog-data/scripts/lib/catalog-lib.mjs'
 import { catalogData, option, printResult, readJsonInput } from '../../catalog-data/scripts/lib/pipeline-cli.mjs'
 
 const inputPath = option('--jsonl', null)
-const input = inputPath ? readJsonl(resolve(ROOT, inputPath)) : readJsonInput(null)
+const input = inputPath ? readJsonl(resolveWithin(ROOT, inputPath)) : readJsonInput(null)
 const relations = Array.isArray(input) ? input : input?.relations ? input.relations : input ? [input] : []
 if (!Array.isArray(relations) || relations.length === 0) throw new Error('Provide relation drafts, an object with a relations array, or --jsonl <path>')
 

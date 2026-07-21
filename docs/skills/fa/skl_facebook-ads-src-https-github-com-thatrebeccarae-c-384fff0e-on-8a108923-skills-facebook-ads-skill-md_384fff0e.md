@@ -4,7 +4,7 @@
 
 ## Summary
 
-Analysis available.
+This is a paid-media platform skill that teaches an agent how to audit, diagnose, structure, and recommend optimizations for Meta Ads campaigns across Facebook, Instagram, Messenger, and Audience Network. It is the strongest of the four ad-platform skills in the thatrebeccarae collection — the only one with hard operational rules, a scored audit framework, and genuine domain specificity that would be hard to replicate from an agent's training data alone.
 
 ## Source
 
@@ -38,7 +38,7 @@ No related skills are public yet.
 
 ## Public Analysis Summary
 
-Analysis available.
+This is the best ad-platform skill in the thatrebeccarae collection and would be my first pick among the four if I could only keep one. The hard rules, the scored audit system, and the genuine domain specificity make it more than a reference sheet. The biggest risk is confident advice on insufficient data, and the biggest benefit is a structured diagnostic framework that catches problems most marketers miss.
 
 ## Confidence and Limitations
 

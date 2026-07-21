@@ -100,10 +100,11 @@ Good publishing output is clean, useful, reproducible, and public-safe. Visitors
 
 ## Failure Handling
 
-- If render fails, fix the renderer or invalid input records.
-- If drift fails, rerender and compare expected paths.
-- If links fail, fix relative links in rendering logic.
+- If render fails, fix the renderer or route invalid input records to their owner, then rerun the full publishing gate set.
+- If drift fails, rerender and compare expected paths; do not accept the first technical failure as terminal.
+- If links fail, fix relative links in rendering logic and rerun all publishing checks.
 - If boundary scan fails, rewrite copy or rendering logic and rerun all publishing checks.
+- Stop retrying only when the input is not public-eligible, a policy/human decision is required, or the controller's bounded repair budget is exhausted.
 - If a record is not eligible for public display, exclude it and report why.
 
 ## Verification

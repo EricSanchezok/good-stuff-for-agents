@@ -3,9 +3,22 @@ import { catalogData, printResult, readJsonInput } from '../../catalog-data/scri
 
 const draft = readJsonInput(null)
 if (!draft || typeof draft !== 'object') throw new Error('Provide a reviewed pack candidate draft')
+assertCandidateControlFields(draft)
 assertPackDraft(draft)
-const record = catalogData('write-pack-record.mjs', { ...draft, status: draft.status ?? 'candidate' })
+const record = catalogData('write-pack-record.mjs', draft)
 printResult({ written: true, pack_id: record.pack_id, record })
+
+function assertCandidateControlFields(draft) {
+  if (Object.hasOwn(draft, 'status') && draft.status !== 'candidate') {
+    throw new Error('Pack candidate draft status must be candidate')
+  }
+  const controlledFields = new Set(['record_bucket', 'published_at', 'output_path', 'expected_path', 'destination'])
+  for (const field of Object.keys(draft)) {
+    if (controlledFields.has(field) || /^promot(?:e|ed|ion)/.test(field)) {
+      throw new Error(`Pack candidate draft must not include controller field ${field}`)
+    }
+  }
+}
 
 function assertPackDraft(draft) {
   if (!draft.pack_id) throw new Error('Pack draft is missing pack_id')

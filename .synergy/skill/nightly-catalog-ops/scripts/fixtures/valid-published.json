@@ -1,0 +1,93 @@
+{
+  "schema_version": 2,
+  "run_id": "run_2026-07-21-010101",
+  "authorization": {
+    "mode": "commit",
+    "commits_allowed": true,
+    "pushes_allowed": false,
+    "trigger": "scheduled",
+    "operator": "nightly-controller",
+    "source": "scheduled_automation"
+  },
+  "touched_paths_manifest": "reports/nightly-catalog-ops/2026-07-21-010101-touched-paths.json",
+  "touched_paths_manifest_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+  "starting_state": {
+    "branch": "main",
+    "head": "1111111111111111111111111111111111111111",
+    "working_tree_clean": true,
+    "unrelated_changes_exist": false,
+    "catalog_counts": { "skills": 10, "sources": 2, "packs": 1, "published_packs": 0 }
+  },
+  "maintenance_preflight": {
+    "ok": true,
+    "steps": [],
+    "validation": { "ok": true, "errors": [] },
+    "git_clean_before_growth": true
+  },
+  "growth": {
+    "ok": true,
+    "growth_report": null,
+    "objects_touched": {
+      "sources_discovered": 0,
+      "sources_activated": 0,
+      "skills_extracted": 0,
+      "skills_normalized": 0,
+      "analyses_written": 0,
+      "relations_written": 0,
+      "packs_synthesized": 0,
+      "packs_evaluated": 1
+    }
+  },
+  "terminal_states": [
+    {
+      "object_type": "pack",
+      "object_id": "pack_valid_published",
+      "path": "catalog/packs/published/pack_valid_published/pack.yaml",
+      "state": "promoted_published",
+      "owner": "catalog-publishing",
+      "reason": "Evaluation passed at 0.82 and publication completed.",
+      "verification": ["npm --prefix .synergy run publish:check"]
+    }
+  ],
+  "publication_progress": {
+    "mode": "normal",
+    "published": true,
+    "recovery_trigger": {
+      "completed_full_runs_since_publication": 1,
+      "days_since_publication": 2,
+      "evidence": "Previous publication recorded two days ago."
+    },
+    "targets_attempted": [
+      {
+        "object_id": "pack_valid_published",
+        "selection_reason": "Highest-ranked eligible candidate with complete evidence.",
+        "attempts": [
+          {
+            "attempt": 1,
+            "outcome": "promoted_published",
+            "evidence": "Score 0.82; promotion and publication checks passed."
+          }
+        ],
+        "outcome": "promoted_published",
+        "blocker_class": null
+      }
+    ],
+    "no_publish_reason": null
+  },
+  "publishing_final_gates": {
+    "ok": true,
+    "render": { "ok": true, "pages_written": 1 },
+    "drift": { "ok": true },
+    "links": { "ok": true },
+    "boundary": { "ok": true, "issues": [] },
+    "final_validation": { "ok": true, "errors": [] }
+  },
+  "git": {
+    "authorization": "commit",
+    "execution_model": "none",
+    "allowed_paths": ["catalog/packs/", "docs/packs/"],
+    "message": "No Git mutation was performed; these paths describe the published run output for read-only audit."
+  },
+  "blockers": [],
+  "next_run_priorities": []
+}

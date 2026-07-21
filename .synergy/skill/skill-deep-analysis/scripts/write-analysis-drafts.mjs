@@ -1,22 +1,17 @@
 #!/usr/bin/env node
-import { catalogData, printResult, readJsonInput } from '../../catalog-data/scripts/lib/pipeline-cli.mjs'
+import { relative } from 'node:path'
+import { ROOT } from '../../catalog-data/scripts/lib/catalog-lib.mjs'
+import { catalogData, option, printResult, readJsonInput } from '../../catalog-data/scripts/lib/pipeline-cli.mjs'
+import { assertDispatchMatchesCatalog, bindSemanticAnalysisDraft, loadAnalysisDispatch } from './lib/analysis-dispatch.mjs'
 
 const input = readJsonInput(null)
 const analyses = Array.isArray(input) ? input : input?.analyses ? input.analyses : input ? [input] : []
-if (!Array.isArray(analyses) || analyses.length === 0) throw new Error('Provide an analysis draft or an object with an analyses array')
+if (!Array.isArray(analyses) || analyses.length !== 1) throw new Error('Provide exactly one analysis draft per bound dispatch')
 
-const records = []
-for (const analysis of analyses) {
-  assertAnalysisDraft(analysis)
-  records.push(catalogData('write-analysis.mjs', analysis))
-}
+const dispatch = loadAnalysisDispatch(option('--dispatch'))
+assertDispatchMatchesCatalog(dispatch.envelope)
+const analysis = bindSemanticAnalysisDraft(analyses[0], dispatch.envelope)
+const dispatchPath = relative(ROOT, dispatch.path).split('\\').join('/')
+const record = catalogData('write-analysis.mjs', analysis, ['--dispatch', dispatchPath])
 
-printResult({ written: records.length, records })
-
-function assertAnalysisDraft(analysis) {
-  if (!analysis || typeof analysis !== 'object') throw new Error('Analysis draft must be an object')
-  if (!analysis.skill_id) throw new Error('Analysis draft is missing skill_id')
-  // Accept either the new flowing-article body or the old 11-section format
-  if (analysis.body) return
-  if (!analysis.sections) throw new Error(`Analysis draft for ${analysis.skill_id} must have a body or sections`)
-}
+printResult({ written: 1, records: [record] })

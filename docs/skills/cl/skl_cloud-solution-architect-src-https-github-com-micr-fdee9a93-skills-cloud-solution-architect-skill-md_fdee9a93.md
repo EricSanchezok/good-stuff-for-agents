@@ -4,7 +4,7 @@
 
 ## Summary
 
-Analysis available.
+This skill is a compressed Azure Architecture Center reference card. It transforms an agent into a Cloud Solution Architect by loading it with 10 design principles, 6 architecture styles, 44 cloud design patterns mapped to Well-Architected Framework pillars, technology choice matrices, performance antipatterns, and a structured 7-step architecture review workflow. It is essentially a curated, terse remix of Microsoft's public Azure documentation — not original research, but a genuinely useful cheat sheet for systematic architectural decision-making on Azure.
 
 ## Source
 
@@ -38,7 +38,7 @@ No related skills are public yet.
 
 ## Public Analysis Summary
 
-Analysis available.
+This is the best-structured Azure architecture reference skill I have seen, but its value is almost entirely in curation and organization, not original insight. For an agent working on Azure architecture, this is a strong default choice — the structured workflow and WAF pillar mapping prevent the haphazard technology recommendations that plague most architecture conversations. For any non-Azure cloud work, it is a trap. The single biggest risk is the missing reference files that could leave the agent with pattern names and no substance. The single biggest benefit is the 7-step review workflow that forces systematic reasoning before technology selection.
 
 ## Confidence and Limitations
 

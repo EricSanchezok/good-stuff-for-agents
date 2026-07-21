@@ -1,6 +1,6 @@
 import { createHash, randomUUID } from 'node:crypto'
-import { existsSync, mkdirSync, readdirSync, readFileSync, renameSync, rmSync, statSync, writeFileSync } from 'node:fs'
-import { dirname, join, relative, resolve } from 'node:path'
+import { existsSync, lstatSync, mkdirSync, readdirSync, readFileSync, realpathSync, renameSync, rmSync, writeFileSync } from 'node:fs'
+import { dirname, isAbsolute, join, relative, resolve, sep, win32 } from 'node:path'
 import { fileURLToPath } from 'node:url'
 import { spawnSync } from 'node:child_process'
 
@@ -34,19 +34,179 @@ function isCatalogRoot(path) {
   return existsSync(join(path, 'AGENTS.md')) && existsSync(join(path, 'catalog')) && existsSync(join(path, '.synergy', 'skill'))
 }
 
-export function ensureDir(path) {
-  mkdirSync(path, { recursive: true })
+export const CATALOG_ID_MAX_BYTES = 200
+
+export function resolveWithin(base, ...parts) {
+  const basePath = resolve(base)
+  for (const part of parts) {
+    if (typeof part !== 'string' || part.length === 0) throw new Error('Path parts must be non-empty strings')
+    if (isAbsolute(part) || win32.isAbsolute(part)) throw new Error(`Absolute path is not allowed: ${part}`)
+    if (part.split(/[\\/]/).includes('..')) throw new Error(`Parent path segment is not allowed: ${part}`)
+  }
+  const target = resolve(basePath, ...parts)
+  assertContained(basePath, target, parts.join('/'))
+  assertSafePathChain(basePath, target, { allowMissing: true })
+  return target
+}
+
+function assertContained(base, target, label = target) {
+  const rel = relative(base, target)
+  if (rel === '..' || rel.startsWith(`..${sep}`) || isAbsolute(rel)) {
+    throw new Error(`Path escapes base directory: ${label}`)
+  }
+}
+
+function tryLstat(path) {
+  try {
+    return lstatSync(path)
+  } catch (error) {
+    if (error?.code === 'ENOENT') return null
+    throw error
+  }
+}
+
+function sameIdentity(left, right) {
+  return left.dev === right.dev && left.ino === right.ino && left.mode === right.mode
+}
+
+function inspectExistingPath(rootReal, path) {
+  const first = lstatSync(path)
+  if (first.isSymbolicLink()) throw new Error(`Symbolic link is not allowed: ${path}`)
+  const real = realpathSync(path)
+  const second = lstatSync(path)
+  if (second.isSymbolicLink() || !sameIdentity(first, second)) throw new Error(`Path changed during safety check: ${path}`)
+  assertContained(rootReal, real, path)
+  return { real, stat: second }
+}
+
+function safeRoot(base) {
+  const root = resolve(base)
+  const rootStat = lstatSync(root)
+  if (rootStat.isSymbolicLink()) throw new Error(`Symbolic link root is not allowed: ${root}`)
+  if (!rootStat.isDirectory()) throw new Error(`Safety root is not a directory: ${root}`)
+  const rootReal = realpathSync(root)
+  const checked = lstatSync(root)
+  if (checked.isSymbolicLink() || !sameIdentity(rootStat, checked)) throw new Error(`Safety root changed during check: ${root}`)
+  return { root, rootReal }
+}
+
+function pathSegments(root, target) {
+  const rel = relative(root, target)
+  return rel ? rel.split(sep) : []
+}
+
+function assertSafePathChain(base, target, { allowMissing = false, targetType = null } = {}) {
+  const { root, rootReal } = safeRoot(base)
+  const absoluteTarget = resolve(target)
+  assertContained(root, absoluteTarget, target)
+  let current = root
+  for (const segment of pathSegments(root, absoluteTarget)) {
+    current = join(current, segment)
+    const stat = tryLstat(current)
+    if (!stat) {
+      if (allowMissing) return { root, rootReal, target: absoluteTarget, missing: current }
+      throw new Error(`Path does not exist: ${current}`)
+    }
+    const inspected = inspectExistingPath(rootReal, current)
+    if (current !== absoluteTarget && !inspected.stat.isDirectory()) throw new Error(`Path ancestor is not a directory: ${current}`)
+    if (current === absoluteTarget && targetType === 'file' && !inspected.stat.isFile()) throw new Error(`Path is not a regular file: ${current}`)
+    if (current === absoluteTarget && targetType === 'directory' && !inspected.stat.isDirectory()) throw new Error(`Path is not a directory: ${current}`)
+  }
+  return { root, rootReal, target: absoluteTarget, missing: null }
+}
+
+function ensureSafeDirectory(base, directory) {
+  const { root, rootReal } = safeRoot(base)
+  const target = resolve(directory)
+  assertContained(root, target, directory)
+  let current = root
+  for (const segment of pathSegments(root, target)) {
+    current = join(current, segment)
+    if (!tryLstat(current)) {
+      try {
+        mkdirSync(current)
+      } catch (error) {
+        if (error?.code !== 'EEXIST') throw error
+      }
+    }
+    const inspected = inspectExistingPath(rootReal, current)
+    if (!inspected.stat.isDirectory()) throw new Error(`Path component is not a directory: ${current}`)
+  }
+  return target
+}
+
+export function assertSafeContainedPathForWrite(base, target) {
+  const absoluteTarget = resolve(target)
+  ensureSafeDirectory(base, dirname(absoluteTarget))
+  return assertSafePathChain(base, absoluteTarget, { allowMissing: true }).target
+}
+
+export function assertSafeContainedPathForDelete(base, target, { type = null } = {}) {
+  return assertSafePathChain(base, target, { targetType: type }).target
+}
+
+export function removeSafeContainedPath(base, target, options = {}) {
+  const { type = null, ...removeOptions } = options
+  const expectedType = removeOptions.recursive ? 'directory' : type
+  const checked = assertSafeContainedPathForDelete(base, target, { type: expectedType })
+  assertSafeContainedPathForDelete(base, checked, { type: expectedType })
+  rmSync(checked, removeOptions)
+}
+
+export function assertCatalogId(kind, value) {
+  const prefixes = {
+    source: 'src_',
+    skill: 'skl_',
+    pack: 'pack_',
+    evaluation: 'eval_',
+    run: 'run_',
+    candidate: 'cand_',
+  }
+  const prefix = prefixes[kind]
+  if (!prefix) throw new Error(`Unknown catalog ID kind: ${kind}`)
+  if (typeof value !== 'string' || value.length === 0) throw new Error(`${kind} ID must be a non-empty string`)
+  if (Buffer.byteLength(value, 'utf8') > CATALOG_ID_MAX_BYTES) throw new Error(`${kind} ID exceeds ${CATALOG_ID_MAX_BYTES} UTF-8 bytes`)
+  if (value.includes('/') || value.includes('\\') || value.includes('..') || /[\x00-\x1f\x7f]/.test(value)) {
+    throw new Error(`Invalid ${kind} ID: ${JSON.stringify(value)}`)
+  }
+  if (!value.startsWith(prefix) || !/^[a-z0-9_-]+$/.test(value) || value.length === prefix.length) {
+    throw new Error(`Invalid ${kind} ID: ${JSON.stringify(value)}`)
+  }
+  return value
+}
+
+export function ensureDir(path, base = ROOT) {
+  return ensureSafeDirectory(base, path)
 }
 
 export function listFiles(dir, predicate = () => true) {
-  if (!existsSync(dir)) return []
+  const root = resolve(dir)
+  const rootStat = tryLstat(root)
+  if (!rootStat) return []
+  const { rootReal } = safeRoot(root)
   const out = []
-  for (const entry of readdirSync(dir)) {
-    const path = join(dir, entry)
-    const stat = statSync(path)
-    if (stat.isDirectory()) out.push(...listFiles(path, predicate))
-    else if (predicate(path)) out.push(path)
+  const visitedRealpaths = new Set()
+  const visitedInodes = new Set()
+
+  function walk(current) {
+    const inspectedDirectory = inspectExistingPath(rootReal, current)
+    if (!inspectedDirectory.stat.isDirectory()) throw new Error(`Walker root is not a directory: ${current}`)
+    const inodeKey = `${inspectedDirectory.stat.dev}:${inspectedDirectory.stat.ino}`
+    if (visitedRealpaths.has(inspectedDirectory.real) || visitedInodes.has(inodeKey)) throw new Error(`Filesystem cycle detected: ${current}`)
+    visitedRealpaths.add(inspectedDirectory.real)
+    visitedInodes.add(inodeKey)
+
+    for (const entry of readdirSync(current)) {
+      const path = join(current, entry)
+      const stat = lstatSync(path)
+      if (stat.isSymbolicLink()) throw new Error(`Symbolic link is not allowed: ${path}`)
+      const inspected = inspectExistingPath(rootReal, path)
+      if (inspected.stat.isDirectory()) walk(path)
+      else if (inspected.stat.isFile() && predicate(path)) out.push(path)
+    }
   }
+
+  walk(root)
   return out.sort()
 }
 
@@ -54,11 +214,21 @@ export function readText(path) {
   return readFileSync(path, 'utf8')
 }
 
-export function writeTextAtomic(path, content) {
-  ensureDir(dirname(path))
-  const tmp = `${path}.tmp-${process.pid}-${Date.now()}-${randomUUID()}`
-  writeFileSync(tmp, content)
-  renameSync(tmp, path)
+export function writeTextAtomic(path, content, base = ROOT) {
+  const target = assertSafeContainedPathForWrite(base, path)
+  const tmp = `${target}.tmp-${process.pid}-${Date.now()}-${randomUUID()}`
+  assertSafeContainedPathForWrite(base, tmp)
+  try {
+    writeFileSync(tmp, content, { flag: 'wx' })
+    assertSafeContainedPathForWrite(base, target)
+    assertSafePathChain(base, tmp, { targetType: 'file' })
+    renameSync(tmp, target)
+  } catch (error) {
+    try {
+      if (tryLstat(tmp)) removeSafeContainedPath(base, tmp, { force: true, type: 'file' })
+    } catch {}
+    throw error
+  }
 }
 
 export function sha256(text) {
@@ -189,13 +359,13 @@ export function appendJsonl(path, value) {
   writeTextAtomic(path, current + line + '\n')
 }
 
-export function writeYaml(path, value) {
-  writeTextAtomic(path, toYaml(value))
+export function writeYaml(path, value, base = ROOT) {
+  writeTextAtomic(path, toYaml(value), base)
 }
 
 export function readDraft(argv) {
   const source = argv[0]
-  const text = source ? readText(resolve(ROOT, source)) : readFileSync(0, 'utf8')
+  const text = source ? readText(resolveWithin(ROOT, source)) : readFileSync(0, 'utf8')
   return JSON.parse(text)
 }
 
@@ -228,30 +398,79 @@ export function nowIso() {
 }
 
 export function sourceRecordPath(sourceId) {
-  return join(CATALOG, 'sources', 'registry.yaml')
+  if (sourceId !== undefined) assertCatalogId('source', sourceId)
+  return resolveWithin(CATALOG, 'sources', 'registry.yaml')
 }
 
 export function skillRecordPath(skillId) {
-  return join(CATALOG, 'skills', 'records', prefixFor(skillId), `${skillId}.yaml`)
+  assertCatalogId('skill', skillId)
+  return resolveWithin(CATALOG, 'skills', 'records', prefixFor(skillId), `${skillId}.yaml`)
 }
 
 export function analysisPath(skillId) {
-  return join(CATALOG, 'analyses', prefixFor(skillId), `${skillId}.md`)
+  assertCatalogId('skill', skillId)
+  return resolveWithin(CATALOG, 'analyses', prefixFor(skillId), `${skillId}.md`)
 }
 
 export function packRecordPath(packId, status = 'candidate') {
+  assertCatalogId('pack', packId)
   const bucket = status === 'published' ? 'published' : 'candidates'
-  return join(CATALOG, 'packs', bucket, packId, 'pack.yaml')
+  return resolveWithin(CATALOG, 'packs', bucket, packId, 'pack.yaml')
 }
 
 export function evaluationPathForPack(packId, status = 'candidate') {
+  assertCatalogId('pack', packId)
   const bucket = status === 'published' ? 'published' : 'candidates'
-  return join(CATALOG, 'packs', bucket, packId, 'evaluation.json')
+  return resolveWithin(CATALOG, 'packs', bucket, packId, 'evaluation.json')
+}
+
+export function packContentHash(record) {
+  const { evaluation, updated_at: updatedAt, ...content } = record
+  return sha256(stableStringify(content))
+}
+
+export function createEvaluationBinding(packId) {
+  assertCatalogId('pack', packId)
+  const packPath = packRecordPath(packId, 'candidate')
+  if (!existsSync(packPath)) throw new Error(`Candidate pack does not exist: ${packId}`)
+  const pack = parseYamlFile(packPath)
+  if (pack.pack_id !== packId || pack.status !== 'candidate') {
+    throw new Error(`Pack ${packId} is not a current candidate`)
+  }
+  const packHash = packContentHash(pack)
+  return {
+    schema_version: 1,
+    kind: 'pack_evaluation_binding',
+    pack_id: packId,
+    pack_status: 'candidate',
+    pack_version: pack.version,
+    pack_hash: packHash,
+    evaluation_id: idFor('eval', [packId, 'candidate', packHash]),
+    expected_path: relative(ROOT, evaluationPathForPack(packId, 'candidate')),
+  }
+}
+
+export function assertCurrentEvaluationBinding(binding) {
+  if (!binding || typeof binding !== 'object' || Array.isArray(binding)) throw new Error('Evaluation binding must be an object')
+  assertCatalogId('pack', binding.pack_id)
+  assertCatalogId('evaluation', binding.evaluation_id)
+  if (binding.schema_version !== 1 || binding.kind !== 'pack_evaluation_binding') throw new Error('Unsupported evaluation binding')
+  if (binding.pack_status !== 'candidate') throw new Error('Only candidate pack evaluation bindings are supported')
+  const expected = createEvaluationBinding(binding.pack_id)
+  for (const field of ['pack_status', 'pack_version', 'pack_hash', 'evaluation_id', 'expected_path']) {
+    if (binding[field] !== expected[field]) throw new Error(`Evaluation binding ${field} is stale or mismatched`)
+  }
+  return {
+    binding: expected,
+    packPath: packRecordPath(binding.pack_id, 'candidate'),
+    evaluationPath: evaluationPathForPack(binding.pack_id, 'candidate'),
+  }
 }
 
 export function evidencePathForPack(packId, status = 'candidate') {
+  assertCatalogId('pack', packId)
   const bucket = status === 'published' ? 'published' : 'candidates'
-  return join(CATALOG, 'packs', bucket, packId, 'evidence.md')
+  return resolveWithin(CATALOG, 'packs', bucket, packId, 'evidence.md')
 }
 
 export function loadRegistry() {
@@ -301,8 +520,14 @@ export function validateCatalog({ strict = false } = {}) {
     } catch (error) { errors.push(error.message) }
   }
 
-  for (const { path, record } of loadSkillRecords()) validateSkill(record, errors, relative(ROOT, path))
-  for (const { path, record } of loadPackRecords()) validatePack(record, errors, relative(ROOT, path))
+  const skillRecords = loadSkillRecords()
+  const skills = new Map(skillRecords.map(({ record }) => [record.canonical_skill_id, record]))
+  for (const { path, record } of skillRecords) validateSkill(record, errors, relative(ROOT, path))
+  for (const { path, record } of loadPackRecords()) {
+    const label = relative(ROOT, path)
+    validatePack(record, errors, label)
+    if (record.status === 'published') validatePublishedPack(record, errors, label, skills)
+  }
 
   for (const path of listFiles(join(CATALOG, 'analyses'), (file) => file.endsWith('.md'))) validateAnalysisMarkdown(path, errors, warnings)
 
@@ -338,6 +563,22 @@ function validatePack(pack, errors, label) {
   for (const [idx, member] of (pack.members || []).entries()) required(member, ['skill_id', 'version_id', 'role', 'stage', 'inclusion_reason'], errors, `${label}.members[${idx}]`)
   if (label.includes('published') && (pack.status === 'candidate' || pack.status === 'rejected')) errors.push(`${label}: published pack must not have status ${pack.status}`)
   if (label.includes('candidates') && (pack.status === 'published' || pack.status === 'stale')) errors.push(`${label}: candidate pack must not have status ${pack.status}`)
+}
+
+function validatePublishedPack(pack, errors, label, skills) {
+  const evaluationPath = evaluationPathForPack(pack.pack_id, 'published')
+  let evaluation = null
+  if (existsSync(evaluationPath)) {
+    try {
+      evaluation = JSON.parse(readText(evaluationPath))
+      if (!evaluation || typeof evaluation !== 'object' || Array.isArray(evaluation)) evaluation = null
+    } catch (error) {
+      errors.push(`${label}: published evaluation is invalid JSON: ${error.message}`)
+    }
+  }
+  for (const reason of packPromotionIneligibilityReasons(pack, evaluation, skills, { requireFileEvaluation: true })) {
+    errors.push(`${label}: published pack invariant failed: ${reason}`)
+  }
 }
 
 function validateRelation(edge, errors, label) {
@@ -446,19 +687,62 @@ function writeShards(skills) {
   }
 }
 
-export function promotePassingCandidates(cleanup = false) {
-  const changed = []
-  for (const { path, record } of loadPackRecords('candidates')) {
-    const evalPath = evaluationPathForPack(record.pack_id, 'candidate')
-    if (existsSync(evalPath)) {
-      try {
-        const evalJson = JSON.parse(readText(evalPath))
-        if (evalJson.status !== 'passed' || (evalJson.overall_score ?? 0) < 0.78) continue
-        if (record.evaluation?.status && record.evaluation.status !== 'passed') continue
-      } catch { continue }
-    } else if (record.evaluation?.status !== 'passed' || (record.evaluation?.score ?? 0) < 0.78) {
+function hasOnlyPassingSignals(evaluation, requireSignal = false) {
+  const signals = []
+  if (Object.hasOwn(evaluation, 'status')) signals.push(evaluation.status === 'passed')
+  if (Object.hasOwn(evaluation, 'passed')) signals.push(evaluation.passed === true)
+  return (!requireSignal || signals.length > 0) && signals.every(Boolean)
+}
+
+export function packPromotionIneligibilityReasons(record, fileEvaluation, skills, { requireFileEvaluation = false } = {}) {
+  const reasons = []
+  const inlineEvaluation = record.evaluation ?? {}
+  const primaryEvaluation = fileEvaluation ?? inlineEvaluation
+  if (requireFileEvaluation && !fileEvaluation) reasons.push('passing evaluation file is required')
+  if (fileEvaluation) {
+    if (fileEvaluation.status !== 'passed' || fileEvaluation.passed !== true) reasons.push('evaluation status and passed signals must consistently pass')
+    if (requireFileEvaluation && fileEvaluation.output_id !== record.pack_id) reasons.push('evaluation must be bound to the same pack')
+    if (requireFileEvaluation && (!fileEvaluation.evaluation_id || inlineEvaluation.evaluation_id !== fileEvaluation.evaluation_id)) reasons.push('inline and file evaluation IDs must match')
+  } else if (!hasOnlyPassingSignals(primaryEvaluation, true)) {
+    reasons.push('evaluation status and passed signals must consistently pass')
+  }
+  if (fileEvaluation && !hasOnlyPassingSignals(inlineEvaluation)) reasons.push('inline evaluation contradicts the evaluation file')
+
+  const score = primaryEvaluation.overall_score ?? primaryEvaluation.score
+  if (!Number.isFinite(score) || score < 0.78) reasons.push('evaluation score must be at least 0.78')
+
+  const members = record.members ?? []
+  if (members.length < 2) reasons.push('at least two members are required')
+  for (const member of members) {
+    const skill = skills.get(member.skill_id)
+    if (!skill) {
+      reasons.push(`member ${member.skill_id} does not exist`)
       continue
     }
+    if (!['active', 'preview'].includes(skill.status)) reasons.push(`member ${member.skill_id} status ${skill.status} is not eligible`)
+    if (skill.identity?.current_version_id !== member.version_id) reasons.push(`member ${member.skill_id} does not pin its current version`)
+  }
+  return reasons
+}
+
+export function isPackPromotionEligible(record, fileEvaluation, skills, options = {}) {
+  return packPromotionIneligibilityReasons(record, fileEvaluation, skills, options).length === 0
+}
+
+export function promotePassingCandidates(cleanup = false, selectedPackIds = null) {
+  const changed = []
+  const skills = new Map(loadSkillRecords().map(({ record }) => [record.canonical_skill_id, record]))
+  for (const { path, record } of loadPackRecords('candidates')) {
+    if (selectedPackIds && !selectedPackIds.has(record.pack_id)) continue
+    const evalPath = evaluationPathForPack(record.pack_id, 'candidate')
+    let fileEvaluation = null
+    if (existsSync(evalPath)) {
+      try {
+        fileEvaluation = JSON.parse(readText(evalPath))
+        if (!fileEvaluation || typeof fileEvaluation !== 'object' || Array.isArray(fileEvaluation)) continue
+      } catch { continue }
+    }
+    if (!isPackPromotionEligible(record, fileEvaluation, skills, { requireFileEvaluation: true })) continue
 
     if (!record.evaluation?.status || record.evaluation.status !== 'passed') {
       record.evaluation = { ...(record.evaluation ?? {}), status: 'passed' }
@@ -477,11 +761,11 @@ export function promotePassingCandidates(cleanup = false) {
     changed.push(relative(ROOT, target))
 
     if (cleanup) {
-      rmSync(path, { force: true })
-      if (existsSync(evalSource)) rmSync(evalSource, { force: true })
-      if (existsSync(evidenceSource)) rmSync(evidenceSource, { force: true })
+      removeSafeContainedPath(CATALOG, path, { force: true, type: 'file' })
+      if (existsSync(evalSource)) removeSafeContainedPath(CATALOG, evalSource, { force: true, type: 'file' })
+      if (existsSync(evidenceSource)) removeSafeContainedPath(CATALOG, evidenceSource, { force: true, type: 'file' })
       const candidateDir = dirname(path)
-      try { if (existsSync(candidateDir) && readdirSync(candidateDir).length === 0) rmSync(candidateDir, { force: true }) } catch {}
+      if (existsSync(candidateDir) && readdirSync(candidateDir).length === 0) removeSafeContainedPath(CATALOG, candidateDir, { force: true, type: 'directory' })
     }
   }
   return changed

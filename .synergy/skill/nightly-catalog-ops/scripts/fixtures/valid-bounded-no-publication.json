@@ -1,0 +1,118 @@
+{
+  "schema_version": 2,
+  "run_id": "run_2026-07-21-020202",
+  "authorization": {
+    "mode": "commit",
+    "commits_allowed": true,
+    "pushes_allowed": false,
+    "trigger": "scheduled",
+    "operator": "nightly-controller",
+    "source": "scheduled_automation"
+  },
+  "touched_paths_manifest": "reports/nightly-catalog-ops/2026-07-21-020202-touched-paths.json",
+  "touched_paths_manifest_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+  "starting_state": {
+    "branch": "main",
+    "head": "1111111111111111111111111111111111111111",
+    "working_tree_clean": true,
+    "unrelated_changes_exist": false,
+    "catalog_counts": { "skills": 10, "sources": 2, "packs": 1, "published_packs": 0 }
+  },
+  "maintenance_preflight": {
+    "ok": true,
+    "steps": [],
+    "validation": { "ok": true, "errors": [] },
+    "git_clean_before_growth": true
+  },
+  "growth": {
+    "ok": true,
+    "growth_report": null,
+    "objects_touched": {
+      "sources_discovered": 0,
+      "sources_activated": 0,
+      "skills_extracted": 0,
+      "skills_normalized": 0,
+      "analyses_written": 0,
+      "relations_written": 0,
+      "packs_synthesized": 0,
+      "packs_evaluated": 1
+    }
+  },
+  "terminal_states": [
+    {
+      "object_type": "pack",
+      "object_id": "pack_bounded_repair",
+      "path": "catalog/packs/candidates/.gitkeep",
+      "state": "evaluated",
+      "owner": "catalog-evaluation",
+      "reason": "Three substantive repairs still left evidence quality below the 0.78 threshold, so the target was rejected.",
+      "evaluation_outcome": "rejected",
+      "verification": ["npm --prefix .synergy run catalog:validate"]
+    }
+  ],
+  "publication_progress": {
+    "mode": "recovery",
+    "published": false,
+    "recovery_trigger": {
+      "completed_full_runs_since_publication": 3,
+      "days_since_publication": 5,
+      "evidence": "Three completed full-run summaries record no publication since the last published pack."
+    },
+    "targets_attempted": [
+      {
+        "object_id": "pack_bounded_repair",
+        "selection_reason": "Closest-to-publication candidate at 0.76 with repairable evidence gaps.",
+        "attempts": [
+          {
+            "attempt": 1,
+            "outcome": "needs_work",
+            "evidence": "Added workflow evidence; score remained 0.76."
+          },
+          {
+            "attempt": 2,
+            "outcome": "needs_work",
+            "evidence": "Resolved compatibility gap; evidence quality still failed."
+          },
+          {
+            "attempt": 3,
+            "outcome": "rejected",
+            "evidence": "Refined exclusions; final score remained below 0.78, exhausting the repair budget."
+          }
+        ],
+        "outcome": "rejected",
+        "blocker_class": null
+      }
+    ],
+    "no_publish_reason": {
+      "code": "targets_exhausted",
+      "summary": "The selected candidate remained below the unchanged 0.78 threshold after three repairs.",
+      "evidence": [
+        "Selected pack_bounded_repair as the closest eligible target.",
+        "All three substantive attempts are recorded, and the exhausted target ended rejected."
+      ]
+    }
+  },
+  "publishing_final_gates": {
+    "ok": true,
+    "render": { "ok": true, "pages_written": 0 },
+    "drift": { "ok": true },
+    "links": { "ok": true },
+    "boundary": { "ok": true, "issues": [] },
+    "final_validation": { "ok": true, "errors": [] }
+  },
+  "git": {
+    "authorization": "commit",
+    "execution_model": "none",
+    "allowed_paths": ["catalog/packs/candidates/", "reports/"],
+    "message": "No Git mutation was performed; these paths describe the bounded run output for read-only audit."
+  },
+  "blockers": [],
+  "next_run_priorities": [
+    {
+      "priority": 1,
+      "object_id": "pack_bounded_repair",
+      "action": "Reconsider only when new source evidence changes the evaluation.",
+      "owner": "catalog-evaluation"
+    }
+  ]
+}

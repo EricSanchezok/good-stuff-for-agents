@@ -1,26 +1,25 @@
 # Growth Quality Gate
 
-A growth run is successful when it advances catalog evidence without violating policy.
+A growth run succeeds when it advances catalog evidence and publication readiness without violating policy.
 
 ## Full Success
 
 All applicable conditions pass:
 
-- demand scan performed;
-- discovery themes chosen from evidence;
-- inspected sources have recorded evidence;
-- activated/preview sources satisfy activation policy;
-- ambiguous sources are blocked or left as candidates with reasons;
+- demand and catalog gaps were inspected;
+- publication targets were ranked and the selected target has a reason;
+- activated or preview sources satisfy activation policy;
 - downstream phases ran when inputs existed;
-- no fake sources, skills, analyses, packs, or evaluations were created;
-- validation passes;
-- indexes rebuild;
-- growth report is written.
+- a repairable selected target was advanced, evaluated, or published within budget;
+- every repair attempt records a substantive input or design change;
+- no fake source, skill, analysis, relation, pack, or evaluation was created;
+- validation and index rebuild pass;
+- the growth report records publication progress and blockers.
 
 ## Partial Success
 
-Use partial success when some phases advance but blockers remain, such as source sync failures, unsupported URL types, no sufficient pack evidence, or unclear license.
+Use partial success only when evidence or a target materially advanced but publication remains blocked after owner-routed repair, target switching, or exhausted run budget. Existing repairable candidates that were not attempted cannot be hidden behind unrelated discovery or analysis progress.
 
 ## Failure
 
-A growth run fails when validation cannot pass, writes are not traceable to evidence, activation policy is violated, or semantic artifacts are fabricated.
+A growth run fails when validation cannot pass, writes are not traceable to evidence, activation policy is violated, semantic artifacts are fabricated, repair attempts repeat unchanged inputs, or a repairable publication target is abandoned before its bounded workflow runs.

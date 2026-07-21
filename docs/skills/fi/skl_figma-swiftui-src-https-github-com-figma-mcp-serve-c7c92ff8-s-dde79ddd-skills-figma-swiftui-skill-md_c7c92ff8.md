@@ -4,7 +4,7 @@
 
 ## Summary
 
-Analysis available.
+A bidirectional translation router between Figma designs and SwiftUI code. The SKILL.md itself is a thin dispatcher — it picks a direction (design→code or code→design) and routes to one of two reference files. The shared context section contains six grounding principles that apply regardless of direction, and these six points are where the real design judgment lives.
 
 ## Source
 
@@ -38,7 +38,7 @@ No related skills are public yet.
 
 ## Public Analysis Summary
 
-Analysis available.
+Pick this skill when doing Figma↔SwiftUI translation work, because its six shared principles encode genuine iOS platform knowledge that prevents the most common translation failures (pixel-positioning, hardcoded colors, broken icons). Skip it if you need pixel-perfect fidelity, if you're not on iOS, or if the reference files turn out to be thin — the SKILL.md body is too small to stand on its own. The biggest benefit is preventing naive transliteration of Figma output into broken SwiftUI. The biggest risk is that the semantic mapping rules are applied blindly to designs that don't follow iOS conventions.
 
 ## Confidence and Limitations
 

@@ -4,7 +4,7 @@
 
 ## Summary
 
-Analysis available.
+This is a theme picker and applier for slide decks and other artifacts. It ships with 10 pre-built themes (Ocean Depths, Sunset Boulevard, Forest Canopy, etc.) stored in a `themes/` directory and displayed via a showcase PDF. The agent reads a theme file, applies its hex colors and font pairings to a deck, and optionally creates a custom theme on the fly. That's the whole skill.
 
 ## Source
 
@@ -38,7 +38,7 @@ No related skills are public yet.
 
 ## Public Analysis Summary
 
-Analysis available.
+This is a file-backed palette picker for slide decks. It does what it says and nothing more. The 10 themes are adequate but unmemorable. The custom-theme path is under-specified. The single biggest benefit is the curated, ready-to-apply nature of the pre-built themes for users who want zero decisions; the biggest risk is the filesystem dependency that silently breaks the skill outside its home repo.
 
 ## Confidence and Limitations
 

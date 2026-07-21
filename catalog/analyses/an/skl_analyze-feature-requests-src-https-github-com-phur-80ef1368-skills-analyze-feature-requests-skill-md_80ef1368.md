@@ -2,9 +2,9 @@
 schema_version: 1
 skill_id: skl_analyze-feature-requests-src-https-github-com-phur-80ef1368-skills-analyze-feature-requests-skill-md_80ef1368
 source_hash: sha256:755b5cae934fb0fb8c334fdef10bbb358ed1492d
-analysis_version: 1
+analysis_version: 2
 confidence: high
-updated_at: "2026-07-10T13:46:00.000Z"
+updated_at: "2026-07-21T11:41:04.759Z"
 ---
 
 # analyze-feature-requests
@@ -13,7 +13,7 @@ A feature-request triage skill that guides the agent through a product discovery
 
 ## Why it matters
 
-This is the strongest of the five phuryn/pm-skills analyzed in this batch, and it earns that position on the strength of a single instruction: "Never allow customers to design solutions. Prioritize opportunities (problems), not features." That line encodes a real product philosophy — one that distinguishes competent PMs from feature factories — and the skill structures its entire workflow around it.
+The skill's strongest instruction is: "Never allow customers to design solutions. Prioritize opportunities (problems), not features." That line encodes a real product philosophy — one that distinguishes competent PMs from feature factories — and the skill structures its entire workflow around it.
 
 The workflow is logically sound: categorization finds patterns, strategic alignment filters noise, prioritization picks winners, and assumption-testing prevents the PM from committing to the wrong winners. This is a reasonable approximation of a real product discovery process, not just a template. The reference to Opportunity Score (Importance × (1 − Satisfaction)) gives the prioritization step a defensible methodology rather than gut-feel ranking.
 

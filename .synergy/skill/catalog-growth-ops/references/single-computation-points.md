@@ -8,7 +8,7 @@ If a value is missing, malformed, or inconvenient to consume, return to the SCP 
 
 | Value | SCP owner | Computation rule | Consumers |
 |---|---|---|---|
-| `content_digest` | `source-sync` | Computed by `sync-sources.mjs` and written to the snapshot manifest artifact entry | `skill-extraction`, `skill-normalization`, `skill-deep-analysis`, `skill-analyzer` |
+| `content_digest` / `git_blob_oid` | `source-sync` | Record the real provenance algorithm. GitHub tree metadata becomes `git_sha1:<40hex>`; a byte digest is recorded only after hashing fetched bytes | `skill-extraction`, `skill-normalization`, `skill-deep-analysis`, `skill-analyzer` |
 | `raw_url` | `source-sync` | Direct-download artifact URL, e.g. `raw.githubusercontent.com/...`, written to the snapshot manifest artifact entry | `skill-deep-analysis`, `skill-analyzer` |
 | `license` | `source-sync` | SPDX/evidence recorded from source-level license evidence | `skill-normalization`, downstream catalog consumers |
 | `declared_name` | `skill-extraction` | Exact artifact-provided name/title, preserved without trim, slugify, case transform, or semantic cleanup | `skill-normalization` |
@@ -24,6 +24,7 @@ If a value is missing, malformed, or inconvenient to consume, return to the SCP 
 These are SCP violations:
 
 - Recomputing `content_digest` in extraction, normalization, deep analysis, a subagent, or validation logic.
+- Labeling a 40-hex Git blob SHA-1 as `sha256:` or claiming a digest of artifact bytes that sync never fetched.
 - Treating "verification" as permission to compute a competing hash.
 - Converting `github.com/.../blob/...` to `raw.githubusercontent.com/...` downstream instead of consuming `raw_url` from sync.
 - Re-reading or reinterpreting the source license in normalization or analysis.

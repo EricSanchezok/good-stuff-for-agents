@@ -1,14 +1,16 @@
 #!/usr/bin/env node
 import { createHash } from 'node:crypto'
-import { existsSync, readFileSync, readdirSync, statSync } from 'node:fs'
 import { join } from 'node:path'
-import { CATALOG } from '../../catalog-data/scripts/lib/catalog-lib.mjs'
+import { assertCatalogId, CATALOG } from '../../catalog-data/scripts/lib/catalog-lib.mjs'
 import { catalogData, option, printResult, readJsonInput } from '../../catalog-data/scripts/lib/pipeline-cli.mjs'
+import { loadLatestSnapshotArtifacts } from './lib/snapshot-artifacts.mjs'
 
 const input = readJsonInput(null)
-const runId = option('--run-id', input?.run_id ?? 'run_manual')
-const sourceId = option('--source-id', input?.source_id ?? null)
-const artifacts = input?.artifacts ?? loadLatestSnapshotArtifacts(sourceId)
+const runId = assertCatalogId('run', option('--run-id', input?.run_id ?? 'run_manual'))
+const sourceIdValue = option('--source-id', input?.source_id ?? null)
+const sourceId = sourceIdValue ? assertCatalogId('source', sourceIdValue) : null
+const snapshotRoot = join(CATALOG, 'sources', 'snapshots')
+const artifacts = input?.artifacts ?? loadLatestSnapshotArtifacts(snapshotRoot, sourceId)
 if (!Array.isArray(artifacts)) throw new Error('Expected artifacts array from input or source snapshots')
 
 const records = []
@@ -38,31 +40,6 @@ function assertArtifact(artifact) {
   if (!artifact.source_id) throw new Error('Artifact is missing source_id')
   if (!artifact.path) throw new Error('Artifact is missing path')
   if (!isSupportedPath(artifact.path)) throw new Error(`Unsupported artifact path: ${artifact.path}`)
-}
-
-function loadLatestSnapshotArtifacts(filterSourceId) {
-  const snapshotDir = join(CATALOG, 'sources', 'snapshots')
-  if (!existsSync(snapshotDir)) return []
-  const manifests = listJson(snapshotDir)
-    .map((path) => JSON.parse(readFileSync(path, 'utf8')))
-    .filter((manifest) => !filterSourceId || manifest.source_id === filterSourceId)
-    .sort((a, b) => String(b.checked_at).localeCompare(String(a.checked_at)))
-  const latestBySource = new Map()
-  for (const manifest of manifests) {
-    if (!latestBySource.has(manifest.source_id)) latestBySource.set(manifest.source_id, manifest)
-  }
-  return [...latestBySource.values()].flatMap((manifest) => manifest.artifacts ?? [])
-}
-
-function listJson(dir) {
-  const out = []
-  for (const entry of readdirSync(dir)) {
-    const path = join(dir, entry)
-    const stat = statSync(path)
-    if (stat.isDirectory()) out.push(...listJson(path))
-    else if (path.endsWith('.json')) out.push(path)
-  }
-  return out.sort()
 }
 
 function isSupportedPath(path) {

@@ -4,7 +4,7 @@
 
 ## Summary
 
-Analysis available.
+This is the most comprehensive ad-platform skill in the thatrebeccarae collection — covering Search, Shopping, Performance Max, Display, YouTube, Demand Gen, and App campaigns with a 74-check scored audit system, eight hard rules, and guidance spanning keyword strategy to consent mode compliance. It has genuine operational depth in two specific areas: Performance Max architecture and the hard rules that encode Google Ads-specific failure modes. But its breadth works against it — the skill tries to cover seven campaign types and ends up thin everywhere except PMax.
 
 ## Source
 
@@ -38,7 +38,7 @@ No related skills are public yet.
 
 ## Public Analysis Summary
 
-Analysis available.
+Pick this skill for PMax architecture and hard-rule enforcement on accounts with real spend. It is the second-best ad-platform skill in this collection after Facebook Ads, and its PMax depth is genuinely useful given how many advertisers are struggling with that campaign type. Skip it for YouTube, Display, or small-budget accounts. The biggest risk is applying mid-market advice to small accounts that can't support it. The biggest benefit is the hard rules, which encode specific failure modes that would take months of wasted spend to learn through trial and error.
 
 ## Confidence and Limitations
 

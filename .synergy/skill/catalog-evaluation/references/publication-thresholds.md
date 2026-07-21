@@ -14,4 +14,4 @@ Additional publication blockers:
 - raw mirrored content violates license policy;
 - generated docs cannot trace back to catalog records.
 
-Passing evaluation does not itself publish; promotion is performed through catalog-data and publishing scripts.
+Passing evaluation does not itself publish; promotion is performed through catalog-data and publishing scripts. Publication recovery changes target priority and repair effort only. It never lowers the `0.78` threshold or waives blockers.

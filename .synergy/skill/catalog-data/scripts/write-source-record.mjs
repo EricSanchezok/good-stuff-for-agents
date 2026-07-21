@@ -1,10 +1,11 @@
 #!/usr/bin/env node
-import { idFor, loadRegistry, nowIso, readDraft, writeRegistry } from './lib/catalog-lib.mjs'
+import { assertCatalogId, idFor, loadRegistry, nowIso, readDraft, writeRegistry } from './lib/catalog-lib.mjs'
 
 const draft = readDraft(process.argv.slice(2))
+const sourceId = assertCatalogId('source', draft.source_id ?? idFor('src', [draft.url ?? draft.name, draft.name ?? 'source']))
 const source = {
   schema_version: 1,
-  source_id: draft.source_id ?? idFor('src', [draft.url ?? draft.name, draft.name ?? 'source']),
+  source_id: sourceId,
   name: draft.name,
   url: draft.url ?? null,
   type: draft.type ?? 'github_repo',

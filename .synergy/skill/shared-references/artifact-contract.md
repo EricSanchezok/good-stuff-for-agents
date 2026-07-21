@@ -16,7 +16,9 @@ A discovery report should explain why each source is relevant, what evidence was
 - Source state events: `catalog/sources/state.jsonl`
 - Updated source records: `catalog/sources/records/<prefix>/<source-id>.yaml`
 
-A snapshot manifest should contain the upstream ref, checked time, discovered artifacts, artifact digests, and enough URLs or paths for extraction to inspect the source content.
+A snapshot manifest should contain the pinned upstream commit, checked time, discovered artifacts, strict source-relative paths, canonical raw URLs, and algorithm-correct provenance. GitHub tree metadata is recorded as `git_sha1:<40hex>` object identity; it is not a SHA-256 digest of fetched bytes.
+
+Each artifact carries a deterministic `artifact_binding` with `source_id`, `remote_path`, pinned commit, Git blob OID, canonical raw URL, and nullable canonical skill/output fields. After normalization, the trusted analysis controller must select the artifact from the latest source snapshot only when its `content_digest` exactly equals the normalized skill record's `identity.current_version_id`. The controller binds both values separately: `current_version_id` is the normalized version identity copied from snapshot `content_digest`, while `git_blob_oid` is the algorithm-labeled Git object identity used to verify fetched bytes. It then fills the canonical skill ID and derived output path, wraps the exact binding in a strict run-scoped JSON dispatch envelope, and binds the envelope with `dispatch_digest`. A newer unmatched snapshot requires normalization; it must never fall back to an older artifact.
 
 ## Skill Candidate Artifacts
 

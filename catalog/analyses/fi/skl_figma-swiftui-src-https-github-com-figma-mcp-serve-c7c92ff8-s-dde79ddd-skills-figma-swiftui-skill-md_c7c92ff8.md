@@ -2,9 +2,9 @@
 schema_version: 1
 skill_id: skl_figma-swiftui-src-https-github-com-figma-mcp-serve-c7c92ff8-s-dde79ddd-skills-figma-swiftui-skill-md_c7c92ff8
 source_hash: sha256:2df88a2e0a2b121a0a580de633d2351ecadf1ff6
-analysis_version: 1
+analysis_version: 2
 confidence: medium
-updated_at: "2026-07-10T02:16:15+08:00"
+updated_at: "2026-07-21T19:10:00+08:00"
 ---
 
 # Figma ↔ SwiftUI
@@ -13,7 +13,7 @@ A bidirectional translation router between Figma designs and SwiftUI code. The S
 
 ## Why it matters
 
-This skill is valuable primarily for its shared context principles, not its routing structure. Those six points encode genuine design-to-code translation wisdom that most bridge tools get wrong. The critical insight is point #2: "The React+Tailwind in `get_design_context` output is a structural reference, not a literal source." This tells the agent that `get_design_context` returns an approximation — pixel-positioned divs with Tailwind classes — and that naively transliterating this into SwiftUI `position: absolute` views will produce garbage. Instead, the screenshot is the source of truth, and the agent must recognize underlying iOS patterns (NavigationStack, TabView, List) rather than rebuilding them from primitives.
+This skill is valuable primarily for its shared context principles, not its routing structure. Those six points encode genuine design-to-code translation wisdom that most bridge tools get wrong. The critical insight is point #2: "The React+Tailwind in `get_design_context` output is a structural reference, not a literal source." This tells the agent that `get_design_context` returns an approximation — pixel-positioned divs with Tailwind classes — and that naively transliterating this into SwiftUI `position: absolute` views will produce garbage. Instead, the screenshot is the primary visual reference, and the agent must recognize underlying iOS patterns (NavigationStack, TabView, List) rather than rebuilding them from primitives.
 
 Point #3 (iOS HIG semantic colors as tokens, not hex) and point #4 (SF Symbols round-trip by name, never codepoint) are similarly sharp: they encode Apple platform conventions that a generalist agent wouldn't know to apply. An agent that maps Figma color hex codes directly into SwiftUI `Color(red:green:blue:)` will produce apps that don't respond to Dark Mode or accessibility settings. This skill prevents that.
 
@@ -25,7 +25,7 @@ However, the skill body is 60 lines. The real content is in two reference files 
 
 Also strong: the reverse direction. You've built a SwiftUI screen and want to push it into Figma for designer review. The skill routes to the code→design reference, which presumably covers how to create Figma frames, text styles, and component instances that mirror the SwiftUI view hierarchy — useful for keeping design files in sync with implementation.
 
-**Worst case**: You want a pixel-perfect Figma→code translation where every spacing value, every corner radius, and every shadow is faithfully reproduced. The skill explicitly resists this — its philosophy is "recognize the iOS pattern, don't transliterate." If your team's Figma designs are treated as the single source of truth for spacing and sizing (as many design-engineering teams do), this skill will fight you. It wants to produce idiomatic SwiftUI, not faithful SwiftUI.
+**Worst case**: You want a pixel-perfect Figma→code translation where every spacing value, every corner radius, and every shadow is faithfully reproduced. The skill explicitly resists this — its philosophy is "recognize the iOS pattern, don't transliterate." If your team's Figma designs are treated as the definitive reference for spacing and sizing (as many design-engineering teams do), this skill will fight you. It wants to produce idiomatic SwiftUI, not faithful SwiftUI.
 
 Another failure mode: the skill assumes you're building for iOS with SwiftUI. If you're using UIKit (still common in existing codebases), AppKit (macOS), or SwiftUI cross-platform (visionOS, watchOS), the iOS-specific patterns may not translate. The SF Symbols and HIG semantic color mappings are iOS-only.
 

@@ -1,10 +1,10 @@
 #!/usr/bin/env node
-import { CATALOG, appendJsonl, ensureDir, nowIso, readDraft, writeYaml } from './lib/catalog-lib.mjs'
+import { CATALOG, appendJsonl, assertCatalogId, ensureDir, nowIso, readDraft, resolveWithin, writeYaml } from './lib/catalog-lib.mjs'
 import { join } from 'node:path'
 const draft = readDraft(process.argv.slice(2))
-const runId = draft.run_id ?? 'run_manual'
+const runId = assertCatalogId('run', draft.run_id ?? 'run_manual')
 const date = runId.match(/run_(\d{4})(\d{2})(\d{2})/) ?? []
-const dir = date.length ? join(CATALOG, 'runs', date[1], date[2], date[3], runId) : join(CATALOG, 'runs', 'manual', runId)
+const dir = date.length ? resolveWithin(CATALOG, 'runs', date[1], date[2], date[3], runId) : resolveWithin(CATALOG, 'runs', 'manual', runId)
 ensureDir(join(dir, 'logs'))
 ensureDir(join(dir, 'drafts'))
 ensureDir(join(dir, 'outputs'))

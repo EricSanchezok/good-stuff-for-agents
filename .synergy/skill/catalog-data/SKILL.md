@@ -78,14 +78,15 @@ You must leave behind one or more of:
 | `scripts/detect-impact.mjs` | Report mechanical downstream impact | Changed catalog records | impact report | Diagnostic only unless release-blocking | inspect report |
 | `scripts/append-source-candidate.mjs` | Append reviewed source candidate | Complete source candidate draft | JSONL entry | Block on missing required fields | validation |
 | `scripts/write-source-record.mjs` | Write approved source record | Complete source record draft | YAML source record | Block on malformed draft | validation |
+| `scripts/repair-source-registry.mjs` | Recover a malformed source registry from an explicit line-removal declaration and complete reviewed source record | Repair draft with exact corrupt lines and full source record | Atomically rewritten registry and repair result | Block unless each corrupt line matches exactly once and repaired YAML parses | strict validation |
 | `scripts/append-source-state.mjs` | Append source sync state event | Source state event draft | JSONL state event | Warn and continue per source when called by sync | validation |
 | `scripts/append-skill-candidate.mjs` | Append extracted skill candidate | Candidate artifact draft | JSONL candidate | Block on malformed draft | validation |
 | `scripts/write-skill-record.mjs` | Write normalized skill record | Complete normalized skill draft | YAML skill record | Block on ambiguous identity | validation |
 | `scripts/write-analysis.mjs` | Write analysis markdown from sections | Complete analysis draft | analysis markdown | Block on missing skill ID | validation |
 | `scripts/append-relation.mjs` | Append reviewed relation edge | Complete relation draft | JSONL relation edge | Block on missing endpoints | validation |
-| `scripts/write-pack-record.mjs` | Write candidate or public pack record | Complete pack draft | YAML pack record | Block on malformed pack | validation |
-| `scripts/write-evaluation.mjs` | Write evaluation from reviewed rubric draft | Complete evaluation draft | evaluation JSON | Block on missing pack/evaluation ID | validation |
-| `scripts/promote-pack-candidates.mjs` | Promote packs that already satisfy policy | Existing candidate records and evaluations | promoted pack records | Block on policy failure | validation and publish checks |
+| `scripts/write-pack-record.mjs` | Write one candidate pack at its derived path | Semantic candidate draft without destination controls | Candidate YAML pack record | Reject published status, bucket/path, timestamp, or promotion controls | validation |
+| `scripts/write-evaluation.mjs` | Write one controller-bound candidate evaluation | Controller envelope with current pack binding and semantic evaluation draft | Candidate evaluation JSON | Reject direct drafts, stale/replayed bindings, and destination controls | validation |
+| `scripts/promote-pack-candidates.mjs` | Solely create published packs after deterministic eligibility checks | Existing candidate records and evaluations | promoted pack records | Skip candidates below `0.78`, with non-passing evaluation, fewer than two eligible members, or stale member versions | validation and publish checks |
 | `scripts/append-run-event.mjs` | Append run event | Run event draft | JSONL event | Warn and continue for non-critical event logs | validation |
 
 ## Workflow
@@ -114,7 +115,7 @@ Good catalog-data work is boring, deterministic, and auditable. IDs are stable, 
 
 - If a draft is missing required semantic fields, block and return it to the owning skill.
 - If a stable ID collides, inspect identity rules and existing records before writing.
-- If validation fails after a write, fix the draft or writer and rerun strict validation.
+- If validation fails after a write, fix the draft or writer and rerun strict validation. For pre-existing malformed canonical data, use a narrow recovery helper only when complete evidence preserves meaning; never parse around damage and guess the missing record.
 - If a migration is needed, write the migration path first and validate before touching unrelated records.
 - If only some records in a batch fail, write successful deterministic outputs only when the helper supports partial reporting and you can name skipped records.
 

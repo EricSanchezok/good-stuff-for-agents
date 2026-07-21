@@ -7,7 +7,11 @@ Every good recommendation needs provenance. Sources show where catalog entries c
 | [Anthropic Agent Skills](src_https-github-com-anthropics-skills-anthropic-agent-skills_04f79b56.md) | Ready to use | github_repo | Apache-2.0 (verified) |
 | [CodeRabbit Skills](src_https-github-com-coderabbitai-skills-coderabbit-skills_8f2a22eb.md) | Ready to use | github_repo | MIT (verified) |
 | [Marketing Skills (Corey Haines)](src_https-github-com-coreyhaines31-marketingskills-marketing-skills-corey-haines_ef920698.md) | Ready to use | github_repo | MIT (verified) |
+| [CUGA Agent (IBM Research)](src_https-github-com-cuga-project-cuga-agent-cuga-agent-ibm-research_5709bc42.md) | Previewing before it goes on the main shelf | github_repo | Apache-2.0 (verified) |
 | [Figma MCP Skills](src_https-github-com-figma-mcp-server-guide-figma-mcp-skills_dde79ddd.md) | Previewing before it goes on the main shelf | github_repo | LicenseRef-Figma-Developer-Terms (verified) |
+| [Semantic Scholar MCP Server](src_https-github-com-fujishigetemma-semantic-scholar-mcp-semantic-scholar-mcp-server_1c7ee5c5.md) | Previewing before it goes on the main shelf | github_repo | MIT (verified) |
+| [Markdown Discipline Skills](src_https-github-com-hermeticormus-markdown-discipline-skills-markdown-discipline-skills_ddaf87e0.md) | Ready to use | github_repo | MIT (verified) |
+| [Jupyter AI (JupyterLab)](src_https-github-com-jupyterlab-jupyter-ai-jupyter-ai-jupyterlab_e47112b5.md) | Previewing before it goes on the main shelf | github_repo | BSD-3-Clause (verified) |
 | [K-Dense Scientific Agent Skills](src_https-github-com-k-dense-ai-scientific-agent-skills-k-dense-scientific-agent-skills_5bdb6d39.md) | Ready to use | github_repo | MIT (verified) |
 | [Frontend Designer Skill](src_https-github-com-kozz36-frontend-designer-skill-frontend-designer-skill_929a1309.md) | Previewing before it goes on the main shelf | github_repo | Apache-2.0 (verified) |
 | [Matteo Collina's Skills](src_https-github-com-mcollina-skills-matteo-collina-s-skills_faf2f289.md) | Ready to use | github_repo | MIT (verified) |

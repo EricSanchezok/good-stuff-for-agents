@@ -4,7 +4,7 @@
 
 ## Summary
 
-Analysis available.
+This is a structured, four-phase development guide for building MCP (Model Context Protocol) servers — the bridge components that let LLMs call external APIs. It covers research, implementation, testing, and evaluation, with opinionated stack recommendations (TypeScript + streamable HTTP) and a heavy emphasis on tool design philosophy over bare syntax.
 
 ## Source
 
@@ -38,7 +38,7 @@ No related skills are public yet.
 
 ## Public Analysis Summary
 
-Analysis available.
+Pick this skill when you're building your first or second MCP server for a well-documented REST API and need a structured workflow. Skip it if you've built MCP servers before or are targeting an unusual protocol — the design philosophy is worth reading once but the implementation content is thin. The evaluation system is the single feature that sets it apart from other MCP guides.
 
 ## Confidence and Limitations
 

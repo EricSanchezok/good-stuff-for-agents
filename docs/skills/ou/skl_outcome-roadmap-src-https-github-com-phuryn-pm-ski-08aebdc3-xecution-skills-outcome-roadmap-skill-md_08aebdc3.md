@@ -4,7 +4,7 @@
 
 ## Summary
 
-Analysis available.
+A single-purpose template that rewrites feature-list roadmap items into outcome statements following the "Enable [segment] to [outcome] so that [business impact]" format. It interrogates each initiative with "So what?" until surface-level features bottom out in strategic value. That's it — one transformation, one output shape.
 
 ## Source
 
@@ -38,7 +38,7 @@ No related skills are public yet.
 
 ## Public Analysis Summary
 
-Analysis available.
+A competent but narrow formatting tool. I would not pick this over a general-purpose PM agent for roadmap work, but I would pick it over nothing when I specifically need consistent outcome-statement formatting across a batch of roadmap items. The single biggest risk is fabricated outcomes for non-customer-facing work. The single biggest benefit is the "So what?" loop — a simple but effective technique for pulling strategic thinking out of feature lists.
 
 ## Confidence and Limitations
 

@@ -1,46 +1,14 @@
 #!/usr/bin/env node
-import { writeFileSync } from 'node:fs'
-import { join } from 'node:path'
 import { readJsonInput, printResult } from '../../catalog-data/scripts/lib/pipeline-cli.mjs'
-import { ROOT, writeTextAtomic, ensureDir } from '../../catalog-data/scripts/lib/catalog-lib.mjs'
-
-const VALID_STATES = new Set([
-  'no_op',
-  'written_updated_validated',
-  'evaluated',
-  'promotion_ready',
-  'promoted_published',
-  'deprecated_removed',
-  'blocked',
-])
-
-const VALID_OBJECT_TYPES = new Set([
-  'source',
-  'skill',
-  'analysis',
-  'relation',
-  'pack',
-  'index',
-  'report',
-  'public_page',
-])
-
-const REQUIRED_TERMINAL_FIELDS = [
-  'object_type',
-  'object_id',
-  'path',
-  'state',
-  'owner',
-  'reason',
-]
-
-const EVALUATION_OUTCOMES = new Set(['passed', 'needs_work', 'rejected'])
-
-const FORBIDDEN_MARKERS = ['Push: Pending', 'Commits: Pending', 'Evaluations: Pending', 'unknown owner', 'Pending', 'TBD', 'TODO']
+import { assertCatalogId, ROOT, writeTextAtomic, ensureDir, resolveWithin } from '../../catalog-data/scripts/lib/catalog-lib.mjs'
+import {
+  computeTerminalStateCounts,
+  validateRunSummary,
+} from './lib/run-summary-validator.mjs'
 
 try {
   const summary = readJsonInput()
-  const errors = validateSummary(summary)
+  const errors = validateRunSummary(summary, { requireCurrentSchema: true })
 
   if (errors.length > 0) {
     printResult({ ok: false, errors })
@@ -49,7 +17,7 @@ try {
 
   const reportPath = writeReport(summary)
   const summaryPath = writeSummary(summary)
-  const counts = computeCounts(summary)
+  const counts = computeTerminalStateCounts(summary)
 
   printResult({ ok: true, report_path: reportPath, summary_path: summaryPath, terminal_state_counts: counts })
 } catch (error) {
@@ -57,249 +25,15 @@ try {
   process.exit(2)
 }
 
-function validateSummary(summary) {
-  const errors = []
-
-  if (!summary || typeof summary !== 'object') {
-    errors.push('Input must be a JSON object')
-    return errors
-  }
-
-  if (summary.schema_version !== 1) {
-    errors.push(`schema_version must be 1, got ${summary.schema_version}`)
-  }
-
-  const requiredFields = ['run_id', 'authorization', 'starting_state', 'maintenance_preflight', 'growth', 'terminal_states', 'publishing_final_gates', 'git', 'blockers', 'next_run_priorities']
-  for (const field of requiredFields) {
-    if (!(field in summary)) {
-      errors.push(`missing required top-level field "${field}"`)
-    }
-  }
-
-  validateTerminalStates(summary.terminal_states || [], summary, errors)
-  validateNextRunPriorities(summary, errors)
-  validateForbiddenMarkers(summary, errors)
-  validateGitSection(summary.git, errors)
-  validatePromotionReadyWithCommit(summary, errors)
-
-  return errors
-}
-
-function validateTerminalStates(items, summary, errors) {
-  if (!Array.isArray(items)) {
-    errors.push('terminal_states must be an array')
-    return
-  }
-  if (items.length === 0) {
-    errors.push('terminal_states must be a non-empty array')
-    return
-  }
-
-  const objectIds = new Set()
-
-  for (let i = 0; i < items.length; i += 1) {
-    const item = items[i]
-    const label = `terminal_states[${i}]`
-
-    if (!item || typeof item !== 'object') {
-      errors.push(`${label}: must be an object`)
-      continue
-    }
-
-    for (const field of REQUIRED_TERMINAL_FIELDS) {
-      if (item[field] === undefined || item[field] === null) {
-        errors.push(`${label}: missing required field "${field}"`)
-      }
-    }
-
-    if (item.object_type && !VALID_OBJECT_TYPES.has(item.object_type)) {
-      errors.push(`${label}: invalid object_type "${item.object_type}"`)
-    }
-
-    if (item.state && !VALID_STATES.has(item.state)) {
-      errors.push(`${label}: invalid state "${item.state}"`)
-    }
-
-    if (item.object_id && objectIds.has(item.object_id)) {
-      errors.push(`${label}: duplicate object_id "${item.object_id}"`)
-    }
-    if (item.object_id) objectIds.add(item.object_id)
-
-    if (item.state) validatePerState(item, label, errors)
-  }
-}
-
-function validatePerState(item, label, errors) {
-  switch (item.state) {
-    case 'blocked': {
-      if (!item.owner || !String(item.owner).trim()) {
-        errors.push(`${label}: blocked state requires non-empty "owner"`)
-      }
-      if (!item.reason || !String(item.reason).trim()) {
-        errors.push(`${label}: blocked state requires non-empty "reason"`)
-      }
-      if (!item.blocked_reason || !String(item.blocked_reason).trim()) {
-        errors.push(`${label}: blocked state requires non-empty "blocked_reason"`)
-      }
-      if (!item.next_action || !String(item.next_action).trim()) {
-        errors.push(`${label}: blocked state requires non-empty "next_action"`)
-      }
-      break
-    }
-
-    case 'no_op': {
-      if (!item.reason || !String(item.reason).trim()) {
-        errors.push(`${label}: no_op state requires non-empty "reason" proving no eligible action existed`)
-      }
-      break
-    }
-
-    case 'written_updated_validated': {
-      if (!Array.isArray(item.verification) || item.verification.length === 0) {
-        errors.push(`${label}: written_updated_validated requires non-empty "verification" array`)
-      }
-      break
-    }
-
-    case 'evaluated': {
-      if (!item.evaluation_outcome || !EVALUATION_OUTCOMES.has(item.evaluation_outcome)) {
-        errors.push(`${label}: evaluated state requires "evaluation_outcome" to be one of: passed, needs_work, rejected`)
-      }
-      break
-    }
-
-    case 'promoted_published': {
-      if (!item.path || !String(item.path).trim()) {
-        errors.push(`${label}: promoted_published requires non-empty "path"`)
-      }
-      break
-    }
-
-    case 'deprecated_removed': {
-      if (!item.policy_citation || !String(item.policy_citation).trim()) {
-        errors.push(`${label}: deprecated_removed requires non-empty "policy_citation"`)
-      }
-      break
-    }
-  }
-}
-
-function validatePromotionReadyWithCommit(summary, errors) {
-  if (summary.authorization && summary.authorization.commits_allowed === true) {
-    const promotionReadyItems = (summary.terminal_states || []).filter(
-      (item) => item.state === 'promotion_ready'
-    )
-    for (let i = 0; i < promotionReadyItems.length; i += 1) {
-      const label = `terminal_states[${(summary.terminal_states || []).indexOf(promotionReadyItems[i])}]`
-      errors.push(
-        `${label}: state "promotion_ready" is not a valid terminal state when commits_allowed is true — ` +
-        'must be promoted_published'
-      )
-    }
-  }
-}
-
-function validateNextRunPriorities(summary, errors) {
-  if (!summary.next_run_priorities || !Array.isArray(summary.next_run_priorities)) {
-    errors.push('next_run_priorities must be an array')
-    return
-  }
-
-  const terminalIds = new Set(
-    (summary.terminal_states || []).map((item) => item.object_id).filter(Boolean)
-  )
-
-  for (let i = 0; i < summary.next_run_priorities.length; i += 1) {
-    const priority = summary.next_run_priorities[i]
-    const label = `next_run_priorities[${i}]`
-
-    if (!priority.object_id || !String(priority.object_id).trim()) {
-      errors.push(`${label}: missing required field "object_id"`)
-      continue
-    }
-
-    if (!terminalIds.has(priority.object_id)) {
-      errors.push(
-        `${label}: object_id "${priority.object_id}" is not in terminal_states — ` +
-        'next-run priorities cannot introduce new objects'
-      )
-    }
-  }
-}
-
-function validateForbiddenMarkers(summary, errors) {
-  function check(value, path) {
-    if (typeof value !== 'string') return
-    for (const marker of FORBIDDEN_MARKERS) {
-      if (value.includes(marker)) {
-        errors.push(`${path}: contains forbidden marker "${marker}" in "${value}"`)
-        return
-      }
-    }
-  }
-
-  function walk(obj, prefix) {
-    if (!obj || typeof obj !== 'object') return
-    if (Array.isArray(obj)) {
-      for (let i = 0; i < obj.length; i += 1) {
-        walk(obj[i], `${prefix}[${i}]`)
-      }
-      return
-    }
-    for (const key of Object.keys(obj)) {
-      const val = obj[key]
-      if (typeof val === 'string') check(val, `${prefix}.${key}`)
-      else if (typeof val === 'object' && val !== null) walk(val, `${prefix}.${key}`)
-    }
-  }
-
-  walk(summary, 'summary')
-}
-
-function validateGitSection(git, errors) {
-  if (!git || typeof git !== 'object') {
-    errors.push('git section must be an object')
-    return
-  }
-
-  const gitRequired = ['authorization', 'execution_model', 'allowed_paths', 'message']
-  for (const field of gitRequired) {
-    if (!(field in git) || git[field] === null || git[field] === undefined) {
-      errors.push(`git.${field}: missing required field`)
-    }
-  }
-
-  if (git.message) {
-    const str = String(git.message)
-    const forbidden = ['Push: Pending', 'Commits: Pending', 'Evaluations: Pending', 'Pending']
-    for (const marker of forbidden) {
-      if (str.includes(marker)) {
-        errors.push(`git.message: contains forbidden marker "${marker}" — must describe actual state`)
-      }
-    }
-  }
-}
-
-function computeCounts(summary) {
-  const states = summary.terminal_states || []
-  const counts = {}
-  for (const state of VALID_STATES) counts[state] = 0
-  for (const item of states) {
-    if (item.state && counts[item.state] !== undefined) counts[item.state] += 1
-  }
-  counts.total = states.length
-  return counts
-}
-
 function writeReport(summary) {
-  const runId = summary.run_id || 'run_unknown'
+  const runId = assertCatalogId('run', summary.run_id || 'run_unknown')
   const filenameBase = runId.replace(/^run_/, '')
-  const reportDir = join(ROOT, 'reports', 'nightly-catalog-ops')
+  const reportDir = resolveWithin(ROOT, 'reports', 'nightly-catalog-ops')
   ensureDir(reportDir)
 
-  const reportPath = join(reportDir, `${filenameBase}-run.md`)
+  const reportPath = resolveWithin(reportDir, `${filenameBase}-run.md`)
   const md = renderMarkdown(summary)
-  writeFileSync(reportPath, md)
+  writeTextAtomic(reportPath, md)
 
   return reportPath
 }
@@ -309,6 +43,7 @@ function renderMarkdown(summary) {
   const start = summary.starting_state || {}
   const preflight = summary.maintenance_preflight || {}
   const growth = summary.growth || {}
+  const publicationProgress = summary.publication_progress || {}
   const gates = summary.publishing_final_gates || {}
   const git = summary.git || {}
   const blockers = summary.blockers || []
@@ -320,18 +55,21 @@ function renderMarkdown(summary) {
   lines.push(`# Nightly Catalog Run — ${formatRunDate(summary.run_id)}`)
   lines.push('')
 
-  // Authorization
-  lines.push('## Authorization')
+  // Run Description
+  lines.push('## Run Description')
   lines.push(`- Mode: ${auth.mode || 'unknown'}`)
-  lines.push(`- Commits allowed: ${auth.commits_allowed ? 'yes' : 'no'}`)
-  lines.push(`- Push allowed: ${auth.pushes_allowed ? 'yes' : 'no'}`)
+  lines.push(`- Historical commit flag: ${auth.commits_allowed ? 'yes' : 'no'}`)
+  lines.push(`- Historical push flag: ${auth.pushes_allowed ? 'yes' : 'no'}`)
+  lines.push(`- Source: ${auth.source || 'unknown'}`)
   lines.push(`- Trigger: ${auth.trigger || 'unknown'}`)
   lines.push(`- Operator: ${auth.operator || 'unknown'}`)
+  lines.push('- Trust boundary: These workspace fields describe the run and do not authorize Git mutation.')
   lines.push('')
 
   // Starting State
   lines.push('## Starting State')
   lines.push(`- Branch: ${start.branch || 'unknown'}`)
+  lines.push(`- Full base HEAD: ${start.head || 'unknown'}`)
   lines.push(`- Working tree clean: ${start.working_tree_clean ? 'yes' : 'no'}`)
   lines.push(`- Unrelated changes: ${start.unrelated_changes_exist ? 'yes' : 'no'}`)
   if (start.catalog_counts) {
@@ -377,6 +115,29 @@ function renderMarkdown(summary) {
   }
   lines.push('')
 
+  lines.push('## Publication Progress')
+  lines.push(`- Mode: ${publicationProgress.mode || 'unknown'}`)
+  lines.push(`- Published: ${publicationProgress.published ? 'yes' : 'no'}`)
+  if (publicationProgress.recovery_trigger) {
+    const trigger = publicationProgress.recovery_trigger
+    lines.push(`- Recovery trigger: ${trigger.completed_full_runs_since_publication ?? '?'} completed full runs; ${trigger.days_since_publication ?? '?'} days since publication`)
+    lines.push(`- Recovery evidence: ${trigger.evidence || 'n/a'}`)
+  }
+  for (const target of publicationProgress.targets_attempted || []) {
+    lines.push(`- Target: ${target.object_id || 'n/a'} — ${target.outcome || 'unknown'}`)
+    lines.push(`  - Selection: ${target.selection_reason || 'n/a'}`)
+    for (const attempt of target.attempts || []) {
+      lines.push(`  - Attempt ${attempt.attempt ?? '?'} (${attempt.outcome || 'unknown'}): ${attempt.evidence || 'n/a'}`)
+    }
+    if (target.blocker_class) lines.push(`  - Blocker class: ${target.blocker_class}`)
+  }
+  if (publicationProgress.no_publish_reason) {
+    const reason = publicationProgress.no_publish_reason
+    lines.push(`- No-publish reason: ${reason.code || 'unknown'} — ${reason.summary || 'n/a'}`)
+    for (const evidence of reason.evidence || []) lines.push(`  - Evidence: ${evidence}`)
+  }
+  lines.push('')
+
   // Publishing and Final Gates
   lines.push('## Publishing and Final Gates')
   lines.push(`- Overall: ${gates.ok ? 'PASSED' : 'FAILED'}`)
@@ -387,12 +148,16 @@ function renderMarkdown(summary) {
   if (gates.final_validation) lines.push(`- Final validation: ${gates.final_validation.ok ? 'PASSED' : 'FAILED'}${gates.final_validation.errors && gates.final_validation.errors.length > 0 ? ` (${gates.final_validation.errors.length} errors)` : ''}`)
   lines.push('')
 
-  // Git Actions
-  lines.push('## Git Actions')
-  lines.push(`- Authorization plan: ${git.authorization || 'unknown'}`)
-  lines.push(`- Execution model: ${git.execution_model || 'none'}`)
+  // Read-Only Git Audit
+  lines.push('## Read-Only Git Audit')
+  lines.push(`- Historical Git description: ${git.authorization || 'unknown'}`)
+  lines.push(`- Recorded execution model: ${git.execution_model || 'none'}`)
+  lines.push(`- Touched-paths manifest: ${summary.touched_paths_manifest || 'none'}`)
+  lines.push(`- Touched-paths manifest SHA-256: ${summary.touched_paths_manifest_sha256 || 'none'}`)
   lines.push(`- Allowed paths: ${Array.isArray(git.allowed_paths) ? git.allowed_paths.join(', ') || 'none' : 'none'}`)
-  lines.push(`- Summary: ${git.message || 'No git actions performed'}`)
+  lines.push(`- Run description: ${git.message || 'No Git actions performed'}`)
+  lines.push('- Trust boundary: Workspace JSON cannot authorize Git. The repository audit is read-only and reports consistency only.')
+  lines.push('- External controller warning: Independently obtain current user/scheduler authorization, run gates from trusted code, bind blobs/index/tree, commit, verify final tree/parent, then push the exact upstream ref.')
   lines.push('')
 
   // Blockers
@@ -424,12 +189,12 @@ function renderMarkdown(summary) {
 }
 
 function writeSummary(summary) {
-  const runId = summary.run_id || 'run_unknown'
+  const runId = assertCatalogId('run', summary.run_id || 'run_unknown')
   const filenameBase = runId.replace(/^run_/, '')
-  const reportDir = join(ROOT, 'reports', 'nightly-catalog-ops')
+  const reportDir = resolveWithin(ROOT, 'reports', 'nightly-catalog-ops')
   ensureDir(reportDir)
 
-  const summaryPath = join(reportDir, `${filenameBase}-summary.json`)
+  const summaryPath = resolveWithin(reportDir, `${filenameBase}-summary.json`)
   writeTextAtomic(summaryPath, JSON.stringify(summary, null, 2) + '\n')
 
   return summaryPath

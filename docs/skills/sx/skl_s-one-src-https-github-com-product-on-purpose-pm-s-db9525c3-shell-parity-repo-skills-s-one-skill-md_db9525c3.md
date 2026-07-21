@@ -36,10 +36,6 @@ No published packs use this skill yet.
 
 No related skills are public yet.
 
-## Public Analysis Summary
-
-Analysis pending.
-
 ## Confidence and Limitations
 
 - Quality score: —

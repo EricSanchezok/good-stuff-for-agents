@@ -1,10 +1,10 @@
 #!/usr/bin/env node
-import { CATALOG, appendJsonl, nowIso, readDraft } from './lib/catalog-lib.mjs'
+import { CATALOG, appendJsonl, assertCatalogId, nowIso, readDraft } from './lib/catalog-lib.mjs'
 import { join } from 'node:path'
 const draft = readDraft(process.argv.slice(2))
 const record = {
   schema_version: 1,
-  source_id: draft.source_id,
+  source_id: assertCatalogId('source', draft.source_id),
   checked_at: draft.checked_at ?? nowIso(),
   changed: Boolean(draft.changed),
   upstream_ref: draft.upstream_ref ?? null,

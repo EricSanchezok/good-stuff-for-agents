@@ -1,14 +1,13 @@
 #!/usr/bin/env node
 import { nowIso, packRecordPath, readDraft, writeYaml } from './lib/catalog-lib.mjs'
-const RECORD_BUCKETS = new Set(['candidate', 'candidates', 'published'])
+
 const draft = readDraft(process.argv.slice(2))
-const status = draft.status ?? 'candidate'
-const recordBucket = normalizeRecordBucket(draft.record_bucket ?? status)
+assertCandidateControlFields(draft)
 const record = {
   schema_version: 1,
   pack_id: draft.pack_id,
   name: draft.name,
-  status,
+  status: 'candidate',
   intent: draft.intent,
   domain: draft.domain ?? 'uncategorized',
   created_by_run: draft.created_by_run ?? 'run_manual',
@@ -21,8 +20,21 @@ const record = {
   evaluation: draft.evaluation ?? { evaluation_id: null, score: null, status: 'pending' },
   updated_at: draft.updated_at ?? nowIso(),
 }
-writeYaml(packRecordPath(record.pack_id, recordBucket), record)
+writeYaml(packRecordPath(record.pack_id, 'candidate'), record)
 console.log(JSON.stringify(record, null, 2))
+
+function assertCandidateControlFields(value) {
+  if (!value || typeof value !== 'object' || Array.isArray(value)) throw new Error('Pack candidate draft must be an object')
+  if (Object.hasOwn(value, 'status') && value.status !== 'candidate') {
+    throw new Error('Pack candidate draft status must be candidate')
+  }
+  const controlledFields = new Set(['destination', 'expected_path', 'output_path', 'published_at', 'record_bucket'])
+  for (const field of Object.keys(value)) {
+    if (controlledFields.has(field) || /^promot(?:e|ed|ion)/.test(field)) {
+      throw new Error(`Pack candidate draft must not include controller field ${field}`)
+    }
+  }
+}
 
 function normalizeWorkflow(workflow) {
   if (!workflow) return { summary: '', stages: [] }
@@ -38,9 +50,4 @@ function normalizeCompatibility(compatibility) {
     conflicts: compatibility?.conflicts ?? [],
     unresolved: compatibility?.unresolved ?? [],
   }
-}
-
-function normalizeRecordBucket(bucket) {
-  if (!RECORD_BUCKETS.has(bucket)) throw new Error(`pack record_bucket must be one of ${[...RECORD_BUCKETS].join(', ')}`)
-  return bucket === 'candidates' ? 'candidate' : bucket
 }

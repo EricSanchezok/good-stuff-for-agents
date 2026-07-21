@@ -1,90 +1,38 @@
 # Growth Runbook
 
-Run this sequence for autonomous growth.
+Use this runbook for autonomous catalog growth.
 
-Use one run ID for the whole growth run. Format it as `run_<YYYY-MM-DD-HHmmss>` so multiple runs on the same day do not overwrite reports or append unrelated candidates to the same JSONL file. Pass this run ID to `skill-extraction` with `--run-id`, and use the same timestamp in growth and nightly report filenames.
+## Batch Controls
 
-## Operating Principle
+Every touched source, skill, analysis, relation, pack intent, candidate pack, stale pack, or impacted pack must finish the run with an owner, terminal state, or explicit deferred reason.
 
-The growth pipeline is evidence-threaded, not summary-threaded. Every stage must preserve enough information for the next stage to recover the original evidence. Do not allow a source summary, candidate shell, normalized record, or report paragraph to replace the artifact itself.
+Per-cycle defaults:
 
-## Evidence Thread Rule
+- Activate 3–5 sources in normal mode when discovery is justified.
+- Keep extraction to no more than 50 candidates per extraction batch.
+- Analyze 30–50 skills per normal run; every remainder needs a deferred reason.
+- Attempt no more than 2 publication targets per total nightly run.
+- Allow no more than 3 substantive repair-and-reevaluation attempts per target.
 
-Every skill-like item must keep a traceable evidence thread:
-
-```txt
-source candidate
-  → source record
-    → snapshot manifest
-      → artifact path + content digest + retrieval location
-        → skill candidate
-          → canonical skill ID
-            → deep analysis
-```
-
-Do not let a stage replace original source evidence with summaries. Summaries are convenience. Original artifacts are the source of truth.
-
-## Single Computation Point (SCP) Rule
-
-Every value in the catalog is computed exactly once. The SCP table defines which stage owns each value. For the authoritative full table, see `single-computation-points.md`.
-
-| Value | Computed by | Consumed by |
-|---|---|---|
-| `content_digest` | `source-sync` | `skill-extraction`, `skill-normalization`, `skill-deep-analysis`, `skill-analyzer` |
-| `raw_url` | `source-sync` | `skill-deep-analysis`, `skill-analyzer` |
-| `license` | `source-sync` | `skill-normalization`, downstream catalog consumers |
-| `declared_name` | `skill-extraction` (preserved as-is) | `skill-normalization` |
-| `canonical_skill_id`, `canonical_name`, `display_name`, `version_id`, `source_skill_id`, `status` | `skill-normalization` | `skill-deep-analysis`, relations, packs, publishing, all downstream |
-
-No stage may recompute or reinterpret a value owned by an upstream SCP. If a value is missing or incorrect, the bug is in the SCP stage, not in the consumer. Return to the SCP owner for repair; do not work around it by recomputing.
-
-## Stage Boundary Rule
-
-- `source-discovery` finds broad candidate sources and records why they may be worth tracking.
-- Activation (applying `source-activation-policy` via `catalog-curation`) checks safety, access, license posture, and syncability. It is not a quality gate.
-- `source-sync` preserves recoverable artifact evidence.
-- `skill-extraction` preserves candidate artifacts without semantic inflation.
-- `skill-normalization` creates stable identity records and duplicate/update/block decisions.
-- `skill-deep-analysis` reads the original artifact and provides the first real semantic judgment.
-
-If a stage starts doing the next stage's job, stop and correct course. Semantic interpretation belongs in deep analysis, not in sync, extraction, or normalization.
-
-## Backpressure Rule
-
-Do not treat extraction volume as success. A growth run succeeds when touched items reach useful terminal states:
-
-- source candidate accepted, rejected, previewed, activated, or blocked with reason;
-- skill candidate normalized for analysis, marked duplicate, rejected, blocked, deferred with explicit batch reason, or deferred due to batch budget;
-- analyzed skill completed, analysis deferred with reason, or deferred due to batch budget.
-
-If extraction produces more candidates than normalization or analysis can handle, split by source or artifact batch. Do not leave a large raw candidate pile with no owner, no reason, and no next action.
-
-Per-cycle thresholds:
-
-- Activate 3–5 sources per run.
-- Keep extraction to ≤50 candidates per extraction batch.
-- Analyze 30–50 skills per run via parallel subagent batches (5–10 subagents × 3–5 skills each). All remaining candidates must have an explicit deferred reason.
+Recovery mode changes priority: target-specific evidence work comes before broad discovery. It does not change batch quality, evidence standards, license policy, or the `0.78` publication threshold.
 
 ## Run Sequence
 
-1. Run maintenance preflight or read the latest maintenance status.
-2. Inspect catalog gaps and previous reports.
-3. Run demand scan and choose growth themes.
-4. Load `source-discovery` and inspect a bounded public source batch. Discovery should optimize for broad coverage and novelty, not for standard SKILL.md-only sources. Activate 3–5 sources per run.
-5. Write discovery reports and candidate drafts for inspected sources. Each accepted source must include evidence links, parseability, dedup summary, and activation handoff notes.
-6. Apply source activation policy. Activation checks safety and syncability only; it does not endorse content quality.
-7. Call `source:activate` only for reviewed activation drafts.
-8. Load `source-sync` and sync active/preview sources. Sync must preserve enough artifact evidence for downstream agents to recover the original content.
-9. Load `skill-extraction` and write candidates from changed/latest snapshots. Extraction preserves candidate evidence; it does not infer domain, quality, workflow role, tools, or risk. Keep extraction to ≤50 candidates per extraction batch.
-10. Load `skill-normalization` and write identity-only canonical records for clear candidates. Normalization resolves stable identity, provenance, versioning, and duplicate/update/block status. It does not perform deep semantic interpretation.
-11. Load `skill-deep-analysis` and write judgment-driven analyses for new/changed, high-potential or batch-prioritized skills; remaining candidates must have an explicit deferred reason. Deep analysis reads the original artifact directly; normalized records are routing hints, not the semantic source of truth.
-12. Load `skill-dedup-relations` and append reviewed relation edges after analysis gives enough semantic evidence.
-13. Run catalog impact detection.
-14. Resolve pack lifecycle work for every pack intent, candidate pack, stale published pack, or impacted pack touched by the run.
-15. Load `pack-synthesis` when synthesis, repair, or reorganization is the right next action.
-16. Load `catalog-evaluation` when a candidate or changed pack can be scored; write `passed`, `needs_work`, or `rejected` rather than leaving it pending.
-17. Validate catalog and rebuild indexes.
-18. Write the growth report with terminal states for touched objects and explicit deferred reasons.
-19. Hand final promotion, publishing, commit, and push to `nightly-catalog-ops`.
+1. Read maintenance status, catalog gaps, current pack lifecycle state, recent nightly summaries, and any controller-supplied publication mode or target.
+2. Run demand scan and rank publication targets in this order: passing candidate, high-scoring `needs_work` candidate, stale pack needing bounded repair, relation-backed intent, then an intent missing a small evidence set.
+3. In normal mode, choose bounded discovery themes from demand and gaps. In recovery mode, perform discovery only when it directly supplies the selected target's missing evidence.
+4. Load `source-discovery`, apply activation policy, and activate only reviewed high-confidence public sources.
+5. Load `source-sync`, `skill-extraction`, and `skill-normalization` for changed or target-relevant artifacts. Preserve exact source evidence and explicit deferred reasons.
+6. Load `skill-deep-analysis` for new, changed, or publication-target skills. A target-specific request may preempt ordinary backlog order but never analysis quality.
+7. Load `skill-dedup-relations` after analyses exist. Prioritize target-relevant groups, but write only evidence-backed edges.
+8. Run catalog impact detection and identify stale published packs.
+9. Select the highest-ranked publication target and record why it is closest to publication.
+10. Load `pack-synthesis` for new synthesis, stale-pack repair, or `needs_work` remediation. Each attempt must make a material change such as narrowing intent, replacing a member, redesigning stages, resolving a conflict, updating a stale version, or adding newly produced evidence.
+11. Load `catalog-evaluation`; require a terminal decision plus structured failure modes and owner actions.
+12. If the target passes, return it for promotion and publishing. If it is `needs_work` and fewer than 3 substantive attempts have occurred, route each finding to its owner and repeat only the affected work from steps 6–11; do not repeat discovery, sync, or extraction unless the evaluation identifies a concrete source-evidence gap.
+13. If the target is rejected, policy-blocked, or exhausts 3 attempts, record the result and select the next ranked target while fewer than 2 targets have been attempted this run.
+14. Validate catalog data and rebuild indexes after writes.
+15. Write a growth report containing target ranking, selected targets, repair changes, scores before and after, blocker classes, terminal states, and exact next actions.
+16. Hand promotion, public rendering, report enforcement, commit, and push to `nightly-catalog-ops`.
 
-Skip downstream phases when inputs are absent, but record why. Do not fabricate data to keep the run moving.
+A valid `no_op` proves that ranking was performed, no candidate could be repaired within the remaining run budget, and the smallest missing evidence set has an owner. Never fabricate data to keep the run moving.

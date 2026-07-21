@@ -4,7 +4,7 @@
 
 ## Summary
 
-Analysis available.
+A structured translator that consumes technical source material — JIRA exports, Linear tickets, PRDs, git logs — and produces polished user-facing release notes categorized by change type. Its distinguishing feature is the user-benefit-first transformation: every entry leads with what changed for the user, not what changed in the codebase.
 
 ## Source
 
@@ -38,7 +38,7 @@ No related skills are public yet.
 
 ## Public Analysis Summary
 
-Analysis available.
+A solid, unremarkable utility skill. I would pick it when I need consistently formatted, user-facing release notes from ticket data — the before/after examples genuinely improve reliability over a bare prompt. The single biggest risk is fabricated user benefits from thin source material; the skill should include a "flag if uncertain" instruction but doesn't. The biggest benefit is the categorization scheme with tone guidance, which eliminates the most common release-notes failure mode (writing for engineers rather than users).
 
 ## Confidence and Limitations
 

@@ -1,0 +1,39 @@
+{
+  "remove_exact_lines": [
+    "   url: https://github.com/microsoft/skills"
+  ],
+  "source": {
+    "schema_version": 1,
+    "source_id": "src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e",
+    "name": "Microsoft Agent Skills",
+    "url": "https://github.com/microsoft/skills",
+    "type": "github_repo",
+    "status": "active",
+    "license": {
+      "spdx": "MIT",
+      "verified": true,
+      "evidence": "LICENSE file in repo root; README states MIT"
+    },
+    "sync": {
+      "strategy": "git",
+      "default_ref": "main",
+      "frequency": "daily",
+      "include": [
+        "**/SKILL.md"
+      ],
+      "exclude": [
+        "node_modules/**",
+        ".git/**",
+        "tests/**",
+        "docs/**"
+      ]
+    },
+    "state": {
+      "last_checked_at": "2026-07-13T21:03:24.346Z",
+      "last_success_at": "2026-07-13T21:03:24.346Z",
+      "last_ref": "dc543aa59048cb7d0faeb91c79f3a0ab405ec952",
+      "consecutive_failures": 0
+    },
+    "updated_at": "2026-07-09T17:19:39.028Z"
+  }
+}

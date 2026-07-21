@@ -78,7 +78,7 @@ You must leave behind:
 
 1. **Confirm maintenance-only scope.** You state that you are not doing discovery, curation, analysis, pack work, or evaluation. If the user asked for growth or total automation, hand off to `catalog-growth-ops` or `nightly-catalog-ops`.
 2. **Check the working tree.** You inspect `git status --short --branch`. Preserve unrelated user changes and avoid committing unless explicitly authorized.
-3. **Run strict validation.** You block on structural catalog errors.
+3. **Run strict validation.** Classify failures as reversible structural damage or semantic ambiguity. For reversible, meaning-preserving damage with complete evidence, hand off to a narrow `catalog-data` repair helper and retry validation at most twice. Block immediately when repair would require guessing semantic fields.
 4. **Run migrations only when needed.** You apply known schema migrations and validate afterward.
 5. **Sync approved sources only.** You may sync `active` and `preview` sources. You do not discover or approve sources.
 6. **Rebuild indexes.** You rebuild deterministic indexes from valid catalog records.
@@ -100,7 +100,7 @@ Good maintenance work is boring, deterministic, and safe. It proves the catalog 
 
 ## Failure Handling
 
-- If validation fails, stop and hand off to `catalog-data` with exact errors.
+- If validation fails, classify and hand off to `catalog-data` with exact errors. Resume only after a narrow, meaning-preserving structural repair succeeds and strict validation passes; allow at most 2 repair attempts.
 - If approved source sync partially fails, report failed source IDs and continue only with successful deterministic outputs when safe.
 - If public rendering fails, hand off to `catalog-publishing`.
 - If maintenance identifies missing coverage or an empty catalog, hand off to `catalog-growth-ops` rather than running discovery yourself.

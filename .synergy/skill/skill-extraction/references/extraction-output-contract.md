@@ -9,7 +9,7 @@ Draft JSON for `append-skill-candidate.mjs`:
   "declared_name": "example",
   "format": "synergy_skill",
   "parse_confidence": "high",
-  "content_digest": "sha256:...",
+  "content_digest": "git_sha1:<40hex>",
   "raw_metadata": {}
 }
 ```
@@ -20,7 +20,7 @@ Draft JSON for `append-skill-candidate.mjs`:
 
 `path` must identify the recoverable artifact, not just the folder. A downstream agent should be able to combine `source_id`, `path`, and the snapshot manifest to find the original content.
 
-`content_digest` must match the exact content deep analysis should read. If the digest is computed from different content than the artifact an analyst will read, the evidence thread is broken.
+`content_digest` must identify the exact upstream artifact deep analysis should read and retain its real algorithm label. A GitHub tree blob OID is `git_sha1:<40hex>` object identity, not a SHA-256 digest of fetched bytes. Claim a byte digest only when those exact bytes were fetched and hashed.
 
 `declared_name` is a source-provided title/name when available. It is not proof of canonical identity.
 

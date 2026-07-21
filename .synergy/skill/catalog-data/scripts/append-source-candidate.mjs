@@ -1,12 +1,13 @@
 #!/usr/bin/env node
-import { appendJsonl, idFor, nowIso, readDraft } from './lib/catalog-lib.mjs'
+import { appendJsonl, assertCatalogId, idFor, nowIso, readDraft } from './lib/catalog-lib.mjs'
 import { join } from 'node:path'
 import { CATALOG } from './lib/catalog-lib.mjs'
 
 const draft = readDraft(process.argv.slice(2))
+const sourceId = assertCatalogId('source', draft.source_id ?? idFor('src', [draft.url ?? draft.name, draft.name ?? 'source']))
 const record = {
   schema_version: 1,
-  source_id: draft.source_id ?? idFor('src', [draft.url ?? draft.name, draft.name ?? 'source']),
+  source_id: sourceId,
   name: draft.name,
   url: draft.url ?? null,
   type: draft.type ?? 'unknown',

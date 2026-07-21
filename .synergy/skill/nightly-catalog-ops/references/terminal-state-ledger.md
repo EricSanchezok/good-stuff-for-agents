@@ -38,11 +38,19 @@ Evaluated items must include an `evaluation_outcome` field set to exactly one of
 - The run is authorized only for `read_only` or `local_write` modes without commit/push.
 - A downstream skill is needed that was explicitly not loaded for this run.
 
-When `commits_allowed` is true and publishing gates pass, any `promotion_ready` item is a validation error.
+When `commits_allowed` is true, any passing evaluation or `promotion_ready` candidate must continue to `promoted_published`; stopping unpublished is a validation error.
 
 ### promoted_published
 
-`promoted_published` requires evidence: the published pack record must exist at the indicated `path`, and the rendered public page must exist. The `path` field must point to the canonical published artifact. The `verification` array must include at least one publishing check command.
+`promoted_published` requires evidence: for a pack, `path` must be `catalog/packs/published/<object_id>/pack.yaml`, that record must identify the same published pack, and the renderer-defined page `docs/packs/<domain-slug>/<object_id>.md` must exist. The `verification` array must include at least one publishing check command. Terminal-only validation checks the summary contract without reading disk; the full report checker verifies both artifacts. A separate `public_page` terminal may record the rendered page and is excluded from pack target ID comparison. Any promoted pack requires `publication_progress.published: true`; a published run must identify the corresponding target with outcome `promoted_published`.
+
+### Publication Progress Bounds
+
+Every newly written schema-version-2 summary must include `publication_progress`; historical version-1 summaries remain checkable. A run may attempt at most 2 publication targets and at most 3 substantive repairs per target. `needs_work` is only an early terminal outcome when `blocker_class` is `policy` or `human_decision`; a target still unsuccessful after the third substantive repair must end `rejected`, with the third attempt, target outcome, and pack terminal evaluation outcome aligned.
+
+Recovery mode is required when the summary records either 3 completed full runs since the last publication or, when `starting_state.catalog_counts.published_packs` is positive, 7 days since the last publication. Schema-version-2 summaries must provide all non-negative integer catalog counts so this trigger cannot be bypassed. The summary carries the trigger evidence; validators do not scan historical reports.
+
+A run that publishes nothing must record structured `no_publish_reason` proof. With no attempted targets, it must prove no eligible targets existed. With attempted targets, each target must end as early policy/human-decision `needs_work`, `blocked`, or `rejected`, and the reason must prove target selection and exhaustion. Attempted target IDs and pack terminal IDs must match in both directions, and each target outcome must agree with its pack terminal state; non-pack terminals do not participate in this set.
 
 ### deprecated_removed
 

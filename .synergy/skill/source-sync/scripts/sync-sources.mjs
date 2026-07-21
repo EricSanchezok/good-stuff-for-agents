@@ -1,7 +1,7 @@
 #!/usr/bin/env node
-import { join } from 'node:path'
-import { CATALOG, loadRegistry, ROOT, sha256, writeTextAtomic } from '../../catalog-data/scripts/lib/catalog-lib.mjs'
+import { assertCatalogId, CATALOG, loadRegistry, resolveWithin, ROOT, sha256, writeTextAtomic } from '../../catalog-data/scripts/lib/catalog-lib.mjs'
 import { catalogData, printResult } from '../../catalog-data/scripts/lib/pipeline-cli.mjs'
+import { assertGitCommit, assertRemoteTreePath, buildGithubBlobUrl, buildRawGithubUrl, gitBlobOid, parseGithubRepo } from './lib/remote-artifact.mjs'
 
 const registry = loadRegistry()
 const states = []
@@ -66,48 +66,56 @@ for (const source of registry.sources) {
 printResult({ synced: states.length, repo: ROOT, manifests, states })
 
 async function syncGithubSource(source) {
+  const sourceId = assertCatalogId('source', source.source_id)
   const repo = parseGithubRepo(source.url)
   if (!repo) throw new Error(`unsupported source URL for minimal sync: ${source.url}`)
   const repoInfo = await githubJson(`https://api.github.com/repos/${repo.owner}/${repo.repo}`)
   const branchName = source.sync?.default_ref ?? repoInfo.default_branch ?? 'main'
-  const branch = await githubJson(`https://api.github.com/repos/${repo.owner}/${repo.repo}/branches/${encodeURIComponent(branchName)}`)
-  const sha = branch.commit?.sha ?? branchName
-  const tree = await githubJson(`https://api.github.com/repos/${repo.owner}/${repo.repo}/git/trees/${sha}?recursive=1`)
+  const branch = await githubJson(`https://api.github.com/repos/${encodeURIComponent(repo.owner)}/${encodeURIComponent(repo.repo)}/branches/${encodeURIComponent(branchName)}`)
+  const sha = assertGitCommit(branch.commit?.sha)
+  const tree = await githubJson(`https://api.github.com/repos/${encodeURIComponent(repo.owner)}/${encodeURIComponent(repo.repo)}/git/trees/${sha}?recursive=1`)
   const include = source.sync?.include ?? ['**/SKILL.md']
   const exclude = source.sync?.exclude ?? ['node_modules/**']
   const artifacts = (tree.tree ?? [])
     .filter((item) => item.type === 'blob')
+    .map((item) => ({ ...item, path: assertRemoteTreePath(item.path) }))
     .filter((item) => matchesAny(item.path, include) && !matchesAny(item.path, exclude))
     .map((item) => ({
-      source_id: source.source_id,
+      source_id: sourceId,
       path: item.path,
       declared_name: item.path.split('/').slice(-2, -1)[0] ?? item.path,
       format: item.path.endsWith('SKILL.md') ? 'SKILL.md' : 'markdown',
       parse_confidence: item.path.endsWith('SKILL.md') ? 'high' : 'medium',
-      content_digest: `sha256:${item.sha}`,
+      content_digest: gitBlobOid(item.sha),
       upstream_ref: sha,
-      url: `https://github.com/${repo.owner}/${repo.repo}/blob/${sha}/${item.path}`,
-      raw_url: `https://raw.githubusercontent.com/${repo.owner}/${repo.repo}/${sha}/${item.path}`,
-      raw_metadata: { github_blob_sha: item.sha, size: item.size ?? null },
+      git_blob_oid: gitBlobOid(item.sha),
+      url: buildGithubBlobUrl(repo, sha, item.path),
+      raw_url: buildRawGithubUrl(repo, sha, item.path),
+      artifact_binding: {
+        source_id: sourceId,
+        canonical_skill_id: null,
+        remote_path: item.path,
+        pinned_commit: sha,
+        git_blob_oid: gitBlobOid(item.sha),
+        raw_url: buildRawGithubUrl(repo, sha, item.path),
+        expected_output_path: null,
+      },
+      raw_metadata: { github_blob_oid: gitBlobOid(item.sha), size: item.size ?? null },
     }))
   const manifest = {
     schema_version: 1,
-    source_id: source.source_id,
+    source_id: sourceId,
     upstream_ref: sha,
     checked_at: new Date().toISOString(),
     url: source.url,
     artifacts,
     digest: sha256(JSON.stringify(artifacts)),
   }
-  const path = join(CATALOG, 'sources', 'snapshots', `${source.source_id}-${sha.slice(0, 12)}.json`)
+  const snapshotRef = String(sha).slice(0, 12)
+  if (!/^[a-f0-9]{12}$/.test(snapshotRef)) throw new Error(`invalid GitHub snapshot ref: ${sha}`)
+  const path = resolveWithin(CATALOG, 'sources', 'snapshots', `${sourceId}-${snapshotRef}.json`)
   writeTextAtomic(path, JSON.stringify(manifest, null, 2) + '\n')
   return { ...manifest, path }
-}
-
-function parseGithubRepo(url) {
-  const match = String(url ?? '').match(/^https:\/\/github\.com\/([^/]+)\/([^/#?]+)(?:[/#?].*)?$/)
-  if (!match) return null
-  return { owner: match[1], repo: match[2].replace(/\.git$/, '') }
 }
 
 async function githubJson(url) {

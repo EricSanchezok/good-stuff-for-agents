@@ -288,7 +288,33 @@ sources:
   type: github_repo
   updated_at: '2026-07-09T17:19:39.242Z'
   url: https://github.com/mcollina/skills
-   url: https://github.com/microsoft/skills
+- license:
+    evidence: LICENSE file in repo root; README states MIT
+    spdx: MIT
+    verified: true
+  name: Microsoft Agent Skills
+  schema_version: 1
+  source_id: src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e
+  state:
+    consecutive_failures: 0
+    last_checked_at: '2026-07-13T21:03:24.346Z'
+    last_ref: dc543aa59048cb7d0faeb91c79f3a0ab405ec952
+    last_success_at: '2026-07-13T21:03:24.346Z'
+  status: active
+  sync:
+    default_ref: main
+    exclude:
+    - node_modules/**
+    - .git/**
+    - tests/**
+    - docs/**
+    frequency: daily
+    include:
+    - '**/SKILL.md'
+    strategy: git
+  type: github_repo
+  updated_at: '2026-07-09T17:19:39.028Z'
+  url: https://github.com/microsoft/skills
 - license:
     evidence: LICENSE file in repo root confirms MIT
     spdx: MIT

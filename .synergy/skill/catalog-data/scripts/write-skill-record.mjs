@@ -1,9 +1,9 @@
 #!/usr/bin/env node
-import { analysisPath, idFor, loadRegistry, nowIso, parseYamlFile, readDraft, sha256, skillRecordPath, writeYaml } from './lib/catalog-lib.mjs'
+import { analysisPath, assertCatalogId, idFor, loadRegistry, nowIso, parseYamlFile, readDraft, sha256, skillRecordPath, writeYaml } from './lib/catalog-lib.mjs'
 import { existsSync } from 'node:fs'
 
 const draft = readDraft(process.argv.slice(2))
-const skillId = draft.canonical_skill_id ?? idFor('skl', [draft.canonical_name ?? draft.display_name, draft.source?.source_id, draft.source?.path])
+const skillId = assertCatalogId('skill', draft.canonical_skill_id ?? idFor('skl', [draft.canonical_name ?? draft.display_name, draft.source?.source_id, draft.source?.path]))
 const target = skillRecordPath(skillId)
 const previous = existsSync(target) ? parseYamlFile(target) : {}
 const now = nowIso()

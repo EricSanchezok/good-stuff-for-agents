@@ -4,7 +4,7 @@
 
 ## Summary
 
-Analysis available.
+A comprehensive operational manual for executing JavaScript against Figma files through the `use_figma` MCP tool. It's not a reference — it's a practitioner's guide organized around preventing real-world mistakes: 17 critical rules, a page-switching protocol, an incremental build workflow, a pre-flight checklist, and an error-recovery decision tree. The meta-message is "the Figma Plugin API is full of footguns, and I've catalogued every one I've stepped on."
 
 ## Source
 
@@ -38,7 +38,7 @@ No related skills are public yet.
 
 ## Public Analysis Summary
 
-Analysis available.
+Pick this skill if you're doing any programmatic Figma work through the `use_figma` MCP tool — it's the definitive operations manual and the rules alone will save you hours of debugging. Skip it if you're only reading Figma data or working in FigJam/Slides where the API coverage is thin. The single biggest benefit is the catalogued failure modes: every rule addresses a real bug someone already hit. The single biggest risk is that it enables destructive operations without guardrails — you can delete production design system components as easily as you can create them.
 
 ## Confidence and Limitations
 

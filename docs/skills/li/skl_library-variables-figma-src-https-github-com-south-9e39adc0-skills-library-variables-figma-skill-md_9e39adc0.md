@@ -4,7 +4,7 @@
 
 ## Summary
 
-Analysis available.
+A focused utility that lets an agent browse and import design tokens from subscribed Figma team libraries into the current file. It's a thin wrapper around two Figma Plugin API scripts — one for discovery (`list-library-variables.js`) and one for import (`import-library-variable.js`) — with a short text workflow that connects them. The scope is deliberately narrow: this skill only touches library-published variables; local variables are explicitly routed to `export-tokens-figma` or `manage-variables-figma`.
 
 ## Source
 
@@ -38,7 +38,7 @@ No related skills are public yet.
 
 ## Public Analysis Summary
 
-Analysis available.
+Pick this if you need to consume design tokens from a shared Figma library and already know which libraries you subscribe to. Skip it if your workflow involves setting up subscriptions from scratch or working with local variables — those are different skills in the same collection. The biggest benefit is the clear two-phase workflow (discover then import); the biggest risk is dead-ending on the manual subscription gate.
 
 ## Confidence and Limitations
 

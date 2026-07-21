@@ -4,7 +4,7 @@
 
 ## Summary
 
-Analysis available.
+This is a four-phase workflow guide for building MCP (Model Context Protocol) servers. It covers planning, implementation in three languages (TypeScript, Python, C#), testing, and creating evaluation question sets. The core of it is a detailed checklist masquerading as a tutorial — it will tell you what to do at each phase but won't hold your hand through why each decision matters. The most unusual thing about it is how deeply it ties into Microsoft's own MCP server ecosystem, spending considerable real estate on Azure MCP, Foundry MCP, and Fabric MCP before you've written a single line of code.
 
 ## Source
 
@@ -38,7 +38,7 @@ No related skills are public yet.
 
 ## Public Analysis Summary
 
-Analysis available.
+Pick this if you're in the Microsoft ecosystem and need a guide that knows where Azure MCP Server ends and custom work begins. Skip it if you're building a straightforward Python or TypeScript MCP server for a non-Microsoft service — the SDK READMEs and a few blog posts will get you there faster with less cruft. The single biggest risk is following the tool-annotation guidance without independent verification; the single biggest benefit is the pre-flight check against Microsoft's existing server catalog, which genuinely prevents redundant work. A truly generic MCP builder guide would edge it out on breadth alone.
 
 ## Confidence and Limitations
 

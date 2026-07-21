@@ -4,7 +4,7 @@
 
 ## Summary
 
-Analysis available.
+This is a competent reference card for analytics implementation fundamentals, structured as a checklist-rich guide that covers GA4, GTM, event naming conventions, UTM strategy, and privacy compliance. It reads like a well-organized internal wiki page for a marketing team that needs consistent tracking standards — useful as a shared reference, thin as a skill that drives agent behavior.
 
 ## Source
 
@@ -38,7 +38,7 @@ No related skills are public yet.
 
 ## Public Analysis Summary
 
-Analysis available.
+I wouldn't pick this skill over a well-written GA4 implementation guide from Google's own documentation. It's a reasonable standardization reference for teams that already know what they're doing, but it's too shallow for a novice and too generic for an expert. Keep it if you need marketing analytics standardization for a multi-agent workflow; skip it if you need actual implementation help.
 
 ## Confidence and Limitations
 

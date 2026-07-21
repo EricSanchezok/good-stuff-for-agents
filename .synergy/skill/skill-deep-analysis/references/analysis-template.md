@@ -10,13 +10,15 @@ The old 11-section template is dead. Do not use it. Do not try to map old sectio
 
 ## Metadata (unchanged)
 
-You must include this YAML frontmatter at the top of every analysis. The metadata format has not changed. Do not add or remove fields.
+The zero-tool analyzer returns only `title`, `confidence`, and `body`. It never receives a dispatch path, raw URL, output path, or write capability and must not emit routing or provenance fields. The trusted controller merges its semantic draft with the schema-v2 dispatch, rereads the normalized skill record and latest snapshot, and produces this YAML frontmatter through the deterministic writer.
+
+The dispatch binds `identity.current_version_id` separately from `git_blob_oid`: the current version must exactly equal the selected latest snapshot artifact's `content_digest`, while the Git OID verifies the fetched bytes. New writes use the algorithm-correct Git provenance value for `source_hash`. Historical `sha256:` analysis records remain readable for compatibility, but an analyzer never chooses or relabels this field.
 
 ```yaml
 ---
 schema_version: 1
 skill_id: <the canonical skill ID from the skill record>
-source_hash: sha256:<hash of the source content you read>
+source_hash: git_sha1:<Git blob OID from the trusted dispatch binding>
 analysis_version: 1
 confidence: high | medium | low
 updated_at: "<ISO 8601 timestamp>"
