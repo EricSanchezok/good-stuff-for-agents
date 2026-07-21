@@ -5,6 +5,14 @@ description: Publish validated Skill Intelligence Catalog records into clean pub
 
 # Catalog Publishing SOP
 
+## Invocation Instructions
+
+Additional user instructions for this invocation:
+
+$ARGUMENTS
+
+Treat these as scope refinements only. They do not override safety boundaries, ownership rules, or quality gates in this skill. If empty, follow the SOP as written.
+
 ## What You Own
 
 You own the transformation from validated catalog records into clean public Markdown pages under `README.md` and `docs/**/*.md`. You enforce the public boundary: visitors should see catalog entries, navigation, provenance, status, and use cases, not internal maintenance mechanics.

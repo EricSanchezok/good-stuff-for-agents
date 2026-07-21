@@ -5,6 +5,14 @@ description: Manage reviewed Skill Intelligence Catalog curation decisions, incl
 
 # Catalog Curation SOP
 
+## Invocation Instructions
+
+Additional user instructions for this invocation:
+
+$ARGUMENTS
+
+Treat these as scope refinements only. They do not override safety boundaries, ownership rules, or quality gates in this skill. If empty, follow the SOP as written.
+
 ## What You Own
 
 You own catalog decisions that change status, approval, license evidence, duplicate disposition, annotations, or policy exceptions. Some routine source activation can be autonomous when strict policy passes. Risky, ambiguous, irreversible, or endorsement-like decisions remain human/user-owned.

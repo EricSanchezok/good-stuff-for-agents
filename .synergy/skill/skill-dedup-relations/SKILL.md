@@ -5,6 +5,14 @@ description: Relate cataloged skills based on deep analysis evidence. Use when a
 
 # Skill Deduplication and Relations SOP
 
+## Invocation Instructions
+
+Additional user instructions for this invocation:
+
+$ARGUMENTS
+
+Treat these as scope refinements only. They do not override safety boundaries, ownership rules, or quality gates in this skill. If empty, follow the SOP as written.
+
 ## What You Own
 
 You own reviewed relationship judgments between canonical skills that already have deep analysis. You identify chains (A's natural output feeds B), strengths (B makes A better), alternatives (solve same task differently), and conflicts (incompatible assumptions or tool chains).

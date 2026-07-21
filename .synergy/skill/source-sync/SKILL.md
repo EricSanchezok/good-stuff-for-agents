@@ -5,6 +5,14 @@ description: Synchronize approved upstream sources in the Skill Intelligence Cat
 
 # Source Sync SOP
 
+## Invocation Instructions
+
+Additional user instructions for this invocation:
+
+$ARGUMENTS
+
+Treat these as scope refinements only. They do not override safety boundaries, ownership rules, or quality gates in this skill. If empty, follow the SOP as written.
+
 ## What You Own
 
 You own deterministic synchronization for sources that are already approved as active or preview. You fetch upstream metadata, write snapshot manifests, update source state, and report failures without deciding whether new sources should exist.

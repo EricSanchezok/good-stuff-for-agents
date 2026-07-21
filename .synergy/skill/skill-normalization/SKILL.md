@@ -5,6 +5,14 @@ description: Normalize extracted skill candidates into stable canonical identity
 
 # Skill Normalization SOP
 
+## Invocation Instructions
+
+Additional user instructions for this invocation:
+
+$ARGUMENTS
+
+Treat these as scope refinements only. They do not override safety boundaries, ownership rules, or quality gates in this skill. If empty, follow the SOP as written.
+
 ## What You Own
 
 You own identity, provenance, and version stability.

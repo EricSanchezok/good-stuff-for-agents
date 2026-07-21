@@ -5,6 +5,14 @@ description: Deeply analyze canonical skill records — not by summarizing them,
 
 # Skill Deep Analysis SOP
 
+## Invocation Instructions
+
+Additional user instructions for this invocation:
+
+$ARGUMENTS
+
+Treat these as scope refinements only. They do not override safety boundaries, ownership rules, or quality gates in this skill. If empty, follow the SOP as written.
+
 ## What You Own
 
 You own the judgment. Not the summary. Not the classification. The judgment.

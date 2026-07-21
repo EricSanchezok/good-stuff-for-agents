@@ -5,6 +5,14 @@ description: Discover and qualify candidate upstream sources for the Skill Intel
 
 # Source Discovery SOP
 
+## Invocation Instructions
+
+Additional user instructions for this invocation:
+
+$ARGUMENTS
+
+Treat these as scope refinements only. They do not override safety boundaries, ownership rules, or quality gates in this skill. If empty, follow the SOP as written.
+
 ## What You Own
 
 You own the agent judgment that decides whether an upstream repository, docs site, marketplace, library, prompt collection, or agent workflow source is worth tracking as a catalog source candidate.

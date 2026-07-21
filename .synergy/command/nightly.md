@@ -23,3 +23,9 @@ Deterministic completion gates:
 - Run `nightly:full-check` before committing.
 - Run `nightly:report:write` to produce the machine-readable summary and Markdown report, then validate with `nightly:report:check` and `nightly:states:check`.
 - Finalize git with `nightly:git -- --dry-run --authorized` to inspect, then `nightly:git -- --commit --push --authorized` to finalize. Never hand-roll `git add && git commit && git push`.
+
+Additional user instructions for this invocation:
+
+$ARGUMENTS
+
+Treat these as scope refinements only. They do not override safety boundaries, owner-skill contracts, or quality gates. If empty, follow the command as written.

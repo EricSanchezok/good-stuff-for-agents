@@ -5,6 +5,14 @@ description: Evaluate candidate packs and public-ready catalog outputs. Use when
 
 # Catalog Evaluation SOP
 
+## Invocation Instructions
+
+Additional user instructions for this invocation:
+
+$ARGUMENTS
+
+Treat these as scope refinements only. They do not override safety boundaries, ownership rules, or quality gates in this skill. If empty, follow the SOP as written.
+
 ## What You Own
 
 You own evidence-based evaluation of candidate packs and public-ready catalog outputs. You apply rubrics, record scores, failure modes, recommendations, and pass/fail decisions from inspected evidence.

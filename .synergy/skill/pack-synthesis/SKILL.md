@@ -5,6 +5,14 @@ description: Generate candidate skill packs from catalog skill records, analyses
 
 # Pack Synthesis SOP
 
+## Invocation Instructions
+
+Additional user instructions for this invocation:
+
+$ARGUMENTS
+
+Treat these as scope refinements only. They do not override safety boundaries, ownership rules, or quality gates in this skill. If empty, follow the SOP as written.
+
 ## What You Own
 
 You own the agent design work that creates a coherent candidate pack for a specific task intent. You choose member skills, roles, stages, exclusions, compatibility notes, and evidence based on catalog records, analyses, and relations.

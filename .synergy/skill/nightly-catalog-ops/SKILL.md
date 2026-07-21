@@ -5,6 +5,14 @@ description: "Coordinate the full autonomous Skill Intelligence Catalog run: mai
 
 # Nightly Catalog Total Controller SOP
 
+## Invocation Instructions
+
+Additional user instructions for this invocation:
+
+$ARGUMENTS
+
+Treat these as scope refinements only. They do not override safety boundaries, ownership rules, or quality gates in this skill. If empty, follow the SOP as written.
+
 ## What You Own
 
 You own the full scheduled/autonomous catalog operation. You do not perform every phase yourself; you load the owner skill for each layer, enforce ordering, integrate results, write the total run report, and handle authorized commit/push.

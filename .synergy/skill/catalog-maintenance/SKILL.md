@@ -5,6 +5,14 @@ description: "Run deterministic Skill Intelligence Catalog maintenance only: val
 
 # Catalog Maintenance SOP
 
+## Invocation Instructions
+
+Additional user instructions for this invocation:
+
+$ARGUMENTS
+
+Treat these as scope refinements only. They do not override safety boundaries, ownership rules, or quality gates in this skill. If empty, follow the SOP as written.
+
 ## What You Own
 
 You own maintenance-only catalog upkeep. You validate the catalog, run migrations, sync sources that are already active or preview, rebuild indexes, render and check public pages, report health, and identify which owner should handle any non-maintenance follow-up.

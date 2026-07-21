@@ -5,6 +5,14 @@ description: Extract skill-like artifacts from synced source content for the Ski
 
 # Skill Extraction SOP
 
+## Invocation Instructions
+
+Additional user instructions for this invocation:
+
+$ARGUMENTS
+
+Treat these as scope refinements only. They do not override safety boundaries, ownership rules, or quality gates in this skill. If empty, follow the SOP as written.
+
 ## What You Own
 
 You own artifact-level evidence preservation. You turn synced source artifacts into candidate records that point back to the original content. You identify parseable or plausibly reusable skill-like artifacts and write candidate shells with source IDs, paths, declared names, formats, digests, parse confidence, and raw metadata.

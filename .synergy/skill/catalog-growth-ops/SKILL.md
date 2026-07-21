@@ -5,6 +5,14 @@ description: Run autonomous Skill Intelligence Catalog growth only. Use when the
 
 # Catalog Growth Operations SOP
 
+## Invocation Instructions
+
+Additional user instructions for this invocation:
+
+$ARGUMENTS
+
+Treat these as scope refinements only. They do not override safety boundaries, ownership rules, or quality gates in this skill. If empty, follow the SOP as written.
+
 ## What You Own
 
 You own autonomous catalog growth. You decide what the catalog should inspect next, based on catalog gaps, public demand signals, source quality, ecosystem activity, and prior reports. You do not wait for the user to name domains, search targets, or source counts during a normal growth run.

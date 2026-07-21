@@ -5,6 +5,14 @@ description: Own canonical catalog data writes, schemas, validation, formatting,
 
 # Catalog Data Integrity SOP
 
+## Invocation Instructions
+
+Additional user instructions for this invocation:
+
+$ARGUMENTS
+
+Treat these as scope refinements only. They do not override safety boundaries, ownership rules, or quality gates in this skill. If empty, follow the SOP as written.
+
 ## What You Own
 
 You own the integrity of canonical catalog data under `catalog/`. You protect source, skill, analysis, relation, pack, evaluation, index, and run records from malformed writes, unstable IDs, duplicate identities, and hand-edited drift.
