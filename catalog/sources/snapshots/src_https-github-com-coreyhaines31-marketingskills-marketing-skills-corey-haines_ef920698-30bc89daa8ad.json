@@ -1,0 +1,715 @@
+{
+  "schema_version": 1,
+  "source_id": "src_https-github-com-coreyhaines31-marketingskills-marketing-skills-corey-haines_ef920698",
+  "upstream_ref": "30bc89daa8adce60c28bb21d9b9ddd7c98a20671",
+  "checked_at": "2026-07-13T21:03:09.772Z",
+  "url": "https://github.com/coreyhaines31/marketingskills",
+  "artifacts": [
+    {
+      "source_id": "src_https-github-com-coreyhaines31-marketingskills-marketing-skills-corey-haines_ef920698",
+      "path": "skills/ab-testing/SKILL.md",
+      "declared_name": "ab-testing",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:e3f999719ccc2aa408d107d24b3e662b88f079a3",
+      "upstream_ref": "30bc89daa8adce60c28bb21d9b9ddd7c98a20671",
+      "url": "https://github.com/coreyhaines31/marketingskills/blob/30bc89daa8adce60c28bb21d9b9ddd7c98a20671/skills/ab-testing/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/coreyhaines31/marketingskills/30bc89daa8adce60c28bb21d9b9ddd7c98a20671/skills/ab-testing/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "e3f999719ccc2aa408d107d24b3e662b88f079a3",
+        "size": 11162
+      }
+    },
+    {
+      "source_id": "src_https-github-com-coreyhaines31-marketingskills-marketing-skills-corey-haines_ef920698",
+      "path": "skills/ad-creative/SKILL.md",
+      "declared_name": "ad-creative",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:153538daffa2b3e9265fb07f2dd2aa0fc8ad4ce1",
+      "upstream_ref": "30bc89daa8adce60c28bb21d9b9ddd7c98a20671",
+      "url": "https://github.com/coreyhaines31/marketingskills/blob/30bc89daa8adce60c28bb21d9b9ddd7c98a20671/skills/ad-creative/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/coreyhaines31/marketingskills/30bc89daa8adce60c28bb21d9b9ddd7c98a20671/skills/ad-creative/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "153538daffa2b3e9265fb07f2dd2aa0fc8ad4ce1",
+        "size": 20787
+      }
+    },
+    {
+      "source_id": "src_https-github-com-coreyhaines31-marketingskills-marketing-skills-corey-haines_ef920698",
+      "path": "skills/ads/SKILL.md",
+      "declared_name": "ads",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:9e896299c61f3c71125bb03f2458706df633e5ea",
+      "upstream_ref": "30bc89daa8adce60c28bb21d9b9ddd7c98a20671",
+      "url": "https://github.com/coreyhaines31/marketingskills/blob/30bc89daa8adce60c28bb21d9b9ddd7c98a20671/skills/ads/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/coreyhaines31/marketingskills/30bc89daa8adce60c28bb21d9b9ddd7c98a20671/skills/ads/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "9e896299c61f3c71125bb03f2458706df633e5ea",
+        "size": 25673
+      }
+    },
+    {
+      "source_id": "src_https-github-com-coreyhaines31-marketingskills-marketing-skills-corey-haines_ef920698",
+      "path": "skills/ai-seo/SKILL.md",
+      "declared_name": "ai-seo",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:c9a33b68a6de5a1d4a65f2e19b75d83a031daa4b",
+      "upstream_ref": "30bc89daa8adce60c28bb21d9b9ddd7c98a20671",
+      "url": "https://github.com/coreyhaines31/marketingskills/blob/30bc89daa8adce60c28bb21d9b9ddd7c98a20671/skills/ai-seo/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/coreyhaines31/marketingskills/30bc89daa8adce60c28bb21d9b9ddd7c98a20671/skills/ai-seo/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "c9a33b68a6de5a1d4a65f2e19b75d83a031daa4b",
+        "size": 27054
+      }
+    },
+    {
+      "source_id": "src_https-github-com-coreyhaines31-marketingskills-marketing-skills-corey-haines_ef920698",
+      "path": "skills/analytics/SKILL.md",
+      "declared_name": "analytics",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:da39c1dc1586bc6cb06758e72426198493d00797",
+      "upstream_ref": "30bc89daa8adce60c28bb21d9b9ddd7c98a20671",
+      "url": "https://github.com/coreyhaines31/marketingskills/blob/30bc89daa8adce60c28bb21d9b9ddd7c98a20671/skills/analytics/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/coreyhaines31/marketingskills/30bc89daa8adce60c28bb21d9b9ddd7c98a20671/skills/analytics/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "da39c1dc1586bc6cb06758e72426198493d00797",
+        "size": 8361
+      }
+    },
+    {
+      "source_id": "src_https-github-com-coreyhaines31-marketingskills-marketing-skills-corey-haines_ef920698",
+      "path": "skills/aso/SKILL.md",
+      "declared_name": "aso",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:bd699a13e3d245b72bda63337ed0406f459774fe",
+      "upstream_ref": "30bc89daa8adce60c28bb21d9b9ddd7c98a20671",
+      "url": "https://github.com/coreyhaines31/marketingskills/blob/30bc89daa8adce60c28bb21d9b9ddd7c98a20671/skills/aso/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/coreyhaines31/marketingskills/30bc89daa8adce60c28bb21d9b9ddd7c98a20671/skills/aso/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "bd699a13e3d245b72bda63337ed0406f459774fe",
+        "size": 15596
+      }
+    },
+    {
+      "source_id": "src_https-github-com-coreyhaines31-marketingskills-marketing-skills-corey-haines_ef920698",
+      "path": "skills/churn-prevention/SKILL.md",
+      "declared_name": "churn-prevention",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:b8fbcd28ebc3942dc557db84b69e233b03c45296",
+      "upstream_ref": "30bc89daa8adce60c28bb21d9b9ddd7c98a20671",
+      "url": "https://github.com/coreyhaines31/marketingskills/blob/30bc89daa8adce60c28bb21d9b9ddd7c98a20671/skills/churn-prevention/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/coreyhaines31/marketingskills/30bc89daa8adce60c28bb21d9b9ddd7c98a20671/skills/churn-prevention/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "b8fbcd28ebc3942dc557db84b69e233b03c45296",
+        "size": 18420
+      }
+    },
+    {
+      "source_id": "src_https-github-com-coreyhaines31-marketingskills-marketing-skills-corey-haines_ef920698",
+      "path": "skills/co-marketing/SKILL.md",
+      "declared_name": "co-marketing",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:6788b644f675024e4f4135f561da33d11ec6830d",
+      "upstream_ref": "30bc89daa8adce60c28bb21d9b9ddd7c98a20671",
+      "url": "https://github.com/coreyhaines31/marketingskills/blob/30bc89daa8adce60c28bb21d9b9ddd7c98a20671/skills/co-marketing/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/coreyhaines31/marketingskills/30bc89daa8adce60c28bb21d9b9ddd7c98a20671/skills/co-marketing/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "6788b644f675024e4f4135f561da33d11ec6830d",
+        "size": 10153
+      }
+    },
+    {
+      "source_id": "src_https-github-com-coreyhaines31-marketingskills-marketing-skills-corey-haines_ef920698",
+      "path": "skills/cold-email/SKILL.md",
+      "declared_name": "cold-email",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:9e18b25c3547d9e6c2558d1e78cb982223add86a",
+      "upstream_ref": "30bc89daa8adce60c28bb21d9b9ddd7c98a20671",
+      "url": "https://github.com/coreyhaines31/marketingskills/blob/30bc89daa8adce60c28bb21d9b9ddd7c98a20671/skills/cold-email/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/coreyhaines31/marketingskills/30bc89daa8adce60c28bb21d9b9ddd7c98a20671/skills/cold-email/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "9e18b25c3547d9e6c2558d1e78cb982223add86a",
+        "size": 7350
+      }
+    },
+    {
+      "source_id": "src_https-github-com-coreyhaines31-marketingskills-marketing-skills-corey-haines_ef920698",
+      "path": "skills/community-marketing/SKILL.md",
+      "declared_name": "community-marketing",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:06246dc7515a3f2677147678d04a9ada6f7c62d3",
+      "upstream_ref": "30bc89daa8adce60c28bb21d9b9ddd7c98a20671",
+      "url": "https://github.com/coreyhaines31/marketingskills/blob/30bc89daa8adce60c28bb21d9b9ddd7c98a20671/skills/community-marketing/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/coreyhaines31/marketingskills/30bc89daa8adce60c28bb21d9b9ddd7c98a20671/skills/community-marketing/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "06246dc7515a3f2677147678d04a9ada6f7c62d3",
+        "size": 8959
+      }
+    },
+    {
+      "source_id": "src_https-github-com-coreyhaines31-marketingskills-marketing-skills-corey-haines_ef920698",
+      "path": "skills/competitor-profiling/SKILL.md",
+      "declared_name": "competitor-profiling",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:9b0ca708a6f22bf11ae7c241b821788e2a374d83",
+      "upstream_ref": "30bc89daa8adce60c28bb21d9b9ddd7c98a20671",
+      "url": "https://github.com/coreyhaines31/marketingskills/blob/30bc89daa8adce60c28bb21d9b9ddd7c98a20671/skills/competitor-profiling/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/coreyhaines31/marketingskills/30bc89daa8adce60c28bb21d9b9ddd7c98a20671/skills/competitor-profiling/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "9b0ca708a6f22bf11ae7c241b821788e2a374d83",
+        "size": 14245
+      }
+    },
+    {
+      "source_id": "src_https-github-com-coreyhaines31-marketingskills-marketing-skills-corey-haines_ef920698",
+      "path": "skills/competitors/SKILL.md",
+      "declared_name": "competitors",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:e919fec899061f3d894c2f0bd6dac98709eeb8e4",
+      "upstream_ref": "30bc89daa8adce60c28bb21d9b9ddd7c98a20671",
+      "url": "https://github.com/coreyhaines31/marketingskills/blob/30bc89daa8adce60c28bb21d9b9ddd7c98a20671/skills/competitors/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/coreyhaines31/marketingskills/30bc89daa8adce60c28bb21d9b9ddd7c98a20671/skills/competitors/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "e919fec899061f3d894c2f0bd6dac98709eeb8e4",
+        "size": 8803
+      }
+    },
+    {
+      "source_id": "src_https-github-com-coreyhaines31-marketingskills-marketing-skills-corey-haines_ef920698",
+      "path": "skills/content-strategy/SKILL.md",
+      "declared_name": "content-strategy",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:3a54e3f7b0b23d35d1e4c7f2f608fa947d19061f",
+      "upstream_ref": "30bc89daa8adce60c28bb21d9b9ddd7c98a20671",
+      "url": "https://github.com/coreyhaines31/marketingskills/blob/30bc89daa8adce60c28bb21d9b9ddd7c98a20671/skills/content-strategy/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/coreyhaines31/marketingskills/30bc89daa8adce60c28bb21d9b9ddd7c98a20671/skills/content-strategy/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "3a54e3f7b0b23d35d1e4c7f2f608fa947d19061f",
+        "size": 12272
+      }
+    },
+    {
+      "source_id": "src_https-github-com-coreyhaines31-marketingskills-marketing-skills-corey-haines_ef920698",
+      "path": "skills/copy-editing/SKILL.md",
+      "declared_name": "copy-editing",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:33110f4bb1be5f2152f838d95191705328760ddd",
+      "upstream_ref": "30bc89daa8adce60c28bb21d9b9ddd7c98a20671",
+      "url": "https://github.com/coreyhaines31/marketingskills/blob/30bc89daa8adce60c28bb21d9b9ddd7c98a20671/skills/copy-editing/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/coreyhaines31/marketingskills/30bc89daa8adce60c28bb21d9b9ddd7c98a20671/skills/copy-editing/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "33110f4bb1be5f2152f838d95191705328760ddd",
+        "size": 15000
+      }
+    },
+    {
+      "source_id": "src_https-github-com-coreyhaines31-marketingskills-marketing-skills-corey-haines_ef920698",
+      "path": "skills/copywriting/SKILL.md",
+      "declared_name": "copywriting",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:0793e62270e203de1b2e2ff591a56015e4cf0075",
+      "upstream_ref": "30bc89daa8adce60c28bb21d9b9ddd7c98a20671",
+      "url": "https://github.com/coreyhaines31/marketingskills/blob/30bc89daa8adce60c28bb21d9b9ddd7c98a20671/skills/copywriting/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/coreyhaines31/marketingskills/30bc89daa8adce60c28bb21d9b9ddd7c98a20671/skills/copywriting/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "0793e62270e203de1b2e2ff591a56015e4cf0075",
+        "size": 7627
+      }
+    },
+    {
+      "source_id": "src_https-github-com-coreyhaines31-marketingskills-marketing-skills-corey-haines_ef920698",
+      "path": "skills/cro/SKILL.md",
+      "declared_name": "cro",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:74a2394f838e0f07a5a5f06eee99047b8a5adcd6",
+      "upstream_ref": "30bc89daa8adce60c28bb21d9b9ddd7c98a20671",
+      "url": "https://github.com/coreyhaines31/marketingskills/blob/30bc89daa8adce60c28bb21d9b9ddd7c98a20671/skills/cro/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/coreyhaines31/marketingskills/30bc89daa8adce60c28bb21d9b9ddd7c98a20671/skills/cro/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "74a2394f838e0f07a5a5f06eee99047b8a5adcd6",
+        "size": 6101
+      }
+    },
+    {
+      "source_id": "src_https-github-com-coreyhaines31-marketingskills-marketing-skills-corey-haines_ef920698",
+      "path": "skills/customer-research/SKILL.md",
+      "declared_name": "customer-research",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:90e3f1745dbd2827c28f2f03c774f0b5f51a02c6",
+      "upstream_ref": "30bc89daa8adce60c28bb21d9b9ddd7c98a20671",
+      "url": "https://github.com/coreyhaines31/marketingskills/blob/30bc89daa8adce60c28bb21d9b9ddd7c98a20671/skills/customer-research/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/coreyhaines31/marketingskills/30bc89daa8adce60c28bb21d9b9ddd7c98a20671/skills/customer-research/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "90e3f1745dbd2827c28f2f03c774f0b5f51a02c6",
+        "size": 12758
+      }
+    },
+    {
+      "source_id": "src_https-github-com-coreyhaines31-marketingskills-marketing-skills-corey-haines_ef920698",
+      "path": "skills/directory-submissions/SKILL.md",
+      "declared_name": "directory-submissions",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:9abacadbdca03bb9c72d2232a5e5a0c5de8013b0",
+      "upstream_ref": "30bc89daa8adce60c28bb21d9b9ddd7c98a20671",
+      "url": "https://github.com/coreyhaines31/marketingskills/blob/30bc89daa8adce60c28bb21d9b9ddd7c98a20671/skills/directory-submissions/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/coreyhaines31/marketingskills/30bc89daa8adce60c28bb21d9b9ddd7c98a20671/skills/directory-submissions/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "9abacadbdca03bb9c72d2232a5e5a0c5de8013b0",
+        "size": 23361
+      }
+    },
+    {
+      "source_id": "src_https-github-com-coreyhaines31-marketingskills-marketing-skills-corey-haines_ef920698",
+      "path": "skills/emails/SKILL.md",
+      "declared_name": "emails",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:a9b31c79599095f66d9705090a25d877a437a7d7",
+      "upstream_ref": "30bc89daa8adce60c28bb21d9b9ddd7c98a20671",
+      "url": "https://github.com/coreyhaines31/marketingskills/blob/30bc89daa8adce60c28bb21d9b9ddd7c98a20671/skills/emails/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/coreyhaines31/marketingskills/30bc89daa8adce60c28bb21d9b9ddd7c98a20671/skills/emails/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "a9b31c79599095f66d9705090a25d877a437a7d7",
+        "size": 8562
+      }
+    },
+    {
+      "source_id": "src_https-github-com-coreyhaines31-marketingskills-marketing-skills-corey-haines_ef920698",
+      "path": "skills/free-tools/SKILL.md",
+      "declared_name": "free-tools",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:e1aa25d56ae3e6fcdb36c83344b7f8e3d8f3ba13",
+      "upstream_ref": "30bc89daa8adce60c28bb21d9b9ddd7c98a20671",
+      "url": "https://github.com/coreyhaines31/marketingskills/blob/30bc89daa8adce60c28bb21d9b9ddd7c98a20671/skills/free-tools/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/coreyhaines31/marketingskills/30bc89daa8adce60c28bb21d9b9ddd7c98a20671/skills/free-tools/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "e1aa25d56ae3e6fcdb36c83344b7f8e3d8f3ba13",
+        "size": 5942
+      }
+    },
+    {
+      "source_id": "src_https-github-com-coreyhaines31-marketingskills-marketing-skills-corey-haines_ef920698",
+      "path": "skills/image/SKILL.md",
+      "declared_name": "image",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:4ec01425410a26518a3f6ba8b0b5d8dd9fc85bbc",
+      "upstream_ref": "30bc89daa8adce60c28bb21d9b9ddd7c98a20671",
+      "url": "https://github.com/coreyhaines31/marketingskills/blob/30bc89daa8adce60c28bb21d9b9ddd7c98a20671/skills/image/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/coreyhaines31/marketingskills/30bc89daa8adce60c28bb21d9b9ddd7c98a20671/skills/image/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "4ec01425410a26518a3f6ba8b0b5d8dd9fc85bbc",
+        "size": 15798
+      }
+    },
+    {
+      "source_id": "src_https-github-com-coreyhaines31-marketingskills-marketing-skills-corey-haines_ef920698",
+      "path": "skills/launch/SKILL.md",
+      "declared_name": "launch",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:9fce797d47373597ff2fff564b4f6df8048ff81c",
+      "upstream_ref": "30bc89daa8adce60c28bb21d9b9ddd7c98a20671",
+      "url": "https://github.com/coreyhaines31/marketingskills/blob/30bc89daa8adce60c28bb21d9b9ddd7c98a20671/skills/launch/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/coreyhaines31/marketingskills/30bc89daa8adce60c28bb21d9b9ddd7c98a20671/skills/launch/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "9fce797d47373597ff2fff564b4f6df8048ff81c",
+        "size": 12963
+      }
+    },
+    {
+      "source_id": "src_https-github-com-coreyhaines31-marketingskills-marketing-skills-corey-haines_ef920698",
+      "path": "skills/lead-magnets/SKILL.md",
+      "declared_name": "lead-magnets",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:fc53513f326836381e81a2d4e3e699cdd52f9cbc",
+      "upstream_ref": "30bc89daa8adce60c28bb21d9b9ddd7c98a20671",
+      "url": "https://github.com/coreyhaines31/marketingskills/blob/30bc89daa8adce60c28bb21d9b9ddd7c98a20671/skills/lead-magnets/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/coreyhaines31/marketingskills/30bc89daa8adce60c28bb21d9b9ddd7c98a20671/skills/lead-magnets/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "fc53513f326836381e81a2d4e3e699cdd52f9cbc",
+        "size": 10925
+      }
+    },
+    {
+      "source_id": "src_https-github-com-coreyhaines31-marketingskills-marketing-skills-corey-haines_ef920698",
+      "path": "skills/marketing-council/SKILL.md",
+      "declared_name": "marketing-council",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:f4737811fb0ef5f2b5d1b51c996d018e9f66607e",
+      "upstream_ref": "30bc89daa8adce60c28bb21d9b9ddd7c98a20671",
+      "url": "https://github.com/coreyhaines31/marketingskills/blob/30bc89daa8adce60c28bb21d9b9ddd7c98a20671/skills/marketing-council/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/coreyhaines31/marketingskills/30bc89daa8adce60c28bb21d9b9ddd7c98a20671/skills/marketing-council/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "f4737811fb0ef5f2b5d1b51c996d018e9f66607e",
+        "size": 12480
+      }
+    },
+    {
+      "source_id": "src_https-github-com-coreyhaines31-marketingskills-marketing-skills-corey-haines_ef920698",
+      "path": "skills/marketing-ideas/SKILL.md",
+      "declared_name": "marketing-ideas",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:6aada210bfd95177b916ddc01fc1aee10fefcaab",
+      "upstream_ref": "30bc89daa8adce60c28bb21d9b9ddd7c98a20671",
+      "url": "https://github.com/coreyhaines31/marketingskills/blob/30bc89daa8adce60c28bb21d9b9ddd7c98a20671/skills/marketing-ideas/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/coreyhaines31/marketingskills/30bc89daa8adce60c28bb21d9b9ddd7c98a20671/skills/marketing-ideas/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "6aada210bfd95177b916ddc01fc1aee10fefcaab",
+        "size": 5301
+      }
+    },
+    {
+      "source_id": "src_https-github-com-coreyhaines31-marketingskills-marketing-skills-corey-haines_ef920698",
+      "path": "skills/marketing-loops/SKILL.md",
+      "declared_name": "marketing-loops",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:895072416c4c53941d354e48b0bab973f94a3d83",
+      "upstream_ref": "30bc89daa8adce60c28bb21d9b9ddd7c98a20671",
+      "url": "https://github.com/coreyhaines31/marketingskills/blob/30bc89daa8adce60c28bb21d9b9ddd7c98a20671/skills/marketing-loops/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/coreyhaines31/marketingskills/30bc89daa8adce60c28bb21d9b9ddd7c98a20671/skills/marketing-loops/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "895072416c4c53941d354e48b0bab973f94a3d83",
+        "size": 9044
+      }
+    },
+    {
+      "source_id": "src_https-github-com-coreyhaines31-marketingskills-marketing-skills-corey-haines_ef920698",
+      "path": "skills/marketing-plan/SKILL.md",
+      "declared_name": "marketing-plan",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:a647a520f6981032a3174dc988f75c9a71558831",
+      "upstream_ref": "30bc89daa8adce60c28bb21d9b9ddd7c98a20671",
+      "url": "https://github.com/coreyhaines31/marketingskills/blob/30bc89daa8adce60c28bb21d9b9ddd7c98a20671/skills/marketing-plan/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/coreyhaines31/marketingskills/30bc89daa8adce60c28bb21d9b9ddd7c98a20671/skills/marketing-plan/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "a647a520f6981032a3174dc988f75c9a71558831",
+        "size": 21281
+      }
+    },
+    {
+      "source_id": "src_https-github-com-coreyhaines31-marketingskills-marketing-skills-corey-haines_ef920698",
+      "path": "skills/marketing-psychology/SKILL.md",
+      "declared_name": "marketing-psychology",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:806c09fba8228e53b9d2443cea7e2bbb104e6ee9",
+      "upstream_ref": "30bc89daa8adce60c28bb21d9b9ddd7c98a20671",
+      "url": "https://github.com/coreyhaines31/marketingskills/blob/30bc89daa8adce60c28bb21d9b9ddd7c98a20671/skills/marketing-psychology/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/coreyhaines31/marketingskills/30bc89daa8adce60c28bb21d9b9ddd7c98a20671/skills/marketing-psychology/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "806c09fba8228e53b9d2443cea7e2bbb104e6ee9",
+        "size": 21884
+      }
+    },
+    {
+      "source_id": "src_https-github-com-coreyhaines31-marketingskills-marketing-skills-corey-haines_ef920698",
+      "path": "skills/offers/SKILL.md",
+      "declared_name": "offers",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:7776009bcb766e3f388681b8612c069459b94096",
+      "upstream_ref": "30bc89daa8adce60c28bb21d9b9ddd7c98a20671",
+      "url": "https://github.com/coreyhaines31/marketingskills/blob/30bc89daa8adce60c28bb21d9b9ddd7c98a20671/skills/offers/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/coreyhaines31/marketingskills/30bc89daa8adce60c28bb21d9b9ddd7c98a20671/skills/offers/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "7776009bcb766e3f388681b8612c069459b94096",
+        "size": 9462
+      }
+    },
+    {
+      "source_id": "src_https-github-com-coreyhaines31-marketingskills-marketing-skills-corey-haines_ef920698",
+      "path": "skills/onboarding/SKILL.md",
+      "declared_name": "onboarding",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:f8ba58a3527ec6b4d01232339f5fdee4683a9a67",
+      "upstream_ref": "30bc89daa8adce60c28bb21d9b9ddd7c98a20671",
+      "url": "https://github.com/coreyhaines31/marketingskills/blob/30bc89daa8adce60c28bb21d9b9ddd7c98a20671/skills/onboarding/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/coreyhaines31/marketingskills/30bc89daa8adce60c28bb21d9b9ddd7c98a20671/skills/onboarding/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "f8ba58a3527ec6b4d01232339f5fdee4683a9a67",
+        "size": 6591
+      }
+    },
+    {
+      "source_id": "src_https-github-com-coreyhaines31-marketingskills-marketing-skills-corey-haines_ef920698",
+      "path": "skills/paywalls/SKILL.md",
+      "declared_name": "paywalls",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:de911a4f39e11b03113f31a96404d06035952d1a",
+      "upstream_ref": "30bc89daa8adce60c28bb21d9b9ddd7c98a20671",
+      "url": "https://github.com/coreyhaines31/marketingskills/blob/30bc89daa8adce60c28bb21d9b9ddd7c98a20671/skills/paywalls/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/coreyhaines31/marketingskills/30bc89daa8adce60c28bb21d9b9ddd7c98a20671/skills/paywalls/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "de911a4f39e11b03113f31a96404d06035952d1a",
+        "size": 5799
+      }
+    },
+    {
+      "source_id": "src_https-github-com-coreyhaines31-marketingskills-marketing-skills-corey-haines_ef920698",
+      "path": "skills/popups/SKILL.md",
+      "declared_name": "popups",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:398b3329e4a7cea4b610edf143a5896466287d51",
+      "upstream_ref": "30bc89daa8adce60c28bb21d9b9ddd7c98a20671",
+      "url": "https://github.com/coreyhaines31/marketingskills/blob/30bc89daa8adce60c28bb21d9b9ddd7c98a20671/skills/popups/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/coreyhaines31/marketingskills/30bc89daa8adce60c28bb21d9b9ddd7c98a20671/skills/popups/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "398b3329e4a7cea4b610edf143a5896466287d51",
+        "size": 11805
+      }
+    },
+    {
+      "source_id": "src_https-github-com-coreyhaines31-marketingskills-marketing-skills-corey-haines_ef920698",
+      "path": "skills/pricing/SKILL.md",
+      "declared_name": "pricing",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:13e56104b4d97c9678951f38ade31b547f5ce620",
+      "upstream_ref": "30bc89daa8adce60c28bb21d9b9ddd7c98a20671",
+      "url": "https://github.com/coreyhaines31/marketingskills/blob/30bc89daa8adce60c28bb21d9b9ddd7c98a20671/skills/pricing/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/coreyhaines31/marketingskills/30bc89daa8adce60c28bb21d9b9ddd7c98a20671/skills/pricing/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "13e56104b4d97c9678951f38ade31b547f5ce620",
+        "size": 7188
+      }
+    },
+    {
+      "source_id": "src_https-github-com-coreyhaines31-marketingskills-marketing-skills-corey-haines_ef920698",
+      "path": "skills/product-marketing/SKILL.md",
+      "declared_name": "product-marketing",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:850235c1957884521c6753045009c6cb09723a32",
+      "upstream_ref": "30bc89daa8adce60c28bb21d9b9ddd7c98a20671",
+      "url": "https://github.com/coreyhaines31/marketingskills/blob/30bc89daa8adce60c28bb21d9b9ddd7c98a20671/skills/product-marketing/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/coreyhaines31/marketingskills/30bc89daa8adce60c28bb21d9b9ddd7c98a20671/skills/product-marketing/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "850235c1957884521c6753045009c6cb09723a32",
+        "size": 7638
+      }
+    },
+    {
+      "source_id": "src_https-github-com-coreyhaines31-marketingskills-marketing-skills-corey-haines_ef920698",
+      "path": "skills/programmatic-seo/SKILL.md",
+      "declared_name": "programmatic-seo",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:e96bf82ed07475262490f60108258d8dfccb6389",
+      "upstream_ref": "30bc89daa8adce60c28bb21d9b9ddd7c98a20671",
+      "url": "https://github.com/coreyhaines31/marketingskills/blob/30bc89daa8adce60c28bb21d9b9ddd7c98a20671/skills/programmatic-seo/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/coreyhaines31/marketingskills/30bc89daa8adce60c28bb21d9b9ddd7c98a20671/skills/programmatic-seo/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "e96bf82ed07475262490f60108258d8dfccb6389",
+        "size": 7098
+      }
+    },
+    {
+      "source_id": "src_https-github-com-coreyhaines31-marketingskills-marketing-skills-corey-haines_ef920698",
+      "path": "skills/prospecting/SKILL.md",
+      "declared_name": "prospecting",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:472435c76bb7c0e03d620b9412994ec016615e42",
+      "upstream_ref": "30bc89daa8adce60c28bb21d9b9ddd7c98a20671",
+      "url": "https://github.com/coreyhaines31/marketingskills/blob/30bc89daa8adce60c28bb21d9b9ddd7c98a20671/skills/prospecting/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/coreyhaines31/marketingskills/30bc89daa8adce60c28bb21d9b9ddd7c98a20671/skills/prospecting/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "472435c76bb7c0e03d620b9412994ec016615e42",
+        "size": 17022
+      }
+    },
+    {
+      "source_id": "src_https-github-com-coreyhaines31-marketingskills-marketing-skills-corey-haines_ef920698",
+      "path": "skills/public-relations/SKILL.md",
+      "declared_name": "public-relations",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:3d6de7aa11fb1216311ef25f207694ef081ebd2b",
+      "upstream_ref": "30bc89daa8adce60c28bb21d9b9ddd7c98a20671",
+      "url": "https://github.com/coreyhaines31/marketingskills/blob/30bc89daa8adce60c28bb21d9b9ddd7c98a20671/skills/public-relations/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/coreyhaines31/marketingskills/30bc89daa8adce60c28bb21d9b9ddd7c98a20671/skills/public-relations/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "3d6de7aa11fb1216311ef25f207694ef081ebd2b",
+        "size": 7073
+      }
+    },
+    {
+      "source_id": "src_https-github-com-coreyhaines31-marketingskills-marketing-skills-corey-haines_ef920698",
+      "path": "skills/referrals/SKILL.md",
+      "declared_name": "referrals",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:0fd858d0bf4341d6ed29328c6480372f01ff7ba1",
+      "upstream_ref": "30bc89daa8adce60c28bb21d9b9ddd7c98a20671",
+      "url": "https://github.com/coreyhaines31/marketingskills/blob/30bc89daa8adce60c28bb21d9b9ddd7c98a20671/skills/referrals/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/coreyhaines31/marketingskills/30bc89daa8adce60c28bb21d9b9ddd7c98a20671/skills/referrals/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "0fd858d0bf4341d6ed29328c6480372f01ff7ba1",
+        "size": 7501
+      }
+    },
+    {
+      "source_id": "src_https-github-com-coreyhaines31-marketingskills-marketing-skills-corey-haines_ef920698",
+      "path": "skills/revops/SKILL.md",
+      "declared_name": "revops",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:fba4dc188fa79cc094ba8f3dd878c0791331d1a0",
+      "upstream_ref": "30bc89daa8adce60c28bb21d9b9ddd7c98a20671",
+      "url": "https://github.com/coreyhaines31/marketingskills/blob/30bc89daa8adce60c28bb21d9b9ddd7c98a20671/skills/revops/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/coreyhaines31/marketingskills/30bc89daa8adce60c28bb21d9b9ddd7c98a20671/skills/revops/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "fba4dc188fa79cc094ba8f3dd878c0791331d1a0",
+        "size": 15341
+      }
+    },
+    {
+      "source_id": "src_https-github-com-coreyhaines31-marketingskills-marketing-skills-corey-haines_ef920698",
+      "path": "skills/sales-enablement/SKILL.md",
+      "declared_name": "sales-enablement",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:19dab426e515b24cf2b540c7feefd5114f66093f",
+      "upstream_ref": "30bc89daa8adce60c28bb21d9b9ddd7c98a20671",
+      "url": "https://github.com/coreyhaines31/marketingskills/blob/30bc89daa8adce60c28bb21d9b9ddd7c98a20671/skills/sales-enablement/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/coreyhaines31/marketingskills/30bc89daa8adce60c28bb21d9b9ddd7c98a20671/skills/sales-enablement/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "19dab426e515b24cf2b540c7feefd5114f66093f",
+        "size": 14721
+      }
+    },
+    {
+      "source_id": "src_https-github-com-coreyhaines31-marketingskills-marketing-skills-corey-haines_ef920698",
+      "path": "skills/schema/SKILL.md",
+      "declared_name": "schema",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:e6012136a998d5881d320dce58360bac1809b246",
+      "upstream_ref": "30bc89daa8adce60c28bb21d9b9ddd7c98a20671",
+      "url": "https://github.com/coreyhaines31/marketingskills/blob/30bc89daa8adce60c28bb21d9b9ddd7c98a20671/skills/schema/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/coreyhaines31/marketingskills/30bc89daa8adce60c28bb21d9b9ddd7c98a20671/skills/schema/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "e6012136a998d5881d320dce58360bac1809b246",
+        "size": 5248
+      }
+    },
+    {
+      "source_id": "src_https-github-com-coreyhaines31-marketingskills-marketing-skills-corey-haines_ef920698",
+      "path": "skills/seo-audit/SKILL.md",
+      "declared_name": "seo-audit",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:c525957d9237c20aa6e8eb3ec61b8596a6b3635e",
+      "upstream_ref": "30bc89daa8adce60c28bb21d9b9ddd7c98a20671",
+      "url": "https://github.com/coreyhaines31/marketingskills/blob/30bc89daa8adce60c28bb21d9b9ddd7c98a20671/skills/seo-audit/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/coreyhaines31/marketingskills/30bc89daa8adce60c28bb21d9b9ddd7c98a20671/skills/seo-audit/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "c525957d9237c20aa6e8eb3ec61b8596a6b3635e",
+        "size": 16450
+      }
+    },
+    {
+      "source_id": "src_https-github-com-coreyhaines31-marketingskills-marketing-skills-corey-haines_ef920698",
+      "path": "skills/signup/SKILL.md",
+      "declared_name": "signup",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:3ef89f8e51f7a58b3994d2c0bdd8754980425db2",
+      "upstream_ref": "30bc89daa8adce60c28bb21d9b9ddd7c98a20671",
+      "url": "https://github.com/coreyhaines31/marketingskills/blob/30bc89daa8adce60c28bb21d9b9ddd7c98a20671/skills/signup/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/coreyhaines31/marketingskills/30bc89daa8adce60c28bb21d9b9ddd7c98a20671/skills/signup/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "3ef89f8e51f7a58b3994d2c0bdd8754980425db2",
+        "size": 10382
+      }
+    },
+    {
+      "source_id": "src_https-github-com-coreyhaines31-marketingskills-marketing-skills-corey-haines_ef920698",
+      "path": "skills/site-architecture/SKILL.md",
+      "declared_name": "site-architecture",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:b7658d5f3035a77be3474be2cf25065e9b6df713",
+      "upstream_ref": "30bc89daa8adce60c28bb21d9b9ddd7c98a20671",
+      "url": "https://github.com/coreyhaines31/marketingskills/blob/30bc89daa8adce60c28bb21d9b9ddd7c98a20671/skills/site-architecture/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/coreyhaines31/marketingskills/30bc89daa8adce60c28bb21d9b9ddd7c98a20671/skills/site-architecture/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "b7658d5f3035a77be3474be2cf25065e9b6df713",
+        "size": 13668
+      }
+    },
+    {
+      "source_id": "src_https-github-com-coreyhaines31-marketingskills-marketing-skills-corey-haines_ef920698",
+      "path": "skills/sms/SKILL.md",
+      "declared_name": "sms",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:50cfa8d32c434ca948fecaa596aa5cd23f91d8cd",
+      "upstream_ref": "30bc89daa8adce60c28bb21d9b9ddd7c98a20671",
+      "url": "https://github.com/coreyhaines31/marketingskills/blob/30bc89daa8adce60c28bb21d9b9ddd7c98a20671/skills/sms/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/coreyhaines31/marketingskills/30bc89daa8adce60c28bb21d9b9ddd7c98a20671/skills/sms/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "50cfa8d32c434ca948fecaa596aa5cd23f91d8cd",
+        "size": 16809
+      }
+    },
+    {
+      "source_id": "src_https-github-com-coreyhaines31-marketingskills-marketing-skills-corey-haines_ef920698",
+      "path": "skills/social/SKILL.md",
+      "declared_name": "social",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:ab1d083ef4a9dd2a91c1eaedfb5cb745c3055d24",
+      "upstream_ref": "30bc89daa8adce60c28bb21d9b9ddd7c98a20671",
+      "url": "https://github.com/coreyhaines31/marketingskills/blob/30bc89daa8adce60c28bb21d9b9ddd7c98a20671/skills/social/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/coreyhaines31/marketingskills/30bc89daa8adce60c28bb21d9b9ddd7c98a20671/skills/social/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "ab1d083ef4a9dd2a91c1eaedfb5cb745c3055d24",
+        "size": 14936
+      }
+    },
+    {
+      "source_id": "src_https-github-com-coreyhaines31-marketingskills-marketing-skills-corey-haines_ef920698",
+      "path": "skills/video/SKILL.md",
+      "declared_name": "video",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:1750ada9a967fe940bdb82934c060102cf735f77",
+      "upstream_ref": "30bc89daa8adce60c28bb21d9b9ddd7c98a20671",
+      "url": "https://github.com/coreyhaines31/marketingskills/blob/30bc89daa8adce60c28bb21d9b9ddd7c98a20671/skills/video/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/coreyhaines31/marketingskills/30bc89daa8adce60c28bb21d9b9ddd7c98a20671/skills/video/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "1750ada9a967fe940bdb82934c060102cf735f77",
+        "size": 13527
+      }
+    }
+  ],
+  "digest": "sha256:e0dfa673d1314e44190a6b56e867703944da5f1a3a5556697c62d413133af43e"
+}

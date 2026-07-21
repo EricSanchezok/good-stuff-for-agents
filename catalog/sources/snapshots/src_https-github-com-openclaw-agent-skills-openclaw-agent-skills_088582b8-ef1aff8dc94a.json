@@ -1,0 +1,100 @@
+{
+  "schema_version": 1,
+  "source_id": "src_https-github-com-openclaw-agent-skills-openclaw-agent-skills_088582b8",
+  "upstream_ref": "ef1aff8dc94ad1b47b65a4ac56eaedabe0113e0e",
+  "checked_at": "2026-07-13T21:03:25.509Z",
+  "url": "https://github.com/openclaw/agent-skills",
+  "artifacts": [
+    {
+      "source_id": "src_https-github-com-openclaw-agent-skills-openclaw-agent-skills_088582b8",
+      "path": "skills/agent-transcript/SKILL.md",
+      "declared_name": "agent-transcript",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:20ea25baad51aad5f0dec2a0e83f2b512d3695c7",
+      "upstream_ref": "ef1aff8dc94ad1b47b65a4ac56eaedabe0113e0e",
+      "url": "https://github.com/openclaw/agent-skills/blob/ef1aff8dc94ad1b47b65a4ac56eaedabe0113e0e/skills/agent-transcript/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/openclaw/agent-skills/ef1aff8dc94ad1b47b65a4ac56eaedabe0113e0e/skills/agent-transcript/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "20ea25baad51aad5f0dec2a0e83f2b512d3695c7",
+        "size": 4600
+      }
+    },
+    {
+      "source_id": "src_https-github-com-openclaw-agent-skills-openclaw-agent-skills_088582b8",
+      "path": "skills/autoreview/SKILL.md",
+      "declared_name": "autoreview",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:c54ea64cd8bff0f2ed5a1b72efe6de1d9a8032aa",
+      "upstream_ref": "ef1aff8dc94ad1b47b65a4ac56eaedabe0113e0e",
+      "url": "https://github.com/openclaw/agent-skills/blob/ef1aff8dc94ad1b47b65a4ac56eaedabe0113e0e/skills/autoreview/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/openclaw/agent-skills/ef1aff8dc94ad1b47b65a4ac56eaedabe0113e0e/skills/autoreview/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "c54ea64cd8bff0f2ed5a1b72efe6de1d9a8032aa",
+        "size": 33960
+      }
+    },
+    {
+      "source_id": "src_https-github-com-openclaw-agent-skills-openclaw-agent-skills_088582b8",
+      "path": "skills/behavior-validator/SKILL.md",
+      "declared_name": "behavior-validator",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:a0e1066b2651e35299dceebd436a0bd8b2e84712",
+      "upstream_ref": "ef1aff8dc94ad1b47b65a4ac56eaedabe0113e0e",
+      "url": "https://github.com/openclaw/agent-skills/blob/ef1aff8dc94ad1b47b65a4ac56eaedabe0113e0e/skills/behavior-validator/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/openclaw/agent-skills/ef1aff8dc94ad1b47b65a4ac56eaedabe0113e0e/skills/behavior-validator/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "a0e1066b2651e35299dceebd436a0bd8b2e84712",
+        "size": 3757
+      }
+    },
+    {
+      "source_id": "src_https-github-com-openclaw-agent-skills-openclaw-agent-skills_088582b8",
+      "path": "skills/crabbox/SKILL.md",
+      "declared_name": "crabbox",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:d853a340df12066104c6bf32e5e78447871f9eb6",
+      "upstream_ref": "ef1aff8dc94ad1b47b65a4ac56eaedabe0113e0e",
+      "url": "https://github.com/openclaw/agent-skills/blob/ef1aff8dc94ad1b47b65a4ac56eaedabe0113e0e/skills/crabbox/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/openclaw/agent-skills/ef1aff8dc94ad1b47b65a4ac56eaedabe0113e0e/skills/crabbox/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "d853a340df12066104c6bf32e5e78447871f9eb6",
+        "size": 36183
+      }
+    },
+    {
+      "source_id": "src_https-github-com-openclaw-agent-skills-openclaw-agent-skills_088582b8",
+      "path": "skills/handoff/SKILL.md",
+      "declared_name": "handoff",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:50054b4079bcc25492e27cae7b72ea748a853cc9",
+      "upstream_ref": "ef1aff8dc94ad1b47b65a4ac56eaedabe0113e0e",
+      "url": "https://github.com/openclaw/agent-skills/blob/ef1aff8dc94ad1b47b65a4ac56eaedabe0113e0e/skills/handoff/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/openclaw/agent-skills/ef1aff8dc94ad1b47b65a4ac56eaedabe0113e0e/skills/handoff/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "50054b4079bcc25492e27cae7b72ea748a853cc9",
+        "size": 4410
+      }
+    },
+    {
+      "source_id": "src_https-github-com-openclaw-agent-skills-openclaw-agent-skills_088582b8",
+      "path": "skills/session-viewer/SKILL.md",
+      "declared_name": "session-viewer",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:fb9501363277c6d1c7df139b8ab9ac8720ea1acd",
+      "upstream_ref": "ef1aff8dc94ad1b47b65a4ac56eaedabe0113e0e",
+      "url": "https://github.com/openclaw/agent-skills/blob/ef1aff8dc94ad1b47b65a4ac56eaedabe0113e0e/skills/session-viewer/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/openclaw/agent-skills/ef1aff8dc94ad1b47b65a4ac56eaedabe0113e0e/skills/session-viewer/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "fb9501363277c6d1c7df139b8ab9ac8720ea1acd",
+        "size": 2996
+      }
+    }
+  ],
+  "digest": "sha256:716022f577854cb7efb982fed34277807206ef61b8c6ebdfc3ce21d8dc8b0edf"
+}

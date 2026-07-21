@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-07-10T14:00:00Z",
+  "updated_at": "2026-07-20T00:00:00Z",
   "domains": {
     "design": {
       "visits": 2,
@@ -31,25 +31,25 @@
       "skills_discovered": 103
     },
     "science": {
-      "visits": 0,
-      "last_used": null,
-      "first_used": null,
-      "sources_discovered": 0,
-      "skills_discovered": 0
+      "visits": 1,
+      "last_used": "2026-07-13T21:02:00Z",
+      "first_used": "2026-07-13T21:02:00Z",
+      "sources_discovered": 2,
+      "skills_discovered": 109
     },
     "writing": {
-      "visits": 0,
-      "last_used": null,
-      "first_used": null,
-      "sources_discovered": 0,
-      "skills_discovered": 0
+      "visits": 1,
+      "last_used": "2026-07-13T21:02:00Z",
+      "first_used": "2026-07-13T21:02:00Z",
+      "sources_discovered": 1,
+      "skills_discovered": 2
     },
     "enterprise": {
-      "visits": 0,
-      "last_used": null,
-      "first_used": null,
-      "sources_discovered": 0,
-      "skills_discovered": 0
+      "visits": 1,
+      "last_used": "2026-07-13T21:02:00Z",
+      "first_used": "2026-07-13T21:02:00Z",
+      "sources_discovered": 1,
+      "skills_discovered": 5
     },
     "meta": {
       "visits": 1,

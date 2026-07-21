@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "source_id": "src_https-github-com-hermeticormus-markdown-discipline-skills-markdown-discipline-skills_ddaf87e0",
+  "upstream_ref": "ae8c782f68db306d348320bee0c23a551f913fe1",
+  "checked_at": "2026-07-13T21:03:15.696Z",
+  "url": "https://github.com/HermeticOrmus/markdown-discipline-skills",
+  "artifacts": [
+    {
+      "source_id": "src_https-github-com-hermeticormus-markdown-discipline-skills-markdown-discipline-skills_ddaf87e0",
+      "path": ".cursor/rules/markdown-discipline.mdc",
+      "declared_name": "rules",
+      "format": "markdown",
+      "parse_confidence": "medium",
+      "content_digest": "sha256:9b70adcc11bfc2429c64d0b72f71a88a82a69605",
+      "upstream_ref": "ae8c782f68db306d348320bee0c23a551f913fe1",
+      "url": "https://github.com/HermeticOrmus/markdown-discipline-skills/blob/ae8c782f68db306d348320bee0c23a551f913fe1/.cursor/rules/markdown-discipline.mdc",
+      "raw_url": "https://raw.githubusercontent.com/HermeticOrmus/markdown-discipline-skills/ae8c782f68db306d348320bee0c23a551f913fe1/.cursor/rules/markdown-discipline.mdc",
+      "raw_metadata": {
+        "github_blob_sha": "9b70adcc11bfc2429c64d0b72f71a88a82a69605",
+        "size": 1652
+      }
+    },
+    {
+      "source_id": "src_https-github-com-hermeticormus-markdown-discipline-skills-markdown-discipline-skills_ddaf87e0",
+      "path": "skills/markdown-discipline/SKILL.md",
+      "declared_name": "markdown-discipline",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "sha256:c9a84e5cf5a89ff967e2b21a3d7b24c500cbdbde",
+      "upstream_ref": "ae8c782f68db306d348320bee0c23a551f913fe1",
+      "url": "https://github.com/HermeticOrmus/markdown-discipline-skills/blob/ae8c782f68db306d348320bee0c23a551f913fe1/skills/markdown-discipline/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/HermeticOrmus/markdown-discipline-skills/ae8c782f68db306d348320bee0c23a551f913fe1/skills/markdown-discipline/SKILL.md",
+      "raw_metadata": {
+        "github_blob_sha": "c9a84e5cf5a89ff967e2b21a3d7b24c500cbdbde",
+        "size": 1770
+      }
+    }
+  ],
+  "digest": "sha256:b20a679ca94e94fbf8e3a437358fb1850375972d1bf8f769751f6c4253be6730"
+}

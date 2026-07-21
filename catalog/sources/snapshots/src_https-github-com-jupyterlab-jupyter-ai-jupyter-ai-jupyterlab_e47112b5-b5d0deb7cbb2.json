@@ -1,0 +1,1630 @@
+{
+  "schema_version": 1,
+  "source_id": "src_https-github-com-jupyterlab-jupyter-ai-jupyter-ai-jupyterlab_e47112b5",
+  "upstream_ref": "b5d0deb7cbb21179cdcc75ad42f735ceff8900a2",
+  "checked_at": "2026-07-13T21:03:17.038Z",
+  "url": "https://github.com/jupyterlab/jupyter-ai",
+  "artifacts": [
+    {
+      "source_id": "src_https-github-com-jupyterlab-jupyter-ai-jupyter-ai-jupyterlab_e47112b5",
+      "path": "docs/Makefile",
+      "declared_name": "docs",
+      "format": "markdown",
+      "parse_confidence": "medium",
+      "content_digest": "sha256:d0c3cbf1020d5c292abdedf27627c6abe25e2293",
+      "upstream_ref": "b5d0deb7cbb21179cdcc75ad42f735ceff8900a2",
+      "url": "https://github.com/jupyterlab/jupyter-ai/blob/b5d0deb7cbb21179cdcc75ad42f735ceff8900a2/docs/Makefile",
+      "raw_url": "https://raw.githubusercontent.com/jupyterlab/jupyter-ai/b5d0deb7cbb21179cdcc75ad42f735ceff8900a2/docs/Makefile",
+      "raw_metadata": {
+        "github_blob_sha": "d0c3cbf1020d5c292abdedf27627c6abe25e2293",
+        "size": 638
+      }
+    },
+    {
+      "source_id": "src_https-github-com-jupyterlab-jupyter-ai-jupyter-ai-jupyterlab_e47112b5",
+      "path": "docs/make.bat",
+      "declared_name": "docs",
+      "format": "markdown",
+      "parse_confidence": "medium",
+      "content_digest": "sha256:747ffb7b3033659bdd2d1e6eae41ecb00358a45e",
+      "upstream_ref": "b5d0deb7cbb21179cdcc75ad42f735ceff8900a2",
+      "url": "https://github.com/jupyterlab/jupyter-ai/blob/b5d0deb7cbb21179cdcc75ad42f735ceff8900a2/docs/make.bat",
+      "raw_url": "https://raw.githubusercontent.com/jupyterlab/jupyter-ai/b5d0deb7cbb21179cdcc75ad42f735ceff8900a2/docs/make.bat",
+      "raw_metadata": {
+        "github_blob_sha": "747ffb7b3033659bdd2d1e6eae41ecb00358a45e",
+        "size": 804
+      }
+    },
+    {
+      "source_id": "src_https-github-com-jupyterlab-jupyter-ai-jupyter-ai-jupyterlab_e47112b5",
+      "path": "docs/requirements.txt",
+      "declared_name": "docs",
+      "format": "markdown",
+      "parse_confidence": "medium",
+      "content_digest": "sha256:a0cd1f1e24dc7ce779afe47f8385c8a35a802811",
+      "upstream_ref": "b5d0deb7cbb21179cdcc75ad42f735ceff8900a2",
+      "url": "https://github.com/jupyterlab/jupyter-ai/blob/b5d0deb7cbb21179cdcc75ad42f735ceff8900a2/docs/requirements.txt",
+      "raw_url": "https://raw.githubusercontent.com/jupyterlab/jupyter-ai/b5d0deb7cbb21179cdcc75ad42f735ceff8900a2/docs/requirements.txt",
+      "raw_metadata": {
+        "github_blob_sha": "a0cd1f1e24dc7ce779afe47f8385c8a35a802811",
+        "size": 64
+      }
+    },
+    {
+      "source_id": "src_https-github-com-jupyterlab-jupyter-ai-jupyter-ai-jupyterlab_e47112b5",
+      "path": "docs/source/_static/ai-settings.png",
+      "declared_name": "_static",
+      "format": "markdown",
+      "parse_confidence": "medium",
+      "content_digest": "sha256:45b98c0e07dbbf4e35c7517b11e7874b075067d0",
+      "upstream_ref": "b5d0deb7cbb21179cdcc75ad42f735ceff8900a2",
+      "url": "https://github.com/jupyterlab/jupyter-ai/blob/b5d0deb7cbb21179cdcc75ad42f735ceff8900a2/docs/source/_static/ai-settings.png",
+      "raw_url": "https://raw.githubusercontent.com/jupyterlab/jupyter-ai/b5d0deb7cbb21179cdcc75ad42f735ceff8900a2/docs/source/_static/ai-settings.png",
+      "raw_metadata": {
+        "github_blob_sha": "45b98c0e07dbbf4e35c7517b11e7874b075067d0",
+        "size": 91930
+      }
+    },
+    {
+      "source_id": "src_https-github-com-jupyterlab-jupyter-ai-jupyter-ai-jupyterlab_e47112b5",
+      "path": "docs/source/_static/bedrock-chat-basemodel-arn.png",
+      "declared_name": "_static",
+      "format": "markdown",
+      "parse_confidence": "medium",
+      "content_digest": "sha256:2cd59e05e7e42f72b37c2ef64f97e4f89353ccf0",
+      "upstream_ref": "b5d0deb7cbb21179cdcc75ad42f735ceff8900a2",
+      "url": "https://github.com/jupyterlab/jupyter-ai/blob/b5d0deb7cbb21179cdcc75ad42f735ceff8900a2/docs/source/_static/bedrock-chat-basemodel-arn.png",
+      "raw_url": "https://raw.githubusercontent.com/jupyterlab/jupyter-ai/b5d0deb7cbb21179cdcc75ad42f735ceff8900a2/docs/source/_static/bedrock-chat-basemodel-arn.png",
+      "raw_metadata": {
+        "github_blob_sha": "2cd59e05e7e42f72b37c2ef64f97e4f89353ccf0",
+        "size": 201789
+      }
+    },
+    {
+      "source_id": "src_https-github-com-jupyterlab-jupyter-ai-jupyter-ai-jupyterlab_e47112b5",
+      "path": "docs/source/_static/bedrock-chat-basemodel-modelid.png",
+      "declared_name": "_static",
+      "format": "markdown",
+      "parse_confidence": "medium",
+      "content_digest": "sha256:eeadaddaef75ea157b81c7f6778fe604128bf5ec",
+      "upstream_ref": "b5d0deb7cbb21179cdcc75ad42f735ceff8900a2",
+      "url": "https://github.com/jupyterlab/jupyter-ai/blob/b5d0deb7cbb21179cdcc75ad42f735ceff8900a2/docs/source/_static/bedrock-chat-basemodel-modelid.png",
+      "raw_url": "https://raw.githubusercontent.com/jupyterlab/jupyter-ai/b5d0deb7cbb21179cdcc75ad42f735ceff8900a2/docs/source/_static/bedrock-chat-basemodel-modelid.png",
+      "raw_metadata": {
+        "github_blob_sha": "eeadaddaef75ea157b81c7f6778fe604128bf5ec",
+        "size": 190956
+      }
+    },
+    {
+      "source_id": "src_https-github-com-jupyterlab-jupyter-ai-jupyter-ai-jupyterlab_e47112b5",
+      "path": "docs/source/_static/bedrock-chat-basemodel.png",
+      "declared_name": "_static",
+      "format": "markdown",
+      "parse_confidence": "medium",
+      "content_digest": "sha256:286d699715f96f3b3b84c4bd0e798f297b755409",
+      "upstream_ref": "b5d0deb7cbb21179cdcc75ad42f735ceff8900a2",
+      "url": "https://github.com/jupyterlab/jupyter-ai/blob/b5d0deb7cbb21179cdcc75ad42f735ceff8900a2/docs/source/_static/bedrock-chat-basemodel.png",
+      "raw_url": "https://raw.githubusercontent.com/jupyterlab/jupyter-ai/b5d0deb7cbb21179cdcc75ad42f735ceff8900a2/docs/source/_static/bedrock-chat-basemodel.png",
+      "raw_metadata": {
+        "github_blob_sha": "286d699715f96f3b3b84c4bd0e798f297b755409",
+        "size": 159221
+      }
+    },
+    {
+      "source_id": "src_https-github-com-jupyterlab-jupyter-ai-jupyter-ai-jupyterlab_e47112b5",
+      "path": "docs/source/_static/bedrock-chat-custom-model-arn.png",
+      "declared_name": "_static",
+      "format": "markdown",
+      "parse_confidence": "medium",
+      "content_digest": "sha256:cdf7949a83c1874f80cb7689b726a59a4ad05160",
+      "upstream_ref": "b5d0deb7cbb21179cdcc75ad42f735ceff8900a2",
+      "url": "https://github.com/jupyterlab/jupyter-ai/blob/b5d0deb7cbb21179cdcc75ad42f735ceff8900a2/docs/source/_static/bedrock-chat-custom-model-arn.png",
+      "raw_url": "https://raw.githubusercontent.com/jupyterlab/jupyter-ai/b5d0deb7cbb21179cdcc75ad42f735ceff8900a2/docs/source/_static/bedrock-chat-custom-model-arn.png",
+      "raw_metadata": {
+        "github_blob_sha": "cdf7949a83c1874f80cb7689b726a59a4ad05160",
+        "size": 202689
+      }
+    },
+    {
+      "source_id": "src_https-github-com-jupyterlab-jupyter-ai-jupyter-ai-jupyterlab_e47112b5",
+      "path": "docs/source/_static/bedrock-cross-region-inference.png",
+      "declared_name": "_static",
+      "format": "markdown",
+      "parse_confidence": "medium",
+      "content_digest": "sha256:15d017dbf86d3634a721618bc19d00ae5319d8a1",
+      "upstream_ref": "b5d0deb7cbb21179cdcc75ad42f735ceff8900a2",
+      "url": "https://github.com/jupyterlab/jupyter-ai/blob/b5d0deb7cbb21179cdcc75ad42f735ceff8900a2/docs/source/_static/bedrock-cross-region-inference.png",
+      "raw_url": "https://raw.githubusercontent.com/jupyterlab/jupyter-ai/b5d0deb7cbb21179cdcc75ad42f735ceff8900a2/docs/source/_static/bedrock-cross-region-inference.png",
+      "raw_metadata": {
+        "github_blob_sha": "15d017dbf86d3634a721618bc19d00ae5319d8a1",
+        "size": 71637
+      }
+    },
+    {
+      "source_id": "src_https-github-com-jupyterlab-jupyter-ai-jupyter-ai-jupyterlab_e47112b5",
+      "path": "docs/source/_static/bedrock-custom-models.png",
+      "declared_name": "_static",
+      "format": "markdown",
+      "parse_confidence": "medium",
+      "content_digest": "sha256:86b67d1acd4ec27ac7d392c82121b12c9fef65d6",
+      "upstream_ref": "b5d0deb7cbb21179cdcc75ad42f735ceff8900a2",
+      "url": "https://github.com/jupyterlab/jupyter-ai/blob/b5d0deb7cbb21179cdcc75ad42f735ceff8900a2/docs/source/_static/bedrock-custom-models.png",
+      "raw_url": "https://raw.githubusercontent.com/jupyterlab/jupyter-ai/b5d0deb7cbb21179cdcc75ad42f735ceff8900a2/docs/source/_static/bedrock-custom-models.png",
+      "raw_metadata": {
+        "github_blob_sha": "86b67d1acd4ec27ac7d392c82121b12c9fef65d6",
+        "size": 201640
+      }
+    },
+    {
+      "source_id": "src_https-github-com-jupyterlab-jupyter-ai-jupyter-ai-jupyterlab_e47112b5",
+      "path": "docs/source/_static/bedrock-finetuned-model.png",
+      "declared_name": "_static",
+      "format": "markdown",
+      "parse_confidence": "medium",
+      "content_digest": "sha256:4687e33e655004bc49346f646d958766de528b7a",
+      "upstream_ref": "b5d0deb7cbb21179cdcc75ad42f735ceff8900a2",
+      "url": "https://github.com/jupyterlab/jupyter-ai/blob/b5d0deb7cbb21179cdcc75ad42f735ceff8900a2/docs/source/_static/bedrock-finetuned-model.png",
+      "raw_url": "https://raw.githubusercontent.com/jupyterlab/jupyter-ai/b5d0deb7cbb21179cdcc75ad42f735ceff8900a2/docs/source/_static/bedrock-finetuned-model.png",
+      "raw_metadata": {
+        "github_blob_sha": "4687e33e655004bc49346f646d958766de528b7a",
+        "size": 98615
+      }
+    },
+    {
+      "source_id": "src_https-github-com-jupyterlab-jupyter-ai-jupyter-ai-jupyterlab_e47112b5",
+      "path": "docs/source/_static/bedrock-model-access.png",
+      "declared_name": "_static",
+      "format": "markdown",
+      "parse_confidence": "medium",
+      "content_digest": "sha256:545050acba99f5454e4e06c1d3e9eabea447e029",
+      "upstream_ref": "b5d0deb7cbb21179cdcc75ad42f735ceff8900a2",
+      "url": "https://github.com/jupyterlab/jupyter-ai/blob/b5d0deb7cbb21179cdcc75ad42f735ceff8900a2/docs/source/_static/bedrock-model-access.png",
+      "raw_url": "https://raw.githubusercontent.com/jupyterlab/jupyter-ai/b5d0deb7cbb21179cdcc75ad42f735ceff8900a2/docs/source/_static/bedrock-model-access.png",
+      "raw_metadata": {
+        "github_blob_sha": "545050acba99f5454e4e06c1d3e9eabea447e029",
+        "size": 1578742
+      }
+    },
+    {
+      "source_id": "src_https-github-com-jupyterlab-jupyter-ai-jupyter-ai-jupyterlab_e47112b5",
+      "path": "docs/source/_static/bedrock-model-select.png",
+      "declared_name": "_static",
+      "format": "markdown",
+      "parse_confidence": "medium",
+      "content_digest": "sha256:a9004297d58791a8455b04f060e524852fdd3dc2",
+      "upstream_ref": "b5d0deb7cbb21179cdcc75ad42f735ceff8900a2",
+      "url": "https://github.com/jupyterlab/jupyter-ai/blob/b5d0deb7cbb21179cdcc75ad42f735ceff8900a2/docs/source/_static/bedrock-model-select.png",
+      "raw_url": "https://raw.githubusercontent.com/jupyterlab/jupyter-ai/b5d0deb7cbb21179cdcc75ad42f735ceff8900a2/docs/source/_static/bedrock-model-select.png",
+      "raw_metadata": {
+        "github_blob_sha": "a9004297d58791a8455b04f060e524852fdd3dc2",
+        "size": 762983
+      }
+    },
+    {
+      "source_id": "src_https-github-com-jupyterlab-jupyter-ai-jupyter-ai-jupyterlab_e47112b5",
+      "path": "docs/source/_static/chat-ask-command.png",
+      "declared_name": "_static",
+      "format": "markdown",
+      "parse_confidence": "medium",
+      "content_digest": "sha256:ecb00112beae83ebf00aecf586734c84acd6efa5",
+      "upstream_ref": "b5d0deb7cbb21179cdcc75ad42f735ceff8900a2",
+      "url": "https://github.com/jupyterlab/jupyter-ai/blob/b5d0deb7cbb21179cdcc75ad42f735ceff8900a2/docs/source/_static/chat-ask-command.png",
+      "raw_url": "https://raw.githubusercontent.com/jupyterlab/jupyter-ai/b5d0deb7cbb21179cdcc75ad42f735ceff8900a2/docs/source/_static/chat-ask-command.png",
+      "raw_metadata": {
+        "github_blob_sha": "ecb00112beae83ebf00aecf586734c84acd6efa5",
+        "size": 86612
+      }
+    },
+    {
+      "source_id": "src_https-github-com-jupyterlab-jupyter-ai-jupyter-ai-jupyterlab_e47112b5",
+      "path": "docs/source/_static/chat-at-mention.png",
+      "declared_name": "_static",
+      "format": "markdown",
+      "parse_confidence": "medium",
+      "content_digest": "sha256:425be64c3680d6d7d7989542757abeda3c5050f8",
+      "upstream_ref": "b5d0deb7cbb21179cdcc75ad42f735ceff8900a2",
+      "url": "https://github.com/jupyterlab/jupyter-ai/blob/b5d0deb7cbb21179cdcc75ad42f735ceff8900a2/docs/source/_static/chat-at-mention.png",
+      "raw_url": "https://raw.githubusercontent.com/jupyterlab/jupyter-ai/b5d0deb7cbb21179cdcc75ad42f735ceff8900a2/docs/source/_static/chat-at-mention.png",
+      "raw_metadata": {
+        "github_blob_sha": "425be64c3680d6d7d7989542757abeda3c5050f8",
+        "size": 91661
+      }
+    },
+    {
+      "source_id": "src_https-github-com-jupyterlab-jupyter-ai-jupyter-ai-jupyterlab_e47112b5",
+      "path": "docs/source/_static/chat-attach-file.mov",
+      "declared_name": "_static",
+      "format": "markdown",
+      "parse_confidence": "medium",
+      "content_digest": "sha256:1234104d31f561064f21720d6a0cf6f5ae309275",
+      "upstream_ref": "b5d0deb7cbb21179cdcc75ad42f735ceff8900a2",
+      "url": "https://github.com/jupyterlab/jupyter-ai/blob/b5d0deb7cbb21179cdcc75ad42f735ceff8900a2/docs/source/_static/chat-attach-file.mov",
+      "raw_url": "https://raw.githubusercontent.com/jupyterlab/jupyter-ai/b5d0deb7cbb21179cdcc75ad42f735ceff8900a2/docs/source/_static/chat-attach-file.mov",
+      "raw_metadata": {
+        "github_blob_sha": "1234104d31f561064f21720d6a0cf6f5ae309275",
+        "size": 15436376
+      }
+    },
+    {
+      "source_id": "src_https-github-com-jupyterlab-jupyter-ai-jupyter-ai-jupyterlab_e47112b5",
+      "path": "docs/source/_static/chat-attach-file.png",
+      "declared_name": "_static",
+      "format": "markdown",
+      "parse_confidence": "medium",
+      "content_digest": "sha256:89d86eac87d662422467d91285831b3f7edd853a",
+      "upstream_ref": "b5d0deb7cbb21179cdcc75ad42f735ceff8900a2",
+      "url": "https://github.com/jupyterlab/jupyter-ai/blob/b5d0deb7cbb21179cdcc75ad42f735ceff8900a2/docs/source/_static/chat-attach-file.png",
+      "raw_url": "https://raw.githubusercontent.com/jupyterlab/jupyter-ai/b5d0deb7cbb21179cdcc75ad42f735ceff8900a2/docs/source/_static/chat-attach-file.png",
+      "raw_metadata": {
+        "github_blob_sha": "89d86eac87d662422467d91285831b3f7edd853a",
+        "size": 748048
+      }
+    },
+    {
+      "source_id": "src_https-github-com-jupyterlab-jupyter-ai-jupyter-ai-jupyterlab_e47112b5",
+      "path": "docs/source/_static/chat-explain-code-output.png",
+      "declared_name": "_static",
+      "format": "markdown",
+      "parse_confidence": "medium",
+      "content_digest": "sha256:6c81c33259b9b5c10ae64e84e8da609ddb979bb8",
+      "upstream_ref": "b5d0deb7cbb21179cdcc75ad42f735ceff8900a2",
+      "url": "https://github.com/jupyterlab/jupyter-ai/blob/b5d0deb7cbb21179cdcc75ad42f735ceff8900a2/docs/source/_static/chat-explain-code-output.png",
+      "raw_url": "https://raw.githubusercontent.com/jupyterlab/jupyter-ai/b5d0deb7cbb21179cdcc75ad42f735ceff8900a2/docs/source/_static/chat-explain-code-output.png",
+      "raw_metadata": {
+        "github_blob_sha": "6c81c33259b9b5c10ae64e84e8da609ddb979bb8",
+        "size": 790814
+      }
+    },
+    {
+      "source_id": "src_https-github-com-jupyterlab-jupyter-ai-jupyter-ai-jupyterlab_e47112b5",
+      "path": "docs/source/_static/chat-generate-command-response.png",
+      "declared_name": "_static",
+      "format": "markdown",
+      "parse_confidence": "medium",
+      "content_digest": "sha256:f0d41b64f1ab43352db2fbc57b5a8a156ea52418",
+      "upstream_ref": "b5d0deb7cbb21179cdcc75ad42f735ceff8900a2",
+      "url": "https://github.com/jupyterlab/jupyter-ai/blob/b5d0deb7cbb21179cdcc75ad42f735ceff8900a2/docs/source/_static/chat-generate-command-response.png",
+      "raw_url": "https://raw.githubusercontent.com/jupyterlab/jupyter-ai/b5d0deb7cbb21179cdcc75ad42f735ceff8900a2/docs/source/_static/chat-generate-command-response.png",
+      "raw_metadata": {
+        "github_blob_sha": "f0d41b64f1ab43352db2fbc57b5a8a156ea52418",
+        "size": 596249
+      }
+    },
+    {
+      "source_id": "src_https-github-com-jupyterlab-jupyter-ai-jupyter-ai-jupyterlab_e47112b5",
+      "path": "docs/source/_static/chat-generate-input.png",
+      "declared_name": "_static",
+      "format": "markdown",
+      "parse_confidence": "medium",
+      "content_digest": "sha256:6a03d819e0ec6a90d71a0961ce8ac68445a1059a",
+      "upstream_ref": "b5d0deb7cbb21179cdcc75ad42f735ceff8900a2",
+      "url": "https://github.com/jupyterlab/jupyter-ai/blob/b5d0deb7cbb21179cdcc75ad42f735ceff8900a2/docs/source/_static/chat-generate-input.png",
+      "raw_url": "https://raw.githubusercontent.com/jupyterlab/jupyter-ai/b5d0deb7cbb21179cdcc75ad42f735ceff8900a2/docs/source/_static/chat-generate-input.png",
+      "raw_metadata": {
+        "github_blob_sha": "6a03d819e0ec6a90d71a0961ce8ac68445a1059a",
+        "size": 21660
+      }
+    },
+    {
+      "source_id": "src_https-github-com-jupyterlab-jupyter-ai-jupyter-ai-jupyterlab_e47112b5",
+      "path": "docs/source/_static/chat-getting-started.png",
+      "declared_name": "_static",
+      "format": "markdown",
+      "parse_confidence": "medium",
+      "content_digest": "sha256:408b21bd6131673e8b5a7bab6a1a1fabde3bc3e6",
+      "upstream_ref": "b5d0deb7cbb21179cdcc75ad42f735ceff8900a2",
+      "url": "https://github.com/jupyterlab/jupyter-ai/blob/b5d0deb7cbb21179cdcc75ad42f735ceff8900a2/docs/source/_static/chat-getting-started.png",
+      "raw_url": "https://raw.githubusercontent.com/jupyterlab/jupyter-ai/b5d0deb7cbb21179cdcc75ad42f735ceff8900a2/docs/source/_static/chat-getting-started.png",
+      "raw_metadata": {
+        "github_blob_sha": "408b21bd6131673e8b5a7bab6a1a1fabde3bc3e6",
+        "size": 62053
+      }
+    },
+    {
+      "source_id": "src_https-github-com-jupyterlab-jupyter-ai-jupyter-ai-jupyterlab_e47112b5",
+      "path": "docs/source/_static/chat-hello-world.png",
+      "declared_name": "_static",
+      "format": "markdown",
+      "parse_confidence": "medium",
+      "content_digest": "sha256:1dfbaef42df7a7c6b49924eb23a826b3c3657dd1",
+      "upstream_ref": "b5d0deb7cbb21179cdcc75ad42f735ceff8900a2",
+      "url": "https://github.com/jupyterlab/jupyter-ai/blob/b5d0deb7cbb21179cdcc75ad42f735ceff8900a2/docs/source/_static/chat-hello-world.png",
+      "raw_url": "https://raw.githubusercontent.com/jupyterlab/jupyter-ai/b5d0deb7cbb21179cdcc75ad42f735ceff8900a2/docs/source/_static/chat-hello-world.png",
+      "raw_metadata": {
+        "github_blob_sha": "1dfbaef42df7a7c6b49924eb23a826b3c3657dd1",
+        "size": 29288
+      }
+    },
+    {
+      "source_id": "src_https-github-com-jupyterlab-jupyter-ai-jupyter-ai-jupyterlab_e47112b5",
+      "path": "docs/source/_static/chat-history-context-1.png",
+      "declared_name": "_static",
+      "format": "markdown",
+      "parse_confidence": "medium",
+      "content_digest": "sha256:60986174c398bc445251c389290246208c054517",
+      "upstream_ref": "b5d0deb7cbb21179cdcc75ad42f735ceff8900a2",
+      "url": "https://github.com/jupyterlab/jupyter-ai/blob/b5d0deb7cbb21179cdcc75ad42f735ceff8900a2/docs/source/_static/chat-history-context-1.png",
+      "raw_url": "https://raw.githubusercontent.com/jupyterlab/jupyter-ai/b5d0deb7cbb21179cdcc75ad42f735ceff8900a2/docs/source/_static/chat-history-context-1.png",
+      "raw_metadata": {
+        "github_blob_sha": "60986174c398bc445251c389290246208c054517",
+        "size": 681662
+      }
+    },
+    {
+      "source_id": "src_https-github-com-jupyterlab-jupyter-ai-jupyter-ai-jupyterlab_e47112b5",
+      "path": "docs/source/_static/chat-history-context-2.png",
+      "declared_name": "_static",
+      "format": "markdown",
+      "parse_confidence": "medium",
+      "content_digest": "sha256:6bef568102ddd799a27fd5f96cae166ed18e670b",
+      "upstream_ref": "b5d0deb7cbb21179cdcc75ad42f735ceff8900a2",
+      "url": "https://github.com/jupyterlab/jupyter-ai/blob/b5d0deb7cbb21179cdcc75ad42f735ceff8900a2/docs/source/_static/chat-history-context-2.png",
+      "raw_url": "https://raw.githubusercontent.com/jupyterlab/jupyter-ai/b5d0deb7cbb21179cdcc75ad42f735ceff8900a2/docs/source/_static/chat-history-context-2.png",
+      "raw_metadata": {
+        "github_blob_sha": "6bef568102ddd799a27fd5f96cae166ed18e670b",
+        "size": 770313
+      }
+    },
+    {
+      "source_id": "src_https-github-com-jupyterlab-jupyter-ai-jupyter-ai-jupyterlab_e47112b5",
+      "path": "docs/source/_static/chat-icon-left-tab-bar-custom.png",
+      "declared_name": "_static",
+      "format": "markdown",
+      "parse_confidence": "medium",
+      "content_digest": "sha256:b9ec3e71dfcbed0131a2fa595fbb2b71f8039156",
+      "upstream_ref": "b5d0deb7cbb21179cdcc75ad42f735ceff8900a2",
+      "url": "https://github.com/jupyterlab/jupyter-ai/blob/b5d0deb7cbb21179cdcc75ad42f735ceff8900a2/docs/source/_static/chat-icon-left-tab-bar-custom.png",
+      "raw_url": "https://raw.githubusercontent.com/jupyterlab/jupyter-ai/b5d0deb7cbb21179cdcc75ad42f735ceff8900a2/docs/source/_static/chat-icon-left-tab-bar-custom.png",
+      "raw_metadata": {
+        "github_blob_sha": "b9ec3e71dfcbed0131a2fa595fbb2b71f8039156",
+        "size": 132610
+      }
+    },
+    {
+      "source_id": "src_https-github-com-jupyterlab-jupyter-ai-jupyter-ai-jupyterlab_e47112b5",
+      "path": "docs/source/_static/chat-icon-left-tab-bar.png",
+      "declared_name": "_static",
+      "format": "markdown",
+      "parse_confidence": "medium",
+      "content_digest": "sha256:07f21b52e162bf92bda19cf239bd625585e79496",
+      "upstream_ref": "b5d0deb7cbb21179cdcc75ad42f735ceff8900a2",
+      "url": "https://github.com/jupyterlab/jupyter-ai/blob/b5d0deb7cbb21179cdcc75ad42f735ceff8900a2/docs/source/_static/chat-icon-left-tab-bar.png",
+      "raw_url": "https://raw.githubusercontent.com/jupyterlab/jupyter-ai/b5d0deb7cbb21179cdcc75ad42f735ceff8900a2/docs/source/_static/chat-icon-left-tab-bar.png",
+      "raw_metadata": {
+        "github_blob_sha": "07f21b52e162bf92bda19cf239bd625585e79496",
+        "size": 83376
+      }
+    },
+    {
+      "source_id": "src_https-github-com-jupyterlab-jupyter-ai-jupyter-ai-jupyterlab_e47112b5",
+      "path": "docs/source/_static/chat-interface-selection.png",
+      "declared_name": "_static",
+      "format": "markdown",
+      "parse_confidence": "medium",
+      "content_digest": "sha256:3dab5498915c70331d9fbf73da7b80d431fbc9de",
+      "upstream_ref": "b5d0deb7cbb21179cdcc75ad42f735ceff8900a2",
+      "url": "https://github.com/jupyterlab/jupyter-ai/blob/b5d0deb7cbb21179cdcc75ad42f735ceff8900a2/docs/source/_static/chat-interface-selection.png",
+      "raw_url": "https://raw.githubusercontent.com/jupyterlab/jupyter-ai/b5d0deb7cbb21179cdcc75ad42f735ceff8900a2/docs/source/_static/chat-interface-selection.png",
+      "raw_metadata": {
+        "github_blob_sha": "3dab5498915c70331d9fbf73da7b80d431fbc9de",
+        "size": 527238
+      }
+    },
+    {
+      "source_id": "src_https-github-com-jupyterlab-jupyter-ai-jupyter-ai-jupyterlab_e47112b5",
+      "path": "docs/source/_static/chat-interface.png",
+      "declared_name": "_static",
+      "format": "markdown",
+      "parse_confidence": "medium",
+      "content_digest": "sha256:2e39603c6a541468947bc3e70ec3b18433288bf4",
+      "upstream_ref": "b5d0deb7cbb21179cdcc75ad42f735ceff8900a2",
+      "url": "https://github.com/jupyterlab/jupyter-ai/blob/b5d0deb7cbb21179cdcc75ad42f735ceff8900a2/docs/source/_static/chat-interface.png",
+      "raw_url": "https://raw.githubusercontent.com/jupyterlab/jupyter-ai/b5d0deb7cbb21179cdcc75ad42f735ceff8900a2/docs/source/_static/chat-interface.png",
+      "raw_metadata": {
+        "github_blob_sha": "2e39603c6a541468947bc3e70ec3b18433288bf4",
+        "size": 58269
+      }
+    },
+    {
+      "source_id": "src_https-github-com-jupyterlab-jupyter-ai-jupyter-ai-jupyterlab_e47112b5",
+      "path": "docs/source/_static/chat-learn-delete.png",
+      "declared_name": "_static",
+      "format": "markdown",
+      "parse_confidence": "medium",
+      "content_digest": "sha256:0249c6b1310abe84137def75db1a61d82c15e6bf",
+      "upstream_ref": "b5d0deb7cbb21179cdcc75ad42f735ceff8900a2",
+      "url": "https://github.com/jupyterlab/jupyter-ai/blob/b5d0deb7cbb21179cdcc75ad42f735ceff8900a2/docs/source/_static/chat-learn-delete.png",
+      "raw_url": "https://raw.githubusercontent.com/jupyterlab/jupyter-ai/b5d0deb7cbb21179cdcc75ad42f735ceff8900a2/docs/source/_static/chat-learn-delete.png",
+      "raw_metadata": {
+        "github_blob_sha": "0249c6b1310abe84137def75db1a61d82c15e6bf",
+        "size": 26948
+      }
+    },
+    {
+      "source_id": "src_https-github-com-jupyterlab-jupyter-ai-jupyter-ai-jupyterlab_e47112b5",
+      "path": "docs/source/_static/chat-learn-docs.png",
+      "declared_name": "_static",
+      "format": "markdown",
+      "parse_confidence": "medium",
+      "content_digest": "sha256:93726dc4909e79788e358b9f30080bdc03271ccd",
+      "upstream_ref": "b5d0deb7cbb21179cdcc75ad42f735ceff8900a2",
+      "url": "https://github.com/jupyterlab/jupyter-ai/blob/b5d0deb7cbb21179cdcc75ad42f735ceff8900a2/docs/source/_static/chat-learn-docs.png",
+      "raw_url": "https://raw.githubusercontent.com/jupyterlab/jupyter-ai/b5d0deb7cbb21179cdcc75ad42f735ceff8900a2/docs/source/_static/chat-learn-docs.png",
+      "raw_metadata": {
+        "github_blob_sha": "93726dc4909e79788e358b9f30080bdc03271ccd",
+        "size": 47791
+      }
+    },
+    {
+      "source_id": "src_https-github-com-jupyterlab-jupyter-ai-jupyter-ai-jupyterlab_e47112b5",
+      "path": "docs/source/_static/chat-new.png",
+      "declared_name": "_static",
+      "format": "markdown",
+      "parse_confidence": "medium",
+      "content_digest": "sha256:09872e89fe29782ed42e12f12d189ed8d6b65125",
+      "upstream_ref": "b5d0deb7cbb21179cdcc75ad42f735ceff8900a2",
+      "url": "https://github.com/jupyterlab/jupyter-ai/blob/b5d0deb7cbb21179cdcc75ad42f735ceff8900a2/docs/source/_static/chat-new.png",
+      "raw_url": "https://raw.githubusercontent.com/jupyterlab/jupyter-ai/b5d0deb7cbb21179cdcc75ad42f735ceff8900a2/docs/source/_static/chat-new.png",
+      "raw_metadata": {
+        "github_blob_sha": "09872e89fe29782ed42e12f12d189ed8d6b65125",
+        "size": 24831
+      }
+    },
+    {
+      "source_id": "src_https-github-com-jupyterlab-jupyter-ai-jupyter-ai-jupyterlab_e47112b5",
+      "path": "docs/source/_static/chat-newchat.png",
+      "declared_name": "_static",
+      "format": "markdown",
+      "parse_confidence": "medium",
+      "content_digest": "sha256:f6303eb1fb5fd4ee24ec0c9b92bc5028cf92f108",
+      "upstream_ref": "b5d0deb7cbb21179cdcc75ad42f735ceff8900a2",
+      "url": "https://github.com/jupyterlab/jupyter-ai/blob/b5d0deb7cbb21179cdcc75ad42f735ceff8900a2/docs/source/_static/chat-newchat.png",
+      "raw_url": "https://raw.githubusercontent.com/jupyterlab/jupyter-ai/b5d0deb7cbb21179cdcc75ad42f735ceff8900a2/docs/source/_static/chat-newchat.png",
+      "raw_metadata": {
+        "github_blob_sha": "f6303eb1fb5fd4ee24ec0c9b92bc5028cf92f108",
+        "size": 44870
+      }
+    },
+    {
+      "source_id": "src_https-github-com-jupyterlab-jupyter-ai-jupyter-ai-jupyterlab_e47112b5",
+      "path": "docs/source/_static/chat-prompt.png",
+      "declared_name": "_static",
+      "format": "markdown",
+      "parse_confidence": "medium",
+      "content_digest": "sha256:c1afd4c5cb84dd8af16ec257922e302cd203559e",
+      "upstream_ref": "b5d0deb7cbb21179cdcc75ad42f735ceff8900a2",
+      "url": "https://github.com/jupyterlab/jupyter-ai/blob/b5d0deb7cbb21179cdcc75ad42f735ceff8900a2/docs/source/_static/chat-prompt.png",
+      "raw_url": "https://raw.githubusercontent.com/jupyterlab/jupyter-ai/b5d0deb7cbb21179cdcc75ad42f735ceff8900a2/docs/source/_static/chat-prompt.png",
+      "raw_metadata": {
+        "github_blob_sha": "c1afd4c5cb84dd8af16ec257922e302cd203559e",
+        "size": 85580
+      }
+    },
+    {
+      "source_id": "src_https-github-com-jupyterlab-jupyter-ai-jupyter-ai-jupyterlab_e47112b5",
+      "path": "docs/source/_static/chat-replace-selection-input.png",
+      "declared_name": "_static",
+      "format": "markdown",
+      "parse_confidence": "medium",
+      "content_digest": "sha256:2c94b307bda5ea4227667e42281a5e6280ec9132",
+      "upstream_ref": "b5d0deb7cbb21179cdcc75ad42f735ceff8900a2",
+      "url": "https://github.com/jupyterlab/jupyter-ai/blob/b5d0deb7cbb21179cdcc75ad42f735ceff8900a2/docs/source/_static/chat-replace-selection-input.png",
+      "raw_url": "https://raw.githubusercontent.com/jupyterlab/jupyter-ai/b5d0deb7cbb21179cdcc75ad42f735ceff8900a2/docs/source/_static/chat-replace-selection-input.png",
+      "raw_metadata": {
+        "github_blob_sha": "2c94b307bda5ea4227667e42281a5e6280ec9132",
+        "size": 745443
+      }
+    },
+    {
+      "source_id": "src_https-github-com-jupyterlab-jupyter-ai-jupyter-ai-jupyterlab_e47112b5",
+      "path": "docs/source/_static/chat-response.png",
+      "declared_name": "_static",
+      "format": "markdown",
+      "parse_confidence": "medium",
+      "content_digest": "sha256:42c0624b877ba40df1be49c9cda42bc38e90f857",
+      "upstream_ref": "b5d0deb7cbb21179cdcc75ad42f735ceff8900a2",
+      "url": "https://github.com/jupyterlab/jupyter-ai/blob/b5d0deb7cbb21179cdcc75ad42f735ceff8900a2/docs/source/_static/chat-response.png",
+      "raw_url": "https://raw.githubusercontent.com/jupyterlab/jupyter-ai/b5d0deb7cbb21179cdcc75ad42f735ceff8900a2/docs/source/_static/chat-response.png",
+      "raw_metadata": {
+        "github_blob_sha": "42c0624b877ba40df1be49c9cda42bc38e90f857",
+        "size": 168737
+      }
+    },
+    {
+      "source_id": "src_https-github-com-jupyterlab-jupyter-ai-jupyter-ai-jupyterlab_e47112b5",
+      "path": "docs/source/_static/chat-sagemaker-endpoints.png",
+      "declared_name": "_static",
+      "format": "markdown",
+      "parse_confidence": "medium",
+      "content_digest": "sha256:2f8f312729998c8c3521060b7690a9896e7788a9",
+      "upstream_ref": "b5d0deb7cbb21179cdcc75ad42f735ceff8900a2",
+      "url": "https://github.com/jupyterlab/jupyter-ai/blob/b5d0deb7cbb21179cdcc75ad42f735ceff8900a2/docs/source/_static/chat-sagemaker-endpoints.png",
+      "raw_url": "https://raw.githubusercontent.com/jupyterlab/jupyter-ai/b5d0deb7cbb21179cdcc75ad42f735ceff8900a2/docs/source/_static/chat-sagemaker-endpoints.png",
+      "raw_metadata": {
+        "github_blob_sha": "2f8f312729998c8c3521060b7690a9896e7788a9",
+        "size": 57892
+      }
+    },
+    {
+      "source_id": "src_https-github-com-jupyterlab-jupyter-ai-jupyter-ai-jupyterlab_e47112b5",
+      "path": "docs/source/_static/chat-second.png",
+      "declared_name": "_static",
+      "format": "markdown",
+      "parse_confidence": "medium",
+      "content_digest": "sha256:c45d5b19389c32768ca41559f32c62d9340d8416",
+      "upstream_ref": "b5d0deb7cbb21179cdcc75ad42f735ceff8900a2",
+      "url": "https://github.com/jupyterlab/jupyter-ai/blob/b5d0deb7cbb21179cdcc75ad42f735ceff8900a2/docs/source/_static/chat-second.png",
+      "raw_url": "https://raw.githubusercontent.com/jupyterlab/jupyter-ai/b5d0deb7cbb21179cdcc75ad42f735ceff8900a2/docs/source/_static/chat-second.png",
+      "raw_metadata": {
+        "github_blob_sha": "c45d5b19389c32768ca41559f32c62d9340d8416",
+        "size": 87029
+      }
+    },
+    {
+      "source_id": "src_https-github-com-jupyterlab-jupyter-ai-jupyter-ai-jupyterlab_e47112b5",
+      "path": "docs/source/_static/chat-select-model-complete.png",
+      "declared_name": "_static",
+      "format": "markdown",
+      "parse_confidence": "medium",
+      "content_digest": "sha256:cb61270cbca205d2337bb30fab738e4f84726a7a",
+      "upstream_ref": "b5d0deb7cbb21179cdcc75ad42f735ceff8900a2",
+      "url": "https://github.com/jupyterlab/jupyter-ai/blob/b5d0deb7cbb21179cdcc75ad42f735ceff8900a2/docs/source/_static/chat-select-model-complete.png",
+      "raw_url": "https://raw.githubusercontent.com/jupyterlab/jupyter-ai/b5d0deb7cbb21179cdcc75ad42f735ceff8900a2/docs/source/_static/chat-select-model-complete.png",
+      "raw_metadata": {
+        "github_blob_sha": "cb61270cbca205d2337bb30fab738e4f84726a7a",
+        "size": 54442
+      }
+    },
+    {
+      "source_id": "src_https-github-com-jupyterlab-jupyter-ai-jupyter-ai-jupyterlab_e47112b5",
+      "path": "docs/source/_static/chat-select-model.png",
+      "declared_name": "_static",
+      "format": "markdown",
+      "parse_confidence": "medium",
+      "content_digest": "sha256:e85f28a452aaba0ef6578038741510142f9b58f3",
+      "upstream_ref": "b5d0deb7cbb21179cdcc75ad42f735ceff8900a2",
+      "url": "https://github.com/jupyterlab/jupyter-ai/blob/b5d0deb7cbb21179cdcc75ad42f735ceff8900a2/docs/source/_static/chat-select-model.png",
+      "raw_url": "https://raw.githubusercontent.com/jupyterlab/jupyter-ai/b5d0deb7cbb21179cdcc75ad42f735ceff8900a2/docs/source/_static/chat-select-model.png",
+      "raw_metadata": {
+        "github_blob_sha": "e85f28a452aaba0ef6578038741510142f9b58f3",
+        "size": 86872
+      }
+    },
+    {
+      "source_id": "src_https-github-com-jupyterlab-jupyter-ai-jupyter-ai-jupyterlab_e47112b5",
+      "path": "docs/source/_static/chat-settings-choose-language-model.png",
+      "declared_name": "_static",
+      "format": "markdown",
+      "parse_confidence": "medium",
+      "content_digest": "sha256:1303f046743e214548e12848c9dd5a5f840fdf88",
+      "upstream_ref": "b5d0deb7cbb21179cdcc75ad42f735ceff8900a2",
+      "url": "https://github.com/jupyterlab/jupyter-ai/blob/b5d0deb7cbb21179cdcc75ad42f735ceff8900a2/docs/source/_static/chat-settings-choose-language-model.png",
+      "raw_url": "https://raw.githubusercontent.com/jupyterlab/jupyter-ai/b5d0deb7cbb21179cdcc75ad42f735ceff8900a2/docs/source/_static/chat-settings-choose-language-model.png",
+      "raw_metadata": {
+        "github_blob_sha": "1303f046743e214548e12848c9dd5a5f840fdf88",
+        "size": 68198
+      }
+    },
+    {
+      "source_id": "src_https-github-com-jupyterlab-jupyter-ai-jupyter-ai-jupyterlab_e47112b5",
+      "path": "docs/source/_static/chat-ydoc.png",
+      "declared_name": "_static",
+      "format": "markdown",
+      "parse_confidence": "medium",
+      "content_digest": "sha256:cf8c6079d6b53753aa34f55b6b5e56047e8f79b9",
+      "upstream_ref": "b5d0deb7cbb21179cdcc75ad42f735ceff8900a2",
+      "url": "https://github.com/jupyterlab/jupyter-ai/blob/b5d0deb7cbb21179cdcc75ad42f735ceff8900a2/docs/source/_static/chat-ydoc.png",
+      "raw_url": "https://raw.githubusercontent.com/jupyterlab/jupyter-ai/b5d0deb7cbb21179cdcc75ad42f735ceff8900a2/docs/source/_static/chat-ydoc.png",
+      "raw_metadata": {
+        "github_blob_sha": "cf8c6079d6b53753aa34f55b6b5e56047e8f79b9",
+        "size": 153252
+      }
+    },
+    {
+      "source_id": "src_https-github-com-jupyterlab-jupyter-ai-jupyter-ai-jupyterlab_e47112b5",
+      "path": "docs/source/_static/claude-reply.png",
+      "declared_name": "_static",
+      "format": "markdown",
+      "parse_confidence": "medium",
+      "content_digest": "sha256:078ca251c60dd779981a69bdf98c05ebb209d681",
+      "upstream_ref": "b5d0deb7cbb21179cdcc75ad42f735ceff8900a2",
+      "url": "https://github.com/jupyterlab/jupyter-ai/blob/b5d0deb7cbb21179cdcc75ad42f735ceff8900a2/docs/source/_static/claude-reply.png",
+      "raw_url": "https://raw.githubusercontent.com/jupyterlab/jupyter-ai/b5d0deb7cbb21179cdcc75ad42f735ceff8900a2/docs/source/_static/claude-reply.png",
+      "raw_metadata": {
+        "github_blob_sha": "078ca251c60dd779981a69bdf98c05ebb209d681",
+        "size": 219575
+      }
+    },
+    {
+      "source_id": "src_https-github-com-jupyterlab-jupyter-ai-jupyter-ai-jupyterlab_e47112b5",
+      "path": "docs/source/_static/copilot-icon.svg",
+      "declared_name": "_static",
+      "format": "markdown",
+      "parse_confidence": "medium",
+      "content_digest": "sha256:f0b577b5689f45366d46c8512994833c74ee016e",
+      "upstream_ref": "b5d0deb7cbb21179cdcc75ad42f735ceff8900a2",
+      "url": "https://github.com/jupyterlab/jupyter-ai/blob/b5d0deb7cbb21179cdcc75ad42f735ceff8900a2/docs/source/_static/copilot-icon.svg",
+      "raw_url": "https://raw.githubusercontent.com/jupyterlab/jupyter-ai/b5d0deb7cbb21179cdcc75ad42f735ceff8900a2/docs/source/_static/copilot-icon.svg",
+      "raw_metadata": {
+        "github_blob_sha": "f0b577b5689f45366d46c8512994833c74ee016e",
+        "size": 1600
+      }
+    },
+    {
+      "source_id": "src_https-github-com-jupyterlab-jupyter-ai-jupyter-ai-jupyterlab_e47112b5",
+      "path": "docs/source/_static/css/custom.css",
+      "declared_name": "css",
+      "format": "markdown",
+      "parse_confidence": "medium",
+      "content_digest": "sha256:a62c0f7bfd48e06263cbca82e23ffcd1f43c82e6",
+      "upstream_ref": "b5d0deb7cbb21179cdcc75ad42f735ceff8900a2",
+      "url": "https://github.com/jupyterlab/jupyter-ai/blob/b5d0deb7cbb21179cdcc75ad42f735ceff8900a2/docs/source/_static/css/custom.css",
+      "raw_url": "https://raw.githubusercontent.com/jupyterlab/jupyter-ai/b5d0deb7cbb21179cdcc75ad42f735ceff8900a2/docs/source/_static/css/custom.css",
+      "raw_metadata": {
+        "github_blob_sha": "a62c0f7bfd48e06263cbca82e23ffcd1f43c82e6",
+        "size": 849
+      }
+    },
+    {
+      "source_id": "src_https-github-com-jupyterlab-jupyter-ai-jupyter-ai-jupyterlab_e47112b5",
+      "path": "docs/source/_static/fix-error-cell-selected.png",
+      "declared_name": "_static",
+      "format": "markdown",
+      "parse_confidence": "medium",
+      "content_digest": "sha256:c22ea65d4468de471ddfb50f9160d433d88b8cec",
+      "upstream_ref": "b5d0deb7cbb21179cdcc75ad42f735ceff8900a2",
+      "url": "https://github.com/jupyterlab/jupyter-ai/blob/b5d0deb7cbb21179cdcc75ad42f735ceff8900a2/docs/source/_static/fix-error-cell-selected.png",
+      "raw_url": "https://raw.githubusercontent.com/jupyterlab/jupyter-ai/b5d0deb7cbb21179cdcc75ad42f735ceff8900a2/docs/source/_static/fix-error-cell-selected.png",
+      "raw_metadata": {
+        "github_blob_sha": "c22ea65d4468de471ddfb50f9160d433d88b8cec",
+        "size": 98572
+      }
+    },
+    {
+      "source_id": "src_https-github-com-jupyterlab-jupyter-ai-jupyter-ai-jupyterlab_e47112b5",
+      "path": "docs/source/_static/fix-no-error-cell-selected.png",
+      "declared_name": "_static",
+      "format": "markdown",
+      "parse_confidence": "medium",
+      "content_digest": "sha256:1f29a77e5b4bd0404c6d1ffbdc20263cc09b8096",
+      "upstream_ref": "b5d0deb7cbb21179cdcc75ad42f735ceff8900a2",
+      "url": "https://github.com/jupyterlab/jupyter-ai/blob/b5d0deb7cbb21179cdcc75ad42f735ceff8900a2/docs/source/_static/fix-no-error-cell-selected.png",
+      "raw_url": "https://raw.githubusercontent.com/jupyterlab/jupyter-ai/b5d0deb7cbb21179cdcc75ad42f735ceff8900a2/docs/source/_static/fix-no-error-cell-selected.png",
+      "raw_metadata": {
+        "github_blob_sha": "1f29a77e5b4bd0404c6d1ffbdc20263cc09b8096",
+        "size": 21561
+      }
+    },
+    {
+      "source_id": "src_https-github-com-jupyterlab-jupyter-ai-jupyter-ai-jupyterlab_e47112b5",
+      "path": "docs/source/_static/fix-response.png",
+      "declared_name": "_static",
+      "format": "markdown",
+      "parse_confidence": "medium",
+      "content_digest": "sha256:88113e674337cab9287a2d56ca961481d4d2c0fb",
+      "upstream_ref": "b5d0deb7cbb21179cdcc75ad42f735ceff8900a2",
+      "url": "https://github.com/jupyterlab/jupyter-ai/blob/b5d0deb7cbb21179cdcc75ad42f735ceff8900a2/docs/source/_static/fix-response.png",
+      "raw_url": "https://raw.githubusercontent.com/jupyterlab/jupyter-ai/b5d0deb7cbb21179cdcc75ad42f735ceff8900a2/docs/source/_static/fix-response.png",
+      "raw_metadata": {
+        "github_blob_sha": "88113e674337cab9287a2d56ca961481d4d2c0fb",
+        "size": 279435
+      }
+    },
+    {
+      "source_id": "src_https-github-com-jupyterlab-jupyter-ai-jupyter-ai-jupyterlab_e47112b5",
+      "path": "docs/source/_static/jupyter-ai-screenshot.png",
+      "declared_name": "_static",
+      "format": "markdown",
+      "parse_confidence": "medium",
+      "content_digest": "sha256:fe85412e570385cea2b67b30d889e9e7878908b1",
+      "upstream_ref": "b5d0deb7cbb21179cdcc75ad42f735ceff8900a2",
+      "url": "https://github.com/jupyterlab/jupyter-ai/blob/b5d0deb7cbb21179cdcc75ad42f735ceff8900a2/docs/source/_static/jupyter-ai-screenshot.png",
+      "raw_url": "https://raw.githubusercontent.com/jupyterlab/jupyter-ai/b5d0deb7cbb21179cdcc75ad42f735ceff8900a2/docs/source/_static/jupyter-ai-screenshot.png",
+      "raw_metadata": {
+        "github_blob_sha": "fe85412e570385cea2b67b30d889e9e7878908b1",
+        "size": 300569
+      }
+    },
+    {
+      "source_id": "src_https-github-com-jupyterlab-jupyter-ai-jupyter-ai-jupyterlab_e47112b5",
+      "path": "docs/source/_static/jupyter_logo.png",
+      "declared_name": "_static",
+      "format": "markdown",
+      "parse_confidence": "medium",
+      "content_digest": "sha256:1cea1a855624c14898e94ea69831bbf463f2fa36",
+      "upstream_ref": "b5d0deb7cbb21179cdcc75ad42f735ceff8900a2",
+      "url": "https://github.com/jupyterlab/jupyter-ai/blob/b5d0deb7cbb21179cdcc75ad42f735ceff8900a2/docs/source/_static/jupyter_logo.png",
+      "raw_url": "https://raw.githubusercontent.com/jupyterlab/jupyter-ai/b5d0deb7cbb21179cdcc75ad42f735ceff8900a2/docs/source/_static/jupyter_logo.png",
+      "raw_metadata": {
+        "github_blob_sha": "1cea1a855624c14898e94ea69831bbf463f2fa36",
+        "size": 26997
+      }
+    },
+    {
+      "source_id": "src_https-github-com-jupyterlab-jupyter-ai-jupyter-ai-jupyterlab_e47112b5",
+      "path": "docs/source/_static/jupyter_logo.svg",
+      "declared_name": "_static",
+      "format": "markdown",
+      "parse_confidence": "medium",
+      "content_digest": "sha256:ab255087431725b5ae37c0fe279a6572f1064252",
+      "upstream_ref": "b5d0deb7cbb21179cdcc75ad42f735ceff8900a2",
+      "url": "https://github.com/jupyterlab/jupyter-ai/blob/b5d0deb7cbb21179cdcc75ad42f735ceff8900a2/docs/source/_static/jupyter_logo.svg",
+      "raw_url": "https://raw.githubusercontent.com/jupyterlab/jupyter-ai/b5d0deb7cbb21179cdcc75ad42f735ceff8900a2/docs/source/_static/jupyter_logo.svg",
+      "raw_metadata": {
+        "github_blob_sha": "ab255087431725b5ae37c0fe279a6572f1064252",
+        "size": 11002
+      }
+    },
+    {
+      "source_id": "src_https-github-com-jupyterlab-jupyter-ai-jupyter-ai-jupyterlab_e47112b5",
+      "path": "docs/source/_static/jupyter_logo_dark.svg",
+      "declared_name": "_static",
+      "format": "markdown",
+      "parse_confidence": "medium",
+      "content_digest": "sha256:86ddf532175d2eb3ddc651f851cea7e86b5b33e9",
+      "upstream_ref": "b5d0deb7cbb21179cdcc75ad42f735ceff8900a2",
+      "url": "https://github.com/jupyterlab/jupyter-ai/blob/b5d0deb7cbb21179cdcc75ad42f735ceff8900a2/docs/source/_static/jupyter_logo_dark.svg",
+      "raw_url": "https://raw.githubusercontent.com/jupyterlab/jupyter-ai/b5d0deb7cbb21179cdcc75ad42f735ceff8900a2/docs/source/_static/jupyter_logo_dark.svg",
+      "raw_metadata": {
+        "github_blob_sha": "86ddf532175d2eb3ddc651f851cea7e86b5b33e9",
+        "size": 11002
+      }
+    },
+    {
+      "source_id": "src_https-github-com-jupyterlab-jupyter-ai-jupyter-ai-jupyterlab_e47112b5",
+      "path": "docs/source/_static/jupyternaut-settings-api-keys.png",
+      "declared_name": "_static",
+      "format": "markdown",
+      "parse_confidence": "medium",
+      "content_digest": "sha256:e8ad38d2a34477daac13b463e314a03831c139c6",
+      "upstream_ref": "b5d0deb7cbb21179cdcc75ad42f735ceff8900a2",
+      "url": "https://github.com/jupyterlab/jupyter-ai/blob/b5d0deb7cbb21179cdcc75ad42f735ceff8900a2/docs/source/_static/jupyternaut-settings-api-keys.png",
+      "raw_url": "https://raw.githubusercontent.com/jupyterlab/jupyter-ai/b5d0deb7cbb21179cdcc75ad42f735ceff8900a2/docs/source/_static/jupyternaut-settings-api-keys.png",
+      "raw_metadata": {
+        "github_blob_sha": "e8ad38d2a34477daac13b463e314a03831c139c6",
+        "size": 243313
+      }
+    },
+    {
+      "source_id": "src_https-github-com-jupyterlab-jupyter-ai-jupyter-ai-jupyterlab_e47112b5",
+      "path": "docs/source/_static/jupyternaut-settings-model-parameters.png",
+      "declared_name": "_static",
+      "format": "markdown",
+      "parse_confidence": "medium",
+      "content_digest": "sha256:5f1004598b1b4736ff339616348e76105100b451",
+      "upstream_ref": "b5d0deb7cbb21179cdcc75ad42f735ceff8900a2",
+      "url": "https://github.com/jupyterlab/jupyter-ai/blob/b5d0deb7cbb21179cdcc75ad42f735ceff8900a2/docs/source/_static/jupyternaut-settings-model-parameters.png",
+      "raw_url": "https://raw.githubusercontent.com/jupyterlab/jupyter-ai/b5d0deb7cbb21179cdcc75ad42f735ceff8900a2/docs/source/_static/jupyternaut-settings-model-parameters.png",
+      "raw_metadata": {
+        "github_blob_sha": "5f1004598b1b4736ff339616348e76105100b451",
+        "size": 287442
+      }
+    },
+    {
+      "source_id": "src_https-github-com-jupyterlab-jupyter-ai-jupyter-ai-jupyterlab_e47112b5",
+      "path": "docs/source/_static/jupyternaut-settings.png",
+      "declared_name": "_static",
+      "format": "markdown",
+      "parse_confidence": "medium",
+      "content_digest": "sha256:7219771f8a69929d30d061a2de15adada6f942ea",
+      "upstream_ref": "b5d0deb7cbb21179cdcc75ad42f735ceff8900a2",
+      "url": "https://github.com/jupyterlab/jupyter-ai/blob/b5d0deb7cbb21179cdcc75ad42f735ceff8900a2/docs/source/_static/jupyternaut-settings.png",
+      "raw_url": "https://raw.githubusercontent.com/jupyterlab/jupyter-ai/b5d0deb7cbb21179cdcc75ad42f735ceff8900a2/docs/source/_static/jupyternaut-settings.png",
+      "raw_metadata": {
+        "github_blob_sha": "7219771f8a69929d30d061a2de15adada6f942ea",
+        "size": 222136
+      }
+    },
+    {
+      "source_id": "src_https-github-com-jupyterlab-jupyter-ai-jupyter-ai-jupyterlab_e47112b5",
+      "path": "docs/source/_static/kiro-icon.svg",
+      "declared_name": "_static",
+      "format": "markdown",
+      "parse_confidence": "medium",
+      "content_digest": "sha256:899175fb81a50eda7f62b95b45bd675fa720db01",
+      "upstream_ref": "b5d0deb7cbb21179cdcc75ad42f735ceff8900a2",
+      "url": "https://github.com/jupyterlab/jupyter-ai/blob/b5d0deb7cbb21179cdcc75ad42f735ceff8900a2/docs/source/_static/kiro-icon.svg",
+      "raw_url": "https://raw.githubusercontent.com/jupyterlab/jupyter-ai/b5d0deb7cbb21179cdcc75ad42f735ceff8900a2/docs/source/_static/kiro-icon.svg",
+      "raw_metadata": {
+        "github_blob_sha": "899175fb81a50eda7f62b95b45bd675fa720db01",
+        "size": 1366
+      }
+    },
+    {
+      "source_id": "src_https-github-com-jupyterlab-jupyter-ai-jupyter-ai-jupyterlab_e47112b5",
+      "path": "docs/source/_static/magics-alias-usage.png",
+      "declared_name": "_static",
+      "format": "markdown",
+      "parse_confidence": "medium",
+      "content_digest": "sha256:a3dd4a24df2cf91c37ff1829fab569045e95e668",
+      "upstream_ref": "b5d0deb7cbb21179cdcc75ad42f735ceff8900a2",
+      "url": "https://github.com/jupyterlab/jupyter-ai/blob/b5d0deb7cbb21179cdcc75ad42f735ceff8900a2/docs/source/_static/magics-alias-usage.png",
+      "raw_url": "https://raw.githubusercontent.com/jupyterlab/jupyter-ai/b5d0deb7cbb21179cdcc75ad42f735ceff8900a2/docs/source/_static/magics-alias-usage.png",
+      "raw_metadata": {
+        "github_blob_sha": "a3dd4a24df2cf91c37ff1829fab569045e95e668",
+        "size": 61762
+      }
+    },
+    {
+      "source_id": "src_https-github-com-jupyterlab-jupyter-ai-jupyter-ai-jupyterlab_e47112b5",
+      "path": "docs/source/_static/magics-dealias.png",
+      "declared_name": "_static",
+      "format": "markdown",
+      "parse_confidence": "medium",
+      "content_digest": "sha256:ea90880fd4d0d2235f9c95b0024d724d5b4ea915",
+      "upstream_ref": "b5d0deb7cbb21179cdcc75ad42f735ceff8900a2",
+      "url": "https://github.com/jupyterlab/jupyter-ai/blob/b5d0deb7cbb21179cdcc75ad42f735ceff8900a2/docs/source/_static/magics-dealias.png",
+      "raw_url": "https://raw.githubusercontent.com/jupyterlab/jupyter-ai/b5d0deb7cbb21179cdcc75ad42f735ceff8900a2/docs/source/_static/magics-dealias.png",
+      "raw_metadata": {
+        "github_blob_sha": "ea90880fd4d0d2235f9c95b0024d724d5b4ea915",
+        "size": 13298
+      }
+    },
+    {
+      "source_id": "src_https-github-com-jupyterlab-jupyter-ai-jupyter-ai-jupyterlab_e47112b5",
+      "path": "docs/source/_static/magics-example-openai.png",
+      "declared_name": "_static",
+      "format": "markdown",
+      "parse_confidence": "medium",
+      "content_digest": "sha256:fdd53b9329612b3bd47ca0aed9ba3d599e5d5528",
+      "upstream_ref": "b5d0deb7cbb21179cdcc75ad42f735ceff8900a2",
+      "url": "https://github.com/jupyterlab/jupyter-ai/blob/b5d0deb7cbb21179cdcc75ad42f735ceff8900a2/docs/source/_static/magics-example-openai.png",
+      "raw_url": "https://raw.githubusercontent.com/jupyterlab/jupyter-ai/b5d0deb7cbb21179cdcc75ad42f735ceff8900a2/docs/source/_static/magics-example-openai.png",
+      "raw_metadata": {
+        "github_blob_sha": "fdd53b9329612b3bd47ca0aed9ba3d599e5d5528",
+        "size": 43816
+      }
+    },
+    {
+      "source_id": "src_https-github-com-jupyterlab-jupyter-ai-jupyter-ai-jupyterlab_e47112b5",
+      "path": "docs/source/_static/magics-format-code.png",
+      "declared_name": "_static",
+      "format": "markdown",
+      "parse_confidence": "medium",
+      "content_digest": "sha256:1264933258a2cd423ff08cae9afe097250b1cbef",
+      "upstream_ref": "b5d0deb7cbb21179cdcc75ad42f735ceff8900a2",
+      "url": "https://github.com/jupyterlab/jupyter-ai/blob/b5d0deb7cbb21179cdcc75ad42f735ceff8900a2/docs/source/_static/magics-format-code.png",
+      "raw_url": "https://raw.githubusercontent.com/jupyterlab/jupyter-ai/b5d0deb7cbb21179cdcc75ad42f735ceff8900a2/docs/source/_static/magics-format-code.png",
+      "raw_metadata": {
+        "github_blob_sha": "1264933258a2cd423ff08cae9afe097250b1cbef",
+        "size": 256595
+      }
+    },
+    {
+      "source_id": "src_https-github-com-jupyterlab-jupyter-ai-jupyter-ai-jupyterlab_e47112b5",
+      "path": "docs/source/_static/magics-list-all.png",
+      "declared_name": "_static",
+      "format": "markdown",
+      "parse_confidence": "medium",
+      "content_digest": "sha256:5ce02d8223d7dc9f54456d5a8dfd3e7bc5fe72a9",
+      "upstream_ref": "b5d0deb7cbb21179cdcc75ad42f735ceff8900a2",
+      "url": "https://github.com/jupyterlab/jupyter-ai/blob/b5d0deb7cbb21179cdcc75ad42f735ceff8900a2/docs/source/_static/magics-list-all.png",
+      "raw_url": "https://raw.githubusercontent.com/jupyterlab/jupyter-ai/b5d0deb7cbb21179cdcc75ad42f735ceff8900a2/docs/source/_static/magics-list-all.png",
+      "raw_metadata": {
+        "github_blob_sha": "5ce02d8223d7dc9f54456d5a8dfd3e7bc5fe72a9",
+        "size": 99252
+      }
+    },
+    {
+      "source_id": "src_https-github-com-jupyterlab-jupyter-ai-jupyter-ai-jupyterlab_e47112b5",
+      "path": "docs/source/_static/magics-list-any-provider.png",
+      "declared_name": "_static",
+      "format": "markdown",
+      "parse_confidence": "medium",
+      "content_digest": "sha256:7b1dd434a93aa23dfc41d5b0020bbbb2bcd6230f",
+      "upstream_ref": "b5d0deb7cbb21179cdcc75ad42f735ceff8900a2",
+      "url": "https://github.com/jupyterlab/jupyter-ai/blob/b5d0deb7cbb21179cdcc75ad42f735ceff8900a2/docs/source/_static/magics-list-any-provider.png",
+      "raw_url": "https://raw.githubusercontent.com/jupyterlab/jupyter-ai/b5d0deb7cbb21179cdcc75ad42f735ceff8900a2/docs/source/_static/magics-list-any-provider.png",
+      "raw_metadata": {
+        "github_blob_sha": "7b1dd434a93aa23dfc41d5b0020bbbb2bcd6230f",
+        "size": 155724
+      }
+    },
+    {
+      "source_id": "src_https-github-com-jupyterlab-jupyter-ai-jupyter-ai-jupyterlab_e47112b5",
+      "path": "docs/source/_static/magics-list-help.png",
+      "declared_name": "_static",
+      "format": "markdown",
+      "parse_confidence": "medium",
+      "content_digest": "sha256:7ddf47f65017a50bc6e69a76d6dc56eeb05de1b0",
+      "upstream_ref": "b5d0deb7cbb21179cdcc75ad42f735ceff8900a2",
+      "url": "https://github.com/jupyterlab/jupyter-ai/blob/b5d0deb7cbb21179cdcc75ad42f735ceff8900a2/docs/source/_static/magics-list-help.png",
+      "raw_url": "https://raw.githubusercontent.com/jupyterlab/jupyter-ai/b5d0deb7cbb21179cdcc75ad42f735ceff8900a2/docs/source/_static/magics-list-help.png",
+      "raw_metadata": {
+        "github_blob_sha": "7ddf47f65017a50bc6e69a76d6dc56eeb05de1b0",
+        "size": 78108
+      }
+    },
+    {
+      "source_id": "src_https-github-com-jupyterlab-jupyter-ai-jupyter-ai-jupyterlab_e47112b5",
+      "path": "docs/source/_static/magics-list.png",
+      "declared_name": "_static",
+      "format": "markdown",
+      "parse_confidence": "medium",
+      "content_digest": "sha256:1a39ccc543b8752d12546b7ee3aa709639d8374d",
+      "upstream_ref": "b5d0deb7cbb21179cdcc75ad42f735ceff8900a2",
+      "url": "https://github.com/jupyterlab/jupyter-ai/blob/b5d0deb7cbb21179cdcc75ad42f735ceff8900a2/docs/source/_static/magics-list.png",
+      "raw_url": "https://raw.githubusercontent.com/jupyterlab/jupyter-ai/b5d0deb7cbb21179cdcc75ad42f735ceff8900a2/docs/source/_static/magics-list.png",
+      "raw_metadata": {
+        "github_blob_sha": "1a39ccc543b8752d12546b7ee3aa709639d8374d",
+        "size": 158517
+      }
+    },
+    {
+      "source_id": "src_https-github-com-jupyterlab-jupyter-ai-jupyter-ai-jupyterlab_e47112b5",
+      "path": "docs/source/_static/magics-set-alias.png",
+      "declared_name": "_static",
+      "format": "markdown",
+      "parse_confidence": "medium",
+      "content_digest": "sha256:d46c5552ec5a1ce9193baf9d3b417dbb3f0ed6c5",
+      "upstream_ref": "b5d0deb7cbb21179cdcc75ad42f735ceff8900a2",
+      "url": "https://github.com/jupyterlab/jupyter-ai/blob/b5d0deb7cbb21179cdcc75ad42f735ceff8900a2/docs/source/_static/magics-set-alias.png",
+      "raw_url": "https://raw.githubusercontent.com/jupyterlab/jupyter-ai/b5d0deb7cbb21179cdcc75ad42f735ceff8900a2/docs/source/_static/magics-set-alias.png",
+      "raw_metadata": {
+        "github_blob_sha": "d46c5552ec5a1ce9193baf9d3b417dbb3f0ed6c5",
+        "size": 126759
+      }
+    },
+    {
+      "source_id": "src_https-github-com-jupyterlab-jupyter-ai-jupyter-ai-jupyterlab_e47112b5",
+      "path": "docs/source/_static/mention-menu.png",
+      "declared_name": "_static",
+      "format": "markdown",
+      "parse_confidence": "medium",
+      "content_digest": "sha256:a0a1d4a665d053313c013b1acd04be42e7f9edb3",
+      "upstream_ref": "b5d0deb7cbb21179cdcc75ad42f735ceff8900a2",
+      "url": "https://github.com/jupyterlab/jupyter-ai/blob/b5d0deb7cbb21179cdcc75ad42f735ceff8900a2/docs/source/_static/mention-menu.png",
+      "raw_url": "https://raw.githubusercontent.com/jupyterlab/jupyter-ai/b5d0deb7cbb21179cdcc75ad42f735ceff8900a2/docs/source/_static/mention-menu.png",
+      "raw_metadata": {
+        "github_blob_sha": "a0a1d4a665d053313c013b1acd04be42e7f9edb3",
+        "size": 48163
+      }
+    },
+    {
+      "source_id": "src_https-github-com-jupyterlab-jupyter-ai-jupyter-ai-jupyterlab_e47112b5",
+      "path": "docs/source/_static/mistral-vibe-icon.svg",
+      "declared_name": "_static",
+      "format": "markdown",
+      "parse_confidence": "medium",
+      "content_digest": "sha256:fa467c5f05e17f70167e3be6aa27943796238384",
+      "upstream_ref": "b5d0deb7cbb21179cdcc75ad42f735ceff8900a2",
+      "url": "https://github.com/jupyterlab/jupyter-ai/blob/b5d0deb7cbb21179cdcc75ad42f735ceff8900a2/docs/source/_static/mistral-vibe-icon.svg",
+      "raw_url": "https://raw.githubusercontent.com/jupyterlab/jupyter-ai/b5d0deb7cbb21179cdcc75ad42f735ceff8900a2/docs/source/_static/mistral-vibe-icon.svg",
+      "raw_metadata": {
+        "github_blob_sha": "fa467c5f05e17f70167e3be6aa27943796238384",
+        "size": 948
+      }
+    },
+    {
+      "source_id": "src_https-github-com-jupyterlab-jupyter-ai-jupyter-ai-jupyterlab_e47112b5",
+      "path": "docs/source/_static/notebook-chat.png",
+      "declared_name": "_static",
+      "format": "markdown",
+      "parse_confidence": "medium",
+      "content_digest": "sha256:ada9001b0d5f06b19efe3231fea0a72b5ea756ee",
+      "upstream_ref": "b5d0deb7cbb21179cdcc75ad42f735ceff8900a2",
+      "url": "https://github.com/jupyterlab/jupyter-ai/blob/b5d0deb7cbb21179cdcc75ad42f735ceff8900a2/docs/source/_static/notebook-chat.png",
+      "raw_url": "https://raw.githubusercontent.com/jupyterlab/jupyter-ai/b5d0deb7cbb21179cdcc75ad42f735ceff8900a2/docs/source/_static/notebook-chat.png",
+      "raw_metadata": {
+        "github_blob_sha": "ada9001b0d5f06b19efe3231fea0a72b5ea756ee",
+        "size": 332924
+      }
+    },
+    {
+      "source_id": "src_https-github-com-jupyterlab-jupyter-ai-jupyter-ai-jupyterlab_e47112b5",
+      "path": "docs/source/_static/ollama-settings.png",
+      "declared_name": "_static",
+      "format": "markdown",
+      "parse_confidence": "medium",
+      "content_digest": "sha256:605dfd3d57ca3ce6c02f7968341f3ebdea6383a1",
+      "upstream_ref": "b5d0deb7cbb21179cdcc75ad42f735ceff8900a2",
+      "url": "https://github.com/jupyterlab/jupyter-ai/blob/b5d0deb7cbb21179cdcc75ad42f735ceff8900a2/docs/source/_static/ollama-settings.png",
+      "raw_url": "https://raw.githubusercontent.com/jupyterlab/jupyter-ai/b5d0deb7cbb21179cdcc75ad42f735ceff8900a2/docs/source/_static/ollama-settings.png",
+      "raw_metadata": {
+        "github_blob_sha": "605dfd3d57ca3ce6c02f7968341f3ebdea6383a1",
+        "size": 298309
+      }
+    },
+    {
+      "source_id": "src_https-github-com-jupyterlab-jupyter-ai-jupyter-ai-jupyterlab_e47112b5",
+      "path": "docs/source/_static/open-chat.png",
+      "declared_name": "_static",
+      "format": "markdown",
+      "parse_confidence": "medium",
+      "content_digest": "sha256:25b2db414d0faa5b4d8e30c2430d310e1c0648c0",
+      "upstream_ref": "b5d0deb7cbb21179cdcc75ad42f735ceff8900a2",
+      "url": "https://github.com/jupyterlab/jupyter-ai/blob/b5d0deb7cbb21179cdcc75ad42f735ceff8900a2/docs/source/_static/open-chat.png",
+      "raw_url": "https://raw.githubusercontent.com/jupyterlab/jupyter-ai/b5d0deb7cbb21179cdcc75ad42f735ceff8900a2/docs/source/_static/open-chat.png",
+      "raw_metadata": {
+        "github_blob_sha": "25b2db414d0faa5b4d8e30c2430d310e1c0648c0",
+        "size": 302444
+      }
+    },
+    {
+      "source_id": "src_https-github-com-jupyterlab-jupyter-ai-jupyter-ai-jupyterlab_e47112b5",
+      "path": "docs/source/_static/openai-chat-deepseek.png",
+      "declared_name": "_static",
+      "format": "markdown",
+      "parse_confidence": "medium",
+      "content_digest": "sha256:f66fdd285ba639ed486e2d4b85cd58843a9ec729",
+      "upstream_ref": "b5d0deb7cbb21179cdcc75ad42f735ceff8900a2",
+      "url": "https://github.com/jupyterlab/jupyter-ai/blob/b5d0deb7cbb21179cdcc75ad42f735ceff8900a2/docs/source/_static/openai-chat-deepseek.png",
+      "raw_url": "https://raw.githubusercontent.com/jupyterlab/jupyter-ai/b5d0deb7cbb21179cdcc75ad42f735ceff8900a2/docs/source/_static/openai-chat-deepseek.png",
+      "raw_metadata": {
+        "github_blob_sha": "f66fdd285ba639ed486e2d4b85cd58843a9ec729",
+        "size": 160843
+      }
+    },
+    {
+      "source_id": "src_https-github-com-jupyterlab-jupyter-ai-jupyter-ai-jupyterlab_e47112b5",
+      "path": "docs/source/_static/openai-chat-openai.png",
+      "declared_name": "_static",
+      "format": "markdown",
+      "parse_confidence": "medium",
+      "content_digest": "sha256:8786eb628a9469779dd261bd0598c962afeb3179",
+      "upstream_ref": "b5d0deb7cbb21179cdcc75ad42f735ceff8900a2",
+      "url": "https://github.com/jupyterlab/jupyter-ai/blob/b5d0deb7cbb21179cdcc75ad42f735ceff8900a2/docs/source/_static/openai-chat-openai.png",
+      "raw_url": "https://raw.githubusercontent.com/jupyterlab/jupyter-ai/b5d0deb7cbb21179cdcc75ad42f735ceff8900a2/docs/source/_static/openai-chat-openai.png",
+      "raw_metadata": {
+        "github_blob_sha": "8786eb628a9469779dd261bd0598c962afeb3179",
+        "size": 153323
+      }
+    },
+    {
+      "source_id": "src_https-github-com-jupyterlab-jupyter-ai-jupyter-ai-jupyterlab_e47112b5",
+      "path": "docs/source/_static/openai-chat-vllm.png",
+      "declared_name": "_static",
+      "format": "markdown",
+      "parse_confidence": "medium",
+      "content_digest": "sha256:e882ad76ff59c4f152f99b9a1d820314928655c1",
+      "upstream_ref": "b5d0deb7cbb21179cdcc75ad42f735ceff8900a2",
+      "url": "https://github.com/jupyterlab/jupyter-ai/blob/b5d0deb7cbb21179cdcc75ad42f735ceff8900a2/docs/source/_static/openai-chat-vllm.png",
+      "raw_url": "https://raw.githubusercontent.com/jupyterlab/jupyter-ai/b5d0deb7cbb21179cdcc75ad42f735ceff8900a2/docs/source/_static/openai-chat-vllm.png",
+      "raw_metadata": {
+        "github_blob_sha": "e882ad76ff59c4f152f99b9a1d820314928655c1",
+        "size": 192935
+      }
+    },
+    {
+      "source_id": "src_https-github-com-jupyterlab-jupyter-ai-jupyter-ai-jupyterlab_e47112b5",
+      "path": "docs/source/_static/openai-embeddings.png",
+      "declared_name": "_static",
+      "format": "markdown",
+      "parse_confidence": "medium",
+      "content_digest": "sha256:ae007e7ba914fe6da0f519cf979982c8f192618b",
+      "upstream_ref": "b5d0deb7cbb21179cdcc75ad42f735ceff8900a2",
+      "url": "https://github.com/jupyterlab/jupyter-ai/blob/b5d0deb7cbb21179cdcc75ad42f735ceff8900a2/docs/source/_static/openai-embeddings.png",
+      "raw_url": "https://raw.githubusercontent.com/jupyterlab/jupyter-ai/b5d0deb7cbb21179cdcc75ad42f735ceff8900a2/docs/source/_static/openai-embeddings.png",
+      "raw_metadata": {
+        "github_blob_sha": "ae007e7ba914fe6da0f519cf979982c8f192618b",
+        "size": 357278
+      }
+    },
+    {
+      "source_id": "src_https-github-com-jupyterlab-jupyter-ai-jupyter-ai-jupyterlab_e47112b5",
+      "path": "docs/source/_static/openrouter-chat.png",
+      "declared_name": "_static",
+      "format": "markdown",
+      "parse_confidence": "medium",
+      "content_digest": "sha256:b49756b6290c348538464962c5d72963fa081e86",
+      "upstream_ref": "b5d0deb7cbb21179cdcc75ad42f735ceff8900a2",
+      "url": "https://github.com/jupyterlab/jupyter-ai/blob/b5d0deb7cbb21179cdcc75ad42f735ceff8900a2/docs/source/_static/openrouter-chat.png",
+      "raw_url": "https://raw.githubusercontent.com/jupyterlab/jupyter-ai/b5d0deb7cbb21179cdcc75ad42f735ceff8900a2/docs/source/_static/openrouter-chat.png",
+      "raw_metadata": {
+        "github_blob_sha": "b49756b6290c348538464962c5d72963fa081e86",
+        "size": 239718
+      }
+    },
+    {
+      "source_id": "src_https-github-com-jupyterlab-jupyter-ai-jupyter-ai-jupyterlab_e47112b5",
+      "path": "docs/source/_static/openrouter-model-setup-2.png",
+      "declared_name": "_static",
+      "format": "markdown",
+      "parse_confidence": "medium",
+      "content_digest": "sha256:94044e39cb972128aa8338067f5605948bed7399",
+      "upstream_ref": "b5d0deb7cbb21179cdcc75ad42f735ceff8900a2",
+      "url": "https://github.com/jupyterlab/jupyter-ai/blob/b5d0deb7cbb21179cdcc75ad42f735ceff8900a2/docs/source/_static/openrouter-model-setup-2.png",
+      "raw_url": "https://raw.githubusercontent.com/jupyterlab/jupyter-ai/b5d0deb7cbb21179cdcc75ad42f735ceff8900a2/docs/source/_static/openrouter-model-setup-2.png",
+      "raw_metadata": {
+        "github_blob_sha": "94044e39cb972128aa8338067f5605948bed7399",
+        "size": 40785
+      }
+    },
+    {
+      "source_id": "src_https-github-com-jupyterlab-jupyter-ai-jupyter-ai-jupyterlab_e47112b5",
+      "path": "docs/source/_static/openrouter-model-setup.png",
+      "declared_name": "_static",
+      "format": "markdown",
+      "parse_confidence": "medium",
+      "content_digest": "sha256:fed9c49da05d435b4e5b3120a21eea27dd93f210",
+      "upstream_ref": "b5d0deb7cbb21179cdcc75ad42f735ceff8900a2",
+      "url": "https://github.com/jupyterlab/jupyter-ai/blob/b5d0deb7cbb21179cdcc75ad42f735ceff8900a2/docs/source/_static/openrouter-model-setup.png",
+      "raw_url": "https://raw.githubusercontent.com/jupyterlab/jupyter-ai/b5d0deb7cbb21179cdcc75ad42f735ceff8900a2/docs/source/_static/openrouter-model-setup.png",
+      "raw_metadata": {
+        "github_blob_sha": "fed9c49da05d435b4e5b3120a21eea27dd93f210",
+        "size": 176135
+      }
+    },
+    {
+      "source_id": "src_https-github-com-jupyterlab-jupyter-ai-jupyter-ai-jupyterlab_e47112b5",
+      "path": "docs/source/_static/sample-code.png",
+      "declared_name": "_static",
+      "format": "markdown",
+      "parse_confidence": "medium",
+      "content_digest": "sha256:1034cbd7561af6deee752d45d0c7a40934bea188",
+      "upstream_ref": "b5d0deb7cbb21179cdcc75ad42f735ceff8900a2",
+      "url": "https://github.com/jupyterlab/jupyter-ai/blob/b5d0deb7cbb21179cdcc75ad42f735ceff8900a2/docs/source/_static/sample-code.png",
+      "raw_url": "https://raw.githubusercontent.com/jupyterlab/jupyter-ai/b5d0deb7cbb21179cdcc75ad42f735ceff8900a2/docs/source/_static/sample-code.png",
+      "raw_metadata": {
+        "github_blob_sha": "1034cbd7561af6deee752d45d0c7a40934bea188",
+        "size": 69588
+      }
+    },
+    {
+      "source_id": "src_https-github-com-jupyterlab-jupyter-ai-jupyter-ai-jupyterlab_e47112b5",
+      "path": "docs/source/_static/sample-html-math.png",
+      "declared_name": "_static",
+      "format": "markdown",
+      "parse_confidence": "medium",
+      "content_digest": "sha256:6960c2bd1f77f23ed71c53e34941cfc713ffcc67",
+      "upstream_ref": "b5d0deb7cbb21179cdcc75ad42f735ceff8900a2",
+      "url": "https://github.com/jupyterlab/jupyter-ai/blob/b5d0deb7cbb21179cdcc75ad42f735ceff8900a2/docs/source/_static/sample-html-math.png",
+      "raw_url": "https://raw.githubusercontent.com/jupyterlab/jupyter-ai/b5d0deb7cbb21179cdcc75ad42f735ceff8900a2/docs/source/_static/sample-html-math.png",
+      "raw_metadata": {
+        "github_blob_sha": "6960c2bd1f77f23ed71c53e34941cfc713ffcc67",
+        "size": 22654
+      }
+    },
+    {
+      "source_id": "src_https-github-com-jupyterlab-jupyter-ai-jupyter-ai-jupyterlab_e47112b5",
+      "path": "docs/source/_static/sample-markdown.png",
+      "declared_name": "_static",
+      "format": "markdown",
+      "parse_confidence": "medium",
+      "content_digest": "sha256:5d41ed51174f7996ad34feceee30328da0618b08",
+      "upstream_ref": "b5d0deb7cbb21179cdcc75ad42f735ceff8900a2",
+      "url": "https://github.com/jupyterlab/jupyter-ai/blob/b5d0deb7cbb21179cdcc75ad42f735ceff8900a2/docs/source/_static/sample-markdown.png",
+      "raw_url": "https://raw.githubusercontent.com/jupyterlab/jupyter-ai/b5d0deb7cbb21179cdcc75ad42f735ceff8900a2/docs/source/_static/sample-markdown.png",
+      "raw_metadata": {
+        "github_blob_sha": "5d41ed51174f7996ad34feceee30328da0618b08",
+        "size": 51411
+      }
+    },
+    {
+      "source_id": "src_https-github-com-jupyterlab-jupyter-ai-jupyter-ai-jupyterlab_e47112b5",
+      "path": "docs/source/_static/tool-call-permission-request.png",
+      "declared_name": "_static",
+      "format": "markdown",
+      "parse_confidence": "medium",
+      "content_digest": "sha256:e9ca44354cea146b2848540f4dd34b133e58de16",
+      "upstream_ref": "b5d0deb7cbb21179cdcc75ad42f735ceff8900a2",
+      "url": "https://github.com/jupyterlab/jupyter-ai/blob/b5d0deb7cbb21179cdcc75ad42f735ceff8900a2/docs/source/_static/tool-call-permission-request.png",
+      "raw_url": "https://raw.githubusercontent.com/jupyterlab/jupyter-ai/b5d0deb7cbb21179cdcc75ad42f735ceff8900a2/docs/source/_static/tool-call-permission-request.png",
+      "raw_metadata": {
+        "github_blob_sha": "e9ca44354cea146b2848540f4dd34b133e58de16",
+        "size": 277772
+      }
+    },
+    {
+      "source_id": "src_https-github-com-jupyterlab-jupyter-ai-jupyter-ai-jupyterlab_e47112b5",
+      "path": "docs/source/_static/vllm-aisettings.png",
+      "declared_name": "_static",
+      "format": "markdown",
+      "parse_confidence": "medium",
+      "content_digest": "sha256:4f04d95828a9f5e657282465487b9a7fc1588e1f",
+      "upstream_ref": "b5d0deb7cbb21179cdcc75ad42f735ceff8900a2",
+      "url": "https://github.com/jupyterlab/jupyter-ai/blob/b5d0deb7cbb21179cdcc75ad42f735ceff8900a2/docs/source/_static/vllm-aisettings.png",
+      "raw_url": "https://raw.githubusercontent.com/jupyterlab/jupyter-ai/b5d0deb7cbb21179cdcc75ad42f735ceff8900a2/docs/source/_static/vllm-aisettings.png",
+      "raw_metadata": {
+        "github_blob_sha": "4f04d95828a9f5e657282465487b9a7fc1588e1f",
+        "size": 37463
+      }
+    },
+    {
+      "source_id": "src_https-github-com-jupyterlab-jupyter-ai-jupyter-ai-jupyterlab_e47112b5",
+      "path": "docs/source/_static/vllm-api.png",
+      "declared_name": "_static",
+      "format": "markdown",
+      "parse_confidence": "medium",
+      "content_digest": "sha256:d0cb4cc1f6086214342888a0f70d0f6c793de954",
+      "upstream_ref": "b5d0deb7cbb21179cdcc75ad42f735ceff8900a2",
+      "url": "https://github.com/jupyterlab/jupyter-ai/blob/b5d0deb7cbb21179cdcc75ad42f735ceff8900a2/docs/source/_static/vllm-api.png",
+      "raw_url": "https://raw.githubusercontent.com/jupyterlab/jupyter-ai/b5d0deb7cbb21179cdcc75ad42f735ceff8900a2/docs/source/_static/vllm-api.png",
+      "raw_metadata": {
+        "github_blob_sha": "d0cb4cc1f6086214342888a0f70d0f6c793de954",
+        "size": 292286
+      }
+    },
+    {
+      "source_id": "src_https-github-com-jupyterlab-jupyter-ai-jupyter-ai-jupyterlab_e47112b5",
+      "path": "docs/source/_static/vllm-chat.png",
+      "declared_name": "_static",
+      "format": "markdown",
+      "parse_confidence": "medium",
+      "content_digest": "sha256:8d56d35a80243f8149ae497760fb020adfb00b51",
+      "upstream_ref": "b5d0deb7cbb21179cdcc75ad42f735ceff8900a2",
+      "url": "https://github.com/jupyterlab/jupyter-ai/blob/b5d0deb7cbb21179cdcc75ad42f735ceff8900a2/docs/source/_static/vllm-chat.png",
+      "raw_url": "https://raw.githubusercontent.com/jupyterlab/jupyter-ai/b5d0deb7cbb21179cdcc75ad42f735ceff8900a2/docs/source/_static/vllm-chat.png",
+      "raw_metadata": {
+        "github_blob_sha": "8d56d35a80243f8149ae497760fb020adfb00b51",
+        "size": 165032
+      }
+    },
+    {
+      "source_id": "src_https-github-com-jupyterlab-jupyter-ai-jupyter-ai-jupyterlab_e47112b5",
+      "path": "docs/source/_static/vllm-serve.png",
+      "declared_name": "_static",
+      "format": "markdown",
+      "parse_confidence": "medium",
+      "content_digest": "sha256:6a4a824d8e3a13bcaeb5593ce39792b02216b2db",
+      "upstream_ref": "b5d0deb7cbb21179cdcc75ad42f735ceff8900a2",
+      "url": "https://github.com/jupyterlab/jupyter-ai/blob/b5d0deb7cbb21179cdcc75ad42f735ceff8900a2/docs/source/_static/vllm-serve.png",
+      "raw_url": "https://raw.githubusercontent.com/jupyterlab/jupyter-ai/b5d0deb7cbb21179cdcc75ad42f735ceff8900a2/docs/source/_static/vllm-serve.png",
+      "raw_metadata": {
+        "github_blob_sha": "6a4a824d8e3a13bcaeb5593ce39792b02216b2db",
+        "size": 493942
+      }
+    },
+    {
+      "source_id": "src_https-github-com-jupyterlab-jupyter-ai-jupyter-ai-jupyterlab_e47112b5",
+      "path": "docs/source/_templates/HERO-ICON-README.md",
+      "declared_name": "_templates",
+      "format": "markdown",
+      "parse_confidence": "medium",
+      "content_digest": "sha256:3946d778313ef61fa9cf27ed0763b36c4c0d0721",
+      "upstream_ref": "b5d0deb7cbb21179cdcc75ad42f735ceff8900a2",
+      "url": "https://github.com/jupyterlab/jupyter-ai/blob/b5d0deb7cbb21179cdcc75ad42f735ceff8900a2/docs/source/_templates/HERO-ICON-README.md",
+      "raw_url": "https://raw.githubusercontent.com/jupyterlab/jupyter-ai/b5d0deb7cbb21179cdcc75ad42f735ceff8900a2/docs/source/_templates/HERO-ICON-README.md",
+      "raw_metadata": {
+        "github_blob_sha": "3946d778313ef61fa9cf27ed0763b36c4c0d0721",
+        "size": 3863
+      }
+    },
+    {
+      "source_id": "src_https-github-com-jupyterlab-jupyter-ai-jupyter-ai-jupyterlab_e47112b5",
+      "path": "docs/source/_templates/hero-icon.html",
+      "declared_name": "_templates",
+      "format": "markdown",
+      "parse_confidence": "medium",
+      "content_digest": "sha256:fb4ba7b38d4e967e0810a59c6abc80124fa10931",
+      "upstream_ref": "b5d0deb7cbb21179cdcc75ad42f735ceff8900a2",
+      "url": "https://github.com/jupyterlab/jupyter-ai/blob/b5d0deb7cbb21179cdcc75ad42f735ceff8900a2/docs/source/_templates/hero-icon.html",
+      "raw_url": "https://raw.githubusercontent.com/jupyterlab/jupyter-ai/b5d0deb7cbb21179cdcc75ad42f735ceff8900a2/docs/source/_templates/hero-icon.html",
+      "raw_metadata": {
+        "github_blob_sha": "fb4ba7b38d4e967e0810a59c6abc80124fa10931",
+        "size": 11173
+      }
+    },
+    {
+      "source_id": "src_https-github-com-jupyterlab-jupyter-ai-jupyter-ai-jupyterlab_e47112b5",
+      "path": "docs/source/_templates/partials/site-foot.html",
+      "declared_name": "partials",
+      "format": "markdown",
+      "parse_confidence": "medium",
+      "content_digest": "sha256:d11598793385eb340f335d2f6530ce5647549585",
+      "upstream_ref": "b5d0deb7cbb21179cdcc75ad42f735ceff8900a2",
+      "url": "https://github.com/jupyterlab/jupyter-ai/blob/b5d0deb7cbb21179cdcc75ad42f735ceff8900a2/docs/source/_templates/partials/site-foot.html",
+      "raw_url": "https://raw.githubusercontent.com/jupyterlab/jupyter-ai/b5d0deb7cbb21179cdcc75ad42f735ceff8900a2/docs/source/_templates/partials/site-foot.html",
+      "raw_metadata": {
+        "github_blob_sha": "d11598793385eb340f335d2f6530ce5647549585",
+        "size": 410
+      }
+    },
+    {
+      "source_id": "src_https-github-com-jupyterlab-jupyter-ai-jupyter-ai-jupyterlab_e47112b5",
+      "path": "docs/source/_templates/simple-hero-icon.html",
+      "declared_name": "_templates",
+      "format": "markdown",
+      "parse_confidence": "medium",
+      "content_digest": "sha256:abf894e8b8cc44a53c2efac7f7ca84d3aa79949a",
+      "upstream_ref": "b5d0deb7cbb21179cdcc75ad42f735ceff8900a2",
+      "url": "https://github.com/jupyterlab/jupyter-ai/blob/b5d0deb7cbb21179cdcc75ad42f735ceff8900a2/docs/source/_templates/simple-hero-icon.html",
+      "raw_url": "https://raw.githubusercontent.com/jupyterlab/jupyter-ai/b5d0deb7cbb21179cdcc75ad42f735ceff8900a2/docs/source/_templates/simple-hero-icon.html",
+      "raw_metadata": {
+        "github_blob_sha": "abf894e8b8cc44a53c2efac7f7ca84d3aa79949a",
+        "size": 134
+      }
+    },
+    {
+      "source_id": "src_https-github-com-jupyterlab-jupyter-ai-jupyter-ai-jupyterlab_e47112b5",
+      "path": "docs/source/conf.py",
+      "declared_name": "source",
+      "format": "markdown",
+      "parse_confidence": "medium",
+      "content_digest": "sha256:f0ad4213a7b7e55acfd0767a7bd870f4619aa549",
+      "upstream_ref": "b5d0deb7cbb21179cdcc75ad42f735ceff8900a2",
+      "url": "https://github.com/jupyterlab/jupyter-ai/blob/b5d0deb7cbb21179cdcc75ad42f735ceff8900a2/docs/source/conf.py",
+      "raw_url": "https://raw.githubusercontent.com/jupyterlab/jupyter-ai/b5d0deb7cbb21179cdcc75ad42f735ceff8900a2/docs/source/conf.py",
+      "raw_metadata": {
+        "github_blob_sha": "f0ad4213a7b7e55acfd0767a7bd870f4619aa549",
+        "size": 1218
+      }
+    },
+    {
+      "source_id": "src_https-github-com-jupyterlab-jupyter-ai-jupyter-ai-jupyterlab_e47112b5",
+      "path": "docs/source/contributors/index.md",
+      "declared_name": "contributors",
+      "format": "markdown",
+      "parse_confidence": "medium",
+      "content_digest": "sha256:b8bccec9f9ec3454451115eb7a5fa1a9fded8b33",
+      "upstream_ref": "b5d0deb7cbb21179cdcc75ad42f735ceff8900a2",
+      "url": "https://github.com/jupyterlab/jupyter-ai/blob/b5d0deb7cbb21179cdcc75ad42f735ceff8900a2/docs/source/contributors/index.md",
+      "raw_url": "https://raw.githubusercontent.com/jupyterlab/jupyter-ai/b5d0deb7cbb21179cdcc75ad42f735ceff8900a2/docs/source/contributors/index.md",
+      "raw_metadata": {
+        "github_blob_sha": "b8bccec9f9ec3454451115eb7a5fa1a9fded8b33",
+        "size": 12402
+      }
+    },
+    {
+      "source_id": "src_https-github-com-jupyterlab-jupyter-ai-jupyter-ai-jupyterlab_e47112b5",
+      "path": "docs/source/developers/entry_points_api/embeddings_providers_group.md",
+      "declared_name": "entry_points_api",
+      "format": "markdown",
+      "parse_confidence": "medium",
+      "content_digest": "sha256:bbdad324ca82c2196a45dbb2287201bf4eb9fd7c",
+      "upstream_ref": "b5d0deb7cbb21179cdcc75ad42f735ceff8900a2",
+      "url": "https://github.com/jupyterlab/jupyter-ai/blob/b5d0deb7cbb21179cdcc75ad42f735ceff8900a2/docs/source/developers/entry_points_api/embeddings_providers_group.md",
+      "raw_url": "https://raw.githubusercontent.com/jupyterlab/jupyter-ai/b5d0deb7cbb21179cdcc75ad42f735ceff8900a2/docs/source/developers/entry_points_api/embeddings_providers_group.md",
+      "raw_metadata": {
+        "github_blob_sha": "bbdad324ca82c2196a45dbb2287201bf4eb9fd7c",
+        "size": 1540
+      }
+    },
+    {
+      "source_id": "src_https-github-com-jupyterlab-jupyter-ai-jupyter-ai-jupyterlab_e47112b5",
+      "path": "docs/source/developers/entry_points_api/index.md",
+      "declared_name": "entry_points_api",
+      "format": "markdown",
+      "parse_confidence": "medium",
+      "content_digest": "sha256:3ac1e858611fea07ff264a3b902a3cdfafd8b8ee",
+      "upstream_ref": "b5d0deb7cbb21179cdcc75ad42f735ceff8900a2",
+      "url": "https://github.com/jupyterlab/jupyter-ai/blob/b5d0deb7cbb21179cdcc75ad42f735ceff8900a2/docs/source/developers/entry_points_api/index.md",
+      "raw_url": "https://raw.githubusercontent.com/jupyterlab/jupyter-ai/b5d0deb7cbb21179cdcc75ad42f735ceff8900a2/docs/source/developers/entry_points_api/index.md",
+      "raw_metadata": {
+        "github_blob_sha": "3ac1e858611fea07ff264a3b902a3cdfafd8b8ee",
+        "size": 1245
+      }
+    },
+    {
+      "source_id": "src_https-github-com-jupyterlab-jupyter-ai-jupyter-ai-jupyterlab_e47112b5",
+      "path": "docs/source/developers/entry_points_api/model_providers_group.md",
+      "declared_name": "entry_points_api",
+      "format": "markdown",
+      "parse_confidence": "medium",
+      "content_digest": "sha256:1d8aff849229ae6253775b61f4f58d1cf9eaf2c7",
+      "upstream_ref": "b5d0deb7cbb21179cdcc75ad42f735ceff8900a2",
+      "url": "https://github.com/jupyterlab/jupyter-ai/blob/b5d0deb7cbb21179cdcc75ad42f735ceff8900a2/docs/source/developers/entry_points_api/model_providers_group.md",
+      "raw_url": "https://raw.githubusercontent.com/jupyterlab/jupyter-ai/b5d0deb7cbb21179cdcc75ad42f735ceff8900a2/docs/source/developers/entry_points_api/model_providers_group.md",
+      "raw_metadata": {
+        "github_blob_sha": "1d8aff849229ae6253775b61f4f58d1cf9eaf2c7",
+        "size": 12163
+      }
+    },
+    {
+      "source_id": "src_https-github-com-jupyterlab-jupyter-ai-jupyter-ai-jupyterlab_e47112b5",
+      "path": "docs/source/developers/entry_points_api/personas_group.md",
+      "declared_name": "entry_points_api",
+      "format": "markdown",
+      "parse_confidence": "medium",
+      "content_digest": "sha256:7ae52bf6d2bc6236a8f0db63b0f5e48ee58ac12a",
+      "upstream_ref": "b5d0deb7cbb21179cdcc75ad42f735ceff8900a2",
+      "url": "https://github.com/jupyterlab/jupyter-ai/blob/b5d0deb7cbb21179cdcc75ad42f735ceff8900a2/docs/source/developers/entry_points_api/personas_group.md",
+      "raw_url": "https://raw.githubusercontent.com/jupyterlab/jupyter-ai/b5d0deb7cbb21179cdcc75ad42f735ceff8900a2/docs/source/developers/entry_points_api/personas_group.md",
+      "raw_metadata": {
+        "github_blob_sha": "7ae52bf6d2bc6236a8f0db63b0f5e48ee58ac12a",
+        "size": 7351
+      }
+    },
+    {
+      "source_id": "src_https-github-com-jupyterlab-jupyter-ai-jupyter-ai-jupyterlab_e47112b5",
+      "path": "docs/source/developers/entry_points_api/providing_entry_points.md",
+      "declared_name": "entry_points_api",
+      "format": "markdown",
+      "parse_confidence": "medium",
+      "content_digest": "sha256:976e957a3710e4bdb7fd6ff16af749039269b0e7",
+      "upstream_ref": "b5d0deb7cbb21179cdcc75ad42f735ceff8900a2",
+      "url": "https://github.com/jupyterlab/jupyter-ai/blob/b5d0deb7cbb21179cdcc75ad42f735ceff8900a2/docs/source/developers/entry_points_api/providing_entry_points.md",
+      "raw_url": "https://raw.githubusercontent.com/jupyterlab/jupyter-ai/b5d0deb7cbb21179cdcc75ad42f735ceff8900a2/docs/source/developers/entry_points_api/providing_entry_points.md",
+      "raw_metadata": {
+        "github_blob_sha": "976e957a3710e4bdb7fd6ff16af749039269b0e7",
+        "size": 1626
+      }
+    },
+    {
+      "source_id": "src_https-github-com-jupyterlab-jupyter-ai-jupyter-ai-jupyterlab_e47112b5",
+      "path": "docs/source/developers/index.md",
+      "declared_name": "developers",
+      "format": "markdown",
+      "parse_confidence": "medium",
+      "content_digest": "sha256:f97ef00fd02f120052e8f2ff481cb21f0c6d556d",
+      "upstream_ref": "b5d0deb7cbb21179cdcc75ad42f735ceff8900a2",
+      "url": "https://github.com/jupyterlab/jupyter-ai/blob/b5d0deb7cbb21179cdcc75ad42f735ceff8900a2/docs/source/developers/index.md",
+      "raw_url": "https://raw.githubusercontent.com/jupyterlab/jupyter-ai/b5d0deb7cbb21179cdcc75ad42f735ceff8900a2/docs/source/developers/index.md",
+      "raw_metadata": {
+        "github_blob_sha": "f97ef00fd02f120052e8f2ff481cb21f0c6d556d",
+        "size": 1728
+      }
+    },
+    {
+      "source_id": "src_https-github-com-jupyterlab-jupyter-ai-jupyter-ai-jupyterlab_e47112b5",
+      "path": "docs/source/getting-started.md",
+      "declared_name": "source",
+      "format": "markdown",
+      "parse_confidence": "medium",
+      "content_digest": "sha256:e89616fa6e2b8c577eb03594f8618a25a48e18be",
+      "upstream_ref": "b5d0deb7cbb21179cdcc75ad42f735ceff8900a2",
+      "url": "https://github.com/jupyterlab/jupyter-ai/blob/b5d0deb7cbb21179cdcc75ad42f735ceff8900a2/docs/source/getting-started.md",
+      "raw_url": "https://raw.githubusercontent.com/jupyterlab/jupyter-ai/b5d0deb7cbb21179cdcc75ad42f735ceff8900a2/docs/source/getting-started.md",
+      "raw_metadata": {
+        "github_blob_sha": "e89616fa6e2b8c577eb03594f8618a25a48e18be",
+        "size": 5841
+      }
+    },
+    {
+      "source_id": "src_https-github-com-jupyterlab-jupyter-ai-jupyter-ai-jupyterlab_e47112b5",
+      "path": "docs/source/index.md",
+      "declared_name": "source",
+      "format": "markdown",
+      "parse_confidence": "medium",
+      "content_digest": "sha256:5fbf4cd04796a8b9479a0c062661e68c6358c165",
+      "upstream_ref": "b5d0deb7cbb21179cdcc75ad42f735ceff8900a2",
+      "url": "https://github.com/jupyterlab/jupyter-ai/blob/b5d0deb7cbb21179cdcc75ad42f735ceff8900a2/docs/source/index.md",
+      "raw_url": "https://raw.githubusercontent.com/jupyterlab/jupyter-ai/b5d0deb7cbb21179cdcc75ad42f735ceff8900a2/docs/source/index.md",
+      "raw_metadata": {
+        "github_blob_sha": "5fbf4cd04796a8b9479a0c062661e68c6358c165",
+        "size": 1445
+      }
+    },
+    {
+      "source_id": "src_https-github-com-jupyterlab-jupyter-ai-jupyter-ai-jupyterlab_e47112b5",
+      "path": "docs/source/roadmap/index.md",
+      "declared_name": "roadmap",
+      "format": "markdown",
+      "parse_confidence": "medium",
+      "content_digest": "sha256:af7fa413c2d373c976f5ecff75b9be8053de7fcf",
+      "upstream_ref": "b5d0deb7cbb21179cdcc75ad42f735ceff8900a2",
+      "url": "https://github.com/jupyterlab/jupyter-ai/blob/b5d0deb7cbb21179cdcc75ad42f735ceff8900a2/docs/source/roadmap/index.md",
+      "raw_url": "https://raw.githubusercontent.com/jupyterlab/jupyter-ai/b5d0deb7cbb21179cdcc75ad42f735ceff8900a2/docs/source/roadmap/index.md",
+      "raw_metadata": {
+        "github_blob_sha": "af7fa413c2d373c976f5ecff75b9be8053de7fcf",
+        "size": 162
+      }
+    },
+    {
+      "source_id": "src_https-github-com-jupyterlab-jupyter-ai-jupyter-ai-jupyterlab_e47112b5",
+      "path": "docs/source/roadmap/jupyter-ai-3.1.md",
+      "declared_name": "roadmap",
+      "format": "markdown",
+      "parse_confidence": "medium",
+      "content_digest": "sha256:458ce78bd11089ba2e21d3dc7c9862eb528d0020",
+      "upstream_ref": "b5d0deb7cbb21179cdcc75ad42f735ceff8900a2",
+      "url": "https://github.com/jupyterlab/jupyter-ai/blob/b5d0deb7cbb21179cdcc75ad42f735ceff8900a2/docs/source/roadmap/jupyter-ai-3.1.md",
+      "raw_url": "https://raw.githubusercontent.com/jupyterlab/jupyter-ai/b5d0deb7cbb21179cdcc75ad42f735ceff8900a2/docs/source/roadmap/jupyter-ai-3.1.md",
+      "raw_metadata": {
+        "github_blob_sha": "458ce78bd11089ba2e21d3dc7c9862eb528d0020",
+        "size": 12526
+      }
+    },
+    {
+      "source_id": "src_https-github-com-jupyterlab-jupyter-ai-jupyter-ai-jupyterlab_e47112b5",
+      "path": "docs/source/roadmap/jupyter-ai-3.2.md",
+      "declared_name": "roadmap",
+      "format": "markdown",
+      "parse_confidence": "medium",
+      "content_digest": "sha256:08e7594de3f9be8a46a5df44221521e91dae86db",
+      "upstream_ref": "b5d0deb7cbb21179cdcc75ad42f735ceff8900a2",
+      "url": "https://github.com/jupyterlab/jupyter-ai/blob/b5d0deb7cbb21179cdcc75ad42f735ceff8900a2/docs/source/roadmap/jupyter-ai-3.2.md",
+      "raw_url": "https://raw.githubusercontent.com/jupyterlab/jupyter-ai/b5d0deb7cbb21179cdcc75ad42f735ceff8900a2/docs/source/roadmap/jupyter-ai-3.2.md",
+      "raw_metadata": {
+        "github_blob_sha": "08e7594de3f9be8a46a5df44221521e91dae86db",
+        "size": 21127
+      }
+    },
+    {
+      "source_id": "src_https-github-com-jupyterlab-jupyter-ai-jupyter-ai-jupyterlab_e47112b5",
+      "path": "docs/source/users/index.md",
+      "declared_name": "users",
+      "format": "markdown",
+      "parse_confidence": "medium",
+      "content_digest": "sha256:7f4a638d06ebf05edef1c9073ffa608ff48a67de",
+      "upstream_ref": "b5d0deb7cbb21179cdcc75ad42f735ceff8900a2",
+      "url": "https://github.com/jupyterlab/jupyter-ai/blob/b5d0deb7cbb21179cdcc75ad42f735ceff8900a2/docs/source/users/index.md",
+      "raw_url": "https://raw.githubusercontent.com/jupyterlab/jupyter-ai/b5d0deb7cbb21179cdcc75ad42f735ceff8900a2/docs/source/users/index.md",
+      "raw_metadata": {
+        "github_blob_sha": "7f4a638d06ebf05edef1c9073ffa608ff48a67de",
+        "size": 8894
+      }
+    },
+    {
+      "source_id": "src_https-github-com-jupyterlab-jupyter-ai-jupyter-ai-jupyterlab_e47112b5",
+      "path": "docs/source/users/jupyternaut/bedrock.md",
+      "declared_name": "jupyternaut",
+      "format": "markdown",
+      "parse_confidence": "medium",
+      "content_digest": "sha256:96d311a7505fa9003a8766366330601740b754d1",
+      "upstream_ref": "b5d0deb7cbb21179cdcc75ad42f735ceff8900a2",
+      "url": "https://github.com/jupyterlab/jupyter-ai/blob/b5d0deb7cbb21179cdcc75ad42f735ceff8900a2/docs/source/users/jupyternaut/bedrock.md",
+      "raw_url": "https://raw.githubusercontent.com/jupyterlab/jupyter-ai/b5d0deb7cbb21179cdcc75ad42f735ceff8900a2/docs/source/users/jupyternaut/bedrock.md",
+      "raw_metadata": {
+        "github_blob_sha": "96d311a7505fa9003a8766366330601740b754d1",
+        "size": 7463
+      }
+    },
+    {
+      "source_id": "src_https-github-com-jupyterlab-jupyter-ai-jupyter-ai-jupyterlab_e47112b5",
+      "path": "docs/source/users/jupyternaut/index.md",
+      "declared_name": "jupyternaut",
+      "format": "markdown",
+      "parse_confidence": "medium",
+      "content_digest": "sha256:8cbd230674f14cd8f2d72c643d92214dbbc11b09",
+      "upstream_ref": "b5d0deb7cbb21179cdcc75ad42f735ceff8900a2",
+      "url": "https://github.com/jupyterlab/jupyter-ai/blob/b5d0deb7cbb21179cdcc75ad42f735ceff8900a2/docs/source/users/jupyternaut/index.md",
+      "raw_url": "https://raw.githubusercontent.com/jupyterlab/jupyter-ai/b5d0deb7cbb21179cdcc75ad42f735ceff8900a2/docs/source/users/jupyternaut/index.md",
+      "raw_metadata": {
+        "github_blob_sha": "8cbd230674f14cd8f2d72c643d92214dbbc11b09",
+        "size": 13734
+      }
+    },
+    {
+      "source_id": "src_https-github-com-jupyterlab-jupyter-ai-jupyter-ai-jupyterlab_e47112b5",
+      "path": "docs/source/users/jupyternaut/vllm.md",
+      "declared_name": "jupyternaut",
+      "format": "markdown",
+      "parse_confidence": "medium",
+      "content_digest": "sha256:b6c2c7931434c189e34d02deb219fa658183d385",
+      "upstream_ref": "b5d0deb7cbb21179cdcc75ad42f735ceff8900a2",
+      "url": "https://github.com/jupyterlab/jupyter-ai/blob/b5d0deb7cbb21179cdcc75ad42f735ceff8900a2/docs/source/users/jupyternaut/vllm.md",
+      "raw_url": "https://raw.githubusercontent.com/jupyterlab/jupyter-ai/b5d0deb7cbb21179cdcc75ad42f735ceff8900a2/docs/source/users/jupyternaut/vllm.md",
+      "raw_metadata": {
+        "github_blob_sha": "b6c2c7931434c189e34d02deb219fa658183d385",
+        "size": 2117
+      }
+    },
+    {
+      "source_id": "src_https-github-com-jupyterlab-jupyter-ai-jupyter-ai-jupyterlab_e47112b5",
+      "path": "docs/source/users/magic_commands/index.md",
+      "declared_name": "magic_commands",
+      "format": "markdown",
+      "parse_confidence": "medium",
+      "content_digest": "sha256:53d5ad964069d6c2d68c24b8284ede293837f67d",
+      "upstream_ref": "b5d0deb7cbb21179cdcc75ad42f735ceff8900a2",
+      "url": "https://github.com/jupyterlab/jupyter-ai/blob/b5d0deb7cbb21179cdcc75ad42f735ceff8900a2/docs/source/users/magic_commands/index.md",
+      "raw_url": "https://raw.githubusercontent.com/jupyterlab/jupyter-ai/b5d0deb7cbb21179cdcc75ad42f735ceff8900a2/docs/source/users/magic_commands/index.md",
+      "raw_metadata": {
+        "github_blob_sha": "53d5ad964069d6c2d68c24b8284ede293837f67d",
+        "size": 11549
+      }
+    },
+    {
+      "source_id": "src_https-github-com-jupyterlab-jupyter-ai-jupyter-ai-jupyterlab_e47112b5",
+      "path": "docs/source/users/troubleshooting.md",
+      "declared_name": "users",
+      "format": "markdown",
+      "parse_confidence": "medium",
+      "content_digest": "sha256:7f989a09ef4aab45cdcf5b1ace1fbfd055308d0e",
+      "upstream_ref": "b5d0deb7cbb21179cdcc75ad42f735ceff8900a2",
+      "url": "https://github.com/jupyterlab/jupyter-ai/blob/b5d0deb7cbb21179cdcc75ad42f735ceff8900a2/docs/source/users/troubleshooting.md",
+      "raw_url": "https://raw.githubusercontent.com/jupyterlab/jupyter-ai/b5d0deb7cbb21179cdcc75ad42f735ceff8900a2/docs/source/users/troubleshooting.md",
+      "raw_metadata": {
+        "github_blob_sha": "7f989a09ef4aab45cdcf5b1ace1fbfd055308d0e",
+        "size": 2237
+      }
+    },
+    {
+      "source_id": "src_https-github-com-jupyterlab-jupyter-ai-jupyter-ai-jupyterlab_e47112b5",
+      "path": "docs/source/users/versioning.md",
+      "declared_name": "users",
+      "format": "markdown",
+      "parse_confidence": "medium",
+      "content_digest": "sha256:7fd944dd237c870a77f218e89cb0f5eab07defa2",
+      "upstream_ref": "b5d0deb7cbb21179cdcc75ad42f735ceff8900a2",
+      "url": "https://github.com/jupyterlab/jupyter-ai/blob/b5d0deb7cbb21179cdcc75ad42f735ceff8900a2/docs/source/users/versioning.md",
+      "raw_url": "https://raw.githubusercontent.com/jupyterlab/jupyter-ai/b5d0deb7cbb21179cdcc75ad42f735ceff8900a2/docs/source/users/versioning.md",
+      "raw_metadata": {
+        "github_blob_sha": "7fd944dd237c870a77f218e89cb0f5eab07defa2",
+        "size": 3092
+      }
+    }
+  ],
+  "digest": "sha256:1b0161ced31a7b24cb29ef7a41ee5a79a4fc61f728d20a2c960c2b2e99a73e5c"
+}

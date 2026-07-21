@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "source_id": "src_https-github-com-fujishigetemma-semantic-scholar-mcp-semantic-scholar-mcp-server_1c7ee5c5",
+  "upstream_ref": "ead98e835620941b26bac952b5e330405693d9c8",
+  "checked_at": "2026-07-13T21:03:14.379Z",
+  "url": "https://github.com/FujishigeTemma/semantic-scholar-mcp",
+  "artifacts": [
+    {
+      "source_id": "src_https-github-com-fujishigetemma-semantic-scholar-mcp-semantic-scholar-mcp-server_1c7ee5c5",
+      "path": ".claude/settings.json",
+      "declared_name": ".claude",
+      "format": "markdown",
+      "parse_confidence": "medium",
+      "content_digest": "sha256:47a3aabbcc51282d19a83c72b46f70d0f0fd026d",
+      "upstream_ref": "ead98e835620941b26bac952b5e330405693d9c8",
+      "url": "https://github.com/FujishigeTemma/semantic-scholar-mcp/blob/ead98e835620941b26bac952b5e330405693d9c8/.claude/settings.json",
+      "raw_url": "https://raw.githubusercontent.com/FujishigeTemma/semantic-scholar-mcp/ead98e835620941b26bac952b5e330405693d9c8/.claude/settings.json",
+      "raw_metadata": {
+        "github_blob_sha": "47a3aabbcc51282d19a83c72b46f70d0f0fd026d",
+        "size": 353
+      }
+    }
+  ],
+  "digest": "sha256:a475bc8407f202bfe899d414b7c301e66a0d705523aee6be9e017b1559556195"
+}
