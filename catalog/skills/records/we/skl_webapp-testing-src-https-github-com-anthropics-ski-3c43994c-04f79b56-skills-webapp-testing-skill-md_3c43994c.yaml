@@ -14,7 +14,7 @@ curation:
 display_name: webapp-testing
 identity:
   aliases: []
-  current_version_id: sha256:4726215301db64a0cc4d41fc3219c61f37a30f4a
+  current_version_id: git_sha1:4726215301db64a0cc4d41fc3219c61f37a30f4a
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

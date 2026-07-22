@@ -1,0 +1,16 @@
+{
+  "binding": {
+    "canonical_skill_id": "skl_bgpt-paper-search-src-https-github-com-k-dense-ai-3b44dc70-db6d39-skills-bgpt-paper-search-skill-md_3b44dc70",
+    "current_version_id": "git_sha1:2eeb8ac48dbb1282f44d828be94aaa3da43c15ba",
+    "expected_output_path": "catalog/analyses/bg/skl_bgpt-paper-search-src-https-github-com-k-dense-ai-3b44dc70-db6d39-skills-bgpt-paper-search-skill-md_3b44dc70.md",
+    "git_blob_oid": "git_sha1:2eeb8ac48dbb1282f44d828be94aaa3da43c15ba",
+    "pinned_commit": "831d49eb77eed3c792be2970921b46764012ef00",
+    "raw_url": "https://raw.githubusercontent.com/K-Dense-AI/scientific-agent-skills/831d49eb77eed3c792be2970921b46764012ef00/skills/bgpt-paper-search/SKILL.md",
+    "remote_path": "skills/bgpt-paper-search/SKILL.md",
+    "source_id": "src_https-github-com-k-dense-ai-scientific-agent-skills-k-dense-scientific-agent-skills_5bdb6d39"
+  },
+  "dispatch_digest": "sha256:f099466fbdc3fc19590df08f037121b63a7a9fbd987c6a3662df57cefa81e868",
+  "kind": "skill-analysis-dispatch",
+  "run_id": "run_2026-07-22-030000",
+  "schema_version": 2
+}

@@ -14,7 +14,7 @@ curation:
 display_name: azure-monitor-ingestion-java
 identity:
   aliases: []
-  current_version_id: sha256:fdafd0a6c66489ff4096732c092c8e17671527e7
+  current_version_id: git_sha1:fdafd0a6c66489ff4096732c092c8e17671527e7
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

@@ -14,7 +14,7 @@ curation:
 display_name: claude-api
 identity:
   aliases: []
-  current_version_id: sha256:9a9407309936d7fd36858296374c246dc2c27e46
+  current_version_id: git_sha1:9a9407309936d7fd36858296374c246dc2c27e46
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

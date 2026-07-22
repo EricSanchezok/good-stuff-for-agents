@@ -14,7 +14,7 @@ curation:
 display_name: develop-design-rationale
 identity:
   aliases: []
-  current_version_id: sha256:0059edd35fe1b3b816d6d5d135b31b2ba7d5b980
+  current_version_id: git_sha1:0059edd35fe1b3b816d6d5d135b31b2ba7d5b980
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

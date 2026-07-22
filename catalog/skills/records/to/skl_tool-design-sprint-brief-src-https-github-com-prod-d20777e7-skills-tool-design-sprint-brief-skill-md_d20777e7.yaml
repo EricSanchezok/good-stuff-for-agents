@@ -14,7 +14,7 @@ curation:
 display_name: tool-design-sprint-brief
 identity:
   aliases: []
-  current_version_id: sha256:92e96c2976750a1aeae15e88867c57ab8088e6f6
+  current_version_id: git_sha1:92e96c2976750a1aeae15e88867c57ab8088e6f6
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

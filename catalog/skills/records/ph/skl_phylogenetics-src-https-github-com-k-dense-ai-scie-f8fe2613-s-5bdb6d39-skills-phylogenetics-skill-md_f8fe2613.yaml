@@ -14,7 +14,7 @@ curation:
 display_name: phylogenetics
 identity:
   aliases: []
-  current_version_id: sha256:f77f46382c4e943e735193a5c9e9dbb98066b437
+  current_version_id: git_sha1:f77f46382c4e943e735193a5c9e9dbb98066b437
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

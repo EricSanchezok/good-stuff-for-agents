@@ -14,7 +14,7 @@ curation:
 display_name: azure-ai-formrecognizer-java
 identity:
   aliases: []
-  current_version_id: sha256:9ebbe26711148505aa6b53738036f058fb523f2c
+  current_version_id: git_sha1:9ebbe26711148505aa6b53738036f058fb523f2c
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

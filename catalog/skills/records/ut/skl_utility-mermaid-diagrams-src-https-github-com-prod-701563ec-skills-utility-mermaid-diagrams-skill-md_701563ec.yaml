@@ -14,7 +14,7 @@ curation:
 display_name: utility-mermaid-diagrams
 identity:
   aliases: []
-  current_version_id: sha256:abbba2b381d082c0dd1757a3c6b0c3d38bf8e18f
+  current_version_id: git_sha1:abbba2b381d082c0dd1757a3c6b0c3d38bf8e18f
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

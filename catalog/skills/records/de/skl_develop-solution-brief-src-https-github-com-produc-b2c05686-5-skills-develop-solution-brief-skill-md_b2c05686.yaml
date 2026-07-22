@@ -14,7 +14,7 @@ curation:
 display_name: develop-solution-brief
 identity:
   aliases: []
-  current_version_id: sha256:3b30f88e9d5dff7c62dcb76e4308ede942a5ea28
+  current_version_id: git_sha1:3b30f88e9d5dff7c62dcb76e4308ede942a5ea28
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

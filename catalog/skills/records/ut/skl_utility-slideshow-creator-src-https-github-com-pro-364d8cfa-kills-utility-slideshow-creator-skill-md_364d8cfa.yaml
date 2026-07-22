@@ -14,7 +14,7 @@ curation:
 display_name: utility-slideshow-creator
 identity:
   aliases: []
-  current_version_id: sha256:54a5515e961032b8476414afb332d8e6f83d6a09
+  current_version_id: git_sha1:54a5515e961032b8476414afb332d8e6f83d6a09
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

@@ -1,0 +1,16 @@
+{
+  "binding": {
+    "canonical_skill_id": "skl_geniml-src-https-github-com-k-dense-ai-scientific-a6822013-t-skills-5bdb6d39-skills-geniml-skill-md_a6822013",
+    "current_version_id": "git_sha1:7fb6aa03ae49fb89ec6c9ac821b356cac2de0ab3",
+    "expected_output_path": "catalog/analyses/ge/skl_geniml-src-https-github-com-k-dense-ai-scientific-a6822013-t-skills-5bdb6d39-skills-geniml-skill-md_a6822013.md",
+    "git_blob_oid": "git_sha1:7fb6aa03ae49fb89ec6c9ac821b356cac2de0ab3",
+    "pinned_commit": "831d49eb77eed3c792be2970921b46764012ef00",
+    "raw_url": "https://raw.githubusercontent.com/K-Dense-AI/scientific-agent-skills/831d49eb77eed3c792be2970921b46764012ef00/skills/geniml/SKILL.md",
+    "remote_path": "skills/geniml/SKILL.md",
+    "source_id": "src_https-github-com-k-dense-ai-scientific-agent-skills-k-dense-scientific-agent-skills_5bdb6d39"
+  },
+  "dispatch_digest": "sha256:720d88696cab95e2eec280daaa5e2737fb42080d659b8661599ff3aca2275e48",
+  "kind": "skill-analysis-dispatch",
+  "run_id": "run_2026-07-22-030000",
+  "schema_version": 2
+}

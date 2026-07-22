@@ -14,7 +14,7 @@ curation:
 display_name: matchms
 identity:
   aliases: []
-  current_version_id: sha256:f46a08700bd049432476c0bc6ab1651ff2f92134
+  current_version_id: git_sha1:f46a08700bd049432476c0bc6ab1651ff2f92134
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

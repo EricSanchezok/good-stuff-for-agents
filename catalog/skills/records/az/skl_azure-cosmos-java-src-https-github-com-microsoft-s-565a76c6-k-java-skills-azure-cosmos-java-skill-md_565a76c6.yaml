@@ -14,7 +14,7 @@ curation:
 display_name: azure-cosmos-java
 identity:
   aliases: []
-  current_version_id: sha256:21a14dce1c668ef29e3267b262be6123533eb92e
+  current_version_id: git_sha1:21a14dce1c668ef29e3267b262be6123533eb92e
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

@@ -14,7 +14,7 @@ curation:
 display_name: build-slides-figma
 identity:
   aliases: []
-  current_version_id: sha256:beed83a9376cba645bb1349a62e2cca2a8b4bcfd
+  current_version_id: git_sha1:beed83a9376cba645bb1349a62e2cca2a8b4bcfd
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

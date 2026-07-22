@@ -14,7 +14,7 @@ curation:
 display_name: pptx
 identity:
   aliases: []
-  current_version_id: sha256:7702d97e4544af5a700ef703509e999f5d8a61ef
+  current_version_id: git_sha1:7702d97e4544af5a700ef703509e999f5d8a61ef
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

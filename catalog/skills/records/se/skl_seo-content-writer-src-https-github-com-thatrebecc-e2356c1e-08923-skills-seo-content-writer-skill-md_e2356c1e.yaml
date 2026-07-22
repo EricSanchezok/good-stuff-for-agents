@@ -14,7 +14,7 @@ curation:
 display_name: seo-content-writer
 identity:
   aliases: []
-  current_version_id: sha256:d5c5f9d1812fd1b9afd73e4e6a139fb761ee1b40
+  current_version_id: git_sha1:d5c5f9d1812fd1b9afd73e4e6a139fb761ee1b40
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

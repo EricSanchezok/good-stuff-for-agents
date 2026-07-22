@@ -14,7 +14,7 @@ curation:
 display_name: pymatgen
 identity:
   aliases: []
-  current_version_id: sha256:182a5fb0240ae69fe9852683bf21e5959657da1a
+  current_version_id: git_sha1:182a5fb0240ae69fe9852683bf21e5959657da1a
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

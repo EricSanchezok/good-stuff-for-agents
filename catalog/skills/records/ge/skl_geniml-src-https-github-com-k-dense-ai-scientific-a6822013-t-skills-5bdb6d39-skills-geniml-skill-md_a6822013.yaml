@@ -14,7 +14,7 @@ curation:
 display_name: geniml
 identity:
   aliases: []
-  current_version_id: sha256:7fb6aa03ae49fb89ec6c9ac821b356cac2de0ab3
+  current_version_id: git_sha1:7fb6aa03ae49fb89ec6c9ac821b356cac2de0ab3
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

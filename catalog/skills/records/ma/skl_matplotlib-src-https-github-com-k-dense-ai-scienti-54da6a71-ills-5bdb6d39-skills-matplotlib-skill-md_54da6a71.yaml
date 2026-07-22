@@ -14,7 +14,7 @@ curation:
 display_name: matplotlib
 identity:
   aliases: []
-  current_version_id: sha256:a193a837709a466783d5f0780c410c73a674bbe0
+  current_version_id: git_sha1:a193a837709a466783d5f0780c410c73a674bbe0
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

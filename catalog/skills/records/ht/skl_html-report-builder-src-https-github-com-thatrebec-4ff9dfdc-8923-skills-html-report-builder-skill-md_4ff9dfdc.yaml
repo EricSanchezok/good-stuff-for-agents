@@ -14,7 +14,7 @@ curation:
 display_name: html-report-builder
 identity:
   aliases: []
-  current_version_id: sha256:2137cba60df82d547afe78c2f4dd2c411fc532a5
+  current_version_id: git_sha1:2137cba60df82d547afe78c2f4dd2c411fc532a5
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

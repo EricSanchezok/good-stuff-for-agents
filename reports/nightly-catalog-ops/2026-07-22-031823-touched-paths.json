@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "run_id": "run_2026-07-22-031823",
+  "mode": "ordinary",
+  "base_head": "22f51e30bd390673ac6b8dd037788f64cfb2f8ed",
+  "authorization": {
+    "source": "user",
+    "operator": "eric"
+  },
+  "paths": [
+    "catalog/analyses/ad/skl_adaptyv-src-https-github-com-k-dense-ai-scientific-4be6f359-skills-5bdb6d39-skills-adaptyv-skill-md_4be6f359.md",
+    "catalog/analyses/ae/skl_aeon-src-https-github-com-k-dense-ai-scientific-ag-14af17c5-ent-skills-5bdb6d39-skills-aeon-skill-md_14af17c5.md",
+    "catalog/analyses/ar/skl_arbor-src-https-github-com-k-dense-ai-scientific-a-04c3d5ab-nt-skills-5bdb6d39-skills-arbor-skill-md_04c3d5ab.md",
+    "catalog/analyses/ar/skl_arboreto-src-https-github-com-k-dense-ai-scientifi-30006f36-skills-5bdb6d39-skills-arboreto-skill-md_30006f36.md",
+    "catalog/analyses/as/skl_astropy-src-https-github-com-k-dense-ai-scientific-1d293705-skills-5bdb6d39-skills-astropy-skill-md_1d293705.md",
+    "catalog/analyses/au/skl_autoskill-src-https-github-com-k-dense-ai-scientif-76c2de88-kills-5bdb6d39-skills-autoskill-skill-md_76c2de88.md",
+    "catalog/analyses/bi/skl_biopython-src-https-github-com-k-dense-ai-scientif-35c1c6e1-kills-5bdb6d39-skills-biopython-skill-md_35c1c6e1.md",
+    "catalog/analyses/bu/skl_bulk-rnaseq-src-https-github-com-k-dense-ai-scient-866022f1-lls-5bdb6d39-skills-bulk-rnaseq-skill-md_866022f1.md",
+    "catalog/analyses/ce/skl_cellxgene-census-src-https-github-com-k-dense-ai-s-7d8fdd5f-bdb6d39-skills-cellxgene-census-skill-md_7d8fdd5f.md",
+    "catalog/analyses/co/skl_cobrapy-src-https-github-com-k-dense-ai-scientific-ca78984a-skills-5bdb6d39-skills-cobrapy-skill-md_ca78984a.md",
+    "catalog/indexes/manifest.json",
+    "reports/nightly-catalog-ops/2026-07-22-031823-touched-paths.json",
+    "reports/nightly-catalog-ops/2026-07-22-031823-summary.json"
+  ]
+}

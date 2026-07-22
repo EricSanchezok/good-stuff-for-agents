@@ -14,7 +14,7 @@ curation:
 display_name: deepchem
 identity:
   aliases: []
-  current_version_id: sha256:99e0635f071285ac1693add9fd6fd6ea5098c7d2
+  current_version_id: git_sha1:99e0635f071285ac1693add9fd6fd6ea5098c7d2
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

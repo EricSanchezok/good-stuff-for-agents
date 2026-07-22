@@ -2,7 +2,7 @@
   "schema_version": 1,
   "source_id": "src_https-github-com-southleft-skills-for-figma-skills-for-figma-southleft_ea9f2b3d",
   "upstream_ref": "79bda1e76044d1e9d9b60bb211507e64833af92b",
-  "checked_at": "2026-07-13T21:03:29.427Z",
+  "checked_at": "2026-07-22T02:48:55.578Z",
   "url": "https://github.com/southleft/skills-for-figma",
   "artifacts": [
     {
@@ -11,12 +11,22 @@
       "declared_name": "analyze-component-set-figma",
       "format": "SKILL.md",
       "parse_confidence": "high",
-      "content_digest": "sha256:10d82aaaa96f8d893618b7cb7499b00471ef759b",
+      "content_digest": "git_sha1:10d82aaaa96f8d893618b7cb7499b00471ef759b",
       "upstream_ref": "79bda1e76044d1e9d9b60bb211507e64833af92b",
+      "git_blob_oid": "git_sha1:10d82aaaa96f8d893618b7cb7499b00471ef759b",
       "url": "https://github.com/southleft/skills-for-figma/blob/79bda1e76044d1e9d9b60bb211507e64833af92b/skills/analyze-component-set-figma/SKILL.md",
       "raw_url": "https://raw.githubusercontent.com/southleft/skills-for-figma/79bda1e76044d1e9d9b60bb211507e64833af92b/skills/analyze-component-set-figma/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-southleft-skills-for-figma-skills-for-figma-southleft_ea9f2b3d",
+        "canonical_skill_id": null,
+        "remote_path": "skills/analyze-component-set-figma/SKILL.md",
+        "pinned_commit": "79bda1e76044d1e9d9b60bb211507e64833af92b",
+        "git_blob_oid": "git_sha1:10d82aaaa96f8d893618b7cb7499b00471ef759b",
+        "raw_url": "https://raw.githubusercontent.com/southleft/skills-for-figma/79bda1e76044d1e9d9b60bb211507e64833af92b/skills/analyze-component-set-figma/SKILL.md",
+        "expected_output_path": null
+      },
       "raw_metadata": {
-        "github_blob_sha": "10d82aaaa96f8d893618b7cb7499b00471ef759b",
+        "github_blob_oid": "git_sha1:10d82aaaa96f8d893618b7cb7499b00471ef759b",
         "size": 4905
       }
     },
@@ -26,12 +36,22 @@
       "declared_name": "annotations-figma",
       "format": "SKILL.md",
       "parse_confidence": "high",
-      "content_digest": "sha256:2a5833f4827e941cf28d899b4be6eb7fd33d95f2",
+      "content_digest": "git_sha1:2a5833f4827e941cf28d899b4be6eb7fd33d95f2",
       "upstream_ref": "79bda1e76044d1e9d9b60bb211507e64833af92b",
+      "git_blob_oid": "git_sha1:2a5833f4827e941cf28d899b4be6eb7fd33d95f2",
       "url": "https://github.com/southleft/skills-for-figma/blob/79bda1e76044d1e9d9b60bb211507e64833af92b/skills/annotations-figma/SKILL.md",
       "raw_url": "https://raw.githubusercontent.com/southleft/skills-for-figma/79bda1e76044d1e9d9b60bb211507e64833af92b/skills/annotations-figma/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-southleft-skills-for-figma-skills-for-figma-southleft_ea9f2b3d",
+        "canonical_skill_id": null,
+        "remote_path": "skills/annotations-figma/SKILL.md",
+        "pinned_commit": "79bda1e76044d1e9d9b60bb211507e64833af92b",
+        "git_blob_oid": "git_sha1:2a5833f4827e941cf28d899b4be6eb7fd33d95f2",
+        "raw_url": "https://raw.githubusercontent.com/southleft/skills-for-figma/79bda1e76044d1e9d9b60bb211507e64833af92b/skills/annotations-figma/SKILL.md",
+        "expected_output_path": null
+      },
       "raw_metadata": {
-        "github_blob_sha": "2a5833f4827e941cf28d899b4be6eb7fd33d95f2",
+        "github_blob_oid": "git_sha1:2a5833f4827e941cf28d899b4be6eb7fd33d95f2",
         "size": 3789
       }
     },
@@ -41,12 +61,22 @@
       "declared_name": "arrange-component-set-figma",
       "format": "SKILL.md",
       "parse_confidence": "high",
-      "content_digest": "sha256:f82a1a1f1c691fb4a0b58ba59f4889e148a78571",
+      "content_digest": "git_sha1:f82a1a1f1c691fb4a0b58ba59f4889e148a78571",
       "upstream_ref": "79bda1e76044d1e9d9b60bb211507e64833af92b",
+      "git_blob_oid": "git_sha1:f82a1a1f1c691fb4a0b58ba59f4889e148a78571",
       "url": "https://github.com/southleft/skills-for-figma/blob/79bda1e76044d1e9d9b60bb211507e64833af92b/skills/arrange-component-set-figma/SKILL.md",
       "raw_url": "https://raw.githubusercontent.com/southleft/skills-for-figma/79bda1e76044d1e9d9b60bb211507e64833af92b/skills/arrange-component-set-figma/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-southleft-skills-for-figma-skills-for-figma-southleft_ea9f2b3d",
+        "canonical_skill_id": null,
+        "remote_path": "skills/arrange-component-set-figma/SKILL.md",
+        "pinned_commit": "79bda1e76044d1e9d9b60bb211507e64833af92b",
+        "git_blob_oid": "git_sha1:f82a1a1f1c691fb4a0b58ba59f4889e148a78571",
+        "raw_url": "https://raw.githubusercontent.com/southleft/skills-for-figma/79bda1e76044d1e9d9b60bb211507e64833af92b/skills/arrange-component-set-figma/SKILL.md",
+        "expected_output_path": null
+      },
       "raw_metadata": {
-        "github_blob_sha": "f82a1a1f1c691fb4a0b58ba59f4889e148a78571",
+        "github_blob_oid": "git_sha1:f82a1a1f1c691fb4a0b58ba59f4889e148a78571",
         "size": 4093
       }
     },
@@ -56,12 +86,22 @@
       "declared_name": "audit-accessibility-figma",
       "format": "SKILL.md",
       "parse_confidence": "high",
-      "content_digest": "sha256:74a27f1b5a205c42963d3898c0be6277072b0738",
+      "content_digest": "git_sha1:74a27f1b5a205c42963d3898c0be6277072b0738",
       "upstream_ref": "79bda1e76044d1e9d9b60bb211507e64833af92b",
+      "git_blob_oid": "git_sha1:74a27f1b5a205c42963d3898c0be6277072b0738",
       "url": "https://github.com/southleft/skills-for-figma/blob/79bda1e76044d1e9d9b60bb211507e64833af92b/skills/audit-accessibility-figma/SKILL.md",
       "raw_url": "https://raw.githubusercontent.com/southleft/skills-for-figma/79bda1e76044d1e9d9b60bb211507e64833af92b/skills/audit-accessibility-figma/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-southleft-skills-for-figma-skills-for-figma-southleft_ea9f2b3d",
+        "canonical_skill_id": null,
+        "remote_path": "skills/audit-accessibility-figma/SKILL.md",
+        "pinned_commit": "79bda1e76044d1e9d9b60bb211507e64833af92b",
+        "git_blob_oid": "git_sha1:74a27f1b5a205c42963d3898c0be6277072b0738",
+        "raw_url": "https://raw.githubusercontent.com/southleft/skills-for-figma/79bda1e76044d1e9d9b60bb211507e64833af92b/skills/audit-accessibility-figma/SKILL.md",
+        "expected_output_path": null
+      },
       "raw_metadata": {
-        "github_blob_sha": "74a27f1b5a205c42963d3898c0be6277072b0738",
+        "github_blob_oid": "git_sha1:74a27f1b5a205c42963d3898c0be6277072b0738",
         "size": 3841
       }
     },
@@ -71,12 +111,22 @@
       "declared_name": "build-slides-figma",
       "format": "SKILL.md",
       "parse_confidence": "high",
-      "content_digest": "sha256:beed83a9376cba645bb1349a62e2cca2a8b4bcfd",
+      "content_digest": "git_sha1:beed83a9376cba645bb1349a62e2cca2a8b4bcfd",
       "upstream_ref": "79bda1e76044d1e9d9b60bb211507e64833af92b",
+      "git_blob_oid": "git_sha1:beed83a9376cba645bb1349a62e2cca2a8b4bcfd",
       "url": "https://github.com/southleft/skills-for-figma/blob/79bda1e76044d1e9d9b60bb211507e64833af92b/skills/build-slides-figma/SKILL.md",
       "raw_url": "https://raw.githubusercontent.com/southleft/skills-for-figma/79bda1e76044d1e9d9b60bb211507e64833af92b/skills/build-slides-figma/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-southleft-skills-for-figma-skills-for-figma-southleft_ea9f2b3d",
+        "canonical_skill_id": null,
+        "remote_path": "skills/build-slides-figma/SKILL.md",
+        "pinned_commit": "79bda1e76044d1e9d9b60bb211507e64833af92b",
+        "git_blob_oid": "git_sha1:beed83a9376cba645bb1349a62e2cca2a8b4bcfd",
+        "raw_url": "https://raw.githubusercontent.com/southleft/skills-for-figma/79bda1e76044d1e9d9b60bb211507e64833af92b/skills/build-slides-figma/SKILL.md",
+        "expected_output_path": null
+      },
       "raw_metadata": {
-        "github_blob_sha": "beed83a9376cba645bb1349a62e2cca2a8b4bcfd",
+        "github_blob_oid": "git_sha1:beed83a9376cba645bb1349a62e2cca2a8b4bcfd",
         "size": 3535
       }
     },
@@ -86,12 +136,22 @@
       "declared_name": "check-design-parity-figma",
       "format": "SKILL.md",
       "parse_confidence": "high",
-      "content_digest": "sha256:8756c3fffbea687c79a33e590fe73d1ebf2c059f",
+      "content_digest": "git_sha1:8756c3fffbea687c79a33e590fe73d1ebf2c059f",
       "upstream_ref": "79bda1e76044d1e9d9b60bb211507e64833af92b",
+      "git_blob_oid": "git_sha1:8756c3fffbea687c79a33e590fe73d1ebf2c059f",
       "url": "https://github.com/southleft/skills-for-figma/blob/79bda1e76044d1e9d9b60bb211507e64833af92b/skills/check-design-parity-figma/SKILL.md",
       "raw_url": "https://raw.githubusercontent.com/southleft/skills-for-figma/79bda1e76044d1e9d9b60bb211507e64833af92b/skills/check-design-parity-figma/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-southleft-skills-for-figma-skills-for-figma-southleft_ea9f2b3d",
+        "canonical_skill_id": null,
+        "remote_path": "skills/check-design-parity-figma/SKILL.md",
+        "pinned_commit": "79bda1e76044d1e9d9b60bb211507e64833af92b",
+        "git_blob_oid": "git_sha1:8756c3fffbea687c79a33e590fe73d1ebf2c059f",
+        "raw_url": "https://raw.githubusercontent.com/southleft/skills-for-figma/79bda1e76044d1e9d9b60bb211507e64833af92b/skills/check-design-parity-figma/SKILL.md",
+        "expected_output_path": null
+      },
       "raw_metadata": {
-        "github_blob_sha": "8756c3fffbea687c79a33e590fe73d1ebf2c059f",
+        "github_blob_oid": "git_sha1:8756c3fffbea687c79a33e590fe73d1ebf2c059f",
         "size": 4026
       }
     },
@@ -101,12 +161,22 @@
       "declared_name": "component-properties-figma",
       "format": "SKILL.md",
       "parse_confidence": "high",
-      "content_digest": "sha256:666861a78fea4b2b554a449b826636fb4b0f13c6",
+      "content_digest": "git_sha1:666861a78fea4b2b554a449b826636fb4b0f13c6",
       "upstream_ref": "79bda1e76044d1e9d9b60bb211507e64833af92b",
+      "git_blob_oid": "git_sha1:666861a78fea4b2b554a449b826636fb4b0f13c6",
       "url": "https://github.com/southleft/skills-for-figma/blob/79bda1e76044d1e9d9b60bb211507e64833af92b/skills/component-properties-figma/SKILL.md",
       "raw_url": "https://raw.githubusercontent.com/southleft/skills-for-figma/79bda1e76044d1e9d9b60bb211507e64833af92b/skills/component-properties-figma/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-southleft-skills-for-figma-skills-for-figma-southleft_ea9f2b3d",
+        "canonical_skill_id": null,
+        "remote_path": "skills/component-properties-figma/SKILL.md",
+        "pinned_commit": "79bda1e76044d1e9d9b60bb211507e64833af92b",
+        "git_blob_oid": "git_sha1:666861a78fea4b2b554a449b826636fb4b0f13c6",
+        "raw_url": "https://raw.githubusercontent.com/southleft/skills-for-figma/79bda1e76044d1e9d9b60bb211507e64833af92b/skills/component-properties-figma/SKILL.md",
+        "expected_output_path": null
+      },
       "raw_metadata": {
-        "github_blob_sha": "666861a78fea4b2b554a449b826636fb4b0f13c6",
+        "github_blob_oid": "git_sha1:666861a78fea4b2b554a449b826636fb4b0f13c6",
         "size": 4668
       }
     },
@@ -116,12 +186,22 @@
       "declared_name": "create-figjam-content",
       "format": "SKILL.md",
       "parse_confidence": "high",
-      "content_digest": "sha256:6d422e01a80034d20313a1e12cdadc308b3229c0",
+      "content_digest": "git_sha1:6d422e01a80034d20313a1e12cdadc308b3229c0",
       "upstream_ref": "79bda1e76044d1e9d9b60bb211507e64833af92b",
+      "git_blob_oid": "git_sha1:6d422e01a80034d20313a1e12cdadc308b3229c0",
       "url": "https://github.com/southleft/skills-for-figma/blob/79bda1e76044d1e9d9b60bb211507e64833af92b/skills/create-figjam-content/SKILL.md",
       "raw_url": "https://raw.githubusercontent.com/southleft/skills-for-figma/79bda1e76044d1e9d9b60bb211507e64833af92b/skills/create-figjam-content/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-southleft-skills-for-figma-skills-for-figma-southleft_ea9f2b3d",
+        "canonical_skill_id": null,
+        "remote_path": "skills/create-figjam-content/SKILL.md",
+        "pinned_commit": "79bda1e76044d1e9d9b60bb211507e64833af92b",
+        "git_blob_oid": "git_sha1:6d422e01a80034d20313a1e12cdadc308b3229c0",
+        "raw_url": "https://raw.githubusercontent.com/southleft/skills-for-figma/79bda1e76044d1e9d9b60bb211507e64833af92b/skills/create-figjam-content/SKILL.md",
+        "expected_output_path": null
+      },
       "raw_metadata": {
-        "github_blob_sha": "6d422e01a80034d20313a1e12cdadc308b3229c0",
+        "github_blob_oid": "git_sha1:6d422e01a80034d20313a1e12cdadc308b3229c0",
         "size": 3577
       }
     },
@@ -131,12 +211,22 @@
       "declared_name": "deep-component-figma",
       "format": "SKILL.md",
       "parse_confidence": "high",
-      "content_digest": "sha256:3e5d2acd884b15fe33bdb76d6e49fb1faa3c20a7",
+      "content_digest": "git_sha1:3e5d2acd884b15fe33bdb76d6e49fb1faa3c20a7",
       "upstream_ref": "79bda1e76044d1e9d9b60bb211507e64833af92b",
+      "git_blob_oid": "git_sha1:3e5d2acd884b15fe33bdb76d6e49fb1faa3c20a7",
       "url": "https://github.com/southleft/skills-for-figma/blob/79bda1e76044d1e9d9b60bb211507e64833af92b/skills/deep-component-figma/SKILL.md",
       "raw_url": "https://raw.githubusercontent.com/southleft/skills-for-figma/79bda1e76044d1e9d9b60bb211507e64833af92b/skills/deep-component-figma/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-southleft-skills-for-figma-skills-for-figma-southleft_ea9f2b3d",
+        "canonical_skill_id": null,
+        "remote_path": "skills/deep-component-figma/SKILL.md",
+        "pinned_commit": "79bda1e76044d1e9d9b60bb211507e64833af92b",
+        "git_blob_oid": "git_sha1:3e5d2acd884b15fe33bdb76d6e49fb1faa3c20a7",
+        "raw_url": "https://raw.githubusercontent.com/southleft/skills-for-figma/79bda1e76044d1e9d9b60bb211507e64833af92b/skills/deep-component-figma/SKILL.md",
+        "expected_output_path": null
+      },
       "raw_metadata": {
-        "github_blob_sha": "3e5d2acd884b15fe33bdb76d6e49fb1faa3c20a7",
+        "github_blob_oid": "git_sha1:3e5d2acd884b15fe33bdb76d6e49fb1faa3c20a7",
         "size": 4869
       }
     },
@@ -146,12 +236,22 @@
       "declared_name": "design-system-inventory-figma",
       "format": "SKILL.md",
       "parse_confidence": "high",
-      "content_digest": "sha256:63c994f2388f3b59261764238a4523a6ad4e6ea4",
+      "content_digest": "git_sha1:63c994f2388f3b59261764238a4523a6ad4e6ea4",
       "upstream_ref": "79bda1e76044d1e9d9b60bb211507e64833af92b",
+      "git_blob_oid": "git_sha1:63c994f2388f3b59261764238a4523a6ad4e6ea4",
       "url": "https://github.com/southleft/skills-for-figma/blob/79bda1e76044d1e9d9b60bb211507e64833af92b/skills/design-system-inventory-figma/SKILL.md",
       "raw_url": "https://raw.githubusercontent.com/southleft/skills-for-figma/79bda1e76044d1e9d9b60bb211507e64833af92b/skills/design-system-inventory-figma/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-southleft-skills-for-figma-skills-for-figma-southleft_ea9f2b3d",
+        "canonical_skill_id": null,
+        "remote_path": "skills/design-system-inventory-figma/SKILL.md",
+        "pinned_commit": "79bda1e76044d1e9d9b60bb211507e64833af92b",
+        "git_blob_oid": "git_sha1:63c994f2388f3b59261764238a4523a6ad4e6ea4",
+        "raw_url": "https://raw.githubusercontent.com/southleft/skills-for-figma/79bda1e76044d1e9d9b60bb211507e64833af92b/skills/design-system-inventory-figma/SKILL.md",
+        "expected_output_path": null
+      },
       "raw_metadata": {
-        "github_blob_sha": "63c994f2388f3b59261764238a4523a6ad4e6ea4",
+        "github_blob_oid": "git_sha1:63c994f2388f3b59261764238a4523a6ad4e6ea4",
         "size": 4331
       }
     },
@@ -161,12 +261,22 @@
       "declared_name": "export-tokens-figma",
       "format": "SKILL.md",
       "parse_confidence": "high",
-      "content_digest": "sha256:f83345484abb109532700c7aebe375f849442b41",
+      "content_digest": "git_sha1:f83345484abb109532700c7aebe375f849442b41",
       "upstream_ref": "79bda1e76044d1e9d9b60bb211507e64833af92b",
+      "git_blob_oid": "git_sha1:f83345484abb109532700c7aebe375f849442b41",
       "url": "https://github.com/southleft/skills-for-figma/blob/79bda1e76044d1e9d9b60bb211507e64833af92b/skills/export-tokens-figma/SKILL.md",
       "raw_url": "https://raw.githubusercontent.com/southleft/skills-for-figma/79bda1e76044d1e9d9b60bb211507e64833af92b/skills/export-tokens-figma/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-southleft-skills-for-figma-skills-for-figma-southleft_ea9f2b3d",
+        "canonical_skill_id": null,
+        "remote_path": "skills/export-tokens-figma/SKILL.md",
+        "pinned_commit": "79bda1e76044d1e9d9b60bb211507e64833af92b",
+        "git_blob_oid": "git_sha1:f83345484abb109532700c7aebe375f849442b41",
+        "raw_url": "https://raw.githubusercontent.com/southleft/skills-for-figma/79bda1e76044d1e9d9b60bb211507e64833af92b/skills/export-tokens-figma/SKILL.md",
+        "expected_output_path": null
+      },
       "raw_metadata": {
-        "github_blob_sha": "f83345484abb109532700c7aebe375f849442b41",
+        "github_blob_oid": "git_sha1:f83345484abb109532700c7aebe375f849442b41",
         "size": 4908
       }
     },
@@ -176,12 +286,22 @@
       "declared_name": "generate-component-doc-figma",
       "format": "SKILL.md",
       "parse_confidence": "high",
-      "content_digest": "sha256:2d2f6e31ea4587f7de3052ffd97ef5ea7825e32c",
+      "content_digest": "git_sha1:2d2f6e31ea4587f7de3052ffd97ef5ea7825e32c",
       "upstream_ref": "79bda1e76044d1e9d9b60bb211507e64833af92b",
+      "git_blob_oid": "git_sha1:2d2f6e31ea4587f7de3052ffd97ef5ea7825e32c",
       "url": "https://github.com/southleft/skills-for-figma/blob/79bda1e76044d1e9d9b60bb211507e64833af92b/skills/generate-component-doc-figma/SKILL.md",
       "raw_url": "https://raw.githubusercontent.com/southleft/skills-for-figma/79bda1e76044d1e9d9b60bb211507e64833af92b/skills/generate-component-doc-figma/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-southleft-skills-for-figma-skills-for-figma-southleft_ea9f2b3d",
+        "canonical_skill_id": null,
+        "remote_path": "skills/generate-component-doc-figma/SKILL.md",
+        "pinned_commit": "79bda1e76044d1e9d9b60bb211507e64833af92b",
+        "git_blob_oid": "git_sha1:2d2f6e31ea4587f7de3052ffd97ef5ea7825e32c",
+        "raw_url": "https://raw.githubusercontent.com/southleft/skills-for-figma/79bda1e76044d1e9d9b60bb211507e64833af92b/skills/generate-component-doc-figma/SKILL.md",
+        "expected_output_path": null
+      },
       "raw_metadata": {
-        "github_blob_sha": "2d2f6e31ea4587f7de3052ffd97ef5ea7825e32c",
+        "github_blob_oid": "git_sha1:2d2f6e31ea4587f7de3052ffd97ef5ea7825e32c",
         "size": 5528
       }
     },
@@ -191,12 +311,22 @@
       "declared_name": "import-tokens-figma",
       "format": "SKILL.md",
       "parse_confidence": "high",
-      "content_digest": "sha256:7953b305748e964184f1c35bd320613a3a164e71",
+      "content_digest": "git_sha1:7953b305748e964184f1c35bd320613a3a164e71",
       "upstream_ref": "79bda1e76044d1e9d9b60bb211507e64833af92b",
+      "git_blob_oid": "git_sha1:7953b305748e964184f1c35bd320613a3a164e71",
       "url": "https://github.com/southleft/skills-for-figma/blob/79bda1e76044d1e9d9b60bb211507e64833af92b/skills/import-tokens-figma/SKILL.md",
       "raw_url": "https://raw.githubusercontent.com/southleft/skills-for-figma/79bda1e76044d1e9d9b60bb211507e64833af92b/skills/import-tokens-figma/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-southleft-skills-for-figma-skills-for-figma-southleft_ea9f2b3d",
+        "canonical_skill_id": null,
+        "remote_path": "skills/import-tokens-figma/SKILL.md",
+        "pinned_commit": "79bda1e76044d1e9d9b60bb211507e64833af92b",
+        "git_blob_oid": "git_sha1:7953b305748e964184f1c35bd320613a3a164e71",
+        "raw_url": "https://raw.githubusercontent.com/southleft/skills-for-figma/79bda1e76044d1e9d9b60bb211507e64833af92b/skills/import-tokens-figma/SKILL.md",
+        "expected_output_path": null
+      },
       "raw_metadata": {
-        "github_blob_sha": "7953b305748e964184f1c35bd320613a3a164e71",
+        "github_blob_oid": "git_sha1:7953b305748e964184f1c35bd320613a3a164e71",
         "size": 3816
       }
     },
@@ -206,12 +336,22 @@
       "declared_name": "library-variables-figma",
       "format": "SKILL.md",
       "parse_confidence": "high",
-      "content_digest": "sha256:472d88bc98101deca796260e7a9845464e1e1272",
+      "content_digest": "git_sha1:472d88bc98101deca796260e7a9845464e1e1272",
       "upstream_ref": "79bda1e76044d1e9d9b60bb211507e64833af92b",
+      "git_blob_oid": "git_sha1:472d88bc98101deca796260e7a9845464e1e1272",
       "url": "https://github.com/southleft/skills-for-figma/blob/79bda1e76044d1e9d9b60bb211507e64833af92b/skills/library-variables-figma/SKILL.md",
       "raw_url": "https://raw.githubusercontent.com/southleft/skills-for-figma/79bda1e76044d1e9d9b60bb211507e64833af92b/skills/library-variables-figma/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-southleft-skills-for-figma-skills-for-figma-southleft_ea9f2b3d",
+        "canonical_skill_id": null,
+        "remote_path": "skills/library-variables-figma/SKILL.md",
+        "pinned_commit": "79bda1e76044d1e9d9b60bb211507e64833af92b",
+        "git_blob_oid": "git_sha1:472d88bc98101deca796260e7a9845464e1e1272",
+        "raw_url": "https://raw.githubusercontent.com/southleft/skills-for-figma/79bda1e76044d1e9d9b60bb211507e64833af92b/skills/library-variables-figma/SKILL.md",
+        "expected_output_path": null
+      },
       "raw_metadata": {
-        "github_blob_sha": "472d88bc98101deca796260e7a9845464e1e1272",
+        "github_blob_oid": "git_sha1:472d88bc98101deca796260e7a9845464e1e1272",
         "size": 2501
       }
     },
@@ -221,12 +361,22 @@
       "declared_name": "lint-design-figma",
       "format": "SKILL.md",
       "parse_confidence": "high",
-      "content_digest": "sha256:1b3cd1116d5ecea40e1d9ab533f0004f064f83f8",
+      "content_digest": "git_sha1:1b3cd1116d5ecea40e1d9ab533f0004f064f83f8",
       "upstream_ref": "79bda1e76044d1e9d9b60bb211507e64833af92b",
+      "git_blob_oid": "git_sha1:1b3cd1116d5ecea40e1d9ab533f0004f064f83f8",
       "url": "https://github.com/southleft/skills-for-figma/blob/79bda1e76044d1e9d9b60bb211507e64833af92b/skills/lint-design-figma/SKILL.md",
       "raw_url": "https://raw.githubusercontent.com/southleft/skills-for-figma/79bda1e76044d1e9d9b60bb211507e64833af92b/skills/lint-design-figma/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-southleft-skills-for-figma-skills-for-figma-southleft_ea9f2b3d",
+        "canonical_skill_id": null,
+        "remote_path": "skills/lint-design-figma/SKILL.md",
+        "pinned_commit": "79bda1e76044d1e9d9b60bb211507e64833af92b",
+        "git_blob_oid": "git_sha1:1b3cd1116d5ecea40e1d9ab533f0004f064f83f8",
+        "raw_url": "https://raw.githubusercontent.com/southleft/skills-for-figma/79bda1e76044d1e9d9b60bb211507e64833af92b/skills/lint-design-figma/SKILL.md",
+        "expected_output_path": null
+      },
       "raw_metadata": {
-        "github_blob_sha": "1b3cd1116d5ecea40e1d9ab533f0004f064f83f8",
+        "github_blob_oid": "git_sha1:1b3cd1116d5ecea40e1d9ab533f0004f064f83f8",
         "size": 4353
       }
     },
@@ -236,12 +386,22 @@
       "declared_name": "manage-variables-figma",
       "format": "SKILL.md",
       "parse_confidence": "high",
-      "content_digest": "sha256:4eacd0a94709f083dfc6e154071a1cd87ded8de2",
+      "content_digest": "git_sha1:4eacd0a94709f083dfc6e154071a1cd87ded8de2",
       "upstream_ref": "79bda1e76044d1e9d9b60bb211507e64833af92b",
+      "git_blob_oid": "git_sha1:4eacd0a94709f083dfc6e154071a1cd87ded8de2",
       "url": "https://github.com/southleft/skills-for-figma/blob/79bda1e76044d1e9d9b60bb211507e64833af92b/skills/manage-variables-figma/SKILL.md",
       "raw_url": "https://raw.githubusercontent.com/southleft/skills-for-figma/79bda1e76044d1e9d9b60bb211507e64833af92b/skills/manage-variables-figma/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-southleft-skills-for-figma-skills-for-figma-southleft_ea9f2b3d",
+        "canonical_skill_id": null,
+        "remote_path": "skills/manage-variables-figma/SKILL.md",
+        "pinned_commit": "79bda1e76044d1e9d9b60bb211507e64833af92b",
+        "git_blob_oid": "git_sha1:4eacd0a94709f083dfc6e154071a1cd87ded8de2",
+        "raw_url": "https://raw.githubusercontent.com/southleft/skills-for-figma/79bda1e76044d1e9d9b60bb211507e64833af92b/skills/manage-variables-figma/SKILL.md",
+        "expected_output_path": null
+      },
       "raw_metadata": {
-        "github_blob_sha": "4eacd0a94709f083dfc6e154071a1cd87ded8de2",
+        "github_blob_oid": "git_sha1:4eacd0a94709f083dfc6e154071a1cd87ded8de2",
         "size": 3002
       }
     },
@@ -251,12 +411,22 @@
       "declared_name": "scan-code-accessibility-figma",
       "format": "SKILL.md",
       "parse_confidence": "high",
-      "content_digest": "sha256:2d667c494f2327888850c8e8eda65e33ae26f97e",
+      "content_digest": "git_sha1:2d667c494f2327888850c8e8eda65e33ae26f97e",
       "upstream_ref": "79bda1e76044d1e9d9b60bb211507e64833af92b",
+      "git_blob_oid": "git_sha1:2d667c494f2327888850c8e8eda65e33ae26f97e",
       "url": "https://github.com/southleft/skills-for-figma/blob/79bda1e76044d1e9d9b60bb211507e64833af92b/skills/scan-code-accessibility-figma/SKILL.md",
       "raw_url": "https://raw.githubusercontent.com/southleft/skills-for-figma/79bda1e76044d1e9d9b60bb211507e64833af92b/skills/scan-code-accessibility-figma/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-southleft-skills-for-figma-skills-for-figma-southleft_ea9f2b3d",
+        "canonical_skill_id": null,
+        "remote_path": "skills/scan-code-accessibility-figma/SKILL.md",
+        "pinned_commit": "79bda1e76044d1e9d9b60bb211507e64833af92b",
+        "git_blob_oid": "git_sha1:2d667c494f2327888850c8e8eda65e33ae26f97e",
+        "raw_url": "https://raw.githubusercontent.com/southleft/skills-for-figma/79bda1e76044d1e9d9b60bb211507e64833af92b/skills/scan-code-accessibility-figma/SKILL.md",
+        "expected_output_path": null
+      },
       "raw_metadata": {
-        "github_blob_sha": "2d667c494f2327888850c8e8eda65e33ae26f97e",
+        "github_blob_oid": "git_sha1:2d667c494f2327888850c8e8eda65e33ae26f97e",
         "size": 4407
       }
     },
@@ -266,15 +436,25 @@
       "declared_name": "setup-design-tokens-figma",
       "format": "SKILL.md",
       "parse_confidence": "high",
-      "content_digest": "sha256:d4b927007c31e145fa4d432712669a083d2ab5d2",
+      "content_digest": "git_sha1:d4b927007c31e145fa4d432712669a083d2ab5d2",
       "upstream_ref": "79bda1e76044d1e9d9b60bb211507e64833af92b",
+      "git_blob_oid": "git_sha1:d4b927007c31e145fa4d432712669a083d2ab5d2",
       "url": "https://github.com/southleft/skills-for-figma/blob/79bda1e76044d1e9d9b60bb211507e64833af92b/skills/setup-design-tokens-figma/SKILL.md",
       "raw_url": "https://raw.githubusercontent.com/southleft/skills-for-figma/79bda1e76044d1e9d9b60bb211507e64833af92b/skills/setup-design-tokens-figma/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-southleft-skills-for-figma-skills-for-figma-southleft_ea9f2b3d",
+        "canonical_skill_id": null,
+        "remote_path": "skills/setup-design-tokens-figma/SKILL.md",
+        "pinned_commit": "79bda1e76044d1e9d9b60bb211507e64833af92b",
+        "git_blob_oid": "git_sha1:d4b927007c31e145fa4d432712669a083d2ab5d2",
+        "raw_url": "https://raw.githubusercontent.com/southleft/skills-for-figma/79bda1e76044d1e9d9b60bb211507e64833af92b/skills/setup-design-tokens-figma/SKILL.md",
+        "expected_output_path": null
+      },
       "raw_metadata": {
-        "github_blob_sha": "d4b927007c31e145fa4d432712669a083d2ab5d2",
+        "github_blob_oid": "git_sha1:d4b927007c31e145fa4d432712669a083d2ab5d2",
         "size": 2943
       }
     }
   ],
-  "digest": "sha256:e2fcaf9419378cc773c660a528d2540cd173aa748e26531545b06daf5faf6518"
+  "digest": "sha256:48bda1bca61b3284d69757bc74e7ebfab4fcbb08c0b6858f29e2d9d9d4a45453"
 }

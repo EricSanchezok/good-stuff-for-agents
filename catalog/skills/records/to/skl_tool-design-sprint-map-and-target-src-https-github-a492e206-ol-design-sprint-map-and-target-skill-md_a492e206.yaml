@@ -14,7 +14,7 @@ curation:
 display_name: tool-design-sprint-map-and-target
 identity:
   aliases: []
-  current_version_id: sha256:3346d2e5643c6e0e65466b7924ee0ebd5c2593aa
+  current_version_id: git_sha1:3346d2e5643c6e0e65466b7924ee0ebd5c2593aa
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

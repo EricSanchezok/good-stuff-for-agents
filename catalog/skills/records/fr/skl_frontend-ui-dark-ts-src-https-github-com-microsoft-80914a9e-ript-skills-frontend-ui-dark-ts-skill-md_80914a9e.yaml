@@ -14,7 +14,7 @@ curation:
 display_name: frontend-ui-dark-ts
 identity:
   aliases: []
-  current_version_id: sha256:4ff865e3c1cc60d8e5999cf950a016d7c9f019d2
+  current_version_id: git_sha1:4ff865e3c1cc60d8e5999cf950a016d7c9f019d2
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

@@ -14,7 +14,7 @@ curation:
 display_name: research-digest
 identity:
   aliases: []
-  current_version_id: sha256:2f34b822e2a72079fc7e7c23a4c841af2eaea291
+  current_version_id: git_sha1:2f34b822e2a72079fc7e7c23a4c841af2eaea291
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

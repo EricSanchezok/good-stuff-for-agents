@@ -14,7 +14,7 @@ curation:
 display_name: ideal-customer-profile
 identity:
   aliases: []
-  current_version_id: sha256:b07c067e84307a14b66f37e0a4633172cdb47ed9
+  current_version_id: git_sha1:b07c067e84307a14b66f37e0a4633172cdb47ed9
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

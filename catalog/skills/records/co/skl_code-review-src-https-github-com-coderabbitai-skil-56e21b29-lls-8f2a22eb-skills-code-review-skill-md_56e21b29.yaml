@@ -14,7 +14,7 @@ curation:
 display_name: code-review
 identity:
   aliases: []
-  current_version_id: sha256:d9fc3f304df4785725febc3050dab2f390874f99
+  current_version_id: git_sha1:d9fc3f304df4785725febc3050dab2f390874f99
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

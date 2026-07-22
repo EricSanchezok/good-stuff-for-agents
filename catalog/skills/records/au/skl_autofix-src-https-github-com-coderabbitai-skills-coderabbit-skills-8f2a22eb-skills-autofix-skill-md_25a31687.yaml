@@ -14,7 +14,7 @@ curation:
 display_name: autofix
 identity:
   aliases: []
-  current_version_id: sha256:04e1f0ae7090f8cbf8467bcb613c062dba70387e
+  current_version_id: git_sha1:04e1f0ae7090f8cbf8467bcb613c062dba70387e
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

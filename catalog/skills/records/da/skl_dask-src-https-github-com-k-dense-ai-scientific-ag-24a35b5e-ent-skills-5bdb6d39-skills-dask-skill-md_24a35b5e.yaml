@@ -14,7 +14,7 @@ curation:
 display_name: dask
 identity:
   aliases: []
-  current_version_id: sha256:6d8484f51c2a85de28d6905fefcd5739d97cec90
+  current_version_id: git_sha1:6d8484f51c2a85de28d6905fefcd5739d97cec90
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

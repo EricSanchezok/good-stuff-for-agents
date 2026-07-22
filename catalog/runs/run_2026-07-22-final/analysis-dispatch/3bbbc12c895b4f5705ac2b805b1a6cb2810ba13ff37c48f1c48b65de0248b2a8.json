@@ -1,0 +1,16 @@
+{
+  "binding": {
+    "canonical_skill_id": "skl_azure-ai-anomalydetector-java-src-https-github-com-497e49b4-s-azure-ai-anomalydetector-java-skill-md_497e49b4",
+    "current_version_id": "git_sha1:1720bde7863898eca16efd3be18d3e072f57bcf1",
+    "expected_output_path": "catalog/analyses/az/skl_azure-ai-anomalydetector-java-src-https-github-com-497e49b4-s-azure-ai-anomalydetector-java-skill-md_497e49b4.md",
+    "git_blob_oid": "git_sha1:1720bde7863898eca16efd3be18d3e072f57bcf1",
+    "pinned_commit": "cc93536d8b809e177a7d1008b276ce41a9456a9c",
+    "raw_url": "https://raw.githubusercontent.com/microsoft/skills/cc93536d8b809e177a7d1008b276ce41a9456a9c/.github/plugins/azure-sdk-java/skills/azure-ai-anomalydetector-java/SKILL.md",
+    "remote_path": ".github/plugins/azure-sdk-java/skills/azure-ai-anomalydetector-java/SKILL.md",
+    "source_id": "src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e"
+  },
+  "dispatch_digest": "sha256:3bbbc12c895b4f5705ac2b805b1a6cb2810ba13ff37c48f1c48b65de0248b2a8",
+  "kind": "skill-analysis-dispatch",
+  "run_id": "run_2026-07-22-final",
+  "schema_version": 2
+}

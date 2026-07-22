@@ -14,7 +14,7 @@ curation:
 display_name: social-preview
 identity:
   aliases: []
-  current_version_id: sha256:a096f325028044d6b9a7405965a38f400cc7d128
+  current_version_id: git_sha1:a096f325028044d6b9a7405965a38f400cc7d128
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

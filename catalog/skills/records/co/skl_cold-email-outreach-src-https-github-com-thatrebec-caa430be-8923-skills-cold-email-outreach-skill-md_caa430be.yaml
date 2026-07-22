@@ -14,7 +14,7 @@ curation:
 display_name: cold-email-outreach
 identity:
   aliases: []
-  current_version_id: sha256:b01574734da9c18104ace6829b32e67baf5f9c62
+  current_version_id: git_sha1:b01574734da9c18104ace6829b32e67baf5f9c62
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

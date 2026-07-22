@@ -14,7 +14,7 @@ curation:
 display_name: deliver-y
 identity:
   aliases: []
-  current_version_id: sha256:bdb933bf5fa254d1ff6758c057e6aa3d263c5019
+  current_version_id: git_sha1:bdb933bf5fa254d1ff6758c057e6aa3d263c5019
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

@@ -4,7 +4,9 @@
 
 ## Summary
 
-Analysis pending.
+# BioServices
+
+BioServices wraps the REST APIs of dozens of life-science databases (NCBI, UniProt, KEGG, PDB, ChEMBL, Reactome, STRING, BioModels) behind a single consistent Python interface. Teaches querying gene/protein/pathway/small-molecule databases, batching, rate limiting, authentication, and cross-referencing results.
 
 ## Source
 
@@ -35,6 +37,10 @@ No published packs use this skill yet.
 ## Related Skills
 
 No related skills are public yet.
+
+## Public Analysis Summary
+
+Genuinely useful for cross-database exploratory work. For single-database users or production pipelines, adds overhead and risk without benefit.
 
 ## Confidence and Limitations
 

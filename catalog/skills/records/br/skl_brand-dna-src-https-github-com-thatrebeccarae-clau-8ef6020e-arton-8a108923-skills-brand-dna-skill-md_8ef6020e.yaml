@@ -14,7 +14,7 @@ curation:
 display_name: brand-dna
 identity:
   aliases: []
-  current_version_id: sha256:f1daef99f82f6883d5d05f3a2e7f26212d6e7d85
+  current_version_id: git_sha1:f1daef99f82f6883d5d05f3a2e7f26212d6e7d85
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

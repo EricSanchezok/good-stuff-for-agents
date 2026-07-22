@@ -14,7 +14,7 @@ curation:
 display_name: scientific-brainstorming
 identity:
   aliases: []
-  current_version_id: sha256:8b7cc0c8dd1b43fd8bbc3096652684b7e4e4a5ce
+  current_version_id: git_sha1:8b7cc0c8dd1b43fd8bbc3096652684b7e4e4a5ce
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

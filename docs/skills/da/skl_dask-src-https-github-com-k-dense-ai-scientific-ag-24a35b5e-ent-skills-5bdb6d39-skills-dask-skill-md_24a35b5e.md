@@ -4,7 +4,9 @@
 
 ## Summary
 
-Analysis pending.
+# Dask Parallel Computing
+
+A skill that teaches agents to scale Python data workflows beyond RAM by substituting pandas/NumPy with Dask's lazy, distributed equivalents. Covers the full stack from local Dask DataFrames to multi-node cluster deployment on HPC and cloud infrastructure.
 
 ## Source
 
@@ -35,6 +37,10 @@ No published packs use this skill yet.
 ## Related Skills
 
 No related skills are public yet.
+
+## Public Analysis Summary
+
+Solid, broad-reference Dask skill. Biggest benefit: covering the full lifecycle from local development to cluster deployment. Biggest risk: deployment breadth enables confident infrastructure mistakes.
 
 ## Confidence and Limitations
 

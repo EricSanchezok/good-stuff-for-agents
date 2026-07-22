@@ -14,7 +14,7 @@ curation:
 display_name: pufferlib
 identity:
   aliases: []
-  current_version_id: sha256:631c0d0821204212fd129e0149ebbc57413a58c9
+  current_version_id: git_sha1:631c0d0821204212fd129e0149ebbc57413a58c9
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

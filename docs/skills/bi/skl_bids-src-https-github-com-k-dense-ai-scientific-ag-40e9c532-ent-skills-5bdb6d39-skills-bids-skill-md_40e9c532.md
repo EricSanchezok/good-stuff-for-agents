@@ -4,7 +4,9 @@
 
 ## Summary
 
-Analysis pending.
+# BIDS (Brain Imaging Data Structure)
+
+This is a reference skill that encodes the BIDS standard — the dominant community convention for organizing and sharing neuroimaging datasets. It covers directory structure, naming rules, required metadata, modality-specific JSON sidecars, events files, the BIDS validator, DICOM-to-BIDS conversion tools, and programmatic access via pybids. If you need to organize, validate, or convert neuroimaging data in a way that any lab or toolchain will understand, this is the thing you want loaded.
 
 ## Source
 
@@ -35,6 +37,10 @@ No published packs use this skill yet.
 ## Related Skills
 
 No related skills are public yet.
+
+## Public Analysis Summary
+
+This is an essential reference for a narrow, high-stakes domain. If your catalog is general-purpose, this is too niche. The biggest benefit is preventing an agent from inventing its own directory layout that no tool can read; the biggest risk is the agent mechanically applying brain-imaging conventions to the wrong kind of data, or silently corrupting files during DICOM conversion.
 
 ## Confidence and Limitations
 

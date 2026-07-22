@@ -14,7 +14,7 @@ curation:
 display_name: azure-ai-projects-java
 identity:
   aliases: []
-  current_version_id: sha256:a28cc004322d021cafc17518c27755a28c1141cc
+  current_version_id: git_sha1:a28cc004322d021cafc17518c27755a28c1141cc
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

@@ -14,7 +14,7 @@ curation:
 display_name: utility-pm-changelog-curator
 identity:
   aliases: []
-  current_version_id: sha256:2f94589fea1da618702d535ce18f26dc6ec079f1
+  current_version_id: git_sha1:2f94589fea1da618702d535ce18f26dc6ec079f1
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

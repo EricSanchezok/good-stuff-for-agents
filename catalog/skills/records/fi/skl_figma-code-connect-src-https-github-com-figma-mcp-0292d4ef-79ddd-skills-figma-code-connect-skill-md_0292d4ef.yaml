@@ -14,7 +14,7 @@ curation:
 display_name: figma-code-connect
 identity:
   aliases: []
-  current_version_id: sha256:2394c2ce93be173dba5289ad99945d246317dd0a
+  current_version_id: git_sha1:2394c2ce93be173dba5289ad99945d246317dd0a
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

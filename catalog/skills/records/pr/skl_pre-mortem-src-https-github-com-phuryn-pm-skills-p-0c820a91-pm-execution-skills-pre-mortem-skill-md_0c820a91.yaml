@@ -14,7 +14,7 @@ curation:
 display_name: pre-mortem
 identity:
   aliases: []
-  current_version_id: sha256:3a22d36b4dfac5685ccbc73486686ea6e7df6452
+  current_version_id: git_sha1:3a22d36b4dfac5685ccbc73486686ea6e7df6452
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

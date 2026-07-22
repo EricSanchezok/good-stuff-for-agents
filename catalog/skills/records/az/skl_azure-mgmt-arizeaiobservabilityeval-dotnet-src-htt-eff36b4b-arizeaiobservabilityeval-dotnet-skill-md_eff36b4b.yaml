@@ -14,7 +14,7 @@ curation:
 display_name: azure-mgmt-arizeaiobservabilityeval-dotnet
 identity:
   aliases: []
-  current_version_id: sha256:7a820d75e857d1140484b0fe93301bf232f19109
+  current_version_id: git_sha1:7a820d75e857d1140484b0fe93301bf232f19109
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

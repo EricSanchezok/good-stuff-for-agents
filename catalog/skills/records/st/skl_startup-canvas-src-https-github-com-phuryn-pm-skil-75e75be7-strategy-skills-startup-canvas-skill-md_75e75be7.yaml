@@ -14,7 +14,7 @@ curation:
 display_name: startup-canvas
 identity:
   aliases: []
-  current_version_id: sha256:7c98302acedf89cd83ea2c119621e031c7e64c39
+  current_version_id: git_sha1:7c98302acedf89cd83ea2c119621e031c7e64c39
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

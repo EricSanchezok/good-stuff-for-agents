@@ -14,7 +14,7 @@ curation:
 display_name: azure-mgmt-fabric-dotnet
 identity:
   aliases: []
-  current_version_id: sha256:19e5a3918fdf9d5c978a5181025a2f6a2c342645
+  current_version_id: git_sha1:19e5a3918fdf9d5c978a5181025a2f6a2c342645
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

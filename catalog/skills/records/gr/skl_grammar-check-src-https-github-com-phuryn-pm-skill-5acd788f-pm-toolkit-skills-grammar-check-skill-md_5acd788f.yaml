@@ -14,7 +14,7 @@ curation:
 display_name: grammar-check
 identity:
   aliases: []
-  current_version_id: sha256:2770da59b9ba78faa4c9d170a67b00d64be7f299
+  current_version_id: git_sha1:2770da59b9ba78faa4c9d170a67b00d64be7f299
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

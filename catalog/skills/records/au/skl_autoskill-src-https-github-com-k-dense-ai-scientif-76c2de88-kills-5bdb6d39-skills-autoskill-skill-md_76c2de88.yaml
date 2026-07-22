@@ -14,7 +14,7 @@ curation:
 display_name: autoskill
 identity:
   aliases: []
-  current_version_id: sha256:fe7731c25235d1e517480c7ba2e1a1fef5b05da0
+  current_version_id: git_sha1:fe7731c25235d1e517480c7ba2e1a1fef5b05da0
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

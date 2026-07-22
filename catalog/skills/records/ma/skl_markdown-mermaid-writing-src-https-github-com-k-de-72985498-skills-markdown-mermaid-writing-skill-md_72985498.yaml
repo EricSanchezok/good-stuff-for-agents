@@ -14,7 +14,7 @@ curation:
 display_name: markdown-mermaid-writing
 identity:
   aliases: []
-  current_version_id: sha256:db306ebc90e3db9b6280c8bb235946c071d9bffd
+  current_version_id: git_sha1:db306ebc90e3db9b6280c8bb235946c071d9bffd
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

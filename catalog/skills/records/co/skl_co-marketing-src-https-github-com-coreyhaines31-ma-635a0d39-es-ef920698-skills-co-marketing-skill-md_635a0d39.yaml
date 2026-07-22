@@ -14,7 +14,7 @@ curation:
 display_name: co-marketing
 identity:
   aliases: []
-  current_version_id: sha256:6788b644f675024e4f4135f561da33d11ec6830d
+  current_version_id: git_sha1:6788b644f675024e4f4135f561da33d11ec6830d
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

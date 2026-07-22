@@ -14,7 +14,7 @@ curation:
 display_name: bulk-rnaseq
 identity:
   aliases: []
-  current_version_id: sha256:6a63f902bc142a131b07d1c7c4f7990d0d861b43
+  current_version_id: git_sha1:6a63f902bc142a131b07d1c7c4f7990d0d861b43
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

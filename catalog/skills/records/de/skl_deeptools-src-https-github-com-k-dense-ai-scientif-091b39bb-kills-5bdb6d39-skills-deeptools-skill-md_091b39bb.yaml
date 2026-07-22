@@ -14,7 +14,7 @@ curation:
 display_name: deeptools
 identity:
   aliases: []
-  current_version_id: sha256:5d7d32a2d608595c6dd6c3c546e41244f2b3876f
+  current_version_id: git_sha1:5d7d32a2d608595c6dd6c3c546e41244f2b3876f
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

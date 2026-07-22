@@ -14,7 +14,7 @@ curation:
 display_name: klaviyo-analyst
 identity:
   aliases: []
-  current_version_id: sha256:d948d2c7bf35b2b8e4a6101f90a6373088478f50
+  current_version_id: git_sha1:d948d2c7bf35b2b8e4a6101f90a6373088478f50
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

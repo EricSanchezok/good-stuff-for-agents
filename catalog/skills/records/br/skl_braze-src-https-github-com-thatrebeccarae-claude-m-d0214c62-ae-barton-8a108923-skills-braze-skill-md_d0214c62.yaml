@@ -14,7 +14,7 @@ curation:
 display_name: braze
 identity:
   aliases: []
-  current_version_id: sha256:6cbe5dfcdb38a8a966120f1510287794c6c02fdb
+  current_version_id: git_sha1:6cbe5dfcdb38a8a966120f1510287794c6c02fdb
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

@@ -14,7 +14,7 @@ curation:
 display_name: foundation-meeting-recap
 identity:
   aliases: []
-  current_version_id: sha256:4103e89a9f0257cb2b115fa02fea574ff45f2ee4
+  current_version_id: git_sha1:4103e89a9f0257cb2b115fa02fea574ff45f2ee4
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

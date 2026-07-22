@@ -14,7 +14,7 @@ curation:
 display_name: scientific-visualization
 identity:
   aliases: []
-  current_version_id: sha256:b267ca61daba1840d3c5e26fd06aef2b1f5906ba
+  current_version_id: git_sha1:b267ca61daba1840d3c5e26fd06aef2b1f5906ba
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

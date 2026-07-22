@@ -14,7 +14,7 @@ curation:
 display_name: azure-maps-search-dotnet
 identity:
   aliases: []
-  current_version_id: sha256:79897e10e8bd32128b9b6641087b7a0bf14f7507
+  current_version_id: git_sha1:79897e10e8bd32128b9b6641087b7a0bf14f7507
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

@@ -14,7 +14,7 @@ curation:
 display_name: sms
 identity:
   aliases: []
-  current_version_id: sha256:50cfa8d32c434ca948fecaa596aa5cd23f91d8cd
+  current_version_id: git_sha1:50cfa8d32c434ca948fecaa596aa5cd23f91d8cd
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

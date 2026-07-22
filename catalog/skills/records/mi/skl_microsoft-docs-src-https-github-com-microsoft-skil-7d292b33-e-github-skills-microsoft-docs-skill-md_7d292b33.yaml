@@ -14,7 +14,7 @@ curation:
 display_name: microsoft-docs
 identity:
   aliases: []
-  current_version_id: sha256:a5129731352a4dcad109b03e6f8e96bbdd00695b
+  current_version_id: git_sha1:a5129731352a4dcad109b03e6f8e96bbdd00695b
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

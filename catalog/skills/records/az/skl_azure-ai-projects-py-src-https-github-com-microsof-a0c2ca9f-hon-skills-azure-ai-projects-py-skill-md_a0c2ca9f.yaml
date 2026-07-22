@@ -14,7 +14,7 @@ curation:
 display_name: azure-ai-projects-py
 identity:
   aliases: []
-  current_version_id: sha256:83a80c385301e88f89e67e9a192085f4302994c2
+  current_version_id: git_sha1:83a80c385301e88f89e67e9a192085f4302994c2
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

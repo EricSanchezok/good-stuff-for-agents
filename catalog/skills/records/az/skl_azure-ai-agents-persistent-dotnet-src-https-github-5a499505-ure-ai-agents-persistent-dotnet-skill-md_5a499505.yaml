@@ -14,7 +14,7 @@ curation:
 display_name: azure-ai-agents-persistent-dotnet
 identity:
   aliases: []
-  current_version_id: sha256:9c9bd87a4bf852157158e2c658218762cfd2130c
+  current_version_id: git_sha1:9c9bd87a4bf852157158e2c658218762cfd2130c
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

@@ -1,0 +1,16 @@
+{
+  "binding": {
+    "canonical_skill_id": "skl_azure-kubernetes-src-https-github-com-microsoft-sk-262ec50f-skills-skills-azure-kubernetes-skill-md_262ec50f",
+    "current_version_id": "git_sha1:3c5a448a679dafed5e0e747d28bd95cead4e8dec",
+    "expected_output_path": "catalog/analyses/az/skl_azure-kubernetes-src-https-github-com-microsoft-sk-262ec50f-skills-skills-azure-kubernetes-skill-md_262ec50f.md",
+    "git_blob_oid": "git_sha1:3c5a448a679dafed5e0e747d28bd95cead4e8dec",
+    "pinned_commit": "cc93536d8b809e177a7d1008b276ce41a9456a9c",
+    "raw_url": "https://raw.githubusercontent.com/microsoft/skills/cc93536d8b809e177a7d1008b276ce41a9456a9c/.github/plugins/azure-skills/skills/azure-kubernetes/SKILL.md",
+    "remote_path": ".github/plugins/azure-skills/skills/azure-kubernetes/SKILL.md",
+    "source_id": "src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e"
+  },
+  "dispatch_digest": "sha256:70689b385d14bed5da8e5d0d1428b0eeec9cc3960f7da17aba1e53c6074f327c",
+  "kind": "skill-analysis-dispatch",
+  "run_id": "run_2026-07-22-final",
+  "schema_version": 2
+}

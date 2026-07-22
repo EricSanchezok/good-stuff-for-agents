@@ -14,7 +14,7 @@ curation:
 display_name: marketing-ideas
 identity:
   aliases: []
-  current_version_id: sha256:026abcfa1206ba0d5cfcbf738798ccce96c93480
+  current_version_id: git_sha1:026abcfa1206ba0d5cfcbf738798ccce96c93480
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

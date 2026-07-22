@@ -14,7 +14,7 @@ curation:
 display_name: linkedin-ads
 identity:
   aliases: []
-  current_version_id: sha256:ef61823b43bb16ed198a99b09befba46ab035fd1
+  current_version_id: git_sha1:ef61823b43bb16ed198a99b09befba46ab035fd1
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

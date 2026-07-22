@@ -14,7 +14,7 @@ curation:
 display_name: m365-agents-ts
 identity:
   aliases: []
-  current_version_id: sha256:00169cce10c70508375fc9300513a7600c7f75f8
+  current_version_id: git_sha1:00169cce10c70508375fc9300513a7600c7f75f8
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

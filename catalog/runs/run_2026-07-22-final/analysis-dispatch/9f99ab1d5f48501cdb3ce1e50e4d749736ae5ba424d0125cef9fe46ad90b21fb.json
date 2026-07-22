@@ -1,0 +1,16 @@
+{
+  "binding": {
+    "canonical_skill_id": "skl_azure-keyvault-secrets-rust-src-https-github-com-m-75ccbaed-lls-azure-keyvault-secrets-rust-skill-md_75ccbaed",
+    "current_version_id": "git_sha1:e9a908362d0ebb80cba0c885910264bd08d66d39",
+    "expected_output_path": "catalog/analyses/az/skl_azure-keyvault-secrets-rust-src-https-github-com-m-75ccbaed-lls-azure-keyvault-secrets-rust-skill-md_75ccbaed.md",
+    "git_blob_oid": "git_sha1:e9a908362d0ebb80cba0c885910264bd08d66d39",
+    "pinned_commit": "cc93536d8b809e177a7d1008b276ce41a9456a9c",
+    "raw_url": "https://raw.githubusercontent.com/microsoft/skills/cc93536d8b809e177a7d1008b276ce41a9456a9c/.github/plugins/azure-sdk-rust/skills/azure-keyvault-secrets-rust/SKILL.md",
+    "remote_path": ".github/plugins/azure-sdk-rust/skills/azure-keyvault-secrets-rust/SKILL.md",
+    "source_id": "src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e"
+  },
+  "dispatch_digest": "sha256:9f99ab1d5f48501cdb3ce1e50e4d749736ae5ba424d0125cef9fe46ad90b21fb",
+  "kind": "skill-analysis-dispatch",
+  "run_id": "run_2026-07-22-final",
+  "schema_version": 2
+}

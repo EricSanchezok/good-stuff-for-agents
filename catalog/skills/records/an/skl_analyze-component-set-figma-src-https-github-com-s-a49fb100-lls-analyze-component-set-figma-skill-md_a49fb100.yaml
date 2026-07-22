@@ -14,7 +14,7 @@ curation:
 display_name: analyze-component-set-figma
 identity:
   aliases: []
-  current_version_id: sha256:10d82aaaa96f8d893618b7cb7499b00471ef759b
+  current_version_id: git_sha1:10d82aaaa96f8d893618b7cb7499b00471ef759b
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

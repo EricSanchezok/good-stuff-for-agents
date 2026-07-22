@@ -14,7 +14,7 @@ curation:
 display_name: pro-deck-builder
 identity:
   aliases: []
-  current_version_id: sha256:71304c3994506bfc23e5d9eeec67cc5d132fc4ff
+  current_version_id: git_sha1:71304c3994506bfc23e5d9eeec67cc5d132fc4ff
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

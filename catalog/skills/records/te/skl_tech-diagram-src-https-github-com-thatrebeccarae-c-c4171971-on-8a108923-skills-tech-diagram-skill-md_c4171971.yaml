@@ -14,7 +14,7 @@ curation:
 display_name: tech-diagram
 identity:
   aliases: []
-  current_version_id: sha256:c3c649b912d9f9a93f7bbaf37cfe943d63167819
+  current_version_id: git_sha1:c3c649b912d9f9a93f7bbaf37cfe943d63167819
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

@@ -1,0 +1,16 @@
+{
+  "binding": {
+    "canonical_skill_id": "skl_azure-eventhub-py-src-https-github-com-microsoft-s-c1e9f038-python-skills-azure-eventhub-py-skill-md_c1e9f038",
+    "current_version_id": "git_sha1:289676f5c80a9f4064980ff98283575502fe1d99",
+    "expected_output_path": "catalog/analyses/az/skl_azure-eventhub-py-src-https-github-com-microsoft-s-c1e9f038-python-skills-azure-eventhub-py-skill-md_c1e9f038.md",
+    "git_blob_oid": "git_sha1:289676f5c80a9f4064980ff98283575502fe1d99",
+    "pinned_commit": "cc93536d8b809e177a7d1008b276ce41a9456a9c",
+    "raw_url": "https://raw.githubusercontent.com/microsoft/skills/cc93536d8b809e177a7d1008b276ce41a9456a9c/.github/plugins/azure-sdk-python/skills/azure-eventhub-py/SKILL.md",
+    "remote_path": ".github/plugins/azure-sdk-python/skills/azure-eventhub-py/SKILL.md",
+    "source_id": "src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e"
+  },
+  "dispatch_digest": "sha256:4dac36ab46861f15057220d41af8345d68cbcc0af8480357d942a1695da3e412",
+  "kind": "skill-analysis-dispatch",
+  "run_id": "run_2026-07-22-final",
+  "schema_version": 2
+}

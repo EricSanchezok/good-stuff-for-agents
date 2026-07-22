@@ -14,7 +14,7 @@ curation:
 display_name: scikit-survival
 identity:
   aliases: []
-  current_version_id: sha256:84674e9381ea0b6694751f3cd8f20c8dbf786615
+  current_version_id: git_sha1:84674e9381ea0b6694751f3cd8f20c8dbf786615
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

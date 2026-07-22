@@ -14,7 +14,7 @@ curation:
 display_name: pydeseq2
 identity:
   aliases: []
-  current_version_id: sha256:71fac9d812a81f9ad73a5472f65a909e17d763ed
+  current_version_id: git_sha1:71fac9d812a81f9ad73a5472f65a909e17d763ed
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

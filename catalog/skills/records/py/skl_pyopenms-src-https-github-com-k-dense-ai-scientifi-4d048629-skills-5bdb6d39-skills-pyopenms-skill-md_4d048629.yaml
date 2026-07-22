@@ -14,7 +14,7 @@ curation:
 display_name: pyopenms
 identity:
   aliases: []
-  current_version_id: sha256:faf4697d7acdba0fae5aa8b896a93dd0ed4298c3
+  current_version_id: git_sha1:faf4697d7acdba0fae5aa8b896a93dd0ed4298c3
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

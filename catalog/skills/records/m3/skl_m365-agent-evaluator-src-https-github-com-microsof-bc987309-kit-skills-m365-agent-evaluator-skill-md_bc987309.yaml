@@ -14,7 +14,7 @@ curation:
 display_name: m365-agent-evaluator
 identity:
   aliases: []
-  current_version_id: sha256:f09feb28a91638a7da7da797a0f409de4e690f26
+  current_version_id: git_sha1:f09feb28a91638a7da7da797a0f409de4e690f26
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

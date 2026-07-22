@@ -14,7 +14,7 @@ curation:
 display_name: iterate-lessons-log
 identity:
   aliases: []
-  current_version_id: sha256:3ace1abac3d5d0bd7124aef8bfbe8448a5cfa97b
+  current_version_id: git_sha1:3ace1abac3d5d0bd7124aef8bfbe8448a5cfa97b
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

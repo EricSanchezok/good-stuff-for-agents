@@ -14,7 +14,7 @@ curation:
 display_name: pyhealth
 identity:
   aliases: []
-  current_version_id: sha256:30189444d5367a7e62e21accb8aebe87d1ad8ca1
+  current_version_id: git_sha1:30189444d5367a7e62e21accb8aebe87d1ad8ca1
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

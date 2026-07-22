@@ -14,7 +14,7 @@ curation:
 display_name: data-viz-deck
 identity:
   aliases: []
-  current_version_id: sha256:42135d2b5abe9502c9f98c2d7142b3fe048f7071
+  current_version_id: git_sha1:42135d2b5abe9502c9f98c2d7142b3fe048f7071
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

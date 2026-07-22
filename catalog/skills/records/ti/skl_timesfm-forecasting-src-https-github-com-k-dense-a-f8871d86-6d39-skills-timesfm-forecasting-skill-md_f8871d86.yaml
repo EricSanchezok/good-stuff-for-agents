@@ -14,7 +14,7 @@ curation:
 display_name: timesfm-forecasting
 identity:
   aliases: []
-  current_version_id: sha256:b35575746e3d5a8ba3d14c3551feb6f0748b0c03
+  current_version_id: git_sha1:b35575746e3d5a8ba3d14c3551feb6f0748b0c03
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

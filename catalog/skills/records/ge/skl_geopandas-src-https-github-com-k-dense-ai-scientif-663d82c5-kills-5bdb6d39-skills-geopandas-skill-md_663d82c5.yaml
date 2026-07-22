@@ -14,7 +14,7 @@ curation:
 display_name: geopandas
 identity:
   aliases: []
-  current_version_id: sha256:6e27186ce76600709ee1cc3c7d48291bc5217af7
+  current_version_id: git_sha1:6e27186ce76600709ee1cc3c7d48291bc5217af7
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

@@ -14,7 +14,7 @@ curation:
 display_name: privacy-policy
 identity:
   aliases: []
-  current_version_id: sha256:100a06b4a3f8ccafb36a51e7f710449ec9b729b4
+  current_version_id: git_sha1:100a06b4a3f8ccafb36a51e7f710449ec9b729b4
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

@@ -14,7 +14,7 @@ curation:
 display_name: azure-ai-anomalydetector-java
 identity:
   aliases: []
-  current_version_id: sha256:1720bde7863898eca16efd3be18d3e072f57bcf1
+  current_version_id: git_sha1:1720bde7863898eca16efd3be18d3e072f57bcf1
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

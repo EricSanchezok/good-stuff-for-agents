@@ -14,7 +14,7 @@ curation:
 display_name: metrics-dashboard
 identity:
   aliases: []
-  current_version_id: sha256:636990e363dfdf6204a17ef1325b488d724fcdcc
+  current_version_id: git_sha1:636990e363dfdf6204a17ef1325b488d724fcdcc
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

@@ -14,7 +14,7 @@ curation:
 display_name: safe-push
 identity:
   aliases: []
-  current_version_id: sha256:e13f50e8bb2c0896c83daac4026374bc76a2d589
+  current_version_id: git_sha1:e13f50e8bb2c0896c83daac4026374bc76a2d589
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

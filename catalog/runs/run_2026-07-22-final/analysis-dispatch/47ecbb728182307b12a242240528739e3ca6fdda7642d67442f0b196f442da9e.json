@@ -1,0 +1,16 @@
+{
+  "binding": {
+    "canonical_skill_id": "skl_azure-ai-voicelive-java-src-https-github-com-micro-a2de839c-skills-azure-ai-voicelive-java-skill-md_a2de839c",
+    "current_version_id": "git_sha1:584b13e150584b12741a775389b6dab1bdfa82f1",
+    "expected_output_path": "catalog/analyses/az/skl_azure-ai-voicelive-java-src-https-github-com-micro-a2de839c-skills-azure-ai-voicelive-java-skill-md_a2de839c.md",
+    "git_blob_oid": "git_sha1:584b13e150584b12741a775389b6dab1bdfa82f1",
+    "pinned_commit": "cc93536d8b809e177a7d1008b276ce41a9456a9c",
+    "raw_url": "https://raw.githubusercontent.com/microsoft/skills/cc93536d8b809e177a7d1008b276ce41a9456a9c/.github/plugins/azure-sdk-java/skills/azure-ai-voicelive-java/SKILL.md",
+    "remote_path": ".github/plugins/azure-sdk-java/skills/azure-ai-voicelive-java/SKILL.md",
+    "source_id": "src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e"
+  },
+  "dispatch_digest": "sha256:47ecbb728182307b12a242240528739e3ca6fdda7642d67442f0b196f442da9e",
+  "kind": "skill-analysis-dispatch",
+  "run_id": "run_2026-07-22-final",
+  "schema_version": 2
+}

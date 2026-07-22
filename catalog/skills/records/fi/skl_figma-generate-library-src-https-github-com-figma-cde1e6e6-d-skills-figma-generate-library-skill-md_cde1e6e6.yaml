@@ -14,7 +14,7 @@ curation:
 display_name: figma-generate-library
 identity:
   aliases: []
-  current_version_id: sha256:80db1621f429613b3d518582ad9c25b8615f3003
+  current_version_id: git_sha1:80db1621f429613b3d518582ad9c25b8615f3003
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

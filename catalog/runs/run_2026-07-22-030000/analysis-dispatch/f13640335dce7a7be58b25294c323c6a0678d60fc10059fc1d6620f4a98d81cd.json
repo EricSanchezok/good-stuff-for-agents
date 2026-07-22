@@ -1,0 +1,16 @@
+{
+  "binding": {
+    "canonical_skill_id": "skl_etetoolkit-src-https-github-com-k-dense-ai-scienti-7eaf8c92-ills-5bdb6d39-skills-etetoolkit-skill-md_7eaf8c92",
+    "current_version_id": "git_sha1:d34f9286daecf6a548d75027efbd6261d1514d14",
+    "expected_output_path": "catalog/analyses/et/skl_etetoolkit-src-https-github-com-k-dense-ai-scienti-7eaf8c92-ills-5bdb6d39-skills-etetoolkit-skill-md_7eaf8c92.md",
+    "git_blob_oid": "git_sha1:d34f9286daecf6a548d75027efbd6261d1514d14",
+    "pinned_commit": "831d49eb77eed3c792be2970921b46764012ef00",
+    "raw_url": "https://raw.githubusercontent.com/K-Dense-AI/scientific-agent-skills/831d49eb77eed3c792be2970921b46764012ef00/skills/etetoolkit/SKILL.md",
+    "remote_path": "skills/etetoolkit/SKILL.md",
+    "source_id": "src_https-github-com-k-dense-ai-scientific-agent-skills-k-dense-scientific-agent-skills_5bdb6d39"
+  },
+  "dispatch_digest": "sha256:f13640335dce7a7be58b25294c323c6a0678d60fc10059fc1d6620f4a98d81cd",
+  "kind": "skill-analysis-dispatch",
+  "run_id": "run_2026-07-22-030000",
+  "schema_version": 2
+}

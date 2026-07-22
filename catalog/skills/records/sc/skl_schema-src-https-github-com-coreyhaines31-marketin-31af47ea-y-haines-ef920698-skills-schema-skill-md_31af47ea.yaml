@@ -14,7 +14,7 @@ curation:
 display_name: schema
 identity:
   aliases: []
-  current_version_id: sha256:e6012136a998d5881d320dce58360bac1809b246
+  current_version_id: git_sha1:e6012136a998d5881d320dce58360bac1809b246
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

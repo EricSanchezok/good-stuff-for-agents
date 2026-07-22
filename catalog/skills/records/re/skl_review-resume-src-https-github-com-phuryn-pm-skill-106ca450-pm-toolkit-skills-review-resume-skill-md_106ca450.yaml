@@ -14,7 +14,7 @@ curation:
 display_name: review-resume
 identity:
   aliases: []
-  current_version_id: sha256:e4620d5e64261cd453724f3c714791562adabc1a
+  current_version_id: git_sha1:e4620d5e64261cd453724f3c714791562adabc1a
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

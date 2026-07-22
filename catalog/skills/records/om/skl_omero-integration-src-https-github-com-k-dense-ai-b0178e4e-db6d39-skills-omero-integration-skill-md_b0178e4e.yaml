@@ -14,7 +14,7 @@ curation:
 display_name: omero-integration
 identity:
   aliases: []
-  current_version_id: sha256:97c44b37819b2e9b671ead63fcccfff8e2dbde69
+  current_version_id: git_sha1:97c44b37819b2e9b671ead63fcccfff8e2dbde69
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

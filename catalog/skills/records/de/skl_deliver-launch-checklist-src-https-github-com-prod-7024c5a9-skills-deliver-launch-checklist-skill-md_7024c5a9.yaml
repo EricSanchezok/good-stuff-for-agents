@@ -14,7 +14,7 @@ curation:
 display_name: deliver-launch-checklist
 identity:
   aliases: []
-  current_version_id: sha256:859bee4a17a72bd7cc5fa136a935f6dde12ad8a7
+  current_version_id: git_sha1:859bee4a17a72bd7cc5fa136a935f6dde12ad8a7
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

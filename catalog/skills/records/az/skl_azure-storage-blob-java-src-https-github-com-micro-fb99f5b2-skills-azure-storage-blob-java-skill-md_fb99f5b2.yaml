@@ -14,7 +14,7 @@ curation:
 display_name: azure-storage-blob-java
 identity:
   aliases: []
-  current_version_id: sha256:9202207d800886e1fbe56673a54f7f77b723e114
+  current_version_id: git_sha1:9202207d800886e1fbe56673a54f7f77b723e114
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

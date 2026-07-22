@@ -14,7 +14,7 @@ curation:
 display_name: design-system-inventory-figma
 identity:
   aliases: []
-  current_version_id: sha256:63c994f2388f3b59261764238a4523a6ad4e6ea4
+  current_version_id: git_sha1:63c994f2388f3b59261764238a4523a6ad4e6ea4
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

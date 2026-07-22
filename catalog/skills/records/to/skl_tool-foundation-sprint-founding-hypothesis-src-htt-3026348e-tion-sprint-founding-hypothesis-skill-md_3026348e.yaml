@@ -14,7 +14,7 @@ curation:
 display_name: tool-foundation-sprint-founding-hypothesis
 identity:
   aliases: []
-  current_version_id: sha256:e1955cf5d5cb0da127535c04170f140954254328
+  current_version_id: git_sha1:e1955cf5d5cb0da127535c04170f140954254328
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

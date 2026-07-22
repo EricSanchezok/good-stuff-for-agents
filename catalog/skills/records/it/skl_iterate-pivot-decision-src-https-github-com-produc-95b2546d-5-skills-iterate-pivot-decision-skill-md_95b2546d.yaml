@@ -14,7 +14,7 @@ curation:
 display_name: iterate-pivot-decision
 identity:
   aliases: []
-  current_version_id: sha256:23d921a8e98418997591ad1c07a8d25479ae4b86
+  current_version_id: git_sha1:23d921a8e98418997591ad1c07a8d25479ae4b86
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

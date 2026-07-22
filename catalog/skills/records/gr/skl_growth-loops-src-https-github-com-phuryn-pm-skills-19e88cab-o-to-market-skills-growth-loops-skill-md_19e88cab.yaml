@@ -14,7 +14,7 @@ curation:
 display_name: growth-loops
 identity:
   aliases: []
-  current_version_id: sha256:f6ff788a378318d6138ccf865f69882f525e3ae9
+  current_version_id: git_sha1:f6ff788a378318d6138ccf865f69882f525e3ae9
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

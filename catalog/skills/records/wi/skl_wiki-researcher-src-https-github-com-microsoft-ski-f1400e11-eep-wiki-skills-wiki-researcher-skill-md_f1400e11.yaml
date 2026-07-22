@@ -14,7 +14,7 @@ curation:
 display_name: wiki-researcher
 identity:
   aliases: []
-  current_version_id: sha256:b4ccf2ca851d10c1b7395e49f39534af26ad5bce
+  current_version_id: git_sha1:b4ccf2ca851d10c1b7395e49f39534af26ad5bce
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

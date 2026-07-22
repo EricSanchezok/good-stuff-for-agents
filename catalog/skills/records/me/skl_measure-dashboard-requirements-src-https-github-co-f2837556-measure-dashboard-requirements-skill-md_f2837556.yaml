@@ -14,7 +14,7 @@ curation:
 display_name: measure-dashboard-requirements
 identity:
   aliases: []
-  current_version_id: sha256:5303a77f540e6d439f248207c66cafdb185ddee8
+  current_version_id: git_sha1:5303a77f540e6d439f248207c66cafdb185ddee8
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

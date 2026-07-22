@@ -1,0 +1,16 @@
+{
+  "binding": {
+    "canonical_skill_id": "skl_adaptyv-src-https-github-com-k-dense-ai-scientific-4be6f359-skills-5bdb6d39-skills-adaptyv-skill-md_4be6f359",
+    "current_version_id": "git_sha1:728e113fd36e14c7c3be9a7e20be8b032169b941",
+    "expected_output_path": "catalog/analyses/ad/skl_adaptyv-src-https-github-com-k-dense-ai-scientific-4be6f359-skills-5bdb6d39-skills-adaptyv-skill-md_4be6f359.md",
+    "git_blob_oid": "git_sha1:728e113fd36e14c7c3be9a7e20be8b032169b941",
+    "pinned_commit": "831d49eb77eed3c792be2970921b46764012ef00",
+    "raw_url": "https://raw.githubusercontent.com/K-Dense-AI/scientific-agent-skills/831d49eb77eed3c792be2970921b46764012ef00/skills/adaptyv/SKILL.md",
+    "remote_path": "skills/adaptyv/SKILL.md",
+    "source_id": "src_https-github-com-k-dense-ai-scientific-agent-skills-k-dense-scientific-agent-skills_5bdb6d39"
+  },
+  "dispatch_digest": "sha256:6c6ada12c1b09c118e4a3cec1ab83893d140becefa525f6fd89dd4cf3dd148ea",
+  "kind": "skill-analysis-dispatch",
+  "run_id": "run_2026-07-22-030000",
+  "schema_version": 2
+}

@@ -14,7 +14,7 @@ curation:
 display_name: measure-experiment-results
 identity:
   aliases: []
-  current_version_id: sha256:c84e0c62e32f805d67fe2f3bade0467f37ebfb0b
+  current_version_id: git_sha1:c84e0c62e32f805d67fe2f3bade0467f37ebfb0b
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

@@ -14,7 +14,7 @@ curation:
 display_name: brainstorm-okrs
 identity:
   aliases: []
-  current_version_id: sha256:74709d80c461458ff4dab3712586f90ee5ec8cc1
+  current_version_id: git_sha1:74709d80c461458ff4dab3712586f90ee5ec8cc1
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

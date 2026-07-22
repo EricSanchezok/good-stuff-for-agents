@@ -14,7 +14,7 @@ curation:
 display_name: azure-resource-manager-redis-dotnet
 identity:
   aliases: []
-  current_version_id: sha256:339db649fa6bda62a6960a585ce334b1617b82f0
+  current_version_id: git_sha1:339db649fa6bda62a6960a585ce334b1617b82f0
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

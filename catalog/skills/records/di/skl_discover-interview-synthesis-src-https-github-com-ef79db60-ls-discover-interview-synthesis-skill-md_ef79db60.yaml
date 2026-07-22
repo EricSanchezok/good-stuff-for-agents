@@ -14,7 +14,7 @@ curation:
 display_name: discover-interview-synthesis
 identity:
   aliases: []
-  current_version_id: sha256:0653f92366571161a5e2c53b8175a4cc51989127
+  current_version_id: git_sha1:0653f92366571161a5e2c53b8175a4cc51989127
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

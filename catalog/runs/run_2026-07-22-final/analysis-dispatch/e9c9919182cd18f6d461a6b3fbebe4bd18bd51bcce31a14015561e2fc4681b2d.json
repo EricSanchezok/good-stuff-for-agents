@@ -1,0 +1,16 @@
+{
+  "binding": {
+    "canonical_skill_id": "skl_azure-identity-dotnet-src-https-github-com-microso-eaf8984d-et-skills-azure-identity-dotnet-skill-md_eaf8984d",
+    "current_version_id": "git_sha1:a851ddfc4dc0fc76cdb9fb45f0604c16d4d59f82",
+    "expected_output_path": "catalog/analyses/az/skl_azure-identity-dotnet-src-https-github-com-microso-eaf8984d-et-skills-azure-identity-dotnet-skill-md_eaf8984d.md",
+    "git_blob_oid": "git_sha1:a851ddfc4dc0fc76cdb9fb45f0604c16d4d59f82",
+    "pinned_commit": "cc93536d8b809e177a7d1008b276ce41a9456a9c",
+    "raw_url": "https://raw.githubusercontent.com/microsoft/skills/cc93536d8b809e177a7d1008b276ce41a9456a9c/.github/plugins/azure-sdk-dotnet/skills/azure-identity-dotnet/SKILL.md",
+    "remote_path": ".github/plugins/azure-sdk-dotnet/skills/azure-identity-dotnet/SKILL.md",
+    "source_id": "src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e"
+  },
+  "dispatch_digest": "sha256:e9c9919182cd18f6d461a6b3fbebe4bd18bd51bcce31a14015561e2fc4681b2d",
+  "kind": "skill-analysis-dispatch",
+  "run_id": "run_2026-07-22-final",
+  "schema_version": 2
+}

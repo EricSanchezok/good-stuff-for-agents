@@ -14,7 +14,7 @@ curation:
 display_name: template
 identity:
   aliases: []
-  current_version_id: sha256:50a4f9b104357d96361e257adb70454604cd15c0
+  current_version_id: git_sha1:50a4f9b104357d96361e257adb70454604cd15c0
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

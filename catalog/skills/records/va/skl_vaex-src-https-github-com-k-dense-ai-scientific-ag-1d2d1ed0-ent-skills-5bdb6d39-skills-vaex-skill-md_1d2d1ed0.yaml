@@ -14,7 +14,7 @@ curation:
 display_name: vaex
 identity:
   aliases: []
-  current_version_id: sha256:0108956a0374967d6a7d7d09e568f9edc94a8588
+  current_version_id: git_sha1:0108956a0374967d6a7d7d09e568f9edc94a8588
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

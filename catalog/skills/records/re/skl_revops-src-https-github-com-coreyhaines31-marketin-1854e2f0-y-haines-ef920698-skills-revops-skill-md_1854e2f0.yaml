@@ -14,7 +14,7 @@ curation:
 display_name: revops
 identity:
   aliases: []
-  current_version_id: sha256:fba4dc188fa79cc094ba8f3dd878c0791331d1a0
+  current_version_id: git_sha1:fba4dc188fa79cc094ba8f3dd878c0791331d1a0
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

@@ -14,7 +14,7 @@ curation:
 display_name: lamindb
 identity:
   aliases: []
-  current_version_id: sha256:2f0b9b1705da880320196f44abad451b0849932d
+  current_version_id: git_sha1:2f0b9b1705da880320196f44abad451b0849932d
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

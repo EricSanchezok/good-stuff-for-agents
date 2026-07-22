@@ -14,7 +14,7 @@ curation:
 display_name: internal-comms
 identity:
   aliases: []
-  current_version_id: sha256:56ea935b74f371bfeb4c7d3c19d5139df866e73b
+  current_version_id: git_sha1:56ea935b74f371bfeb4c7d3c19d5139df866e73b
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

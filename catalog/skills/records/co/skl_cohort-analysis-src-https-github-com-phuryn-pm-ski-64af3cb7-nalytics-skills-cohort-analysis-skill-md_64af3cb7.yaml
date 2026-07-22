@@ -14,7 +14,7 @@ curation:
 display_name: cohort-analysis
 identity:
   aliases: []
-  current_version_id: sha256:e2d7b0e9fb83e04d7ff584747efedd4d0701d6fd
+  current_version_id: git_sha1:e2d7b0e9fb83e04d7ff584747efedd4d0701d6fd
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

@@ -14,7 +14,7 @@ curation:
 display_name: marketing-council
 identity:
   aliases: []
-  current_version_id: sha256:f4737811fb0ef5f2b5d1b51c996d018e9f66607e
+  current_version_id: git_sha1:f4737811fb0ef5f2b5d1b51c996d018e9f66607e
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

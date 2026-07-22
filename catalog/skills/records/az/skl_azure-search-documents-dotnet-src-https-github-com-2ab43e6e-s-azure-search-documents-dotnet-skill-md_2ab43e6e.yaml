@@ -14,7 +14,7 @@ curation:
 display_name: azure-search-documents-dotnet
 identity:
   aliases: []
-  current_version_id: sha256:074a1981b319b9c93327188a3dcbd5ca84888b85
+  current_version_id: git_sha1:074a1981b319b9c93327188a3dcbd5ca84888b85
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

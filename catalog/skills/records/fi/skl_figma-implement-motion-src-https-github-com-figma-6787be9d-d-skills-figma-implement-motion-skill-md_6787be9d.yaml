@@ -14,7 +14,7 @@ curation:
 display_name: figma-implement-motion
 identity:
   aliases: []
-  current_version_id: sha256:1732d9bf2bb069eaf3def1f202986e518c2e9fc5
+  current_version_id: git_sha1:1732d9bf2bb069eaf3def1f202986e518c2e9fc5
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

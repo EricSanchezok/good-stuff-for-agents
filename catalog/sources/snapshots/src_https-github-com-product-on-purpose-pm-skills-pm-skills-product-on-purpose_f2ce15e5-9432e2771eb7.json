@@ -1,0 +1,1885 @@
+{
+  "schema_version": 1,
+  "source_id": "src_https-github-com-product-on-purpose-pm-skills-pm-skills-product-on-purpose_f2ce15e5",
+  "upstream_ref": "9432e2771eb7c221c9454a210c6ae55b6ee25d54",
+  "checked_at": "2026-07-22T02:48:54.160Z",
+  "url": "https://github.com/product-on-purpose/pm-skills",
+  "artifacts": [
+    {
+      "source_id": "src_https-github-com-product-on-purpose-pm-skills-pm-skills-product-on-purpose_f2ce15e5",
+      "path": "hooks/fixtures/skills/define-x/SKILL.md",
+      "declared_name": "define-x",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:3ae799ae6dd6ce83874d6b76e6369958b5841f96",
+      "upstream_ref": "9432e2771eb7c221c9454a210c6ae55b6ee25d54",
+      "git_blob_oid": "git_sha1:3ae799ae6dd6ce83874d6b76e6369958b5841f96",
+      "url": "https://github.com/product-on-purpose/pm-skills/blob/9432e2771eb7c221c9454a210c6ae55b6ee25d54/hooks/fixtures/skills/define-x/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/product-on-purpose/pm-skills/9432e2771eb7c221c9454a210c6ae55b6ee25d54/hooks/fixtures/skills/define-x/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-product-on-purpose-pm-skills-pm-skills-product-on-purpose_f2ce15e5",
+        "canonical_skill_id": null,
+        "remote_path": "hooks/fixtures/skills/define-x/SKILL.md",
+        "pinned_commit": "9432e2771eb7c221c9454a210c6ae55b6ee25d54",
+        "git_blob_oid": "git_sha1:3ae799ae6dd6ce83874d6b76e6369958b5841f96",
+        "raw_url": "https://raw.githubusercontent.com/product-on-purpose/pm-skills/9432e2771eb7c221c9454a210c6ae55b6ee25d54/hooks/fixtures/skills/define-x/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:3ae799ae6dd6ce83874d6b76e6369958b5841f96",
+        "size": 101
+      }
+    },
+    {
+      "source_id": "src_https-github-com-product-on-purpose-pm-skills-pm-skills-product-on-purpose_f2ce15e5",
+      "path": "hooks/fixtures/skills/deliver-y/SKILL.md",
+      "declared_name": "deliver-y",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:bdb933bf5fa254d1ff6758c057e6aa3d263c5019",
+      "upstream_ref": "9432e2771eb7c221c9454a210c6ae55b6ee25d54",
+      "git_blob_oid": "git_sha1:bdb933bf5fa254d1ff6758c057e6aa3d263c5019",
+      "url": "https://github.com/product-on-purpose/pm-skills/blob/9432e2771eb7c221c9454a210c6ae55b6ee25d54/hooks/fixtures/skills/deliver-y/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/product-on-purpose/pm-skills/9432e2771eb7c221c9454a210c6ae55b6ee25d54/hooks/fixtures/skills/deliver-y/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-product-on-purpose-pm-skills-pm-skills-product-on-purpose_f2ce15e5",
+        "canonical_skill_id": null,
+        "remote_path": "hooks/fixtures/skills/deliver-y/SKILL.md",
+        "pinned_commit": "9432e2771eb7c221c9454a210c6ae55b6ee25d54",
+        "git_blob_oid": "git_sha1:bdb933bf5fa254d1ff6758c057e6aa3d263c5019",
+        "raw_url": "https://raw.githubusercontent.com/product-on-purpose/pm-skills/9432e2771eb7c221c9454a210c6ae55b6ee25d54/hooks/fixtures/skills/deliver-y/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:bdb933bf5fa254d1ff6758c057e6aa3d263c5019",
+        "size": 104
+      }
+    },
+    {
+      "source_id": "src_https-github-com-product-on-purpose-pm-skills-pm-skills-product-on-purpose_f2ce15e5",
+      "path": "scripts/fixtures/family-registration/repo/skills/demo-noref/SKILL.md",
+      "declared_name": "demo-noref",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:aa3df01383068ae20189a3f4d8a2d16c1a557f77",
+      "upstream_ref": "9432e2771eb7c221c9454a210c6ae55b6ee25d54",
+      "git_blob_oid": "git_sha1:aa3df01383068ae20189a3f4d8a2d16c1a557f77",
+      "url": "https://github.com/product-on-purpose/pm-skills/blob/9432e2771eb7c221c9454a210c6ae55b6ee25d54/scripts/fixtures/family-registration/repo/skills/demo-noref/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/product-on-purpose/pm-skills/9432e2771eb7c221c9454a210c6ae55b6ee25d54/scripts/fixtures/family-registration/repo/skills/demo-noref/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-product-on-purpose-pm-skills-pm-skills-product-on-purpose_f2ce15e5",
+        "canonical_skill_id": null,
+        "remote_path": "scripts/fixtures/family-registration/repo/skills/demo-noref/SKILL.md",
+        "pinned_commit": "9432e2771eb7c221c9454a210c6ae55b6ee25d54",
+        "git_blob_oid": "git_sha1:aa3df01383068ae20189a3f4d8a2d16c1a557f77",
+        "raw_url": "https://raw.githubusercontent.com/product-on-purpose/pm-skills/9432e2771eb7c221c9454a210c6ae55b6ee25d54/scripts/fixtures/family-registration/repo/skills/demo-noref/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:aa3df01383068ae20189a3f4d8a2d16c1a557f77",
+        "size": 214
+      }
+    },
+    {
+      "source_id": "src_https-github-com-product-on-purpose-pm-skills-pm-skills-product-on-purpose_f2ce15e5",
+      "path": "scripts/fixtures/family-registration/repo/skills/demo-present/SKILL.md",
+      "declared_name": "demo-present",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:d2032f165fe754c5153e80069ad625b568d4db49",
+      "upstream_ref": "9432e2771eb7c221c9454a210c6ae55b6ee25d54",
+      "git_blob_oid": "git_sha1:d2032f165fe754c5153e80069ad625b568d4db49",
+      "url": "https://github.com/product-on-purpose/pm-skills/blob/9432e2771eb7c221c9454a210c6ae55b6ee25d54/scripts/fixtures/family-registration/repo/skills/demo-present/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/product-on-purpose/pm-skills/9432e2771eb7c221c9454a210c6ae55b6ee25d54/scripts/fixtures/family-registration/repo/skills/demo-present/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-product-on-purpose-pm-skills-pm-skills-product-on-purpose_f2ce15e5",
+        "canonical_skill_id": null,
+        "remote_path": "scripts/fixtures/family-registration/repo/skills/demo-present/SKILL.md",
+        "pinned_commit": "9432e2771eb7c221c9454a210c6ae55b6ee25d54",
+        "git_blob_oid": "git_sha1:d2032f165fe754c5153e80069ad625b568d4db49",
+        "raw_url": "https://raw.githubusercontent.com/product-on-purpose/pm-skills/9432e2771eb7c221c9454a210c6ae55b6ee25d54/scripts/fixtures/family-registration/repo/skills/demo-present/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:d2032f165fe754c5153e80069ad625b568d4db49",
+        "size": 223
+      }
+    },
+    {
+      "source_id": "src_https-github-com-product-on-purpose-pm-skills-pm-skills-product-on-purpose_f2ce15e5",
+      "path": "scripts/fixtures/shell-parity/repo/skills/s-one/SKILL.md",
+      "declared_name": "s-one",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:982a261287eb6560b31414e38967f0a4ca612824",
+      "upstream_ref": "9432e2771eb7c221c9454a210c6ae55b6ee25d54",
+      "git_blob_oid": "git_sha1:982a261287eb6560b31414e38967f0a4ca612824",
+      "url": "https://github.com/product-on-purpose/pm-skills/blob/9432e2771eb7c221c9454a210c6ae55b6ee25d54/scripts/fixtures/shell-parity/repo/skills/s-one/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/product-on-purpose/pm-skills/9432e2771eb7c221c9454a210c6ae55b6ee25d54/scripts/fixtures/shell-parity/repo/skills/s-one/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-product-on-purpose-pm-skills-pm-skills-product-on-purpose_f2ce15e5",
+        "canonical_skill_id": null,
+        "remote_path": "scripts/fixtures/shell-parity/repo/skills/s-one/SKILL.md",
+        "pinned_commit": "9432e2771eb7c221c9454a210c6ae55b6ee25d54",
+        "git_blob_oid": "git_sha1:982a261287eb6560b31414e38967f0a4ca612824",
+        "raw_url": "https://raw.githubusercontent.com/product-on-purpose/pm-skills/9432e2771eb7c221c9454a210c6ae55b6ee25d54/scripts/fixtures/shell-parity/repo/skills/s-one/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:982a261287eb6560b31414e38967f0a4ca612824",
+        "size": 167
+      }
+    },
+    {
+      "source_id": "src_https-github-com-product-on-purpose-pm-skills-pm-skills-product-on-purpose_f2ce15e5",
+      "path": "scripts/fixtures/shell-parity/repo/skills/s-three/SKILL.md",
+      "declared_name": "s-three",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:548d8551547ab4e80b5a08ad02422188a651981a",
+      "upstream_ref": "9432e2771eb7c221c9454a210c6ae55b6ee25d54",
+      "git_blob_oid": "git_sha1:548d8551547ab4e80b5a08ad02422188a651981a",
+      "url": "https://github.com/product-on-purpose/pm-skills/blob/9432e2771eb7c221c9454a210c6ae55b6ee25d54/scripts/fixtures/shell-parity/repo/skills/s-three/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/product-on-purpose/pm-skills/9432e2771eb7c221c9454a210c6ae55b6ee25d54/scripts/fixtures/shell-parity/repo/skills/s-three/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-product-on-purpose-pm-skills-pm-skills-product-on-purpose_f2ce15e5",
+        "canonical_skill_id": null,
+        "remote_path": "scripts/fixtures/shell-parity/repo/skills/s-three/SKILL.md",
+        "pinned_commit": "9432e2771eb7c221c9454a210c6ae55b6ee25d54",
+        "git_blob_oid": "git_sha1:548d8551547ab4e80b5a08ad02422188a651981a",
+        "raw_url": "https://raw.githubusercontent.com/product-on-purpose/pm-skills/9432e2771eb7c221c9454a210c6ae55b6ee25d54/scripts/fixtures/shell-parity/repo/skills/s-three/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:548d8551547ab4e80b5a08ad02422188a651981a",
+        "size": 169
+      }
+    },
+    {
+      "source_id": "src_https-github-com-product-on-purpose-pm-skills-pm-skills-product-on-purpose_f2ce15e5",
+      "path": "scripts/fixtures/shell-parity/repo/skills/s-two/SKILL.md",
+      "declared_name": "s-two",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:88947cb439c72a4a8b9037580402d1462af271e9",
+      "upstream_ref": "9432e2771eb7c221c9454a210c6ae55b6ee25d54",
+      "git_blob_oid": "git_sha1:88947cb439c72a4a8b9037580402d1462af271e9",
+      "url": "https://github.com/product-on-purpose/pm-skills/blob/9432e2771eb7c221c9454a210c6ae55b6ee25d54/scripts/fixtures/shell-parity/repo/skills/s-two/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/product-on-purpose/pm-skills/9432e2771eb7c221c9454a210c6ae55b6ee25d54/scripts/fixtures/shell-parity/repo/skills/s-two/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-product-on-purpose-pm-skills-pm-skills-product-on-purpose_f2ce15e5",
+        "canonical_skill_id": null,
+        "remote_path": "scripts/fixtures/shell-parity/repo/skills/s-two/SKILL.md",
+        "pinned_commit": "9432e2771eb7c221c9454a210c6ae55b6ee25d54",
+        "git_blob_oid": "git_sha1:88947cb439c72a4a8b9037580402d1462af271e9",
+        "raw_url": "https://raw.githubusercontent.com/product-on-purpose/pm-skills/9432e2771eb7c221c9454a210c6ae55b6ee25d54/scripts/fixtures/shell-parity/repo/skills/s-two/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:88947cb439c72a4a8b9037580402d1462af271e9",
+        "size": 167
+      }
+    },
+    {
+      "source_id": "src_https-github-com-product-on-purpose-pm-skills-pm-skills-product-on-purpose_f2ce15e5",
+      "path": "skills/define-hypothesis/SKILL.md",
+      "declared_name": "define-hypothesis",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:d10e3405859c13fb187357061a512a01a92f8197",
+      "upstream_ref": "9432e2771eb7c221c9454a210c6ae55b6ee25d54",
+      "git_blob_oid": "git_sha1:d10e3405859c13fb187357061a512a01a92f8197",
+      "url": "https://github.com/product-on-purpose/pm-skills/blob/9432e2771eb7c221c9454a210c6ae55b6ee25d54/skills/define-hypothesis/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/product-on-purpose/pm-skills/9432e2771eb7c221c9454a210c6ae55b6ee25d54/skills/define-hypothesis/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-product-on-purpose-pm-skills-pm-skills-product-on-purpose_f2ce15e5",
+        "canonical_skill_id": null,
+        "remote_path": "skills/define-hypothesis/SKILL.md",
+        "pinned_commit": "9432e2771eb7c221c9454a210c6ae55b6ee25d54",
+        "git_blob_oid": "git_sha1:d10e3405859c13fb187357061a512a01a92f8197",
+        "raw_url": "https://raw.githubusercontent.com/product-on-purpose/pm-skills/9432e2771eb7c221c9454a210c6ae55b6ee25d54/skills/define-hypothesis/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:d10e3405859c13fb187357061a512a01a92f8197",
+        "size": 3863
+      }
+    },
+    {
+      "source_id": "src_https-github-com-product-on-purpose-pm-skills-pm-skills-product-on-purpose_f2ce15e5",
+      "path": "skills/define-jtbd-canvas/SKILL.md",
+      "declared_name": "define-jtbd-canvas",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:2bd1c0b1448c3a72103a5c7f5dd059817143c886",
+      "upstream_ref": "9432e2771eb7c221c9454a210c6ae55b6ee25d54",
+      "git_blob_oid": "git_sha1:2bd1c0b1448c3a72103a5c7f5dd059817143c886",
+      "url": "https://github.com/product-on-purpose/pm-skills/blob/9432e2771eb7c221c9454a210c6ae55b6ee25d54/skills/define-jtbd-canvas/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/product-on-purpose/pm-skills/9432e2771eb7c221c9454a210c6ae55b6ee25d54/skills/define-jtbd-canvas/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-product-on-purpose-pm-skills-pm-skills-product-on-purpose_f2ce15e5",
+        "canonical_skill_id": null,
+        "remote_path": "skills/define-jtbd-canvas/SKILL.md",
+        "pinned_commit": "9432e2771eb7c221c9454a210c6ae55b6ee25d54",
+        "git_blob_oid": "git_sha1:2bd1c0b1448c3a72103a5c7f5dd059817143c886",
+        "raw_url": "https://raw.githubusercontent.com/product-on-purpose/pm-skills/9432e2771eb7c221c9454a210c6ae55b6ee25d54/skills/define-jtbd-canvas/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:2bd1c0b1448c3a72103a5c7f5dd059817143c886",
+        "size": 4327
+      }
+    },
+    {
+      "source_id": "src_https-github-com-product-on-purpose-pm-skills-pm-skills-product-on-purpose_f2ce15e5",
+      "path": "skills/define-opportunity-tree/SKILL.md",
+      "declared_name": "define-opportunity-tree",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:ce6d44d1a00218fc842ed7ab42eda69b59ac5f71",
+      "upstream_ref": "9432e2771eb7c221c9454a210c6ae55b6ee25d54",
+      "git_blob_oid": "git_sha1:ce6d44d1a00218fc842ed7ab42eda69b59ac5f71",
+      "url": "https://github.com/product-on-purpose/pm-skills/blob/9432e2771eb7c221c9454a210c6ae55b6ee25d54/skills/define-opportunity-tree/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/product-on-purpose/pm-skills/9432e2771eb7c221c9454a210c6ae55b6ee25d54/skills/define-opportunity-tree/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-product-on-purpose-pm-skills-pm-skills-product-on-purpose_f2ce15e5",
+        "canonical_skill_id": null,
+        "remote_path": "skills/define-opportunity-tree/SKILL.md",
+        "pinned_commit": "9432e2771eb7c221c9454a210c6ae55b6ee25d54",
+        "git_blob_oid": "git_sha1:ce6d44d1a00218fc842ed7ab42eda69b59ac5f71",
+        "raw_url": "https://raw.githubusercontent.com/product-on-purpose/pm-skills/9432e2771eb7c221c9454a210c6ae55b6ee25d54/skills/define-opportunity-tree/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:ce6d44d1a00218fc842ed7ab42eda69b59ac5f71",
+        "size": 4425
+      }
+    },
+    {
+      "source_id": "src_https-github-com-product-on-purpose-pm-skills-pm-skills-product-on-purpose_f2ce15e5",
+      "path": "skills/define-prioritization-framework/SKILL.md",
+      "declared_name": "define-prioritization-framework",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:05ffaeecdf09241d4ef0bb718b4f24365888e1ba",
+      "upstream_ref": "9432e2771eb7c221c9454a210c6ae55b6ee25d54",
+      "git_blob_oid": "git_sha1:05ffaeecdf09241d4ef0bb718b4f24365888e1ba",
+      "url": "https://github.com/product-on-purpose/pm-skills/blob/9432e2771eb7c221c9454a210c6ae55b6ee25d54/skills/define-prioritization-framework/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/product-on-purpose/pm-skills/9432e2771eb7c221c9454a210c6ae55b6ee25d54/skills/define-prioritization-framework/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-product-on-purpose-pm-skills-pm-skills-product-on-purpose_f2ce15e5",
+        "canonical_skill_id": null,
+        "remote_path": "skills/define-prioritization-framework/SKILL.md",
+        "pinned_commit": "9432e2771eb7c221c9454a210c6ae55b6ee25d54",
+        "git_blob_oid": "git_sha1:05ffaeecdf09241d4ef0bb718b4f24365888e1ba",
+        "raw_url": "https://raw.githubusercontent.com/product-on-purpose/pm-skills/9432e2771eb7c221c9454a210c6ae55b6ee25d54/skills/define-prioritization-framework/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:05ffaeecdf09241d4ef0bb718b4f24365888e1ba",
+        "size": 13765
+      }
+    },
+    {
+      "source_id": "src_https-github-com-product-on-purpose-pm-skills-pm-skills-product-on-purpose_f2ce15e5",
+      "path": "skills/define-problem-statement/SKILL.md",
+      "declared_name": "define-problem-statement",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:a0ab828277b1d311f117ba41efaf6df750da7ce5",
+      "upstream_ref": "9432e2771eb7c221c9454a210c6ae55b6ee25d54",
+      "git_blob_oid": "git_sha1:a0ab828277b1d311f117ba41efaf6df750da7ce5",
+      "url": "https://github.com/product-on-purpose/pm-skills/blob/9432e2771eb7c221c9454a210c6ae55b6ee25d54/skills/define-problem-statement/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/product-on-purpose/pm-skills/9432e2771eb7c221c9454a210c6ae55b6ee25d54/skills/define-problem-statement/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-product-on-purpose-pm-skills-pm-skills-product-on-purpose_f2ce15e5",
+        "canonical_skill_id": null,
+        "remote_path": "skills/define-problem-statement/SKILL.md",
+        "pinned_commit": "9432e2771eb7c221c9454a210c6ae55b6ee25d54",
+        "git_blob_oid": "git_sha1:a0ab828277b1d311f117ba41efaf6df750da7ce5",
+        "raw_url": "https://raw.githubusercontent.com/product-on-purpose/pm-skills/9432e2771eb7c221c9454a210c6ae55b6ee25d54/skills/define-problem-statement/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:a0ab828277b1d311f117ba41efaf6df750da7ce5",
+        "size": 3728
+      }
+    },
+    {
+      "source_id": "src_https-github-com-product-on-purpose-pm-skills-pm-skills-product-on-purpose_f2ce15e5",
+      "path": "skills/deliver-acceptance-criteria/SKILL.md",
+      "declared_name": "deliver-acceptance-criteria",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:014b1e46d22d3c3d573ca46aeb2affcd206aec73",
+      "upstream_ref": "9432e2771eb7c221c9454a210c6ae55b6ee25d54",
+      "git_blob_oid": "git_sha1:014b1e46d22d3c3d573ca46aeb2affcd206aec73",
+      "url": "https://github.com/product-on-purpose/pm-skills/blob/9432e2771eb7c221c9454a210c6ae55b6ee25d54/skills/deliver-acceptance-criteria/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/product-on-purpose/pm-skills/9432e2771eb7c221c9454a210c6ae55b6ee25d54/skills/deliver-acceptance-criteria/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-product-on-purpose-pm-skills-pm-skills-product-on-purpose_f2ce15e5",
+        "canonical_skill_id": null,
+        "remote_path": "skills/deliver-acceptance-criteria/SKILL.md",
+        "pinned_commit": "9432e2771eb7c221c9454a210c6ae55b6ee25d54",
+        "git_blob_oid": "git_sha1:014b1e46d22d3c3d573ca46aeb2affcd206aec73",
+        "raw_url": "https://raw.githubusercontent.com/product-on-purpose/pm-skills/9432e2771eb7c221c9454a210c6ae55b6ee25d54/skills/deliver-acceptance-criteria/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:014b1e46d22d3c3d573ca46aeb2affcd206aec73",
+        "size": 4060
+      }
+    },
+    {
+      "source_id": "src_https-github-com-product-on-purpose-pm-skills-pm-skills-product-on-purpose_f2ce15e5",
+      "path": "skills/deliver-edge-cases/SKILL.md",
+      "declared_name": "deliver-edge-cases",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:01cfbbd15f5bd0d729e44cc1a837d09687983dc7",
+      "upstream_ref": "9432e2771eb7c221c9454a210c6ae55b6ee25d54",
+      "git_blob_oid": "git_sha1:01cfbbd15f5bd0d729e44cc1a837d09687983dc7",
+      "url": "https://github.com/product-on-purpose/pm-skills/blob/9432e2771eb7c221c9454a210c6ae55b6ee25d54/skills/deliver-edge-cases/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/product-on-purpose/pm-skills/9432e2771eb7c221c9454a210c6ae55b6ee25d54/skills/deliver-edge-cases/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-product-on-purpose-pm-skills-pm-skills-product-on-purpose_f2ce15e5",
+        "canonical_skill_id": null,
+        "remote_path": "skills/deliver-edge-cases/SKILL.md",
+        "pinned_commit": "9432e2771eb7c221c9454a210c6ae55b6ee25d54",
+        "git_blob_oid": "git_sha1:01cfbbd15f5bd0d729e44cc1a837d09687983dc7",
+        "raw_url": "https://raw.githubusercontent.com/product-on-purpose/pm-skills/9432e2771eb7c221c9454a210c6ae55b6ee25d54/skills/deliver-edge-cases/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:01cfbbd15f5bd0d729e44cc1a837d09687983dc7",
+        "size": 4342
+      }
+    },
+    {
+      "source_id": "src_https-github-com-product-on-purpose-pm-skills-pm-skills-product-on-purpose_f2ce15e5",
+      "path": "skills/deliver-launch-checklist/SKILL.md",
+      "declared_name": "deliver-launch-checklist",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:859bee4a17a72bd7cc5fa136a935f6dde12ad8a7",
+      "upstream_ref": "9432e2771eb7c221c9454a210c6ae55b6ee25d54",
+      "git_blob_oid": "git_sha1:859bee4a17a72bd7cc5fa136a935f6dde12ad8a7",
+      "url": "https://github.com/product-on-purpose/pm-skills/blob/9432e2771eb7c221c9454a210c6ae55b6ee25d54/skills/deliver-launch-checklist/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/product-on-purpose/pm-skills/9432e2771eb7c221c9454a210c6ae55b6ee25d54/skills/deliver-launch-checklist/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-product-on-purpose-pm-skills-pm-skills-product-on-purpose_f2ce15e5",
+        "canonical_skill_id": null,
+        "remote_path": "skills/deliver-launch-checklist/SKILL.md",
+        "pinned_commit": "9432e2771eb7c221c9454a210c6ae55b6ee25d54",
+        "git_blob_oid": "git_sha1:859bee4a17a72bd7cc5fa136a935f6dde12ad8a7",
+        "raw_url": "https://raw.githubusercontent.com/product-on-purpose/pm-skills/9432e2771eb7c221c9454a210c6ae55b6ee25d54/skills/deliver-launch-checklist/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:859bee4a17a72bd7cc5fa136a935f6dde12ad8a7",
+        "size": 3877
+      }
+    },
+    {
+      "source_id": "src_https-github-com-product-on-purpose-pm-skills-pm-skills-product-on-purpose_f2ce15e5",
+      "path": "skills/deliver-prd/SKILL.md",
+      "declared_name": "deliver-prd",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:2100006eb0ac716f5691167c975e701d2675596f",
+      "upstream_ref": "9432e2771eb7c221c9454a210c6ae55b6ee25d54",
+      "git_blob_oid": "git_sha1:2100006eb0ac716f5691167c975e701d2675596f",
+      "url": "https://github.com/product-on-purpose/pm-skills/blob/9432e2771eb7c221c9454a210c6ae55b6ee25d54/skills/deliver-prd/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/product-on-purpose/pm-skills/9432e2771eb7c221c9454a210c6ae55b6ee25d54/skills/deliver-prd/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-product-on-purpose-pm-skills-pm-skills-product-on-purpose_f2ce15e5",
+        "canonical_skill_id": null,
+        "remote_path": "skills/deliver-prd/SKILL.md",
+        "pinned_commit": "9432e2771eb7c221c9454a210c6ae55b6ee25d54",
+        "git_blob_oid": "git_sha1:2100006eb0ac716f5691167c975e701d2675596f",
+        "raw_url": "https://raw.githubusercontent.com/product-on-purpose/pm-skills/9432e2771eb7c221c9454a210c6ae55b6ee25d54/skills/deliver-prd/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:2100006eb0ac716f5691167c975e701d2675596f",
+        "size": 4262
+      }
+    },
+    {
+      "source_id": "src_https-github-com-product-on-purpose-pm-skills-pm-skills-product-on-purpose_f2ce15e5",
+      "path": "skills/deliver-release-notes/SKILL.md",
+      "declared_name": "deliver-release-notes",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:8b6e296c6e0a9ff1e6b0bc6187d84f2a34dca64f",
+      "upstream_ref": "9432e2771eb7c221c9454a210c6ae55b6ee25d54",
+      "git_blob_oid": "git_sha1:8b6e296c6e0a9ff1e6b0bc6187d84f2a34dca64f",
+      "url": "https://github.com/product-on-purpose/pm-skills/blob/9432e2771eb7c221c9454a210c6ae55b6ee25d54/skills/deliver-release-notes/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/product-on-purpose/pm-skills/9432e2771eb7c221c9454a210c6ae55b6ee25d54/skills/deliver-release-notes/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-product-on-purpose-pm-skills-pm-skills-product-on-purpose_f2ce15e5",
+        "canonical_skill_id": null,
+        "remote_path": "skills/deliver-release-notes/SKILL.md",
+        "pinned_commit": "9432e2771eb7c221c9454a210c6ae55b6ee25d54",
+        "git_blob_oid": "git_sha1:8b6e296c6e0a9ff1e6b0bc6187d84f2a34dca64f",
+        "raw_url": "https://raw.githubusercontent.com/product-on-purpose/pm-skills/9432e2771eb7c221c9454a210c6ae55b6ee25d54/skills/deliver-release-notes/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:8b6e296c6e0a9ff1e6b0bc6187d84f2a34dca64f",
+        "size": 3845
+      }
+    },
+    {
+      "source_id": "src_https-github-com-product-on-purpose-pm-skills-pm-skills-product-on-purpose_f2ce15e5",
+      "path": "skills/deliver-user-stories/SKILL.md",
+      "declared_name": "deliver-user-stories",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:40a476c401001507a405c38815c5f2d39fbc2a0a",
+      "upstream_ref": "9432e2771eb7c221c9454a210c6ae55b6ee25d54",
+      "git_blob_oid": "git_sha1:40a476c401001507a405c38815c5f2d39fbc2a0a",
+      "url": "https://github.com/product-on-purpose/pm-skills/blob/9432e2771eb7c221c9454a210c6ae55b6ee25d54/skills/deliver-user-stories/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/product-on-purpose/pm-skills/9432e2771eb7c221c9454a210c6ae55b6ee25d54/skills/deliver-user-stories/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-product-on-purpose-pm-skills-pm-skills-product-on-purpose_f2ce15e5",
+        "canonical_skill_id": null,
+        "remote_path": "skills/deliver-user-stories/SKILL.md",
+        "pinned_commit": "9432e2771eb7c221c9454a210c6ae55b6ee25d54",
+        "git_blob_oid": "git_sha1:40a476c401001507a405c38815c5f2d39fbc2a0a",
+        "raw_url": "https://raw.githubusercontent.com/product-on-purpose/pm-skills/9432e2771eb7c221c9454a210c6ae55b6ee25d54/skills/deliver-user-stories/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:40a476c401001507a405c38815c5f2d39fbc2a0a",
+        "size": 4205
+      }
+    },
+    {
+      "source_id": "src_https-github-com-product-on-purpose-pm-skills-pm-skills-product-on-purpose_f2ce15e5",
+      "path": "skills/develop-adr/SKILL.md",
+      "declared_name": "develop-adr",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:0e3381409c2e463eb262f21283a64a6233d420e8",
+      "upstream_ref": "9432e2771eb7c221c9454a210c6ae55b6ee25d54",
+      "git_blob_oid": "git_sha1:0e3381409c2e463eb262f21283a64a6233d420e8",
+      "url": "https://github.com/product-on-purpose/pm-skills/blob/9432e2771eb7c221c9454a210c6ae55b6ee25d54/skills/develop-adr/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/product-on-purpose/pm-skills/9432e2771eb7c221c9454a210c6ae55b6ee25d54/skills/develop-adr/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-product-on-purpose-pm-skills-pm-skills-product-on-purpose_f2ce15e5",
+        "canonical_skill_id": null,
+        "remote_path": "skills/develop-adr/SKILL.md",
+        "pinned_commit": "9432e2771eb7c221c9454a210c6ae55b6ee25d54",
+        "git_blob_oid": "git_sha1:0e3381409c2e463eb262f21283a64a6233d420e8",
+        "raw_url": "https://raw.githubusercontent.com/product-on-purpose/pm-skills/9432e2771eb7c221c9454a210c6ae55b6ee25d54/skills/develop-adr/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:0e3381409c2e463eb262f21283a64a6233d420e8",
+        "size": 3759
+      }
+    },
+    {
+      "source_id": "src_https-github-com-product-on-purpose-pm-skills-pm-skills-product-on-purpose_f2ce15e5",
+      "path": "skills/develop-design-rationale/SKILL.md",
+      "declared_name": "develop-design-rationale",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:0059edd35fe1b3b816d6d5d135b31b2ba7d5b980",
+      "upstream_ref": "9432e2771eb7c221c9454a210c6ae55b6ee25d54",
+      "git_blob_oid": "git_sha1:0059edd35fe1b3b816d6d5d135b31b2ba7d5b980",
+      "url": "https://github.com/product-on-purpose/pm-skills/blob/9432e2771eb7c221c9454a210c6ae55b6ee25d54/skills/develop-design-rationale/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/product-on-purpose/pm-skills/9432e2771eb7c221c9454a210c6ae55b6ee25d54/skills/develop-design-rationale/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-product-on-purpose-pm-skills-pm-skills-product-on-purpose_f2ce15e5",
+        "canonical_skill_id": null,
+        "remote_path": "skills/develop-design-rationale/SKILL.md",
+        "pinned_commit": "9432e2771eb7c221c9454a210c6ae55b6ee25d54",
+        "git_blob_oid": "git_sha1:0059edd35fe1b3b816d6d5d135b31b2ba7d5b980",
+        "raw_url": "https://raw.githubusercontent.com/product-on-purpose/pm-skills/9432e2771eb7c221c9454a210c6ae55b6ee25d54/skills/develop-design-rationale/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:0059edd35fe1b3b816d6d5d135b31b2ba7d5b980",
+        "size": 4108
+      }
+    },
+    {
+      "source_id": "src_https-github-com-product-on-purpose-pm-skills-pm-skills-product-on-purpose_f2ce15e5",
+      "path": "skills/develop-solution-brief/SKILL.md",
+      "declared_name": "develop-solution-brief",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:3b30f88e9d5dff7c62dcb76e4308ede942a5ea28",
+      "upstream_ref": "9432e2771eb7c221c9454a210c6ae55b6ee25d54",
+      "git_blob_oid": "git_sha1:3b30f88e9d5dff7c62dcb76e4308ede942a5ea28",
+      "url": "https://github.com/product-on-purpose/pm-skills/blob/9432e2771eb7c221c9454a210c6ae55b6ee25d54/skills/develop-solution-brief/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/product-on-purpose/pm-skills/9432e2771eb7c221c9454a210c6ae55b6ee25d54/skills/develop-solution-brief/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-product-on-purpose-pm-skills-pm-skills-product-on-purpose_f2ce15e5",
+        "canonical_skill_id": null,
+        "remote_path": "skills/develop-solution-brief/SKILL.md",
+        "pinned_commit": "9432e2771eb7c221c9454a210c6ae55b6ee25d54",
+        "git_blob_oid": "git_sha1:3b30f88e9d5dff7c62dcb76e4308ede942a5ea28",
+        "raw_url": "https://raw.githubusercontent.com/product-on-purpose/pm-skills/9432e2771eb7c221c9454a210c6ae55b6ee25d54/skills/develop-solution-brief/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:3b30f88e9d5dff7c62dcb76e4308ede942a5ea28",
+        "size": 3842
+      }
+    },
+    {
+      "source_id": "src_https-github-com-product-on-purpose-pm-skills-pm-skills-product-on-purpose_f2ce15e5",
+      "path": "skills/develop-spike-summary/SKILL.md",
+      "declared_name": "develop-spike-summary",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:84739065bcbd090a94d389af9df161636d25a88e",
+      "upstream_ref": "9432e2771eb7c221c9454a210c6ae55b6ee25d54",
+      "git_blob_oid": "git_sha1:84739065bcbd090a94d389af9df161636d25a88e",
+      "url": "https://github.com/product-on-purpose/pm-skills/blob/9432e2771eb7c221c9454a210c6ae55b6ee25d54/skills/develop-spike-summary/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/product-on-purpose/pm-skills/9432e2771eb7c221c9454a210c6ae55b6ee25d54/skills/develop-spike-summary/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-product-on-purpose-pm-skills-pm-skills-product-on-purpose_f2ce15e5",
+        "canonical_skill_id": null,
+        "remote_path": "skills/develop-spike-summary/SKILL.md",
+        "pinned_commit": "9432e2771eb7c221c9454a210c6ae55b6ee25d54",
+        "git_blob_oid": "git_sha1:84739065bcbd090a94d389af9df161636d25a88e",
+        "raw_url": "https://raw.githubusercontent.com/product-on-purpose/pm-skills/9432e2771eb7c221c9454a210c6ae55b6ee25d54/skills/develop-spike-summary/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:84739065bcbd090a94d389af9df161636d25a88e",
+        "size": 4027
+      }
+    },
+    {
+      "source_id": "src_https-github-com-product-on-purpose-pm-skills-pm-skills-product-on-purpose_f2ce15e5",
+      "path": "skills/discover-competitive-analysis/SKILL.md",
+      "declared_name": "discover-competitive-analysis",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:b89c965f2ccd55d7528bbe3bfd4312268c0acd38",
+      "upstream_ref": "9432e2771eb7c221c9454a210c6ae55b6ee25d54",
+      "git_blob_oid": "git_sha1:b89c965f2ccd55d7528bbe3bfd4312268c0acd38",
+      "url": "https://github.com/product-on-purpose/pm-skills/blob/9432e2771eb7c221c9454a210c6ae55b6ee25d54/skills/discover-competitive-analysis/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/product-on-purpose/pm-skills/9432e2771eb7c221c9454a210c6ae55b6ee25d54/skills/discover-competitive-analysis/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-product-on-purpose-pm-skills-pm-skills-product-on-purpose_f2ce15e5",
+        "canonical_skill_id": null,
+        "remote_path": "skills/discover-competitive-analysis/SKILL.md",
+        "pinned_commit": "9432e2771eb7c221c9454a210c6ae55b6ee25d54",
+        "git_blob_oid": "git_sha1:b89c965f2ccd55d7528bbe3bfd4312268c0acd38",
+        "raw_url": "https://raw.githubusercontent.com/product-on-purpose/pm-skills/9432e2771eb7c221c9454a210c6ae55b6ee25d54/skills/discover-competitive-analysis/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:b89c965f2ccd55d7528bbe3bfd4312268c0acd38",
+        "size": 4547
+      }
+    },
+    {
+      "source_id": "src_https-github-com-product-on-purpose-pm-skills-pm-skills-product-on-purpose_f2ce15e5",
+      "path": "skills/discover-interview-synthesis/SKILL.md",
+      "declared_name": "discover-interview-synthesis",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:0653f92366571161a5e2c53b8175a4cc51989127",
+      "upstream_ref": "9432e2771eb7c221c9454a210c6ae55b6ee25d54",
+      "git_blob_oid": "git_sha1:0653f92366571161a5e2c53b8175a4cc51989127",
+      "url": "https://github.com/product-on-purpose/pm-skills/blob/9432e2771eb7c221c9454a210c6ae55b6ee25d54/skills/discover-interview-synthesis/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/product-on-purpose/pm-skills/9432e2771eb7c221c9454a210c6ae55b6ee25d54/skills/discover-interview-synthesis/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-product-on-purpose-pm-skills-pm-skills-product-on-purpose_f2ce15e5",
+        "canonical_skill_id": null,
+        "remote_path": "skills/discover-interview-synthesis/SKILL.md",
+        "pinned_commit": "9432e2771eb7c221c9454a210c6ae55b6ee25d54",
+        "git_blob_oid": "git_sha1:0653f92366571161a5e2c53b8175a4cc51989127",
+        "raw_url": "https://raw.githubusercontent.com/product-on-purpose/pm-skills/9432e2771eb7c221c9454a210c6ae55b6ee25d54/skills/discover-interview-synthesis/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:0653f92366571161a5e2c53b8175a4cc51989127",
+        "size": 4182
+      }
+    },
+    {
+      "source_id": "src_https-github-com-product-on-purpose-pm-skills-pm-skills-product-on-purpose_f2ce15e5",
+      "path": "skills/discover-journey-map/SKILL.md",
+      "declared_name": "discover-journey-map",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:071b6f4c46d18ef1b640dbabb49996cdb9e24b00",
+      "upstream_ref": "9432e2771eb7c221c9454a210c6ae55b6ee25d54",
+      "git_blob_oid": "git_sha1:071b6f4c46d18ef1b640dbabb49996cdb9e24b00",
+      "url": "https://github.com/product-on-purpose/pm-skills/blob/9432e2771eb7c221c9454a210c6ae55b6ee25d54/skills/discover-journey-map/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/product-on-purpose/pm-skills/9432e2771eb7c221c9454a210c6ae55b6ee25d54/skills/discover-journey-map/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-product-on-purpose-pm-skills-pm-skills-product-on-purpose_f2ce15e5",
+        "canonical_skill_id": null,
+        "remote_path": "skills/discover-journey-map/SKILL.md",
+        "pinned_commit": "9432e2771eb7c221c9454a210c6ae55b6ee25d54",
+        "git_blob_oid": "git_sha1:071b6f4c46d18ef1b640dbabb49996cdb9e24b00",
+        "raw_url": "https://raw.githubusercontent.com/product-on-purpose/pm-skills/9432e2771eb7c221c9454a210c6ae55b6ee25d54/skills/discover-journey-map/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:071b6f4c46d18ef1b640dbabb49996cdb9e24b00",
+        "size": 11724
+      }
+    },
+    {
+      "source_id": "src_https-github-com-product-on-purpose-pm-skills-pm-skills-product-on-purpose_f2ce15e5",
+      "path": "skills/discover-market-sizing/SKILL.md",
+      "declared_name": "discover-market-sizing",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:c639998da5d41436ec8d46a9e6f88994738353a1",
+      "upstream_ref": "9432e2771eb7c221c9454a210c6ae55b6ee25d54",
+      "git_blob_oid": "git_sha1:c639998da5d41436ec8d46a9e6f88994738353a1",
+      "url": "https://github.com/product-on-purpose/pm-skills/blob/9432e2771eb7c221c9454a210c6ae55b6ee25d54/skills/discover-market-sizing/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/product-on-purpose/pm-skills/9432e2771eb7c221c9454a210c6ae55b6ee25d54/skills/discover-market-sizing/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-product-on-purpose-pm-skills-pm-skills-product-on-purpose_f2ce15e5",
+        "canonical_skill_id": null,
+        "remote_path": "skills/discover-market-sizing/SKILL.md",
+        "pinned_commit": "9432e2771eb7c221c9454a210c6ae55b6ee25d54",
+        "git_blob_oid": "git_sha1:c639998da5d41436ec8d46a9e6f88994738353a1",
+        "raw_url": "https://raw.githubusercontent.com/product-on-purpose/pm-skills/9432e2771eb7c221c9454a210c6ae55b6ee25d54/skills/discover-market-sizing/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:c639998da5d41436ec8d46a9e6f88994738353a1",
+        "size": 13098
+      }
+    },
+    {
+      "source_id": "src_https-github-com-product-on-purpose-pm-skills-pm-skills-product-on-purpose_f2ce15e5",
+      "path": "skills/discover-stakeholder-summary/SKILL.md",
+      "declared_name": "discover-stakeholder-summary",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:73c8759320a0d11390e712705cabcc52b1364e25",
+      "upstream_ref": "9432e2771eb7c221c9454a210c6ae55b6ee25d54",
+      "git_blob_oid": "git_sha1:73c8759320a0d11390e712705cabcc52b1364e25",
+      "url": "https://github.com/product-on-purpose/pm-skills/blob/9432e2771eb7c221c9454a210c6ae55b6ee25d54/skills/discover-stakeholder-summary/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/product-on-purpose/pm-skills/9432e2771eb7c221c9454a210c6ae55b6ee25d54/skills/discover-stakeholder-summary/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-product-on-purpose-pm-skills-pm-skills-product-on-purpose_f2ce15e5",
+        "canonical_skill_id": null,
+        "remote_path": "skills/discover-stakeholder-summary/SKILL.md",
+        "pinned_commit": "9432e2771eb7c221c9454a210c6ae55b6ee25d54",
+        "git_blob_oid": "git_sha1:73c8759320a0d11390e712705cabcc52b1364e25",
+        "raw_url": "https://raw.githubusercontent.com/product-on-purpose/pm-skills/9432e2771eb7c221c9454a210c6ae55b6ee25d54/skills/discover-stakeholder-summary/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:73c8759320a0d11390e712705cabcc52b1364e25",
+        "size": 4297
+      }
+    },
+    {
+      "source_id": "src_https-github-com-product-on-purpose-pm-skills-pm-skills-product-on-purpose_f2ce15e5",
+      "path": "skills/foundation-build-risk-review/SKILL.md",
+      "declared_name": "foundation-build-risk-review",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:705221eadaba85bc603f4a4de184c0fcfe3ee6d0",
+      "upstream_ref": "9432e2771eb7c221c9454a210c6ae55b6ee25d54",
+      "git_blob_oid": "git_sha1:705221eadaba85bc603f4a4de184c0fcfe3ee6d0",
+      "url": "https://github.com/product-on-purpose/pm-skills/blob/9432e2771eb7c221c9454a210c6ae55b6ee25d54/skills/foundation-build-risk-review/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/product-on-purpose/pm-skills/9432e2771eb7c221c9454a210c6ae55b6ee25d54/skills/foundation-build-risk-review/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-product-on-purpose-pm-skills-pm-skills-product-on-purpose_f2ce15e5",
+        "canonical_skill_id": null,
+        "remote_path": "skills/foundation-build-risk-review/SKILL.md",
+        "pinned_commit": "9432e2771eb7c221c9454a210c6ae55b6ee25d54",
+        "git_blob_oid": "git_sha1:705221eadaba85bc603f4a4de184c0fcfe3ee6d0",
+        "raw_url": "https://raw.githubusercontent.com/product-on-purpose/pm-skills/9432e2771eb7c221c9454a210c6ae55b6ee25d54/skills/foundation-build-risk-review/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:705221eadaba85bc603f4a4de184c0fcfe3ee6d0",
+        "size": 6765
+      }
+    },
+    {
+      "source_id": "src_https-github-com-product-on-purpose-pm-skills-pm-skills-product-on-purpose_f2ce15e5",
+      "path": "skills/foundation-lean-canvas/SKILL.md",
+      "declared_name": "foundation-lean-canvas",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:7fd20809218640257cdb4e83b23adef01157575f",
+      "upstream_ref": "9432e2771eb7c221c9454a210c6ae55b6ee25d54",
+      "git_blob_oid": "git_sha1:7fd20809218640257cdb4e83b23adef01157575f",
+      "url": "https://github.com/product-on-purpose/pm-skills/blob/9432e2771eb7c221c9454a210c6ae55b6ee25d54/skills/foundation-lean-canvas/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/product-on-purpose/pm-skills/9432e2771eb7c221c9454a210c6ae55b6ee25d54/skills/foundation-lean-canvas/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-product-on-purpose-pm-skills-pm-skills-product-on-purpose_f2ce15e5",
+        "canonical_skill_id": null,
+        "remote_path": "skills/foundation-lean-canvas/SKILL.md",
+        "pinned_commit": "9432e2771eb7c221c9454a210c6ae55b6ee25d54",
+        "git_blob_oid": "git_sha1:7fd20809218640257cdb4e83b23adef01157575f",
+        "raw_url": "https://raw.githubusercontent.com/product-on-purpose/pm-skills/9432e2771eb7c221c9454a210c6ae55b6ee25d54/skills/foundation-lean-canvas/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:7fd20809218640257cdb4e83b23adef01157575f",
+        "size": 11832
+      }
+    },
+    {
+      "source_id": "src_https-github-com-product-on-purpose-pm-skills-pm-skills-product-on-purpose_f2ce15e5",
+      "path": "skills/foundation-meeting-agenda/SKILL.md",
+      "declared_name": "foundation-meeting-agenda",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:546830f1deb27f5495480f7edabba605f06eabf5",
+      "upstream_ref": "9432e2771eb7c221c9454a210c6ae55b6ee25d54",
+      "git_blob_oid": "git_sha1:546830f1deb27f5495480f7edabba605f06eabf5",
+      "url": "https://github.com/product-on-purpose/pm-skills/blob/9432e2771eb7c221c9454a210c6ae55b6ee25d54/skills/foundation-meeting-agenda/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/product-on-purpose/pm-skills/9432e2771eb7c221c9454a210c6ae55b6ee25d54/skills/foundation-meeting-agenda/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-product-on-purpose-pm-skills-pm-skills-product-on-purpose_f2ce15e5",
+        "canonical_skill_id": null,
+        "remote_path": "skills/foundation-meeting-agenda/SKILL.md",
+        "pinned_commit": "9432e2771eb7c221c9454a210c6ae55b6ee25d54",
+        "git_blob_oid": "git_sha1:546830f1deb27f5495480f7edabba605f06eabf5",
+        "raw_url": "https://raw.githubusercontent.com/product-on-purpose/pm-skills/9432e2771eb7c221c9454a210c6ae55b6ee25d54/skills/foundation-meeting-agenda/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:546830f1deb27f5495480f7edabba605f06eabf5",
+        "size": 9693
+      }
+    },
+    {
+      "source_id": "src_https-github-com-product-on-purpose-pm-skills-pm-skills-product-on-purpose_f2ce15e5",
+      "path": "skills/foundation-meeting-brief/SKILL.md",
+      "declared_name": "foundation-meeting-brief",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:54a883a6e6bb0a5a0721ac605eba4470a01d13da",
+      "upstream_ref": "9432e2771eb7c221c9454a210c6ae55b6ee25d54",
+      "git_blob_oid": "git_sha1:54a883a6e6bb0a5a0721ac605eba4470a01d13da",
+      "url": "https://github.com/product-on-purpose/pm-skills/blob/9432e2771eb7c221c9454a210c6ae55b6ee25d54/skills/foundation-meeting-brief/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/product-on-purpose/pm-skills/9432e2771eb7c221c9454a210c6ae55b6ee25d54/skills/foundation-meeting-brief/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-product-on-purpose-pm-skills-pm-skills-product-on-purpose_f2ce15e5",
+        "canonical_skill_id": null,
+        "remote_path": "skills/foundation-meeting-brief/SKILL.md",
+        "pinned_commit": "9432e2771eb7c221c9454a210c6ae55b6ee25d54",
+        "git_blob_oid": "git_sha1:54a883a6e6bb0a5a0721ac605eba4470a01d13da",
+        "raw_url": "https://raw.githubusercontent.com/product-on-purpose/pm-skills/9432e2771eb7c221c9454a210c6ae55b6ee25d54/skills/foundation-meeting-brief/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:54a883a6e6bb0a5a0721ac605eba4470a01d13da",
+        "size": 7593
+      }
+    },
+    {
+      "source_id": "src_https-github-com-product-on-purpose-pm-skills-pm-skills-product-on-purpose_f2ce15e5",
+      "path": "skills/foundation-meeting-recap/SKILL.md",
+      "declared_name": "foundation-meeting-recap",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:4103e89a9f0257cb2b115fa02fea574ff45f2ee4",
+      "upstream_ref": "9432e2771eb7c221c9454a210c6ae55b6ee25d54",
+      "git_blob_oid": "git_sha1:4103e89a9f0257cb2b115fa02fea574ff45f2ee4",
+      "url": "https://github.com/product-on-purpose/pm-skills/blob/9432e2771eb7c221c9454a210c6ae55b6ee25d54/skills/foundation-meeting-recap/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/product-on-purpose/pm-skills/9432e2771eb7c221c9454a210c6ae55b6ee25d54/skills/foundation-meeting-recap/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-product-on-purpose-pm-skills-pm-skills-product-on-purpose_f2ce15e5",
+        "canonical_skill_id": null,
+        "remote_path": "skills/foundation-meeting-recap/SKILL.md",
+        "pinned_commit": "9432e2771eb7c221c9454a210c6ae55b6ee25d54",
+        "git_blob_oid": "git_sha1:4103e89a9f0257cb2b115fa02fea574ff45f2ee4",
+        "raw_url": "https://raw.githubusercontent.com/product-on-purpose/pm-skills/9432e2771eb7c221c9454a210c6ae55b6ee25d54/skills/foundation-meeting-recap/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:4103e89a9f0257cb2b115fa02fea574ff45f2ee4",
+        "size": 8913
+      }
+    },
+    {
+      "source_id": "src_https-github-com-product-on-purpose-pm-skills-pm-skills-product-on-purpose_f2ce15e5",
+      "path": "skills/foundation-meeting-synthesize/SKILL.md",
+      "declared_name": "foundation-meeting-synthesize",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:09d9c675f9cbe57e48288916bcdac21588943270",
+      "upstream_ref": "9432e2771eb7c221c9454a210c6ae55b6ee25d54",
+      "git_blob_oid": "git_sha1:09d9c675f9cbe57e48288916bcdac21588943270",
+      "url": "https://github.com/product-on-purpose/pm-skills/blob/9432e2771eb7c221c9454a210c6ae55b6ee25d54/skills/foundation-meeting-synthesize/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/product-on-purpose/pm-skills/9432e2771eb7c221c9454a210c6ae55b6ee25d54/skills/foundation-meeting-synthesize/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-product-on-purpose-pm-skills-pm-skills-product-on-purpose_f2ce15e5",
+        "canonical_skill_id": null,
+        "remote_path": "skills/foundation-meeting-synthesize/SKILL.md",
+        "pinned_commit": "9432e2771eb7c221c9454a210c6ae55b6ee25d54",
+        "git_blob_oid": "git_sha1:09d9c675f9cbe57e48288916bcdac21588943270",
+        "raw_url": "https://raw.githubusercontent.com/product-on-purpose/pm-skills/9432e2771eb7c221c9454a210c6ae55b6ee25d54/skills/foundation-meeting-synthesize/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:09d9c675f9cbe57e48288916bcdac21588943270",
+        "size": 8316
+      }
+    },
+    {
+      "source_id": "src_https-github-com-product-on-purpose-pm-skills-pm-skills-product-on-purpose_f2ce15e5",
+      "path": "skills/foundation-okr-writer/SKILL.md",
+      "declared_name": "foundation-okr-writer",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:ab96529c008341297b64ef7dfa156d24925738e2",
+      "upstream_ref": "9432e2771eb7c221c9454a210c6ae55b6ee25d54",
+      "git_blob_oid": "git_sha1:ab96529c008341297b64ef7dfa156d24925738e2",
+      "url": "https://github.com/product-on-purpose/pm-skills/blob/9432e2771eb7c221c9454a210c6ae55b6ee25d54/skills/foundation-okr-writer/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/product-on-purpose/pm-skills/9432e2771eb7c221c9454a210c6ae55b6ee25d54/skills/foundation-okr-writer/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-product-on-purpose-pm-skills-pm-skills-product-on-purpose_f2ce15e5",
+        "canonical_skill_id": null,
+        "remote_path": "skills/foundation-okr-writer/SKILL.md",
+        "pinned_commit": "9432e2771eb7c221c9454a210c6ae55b6ee25d54",
+        "git_blob_oid": "git_sha1:ab96529c008341297b64ef7dfa156d24925738e2",
+        "raw_url": "https://raw.githubusercontent.com/product-on-purpose/pm-skills/9432e2771eb7c221c9454a210c6ae55b6ee25d54/skills/foundation-okr-writer/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:ab96529c008341297b64ef7dfa156d24925738e2",
+        "size": 14352
+      }
+    },
+    {
+      "source_id": "src_https-github-com-product-on-purpose-pm-skills-pm-skills-product-on-purpose_f2ce15e5",
+      "path": "skills/foundation-persona/SKILL.md",
+      "declared_name": "foundation-persona",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:d9d7edc1a3ab517e9de08f811725ad3d3e6a4790",
+      "upstream_ref": "9432e2771eb7c221c9454a210c6ae55b6ee25d54",
+      "git_blob_oid": "git_sha1:d9d7edc1a3ab517e9de08f811725ad3d3e6a4790",
+      "url": "https://github.com/product-on-purpose/pm-skills/blob/9432e2771eb7c221c9454a210c6ae55b6ee25d54/skills/foundation-persona/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/product-on-purpose/pm-skills/9432e2771eb7c221c9454a210c6ae55b6ee25d54/skills/foundation-persona/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-product-on-purpose-pm-skills-pm-skills-product-on-purpose_f2ce15e5",
+        "canonical_skill_id": null,
+        "remote_path": "skills/foundation-persona/SKILL.md",
+        "pinned_commit": "9432e2771eb7c221c9454a210c6ae55b6ee25d54",
+        "git_blob_oid": "git_sha1:d9d7edc1a3ab517e9de08f811725ad3d3e6a4790",
+        "raw_url": "https://raw.githubusercontent.com/product-on-purpose/pm-skills/9432e2771eb7c221c9454a210c6ae55b6ee25d54/skills/foundation-persona/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:d9d7edc1a3ab517e9de08f811725ad3d3e6a4790",
+        "size": 4480
+      }
+    },
+    {
+      "source_id": "src_https-github-com-product-on-purpose-pm-skills-pm-skills-product-on-purpose_f2ce15e5",
+      "path": "skills/foundation-prioritized-action-plan/SKILL.md",
+      "declared_name": "foundation-prioritized-action-plan",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:a3371cf6231694e617f0fe55f7e36dd534b305b3",
+      "upstream_ref": "9432e2771eb7c221c9454a210c6ae55b6ee25d54",
+      "git_blob_oid": "git_sha1:a3371cf6231694e617f0fe55f7e36dd534b305b3",
+      "url": "https://github.com/product-on-purpose/pm-skills/blob/9432e2771eb7c221c9454a210c6ae55b6ee25d54/skills/foundation-prioritized-action-plan/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/product-on-purpose/pm-skills/9432e2771eb7c221c9454a210c6ae55b6ee25d54/skills/foundation-prioritized-action-plan/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-product-on-purpose-pm-skills-pm-skills-product-on-purpose_f2ce15e5",
+        "canonical_skill_id": null,
+        "remote_path": "skills/foundation-prioritized-action-plan/SKILL.md",
+        "pinned_commit": "9432e2771eb7c221c9454a210c6ae55b6ee25d54",
+        "git_blob_oid": "git_sha1:a3371cf6231694e617f0fe55f7e36dd534b305b3",
+        "raw_url": "https://raw.githubusercontent.com/product-on-purpose/pm-skills/9432e2771eb7c221c9454a210c6ae55b6ee25d54/skills/foundation-prioritized-action-plan/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:a3371cf6231694e617f0fe55f7e36dd534b305b3",
+        "size": 23202
+      }
+    },
+    {
+      "source_id": "src_https-github-com-product-on-purpose-pm-skills-pm-skills-product-on-purpose_f2ce15e5",
+      "path": "skills/foundation-stakeholder-briefings/SKILL.md",
+      "declared_name": "foundation-stakeholder-briefings",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:7357e7604270a4a310e78744add961263da91b0a",
+      "upstream_ref": "9432e2771eb7c221c9454a210c6ae55b6ee25d54",
+      "git_blob_oid": "git_sha1:7357e7604270a4a310e78744add961263da91b0a",
+      "url": "https://github.com/product-on-purpose/pm-skills/blob/9432e2771eb7c221c9454a210c6ae55b6ee25d54/skills/foundation-stakeholder-briefings/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/product-on-purpose/pm-skills/9432e2771eb7c221c9454a210c6ae55b6ee25d54/skills/foundation-stakeholder-briefings/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-product-on-purpose-pm-skills-pm-skills-product-on-purpose_f2ce15e5",
+        "canonical_skill_id": null,
+        "remote_path": "skills/foundation-stakeholder-briefings/SKILL.md",
+        "pinned_commit": "9432e2771eb7c221c9454a210c6ae55b6ee25d54",
+        "git_blob_oid": "git_sha1:7357e7604270a4a310e78744add961263da91b0a",
+        "raw_url": "https://raw.githubusercontent.com/product-on-purpose/pm-skills/9432e2771eb7c221c9454a210c6ae55b6ee25d54/skills/foundation-stakeholder-briefings/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:7357e7604270a4a310e78744add961263da91b0a",
+        "size": 8018
+      }
+    },
+    {
+      "source_id": "src_https-github-com-product-on-purpose-pm-skills-pm-skills-product-on-purpose_f2ce15e5",
+      "path": "skills/foundation-stakeholder-update/SKILL.md",
+      "declared_name": "foundation-stakeholder-update",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:15ebba0e9586cb55ea318d3ebae7afa4672b211f",
+      "upstream_ref": "9432e2771eb7c221c9454a210c6ae55b6ee25d54",
+      "git_blob_oid": "git_sha1:15ebba0e9586cb55ea318d3ebae7afa4672b211f",
+      "url": "https://github.com/product-on-purpose/pm-skills/blob/9432e2771eb7c221c9454a210c6ae55b6ee25d54/skills/foundation-stakeholder-update/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/product-on-purpose/pm-skills/9432e2771eb7c221c9454a210c6ae55b6ee25d54/skills/foundation-stakeholder-update/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-product-on-purpose-pm-skills-pm-skills-product-on-purpose_f2ce15e5",
+        "canonical_skill_id": null,
+        "remote_path": "skills/foundation-stakeholder-update/SKILL.md",
+        "pinned_commit": "9432e2771eb7c221c9454a210c6ae55b6ee25d54",
+        "git_blob_oid": "git_sha1:15ebba0e9586cb55ea318d3ebae7afa4672b211f",
+        "raw_url": "https://raw.githubusercontent.com/product-on-purpose/pm-skills/9432e2771eb7c221c9454a210c6ae55b6ee25d54/skills/foundation-stakeholder-update/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:15ebba0e9586cb55ea318d3ebae7afa4672b211f",
+        "size": 7299
+      }
+    },
+    {
+      "source_id": "src_https-github-com-product-on-purpose-pm-skills-pm-skills-product-on-purpose_f2ce15e5",
+      "path": "skills/iterate-lessons-log/SKILL.md",
+      "declared_name": "iterate-lessons-log",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:3ace1abac3d5d0bd7124aef8bfbe8448a5cfa97b",
+      "upstream_ref": "9432e2771eb7c221c9454a210c6ae55b6ee25d54",
+      "git_blob_oid": "git_sha1:3ace1abac3d5d0bd7124aef8bfbe8448a5cfa97b",
+      "url": "https://github.com/product-on-purpose/pm-skills/blob/9432e2771eb7c221c9454a210c6ae55b6ee25d54/skills/iterate-lessons-log/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/product-on-purpose/pm-skills/9432e2771eb7c221c9454a210c6ae55b6ee25d54/skills/iterate-lessons-log/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-product-on-purpose-pm-skills-pm-skills-product-on-purpose_f2ce15e5",
+        "canonical_skill_id": null,
+        "remote_path": "skills/iterate-lessons-log/SKILL.md",
+        "pinned_commit": "9432e2771eb7c221c9454a210c6ae55b6ee25d54",
+        "git_blob_oid": "git_sha1:3ace1abac3d5d0bd7124aef8bfbe8448a5cfa97b",
+        "raw_url": "https://raw.githubusercontent.com/product-on-purpose/pm-skills/9432e2771eb7c221c9454a210c6ae55b6ee25d54/skills/iterate-lessons-log/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:3ace1abac3d5d0bd7124aef8bfbe8448a5cfa97b",
+        "size": 3980
+      }
+    },
+    {
+      "source_id": "src_https-github-com-product-on-purpose-pm-skills-pm-skills-product-on-purpose_f2ce15e5",
+      "path": "skills/iterate-pivot-decision/SKILL.md",
+      "declared_name": "iterate-pivot-decision",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:23d921a8e98418997591ad1c07a8d25479ae4b86",
+      "upstream_ref": "9432e2771eb7c221c9454a210c6ae55b6ee25d54",
+      "git_blob_oid": "git_sha1:23d921a8e98418997591ad1c07a8d25479ae4b86",
+      "url": "https://github.com/product-on-purpose/pm-skills/blob/9432e2771eb7c221c9454a210c6ae55b6ee25d54/skills/iterate-pivot-decision/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/product-on-purpose/pm-skills/9432e2771eb7c221c9454a210c6ae55b6ee25d54/skills/iterate-pivot-decision/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-product-on-purpose-pm-skills-pm-skills-product-on-purpose_f2ce15e5",
+        "canonical_skill_id": null,
+        "remote_path": "skills/iterate-pivot-decision/SKILL.md",
+        "pinned_commit": "9432e2771eb7c221c9454a210c6ae55b6ee25d54",
+        "git_blob_oid": "git_sha1:23d921a8e98418997591ad1c07a8d25479ae4b86",
+        "raw_url": "https://raw.githubusercontent.com/product-on-purpose/pm-skills/9432e2771eb7c221c9454a210c6ae55b6ee25d54/skills/iterate-pivot-decision/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:23d921a8e98418997591ad1c07a8d25479ae4b86",
+        "size": 4034
+      }
+    },
+    {
+      "source_id": "src_https-github-com-product-on-purpose-pm-skills-pm-skills-product-on-purpose_f2ce15e5",
+      "path": "skills/iterate-refinement-notes/SKILL.md",
+      "declared_name": "iterate-refinement-notes",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:27e29bdd8932ce2a9025ea9196117f91569f37d1",
+      "upstream_ref": "9432e2771eb7c221c9454a210c6ae55b6ee25d54",
+      "git_blob_oid": "git_sha1:27e29bdd8932ce2a9025ea9196117f91569f37d1",
+      "url": "https://github.com/product-on-purpose/pm-skills/blob/9432e2771eb7c221c9454a210c6ae55b6ee25d54/skills/iterate-refinement-notes/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/product-on-purpose/pm-skills/9432e2771eb7c221c9454a210c6ae55b6ee25d54/skills/iterate-refinement-notes/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-product-on-purpose-pm-skills-pm-skills-product-on-purpose_f2ce15e5",
+        "canonical_skill_id": null,
+        "remote_path": "skills/iterate-refinement-notes/SKILL.md",
+        "pinned_commit": "9432e2771eb7c221c9454a210c6ae55b6ee25d54",
+        "git_blob_oid": "git_sha1:27e29bdd8932ce2a9025ea9196117f91569f37d1",
+        "raw_url": "https://raw.githubusercontent.com/product-on-purpose/pm-skills/9432e2771eb7c221c9454a210c6ae55b6ee25d54/skills/iterate-refinement-notes/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:27e29bdd8932ce2a9025ea9196117f91569f37d1",
+        "size": 3418
+      }
+    },
+    {
+      "source_id": "src_https-github-com-product-on-purpose-pm-skills-pm-skills-product-on-purpose_f2ce15e5",
+      "path": "skills/iterate-retrospective/SKILL.md",
+      "declared_name": "iterate-retrospective",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:a600686f0dbb2b9ce3460ee5af4ea48513500f20",
+      "upstream_ref": "9432e2771eb7c221c9454a210c6ae55b6ee25d54",
+      "git_blob_oid": "git_sha1:a600686f0dbb2b9ce3460ee5af4ea48513500f20",
+      "url": "https://github.com/product-on-purpose/pm-skills/blob/9432e2771eb7c221c9454a210c6ae55b6ee25d54/skills/iterate-retrospective/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/product-on-purpose/pm-skills/9432e2771eb7c221c9454a210c6ae55b6ee25d54/skills/iterate-retrospective/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-product-on-purpose-pm-skills-pm-skills-product-on-purpose_f2ce15e5",
+        "canonical_skill_id": null,
+        "remote_path": "skills/iterate-retrospective/SKILL.md",
+        "pinned_commit": "9432e2771eb7c221c9454a210c6ae55b6ee25d54",
+        "git_blob_oid": "git_sha1:a600686f0dbb2b9ce3460ee5af4ea48513500f20",
+        "raw_url": "https://raw.githubusercontent.com/product-on-purpose/pm-skills/9432e2771eb7c221c9454a210c6ae55b6ee25d54/skills/iterate-retrospective/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:a600686f0dbb2b9ce3460ee5af4ea48513500f20",
+        "size": 3964
+      }
+    },
+    {
+      "source_id": "src_https-github-com-product-on-purpose-pm-skills-pm-skills-product-on-purpose_f2ce15e5",
+      "path": "skills/measure-dashboard-requirements/SKILL.md",
+      "declared_name": "measure-dashboard-requirements",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:5303a77f540e6d439f248207c66cafdb185ddee8",
+      "upstream_ref": "9432e2771eb7c221c9454a210c6ae55b6ee25d54",
+      "git_blob_oid": "git_sha1:5303a77f540e6d439f248207c66cafdb185ddee8",
+      "url": "https://github.com/product-on-purpose/pm-skills/blob/9432e2771eb7c221c9454a210c6ae55b6ee25d54/skills/measure-dashboard-requirements/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/product-on-purpose/pm-skills/9432e2771eb7c221c9454a210c6ae55b6ee25d54/skills/measure-dashboard-requirements/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-product-on-purpose-pm-skills-pm-skills-product-on-purpose_f2ce15e5",
+        "canonical_skill_id": null,
+        "remote_path": "skills/measure-dashboard-requirements/SKILL.md",
+        "pinned_commit": "9432e2771eb7c221c9454a210c6ae55b6ee25d54",
+        "git_blob_oid": "git_sha1:5303a77f540e6d439f248207c66cafdb185ddee8",
+        "raw_url": "https://raw.githubusercontent.com/product-on-purpose/pm-skills/9432e2771eb7c221c9454a210c6ae55b6ee25d54/skills/measure-dashboard-requirements/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:5303a77f540e6d439f248207c66cafdb185ddee8",
+        "size": 4178
+      }
+    },
+    {
+      "source_id": "src_https-github-com-product-on-purpose-pm-skills-pm-skills-product-on-purpose_f2ce15e5",
+      "path": "skills/measure-experiment-design/SKILL.md",
+      "declared_name": "measure-experiment-design",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:2cff99bad5fecc60708da904934515265934d827",
+      "upstream_ref": "9432e2771eb7c221c9454a210c6ae55b6ee25d54",
+      "git_blob_oid": "git_sha1:2cff99bad5fecc60708da904934515265934d827",
+      "url": "https://github.com/product-on-purpose/pm-skills/blob/9432e2771eb7c221c9454a210c6ae55b6ee25d54/skills/measure-experiment-design/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/product-on-purpose/pm-skills/9432e2771eb7c221c9454a210c6ae55b6ee25d54/skills/measure-experiment-design/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-product-on-purpose-pm-skills-pm-skills-product-on-purpose_f2ce15e5",
+        "canonical_skill_id": null,
+        "remote_path": "skills/measure-experiment-design/SKILL.md",
+        "pinned_commit": "9432e2771eb7c221c9454a210c6ae55b6ee25d54",
+        "git_blob_oid": "git_sha1:2cff99bad5fecc60708da904934515265934d827",
+        "raw_url": "https://raw.githubusercontent.com/product-on-purpose/pm-skills/9432e2771eb7c221c9454a210c6ae55b6ee25d54/skills/measure-experiment-design/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:2cff99bad5fecc60708da904934515265934d827",
+        "size": 4329
+      }
+    },
+    {
+      "source_id": "src_https-github-com-product-on-purpose-pm-skills-pm-skills-product-on-purpose_f2ce15e5",
+      "path": "skills/measure-experiment-results/SKILL.md",
+      "declared_name": "measure-experiment-results",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:c84e0c62e32f805d67fe2f3bade0467f37ebfb0b",
+      "upstream_ref": "9432e2771eb7c221c9454a210c6ae55b6ee25d54",
+      "git_blob_oid": "git_sha1:c84e0c62e32f805d67fe2f3bade0467f37ebfb0b",
+      "url": "https://github.com/product-on-purpose/pm-skills/blob/9432e2771eb7c221c9454a210c6ae55b6ee25d54/skills/measure-experiment-results/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/product-on-purpose/pm-skills/9432e2771eb7c221c9454a210c6ae55b6ee25d54/skills/measure-experiment-results/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-product-on-purpose-pm-skills-pm-skills-product-on-purpose_f2ce15e5",
+        "canonical_skill_id": null,
+        "remote_path": "skills/measure-experiment-results/SKILL.md",
+        "pinned_commit": "9432e2771eb7c221c9454a210c6ae55b6ee25d54",
+        "git_blob_oid": "git_sha1:c84e0c62e32f805d67fe2f3bade0467f37ebfb0b",
+        "raw_url": "https://raw.githubusercontent.com/product-on-purpose/pm-skills/9432e2771eb7c221c9454a210c6ae55b6ee25d54/skills/measure-experiment-results/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:c84e0c62e32f805d67fe2f3bade0467f37ebfb0b",
+        "size": 3954
+      }
+    },
+    {
+      "source_id": "src_https-github-com-product-on-purpose-pm-skills-pm-skills-product-on-purpose_f2ce15e5",
+      "path": "skills/measure-instrumentation-spec/SKILL.md",
+      "declared_name": "measure-instrumentation-spec",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:b4355bb9097a73c5536bbf589386301a2695c58a",
+      "upstream_ref": "9432e2771eb7c221c9454a210c6ae55b6ee25d54",
+      "git_blob_oid": "git_sha1:b4355bb9097a73c5536bbf589386301a2695c58a",
+      "url": "https://github.com/product-on-purpose/pm-skills/blob/9432e2771eb7c221c9454a210c6ae55b6ee25d54/skills/measure-instrumentation-spec/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/product-on-purpose/pm-skills/9432e2771eb7c221c9454a210c6ae55b6ee25d54/skills/measure-instrumentation-spec/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-product-on-purpose-pm-skills-pm-skills-product-on-purpose_f2ce15e5",
+        "canonical_skill_id": null,
+        "remote_path": "skills/measure-instrumentation-spec/SKILL.md",
+        "pinned_commit": "9432e2771eb7c221c9454a210c6ae55b6ee25d54",
+        "git_blob_oid": "git_sha1:b4355bb9097a73c5536bbf589386301a2695c58a",
+        "raw_url": "https://raw.githubusercontent.com/product-on-purpose/pm-skills/9432e2771eb7c221c9454a210c6ae55b6ee25d54/skills/measure-instrumentation-spec/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:b4355bb9097a73c5536bbf589386301a2695c58a",
+        "size": 4024
+      }
+    },
+    {
+      "source_id": "src_https-github-com-product-on-purpose-pm-skills-pm-skills-product-on-purpose_f2ce15e5",
+      "path": "skills/measure-okr-grader/SKILL.md",
+      "declared_name": "measure-okr-grader",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:5f042aa660e8495b623cb6e1047c74837a91d7f5",
+      "upstream_ref": "9432e2771eb7c221c9454a210c6ae55b6ee25d54",
+      "git_blob_oid": "git_sha1:5f042aa660e8495b623cb6e1047c74837a91d7f5",
+      "url": "https://github.com/product-on-purpose/pm-skills/blob/9432e2771eb7c221c9454a210c6ae55b6ee25d54/skills/measure-okr-grader/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/product-on-purpose/pm-skills/9432e2771eb7c221c9454a210c6ae55b6ee25d54/skills/measure-okr-grader/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-product-on-purpose-pm-skills-pm-skills-product-on-purpose_f2ce15e5",
+        "canonical_skill_id": null,
+        "remote_path": "skills/measure-okr-grader/SKILL.md",
+        "pinned_commit": "9432e2771eb7c221c9454a210c6ae55b6ee25d54",
+        "git_blob_oid": "git_sha1:5f042aa660e8495b623cb6e1047c74837a91d7f5",
+        "raw_url": "https://raw.githubusercontent.com/product-on-purpose/pm-skills/9432e2771eb7c221c9454a210c6ae55b6ee25d54/skills/measure-okr-grader/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:5f042aa660e8495b623cb6e1047c74837a91d7f5",
+        "size": 16044
+      }
+    },
+    {
+      "source_id": "src_https-github-com-product-on-purpose-pm-skills-pm-skills-product-on-purpose_f2ce15e5",
+      "path": "skills/measure-survey-analysis/SKILL.md",
+      "declared_name": "measure-survey-analysis",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:3c651fee59d91d886134e6db836d60f178cb83fd",
+      "upstream_ref": "9432e2771eb7c221c9454a210c6ae55b6ee25d54",
+      "git_blob_oid": "git_sha1:3c651fee59d91d886134e6db836d60f178cb83fd",
+      "url": "https://github.com/product-on-purpose/pm-skills/blob/9432e2771eb7c221c9454a210c6ae55b6ee25d54/skills/measure-survey-analysis/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/product-on-purpose/pm-skills/9432e2771eb7c221c9454a210c6ae55b6ee25d54/skills/measure-survey-analysis/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-product-on-purpose-pm-skills-pm-skills-product-on-purpose_f2ce15e5",
+        "canonical_skill_id": null,
+        "remote_path": "skills/measure-survey-analysis/SKILL.md",
+        "pinned_commit": "9432e2771eb7c221c9454a210c6ae55b6ee25d54",
+        "git_blob_oid": "git_sha1:3c651fee59d91d886134e6db836d60f178cb83fd",
+        "raw_url": "https://raw.githubusercontent.com/product-on-purpose/pm-skills/9432e2771eb7c221c9454a210c6ae55b6ee25d54/skills/measure-survey-analysis/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:3c651fee59d91d886134e6db836d60f178cb83fd",
+        "size": 12295
+      }
+    },
+    {
+      "source_id": "src_https-github-com-product-on-purpose-pm-skills-pm-skills-product-on-purpose_f2ce15e5",
+      "path": "skills/tool-design-sprint-brief/SKILL.md",
+      "declared_name": "tool-design-sprint-brief",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:92e96c2976750a1aeae15e88867c57ab8088e6f6",
+      "upstream_ref": "9432e2771eb7c221c9454a210c6ae55b6ee25d54",
+      "git_blob_oid": "git_sha1:92e96c2976750a1aeae15e88867c57ab8088e6f6",
+      "url": "https://github.com/product-on-purpose/pm-skills/blob/9432e2771eb7c221c9454a210c6ae55b6ee25d54/skills/tool-design-sprint-brief/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/product-on-purpose/pm-skills/9432e2771eb7c221c9454a210c6ae55b6ee25d54/skills/tool-design-sprint-brief/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-product-on-purpose-pm-skills-pm-skills-product-on-purpose_f2ce15e5",
+        "canonical_skill_id": null,
+        "remote_path": "skills/tool-design-sprint-brief/SKILL.md",
+        "pinned_commit": "9432e2771eb7c221c9454a210c6ae55b6ee25d54",
+        "git_blob_oid": "git_sha1:92e96c2976750a1aeae15e88867c57ab8088e6f6",
+        "raw_url": "https://raw.githubusercontent.com/product-on-purpose/pm-skills/9432e2771eb7c221c9454a210c6ae55b6ee25d54/skills/tool-design-sprint-brief/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:92e96c2976750a1aeae15e88867c57ab8088e6f6",
+        "size": 10471
+      }
+    },
+    {
+      "source_id": "src_https-github-com-product-on-purpose-pm-skills-pm-skills-product-on-purpose_f2ce15e5",
+      "path": "skills/tool-design-sprint-decide-and-storyboard/SKILL.md",
+      "declared_name": "tool-design-sprint-decide-and-storyboard",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:934729adc602dbb56ca959b4eb20dce960352d53",
+      "upstream_ref": "9432e2771eb7c221c9454a210c6ae55b6ee25d54",
+      "git_blob_oid": "git_sha1:934729adc602dbb56ca959b4eb20dce960352d53",
+      "url": "https://github.com/product-on-purpose/pm-skills/blob/9432e2771eb7c221c9454a210c6ae55b6ee25d54/skills/tool-design-sprint-decide-and-storyboard/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/product-on-purpose/pm-skills/9432e2771eb7c221c9454a210c6ae55b6ee25d54/skills/tool-design-sprint-decide-and-storyboard/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-product-on-purpose-pm-skills-pm-skills-product-on-purpose_f2ce15e5",
+        "canonical_skill_id": null,
+        "remote_path": "skills/tool-design-sprint-decide-and-storyboard/SKILL.md",
+        "pinned_commit": "9432e2771eb7c221c9454a210c6ae55b6ee25d54",
+        "git_blob_oid": "git_sha1:934729adc602dbb56ca959b4eb20dce960352d53",
+        "raw_url": "https://raw.githubusercontent.com/product-on-purpose/pm-skills/9432e2771eb7c221c9454a210c6ae55b6ee25d54/skills/tool-design-sprint-decide-and-storyboard/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:934729adc602dbb56ca959b4eb20dce960352d53",
+        "size": 9066
+      }
+    },
+    {
+      "source_id": "src_https-github-com-product-on-purpose-pm-skills-pm-skills-product-on-purpose_f2ce15e5",
+      "path": "skills/tool-design-sprint-map-and-target/SKILL.md",
+      "declared_name": "tool-design-sprint-map-and-target",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:3346d2e5643c6e0e65466b7924ee0ebd5c2593aa",
+      "upstream_ref": "9432e2771eb7c221c9454a210c6ae55b6ee25d54",
+      "git_blob_oid": "git_sha1:3346d2e5643c6e0e65466b7924ee0ebd5c2593aa",
+      "url": "https://github.com/product-on-purpose/pm-skills/blob/9432e2771eb7c221c9454a210c6ae55b6ee25d54/skills/tool-design-sprint-map-and-target/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/product-on-purpose/pm-skills/9432e2771eb7c221c9454a210c6ae55b6ee25d54/skills/tool-design-sprint-map-and-target/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-product-on-purpose-pm-skills-pm-skills-product-on-purpose_f2ce15e5",
+        "canonical_skill_id": null,
+        "remote_path": "skills/tool-design-sprint-map-and-target/SKILL.md",
+        "pinned_commit": "9432e2771eb7c221c9454a210c6ae55b6ee25d54",
+        "git_blob_oid": "git_sha1:3346d2e5643c6e0e65466b7924ee0ebd5c2593aa",
+        "raw_url": "https://raw.githubusercontent.com/product-on-purpose/pm-skills/9432e2771eb7c221c9454a210c6ae55b6ee25d54/skills/tool-design-sprint-map-and-target/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:3346d2e5643c6e0e65466b7924ee0ebd5c2593aa",
+        "size": 8953
+      }
+    },
+    {
+      "source_id": "src_https-github-com-product-on-purpose-pm-skills-pm-skills-product-on-purpose_f2ce15e5",
+      "path": "skills/tool-design-sprint-prototype-plan/SKILL.md",
+      "declared_name": "tool-design-sprint-prototype-plan",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:21e76fdaa21782c936370017789434dc38bcff13",
+      "upstream_ref": "9432e2771eb7c221c9454a210c6ae55b6ee25d54",
+      "git_blob_oid": "git_sha1:21e76fdaa21782c936370017789434dc38bcff13",
+      "url": "https://github.com/product-on-purpose/pm-skills/blob/9432e2771eb7c221c9454a210c6ae55b6ee25d54/skills/tool-design-sprint-prototype-plan/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/product-on-purpose/pm-skills/9432e2771eb7c221c9454a210c6ae55b6ee25d54/skills/tool-design-sprint-prototype-plan/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-product-on-purpose-pm-skills-pm-skills-product-on-purpose_f2ce15e5",
+        "canonical_skill_id": null,
+        "remote_path": "skills/tool-design-sprint-prototype-plan/SKILL.md",
+        "pinned_commit": "9432e2771eb7c221c9454a210c6ae55b6ee25d54",
+        "git_blob_oid": "git_sha1:21e76fdaa21782c936370017789434dc38bcff13",
+        "raw_url": "https://raw.githubusercontent.com/product-on-purpose/pm-skills/9432e2771eb7c221c9454a210c6ae55b6ee25d54/skills/tool-design-sprint-prototype-plan/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:21e76fdaa21782c936370017789434dc38bcff13",
+        "size": 9744
+      }
+    },
+    {
+      "source_id": "src_https-github-com-product-on-purpose-pm-skills-pm-skills-product-on-purpose_f2ce15e5",
+      "path": "skills/tool-design-sprint-readiness/SKILL.md",
+      "declared_name": "tool-design-sprint-readiness",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:0e912a79929a51912d538c8be09588171dab31e3",
+      "upstream_ref": "9432e2771eb7c221c9454a210c6ae55b6ee25d54",
+      "git_blob_oid": "git_sha1:0e912a79929a51912d538c8be09588171dab31e3",
+      "url": "https://github.com/product-on-purpose/pm-skills/blob/9432e2771eb7c221c9454a210c6ae55b6ee25d54/skills/tool-design-sprint-readiness/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/product-on-purpose/pm-skills/9432e2771eb7c221c9454a210c6ae55b6ee25d54/skills/tool-design-sprint-readiness/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-product-on-purpose-pm-skills-pm-skills-product-on-purpose_f2ce15e5",
+        "canonical_skill_id": null,
+        "remote_path": "skills/tool-design-sprint-readiness/SKILL.md",
+        "pinned_commit": "9432e2771eb7c221c9454a210c6ae55b6ee25d54",
+        "git_blob_oid": "git_sha1:0e912a79929a51912d538c8be09588171dab31e3",
+        "raw_url": "https://raw.githubusercontent.com/product-on-purpose/pm-skills/9432e2771eb7c221c9454a210c6ae55b6ee25d54/skills/tool-design-sprint-readiness/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:0e912a79929a51912d538c8be09588171dab31e3",
+        "size": 11491
+      }
+    },
+    {
+      "source_id": "src_https-github-com-product-on-purpose-pm-skills-pm-skills-product-on-purpose_f2ce15e5",
+      "path": "skills/tool-design-sprint-sketch/SKILL.md",
+      "declared_name": "tool-design-sprint-sketch",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:a4ac686a92aad3899deab05eee85e1f6eb1c0755",
+      "upstream_ref": "9432e2771eb7c221c9454a210c6ae55b6ee25d54",
+      "git_blob_oid": "git_sha1:a4ac686a92aad3899deab05eee85e1f6eb1c0755",
+      "url": "https://github.com/product-on-purpose/pm-skills/blob/9432e2771eb7c221c9454a210c6ae55b6ee25d54/skills/tool-design-sprint-sketch/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/product-on-purpose/pm-skills/9432e2771eb7c221c9454a210c6ae55b6ee25d54/skills/tool-design-sprint-sketch/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-product-on-purpose-pm-skills-pm-skills-product-on-purpose_f2ce15e5",
+        "canonical_skill_id": null,
+        "remote_path": "skills/tool-design-sprint-sketch/SKILL.md",
+        "pinned_commit": "9432e2771eb7c221c9454a210c6ae55b6ee25d54",
+        "git_blob_oid": "git_sha1:a4ac686a92aad3899deab05eee85e1f6eb1c0755",
+        "raw_url": "https://raw.githubusercontent.com/product-on-purpose/pm-skills/9432e2771eb7c221c9454a210c6ae55b6ee25d54/skills/tool-design-sprint-sketch/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:a4ac686a92aad3899deab05eee85e1f6eb1c0755",
+        "size": 8454
+      }
+    },
+    {
+      "source_id": "src_https-github-com-product-on-purpose-pm-skills-pm-skills-product-on-purpose_f2ce15e5",
+      "path": "skills/tool-design-sprint-test-and-score/SKILL.md",
+      "declared_name": "tool-design-sprint-test-and-score",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:ea50e8e1949bf7d2e68d93fb2d81aa96d0a8a402",
+      "upstream_ref": "9432e2771eb7c221c9454a210c6ae55b6ee25d54",
+      "git_blob_oid": "git_sha1:ea50e8e1949bf7d2e68d93fb2d81aa96d0a8a402",
+      "url": "https://github.com/product-on-purpose/pm-skills/blob/9432e2771eb7c221c9454a210c6ae55b6ee25d54/skills/tool-design-sprint-test-and-score/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/product-on-purpose/pm-skills/9432e2771eb7c221c9454a210c6ae55b6ee25d54/skills/tool-design-sprint-test-and-score/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-product-on-purpose-pm-skills-pm-skills-product-on-purpose_f2ce15e5",
+        "canonical_skill_id": null,
+        "remote_path": "skills/tool-design-sprint-test-and-score/SKILL.md",
+        "pinned_commit": "9432e2771eb7c221c9454a210c6ae55b6ee25d54",
+        "git_blob_oid": "git_sha1:ea50e8e1949bf7d2e68d93fb2d81aa96d0a8a402",
+        "raw_url": "https://raw.githubusercontent.com/product-on-purpose/pm-skills/9432e2771eb7c221c9454a210c6ae55b6ee25d54/skills/tool-design-sprint-test-and-score/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:ea50e8e1949bf7d2e68d93fb2d81aa96d0a8a402",
+        "size": 10418
+      }
+    },
+    {
+      "source_id": "src_https-github-com-product-on-purpose-pm-skills-pm-skills-product-on-purpose_f2ce15e5",
+      "path": "skills/tool-foundation-sprint-approach-options/SKILL.md",
+      "declared_name": "tool-foundation-sprint-approach-options",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:ed35981ccd67ba8a2c10d9b16a23592bd5c1bd55",
+      "upstream_ref": "9432e2771eb7c221c9454a210c6ae55b6ee25d54",
+      "git_blob_oid": "git_sha1:ed35981ccd67ba8a2c10d9b16a23592bd5c1bd55",
+      "url": "https://github.com/product-on-purpose/pm-skills/blob/9432e2771eb7c221c9454a210c6ae55b6ee25d54/skills/tool-foundation-sprint-approach-options/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/product-on-purpose/pm-skills/9432e2771eb7c221c9454a210c6ae55b6ee25d54/skills/tool-foundation-sprint-approach-options/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-product-on-purpose-pm-skills-pm-skills-product-on-purpose_f2ce15e5",
+        "canonical_skill_id": null,
+        "remote_path": "skills/tool-foundation-sprint-approach-options/SKILL.md",
+        "pinned_commit": "9432e2771eb7c221c9454a210c6ae55b6ee25d54",
+        "git_blob_oid": "git_sha1:ed35981ccd67ba8a2c10d9b16a23592bd5c1bd55",
+        "raw_url": "https://raw.githubusercontent.com/product-on-purpose/pm-skills/9432e2771eb7c221c9454a210c6ae55b6ee25d54/skills/tool-foundation-sprint-approach-options/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:ed35981ccd67ba8a2c10d9b16a23592bd5c1bd55",
+        "size": 8029
+      }
+    },
+    {
+      "source_id": "src_https-github-com-product-on-purpose-pm-skills-pm-skills-product-on-purpose_f2ce15e5",
+      "path": "skills/tool-foundation-sprint-basics/SKILL.md",
+      "declared_name": "tool-foundation-sprint-basics",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:f537a0abff3396cc452d27804af9ca32b5f5060b",
+      "upstream_ref": "9432e2771eb7c221c9454a210c6ae55b6ee25d54",
+      "git_blob_oid": "git_sha1:f537a0abff3396cc452d27804af9ca32b5f5060b",
+      "url": "https://github.com/product-on-purpose/pm-skills/blob/9432e2771eb7c221c9454a210c6ae55b6ee25d54/skills/tool-foundation-sprint-basics/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/product-on-purpose/pm-skills/9432e2771eb7c221c9454a210c6ae55b6ee25d54/skills/tool-foundation-sprint-basics/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-product-on-purpose-pm-skills-pm-skills-product-on-purpose_f2ce15e5",
+        "canonical_skill_id": null,
+        "remote_path": "skills/tool-foundation-sprint-basics/SKILL.md",
+        "pinned_commit": "9432e2771eb7c221c9454a210c6ae55b6ee25d54",
+        "git_blob_oid": "git_sha1:f537a0abff3396cc452d27804af9ca32b5f5060b",
+        "raw_url": "https://raw.githubusercontent.com/product-on-purpose/pm-skills/9432e2771eb7c221c9454a210c6ae55b6ee25d54/skills/tool-foundation-sprint-basics/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:f537a0abff3396cc452d27804af9ca32b5f5060b",
+        "size": 9195
+      }
+    },
+    {
+      "source_id": "src_https-github-com-product-on-purpose-pm-skills-pm-skills-product-on-purpose_f2ce15e5",
+      "path": "skills/tool-foundation-sprint-brief/SKILL.md",
+      "declared_name": "tool-foundation-sprint-brief",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:67b26bd12832e0d2c7ea520e62de44f7adb6a3ea",
+      "upstream_ref": "9432e2771eb7c221c9454a210c6ae55b6ee25d54",
+      "git_blob_oid": "git_sha1:67b26bd12832e0d2c7ea520e62de44f7adb6a3ea",
+      "url": "https://github.com/product-on-purpose/pm-skills/blob/9432e2771eb7c221c9454a210c6ae55b6ee25d54/skills/tool-foundation-sprint-brief/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/product-on-purpose/pm-skills/9432e2771eb7c221c9454a210c6ae55b6ee25d54/skills/tool-foundation-sprint-brief/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-product-on-purpose-pm-skills-pm-skills-product-on-purpose_f2ce15e5",
+        "canonical_skill_id": null,
+        "remote_path": "skills/tool-foundation-sprint-brief/SKILL.md",
+        "pinned_commit": "9432e2771eb7c221c9454a210c6ae55b6ee25d54",
+        "git_blob_oid": "git_sha1:67b26bd12832e0d2c7ea520e62de44f7adb6a3ea",
+        "raw_url": "https://raw.githubusercontent.com/product-on-purpose/pm-skills/9432e2771eb7c221c9454a210c6ae55b6ee25d54/skills/tool-foundation-sprint-brief/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:67b26bd12832e0d2c7ea520e62de44f7adb6a3ea",
+        "size": 7705
+      }
+    },
+    {
+      "source_id": "src_https-github-com-product-on-purpose-pm-skills-pm-skills-product-on-purpose_f2ce15e5",
+      "path": "skills/tool-foundation-sprint-differentiation/SKILL.md",
+      "declared_name": "tool-foundation-sprint-differentiation",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:7e973ae349f86498f19ceef9cd5b76e4612bbb24",
+      "upstream_ref": "9432e2771eb7c221c9454a210c6ae55b6ee25d54",
+      "git_blob_oid": "git_sha1:7e973ae349f86498f19ceef9cd5b76e4612bbb24",
+      "url": "https://github.com/product-on-purpose/pm-skills/blob/9432e2771eb7c221c9454a210c6ae55b6ee25d54/skills/tool-foundation-sprint-differentiation/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/product-on-purpose/pm-skills/9432e2771eb7c221c9454a210c6ae55b6ee25d54/skills/tool-foundation-sprint-differentiation/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-product-on-purpose-pm-skills-pm-skills-product-on-purpose_f2ce15e5",
+        "canonical_skill_id": null,
+        "remote_path": "skills/tool-foundation-sprint-differentiation/SKILL.md",
+        "pinned_commit": "9432e2771eb7c221c9454a210c6ae55b6ee25d54",
+        "git_blob_oid": "git_sha1:7e973ae349f86498f19ceef9cd5b76e4612bbb24",
+        "raw_url": "https://raw.githubusercontent.com/product-on-purpose/pm-skills/9432e2771eb7c221c9454a210c6ae55b6ee25d54/skills/tool-foundation-sprint-differentiation/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:7e973ae349f86498f19ceef9cd5b76e4612bbb24",
+        "size": 8828
+      }
+    },
+    {
+      "source_id": "src_https-github-com-product-on-purpose-pm-skills-pm-skills-product-on-purpose_f2ce15e5",
+      "path": "skills/tool-foundation-sprint-founding-hypothesis/SKILL.md",
+      "declared_name": "tool-foundation-sprint-founding-hypothesis",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:e1955cf5d5cb0da127535c04170f140954254328",
+      "upstream_ref": "9432e2771eb7c221c9454a210c6ae55b6ee25d54",
+      "git_blob_oid": "git_sha1:e1955cf5d5cb0da127535c04170f140954254328",
+      "url": "https://github.com/product-on-purpose/pm-skills/blob/9432e2771eb7c221c9454a210c6ae55b6ee25d54/skills/tool-foundation-sprint-founding-hypothesis/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/product-on-purpose/pm-skills/9432e2771eb7c221c9454a210c6ae55b6ee25d54/skills/tool-foundation-sprint-founding-hypothesis/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-product-on-purpose-pm-skills-pm-skills-product-on-purpose_f2ce15e5",
+        "canonical_skill_id": null,
+        "remote_path": "skills/tool-foundation-sprint-founding-hypothesis/SKILL.md",
+        "pinned_commit": "9432e2771eb7c221c9454a210c6ae55b6ee25d54",
+        "git_blob_oid": "git_sha1:e1955cf5d5cb0da127535c04170f140954254328",
+        "raw_url": "https://raw.githubusercontent.com/product-on-purpose/pm-skills/9432e2771eb7c221c9454a210c6ae55b6ee25d54/skills/tool-foundation-sprint-founding-hypothesis/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:e1955cf5d5cb0da127535c04170f140954254328",
+        "size": 10204
+      }
+    },
+    {
+      "source_id": "src_https-github-com-product-on-purpose-pm-skills-pm-skills-product-on-purpose_f2ce15e5",
+      "path": "skills/tool-foundation-sprint-magic-lenses/SKILL.md",
+      "declared_name": "tool-foundation-sprint-magic-lenses",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:a18238e51fe4db3cd208428af169ba7966239caa",
+      "upstream_ref": "9432e2771eb7c221c9454a210c6ae55b6ee25d54",
+      "git_blob_oid": "git_sha1:a18238e51fe4db3cd208428af169ba7966239caa",
+      "url": "https://github.com/product-on-purpose/pm-skills/blob/9432e2771eb7c221c9454a210c6ae55b6ee25d54/skills/tool-foundation-sprint-magic-lenses/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/product-on-purpose/pm-skills/9432e2771eb7c221c9454a210c6ae55b6ee25d54/skills/tool-foundation-sprint-magic-lenses/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-product-on-purpose-pm-skills-pm-skills-product-on-purpose_f2ce15e5",
+        "canonical_skill_id": null,
+        "remote_path": "skills/tool-foundation-sprint-magic-lenses/SKILL.md",
+        "pinned_commit": "9432e2771eb7c221c9454a210c6ae55b6ee25d54",
+        "git_blob_oid": "git_sha1:a18238e51fe4db3cd208428af169ba7966239caa",
+        "raw_url": "https://raw.githubusercontent.com/product-on-purpose/pm-skills/9432e2771eb7c221c9454a210c6ae55b6ee25d54/skills/tool-foundation-sprint-magic-lenses/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:a18238e51fe4db3cd208428af169ba7966239caa",
+        "size": 9156
+      }
+    },
+    {
+      "source_id": "src_https-github-com-product-on-purpose-pm-skills-pm-skills-product-on-purpose_f2ce15e5",
+      "path": "skills/tool-foundation-sprint-readiness/SKILL.md",
+      "declared_name": "tool-foundation-sprint-readiness",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:3441563c9575c7234ef670fcf5cf241252e65ef3",
+      "upstream_ref": "9432e2771eb7c221c9454a210c6ae55b6ee25d54",
+      "git_blob_oid": "git_sha1:3441563c9575c7234ef670fcf5cf241252e65ef3",
+      "url": "https://github.com/product-on-purpose/pm-skills/blob/9432e2771eb7c221c9454a210c6ae55b6ee25d54/skills/tool-foundation-sprint-readiness/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/product-on-purpose/pm-skills/9432e2771eb7c221c9454a210c6ae55b6ee25d54/skills/tool-foundation-sprint-readiness/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-product-on-purpose-pm-skills-pm-skills-product-on-purpose_f2ce15e5",
+        "canonical_skill_id": null,
+        "remote_path": "skills/tool-foundation-sprint-readiness/SKILL.md",
+        "pinned_commit": "9432e2771eb7c221c9454a210c6ae55b6ee25d54",
+        "git_blob_oid": "git_sha1:3441563c9575c7234ef670fcf5cf241252e65ef3",
+        "raw_url": "https://raw.githubusercontent.com/product-on-purpose/pm-skills/9432e2771eb7c221c9454a210c6ae55b6ee25d54/skills/tool-foundation-sprint-readiness/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:3441563c9575c7234ef670fcf5cf241252e65ef3",
+        "size": 8519
+      }
+    },
+    {
+      "source_id": "src_https-github-com-product-on-purpose-pm-skills-pm-skills-product-on-purpose_f2ce15e5",
+      "path": "skills/tool-note-and-vote/SKILL.md",
+      "declared_name": "tool-note-and-vote",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:f93ef8dc2e0fc31df7b24cd5b1056db37bd11565",
+      "upstream_ref": "9432e2771eb7c221c9454a210c6ae55b6ee25d54",
+      "git_blob_oid": "git_sha1:f93ef8dc2e0fc31df7b24cd5b1056db37bd11565",
+      "url": "https://github.com/product-on-purpose/pm-skills/blob/9432e2771eb7c221c9454a210c6ae55b6ee25d54/skills/tool-note-and-vote/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/product-on-purpose/pm-skills/9432e2771eb7c221c9454a210c6ae55b6ee25d54/skills/tool-note-and-vote/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-product-on-purpose-pm-skills-pm-skills-product-on-purpose_f2ce15e5",
+        "canonical_skill_id": null,
+        "remote_path": "skills/tool-note-and-vote/SKILL.md",
+        "pinned_commit": "9432e2771eb7c221c9454a210c6ae55b6ee25d54",
+        "git_blob_oid": "git_sha1:f93ef8dc2e0fc31df7b24cd5b1056db37bd11565",
+        "raw_url": "https://raw.githubusercontent.com/product-on-purpose/pm-skills/9432e2771eb7c221c9454a210c6ae55b6ee25d54/skills/tool-note-and-vote/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:f93ef8dc2e0fc31df7b24cd5b1056db37bd11565",
+        "size": 8459
+      }
+    },
+    {
+      "source_id": "src_https-github-com-product-on-purpose-pm-skills-pm-skills-product-on-purpose_f2ce15e5",
+      "path": "skills/utility-mermaid-diagrams/SKILL.md",
+      "declared_name": "utility-mermaid-diagrams",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:abbba2b381d082c0dd1757a3c6b0c3d38bf8e18f",
+      "upstream_ref": "9432e2771eb7c221c9454a210c6ae55b6ee25d54",
+      "git_blob_oid": "git_sha1:abbba2b381d082c0dd1757a3c6b0c3d38bf8e18f",
+      "url": "https://github.com/product-on-purpose/pm-skills/blob/9432e2771eb7c221c9454a210c6ae55b6ee25d54/skills/utility-mermaid-diagrams/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/product-on-purpose/pm-skills/9432e2771eb7c221c9454a210c6ae55b6ee25d54/skills/utility-mermaid-diagrams/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-product-on-purpose-pm-skills-pm-skills-product-on-purpose_f2ce15e5",
+        "canonical_skill_id": null,
+        "remote_path": "skills/utility-mermaid-diagrams/SKILL.md",
+        "pinned_commit": "9432e2771eb7c221c9454a210c6ae55b6ee25d54",
+        "git_blob_oid": "git_sha1:abbba2b381d082c0dd1757a3c6b0c3d38bf8e18f",
+        "raw_url": "https://raw.githubusercontent.com/product-on-purpose/pm-skills/9432e2771eb7c221c9454a210c6ae55b6ee25d54/skills/utility-mermaid-diagrams/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:abbba2b381d082c0dd1757a3c6b0c3d38bf8e18f",
+        "size": 6498
+      }
+    },
+    {
+      "source_id": "src_https-github-com-product-on-purpose-pm-skills-pm-skills-product-on-purpose_f2ce15e5",
+      "path": "skills/utility-pm-changelog-curator/SKILL.md",
+      "declared_name": "utility-pm-changelog-curator",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:2f94589fea1da618702d535ce18f26dc6ec079f1",
+      "upstream_ref": "9432e2771eb7c221c9454a210c6ae55b6ee25d54",
+      "git_blob_oid": "git_sha1:2f94589fea1da618702d535ce18f26dc6ec079f1",
+      "url": "https://github.com/product-on-purpose/pm-skills/blob/9432e2771eb7c221c9454a210c6ae55b6ee25d54/skills/utility-pm-changelog-curator/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/product-on-purpose/pm-skills/9432e2771eb7c221c9454a210c6ae55b6ee25d54/skills/utility-pm-changelog-curator/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-product-on-purpose-pm-skills-pm-skills-product-on-purpose_f2ce15e5",
+        "canonical_skill_id": null,
+        "remote_path": "skills/utility-pm-changelog-curator/SKILL.md",
+        "pinned_commit": "9432e2771eb7c221c9454a210c6ae55b6ee25d54",
+        "git_blob_oid": "git_sha1:2f94589fea1da618702d535ce18f26dc6ec079f1",
+        "raw_url": "https://raw.githubusercontent.com/product-on-purpose/pm-skills/9432e2771eb7c221c9454a210c6ae55b6ee25d54/skills/utility-pm-changelog-curator/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:2f94589fea1da618702d535ce18f26dc6ec079f1",
+        "size": 4312
+      }
+    },
+    {
+      "source_id": "src_https-github-com-product-on-purpose-pm-skills-pm-skills-product-on-purpose_f2ce15e5",
+      "path": "skills/utility-pm-critic/SKILL.md",
+      "declared_name": "utility-pm-critic",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:74e12f153931bb795fc38d88ea5031753daac49b",
+      "upstream_ref": "9432e2771eb7c221c9454a210c6ae55b6ee25d54",
+      "git_blob_oid": "git_sha1:74e12f153931bb795fc38d88ea5031753daac49b",
+      "url": "https://github.com/product-on-purpose/pm-skills/blob/9432e2771eb7c221c9454a210c6ae55b6ee25d54/skills/utility-pm-critic/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/product-on-purpose/pm-skills/9432e2771eb7c221c9454a210c6ae55b6ee25d54/skills/utility-pm-critic/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-product-on-purpose-pm-skills-pm-skills-product-on-purpose_f2ce15e5",
+        "canonical_skill_id": null,
+        "remote_path": "skills/utility-pm-critic/SKILL.md",
+        "pinned_commit": "9432e2771eb7c221c9454a210c6ae55b6ee25d54",
+        "git_blob_oid": "git_sha1:74e12f153931bb795fc38d88ea5031753daac49b",
+        "raw_url": "https://raw.githubusercontent.com/product-on-purpose/pm-skills/9432e2771eb7c221c9454a210c6ae55b6ee25d54/skills/utility-pm-critic/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:74e12f153931bb795fc38d88ea5031753daac49b",
+        "size": 6146
+      }
+    },
+    {
+      "source_id": "src_https-github-com-product-on-purpose-pm-skills-pm-skills-product-on-purpose_f2ce15e5",
+      "path": "skills/utility-pm-release-conductor/SKILL.md",
+      "declared_name": "utility-pm-release-conductor",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:6d4b8f4bd24477ff1019c3bf622181f5bfda9eb9",
+      "upstream_ref": "9432e2771eb7c221c9454a210c6ae55b6ee25d54",
+      "git_blob_oid": "git_sha1:6d4b8f4bd24477ff1019c3bf622181f5bfda9eb9",
+      "url": "https://github.com/product-on-purpose/pm-skills/blob/9432e2771eb7c221c9454a210c6ae55b6ee25d54/skills/utility-pm-release-conductor/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/product-on-purpose/pm-skills/9432e2771eb7c221c9454a210c6ae55b6ee25d54/skills/utility-pm-release-conductor/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-product-on-purpose-pm-skills-pm-skills-product-on-purpose_f2ce15e5",
+        "canonical_skill_id": null,
+        "remote_path": "skills/utility-pm-release-conductor/SKILL.md",
+        "pinned_commit": "9432e2771eb7c221c9454a210c6ae55b6ee25d54",
+        "git_blob_oid": "git_sha1:6d4b8f4bd24477ff1019c3bf622181f5bfda9eb9",
+        "raw_url": "https://raw.githubusercontent.com/product-on-purpose/pm-skills/9432e2771eb7c221c9454a210c6ae55b6ee25d54/skills/utility-pm-release-conductor/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:6d4b8f4bd24477ff1019c3bf622181f5bfda9eb9",
+        "size": 6437
+      }
+    },
+    {
+      "source_id": "src_https-github-com-product-on-purpose-pm-skills-pm-skills-product-on-purpose_f2ce15e5",
+      "path": "skills/utility-pm-skill-auditor/SKILL.md",
+      "declared_name": "utility-pm-skill-auditor",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:f52047ce418c76495026749c0577aac10e75f1f7",
+      "upstream_ref": "9432e2771eb7c221c9454a210c6ae55b6ee25d54",
+      "git_blob_oid": "git_sha1:f52047ce418c76495026749c0577aac10e75f1f7",
+      "url": "https://github.com/product-on-purpose/pm-skills/blob/9432e2771eb7c221c9454a210c6ae55b6ee25d54/skills/utility-pm-skill-auditor/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/product-on-purpose/pm-skills/9432e2771eb7c221c9454a210c6ae55b6ee25d54/skills/utility-pm-skill-auditor/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-product-on-purpose-pm-skills-pm-skills-product-on-purpose_f2ce15e5",
+        "canonical_skill_id": null,
+        "remote_path": "skills/utility-pm-skill-auditor/SKILL.md",
+        "pinned_commit": "9432e2771eb7c221c9454a210c6ae55b6ee25d54",
+        "git_blob_oid": "git_sha1:f52047ce418c76495026749c0577aac10e75f1f7",
+        "raw_url": "https://raw.githubusercontent.com/product-on-purpose/pm-skills/9432e2771eb7c221c9454a210c6ae55b6ee25d54/skills/utility-pm-skill-auditor/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:f52047ce418c76495026749c0577aac10e75f1f7",
+        "size": 4684
+      }
+    },
+    {
+      "source_id": "src_https-github-com-product-on-purpose-pm-skills-pm-skills-product-on-purpose_f2ce15e5",
+      "path": "skills/utility-pm-skill-builder/SKILL.md",
+      "declared_name": "utility-pm-skill-builder",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:4a09685211f54cded5268d57c19eb7d9cea4508d",
+      "upstream_ref": "9432e2771eb7c221c9454a210c6ae55b6ee25d54",
+      "git_blob_oid": "git_sha1:4a09685211f54cded5268d57c19eb7d9cea4508d",
+      "url": "https://github.com/product-on-purpose/pm-skills/blob/9432e2771eb7c221c9454a210c6ae55b6ee25d54/skills/utility-pm-skill-builder/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/product-on-purpose/pm-skills/9432e2771eb7c221c9454a210c6ae55b6ee25d54/skills/utility-pm-skill-builder/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-product-on-purpose-pm-skills-pm-skills-product-on-purpose_f2ce15e5",
+        "canonical_skill_id": null,
+        "remote_path": "skills/utility-pm-skill-builder/SKILL.md",
+        "pinned_commit": "9432e2771eb7c221c9454a210c6ae55b6ee25d54",
+        "git_blob_oid": "git_sha1:4a09685211f54cded5268d57c19eb7d9cea4508d",
+        "raw_url": "https://raw.githubusercontent.com/product-on-purpose/pm-skills/9432e2771eb7c221c9454a210c6ae55b6ee25d54/skills/utility-pm-skill-builder/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:4a09685211f54cded5268d57c19eb7d9cea4508d",
+        "size": 19122
+      }
+    },
+    {
+      "source_id": "src_https-github-com-product-on-purpose-pm-skills-pm-skills-product-on-purpose_f2ce15e5",
+      "path": "skills/utility-pm-skill-iterate/SKILL.md",
+      "declared_name": "utility-pm-skill-iterate",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:39b8fed464b75ffe30f0d798313545f0aa608b7e",
+      "upstream_ref": "9432e2771eb7c221c9454a210c6ae55b6ee25d54",
+      "git_blob_oid": "git_sha1:39b8fed464b75ffe30f0d798313545f0aa608b7e",
+      "url": "https://github.com/product-on-purpose/pm-skills/blob/9432e2771eb7c221c9454a210c6ae55b6ee25d54/skills/utility-pm-skill-iterate/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/product-on-purpose/pm-skills/9432e2771eb7c221c9454a210c6ae55b6ee25d54/skills/utility-pm-skill-iterate/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-product-on-purpose-pm-skills-pm-skills-product-on-purpose_f2ce15e5",
+        "canonical_skill_id": null,
+        "remote_path": "skills/utility-pm-skill-iterate/SKILL.md",
+        "pinned_commit": "9432e2771eb7c221c9454a210c6ae55b6ee25d54",
+        "git_blob_oid": "git_sha1:39b8fed464b75ffe30f0d798313545f0aa608b7e",
+        "raw_url": "https://raw.githubusercontent.com/product-on-purpose/pm-skills/9432e2771eb7c221c9454a210c6ae55b6ee25d54/skills/utility-pm-skill-iterate/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:39b8fed464b75ffe30f0d798313545f0aa608b7e",
+        "size": 12384
+      }
+    },
+    {
+      "source_id": "src_https-github-com-product-on-purpose-pm-skills-pm-skills-product-on-purpose_f2ce15e5",
+      "path": "skills/utility-pm-skill-validate/SKILL.md",
+      "declared_name": "utility-pm-skill-validate",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:31a72171d4b645f70ac3b9848f2d9bb93cba8ce3",
+      "upstream_ref": "9432e2771eb7c221c9454a210c6ae55b6ee25d54",
+      "git_blob_oid": "git_sha1:31a72171d4b645f70ac3b9848f2d9bb93cba8ce3",
+      "url": "https://github.com/product-on-purpose/pm-skills/blob/9432e2771eb7c221c9454a210c6ae55b6ee25d54/skills/utility-pm-skill-validate/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/product-on-purpose/pm-skills/9432e2771eb7c221c9454a210c6ae55b6ee25d54/skills/utility-pm-skill-validate/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-product-on-purpose-pm-skills-pm-skills-product-on-purpose_f2ce15e5",
+        "canonical_skill_id": null,
+        "remote_path": "skills/utility-pm-skill-validate/SKILL.md",
+        "pinned_commit": "9432e2771eb7c221c9454a210c6ae55b6ee25d54",
+        "git_blob_oid": "git_sha1:31a72171d4b645f70ac3b9848f2d9bb93cba8ce3",
+        "raw_url": "https://raw.githubusercontent.com/product-on-purpose/pm-skills/9432e2771eb7c221c9454a210c6ae55b6ee25d54/skills/utility-pm-skill-validate/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:31a72171d4b645f70ac3b9848f2d9bb93cba8ce3",
+        "size": 13700
+      }
+    },
+    {
+      "source_id": "src_https-github-com-product-on-purpose-pm-skills-pm-skills-product-on-purpose_f2ce15e5",
+      "path": "skills/utility-pm-workflow-builder/SKILL.md",
+      "declared_name": "utility-pm-workflow-builder",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:028b0bedee0dcba998a20a1415810c4b58ed5fbd",
+      "upstream_ref": "9432e2771eb7c221c9454a210c6ae55b6ee25d54",
+      "git_blob_oid": "git_sha1:028b0bedee0dcba998a20a1415810c4b58ed5fbd",
+      "url": "https://github.com/product-on-purpose/pm-skills/blob/9432e2771eb7c221c9454a210c6ae55b6ee25d54/skills/utility-pm-workflow-builder/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/product-on-purpose/pm-skills/9432e2771eb7c221c9454a210c6ae55b6ee25d54/skills/utility-pm-workflow-builder/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-product-on-purpose-pm-skills-pm-skills-product-on-purpose_f2ce15e5",
+        "canonical_skill_id": null,
+        "remote_path": "skills/utility-pm-workflow-builder/SKILL.md",
+        "pinned_commit": "9432e2771eb7c221c9454a210c6ae55b6ee25d54",
+        "git_blob_oid": "git_sha1:028b0bedee0dcba998a20a1415810c4b58ed5fbd",
+        "raw_url": "https://raw.githubusercontent.com/product-on-purpose/pm-skills/9432e2771eb7c221c9454a210c6ae55b6ee25d54/skills/utility-pm-workflow-builder/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:028b0bedee0dcba998a20a1415810c4b58ed5fbd",
+        "size": 8827
+      }
+    },
+    {
+      "source_id": "src_https-github-com-product-on-purpose-pm-skills-pm-skills-product-on-purpose_f2ce15e5",
+      "path": "skills/utility-pm-workflow-orchestrator/SKILL.md",
+      "declared_name": "utility-pm-workflow-orchestrator",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:59b548d78ca544cb2345cb29650a1deeaa781c6a",
+      "upstream_ref": "9432e2771eb7c221c9454a210c6ae55b6ee25d54",
+      "git_blob_oid": "git_sha1:59b548d78ca544cb2345cb29650a1deeaa781c6a",
+      "url": "https://github.com/product-on-purpose/pm-skills/blob/9432e2771eb7c221c9454a210c6ae55b6ee25d54/skills/utility-pm-workflow-orchestrator/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/product-on-purpose/pm-skills/9432e2771eb7c221c9454a210c6ae55b6ee25d54/skills/utility-pm-workflow-orchestrator/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-product-on-purpose-pm-skills-pm-skills-product-on-purpose_f2ce15e5",
+        "canonical_skill_id": null,
+        "remote_path": "skills/utility-pm-workflow-orchestrator/SKILL.md",
+        "pinned_commit": "9432e2771eb7c221c9454a210c6ae55b6ee25d54",
+        "git_blob_oid": "git_sha1:59b548d78ca544cb2345cb29650a1deeaa781c6a",
+        "raw_url": "https://raw.githubusercontent.com/product-on-purpose/pm-skills/9432e2771eb7c221c9454a210c6ae55b6ee25d54/skills/utility-pm-workflow-orchestrator/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:59b548d78ca544cb2345cb29650a1deeaa781c6a",
+        "size": 9660
+      }
+    },
+    {
+      "source_id": "src_https-github-com-product-on-purpose-pm-skills-pm-skills-product-on-purpose_f2ce15e5",
+      "path": "skills/utility-slideshow-creator/SKILL.md",
+      "declared_name": "utility-slideshow-creator",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:54a5515e961032b8476414afb332d8e6f83d6a09",
+      "upstream_ref": "9432e2771eb7c221c9454a210c6ae55b6ee25d54",
+      "git_blob_oid": "git_sha1:54a5515e961032b8476414afb332d8e6f83d6a09",
+      "url": "https://github.com/product-on-purpose/pm-skills/blob/9432e2771eb7c221c9454a210c6ae55b6ee25d54/skills/utility-slideshow-creator/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/product-on-purpose/pm-skills/9432e2771eb7c221c9454a210c6ae55b6ee25d54/skills/utility-slideshow-creator/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-product-on-purpose-pm-skills-pm-skills-product-on-purpose_f2ce15e5",
+        "canonical_skill_id": null,
+        "remote_path": "skills/utility-slideshow-creator/SKILL.md",
+        "pinned_commit": "9432e2771eb7c221c9454a210c6ae55b6ee25d54",
+        "git_blob_oid": "git_sha1:54a5515e961032b8476414afb332d8e6f83d6a09",
+        "raw_url": "https://raw.githubusercontent.com/product-on-purpose/pm-skills/9432e2771eb7c221c9454a210c6ae55b6ee25d54/skills/utility-slideshow-creator/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:54a5515e961032b8476414afb332d8e6f83d6a09",
+        "size": 6590
+      }
+    },
+    {
+      "source_id": "src_https-github-com-product-on-purpose-pm-skills-pm-skills-product-on-purpose_f2ce15e5",
+      "path": "skills/utility-update-pm-skills/SKILL.md",
+      "declared_name": "utility-update-pm-skills",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:27ac02dc1529923d318f11d9e7be9e58f5ac688c",
+      "upstream_ref": "9432e2771eb7c221c9454a210c6ae55b6ee25d54",
+      "git_blob_oid": "git_sha1:27ac02dc1529923d318f11d9e7be9e58f5ac688c",
+      "url": "https://github.com/product-on-purpose/pm-skills/blob/9432e2771eb7c221c9454a210c6ae55b6ee25d54/skills/utility-update-pm-skills/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/product-on-purpose/pm-skills/9432e2771eb7c221c9454a210c6ae55b6ee25d54/skills/utility-update-pm-skills/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-product-on-purpose-pm-skills-pm-skills-product-on-purpose_f2ce15e5",
+        "canonical_skill_id": null,
+        "remote_path": "skills/utility-update-pm-skills/SKILL.md",
+        "pinned_commit": "9432e2771eb7c221c9454a210c6ae55b6ee25d54",
+        "git_blob_oid": "git_sha1:27ac02dc1529923d318f11d9e7be9e58f5ac688c",
+        "raw_url": "https://raw.githubusercontent.com/product-on-purpose/pm-skills/9432e2771eb7c221c9454a210c6ae55b6ee25d54/skills/utility-update-pm-skills/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:27ac02dc1529923d318f11d9e7be9e58f5ac688c",
+        "size": 14414
+      }
+    }
+  ],
+  "digest": "sha256:09d12b299a93ccb7b6d2c1278eed612e98be56ad7eec5fd205731da0d07ca8d0"
+}

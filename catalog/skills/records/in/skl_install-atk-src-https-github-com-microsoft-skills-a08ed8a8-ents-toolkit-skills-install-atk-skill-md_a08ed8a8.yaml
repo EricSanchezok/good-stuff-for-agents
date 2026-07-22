@@ -14,7 +14,7 @@ curation:
 display_name: install-atk
 identity:
   aliases: []
-  current_version_id: sha256:44afbcbbd76801317776563a96d034574716e949
+  current_version_id: git_sha1:44afbcbbd76801317776563a96d034574716e949
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

@@ -14,7 +14,7 @@ curation:
 display_name: azure-resource-manager-postgresql-dotnet
 identity:
   aliases: []
-  current_version_id: sha256:05ba9fa8774836eb038e7cafe5cb0118c08f3a9a
+  current_version_id: git_sha1:05ba9fa8774836eb038e7cafe5cb0118c08f3a9a
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

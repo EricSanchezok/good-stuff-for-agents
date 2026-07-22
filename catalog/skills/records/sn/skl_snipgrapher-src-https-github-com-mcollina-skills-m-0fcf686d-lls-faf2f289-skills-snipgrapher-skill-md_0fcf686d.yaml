@@ -14,7 +14,7 @@ curation:
 display_name: snipgrapher
 identity:
   aliases: []
-  current_version_id: sha256:8b38341a3626960d3f82cea9d71722690975023d
+  current_version_id: git_sha1:8b38341a3626960d3f82cea9d71722690975023d
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

@@ -14,7 +14,7 @@ curation:
 display_name: facebook-ads
 identity:
   aliases: []
-  current_version_id: sha256:85a43016790484e7ca564659dbcafab5f80c272b
+  current_version_id: git_sha1:85a43016790484e7ca564659dbcafab5f80c272b
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

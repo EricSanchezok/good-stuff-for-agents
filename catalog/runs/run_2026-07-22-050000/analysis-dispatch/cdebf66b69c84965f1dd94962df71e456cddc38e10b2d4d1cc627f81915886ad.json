@@ -1,0 +1,16 @@
+{
+  "binding": {
+    "canonical_skill_id": "skl_azure-communication-sms-java-src-https-github-com-14b43129-ls-azure-communication-sms-java-skill-md_14b43129",
+    "current_version_id": "git_sha1:d2dfd5056562193e7cbda6be6c7fd6c6faecdfe8",
+    "expected_output_path": "catalog/analyses/az/skl_azure-communication-sms-java-src-https-github-com-14b43129-ls-azure-communication-sms-java-skill-md_14b43129.md",
+    "git_blob_oid": "git_sha1:d2dfd5056562193e7cbda6be6c7fd6c6faecdfe8",
+    "pinned_commit": "cc93536d8b809e177a7d1008b276ce41a9456a9c",
+    "raw_url": "https://raw.githubusercontent.com/microsoft/skills/cc93536d8b809e177a7d1008b276ce41a9456a9c/.github/plugins/azure-sdk-java/skills/azure-communication-sms-java/SKILL.md",
+    "remote_path": ".github/plugins/azure-sdk-java/skills/azure-communication-sms-java/SKILL.md",
+    "source_id": "src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e"
+  },
+  "dispatch_digest": "sha256:cdebf66b69c84965f1dd94962df71e456cddc38e10b2d4d1cc627f81915886ad",
+  "kind": "skill-analysis-dispatch",
+  "run_id": "run_2026-07-22-050000",
+  "schema_version": 2
+}

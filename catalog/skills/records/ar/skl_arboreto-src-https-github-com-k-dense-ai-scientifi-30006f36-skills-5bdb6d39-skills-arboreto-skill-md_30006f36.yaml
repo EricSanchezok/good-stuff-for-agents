@@ -14,7 +14,7 @@ curation:
 display_name: arboreto
 identity:
   aliases: []
-  current_version_id: sha256:b53132348273afcb82e8e3112871092ac949f5c3
+  current_version_id: git_sha1:b53132348273afcb82e8e3112871092ac949f5c3
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

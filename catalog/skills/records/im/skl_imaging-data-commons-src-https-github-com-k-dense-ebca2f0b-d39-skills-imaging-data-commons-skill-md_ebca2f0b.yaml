@@ -14,7 +14,7 @@ curation:
 display_name: imaging-data-commons
 identity:
   aliases: []
-  current_version_id: sha256:c4f17081eafaba07fe6c7941a9fe6387f963e157
+  current_version_id: git_sha1:c4f17081eafaba07fe6c7941a9fe6387f963e157
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

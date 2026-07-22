@@ -14,7 +14,7 @@ curation:
 display_name: churn-prevention
 identity:
   aliases: []
-  current_version_id: sha256:b8fbcd28ebc3942dc557db84b69e233b03c45296
+  current_version_id: git_sha1:b8fbcd28ebc3942dc557db84b69e233b03c45296
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

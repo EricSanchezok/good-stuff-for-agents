@@ -14,7 +14,7 @@ curation:
 display_name: azure-resource-manager-durabletask-dotnet
 identity:
   aliases: []
-  current_version_id: sha256:79e685dca8daf9df66c987fbd01525ce34699434
+  current_version_id: git_sha1:79e685dca8daf9df66c987fbd01525ce34699434
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

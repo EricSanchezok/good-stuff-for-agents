@@ -14,7 +14,7 @@ curation:
 display_name: cro
 identity:
   aliases: []
-  current_version_id: sha256:74a2394f838e0f07a5a5f06eee99047b8a5adcd6
+  current_version_id: git_sha1:74a2394f838e0f07a5a5f06eee99047b8a5adcd6
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

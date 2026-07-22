@@ -14,7 +14,7 @@ curation:
 display_name: entra-agent-id
 identity:
   aliases: []
-  current_version_id: sha256:a8653ea1e50451c43e1ab7dc95f5024543d63658
+  current_version_id: git_sha1:a8653ea1e50451c43e1ab7dc95f5024543d63658
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

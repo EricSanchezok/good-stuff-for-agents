@@ -14,7 +14,7 @@ curation:
 display_name: adaptyv
 identity:
   aliases: []
-  current_version_id: sha256:728e113fd36e14c7c3be9a7e20be8b032169b941
+  current_version_id: git_sha1:728e113fd36e14c7c3be9a7e20be8b032169b941
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

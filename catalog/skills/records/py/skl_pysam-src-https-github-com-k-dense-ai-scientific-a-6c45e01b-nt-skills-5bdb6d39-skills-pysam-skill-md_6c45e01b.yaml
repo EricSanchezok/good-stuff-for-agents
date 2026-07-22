@@ -14,7 +14,7 @@ curation:
 display_name: pysam
 identity:
   aliases: []
-  current_version_id: sha256:85ed79b411d68b947863b7d9c38e411fef5508d3
+  current_version_id: git_sha1:85ed79b411d68b947863b7d9c38e411fef5508d3
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

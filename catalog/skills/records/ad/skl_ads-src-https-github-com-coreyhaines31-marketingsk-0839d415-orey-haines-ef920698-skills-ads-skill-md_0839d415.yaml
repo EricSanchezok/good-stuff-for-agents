@@ -14,7 +14,7 @@ curation:
 display_name: ads
 identity:
   aliases: []
-  current_version_id: sha256:9e896299c61f3c71125bb03f2458706df633e5ea
+  current_version_id: git_sha1:9e896299c61f3c71125bb03f2458706df633e5ea
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

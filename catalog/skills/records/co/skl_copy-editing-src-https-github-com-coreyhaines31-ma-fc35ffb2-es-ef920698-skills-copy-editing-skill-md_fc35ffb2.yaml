@@ -14,7 +14,7 @@ curation:
 display_name: copy-editing
 identity:
   aliases: []
-  current_version_id: sha256:33110f4bb1be5f2152f838d95191705328760ddd
+  current_version_id: git_sha1:33110f4bb1be5f2152f838d95191705328760ddd
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

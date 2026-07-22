@@ -14,7 +14,7 @@ curation:
 display_name: directory-submissions
 identity:
   aliases: []
-  current_version_id: sha256:9abacadbdca03bb9c72d2232a5e5a0c5de8013b0
+  current_version_id: git_sha1:9abacadbdca03bb9c72d2232a5e5a0c5de8013b0
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

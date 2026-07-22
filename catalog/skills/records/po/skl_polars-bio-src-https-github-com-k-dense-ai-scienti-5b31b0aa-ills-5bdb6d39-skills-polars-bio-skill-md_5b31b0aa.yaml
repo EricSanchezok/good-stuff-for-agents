@@ -14,7 +14,7 @@ curation:
 display_name: polars-bio
 identity:
   aliases: []
-  current_version_id: sha256:b987a58065d8c696685e11e68e8e88f30e91bdea
+  current_version_id: git_sha1:b987a58065d8c696685e11e68e8e88f30e91bdea
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

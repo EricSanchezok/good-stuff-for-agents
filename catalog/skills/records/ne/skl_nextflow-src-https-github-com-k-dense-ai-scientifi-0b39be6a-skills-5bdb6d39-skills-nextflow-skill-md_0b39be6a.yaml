@@ -14,7 +14,7 @@ curation:
 display_name: nextflow
 identity:
   aliases: []
-  current_version_id: sha256:5b89843cd9d6882abf85bb5903fe4517b4fe0411
+  current_version_id: git_sha1:5b89843cd9d6882abf85bb5903fe4517b4fe0411
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

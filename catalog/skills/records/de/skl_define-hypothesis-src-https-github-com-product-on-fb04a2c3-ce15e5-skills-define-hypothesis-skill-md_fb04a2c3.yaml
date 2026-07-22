@@ -14,7 +14,7 @@ curation:
 display_name: define-hypothesis
 identity:
   aliases: []
-  current_version_id: sha256:d10e3405859c13fb187357061a512a01a92f8197
+  current_version_id: git_sha1:d10e3405859c13fb187357061a512a01a92f8197
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

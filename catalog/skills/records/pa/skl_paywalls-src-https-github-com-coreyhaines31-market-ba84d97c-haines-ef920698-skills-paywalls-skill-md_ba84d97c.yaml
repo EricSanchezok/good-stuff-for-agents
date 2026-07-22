@@ -14,7 +14,7 @@ curation:
 display_name: paywalls
 identity:
   aliases: []
-  current_version_id: sha256:de911a4f39e11b03113f31a96404d06035952d1a
+  current_version_id: git_sha1:de911a4f39e11b03113f31a96404d06035952d1a
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

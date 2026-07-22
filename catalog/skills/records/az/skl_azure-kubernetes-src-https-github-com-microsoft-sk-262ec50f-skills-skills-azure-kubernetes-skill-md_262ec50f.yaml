@@ -14,7 +14,7 @@ curation:
 display_name: azure-kubernetes
 identity:
   aliases: []
-  current_version_id: sha256:3c5a448a679dafed5e0e747d28bd95cead4e8dec
+  current_version_id: git_sha1:3c5a448a679dafed5e0e747d28bd95cead4e8dec
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

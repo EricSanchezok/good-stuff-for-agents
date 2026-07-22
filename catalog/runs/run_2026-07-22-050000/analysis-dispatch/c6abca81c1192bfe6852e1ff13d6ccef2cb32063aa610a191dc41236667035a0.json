@@ -1,0 +1,16 @@
+{
+  "binding": {
+    "canonical_skill_id": "skl_azure-appconfiguration-ts-src-https-github-com-mic-71aa84f6-kills-azure-appconfiguration-ts-skill-md_71aa84f6",
+    "current_version_id": "git_sha1:82d0e0ffe52ac030cbe98560e85665bdcab52fcf",
+    "expected_output_path": "catalog/analyses/az/skl_azure-appconfiguration-ts-src-https-github-com-mic-71aa84f6-kills-azure-appconfiguration-ts-skill-md_71aa84f6.md",
+    "git_blob_oid": "git_sha1:82d0e0ffe52ac030cbe98560e85665bdcab52fcf",
+    "pinned_commit": "cc93536d8b809e177a7d1008b276ce41a9456a9c",
+    "raw_url": "https://raw.githubusercontent.com/microsoft/skills/cc93536d8b809e177a7d1008b276ce41a9456a9c/.github/plugins/azure-sdk-typescript/skills/azure-appconfiguration-ts/SKILL.md",
+    "remote_path": ".github/plugins/azure-sdk-typescript/skills/azure-appconfiguration-ts/SKILL.md",
+    "source_id": "src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e"
+  },
+  "dispatch_digest": "sha256:c6abca81c1192bfe6852e1ff13d6ccef2cb32063aa610a191dc41236667035a0",
+  "kind": "skill-analysis-dispatch",
+  "run_id": "run_2026-07-22-050000",
+  "schema_version": 2
+}

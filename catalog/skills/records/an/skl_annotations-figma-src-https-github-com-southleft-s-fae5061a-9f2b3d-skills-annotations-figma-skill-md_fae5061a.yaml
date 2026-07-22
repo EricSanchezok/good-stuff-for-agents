@@ -14,7 +14,7 @@ curation:
 display_name: annotations-figma
 identity:
   aliases: []
-  current_version_id: sha256:2a5833f4827e941cf28d899b4be6eb7fd33d95f2
+  current_version_id: git_sha1:2a5833f4827e941cf28d899b4be6eb7fd33d95f2
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

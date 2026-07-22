@@ -14,7 +14,7 @@ curation:
 display_name: azure-cosmos-ts
 identity:
   aliases: []
-  current_version_id: sha256:33fcce60f1488fbf7e3d1cef4656adb693f215f2
+  current_version_id: git_sha1:33fcce60f1488fbf7e3d1cef4656adb693f215f2
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

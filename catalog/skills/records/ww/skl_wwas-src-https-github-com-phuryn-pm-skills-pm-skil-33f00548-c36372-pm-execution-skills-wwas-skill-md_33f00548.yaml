@@ -14,7 +14,7 @@ curation:
 display_name: wwas
 identity:
   aliases: []
-  current_version_id: sha256:75ebf6bc77f4fff3d26b4b5352f58015c2d5e762
+  current_version_id: git_sha1:75ebf6bc77f4fff3d26b4b5352f58015c2d5e762
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

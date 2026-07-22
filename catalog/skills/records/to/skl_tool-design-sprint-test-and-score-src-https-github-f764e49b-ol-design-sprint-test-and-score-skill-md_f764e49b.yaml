@@ -14,7 +14,7 @@ curation:
 display_name: tool-design-sprint-test-and-score
 identity:
   aliases: []
-  current_version_id: sha256:ea50e8e1949bf7d2e68d93fb2d81aa96d0a8a402
+  current_version_id: git_sha1:ea50e8e1949bf7d2e68d93fb2d81aa96d0a8a402
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

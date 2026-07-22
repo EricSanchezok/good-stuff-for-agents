@@ -1,0 +1,16 @@
+{
+  "binding": {
+    "canonical_skill_id": "skl_azure-cloud-migrate-src-https-github-com-microsoft-543c5f63-ills-skills-azure-cloud-migrate-skill-md_543c5f63",
+    "current_version_id": "git_sha1:b1634cf629d9358eb70a95c089b309c304f9c42c",
+    "expected_output_path": "catalog/analyses/az/skl_azure-cloud-migrate-src-https-github-com-microsoft-543c5f63-ills-skills-azure-cloud-migrate-skill-md_543c5f63.md",
+    "git_blob_oid": "git_sha1:b1634cf629d9358eb70a95c089b309c304f9c42c",
+    "pinned_commit": "cc93536d8b809e177a7d1008b276ce41a9456a9c",
+    "raw_url": "https://raw.githubusercontent.com/microsoft/skills/cc93536d8b809e177a7d1008b276ce41a9456a9c/.github/plugins/azure-skills/skills/azure-cloud-migrate/SKILL.md",
+    "remote_path": ".github/plugins/azure-skills/skills/azure-cloud-migrate/SKILL.md",
+    "source_id": "src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e"
+  },
+  "dispatch_digest": "sha256:6985330ef360e85e5691ced1b844c61ba5465328bc0309fa819535ad96a4c602",
+  "kind": "skill-analysis-dispatch",
+  "run_id": "run_2026-07-22-050000",
+  "schema_version": 2
+}

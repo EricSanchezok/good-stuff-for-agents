@@ -14,7 +14,7 @@ curation:
 display_name: microsoft-ads
 identity:
   aliases: []
-  current_version_id: sha256:168d43333d8a22ab711329676cdb5d47edc373e4
+  current_version_id: git_sha1:168d43333d8a22ab711329676cdb5d47edc373e4
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

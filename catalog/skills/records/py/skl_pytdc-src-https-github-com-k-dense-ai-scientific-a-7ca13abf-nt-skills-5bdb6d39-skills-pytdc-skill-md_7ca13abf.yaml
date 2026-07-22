@@ -14,7 +14,7 @@ curation:
 display_name: pytdc
 identity:
   aliases: []
-  current_version_id: sha256:1c34f5cad812fd189ea26262fa5c1fbf6805a4df
+  current_version_id: git_sha1:1c34f5cad812fd189ea26262fa5c1fbf6805a4df
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

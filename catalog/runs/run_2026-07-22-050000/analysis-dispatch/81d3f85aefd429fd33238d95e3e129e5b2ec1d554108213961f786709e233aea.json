@@ -1,0 +1,16 @@
+{
+  "binding": {
+    "canonical_skill_id": "skl_azure-ai-openai-dotnet-src-https-github-com-micros-c3238c93-t-skills-azure-ai-openai-dotnet-skill-md_c3238c93",
+    "current_version_id": "git_sha1:4c15f34a6a12e0a7d1f198ce5a61508168c51d54",
+    "expected_output_path": "catalog/analyses/az/skl_azure-ai-openai-dotnet-src-https-github-com-micros-c3238c93-t-skills-azure-ai-openai-dotnet-skill-md_c3238c93.md",
+    "git_blob_oid": "git_sha1:4c15f34a6a12e0a7d1f198ce5a61508168c51d54",
+    "pinned_commit": "cc93536d8b809e177a7d1008b276ce41a9456a9c",
+    "raw_url": "https://raw.githubusercontent.com/microsoft/skills/cc93536d8b809e177a7d1008b276ce41a9456a9c/.github/plugins/azure-sdk-dotnet/skills/azure-ai-openai-dotnet/SKILL.md",
+    "remote_path": ".github/plugins/azure-sdk-dotnet/skills/azure-ai-openai-dotnet/SKILL.md",
+    "source_id": "src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e"
+  },
+  "dispatch_digest": "sha256:81d3f85aefd429fd33238d95e3e129e5b2ec1d554108213961f786709e233aea",
+  "kind": "skill-analysis-dispatch",
+  "run_id": "run_2026-07-22-050000",
+  "schema_version": 2
+}

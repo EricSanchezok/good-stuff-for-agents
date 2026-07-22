@@ -14,7 +14,7 @@ curation:
 display_name: beachhead-segment
 identity:
   aliases: []
-  current_version_id: sha256:f9062151ea756462de19109d5268a65e046c0fcc
+  current_version_id: git_sha1:f9062151ea756462de19109d5268a65e046c0fcc
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

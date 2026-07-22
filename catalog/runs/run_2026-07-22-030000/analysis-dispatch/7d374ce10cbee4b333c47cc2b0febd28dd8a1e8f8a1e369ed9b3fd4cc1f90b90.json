@@ -1,0 +1,16 @@
+{
+  "binding": {
+    "canonical_skill_id": "skl_aeon-src-https-github-com-k-dense-ai-scientific-ag-14af17c5-ent-skills-5bdb6d39-skills-aeon-skill-md_14af17c5",
+    "current_version_id": "git_sha1:9638c1d271324c04b4828ec6a3e53dddcfd0b92f",
+    "expected_output_path": "catalog/analyses/ae/skl_aeon-src-https-github-com-k-dense-ai-scientific-ag-14af17c5-ent-skills-5bdb6d39-skills-aeon-skill-md_14af17c5.md",
+    "git_blob_oid": "git_sha1:9638c1d271324c04b4828ec6a3e53dddcfd0b92f",
+    "pinned_commit": "831d49eb77eed3c792be2970921b46764012ef00",
+    "raw_url": "https://raw.githubusercontent.com/K-Dense-AI/scientific-agent-skills/831d49eb77eed3c792be2970921b46764012ef00/skills/aeon/SKILL.md",
+    "remote_path": "skills/aeon/SKILL.md",
+    "source_id": "src_https-github-com-k-dense-ai-scientific-agent-skills-k-dense-scientific-agent-skills_5bdb6d39"
+  },
+  "dispatch_digest": "sha256:7d374ce10cbee4b333c47cc2b0febd28dd8a1e8f8a1e369ed9b3fd4cc1f90b90",
+  "kind": "skill-analysis-dispatch",
+  "run_id": "run_2026-07-22-030000",
+  "schema_version": 2
+}

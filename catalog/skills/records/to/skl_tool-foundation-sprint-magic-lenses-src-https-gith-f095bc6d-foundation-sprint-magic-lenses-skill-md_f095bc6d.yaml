@@ -14,7 +14,7 @@ curation:
 display_name: tool-foundation-sprint-magic-lenses
 identity:
   aliases: []
-  current_version_id: sha256:a18238e51fe4db3cd208428af169ba7966239caa
+  current_version_id: git_sha1:a18238e51fe4db3cd208428af169ba7966239caa
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

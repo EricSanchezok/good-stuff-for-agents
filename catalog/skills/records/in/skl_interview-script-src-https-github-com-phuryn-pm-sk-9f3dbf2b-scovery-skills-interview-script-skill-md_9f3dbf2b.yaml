@@ -14,7 +14,7 @@ curation:
 display_name: interview-script
 identity:
   aliases: []
-  current_version_id: sha256:7ec574e0d107507cb6c1926d2620e2ac822c00b6
+  current_version_id: git_sha1:7ec574e0d107507cb6c1926d2620e2ac822c00b6
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

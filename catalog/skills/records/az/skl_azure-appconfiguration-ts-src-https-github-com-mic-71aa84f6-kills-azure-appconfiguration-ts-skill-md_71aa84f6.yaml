@@ -14,7 +14,7 @@ curation:
 display_name: azure-appconfiguration-ts
 identity:
   aliases: []
-  current_version_id: sha256:82d0e0ffe52ac030cbe98560e85665bdcab52fcf
+  current_version_id: git_sha1:82d0e0ffe52ac030cbe98560e85665bdcab52fcf
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

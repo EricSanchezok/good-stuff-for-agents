@@ -14,7 +14,7 @@ curation:
 display_name: ansoff-matrix
 identity:
   aliases: []
-  current_version_id: sha256:19eba3cf58ea03a181c00c7de1bc093f0526f333
+  current_version_id: git_sha1:19eba3cf58ea03a181c00c7de1bc093f0526f333
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

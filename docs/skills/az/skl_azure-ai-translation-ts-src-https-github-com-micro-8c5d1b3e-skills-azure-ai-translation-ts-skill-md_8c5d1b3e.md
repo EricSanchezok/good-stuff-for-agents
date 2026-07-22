@@ -4,7 +4,9 @@
 
 ## Summary
 
-Analysis pending.
+# Azure AI Translation TypeScript
+
+Teaches Azure's AI Translator service through the official TypeScript/JavaScript SDK: authentication, text translation, language detection, transliteration, dictionary lookups, batch translation, async patterns. Vendor-specific, language-specific.
 
 ## Source
 
@@ -35,6 +37,10 @@ No published packs use this skill yet.
 ## Related Skills
 
 No related skills are public yet.
+
+## Public Analysis Summary
+
+Earns spot only for Azure-specific translation catalog completeness. Generic "call a translation API" skill covers more ground with less vendor coupling. First to go in trim to 100 skills.
 
 ## Confidence and Limitations
 

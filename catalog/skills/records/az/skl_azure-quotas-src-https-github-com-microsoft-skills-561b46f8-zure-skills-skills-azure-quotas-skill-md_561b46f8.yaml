@@ -14,7 +14,7 @@ curation:
 display_name: azure-quotas
 identity:
   aliases: []
-  current_version_id: sha256:cbd67b6c336362ee343390e713b91b5662841038
+  current_version_id: git_sha1:cbd67b6c336362ee343390e713b91b5662841038
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

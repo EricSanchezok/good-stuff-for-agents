@@ -14,7 +14,7 @@ curation:
 display_name: azure-ai-voicelive-dotnet
 identity:
   aliases: []
-  current_version_id: sha256:82e101da3649c7f560fff5ac2f96f7e75268e6e1
+  current_version_id: git_sha1:82e101da3649c7f560fff5ac2f96f7e75268e6e1
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

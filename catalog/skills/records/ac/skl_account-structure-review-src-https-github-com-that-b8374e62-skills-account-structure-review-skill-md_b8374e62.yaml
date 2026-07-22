@@ -14,7 +14,7 @@ curation:
 display_name: account-structure-review
 identity:
   aliases: []
-  current_version_id: sha256:c416c6afcedda8716807f4a24c97ceadbe756e5f
+  current_version_id: git_sha1:c416c6afcedda8716807f4a24c97ceadbe756e5f
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

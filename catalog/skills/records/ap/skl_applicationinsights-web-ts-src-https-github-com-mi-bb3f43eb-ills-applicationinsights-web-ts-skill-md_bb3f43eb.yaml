@@ -14,7 +14,7 @@ curation:
 display_name: applicationinsights-web-ts
 identity:
   aliases: []
-  current_version_id: sha256:e1bfcc76ab8e76060350426a04115dc33de8bbd4
+  current_version_id: git_sha1:e1bfcc76ab8e76060350426a04115dc33de8bbd4
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

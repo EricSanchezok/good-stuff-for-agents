@@ -14,7 +14,7 @@ curation:
 display_name: deliver-edge-cases
 identity:
   aliases: []
-  current_version_id: sha256:01cfbbd15f5bd0d729e44cc1a837d09687983dc7
+  current_version_id: git_sha1:01cfbbd15f5bd0d729e44cc1a837d09687983dc7
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

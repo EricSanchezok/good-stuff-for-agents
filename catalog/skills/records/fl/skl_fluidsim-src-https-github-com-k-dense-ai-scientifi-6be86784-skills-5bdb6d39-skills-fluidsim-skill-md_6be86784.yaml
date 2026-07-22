@@ -14,7 +14,7 @@ curation:
 display_name: fluidsim
 identity:
   aliases: []
-  current_version_id: sha256:8f984514f3fa2a7615af239d18394045dac6cb26
+  current_version_id: git_sha1:8f984514f3fa2a7615af239d18394045dac6cb26
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

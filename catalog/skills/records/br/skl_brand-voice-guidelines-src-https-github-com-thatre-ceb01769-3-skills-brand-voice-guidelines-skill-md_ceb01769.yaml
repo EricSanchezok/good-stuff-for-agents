@@ -14,7 +14,7 @@ curation:
 display_name: brand-voice-guidelines
 identity:
   aliases: []
-  current_version_id: sha256:b59878a6f63b48e37220b1338b3b2cd83de99305
+  current_version_id: git_sha1:b59878a6f63b48e37220b1338b3b2cd83de99305
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

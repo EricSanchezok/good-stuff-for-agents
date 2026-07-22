@@ -14,7 +14,7 @@ curation:
 display_name: web-artifacts-builder
 identity:
   aliases: []
-  current_version_id: sha256:8b39b19f259b4216ecb07574741dd8eaa9863a07
+  current_version_id: git_sha1:8b39b19f259b4216ecb07574741dd8eaa9863a07
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

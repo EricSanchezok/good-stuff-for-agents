@@ -14,7 +14,7 @@ curation:
 display_name: azure-web-pubsub-ts
 identity:
   aliases: []
-  current_version_id: sha256:175e519e8d39e7fe5c2eaa34013f73f53641c1b5
+  current_version_id: git_sha1:175e519e8d39e7fe5c2eaa34013f73f53641c1b5
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

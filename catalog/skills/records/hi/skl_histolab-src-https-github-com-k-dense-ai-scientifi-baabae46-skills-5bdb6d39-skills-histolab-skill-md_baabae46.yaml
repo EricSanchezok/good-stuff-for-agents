@@ -14,7 +14,7 @@ curation:
 display_name: histolab
 identity:
   aliases: []
-  current_version_id: sha256:95d6f493bfb19969f5edfd74a062f90b6796fb6b
+  current_version_id: git_sha1:95d6f493bfb19969f5edfd74a062f90b6796fb6b
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

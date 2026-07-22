@@ -14,7 +14,7 @@ curation:
 display_name: depmap
 identity:
   aliases: []
-  current_version_id: sha256:57bb0a17ac76bd9d5b9a50ca4b6a263647ab83a8
+  current_version_id: git_sha1:57bb0a17ac76bd9d5b9a50ca4b6a263647ab83a8
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

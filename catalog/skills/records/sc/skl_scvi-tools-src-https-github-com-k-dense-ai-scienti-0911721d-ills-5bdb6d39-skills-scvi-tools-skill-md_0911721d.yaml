@@ -14,7 +14,7 @@ curation:
 display_name: scvi-tools
 identity:
   aliases: []
-  current_version_id: sha256:678970639eb76884cdd33ddeca9e85dc9785e545
+  current_version_id: git_sha1:678970639eb76884cdd33ddeca9e85dc9785e545
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

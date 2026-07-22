@@ -14,7 +14,7 @@ curation:
 display_name: pdf
 identity:
   aliases: []
-  current_version_id: sha256:d3e046a5ae107a6cb23cfb16c219837094ab35d3
+  current_version_id: git_sha1:d3e046a5ae107a6cb23cfb16c219837094ab35d3
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

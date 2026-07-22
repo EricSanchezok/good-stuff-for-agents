@@ -1,0 +1,16 @@
+{
+  "binding": {
+    "canonical_skill_id": "skl_azure-messaging-webpubsub-java-src-https-github-co-33fde9f9-azure-messaging-webpubsub-java-skill-md_33fde9f9",
+    "current_version_id": "git_sha1:b8b8a3fe22a62ad01c34ddff759dad55aa0c5e14",
+    "expected_output_path": "catalog/analyses/az/skl_azure-messaging-webpubsub-java-src-https-github-co-33fde9f9-azure-messaging-webpubsub-java-skill-md_33fde9f9.md",
+    "git_blob_oid": "git_sha1:b8b8a3fe22a62ad01c34ddff759dad55aa0c5e14",
+    "pinned_commit": "cc93536d8b809e177a7d1008b276ce41a9456a9c",
+    "raw_url": "https://raw.githubusercontent.com/microsoft/skills/cc93536d8b809e177a7d1008b276ce41a9456a9c/.github/plugins/azure-sdk-java/skills/azure-messaging-webpubsub-java/SKILL.md",
+    "remote_path": ".github/plugins/azure-sdk-java/skills/azure-messaging-webpubsub-java/SKILL.md",
+    "source_id": "src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e"
+  },
+  "dispatch_digest": "sha256:311c0be451565ad4a800ed7d8fa8df4eeb12893dc123208862c276d36844f8a6",
+  "kind": "skill-analysis-dispatch",
+  "run_id": "run_2026-07-22-final",
+  "schema_version": 2
+}

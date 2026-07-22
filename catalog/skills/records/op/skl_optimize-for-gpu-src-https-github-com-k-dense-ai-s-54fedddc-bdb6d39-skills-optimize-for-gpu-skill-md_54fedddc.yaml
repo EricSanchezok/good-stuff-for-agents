@@ -14,7 +14,7 @@ curation:
 display_name: optimize-for-gpu
 identity:
   aliases: []
-  current_version_id: sha256:59136d1248c4f43d7b7b9a60924eb5005e243e4c
+  current_version_id: git_sha1:59136d1248c4f43d7b7b9a60924eb5005e243e4c
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

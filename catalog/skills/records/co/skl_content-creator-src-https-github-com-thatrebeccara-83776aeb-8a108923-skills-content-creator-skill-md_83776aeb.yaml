@@ -14,7 +14,7 @@ curation:
 display_name: content-creator
 identity:
   aliases: []
-  current_version_id: sha256:9a7b4ede7e1cdf64b2dbef015f1adc9ccc86a8ad
+  current_version_id: git_sha1:9a7b4ede7e1cdf64b2dbef015f1adc9ccc86a8ad
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

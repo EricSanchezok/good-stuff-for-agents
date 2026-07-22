@@ -14,7 +14,7 @@ curation:
 display_name: library-variables-figma
 identity:
   aliases: []
-  current_version_id: sha256:472d88bc98101deca796260e7a9845464e1e1272
+  current_version_id: git_sha1:472d88bc98101deca796260e7a9845464e1e1272
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

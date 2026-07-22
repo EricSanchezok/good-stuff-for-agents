@@ -14,7 +14,7 @@ curation:
 display_name: copilot-sdk
 identity:
   aliases: []
-  current_version_id: sha256:79f42cd0aef9a7a660f96668bc547d998e2485b4
+  current_version_id: git_sha1:79f42cd0aef9a7a660f96668bc547d998e2485b4
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

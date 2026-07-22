@@ -14,7 +14,7 @@ curation:
 display_name: azure-cosmos-py
 identity:
   aliases: []
-  current_version_id: sha256:9800d67e64c753e221128e38c43a81bfabdff944
+  current_version_id: git_sha1:9800d67e64c753e221128e38c43a81bfabdff944
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

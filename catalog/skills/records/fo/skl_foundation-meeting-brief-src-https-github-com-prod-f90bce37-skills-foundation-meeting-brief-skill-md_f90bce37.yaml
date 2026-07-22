@@ -14,7 +14,7 @@ curation:
 display_name: foundation-meeting-brief
 identity:
   aliases: []
-  current_version_id: sha256:54a883a6e6bb0a5a0721ac605eba4470a01d13da
+  current_version_id: git_sha1:54a883a6e6bb0a5a0721ac605eba4470a01d13da
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

@@ -14,7 +14,7 @@ curation:
 display_name: business-model
 identity:
   aliases: []
-  current_version_id: sha256:237f1f290ee32464fb7c79bde4583fd9465738fa
+  current_version_id: git_sha1:237f1f290ee32464fb7c79bde4583fd9465738fa
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

@@ -14,7 +14,7 @@ curation:
 display_name: astropy
 identity:
   aliases: []
-  current_version_id: sha256:5dceba30fd260d0dfff683d96d517658b6ef3f15
+  current_version_id: git_sha1:5dceba30fd260d0dfff683d96d517658b6ef3f15
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

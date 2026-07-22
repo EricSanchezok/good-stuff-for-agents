@@ -1,0 +1,16 @@
+{
+  "binding": {
+    "canonical_skill_id": "skl_azure-aigateway-src-https-github-com-microsoft-ski-c42a3104-e-skills-skills-azure-aigateway-skill-md_c42a3104",
+    "current_version_id": "git_sha1:a8df9f45fae25501acf7fee988047f808d191fa5",
+    "expected_output_path": "catalog/analyses/az/skl_azure-aigateway-src-https-github-com-microsoft-ski-c42a3104-e-skills-skills-azure-aigateway-skill-md_c42a3104.md",
+    "git_blob_oid": "git_sha1:a8df9f45fae25501acf7fee988047f808d191fa5",
+    "pinned_commit": "cc93536d8b809e177a7d1008b276ce41a9456a9c",
+    "raw_url": "https://raw.githubusercontent.com/microsoft/skills/cc93536d8b809e177a7d1008b276ce41a9456a9c/.github/plugins/azure-skills/skills/azure-aigateway/SKILL.md",
+    "remote_path": ".github/plugins/azure-skills/skills/azure-aigateway/SKILL.md",
+    "source_id": "src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e"
+  },
+  "dispatch_digest": "sha256:76cb3652b083f6c98c05ebc72d2bcd38027fac18e8ecb96908d3e6ab9a21207c",
+  "kind": "skill-analysis-dispatch",
+  "run_id": "run_2026-07-22-final",
+  "schema_version": 2
+}

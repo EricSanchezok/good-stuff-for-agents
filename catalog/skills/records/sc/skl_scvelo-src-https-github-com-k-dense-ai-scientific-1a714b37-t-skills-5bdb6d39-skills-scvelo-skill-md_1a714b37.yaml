@@ -14,7 +14,7 @@ curation:
 display_name: scvelo
 identity:
   aliases: []
-  current_version_id: sha256:b671810ba9c0f7f5a4b4231022c56ef8cc1ad324
+  current_version_id: git_sha1:b671810ba9c0f7f5a4b4231022c56ef8cc1ad324
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

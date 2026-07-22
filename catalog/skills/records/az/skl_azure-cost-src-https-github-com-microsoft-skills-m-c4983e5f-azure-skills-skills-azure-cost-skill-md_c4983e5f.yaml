@@ -14,7 +14,7 @@ curation:
 display_name: azure-cost
 identity:
   aliases: []
-  current_version_id: sha256:8755e1c4db79a8e1bc44d6d1cdd1d3c55e5976e4
+  current_version_id: git_sha1:8755e1c4db79a8e1bc44d6d1cdd1d3c55e5976e4
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

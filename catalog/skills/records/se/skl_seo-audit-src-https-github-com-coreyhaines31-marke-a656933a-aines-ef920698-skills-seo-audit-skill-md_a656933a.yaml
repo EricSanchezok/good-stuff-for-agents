@@ -14,7 +14,7 @@ curation:
 display_name: seo-audit
 identity:
   aliases: []
-  current_version_id: sha256:c525957d9237c20aa6e8eb3ec61b8596a6b3635e
+  current_version_id: git_sha1:c525957d9237c20aa6e8eb3ec61b8596a6b3635e
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

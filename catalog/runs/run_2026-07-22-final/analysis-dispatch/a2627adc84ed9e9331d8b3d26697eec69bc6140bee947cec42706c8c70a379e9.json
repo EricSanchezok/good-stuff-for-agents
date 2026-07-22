@@ -1,0 +1,16 @@
+{
+  "binding": {
+    "canonical_skill_id": "skl_azure-keyvault-keys-ts-src-https-github-com-micros-683402d5-t-skills-azure-keyvault-keys-ts-skill-md_683402d5",
+    "current_version_id": "git_sha1:c995e4c598f385ba4aca948ff8ef2c57dae1bb01",
+    "expected_output_path": "catalog/analyses/az/skl_azure-keyvault-keys-ts-src-https-github-com-micros-683402d5-t-skills-azure-keyvault-keys-ts-skill-md_683402d5.md",
+    "git_blob_oid": "git_sha1:c995e4c598f385ba4aca948ff8ef2c57dae1bb01",
+    "pinned_commit": "cc93536d8b809e177a7d1008b276ce41a9456a9c",
+    "raw_url": "https://raw.githubusercontent.com/microsoft/skills/cc93536d8b809e177a7d1008b276ce41a9456a9c/.github/plugins/azure-sdk-typescript/skills/azure-keyvault-keys-ts/SKILL.md",
+    "remote_path": ".github/plugins/azure-sdk-typescript/skills/azure-keyvault-keys-ts/SKILL.md",
+    "source_id": "src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e"
+  },
+  "dispatch_digest": "sha256:a2627adc84ed9e9331d8b3d26697eec69bc6140bee947cec42706c8c70a379e9",
+  "kind": "skill-analysis-dispatch",
+  "run_id": "run_2026-07-22-final",
+  "schema_version": 2
+}

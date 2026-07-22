@@ -14,7 +14,7 @@ curation:
 display_name: azure-security-keyvault-keys-java
 identity:
   aliases: []
-  current_version_id: sha256:632c3607d93b81d7625969555520be8d873ee2d7
+  current_version_id: git_sha1:632c3607d93b81d7625969555520be8d873ee2d7
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

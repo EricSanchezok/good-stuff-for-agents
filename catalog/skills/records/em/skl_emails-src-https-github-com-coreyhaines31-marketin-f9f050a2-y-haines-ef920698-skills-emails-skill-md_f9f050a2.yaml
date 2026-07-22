@@ -14,7 +14,7 @@ curation:
 display_name: emails
 identity:
   aliases: []
-  current_version_id: sha256:a9b31c79599095f66d9705090a25d877a437a7d7
+  current_version_id: git_sha1:a9b31c79599095f66d9705090a25d877a437a7d7
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

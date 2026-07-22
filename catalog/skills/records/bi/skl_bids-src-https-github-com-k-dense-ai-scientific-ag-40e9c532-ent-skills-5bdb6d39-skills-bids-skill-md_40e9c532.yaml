@@ -14,7 +14,7 @@ curation:
 display_name: bids
 identity:
   aliases: []
-  current_version_id: sha256:cf375000dbdede92b789bc5935b0712c64981a2a
+  current_version_id: git_sha1:cf375000dbdede92b789bc5935b0712c64981a2a
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

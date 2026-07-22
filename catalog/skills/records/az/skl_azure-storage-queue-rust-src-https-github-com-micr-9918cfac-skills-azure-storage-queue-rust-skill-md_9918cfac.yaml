@@ -14,7 +14,7 @@ curation:
 display_name: azure-storage-queue-rust
 identity:
   aliases: []
-  current_version_id: sha256:4ce6336f70c96323d064db7dc0486d6a621af9c9
+  current_version_id: git_sha1:4ce6336f70c96323d064db7dc0486d6a621af9c9
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

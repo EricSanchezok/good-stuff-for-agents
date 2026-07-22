@@ -4,7 +4,9 @@
 
 ## Summary
 
-Analysis pending.
+# Azure AI Projects Java SDK
+
+Teaches Azure AI Foundry management SDK for Java: create, configure, deploy, manage AI project infrastructure. Project lifecycle, resource plumbing (connections, models, data sources), authentication, artifact deployment. Pure infrastructure scaffolding — NOT model inference or training.
 
 ## Source
 
@@ -35,6 +37,10 @@ No published packs use this skill yet.
 ## Related Skills
 
 No related skills are public yet.
+
+## Public Analysis Summary
+
+Earns tight catalog spot only if serving Azure Java developers — too niche otherwise. Biggest benefit: Java-native infrastructure automation where Python SDK skills mislead. Biggest risk: unguarded Azure resource provisioning costing real money.
 
 ## Confidence and Limitations
 

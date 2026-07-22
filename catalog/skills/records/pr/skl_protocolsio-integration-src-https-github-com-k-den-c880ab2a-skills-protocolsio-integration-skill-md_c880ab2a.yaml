@@ -14,7 +14,7 @@ curation:
 display_name: protocolsio-integration
 identity:
   aliases: []
-  current_version_id: sha256:3ecae04985c5624b9e2e4411f62ef75e2d69bc6b
+  current_version_id: git_sha1:3ecae04985c5624b9e2e4411f62ef75e2d69bc6b
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

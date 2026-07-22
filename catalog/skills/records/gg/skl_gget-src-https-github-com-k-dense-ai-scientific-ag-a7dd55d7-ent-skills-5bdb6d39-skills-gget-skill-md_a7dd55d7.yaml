@@ -14,7 +14,7 @@ curation:
 display_name: gget
 identity:
   aliases: []
-  current_version_id: sha256:da43fd9ec48ae2a87184aa81ab238d38dd05be5e
+  current_version_id: git_sha1:da43fd9ec48ae2a87184aa81ab238d38dd05be5e
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

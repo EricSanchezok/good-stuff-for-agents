@@ -14,7 +14,7 @@ curation:
 display_name: lead-magnets
 identity:
   aliases: []
-  current_version_id: sha256:fc53513f326836381e81a2d4e3e699cdd52f9cbc
+  current_version_id: git_sha1:fc53513f326836381e81a2d4e3e699cdd52f9cbc
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

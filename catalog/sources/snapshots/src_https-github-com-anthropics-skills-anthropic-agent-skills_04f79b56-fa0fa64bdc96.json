@@ -1,0 +1,460 @@
+{
+  "schema_version": 1,
+  "source_id": "src_https-github-com-anthropics-skills-anthropic-agent-skills_04f79b56",
+  "upstream_ref": "fa0fa64bdc967915dc8399e803be67759e1e62b8",
+  "checked_at": "2026-07-22T02:50:41.698Z",
+  "url": "https://github.com/anthropics/skills",
+  "artifacts": [
+    {
+      "source_id": "src_https-github-com-anthropics-skills-anthropic-agent-skills_04f79b56",
+      "path": "skills/algorithmic-art/SKILL.md",
+      "declared_name": "algorithmic-art",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:634f6fa42e4e697fa6afd293acd7fb8246574876",
+      "upstream_ref": "fa0fa64bdc967915dc8399e803be67759e1e62b8",
+      "git_blob_oid": "git_sha1:634f6fa42e4e697fa6afd293acd7fb8246574876",
+      "url": "https://github.com/anthropics/skills/blob/fa0fa64bdc967915dc8399e803be67759e1e62b8/skills/algorithmic-art/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/anthropics/skills/fa0fa64bdc967915dc8399e803be67759e1e62b8/skills/algorithmic-art/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-anthropics-skills-anthropic-agent-skills_04f79b56",
+        "canonical_skill_id": null,
+        "remote_path": "skills/algorithmic-art/SKILL.md",
+        "pinned_commit": "fa0fa64bdc967915dc8399e803be67759e1e62b8",
+        "git_blob_oid": "git_sha1:634f6fa42e4e697fa6afd293acd7fb8246574876",
+        "raw_url": "https://raw.githubusercontent.com/anthropics/skills/fa0fa64bdc967915dc8399e803be67759e1e62b8/skills/algorithmic-art/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:634f6fa42e4e697fa6afd293acd7fb8246574876",
+        "size": 19769
+      }
+    },
+    {
+      "source_id": "src_https-github-com-anthropics-skills-anthropic-agent-skills_04f79b56",
+      "path": "skills/brand-guidelines/SKILL.md",
+      "declared_name": "brand-guidelines",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:47c72c607bdb5dd81bdea5de2b5e4f3992a5fd59",
+      "upstream_ref": "fa0fa64bdc967915dc8399e803be67759e1e62b8",
+      "git_blob_oid": "git_sha1:47c72c607bdb5dd81bdea5de2b5e4f3992a5fd59",
+      "url": "https://github.com/anthropics/skills/blob/fa0fa64bdc967915dc8399e803be67759e1e62b8/skills/brand-guidelines/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/anthropics/skills/fa0fa64bdc967915dc8399e803be67759e1e62b8/skills/brand-guidelines/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-anthropics-skills-anthropic-agent-skills_04f79b56",
+        "canonical_skill_id": null,
+        "remote_path": "skills/brand-guidelines/SKILL.md",
+        "pinned_commit": "fa0fa64bdc967915dc8399e803be67759e1e62b8",
+        "git_blob_oid": "git_sha1:47c72c607bdb5dd81bdea5de2b5e4f3992a5fd59",
+        "raw_url": "https://raw.githubusercontent.com/anthropics/skills/fa0fa64bdc967915dc8399e803be67759e1e62b8/skills/brand-guidelines/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:47c72c607bdb5dd81bdea5de2b5e4f3992a5fd59",
+        "size": 2235
+      }
+    },
+    {
+      "source_id": "src_https-github-com-anthropics-skills-anthropic-agent-skills_04f79b56",
+      "path": "skills/canvas-design/SKILL.md",
+      "declared_name": "canvas-design",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:9f63fee82de84cd4230e1d0e322247b61eb4c94c",
+      "upstream_ref": "fa0fa64bdc967915dc8399e803be67759e1e62b8",
+      "git_blob_oid": "git_sha1:9f63fee82de84cd4230e1d0e322247b61eb4c94c",
+      "url": "https://github.com/anthropics/skills/blob/fa0fa64bdc967915dc8399e803be67759e1e62b8/skills/canvas-design/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/anthropics/skills/fa0fa64bdc967915dc8399e803be67759e1e62b8/skills/canvas-design/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-anthropics-skills-anthropic-agent-skills_04f79b56",
+        "canonical_skill_id": null,
+        "remote_path": "skills/canvas-design/SKILL.md",
+        "pinned_commit": "fa0fa64bdc967915dc8399e803be67759e1e62b8",
+        "git_blob_oid": "git_sha1:9f63fee82de84cd4230e1d0e322247b61eb4c94c",
+        "raw_url": "https://raw.githubusercontent.com/anthropics/skills/fa0fa64bdc967915dc8399e803be67759e1e62b8/skills/canvas-design/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:9f63fee82de84cd4230e1d0e322247b61eb4c94c",
+        "size": 11939
+      }
+    },
+    {
+      "source_id": "src_https-github-com-anthropics-skills-anthropic-agent-skills_04f79b56",
+      "path": "skills/claude-api/SKILL.md",
+      "declared_name": "claude-api",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:9a9407309936d7fd36858296374c246dc2c27e46",
+      "upstream_ref": "fa0fa64bdc967915dc8399e803be67759e1e62b8",
+      "git_blob_oid": "git_sha1:9a9407309936d7fd36858296374c246dc2c27e46",
+      "url": "https://github.com/anthropics/skills/blob/fa0fa64bdc967915dc8399e803be67759e1e62b8/skills/claude-api/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/anthropics/skills/fa0fa64bdc967915dc8399e803be67759e1e62b8/skills/claude-api/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-anthropics-skills-anthropic-agent-skills_04f79b56",
+        "canonical_skill_id": null,
+        "remote_path": "skills/claude-api/SKILL.md",
+        "pinned_commit": "fa0fa64bdc967915dc8399e803be67759e1e62b8",
+        "git_blob_oid": "git_sha1:9a9407309936d7fd36858296374c246dc2c27e46",
+        "raw_url": "https://raw.githubusercontent.com/anthropics/skills/fa0fa64bdc967915dc8399e803be67759e1e62b8/skills/claude-api/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:9a9407309936d7fd36858296374c246dc2c27e46",
+        "size": 73938
+      }
+    },
+    {
+      "source_id": "src_https-github-com-anthropics-skills-anthropic-agent-skills_04f79b56",
+      "path": "skills/doc-coauthoring/SKILL.md",
+      "declared_name": "doc-coauthoring",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:a5a69839ef4a161131d80b6daef10037a9686f4a",
+      "upstream_ref": "fa0fa64bdc967915dc8399e803be67759e1e62b8",
+      "git_blob_oid": "git_sha1:a5a69839ef4a161131d80b6daef10037a9686f4a",
+      "url": "https://github.com/anthropics/skills/blob/fa0fa64bdc967915dc8399e803be67759e1e62b8/skills/doc-coauthoring/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/anthropics/skills/fa0fa64bdc967915dc8399e803be67759e1e62b8/skills/doc-coauthoring/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-anthropics-skills-anthropic-agent-skills_04f79b56",
+        "canonical_skill_id": null,
+        "remote_path": "skills/doc-coauthoring/SKILL.md",
+        "pinned_commit": "fa0fa64bdc967915dc8399e803be67759e1e62b8",
+        "git_blob_oid": "git_sha1:a5a69839ef4a161131d80b6daef10037a9686f4a",
+        "raw_url": "https://raw.githubusercontent.com/anthropics/skills/fa0fa64bdc967915dc8399e803be67759e1e62b8/skills/doc-coauthoring/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:a5a69839ef4a161131d80b6daef10037a9686f4a",
+        "size": 15815
+      }
+    },
+    {
+      "source_id": "src_https-github-com-anthropics-skills-anthropic-agent-skills_04f79b56",
+      "path": "skills/docx/SKILL.md",
+      "declared_name": "docx",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:fb954a460a1ea2294e9595e87fecce8df043eeba",
+      "upstream_ref": "fa0fa64bdc967915dc8399e803be67759e1e62b8",
+      "git_blob_oid": "git_sha1:fb954a460a1ea2294e9595e87fecce8df043eeba",
+      "url": "https://github.com/anthropics/skills/blob/fa0fa64bdc967915dc8399e803be67759e1e62b8/skills/docx/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/anthropics/skills/fa0fa64bdc967915dc8399e803be67759e1e62b8/skills/docx/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-anthropics-skills-anthropic-agent-skills_04f79b56",
+        "canonical_skill_id": null,
+        "remote_path": "skills/docx/SKILL.md",
+        "pinned_commit": "fa0fa64bdc967915dc8399e803be67759e1e62b8",
+        "git_blob_oid": "git_sha1:fb954a460a1ea2294e9595e87fecce8df043eeba",
+        "raw_url": "https://raw.githubusercontent.com/anthropics/skills/fa0fa64bdc967915dc8399e803be67759e1e62b8/skills/docx/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:fb954a460a1ea2294e9595e87fecce8df043eeba",
+        "size": 6911
+      }
+    },
+    {
+      "source_id": "src_https-github-com-anthropics-skills-anthropic-agent-skills_04f79b56",
+      "path": "skills/frontend-design/SKILL.md",
+      "declared_name": "frontend-design",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:decdff43d05908b4c1fc2cfd2d80fc5743440934",
+      "upstream_ref": "fa0fa64bdc967915dc8399e803be67759e1e62b8",
+      "git_blob_oid": "git_sha1:decdff43d05908b4c1fc2cfd2d80fc5743440934",
+      "url": "https://github.com/anthropics/skills/blob/fa0fa64bdc967915dc8399e803be67759e1e62b8/skills/frontend-design/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/anthropics/skills/fa0fa64bdc967915dc8399e803be67759e1e62b8/skills/frontend-design/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-anthropics-skills-anthropic-agent-skills_04f79b56",
+        "canonical_skill_id": null,
+        "remote_path": "skills/frontend-design/SKILL.md",
+        "pinned_commit": "fa0fa64bdc967915dc8399e803be67759e1e62b8",
+        "git_blob_oid": "git_sha1:decdff43d05908b4c1fc2cfd2d80fc5743440934",
+        "raw_url": "https://raw.githubusercontent.com/anthropics/skills/fa0fa64bdc967915dc8399e803be67759e1e62b8/skills/frontend-design/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:decdff43d05908b4c1fc2cfd2d80fc5743440934",
+        "size": 8260
+      }
+    },
+    {
+      "source_id": "src_https-github-com-anthropics-skills-anthropic-agent-skills_04f79b56",
+      "path": "skills/internal-comms/SKILL.md",
+      "declared_name": "internal-comms",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:56ea935b74f371bfeb4c7d3c19d5139df866e73b",
+      "upstream_ref": "fa0fa64bdc967915dc8399e803be67759e1e62b8",
+      "git_blob_oid": "git_sha1:56ea935b74f371bfeb4c7d3c19d5139df866e73b",
+      "url": "https://github.com/anthropics/skills/blob/fa0fa64bdc967915dc8399e803be67759e1e62b8/skills/internal-comms/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/anthropics/skills/fa0fa64bdc967915dc8399e803be67759e1e62b8/skills/internal-comms/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-anthropics-skills-anthropic-agent-skills_04f79b56",
+        "canonical_skill_id": null,
+        "remote_path": "skills/internal-comms/SKILL.md",
+        "pinned_commit": "fa0fa64bdc967915dc8399e803be67759e1e62b8",
+        "git_blob_oid": "git_sha1:56ea935b74f371bfeb4c7d3c19d5139df866e73b",
+        "raw_url": "https://raw.githubusercontent.com/anthropics/skills/fa0fa64bdc967915dc8399e803be67759e1e62b8/skills/internal-comms/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:56ea935b74f371bfeb4c7d3c19d5139df866e73b",
+        "size": 1511
+      }
+    },
+    {
+      "source_id": "src_https-github-com-anthropics-skills-anthropic-agent-skills_04f79b56",
+      "path": "skills/mcp-builder/SKILL.md",
+      "declared_name": "mcp-builder",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:8a1a77a47d141967b246adb4da4f91037578ff7d",
+      "upstream_ref": "fa0fa64bdc967915dc8399e803be67759e1e62b8",
+      "git_blob_oid": "git_sha1:8a1a77a47d141967b246adb4da4f91037578ff7d",
+      "url": "https://github.com/anthropics/skills/blob/fa0fa64bdc967915dc8399e803be67759e1e62b8/skills/mcp-builder/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/anthropics/skills/fa0fa64bdc967915dc8399e803be67759e1e62b8/skills/mcp-builder/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-anthropics-skills-anthropic-agent-skills_04f79b56",
+        "canonical_skill_id": null,
+        "remote_path": "skills/mcp-builder/SKILL.md",
+        "pinned_commit": "fa0fa64bdc967915dc8399e803be67759e1e62b8",
+        "git_blob_oid": "git_sha1:8a1a77a47d141967b246adb4da4f91037578ff7d",
+        "raw_url": "https://raw.githubusercontent.com/anthropics/skills/fa0fa64bdc967915dc8399e803be67759e1e62b8/skills/mcp-builder/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:8a1a77a47d141967b246adb4da4f91037578ff7d",
+        "size": 9092
+      }
+    },
+    {
+      "source_id": "src_https-github-com-anthropics-skills-anthropic-agent-skills_04f79b56",
+      "path": "skills/pdf/SKILL.md",
+      "declared_name": "pdf",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:d3e046a5ae107a6cb23cfb16c219837094ab35d3",
+      "upstream_ref": "fa0fa64bdc967915dc8399e803be67759e1e62b8",
+      "git_blob_oid": "git_sha1:d3e046a5ae107a6cb23cfb16c219837094ab35d3",
+      "url": "https://github.com/anthropics/skills/blob/fa0fa64bdc967915dc8399e803be67759e1e62b8/skills/pdf/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/anthropics/skills/fa0fa64bdc967915dc8399e803be67759e1e62b8/skills/pdf/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-anthropics-skills-anthropic-agent-skills_04f79b56",
+        "canonical_skill_id": null,
+        "remote_path": "skills/pdf/SKILL.md",
+        "pinned_commit": "fa0fa64bdc967915dc8399e803be67759e1e62b8",
+        "git_blob_oid": "git_sha1:d3e046a5ae107a6cb23cfb16c219837094ab35d3",
+        "raw_url": "https://raw.githubusercontent.com/anthropics/skills/fa0fa64bdc967915dc8399e803be67759e1e62b8/skills/pdf/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:d3e046a5ae107a6cb23cfb16c219837094ab35d3",
+        "size": 8072
+      }
+    },
+    {
+      "source_id": "src_https-github-com-anthropics-skills-anthropic-agent-skills_04f79b56",
+      "path": "skills/pptx/SKILL.md",
+      "declared_name": "pptx",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:41cd2306977f269bb1d8169a9643b35053aa66bd",
+      "upstream_ref": "fa0fa64bdc967915dc8399e803be67759e1e62b8",
+      "git_blob_oid": "git_sha1:41cd2306977f269bb1d8169a9643b35053aa66bd",
+      "url": "https://github.com/anthropics/skills/blob/fa0fa64bdc967915dc8399e803be67759e1e62b8/skills/pptx/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/anthropics/skills/fa0fa64bdc967915dc8399e803be67759e1e62b8/skills/pptx/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-anthropics-skills-anthropic-agent-skills_04f79b56",
+        "canonical_skill_id": null,
+        "remote_path": "skills/pptx/SKILL.md",
+        "pinned_commit": "fa0fa64bdc967915dc8399e803be67759e1e62b8",
+        "git_blob_oid": "git_sha1:41cd2306977f269bb1d8169a9643b35053aa66bd",
+        "raw_url": "https://raw.githubusercontent.com/anthropics/skills/fa0fa64bdc967915dc8399e803be67759e1e62b8/skills/pptx/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:41cd2306977f269bb1d8169a9643b35053aa66bd",
+        "size": 20796
+      }
+    },
+    {
+      "source_id": "src_https-github-com-anthropics-skills-anthropic-agent-skills_04f79b56",
+      "path": "skills/skill-creator/SKILL.md",
+      "declared_name": "skill-creator",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:65b3a402dbd09b8e83f9d637c6b553875189085c",
+      "upstream_ref": "fa0fa64bdc967915dc8399e803be67759e1e62b8",
+      "git_blob_oid": "git_sha1:65b3a402dbd09b8e83f9d637c6b553875189085c",
+      "url": "https://github.com/anthropics/skills/blob/fa0fa64bdc967915dc8399e803be67759e1e62b8/skills/skill-creator/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/anthropics/skills/fa0fa64bdc967915dc8399e803be67759e1e62b8/skills/skill-creator/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-anthropics-skills-anthropic-agent-skills_04f79b56",
+        "canonical_skill_id": null,
+        "remote_path": "skills/skill-creator/SKILL.md",
+        "pinned_commit": "fa0fa64bdc967915dc8399e803be67759e1e62b8",
+        "git_blob_oid": "git_sha1:65b3a402dbd09b8e83f9d637c6b553875189085c",
+        "raw_url": "https://raw.githubusercontent.com/anthropics/skills/fa0fa64bdc967915dc8399e803be67759e1e62b8/skills/skill-creator/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:65b3a402dbd09b8e83f9d637c6b553875189085c",
+        "size": 33168
+      }
+    },
+    {
+      "source_id": "src_https-github-com-anthropics-skills-anthropic-agent-skills_04f79b56",
+      "path": "skills/slack-gif-creator/SKILL.md",
+      "declared_name": "slack-gif-creator",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:16660d8ceb77af47986bba1c9176c2ff3f287a91",
+      "upstream_ref": "fa0fa64bdc967915dc8399e803be67759e1e62b8",
+      "git_blob_oid": "git_sha1:16660d8ceb77af47986bba1c9176c2ff3f287a91",
+      "url": "https://github.com/anthropics/skills/blob/fa0fa64bdc967915dc8399e803be67759e1e62b8/skills/slack-gif-creator/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/anthropics/skills/fa0fa64bdc967915dc8399e803be67759e1e62b8/skills/slack-gif-creator/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-anthropics-skills-anthropic-agent-skills_04f79b56",
+        "canonical_skill_id": null,
+        "remote_path": "skills/slack-gif-creator/SKILL.md",
+        "pinned_commit": "fa0fa64bdc967915dc8399e803be67759e1e62b8",
+        "git_blob_oid": "git_sha1:16660d8ceb77af47986bba1c9176c2ff3f287a91",
+        "raw_url": "https://raw.githubusercontent.com/anthropics/skills/fa0fa64bdc967915dc8399e803be67759e1e62b8/skills/slack-gif-creator/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:16660d8ceb77af47986bba1c9176c2ff3f287a91",
+        "size": 7841
+      }
+    },
+    {
+      "source_id": "src_https-github-com-anthropics-skills-anthropic-agent-skills_04f79b56",
+      "path": "skills/theme-factory/SKILL.md",
+      "declared_name": "theme-factory",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:90dfceaf2ecdc191a4dcfb0069768a9560638998",
+      "upstream_ref": "fa0fa64bdc967915dc8399e803be67759e1e62b8",
+      "git_blob_oid": "git_sha1:90dfceaf2ecdc191a4dcfb0069768a9560638998",
+      "url": "https://github.com/anthropics/skills/blob/fa0fa64bdc967915dc8399e803be67759e1e62b8/skills/theme-factory/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/anthropics/skills/fa0fa64bdc967915dc8399e803be67759e1e62b8/skills/theme-factory/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-anthropics-skills-anthropic-agent-skills_04f79b56",
+        "canonical_skill_id": null,
+        "remote_path": "skills/theme-factory/SKILL.md",
+        "pinned_commit": "fa0fa64bdc967915dc8399e803be67759e1e62b8",
+        "git_blob_oid": "git_sha1:90dfceaf2ecdc191a4dcfb0069768a9560638998",
+        "raw_url": "https://raw.githubusercontent.com/anthropics/skills/fa0fa64bdc967915dc8399e803be67759e1e62b8/skills/theme-factory/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:90dfceaf2ecdc191a4dcfb0069768a9560638998",
+        "size": 3124
+      }
+    },
+    {
+      "source_id": "src_https-github-com-anthropics-skills-anthropic-agent-skills_04f79b56",
+      "path": "skills/web-artifacts-builder/SKILL.md",
+      "declared_name": "web-artifacts-builder",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:8b39b19f259b4216ecb07574741dd8eaa9863a07",
+      "upstream_ref": "fa0fa64bdc967915dc8399e803be67759e1e62b8",
+      "git_blob_oid": "git_sha1:8b39b19f259b4216ecb07574741dd8eaa9863a07",
+      "url": "https://github.com/anthropics/skills/blob/fa0fa64bdc967915dc8399e803be67759e1e62b8/skills/web-artifacts-builder/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/anthropics/skills/fa0fa64bdc967915dc8399e803be67759e1e62b8/skills/web-artifacts-builder/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-anthropics-skills-anthropic-agent-skills_04f79b56",
+        "canonical_skill_id": null,
+        "remote_path": "skills/web-artifacts-builder/SKILL.md",
+        "pinned_commit": "fa0fa64bdc967915dc8399e803be67759e1e62b8",
+        "git_blob_oid": "git_sha1:8b39b19f259b4216ecb07574741dd8eaa9863a07",
+        "raw_url": "https://raw.githubusercontent.com/anthropics/skills/fa0fa64bdc967915dc8399e803be67759e1e62b8/skills/web-artifacts-builder/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:8b39b19f259b4216ecb07574741dd8eaa9863a07",
+        "size": 3087
+      }
+    },
+    {
+      "source_id": "src_https-github-com-anthropics-skills-anthropic-agent-skills_04f79b56",
+      "path": "skills/webapp-testing/SKILL.md",
+      "declared_name": "webapp-testing",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:4726215301db64a0cc4d41fc3219c61f37a30f4a",
+      "upstream_ref": "fa0fa64bdc967915dc8399e803be67759e1e62b8",
+      "git_blob_oid": "git_sha1:4726215301db64a0cc4d41fc3219c61f37a30f4a",
+      "url": "https://github.com/anthropics/skills/blob/fa0fa64bdc967915dc8399e803be67759e1e62b8/skills/webapp-testing/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/anthropics/skills/fa0fa64bdc967915dc8399e803be67759e1e62b8/skills/webapp-testing/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-anthropics-skills-anthropic-agent-skills_04f79b56",
+        "canonical_skill_id": null,
+        "remote_path": "skills/webapp-testing/SKILL.md",
+        "pinned_commit": "fa0fa64bdc967915dc8399e803be67759e1e62b8",
+        "git_blob_oid": "git_sha1:4726215301db64a0cc4d41fc3219c61f37a30f4a",
+        "raw_url": "https://raw.githubusercontent.com/anthropics/skills/fa0fa64bdc967915dc8399e803be67759e1e62b8/skills/webapp-testing/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:4726215301db64a0cc4d41fc3219c61f37a30f4a",
+        "size": 3913
+      }
+    },
+    {
+      "source_id": "src_https-github-com-anthropics-skills-anthropic-agent-skills_04f79b56",
+      "path": "skills/xlsx/SKILL.md",
+      "declared_name": "xlsx",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:9da54804cc8c938586f89363c8da3b3a6e2a563d",
+      "upstream_ref": "fa0fa64bdc967915dc8399e803be67759e1e62b8",
+      "git_blob_oid": "git_sha1:9da54804cc8c938586f89363c8da3b3a6e2a563d",
+      "url": "https://github.com/anthropics/skills/blob/fa0fa64bdc967915dc8399e803be67759e1e62b8/skills/xlsx/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/anthropics/skills/fa0fa64bdc967915dc8399e803be67759e1e62b8/skills/xlsx/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-anthropics-skills-anthropic-agent-skills_04f79b56",
+        "canonical_skill_id": null,
+        "remote_path": "skills/xlsx/SKILL.md",
+        "pinned_commit": "fa0fa64bdc967915dc8399e803be67759e1e62b8",
+        "git_blob_oid": "git_sha1:9da54804cc8c938586f89363c8da3b3a6e2a563d",
+        "raw_url": "https://raw.githubusercontent.com/anthropics/skills/fa0fa64bdc967915dc8399e803be67759e1e62b8/skills/xlsx/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:9da54804cc8c938586f89363c8da3b3a6e2a563d",
+        "size": 8598
+      }
+    },
+    {
+      "source_id": "src_https-github-com-anthropics-skills-anthropic-agent-skills_04f79b56",
+      "path": "template/SKILL.md",
+      "declared_name": "template",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:50a4f9b104357d96361e257adb70454604cd15c0",
+      "upstream_ref": "fa0fa64bdc967915dc8399e803be67759e1e62b8",
+      "git_blob_oid": "git_sha1:50a4f9b104357d96361e257adb70454604cd15c0",
+      "url": "https://github.com/anthropics/skills/blob/fa0fa64bdc967915dc8399e803be67759e1e62b8/template/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/anthropics/skills/fa0fa64bdc967915dc8399e803be67759e1e62b8/template/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-anthropics-skills-anthropic-agent-skills_04f79b56",
+        "canonical_skill_id": null,
+        "remote_path": "template/SKILL.md",
+        "pinned_commit": "fa0fa64bdc967915dc8399e803be67759e1e62b8",
+        "git_blob_oid": "git_sha1:50a4f9b104357d96361e257adb70454604cd15c0",
+        "raw_url": "https://raw.githubusercontent.com/anthropics/skills/fa0fa64bdc967915dc8399e803be67759e1e62b8/template/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:50a4f9b104357d96361e257adb70454604cd15c0",
+        "size": 140
+      }
+    }
+  ],
+  "digest": "sha256:7c4c8d7a082d597b1c043d1dc50e046c275c30435496882a26d2595b3021a5f0"
+}

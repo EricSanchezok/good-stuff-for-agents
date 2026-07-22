@@ -14,7 +14,7 @@ curation:
 display_name: wiki-architect
 identity:
   aliases: []
-  current_version_id: sha256:53bcf7016efbba50e4f634a7a4b4a40cddcb2234
+  current_version_id: git_sha1:53bcf7016efbba50e4f634a7a4b4a40cddcb2234
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

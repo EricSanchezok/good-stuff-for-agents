@@ -14,7 +14,7 @@ curation:
 display_name: s-one
 identity:
   aliases: []
-  current_version_id: sha256:982a261287eb6560b31414e38967f0a4ca612824
+  current_version_id: git_sha1:982a261287eb6560b31414e38967f0a4ca612824
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

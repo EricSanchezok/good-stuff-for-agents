@@ -14,7 +14,7 @@ curation:
 display_name: azure-postgres-ts
 identity:
   aliases: []
-  current_version_id: sha256:1a2000157b776a125c355b1350f97dac0f11b3b3
+  current_version_id: git_sha1:1a2000157b776a125c355b1350f97dac0f11b3b3
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

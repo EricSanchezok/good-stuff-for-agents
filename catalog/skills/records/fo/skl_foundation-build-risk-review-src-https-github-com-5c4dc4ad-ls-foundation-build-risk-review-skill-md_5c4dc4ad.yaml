@@ -14,7 +14,7 @@ curation:
 display_name: foundation-build-risk-review
 identity:
   aliases: []
-  current_version_id: sha256:705221eadaba85bc603f4a4de184c0fcfe3ee6d0
+  current_version_id: git_sha1:705221eadaba85bc603f4a4de184c0fcfe3ee6d0
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

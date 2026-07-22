@@ -1,0 +1,16 @@
+{
+  "binding": {
+    "canonical_skill_id": "skl_azure-cosmos-java-src-https-github-com-microsoft-s-565a76c6-k-java-skills-azure-cosmos-java-skill-md_565a76c6",
+    "current_version_id": "git_sha1:21a14dce1c668ef29e3267b262be6123533eb92e",
+    "expected_output_path": "catalog/analyses/az/skl_azure-cosmos-java-src-https-github-com-microsoft-s-565a76c6-k-java-skills-azure-cosmos-java-skill-md_565a76c6.md",
+    "git_blob_oid": "git_sha1:21a14dce1c668ef29e3267b262be6123533eb92e",
+    "pinned_commit": "cc93536d8b809e177a7d1008b276ce41a9456a9c",
+    "raw_url": "https://raw.githubusercontent.com/microsoft/skills/cc93536d8b809e177a7d1008b276ce41a9456a9c/.github/plugins/azure-sdk-java/skills/azure-cosmos-java/SKILL.md",
+    "remote_path": ".github/plugins/azure-sdk-java/skills/azure-cosmos-java/SKILL.md",
+    "source_id": "src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e"
+  },
+  "dispatch_digest": "sha256:46dee3349be58f85fe274b5f79b577fc6aa88bc953e14f98bba3a7d7fb3a2d43",
+  "kind": "skill-analysis-dispatch",
+  "run_id": "run_2026-07-22-050000",
+  "schema_version": 2
+}

@@ -14,7 +14,7 @@ curation:
 display_name: cross-platform-audit
 identity:
   aliases: []
-  current_version_id: sha256:a41f6b95fd6a075c16df998f53588bee227dd2a6
+  current_version_id: git_sha1:a41f6b95fd6a075c16df998f53588bee227dd2a6
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

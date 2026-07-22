@@ -14,7 +14,7 @@ curation:
 display_name: figma-generate-diagram
 identity:
   aliases: []
-  current_version_id: sha256:28db4f55e5c2bdc287e68f34ed97235dd4d460a8
+  current_version_id: git_sha1:28db4f55e5c2bdc287e68f34ed97235dd4d460a8
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

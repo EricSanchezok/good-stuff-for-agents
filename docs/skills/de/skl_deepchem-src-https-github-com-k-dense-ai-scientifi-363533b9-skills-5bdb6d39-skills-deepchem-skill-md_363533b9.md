@@ -4,7 +4,9 @@
 
 ## Summary
 
-Analysis pending.
+# DeepChem
+
+This skill claims to teach DeepChem, an open-source Python library for deep learning in the life sciences. The actual content is a capability inventory: loading MoleculeNet datasets, featurizing molecules, training models for property prediction, implementing graph neural networks (GCN, Weave, MPNN, AttentiveFP), running virtual screening — with mentions of PyTorch, TensorFlow, and JAX. It's a feature list, not a teaching artifact. No workflow, no troubleshooting, no opinion about what matters.
 
 ## Source
 
@@ -35,6 +37,10 @@ No published packs use this skill yet.
 ## Related Skills
 
 No related skills are public yet.
+
+## Public Analysis Summary
+
+The skill is a feature list, not a teaching artifact. Biggest risk: overconfidence in meaningless predictions. Biggest benefit: at least points to the right library.
 
 ## Confidence and Limitations
 

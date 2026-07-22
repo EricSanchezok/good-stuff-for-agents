@@ -14,7 +14,7 @@ curation:
 display_name: sync-repos
 identity:
   aliases: []
-  current_version_id: sha256:a636fe3da798c0add98e154baa6d50a5c8f903f9
+  current_version_id: git_sha1:a636fe3da798c0add98e154baa6d50a5c8f903f9
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

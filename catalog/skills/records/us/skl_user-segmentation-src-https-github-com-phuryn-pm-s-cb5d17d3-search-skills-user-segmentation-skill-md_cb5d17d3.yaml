@@ -14,7 +14,7 @@ curation:
 display_name: user-segmentation
 identity:
   aliases: []
-  current_version_id: sha256:cf94ddde154142740113c60b2e559e5a8cc7c68a
+  current_version_id: git_sha1:cf94ddde154142740113c60b2e559e5a8cc7c68a
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

@@ -14,7 +14,7 @@ curation:
 display_name: azure-kusto
 identity:
   aliases: []
-  current_version_id: sha256:76e6b1764da1d7352dd3d6056571751f4395c746
+  current_version_id: git_sha1:76e6b1764da1d7352dd3d6056571751f4395c746
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

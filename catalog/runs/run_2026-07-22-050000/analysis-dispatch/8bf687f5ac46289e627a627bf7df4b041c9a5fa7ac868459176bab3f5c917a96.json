@@ -1,0 +1,16 @@
+{
+  "binding": {
+    "canonical_skill_id": "skl_azure-ai-projects-py-src-https-github-com-microsof-a0c2ca9f-hon-skills-azure-ai-projects-py-skill-md_a0c2ca9f",
+    "current_version_id": "git_sha1:83a80c385301e88f89e67e9a192085f4302994c2",
+    "expected_output_path": "catalog/analyses/az/skl_azure-ai-projects-py-src-https-github-com-microsof-a0c2ca9f-hon-skills-azure-ai-projects-py-skill-md_a0c2ca9f.md",
+    "git_blob_oid": "git_sha1:83a80c385301e88f89e67e9a192085f4302994c2",
+    "pinned_commit": "cc93536d8b809e177a7d1008b276ce41a9456a9c",
+    "raw_url": "https://raw.githubusercontent.com/microsoft/skills/cc93536d8b809e177a7d1008b276ce41a9456a9c/.github/plugins/azure-sdk-python/skills/azure-ai-projects-py/SKILL.md",
+    "remote_path": ".github/plugins/azure-sdk-python/skills/azure-ai-projects-py/SKILL.md",
+    "source_id": "src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e"
+  },
+  "dispatch_digest": "sha256:8bf687f5ac46289e627a627bf7df4b041c9a5fa7ac868459176bab3f5c917a96",
+  "kind": "skill-analysis-dispatch",
+  "run_id": "run_2026-07-22-050000",
+  "schema_version": 2
+}

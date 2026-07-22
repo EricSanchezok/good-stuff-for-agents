@@ -14,7 +14,7 @@ curation:
 display_name: discover-stakeholder-summary
 identity:
   aliases: []
-  current_version_id: sha256:73c8759320a0d11390e712705cabcc52b1364e25
+  current_version_id: git_sha1:73c8759320a0d11390e712705cabcc52b1364e25
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

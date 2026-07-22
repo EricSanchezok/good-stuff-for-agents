@@ -14,7 +14,7 @@ curation:
 display_name: pytorch-lightning
 identity:
   aliases: []
-  current_version_id: sha256:e2e902ff8fcba8c627f2c24c244a00a4b48afb6d
+  current_version_id: git_sha1:e2e902ff8fcba8c627f2c24c244a00a4b48afb6d
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

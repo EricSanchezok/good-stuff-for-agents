@@ -14,7 +14,7 @@ curation:
 display_name: define-opportunity-tree
 identity:
   aliases: []
-  current_version_id: sha256:ce6d44d1a00218fc842ed7ab42eda69b59ac5f71
+  current_version_id: git_sha1:ce6d44d1a00218fc842ed7ab42eda69b59ac5f71
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

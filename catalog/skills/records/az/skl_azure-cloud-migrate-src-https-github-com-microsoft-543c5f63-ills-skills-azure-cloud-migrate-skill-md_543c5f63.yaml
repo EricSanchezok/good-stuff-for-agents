@@ -14,7 +14,7 @@ curation:
 display_name: azure-cloud-migrate
 identity:
   aliases: []
-  current_version_id: sha256:b1634cf629d9358eb70a95c089b309c304f9c42c
+  current_version_id: git_sha1:b1634cf629d9358eb70a95c089b309c304f9c42c
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

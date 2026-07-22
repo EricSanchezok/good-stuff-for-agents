@@ -1,0 +1,16 @@
+{
+  "binding": {
+    "canonical_skill_id": "skl_azure-communication-common-java-src-https-github-c-c3d85d47-azure-communication-common-java-skill-md_c3d85d47",
+    "current_version_id": "git_sha1:b7b13710db6b54f823a5af8dbae652a427b1e776",
+    "expected_output_path": "catalog/analyses/az/skl_azure-communication-common-java-src-https-github-c-c3d85d47-azure-communication-common-java-skill-md_c3d85d47.md",
+    "git_blob_oid": "git_sha1:b7b13710db6b54f823a5af8dbae652a427b1e776",
+    "pinned_commit": "cc93536d8b809e177a7d1008b276ce41a9456a9c",
+    "raw_url": "https://raw.githubusercontent.com/microsoft/skills/cc93536d8b809e177a7d1008b276ce41a9456a9c/.github/plugins/azure-sdk-java/skills/azure-communication-common-java/SKILL.md",
+    "remote_path": ".github/plugins/azure-sdk-java/skills/azure-communication-common-java/SKILL.md",
+    "source_id": "src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e"
+  },
+  "dispatch_digest": "sha256:f0262fb9b54a653b69e66cff0efb9c244c564f02357a378ca2f09e5362a6de6d",
+  "kind": "skill-analysis-dispatch",
+  "run_id": "run_2026-07-22-050000",
+  "schema_version": 2
+}

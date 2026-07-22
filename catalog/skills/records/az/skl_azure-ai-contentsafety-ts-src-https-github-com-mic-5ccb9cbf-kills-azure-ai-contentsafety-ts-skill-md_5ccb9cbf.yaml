@@ -14,7 +14,7 @@ curation:
 display_name: azure-ai-contentsafety-ts
 identity:
   aliases: []
-  current_version_id: sha256:e038281439bf7d5b738ff6a6c9fd211281582e73
+  current_version_id: git_sha1:e038281439bf7d5b738ff6a6c9fd211281582e73
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

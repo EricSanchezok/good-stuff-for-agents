@@ -2,7 +2,7 @@
   "schema_version": 1,
   "source_id": "src_https-github-com-kozz36-frontend-designer-skill-frontend-designer-skill_929a1309",
   "upstream_ref": "5e4dc12811bd106e3184a863656e141aed398a3f",
-  "checked_at": "2026-07-13T21:03:19.807Z",
+  "checked_at": "2026-07-22T02:48:47.021Z",
   "url": "https://github.com/kozz36/frontend-designer-skill",
   "artifacts": [
     {
@@ -11,12 +11,22 @@
       "declared_name": "v1.0-lite",
       "format": "SKILL.md",
       "parse_confidence": "high",
-      "content_digest": "sha256:f499789e5614c1880bab7e45adcdb534fc9df2d1",
+      "content_digest": "git_sha1:f499789e5614c1880bab7e45adcdb534fc9df2d1",
       "upstream_ref": "5e4dc12811bd106e3184a863656e141aed398a3f",
+      "git_blob_oid": "git_sha1:f499789e5614c1880bab7e45adcdb534fc9df2d1",
       "url": "https://github.com/kozz36/frontend-designer-skill/blob/5e4dc12811bd106e3184a863656e141aed398a3f/versions/v1.0-lite/SKILL.md",
       "raw_url": "https://raw.githubusercontent.com/kozz36/frontend-designer-skill/5e4dc12811bd106e3184a863656e141aed398a3f/versions/v1.0-lite/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-kozz36-frontend-designer-skill-frontend-designer-skill_929a1309",
+        "canonical_skill_id": null,
+        "remote_path": "versions/v1.0-lite/SKILL.md",
+        "pinned_commit": "5e4dc12811bd106e3184a863656e141aed398a3f",
+        "git_blob_oid": "git_sha1:f499789e5614c1880bab7e45adcdb534fc9df2d1",
+        "raw_url": "https://raw.githubusercontent.com/kozz36/frontend-designer-skill/5e4dc12811bd106e3184a863656e141aed398a3f/versions/v1.0-lite/SKILL.md",
+        "expected_output_path": null
+      },
       "raw_metadata": {
-        "github_blob_sha": "f499789e5614c1880bab7e45adcdb534fc9df2d1",
+        "github_blob_oid": "git_sha1:f499789e5614c1880bab7e45adcdb534fc9df2d1",
         "size": 13513
       }
     },
@@ -26,12 +36,22 @@
       "declared_name": "v1.0",
       "format": "SKILL.md",
       "parse_confidence": "high",
-      "content_digest": "sha256:7464c1a3580b6dcd1d62ac4d67e4394e051948d5",
+      "content_digest": "git_sha1:7464c1a3580b6dcd1d62ac4d67e4394e051948d5",
       "upstream_ref": "5e4dc12811bd106e3184a863656e141aed398a3f",
+      "git_blob_oid": "git_sha1:7464c1a3580b6dcd1d62ac4d67e4394e051948d5",
       "url": "https://github.com/kozz36/frontend-designer-skill/blob/5e4dc12811bd106e3184a863656e141aed398a3f/versions/v1.0/SKILL.md",
       "raw_url": "https://raw.githubusercontent.com/kozz36/frontend-designer-skill/5e4dc12811bd106e3184a863656e141aed398a3f/versions/v1.0/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-kozz36-frontend-designer-skill-frontend-designer-skill_929a1309",
+        "canonical_skill_id": null,
+        "remote_path": "versions/v1.0/SKILL.md",
+        "pinned_commit": "5e4dc12811bd106e3184a863656e141aed398a3f",
+        "git_blob_oid": "git_sha1:7464c1a3580b6dcd1d62ac4d67e4394e051948d5",
+        "raw_url": "https://raw.githubusercontent.com/kozz36/frontend-designer-skill/5e4dc12811bd106e3184a863656e141aed398a3f/versions/v1.0/SKILL.md",
+        "expected_output_path": null
+      },
       "raw_metadata": {
-        "github_blob_sha": "7464c1a3580b6dcd1d62ac4d67e4394e051948d5",
+        "github_blob_oid": "git_sha1:7464c1a3580b6dcd1d62ac4d67e4394e051948d5",
         "size": 35397
       }
     },
@@ -41,15 +61,25 @@
       "declared_name": "v3.0",
       "format": "SKILL.md",
       "parse_confidence": "high",
-      "content_digest": "sha256:1d6b1b06be636d4b70701e8cae0b97aace5e2517",
+      "content_digest": "git_sha1:1d6b1b06be636d4b70701e8cae0b97aace5e2517",
       "upstream_ref": "5e4dc12811bd106e3184a863656e141aed398a3f",
+      "git_blob_oid": "git_sha1:1d6b1b06be636d4b70701e8cae0b97aace5e2517",
       "url": "https://github.com/kozz36/frontend-designer-skill/blob/5e4dc12811bd106e3184a863656e141aed398a3f/versions/v3.0/SKILL.md",
       "raw_url": "https://raw.githubusercontent.com/kozz36/frontend-designer-skill/5e4dc12811bd106e3184a863656e141aed398a3f/versions/v3.0/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-kozz36-frontend-designer-skill-frontend-designer-skill_929a1309",
+        "canonical_skill_id": null,
+        "remote_path": "versions/v3.0/SKILL.md",
+        "pinned_commit": "5e4dc12811bd106e3184a863656e141aed398a3f",
+        "git_blob_oid": "git_sha1:1d6b1b06be636d4b70701e8cae0b97aace5e2517",
+        "raw_url": "https://raw.githubusercontent.com/kozz36/frontend-designer-skill/5e4dc12811bd106e3184a863656e141aed398a3f/versions/v3.0/SKILL.md",
+        "expected_output_path": null
+      },
       "raw_metadata": {
-        "github_blob_sha": "1d6b1b06be636d4b70701e8cae0b97aace5e2517",
+        "github_blob_oid": "git_sha1:1d6b1b06be636d4b70701e8cae0b97aace5e2517",
         "size": 2686
       }
     }
   ],
-  "digest": "sha256:8b432522c5cd992bed3bfe7e5e0a35a4b0f99fb3c40e04ec9ed6578279756b81"
+  "digest": "sha256:8c2d79cfeed628befee8e1591fc9cb0ee36d89f866dd9606215fab1aab2df2ec"
 }

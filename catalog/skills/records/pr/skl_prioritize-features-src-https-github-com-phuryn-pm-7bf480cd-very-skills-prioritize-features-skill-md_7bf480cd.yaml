@@ -14,7 +14,7 @@ curation:
 display_name: prioritize-features
 identity:
   aliases: []
-  current_version_id: sha256:e58190d88a63f2f429ad04743dc6427751476ba7
+  current_version_id: git_sha1:e58190d88a63f2f429ad04743dc6427751476ba7
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

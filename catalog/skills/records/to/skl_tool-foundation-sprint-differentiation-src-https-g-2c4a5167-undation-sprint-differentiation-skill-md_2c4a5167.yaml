@@ -14,7 +14,7 @@ curation:
 display_name: tool-foundation-sprint-differentiation
 identity:
   aliases: []
-  current_version_id: sha256:7e973ae349f86498f19ceef9cd5b76e4612bbb24
+  current_version_id: git_sha1:7e973ae349f86498f19ceef9cd5b76e4612bbb24
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

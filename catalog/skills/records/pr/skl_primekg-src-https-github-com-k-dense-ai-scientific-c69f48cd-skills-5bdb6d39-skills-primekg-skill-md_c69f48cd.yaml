@@ -14,7 +14,7 @@ curation:
 display_name: primekg
 identity:
   aliases: []
-  current_version_id: sha256:41362da44a95daad5acbd1ea546a60ec5e024501
+  current_version_id: git_sha1:41362da44a95daad5acbd1ea546a60ec5e024501
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

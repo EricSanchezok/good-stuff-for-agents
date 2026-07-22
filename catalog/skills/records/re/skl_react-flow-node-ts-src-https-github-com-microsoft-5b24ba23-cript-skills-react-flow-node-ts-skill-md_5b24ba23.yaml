@@ -14,7 +14,7 @@ curation:
 display_name: react-flow-node-ts
 identity:
   aliases: []
-  current_version_id: sha256:ab4e1a6a5a4c1bf03f4d9b49dee6285e9ce0457d
+  current_version_id: git_sha1:ab4e1a6a5a4c1bf03f4d9b49dee6285e9ce0457d
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

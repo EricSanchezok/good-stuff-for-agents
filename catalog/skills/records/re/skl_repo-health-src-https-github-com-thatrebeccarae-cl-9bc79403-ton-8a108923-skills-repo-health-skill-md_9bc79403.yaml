@@ -14,7 +14,7 @@ curation:
 display_name: repo-health
 identity:
   aliases: []
-  current_version_id: sha256:6125e183463c7cc5acdb52a6df039608a5b2e90c
+  current_version_id: git_sha1:6125e183463c7cc5acdb52a6df039608a5b2e90c
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

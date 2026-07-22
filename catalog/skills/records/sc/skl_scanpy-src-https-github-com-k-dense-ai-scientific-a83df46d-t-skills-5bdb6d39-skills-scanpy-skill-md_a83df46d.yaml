@@ -14,7 +14,7 @@ curation:
 display_name: scanpy
 identity:
   aliases: []
-  current_version_id: sha256:0a574bb4576b371bcb0e9c8e67f7c5245881f045
+  current_version_id: git_sha1:0a574bb4576b371bcb0e9c8e67f7c5245881f045
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

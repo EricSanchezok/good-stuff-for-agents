@@ -14,7 +14,7 @@ curation:
 display_name: azure-communication-sms-java
 identity:
   aliases: []
-  current_version_id: sha256:d2dfd5056562193e7cbda6be6c7fd6c6faecdfe8
+  current_version_id: git_sha1:d2dfd5056562193e7cbda6be6c7fd6c6faecdfe8
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

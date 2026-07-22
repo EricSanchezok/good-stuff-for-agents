@@ -14,7 +14,7 @@ curation:
 display_name: qutip
 identity:
   aliases: []
-  current_version_id: sha256:53b3ecc4446c7ec8c2970eb04947a7d6dbbd3f9f
+  current_version_id: git_sha1:53b3ecc4446c7ec8c2970eb04947a7d6dbbd3f9f
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

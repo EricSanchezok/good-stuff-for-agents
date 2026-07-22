@@ -14,7 +14,7 @@ curation:
 display_name: demo-noref
 identity:
   aliases: []
-  current_version_id: sha256:aa3df01383068ae20189a3f4d8a2d16c1a557f77
+  current_version_id: git_sha1:aa3df01383068ae20189a3f4d8a2d16c1a557f77
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

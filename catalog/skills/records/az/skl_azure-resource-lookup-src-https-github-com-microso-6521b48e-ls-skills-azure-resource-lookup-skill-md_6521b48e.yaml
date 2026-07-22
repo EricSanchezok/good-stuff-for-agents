@@ -14,7 +14,7 @@ curation:
 display_name: azure-resource-lookup
 identity:
   aliases: []
-  current_version_id: sha256:d16d74bd6369fd15f8d96ff0b637ac361c7d6e13
+  current_version_id: git_sha1:d16d74bd6369fd15f8d96ff0b637ac361c7d6e13
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

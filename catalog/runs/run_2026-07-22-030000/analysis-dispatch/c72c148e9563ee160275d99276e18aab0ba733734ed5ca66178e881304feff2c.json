@@ -1,0 +1,16 @@
+{
+  "binding": {
+    "canonical_skill_id": "skl_deepchem-src-https-github-com-k-dense-ai-scientifi-363533b9-skills-5bdb6d39-skills-deepchem-skill-md_363533b9",
+    "current_version_id": "git_sha1:99e0635f071285ac1693add9fd6fd6ea5098c7d2",
+    "expected_output_path": "catalog/analyses/de/skl_deepchem-src-https-github-com-k-dense-ai-scientifi-363533b9-skills-5bdb6d39-skills-deepchem-skill-md_363533b9.md",
+    "git_blob_oid": "git_sha1:99e0635f071285ac1693add9fd6fd6ea5098c7d2",
+    "pinned_commit": "831d49eb77eed3c792be2970921b46764012ef00",
+    "raw_url": "https://raw.githubusercontent.com/K-Dense-AI/scientific-agent-skills/831d49eb77eed3c792be2970921b46764012ef00/skills/deepchem/SKILL.md",
+    "remote_path": "skills/deepchem/SKILL.md",
+    "source_id": "src_https-github-com-k-dense-ai-scientific-agent-skills-k-dense-scientific-agent-skills_5bdb6d39"
+  },
+  "dispatch_digest": "sha256:c72c148e9563ee160275d99276e18aab0ba733734ed5ca66178e881304feff2c",
+  "kind": "skill-analysis-dispatch",
+  "run_id": "run_2026-07-22-030000",
+  "schema_version": 2
+}

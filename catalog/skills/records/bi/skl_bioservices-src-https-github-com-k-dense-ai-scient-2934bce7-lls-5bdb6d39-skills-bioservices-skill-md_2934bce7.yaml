@@ -14,7 +14,7 @@ curation:
 display_name: bioservices
 identity:
   aliases: []
-  current_version_id: sha256:ae8db63ecc210d7dffc71bad42a99679a31402ea
+  current_version_id: git_sha1:ae8db63ecc210d7dffc71bad42a99679a31402ea
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

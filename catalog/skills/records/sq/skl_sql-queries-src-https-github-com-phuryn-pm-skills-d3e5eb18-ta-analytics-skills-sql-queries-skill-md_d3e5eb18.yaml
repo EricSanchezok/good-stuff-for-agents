@@ -14,7 +14,7 @@ curation:
 display_name: sql-queries
 identity:
   aliases: []
-  current_version_id: sha256:7780d95a33f2a493a4a8e66d6b523aa089ef97ed
+  current_version_id: git_sha1:7780d95a33f2a493a4a8e66d6b523aa089ef97ed
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

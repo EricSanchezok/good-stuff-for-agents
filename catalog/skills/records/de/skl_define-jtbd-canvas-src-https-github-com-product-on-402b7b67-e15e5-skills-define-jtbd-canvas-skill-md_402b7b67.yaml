@@ -14,7 +14,7 @@ curation:
 display_name: define-jtbd-canvas
 identity:
   aliases: []
-  current_version_id: sha256:2bd1c0b1448c3a72103a5c7f5dd059817143c886
+  current_version_id: git_sha1:2bd1c0b1448c3a72103a5c7f5dd059817143c886
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

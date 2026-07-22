@@ -14,7 +14,7 @@ curation:
 display_name: azure-messaging
 identity:
   aliases: []
-  current_version_id: sha256:512147e502149117b33fed6c0a367606f1829e1e
+  current_version_id: git_sha1:512147e502149117b33fed6c0a367606f1829e1e
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

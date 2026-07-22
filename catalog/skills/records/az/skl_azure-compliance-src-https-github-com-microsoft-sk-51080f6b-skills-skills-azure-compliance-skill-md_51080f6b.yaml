@@ -14,7 +14,7 @@ curation:
 display_name: azure-compliance
 identity:
   aliases: []
-  current_version_id: sha256:5beb9da33c90ceff1b69ff78bdba78c326fd7a39
+  current_version_id: git_sha1:5beb9da33c90ceff1b69ff78bdba78c326fd7a39
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

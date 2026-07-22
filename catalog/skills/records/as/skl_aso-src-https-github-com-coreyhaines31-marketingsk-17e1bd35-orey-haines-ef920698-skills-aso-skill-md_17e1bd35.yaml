@@ -14,7 +14,7 @@ curation:
 display_name: aso
 identity:
   aliases: []
-  current_version_id: sha256:bd699a13e3d245b72bda63337ed0406f459774fe
+  current_version_id: git_sha1:bd699a13e3d245b72bda63337ed0406f459774fe
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

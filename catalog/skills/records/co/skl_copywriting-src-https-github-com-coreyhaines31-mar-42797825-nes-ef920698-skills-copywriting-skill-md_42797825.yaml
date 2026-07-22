@@ -14,7 +14,7 @@ curation:
 display_name: copywriting
 identity:
   aliases: []
-  current_version_id: sha256:0793e62270e203de1b2e2ff591a56015e4cf0075
+  current_version_id: git_sha1:0793e62270e203de1b2e2ff591a56015e4cf0075
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

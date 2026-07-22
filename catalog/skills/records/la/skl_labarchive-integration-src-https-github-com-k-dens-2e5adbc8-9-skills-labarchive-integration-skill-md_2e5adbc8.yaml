@@ -14,7 +14,7 @@ curation:
 display_name: labarchive-integration
 identity:
   aliases: []
-  current_version_id: sha256:95502cc21137be0c25aad25a4448d0312f86f0e4
+  current_version_id: git_sha1:95502cc21137be0c25aad25a4448d0312f86f0e4
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

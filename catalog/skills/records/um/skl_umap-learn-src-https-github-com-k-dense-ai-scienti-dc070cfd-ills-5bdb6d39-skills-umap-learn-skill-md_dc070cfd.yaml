@@ -14,7 +14,7 @@ curation:
 display_name: umap-learn
 identity:
   aliases: []
-  current_version_id: sha256:832131a815eec224a3767639234676405227d7ab
+  current_version_id: git_sha1:832131a815eec224a3767639234676405227d7ab
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

@@ -14,7 +14,7 @@ curation:
 display_name: azure-servicebus-dotnet
 identity:
   aliases: []
-  current_version_id: sha256:00c292ca53d47563837745e1952110982f949e77
+  current_version_id: git_sha1:00c292ca53d47563837745e1952110982f949e77
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

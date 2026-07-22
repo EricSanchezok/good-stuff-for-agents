@@ -14,7 +14,7 @@ curation:
 display_name: database-lookup
 identity:
   aliases: []
-  current_version_id: sha256:94632fc658a34680f61ed360e4a305f301825835
+  current_version_id: git_sha1:94632fc658a34680f61ed360e4a305f301825835
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

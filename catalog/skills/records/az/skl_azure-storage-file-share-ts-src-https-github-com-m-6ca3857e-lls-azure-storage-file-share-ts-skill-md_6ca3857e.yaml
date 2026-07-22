@@ -14,7 +14,7 @@ curation:
 display_name: azure-storage-file-share-ts
 identity:
   aliases: []
-  current_version_id: sha256:ba358bca21670775d73dce057668e8784624662b
+  current_version_id: git_sha1:ba358bca21670775d73dce057668e8784624662b
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

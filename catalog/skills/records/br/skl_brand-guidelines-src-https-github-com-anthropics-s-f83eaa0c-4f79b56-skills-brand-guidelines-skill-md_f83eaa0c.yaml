@@ -14,7 +14,7 @@ curation:
 display_name: brand-guidelines
 identity:
   aliases: []
-  current_version_id: sha256:47c72c607bdb5dd81bdea5de2b5e4f3992a5fd59
+  current_version_id: git_sha1:47c72c607bdb5dd81bdea5de2b5e4f3992a5fd59
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

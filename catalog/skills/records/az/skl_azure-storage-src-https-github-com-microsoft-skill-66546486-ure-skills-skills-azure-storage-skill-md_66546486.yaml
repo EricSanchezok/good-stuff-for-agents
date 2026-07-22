@@ -14,7 +14,7 @@ curation:
 display_name: azure-storage
 identity:
   aliases: []
-  current_version_id: sha256:21bdc643b63e040a9b1efe7422474cfb393ddc85
+  current_version_id: git_sha1:21bdc643b63e040a9b1efe7422474cfb393ddc85
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

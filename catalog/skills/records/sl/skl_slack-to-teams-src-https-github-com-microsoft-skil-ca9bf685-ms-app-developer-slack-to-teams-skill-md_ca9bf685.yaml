@@ -14,7 +14,7 @@ curation:
 display_name: slack-to-teams
 identity:
   aliases: []
-  current_version_id: sha256:11dfd2b3b069b8ae77d835c7317c3698d94346f0
+  current_version_id: git_sha1:11dfd2b3b069b8ae77d835c7317c3698d94346f0
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

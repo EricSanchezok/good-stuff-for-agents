@@ -14,7 +14,7 @@ curation:
 display_name: identify-assumptions-new
 identity:
   aliases: []
-  current_version_id: sha256:3ddc8bc514b2a05cf5f0914635f144940797f5ac
+  current_version_id: git_sha1:3ddc8bc514b2a05cf5f0914635f144940797f5ac
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

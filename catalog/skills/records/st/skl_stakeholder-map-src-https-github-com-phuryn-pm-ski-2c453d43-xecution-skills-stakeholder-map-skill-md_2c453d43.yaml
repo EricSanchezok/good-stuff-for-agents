@@ -14,7 +14,7 @@ curation:
 display_name: stakeholder-map
 identity:
   aliases: []
-  current_version_id: sha256:08e5ad24a830a8faef9942a6fd9acdd274261835
+  current_version_id: git_sha1:08e5ad24a830a8faef9942a6fd9acdd274261835
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

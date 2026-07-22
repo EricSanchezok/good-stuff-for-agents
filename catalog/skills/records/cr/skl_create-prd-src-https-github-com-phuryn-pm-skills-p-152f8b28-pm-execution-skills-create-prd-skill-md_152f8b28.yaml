@@ -14,7 +14,7 @@ curation:
 display_name: create-prd
 identity:
   aliases: []
-  current_version_id: sha256:68c8b26690db8e826782f3029c24b88340ec570e
+  current_version_id: git_sha1:68c8b26690db8e826782f3029c24b88340ec570e
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

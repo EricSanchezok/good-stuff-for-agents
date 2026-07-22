@@ -1,0 +1,16 @@
+{
+  "binding": {
+    "canonical_skill_id": "skl_arboreto-src-https-github-com-k-dense-ai-scientifi-30006f36-skills-5bdb6d39-skills-arboreto-skill-md_30006f36",
+    "current_version_id": "git_sha1:b53132348273afcb82e8e3112871092ac949f5c3",
+    "expected_output_path": "catalog/analyses/ar/skl_arboreto-src-https-github-com-k-dense-ai-scientifi-30006f36-skills-5bdb6d39-skills-arboreto-skill-md_30006f36.md",
+    "git_blob_oid": "git_sha1:b53132348273afcb82e8e3112871092ac949f5c3",
+    "pinned_commit": "831d49eb77eed3c792be2970921b46764012ef00",
+    "raw_url": "https://raw.githubusercontent.com/K-Dense-AI/scientific-agent-skills/831d49eb77eed3c792be2970921b46764012ef00/skills/arboreto/SKILL.md",
+    "remote_path": "skills/arboreto/SKILL.md",
+    "source_id": "src_https-github-com-k-dense-ai-scientific-agent-skills-k-dense-scientific-agent-skills_5bdb6d39"
+  },
+  "dispatch_digest": "sha256:c98b9b0038ba0b3f457052673f62f25c0165ee9d0040a0b54ac4fa1e3fb6a81a",
+  "kind": "skill-analysis-dispatch",
+  "run_id": "run_2026-07-22-030000",
+  "schema_version": 2
+}

@@ -14,7 +14,7 @@ curation:
 display_name: azure-compute-batch-java
 identity:
   aliases: []
-  current_version_id: sha256:5fc31081115f4710a9b2b961b6662253b0232318
+  current_version_id: git_sha1:5fc31081115f4710a9b2b961b6662253b0232318
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

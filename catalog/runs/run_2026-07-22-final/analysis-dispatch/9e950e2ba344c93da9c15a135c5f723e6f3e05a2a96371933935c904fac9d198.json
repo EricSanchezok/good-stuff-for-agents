@@ -1,0 +1,16 @@
+{
+  "binding": {
+    "canonical_skill_id": "skl_azure-eventhub-java-src-https-github-com-microsoft-e706c935-java-skills-azure-eventhub-java-skill-md_e706c935",
+    "current_version_id": "git_sha1:9399c5d62cc5d5b395e65ad0fc5aaa780e03242e",
+    "expected_output_path": "catalog/analyses/az/skl_azure-eventhub-java-src-https-github-com-microsoft-e706c935-java-skills-azure-eventhub-java-skill-md_e706c935.md",
+    "git_blob_oid": "git_sha1:9399c5d62cc5d5b395e65ad0fc5aaa780e03242e",
+    "pinned_commit": "cc93536d8b809e177a7d1008b276ce41a9456a9c",
+    "raw_url": "https://raw.githubusercontent.com/microsoft/skills/cc93536d8b809e177a7d1008b276ce41a9456a9c/.github/plugins/azure-sdk-java/skills/azure-eventhub-java/SKILL.md",
+    "remote_path": ".github/plugins/azure-sdk-java/skills/azure-eventhub-java/SKILL.md",
+    "source_id": "src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e"
+  },
+  "dispatch_digest": "sha256:9e950e2ba344c93da9c15a135c5f723e6f3e05a2a96371933935c904fac9d198",
+  "kind": "skill-analysis-dispatch",
+  "run_id": "run_2026-07-22-final",
+  "schema_version": 2
+}

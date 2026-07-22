@@ -14,7 +14,7 @@ curation:
 display_name: wiki-llms-txt
 identity:
   aliases: []
-  current_version_id: sha256:f9eaf717a42a1206bdde938219f1d8cfbb1c64c4
+  current_version_id: git_sha1:f9eaf717a42a1206bdde938219f1d8cfbb1c64c4
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

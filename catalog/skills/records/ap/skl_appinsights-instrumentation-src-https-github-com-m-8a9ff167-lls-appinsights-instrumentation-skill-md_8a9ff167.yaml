@@ -14,7 +14,7 @@ curation:
 display_name: appinsights-instrumentation
 identity:
   aliases: []
-  current_version_id: sha256:ca55c310862cb95b5ebcc1f10a070f312718d1cb
+  current_version_id: git_sha1:ca55c310862cb95b5ebcc1f10a070f312718d1cb
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

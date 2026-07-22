@@ -14,7 +14,7 @@ curation:
 display_name: get-available-resources
 identity:
   aliases: []
-  current_version_id: sha256:21f7a8ce13f122151e1b49b63a596d9f288d7600
+  current_version_id: git_sha1:21f7a8ce13f122151e1b49b63a596d9f288d7600
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

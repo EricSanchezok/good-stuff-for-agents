@@ -14,7 +14,7 @@ curation:
 display_name: pathml
 identity:
   aliases: []
-  current_version_id: sha256:c91fc35a33b27623e2c963d807d6b6d8485a2c89
+  current_version_id: git_sha1:c91fc35a33b27623e2c963d807d6b6d8485a2c89
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

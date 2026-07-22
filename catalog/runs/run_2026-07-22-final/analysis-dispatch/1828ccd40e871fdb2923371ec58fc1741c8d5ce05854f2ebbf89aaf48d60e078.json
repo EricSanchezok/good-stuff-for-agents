@@ -1,0 +1,16 @@
+{
+  "binding": {
+    "canonical_skill_id": "skl_azure-messaging-src-https-github-com-microsoft-ski-0bbc781d-e-skills-skills-azure-messaging-skill-md_0bbc781d",
+    "current_version_id": "git_sha1:512147e502149117b33fed6c0a367606f1829e1e",
+    "expected_output_path": "catalog/analyses/az/skl_azure-messaging-src-https-github-com-microsoft-ski-0bbc781d-e-skills-skills-azure-messaging-skill-md_0bbc781d.md",
+    "git_blob_oid": "git_sha1:512147e502149117b33fed6c0a367606f1829e1e",
+    "pinned_commit": "cc93536d8b809e177a7d1008b276ce41a9456a9c",
+    "raw_url": "https://raw.githubusercontent.com/microsoft/skills/cc93536d8b809e177a7d1008b276ce41a9456a9c/.github/plugins/azure-skills/skills/azure-messaging/SKILL.md",
+    "remote_path": ".github/plugins/azure-skills/skills/azure-messaging/SKILL.md",
+    "source_id": "src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e"
+  },
+  "dispatch_digest": "sha256:1828ccd40e871fdb2923371ec58fc1741c8d5ce05854f2ebbf89aaf48d60e078",
+  "kind": "skill-analysis-dispatch",
+  "run_id": "run_2026-07-22-final",
+  "schema_version": 2
+}

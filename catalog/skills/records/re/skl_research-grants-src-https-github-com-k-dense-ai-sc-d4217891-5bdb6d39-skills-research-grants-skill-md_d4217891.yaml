@@ -14,7 +14,7 @@ curation:
 display_name: research-grants
 identity:
   aliases: []
-  current_version_id: sha256:c76378137b702f1ee555058128e51d0c550b2c5c
+  current_version_id: git_sha1:c76378137b702f1ee555058128e51d0c550b2c5c
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

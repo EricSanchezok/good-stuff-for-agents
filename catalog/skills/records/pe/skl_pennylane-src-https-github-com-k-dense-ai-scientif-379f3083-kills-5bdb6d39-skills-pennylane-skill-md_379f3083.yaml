@@ -14,7 +14,7 @@ curation:
 display_name: pennylane
 identity:
   aliases: []
-  current_version_id: sha256:37b4b03eff1d0583e12187aa878d1d1f8379f735
+  current_version_id: git_sha1:37b4b03eff1d0583e12187aa878d1d1f8379f735
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

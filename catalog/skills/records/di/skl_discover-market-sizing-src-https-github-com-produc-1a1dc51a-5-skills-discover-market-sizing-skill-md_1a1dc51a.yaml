@@ -14,7 +14,7 @@ curation:
 display_name: discover-market-sizing
 identity:
   aliases: []
-  current_version_id: sha256:c639998da5d41436ec8d46a9e6f88994738353a1
+  current_version_id: git_sha1:c639998da5d41436ec8d46a9e6f88994738353a1
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

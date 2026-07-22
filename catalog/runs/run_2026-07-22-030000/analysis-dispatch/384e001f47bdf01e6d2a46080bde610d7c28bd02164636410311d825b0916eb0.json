@@ -1,0 +1,16 @@
+{
+  "binding": {
+    "canonical_skill_id": "skl_dask-src-https-github-com-k-dense-ai-scientific-ag-24a35b5e-ent-skills-5bdb6d39-skills-dask-skill-md_24a35b5e",
+    "current_version_id": "git_sha1:6d8484f51c2a85de28d6905fefcd5739d97cec90",
+    "expected_output_path": "catalog/analyses/da/skl_dask-src-https-github-com-k-dense-ai-scientific-ag-24a35b5e-ent-skills-5bdb6d39-skills-dask-skill-md_24a35b5e.md",
+    "git_blob_oid": "git_sha1:6d8484f51c2a85de28d6905fefcd5739d97cec90",
+    "pinned_commit": "831d49eb77eed3c792be2970921b46764012ef00",
+    "raw_url": "https://raw.githubusercontent.com/K-Dense-AI/scientific-agent-skills/831d49eb77eed3c792be2970921b46764012ef00/skills/dask/SKILL.md",
+    "remote_path": "skills/dask/SKILL.md",
+    "source_id": "src_https-github-com-k-dense-ai-scientific-agent-skills-k-dense-scientific-agent-skills_5bdb6d39"
+  },
+  "dispatch_digest": "sha256:384e001f47bdf01e6d2a46080bde610d7c28bd02164636410311d825b0916eb0",
+  "kind": "skill-analysis-dispatch",
+  "run_id": "run_2026-07-22-030000",
+  "schema_version": 2
+}

@@ -1,0 +1,16 @@
+{
+  "binding": {
+    "canonical_skill_id": "skl_flowio-src-https-github-com-k-dense-ai-scientific-30a81d62-t-skills-5bdb6d39-skills-flowio-skill-md_30a81d62",
+    "current_version_id": "git_sha1:30d1a3fd7e20906b1902d6a61b0b2b225680a279",
+    "expected_output_path": "catalog/analyses/fl/skl_flowio-src-https-github-com-k-dense-ai-scientific-30a81d62-t-skills-5bdb6d39-skills-flowio-skill-md_30a81d62.md",
+    "git_blob_oid": "git_sha1:30d1a3fd7e20906b1902d6a61b0b2b225680a279",
+    "pinned_commit": "831d49eb77eed3c792be2970921b46764012ef00",
+    "raw_url": "https://raw.githubusercontent.com/K-Dense-AI/scientific-agent-skills/831d49eb77eed3c792be2970921b46764012ef00/skills/flowio/SKILL.md",
+    "remote_path": "skills/flowio/SKILL.md",
+    "source_id": "src_https-github-com-k-dense-ai-scientific-agent-skills-k-dense-scientific-agent-skills_5bdb6d39"
+  },
+  "dispatch_digest": "sha256:446350270622f62a77aa1d35bfaab08985a07024d4f4246585874a04ad6cdc7e",
+  "kind": "skill-analysis-dispatch",
+  "run_id": "run_2026-07-22-030000",
+  "schema_version": 2
+}

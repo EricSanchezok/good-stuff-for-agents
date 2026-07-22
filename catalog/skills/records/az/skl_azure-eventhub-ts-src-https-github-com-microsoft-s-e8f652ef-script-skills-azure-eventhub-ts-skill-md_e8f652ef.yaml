@@ -14,7 +14,7 @@ curation:
 display_name: azure-eventhub-ts
 identity:
   aliases: []
-  current_version_id: sha256:fe0cc9ab1db48af480d95c11e72de9db5c7c4645
+  current_version_id: git_sha1:fe0cc9ab1db48af480d95c11e72de9db5c7c4645
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

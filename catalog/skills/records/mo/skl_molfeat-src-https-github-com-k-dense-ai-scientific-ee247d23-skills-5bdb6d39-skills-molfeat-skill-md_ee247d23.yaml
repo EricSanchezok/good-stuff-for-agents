@@ -14,7 +14,7 @@ curation:
 display_name: molfeat
 identity:
   aliases: []
-  current_version_id: sha256:2108c998e7bc6d865a18184fa5d856591d225b58
+  current_version_id: git_sha1:2108c998e7bc6d865a18184fa5d856591d225b58
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

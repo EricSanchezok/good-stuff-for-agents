@@ -14,7 +14,7 @@ curation:
 display_name: azure-eventhub-py
 identity:
   aliases: []
-  current_version_id: sha256:289676f5c80a9f4064980ff98283575502fe1d99
+  current_version_id: git_sha1:289676f5c80a9f4064980ff98283575502fe1d99
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

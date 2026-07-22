@@ -14,7 +14,7 @@ curation:
 display_name: azure-monitor-query-java
 identity:
   aliases: []
-  current_version_id: sha256:4f9d8cfec9d6a166cd5bd18fc91fabc53dc7f343
+  current_version_id: git_sha1:4f9d8cfec9d6a166cd5bd18fc91fabc53dc7f343
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

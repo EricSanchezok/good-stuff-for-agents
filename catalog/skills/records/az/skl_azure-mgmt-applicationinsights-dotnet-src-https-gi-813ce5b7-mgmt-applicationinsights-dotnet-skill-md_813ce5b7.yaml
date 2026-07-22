@@ -14,7 +14,7 @@ curation:
 display_name: azure-mgmt-applicationinsights-dotnet
 identity:
   aliases: []
-  current_version_id: sha256:97279bfcc7736acd9e3d3772e118bdf9a52fb0b5
+  current_version_id: git_sha1:97279bfcc7736acd9e3d3772e118bdf9a52fb0b5
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

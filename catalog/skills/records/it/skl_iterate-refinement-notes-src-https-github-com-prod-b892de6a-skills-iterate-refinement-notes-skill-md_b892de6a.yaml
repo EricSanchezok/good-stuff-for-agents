@@ -14,7 +14,7 @@ curation:
 display_name: iterate-refinement-notes
 identity:
   aliases: []
-  current_version_id: sha256:27e29bdd8932ce2a9025ea9196117f91569f37d1
+  current_version_id: git_sha1:27e29bdd8932ce2a9025ea9196117f91569f37d1
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

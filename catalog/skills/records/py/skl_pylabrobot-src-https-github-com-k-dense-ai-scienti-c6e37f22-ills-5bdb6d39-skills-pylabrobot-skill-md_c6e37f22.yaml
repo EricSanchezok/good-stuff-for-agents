@@ -14,7 +14,7 @@ curation:
 display_name: pylabrobot
 identity:
   aliases: []
-  current_version_id: sha256:12976af43fd5ac9a9cbfd913e27f203df2a1258b
+  current_version_id: git_sha1:12976af43fd5ac9a9cbfd913e27f203df2a1258b
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

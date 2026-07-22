@@ -14,7 +14,7 @@ curation:
 display_name: define-x
 identity:
   aliases: []
-  current_version_id: sha256:3ae799ae6dd6ce83874d6b76e6369958b5841f96
+  current_version_id: git_sha1:3ae799ae6dd6ce83874d6b76e6369958b5841f96
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

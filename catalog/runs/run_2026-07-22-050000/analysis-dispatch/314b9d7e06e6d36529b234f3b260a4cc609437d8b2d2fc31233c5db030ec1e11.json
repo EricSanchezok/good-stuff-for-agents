@@ -1,0 +1,16 @@
+{
+  "binding": {
+    "canonical_skill_id": "skl_azure-cost-src-https-github-com-microsoft-skills-m-c4983e5f-azure-skills-skills-azure-cost-skill-md_c4983e5f",
+    "current_version_id": "git_sha1:8755e1c4db79a8e1bc44d6d1cdd1d3c55e5976e4",
+    "expected_output_path": "catalog/analyses/az/skl_azure-cost-src-https-github-com-microsoft-skills-m-c4983e5f-azure-skills-skills-azure-cost-skill-md_c4983e5f.md",
+    "git_blob_oid": "git_sha1:8755e1c4db79a8e1bc44d6d1cdd1d3c55e5976e4",
+    "pinned_commit": "cc93536d8b809e177a7d1008b276ce41a9456a9c",
+    "raw_url": "https://raw.githubusercontent.com/microsoft/skills/cc93536d8b809e177a7d1008b276ce41a9456a9c/.github/plugins/azure-skills/skills/azure-cost/SKILL.md",
+    "remote_path": ".github/plugins/azure-skills/skills/azure-cost/SKILL.md",
+    "source_id": "src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e"
+  },
+  "dispatch_digest": "sha256:314b9d7e06e6d36529b234f3b260a4cc609437d8b2d2fc31233c5db030ec1e11",
+  "kind": "skill-analysis-dispatch",
+  "run_id": "run_2026-07-22-050000",
+  "schema_version": 2
+}

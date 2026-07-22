@@ -14,7 +14,7 @@ curation:
 display_name: utility-pm-skill-validate
 identity:
   aliases: []
-  current_version_id: sha256:31a72171d4b645f70ac3b9848f2d9bb93cba8ce3
+  current_version_id: git_sha1:31a72171d4b645f70ac3b9848f2d9bb93cba8ce3
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

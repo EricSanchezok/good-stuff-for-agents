@@ -14,7 +14,7 @@ curation:
 display_name: competitor-analysis
 identity:
   aliases: []
-  current_version_id: sha256:b9cafee194fc0e7560781d4538e05081c112282c
+  current_version_id: git_sha1:b9cafee194fc0e7560781d4538e05081c112282c
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

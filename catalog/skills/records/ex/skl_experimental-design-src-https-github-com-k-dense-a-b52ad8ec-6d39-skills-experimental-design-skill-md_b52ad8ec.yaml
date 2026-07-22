@@ -14,7 +14,7 @@ curation:
 display_name: experimental-design
 identity:
   aliases: []
-  current_version_id: sha256:88ca761056ac84392d79933e3bc2714e15086fef
+  current_version_id: git_sha1:88ca761056ac84392d79933e3bc2714e15086fef
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

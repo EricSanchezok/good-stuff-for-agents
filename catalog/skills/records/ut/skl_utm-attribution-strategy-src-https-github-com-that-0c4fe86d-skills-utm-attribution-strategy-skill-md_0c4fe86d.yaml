@@ -14,7 +14,7 @@ curation:
 display_name: utm-attribution-strategy
 identity:
   aliases: []
-  current_version_id: sha256:a81c5735fa1ddb6786a8a26ca6982bf1ab917d57
+  current_version_id: git_sha1:a81c5735fa1ddb6786a8a26ca6982bf1ab917d57
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

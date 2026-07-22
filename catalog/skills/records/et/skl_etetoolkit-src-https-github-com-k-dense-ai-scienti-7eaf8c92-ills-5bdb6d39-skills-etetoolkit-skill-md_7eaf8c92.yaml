@@ -14,7 +14,7 @@ curation:
 display_name: etetoolkit
 identity:
   aliases: []
-  current_version_id: sha256:d34f9286daecf6a548d75027efbd6261d1514d14
+  current_version_id: git_sha1:d34f9286daecf6a548d75027efbd6261d1514d14
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

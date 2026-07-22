@@ -14,7 +14,7 @@ curation:
 display_name: simpy
 identity:
   aliases: []
-  current_version_id: sha256:9ff0ab0139ea2021ca24324932201151b7bf1258
+  current_version_id: git_sha1:9ff0ab0139ea2021ca24324932201151b7bf1258
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

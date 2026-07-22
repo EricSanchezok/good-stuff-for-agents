@@ -14,7 +14,7 @@ curation:
 display_name: generate-image
 identity:
   aliases: []
-  current_version_id: sha256:a501b3df681fb62240aad2d253df174c9e7b0154
+  current_version_id: git_sha1:a501b3df681fb62240aad2d253df174c9e7b0154
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

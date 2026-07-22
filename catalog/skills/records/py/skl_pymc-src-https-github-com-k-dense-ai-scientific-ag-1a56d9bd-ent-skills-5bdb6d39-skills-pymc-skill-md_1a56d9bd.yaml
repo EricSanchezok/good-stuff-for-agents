@@ -14,7 +14,7 @@ curation:
 display_name: pymc
 identity:
   aliases: []
-  current_version_id: sha256:76d6aa812c3d70bad7a97d6075810b41344e34d0
+  current_version_id: git_sha1:76d6aa812c3d70bad7a97d6075810b41344e34d0
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

@@ -14,7 +14,7 @@ curation:
 display_name: draft-nda
 identity:
   aliases: []
-  current_version_id: sha256:00e4208dd746dd6af5f25ca2843a25e386076376
+  current_version_id: git_sha1:00e4208dd746dd6af5f25ca2843a25e386076376
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

@@ -14,7 +14,7 @@ curation:
 display_name: python-appservice-deploy
 identity:
   aliases: []
-  current_version_id: sha256:ac25db692762945d0e3e9ed2016dcfa29fbfa610
+  current_version_id: git_sha1:ac25db692762945d0e3e9ed2016dcfa29fbfa610
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

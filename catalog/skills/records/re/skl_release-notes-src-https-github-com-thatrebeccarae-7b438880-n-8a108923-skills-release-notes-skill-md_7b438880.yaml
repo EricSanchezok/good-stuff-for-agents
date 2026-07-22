@@ -14,7 +14,7 @@ curation:
 display_name: release-notes
 identity:
   aliases: []
-  current_version_id: sha256:d499448154cae637d642af2c445d320709cda99e
+  current_version_id: git_sha1:d499448154cae637d642af2c445d320709cda99e
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

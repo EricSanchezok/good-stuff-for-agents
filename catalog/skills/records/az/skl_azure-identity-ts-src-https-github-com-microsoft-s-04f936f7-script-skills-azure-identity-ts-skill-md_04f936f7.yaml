@@ -14,7 +14,7 @@ curation:
 display_name: azure-identity-ts
 identity:
   aliases: []
-  current_version_id: sha256:50b8b57d4f064c88ddd3c35976511952bcdeba05
+  current_version_id: git_sha1:50b8b57d4f064c88ddd3c35976511952bcdeba05
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

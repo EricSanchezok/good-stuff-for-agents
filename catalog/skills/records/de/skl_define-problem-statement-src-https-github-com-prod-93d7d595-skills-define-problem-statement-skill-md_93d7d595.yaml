@@ -14,7 +14,7 @@ curation:
 display_name: define-problem-statement
 identity:
   aliases: []
-  current_version_id: sha256:a0ab828277b1d311f117ba41efaf6df750da7ce5
+  current_version_id: git_sha1:a0ab828277b1d311f117ba41efaf6df750da7ce5
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

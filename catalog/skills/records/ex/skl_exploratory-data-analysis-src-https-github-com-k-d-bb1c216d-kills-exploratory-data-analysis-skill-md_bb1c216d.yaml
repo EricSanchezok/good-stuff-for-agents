@@ -14,7 +14,7 @@ curation:
 display_name: exploratory-data-analysis
 identity:
   aliases: []
-  current_version_id: sha256:c99cef401ed806dced82ec8654a8b2da2ce56bc2
+  current_version_id: git_sha1:c99cef401ed806dced82ec8654a8b2da2ce56bc2
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

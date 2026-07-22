@@ -14,7 +14,7 @@ curation:
 display_name: community-marketing
 identity:
   aliases: []
-  current_version_id: sha256:06246dc7515a3f2677147678d04a9ada6f7c62d3
+  current_version_id: git_sha1:06246dc7515a3f2677147678d04a9ada6f7c62d3
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

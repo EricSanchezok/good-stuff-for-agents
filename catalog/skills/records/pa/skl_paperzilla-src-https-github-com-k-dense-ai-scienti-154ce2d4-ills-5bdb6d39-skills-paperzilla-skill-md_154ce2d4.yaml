@@ -14,7 +14,7 @@ curation:
 display_name: paperzilla
 identity:
   aliases: []
-  current_version_id: sha256:d41258d71db04865ff26848a913f2b47c73cb38d
+  current_version_id: git_sha1:d41258d71db04865ff26848a913f2b47c73cb38d
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

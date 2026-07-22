@@ -14,7 +14,7 @@ curation:
 display_name: component-properties-figma
 identity:
   aliases: []
-  current_version_id: sha256:666861a78fea4b2b554a449b826636fb4b0f13c6
+  current_version_id: git_sha1:666861a78fea4b2b554a449b826636fb4b0f13c6
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

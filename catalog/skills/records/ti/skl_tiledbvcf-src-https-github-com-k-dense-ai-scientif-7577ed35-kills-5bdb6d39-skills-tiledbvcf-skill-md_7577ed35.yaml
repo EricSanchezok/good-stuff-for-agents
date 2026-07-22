@@ -14,7 +14,7 @@ curation:
 display_name: tiledbvcf
 identity:
   aliases: []
-  current_version_id: sha256:de38dd1be11d7ba294b8172628af5569694aaf50
+  current_version_id: git_sha1:de38dd1be11d7ba294b8172628af5569694aaf50
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

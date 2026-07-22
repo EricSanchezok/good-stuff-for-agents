@@ -14,7 +14,7 @@ curation:
 display_name: gtm-strategy
 identity:
   aliases: []
-  current_version_id: sha256:5992ae5fd38c05665ddbcaf17250980a0eda6517
+  current_version_id: git_sha1:5992ae5fd38c05665ddbcaf17250980a0eda6517
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

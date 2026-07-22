@@ -14,7 +14,7 @@ curation:
 display_name: octocat
 identity:
   aliases: []
-  current_version_id: sha256:1d6ea3489d06d79d255dbf4fb34bf8f1130151ff
+  current_version_id: git_sha1:1d6ea3489d06d79d255dbf4fb34bf8f1130151ff
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

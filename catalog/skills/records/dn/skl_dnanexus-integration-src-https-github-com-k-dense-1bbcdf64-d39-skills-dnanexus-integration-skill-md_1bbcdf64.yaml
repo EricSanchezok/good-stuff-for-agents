@@ -14,7 +14,7 @@ curation:
 display_name: dnanexus-integration
 identity:
   aliases: []
-  current_version_id: sha256:48b1343327e1b41b37b65f6a4e92c174b4f44130
+  current_version_id: git_sha1:48b1343327e1b41b37b65f6a4e92c174b4f44130
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

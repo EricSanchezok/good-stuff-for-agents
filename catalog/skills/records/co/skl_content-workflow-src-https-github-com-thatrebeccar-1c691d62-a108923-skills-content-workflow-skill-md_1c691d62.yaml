@@ -14,7 +14,7 @@ curation:
 display_name: content-workflow
 identity:
   aliases: []
-  current_version_id: sha256:5e860f211ec50ab1a0c88a243d2bd33765ec7d2d
+  current_version_id: git_sha1:5e860f211ec50ab1a0c88a243d2bd33765ec7d2d
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

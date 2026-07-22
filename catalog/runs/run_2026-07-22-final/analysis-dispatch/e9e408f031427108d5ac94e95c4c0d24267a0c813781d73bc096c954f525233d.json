@@ -1,0 +1,16 @@
+{
+  "binding": {
+    "canonical_skill_id": "skl_azure-mgmt-apimanagement-dotnet-src-https-github-c-e264ff08-azure-mgmt-apimanagement-dotnet-skill-md_e264ff08",
+    "current_version_id": "git_sha1:ed3fe2bfa8e016f675066eca950debeafaf056ba",
+    "expected_output_path": "catalog/analyses/az/skl_azure-mgmt-apimanagement-dotnet-src-https-github-c-e264ff08-azure-mgmt-apimanagement-dotnet-skill-md_e264ff08.md",
+    "git_blob_oid": "git_sha1:ed3fe2bfa8e016f675066eca950debeafaf056ba",
+    "pinned_commit": "cc93536d8b809e177a7d1008b276ce41a9456a9c",
+    "raw_url": "https://raw.githubusercontent.com/microsoft/skills/cc93536d8b809e177a7d1008b276ce41a9456a9c/.github/plugins/azure-sdk-dotnet/skills/azure-mgmt-apimanagement-dotnet/SKILL.md",
+    "remote_path": ".github/plugins/azure-sdk-dotnet/skills/azure-mgmt-apimanagement-dotnet/SKILL.md",
+    "source_id": "src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e"
+  },
+  "dispatch_digest": "sha256:e9e408f031427108d5ac94e95c4c0d24267a0c813781d73bc096c954f525233d",
+  "kind": "skill-analysis-dispatch",
+  "run_id": "run_2026-07-22-final",
+  "schema_version": 2
+}

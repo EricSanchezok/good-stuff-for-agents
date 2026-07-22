@@ -14,7 +14,7 @@ curation:
 display_name: hypogenic
 identity:
   aliases: []
-  current_version_id: sha256:30aa599aa449a574cde01528b74eb97377c2715c
+  current_version_id: git_sha1:30aa599aa449a574cde01528b74eb97377c2715c
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

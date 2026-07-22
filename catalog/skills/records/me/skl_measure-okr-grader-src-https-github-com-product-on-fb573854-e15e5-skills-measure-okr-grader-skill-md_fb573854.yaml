@@ -14,7 +14,7 @@ curation:
 display_name: measure-okr-grader
 identity:
   aliases: []
-  current_version_id: sha256:5f042aa660e8495b623cb6e1047c74837a91d7f5
+  current_version_id: git_sha1:5f042aa660e8495b623cb6e1047c74837a91d7f5
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

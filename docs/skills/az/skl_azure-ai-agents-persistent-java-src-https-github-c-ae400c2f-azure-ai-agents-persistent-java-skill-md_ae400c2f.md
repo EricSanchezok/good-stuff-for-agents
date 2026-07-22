@@ -4,7 +4,9 @@
 
 ## Summary
 
-Analysis pending.
+# Azure AI Agents Persistent Java SDK
+
+Teaches Azure Foundry AI Agents Java SDK for persistent, stateful AI agent sessions: create agent with model/instructions/tools, async task management, server-side conversation state. SDK wrapper tutorial — value depends on whether Azure Foundry is already your orchestration backbone.
 
 ## Source
 
@@ -35,6 +37,10 @@ No published packs use this skill yet.
 ## Related Skills
 
 No related skills are public yet.
+
+## Public Analysis Summary
+
+Pick only if team map already pinned to Azure Foundry + Java + managed agent infra. Vendor-neutral agent framework gives more flexibility and larger community. Thin wrapper over single vendor SDK — does not earn tight 100-spot.
 
 ## Confidence and Limitations
 

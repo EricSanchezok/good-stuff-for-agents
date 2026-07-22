@@ -14,7 +14,7 @@ curation:
 display_name: frontend-design
 identity:
   aliases: []
-  current_version_id: sha256:decdff43d05908b4c1fc2cfd2d80fc5743440934
+  current_version_id: git_sha1:decdff43d05908b4c1fc2cfd2d80fc5743440934
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

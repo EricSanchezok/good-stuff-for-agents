@@ -1,0 +1,16 @@
+{
+  "binding": {
+    "canonical_skill_id": "skl_benchling-integration-src-https-github-com-k-dense-1d9f5d76-39-skills-benchling-integration-skill-md_1d9f5d76",
+    "current_version_id": "git_sha1:389ccce8cb9e71e15807064293efb09c1f566309",
+    "expected_output_path": "catalog/analyses/be/skl_benchling-integration-src-https-github-com-k-dense-1d9f5d76-39-skills-benchling-integration-skill-md_1d9f5d76.md",
+    "git_blob_oid": "git_sha1:389ccce8cb9e71e15807064293efb09c1f566309",
+    "pinned_commit": "831d49eb77eed3c792be2970921b46764012ef00",
+    "raw_url": "https://raw.githubusercontent.com/K-Dense-AI/scientific-agent-skills/831d49eb77eed3c792be2970921b46764012ef00/skills/benchling-integration/SKILL.md",
+    "remote_path": "skills/benchling-integration/SKILL.md",
+    "source_id": "src_https-github-com-k-dense-ai-scientific-agent-skills-k-dense-scientific-agent-skills_5bdb6d39"
+  },
+  "dispatch_digest": "sha256:432ed5a750c1157c617b869a2ff75da3b5bc3c15af07b2f7fe704bc0c0756d6c",
+  "kind": "skill-analysis-dispatch",
+  "run_id": "run_2026-07-22-030000",
+  "schema_version": 2
+}

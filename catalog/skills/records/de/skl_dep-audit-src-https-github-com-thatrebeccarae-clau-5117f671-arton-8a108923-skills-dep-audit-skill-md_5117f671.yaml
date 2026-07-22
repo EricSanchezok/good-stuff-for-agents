@@ -14,7 +14,7 @@ curation:
 display_name: dep-audit
 identity:
   aliases: []
-  current_version_id: sha256:f4727917de4e5538b0f0dbb1f1c5290a9d377781
+  current_version_id: git_sha1:f4727917de4e5538b0f0dbb1f1c5290a9d377781
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

@@ -14,7 +14,7 @@ curation:
 display_name: demo-present
 identity:
   aliases: []
-  current_version_id: sha256:d2032f165fe754c5153e80069ad625b568d4db49
+  current_version_id: git_sha1:d2032f165fe754c5153e80069ad625b568d4db49
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

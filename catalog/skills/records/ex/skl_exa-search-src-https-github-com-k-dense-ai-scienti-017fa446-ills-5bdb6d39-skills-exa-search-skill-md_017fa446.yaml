@@ -14,7 +14,7 @@ curation:
 display_name: exa-search
 identity:
   aliases: []
-  current_version_id: sha256:2b23798725a2de35304f81927720e58e0c2c22e0
+  current_version_id: git_sha1:2b23798725a2de35304f81927720e58e0c2c22e0
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

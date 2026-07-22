@@ -1,0 +1,16 @@
+{
+  "binding": {
+    "canonical_skill_id": "skl_azure-kusto-src-https-github-com-microsoft-skills-d8a2fd1d-azure-skills-skills-azure-kusto-skill-md_d8a2fd1d",
+    "current_version_id": "git_sha1:76e6b1764da1d7352dd3d6056571751f4395c746",
+    "expected_output_path": "catalog/analyses/az/skl_azure-kusto-src-https-github-com-microsoft-skills-d8a2fd1d-azure-skills-skills-azure-kusto-skill-md_d8a2fd1d.md",
+    "git_blob_oid": "git_sha1:76e6b1764da1d7352dd3d6056571751f4395c746",
+    "pinned_commit": "cc93536d8b809e177a7d1008b276ce41a9456a9c",
+    "raw_url": "https://raw.githubusercontent.com/microsoft/skills/cc93536d8b809e177a7d1008b276ce41a9456a9c/.github/plugins/azure-skills/skills/azure-kusto/SKILL.md",
+    "remote_path": ".github/plugins/azure-skills/skills/azure-kusto/SKILL.md",
+    "source_id": "src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e"
+  },
+  "dispatch_digest": "sha256:8c3aa239139ce9d8b26b1d2315da16fb7a886b8e5a001e4f68e4810894dc4676",
+  "kind": "skill-analysis-dispatch",
+  "run_id": "run_2026-07-22-final",
+  "schema_version": 2
+}

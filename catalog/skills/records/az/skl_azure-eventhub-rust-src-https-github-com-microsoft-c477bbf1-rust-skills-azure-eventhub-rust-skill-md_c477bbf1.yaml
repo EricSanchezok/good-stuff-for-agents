@@ -14,7 +14,7 @@ curation:
 display_name: azure-eventhub-rust
 identity:
   aliases: []
-  current_version_id: sha256:6b728d857b1100fe2f8b43c4c07c6a2d041c7665
+  current_version_id: git_sha1:6b728d857b1100fe2f8b43c4c07c6a2d041c7665
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

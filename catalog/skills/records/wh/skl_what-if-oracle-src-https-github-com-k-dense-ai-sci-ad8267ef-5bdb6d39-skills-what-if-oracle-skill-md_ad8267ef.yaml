@@ -14,7 +14,7 @@ curation:
 display_name: what-if-oracle
 identity:
   aliases: []
-  current_version_id: sha256:1b19327cf3461891428db940e339b0c5b0c5cb07
+  current_version_id: git_sha1:1b19327cf3461891428db940e339b0c5b0c5cb07
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

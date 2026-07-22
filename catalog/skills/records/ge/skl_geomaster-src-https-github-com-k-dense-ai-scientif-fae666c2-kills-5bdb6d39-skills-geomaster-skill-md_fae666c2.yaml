@@ -14,7 +14,7 @@ curation:
 display_name: geomaster
 identity:
   aliases: []
-  current_version_id: sha256:49a949daed200294c9eaf967e5affe566e323894
+  current_version_id: git_sha1:49a949daed200294c9eaf967e5affe566e323894
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

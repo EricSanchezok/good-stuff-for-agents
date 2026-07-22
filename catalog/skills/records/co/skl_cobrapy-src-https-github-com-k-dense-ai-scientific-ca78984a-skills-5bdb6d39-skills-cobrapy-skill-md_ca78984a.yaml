@@ -14,7 +14,7 @@ curation:
 display_name: cobrapy
 identity:
   aliases: []
-  current_version_id: sha256:0c69797edd71ed83cdbac111b4c65e3785fdeb9c
+  current_version_id: git_sha1:0c69797edd71ed83cdbac111b4c65e3785fdeb9c
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

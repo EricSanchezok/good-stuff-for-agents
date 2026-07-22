@@ -1,0 +1,16 @@
+{
+  "binding": {
+    "canonical_skill_id": "skl_azure-cosmos-py-src-https-github-com-microsoft-ski-8eeb7651-k-python-skills-azure-cosmos-py-skill-md_8eeb7651",
+    "current_version_id": "git_sha1:9800d67e64c753e221128e38c43a81bfabdff944",
+    "expected_output_path": "catalog/analyses/az/skl_azure-cosmos-py-src-https-github-com-microsoft-ski-8eeb7651-k-python-skills-azure-cosmos-py-skill-md_8eeb7651.md",
+    "git_blob_oid": "git_sha1:9800d67e64c753e221128e38c43a81bfabdff944",
+    "pinned_commit": "cc93536d8b809e177a7d1008b276ce41a9456a9c",
+    "raw_url": "https://raw.githubusercontent.com/microsoft/skills/cc93536d8b809e177a7d1008b276ce41a9456a9c/.github/plugins/azure-sdk-python/skills/azure-cosmos-py/SKILL.md",
+    "remote_path": ".github/plugins/azure-sdk-python/skills/azure-cosmos-py/SKILL.md",
+    "source_id": "src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e"
+  },
+  "dispatch_digest": "sha256:df35a646c7236c44400af1f97817eac77c728ee70ec1cef36d20b19b612adfe8",
+  "kind": "skill-analysis-dispatch",
+  "run_id": "run_2026-07-22-050000",
+  "schema_version": 2
+}

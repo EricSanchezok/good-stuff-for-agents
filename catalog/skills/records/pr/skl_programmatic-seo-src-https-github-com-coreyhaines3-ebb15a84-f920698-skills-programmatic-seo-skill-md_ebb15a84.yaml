@@ -14,7 +14,7 @@ curation:
 display_name: programmatic-seo
 identity:
   aliases: []
-  current_version_id: sha256:e96bf82ed07475262490f60108258d8dfccb6389
+  current_version_id: git_sha1:e96bf82ed07475262490f60108258d8dfccb6389
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

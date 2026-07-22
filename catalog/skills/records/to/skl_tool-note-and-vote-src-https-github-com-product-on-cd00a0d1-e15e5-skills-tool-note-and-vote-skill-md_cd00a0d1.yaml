@@ -14,7 +14,7 @@ curation:
 display_name: tool-note-and-vote
 identity:
   aliases: []
-  current_version_id: sha256:f93ef8dc2e0fc31df7b24cd5b1056db37bd11565
+  current_version_id: git_sha1:f93ef8dc2e0fc31df7b24cd5b1056db37bd11565
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

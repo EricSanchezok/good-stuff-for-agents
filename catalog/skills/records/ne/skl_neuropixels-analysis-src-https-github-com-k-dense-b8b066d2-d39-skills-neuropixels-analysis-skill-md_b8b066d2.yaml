@@ -14,7 +14,7 @@ curation:
 display_name: neuropixels-analysis
 identity:
   aliases: []
-  current_version_id: sha256:ca5ee8525074ee6f4a910eade70fe86df46a029a
+  current_version_id: git_sha1:ca5ee8525074ee6f4a910eade70fe86df46a029a
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

@@ -14,7 +14,7 @@ curation:
 display_name: utility-pm-workflow-orchestrator
 identity:
   aliases: []
-  current_version_id: sha256:59b548d78ca544cb2345cb29650a1deeaa781c6a
+  current_version_id: git_sha1:59b548d78ca544cb2345cb29650a1deeaa781c6a
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

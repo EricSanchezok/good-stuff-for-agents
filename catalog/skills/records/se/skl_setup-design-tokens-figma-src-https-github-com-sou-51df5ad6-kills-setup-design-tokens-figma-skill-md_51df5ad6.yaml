@@ -14,7 +14,7 @@ curation:
 display_name: setup-design-tokens-figma
 identity:
   aliases: []
-  current_version_id: sha256:d4b927007c31e145fa4d432712669a083d2ab5d2
+  current_version_id: git_sha1:d4b927007c31e145fa4d432712669a083d2ab5d2
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

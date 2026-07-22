@@ -14,7 +14,7 @@ curation:
 display_name: cloud-solution-architect
 identity:
   aliases: []
-  current_version_id: sha256:7db4c335fff4c73300a5b17b8d847acc919e72b0
+  current_version_id: git_sha1:7db4c335fff4c73300a5b17b8d847acc919e72b0
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

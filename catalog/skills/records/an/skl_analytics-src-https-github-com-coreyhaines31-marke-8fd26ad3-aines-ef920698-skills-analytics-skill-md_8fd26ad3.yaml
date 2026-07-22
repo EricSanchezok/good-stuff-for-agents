@@ -14,7 +14,7 @@ curation:
 display_name: analytics
 identity:
   aliases: []
-  current_version_id: sha256:da39c1dc1586bc6cb06758e72426198493d00797
+  current_version_id: git_sha1:da39c1dc1586bc6cb06758e72426198493d00797
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

@@ -14,7 +14,7 @@ curation:
 display_name: pymoo
 identity:
   aliases: []
-  current_version_id: sha256:9ad34b961912de067265280fa8789ed5acb72c81
+  current_version_id: git_sha1:9ad34b961912de067265280fa8789ed5acb72c81
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

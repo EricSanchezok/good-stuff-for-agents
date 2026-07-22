@@ -14,7 +14,7 @@ curation:
 display_name: icp-research
 identity:
   aliases: []
-  current_version_id: sha256:e1cb07209aef43162382fd9a21305afe0c6b0b46
+  current_version_id: git_sha1:e1cb07209aef43162382fd9a21305afe0c6b0b46
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

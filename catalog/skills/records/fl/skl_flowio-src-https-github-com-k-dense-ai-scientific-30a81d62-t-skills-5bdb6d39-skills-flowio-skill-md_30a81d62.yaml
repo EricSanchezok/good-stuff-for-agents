@@ -14,7 +14,7 @@ curation:
 display_name: flowio
 identity:
   aliases: []
-  current_version_id: sha256:30d1a3fd7e20906b1902d6a61b0b2b225680a279
+  current_version_id: git_sha1:30d1a3fd7e20906b1902d6a61b0b2b225680a279
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

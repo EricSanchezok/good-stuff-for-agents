@@ -14,7 +14,7 @@ curation:
 display_name: measure-instrumentation-spec
 identity:
   aliases: []
-  current_version_id: sha256:b4355bb9097a73c5536bbf589386301a2695c58a
+  current_version_id: git_sha1:b4355bb9097a73c5536bbf589386301a2695c58a
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

@@ -14,7 +14,7 @@ curation:
 display_name: azure-mgmt-botservice-dotnet
 identity:
   aliases: []
-  current_version_id: sha256:8549e745271e52eb7e03a2d71a124899f06d2999
+  current_version_id: git_sha1:8549e745271e52eb7e03a2d71a124899f06d2999
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

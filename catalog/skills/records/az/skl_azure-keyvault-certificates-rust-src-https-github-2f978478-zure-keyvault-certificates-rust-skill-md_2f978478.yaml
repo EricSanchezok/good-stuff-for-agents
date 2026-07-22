@@ -14,7 +14,7 @@ curation:
 display_name: azure-keyvault-certificates-rust
 identity:
   aliases: []
-  current_version_id: sha256:04363cf5ad7d2c133ccb0d349db94fe6776118ac
+  current_version_id: git_sha1:04363cf5ad7d2c133ccb0d349db94fe6776118ac
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

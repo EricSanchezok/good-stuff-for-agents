@@ -14,7 +14,7 @@ curation:
 display_name: define-prioritization-framework
 identity:
   aliases: []
-  current_version_id: sha256:05ffaeecdf09241d4ef0bb718b4f24365888e1ba
+  current_version_id: git_sha1:05ffaeecdf09241d4ef0bb718b4f24365888e1ba
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

@@ -14,7 +14,7 @@ curation:
 display_name: consciousness-council
 identity:
   aliases: []
-  current_version_id: sha256:3b02c77e6023c402f20889468c1af02d943ddd70
+  current_version_id: git_sha1:3b02c77e6023c402f20889468c1af02d943ddd70
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

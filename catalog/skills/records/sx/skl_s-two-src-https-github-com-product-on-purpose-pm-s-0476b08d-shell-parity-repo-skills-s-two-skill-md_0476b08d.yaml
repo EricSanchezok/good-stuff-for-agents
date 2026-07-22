@@ -14,7 +14,7 @@ curation:
 display_name: s-two
 identity:
   aliases: []
-  current_version_id: sha256:88947cb439c72a4a8b9037580402d1462af271e9
+  current_version_id: git_sha1:88947cb439c72a4a8b9037580402d1462af271e9
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

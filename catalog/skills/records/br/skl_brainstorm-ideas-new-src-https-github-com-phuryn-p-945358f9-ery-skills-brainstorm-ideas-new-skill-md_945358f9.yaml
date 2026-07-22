@@ -14,7 +14,7 @@ curation:
 display_name: brainstorm-ideas-new
 identity:
   aliases: []
-  current_version_id: sha256:449ef41b53a1218261fb192053c56b233a28e1db
+  current_version_id: git_sha1:449ef41b53a1218261fb192053c56b233a28e1db
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

@@ -14,7 +14,7 @@ curation:
 display_name: positioning-ideas
 identity:
   aliases: []
-  current_version_id: sha256:d3f225a0c8b1f5a99cb5ba2b93f7804ab810127d
+  current_version_id: git_sha1:d3f225a0c8b1f5a99cb5ba2b93f7804ab810127d
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

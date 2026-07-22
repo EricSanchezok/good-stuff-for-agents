@@ -14,7 +14,7 @@ curation:
 display_name: arbor
 identity:
   aliases: []
-  current_version_id: sha256:a8bfcfcf816a3b6d210b4395ee815411fbe766ef
+  current_version_id: git_sha1:a8bfcfcf816a3b6d210b4395ee815411fbe766ef
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

@@ -14,7 +14,7 @@ curation:
 display_name: tool-foundation-sprint-brief
 identity:
   aliases: []
-  current_version_id: sha256:67b26bd12832e0d2c7ea520e62de44f7adb6a3ea
+  current_version_id: git_sha1:67b26bd12832e0d2c7ea520e62de44f7adb6a3ea
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

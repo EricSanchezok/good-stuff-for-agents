@@ -14,7 +14,7 @@ curation:
 display_name: scikit-bio
 identity:
   aliases: []
-  current_version_id: sha256:9a9239f4008b66319379f5b3a085b329974848f9
+  current_version_id: git_sha1:9a9239f4008b66319379f5b3a085b329974848f9
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

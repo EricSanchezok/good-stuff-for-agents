@@ -14,7 +14,7 @@ curation:
 display_name: sentiment-analysis
 identity:
   aliases: []
-  current_version_id: sha256:9368b74ce9d15cb865a704dab3d8d22bca65483d
+  current_version_id: git_sha1:9368b74ce9d15cb865a704dab3d8d22bca65483d
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

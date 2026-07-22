@@ -14,7 +14,7 @@ curation:
 display_name: liteparse
 identity:
   aliases: []
-  current_version_id: sha256:0d0b659e8546de93e2be3f7d52635ac1994ef7ea
+  current_version_id: git_sha1:0d0b659e8546de93e2be3f7d52635ac1994ef7ea
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

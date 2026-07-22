@@ -14,7 +14,7 @@ curation:
 display_name: analyze-feature-requests
 identity:
   aliases: []
-  current_version_id: sha256:755b5cae934fb0fb8c334fdef10bbb358ed1492d
+  current_version_id: git_sha1:755b5cae934fb0fb8c334fdef10bbb358ed1492d
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

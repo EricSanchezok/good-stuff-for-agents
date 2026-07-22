@@ -14,7 +14,7 @@ curation:
 display_name: scan-code-accessibility-figma
 identity:
   aliases: []
-  current_version_id: sha256:2d667c494f2327888850c8e8eda65e33ae26f97e
+  current_version_id: git_sha1:2d667c494f2327888850c8e8eda65e33ae26f97e
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

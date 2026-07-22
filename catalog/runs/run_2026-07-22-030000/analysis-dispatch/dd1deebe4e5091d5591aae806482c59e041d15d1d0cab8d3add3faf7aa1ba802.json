@@ -1,0 +1,16 @@
+{
+  "binding": {
+    "canonical_skill_id": "skl_astropy-src-https-github-com-k-dense-ai-scientific-1d293705-skills-5bdb6d39-skills-astropy-skill-md_1d293705",
+    "current_version_id": "git_sha1:5dceba30fd260d0dfff683d96d517658b6ef3f15",
+    "expected_output_path": "catalog/analyses/as/skl_astropy-src-https-github-com-k-dense-ai-scientific-1d293705-skills-5bdb6d39-skills-astropy-skill-md_1d293705.md",
+    "git_blob_oid": "git_sha1:5dceba30fd260d0dfff683d96d517658b6ef3f15",
+    "pinned_commit": "831d49eb77eed3c792be2970921b46764012ef00",
+    "raw_url": "https://raw.githubusercontent.com/K-Dense-AI/scientific-agent-skills/831d49eb77eed3c792be2970921b46764012ef00/skills/astropy/SKILL.md",
+    "remote_path": "skills/astropy/SKILL.md",
+    "source_id": "src_https-github-com-k-dense-ai-scientific-agent-skills-k-dense-scientific-agent-skills_5bdb6d39"
+  },
+  "dispatch_digest": "sha256:dd1deebe4e5091d5591aae806482c59e041d15d1d0cab8d3add3faf7aa1ba802",
+  "kind": "skill-analysis-dispatch",
+  "run_id": "run_2026-07-22-030000",
+  "schema_version": 2
+}

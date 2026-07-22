@@ -14,7 +14,7 @@ curation:
 display_name: finetuning
 identity:
   aliases: []
-  current_version_id: sha256:68ad2dc82e4e38b5bdc07170ae1a2aa477b0a277
+  current_version_id: git_sha1:68ad2dc82e4e38b5bdc07170ae1a2aa477b0a277
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

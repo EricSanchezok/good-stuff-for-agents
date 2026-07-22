@@ -14,7 +14,7 @@ curation:
 display_name: check-design-parity-figma
 identity:
   aliases: []
-  current_version_id: sha256:8756c3fffbea687c79a33e590fe73d1ebf2c059f
+  current_version_id: git_sha1:8756c3fffbea687c79a33e590fe73d1ebf2c059f
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

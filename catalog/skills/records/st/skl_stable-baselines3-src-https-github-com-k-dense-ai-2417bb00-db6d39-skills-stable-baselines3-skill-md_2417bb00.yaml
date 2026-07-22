@@ -14,7 +14,7 @@ curation:
 display_name: stable-baselines3
 identity:
   aliases: []
-  current_version_id: sha256:21656297e8bb02b5ce3c8b6508d41582da55eddc
+  current_version_id: git_sha1:21656297e8bb02b5ce3c8b6508d41582da55eddc
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

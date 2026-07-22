@@ -14,7 +14,7 @@ curation:
 display_name: azure-resource-manager-sql-dotnet
 identity:
   aliases: []
-  current_version_id: sha256:6eff090401b0b48fb47ecddbdf36554da8fb8ddf
+  current_version_id: git_sha1:6eff090401b0b48fb47ecddbdf36554da8fb8ddf
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

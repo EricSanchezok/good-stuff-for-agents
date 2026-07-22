@@ -14,7 +14,7 @@ curation:
 display_name: wasted-spend-finder
 identity:
   aliases: []
-  current_version_id: sha256:9e8af0ec79ce9e3ae45858d6a388cfbbfc1be12d
+  current_version_id: git_sha1:9e8af0ec79ce9e3ae45858d6a388cfbbfc1be12d
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

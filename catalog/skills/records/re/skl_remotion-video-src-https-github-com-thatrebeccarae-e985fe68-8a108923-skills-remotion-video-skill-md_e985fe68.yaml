@@ -14,7 +14,7 @@ curation:
 display_name: remotion-video
 identity:
   aliases: []
-  current_version_id: sha256:6609f39ff6237c32d356a0a40a2a2e5215152ebb
+  current_version_id: git_sha1:6609f39ff6237c32d356a0a40a2a2e5215152ebb
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

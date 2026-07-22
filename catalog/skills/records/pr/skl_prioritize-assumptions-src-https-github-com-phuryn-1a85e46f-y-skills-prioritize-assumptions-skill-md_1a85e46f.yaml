@@ -14,7 +14,7 @@ curation:
 display_name: prioritize-assumptions
 identity:
   aliases: []
-  current_version_id: sha256:bf7ed8a8ba9522cba14a7d5d0080fcfb69282e6b
+  current_version_id: git_sha1:bf7ed8a8ba9522cba14a7d5d0080fcfb69282e6b
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

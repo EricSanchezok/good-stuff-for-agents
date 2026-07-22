@@ -14,7 +14,7 @@ curation:
 display_name: tool-design-sprint-decide-and-storyboard
 identity:
   aliases: []
-  current_version_id: sha256:934729adc602dbb56ca959b4eb20dce960352d53
+  current_version_id: git_sha1:934729adc602dbb56ca959b4eb20dce960352d53
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

@@ -14,7 +14,7 @@ curation:
 display_name: open-notebook
 identity:
   aliases: []
-  current_version_id: sha256:36cfa97ef9f1bc60e45b04855a1c1af9b99461a5
+  current_version_id: git_sha1:36cfa97ef9f1bc60e45b04855a1c1af9b99461a5
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

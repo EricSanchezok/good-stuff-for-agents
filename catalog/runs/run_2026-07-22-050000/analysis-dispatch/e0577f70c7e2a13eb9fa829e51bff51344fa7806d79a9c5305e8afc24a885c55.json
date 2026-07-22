@@ -1,0 +1,16 @@
+{
+  "binding": {
+    "canonical_skill_id": "skl_azure-data-tables-java-src-https-github-com-micros-e521fa43-a-skills-azure-data-tables-java-skill-md_e521fa43",
+    "current_version_id": "git_sha1:0fbad66ba89446a1481d848c0aa2ed8df0efa897",
+    "expected_output_path": "catalog/analyses/az/skl_azure-data-tables-java-src-https-github-com-micros-e521fa43-a-skills-azure-data-tables-java-skill-md_e521fa43.md",
+    "git_blob_oid": "git_sha1:0fbad66ba89446a1481d848c0aa2ed8df0efa897",
+    "pinned_commit": "cc93536d8b809e177a7d1008b276ce41a9456a9c",
+    "raw_url": "https://raw.githubusercontent.com/microsoft/skills/cc93536d8b809e177a7d1008b276ce41a9456a9c/.github/plugins/azure-sdk-java/skills/azure-data-tables-java/SKILL.md",
+    "remote_path": ".github/plugins/azure-sdk-java/skills/azure-data-tables-java/SKILL.md",
+    "source_id": "src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e"
+  },
+  "dispatch_digest": "sha256:e0577f70c7e2a13eb9fa829e51bff51344fa7806d79a9c5305e8afc24a885c55",
+  "kind": "skill-analysis-dispatch",
+  "run_id": "run_2026-07-22-050000",
+  "schema_version": 2
+}

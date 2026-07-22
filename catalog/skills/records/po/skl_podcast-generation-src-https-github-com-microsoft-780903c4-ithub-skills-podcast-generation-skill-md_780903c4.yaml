@@ -14,7 +14,7 @@ curation:
 display_name: podcast-generation
 identity:
   aliases: []
-  current_version_id: sha256:7f2e72053b725adf289d5438138ddcee55e47012
+  current_version_id: git_sha1:7f2e72053b725adf289d5438138ddcee55e47012
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

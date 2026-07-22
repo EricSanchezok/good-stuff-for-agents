@@ -14,7 +14,7 @@ curation:
 display_name: develop-spike-summary
 identity:
   aliases: []
-  current_version_id: sha256:84739065bcbd090a94d389af9df161636d25a88e
+  current_version_id: git_sha1:84739065bcbd090a94d389af9df161636d25a88e
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

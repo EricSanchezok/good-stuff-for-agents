@@ -14,7 +14,7 @@ curation:
 display_name: azure-identity-rust
 identity:
   aliases: []
-  current_version_id: sha256:317dc60da7d51ca0d479fb7720fc81b38630d05a
+  current_version_id: git_sha1:317dc60da7d51ca0d479fb7720fc81b38630d05a
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

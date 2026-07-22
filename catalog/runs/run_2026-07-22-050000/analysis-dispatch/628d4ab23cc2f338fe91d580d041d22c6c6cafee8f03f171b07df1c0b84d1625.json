@@ -1,0 +1,16 @@
+{
+  "binding": {
+    "canonical_skill_id": "skl_azure-enterprise-infra-planner-src-https-github-co-734ededd-azure-enterprise-infra-planner-skill-md_734ededd",
+    "current_version_id": "git_sha1:a261c21ed056be1958902cf23f6ae4879001b404",
+    "expected_output_path": "catalog/analyses/az/skl_azure-enterprise-infra-planner-src-https-github-co-734ededd-azure-enterprise-infra-planner-skill-md_734ededd.md",
+    "git_blob_oid": "git_sha1:a261c21ed056be1958902cf23f6ae4879001b404",
+    "pinned_commit": "cc93536d8b809e177a7d1008b276ce41a9456a9c",
+    "raw_url": "https://raw.githubusercontent.com/microsoft/skills/cc93536d8b809e177a7d1008b276ce41a9456a9c/.github/plugins/azure-skills/skills/azure-enterprise-infra-planner/SKILL.md",
+    "remote_path": ".github/plugins/azure-skills/skills/azure-enterprise-infra-planner/SKILL.md",
+    "source_id": "src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e"
+  },
+  "dispatch_digest": "sha256:628d4ab23cc2f338fe91d580d041d22c6c6cafee8f03f171b07df1c0b84d1625",
+  "kind": "skill-analysis-dispatch",
+  "run_id": "run_2026-07-22-050000",
+  "schema_version": 2
+}

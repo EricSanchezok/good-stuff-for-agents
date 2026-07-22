@@ -1,0 +1,16 @@
+{
+  "binding": {
+    "canonical_skill_id": "skl_azure-ai-document-intelligence-dotnet-src-https-gi-0fc9f36d-ai-document-intelligence-dotnet-skill-md_0fc9f36d",
+    "current_version_id": "git_sha1:249ebfabf8eef0e94a39079d3968434a56eab4ef",
+    "expected_output_path": "catalog/analyses/az/skl_azure-ai-document-intelligence-dotnet-src-https-gi-0fc9f36d-ai-document-intelligence-dotnet-skill-md_0fc9f36d.md",
+    "git_blob_oid": "git_sha1:249ebfabf8eef0e94a39079d3968434a56eab4ef",
+    "pinned_commit": "cc93536d8b809e177a7d1008b276ce41a9456a9c",
+    "raw_url": "https://raw.githubusercontent.com/microsoft/skills/cc93536d8b809e177a7d1008b276ce41a9456a9c/.github/plugins/azure-sdk-dotnet/skills/azure-ai-document-intelligence-dotnet/SKILL.md",
+    "remote_path": ".github/plugins/azure-sdk-dotnet/skills/azure-ai-document-intelligence-dotnet/SKILL.md",
+    "source_id": "src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e"
+  },
+  "dispatch_digest": "sha256:e5c2502047ca435e76d013ef2ca0043af3a78e50395a691457f4d69dd705b8cf",
+  "kind": "skill-analysis-dispatch",
+  "run_id": "run_2026-07-22-050000",
+  "schema_version": 2
+}

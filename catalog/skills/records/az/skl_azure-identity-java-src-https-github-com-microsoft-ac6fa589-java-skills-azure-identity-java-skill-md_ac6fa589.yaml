@@ -14,7 +14,7 @@ curation:
 display_name: azure-identity-java
 identity:
   aliases: []
-  current_version_id: sha256:ffe26b990c0cfbbae77a19345024c45d2ed0c608
+  current_version_id: git_sha1:ffe26b990c0cfbbae77a19345024c45d2ed0c608
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

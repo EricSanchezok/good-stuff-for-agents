@@ -14,7 +14,7 @@ curation:
 display_name: measure-survey-analysis
 identity:
   aliases: []
-  current_version_id: sha256:3c651fee59d91d886134e6db836d60f178cb83fd
+  current_version_id: git_sha1:3c651fee59d91d886134e6db836d60f178cb83fd
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

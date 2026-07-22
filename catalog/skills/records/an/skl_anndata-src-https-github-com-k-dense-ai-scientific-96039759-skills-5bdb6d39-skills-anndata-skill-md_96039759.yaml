@@ -14,7 +14,7 @@ curation:
 display_name: anndata
 identity:
   aliases: []
-  current_version_id: sha256:4ea543d24480510ea8d4c444dbc418d426c12fee
+  current_version_id: git_sha1:4ea543d24480510ea8d4c444dbc418d426c12fee
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

@@ -14,7 +14,7 @@ curation:
 display_name: onboarding
 identity:
   aliases: []
-  current_version_id: sha256:f8ba58a3527ec6b4d01232339f5fdee4683a9a67
+  current_version_id: git_sha1:f8ba58a3527ec6b4d01232339f5fdee4683a9a67
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

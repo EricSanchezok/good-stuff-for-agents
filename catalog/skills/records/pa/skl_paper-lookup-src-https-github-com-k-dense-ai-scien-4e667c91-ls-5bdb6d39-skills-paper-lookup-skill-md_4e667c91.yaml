@@ -14,7 +14,7 @@ curation:
 display_name: paper-lookup
 identity:
   aliases: []
-  current_version_id: sha256:e633abd4449fc40406b3df2c1923c6eb058bbead
+  current_version_id: git_sha1:e633abd4449fc40406b3df2c1923c6eb058bbead
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

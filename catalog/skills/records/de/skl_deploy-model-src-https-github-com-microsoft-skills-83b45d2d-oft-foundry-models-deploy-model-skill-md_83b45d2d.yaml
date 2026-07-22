@@ -14,7 +14,7 @@ curation:
 display_name: deploy-model
 identity:
   aliases: []
-  current_version_id: sha256:322b342762abbcd86eb90a92b2c4cb7dccd6aac6
+  current_version_id: git_sha1:322b342762abbcd86eb90a92b2c4cb7dccd6aac6
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

@@ -14,7 +14,7 @@ curation:
 display_name: glycoengineering
 identity:
   aliases: []
-  current_version_id: sha256:ccd2e66312f7b8b037498e99ebad60cc103e93f2
+  current_version_id: git_sha1:ccd2e66312f7b8b037498e99ebad60cc103e93f2
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

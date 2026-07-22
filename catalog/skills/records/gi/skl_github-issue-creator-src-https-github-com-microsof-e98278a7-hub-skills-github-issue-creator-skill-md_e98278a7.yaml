@@ -14,7 +14,7 @@ curation:
 display_name: github-issue-creator
 identity:
   aliases: []
-  current_version_id: sha256:4351dcd35e719b49c81fa3430708f103db9cdf82
+  current_version_id: git_sha1:4351dcd35e719b49c81fa3430708f103db9cdf82
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

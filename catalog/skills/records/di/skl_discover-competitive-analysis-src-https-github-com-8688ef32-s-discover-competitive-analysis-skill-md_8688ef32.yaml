@@ -14,7 +14,7 @@ curation:
 display_name: discover-competitive-analysis
 identity:
   aliases: []
-  current_version_id: sha256:b89c965f2ccd55d7528bbe3bfd4312268c0acd38
+  current_version_id: git_sha1:b89c965f2ccd55d7528bbe3bfd4312268c0acd38
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

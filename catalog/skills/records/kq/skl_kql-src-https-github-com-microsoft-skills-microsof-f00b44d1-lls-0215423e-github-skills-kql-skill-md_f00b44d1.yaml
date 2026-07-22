@@ -14,7 +14,7 @@ curation:
 display_name: kql
 identity:
   aliases: []
-  current_version_id: sha256:8be2bdeebd4cdfa0937d3457e70128042cd34904
+  current_version_id: git_sha1:8be2bdeebd4cdfa0937d3457e70128042cd34904
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

@@ -14,7 +14,7 @@ curation:
 display_name: foundation-prioritized-action-plan
 identity:
   aliases: []
-  current_version_id: sha256:a3371cf6231694e617f0fe55f7e36dd534b305b3
+  current_version_id: git_sha1:a3371cf6231694e617f0fe55f7e36dd534b305b3
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

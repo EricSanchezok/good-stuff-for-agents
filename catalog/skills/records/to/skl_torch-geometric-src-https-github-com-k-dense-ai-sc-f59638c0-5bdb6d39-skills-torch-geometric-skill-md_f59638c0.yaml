@@ -14,7 +14,7 @@ curation:
 display_name: torch-geometric
 identity:
   aliases: []
-  current_version_id: sha256:e53c8db718c2b0a4d2c40d5282df2cc7375ad5a6
+  current_version_id: git_sha1:e53c8db718c2b0a4d2c40d5282df2cc7375ad5a6
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

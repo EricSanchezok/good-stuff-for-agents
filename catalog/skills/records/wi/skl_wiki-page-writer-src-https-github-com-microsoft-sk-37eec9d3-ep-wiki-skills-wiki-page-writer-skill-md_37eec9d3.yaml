@@ -14,7 +14,7 @@ curation:
 display_name: wiki-page-writer
 identity:
   aliases: []
-  current_version_id: sha256:bb203da412a56c38cd457612bc0f46b91f046216
+  current_version_id: git_sha1:bb203da412a56c38cd457612bc0f46b91f046216
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

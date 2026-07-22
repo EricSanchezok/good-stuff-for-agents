@@ -2,7 +2,7 @@
   "schema_version": 1,
   "source_id": "src_https-github-com-thatrebeccarae-claude-marketing-claude-marketing-rebecca-rae-barton_8a108923",
   "upstream_ref": "a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba",
-  "checked_at": "2026-07-13T21:03:30.731Z",
+  "checked_at": "2026-07-22T02:48:57.296Z",
   "url": "https://github.com/thatrebeccarae/claude-marketing",
   "artifacts": [
     {
@@ -11,12 +11,22 @@
       "declared_name": "ab-testing-framework",
       "format": "SKILL.md",
       "parse_confidence": "high",
-      "content_digest": "sha256:6442aed5e6a66e8756643453fc85ba648beaf3cf",
+      "content_digest": "git_sha1:6442aed5e6a66e8756643453fc85ba648beaf3cf",
       "upstream_ref": "a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba",
+      "git_blob_oid": "git_sha1:6442aed5e6a66e8756643453fc85ba648beaf3cf",
       "url": "https://github.com/thatrebeccarae/claude-marketing/blob/a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba/skills/ab-testing-framework/SKILL.md",
       "raw_url": "https://raw.githubusercontent.com/thatrebeccarae/claude-marketing/a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba/skills/ab-testing-framework/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-thatrebeccarae-claude-marketing-claude-marketing-rebecca-rae-barton_8a108923",
+        "canonical_skill_id": null,
+        "remote_path": "skills/ab-testing-framework/SKILL.md",
+        "pinned_commit": "a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba",
+        "git_blob_oid": "git_sha1:6442aed5e6a66e8756643453fc85ba648beaf3cf",
+        "raw_url": "https://raw.githubusercontent.com/thatrebeccarae/claude-marketing/a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba/skills/ab-testing-framework/SKILL.md",
+        "expected_output_path": null
+      },
       "raw_metadata": {
-        "github_blob_sha": "6442aed5e6a66e8756643453fc85ba648beaf3cf",
+        "github_blob_oid": "git_sha1:6442aed5e6a66e8756643453fc85ba648beaf3cf",
         "size": 5409
       }
     },
@@ -26,12 +36,22 @@
       "declared_name": "account-structure-review",
       "format": "SKILL.md",
       "parse_confidence": "high",
-      "content_digest": "sha256:c416c6afcedda8716807f4a24c97ceadbe756e5f",
+      "content_digest": "git_sha1:c416c6afcedda8716807f4a24c97ceadbe756e5f",
       "upstream_ref": "a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba",
+      "git_blob_oid": "git_sha1:c416c6afcedda8716807f4a24c97ceadbe756e5f",
       "url": "https://github.com/thatrebeccarae/claude-marketing/blob/a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba/skills/account-structure-review/SKILL.md",
       "raw_url": "https://raw.githubusercontent.com/thatrebeccarae/claude-marketing/a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba/skills/account-structure-review/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-thatrebeccarae-claude-marketing-claude-marketing-rebecca-rae-barton_8a108923",
+        "canonical_skill_id": null,
+        "remote_path": "skills/account-structure-review/SKILL.md",
+        "pinned_commit": "a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba",
+        "git_blob_oid": "git_sha1:c416c6afcedda8716807f4a24c97ceadbe756e5f",
+        "raw_url": "https://raw.githubusercontent.com/thatrebeccarae/claude-marketing/a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba/skills/account-structure-review/SKILL.md",
+        "expected_output_path": null
+      },
       "raw_metadata": {
-        "github_blob_sha": "c416c6afcedda8716807f4a24c97ceadbe756e5f",
+        "github_blob_oid": "git_sha1:c416c6afcedda8716807f4a24c97ceadbe756e5f",
         "size": 23980
       }
     },
@@ -41,12 +61,22 @@
       "declared_name": "aeo-geo-optimizer",
       "format": "SKILL.md",
       "parse_confidence": "high",
-      "content_digest": "sha256:2b39f8ac3c0f018f711fccd74a02b9537cff5165",
+      "content_digest": "git_sha1:2b39f8ac3c0f018f711fccd74a02b9537cff5165",
       "upstream_ref": "a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba",
+      "git_blob_oid": "git_sha1:2b39f8ac3c0f018f711fccd74a02b9537cff5165",
       "url": "https://github.com/thatrebeccarae/claude-marketing/blob/a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba/skills/aeo-geo-optimizer/SKILL.md",
       "raw_url": "https://raw.githubusercontent.com/thatrebeccarae/claude-marketing/a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba/skills/aeo-geo-optimizer/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-thatrebeccarae-claude-marketing-claude-marketing-rebecca-rae-barton_8a108923",
+        "canonical_skill_id": null,
+        "remote_path": "skills/aeo-geo-optimizer/SKILL.md",
+        "pinned_commit": "a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba",
+        "git_blob_oid": "git_sha1:2b39f8ac3c0f018f711fccd74a02b9537cff5165",
+        "raw_url": "https://raw.githubusercontent.com/thatrebeccarae/claude-marketing/a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba/skills/aeo-geo-optimizer/SKILL.md",
+        "expected_output_path": null
+      },
       "raw_metadata": {
-        "github_blob_sha": "2b39f8ac3c0f018f711fccd74a02b9537cff5165",
+        "github_blob_oid": "git_sha1:2b39f8ac3c0f018f711fccd74a02b9537cff5165",
         "size": 9858
       }
     },
@@ -56,12 +86,22 @@
       "declared_name": "brand-dna",
       "format": "SKILL.md",
       "parse_confidence": "high",
-      "content_digest": "sha256:f1daef99f82f6883d5d05f3a2e7f26212d6e7d85",
+      "content_digest": "git_sha1:f1daef99f82f6883d5d05f3a2e7f26212d6e7d85",
       "upstream_ref": "a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba",
+      "git_blob_oid": "git_sha1:f1daef99f82f6883d5d05f3a2e7f26212d6e7d85",
       "url": "https://github.com/thatrebeccarae/claude-marketing/blob/a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba/skills/brand-dna/SKILL.md",
       "raw_url": "https://raw.githubusercontent.com/thatrebeccarae/claude-marketing/a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba/skills/brand-dna/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-thatrebeccarae-claude-marketing-claude-marketing-rebecca-rae-barton_8a108923",
+        "canonical_skill_id": null,
+        "remote_path": "skills/brand-dna/SKILL.md",
+        "pinned_commit": "a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba",
+        "git_blob_oid": "git_sha1:f1daef99f82f6883d5d05f3a2e7f26212d6e7d85",
+        "raw_url": "https://raw.githubusercontent.com/thatrebeccarae/claude-marketing/a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba/skills/brand-dna/SKILL.md",
+        "expected_output_path": null
+      },
       "raw_metadata": {
-        "github_blob_sha": "f1daef99f82f6883d5d05f3a2e7f26212d6e7d85",
+        "github_blob_oid": "git_sha1:f1daef99f82f6883d5d05f3a2e7f26212d6e7d85",
         "size": 7091
       }
     },
@@ -71,12 +111,22 @@
       "declared_name": "brand-voice-guidelines",
       "format": "SKILL.md",
       "parse_confidence": "high",
-      "content_digest": "sha256:b59878a6f63b48e37220b1338b3b2cd83de99305",
+      "content_digest": "git_sha1:b59878a6f63b48e37220b1338b3b2cd83de99305",
       "upstream_ref": "a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba",
+      "git_blob_oid": "git_sha1:b59878a6f63b48e37220b1338b3b2cd83de99305",
       "url": "https://github.com/thatrebeccarae/claude-marketing/blob/a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba/skills/brand-voice-guidelines/SKILL.md",
       "raw_url": "https://raw.githubusercontent.com/thatrebeccarae/claude-marketing/a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba/skills/brand-voice-guidelines/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-thatrebeccarae-claude-marketing-claude-marketing-rebecca-rae-barton_8a108923",
+        "canonical_skill_id": null,
+        "remote_path": "skills/brand-voice-guidelines/SKILL.md",
+        "pinned_commit": "a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba",
+        "git_blob_oid": "git_sha1:b59878a6f63b48e37220b1338b3b2cd83de99305",
+        "raw_url": "https://raw.githubusercontent.com/thatrebeccarae/claude-marketing/a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba/skills/brand-voice-guidelines/SKILL.md",
+        "expected_output_path": null
+      },
       "raw_metadata": {
-        "github_blob_sha": "b59878a6f63b48e37220b1338b3b2cd83de99305",
+        "github_blob_oid": "git_sha1:b59878a6f63b48e37220b1338b3b2cd83de99305",
         "size": 5972
       }
     },
@@ -86,12 +136,22 @@
       "declared_name": "braze",
       "format": "SKILL.md",
       "parse_confidence": "high",
-      "content_digest": "sha256:6cbe5dfcdb38a8a966120f1510287794c6c02fdb",
+      "content_digest": "git_sha1:6cbe5dfcdb38a8a966120f1510287794c6c02fdb",
       "upstream_ref": "a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba",
+      "git_blob_oid": "git_sha1:6cbe5dfcdb38a8a966120f1510287794c6c02fdb",
       "url": "https://github.com/thatrebeccarae/claude-marketing/blob/a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba/skills/braze/SKILL.md",
       "raw_url": "https://raw.githubusercontent.com/thatrebeccarae/claude-marketing/a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba/skills/braze/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-thatrebeccarae-claude-marketing-claude-marketing-rebecca-rae-barton_8a108923",
+        "canonical_skill_id": null,
+        "remote_path": "skills/braze/SKILL.md",
+        "pinned_commit": "a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba",
+        "git_blob_oid": "git_sha1:6cbe5dfcdb38a8a966120f1510287794c6c02fdb",
+        "raw_url": "https://raw.githubusercontent.com/thatrebeccarae/claude-marketing/a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba/skills/braze/SKILL.md",
+        "expected_output_path": null
+      },
       "raw_metadata": {
-        "github_blob_sha": "6cbe5dfcdb38a8a966120f1510287794c6c02fdb",
+        "github_blob_oid": "git_sha1:6cbe5dfcdb38a8a966120f1510287794c6c02fdb",
         "size": 5814
       }
     },
@@ -101,12 +161,22 @@
       "declared_name": "cold-email-outreach",
       "format": "SKILL.md",
       "parse_confidence": "high",
-      "content_digest": "sha256:b01574734da9c18104ace6829b32e67baf5f9c62",
+      "content_digest": "git_sha1:b01574734da9c18104ace6829b32e67baf5f9c62",
       "upstream_ref": "a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba",
+      "git_blob_oid": "git_sha1:b01574734da9c18104ace6829b32e67baf5f9c62",
       "url": "https://github.com/thatrebeccarae/claude-marketing/blob/a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba/skills/cold-email-outreach/SKILL.md",
       "raw_url": "https://raw.githubusercontent.com/thatrebeccarae/claude-marketing/a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba/skills/cold-email-outreach/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-thatrebeccarae-claude-marketing-claude-marketing-rebecca-rae-barton_8a108923",
+        "canonical_skill_id": null,
+        "remote_path": "skills/cold-email-outreach/SKILL.md",
+        "pinned_commit": "a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba",
+        "git_blob_oid": "git_sha1:b01574734da9c18104ace6829b32e67baf5f9c62",
+        "raw_url": "https://raw.githubusercontent.com/thatrebeccarae/claude-marketing/a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba/skills/cold-email-outreach/SKILL.md",
+        "expected_output_path": null
+      },
       "raw_metadata": {
-        "github_blob_sha": "b01574734da9c18104ace6829b32e67baf5f9c62",
+        "github_blob_oid": "git_sha1:b01574734da9c18104ace6829b32e67baf5f9c62",
         "size": 5294
       }
     },
@@ -116,12 +186,22 @@
       "declared_name": "competitor-ads-analyst",
       "format": "SKILL.md",
       "parse_confidence": "high",
-      "content_digest": "sha256:1e46046df213020cbcd51b76f3e5090f35578a39",
+      "content_digest": "git_sha1:1e46046df213020cbcd51b76f3e5090f35578a39",
       "upstream_ref": "a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba",
+      "git_blob_oid": "git_sha1:1e46046df213020cbcd51b76f3e5090f35578a39",
       "url": "https://github.com/thatrebeccarae/claude-marketing/blob/a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba/skills/competitor-ads-analyst/SKILL.md",
       "raw_url": "https://raw.githubusercontent.com/thatrebeccarae/claude-marketing/a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba/skills/competitor-ads-analyst/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-thatrebeccarae-claude-marketing-claude-marketing-rebecca-rae-barton_8a108923",
+        "canonical_skill_id": null,
+        "remote_path": "skills/competitor-ads-analyst/SKILL.md",
+        "pinned_commit": "a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba",
+        "git_blob_oid": "git_sha1:1e46046df213020cbcd51b76f3e5090f35578a39",
+        "raw_url": "https://raw.githubusercontent.com/thatrebeccarae/claude-marketing/a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba/skills/competitor-ads-analyst/SKILL.md",
+        "expected_output_path": null
+      },
       "raw_metadata": {
-        "github_blob_sha": "1e46046df213020cbcd51b76f3e5090f35578a39",
+        "github_blob_oid": "git_sha1:1e46046df213020cbcd51b76f3e5090f35578a39",
         "size": 3824
       }
     },
@@ -131,12 +211,22 @@
       "declared_name": "content-creator",
       "format": "SKILL.md",
       "parse_confidence": "high",
-      "content_digest": "sha256:9a7b4ede7e1cdf64b2dbef015f1adc9ccc86a8ad",
+      "content_digest": "git_sha1:9a7b4ede7e1cdf64b2dbef015f1adc9ccc86a8ad",
       "upstream_ref": "a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba",
+      "git_blob_oid": "git_sha1:9a7b4ede7e1cdf64b2dbef015f1adc9ccc86a8ad",
       "url": "https://github.com/thatrebeccarae/claude-marketing/blob/a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba/skills/content-creator/SKILL.md",
       "raw_url": "https://raw.githubusercontent.com/thatrebeccarae/claude-marketing/a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba/skills/content-creator/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-thatrebeccarae-claude-marketing-claude-marketing-rebecca-rae-barton_8a108923",
+        "canonical_skill_id": null,
+        "remote_path": "skills/content-creator/SKILL.md",
+        "pinned_commit": "a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba",
+        "git_blob_oid": "git_sha1:9a7b4ede7e1cdf64b2dbef015f1adc9ccc86a8ad",
+        "raw_url": "https://raw.githubusercontent.com/thatrebeccarae/claude-marketing/a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba/skills/content-creator/SKILL.md",
+        "expected_output_path": null
+      },
       "raw_metadata": {
-        "github_blob_sha": "9a7b4ede7e1cdf64b2dbef015f1adc9ccc86a8ad",
+        "github_blob_oid": "git_sha1:9a7b4ede7e1cdf64b2dbef015f1adc9ccc86a8ad",
         "size": 4267
       }
     },
@@ -146,12 +236,22 @@
       "declared_name": "content-pipeline",
       "format": "SKILL.md",
       "parse_confidence": "high",
-      "content_digest": "sha256:82a55d5adab6587a0286215a471bd677d768b685",
+      "content_digest": "git_sha1:82a55d5adab6587a0286215a471bd677d768b685",
       "upstream_ref": "a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba",
+      "git_blob_oid": "git_sha1:82a55d5adab6587a0286215a471bd677d768b685",
       "url": "https://github.com/thatrebeccarae/claude-marketing/blob/a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba/skills/content-pipeline/SKILL.md",
       "raw_url": "https://raw.githubusercontent.com/thatrebeccarae/claude-marketing/a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba/skills/content-pipeline/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-thatrebeccarae-claude-marketing-claude-marketing-rebecca-rae-barton_8a108923",
+        "canonical_skill_id": null,
+        "remote_path": "skills/content-pipeline/SKILL.md",
+        "pinned_commit": "a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba",
+        "git_blob_oid": "git_sha1:82a55d5adab6587a0286215a471bd677d768b685",
+        "raw_url": "https://raw.githubusercontent.com/thatrebeccarae/claude-marketing/a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba/skills/content-pipeline/SKILL.md",
+        "expected_output_path": null
+      },
       "raw_metadata": {
-        "github_blob_sha": "82a55d5adab6587a0286215a471bd677d768b685",
+        "github_blob_oid": "git_sha1:82a55d5adab6587a0286215a471bd677d768b685",
         "size": 4475
       }
     },
@@ -161,12 +261,22 @@
       "declared_name": "content-workflow",
       "format": "SKILL.md",
       "parse_confidence": "high",
-      "content_digest": "sha256:5e860f211ec50ab1a0c88a243d2bd33765ec7d2d",
+      "content_digest": "git_sha1:5e860f211ec50ab1a0c88a243d2bd33765ec7d2d",
       "upstream_ref": "a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba",
+      "git_blob_oid": "git_sha1:5e860f211ec50ab1a0c88a243d2bd33765ec7d2d",
       "url": "https://github.com/thatrebeccarae/claude-marketing/blob/a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba/skills/content-workflow/SKILL.md",
       "raw_url": "https://raw.githubusercontent.com/thatrebeccarae/claude-marketing/a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba/skills/content-workflow/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-thatrebeccarae-claude-marketing-claude-marketing-rebecca-rae-barton_8a108923",
+        "canonical_skill_id": null,
+        "remote_path": "skills/content-workflow/SKILL.md",
+        "pinned_commit": "a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba",
+        "git_blob_oid": "git_sha1:5e860f211ec50ab1a0c88a243d2bd33765ec7d2d",
+        "raw_url": "https://raw.githubusercontent.com/thatrebeccarae/claude-marketing/a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba/skills/content-workflow/SKILL.md",
+        "expected_output_path": null
+      },
       "raw_metadata": {
-        "github_blob_sha": "5e860f211ec50ab1a0c88a243d2bd33765ec7d2d",
+        "github_blob_oid": "git_sha1:5e860f211ec50ab1a0c88a243d2bd33765ec7d2d",
         "size": 4079
       }
     },
@@ -176,12 +286,22 @@
       "declared_name": "copywriting-frameworks",
       "format": "SKILL.md",
       "parse_confidence": "high",
-      "content_digest": "sha256:abb1bdc03f04308887d9f4387a84e65f009fe9d1",
+      "content_digest": "git_sha1:abb1bdc03f04308887d9f4387a84e65f009fe9d1",
       "upstream_ref": "a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba",
+      "git_blob_oid": "git_sha1:abb1bdc03f04308887d9f4387a84e65f009fe9d1",
       "url": "https://github.com/thatrebeccarae/claude-marketing/blob/a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba/skills/copywriting-frameworks/SKILL.md",
       "raw_url": "https://raw.githubusercontent.com/thatrebeccarae/claude-marketing/a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba/skills/copywriting-frameworks/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-thatrebeccarae-claude-marketing-claude-marketing-rebecca-rae-barton_8a108923",
+        "canonical_skill_id": null,
+        "remote_path": "skills/copywriting-frameworks/SKILL.md",
+        "pinned_commit": "a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba",
+        "git_blob_oid": "git_sha1:abb1bdc03f04308887d9f4387a84e65f009fe9d1",
+        "raw_url": "https://raw.githubusercontent.com/thatrebeccarae/claude-marketing/a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba/skills/copywriting-frameworks/SKILL.md",
+        "expected_output_path": null
+      },
       "raw_metadata": {
-        "github_blob_sha": "abb1bdc03f04308887d9f4387a84e65f009fe9d1",
+        "github_blob_oid": "git_sha1:abb1bdc03f04308887d9f4387a84e65f009fe9d1",
         "size": 7414
       }
     },
@@ -191,12 +311,22 @@
       "declared_name": "cro-auditor",
       "format": "SKILL.md",
       "parse_confidence": "high",
-      "content_digest": "sha256:37c2718db9e18a5602cc06c3ffc6bd1efeeda017",
+      "content_digest": "git_sha1:37c2718db9e18a5602cc06c3ffc6bd1efeeda017",
       "upstream_ref": "a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba",
+      "git_blob_oid": "git_sha1:37c2718db9e18a5602cc06c3ffc6bd1efeeda017",
       "url": "https://github.com/thatrebeccarae/claude-marketing/blob/a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba/skills/cro-auditor/SKILL.md",
       "raw_url": "https://raw.githubusercontent.com/thatrebeccarae/claude-marketing/a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba/skills/cro-auditor/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-thatrebeccarae-claude-marketing-claude-marketing-rebecca-rae-barton_8a108923",
+        "canonical_skill_id": null,
+        "remote_path": "skills/cro-auditor/SKILL.md",
+        "pinned_commit": "a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba",
+        "git_blob_oid": "git_sha1:37c2718db9e18a5602cc06c3ffc6bd1efeeda017",
+        "raw_url": "https://raw.githubusercontent.com/thatrebeccarae/claude-marketing/a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba/skills/cro-auditor/SKILL.md",
+        "expected_output_path": null
+      },
       "raw_metadata": {
-        "github_blob_sha": "37c2718db9e18a5602cc06c3ffc6bd1efeeda017",
+        "github_blob_oid": "git_sha1:37c2718db9e18a5602cc06c3ffc6bd1efeeda017",
         "size": 7232
       }
     },
@@ -206,12 +336,22 @@
       "declared_name": "cross-platform-audit",
       "format": "SKILL.md",
       "parse_confidence": "high",
-      "content_digest": "sha256:a41f6b95fd6a075c16df998f53588bee227dd2a6",
+      "content_digest": "git_sha1:a41f6b95fd6a075c16df998f53588bee227dd2a6",
       "upstream_ref": "a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba",
+      "git_blob_oid": "git_sha1:a41f6b95fd6a075c16df998f53588bee227dd2a6",
       "url": "https://github.com/thatrebeccarae/claude-marketing/blob/a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba/skills/cross-platform-audit/SKILL.md",
       "raw_url": "https://raw.githubusercontent.com/thatrebeccarae/claude-marketing/a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba/skills/cross-platform-audit/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-thatrebeccarae-claude-marketing-claude-marketing-rebecca-rae-barton_8a108923",
+        "canonical_skill_id": null,
+        "remote_path": "skills/cross-platform-audit/SKILL.md",
+        "pinned_commit": "a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba",
+        "git_blob_oid": "git_sha1:a41f6b95fd6a075c16df998f53588bee227dd2a6",
+        "raw_url": "https://raw.githubusercontent.com/thatrebeccarae/claude-marketing/a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba/skills/cross-platform-audit/SKILL.md",
+        "expected_output_path": null
+      },
       "raw_metadata": {
-        "github_blob_sha": "a41f6b95fd6a075c16df998f53588bee227dd2a6",
+        "github_blob_oid": "git_sha1:a41f6b95fd6a075c16df998f53588bee227dd2a6",
         "size": 8395
       }
     },
@@ -221,12 +361,22 @@
       "declared_name": "customer-journey-mapping",
       "format": "SKILL.md",
       "parse_confidence": "high",
-      "content_digest": "sha256:2f3e4f7c5235735809eba12ac2cda335d7a7bc0e",
+      "content_digest": "git_sha1:2f3e4f7c5235735809eba12ac2cda335d7a7bc0e",
       "upstream_ref": "a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba",
+      "git_blob_oid": "git_sha1:2f3e4f7c5235735809eba12ac2cda335d7a7bc0e",
       "url": "https://github.com/thatrebeccarae/claude-marketing/blob/a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba/skills/customer-journey-mapping/SKILL.md",
       "raw_url": "https://raw.githubusercontent.com/thatrebeccarae/claude-marketing/a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba/skills/customer-journey-mapping/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-thatrebeccarae-claude-marketing-claude-marketing-rebecca-rae-barton_8a108923",
+        "canonical_skill_id": null,
+        "remote_path": "skills/customer-journey-mapping/SKILL.md",
+        "pinned_commit": "a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba",
+        "git_blob_oid": "git_sha1:2f3e4f7c5235735809eba12ac2cda335d7a7bc0e",
+        "raw_url": "https://raw.githubusercontent.com/thatrebeccarae/claude-marketing/a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba/skills/customer-journey-mapping/SKILL.md",
+        "expected_output_path": null
+      },
       "raw_metadata": {
-        "github_blob_sha": "2f3e4f7c5235735809eba12ac2cda335d7a7bc0e",
+        "github_blob_oid": "git_sha1:2f3e4f7c5235735809eba12ac2cda335d7a7bc0e",
         "size": 4608
       }
     },
@@ -236,12 +386,22 @@
       "declared_name": "data-viz-deck",
       "format": "SKILL.md",
       "parse_confidence": "high",
-      "content_digest": "sha256:42135d2b5abe9502c9f98c2d7142b3fe048f7071",
+      "content_digest": "git_sha1:42135d2b5abe9502c9f98c2d7142b3fe048f7071",
       "upstream_ref": "a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba",
+      "git_blob_oid": "git_sha1:42135d2b5abe9502c9f98c2d7142b3fe048f7071",
       "url": "https://github.com/thatrebeccarae/claude-marketing/blob/a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba/skills/data-viz-deck/SKILL.md",
       "raw_url": "https://raw.githubusercontent.com/thatrebeccarae/claude-marketing/a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba/skills/data-viz-deck/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-thatrebeccarae-claude-marketing-claude-marketing-rebecca-rae-barton_8a108923",
+        "canonical_skill_id": null,
+        "remote_path": "skills/data-viz-deck/SKILL.md",
+        "pinned_commit": "a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba",
+        "git_blob_oid": "git_sha1:42135d2b5abe9502c9f98c2d7142b3fe048f7071",
+        "raw_url": "https://raw.githubusercontent.com/thatrebeccarae/claude-marketing/a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba/skills/data-viz-deck/SKILL.md",
+        "expected_output_path": null
+      },
       "raw_metadata": {
-        "github_blob_sha": "42135d2b5abe9502c9f98c2d7142b3fe048f7071",
+        "github_blob_oid": "git_sha1:42135d2b5abe9502c9f98c2d7142b3fe048f7071",
         "size": 7347
       }
     },
@@ -251,12 +411,22 @@
       "declared_name": "dep-audit",
       "format": "SKILL.md",
       "parse_confidence": "high",
-      "content_digest": "sha256:f4727917de4e5538b0f0dbb1f1c5290a9d377781",
+      "content_digest": "git_sha1:f4727917de4e5538b0f0dbb1f1c5290a9d377781",
       "upstream_ref": "a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba",
+      "git_blob_oid": "git_sha1:f4727917de4e5538b0f0dbb1f1c5290a9d377781",
       "url": "https://github.com/thatrebeccarae/claude-marketing/blob/a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba/skills/dep-audit/SKILL.md",
       "raw_url": "https://raw.githubusercontent.com/thatrebeccarae/claude-marketing/a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba/skills/dep-audit/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-thatrebeccarae-claude-marketing-claude-marketing-rebecca-rae-barton_8a108923",
+        "canonical_skill_id": null,
+        "remote_path": "skills/dep-audit/SKILL.md",
+        "pinned_commit": "a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba",
+        "git_blob_oid": "git_sha1:f4727917de4e5538b0f0dbb1f1c5290a9d377781",
+        "raw_url": "https://raw.githubusercontent.com/thatrebeccarae/claude-marketing/a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba/skills/dep-audit/SKILL.md",
+        "expected_output_path": null
+      },
       "raw_metadata": {
-        "github_blob_sha": "f4727917de4e5538b0f0dbb1f1c5290a9d377781",
+        "github_blob_oid": "git_sha1:f4727917de4e5538b0f0dbb1f1c5290a9d377781",
         "size": 7943
       }
     },
@@ -266,12 +436,22 @@
       "declared_name": "email-composer",
       "format": "SKILL.md",
       "parse_confidence": "high",
-      "content_digest": "sha256:a778dab2139654c30bf1481d94bd5369acbe39f3",
+      "content_digest": "git_sha1:a778dab2139654c30bf1481d94bd5369acbe39f3",
       "upstream_ref": "a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba",
+      "git_blob_oid": "git_sha1:a778dab2139654c30bf1481d94bd5369acbe39f3",
       "url": "https://github.com/thatrebeccarae/claude-marketing/blob/a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba/skills/email-composer/SKILL.md",
       "raw_url": "https://raw.githubusercontent.com/thatrebeccarae/claude-marketing/a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba/skills/email-composer/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-thatrebeccarae-claude-marketing-claude-marketing-rebecca-rae-barton_8a108923",
+        "canonical_skill_id": null,
+        "remote_path": "skills/email-composer/SKILL.md",
+        "pinned_commit": "a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba",
+        "git_blob_oid": "git_sha1:a778dab2139654c30bf1481d94bd5369acbe39f3",
+        "raw_url": "https://raw.githubusercontent.com/thatrebeccarae/claude-marketing/a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba/skills/email-composer/SKILL.md",
+        "expected_output_path": null
+      },
       "raw_metadata": {
-        "github_blob_sha": "a778dab2139654c30bf1481d94bd5369acbe39f3",
+        "github_blob_oid": "git_sha1:a778dab2139654c30bf1481d94bd5369acbe39f3",
         "size": 3984
       }
     },
@@ -281,12 +461,22 @@
       "declared_name": "facebook-ads",
       "format": "SKILL.md",
       "parse_confidence": "high",
-      "content_digest": "sha256:85a43016790484e7ca564659dbcafab5f80c272b",
+      "content_digest": "git_sha1:85a43016790484e7ca564659dbcafab5f80c272b",
       "upstream_ref": "a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba",
+      "git_blob_oid": "git_sha1:85a43016790484e7ca564659dbcafab5f80c272b",
       "url": "https://github.com/thatrebeccarae/claude-marketing/blob/a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba/skills/facebook-ads/SKILL.md",
       "raw_url": "https://raw.githubusercontent.com/thatrebeccarae/claude-marketing/a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba/skills/facebook-ads/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-thatrebeccarae-claude-marketing-claude-marketing-rebecca-rae-barton_8a108923",
+        "canonical_skill_id": null,
+        "remote_path": "skills/facebook-ads/SKILL.md",
+        "pinned_commit": "a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba",
+        "git_blob_oid": "git_sha1:85a43016790484e7ca564659dbcafab5f80c272b",
+        "raw_url": "https://raw.githubusercontent.com/thatrebeccarae/claude-marketing/a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba/skills/facebook-ads/SKILL.md",
+        "expected_output_path": null
+      },
       "raw_metadata": {
-        "github_blob_sha": "85a43016790484e7ca564659dbcafab5f80c272b",
+        "github_blob_oid": "git_sha1:85a43016790484e7ca564659dbcafab5f80c272b",
         "size": 8088
       }
     },
@@ -296,12 +486,22 @@
       "declared_name": "frontend-design",
       "format": "SKILL.md",
       "parse_confidence": "high",
-      "content_digest": "sha256:53c5d86657576d8d47e60750843848929d0895bf",
+      "content_digest": "git_sha1:53c5d86657576d8d47e60750843848929d0895bf",
       "upstream_ref": "a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba",
+      "git_blob_oid": "git_sha1:53c5d86657576d8d47e60750843848929d0895bf",
       "url": "https://github.com/thatrebeccarae/claude-marketing/blob/a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba/skills/frontend-design/SKILL.md",
       "raw_url": "https://raw.githubusercontent.com/thatrebeccarae/claude-marketing/a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba/skills/frontend-design/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-thatrebeccarae-claude-marketing-claude-marketing-rebecca-rae-barton_8a108923",
+        "canonical_skill_id": null,
+        "remote_path": "skills/frontend-design/SKILL.md",
+        "pinned_commit": "a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba",
+        "git_blob_oid": "git_sha1:53c5d86657576d8d47e60750843848929d0895bf",
+        "raw_url": "https://raw.githubusercontent.com/thatrebeccarae/claude-marketing/a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba/skills/frontend-design/SKILL.md",
+        "expected_output_path": null
+      },
       "raw_metadata": {
-        "github_blob_sha": "53c5d86657576d8d47e60750843848929d0895bf",
+        "github_blob_oid": "git_sha1:53c5d86657576d8d47e60750843848929d0895bf",
         "size": 7483
       }
     },
@@ -311,12 +511,22 @@
       "declared_name": "github-readme",
       "format": "SKILL.md",
       "parse_confidence": "high",
-      "content_digest": "sha256:bdba2c83cef171820ff6897885a0c9dd97add177",
+      "content_digest": "git_sha1:bdba2c83cef171820ff6897885a0c9dd97add177",
       "upstream_ref": "a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba",
+      "git_blob_oid": "git_sha1:bdba2c83cef171820ff6897885a0c9dd97add177",
       "url": "https://github.com/thatrebeccarae/claude-marketing/blob/a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba/skills/github-readme/SKILL.md",
       "raw_url": "https://raw.githubusercontent.com/thatrebeccarae/claude-marketing/a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba/skills/github-readme/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-thatrebeccarae-claude-marketing-claude-marketing-rebecca-rae-barton_8a108923",
+        "canonical_skill_id": null,
+        "remote_path": "skills/github-readme/SKILL.md",
+        "pinned_commit": "a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba",
+        "git_blob_oid": "git_sha1:bdba2c83cef171820ff6897885a0c9dd97add177",
+        "raw_url": "https://raw.githubusercontent.com/thatrebeccarae/claude-marketing/a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba/skills/github-readme/SKILL.md",
+        "expected_output_path": null
+      },
       "raw_metadata": {
-        "github_blob_sha": "bdba2c83cef171820ff6897885a0c9dd97add177",
+        "github_blob_oid": "git_sha1:bdba2c83cef171820ff6897885a0c9dd97add177",
         "size": 11745
       }
     },
@@ -326,12 +536,22 @@
       "declared_name": "google-ads",
       "format": "SKILL.md",
       "parse_confidence": "high",
-      "content_digest": "sha256:e9b9ee62aa5fd345d55f59af2b66791a854d78ba",
+      "content_digest": "git_sha1:e9b9ee62aa5fd345d55f59af2b66791a854d78ba",
       "upstream_ref": "a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba",
+      "git_blob_oid": "git_sha1:e9b9ee62aa5fd345d55f59af2b66791a854d78ba",
       "url": "https://github.com/thatrebeccarae/claude-marketing/blob/a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba/skills/google-ads/SKILL.md",
       "raw_url": "https://raw.githubusercontent.com/thatrebeccarae/claude-marketing/a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba/skills/google-ads/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-thatrebeccarae-claude-marketing-claude-marketing-rebecca-rae-barton_8a108923",
+        "canonical_skill_id": null,
+        "remote_path": "skills/google-ads/SKILL.md",
+        "pinned_commit": "a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba",
+        "git_blob_oid": "git_sha1:e9b9ee62aa5fd345d55f59af2b66791a854d78ba",
+        "raw_url": "https://raw.githubusercontent.com/thatrebeccarae/claude-marketing/a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba/skills/google-ads/SKILL.md",
+        "expected_output_path": null
+      },
       "raw_metadata": {
-        "github_blob_sha": "e9b9ee62aa5fd345d55f59af2b66791a854d78ba",
+        "github_blob_oid": "git_sha1:e9b9ee62aa5fd345d55f59af2b66791a854d78ba",
         "size": 7864
       }
     },
@@ -341,12 +561,22 @@
       "declared_name": "google-analytics",
       "format": "SKILL.md",
       "parse_confidence": "high",
-      "content_digest": "sha256:ba9360b686be343b41a1ef6f2754eadbce69d1df",
+      "content_digest": "git_sha1:ba9360b686be343b41a1ef6f2754eadbce69d1df",
       "upstream_ref": "a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba",
+      "git_blob_oid": "git_sha1:ba9360b686be343b41a1ef6f2754eadbce69d1df",
       "url": "https://github.com/thatrebeccarae/claude-marketing/blob/a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba/skills/google-analytics/SKILL.md",
       "raw_url": "https://raw.githubusercontent.com/thatrebeccarae/claude-marketing/a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba/skills/google-analytics/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-thatrebeccarae-claude-marketing-claude-marketing-rebecca-rae-barton_8a108923",
+        "canonical_skill_id": null,
+        "remote_path": "skills/google-analytics/SKILL.md",
+        "pinned_commit": "a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba",
+        "git_blob_oid": "git_sha1:ba9360b686be343b41a1ef6f2754eadbce69d1df",
+        "raw_url": "https://raw.githubusercontent.com/thatrebeccarae/claude-marketing/a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba/skills/google-analytics/SKILL.md",
+        "expected_output_path": null
+      },
       "raw_metadata": {
-        "github_blob_sha": "ba9360b686be343b41a1ef6f2754eadbce69d1df",
+        "github_blob_oid": "git_sha1:ba9360b686be343b41a1ef6f2754eadbce69d1df",
         "size": 5157
       }
     },
@@ -356,12 +586,22 @@
       "declared_name": "google-tag-manager",
       "format": "SKILL.md",
       "parse_confidence": "high",
-      "content_digest": "sha256:25f73a0cc4604d0fa3d3b4c66298febbd0d59628",
+      "content_digest": "git_sha1:25f73a0cc4604d0fa3d3b4c66298febbd0d59628",
       "upstream_ref": "a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba",
+      "git_blob_oid": "git_sha1:25f73a0cc4604d0fa3d3b4c66298febbd0d59628",
       "url": "https://github.com/thatrebeccarae/claude-marketing/blob/a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba/skills/google-tag-manager/SKILL.md",
       "raw_url": "https://raw.githubusercontent.com/thatrebeccarae/claude-marketing/a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba/skills/google-tag-manager/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-thatrebeccarae-claude-marketing-claude-marketing-rebecca-rae-barton_8a108923",
+        "canonical_skill_id": null,
+        "remote_path": "skills/google-tag-manager/SKILL.md",
+        "pinned_commit": "a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba",
+        "git_blob_oid": "git_sha1:25f73a0cc4604d0fa3d3b4c66298febbd0d59628",
+        "raw_url": "https://raw.githubusercontent.com/thatrebeccarae/claude-marketing/a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba/skills/google-tag-manager/SKILL.md",
+        "expected_output_path": null
+      },
       "raw_metadata": {
-        "github_blob_sha": "25f73a0cc4604d0fa3d3b4c66298febbd0d59628",
+        "github_blob_oid": "git_sha1:25f73a0cc4604d0fa3d3b4c66298febbd0d59628",
         "size": 10362
       }
     },
@@ -371,12 +611,22 @@
       "declared_name": "html-report-builder",
       "format": "SKILL.md",
       "parse_confidence": "high",
-      "content_digest": "sha256:2137cba60df82d547afe78c2f4dd2c411fc532a5",
+      "content_digest": "git_sha1:2137cba60df82d547afe78c2f4dd2c411fc532a5",
       "upstream_ref": "a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba",
+      "git_blob_oid": "git_sha1:2137cba60df82d547afe78c2f4dd2c411fc532a5",
       "url": "https://github.com/thatrebeccarae/claude-marketing/blob/a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba/skills/html-report-builder/SKILL.md",
       "raw_url": "https://raw.githubusercontent.com/thatrebeccarae/claude-marketing/a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba/skills/html-report-builder/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-thatrebeccarae-claude-marketing-claude-marketing-rebecca-rae-barton_8a108923",
+        "canonical_skill_id": null,
+        "remote_path": "skills/html-report-builder/SKILL.md",
+        "pinned_commit": "a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba",
+        "git_blob_oid": "git_sha1:2137cba60df82d547afe78c2f4dd2c411fc532a5",
+        "raw_url": "https://raw.githubusercontent.com/thatrebeccarae/claude-marketing/a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba/skills/html-report-builder/SKILL.md",
+        "expected_output_path": null
+      },
       "raw_metadata": {
-        "github_blob_sha": "2137cba60df82d547afe78c2f4dd2c411fc532a5",
+        "github_blob_oid": "git_sha1:2137cba60df82d547afe78c2f4dd2c411fc532a5",
         "size": 4954
       }
     },
@@ -386,12 +636,22 @@
       "declared_name": "icp-research",
       "format": "SKILL.md",
       "parse_confidence": "high",
-      "content_digest": "sha256:e1cb07209aef43162382fd9a21305afe0c6b0b46",
+      "content_digest": "git_sha1:e1cb07209aef43162382fd9a21305afe0c6b0b46",
       "upstream_ref": "a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba",
+      "git_blob_oid": "git_sha1:e1cb07209aef43162382fd9a21305afe0c6b0b46",
       "url": "https://github.com/thatrebeccarae/claude-marketing/blob/a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba/skills/icp-research/SKILL.md",
       "raw_url": "https://raw.githubusercontent.com/thatrebeccarae/claude-marketing/a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba/skills/icp-research/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-thatrebeccarae-claude-marketing-claude-marketing-rebecca-rae-barton_8a108923",
+        "canonical_skill_id": null,
+        "remote_path": "skills/icp-research/SKILL.md",
+        "pinned_commit": "a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba",
+        "git_blob_oid": "git_sha1:e1cb07209aef43162382fd9a21305afe0c6b0b46",
+        "raw_url": "https://raw.githubusercontent.com/thatrebeccarae/claude-marketing/a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba/skills/icp-research/SKILL.md",
+        "expected_output_path": null
+      },
       "raw_metadata": {
-        "github_blob_sha": "e1cb07209aef43162382fd9a21305afe0c6b0b46",
+        "github_blob_oid": "git_sha1:e1cb07209aef43162382fd9a21305afe0c6b0b46",
         "size": 5037
       }
     },
@@ -401,12 +661,22 @@
       "declared_name": "klaviyo-analyst",
       "format": "SKILL.md",
       "parse_confidence": "high",
-      "content_digest": "sha256:d948d2c7bf35b2b8e4a6101f90a6373088478f50",
+      "content_digest": "git_sha1:d948d2c7bf35b2b8e4a6101f90a6373088478f50",
       "upstream_ref": "a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba",
+      "git_blob_oid": "git_sha1:d948d2c7bf35b2b8e4a6101f90a6373088478f50",
       "url": "https://github.com/thatrebeccarae/claude-marketing/blob/a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba/skills/klaviyo-analyst/SKILL.md",
       "raw_url": "https://raw.githubusercontent.com/thatrebeccarae/claude-marketing/a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba/skills/klaviyo-analyst/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-thatrebeccarae-claude-marketing-claude-marketing-rebecca-rae-barton_8a108923",
+        "canonical_skill_id": null,
+        "remote_path": "skills/klaviyo-analyst/SKILL.md",
+        "pinned_commit": "a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba",
+        "git_blob_oid": "git_sha1:d948d2c7bf35b2b8e4a6101f90a6373088478f50",
+        "raw_url": "https://raw.githubusercontent.com/thatrebeccarae/claude-marketing/a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba/skills/klaviyo-analyst/SKILL.md",
+        "expected_output_path": null
+      },
       "raw_metadata": {
-        "github_blob_sha": "d948d2c7bf35b2b8e4a6101f90a6373088478f50",
+        "github_blob_oid": "git_sha1:d948d2c7bf35b2b8e4a6101f90a6373088478f50",
         "size": 20181
       }
     },
@@ -416,12 +686,22 @@
       "declared_name": "klaviyo-developer",
       "format": "SKILL.md",
       "parse_confidence": "high",
-      "content_digest": "sha256:99f71e77e7413f6282afeed40cf9e62813567cee",
+      "content_digest": "git_sha1:99f71e77e7413f6282afeed40cf9e62813567cee",
       "upstream_ref": "a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba",
+      "git_blob_oid": "git_sha1:99f71e77e7413f6282afeed40cf9e62813567cee",
       "url": "https://github.com/thatrebeccarae/claude-marketing/blob/a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba/skills/klaviyo-developer/SKILL.md",
       "raw_url": "https://raw.githubusercontent.com/thatrebeccarae/claude-marketing/a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba/skills/klaviyo-developer/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-thatrebeccarae-claude-marketing-claude-marketing-rebecca-rae-barton_8a108923",
+        "canonical_skill_id": null,
+        "remote_path": "skills/klaviyo-developer/SKILL.md",
+        "pinned_commit": "a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba",
+        "git_blob_oid": "git_sha1:99f71e77e7413f6282afeed40cf9e62813567cee",
+        "raw_url": "https://raw.githubusercontent.com/thatrebeccarae/claude-marketing/a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba/skills/klaviyo-developer/SKILL.md",
+        "expected_output_path": null
+      },
       "raw_metadata": {
-        "github_blob_sha": "99f71e77e7413f6282afeed40cf9e62813567cee",
+        "github_blob_oid": "git_sha1:99f71e77e7413f6282afeed40cf9e62813567cee",
         "size": 19747
       }
     },
@@ -431,12 +711,22 @@
       "declared_name": "landing-page-optimizer",
       "format": "SKILL.md",
       "parse_confidence": "high",
-      "content_digest": "sha256:3dc5a9dd71a4dab080c8f3a3dbb86caa3520664a",
+      "content_digest": "git_sha1:3dc5a9dd71a4dab080c8f3a3dbb86caa3520664a",
       "upstream_ref": "a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba",
+      "git_blob_oid": "git_sha1:3dc5a9dd71a4dab080c8f3a3dbb86caa3520664a",
       "url": "https://github.com/thatrebeccarae/claude-marketing/blob/a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba/skills/landing-page-optimizer/SKILL.md",
       "raw_url": "https://raw.githubusercontent.com/thatrebeccarae/claude-marketing/a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba/skills/landing-page-optimizer/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-thatrebeccarae-claude-marketing-claude-marketing-rebecca-rae-barton_8a108923",
+        "canonical_skill_id": null,
+        "remote_path": "skills/landing-page-optimizer/SKILL.md",
+        "pinned_commit": "a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba",
+        "git_blob_oid": "git_sha1:3dc5a9dd71a4dab080c8f3a3dbb86caa3520664a",
+        "raw_url": "https://raw.githubusercontent.com/thatrebeccarae/claude-marketing/a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba/skills/landing-page-optimizer/SKILL.md",
+        "expected_output_path": null
+      },
       "raw_metadata": {
-        "github_blob_sha": "3dc5a9dd71a4dab080c8f3a3dbb86caa3520664a",
+        "github_blob_oid": "git_sha1:3dc5a9dd71a4dab080c8f3a3dbb86caa3520664a",
         "size": 4365
       }
     },
@@ -446,12 +736,22 @@
       "declared_name": "linkedin-ads",
       "format": "SKILL.md",
       "parse_confidence": "high",
-      "content_digest": "sha256:ef61823b43bb16ed198a99b09befba46ab035fd1",
+      "content_digest": "git_sha1:ef61823b43bb16ed198a99b09befba46ab035fd1",
       "upstream_ref": "a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba",
+      "git_blob_oid": "git_sha1:ef61823b43bb16ed198a99b09befba46ab035fd1",
       "url": "https://github.com/thatrebeccarae/claude-marketing/blob/a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba/skills/linkedin-ads/SKILL.md",
       "raw_url": "https://raw.githubusercontent.com/thatrebeccarae/claude-marketing/a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba/skills/linkedin-ads/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-thatrebeccarae-claude-marketing-claude-marketing-rebecca-rae-barton_8a108923",
+        "canonical_skill_id": null,
+        "remote_path": "skills/linkedin-ads/SKILL.md",
+        "pinned_commit": "a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba",
+        "git_blob_oid": "git_sha1:ef61823b43bb16ed198a99b09befba46ab035fd1",
+        "raw_url": "https://raw.githubusercontent.com/thatrebeccarae/claude-marketing/a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba/skills/linkedin-ads/SKILL.md",
+        "expected_output_path": null
+      },
       "raw_metadata": {
-        "github_blob_sha": "ef61823b43bb16ed198a99b09befba46ab035fd1",
+        "github_blob_oid": "git_sha1:ef61823b43bb16ed198a99b09befba46ab035fd1",
         "size": 6308
       }
     },
@@ -461,12 +761,22 @@
       "declared_name": "llms-txt",
       "format": "SKILL.md",
       "parse_confidence": "high",
-      "content_digest": "sha256:4b97d43cb4f1c30b82b47855e630f2a2c6c5dd38",
+      "content_digest": "git_sha1:4b97d43cb4f1c30b82b47855e630f2a2c6c5dd38",
       "upstream_ref": "a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba",
+      "git_blob_oid": "git_sha1:4b97d43cb4f1c30b82b47855e630f2a2c6c5dd38",
       "url": "https://github.com/thatrebeccarae/claude-marketing/blob/a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba/skills/llms-txt/SKILL.md",
       "raw_url": "https://raw.githubusercontent.com/thatrebeccarae/claude-marketing/a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba/skills/llms-txt/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-thatrebeccarae-claude-marketing-claude-marketing-rebecca-rae-barton_8a108923",
+        "canonical_skill_id": null,
+        "remote_path": "skills/llms-txt/SKILL.md",
+        "pinned_commit": "a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba",
+        "git_blob_oid": "git_sha1:4b97d43cb4f1c30b82b47855e630f2a2c6c5dd38",
+        "raw_url": "https://raw.githubusercontent.com/thatrebeccarae/claude-marketing/a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba/skills/llms-txt/SKILL.md",
+        "expected_output_path": null
+      },
       "raw_metadata": {
-        "github_blob_sha": "4b97d43cb4f1c30b82b47855e630f2a2c6c5dd38",
+        "github_blob_oid": "git_sha1:4b97d43cb4f1c30b82b47855e630f2a2c6c5dd38",
         "size": 6530
       }
     },
@@ -476,12 +786,22 @@
       "declared_name": "looker-studio",
       "format": "SKILL.md",
       "parse_confidence": "high",
-      "content_digest": "sha256:21435817fbf96eb87b3f04fa36bc0ccda58239ad",
+      "content_digest": "git_sha1:21435817fbf96eb87b3f04fa36bc0ccda58239ad",
       "upstream_ref": "a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba",
+      "git_blob_oid": "git_sha1:21435817fbf96eb87b3f04fa36bc0ccda58239ad",
       "url": "https://github.com/thatrebeccarae/claude-marketing/blob/a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba/skills/looker-studio/SKILL.md",
       "raw_url": "https://raw.githubusercontent.com/thatrebeccarae/claude-marketing/a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba/skills/looker-studio/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-thatrebeccarae-claude-marketing-claude-marketing-rebecca-rae-barton_8a108923",
+        "canonical_skill_id": null,
+        "remote_path": "skills/looker-studio/SKILL.md",
+        "pinned_commit": "a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba",
+        "git_blob_oid": "git_sha1:21435817fbf96eb87b3f04fa36bc0ccda58239ad",
+        "raw_url": "https://raw.githubusercontent.com/thatrebeccarae/claude-marketing/a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba/skills/looker-studio/SKILL.md",
+        "expected_output_path": null
+      },
       "raw_metadata": {
-        "github_blob_sha": "21435817fbf96eb87b3f04fa36bc0ccda58239ad",
+        "github_blob_oid": "git_sha1:21435817fbf96eb87b3f04fa36bc0ccda58239ad",
         "size": 14426
       }
     },
@@ -491,12 +811,22 @@
       "declared_name": "market-research",
       "format": "SKILL.md",
       "parse_confidence": "high",
-      "content_digest": "sha256:e9f57d76ca37c042064f01795a8b12214a356814",
+      "content_digest": "git_sha1:e9f57d76ca37c042064f01795a8b12214a356814",
       "upstream_ref": "a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba",
+      "git_blob_oid": "git_sha1:e9f57d76ca37c042064f01795a8b12214a356814",
       "url": "https://github.com/thatrebeccarae/claude-marketing/blob/a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba/skills/market-research/SKILL.md",
       "raw_url": "https://raw.githubusercontent.com/thatrebeccarae/claude-marketing/a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba/skills/market-research/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-thatrebeccarae-claude-marketing-claude-marketing-rebecca-rae-barton_8a108923",
+        "canonical_skill_id": null,
+        "remote_path": "skills/market-research/SKILL.md",
+        "pinned_commit": "a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba",
+        "git_blob_oid": "git_sha1:e9f57d76ca37c042064f01795a8b12214a356814",
+        "raw_url": "https://raw.githubusercontent.com/thatrebeccarae/claude-marketing/a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba/skills/market-research/SKILL.md",
+        "expected_output_path": null
+      },
       "raw_metadata": {
-        "github_blob_sha": "e9f57d76ca37c042064f01795a8b12214a356814",
+        "github_blob_oid": "git_sha1:e9f57d76ca37c042064f01795a8b12214a356814",
         "size": 4267
       }
     },
@@ -506,12 +836,22 @@
       "declared_name": "microsoft-ads",
       "format": "SKILL.md",
       "parse_confidence": "high",
-      "content_digest": "sha256:168d43333d8a22ab711329676cdb5d47edc373e4",
+      "content_digest": "git_sha1:168d43333d8a22ab711329676cdb5d47edc373e4",
       "upstream_ref": "a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba",
+      "git_blob_oid": "git_sha1:168d43333d8a22ab711329676cdb5d47edc373e4",
       "url": "https://github.com/thatrebeccarae/claude-marketing/blob/a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba/skills/microsoft-ads/SKILL.md",
       "raw_url": "https://raw.githubusercontent.com/thatrebeccarae/claude-marketing/a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba/skills/microsoft-ads/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-thatrebeccarae-claude-marketing-claude-marketing-rebecca-rae-barton_8a108923",
+        "canonical_skill_id": null,
+        "remote_path": "skills/microsoft-ads/SKILL.md",
+        "pinned_commit": "a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba",
+        "git_blob_oid": "git_sha1:168d43333d8a22ab711329676cdb5d47edc373e4",
+        "raw_url": "https://raw.githubusercontent.com/thatrebeccarae/claude-marketing/a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba/skills/microsoft-ads/SKILL.md",
+        "expected_output_path": null
+      },
       "raw_metadata": {
-        "github_blob_sha": "168d43333d8a22ab711329676cdb5d47edc373e4",
+        "github_blob_oid": "git_sha1:168d43333d8a22ab711329676cdb5d47edc373e4",
         "size": 6754
       }
     },
@@ -521,12 +861,22 @@
       "declared_name": "pricing-strategy",
       "format": "SKILL.md",
       "parse_confidence": "high",
-      "content_digest": "sha256:f33d5d043549d582c0e586f285b66d08dfec7574",
+      "content_digest": "git_sha1:f33d5d043549d582c0e586f285b66d08dfec7574",
       "upstream_ref": "a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba",
+      "git_blob_oid": "git_sha1:f33d5d043549d582c0e586f285b66d08dfec7574",
       "url": "https://github.com/thatrebeccarae/claude-marketing/blob/a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba/skills/pricing-strategy/SKILL.md",
       "raw_url": "https://raw.githubusercontent.com/thatrebeccarae/claude-marketing/a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba/skills/pricing-strategy/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-thatrebeccarae-claude-marketing-claude-marketing-rebecca-rae-barton_8a108923",
+        "canonical_skill_id": null,
+        "remote_path": "skills/pricing-strategy/SKILL.md",
+        "pinned_commit": "a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba",
+        "git_blob_oid": "git_sha1:f33d5d043549d582c0e586f285b66d08dfec7574",
+        "raw_url": "https://raw.githubusercontent.com/thatrebeccarae/claude-marketing/a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba/skills/pricing-strategy/SKILL.md",
+        "expected_output_path": null
+      },
       "raw_metadata": {
-        "github_blob_sha": "f33d5d043549d582c0e586f285b66d08dfec7574",
+        "github_blob_oid": "git_sha1:f33d5d043549d582c0e586f285b66d08dfec7574",
         "size": 5115
       }
     },
@@ -536,12 +886,22 @@
       "declared_name": "pro-deck-builder",
       "format": "SKILL.md",
       "parse_confidence": "high",
-      "content_digest": "sha256:71304c3994506bfc23e5d9eeec67cc5d132fc4ff",
+      "content_digest": "git_sha1:71304c3994506bfc23e5d9eeec67cc5d132fc4ff",
       "upstream_ref": "a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba",
+      "git_blob_oid": "git_sha1:71304c3994506bfc23e5d9eeec67cc5d132fc4ff",
       "url": "https://github.com/thatrebeccarae/claude-marketing/blob/a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba/skills/pro-deck-builder/SKILL.md",
       "raw_url": "https://raw.githubusercontent.com/thatrebeccarae/claude-marketing/a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba/skills/pro-deck-builder/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-thatrebeccarae-claude-marketing-claude-marketing-rebecca-rae-barton_8a108923",
+        "canonical_skill_id": null,
+        "remote_path": "skills/pro-deck-builder/SKILL.md",
+        "pinned_commit": "a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba",
+        "git_blob_oid": "git_sha1:71304c3994506bfc23e5d9eeec67cc5d132fc4ff",
+        "raw_url": "https://raw.githubusercontent.com/thatrebeccarae/claude-marketing/a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba/skills/pro-deck-builder/SKILL.md",
+        "expected_output_path": null
+      },
       "raw_metadata": {
-        "github_blob_sha": "71304c3994506bfc23e5d9eeec67cc5d132fc4ff",
+        "github_blob_oid": "git_sha1:71304c3994506bfc23e5d9eeec67cc5d132fc4ff",
         "size": 24542
       }
     },
@@ -551,12 +911,22 @@
       "declared_name": "pro-report-builder",
       "format": "SKILL.md",
       "parse_confidence": "high",
-      "content_digest": "sha256:6d79e89f5524da1888a28ff4e541c236a2697034",
+      "content_digest": "git_sha1:6d79e89f5524da1888a28ff4e541c236a2697034",
       "upstream_ref": "a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba",
+      "git_blob_oid": "git_sha1:6d79e89f5524da1888a28ff4e541c236a2697034",
       "url": "https://github.com/thatrebeccarae/claude-marketing/blob/a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba/skills/pro-report-builder/SKILL.md",
       "raw_url": "https://raw.githubusercontent.com/thatrebeccarae/claude-marketing/a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba/skills/pro-report-builder/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-thatrebeccarae-claude-marketing-claude-marketing-rebecca-rae-barton_8a108923",
+        "canonical_skill_id": null,
+        "remote_path": "skills/pro-report-builder/SKILL.md",
+        "pinned_commit": "a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba",
+        "git_blob_oid": "git_sha1:6d79e89f5524da1888a28ff4e541c236a2697034",
+        "raw_url": "https://raw.githubusercontent.com/thatrebeccarae/claude-marketing/a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba/skills/pro-report-builder/SKILL.md",
+        "expected_output_path": null
+      },
       "raw_metadata": {
-        "github_blob_sha": "6d79e89f5524da1888a28ff4e541c236a2697034",
+        "github_blob_oid": "git_sha1:6d79e89f5524da1888a28ff4e541c236a2697034",
         "size": 14567
       }
     },
@@ -566,12 +936,22 @@
       "declared_name": "programmatic-seo",
       "format": "SKILL.md",
       "parse_confidence": "high",
-      "content_digest": "sha256:851a294b9c53000e0df4a8e6866298ab7966ac0f",
+      "content_digest": "git_sha1:851a294b9c53000e0df4a8e6866298ab7966ac0f",
       "upstream_ref": "a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba",
+      "git_blob_oid": "git_sha1:851a294b9c53000e0df4a8e6866298ab7966ac0f",
       "url": "https://github.com/thatrebeccarae/claude-marketing/blob/a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba/skills/programmatic-seo/SKILL.md",
       "raw_url": "https://raw.githubusercontent.com/thatrebeccarae/claude-marketing/a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba/skills/programmatic-seo/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-thatrebeccarae-claude-marketing-claude-marketing-rebecca-rae-barton_8a108923",
+        "canonical_skill_id": null,
+        "remote_path": "skills/programmatic-seo/SKILL.md",
+        "pinned_commit": "a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba",
+        "git_blob_oid": "git_sha1:851a294b9c53000e0df4a8e6866298ab7966ac0f",
+        "raw_url": "https://raw.githubusercontent.com/thatrebeccarae/claude-marketing/a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba/skills/programmatic-seo/SKILL.md",
+        "expected_output_path": null
+      },
       "raw_metadata": {
-        "github_blob_sha": "851a294b9c53000e0df4a8e6866298ab7966ac0f",
+        "github_blob_oid": "git_sha1:851a294b9c53000e0df4a8e6866298ab7966ac0f",
         "size": 5152
       }
     },
@@ -581,12 +961,22 @@
       "declared_name": "release-notes",
       "format": "SKILL.md",
       "parse_confidence": "high",
-      "content_digest": "sha256:d499448154cae637d642af2c445d320709cda99e",
+      "content_digest": "git_sha1:d499448154cae637d642af2c445d320709cda99e",
       "upstream_ref": "a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba",
+      "git_blob_oid": "git_sha1:d499448154cae637d642af2c445d320709cda99e",
       "url": "https://github.com/thatrebeccarae/claude-marketing/blob/a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba/skills/release-notes/SKILL.md",
       "raw_url": "https://raw.githubusercontent.com/thatrebeccarae/claude-marketing/a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba/skills/release-notes/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-thatrebeccarae-claude-marketing-claude-marketing-rebecca-rae-barton_8a108923",
+        "canonical_skill_id": null,
+        "remote_path": "skills/release-notes/SKILL.md",
+        "pinned_commit": "a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba",
+        "git_blob_oid": "git_sha1:d499448154cae637d642af2c445d320709cda99e",
+        "raw_url": "https://raw.githubusercontent.com/thatrebeccarae/claude-marketing/a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba/skills/release-notes/SKILL.md",
+        "expected_output_path": null
+      },
       "raw_metadata": {
-        "github_blob_sha": "d499448154cae637d642af2c445d320709cda99e",
+        "github_blob_oid": "git_sha1:d499448154cae637d642af2c445d320709cda99e",
         "size": 5976
       }
     },
@@ -596,12 +986,22 @@
       "declared_name": "remotion-video",
       "format": "SKILL.md",
       "parse_confidence": "high",
-      "content_digest": "sha256:6609f39ff6237c32d356a0a40a2a2e5215152ebb",
+      "content_digest": "git_sha1:6609f39ff6237c32d356a0a40a2a2e5215152ebb",
       "upstream_ref": "a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba",
+      "git_blob_oid": "git_sha1:6609f39ff6237c32d356a0a40a2a2e5215152ebb",
       "url": "https://github.com/thatrebeccarae/claude-marketing/blob/a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba/skills/remotion-video/SKILL.md",
       "raw_url": "https://raw.githubusercontent.com/thatrebeccarae/claude-marketing/a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba/skills/remotion-video/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-thatrebeccarae-claude-marketing-claude-marketing-rebecca-rae-barton_8a108923",
+        "canonical_skill_id": null,
+        "remote_path": "skills/remotion-video/SKILL.md",
+        "pinned_commit": "a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba",
+        "git_blob_oid": "git_sha1:6609f39ff6237c32d356a0a40a2a2e5215152ebb",
+        "raw_url": "https://raw.githubusercontent.com/thatrebeccarae/claude-marketing/a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba/skills/remotion-video/SKILL.md",
+        "expected_output_path": null
+      },
       "raw_metadata": {
-        "github_blob_sha": "6609f39ff6237c32d356a0a40a2a2e5215152ebb",
+        "github_blob_oid": "git_sha1:6609f39ff6237c32d356a0a40a2a2e5215152ebb",
         "size": 4554
       }
     },
@@ -611,12 +1011,22 @@
       "declared_name": "repo-health",
       "format": "SKILL.md",
       "parse_confidence": "high",
-      "content_digest": "sha256:6125e183463c7cc5acdb52a6df039608a5b2e90c",
+      "content_digest": "git_sha1:6125e183463c7cc5acdb52a6df039608a5b2e90c",
       "upstream_ref": "a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba",
+      "git_blob_oid": "git_sha1:6125e183463c7cc5acdb52a6df039608a5b2e90c",
       "url": "https://github.com/thatrebeccarae/claude-marketing/blob/a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba/skills/repo-health/SKILL.md",
       "raw_url": "https://raw.githubusercontent.com/thatrebeccarae/claude-marketing/a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba/skills/repo-health/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-thatrebeccarae-claude-marketing-claude-marketing-rebecca-rae-barton_8a108923",
+        "canonical_skill_id": null,
+        "remote_path": "skills/repo-health/SKILL.md",
+        "pinned_commit": "a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba",
+        "git_blob_oid": "git_sha1:6125e183463c7cc5acdb52a6df039608a5b2e90c",
+        "raw_url": "https://raw.githubusercontent.com/thatrebeccarae/claude-marketing/a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba/skills/repo-health/SKILL.md",
+        "expected_output_path": null
+      },
       "raw_metadata": {
-        "github_blob_sha": "6125e183463c7cc5acdb52a6df039608a5b2e90c",
+        "github_blob_oid": "git_sha1:6125e183463c7cc5acdb52a6df039608a5b2e90c",
         "size": 9687
       }
     },
@@ -626,12 +1036,22 @@
       "declared_name": "repo-scaffold",
       "format": "SKILL.md",
       "parse_confidence": "high",
-      "content_digest": "sha256:d58f22b7bbd7531e5e04a8a5d5e65653eea40fc9",
+      "content_digest": "git_sha1:d58f22b7bbd7531e5e04a8a5d5e65653eea40fc9",
       "upstream_ref": "a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba",
+      "git_blob_oid": "git_sha1:d58f22b7bbd7531e5e04a8a5d5e65653eea40fc9",
       "url": "https://github.com/thatrebeccarae/claude-marketing/blob/a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba/skills/repo-scaffold/SKILL.md",
       "raw_url": "https://raw.githubusercontent.com/thatrebeccarae/claude-marketing/a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba/skills/repo-scaffold/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-thatrebeccarae-claude-marketing-claude-marketing-rebecca-rae-barton_8a108923",
+        "canonical_skill_id": null,
+        "remote_path": "skills/repo-scaffold/SKILL.md",
+        "pinned_commit": "a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba",
+        "git_blob_oid": "git_sha1:d58f22b7bbd7531e5e04a8a5d5e65653eea40fc9",
+        "raw_url": "https://raw.githubusercontent.com/thatrebeccarae/claude-marketing/a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba/skills/repo-scaffold/SKILL.md",
+        "expected_output_path": null
+      },
       "raw_metadata": {
-        "github_blob_sha": "d58f22b7bbd7531e5e04a8a5d5e65653eea40fc9",
+        "github_blob_oid": "git_sha1:d58f22b7bbd7531e5e04a8a5d5e65653eea40fc9",
         "size": 6796
       }
     },
@@ -641,12 +1061,22 @@
       "declared_name": "research-digest",
       "format": "SKILL.md",
       "parse_confidence": "high",
-      "content_digest": "sha256:2f34b822e2a72079fc7e7c23a4c841af2eaea291",
+      "content_digest": "git_sha1:2f34b822e2a72079fc7e7c23a4c841af2eaea291",
       "upstream_ref": "a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba",
+      "git_blob_oid": "git_sha1:2f34b822e2a72079fc7e7c23a4c841af2eaea291",
       "url": "https://github.com/thatrebeccarae/claude-marketing/blob/a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba/skills/research-digest/SKILL.md",
       "raw_url": "https://raw.githubusercontent.com/thatrebeccarae/claude-marketing/a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba/skills/research-digest/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-thatrebeccarae-claude-marketing-claude-marketing-rebecca-rae-barton_8a108923",
+        "canonical_skill_id": null,
+        "remote_path": "skills/research-digest/SKILL.md",
+        "pinned_commit": "a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba",
+        "git_blob_oid": "git_sha1:2f34b822e2a72079fc7e7c23a4c841af2eaea291",
+        "raw_url": "https://raw.githubusercontent.com/thatrebeccarae/claude-marketing/a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba/skills/research-digest/SKILL.md",
+        "expected_output_path": null
+      },
       "raw_metadata": {
-        "github_blob_sha": "2f34b822e2a72079fc7e7c23a4c841af2eaea291",
+        "github_blob_oid": "git_sha1:2f34b822e2a72079fc7e7c23a4c841af2eaea291",
         "size": 3669
       }
     },
@@ -656,12 +1086,22 @@
       "declared_name": "retention-churn-prevention",
       "format": "SKILL.md",
       "parse_confidence": "high",
-      "content_digest": "sha256:ccf72f56f53506226c28ff7261cb7ba87e763d32",
+      "content_digest": "git_sha1:ccf72f56f53506226c28ff7261cb7ba87e763d32",
       "upstream_ref": "a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba",
+      "git_blob_oid": "git_sha1:ccf72f56f53506226c28ff7261cb7ba87e763d32",
       "url": "https://github.com/thatrebeccarae/claude-marketing/blob/a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba/skills/retention-churn-prevention/SKILL.md",
       "raw_url": "https://raw.githubusercontent.com/thatrebeccarae/claude-marketing/a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba/skills/retention-churn-prevention/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-thatrebeccarae-claude-marketing-claude-marketing-rebecca-rae-barton_8a108923",
+        "canonical_skill_id": null,
+        "remote_path": "skills/retention-churn-prevention/SKILL.md",
+        "pinned_commit": "a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba",
+        "git_blob_oid": "git_sha1:ccf72f56f53506226c28ff7261cb7ba87e763d32",
+        "raw_url": "https://raw.githubusercontent.com/thatrebeccarae/claude-marketing/a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba/skills/retention-churn-prevention/SKILL.md",
+        "expected_output_path": null
+      },
       "raw_metadata": {
-        "github_blob_sha": "ccf72f56f53506226c28ff7261cb7ba87e763d32",
+        "github_blob_oid": "git_sha1:ccf72f56f53506226c28ff7261cb7ba87e763d32",
         "size": 4028
       }
     },
@@ -671,12 +1111,22 @@
       "declared_name": "safe-push",
       "format": "SKILL.md",
       "parse_confidence": "high",
-      "content_digest": "sha256:e13f50e8bb2c0896c83daac4026374bc76a2d589",
+      "content_digest": "git_sha1:e13f50e8bb2c0896c83daac4026374bc76a2d589",
       "upstream_ref": "a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba",
+      "git_blob_oid": "git_sha1:e13f50e8bb2c0896c83daac4026374bc76a2d589",
       "url": "https://github.com/thatrebeccarae/claude-marketing/blob/a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba/skills/safe-push/SKILL.md",
       "raw_url": "https://raw.githubusercontent.com/thatrebeccarae/claude-marketing/a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba/skills/safe-push/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-thatrebeccarae-claude-marketing-claude-marketing-rebecca-rae-barton_8a108923",
+        "canonical_skill_id": null,
+        "remote_path": "skills/safe-push/SKILL.md",
+        "pinned_commit": "a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba",
+        "git_blob_oid": "git_sha1:e13f50e8bb2c0896c83daac4026374bc76a2d589",
+        "raw_url": "https://raw.githubusercontent.com/thatrebeccarae/claude-marketing/a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba/skills/safe-push/SKILL.md",
+        "expected_output_path": null
+      },
       "raw_metadata": {
-        "github_blob_sha": "e13f50e8bb2c0896c83daac4026374bc76a2d589",
+        "github_blob_oid": "git_sha1:e13f50e8bb2c0896c83daac4026374bc76a2d589",
         "size": 7798
       }
     },
@@ -686,12 +1136,22 @@
       "declared_name": "schema-markup-generator",
       "format": "SKILL.md",
       "parse_confidence": "high",
-      "content_digest": "sha256:b1e90ba5140d653afc08ccd3db191a5b908f499a",
+      "content_digest": "git_sha1:b1e90ba5140d653afc08ccd3db191a5b908f499a",
       "upstream_ref": "a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba",
+      "git_blob_oid": "git_sha1:b1e90ba5140d653afc08ccd3db191a5b908f499a",
       "url": "https://github.com/thatrebeccarae/claude-marketing/blob/a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba/skills/schema-markup-generator/SKILL.md",
       "raw_url": "https://raw.githubusercontent.com/thatrebeccarae/claude-marketing/a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba/skills/schema-markup-generator/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-thatrebeccarae-claude-marketing-claude-marketing-rebecca-rae-barton_8a108923",
+        "canonical_skill_id": null,
+        "remote_path": "skills/schema-markup-generator/SKILL.md",
+        "pinned_commit": "a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba",
+        "git_blob_oid": "git_sha1:b1e90ba5140d653afc08ccd3db191a5b908f499a",
+        "raw_url": "https://raw.githubusercontent.com/thatrebeccarae/claude-marketing/a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba/skills/schema-markup-generator/SKILL.md",
+        "expected_output_path": null
+      },
       "raw_metadata": {
-        "github_blob_sha": "b1e90ba5140d653afc08ccd3db191a5b908f499a",
+        "github_blob_oid": "git_sha1:b1e90ba5140d653afc08ccd3db191a5b908f499a",
         "size": 6545
       }
     },
@@ -701,12 +1161,22 @@
       "declared_name": "seo-content-writer",
       "format": "SKILL.md",
       "parse_confidence": "high",
-      "content_digest": "sha256:d5c5f9d1812fd1b9afd73e4e6a139fb761ee1b40",
+      "content_digest": "git_sha1:d5c5f9d1812fd1b9afd73e4e6a139fb761ee1b40",
       "upstream_ref": "a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba",
+      "git_blob_oid": "git_sha1:d5c5f9d1812fd1b9afd73e4e6a139fb761ee1b40",
       "url": "https://github.com/thatrebeccarae/claude-marketing/blob/a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba/skills/seo-content-writer/SKILL.md",
       "raw_url": "https://raw.githubusercontent.com/thatrebeccarae/claude-marketing/a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba/skills/seo-content-writer/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-thatrebeccarae-claude-marketing-claude-marketing-rebecca-rae-barton_8a108923",
+        "canonical_skill_id": null,
+        "remote_path": "skills/seo-content-writer/SKILL.md",
+        "pinned_commit": "a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba",
+        "git_blob_oid": "git_sha1:d5c5f9d1812fd1b9afd73e4e6a139fb761ee1b40",
+        "raw_url": "https://raw.githubusercontent.com/thatrebeccarae/claude-marketing/a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba/skills/seo-content-writer/SKILL.md",
+        "expected_output_path": null
+      },
       "raw_metadata": {
-        "github_blob_sha": "d5c5f9d1812fd1b9afd73e4e6a139fb761ee1b40",
+        "github_blob_oid": "git_sha1:d5c5f9d1812fd1b9afd73e4e6a139fb761ee1b40",
         "size": 4394
       }
     },
@@ -716,12 +1186,22 @@
       "declared_name": "shopify",
       "format": "SKILL.md",
       "parse_confidence": "high",
-      "content_digest": "sha256:838665059c9b46f2f45d66193b31355e22a3e541",
+      "content_digest": "git_sha1:838665059c9b46f2f45d66193b31355e22a3e541",
       "upstream_ref": "a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba",
+      "git_blob_oid": "git_sha1:838665059c9b46f2f45d66193b31355e22a3e541",
       "url": "https://github.com/thatrebeccarae/claude-marketing/blob/a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba/skills/shopify/SKILL.md",
       "raw_url": "https://raw.githubusercontent.com/thatrebeccarae/claude-marketing/a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba/skills/shopify/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-thatrebeccarae-claude-marketing-claude-marketing-rebecca-rae-barton_8a108923",
+        "canonical_skill_id": null,
+        "remote_path": "skills/shopify/SKILL.md",
+        "pinned_commit": "a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba",
+        "git_blob_oid": "git_sha1:838665059c9b46f2f45d66193b31355e22a3e541",
+        "raw_url": "https://raw.githubusercontent.com/thatrebeccarae/claude-marketing/a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba/skills/shopify/SKILL.md",
+        "expected_output_path": null
+      },
       "raw_metadata": {
-        "github_blob_sha": "838665059c9b46f2f45d66193b31355e22a3e541",
+        "github_blob_oid": "git_sha1:838665059c9b46f2f45d66193b31355e22a3e541",
         "size": 9659
       }
     },
@@ -731,12 +1211,22 @@
       "declared_name": "social-media-strategy",
       "format": "SKILL.md",
       "parse_confidence": "high",
-      "content_digest": "sha256:d0a455c613dec556c3816149d9ed2f9970488d7b",
+      "content_digest": "git_sha1:d0a455c613dec556c3816149d9ed2f9970488d7b",
       "upstream_ref": "a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba",
+      "git_blob_oid": "git_sha1:d0a455c613dec556c3816149d9ed2f9970488d7b",
       "url": "https://github.com/thatrebeccarae/claude-marketing/blob/a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba/skills/social-media-strategy/SKILL.md",
       "raw_url": "https://raw.githubusercontent.com/thatrebeccarae/claude-marketing/a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba/skills/social-media-strategy/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-thatrebeccarae-claude-marketing-claude-marketing-rebecca-rae-barton_8a108923",
+        "canonical_skill_id": null,
+        "remote_path": "skills/social-media-strategy/SKILL.md",
+        "pinned_commit": "a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba",
+        "git_blob_oid": "git_sha1:d0a455c613dec556c3816149d9ed2f9970488d7b",
+        "raw_url": "https://raw.githubusercontent.com/thatrebeccarae/claude-marketing/a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba/skills/social-media-strategy/SKILL.md",
+        "expected_output_path": null
+      },
       "raw_metadata": {
-        "github_blob_sha": "d0a455c613dec556c3816149d9ed2f9970488d7b",
+        "github_blob_oid": "git_sha1:d0a455c613dec556c3816149d9ed2f9970488d7b",
         "size": 4890
       }
     },
@@ -746,12 +1236,22 @@
       "declared_name": "social-preview",
       "format": "SKILL.md",
       "parse_confidence": "high",
-      "content_digest": "sha256:a096f325028044d6b9a7405965a38f400cc7d128",
+      "content_digest": "git_sha1:a096f325028044d6b9a7405965a38f400cc7d128",
       "upstream_ref": "a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba",
+      "git_blob_oid": "git_sha1:a096f325028044d6b9a7405965a38f400cc7d128",
       "url": "https://github.com/thatrebeccarae/claude-marketing/blob/a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba/skills/social-preview/SKILL.md",
       "raw_url": "https://raw.githubusercontent.com/thatrebeccarae/claude-marketing/a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba/skills/social-preview/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-thatrebeccarae-claude-marketing-claude-marketing-rebecca-rae-barton_8a108923",
+        "canonical_skill_id": null,
+        "remote_path": "skills/social-preview/SKILL.md",
+        "pinned_commit": "a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba",
+        "git_blob_oid": "git_sha1:a096f325028044d6b9a7405965a38f400cc7d128",
+        "raw_url": "https://raw.githubusercontent.com/thatrebeccarae/claude-marketing/a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba/skills/social-preview/SKILL.md",
+        "expected_output_path": null
+      },
       "raw_metadata": {
-        "github_blob_sha": "a096f325028044d6b9a7405965a38f400cc7d128",
+        "github_blob_oid": "git_sha1:a096f325028044d6b9a7405965a38f400cc7d128",
         "size": 8367
       }
     },
@@ -761,12 +1261,22 @@
       "declared_name": "sync-repos",
       "format": "SKILL.md",
       "parse_confidence": "high",
-      "content_digest": "sha256:a636fe3da798c0add98e154baa6d50a5c8f903f9",
+      "content_digest": "git_sha1:a636fe3da798c0add98e154baa6d50a5c8f903f9",
       "upstream_ref": "a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba",
+      "git_blob_oid": "git_sha1:a636fe3da798c0add98e154baa6d50a5c8f903f9",
       "url": "https://github.com/thatrebeccarae/claude-marketing/blob/a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba/skills/sync-repos/SKILL.md",
       "raw_url": "https://raw.githubusercontent.com/thatrebeccarae/claude-marketing/a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba/skills/sync-repos/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-thatrebeccarae-claude-marketing-claude-marketing-rebecca-rae-barton_8a108923",
+        "canonical_skill_id": null,
+        "remote_path": "skills/sync-repos/SKILL.md",
+        "pinned_commit": "a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba",
+        "git_blob_oid": "git_sha1:a636fe3da798c0add98e154baa6d50a5c8f903f9",
+        "raw_url": "https://raw.githubusercontent.com/thatrebeccarae/claude-marketing/a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba/skills/sync-repos/SKILL.md",
+        "expected_output_path": null
+      },
       "raw_metadata": {
-        "github_blob_sha": "a636fe3da798c0add98e154baa6d50a5c8f903f9",
+        "github_blob_oid": "git_sha1:a636fe3da798c0add98e154baa6d50a5c8f903f9",
         "size": 7016
       }
     },
@@ -776,12 +1286,22 @@
       "declared_name": "tech-diagram",
       "format": "SKILL.md",
       "parse_confidence": "high",
-      "content_digest": "sha256:c3c649b912d9f9a93f7bbaf37cfe943d63167819",
+      "content_digest": "git_sha1:c3c649b912d9f9a93f7bbaf37cfe943d63167819",
       "upstream_ref": "a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba",
+      "git_blob_oid": "git_sha1:c3c649b912d9f9a93f7bbaf37cfe943d63167819",
       "url": "https://github.com/thatrebeccarae/claude-marketing/blob/a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba/skills/tech-diagram/SKILL.md",
       "raw_url": "https://raw.githubusercontent.com/thatrebeccarae/claude-marketing/a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba/skills/tech-diagram/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-thatrebeccarae-claude-marketing-claude-marketing-rebecca-rae-barton_8a108923",
+        "canonical_skill_id": null,
+        "remote_path": "skills/tech-diagram/SKILL.md",
+        "pinned_commit": "a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba",
+        "git_blob_oid": "git_sha1:c3c649b912d9f9a93f7bbaf37cfe943d63167819",
+        "raw_url": "https://raw.githubusercontent.com/thatrebeccarae/claude-marketing/a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba/skills/tech-diagram/SKILL.md",
+        "expected_output_path": null
+      },
       "raw_metadata": {
-        "github_blob_sha": "c3c649b912d9f9a93f7bbaf37cfe943d63167819",
+        "github_blob_oid": "git_sha1:c3c649b912d9f9a93f7bbaf37cfe943d63167819",
         "size": 4452
       }
     },
@@ -791,12 +1311,22 @@
       "declared_name": "technical-seo-audit",
       "format": "SKILL.md",
       "parse_confidence": "high",
-      "content_digest": "sha256:9e2bf8019419f936b005497db27038661e144aa4",
+      "content_digest": "git_sha1:9e2bf8019419f936b005497db27038661e144aa4",
       "upstream_ref": "a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba",
+      "git_blob_oid": "git_sha1:9e2bf8019419f936b005497db27038661e144aa4",
       "url": "https://github.com/thatrebeccarae/claude-marketing/blob/a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba/skills/technical-seo-audit/SKILL.md",
       "raw_url": "https://raw.githubusercontent.com/thatrebeccarae/claude-marketing/a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba/skills/technical-seo-audit/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-thatrebeccarae-claude-marketing-claude-marketing-rebecca-rae-barton_8a108923",
+        "canonical_skill_id": null,
+        "remote_path": "skills/technical-seo-audit/SKILL.md",
+        "pinned_commit": "a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba",
+        "git_blob_oid": "git_sha1:9e2bf8019419f936b005497db27038661e144aa4",
+        "raw_url": "https://raw.githubusercontent.com/thatrebeccarae/claude-marketing/a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba/skills/technical-seo-audit/SKILL.md",
+        "expected_output_path": null
+      },
       "raw_metadata": {
-        "github_blob_sha": "9e2bf8019419f936b005497db27038661e144aa4",
+        "github_blob_oid": "git_sha1:9e2bf8019419f936b005497db27038661e144aa4",
         "size": 8609
       }
     },
@@ -806,12 +1336,22 @@
       "declared_name": "tiktok-ads",
       "format": "SKILL.md",
       "parse_confidence": "high",
-      "content_digest": "sha256:a09684da51e1d197d8b1f50a36427857fc21ac1c",
+      "content_digest": "git_sha1:a09684da51e1d197d8b1f50a36427857fc21ac1c",
       "upstream_ref": "a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba",
+      "git_blob_oid": "git_sha1:a09684da51e1d197d8b1f50a36427857fc21ac1c",
       "url": "https://github.com/thatrebeccarae/claude-marketing/blob/a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba/skills/tiktok-ads/SKILL.md",
       "raw_url": "https://raw.githubusercontent.com/thatrebeccarae/claude-marketing/a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba/skills/tiktok-ads/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-thatrebeccarae-claude-marketing-claude-marketing-rebecca-rae-barton_8a108923",
+        "canonical_skill_id": null,
+        "remote_path": "skills/tiktok-ads/SKILL.md",
+        "pinned_commit": "a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba",
+        "git_blob_oid": "git_sha1:a09684da51e1d197d8b1f50a36427857fc21ac1c",
+        "raw_url": "https://raw.githubusercontent.com/thatrebeccarae/claude-marketing/a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba/skills/tiktok-ads/SKILL.md",
+        "expected_output_path": null
+      },
       "raw_metadata": {
-        "github_blob_sha": "a09684da51e1d197d8b1f50a36427857fc21ac1c",
+        "github_blob_oid": "git_sha1:a09684da51e1d197d8b1f50a36427857fc21ac1c",
         "size": 5717
       }
     },
@@ -821,12 +1361,22 @@
       "declared_name": "utm-attribution-strategy",
       "format": "SKILL.md",
       "parse_confidence": "high",
-      "content_digest": "sha256:a81c5735fa1ddb6786a8a26ca6982bf1ab917d57",
+      "content_digest": "git_sha1:a81c5735fa1ddb6786a8a26ca6982bf1ab917d57",
       "upstream_ref": "a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba",
+      "git_blob_oid": "git_sha1:a81c5735fa1ddb6786a8a26ca6982bf1ab917d57",
       "url": "https://github.com/thatrebeccarae/claude-marketing/blob/a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba/skills/utm-attribution-strategy/SKILL.md",
       "raw_url": "https://raw.githubusercontent.com/thatrebeccarae/claude-marketing/a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba/skills/utm-attribution-strategy/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-thatrebeccarae-claude-marketing-claude-marketing-rebecca-rae-barton_8a108923",
+        "canonical_skill_id": null,
+        "remote_path": "skills/utm-attribution-strategy/SKILL.md",
+        "pinned_commit": "a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba",
+        "git_blob_oid": "git_sha1:a81c5735fa1ddb6786a8a26ca6982bf1ab917d57",
+        "raw_url": "https://raw.githubusercontent.com/thatrebeccarae/claude-marketing/a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba/skills/utm-attribution-strategy/SKILL.md",
+        "expected_output_path": null
+      },
       "raw_metadata": {
-        "github_blob_sha": "a81c5735fa1ddb6786a8a26ca6982bf1ab917d57",
+        "github_blob_oid": "git_sha1:a81c5735fa1ddb6786a8a26ca6982bf1ab917d57",
         "size": 7377
       }
     },
@@ -836,15 +1386,25 @@
       "declared_name": "wasted-spend-finder",
       "format": "SKILL.md",
       "parse_confidence": "high",
-      "content_digest": "sha256:9e8af0ec79ce9e3ae45858d6a388cfbbfc1be12d",
+      "content_digest": "git_sha1:9e8af0ec79ce9e3ae45858d6a388cfbbfc1be12d",
       "upstream_ref": "a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba",
+      "git_blob_oid": "git_sha1:9e8af0ec79ce9e3ae45858d6a388cfbbfc1be12d",
       "url": "https://github.com/thatrebeccarae/claude-marketing/blob/a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba/skills/wasted-spend-finder/SKILL.md",
       "raw_url": "https://raw.githubusercontent.com/thatrebeccarae/claude-marketing/a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba/skills/wasted-spend-finder/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-thatrebeccarae-claude-marketing-claude-marketing-rebecca-rae-barton_8a108923",
+        "canonical_skill_id": null,
+        "remote_path": "skills/wasted-spend-finder/SKILL.md",
+        "pinned_commit": "a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba",
+        "git_blob_oid": "git_sha1:9e8af0ec79ce9e3ae45858d6a388cfbbfc1be12d",
+        "raw_url": "https://raw.githubusercontent.com/thatrebeccarae/claude-marketing/a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba/skills/wasted-spend-finder/SKILL.md",
+        "expected_output_path": null
+      },
       "raw_metadata": {
-        "github_blob_sha": "9e8af0ec79ce9e3ae45858d6a388cfbbfc1be12d",
+        "github_blob_oid": "git_sha1:9e8af0ec79ce9e3ae45858d6a388cfbbfc1be12d",
         "size": 5158
       }
     }
   ],
-  "digest": "sha256:6f0100f1d5b4e8575b37cf7b99e1d4617a9a2df77a7c817fb8e2c31bda742cc5"
+  "digest": "sha256:daa929aa45b6d222aced3ae171c67b1d6fe880389519af9499fc5858193e0660"
 }

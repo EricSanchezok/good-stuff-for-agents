@@ -14,7 +14,7 @@ curation:
 display_name: azure-monitor-opentelemetry-ts
 identity:
   aliases: []
-  current_version_id: sha256:538f028b72746103fa2314ba625acad23c934fce
+  current_version_id: git_sha1:538f028b72746103fa2314ba625acad23c934fce
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

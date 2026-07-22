@@ -14,7 +14,7 @@ curation:
 display_name: pestle-analysis
 identity:
   aliases: []
-  current_version_id: sha256:bf2636f5cd9af3dd29ee54b8f3bd721444eda556
+  current_version_id: git_sha1:bf2636f5cd9af3dd29ee54b8f3bd721444eda556
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

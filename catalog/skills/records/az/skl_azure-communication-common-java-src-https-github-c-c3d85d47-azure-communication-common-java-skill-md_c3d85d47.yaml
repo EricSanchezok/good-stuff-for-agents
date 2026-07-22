@@ -14,7 +14,7 @@ curation:
 display_name: azure-communication-common-java
 identity:
   aliases: []
-  current_version_id: sha256:b7b13710db6b54f823a5af8dbae652a427b1e776
+  current_version_id: git_sha1:b7b13710db6b54f823a5af8dbae652a427b1e776
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

@@ -1,0 +1,16 @@
+{
+  "binding": {
+    "canonical_skill_id": "skl_experimental-design-src-https-github-com-k-dense-a-b52ad8ec-6d39-skills-experimental-design-skill-md_b52ad8ec",
+    "current_version_id": "git_sha1:88ca761056ac84392d79933e3bc2714e15086fef",
+    "expected_output_path": "catalog/analyses/ex/skl_experimental-design-src-https-github-com-k-dense-a-b52ad8ec-6d39-skills-experimental-design-skill-md_b52ad8ec.md",
+    "git_blob_oid": "git_sha1:88ca761056ac84392d79933e3bc2714e15086fef",
+    "pinned_commit": "831d49eb77eed3c792be2970921b46764012ef00",
+    "raw_url": "https://raw.githubusercontent.com/K-Dense-AI/scientific-agent-skills/831d49eb77eed3c792be2970921b46764012ef00/skills/experimental-design/SKILL.md",
+    "remote_path": "skills/experimental-design/SKILL.md",
+    "source_id": "src_https-github-com-k-dense-ai-scientific-agent-skills-k-dense-scientific-agent-skills_5bdb6d39"
+  },
+  "dispatch_digest": "sha256:0ea86868cb3679e70149a87df07985cd4ebf932fbf463ac836ed4c41292bae64",
+  "kind": "skill-analysis-dispatch",
+  "run_id": "run_2026-07-22-030000",
+  "schema_version": 2
+}

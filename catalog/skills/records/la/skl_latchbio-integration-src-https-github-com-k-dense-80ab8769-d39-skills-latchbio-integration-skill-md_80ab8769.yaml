@@ -14,7 +14,7 @@ curation:
 display_name: latchbio-integration
 identity:
   aliases: []
-  current_version_id: sha256:90106dfc98b5207b8870c1f6e57c7b2989dd1933
+  current_version_id: git_sha1:90106dfc98b5207b8870c1f6e57c7b2989dd1933
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

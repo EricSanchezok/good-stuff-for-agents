@@ -14,7 +14,7 @@ curation:
 display_name: medchem
 identity:
   aliases: []
-  current_version_id: sha256:5a46e7ba15a524a745a58d299bcf9dd215e8d3ac
+  current_version_id: git_sha1:5a46e7ba15a524a745a58d299bcf9dd215e8d3ac
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

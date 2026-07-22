@@ -14,7 +14,7 @@ curation:
 display_name: azure-data-tables-java
 identity:
   aliases: []
-  current_version_id: sha256:0fbad66ba89446a1481d848c0aa2ed8df0efa897
+  current_version_id: git_sha1:0fbad66ba89446a1481d848c0aa2ed8df0efa897
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

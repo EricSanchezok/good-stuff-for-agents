@@ -14,7 +14,7 @@ curation:
 display_name: shap
 identity:
   aliases: []
-  current_version_id: sha256:6ec60140247352c6360a6af7abc74fa63de7a57e
+  current_version_id: git_sha1:6ec60140247352c6360a6af7abc74fa63de7a57e
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

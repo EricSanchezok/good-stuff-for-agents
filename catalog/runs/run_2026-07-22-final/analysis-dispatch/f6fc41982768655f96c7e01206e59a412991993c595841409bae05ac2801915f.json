@@ -1,0 +1,16 @@
+{
+  "binding": {
+    "canonical_skill_id": "skl_azure-maps-search-dotnet-src-https-github-com-micr-e74391f4-skills-azure-maps-search-dotnet-skill-md_e74391f4",
+    "current_version_id": "git_sha1:79897e10e8bd32128b9b6641087b7a0bf14f7507",
+    "expected_output_path": "catalog/analyses/az/skl_azure-maps-search-dotnet-src-https-github-com-micr-e74391f4-skills-azure-maps-search-dotnet-skill-md_e74391f4.md",
+    "git_blob_oid": "git_sha1:79897e10e8bd32128b9b6641087b7a0bf14f7507",
+    "pinned_commit": "cc93536d8b809e177a7d1008b276ce41a9456a9c",
+    "raw_url": "https://raw.githubusercontent.com/microsoft/skills/cc93536d8b809e177a7d1008b276ce41a9456a9c/.github/plugins/azure-sdk-dotnet/skills/azure-maps-search-dotnet/SKILL.md",
+    "remote_path": ".github/plugins/azure-sdk-dotnet/skills/azure-maps-search-dotnet/SKILL.md",
+    "source_id": "src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e"
+  },
+  "dispatch_digest": "sha256:f6fc41982768655f96c7e01206e59a412991993c595841409bae05ac2801915f",
+  "kind": "skill-analysis-dispatch",
+  "run_id": "run_2026-07-22-final",
+  "schema_version": 2
+}

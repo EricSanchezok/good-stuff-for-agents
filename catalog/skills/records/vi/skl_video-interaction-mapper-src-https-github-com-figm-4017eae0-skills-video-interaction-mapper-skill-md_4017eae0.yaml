@@ -14,7 +14,7 @@ curation:
 display_name: video-interaction-mapper
 identity:
   aliases: []
-  current_version_id: sha256:93d80e2d80e303298e095d6191732d3a0e92231c
+  current_version_id: git_sha1:93d80e2d80e303298e095d6191732d3a0e92231c
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

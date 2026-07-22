@@ -14,7 +14,7 @@ curation:
 display_name: usfiscaldata
 identity:
   aliases: []
-  current_version_id: sha256:ec13613faf67008fda3303db5edfd161e936e40a
+  current_version_id: git_sha1:ec13613faf67008fda3303db5edfd161e936e40a
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

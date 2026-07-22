@@ -14,7 +14,7 @@ curation:
 display_name: retro
 identity:
   aliases: []
-  current_version_id: sha256:f90eeb5f1121ca6ed4cf5780e09060d1cb983210
+  current_version_id: git_sha1:f90eeb5f1121ca6ed4cf5780e09060d1cb983210
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

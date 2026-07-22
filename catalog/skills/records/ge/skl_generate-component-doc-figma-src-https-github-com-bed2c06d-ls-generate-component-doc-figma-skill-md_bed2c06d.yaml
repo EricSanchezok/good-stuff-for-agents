@@ -14,7 +14,7 @@ curation:
 display_name: generate-component-doc-figma
 identity:
   aliases: []
-  current_version_id: sha256:2d2f6e31ea4587f7de3052ffd97ef5ea7825e32c
+  current_version_id: git_sha1:2d2f6e31ea4587f7de3052ffd97ef5ea7825e32c
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

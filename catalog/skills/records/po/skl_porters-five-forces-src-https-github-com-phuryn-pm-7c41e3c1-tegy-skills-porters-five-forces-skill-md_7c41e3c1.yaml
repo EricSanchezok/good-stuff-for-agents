@@ -14,7 +14,7 @@ curation:
 display_name: porters-five-forces
 identity:
   aliases: []
-  current_version_id: sha256:82fd3592e2af142907674214296ef86cc11d6478
+  current_version_id: git_sha1:82fd3592e2af142907674214296ef86cc11d6478
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

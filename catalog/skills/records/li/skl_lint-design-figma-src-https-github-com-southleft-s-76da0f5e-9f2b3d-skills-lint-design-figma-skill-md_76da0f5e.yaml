@@ -14,7 +14,7 @@ curation:
 display_name: lint-design-figma
 identity:
   aliases: []
-  current_version_id: sha256:1b3cd1116d5ecea40e1d9ab533f0004f064f83f8
+  current_version_id: git_sha1:1b3cd1116d5ecea40e1d9ab533f0004f064f83f8
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

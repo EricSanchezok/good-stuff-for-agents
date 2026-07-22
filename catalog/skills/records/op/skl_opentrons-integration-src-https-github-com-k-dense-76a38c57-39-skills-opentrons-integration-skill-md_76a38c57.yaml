@@ -14,7 +14,7 @@ curation:
 display_name: opentrons-integration
 identity:
   aliases: []
-  current_version_id: sha256:943d95f1245e3f834cdbee9a415a62810410745c
+  current_version_id: git_sha1:943d95f1245e3f834cdbee9a415a62810410745c
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

@@ -14,7 +14,7 @@ curation:
 display_name: azure-kubernetes-automatic-readiness
 identity:
   aliases: []
-  current_version_id: sha256:452449d067b912207e88e2e4c0358571aba6ec66
+  current_version_id: git_sha1:452449d067b912207e88e2e4c0358571aba6ec66
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

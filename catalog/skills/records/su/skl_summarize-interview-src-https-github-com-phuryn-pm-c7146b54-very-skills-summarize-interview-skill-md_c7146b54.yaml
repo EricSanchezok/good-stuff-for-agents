@@ -14,7 +14,7 @@ curation:
 display_name: summarize-interview
 identity:
   aliases: []
-  current_version_id: sha256:b4fee4359979f565a785f9ee704ab6d9ee48d54a
+  current_version_id: git_sha1:b4fee4359979f565a785f9ee704ab6d9ee48d54a
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

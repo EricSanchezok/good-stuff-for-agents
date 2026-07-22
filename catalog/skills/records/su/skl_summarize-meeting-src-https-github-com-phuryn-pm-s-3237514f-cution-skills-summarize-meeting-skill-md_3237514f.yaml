@@ -14,7 +14,7 @@ curation:
 display_name: summarize-meeting
 identity:
   aliases: []
-  current_version_id: sha256:a103503d8002be02efaff273dcad1777b55f3fd7
+  current_version_id: git_sha1:a103503d8002be02efaff273dcad1777b55f3fd7
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

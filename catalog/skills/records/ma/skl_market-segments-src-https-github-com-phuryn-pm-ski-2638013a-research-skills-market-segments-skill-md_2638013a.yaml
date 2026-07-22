@@ -14,7 +14,7 @@ curation:
 display_name: market-segments
 identity:
   aliases: []
-  current_version_id: sha256:9393012c8a4487e8e13fc037284d209bdfc34fbb
+  current_version_id: git_sha1:9393012c8a4487e8e13fc037284d209bdfc34fbb
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

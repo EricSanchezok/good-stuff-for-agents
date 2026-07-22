@@ -14,7 +14,7 @@ curation:
 display_name: slack-gif-creator
 identity:
   aliases: []
-  current_version_id: sha256:16660d8ceb77af47986bba1c9176c2ff3f287a91
+  current_version_id: git_sha1:16660d8ceb77af47986bba1c9176c2ff3f287a91
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

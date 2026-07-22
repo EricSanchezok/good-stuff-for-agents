@@ -14,7 +14,7 @@ curation:
 display_name: foundation-lean-canvas
 identity:
   aliases: []
-  current_version_id: sha256:7fd20809218640257cdb4e83b23adef01157575f
+  current_version_id: git_sha1:7fd20809218640257cdb4e83b23adef01157575f
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

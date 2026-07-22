@@ -14,7 +14,7 @@ curation:
 display_name: microsoft-azure-webjobs-extensions-authentication-events-dotnet
 identity:
   aliases: []
-  current_version_id: sha256:a90ab71b73b33f9953ba9f95a556b451849ff4ba
+  current_version_id: git_sha1:a90ab71b73b33f9953ba9f95a556b451849ff4ba
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

@@ -14,7 +14,7 @@ curation:
 display_name: utility-pm-workflow-builder
 identity:
   aliases: []
-  current_version_id: sha256:028b0bedee0dcba998a20a1415810c4b58ed5fbd
+  current_version_id: git_sha1:028b0bedee0dcba998a20a1415810c4b58ed5fbd
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

@@ -4,7 +4,9 @@
 
 ## Summary
 
-Analysis pending.
+# Geniml
+
+Geniml is a Python framework at the boundary between genomics data formats and PyTorch deep learning pipelines. Its core value: standardized DataLoaders that understand genomic coordinate systems, strandedness, and interval arithmetic — replacing ad-hoc BED/FASTA/bigWig parsers. Targets sequence-to-function tasks: variant effect prediction, transcription factor binding, chromatin accessibility.
 
 ## Source
 
@@ -35,6 +37,10 @@ No published packs use this skill yet.
 ## Related Skills
 
 No related skills are public yet.
+
+## Public Analysis Summary
+
+Narrow, honest, domain-specific utility skill. For the right user — a computational biologist — it could save real time. For anyone else, useless to misleading because it reduces mechanical friction without reducing conceptual friction.
 
 ## Confidence and Limitations
 

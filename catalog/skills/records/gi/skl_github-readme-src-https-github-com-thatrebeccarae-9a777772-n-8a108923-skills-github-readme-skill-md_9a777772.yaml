@@ -14,7 +14,7 @@ curation:
 display_name: github-readme
 identity:
   aliases: []
-  current_version_id: sha256:bdba2c83cef171820ff6897885a0c9dd97add177
+  current_version_id: git_sha1:bdba2c83cef171820ff6897885a0c9dd97add177
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

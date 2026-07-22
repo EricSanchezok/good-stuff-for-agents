@@ -1,0 +1,16 @@
+{
+  "binding": {
+    "canonical_skill_id": "skl_azure-communication-chat-java-src-https-github-com-efc0f26a-s-azure-communication-chat-java-skill-md_efc0f26a",
+    "current_version_id": "git_sha1:22e9dd0e2e8cbcfc5ce26c59d14b4b5c4a8ce0c9",
+    "expected_output_path": "catalog/analyses/az/skl_azure-communication-chat-java-src-https-github-com-efc0f26a-s-azure-communication-chat-java-skill-md_efc0f26a.md",
+    "git_blob_oid": "git_sha1:22e9dd0e2e8cbcfc5ce26c59d14b4b5c4a8ce0c9",
+    "pinned_commit": "cc93536d8b809e177a7d1008b276ce41a9456a9c",
+    "raw_url": "https://raw.githubusercontent.com/microsoft/skills/cc93536d8b809e177a7d1008b276ce41a9456a9c/.github/plugins/azure-sdk-java/skills/azure-communication-chat-java/SKILL.md",
+    "remote_path": ".github/plugins/azure-sdk-java/skills/azure-communication-chat-java/SKILL.md",
+    "source_id": "src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e"
+  },
+  "dispatch_digest": "sha256:c891e118865a03668d3d3018e23896b296407b99895c4f9bcd7a9bba788e75b2",
+  "kind": "skill-analysis-dispatch",
+  "run_id": "run_2026-07-22-050000",
+  "schema_version": 2
+}

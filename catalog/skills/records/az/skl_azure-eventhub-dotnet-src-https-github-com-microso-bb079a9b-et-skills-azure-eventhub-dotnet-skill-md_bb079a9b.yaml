@@ -14,7 +14,7 @@ curation:
 display_name: azure-eventhub-dotnet
 identity:
   aliases: []
-  current_version_id: sha256:11c2a85610791e40b99dec976b422fe326e4fc9c
+  current_version_id: git_sha1:11c2a85610791e40b99dec976b422fe326e4fc9c
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

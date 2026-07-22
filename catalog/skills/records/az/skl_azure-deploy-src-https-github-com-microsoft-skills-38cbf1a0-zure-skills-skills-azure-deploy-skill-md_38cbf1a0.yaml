@@ -14,7 +14,7 @@ curation:
 display_name: azure-deploy
 identity:
   aliases: []
-  current_version_id: sha256:23815db4c7c5946913b10ac1cd706ea2bf6727fe
+  current_version_id: git_sha1:23815db4c7c5946913b10ac1cd706ea2bf6727fe
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

@@ -14,7 +14,7 @@ curation:
 display_name: azure-mgmt-apicenter-dotnet
 identity:
   aliases: []
-  current_version_id: sha256:c67b575cbc92644e4ef78a7cad695a2944f545bc
+  current_version_id: git_sha1:c67b575cbc92644e4ef78a7cad695a2944f545bc
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

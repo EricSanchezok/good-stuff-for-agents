@@ -14,7 +14,7 @@ curation:
 display_name: pyzotero
 identity:
   aliases: []
-  current_version_id: sha256:d83742625ed60b4e8b7549f40c491f3dbff526b9
+  current_version_id: git_sha1:d83742625ed60b4e8b7549f40c491f3dbff526b9
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

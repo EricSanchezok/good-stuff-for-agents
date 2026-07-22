@@ -1,0 +1,16 @@
+{
+  "binding": {
+    "canonical_skill_id": "skl_azure-eventhub-rust-src-https-github-com-microsoft-c477bbf1-rust-skills-azure-eventhub-rust-skill-md_c477bbf1",
+    "current_version_id": "git_sha1:6b728d857b1100fe2f8b43c4c07c6a2d041c7665",
+    "expected_output_path": "catalog/analyses/az/skl_azure-eventhub-rust-src-https-github-com-microsoft-c477bbf1-rust-skills-azure-eventhub-rust-skill-md_c477bbf1.md",
+    "git_blob_oid": "git_sha1:6b728d857b1100fe2f8b43c4c07c6a2d041c7665",
+    "pinned_commit": "cc93536d8b809e177a7d1008b276ce41a9456a9c",
+    "raw_url": "https://raw.githubusercontent.com/microsoft/skills/cc93536d8b809e177a7d1008b276ce41a9456a9c/.github/plugins/azure-sdk-rust/skills/azure-eventhub-rust/SKILL.md",
+    "remote_path": ".github/plugins/azure-sdk-rust/skills/azure-eventhub-rust/SKILL.md",
+    "source_id": "src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e"
+  },
+  "dispatch_digest": "sha256:5e5e14dd04bdd8e35f1776b988f510116ed10cf6b3b1c7857f51bcf6130a83f5",
+  "kind": "skill-analysis-dispatch",
+  "run_id": "run_2026-07-22-final",
+  "schema_version": 2
+}

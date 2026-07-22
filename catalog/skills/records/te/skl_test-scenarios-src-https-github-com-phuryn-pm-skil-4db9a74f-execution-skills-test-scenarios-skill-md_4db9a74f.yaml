@@ -14,7 +14,7 @@ curation:
 display_name: test-scenarios
 identity:
   aliases: []
-  current_version_id: sha256:d5a25a7185d1681f97c1506d2ff1ccc083a7ce95
+  current_version_id: git_sha1:d5a25a7185d1681f97c1506d2ff1ccc083a7ce95
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

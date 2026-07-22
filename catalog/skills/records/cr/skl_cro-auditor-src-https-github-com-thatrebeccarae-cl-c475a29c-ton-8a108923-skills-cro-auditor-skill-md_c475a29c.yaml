@@ -14,7 +14,7 @@ curation:
 display_name: cro-auditor
 identity:
   aliases: []
-  current_version_id: sha256:37c2718db9e18a5602cc06c3ffc6bd1efeeda017
+  current_version_id: git_sha1:37c2718db9e18a5602cc06c3ffc6bd1efeeda017
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

@@ -14,7 +14,7 @@ curation:
 display_name: schema-markup-generator
 identity:
   aliases: []
-  current_version_id: sha256:b1e90ba5140d653afc08ccd3db191a5b908f499a
+  current_version_id: git_sha1:b1e90ba5140d653afc08ccd3db191a5b908f499a
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

@@ -14,7 +14,7 @@ curation:
 display_name: tool-foundation-sprint-readiness
 identity:
   aliases: []
-  current_version_id: sha256:3441563c9575c7234ef670fcf5cf241252e65ef3
+  current_version_id: git_sha1:3441563c9575c7234ef670fcf5cf241252e65ef3
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

@@ -14,7 +14,7 @@ curation:
 display_name: competitive-battlecard
 identity:
   aliases: []
-  current_version_id: sha256:cc0d13b0401d26b24db6647ecd4e35829d6769ef
+  current_version_id: git_sha1:cc0d13b0401d26b24db6647ecd4e35829d6769ef
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

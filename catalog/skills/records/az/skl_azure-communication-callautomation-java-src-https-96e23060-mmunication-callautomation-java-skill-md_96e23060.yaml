@@ -14,7 +14,7 @@ curation:
 display_name: azure-communication-callautomation-java
 identity:
   aliases: []
-  current_version_id: sha256:75b1857c6d21a89385b07a2c39b0643704be00d4
+  current_version_id: git_sha1:75b1857c6d21a89385b07a2c39b0643704be00d4
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

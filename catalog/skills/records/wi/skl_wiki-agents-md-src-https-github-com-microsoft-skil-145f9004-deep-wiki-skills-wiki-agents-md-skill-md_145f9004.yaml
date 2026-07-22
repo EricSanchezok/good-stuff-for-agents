@@ -14,7 +14,7 @@ curation:
 display_name: wiki-agents-md
 identity:
   aliases: []
-  current_version_id: sha256:45e93b32d3d7f2120cb9b3b7f51e9271e3e0189c
+  current_version_id: git_sha1:45e93b32d3d7f2120cb9b3b7f51e9271e3e0189c
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

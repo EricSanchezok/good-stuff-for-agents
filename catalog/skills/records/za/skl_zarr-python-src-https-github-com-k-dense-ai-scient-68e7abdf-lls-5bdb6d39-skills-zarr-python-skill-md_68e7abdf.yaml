@@ -14,7 +14,7 @@ curation:
 display_name: zarr-python
 identity:
   aliases: []
-  current_version_id: sha256:3f305991035ddc7e05e9e907050b76e10f366acb
+  current_version_id: git_sha1:3f305991035ddc7e05e9e907050b76e10f366acb
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

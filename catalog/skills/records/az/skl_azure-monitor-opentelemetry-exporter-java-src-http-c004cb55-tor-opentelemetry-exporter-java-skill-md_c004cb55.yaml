@@ -14,7 +14,7 @@ curation:
 display_name: azure-monitor-opentelemetry-exporter-java
 identity:
   aliases: []
-  current_version_id: sha256:2be5ec33b16457816e0737dcc99007560fea74d5
+  current_version_id: git_sha1:2be5ec33b16457816e0737dcc99007560fea74d5
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

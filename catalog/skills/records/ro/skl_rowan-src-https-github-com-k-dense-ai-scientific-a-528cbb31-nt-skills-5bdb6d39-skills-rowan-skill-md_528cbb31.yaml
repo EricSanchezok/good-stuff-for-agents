@@ -14,7 +14,7 @@ curation:
 display_name: rowan
 identity:
   aliases: []
-  current_version_id: sha256:d39000f2393eb7102f91dc6c886e3724982a1f02
+  current_version_id: git_sha1:d39000f2393eb7102f91dc6c886e3724982a1f02
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

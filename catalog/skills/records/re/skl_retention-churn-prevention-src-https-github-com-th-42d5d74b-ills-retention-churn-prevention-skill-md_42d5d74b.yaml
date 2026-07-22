@@ -14,7 +14,7 @@ curation:
 display_name: retention-churn-prevention
 identity:
   aliases: []
-  current_version_id: sha256:ccf72f56f53506226c28ff7261cb7ba87e763d32
+  current_version_id: git_sha1:ccf72f56f53506226c28ff7261cb7ba87e763d32
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

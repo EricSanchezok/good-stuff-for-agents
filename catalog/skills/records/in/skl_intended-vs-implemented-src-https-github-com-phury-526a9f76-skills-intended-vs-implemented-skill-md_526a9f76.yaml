@@ -14,7 +14,7 @@ curation:
 display_name: intended-vs-implemented
 identity:
   aliases: []
-  current_version_id: sha256:fd52d028afd1de556725e74e5b78280d1a6f0fe6
+  current_version_id: git_sha1:fd52d028afd1de556725e74e5b78280d1a6f0fe6
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

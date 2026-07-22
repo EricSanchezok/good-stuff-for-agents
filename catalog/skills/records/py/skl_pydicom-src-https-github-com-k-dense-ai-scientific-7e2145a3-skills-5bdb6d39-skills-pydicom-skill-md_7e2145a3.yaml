@@ -14,7 +14,7 @@ curation:
 display_name: pydicom
 identity:
   aliases: []
-  current_version_id: sha256:93ab7b64269782dec84ba4b8990a69972500369e
+  current_version_id: git_sha1:93ab7b64269782dec84ba4b8990a69972500369e
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

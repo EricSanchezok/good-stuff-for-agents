@@ -1,0 +1,16 @@
+{
+  "binding": {
+    "canonical_skill_id": "skl_azure-compute-batch-java-src-https-github-com-micr-fb89d713-skills-azure-compute-batch-java-skill-md_fb89d713",
+    "current_version_id": "git_sha1:5fc31081115f4710a9b2b961b6662253b0232318",
+    "expected_output_path": "catalog/analyses/az/skl_azure-compute-batch-java-src-https-github-com-micr-fb89d713-skills-azure-compute-batch-java-skill-md_fb89d713.md",
+    "git_blob_oid": "git_sha1:5fc31081115f4710a9b2b961b6662253b0232318",
+    "pinned_commit": "cc93536d8b809e177a7d1008b276ce41a9456a9c",
+    "raw_url": "https://raw.githubusercontent.com/microsoft/skills/cc93536d8b809e177a7d1008b276ce41a9456a9c/.github/plugins/azure-sdk-java/skills/azure-compute-batch-java/SKILL.md",
+    "remote_path": ".github/plugins/azure-sdk-java/skills/azure-compute-batch-java/SKILL.md",
+    "source_id": "src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e"
+  },
+  "dispatch_digest": "sha256:e60c117bf7a0f5a78cc51776df4cae2a208f84d9db8f7e95c3956a4cd587508c",
+  "kind": "skill-analysis-dispatch",
+  "run_id": "run_2026-07-22-050000",
+  "schema_version": 2
+}

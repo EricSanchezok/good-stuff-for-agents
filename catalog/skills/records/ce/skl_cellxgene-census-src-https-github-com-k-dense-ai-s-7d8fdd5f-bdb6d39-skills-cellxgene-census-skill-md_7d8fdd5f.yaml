@@ -14,7 +14,7 @@ curation:
 display_name: cellxgene-census
 identity:
   aliases: []
-  current_version_id: sha256:4324ac74c0855b070dd8663061fa62d31b3553c6
+  current_version_id: git_sha1:4324ac74c0855b070dd8663061fa62d31b3553c6
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

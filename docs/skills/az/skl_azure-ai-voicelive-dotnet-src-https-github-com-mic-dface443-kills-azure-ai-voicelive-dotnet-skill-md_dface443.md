@@ -4,7 +4,9 @@
 
 ## Summary
 
-Analysis pending.
+# Azure AI VoiceLive .NET SDK
+
+Teaches .NET developers real-time voice-to-voice AI using Azure OpenAI's VoiceLive service layered on Cognitive Services Speech SDK. Streaming audio pipelines, voice model config, conversation state, error handling. .NET + Azure lock-in.
 
 ## Source
 
@@ -35,6 +37,10 @@ No published packs use this skill yet.
 ## Related Skills
 
 No related skills are public yet.
+
+## Public Analysis Summary
+
+Defensible niche but value depends on execution depth unverifiable from summary. Biggest risk: shallow tutorial producing demo-quality code that fails under real audio conditions. Earns tight 100-spot only if it goes deep on streaming lifecycle and cost management.
 
 ## Confidence and Limitations
 

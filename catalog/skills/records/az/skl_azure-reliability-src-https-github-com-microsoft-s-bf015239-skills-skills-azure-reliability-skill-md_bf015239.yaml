@@ -14,7 +14,7 @@ curation:
 display_name: azure-reliability
 identity:
   aliases: []
-  current_version_id: sha256:835bc5e854d9cabfc6021a9bfc6d7fbb8c594abb
+  current_version_id: git_sha1:835bc5e854d9cabfc6021a9bfc6d7fbb8c594abb
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

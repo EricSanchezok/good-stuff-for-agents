@@ -14,7 +14,7 @@ curation:
 display_name: declarative-agent-developer
 identity:
   aliases: []
-  current_version_id: sha256:a974c332cdbed595eed80f79285ba12d7946f61e
+  current_version_id: git_sha1:a974c332cdbed595eed80f79285ba12d7946f61e
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

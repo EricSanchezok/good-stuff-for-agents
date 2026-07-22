@@ -14,7 +14,7 @@ curation:
 display_name: google-tag-manager
 identity:
   aliases: []
-  current_version_id: sha256:25f73a0cc4604d0fa3d3b4c66298febbd0d59628
+  current_version_id: git_sha1:25f73a0cc4604d0fa3d3b4c66298febbd0d59628
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

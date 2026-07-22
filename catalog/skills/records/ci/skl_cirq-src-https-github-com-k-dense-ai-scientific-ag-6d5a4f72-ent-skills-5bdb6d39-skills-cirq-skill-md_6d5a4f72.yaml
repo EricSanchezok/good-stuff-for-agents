@@ -14,7 +14,7 @@ curation:
 display_name: cirq
 identity:
   aliases: []
-  current_version_id: sha256:c9700a869ae7926f391d954a23e596049304c421
+  current_version_id: git_sha1:c9700a869ae7926f391d954a23e596049304c421
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

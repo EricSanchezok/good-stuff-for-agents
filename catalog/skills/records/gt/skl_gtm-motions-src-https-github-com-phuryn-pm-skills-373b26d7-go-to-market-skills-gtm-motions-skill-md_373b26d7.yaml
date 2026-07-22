@@ -14,7 +14,7 @@ curation:
 display_name: gtm-motions
 identity:
   aliases: []
-  current_version_id: sha256:ad4dcdc24141925d2a668376076201be1af3bb3a
+  current_version_id: git_sha1:ad4dcdc24141925d2a668376076201be1af3bb3a
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

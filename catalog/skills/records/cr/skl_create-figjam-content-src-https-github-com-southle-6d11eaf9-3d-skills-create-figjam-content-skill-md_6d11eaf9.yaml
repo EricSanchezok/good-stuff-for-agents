@@ -14,7 +14,7 @@ curation:
 display_name: create-figjam-content
 identity:
   aliases: []
-  current_version_id: sha256:6d422e01a80034d20313a1e12cdadc308b3229c0
+  current_version_id: git_sha1:6d422e01a80034d20313a1e12cdadc308b3229c0
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

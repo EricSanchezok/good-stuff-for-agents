@@ -14,7 +14,7 @@ curation:
 display_name: azure-upgrade
 identity:
   aliases: []
-  current_version_id: sha256:6b87a36c181440dd213443b19a2a58d25504a1ba
+  current_version_id: git_sha1:6b87a36c181440dd213443b19a2a58d25504a1ba
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

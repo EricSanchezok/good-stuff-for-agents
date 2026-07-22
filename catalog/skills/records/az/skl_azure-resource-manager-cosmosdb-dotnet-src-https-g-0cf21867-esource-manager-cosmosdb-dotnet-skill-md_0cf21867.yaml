@@ -14,7 +14,7 @@ curation:
 display_name: azure-resource-manager-cosmosdb-dotnet
 identity:
   aliases: []
-  current_version_id: sha256:3318c2734fa2a69f00d526073fad9b49426d5ef1
+  current_version_id: git_sha1:3318c2734fa2a69f00d526073fad9b49426d5ef1
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

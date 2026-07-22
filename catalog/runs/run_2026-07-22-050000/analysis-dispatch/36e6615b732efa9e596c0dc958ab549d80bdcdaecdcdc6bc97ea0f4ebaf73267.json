@@ -1,0 +1,16 @@
+{
+  "binding": {
+    "canonical_skill_id": "skl_azure-ai-voicelive-dotnet-src-https-github-com-mic-dface443-kills-azure-ai-voicelive-dotnet-skill-md_dface443",
+    "current_version_id": "git_sha1:82e101da3649c7f560fff5ac2f96f7e75268e6e1",
+    "expected_output_path": "catalog/analyses/az/skl_azure-ai-voicelive-dotnet-src-https-github-com-mic-dface443-kills-azure-ai-voicelive-dotnet-skill-md_dface443.md",
+    "git_blob_oid": "git_sha1:82e101da3649c7f560fff5ac2f96f7e75268e6e1",
+    "pinned_commit": "cc93536d8b809e177a7d1008b276ce41a9456a9c",
+    "raw_url": "https://raw.githubusercontent.com/microsoft/skills/cc93536d8b809e177a7d1008b276ce41a9456a9c/.github/plugins/azure-sdk-dotnet/skills/azure-ai-voicelive-dotnet/SKILL.md",
+    "remote_path": ".github/plugins/azure-sdk-dotnet/skills/azure-ai-voicelive-dotnet/SKILL.md",
+    "source_id": "src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e"
+  },
+  "dispatch_digest": "sha256:36e6615b732efa9e596c0dc958ab549d80bdcdaecdcdc6bc97ea0f4ebaf73267",
+  "kind": "skill-analysis-dispatch",
+  "run_id": "run_2026-07-22-050000",
+  "schema_version": 2
+}

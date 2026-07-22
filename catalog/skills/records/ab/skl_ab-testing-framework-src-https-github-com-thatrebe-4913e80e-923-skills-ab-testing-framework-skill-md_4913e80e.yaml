@@ -14,7 +14,7 @@ curation:
 display_name: ab-testing-framework
 identity:
   aliases: []
-  current_version_id: sha256:6442aed5e6a66e8756643453fc85ba648beaf3cf
+  current_version_id: git_sha1:6442aed5e6a66e8756643453fc85ba648beaf3cf
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

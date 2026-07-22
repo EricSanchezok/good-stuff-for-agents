@@ -14,7 +14,7 @@ curation:
 display_name: import-tokens-figma
 identity:
   aliases: []
-  current_version_id: sha256:7953b305748e964184f1c35bd320613a3a164e71
+  current_version_id: git_sha1:7953b305748e964184f1c35bd320613a3a164e71
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

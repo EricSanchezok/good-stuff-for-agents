@@ -14,7 +14,7 @@ curation:
 display_name: tiktok-ads
 identity:
   aliases: []
-  current_version_id: sha256:a09684da51e1d197d8b1f50a36427857fc21ac1c
+  current_version_id: git_sha1:a09684da51e1d197d8b1f50a36427857fc21ac1c
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

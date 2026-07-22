@@ -14,7 +14,7 @@ curation:
 display_name: azure-messaging-webpubsub-java
 identity:
   aliases: []
-  current_version_id: sha256:b8b8a3fe22a62ad01c34ddff759dad55aa0c5e14
+  current_version_id: git_sha1:b8b8a3fe22a62ad01c34ddff759dad55aa0c5e14
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

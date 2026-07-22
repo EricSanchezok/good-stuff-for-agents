@@ -14,7 +14,7 @@ curation:
 display_name: doc-coauthoring
 identity:
   aliases: []
-  current_version_id: sha256:a5a69839ef4a161131d80b6daef10037a9686f4a
+  current_version_id: git_sha1:a5a69839ef4a161131d80b6daef10037a9686f4a
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

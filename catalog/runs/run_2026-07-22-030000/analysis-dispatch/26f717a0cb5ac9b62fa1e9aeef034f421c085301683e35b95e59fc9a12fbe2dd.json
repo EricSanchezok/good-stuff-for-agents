@@ -1,0 +1,16 @@
+{
+  "binding": {
+    "canonical_skill_id": "skl_cirq-src-https-github-com-k-dense-ai-scientific-ag-6d5a4f72-ent-skills-5bdb6d39-skills-cirq-skill-md_6d5a4f72",
+    "current_version_id": "git_sha1:c9700a869ae7926f391d954a23e596049304c421",
+    "expected_output_path": "catalog/analyses/ci/skl_cirq-src-https-github-com-k-dense-ai-scientific-ag-6d5a4f72-ent-skills-5bdb6d39-skills-cirq-skill-md_6d5a4f72.md",
+    "git_blob_oid": "git_sha1:c9700a869ae7926f391d954a23e596049304c421",
+    "pinned_commit": "831d49eb77eed3c792be2970921b46764012ef00",
+    "raw_url": "https://raw.githubusercontent.com/K-Dense-AI/scientific-agent-skills/831d49eb77eed3c792be2970921b46764012ef00/skills/cirq/SKILL.md",
+    "remote_path": "skills/cirq/SKILL.md",
+    "source_id": "src_https-github-com-k-dense-ai-scientific-agent-skills-k-dense-scientific-agent-skills_5bdb6d39"
+  },
+  "dispatch_digest": "sha256:26f717a0cb5ac9b62fa1e9aeef034f421c085301683e35b95e59fc9a12fbe2dd",
+  "kind": "skill-analysis-dispatch",
+  "run_id": "run_2026-07-22-030000",
+  "schema_version": 2
+}

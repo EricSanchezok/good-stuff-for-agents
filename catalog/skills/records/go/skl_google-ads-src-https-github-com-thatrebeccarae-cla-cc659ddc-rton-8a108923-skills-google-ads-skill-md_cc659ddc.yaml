@@ -14,7 +14,7 @@ curation:
 display_name: google-ads
 identity:
   aliases: []
-  current_version_id: sha256:e9b9ee62aa5fd345d55f59af2b66791a854d78ba
+  current_version_id: git_sha1:e9b9ee62aa5fd345d55f59af2b66791a854d78ba
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

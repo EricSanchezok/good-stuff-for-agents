@@ -2,7 +2,7 @@
   "schema_version": 1,
   "source_id": "src_https-github-com-hermeticormus-markdown-discipline-skills-markdown-discipline-skills_ddaf87e0",
   "upstream_ref": "ae8c782f68db306d348320bee0c23a551f913fe1",
-  "checked_at": "2026-07-13T21:03:15.696Z",
+  "checked_at": "2026-07-22T02:48:42.585Z",
   "url": "https://github.com/HermeticOrmus/markdown-discipline-skills",
   "artifacts": [
     {
@@ -11,12 +11,22 @@
       "declared_name": "rules",
       "format": "markdown",
       "parse_confidence": "medium",
-      "content_digest": "sha256:9b70adcc11bfc2429c64d0b72f71a88a82a69605",
+      "content_digest": "git_sha1:9b70adcc11bfc2429c64d0b72f71a88a82a69605",
       "upstream_ref": "ae8c782f68db306d348320bee0c23a551f913fe1",
+      "git_blob_oid": "git_sha1:9b70adcc11bfc2429c64d0b72f71a88a82a69605",
       "url": "https://github.com/HermeticOrmus/markdown-discipline-skills/blob/ae8c782f68db306d348320bee0c23a551f913fe1/.cursor/rules/markdown-discipline.mdc",
       "raw_url": "https://raw.githubusercontent.com/HermeticOrmus/markdown-discipline-skills/ae8c782f68db306d348320bee0c23a551f913fe1/.cursor/rules/markdown-discipline.mdc",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-hermeticormus-markdown-discipline-skills-markdown-discipline-skills_ddaf87e0",
+        "canonical_skill_id": null,
+        "remote_path": ".cursor/rules/markdown-discipline.mdc",
+        "pinned_commit": "ae8c782f68db306d348320bee0c23a551f913fe1",
+        "git_blob_oid": "git_sha1:9b70adcc11bfc2429c64d0b72f71a88a82a69605",
+        "raw_url": "https://raw.githubusercontent.com/HermeticOrmus/markdown-discipline-skills/ae8c782f68db306d348320bee0c23a551f913fe1/.cursor/rules/markdown-discipline.mdc",
+        "expected_output_path": null
+      },
       "raw_metadata": {
-        "github_blob_sha": "9b70adcc11bfc2429c64d0b72f71a88a82a69605",
+        "github_blob_oid": "git_sha1:9b70adcc11bfc2429c64d0b72f71a88a82a69605",
         "size": 1652
       }
     },
@@ -26,15 +36,25 @@
       "declared_name": "markdown-discipline",
       "format": "SKILL.md",
       "parse_confidence": "high",
-      "content_digest": "sha256:c9a84e5cf5a89ff967e2b21a3d7b24c500cbdbde",
+      "content_digest": "git_sha1:c9a84e5cf5a89ff967e2b21a3d7b24c500cbdbde",
       "upstream_ref": "ae8c782f68db306d348320bee0c23a551f913fe1",
+      "git_blob_oid": "git_sha1:c9a84e5cf5a89ff967e2b21a3d7b24c500cbdbde",
       "url": "https://github.com/HermeticOrmus/markdown-discipline-skills/blob/ae8c782f68db306d348320bee0c23a551f913fe1/skills/markdown-discipline/SKILL.md",
       "raw_url": "https://raw.githubusercontent.com/HermeticOrmus/markdown-discipline-skills/ae8c782f68db306d348320bee0c23a551f913fe1/skills/markdown-discipline/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-hermeticormus-markdown-discipline-skills-markdown-discipline-skills_ddaf87e0",
+        "canonical_skill_id": null,
+        "remote_path": "skills/markdown-discipline/SKILL.md",
+        "pinned_commit": "ae8c782f68db306d348320bee0c23a551f913fe1",
+        "git_blob_oid": "git_sha1:c9a84e5cf5a89ff967e2b21a3d7b24c500cbdbde",
+        "raw_url": "https://raw.githubusercontent.com/HermeticOrmus/markdown-discipline-skills/ae8c782f68db306d348320bee0c23a551f913fe1/skills/markdown-discipline/SKILL.md",
+        "expected_output_path": null
+      },
       "raw_metadata": {
-        "github_blob_sha": "c9a84e5cf5a89ff967e2b21a3d7b24c500cbdbde",
+        "github_blob_oid": "git_sha1:c9a84e5cf5a89ff967e2b21a3d7b24c500cbdbde",
         "size": 1770
       }
     }
   ],
-  "digest": "sha256:b20a679ca94e94fbf8e3a437358fb1850375972d1bf8f769751f6c4253be6730"
+  "digest": "sha256:1c5b70fd9df6fb76b095f48f605c5c19ef6023db8f150db3ce1f2068ba528c5e"
 }

@@ -14,7 +14,7 @@ curation:
 display_name: repo-scaffold
 identity:
   aliases: []
-  current_version_id: sha256:d58f22b7bbd7531e5e04a8a5d5e65653eea40fc9
+  current_version_id: git_sha1:d58f22b7bbd7531e5e04a8a5d5e65653eea40fc9
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

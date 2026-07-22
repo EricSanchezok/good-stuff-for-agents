@@ -14,7 +14,7 @@ curation:
 display_name: foundation-stakeholder-briefings
 identity:
   aliases: []
-  current_version_id: sha256:7357e7604270a4a310e78744add961263da91b0a
+  current_version_id: git_sha1:7357e7604270a4a310e78744add961263da91b0a
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

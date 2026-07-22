@@ -14,7 +14,7 @@ curation:
 display_name: deliver-acceptance-criteria
 identity:
   aliases: []
-  current_version_id: sha256:014b1e46d22d3c3d573ca46aeb2affcd206aec73
+  current_version_id: git_sha1:014b1e46d22d3c3d573ca46aeb2affcd206aec73
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

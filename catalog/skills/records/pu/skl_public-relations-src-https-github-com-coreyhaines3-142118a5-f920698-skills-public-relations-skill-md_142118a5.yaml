@@ -14,7 +14,7 @@ curation:
 display_name: public-relations
 identity:
   aliases: []
-  current_version_id: sha256:3d6de7aa11fb1216311ef25f207694ef081ebd2b
+  current_version_id: git_sha1:3d6de7aa11fb1216311ef25f207694ef081ebd2b
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

@@ -14,7 +14,7 @@ curation:
 display_name: azure-ai-voicelive-ts
 identity:
   aliases: []
-  current_version_id: sha256:64ca766cb56c16b7d2b015cd3684834e25f076db
+  current_version_id: git_sha1:64ca766cb56c16b7d2b015cd3684834e25f076db
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

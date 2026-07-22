@@ -14,7 +14,7 @@ curation:
 display_name: azure-servicebus-ts
 identity:
   aliases: []
-  current_version_id: sha256:43e5acb47b8db2aee786f02a19f6c0db19556713
+  current_version_id: git_sha1:43e5acb47b8db2aee786f02a19f6c0db19556713
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

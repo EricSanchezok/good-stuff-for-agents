@@ -14,7 +14,7 @@ curation:
 display_name: matlab
 identity:
   aliases: []
-  current_version_id: sha256:006047bcb9c96b9c660c181dd95b75c60e5969bf
+  current_version_id: git_sha1:006047bcb9c96b9c660c181dd95b75c60e5969bf
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

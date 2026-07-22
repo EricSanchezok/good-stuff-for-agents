@@ -14,7 +14,7 @@ curation:
 display_name: monetization-strategy
 identity:
   aliases: []
-  current_version_id: sha256:4a2c486c1305dac79f24e60f7462cc94798b6683
+  current_version_id: git_sha1:4a2c486c1305dac79f24e60f7462cc94798b6683
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

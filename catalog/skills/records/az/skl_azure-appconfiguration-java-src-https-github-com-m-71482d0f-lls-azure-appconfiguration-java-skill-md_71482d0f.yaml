@@ -14,7 +14,7 @@ curation:
 display_name: azure-appconfiguration-java
 identity:
   aliases: []
-  current_version_id: sha256:a27cd0325fe6fba6009923912c5174ee364bd2c5
+  current_version_id: git_sha1:a27cd0325fe6fba6009923912c5174ee364bd2c5
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

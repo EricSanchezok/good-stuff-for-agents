@@ -14,7 +14,7 @@ curation:
 display_name: pi-agent
 identity:
   aliases: []
-  current_version_id: sha256:b55a597a8c4b065cff7b0a0f995f919b861bab72
+  current_version_id: git_sha1:b55a597a8c4b065cff7b0a0f995f919b861bab72
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

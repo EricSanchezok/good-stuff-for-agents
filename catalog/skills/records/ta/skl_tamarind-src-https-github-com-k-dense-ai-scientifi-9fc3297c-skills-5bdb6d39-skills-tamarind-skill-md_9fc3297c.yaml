@@ -14,7 +14,7 @@ curation:
 display_name: tamarind
 identity:
   aliases: []
-  current_version_id: sha256:180d2ed6e23fc55efa68c1cee4aede1576726610
+  current_version_id: git_sha1:180d2ed6e23fc55efa68c1cee4aede1576726610
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

@@ -14,7 +14,7 @@ curation:
 display_name: sympy
 identity:
   aliases: []
-  current_version_id: sha256:15bcc9e895c5674cf1ecaadfe1fcbf5eabec67c8
+  current_version_id: git_sha1:15bcc9e895c5674cf1ecaadfe1fcbf5eabec67c8
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

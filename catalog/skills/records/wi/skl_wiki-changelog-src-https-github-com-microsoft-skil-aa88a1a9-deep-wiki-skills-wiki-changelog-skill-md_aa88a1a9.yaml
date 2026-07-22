@@ -14,7 +14,7 @@ curation:
 display_name: wiki-changelog
 identity:
   aliases: []
-  current_version_id: sha256:cd5c1cd2825da88b0d370d33a329b0d74f727855
+  current_version_id: git_sha1:cd5c1cd2825da88b0d370d33a329b0d74f727855
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

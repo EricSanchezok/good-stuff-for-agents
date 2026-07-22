@@ -14,7 +14,7 @@ curation:
 display_name: wiki-vitepress
 identity:
   aliases: []
-  current_version_id: sha256:b29a15e05917cb599592604643827c4fc7b6190e
+  current_version_id: git_sha1:b29a15e05917cb599592604643827c4fc7b6190e
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

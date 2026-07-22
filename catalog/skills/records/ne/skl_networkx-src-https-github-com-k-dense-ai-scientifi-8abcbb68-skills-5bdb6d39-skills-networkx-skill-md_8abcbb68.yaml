@@ -14,7 +14,7 @@ curation:
 display_name: networkx
 identity:
   aliases: []
-  current_version_id: sha256:fae5ecda8bf36a22188c4001c37fcaa435fbb616
+  current_version_id: git_sha1:fae5ecda8bf36a22188c4001c37fcaa435fbb616
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

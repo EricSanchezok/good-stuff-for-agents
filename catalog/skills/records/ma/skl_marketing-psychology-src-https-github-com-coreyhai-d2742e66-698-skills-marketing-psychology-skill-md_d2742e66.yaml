@@ -14,7 +14,7 @@ curation:
 display_name: marketing-psychology
 identity:
   aliases: []
-  current_version_id: sha256:806c09fba8228e53b9d2443cea7e2bbb104e6ee9
+  current_version_id: git_sha1:806c09fba8228e53b9d2443cea7e2bbb104e6ee9
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

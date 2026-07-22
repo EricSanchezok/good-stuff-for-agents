@@ -14,7 +14,7 @@ curation:
 display_name: figma-use-slides
 identity:
   aliases: []
-  current_version_id: sha256:4df533d022de9b19b51104693110d179b600053c
+  current_version_id: git_sha1:4df533d022de9b19b51104693110d179b600053c
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

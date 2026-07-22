@@ -14,7 +14,7 @@ curation:
 display_name: utility-update-pm-skills
 identity:
   aliases: []
-  current_version_id: sha256:27ac02dc1529923d318f11d9e7be9e58f5ac688c
+  current_version_id: git_sha1:27ac02dc1529923d318f11d9e7be9e58f5ac688c
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

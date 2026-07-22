@@ -14,7 +14,7 @@ curation:
 display_name: iterate-retrospective
 identity:
   aliases: []
-  current_version_id: sha256:a600686f0dbb2b9ce3460ee5af4ea48513500f20
+  current_version_id: git_sha1:a600686f0dbb2b9ce3460ee5af4ea48513500f20
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

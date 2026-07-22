@@ -1,0 +1,16 @@
+{
+  "binding": {
+    "canonical_skill_id": "skl_azure-mgmt-applicationinsights-dotnet-src-https-gi-813ce5b7-mgmt-applicationinsights-dotnet-skill-md_813ce5b7",
+    "current_version_id": "git_sha1:97279bfcc7736acd9e3d3772e118bdf9a52fb0b5",
+    "expected_output_path": "catalog/analyses/az/skl_azure-mgmt-applicationinsights-dotnet-src-https-gi-813ce5b7-mgmt-applicationinsights-dotnet-skill-md_813ce5b7.md",
+    "git_blob_oid": "git_sha1:97279bfcc7736acd9e3d3772e118bdf9a52fb0b5",
+    "pinned_commit": "cc93536d8b809e177a7d1008b276ce41a9456a9c",
+    "raw_url": "https://raw.githubusercontent.com/microsoft/skills/cc93536d8b809e177a7d1008b276ce41a9456a9c/.github/plugins/azure-sdk-dotnet/skills/azure-mgmt-applicationinsights-dotnet/SKILL.md",
+    "remote_path": ".github/plugins/azure-sdk-dotnet/skills/azure-mgmt-applicationinsights-dotnet/SKILL.md",
+    "source_id": "src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e"
+  },
+  "dispatch_digest": "sha256:616c83e52c58e7be76b141aac05bb63483afea49ddf83778d3eace43c27f48c2",
+  "kind": "skill-analysis-dispatch",
+  "run_id": "run_2026-07-22-final",
+  "schema_version": 2
+}

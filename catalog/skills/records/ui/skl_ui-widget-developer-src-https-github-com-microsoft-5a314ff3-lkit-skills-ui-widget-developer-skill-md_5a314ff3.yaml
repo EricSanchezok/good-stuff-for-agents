@@ -14,7 +14,7 @@ curation:
 display_name: ui-widget-developer
 identity:
   aliases: []
-  current_version_id: sha256:1240df9af50396f6420e83ea7fad62a920edbbb0
+  current_version_id: git_sha1:1240df9af50396f6420e83ea7fad62a920edbbb0
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

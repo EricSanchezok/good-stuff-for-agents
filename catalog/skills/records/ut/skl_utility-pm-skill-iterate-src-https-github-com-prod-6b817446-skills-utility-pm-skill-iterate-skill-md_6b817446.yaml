@@ -14,7 +14,7 @@ curation:
 display_name: utility-pm-skill-iterate
 identity:
   aliases: []
-  current_version_id: sha256:39b8fed464b75ffe30f0d798313545f0aa608b7e
+  current_version_id: git_sha1:39b8fed464b75ffe30f0d798313545f0aa608b7e
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

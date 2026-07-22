@@ -14,7 +14,7 @@ curation:
 display_name: dummy-dataset
 identity:
   aliases: []
-  current_version_id: sha256:f324581b591b02762b52d9b9c66df7f4839f9b2c
+  current_version_id: git_sha1:f324581b591b02762b52d9b9c66df7f4839f9b2c
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

@@ -14,7 +14,7 @@ curation:
 display_name: foundation-meeting-synthesize
 identity:
   aliases: []
-  current_version_id: sha256:09d9c675f9cbe57e48288916bcdac21588943270
+  current_version_id: git_sha1:09d9c675f9cbe57e48288916bcdac21588943270
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

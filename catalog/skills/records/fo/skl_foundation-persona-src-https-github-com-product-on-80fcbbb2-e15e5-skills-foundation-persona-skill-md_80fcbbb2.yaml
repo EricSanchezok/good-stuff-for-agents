@@ -14,7 +14,7 @@ curation:
 display_name: foundation-persona
 identity:
   aliases: []
-  current_version_id: sha256:d9d7edc1a3ab517e9de08f811725ad3d3e6a4790
+  current_version_id: git_sha1:d9d7edc1a3ab517e9de08f811725ad3d3e6a4790
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

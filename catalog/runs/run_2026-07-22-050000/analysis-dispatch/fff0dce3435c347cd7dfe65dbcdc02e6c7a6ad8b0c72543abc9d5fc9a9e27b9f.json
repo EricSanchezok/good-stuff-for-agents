@@ -1,0 +1,16 @@
+{
+  "binding": {
+    "canonical_skill_id": "skl_azure-ai-formrecognizer-java-src-https-github-com-f9ab4187-ls-azure-ai-formrecognizer-java-skill-md_f9ab4187",
+    "current_version_id": "git_sha1:9ebbe26711148505aa6b53738036f058fb523f2c",
+    "expected_output_path": "catalog/analyses/az/skl_azure-ai-formrecognizer-java-src-https-github-com-f9ab4187-ls-azure-ai-formrecognizer-java-skill-md_f9ab4187.md",
+    "git_blob_oid": "git_sha1:9ebbe26711148505aa6b53738036f058fb523f2c",
+    "pinned_commit": "cc93536d8b809e177a7d1008b276ce41a9456a9c",
+    "raw_url": "https://raw.githubusercontent.com/microsoft/skills/cc93536d8b809e177a7d1008b276ce41a9456a9c/.github/plugins/azure-sdk-java/skills/azure-ai-formrecognizer-java/SKILL.md",
+    "remote_path": ".github/plugins/azure-sdk-java/skills/azure-ai-formrecognizer-java/SKILL.md",
+    "source_id": "src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e"
+  },
+  "dispatch_digest": "sha256:fff0dce3435c347cd7dfe65dbcdc02e6c7a6ad8b0c72543abc9d5fc9a9e27b9f",
+  "kind": "skill-analysis-dispatch",
+  "run_id": "run_2026-07-22-050000",
+  "schema_version": 2
+}

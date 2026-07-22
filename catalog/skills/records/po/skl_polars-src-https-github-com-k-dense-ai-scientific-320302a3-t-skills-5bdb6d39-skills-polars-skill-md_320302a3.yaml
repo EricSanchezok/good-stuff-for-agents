@@ -14,7 +14,7 @@ curation:
 display_name: polars
 identity:
   aliases: []
-  current_version_id: sha256:6d32e9c595c3d9a9c01474eabd011c36592ac506
+  current_version_id: git_sha1:6d32e9c595c3d9a9c01474eabd011c36592ac506
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

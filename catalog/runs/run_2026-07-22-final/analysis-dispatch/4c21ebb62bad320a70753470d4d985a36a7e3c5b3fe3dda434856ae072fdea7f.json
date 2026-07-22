@@ -1,0 +1,16 @@
+{
+  "binding": {
+    "canonical_skill_id": "skl_azure-identity-rust-src-https-github-com-microsoft-c78e7841-rust-skills-azure-identity-rust-skill-md_c78e7841",
+    "current_version_id": "git_sha1:317dc60da7d51ca0d479fb7720fc81b38630d05a",
+    "expected_output_path": "catalog/analyses/az/skl_azure-identity-rust-src-https-github-com-microsoft-c78e7841-rust-skills-azure-identity-rust-skill-md_c78e7841.md",
+    "git_blob_oid": "git_sha1:317dc60da7d51ca0d479fb7720fc81b38630d05a",
+    "pinned_commit": "cc93536d8b809e177a7d1008b276ce41a9456a9c",
+    "raw_url": "https://raw.githubusercontent.com/microsoft/skills/cc93536d8b809e177a7d1008b276ce41a9456a9c/.github/plugins/azure-sdk-rust/skills/azure-identity-rust/SKILL.md",
+    "remote_path": ".github/plugins/azure-sdk-rust/skills/azure-identity-rust/SKILL.md",
+    "source_id": "src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e"
+  },
+  "dispatch_digest": "sha256:4c21ebb62bad320a70753470d4d985a36a7e3c5b3fe3dda434856ae072fdea7f",
+  "kind": "skill-analysis-dispatch",
+  "run_id": "run_2026-07-22-final",
+  "schema_version": 2
+}

@@ -14,7 +14,7 @@ curation:
 display_name: develop-adr
 identity:
   aliases: []
-  current_version_id: sha256:0e3381409c2e463eb262f21283a64a6233d420e8
+  current_version_id: git_sha1:0e3381409c2e463eb262f21283a64a6233d420e8
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

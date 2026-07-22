@@ -14,7 +14,7 @@ curation:
 display_name: figma-swiftui
 identity:
   aliases: []
-  current_version_id: sha256:60ca47143059a2e0e358df261f0558de459a0b1e
+  current_version_id: git_sha1:60ca47143059a2e0e358df261f0558de459a0b1e
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

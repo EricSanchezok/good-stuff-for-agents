@@ -14,7 +14,7 @@ curation:
 display_name: statsmodels
 identity:
   aliases: []
-  current_version_id: sha256:1364bcda66a6fb09075f1de9a01042d209c3687e
+  current_version_id: git_sha1:1364bcda66a6fb09075f1de9a01042d209c3687e
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

@@ -14,7 +14,7 @@ curation:
 display_name: qiskit
 identity:
   aliases: []
-  current_version_id: sha256:cf6db4d2616e9859d7621d28c9d527ab1c193eb7
+  current_version_id: git_sha1:cf6db4d2616e9859d7621d28c9d527ab1c193eb7
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

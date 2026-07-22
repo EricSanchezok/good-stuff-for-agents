@@ -14,7 +14,7 @@ curation:
 display_name: value-prop-statements
 identity:
   aliases: []
-  current_version_id: sha256:7f3eae0e8c12712d8470e51b89d6e5e026b4c41a
+  current_version_id: git_sha1:7f3eae0e8c12712d8470e51b89d6e5e026b4c41a
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

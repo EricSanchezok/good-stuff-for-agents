@@ -1,0 +1,16 @@
+{
+  "binding": {
+    "canonical_skill_id": "skl_azure-cosmos-ts-src-https-github-com-microsoft-ski-94964677-pescript-skills-azure-cosmos-ts-skill-md_94964677",
+    "current_version_id": "git_sha1:33fcce60f1488fbf7e3d1cef4656adb693f215f2",
+    "expected_output_path": "catalog/analyses/az/skl_azure-cosmos-ts-src-https-github-com-microsoft-ski-94964677-pescript-skills-azure-cosmos-ts-skill-md_94964677.md",
+    "git_blob_oid": "git_sha1:33fcce60f1488fbf7e3d1cef4656adb693f215f2",
+    "pinned_commit": "cc93536d8b809e177a7d1008b276ce41a9456a9c",
+    "raw_url": "https://raw.githubusercontent.com/microsoft/skills/cc93536d8b809e177a7d1008b276ce41a9456a9c/.github/plugins/azure-sdk-typescript/skills/azure-cosmos-ts/SKILL.md",
+    "remote_path": ".github/plugins/azure-sdk-typescript/skills/azure-cosmos-ts/SKILL.md",
+    "source_id": "src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e"
+  },
+  "dispatch_digest": "sha256:519b31ff89b97512618c4e605015a19ba8ff5c03b4cdbc5119f4a30d93c2798c",
+  "kind": "skill-analysis-dispatch",
+  "run_id": "run_2026-07-22-050000",
+  "schema_version": 2
+}

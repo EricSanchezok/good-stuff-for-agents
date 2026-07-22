@@ -14,7 +14,7 @@ curation:
 display_name: swot-analysis
 identity:
   aliases: []
-  current_version_id: sha256:c54dd1963d2bfba02916d21a3a5ae34ef46fd1c2
+  current_version_id: git_sha1:c54dd1963d2bfba02916d21a3a5ae34ef46fd1c2
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

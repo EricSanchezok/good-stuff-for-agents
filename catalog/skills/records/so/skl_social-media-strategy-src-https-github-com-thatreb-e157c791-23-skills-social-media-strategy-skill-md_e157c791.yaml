@@ -14,7 +14,7 @@ curation:
 display_name: social-media-strategy
 identity:
   aliases: []
-  current_version_id: sha256:d0a455c613dec556c3816149d9ed2f9970488d7b
+  current_version_id: git_sha1:d0a455c613dec556c3816149d9ed2f9970488d7b
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

@@ -14,7 +14,7 @@ curation:
 display_name: azure-eventgrid-dotnet
 identity:
   aliases: []
-  current_version_id: sha256:3156848ee9bf82dc7f0aabd71934e19574113601
+  current_version_id: git_sha1:3156848ee9bf82dc7f0aabd71934e19574113601
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

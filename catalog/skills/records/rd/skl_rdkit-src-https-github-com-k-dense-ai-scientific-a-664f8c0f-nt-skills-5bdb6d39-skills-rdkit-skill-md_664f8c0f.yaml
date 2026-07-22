@@ -14,7 +14,7 @@ curation:
 display_name: rdkit
 identity:
   aliases: []
-  current_version_id: sha256:2a5363cbabcbb0017e0ad5b1360f95ef44a765a6
+  current_version_id: git_sha1:2a5363cbabcbb0017e0ad5b1360f95ef44a765a6
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

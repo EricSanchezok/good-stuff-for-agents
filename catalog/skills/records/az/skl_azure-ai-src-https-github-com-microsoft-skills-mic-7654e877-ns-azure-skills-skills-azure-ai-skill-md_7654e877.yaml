@@ -14,7 +14,7 @@ curation:
 display_name: azure-ai
 identity:
   aliases: []
-  current_version_id: sha256:6cce5b319f57f98f81772e4c8627c573d89e8571
+  current_version_id: git_sha1:6cce5b319f57f98f81772e4c8627c573d89e8571
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

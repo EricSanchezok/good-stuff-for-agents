@@ -14,7 +14,7 @@ curation:
 display_name: azure-ai-openai-dotnet
 identity:
   aliases: []
-  current_version_id: sha256:4c15f34a6a12e0a7d1f198ce5a61508168c51d54
+  current_version_id: git_sha1:4c15f34a6a12e0a7d1f198ce5a61508168c51d54
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

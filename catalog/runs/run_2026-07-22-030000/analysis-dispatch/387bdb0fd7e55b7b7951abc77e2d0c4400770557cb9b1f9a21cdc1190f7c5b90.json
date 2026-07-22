@@ -1,0 +1,16 @@
+{
+  "binding": {
+    "canonical_skill_id": "skl_diffdock-src-https-github-com-k-dense-ai-scientifi-1f5c4ebc-skills-5bdb6d39-skills-diffdock-skill-md_1f5c4ebc",
+    "current_version_id": "git_sha1:91bd511a75abbe84aca1f86e0060285368f7664b",
+    "expected_output_path": "catalog/analyses/di/skl_diffdock-src-https-github-com-k-dense-ai-scientifi-1f5c4ebc-skills-5bdb6d39-skills-diffdock-skill-md_1f5c4ebc.md",
+    "git_blob_oid": "git_sha1:91bd511a75abbe84aca1f86e0060285368f7664b",
+    "pinned_commit": "831d49eb77eed3c792be2970921b46764012ef00",
+    "raw_url": "https://raw.githubusercontent.com/K-Dense-AI/scientific-agent-skills/831d49eb77eed3c792be2970921b46764012ef00/skills/diffdock/SKILL.md",
+    "remote_path": "skills/diffdock/SKILL.md",
+    "source_id": "src_https-github-com-k-dense-ai-scientific-agent-skills-k-dense-scientific-agent-skills_5bdb6d39"
+  },
+  "dispatch_digest": "sha256:387bdb0fd7e55b7b7951abc77e2d0c4400770557cb9b1f9a21cdc1190f7c5b90",
+  "kind": "skill-analysis-dispatch",
+  "run_id": "run_2026-07-22-030000",
+  "schema_version": 2
+}

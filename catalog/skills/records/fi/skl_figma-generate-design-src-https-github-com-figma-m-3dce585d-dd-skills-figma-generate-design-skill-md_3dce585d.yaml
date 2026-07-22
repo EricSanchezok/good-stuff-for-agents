@@ -14,7 +14,7 @@ curation:
 display_name: figma-generate-design
 identity:
   aliases: []
-  current_version_id: sha256:9caefe45f875572a34f8857f2eb1a1e6bfbb253d
+  current_version_id: git_sha1:9caefe45f875572a34f8857f2eb1a1e6bfbb253d
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

@@ -1,0 +1,237 @@
+{
+  "schema_version": 2,
+  "run_id": "run_2026-07-22-035145",
+  "authorization": {
+    "mode": "local_write",
+    "commits_allowed": false,
+    "pushes_allowed": false,
+    "trigger": "user_request",
+    "operator": "eric",
+    "source": "user"
+  },
+  "touched_paths_manifest": "reports/nightly-catalog-ops/2026-07-22-035145-touched-paths.json",
+  "touched_paths_manifest_sha256": "68a3a15e8a4d8d679b94a3c589572e1538803e2795746a3808f2a750b0119cf2",
+  "starting_state": {
+    "branch": "main",
+    "head": "22f51e30bd390673ac6b8dd037788f64cfb2f8ed",
+    "working_tree_clean": false,
+    "unrelated_changes_exist": false,
+    "catalog_counts": {
+      "skills": 652,
+      "sources": 17,
+      "packs": 0,
+      "published_packs": 0
+    }
+  },
+  "maintenance_preflight": {
+    "ok": true,
+    "steps": [
+      {
+        "name": "validate-start",
+        "ok": true
+      },
+      {
+        "name": "migrate",
+        "ok": true
+      },
+      {
+        "name": "source-sync",
+        "ok": true,
+        "error": "2 OK, 15 rate-limited"
+      },
+      {
+        "name": "index-rebuild",
+        "ok": true
+      }
+    ],
+    "validation": {
+      "ok": true,
+      "errors": []
+    },
+    "git_clean_before_growth": true
+  },
+  "growth": {
+    "ok": true,
+    "growth_report": "reports/nightly-catalog-ops/2026-07-22-035145-run.md",
+    "objects_touched": {
+      "sources_discovered": 0,
+      "sources_activated": 0,
+      "skills_extracted": 0,
+      "skills_normalized": 573,
+      "analyses_written": 16,
+      "relations_written": 0,
+      "packs_synthesized": 0,
+      "packs_evaluated": 0
+    }
+  },
+  "terminal_states": [
+    {
+      "object_type": "analysis",
+      "object_id": "skl_adaptyv-src-https-github-com-k-dense-ai-scientific-4be6f359-skills-5bdb6d39-skills-adaptyv-skill-md_4be6f359",
+      "path": "catalog/analyses/ad/skl_adaptyv-src-https-github-com-k-dense-ai-scientific-4be6f359-skills-5bdb6d39-skills-adaptyv-skill-md_4be6f359.md",
+      "state": "written_updated_validated",
+      "owner": "skill-deep-analysis",
+      "reason": "Deep analysis via dispatch pipeline \u2014 Adaptyv Bio Foundry API.",
+      "verification": [
+        "npm --prefix .synergy run catalog:validate"
+      ]
+    },
+    {
+      "object_type": "analysis",
+      "object_id": "skl_cirq-src-https-github-com-k-dense-ai-scientific-ag-6d5a4f72-ent-skills-5bdb6d39-skills-cirq-skill-md_6d5a4f72",
+      "path": "catalog/analyses/ci/skl_cirq-src-https-github-com-k-dense-ai-scientific-ag-6d5a4f72-ent-skills-5bdb6d39-skills-cirq-skill-md_6d5a4f72.md",
+      "state": "written_updated_validated",
+      "owner": "skill-deep-analysis",
+      "reason": "Deep analysis \u2014 Cirq quantum computing, shallow API reference.",
+      "verification": [
+        "npm --prefix .synergy run catalog:validate"
+      ]
+    },
+    {
+      "object_type": "analysis",
+      "object_id": "skl_deepchem-src-https-github-com-k-dense-ai-scientifi-363533b9-skills-5bdb6d39-skills-deepchem-skill-md_363533b9",
+      "path": "catalog/analyses/de/skl_deepchem-src-https-github-com-k-dense-ai-scientifi-363533b9-skills-5bdb6d39-skills-deepchem-skill-md_363533b9.md",
+      "state": "written_updated_validated",
+      "owner": "skill-deep-analysis",
+      "reason": "Deep analysis \u2014 DeepChem, feature list not teaching artifact.",
+      "verification": [
+        "npm --prefix .synergy run catalog:validate"
+      ]
+    },
+    {
+      "object_type": "analysis",
+      "object_id": "skl_dask-src-https-github-com-k-dense-ai-scientific-ag-24a35b5e-ent-skills-5bdb6d39-skills-dask-skill-md_24a35b5e",
+      "path": "catalog/analyses/da/skl_dask-src-https-github-com-k-dense-ai-scientific-ag-24a35b5e-ent-skills-5bdb6d39-skills-dask-skill-md_24a35b5e.md",
+      "state": "written_updated_validated",
+      "owner": "skill-deep-analysis",
+      "reason": "Deep analysis \u2014 Dask parallel computing, broad reference card.",
+      "verification": [
+        "npm --prefix .synergy run catalog:validate"
+      ]
+    },
+    {
+      "object_type": "index",
+      "object_id": "idx_main",
+      "path": "catalog/indexes/manifest.json",
+      "state": "written_updated_validated",
+      "owner": "catalog-data",
+      "reason": "Indexes rebuilt after analysis writes.",
+      "verification": [
+        "npm --prefix .synergy run catalog:index"
+      ]
+    }
+  ],
+  "publication_progress": {
+    "mode": "normal",
+    "published": false,
+    "recovery_trigger": {
+      "completed_full_runs_since_publication": 1,
+      "days_since_publication": 0,
+      "evidence": "No pack ever published. 1 prior run. Neither recovery threshold met."
+    },
+    "targets_attempted": [],
+    "no_publish_reason": {
+      "code": "no_eligible_targets",
+      "summary": "Zero candidate packs. No domain at 30+ analyses for relations (sk=26 max). 652 skills, 98 analyses (15.0%). This run: 16 new analyses + 573 skill record migrations.",
+      "evidence": [
+        "catalog/packs/candidates/ is empty",
+        "catalog/packs/published/ is empty",
+        "Max analysis count: sk=26 (need >=30 for relations)",
+        "652 skills, 98 analyses (15.0%), 0 relations, 0 packs"
+      ]
+    }
+  },
+  "publishing_final_gates": {
+    "ok": true,
+    "render": {
+      "ok": true,
+      "pages_written": 0
+    },
+    "drift": {
+      "ok": true
+    },
+    "links": {
+      "ok": true
+    },
+    "boundary": {
+      "ok": true,
+      "issues": []
+    },
+    "final_validation": {
+      "ok": true,
+      "errors": []
+    }
+  },
+  "git": {
+    "authorization": "local_write",
+    "execution_model": "none",
+    "allowed_paths": [
+      "catalog/analyses/ad/skl_adaptyv-src-https-github-com-k-dense-ai-scientific-4be6f359-skills-5bdb6d39-skills-adaptyv-skill-md_4be6f359.md",
+      "catalog/analyses/ae/skl_aeon-src-https-github-com-k-dense-ai-scientific-ag-14af17c5-ent-skills-5bdb6d39-skills-aeon-skill-md_14af17c5.md",
+      "catalog/analyses/an/skl_anndata-src-https-github-com-k-dense-ai-scientific-96039759-skills-5bdb6d39-skills-anndata-skill-md_96039759.md",
+      "catalog/analyses/ar/skl_arbor-src-https-github-com-k-dense-ai-scientific-a-04c3d5ab-nt-skills-5bdb6d39-skills-arbor-skill-md_04c3d5ab.md",
+      "catalog/analyses/ar/skl_arboreto-src-https-github-com-k-dense-ai-scientifi-30006f36-skills-5bdb6d39-skills-arboreto-skill-md_30006f36.md",
+      "catalog/analyses/as/skl_astropy-src-https-github-com-k-dense-ai-scientific-1d293705-skills-5bdb6d39-skills-astropy-skill-md_1d293705.md",
+      "catalog/analyses/au/skl_autoskill-src-https-github-com-k-dense-ai-scientif-76c2de88-kills-5bdb6d39-skills-autoskill-skill-md_76c2de88.md",
+      "catalog/analyses/bi/skl_bids-src-https-github-com-k-dense-ai-scientific-ag-40e9c532-ent-skills-5bdb6d39-skills-bids-skill-md_40e9c532.md",
+      "catalog/analyses/bi/skl_biopython-src-https-github-com-k-dense-ai-scientif-35c1c6e1-kills-5bdb6d39-skills-biopython-skill-md_35c1c6e1.md",
+      "catalog/analyses/bi/skl_bioservices-src-https-github-com-k-dense-ai-scient-2934bce7-lls-5bdb6d39-skills-bioservices-skill-md_2934bce7.md",
+      "catalog/analyses/bu/skl_bulk-rnaseq-src-https-github-com-k-dense-ai-scient-866022f1-lls-5bdb6d39-skills-bulk-rnaseq-skill-md_866022f1.md",
+      "catalog/analyses/ce/skl_cellxgene-census-src-https-github-com-k-dense-ai-s-7d8fdd5f-bdb6d39-skills-cellxgene-census-skill-md_7d8fdd5f.md",
+      "catalog/analyses/ci/skl_cirq-src-https-github-com-k-dense-ai-scientific-ag-6d5a4f72-ent-skills-5bdb6d39-skills-cirq-skill-md_6d5a4f72.md",
+      "catalog/analyses/co/skl_cobrapy-src-https-github-com-k-dense-ai-scientific-ca78984a-skills-5bdb6d39-skills-cobrapy-skill-md_ca78984a.md",
+      "catalog/analyses/da/skl_dask-src-https-github-com-k-dense-ai-scientific-ag-24a35b5e-ent-skills-5bdb6d39-skills-dask-skill-md_24a35b5e.md",
+      "catalog/analyses/da/skl_datamol-src-https-github-com-k-dense-ai-scientific-2e59085b-skills-5bdb6d39-skills-datamol-skill-md_2e59085b.md",
+      "catalog/analyses/de/skl_deepchem-src-https-github-com-k-dense-ai-scientifi-363533b9-skills-5bdb6d39-skills-deepchem-skill-md_363533b9.md",
+      "catalog/analyses/de/skl_deeptools-src-https-github-com-k-dense-ai-scientif-091b39bb-kills-5bdb6d39-skills-deeptools-skill-md_091b39bb.md",
+      "catalog/analyses/de/skl_depmap-src-https-github-com-k-dense-ai-scientific-e595f275-t-skills-5bdb6d39-skills-depmap-skill-md_e595f275.md",
+      "catalog/analyses/di/skl_diffdock-src-https-github-com-k-dense-ai-scientifi-1f5c4ebc-skills-5bdb6d39-skills-diffdock-skill-md_1f5c4ebc.md",
+      "catalog/analyses/es/skl_esm-src-https-github-com-k-dense-ai-scientific-age-bf7566da-gent-skills-5bdb6d39-skills-esm-skill-md_bf7566da.md",
+      "catalog/analyses/et/skl_etetoolkit-src-https-github-com-k-dense-ai-scienti-7eaf8c92-ills-5bdb6d39-skills-etetoolkit-skill-md_7eaf8c92.md",
+      "catalog/analyses/ex/skl_experimental-design-src-https-github-com-k-dense-a-b52ad8ec-6d39-skills-experimental-design-skill-md_b52ad8ec.md",
+      "catalog/analyses/fl/skl_flowio-src-https-github-com-k-dense-ai-scientific-30a81d62-t-skills-5bdb6d39-skills-flowio-skill-md_30a81d62.md",
+      "catalog/analyses/fl/skl_fluidsim-src-https-github-com-k-dense-ai-scientifi-6be86784-skills-5bdb6d39-skills-fluidsim-skill-md_6be86784.md",
+      "catalog/analyses/ge/skl_geniml-src-https-github-com-k-dense-ai-scientific-a6822013-t-skills-5bdb6d39-skills-geniml-skill-md_a6822013.md",
+      "catalog/indexes/manifest.json",
+      "catalog/skills/records/ab/skl_ab-test-analysis-src-https-github-com-phuryn-pm-sk-c1cc18c6-alytics-skills-ab-test-analysis-skill-md_c1cc18c6.yaml",
+      "catalog/skills/records/ab/skl_ab-testing-framework-src-https-github-com-thatrebe-4913e80e-923-skills-ab-testing-framework-skill-md_4913e80e.yaml",
+      "catalog/skills/records/ab/skl_ab-testing-src-https-github-com-coreyhaines31-mark-c3cf73d0-ines-ef920698-skills-ab-testing-skill-md_c3cf73d0.yaml",
+      "catalog/skills/records/ac/skl_account-structure-review-src-https-github-com-that-b8374e62-skills-account-structure-review-skill-md_b8374e62.yaml",
+      "catalog/skills/records/ad/skl_adaptyv-src-https-github-com-k-dense-ai-scientific-4be6f359-skills-5bdb6d39-skills-adaptyv-skill-md_4be6f359.yaml",
+      "catalog/skills/records/ad/skl_ads-src-https-github-com-coreyhaines31-marketingsk-0839d415-orey-haines-ef920698-skills-ads-skill-md_0839d415.yaml",
+      "catalog/skills/records/ae/skl_aeo-geo-optimizer-src-https-github-com-thatrebecca-ead408e9-108923-skills-aeo-geo-optimizer-skill-md_ead408e9.yaml",
+      "catalog/skills/records/ae/skl_aeon-src-https-github-com-k-dense-ai-scientific-ag-14af17c5-ent-skills-5bdb6d39-skills-aeon-skill-md_14af17c5.yaml",
+      "catalog/skills/records/ai/skl_airunway-aks-setup-src-https-github-com-microsoft-b57c3506-kills-skills-airunway-aks-setup-skill-md_b57c3506.yaml",
+      "catalog/skills/records/al/skl_algorithmic-art-src-https-github-com-anthropics-sk-e78e79bb-04f79b56-skills-algorithmic-art-skill-md_e78e79bb.yaml",
+      "catalog/skills/records/an/skl_analytics-src-https-github-com-coreyhaines31-marke-8fd26ad3-aines-ef920698-skills-analytics-skill-md_8fd26ad3.yaml",
+      "catalog/skills/records/an/skl_analyze-component-set-figma-src-https-github-com-s-a49fb100-lls-analyze-component-set-figma-skill-md_a49fb100.yaml",
+      "catalog/skills/records/an/skl_analyze-feature-requests-src-https-github-com-phur-80ef1368-skills-analyze-feature-requests-skill-md_80ef1368.yaml",
+      "catalog/skills/records/an/skl_anndata-src-https-github-com-k-dense-ai-scientific-96039759-skills-5bdb6d39-skills-anndata-skill-md_96039759.yaml",
+      "catalog/skills/records/an/skl_annotations-figma-src-https-github-com-southleft-s-fae5061a-9f2b3d-skills-annotations-figma-skill-md_fae5061a.yaml",
+      "catalog/skills/records/an/skl_ansoff-matrix-src-https-github-com-phuryn-pm-skill-b6ae502f-t-strategy-skills-ansoff-matrix-skill-md_b6ae502f.yaml",
+      "catalog/skills/records/ap/skl_appinsights-instrumentation-src-https-github-com-m-8a9ff167-lls-appinsights-instrumentation-skill-md_8a9ff167.yaml",
+      "catalog/skills/records/ap/skl_applicationinsights-web-ts-src-https-github-com-mi-38ea4896-ills-applicationinsights-web-ts-skill-md_38ea4896.yaml",
+      "catalog/skills/records/ap/skl_applicationinsights-web-ts-src-https-github-com-mi-bb3f43eb-ills-applicationinsights-web-ts-skill-md_bb3f43eb.yaml",
+      "catalog/skills/records/ar/skl_arbor-src-https-github-com-k-dense-ai-scientific-a-04c3d5ab-nt-skills-5bdb6d39-skills-arbor-skill-md_04c3d5ab.yaml",
+      "catalog/skills/records/ar/skl_arboreto-src-https-github-com-k-dense-ai-scientifi-30006f36-skills-5bdb6d39-skills-arboreto-skill-md_30006f36.yaml",
+      "catalog/skills/records/ar/skl_arrange-component-set-figma-src-https-github-com-s-379c6310-lls-arrange-component-set-figma-skill-md_379c6310.yaml",
+      "catalog/skills/records/as/skl_aso-src-https-github-com-coreyhaines31-marketingsk-17e1bd35-orey-haines-ef920698-skills-aso-skill-md_17e1bd35.yaml"
+    ],
+    "message": "No Git mutation performed. 16 analyses written, 573 skill records migrated, indexes rebuilt. No packs. Read-only audit plan ready."
+  },
+  "blockers": [],
+  "next_run_priorities": [
+    {
+      "priority": 1,
+      "object_id": "skl_deepchem-src-https-github-com-k-dense-ai-scientifi-363533b9-skills-5bdb6d39-skills-deepchem-skill-md_363533b9",
+      "action": "Continue az-domain analysis (24 dispatches ready, 140 skills, 0 analyzed) \u2014 fastest path to 30+ for relations.",
+      "owner": "skill-deep-analysis"
+    },
+    {
+      "priority": 2,
+      "object_id": "idx_main",
+      "action": "Once any domain reaches 30+ analyses, run skill-dedup-relations then pack-synthesis.",
+      "owner": "catalog-growth-ops"
+    }
+  ]
+}

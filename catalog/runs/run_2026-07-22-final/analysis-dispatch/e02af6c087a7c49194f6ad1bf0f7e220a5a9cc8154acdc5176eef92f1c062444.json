@@ -1,0 +1,16 @@
+{
+  "binding": {
+    "canonical_skill_id": "skl_azure-eventhub-dotnet-src-https-github-com-microso-bb079a9b-et-skills-azure-eventhub-dotnet-skill-md_bb079a9b",
+    "current_version_id": "git_sha1:11c2a85610791e40b99dec976b422fe326e4fc9c",
+    "expected_output_path": "catalog/analyses/az/skl_azure-eventhub-dotnet-src-https-github-com-microso-bb079a9b-et-skills-azure-eventhub-dotnet-skill-md_bb079a9b.md",
+    "git_blob_oid": "git_sha1:11c2a85610791e40b99dec976b422fe326e4fc9c",
+    "pinned_commit": "cc93536d8b809e177a7d1008b276ce41a9456a9c",
+    "raw_url": "https://raw.githubusercontent.com/microsoft/skills/cc93536d8b809e177a7d1008b276ce41a9456a9c/.github/plugins/azure-sdk-dotnet/skills/azure-eventhub-dotnet/SKILL.md",
+    "remote_path": ".github/plugins/azure-sdk-dotnet/skills/azure-eventhub-dotnet/SKILL.md",
+    "source_id": "src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e"
+  },
+  "dispatch_digest": "sha256:e02af6c087a7c49194f6ad1bf0f7e220a5a9cc8154acdc5176eef92f1c062444",
+  "kind": "skill-analysis-dispatch",
+  "run_id": "run_2026-07-22-final",
+  "schema_version": 2
+}

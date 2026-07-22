@@ -14,7 +14,7 @@ curation:
 display_name: audit-accessibility-figma
 identity:
   aliases: []
-  current_version_id: sha256:74a27f1b5a205c42963d3898c0be6277072b0738
+  current_version_id: git_sha1:74a27f1b5a205c42963d3898c0be6277072b0738
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

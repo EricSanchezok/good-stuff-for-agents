@@ -14,7 +14,7 @@ curation:
 display_name: benchling-integration
 identity:
   aliases: []
-  current_version_id: sha256:389ccce8cb9e71e15807064293efb09c1f566309
+  current_version_id: git_sha1:389ccce8cb9e71e15807064293efb09c1f566309
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

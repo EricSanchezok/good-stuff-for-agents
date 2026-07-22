@@ -14,7 +14,7 @@ curation:
 display_name: product-vision
 identity:
   aliases: []
-  current_version_id: sha256:a6443edb2bf108e583ddb339a9163dc6de05b9da
+  current_version_id: git_sha1:a6443edb2bf108e583ddb339a9163dc6de05b9da
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

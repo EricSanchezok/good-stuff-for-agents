@@ -14,7 +14,7 @@ curation:
 display_name: statistical-power
 identity:
   aliases: []
-  current_version_id: sha256:fee7d10337287c286e124ec9ea00f1bb4c131395
+  current_version_id: git_sha1:fee7d10337287c286e124ec9ea00f1bb4c131395
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

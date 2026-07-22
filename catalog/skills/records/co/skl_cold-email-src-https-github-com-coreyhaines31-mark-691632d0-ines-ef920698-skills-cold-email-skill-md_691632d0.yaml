@@ -14,7 +14,7 @@ curation:
 display_name: cold-email
 identity:
   aliases: []
-  current_version_id: sha256:9e18b25c3547d9e6c2558d1e78cb982223add86a
+  current_version_id: git_sha1:9e18b25c3547d9e6c2558d1e78cb982223add86a
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

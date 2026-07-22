@@ -1,0 +1,16 @@
+{
+  "binding": {
+    "canonical_skill_id": "skl_bulk-rnaseq-src-https-github-com-k-dense-ai-scient-866022f1-lls-5bdb6d39-skills-bulk-rnaseq-skill-md_866022f1",
+    "current_version_id": "git_sha1:6a63f902bc142a131b07d1c7c4f7990d0d861b43",
+    "expected_output_path": "catalog/analyses/bu/skl_bulk-rnaseq-src-https-github-com-k-dense-ai-scient-866022f1-lls-5bdb6d39-skills-bulk-rnaseq-skill-md_866022f1.md",
+    "git_blob_oid": "git_sha1:6a63f902bc142a131b07d1c7c4f7990d0d861b43",
+    "pinned_commit": "831d49eb77eed3c792be2970921b46764012ef00",
+    "raw_url": "https://raw.githubusercontent.com/K-Dense-AI/scientific-agent-skills/831d49eb77eed3c792be2970921b46764012ef00/skills/bulk-rnaseq/SKILL.md",
+    "remote_path": "skills/bulk-rnaseq/SKILL.md",
+    "source_id": "src_https-github-com-k-dense-ai-scientific-agent-skills-k-dense-scientific-agent-skills_5bdb6d39"
+  },
+  "dispatch_digest": "sha256:73c8ba88ecf03b55f1f7e2324ff87fa41867bd1b88a0cbf7c048bc2ef5b192b1",
+  "kind": "skill-analysis-dispatch",
+  "run_id": "run_2026-07-22-030000",
+  "schema_version": 2
+}

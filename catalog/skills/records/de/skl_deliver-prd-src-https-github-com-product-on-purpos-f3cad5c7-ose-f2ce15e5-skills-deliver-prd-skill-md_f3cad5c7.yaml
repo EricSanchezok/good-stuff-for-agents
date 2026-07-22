@@ -14,7 +14,7 @@ curation:
 display_name: deliver-prd
 identity:
   aliases: []
-  current_version_id: sha256:2100006eb0ac716f5691167c975e701d2675596f
+  current_version_id: git_sha1:2100006eb0ac716f5691167c975e701d2675596f
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

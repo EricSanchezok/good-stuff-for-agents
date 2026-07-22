@@ -14,7 +14,7 @@ curation:
 display_name: pricing-strategy
 identity:
   aliases: []
-  current_version_id: sha256:f33d5d043549d582c0e586f285b66d08dfec7574
+  current_version_id: git_sha1:f33d5d043549d582c0e586f285b66d08dfec7574
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

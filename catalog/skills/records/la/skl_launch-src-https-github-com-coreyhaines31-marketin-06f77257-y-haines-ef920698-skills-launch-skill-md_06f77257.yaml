@@ -14,7 +14,7 @@ curation:
 display_name: launch
 identity:
   aliases: []
-  current_version_id: sha256:9fce797d47373597ff2fff564b4f6df8048ff81c
+  current_version_id: git_sha1:9fce797d47373597ff2fff564b4f6df8048ff81c
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

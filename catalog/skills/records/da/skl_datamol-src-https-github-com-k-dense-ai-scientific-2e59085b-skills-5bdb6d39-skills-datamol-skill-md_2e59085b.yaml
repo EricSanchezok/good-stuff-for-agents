@@ -14,7 +14,7 @@ curation:
 display_name: datamol
 identity:
   aliases: []
-  current_version_id: sha256:b4bc846ac6fc1743a52c4e5ba9f80ffde6531d19
+  current_version_id: git_sha1:b4bc846ac6fc1743a52c4e5ba9f80ffde6531d19
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

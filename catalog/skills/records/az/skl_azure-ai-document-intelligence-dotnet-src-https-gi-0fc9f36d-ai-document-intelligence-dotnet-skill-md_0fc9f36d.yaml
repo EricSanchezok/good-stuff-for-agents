@@ -14,7 +14,7 @@ curation:
 display_name: azure-ai-document-intelligence-dotnet
 identity:
   aliases: []
-  current_version_id: sha256:249ebfabf8eef0e94a39079d3968434a56eab4ef
+  current_version_id: git_sha1:249ebfabf8eef0e94a39079d3968434a56eab4ef
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

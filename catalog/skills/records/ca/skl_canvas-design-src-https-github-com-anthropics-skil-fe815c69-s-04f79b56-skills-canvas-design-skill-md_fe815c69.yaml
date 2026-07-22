@@ -14,7 +14,7 @@ curation:
 display_name: canvas-design
 identity:
   aliases: []
-  current_version_id: sha256:9f63fee82de84cd4230e1d0e322247b61eb4c94c
+  current_version_id: git_sha1:9f63fee82de84cd4230e1d0e322247b61eb4c94c
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

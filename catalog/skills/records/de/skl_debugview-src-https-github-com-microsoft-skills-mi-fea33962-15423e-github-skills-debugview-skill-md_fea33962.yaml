@@ -14,7 +14,7 @@ curation:
 display_name: debugview
 identity:
   aliases: []
-  current_version_id: sha256:606e6dd78d6b492d562bc505ecc29161732a58fd
+  current_version_id: git_sha1:606e6dd78d6b492d562bc505ecc29161732a58fd
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

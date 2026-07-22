@@ -14,7 +14,7 @@ curation:
 display_name: tool-design-sprint-prototype-plan
 identity:
   aliases: []
-  current_version_id: sha256:21e76fdaa21782c936370017789434dc38bcff13
+  current_version_id: git_sha1:21e76fdaa21782c936370017789434dc38bcff13
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

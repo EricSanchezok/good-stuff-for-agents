@@ -14,7 +14,7 @@ curation:
 display_name: utility-pm-skill-auditor
 identity:
   aliases: []
-  current_version_id: sha256:f52047ce418c76495026749c0577aac10e75f1f7
+  current_version_id: git_sha1:f52047ce418c76495026749c0577aac10e75f1f7
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

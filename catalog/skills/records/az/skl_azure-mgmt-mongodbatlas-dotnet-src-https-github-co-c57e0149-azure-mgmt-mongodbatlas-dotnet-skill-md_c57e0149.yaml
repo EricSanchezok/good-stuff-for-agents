@@ -14,7 +14,7 @@ curation:
 display_name: azure-mgmt-mongodbatlas-dotnet
 identity:
   aliases: []
-  current_version_id: sha256:05bdac1c374bbdd03a2ae6c4c173d5d9b18b4160
+  current_version_id: git_sha1:05bdac1c374bbdd03a2ae6c4c173d5d9b18b4160
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

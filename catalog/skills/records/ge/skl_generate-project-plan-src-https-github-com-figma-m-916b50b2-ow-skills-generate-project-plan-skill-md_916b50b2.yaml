@@ -14,7 +14,7 @@ curation:
 display_name: generate-project-plan
 identity:
   aliases: []
-  current_version_id: sha256:1707b2e44cf5676cc6f0313caded807937ed353a
+  current_version_id: git_sha1:1707b2e44cf5676cc6f0313caded807937ed353a
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

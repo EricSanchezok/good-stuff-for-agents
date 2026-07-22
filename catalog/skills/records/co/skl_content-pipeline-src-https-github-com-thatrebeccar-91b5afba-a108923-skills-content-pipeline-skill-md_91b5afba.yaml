@@ -14,7 +14,7 @@ curation:
 display_name: content-pipeline
 identity:
   aliases: []
-  current_version_id: sha256:82a55d5adab6587a0286215a471bd677d768b685
+  current_version_id: git_sha1:82a55d5adab6587a0286215a471bd677d768b685
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

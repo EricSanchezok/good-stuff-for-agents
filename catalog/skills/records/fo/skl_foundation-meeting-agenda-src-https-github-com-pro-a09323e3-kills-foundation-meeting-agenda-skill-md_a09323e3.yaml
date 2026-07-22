@@ -14,7 +14,7 @@ curation:
 display_name: foundation-meeting-agenda
 identity:
   aliases: []
-  current_version_id: sha256:546830f1deb27f5495480f7edabba605f06eabf5
+  current_version_id: git_sha1:546830f1deb27f5495480f7edabba605f06eabf5
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

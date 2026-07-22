@@ -14,7 +14,7 @@ curation:
 display_name: azure-resource-manager-mysql-dotnet
 identity:
   aliases: []
-  current_version_id: sha256:0be21fefd35b57a803ca6ac43ba2a82c062e2454
+  current_version_id: git_sha1:0be21fefd35b57a803ca6ac43ba2a82c062e2454
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

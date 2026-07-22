@@ -1,0 +1,16 @@
+{
+  "binding": {
+    "canonical_skill_id": "skl_azure-cosmos-rust-src-https-github-com-microsoft-s-97718cb5-k-rust-skills-azure-cosmos-rust-skill-md_97718cb5",
+    "current_version_id": "git_sha1:4464932137813f02b495a56f9db25c3d17125067",
+    "expected_output_path": "catalog/analyses/az/skl_azure-cosmos-rust-src-https-github-com-microsoft-s-97718cb5-k-rust-skills-azure-cosmos-rust-skill-md_97718cb5.md",
+    "git_blob_oid": "git_sha1:4464932137813f02b495a56f9db25c3d17125067",
+    "pinned_commit": "cc93536d8b809e177a7d1008b276ce41a9456a9c",
+    "raw_url": "https://raw.githubusercontent.com/microsoft/skills/cc93536d8b809e177a7d1008b276ce41a9456a9c/.github/plugins/azure-sdk-rust/skills/azure-cosmos-rust/SKILL.md",
+    "remote_path": ".github/plugins/azure-sdk-rust/skills/azure-cosmos-rust/SKILL.md",
+    "source_id": "src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e"
+  },
+  "dispatch_digest": "sha256:4ff16bf6ac904d26da119665501d549fe3f84642c2b7795a77d0297e24f23794",
+  "kind": "skill-analysis-dispatch",
+  "run_id": "run_2026-07-22-050000",
+  "schema_version": 2
+}

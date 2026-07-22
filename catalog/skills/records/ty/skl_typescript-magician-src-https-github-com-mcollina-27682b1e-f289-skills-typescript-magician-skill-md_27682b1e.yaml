@@ -14,7 +14,7 @@ curation:
 display_name: typescript-magician
 identity:
   aliases: []
-  current_version_id: sha256:bbd539a21e1887beed388243971f12c028d9b79a
+  current_version_id: git_sha1:bbd539a21e1887beed388243971f12c028d9b79a
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

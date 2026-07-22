@@ -14,7 +14,7 @@ curation:
 display_name: capacity
 identity:
   aliases: []
-  current_version_id: sha256:46935315ebdf18fbc93771efb72e7f8f9e9980ac
+  current_version_id: git_sha1:46935315ebdf18fbc93771efb72e7f8f9e9980ac
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

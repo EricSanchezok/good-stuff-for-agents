@@ -4,7 +4,9 @@
 
 ## Summary
 
-Analysis pending.
+# FlowIO
+
+FlowIO teaches processing .fcs files — the universal but brittle binary format from flow cytometers — through a Python-native pipeline from ingestion through compensation, transformation, gating, and export. If you or your agent is staring at FCS files and needs analyzed cytometry data without FlowJo or R/Bioconductor, this is the skill.
 
 ## Source
 
@@ -35,6 +37,10 @@ No published packs use this skill yet.
 ## Related Skills
 
 No related skills are public yet.
+
+## Public Analysis Summary
+
+Solid domain-specific skill for a solid but unexceptional library. The single biggest risk is silent scientific error from unvalidated compensation; the biggest benefit is providing a complete, ordered workflow.
 
 ## Confidence and Limitations
 

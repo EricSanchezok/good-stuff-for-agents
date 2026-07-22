@@ -14,7 +14,7 @@ curation:
 display_name: iso-13485-certification
 identity:
   aliases: []
-  current_version_id: sha256:bf9970ed541cea4bd68a3931f5add7b3d70f1f75
+  current_version_id: git_sha1:bf9970ed541cea4bd68a3931f5add7b3d70f1f75
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

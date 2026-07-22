@@ -14,7 +14,7 @@ curation:
 display_name: transformers
 identity:
   aliases: []
-  current_version_id: sha256:1b70e1633f163a2c366f13149dd939a075bab136
+  current_version_id: git_sha1:1b70e1633f163a2c366f13149dd939a075bab136
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

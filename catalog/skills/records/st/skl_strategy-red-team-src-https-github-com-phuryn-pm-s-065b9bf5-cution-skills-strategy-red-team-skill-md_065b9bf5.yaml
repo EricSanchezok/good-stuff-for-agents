@@ -14,7 +14,7 @@ curation:
 display_name: strategy-red-team
 identity:
   aliases: []
-  current_version_id: sha256:fe7b7feaaa7a7662d72aac226d40d3abea7e0596
+  current_version_id: git_sha1:fe7b7feaaa7a7662d72aac226d40d3abea7e0596
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

@@ -14,7 +14,7 @@ curation:
 display_name: utility-pm-release-conductor
 identity:
   aliases: []
-  current_version_id: sha256:6d4b8f4bd24477ff1019c3bf622181f5bfda9eb9
+  current_version_id: git_sha1:6d4b8f4bd24477ff1019c3bf622181f5bfda9eb9
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

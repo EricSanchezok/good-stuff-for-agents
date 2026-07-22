@@ -14,7 +14,7 @@ curation:
 display_name: azure-storage-blob-ts
 identity:
   aliases: []
-  current_version_id: sha256:5f9b967cebe6e1821e5a43749ff6f7f7d626c591
+  current_version_id: git_sha1:5f9b967cebe6e1821e5a43749ff6f7f7d626c591
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

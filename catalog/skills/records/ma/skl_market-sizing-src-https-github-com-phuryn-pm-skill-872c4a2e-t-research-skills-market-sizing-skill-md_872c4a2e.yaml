@@ -14,7 +14,7 @@ curation:
 display_name: market-sizing
 identity:
   aliases: []
-  current_version_id: sha256:58cc6c2de00e10cbdc94d976448812a7c6a79feb
+  current_version_id: git_sha1:58cc6c2de00e10cbdc94d976448812a7c6a79feb
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

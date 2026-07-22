@@ -14,7 +14,7 @@ curation:
 display_name: foundation-stakeholder-update
 identity:
   aliases: []
-  current_version_id: sha256:15ebba0e9586cb55ea318d3ebae7afa4672b211f
+  current_version_id: git_sha1:15ebba0e9586cb55ea318d3ebae7afa4672b211f
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

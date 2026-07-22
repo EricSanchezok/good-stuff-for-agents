@@ -14,7 +14,7 @@ curation:
 display_name: azure-cosmos-rust
 identity:
   aliases: []
-  current_version_id: sha256:4464932137813f02b495a56f9db25c3d17125067
+  current_version_id: git_sha1:4464932137813f02b495a56f9db25c3d17125067
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

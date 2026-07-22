@@ -14,7 +14,7 @@ curation:
 display_name: azure-aigateway
 identity:
   aliases: []
-  current_version_id: sha256:a8df9f45fae25501acf7fee988047f808d191fa5
+  current_version_id: git_sha1:a8df9f45fae25501acf7fee988047f808d191fa5
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

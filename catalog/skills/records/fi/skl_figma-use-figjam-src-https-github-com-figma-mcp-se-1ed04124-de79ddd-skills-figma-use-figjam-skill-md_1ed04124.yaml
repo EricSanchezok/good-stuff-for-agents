@@ -14,7 +14,7 @@ curation:
 display_name: figma-use-figjam
 identity:
   aliases: []
-  current_version_id: sha256:846c2897d4e83f1518d32770a47f1ee1c09cf89c
+  current_version_id: git_sha1:846c2897d4e83f1518d32770a47f1ee1c09cf89c
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

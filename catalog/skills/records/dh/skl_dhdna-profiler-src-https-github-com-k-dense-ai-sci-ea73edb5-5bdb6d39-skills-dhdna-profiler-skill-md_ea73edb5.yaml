@@ -14,7 +14,7 @@ curation:
 display_name: dhdna-profiler
 identity:
   aliases: []
-  current_version_id: sha256:51c1af6110fc40b26a62d556f1ae0f12da86c015
+  current_version_id: git_sha1:51c1af6110fc40b26a62d556f1ae0f12da86c015
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

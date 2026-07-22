@@ -14,7 +14,7 @@ curation:
 display_name: azure-keyvault-keys-ts
 identity:
   aliases: []
-  current_version_id: sha256:c995e4c598f385ba4aca948ff8ef2c57dae1bb01
+  current_version_id: git_sha1:c995e4c598f385ba4aca948ff8ef2c57dae1bb01
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

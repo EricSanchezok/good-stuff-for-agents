@@ -14,7 +14,7 @@ curation:
 display_name: m365-agents-dotnet
 identity:
   aliases: []
-  current_version_id: sha256:d914cd1443fa3df60bddee1e061870f0dd404917
+  current_version_id: git_sha1:d914cd1443fa3df60bddee1e061870f0dd404917
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

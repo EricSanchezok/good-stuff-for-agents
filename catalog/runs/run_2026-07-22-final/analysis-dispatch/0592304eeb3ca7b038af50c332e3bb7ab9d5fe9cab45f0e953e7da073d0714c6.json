@@ -1,0 +1,16 @@
+{
+  "binding": {
+    "canonical_skill_id": "skl_azure-ai-projects-ts-src-https-github-com-microsof-4495be8c-ipt-skills-azure-ai-projects-ts-skill-md_4495be8c",
+    "current_version_id": "git_sha1:baea6df8c76732e7a6ee9268a1de80cd52cb76e1",
+    "expected_output_path": "catalog/analyses/az/skl_azure-ai-projects-ts-src-https-github-com-microsof-4495be8c-ipt-skills-azure-ai-projects-ts-skill-md_4495be8c.md",
+    "git_blob_oid": "git_sha1:baea6df8c76732e7a6ee9268a1de80cd52cb76e1",
+    "pinned_commit": "cc93536d8b809e177a7d1008b276ce41a9456a9c",
+    "raw_url": "https://raw.githubusercontent.com/microsoft/skills/cc93536d8b809e177a7d1008b276ce41a9456a9c/.github/plugins/azure-sdk-typescript/skills/azure-ai-projects-ts/SKILL.md",
+    "remote_path": ".github/plugins/azure-sdk-typescript/skills/azure-ai-projects-ts/SKILL.md",
+    "source_id": "src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e"
+  },
+  "dispatch_digest": "sha256:0592304eeb3ca7b038af50c332e3bb7ab9d5fe9cab45f0e953e7da073d0714c6",
+  "kind": "skill-analysis-dispatch",
+  "run_id": "run_2026-07-22-final",
+  "schema_version": 2
+}

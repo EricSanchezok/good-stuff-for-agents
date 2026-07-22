@@ -14,7 +14,7 @@ curation:
 display_name: azure-resource-visualizer
 identity:
   aliases: []
-  current_version_id: sha256:dc60b612a54d125bca4feb92b2bfead2ee757873
+  current_version_id: git_sha1:dc60b612a54d125bca4feb92b2bfead2ee757873
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

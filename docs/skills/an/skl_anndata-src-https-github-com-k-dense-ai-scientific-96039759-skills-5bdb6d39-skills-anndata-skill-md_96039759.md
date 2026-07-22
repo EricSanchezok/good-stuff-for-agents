@@ -4,7 +4,9 @@
 
 ## Summary
 
-This is a competent but thoroughly unremarkable API reference skill for the AnnData Python library — the data structure underlying single-cell genomics. It teaches an agent how to create AnnData objects, read/write `.h5ad` and `.zarr` files, concatenate datasets, subset and filter data, use backed mode for large files, and integrate with scanpy. Every code example works, every deprecation warning is accurate, and none of it is information you couldn't get from `anndata.readthedocs.io` in ten minutes.
+# AnnData for Single-Cell Genomics
+
+This skill teaches an agent how to work with AnnData — the annotated data matrix that underpins virtually all single-cell genomics analysis in Python. AnnData is not a general-purpose data structure; it is a domain-specific container tightly coupled to the scanpy ecosystem. If your agent needs to write Python for single-cell RNA-seq, ATAC-seq, or spatial transcriptomics, this is the data structure it must understand. If it doesn't, this skill is irrelevant.
 
 ## Source
 
@@ -38,7 +40,7 @@ No related skills are public yet.
 
 ## Public Analysis Summary
 
-This is a solid but interchangeable API reference for AnnData. If your agent already has the scanpy skill, skip this — it's redundant. If your agent needs AnnData without scanpy (data engineering, format conversion, cloud storage), it's useful but unremarkable. The deprecation-aware API syntax is its main contribution, and you can get that from a well-maintained cheatsheet.
+This skill covers an essential, genuinely irreplaceable data structure for single-cell genomics. But its value is narrow and deep, not broad. The single biggest risk is silent data loss through in-place mutation without raw-count preservation; the single biggest benefit is preventing agents from fumbling the `.obs`/`.var`/`.obsm` namespace.
 
 ## Confidence and Limitations
 

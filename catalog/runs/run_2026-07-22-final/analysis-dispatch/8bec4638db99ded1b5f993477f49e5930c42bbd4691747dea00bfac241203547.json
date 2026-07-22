@@ -1,0 +1,16 @@
+{
+  "binding": {
+    "canonical_skill_id": "skl_azure-appconfiguration-java-src-https-github-com-m-71482d0f-lls-azure-appconfiguration-java-skill-md_71482d0f",
+    "current_version_id": "git_sha1:a27cd0325fe6fba6009923912c5174ee364bd2c5",
+    "expected_output_path": "catalog/analyses/az/skl_azure-appconfiguration-java-src-https-github-com-m-71482d0f-lls-azure-appconfiguration-java-skill-md_71482d0f.md",
+    "git_blob_oid": "git_sha1:a27cd0325fe6fba6009923912c5174ee364bd2c5",
+    "pinned_commit": "cc93536d8b809e177a7d1008b276ce41a9456a9c",
+    "raw_url": "https://raw.githubusercontent.com/microsoft/skills/cc93536d8b809e177a7d1008b276ce41a9456a9c/.github/plugins/azure-sdk-java/skills/azure-appconfiguration-java/SKILL.md",
+    "remote_path": ".github/plugins/azure-sdk-java/skills/azure-appconfiguration-java/SKILL.md",
+    "source_id": "src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e"
+  },
+  "dispatch_digest": "sha256:8bec4638db99ded1b5f993477f49e5930c42bbd4691747dea00bfac241203547",
+  "kind": "skill-analysis-dispatch",
+  "run_id": "run_2026-07-22-final",
+  "schema_version": 2
+}

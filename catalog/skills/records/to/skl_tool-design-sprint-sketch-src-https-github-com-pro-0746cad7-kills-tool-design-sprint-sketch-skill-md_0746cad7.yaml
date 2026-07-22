@@ -14,7 +14,7 @@ curation:
 display_name: tool-design-sprint-sketch
 identity:
   aliases: []
-  current_version_id: sha256:a4ac686a92aad3899deab05eee85e1f6eb1c0755
+  current_version_id: git_sha1:a4ac686a92aad3899deab05eee85e1f6eb1c0755
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

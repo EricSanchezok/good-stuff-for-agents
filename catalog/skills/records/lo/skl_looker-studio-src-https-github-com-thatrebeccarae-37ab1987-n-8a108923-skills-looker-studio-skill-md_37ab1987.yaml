@@ -14,7 +14,7 @@ curation:
 display_name: looker-studio
 identity:
   aliases: []
-  current_version_id: sha256:21435817fbf96eb87b3f04fa36bc0ccda58239ad
+  current_version_id: git_sha1:21435817fbf96eb87b3f04fa36bc0ccda58239ad
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

@@ -14,7 +14,7 @@ curation:
 display_name: wiki-qa
 identity:
   aliases: []
-  current_version_id: sha256:2568639d0204aff644b86563342487fec78eb332
+  current_version_id: git_sha1:2568639d0204aff644b86563342487fec78eb332
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

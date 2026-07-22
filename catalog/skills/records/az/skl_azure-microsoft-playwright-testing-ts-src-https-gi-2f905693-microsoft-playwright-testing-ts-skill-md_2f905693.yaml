@@ -14,7 +14,7 @@ curation:
 display_name: azure-microsoft-playwright-testing-ts
 identity:
   aliases: []
-  current_version_id: sha256:b784591d64f11644dde1f7b165411792751f284a
+  current_version_id: git_sha1:b784591d64f11644dde1f7b165411792751f284a
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

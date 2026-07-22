@@ -14,7 +14,7 @@ curation:
 display_name: azure-mgmt-weightsandbiases-dotnet
 identity:
   aliases: []
-  current_version_id: sha256:07adf059989627086c55e5aaa94d2057022b1c2d
+  current_version_id: git_sha1:07adf059989627086c55e5aaa94d2057022b1c2d
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

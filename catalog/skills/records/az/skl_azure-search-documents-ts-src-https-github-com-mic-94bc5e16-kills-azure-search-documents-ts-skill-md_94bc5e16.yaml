@@ -14,7 +14,7 @@ curation:
 display_name: azure-search-documents-ts
 identity:
   aliases: []
-  current_version_id: sha256:b31e05d49593682d54727deec69b10e5394c1f6f
+  current_version_id: git_sha1:b31e05d49593682d54727deec69b10e5394c1f6f
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

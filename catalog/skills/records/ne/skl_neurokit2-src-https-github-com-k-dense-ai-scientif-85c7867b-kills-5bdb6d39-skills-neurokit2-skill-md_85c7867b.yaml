@@ -14,7 +14,7 @@ curation:
 display_name: neurokit2
 identity:
   aliases: []
-  current_version_id: sha256:6ae3d0d308c23faadc6419d44a0a5307ff7d4dc6
+  current_version_id: git_sha1:6ae3d0d308c23faadc6419d44a0a5307ff7d4dc6
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

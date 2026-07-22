@@ -14,7 +14,7 @@ curation:
 display_name: discover-journey-map
 identity:
   aliases: []
-  current_version_id: sha256:071b6f4c46d18ef1b640dbabb49996cdb9e24b00
+  current_version_id: git_sha1:071b6f4c46d18ef1b640dbabb49996cdb9e24b00
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

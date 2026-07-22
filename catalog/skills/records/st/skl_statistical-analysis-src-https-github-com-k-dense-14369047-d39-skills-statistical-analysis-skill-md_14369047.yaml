@@ -14,7 +14,7 @@ curation:
 display_name: statistical-analysis
 identity:
   aliases: []
-  current_version_id: sha256:2226712818a853acfa9a247a4fc4f49e1583758b
+  current_version_id: git_sha1:2226712818a853acfa9a247a4fc4f49e1583758b
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

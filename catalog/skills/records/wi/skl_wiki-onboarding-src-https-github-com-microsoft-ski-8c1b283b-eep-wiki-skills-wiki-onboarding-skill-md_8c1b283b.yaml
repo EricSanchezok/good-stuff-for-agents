@@ -14,7 +14,7 @@ curation:
 display_name: wiki-onboarding
 identity:
   aliases: []
-  current_version_id: sha256:c708309fd6314cb58788dcacc40216675024b989
+  current_version_id: git_sha1:c708309fd6314cb58788dcacc40216675024b989
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

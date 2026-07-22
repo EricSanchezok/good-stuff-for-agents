@@ -14,7 +14,7 @@ curation:
 display_name: fastify
 identity:
   aliases: []
-  current_version_id: sha256:439e684d678e2ed5fc1e7ec37ac5f332554c8800
+  current_version_id: git_sha1:439e684d678e2ed5fc1e7ec37ac5f332554c8800
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

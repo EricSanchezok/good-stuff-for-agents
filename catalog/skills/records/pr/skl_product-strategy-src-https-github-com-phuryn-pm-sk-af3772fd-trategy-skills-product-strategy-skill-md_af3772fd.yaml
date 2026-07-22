@@ -14,7 +14,7 @@ curation:
 display_name: product-strategy
 identity:
   aliases: []
-  current_version_id: sha256:b92514e84b3f1c122255628ac48acbc7403913f8
+  current_version_id: git_sha1:b92514e84b3f1c122255628ac48acbc7403913f8
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

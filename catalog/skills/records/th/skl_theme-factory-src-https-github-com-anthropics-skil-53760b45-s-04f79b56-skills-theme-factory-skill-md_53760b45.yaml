@@ -14,7 +14,7 @@ curation:
 display_name: theme-factory
 identity:
   aliases: []
-  current_version_id: sha256:90dfceaf2ecdc191a4dcfb0069768a9560638998
+  current_version_id: git_sha1:90dfceaf2ecdc191a4dcfb0069768a9560638998
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

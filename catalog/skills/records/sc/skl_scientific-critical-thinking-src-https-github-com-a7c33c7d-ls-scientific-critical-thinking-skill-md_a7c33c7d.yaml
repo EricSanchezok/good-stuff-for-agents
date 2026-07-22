@@ -14,7 +14,7 @@ curation:
 display_name: scientific-critical-thinking
 identity:
   aliases: []
-  current_version_id: sha256:386fc7c9b6e764b7d0b7310a0c2d5649b978cc0f
+  current_version_id: git_sha1:386fc7c9b6e764b7d0b7310a0c2d5649b978cc0f
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

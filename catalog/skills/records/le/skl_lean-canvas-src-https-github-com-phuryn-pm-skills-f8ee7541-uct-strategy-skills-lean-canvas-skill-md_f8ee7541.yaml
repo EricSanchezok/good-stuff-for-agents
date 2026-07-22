@@ -14,7 +14,7 @@ curation:
 display_name: lean-canvas
 identity:
   aliases: []
-  current_version_id: sha256:482791e799d425c3ffb8581c7bd24cb5397b40da
+  current_version_id: git_sha1:482791e799d425c3ffb8581c7bd24cb5397b40da
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

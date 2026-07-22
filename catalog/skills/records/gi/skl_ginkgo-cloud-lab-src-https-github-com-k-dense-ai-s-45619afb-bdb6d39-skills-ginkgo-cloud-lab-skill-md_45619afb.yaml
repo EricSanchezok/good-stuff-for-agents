@@ -14,7 +14,7 @@ curation:
 display_name: ginkgo-cloud-lab
 identity:
   aliases: []
-  current_version_id: sha256:4744936e0c79e05c2fed45dbc756774b2110f9d0
+  current_version_id: git_sha1:4744936e0c79e05c2fed45dbc756774b2110f9d0
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

@@ -14,7 +14,7 @@ curation:
 display_name: azure-security-keyvault-keys-dotnet
 identity:
   aliases: []
-  current_version_id: sha256:c9ca1f8736980cf682b5ac1306d327442d3260d0
+  current_version_id: git_sha1:c9ca1f8736980cf682b5ac1306d327442d3260d0
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

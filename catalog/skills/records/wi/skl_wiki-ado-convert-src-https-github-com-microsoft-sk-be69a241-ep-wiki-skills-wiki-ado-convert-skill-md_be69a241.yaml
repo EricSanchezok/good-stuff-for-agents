@@ -14,7 +14,7 @@ curation:
 display_name: wiki-ado-convert
 identity:
   aliases: []
-  current_version_id: sha256:9c030896cd815faef45a314774d37480329e1f34
+  current_version_id: git_sha1:9c030896cd815faef45a314774d37480329e1f34
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

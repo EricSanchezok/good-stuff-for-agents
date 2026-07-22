@@ -14,7 +14,7 @@ curation:
 display_name: north-star-metric
 identity:
   aliases: []
-  current_version_id: sha256:e7cf1cc8aa0d49f1718f81dac357fcad2556a8d5
+  current_version_id: git_sha1:e7cf1cc8aa0d49f1718f81dac357fcad2556a8d5
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

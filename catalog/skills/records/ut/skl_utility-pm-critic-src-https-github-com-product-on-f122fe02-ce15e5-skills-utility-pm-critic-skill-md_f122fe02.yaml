@@ -14,7 +14,7 @@ curation:
 display_name: utility-pm-critic
 identity:
   aliases: []
-  current_version_id: sha256:74e12f153931bb795fc38d88ea5031753daac49b
+  current_version_id: git_sha1:74e12f153931bb795fc38d88ea5031753daac49b
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

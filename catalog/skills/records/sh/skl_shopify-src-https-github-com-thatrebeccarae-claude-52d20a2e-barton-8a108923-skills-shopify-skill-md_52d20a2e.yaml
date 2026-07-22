@@ -14,7 +14,7 @@ curation:
 display_name: shopify
 identity:
   aliases: []
-  current_version_id: sha256:838665059c9b46f2f45d66193b31355e22a3e541
+  current_version_id: git_sha1:838665059c9b46f2f45d66193b31355e22a3e541
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

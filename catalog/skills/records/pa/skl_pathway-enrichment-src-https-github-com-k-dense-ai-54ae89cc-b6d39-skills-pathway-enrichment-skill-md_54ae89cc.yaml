@@ -14,7 +14,7 @@ curation:
 display_name: pathway-enrichment
 identity:
   aliases: []
-  current_version_id: sha256:85ef09e0ea1955f44093d3464a5b9c1626793bc7
+  current_version_id: git_sha1:85ef09e0ea1955f44093d3464a5b9c1626793bc7
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

@@ -14,7 +14,7 @@ curation:
 display_name: skill-optimizer
 identity:
   aliases: []
-  current_version_id: sha256:5c4e7d1209c66d8326f6f58db0e597410b69f69d
+  current_version_id: git_sha1:5c4e7d1209c66d8326f6f58db0e597410b69f69d
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

@@ -14,7 +14,7 @@ curation:
 display_name: azure-ai-translation-ts
 identity:
   aliases: []
-  current_version_id: sha256:fa832211c5a8a90e6ca63b241314dd0437c96946
+  current_version_id: git_sha1:fa832211c5a8a90e6ca63b241314dd0437c96946
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

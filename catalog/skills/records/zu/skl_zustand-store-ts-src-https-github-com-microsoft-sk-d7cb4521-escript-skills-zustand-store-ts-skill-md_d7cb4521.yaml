@@ -14,7 +14,7 @@ curation:
 display_name: zustand-store-ts
 identity:
   aliases: []
-  current_version_id: sha256:fe9aca17683b17d3c86c78cb3473f52a10b38f3d
+  current_version_id: git_sha1:fe9aca17683b17d3c86c78cb3473f52a10b38f3d
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

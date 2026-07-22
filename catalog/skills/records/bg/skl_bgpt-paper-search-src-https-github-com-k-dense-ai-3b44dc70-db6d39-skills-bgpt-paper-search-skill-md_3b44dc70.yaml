@@ -14,7 +14,7 @@ curation:
 display_name: bgpt-paper-search
 identity:
   aliases: []
-  current_version_id: sha256:2eeb8ac48dbb1282f44d828be94aaa3da43c15ba
+  current_version_id: git_sha1:2eeb8ac48dbb1282f44d828be94aaa3da43c15ba
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

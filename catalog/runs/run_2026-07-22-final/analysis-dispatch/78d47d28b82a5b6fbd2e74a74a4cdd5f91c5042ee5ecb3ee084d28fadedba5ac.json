@@ -1,0 +1,16 @@
+{
+  "binding": {
+    "canonical_skill_id": "skl_azure-ai-projects-java-src-https-github-com-micros-451e994c-a-skills-azure-ai-projects-java-skill-md_451e994c",
+    "current_version_id": "git_sha1:a28cc004322d021cafc17518c27755a28c1141cc",
+    "expected_output_path": "catalog/analyses/az/skl_azure-ai-projects-java-src-https-github-com-micros-451e994c-a-skills-azure-ai-projects-java-skill-md_451e994c.md",
+    "git_blob_oid": "git_sha1:a28cc004322d021cafc17518c27755a28c1141cc",
+    "pinned_commit": "cc93536d8b809e177a7d1008b276ce41a9456a9c",
+    "raw_url": "https://raw.githubusercontent.com/microsoft/skills/cc93536d8b809e177a7d1008b276ce41a9456a9c/.github/plugins/azure-sdk-java/skills/azure-ai-projects-java/SKILL.md",
+    "remote_path": ".github/plugins/azure-sdk-java/skills/azure-ai-projects-java/SKILL.md",
+    "source_id": "src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e"
+  },
+  "dispatch_digest": "sha256:78d47d28b82a5b6fbd2e74a74a4cdd5f91c5042ee5ecb3ee084d28fadedba5ac",
+  "kind": "skill-analysis-dispatch",
+  "run_id": "run_2026-07-22-final",
+  "schema_version": 2
+}

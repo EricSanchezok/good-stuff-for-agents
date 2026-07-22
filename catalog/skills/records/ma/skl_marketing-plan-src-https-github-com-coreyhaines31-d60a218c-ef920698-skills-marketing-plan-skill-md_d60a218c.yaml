@@ -14,7 +14,7 @@ curation:
 display_name: marketing-plan
 identity:
   aliases: []
-  current_version_id: sha256:a647a520f6981032a3174dc988f75c9a71558831
+  current_version_id: git_sha1:a647a520f6981032a3174dc988f75c9a71558831
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

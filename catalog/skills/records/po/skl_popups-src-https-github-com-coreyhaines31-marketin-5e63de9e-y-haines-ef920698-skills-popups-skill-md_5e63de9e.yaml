@@ -14,7 +14,7 @@ curation:
 display_name: popups
 identity:
   aliases: []
-  current_version_id: sha256:398b3329e4a7cea4b610edf143a5896466287d51
+  current_version_id: git_sha1:398b3329e4a7cea4b610edf143a5896466287d51
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

@@ -1,0 +1,16 @@
+{
+  "binding": {
+    "canonical_skill_id": "skl_azure-ai-vision-imageanalysis-java-src-https-githu-de9fa568-re-ai-vision-imageanalysis-java-skill-md_de9fa568",
+    "current_version_id": "git_sha1:5ec2d2d5592e6a71ec707b03b4a5d64643b5a491",
+    "expected_output_path": "catalog/analyses/az/skl_azure-ai-vision-imageanalysis-java-src-https-githu-de9fa568-re-ai-vision-imageanalysis-java-skill-md_de9fa568.md",
+    "git_blob_oid": "git_sha1:5ec2d2d5592e6a71ec707b03b4a5d64643b5a491",
+    "pinned_commit": "cc93536d8b809e177a7d1008b276ce41a9456a9c",
+    "raw_url": "https://raw.githubusercontent.com/microsoft/skills/cc93536d8b809e177a7d1008b276ce41a9456a9c/.github/plugins/azure-sdk-java/skills/azure-ai-vision-imageanalysis-java/SKILL.md",
+    "remote_path": ".github/plugins/azure-sdk-java/skills/azure-ai-vision-imageanalysis-java/SKILL.md",
+    "source_id": "src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e"
+  },
+  "dispatch_digest": "sha256:24e98b92cf7758ad8f9402ac94397d4ae39b4923c0bbdc1bec5dd0df8c6b1449",
+  "kind": "skill-analysis-dispatch",
+  "run_id": "run_2026-07-22-050000",
+  "schema_version": 2
+}

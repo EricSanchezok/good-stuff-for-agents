@@ -14,7 +14,7 @@ curation:
 display_name: job-stories
 identity:
   aliases: []
-  current_version_id: sha256:767c3f7978ce2fd1c69b566ec665bf9d7ca0235c
+  current_version_id: git_sha1:767c3f7978ce2fd1c69b566ec665bf9d7ca0235c
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

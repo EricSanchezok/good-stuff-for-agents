@@ -14,7 +14,7 @@ curation:
 display_name: diffdock
 identity:
   aliases: []
-  current_version_id: sha256:91bd511a75abbe84aca1f86e0060285368f7664b
+  current_version_id: git_sha1:91bd511a75abbe84aca1f86e0060285368f7664b
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

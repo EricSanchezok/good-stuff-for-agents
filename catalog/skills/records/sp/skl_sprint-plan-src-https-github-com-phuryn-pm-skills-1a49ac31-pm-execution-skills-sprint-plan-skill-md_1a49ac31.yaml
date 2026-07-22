@@ -14,7 +14,7 @@ curation:
 display_name: sprint-plan
 identity:
   aliases: []
-  current_version_id: sha256:05c49f8c1806e95c3681536cd0e48ca3f2c4d07c
+  current_version_id: git_sha1:05c49f8c1806e95c3681536cd0e48ca3f2c4d07c
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

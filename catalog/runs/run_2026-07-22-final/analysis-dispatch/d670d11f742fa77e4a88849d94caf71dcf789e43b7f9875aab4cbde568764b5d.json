@@ -1,0 +1,16 @@
+{
+  "binding": {
+    "canonical_skill_id": "skl_azure-eventgrid-java-src-https-github-com-microsof-da7031f1-ava-skills-azure-eventgrid-java-skill-md_da7031f1",
+    "current_version_id": "git_sha1:75586f26f80854bd65a750a06de00ceb6ff3eb38",
+    "expected_output_path": "catalog/analyses/az/skl_azure-eventgrid-java-src-https-github-com-microsof-da7031f1-ava-skills-azure-eventgrid-java-skill-md_da7031f1.md",
+    "git_blob_oid": "git_sha1:75586f26f80854bd65a750a06de00ceb6ff3eb38",
+    "pinned_commit": "cc93536d8b809e177a7d1008b276ce41a9456a9c",
+    "raw_url": "https://raw.githubusercontent.com/microsoft/skills/cc93536d8b809e177a7d1008b276ce41a9456a9c/.github/plugins/azure-sdk-java/skills/azure-eventgrid-java/SKILL.md",
+    "remote_path": ".github/plugins/azure-sdk-java/skills/azure-eventgrid-java/SKILL.md",
+    "source_id": "src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e"
+  },
+  "dispatch_digest": "sha256:d670d11f742fa77e4a88849d94caf71dcf789e43b7f9875aab4cbde568764b5d",
+  "kind": "skill-analysis-dispatch",
+  "run_id": "run_2026-07-22-final",
+  "schema_version": 2
+}

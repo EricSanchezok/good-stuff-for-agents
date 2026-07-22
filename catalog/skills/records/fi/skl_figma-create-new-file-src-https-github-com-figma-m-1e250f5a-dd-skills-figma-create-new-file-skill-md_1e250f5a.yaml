@@ -14,7 +14,7 @@ curation:
 display_name: figma-create-new-file
 identity:
   aliases: []
-  current_version_id: sha256:5de12596d9c2b5c5292876f07ff44de10087cd52
+  current_version_id: git_sha1:5de12596d9c2b5c5292876f07ff44de10087cd52
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

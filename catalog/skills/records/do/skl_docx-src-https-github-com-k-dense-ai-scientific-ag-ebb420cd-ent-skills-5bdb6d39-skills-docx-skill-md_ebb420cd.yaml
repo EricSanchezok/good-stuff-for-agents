@@ -14,7 +14,7 @@ curation:
 display_name: docx
 identity:
   aliases: []
-  current_version_id: sha256:f2b66235d16fc20e6ff9b2477d90ce63b205666a
+  current_version_id: git_sha1:f2b66235d16fc20e6ff9b2477d90ce63b205666a
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

@@ -14,7 +14,7 @@ curation:
 display_name: deliver-user-stories
 identity:
   aliases: []
-  current_version_id: sha256:40a476c401001507a405c38815c5f2d39fbc2a0a
+  current_version_id: git_sha1:40a476c401001507a405c38815c5f2d39fbc2a0a
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

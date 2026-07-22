@@ -14,7 +14,7 @@ curation:
 display_name: molecular-dynamics
 identity:
   aliases: []
-  current_version_id: sha256:95cfb4bfa4a2b90ef0dea5cbe081835851ae6b9e
+  current_version_id: git_sha1:95cfb4bfa4a2b90ef0dea5cbe081835851ae6b9e
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

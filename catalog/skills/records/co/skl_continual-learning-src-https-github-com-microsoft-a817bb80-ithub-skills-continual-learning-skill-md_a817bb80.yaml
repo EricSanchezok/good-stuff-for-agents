@@ -14,7 +14,7 @@ curation:
 display_name: continual-learning
 identity:
   aliases: []
-  current_version_id: sha256:1de328f9abe0c345c002a80385619aef277c431e
+  current_version_id: git_sha1:1de328f9abe0c345c002a80385619aef277c431e
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

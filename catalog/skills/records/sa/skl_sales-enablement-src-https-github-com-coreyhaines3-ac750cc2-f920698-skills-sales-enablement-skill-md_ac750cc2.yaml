@@ -14,7 +14,7 @@ curation:
 display_name: sales-enablement
 identity:
   aliases: []
-  current_version_id: sha256:19dab426e515b24cf2b540c7feefd5114f66093f
+  current_version_id: git_sha1:19dab426e515b24cf2b540c7feefd5114f66093f
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

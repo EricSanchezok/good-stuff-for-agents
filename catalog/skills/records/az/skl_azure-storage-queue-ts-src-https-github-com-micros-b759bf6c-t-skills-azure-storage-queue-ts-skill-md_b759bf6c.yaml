@@ -14,7 +14,7 @@ curation:
 display_name: azure-storage-queue-ts
 identity:
   aliases: []
-  current_version_id: sha256:130dd9277b2d87f7095f959d4d5fa93f41af6310
+  current_version_id: git_sha1:130dd9277b2d87f7095f959d4d5fa93f41af6310
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

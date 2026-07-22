@@ -14,7 +14,7 @@ curation:
 display_name: mcp-builder
 identity:
   aliases: []
-  current_version_id: sha256:792635390fff9f4c0032b1f0e06db1d81affe678
+  current_version_id: git_sha1:792635390fff9f4c0032b1f0e06db1d81affe678
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

@@ -14,7 +14,7 @@ curation:
 display_name: pacsomatic
 identity:
   aliases: []
-  current_version_id: sha256:6fa8b92d83479f6f26d4f7ef519d2bea043822ba
+  current_version_id: git_sha1:6fa8b92d83479f6f26d4f7ef519d2bea043822ba
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

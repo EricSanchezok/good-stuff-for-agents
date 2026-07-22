@@ -14,7 +14,7 @@ curation:
 display_name: shipping-artifacts
 identity:
   aliases: []
-  current_version_id: sha256:5586c9179f64610e676d28e125d63729f80f4799
+  current_version_id: git_sha1:5586c9179f64610e676d28e125d63729f80f4799
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

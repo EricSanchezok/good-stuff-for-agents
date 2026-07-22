@@ -14,7 +14,7 @@ curation:
 display_name: foundation-okr-writer
 identity:
   aliases: []
-  current_version_id: sha256:ab96529c008341297b64ef7dfa156d24925738e2
+  current_version_id: git_sha1:ab96529c008341297b64ef7dfa156d24925738e2
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

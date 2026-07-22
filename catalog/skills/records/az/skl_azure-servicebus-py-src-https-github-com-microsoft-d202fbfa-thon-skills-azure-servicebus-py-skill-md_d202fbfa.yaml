@@ -14,7 +14,7 @@ curation:
 display_name: azure-servicebus-py
 identity:
   aliases: []
-  current_version_id: sha256:df06c9281cd34c06b0e8021517019267d9ae3a4c
+  current_version_id: git_sha1:df06c9281cd34c06b0e8021517019267d9ae3a4c
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

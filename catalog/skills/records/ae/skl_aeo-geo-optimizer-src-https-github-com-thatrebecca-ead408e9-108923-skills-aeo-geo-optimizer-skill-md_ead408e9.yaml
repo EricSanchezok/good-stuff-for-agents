@@ -14,7 +14,7 @@ curation:
 display_name: aeo-geo-optimizer
 identity:
   aliases: []
-  current_version_id: sha256:2b39f8ac3c0f018f711fccd74a02b9537cff5165
+  current_version_id: git_sha1:2b39f8ac3c0f018f711fccd74a02b9537cff5165
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

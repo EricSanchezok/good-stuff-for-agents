@@ -14,7 +14,7 @@ curation:
 display_name: aeon
 identity:
   aliases: []
-  current_version_id: sha256:9638c1d271324c04b4828ec6a3e53dddcfd0b92f
+  current_version_id: git_sha1:9638c1d271324c04b4828ec6a3e53dddcfd0b92f
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

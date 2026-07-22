@@ -14,7 +14,7 @@ curation:
 display_name: airunway-aks-setup
 identity:
   aliases: []
-  current_version_id: sha256:26bbd92815116826696fb6380d37446a285496b9
+  current_version_id: git_sha1:26bbd92815116826696fb6380d37446a285496b9
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

@@ -14,7 +14,7 @@ curation:
 display_name: copywriting-frameworks
 identity:
   aliases: []
-  current_version_id: sha256:abb1bdc03f04308887d9f4387a84e65f009fe9d1
+  current_version_id: git_sha1:abb1bdc03f04308887d9f4387a84e65f009fe9d1
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

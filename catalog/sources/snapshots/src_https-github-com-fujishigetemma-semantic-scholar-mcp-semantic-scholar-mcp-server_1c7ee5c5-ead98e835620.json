@@ -2,7 +2,7 @@
   "schema_version": 1,
   "source_id": "src_https-github-com-fujishigetemma-semantic-scholar-mcp-semantic-scholar-mcp-server_1c7ee5c5",
   "upstream_ref": "ead98e835620941b26bac952b5e330405693d9c8",
-  "checked_at": "2026-07-13T21:03:14.379Z",
+  "checked_at": "2026-07-22T02:48:41.176Z",
   "url": "https://github.com/FujishigeTemma/semantic-scholar-mcp",
   "artifacts": [
     {
@@ -11,15 +11,25 @@
       "declared_name": ".claude",
       "format": "markdown",
       "parse_confidence": "medium",
-      "content_digest": "sha256:47a3aabbcc51282d19a83c72b46f70d0f0fd026d",
+      "content_digest": "git_sha1:47a3aabbcc51282d19a83c72b46f70d0f0fd026d",
       "upstream_ref": "ead98e835620941b26bac952b5e330405693d9c8",
+      "git_blob_oid": "git_sha1:47a3aabbcc51282d19a83c72b46f70d0f0fd026d",
       "url": "https://github.com/FujishigeTemma/semantic-scholar-mcp/blob/ead98e835620941b26bac952b5e330405693d9c8/.claude/settings.json",
       "raw_url": "https://raw.githubusercontent.com/FujishigeTemma/semantic-scholar-mcp/ead98e835620941b26bac952b5e330405693d9c8/.claude/settings.json",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-fujishigetemma-semantic-scholar-mcp-semantic-scholar-mcp-server_1c7ee5c5",
+        "canonical_skill_id": null,
+        "remote_path": ".claude/settings.json",
+        "pinned_commit": "ead98e835620941b26bac952b5e330405693d9c8",
+        "git_blob_oid": "git_sha1:47a3aabbcc51282d19a83c72b46f70d0f0fd026d",
+        "raw_url": "https://raw.githubusercontent.com/FujishigeTemma/semantic-scholar-mcp/ead98e835620941b26bac952b5e330405693d9c8/.claude/settings.json",
+        "expected_output_path": null
+      },
       "raw_metadata": {
-        "github_blob_sha": "47a3aabbcc51282d19a83c72b46f70d0f0fd026d",
+        "github_blob_oid": "git_sha1:47a3aabbcc51282d19a83c72b46f70d0f0fd026d",
         "size": 353
       }
     }
   ],
-  "digest": "sha256:a475bc8407f202bfe899d414b7c301e66a0d705523aee6be9e017b1559556195"
+  "digest": "sha256:182ce8c3a7372f4e94b42fcdea7a7fbfea25002a3b3ab422feeba2b0f819e556"
 }

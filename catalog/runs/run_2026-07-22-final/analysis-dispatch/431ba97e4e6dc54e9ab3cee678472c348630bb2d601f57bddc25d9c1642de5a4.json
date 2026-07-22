@@ -1,0 +1,16 @@
+{
+  "binding": {
+    "canonical_skill_id": "skl_azure-ai-contentsafety-ts-src-https-github-com-mic-5ccb9cbf-kills-azure-ai-contentsafety-ts-skill-md_5ccb9cbf",
+    "current_version_id": "git_sha1:e038281439bf7d5b738ff6a6c9fd211281582e73",
+    "expected_output_path": "catalog/analyses/az/skl_azure-ai-contentsafety-ts-src-https-github-com-mic-5ccb9cbf-kills-azure-ai-contentsafety-ts-skill-md_5ccb9cbf.md",
+    "git_blob_oid": "git_sha1:e038281439bf7d5b738ff6a6c9fd211281582e73",
+    "pinned_commit": "cc93536d8b809e177a7d1008b276ce41a9456a9c",
+    "raw_url": "https://raw.githubusercontent.com/microsoft/skills/cc93536d8b809e177a7d1008b276ce41a9456a9c/.github/plugins/azure-sdk-typescript/skills/azure-ai-contentsafety-ts/SKILL.md",
+    "remote_path": ".github/plugins/azure-sdk-typescript/skills/azure-ai-contentsafety-ts/SKILL.md",
+    "source_id": "src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e"
+  },
+  "dispatch_digest": "sha256:431ba97e4e6dc54e9ab3cee678472c348630bb2d601f57bddc25d9c1642de5a4",
+  "kind": "skill-analysis-dispatch",
+  "run_id": "run_2026-07-22-final",
+  "schema_version": 2
+}

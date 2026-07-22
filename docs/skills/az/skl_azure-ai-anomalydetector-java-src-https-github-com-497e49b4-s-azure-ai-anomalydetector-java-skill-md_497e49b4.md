@@ -4,7 +4,9 @@
 
 ## Summary
 
-Analysis pending.
+# Azure AI Anomaly Detector Java
+
+Surface-level guide to the Azure AI Anomaly Detector service from Java: authentication (DefaultAzureCredential, key-based), client creation, univariate/multivariate anomaly detection, response parsing, standard Azure SDK error handling. A competent but entirely generic SDK wrapper.
 
 ## Source
 
@@ -35,6 +37,10 @@ No published packs use this skill yet.
 ## Related Skills
 
 No related skills are public yet.
+
+## Public Analysis Summary
+
+Skip unless only alternative is raw Javadoc. Official Azure SDK samples are a better source of truth. Too narrow, too shallow, too replaceable for a tight 100-skill catalog.
 
 ## Confidence and Limitations
 

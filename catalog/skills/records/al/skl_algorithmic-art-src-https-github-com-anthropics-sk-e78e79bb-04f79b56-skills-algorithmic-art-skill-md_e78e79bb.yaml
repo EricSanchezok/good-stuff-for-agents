@@ -14,7 +14,7 @@ curation:
 display_name: algorithmic-art
 identity:
   aliases: []
-  current_version_id: sha256:634f6fa42e4e697fa6afd293acd7fb8246574876
+  current_version_id: git_sha1:634f6fa42e4e697fa6afd293acd7fb8246574876
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

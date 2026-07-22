@@ -14,7 +14,7 @@ curation:
 display_name: email-composer
 identity:
   aliases: []
-  current_version_id: sha256:a778dab2139654c30bf1481d94bd5369acbe39f3
+  current_version_id: git_sha1:a778dab2139654c30bf1481d94bd5369acbe39f3
   source_skill_ids: []
 interfaces:
   handoff_outputs: []

@@ -14,7 +14,7 @@ curation:
 display_name: outcome-roadmap
 identity:
   aliases: []
-  current_version_id: sha256:c51cfa226a50ab9f14367adc4c54af14b2562da9
+  current_version_id: git_sha1:c51cfa226a50ab9f14367adc4c54af14b2562da9
   source_skill_ids: []
 interfaces:
   handoff_outputs: []
