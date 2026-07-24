@@ -34,7 +34,7 @@ No published packs use this skill yet.
 
 ## Related Skills
 
-No related skills are public yet.
+- chains with: [copywriting](../co/skl_copywriting-src-https-github-com-coreyhaines31-mar-42797825-nes-ef920698-skills-copywriting-skill-md_42797825.md)
 
 ## Public Analysis Summary
 

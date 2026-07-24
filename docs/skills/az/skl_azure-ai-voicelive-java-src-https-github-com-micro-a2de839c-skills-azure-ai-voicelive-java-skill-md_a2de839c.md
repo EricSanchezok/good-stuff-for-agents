@@ -36,7 +36,7 @@ No published packs use this skill yet.
 
 ## Related Skills
 
-No related skills are public yet.
+- alternatives: [azure-ai-voicelive-dotnet](../az/skl_azure-ai-voicelive-dotnet-src-https-github-com-mic-dface443-kills-azure-ai-voicelive-dotnet-skill-md_dface443.md)
 
 ## Public Analysis Summary
 

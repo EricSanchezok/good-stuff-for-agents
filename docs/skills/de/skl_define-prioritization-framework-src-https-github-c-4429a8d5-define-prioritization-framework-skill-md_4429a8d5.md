@@ -30,11 +30,12 @@ Use when the trigger semantics and task stage match the job. Do not use when req
 
 ## Related Packs
 
-No published packs use this skill yet.
+- [Product Management Workflow Pack](../../packs/product-management/pack_pm-workflow-pack.md)
 
 ## Related Skills
 
-No related skills are public yet.
+- chains with: [define-hypothesis](../de/skl_define-hypothesis-src-https-github-com-product-on-fb04a2c3-ce15e5-skills-define-hypothesis-skill-md_fb04a2c3.md)
+- strengthens: [discover-interview-synthesis](../di/skl_discover-interview-synthesis-src-https-github-com-ef79db60-ls-discover-interview-synthesis-skill-md_ef79db60.md)
 
 ## Confidence and Limitations
 

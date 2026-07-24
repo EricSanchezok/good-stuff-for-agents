@@ -34,7 +34,7 @@ No published packs use this skill yet.
 
 ## Related Skills
 
-No related skills are public yet.
+- chains with: [outcome-roadmap](../ou/skl_outcome-roadmap-src-https-github-com-phuryn-pm-ski-08aebdc3-xecution-skills-outcome-roadmap-skill-md_08aebdc3.md)
 
 ## Public Analysis Summary
 

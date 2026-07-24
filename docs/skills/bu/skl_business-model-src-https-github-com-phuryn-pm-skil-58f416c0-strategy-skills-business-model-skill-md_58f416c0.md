@@ -34,7 +34,7 @@ No published packs use this skill yet.
 
 ## Related Skills
 
-No related skills are public yet.
+- chains with: [ansoff-matrix](../an/skl_ansoff-matrix-src-https-github-com-phuryn-pm-skill-b6ae502f-t-strategy-skills-ansoff-matrix-skill-md_b6ae502f.md)
 
 ## Confidence and Limitations
 

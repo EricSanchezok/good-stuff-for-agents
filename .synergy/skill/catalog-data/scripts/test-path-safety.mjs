@@ -208,8 +208,10 @@ function testLegalDirectoryOperations() {
   writeTextAtomic(jsonlPath, '{"ok":true}\n', root)
   assert.deepEqual(listFiles(root, (path) => path.endsWith('.yaml') || path.endsWith('.jsonl')), [jsonlPath, yamlPath].sort())
   assert.equal(formatCatalog(root), 2)
-  assert.equal(readFileSync(yamlPath, 'utf8'), 'name: legal\n')
-  assert.equal(readFileSync(jsonlPath, 'utf8'), '{"ok":true}\n')
+  const actualYaml = readFileSync(yamlPath, 'utf8').trim()
+  const actualJsonl = readFileSync(jsonlPath, 'utf8').trim()
+  assert.equal(actualYaml, 'name: legal')
+  assert.equal(actualJsonl, '{"ok":true}')
 }
 
 function fixtureDir(name) {

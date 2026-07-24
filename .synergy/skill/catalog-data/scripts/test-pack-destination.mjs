@@ -71,7 +71,8 @@ try {
   writeYaml(promotionPath, promotionRecord)
   writeEvaluation(packIds.promotion, passingEvaluation(packIds.promotion), 'candidate')
   const changed = promotePassingCandidates(false, new Set([packIds.promotion]))
-  assert.deepEqual(changed, [`catalog/packs/published/${packIds.promotion}/pack.yaml`])
+  const expectedPath = `catalog/packs/published/${packIds.promotion}/pack.yaml`.replace(/\//g, process.platform === 'win32' ? '\\' : '/')
+  assert.deepEqual(changed, [expectedPath])
   assert.equal(parseYamlFile(packRecordPath(packIds.promotion, 'published')).status, 'published')
   assert.equal(validationErrorsFor(packIds.promotion).length, 0)
 

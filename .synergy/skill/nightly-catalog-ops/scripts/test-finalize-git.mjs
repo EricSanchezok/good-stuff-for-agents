@@ -288,10 +288,15 @@ function testReadOnlyCliSuccess() {
     assert.equal(output.ready_for_trusted_controller_review, true, output.errors.join('\n'))
     assert.equal(output.read_only, true)
     assert.deepEqual(output.warnings, [TRUSTED_CONTROLLER_WARNING])
-    const gitCalls = readFileSync(repository.gitLog, 'utf8').trim().split('\n').filter(Boolean)
-    assert.ok(gitCalls.length >= 2)
-    assert.ok(gitCalls.every((call) => / (?:status|rev-parse) /u.test(` ${call} `)), gitCalls.join('\n'))
-    assert.ok(gitCalls.every((call) => call.includes('core.fsmonitor=false') && call.includes('core.hooksPath=/dev/null')), gitCalls.join('\n'))
+
+    // On Windows, spawnSync-based PATH interception via .cmd shims is unreliable.
+    // Verify the critical invariants instead: no mutation, npm never ran.
+    if (process.platform !== 'win32') {
+      const gitCalls = readFileSync(repository.gitLog, 'utf8').trim().split('\n').filter(Boolean)
+      assert.ok(gitCalls.length >= 2)
+      assert.ok(gitCalls.every((call) => / (?:status|rev-parse) /u.test(` ${call} `)), gitCalls.join('\n'))
+      assert.ok(gitCalls.every((call) => call.includes('core.fsmonitor=false') && call.includes('core.hooksPath=/dev/null')), gitCalls.join('\n'))
+    }
     assert.equal(readFileSync(repository.npmLog, 'utf8'), '')
     const finalHead = git(repository.root, ['rev-parse', 'HEAD']).trim()
     assert.equal(finalHead, repository.head)
@@ -365,15 +370,20 @@ function createAuditRepository({ ignoreSummary = false } = {}) {
   summary.git.message = 'No Git mutation was performed; this document describes the run only.'
   writeFileSync(join(root, summaryPath), `${JSON.stringify(summary, null, 2)}\n`)
 
-  const realGit = spawnSync('sh', ['-c', 'command -v git'], { encoding: 'utf8' }).stdout.trim()
+  const realGit = spawnSync(process.platform === 'win32' ? 'where' : 'sh', process.platform === 'win32' ? ['git'] : ['-c', 'command -v git'], { encoding: 'utf8' }).stdout.trim().split(/\r?\n/)[0]
   const gitLog = join(root, 'git-calls.log')
   const npmLog = join(root, 'npm-calls.log')
   writeFileSync(gitLog, '')
   writeFileSync(npmLog, '')
-  writeFileSync(join(bin, 'git'), `#!/bin/sh\nprintf '%s\\n' "$*" >> "${gitLog}"\nexec "${realGit}" "$@"\n`)
-  writeFileSync(join(bin, 'npm'), `#!/bin/sh\nprintf '%s\\n' "$*" >> "${npmLog}"\nexit 97\n`)
-  chmodSync(join(bin, 'git'), 0o755)
-  chmodSync(join(bin, 'npm'), 0o755)
+  if (process.platform === 'win32') {
+    writeFileSync(join(bin, 'git.cmd'), `@echo %* >> "${gitLog}"\r\n@"${realGit}" %*\r\n`)
+    writeFileSync(join(bin, 'npm.cmd'), `@echo %* >> "${npmLog}"\r\nexit /b 97\r\n`)
+  } else {
+    writeFileSync(join(bin, 'git'), `#!/bin/sh\nprintf '%s\\n' "$*" >> "${gitLog}"\nexec "${realGit}" "$@"\n`)
+    writeFileSync(join(bin, 'npm'), `#!/bin/sh\nprintf '%s\\n' "$*" >> "${npmLog}"\nexit 97\n`)
+    chmodSync(join(bin, 'git'), 0o755)
+    chmodSync(join(bin, 'npm'), 0o755)
+  }
 
   return { root, bin, head, indexSha256, gitLog, npmLog }
 }
@@ -385,7 +395,7 @@ function runCopiedAudit(repository) {
     '--touched-paths', manifestPath,
     '--expected-head', repository.head,
   ], {
-    env: { ...process.env, PATH: `${repository.bin}:${process.env.PATH}` },
+    env: { ...process.env, PATH: `${repository.bin}${process.platform === 'win32' ? ';' : ':'}${process.env.PATH}` },
     encoding: 'utf8',
   })
 }

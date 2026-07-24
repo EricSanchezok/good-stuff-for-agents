@@ -36,7 +36,7 @@ No published packs use this skill yet.
 
 ## Related Skills
 
-No related skills are public yet.
+- chains with: [azure-ai-projects-java](../az/skl_azure-ai-projects-java-src-https-github-com-micros-451e994c-a-skills-azure-ai-projects-java-skill-md_451e994c.md)
 
 ## Public Analysis Summary
 

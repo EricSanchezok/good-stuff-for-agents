@@ -34,7 +34,8 @@ No published packs use this skill yet.
 
 ## Related Skills
 
-No related skills are public yet.
+- chains with: [release-notes](../re/skl_release-notes-src-https-github-com-phuryn-pm-skill-84baad73-execution-skills-release-notes-skill-md_84baad73.md)
+- alternatives: [deliver-prd](../de/skl_deliver-prd-src-https-github-com-product-on-purpos-f3cad5c7-ose-f2ce15e5-skills-deliver-prd-skill-md_f3cad5c7.md)
 
 ## Confidence and Limitations
 

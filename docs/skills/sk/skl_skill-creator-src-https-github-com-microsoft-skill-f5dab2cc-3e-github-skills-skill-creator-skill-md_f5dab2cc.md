@@ -34,7 +34,7 @@ No published packs use this skill yet.
 
 ## Related Skills
 
-No related skills are public yet.
+- alternatives: [skill-creator](../sk/skl_skill-creator-src-https-github-com-anthropics-skil-2644ed13-s-04f79b56-skills-skill-creator-skill-md_2644ed13.md)
 
 ## Public Analysis Summary
 

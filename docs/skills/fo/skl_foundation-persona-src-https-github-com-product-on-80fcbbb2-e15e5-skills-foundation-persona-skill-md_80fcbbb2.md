@@ -34,7 +34,7 @@ No published packs use this skill yet.
 
 ## Related Skills
 
-No related skills are public yet.
+- chains with: [discover-journey-map](../di/skl_discover-journey-map-src-https-github-com-product-790e876d-5e5-skills-discover-journey-map-skill-md_790e876d.md)
 
 ## Confidence and Limitations
 

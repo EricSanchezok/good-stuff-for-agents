@@ -34,7 +34,7 @@ No published packs use this skill yet.
 
 ## Related Skills
 
-No related skills are public yet.
+- alternatives: [mcp-builder](../mc/skl_mcp-builder-src-https-github-com-microsoft-skills-d6d41f0c-423e-github-skills-mcp-builder-skill-md_d6d41f0c.md)
 
 ## Public Analysis Summary
 

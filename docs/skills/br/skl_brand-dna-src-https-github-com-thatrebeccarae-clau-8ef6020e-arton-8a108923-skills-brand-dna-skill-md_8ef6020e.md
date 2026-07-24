@@ -34,7 +34,8 @@ No published packs use this skill yet.
 
 ## Related Skills
 
-No related skills are public yet.
+- chains with: [copywriting-frameworks](../co/skl_copywriting-frameworks-src-https-github-com-thatre-88656ba3-3-skills-copywriting-frameworks-skill-md_88656ba3.md)
+- strengthens: [landing-page-optimizer](../la/skl_landing-page-optimizer-src-https-github-com-thatre-54953ce6-3-skills-landing-page-optimizer-skill-md_54953ce6.md)
 
 ## Confidence and Limitations
 

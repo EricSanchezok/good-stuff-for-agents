@@ -34,7 +34,7 @@ No published packs use this skill yet.
 
 ## Related Skills
 
-No related skills are public yet.
+- alternatives: [skill-creator](../sk/skl_skill-creator-src-https-github-com-microsoft-skill-f5dab2cc-3e-github-skills-skill-creator-skill-md_f5dab2cc.md)
 
 ## Public Analysis Summary
 

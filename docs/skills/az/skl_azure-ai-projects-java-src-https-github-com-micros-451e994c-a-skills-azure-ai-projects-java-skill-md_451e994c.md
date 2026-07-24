@@ -36,7 +36,7 @@ No published packs use this skill yet.
 
 ## Related Skills
 
-No related skills are public yet.
+- chains with: [azure-ai-agents-persistent-java](../az/skl_azure-ai-agents-persistent-java-src-https-github-c-ae400c2f-azure-ai-agents-persistent-java-skill-md_ae400c2f.md)
 
 ## Public Analysis Summary
 

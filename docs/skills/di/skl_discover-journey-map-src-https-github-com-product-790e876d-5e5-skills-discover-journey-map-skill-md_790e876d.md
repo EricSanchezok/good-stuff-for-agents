@@ -34,7 +34,7 @@ No published packs use this skill yet.
 
 ## Related Skills
 
-No related skills are public yet.
+- chains with: [foundation-persona](../fo/skl_foundation-persona-src-https-github-com-product-on-80fcbbb2-e15e5-skills-foundation-persona-skill-md_80fcbbb2.md)
 
 ## Confidence and Limitations
 

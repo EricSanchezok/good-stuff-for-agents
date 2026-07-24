@@ -34,7 +34,7 @@ No published packs use this skill yet.
 
 ## Related Skills
 
-No related skills are public yet.
+- strengthens: [foundation-stakeholder-update](../fo/skl_foundation-stakeholder-update-src-https-github-com-a6397108-s-foundation-stakeholder-update-skill-md_a6397108.md)
 
 ## Confidence and Limitations
 

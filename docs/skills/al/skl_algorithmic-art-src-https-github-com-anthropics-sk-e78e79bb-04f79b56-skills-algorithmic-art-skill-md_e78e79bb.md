@@ -34,7 +34,7 @@ No published packs use this skill yet.
 
 ## Related Skills
 
-No related skills are public yet.
+- alternatives: [canvas-design](../ca/skl_canvas-design-src-https-github-com-anthropics-skil-fe815c69-s-04f79b56-skills-canvas-design-skill-md_fe815c69.md)
 
 ## Public Analysis Summary
 

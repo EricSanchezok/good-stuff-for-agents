@@ -36,7 +36,7 @@ No published packs use this skill yet.
 
 ## Related Skills
 
-No related skills are public yet.
+- strengthens: [arboreto](../ar/skl_arboreto-src-https-github-com-k-dense-ai-scientifi-30006f36-skills-5bdb6d39-skills-arboreto-skill-md_30006f36.md)
 
 ## Public Analysis Summary
 

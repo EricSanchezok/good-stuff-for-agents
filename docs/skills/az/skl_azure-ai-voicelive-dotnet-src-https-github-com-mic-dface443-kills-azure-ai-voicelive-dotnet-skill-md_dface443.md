@@ -36,7 +36,7 @@ No published packs use this skill yet.
 
 ## Related Skills
 
-No related skills are public yet.
+- alternatives: [azure-ai-voicelive-java](../az/skl_azure-ai-voicelive-java-src-https-github-com-micro-a2de839c-skills-azure-ai-voicelive-java-skill-md_a2de839c.md)
 
 ## Public Analysis Summary
 

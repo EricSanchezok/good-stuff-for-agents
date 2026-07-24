@@ -34,7 +34,8 @@ No published packs use this skill yet.
 
 ## Related Skills
 
-No related skills are public yet.
+- strengthens: [brand-dna](../br/skl_brand-dna-src-https-github-com-thatrebeccarae-clau-8ef6020e-arton-8a108923-skills-brand-dna-skill-md_8ef6020e.md)
+- strengthens: [copywriting-frameworks](../co/skl_copywriting-frameworks-src-https-github-com-thatre-88656ba3-3-skills-copywriting-frameworks-skill-md_88656ba3.md)
 
 ## Public Analysis Summary
 

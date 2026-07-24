@@ -36,7 +36,7 @@ No published packs use this skill yet.
 
 ## Related Skills
 
-No related skills are public yet.
+- chains with: [anndata](../an/skl_anndata-src-https-github-com-k-dense-ai-scientific-96039759-skills-5bdb6d39-skills-anndata-skill-md_96039759.md)
 
 ## Public Analysis Summary
 

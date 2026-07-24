@@ -46,7 +46,8 @@ try {
   assert.equal(binding.pack_id, packIds.normal)
   assert.equal(binding.pack_status, 'candidate')
   assert.match(binding.evaluation_id, /^eval_/)
-  assert.equal(binding.expected_path, `catalog/packs/candidates/${packIds.normal}/evaluation.json`)
+  const expectedEvalPath = `catalog/packs/candidates/${packIds.normal}/evaluation.json`.replace(/\//g, process.platform === 'win32' ? '\\' : '/')
+  assert.equal(binding.expected_path, expectedEvalPath)
 
   for (const [field, value] of [
     ['pack_id', packIds.stale],

@@ -34,7 +34,7 @@ No published packs use this skill yet.
 
 ## Related Skills
 
-No related skills are public yet.
+- chains with: [azure-cloud-migrate](../az/skl_azure-cloud-migrate-src-https-github-com-microsoft-543c5f63-ills-skills-azure-cloud-migrate-skill-md_543c5f63.md)
 
 ## Public Analysis Summary
 

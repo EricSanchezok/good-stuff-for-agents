@@ -40,7 +40,7 @@ No related skills are public yet.
 
 ## Public Analysis Summary
 
-Skip unless only alternative is raw Javadoc. Official Azure SDK samples are a better source of truth. Too narrow, too shallow, too replaceable for a tight 100-skill catalog.
+Skip unless only alternative is raw Javadoc. Too narrow, too shallow, too replaceable for a tight 100-skill catalog.
 
 ## Confidence and Limitations
 

@@ -36,7 +36,9 @@ No published packs use this skill yet.
 
 ## Related Skills
 
-No related skills are public yet.
+- chains with: [anndata](../an/skl_anndata-src-https-github-com-k-dense-ai-scientific-96039759-skills-5bdb6d39-skills-anndata-skill-md_96039759.md)
+- chains with: [bulk-rnaseq](../bu/skl_bulk-rnaseq-src-https-github-com-k-dense-ai-scient-866022f1-lls-5bdb6d39-skills-bulk-rnaseq-skill-md_866022f1.md)
+- strengthens: [dask](../da/skl_dask-src-https-github-com-k-dense-ai-scientific-ag-24a35b5e-ent-skills-5bdb6d39-skills-dask-skill-md_24a35b5e.md)
 
 ## Public Analysis Summary
 

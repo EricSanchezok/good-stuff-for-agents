@@ -34,7 +34,7 @@ No published packs use this skill yet.
 
 ## Related Skills
 
-No related skills are public yet.
+- alternatives: [algorithmic-art](../al/skl_algorithmic-art-src-https-github-com-anthropics-sk-e78e79bb-04f79b56-skills-algorithmic-art-skill-md_e78e79bb.md)
 
 ## Public Analysis Summary
 

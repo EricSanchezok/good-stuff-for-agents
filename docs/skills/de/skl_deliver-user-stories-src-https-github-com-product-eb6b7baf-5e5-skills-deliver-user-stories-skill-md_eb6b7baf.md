@@ -30,11 +30,11 @@ Use when the trigger semantics and task stage match the job. Do not use when req
 
 ## Related Packs
 
-No published packs use this skill yet.
+- [Product Management Workflow Pack](../../packs/product-management/pack_pm-workflow-pack.md)
 
 ## Related Skills
 
-No related skills are public yet.
+- chains with: [deliver-prd](../de/skl_deliver-prd-src-https-github-com-product-on-purpos-f3cad5c7-ose-f2ce15e5-skills-deliver-prd-skill-md_f3cad5c7.md)
 
 ## Confidence and Limitations
 

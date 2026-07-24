@@ -34,7 +34,7 @@ No published packs use this skill yet.
 
 ## Related Skills
 
-No related skills are public yet.
+- strengthens: [copywriting-frameworks](../co/skl_copywriting-frameworks-src-https-github-com-thatre-88656ba3-3-skills-copywriting-frameworks-skill-md_88656ba3.md)
 
 ## Public Analysis Summary
 

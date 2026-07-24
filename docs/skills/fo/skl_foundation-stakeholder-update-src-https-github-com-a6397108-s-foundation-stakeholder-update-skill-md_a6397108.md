@@ -34,7 +34,7 @@ No published packs use this skill yet.
 
 ## Related Skills
 
-No related skills are public yet.
+- strengthens: [discover-stakeholder-summary](../di/skl_discover-stakeholder-summary-src-https-github-com-e568212c-ls-discover-stakeholder-summary-skill-md_e568212c.md)
 
 ## Confidence and Limitations
 

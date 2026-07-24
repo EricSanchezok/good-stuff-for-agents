@@ -34,7 +34,7 @@ No published packs use this skill yet.
 
 ## Related Skills
 
-No related skills are public yet.
+- alternatives: [mcp-builder](../mc/skl_mcp-builder-src-https-github-com-anthropics-skills-b47e5045-lls-04f79b56-skills-mcp-builder-skill-md_b47e5045.md)
 
 ## Public Analysis Summary
 

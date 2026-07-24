@@ -34,7 +34,7 @@ No published packs use this skill yet.
 
 ## Related Skills
 
-No related skills are public yet.
+- chains with: [analyze-feature-requests](../an/skl_analyze-feature-requests-src-https-github-com-phur-80ef1368-skills-analyze-feature-requests-skill-md_80ef1368.md)
 
 ## Public Analysis Summary
 

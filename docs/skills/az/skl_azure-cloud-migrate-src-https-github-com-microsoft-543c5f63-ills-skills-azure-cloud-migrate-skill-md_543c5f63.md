@@ -36,7 +36,7 @@ No published packs use this skill yet.
 
 ## Related Skills
 
-No related skills are public yet.
+- chains with: [cloud-solution-architect](../cl/skl_cloud-solution-architect-src-https-github-com-micr-fdee9a93-skills-cloud-solution-architect-skill-md_fdee9a93.md)
 
 ## Public Analysis Summary
 

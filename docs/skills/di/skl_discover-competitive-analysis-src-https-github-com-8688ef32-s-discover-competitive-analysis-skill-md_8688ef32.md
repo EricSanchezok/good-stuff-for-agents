@@ -34,7 +34,8 @@ No published packs use this skill yet.
 
 ## Related Skills
 
-No related skills are public yet.
+- alternatives: [competitor-analysis](../co/skl_competitor-analysis-src-https-github-com-phuryn-pm-ece2d0e0-arch-skills-competitor-analysis-skill-md_ece2d0e0.md)
+- strengthens: [discover-market-sizing](../di/skl_discover-market-sizing-src-https-github-com-produc-1a1dc51a-5-skills-discover-market-sizing-skill-md_1a1dc51a.md)
 
 ## Confidence and Limitations
 

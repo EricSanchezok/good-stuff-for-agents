@@ -191,6 +191,7 @@ export function containsInternalAnalysisLanguage(text) {
     /\bin (?:a )?tight(?: \d+-skill)? catalog\b/i,
     /\b(?:earns?|deserves?) (?:a|its) (?:catalog )?spot\b/i,
     /\bI(?:'d| would) keep this\b[^.!?\n]*\bcatalog\b/i,
+    /\bsource of truth\b/i,
   ].some((pattern) => pattern.test(text))
 }
 
@@ -204,13 +205,13 @@ function capitalizeSentence(text) {
 }
 
 function analysisIntroduction(text) {
-  const withoutFrontmatter = text.replace(/^---\n[\s\S]*?\n---\n/, '').trimStart()
-  const withoutTitle = withoutFrontmatter.replace(/^# [^\n]+\n+/, '')
-  return withoutTitle.split(/\n## /, 1)[0].trim()
+  const withoutFrontmatter = text.replace(/^---[\r\n]+[\s\S]*?[\r\n]+---[\r\n]+/, '').trimStart()
+  const withoutTitle = withoutFrontmatter.replace(/^# [^\r\n]+[\r\n]+/, '')
+  return withoutTitle.split(/[\r\n]+## /, 1)[0].trim()
 }
 
 function section(text, heading) {
-  const pattern = new RegExp(`## ${escapeRegExp(heading)}\\n([\\s\\S]*?)(?=\\n## |$)`)
+  const pattern = new RegExp(`## ${escapeRegExp(heading)}[\\r\\n]+([\\s\\S]*?)(?=[\\r\\n]+## |$)`)
   const match = text.match(pattern)
   return match ? match[1].trim() : ''
 }

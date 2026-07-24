@@ -254,13 +254,47 @@ export function parseYamlFile(path) {
   return parseYaml(content, path)
 }
 
+function pythonBin() {
+  for (const bin of ['python3', 'python']) {
+    const p = spawnSync(bin, ['-c', 'import yaml; print("ok")'], { encoding: 'utf8' })
+    if (p.status === 0 && p.stdout.trim() === 'ok') return bin
+  }
+  throw new Error('No working Python with PyYAML found')
+}
+
+let _pythonBin = null
+function getPythonBin() {
+  if (_pythonBin) return _pythonBin
+  _pythonBin = pythonBin()
+  return _pythonBin
+}
+
+function pythonEnv() {
+  return { ...process.env, PYTHONIOENCODING: 'utf-8', PYTHONUTF8: '1' }
+}
+
 export function parseYaml(content, label = '<yaml>') {
   const jsonAttempt = tryJson(content)
   if (jsonAttempt.ok) return jsonAttempt.value
 
-  const proc = spawnSync('python3', ['-c', 'import sys, json, yaml; print(json.dumps(yaml.safe_load(sys.stdin.read()), ensure_ascii=False))'], {
+  // Strip lone surrogates that cause Python json.dumps to fail
+  const sanitized = content.replace(/[\uD800-\uDFFF]/g, '\uFFFD')
+
+  const proc = spawnSync(getPythonBin(), ['-c', `import sys, json, yaml
+sys.stdin.reconfigure(encoding="utf-8", errors="surrogateescape")
+data = yaml.safe_load(sys.stdin.read())
+def clean(obj):
+    if isinstance(obj, str):
+        return obj.encode("utf-8", errors="surrogateescape").decode("utf-8", errors="replace")
+    elif isinstance(obj, dict):
+        return {clean(k): clean(v) for k, v in obj.items()}
+    elif isinstance(obj, list):
+        return [clean(i) for i in obj]
+    return obj
+print(json.dumps(clean(data), ensure_ascii=False))`], {
     input: content,
     encoding: 'utf8',
+    env: pythonEnv(),
   })
   if (proc.status !== 0) {
     throw new Error(`Failed to parse YAML ${label}: ${proc.stderr || proc.stdout}`)
@@ -277,9 +311,11 @@ function tryJson(content) {
 }
 
 export function toYaml(value) {
-  const proc = spawnSync('python3', ['-c', 'import sys, json, yaml; print(yaml.safe_dump(json.loads(sys.stdin.read()), sort_keys=False, allow_unicode=True), end="")'], {
-    input: stableStringify(value),
+  const sanitized = stableStringify(value).replace(/[\uD800-\uDFFF]/g, '\uFFFD')
+  const proc = spawnSync(getPythonBin(), ['-c', 'import sys, json, yaml; print(yaml.safe_dump(json.loads(sys.stdin.read()), sort_keys=False, allow_unicode=True), end="")'], {
+    input: sanitized,
     encoding: 'utf8',
+    env: pythonEnv(),
   })
   if (proc.status !== 0) throw new Error(`Failed to render YAML: ${proc.stderr || proc.stdout}`)
   return proc.stdout
@@ -589,7 +625,7 @@ function validateRelation(edge, errors, label) {
 function validateAnalysisMarkdown(path, errors, warnings) {
   const text = readText(path)
   const label = relative(ROOT, path)
-  if (!text.startsWith('---\n')) {
+  if (!text.startsWith('---\n') && !text.startsWith('---\r\n')) {
     errors.push(`${label} must have YAML frontmatter`)
     return
   }

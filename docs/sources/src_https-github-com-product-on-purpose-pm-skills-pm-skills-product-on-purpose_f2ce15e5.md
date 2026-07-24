@@ -92,4 +92,4 @@ I have this source on the shelf, but the latest availability check needs another
 
 ## Packs Using This Source
 
-No published packs use this source yet.
+- [Product Management Workflow Pack](../packs/product-management/pack_pm-workflow-pack.md)

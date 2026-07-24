@@ -34,7 +34,7 @@ No published packs use this skill yet.
 
 ## Related Skills
 
-No related skills are public yet.
+- chains with: [define-problem-statement](../de/skl_define-problem-statement-src-https-github-com-prod-93d7d595-skills-define-problem-statement-skill-md_93d7d595.md)
 
 ## Confidence and Limitations
 

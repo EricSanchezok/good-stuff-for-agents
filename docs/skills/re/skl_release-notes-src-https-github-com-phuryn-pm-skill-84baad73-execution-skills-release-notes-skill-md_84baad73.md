@@ -34,7 +34,7 @@ No published packs use this skill yet.
 
 ## Related Skills
 
-No related skills are public yet.
+- chains with: [create-prd](../cr/skl_create-prd-src-https-github-com-phuryn-pm-skills-p-152f8b28-pm-execution-skills-create-prd-skill-md_152f8b28.md)
 
 ## Public Analysis Summary
 

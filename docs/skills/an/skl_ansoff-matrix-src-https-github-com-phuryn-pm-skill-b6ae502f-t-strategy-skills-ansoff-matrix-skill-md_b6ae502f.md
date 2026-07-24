@@ -34,7 +34,8 @@ No published packs use this skill yet.
 
 ## Related Skills
 
-No related skills are public yet.
+- chains with: [competitor-analysis](../co/skl_competitor-analysis-src-https-github-com-phuryn-pm-ece2d0e0-arch-skills-competitor-analysis-skill-md_ece2d0e0.md)
+- chains with: [business-model](../bu/skl_business-model-src-https-github-com-phuryn-pm-skil-58f416c0-strategy-skills-business-model-skill-md_58f416c0.md)
 
 ## Confidence and Limitations
 
