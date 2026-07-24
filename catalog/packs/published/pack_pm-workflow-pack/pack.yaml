@@ -1,0 +1,135 @@
+compatibility:
+  alternatives:
+  - Not applicable — this pack has no alternative skill pairs. Each member occupies
+    a distinct phase.
+  chains:
+  - 'discover-interview-synthesis → define-problem-statement (0.85): research synthesis
+    feeds problem framing with user evidence'
+  - 'define-hypothesis → define-problem-statement (0.85): validated hypotheses become
+    formalized problems'
+  - 'define-problem-statement → deliver-prd (0.90): framed problems become PRDs'
+  - 'deliver-prd → deliver-user-stories (0.92): PRDs decomposed into sprint-ready
+    tickets'
+  conflicts: []
+  notes:
+  - 'All skills share compatible assumptions: document-based artifacts, phase-gated
+    workflow, evidence-dependent inputs.'
+  - Five of six members warn about producing confident-looking documents from weak
+    inputs — the chain structure mitigates this by enforcing evidence handoffs between
+    stages.
+  - No tool conflicts — all skills operate on markdown documents with no required
+    external tools.
+  strengthens:
+  - 'discover-interview-synthesis strengthens define-prioritization-framework (0.80):
+    customer research evidence unlocks Kano prioritization mode'
+  unresolved: []
+created_at: '2026-07-23T17:40:00+08:00'
+created_by_run: run_2026-07-23-172410
+domain: product-management
+evaluation:
+  evaluation_id: eval_pack-pm-workflow_2026-07-23-172410
+  passed: true
+  score: 0.85
+  status: passed
+evidence:
+  analysis_count: 6
+  confidence: high — all six edges cite explicit cross-references between skills with
+    weights ≥ 0.75
+  relation_edges: 6
+  source: src_https-github-com-product-on-purpose-pm-skills-pm-skills-product-on-purpose_f2ce15e5
+excluded:
+- reason: Routes to market-sizing and JTBD rather than into the problem/hypothesis/PRD
+    pipeline. No qualified chain edges into the core workflow.
+  skill_id: skl_discover-competitive-analysis-src-https-github-com-8688ef32-s-discover-competitive-analysis-skill-md_8688ef32
+- reason: Connected only to foundation-persona (chains_with, 0.85) which is outside
+    the core define→deliver pipeline.
+  skill_id: skl_discover-journey-map-src-https-github-com-product-790e876d-5e5-skills-discover-journey-map-skill-md_790e876d
+- reason: Produces static persona profiles — parallel artifact to the core workflow,
+    not a sequential dependency.
+  skill_id: skl_foundation-persona-src-https-github-com-product-on-80fcbbb2-e15e5-skills-foundation-persona-skill-md_80fcbbb2
+intent: Execute a complete product management workflow from user research through
+  prioritized delivery planning
+members:
+- inclusion_reason: Produces structured, evidence-backed user research findings with
+    themes, quotes, and insight statements. Entry point for the workflow — raw user
+    data becomes actionable intelligence.
+  role: User research synthesis
+  skill_id: skl_discover-interview-synthesis-src-https-github-com-ef79db60-ls-discover-interview-synthesis-skill-md_ef79db60
+  stage: 1
+  version_id: git_sha1:0653f92366571161a5e2c53b8175a4cc51989127
+- inclusion_reason: Produces falsifiable, quantified product hypotheses when interview
+    synthesis reveals unverified assumptions. Problem-statement explicitly routes
+    here when the 'problem' is an untested belief.
+  relation: chains_with → define-problem-statement (weight 0.85)
+  role: Hypothesis formation
+  skill_id: skl_define-hypothesis-src-https-github-com-product-on-fb04a2c3-ce15e5-skills-define-hypothesis-skill-md_fb04a2c3
+  stage: 2
+  version_id: git_sha1:d10e3405859c13fb187357061a512a01a92f8197
+- inclusion_reason: Central hub of the PM workflow — every other skill either feeds
+    into it or routes back to it. Produces formal problem framing documents with evidence-backed
+    pain points and success criteria.
+  relation: chains_with → deliver-prd (weight 0.90)
+  role: Problem framing
+  skill_id: skl_define-problem-statement-src-https-github-com-prod-93d7d595-skills-define-problem-statement-skill-md_93d7d595
+  stage: 2
+  version_id: git_sha1:a0ab828277b1d311f117ba41efaf6df750da7ce5
+- inclusion_reason: Ranks competing hypotheses when hypothesis formation produces
+    multiple candidates. Gated Kano mode requires customer research evidence — interview
+    synthesis unlocks this higher-quality scoring.
+  relation: chains_with ← define-hypothesis (weight 0.75), strengthened by discover-interview-synthesis
+    (weight 0.80)
+  role: Hypothesis prioritization
+  skill_id: skl_define-prioritization-framework-src-https-github-c-4429a8d5-define-prioritization-framework-skill-md_4429a8d5
+  stage: 3
+  version_id: git_sha1:05ffaeecdf09241d4ef0bb718b4f24365888e1ba
+- inclusion_reason: Produces structured Product Requirements Documents from framed
+    problems. Assumes a solved and aligned problem exists — explicitly routes upstream
+    to problem-statement when input is unframed.
+  relation: chains_with → deliver-user-stories (weight 0.92)
+  role: PRD authoring
+  skill_id: skl_deliver-prd-src-https-github-com-product-on-purpos-f3cad5c7-ose-f2ce15e5-skills-deliver-prd-skill-md_f3cad5c7
+  stage: 4
+  version_id: git_sha1:2100006eb0ac716f5691167c975e701d2675596f
+- inclusion_reason: Decomposes PRD features into INVEST-validated sprint-ready user
+    stories. Step 1 requires reviewing the PRD — output quality is bounded by upstream
+    PRD quality.
+  role: User story decomposition
+  skill_id: skl_deliver-user-stories-src-https-github-com-product-eb6b7baf-5e5-skills-deliver-user-stories-skill-md_eb6b7baf
+  stage: 5
+  version_id: git_sha1:40a476c401001507a405c38815c5f2d39fbc2a0a
+name: Product Management Workflow Pack
+pack_id: pack_pm-workflow-pack
+pending_evaluation: true
+schema_version: 1
+status: published
+updated_at: '2026-07-23T18:14:42.518Z'
+version: 0.1.0
+workflow:
+  stages:
+  - description: Synthesize raw user interview data into structured, evidence-backed
+      findings
+    member_skill_ids:
+    - skl_discover-interview-synthesis-src-https-github-com-ef79db60-ls-discover-interview-synthesis-skill-md_ef79db60
+    name: Discover
+    number: 1
+  - description: Frame the problem space with hypothesis formation and formal problem
+      statements
+    member_skill_ids:
+    - skl_define-hypothesis-src-https-github-com-product-on-fb04a2c3-ce15e5-skills-define-hypothesis-skill-md_fb04a2c3
+    - skl_define-problem-statement-src-https-github-com-prod-93d7d595-skills-define-problem-statement-skill-md_93d7d595
+    name: Define
+    number: 2
+  - description: Rank competing hypotheses using evidence-backed frameworks
+    member_skill_ids:
+    - skl_define-prioritization-framework-src-https-github-c-4429a8d5-define-prioritization-framework-skill-md_4429a8d5
+    name: Prioritize
+    number: 3
+  - description: Produce PRDs from framed problems, then decompose into sprint-ready
+      user stories
+    member_skill_ids:
+    - skl_deliver-prd-src-https-github-com-product-on-purpos-f3cad5c7-ose-f2ce15e5-skills-deliver-prd-skill-md_f3cad5c7
+    - skl_deliver-user-stories-src-https-github-com-product-eb6b7baf-5e5-skills-deliver-user-stories-skill-md_eb6b7baf
+    name: Deliver
+    number: 4
+  summary: Discover user needs through interview synthesis → define problems and hypotheses
+    → prioritize → deliver PRDs and sprint-ready user stories

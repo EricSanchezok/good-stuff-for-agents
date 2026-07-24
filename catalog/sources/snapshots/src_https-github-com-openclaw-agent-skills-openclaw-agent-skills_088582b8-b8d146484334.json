@@ -1,0 +1,185 @@
+{
+  "schema_version": 1,
+  "source_id": "src_https-github-com-openclaw-agent-skills-openclaw-agent-skills_088582b8",
+  "upstream_ref": "b8d146484334b6c3e604060e6dbe18f8eff5d8bd",
+  "checked_at": "2026-07-23T16:25:25.907Z",
+  "url": "https://github.com/openclaw/agent-skills",
+  "artifacts": [
+    {
+      "source_id": "src_https-github-com-openclaw-agent-skills-openclaw-agent-skills_088582b8",
+      "path": "skills/agent-transcript/SKILL.md",
+      "declared_name": "agent-transcript",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:20ea25baad51aad5f0dec2a0e83f2b512d3695c7",
+      "upstream_ref": "b8d146484334b6c3e604060e6dbe18f8eff5d8bd",
+      "git_blob_oid": "git_sha1:20ea25baad51aad5f0dec2a0e83f2b512d3695c7",
+      "url": "https://github.com/openclaw/agent-skills/blob/b8d146484334b6c3e604060e6dbe18f8eff5d8bd/skills/agent-transcript/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/openclaw/agent-skills/b8d146484334b6c3e604060e6dbe18f8eff5d8bd/skills/agent-transcript/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-openclaw-agent-skills-openclaw-agent-skills_088582b8",
+        "canonical_skill_id": null,
+        "remote_path": "skills/agent-transcript/SKILL.md",
+        "pinned_commit": "b8d146484334b6c3e604060e6dbe18f8eff5d8bd",
+        "git_blob_oid": "git_sha1:20ea25baad51aad5f0dec2a0e83f2b512d3695c7",
+        "raw_url": "https://raw.githubusercontent.com/openclaw/agent-skills/b8d146484334b6c3e604060e6dbe18f8eff5d8bd/skills/agent-transcript/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:20ea25baad51aad5f0dec2a0e83f2b512d3695c7",
+        "size": 4600
+      }
+    },
+    {
+      "source_id": "src_https-github-com-openclaw-agent-skills-openclaw-agent-skills_088582b8",
+      "path": "skills/autoreview/SKILL.md",
+      "declared_name": "autoreview",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:a59642db760c10dac574c3d73885d7bf4aa90004",
+      "upstream_ref": "b8d146484334b6c3e604060e6dbe18f8eff5d8bd",
+      "git_blob_oid": "git_sha1:a59642db760c10dac574c3d73885d7bf4aa90004",
+      "url": "https://github.com/openclaw/agent-skills/blob/b8d146484334b6c3e604060e6dbe18f8eff5d8bd/skills/autoreview/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/openclaw/agent-skills/b8d146484334b6c3e604060e6dbe18f8eff5d8bd/skills/autoreview/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-openclaw-agent-skills-openclaw-agent-skills_088582b8",
+        "canonical_skill_id": null,
+        "remote_path": "skills/autoreview/SKILL.md",
+        "pinned_commit": "b8d146484334b6c3e604060e6dbe18f8eff5d8bd",
+        "git_blob_oid": "git_sha1:a59642db760c10dac574c3d73885d7bf4aa90004",
+        "raw_url": "https://raw.githubusercontent.com/openclaw/agent-skills/b8d146484334b6c3e604060e6dbe18f8eff5d8bd/skills/autoreview/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:a59642db760c10dac574c3d73885d7bf4aa90004",
+        "size": 35513
+      }
+    },
+    {
+      "source_id": "src_https-github-com-openclaw-agent-skills-openclaw-agent-skills_088582b8",
+      "path": "skills/beam/SKILL.md",
+      "declared_name": "beam",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:7636fcc6ad3e0a61fb9019b2ef6f4f290608a945",
+      "upstream_ref": "b8d146484334b6c3e604060e6dbe18f8eff5d8bd",
+      "git_blob_oid": "git_sha1:7636fcc6ad3e0a61fb9019b2ef6f4f290608a945",
+      "url": "https://github.com/openclaw/agent-skills/blob/b8d146484334b6c3e604060e6dbe18f8eff5d8bd/skills/beam/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/openclaw/agent-skills/b8d146484334b6c3e604060e6dbe18f8eff5d8bd/skills/beam/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-openclaw-agent-skills-openclaw-agent-skills_088582b8",
+        "canonical_skill_id": null,
+        "remote_path": "skills/beam/SKILL.md",
+        "pinned_commit": "b8d146484334b6c3e604060e6dbe18f8eff5d8bd",
+        "git_blob_oid": "git_sha1:7636fcc6ad3e0a61fb9019b2ef6f4f290608a945",
+        "raw_url": "https://raw.githubusercontent.com/openclaw/agent-skills/b8d146484334b6c3e604060e6dbe18f8eff5d8bd/skills/beam/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:7636fcc6ad3e0a61fb9019b2ef6f4f290608a945",
+        "size": 3848
+      }
+    },
+    {
+      "source_id": "src_https-github-com-openclaw-agent-skills-openclaw-agent-skills_088582b8",
+      "path": "skills/behavior-validator/SKILL.md",
+      "declared_name": "behavior-validator",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:a0e1066b2651e35299dceebd436a0bd8b2e84712",
+      "upstream_ref": "b8d146484334b6c3e604060e6dbe18f8eff5d8bd",
+      "git_blob_oid": "git_sha1:a0e1066b2651e35299dceebd436a0bd8b2e84712",
+      "url": "https://github.com/openclaw/agent-skills/blob/b8d146484334b6c3e604060e6dbe18f8eff5d8bd/skills/behavior-validator/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/openclaw/agent-skills/b8d146484334b6c3e604060e6dbe18f8eff5d8bd/skills/behavior-validator/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-openclaw-agent-skills-openclaw-agent-skills_088582b8",
+        "canonical_skill_id": null,
+        "remote_path": "skills/behavior-validator/SKILL.md",
+        "pinned_commit": "b8d146484334b6c3e604060e6dbe18f8eff5d8bd",
+        "git_blob_oid": "git_sha1:a0e1066b2651e35299dceebd436a0bd8b2e84712",
+        "raw_url": "https://raw.githubusercontent.com/openclaw/agent-skills/b8d146484334b6c3e604060e6dbe18f8eff5d8bd/skills/behavior-validator/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:a0e1066b2651e35299dceebd436a0bd8b2e84712",
+        "size": 3757
+      }
+    },
+    {
+      "source_id": "src_https-github-com-openclaw-agent-skills-openclaw-agent-skills_088582b8",
+      "path": "skills/crabbox/SKILL.md",
+      "declared_name": "crabbox",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:832f9566fbafd4a5fd67f84f6511de7376762ff5",
+      "upstream_ref": "b8d146484334b6c3e604060e6dbe18f8eff5d8bd",
+      "git_blob_oid": "git_sha1:832f9566fbafd4a5fd67f84f6511de7376762ff5",
+      "url": "https://github.com/openclaw/agent-skills/blob/b8d146484334b6c3e604060e6dbe18f8eff5d8bd/skills/crabbox/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/openclaw/agent-skills/b8d146484334b6c3e604060e6dbe18f8eff5d8bd/skills/crabbox/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-openclaw-agent-skills-openclaw-agent-skills_088582b8",
+        "canonical_skill_id": null,
+        "remote_path": "skills/crabbox/SKILL.md",
+        "pinned_commit": "b8d146484334b6c3e604060e6dbe18f8eff5d8bd",
+        "git_blob_oid": "git_sha1:832f9566fbafd4a5fd67f84f6511de7376762ff5",
+        "raw_url": "https://raw.githubusercontent.com/openclaw/agent-skills/b8d146484334b6c3e604060e6dbe18f8eff5d8bd/skills/crabbox/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:832f9566fbafd4a5fd67f84f6511de7376762ff5",
+        "size": 11297
+      }
+    },
+    {
+      "source_id": "src_https-github-com-openclaw-agent-skills-openclaw-agent-skills_088582b8",
+      "path": "skills/handoff/SKILL.md",
+      "declared_name": "handoff",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:50054b4079bcc25492e27cae7b72ea748a853cc9",
+      "upstream_ref": "b8d146484334b6c3e604060e6dbe18f8eff5d8bd",
+      "git_blob_oid": "git_sha1:50054b4079bcc25492e27cae7b72ea748a853cc9",
+      "url": "https://github.com/openclaw/agent-skills/blob/b8d146484334b6c3e604060e6dbe18f8eff5d8bd/skills/handoff/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/openclaw/agent-skills/b8d146484334b6c3e604060e6dbe18f8eff5d8bd/skills/handoff/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-openclaw-agent-skills-openclaw-agent-skills_088582b8",
+        "canonical_skill_id": null,
+        "remote_path": "skills/handoff/SKILL.md",
+        "pinned_commit": "b8d146484334b6c3e604060e6dbe18f8eff5d8bd",
+        "git_blob_oid": "git_sha1:50054b4079bcc25492e27cae7b72ea748a853cc9",
+        "raw_url": "https://raw.githubusercontent.com/openclaw/agent-skills/b8d146484334b6c3e604060e6dbe18f8eff5d8bd/skills/handoff/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:50054b4079bcc25492e27cae7b72ea748a853cc9",
+        "size": 4410
+      }
+    },
+    {
+      "source_id": "src_https-github-com-openclaw-agent-skills-openclaw-agent-skills_088582b8",
+      "path": "skills/session-viewer/SKILL.md",
+      "declared_name": "session-viewer",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:fb9501363277c6d1c7df139b8ab9ac8720ea1acd",
+      "upstream_ref": "b8d146484334b6c3e604060e6dbe18f8eff5d8bd",
+      "git_blob_oid": "git_sha1:fb9501363277c6d1c7df139b8ab9ac8720ea1acd",
+      "url": "https://github.com/openclaw/agent-skills/blob/b8d146484334b6c3e604060e6dbe18f8eff5d8bd/skills/session-viewer/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/openclaw/agent-skills/b8d146484334b6c3e604060e6dbe18f8eff5d8bd/skills/session-viewer/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-openclaw-agent-skills-openclaw-agent-skills_088582b8",
+        "canonical_skill_id": null,
+        "remote_path": "skills/session-viewer/SKILL.md",
+        "pinned_commit": "b8d146484334b6c3e604060e6dbe18f8eff5d8bd",
+        "git_blob_oid": "git_sha1:fb9501363277c6d1c7df139b8ab9ac8720ea1acd",
+        "raw_url": "https://raw.githubusercontent.com/openclaw/agent-skills/b8d146484334b6c3e604060e6dbe18f8eff5d8bd/skills/session-viewer/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:fb9501363277c6d1c7df139b8ab9ac8720ea1acd",
+        "size": 2996
+      }
+    }
+  ],
+  "digest": "sha256:521cba3735898d2b737250f3f3fd005ddf756bdcd096bb1ad151ec3e9f8de143"
+}

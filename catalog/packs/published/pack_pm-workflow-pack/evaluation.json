@@ -1,0 +1,55 @@
+{
+  "schema_version": 1,
+  "evaluation_id": "eval_pack-pm-workflow_2026-07-23-172410",
+  "pack_id": "pack_pm-workflow-pack",
+  "output_id": "pack_pm-workflow-pack",
+  "status": "passed",
+  "passed": true,
+  "attempt": 1,
+  "scored_at": "2026-07-23T17:50:00+08:00",
+
+  "overall_score": 0.85,
+  "terminal_decision": "passed",
+
+  "dimensions": {
+    "relevance": { "score": 0.90, "evidence": "Pack addresses a coherent PM workflow task. Six skills form a documented chain from user research through delivery with explicit cross-references in each skill's analysis." },
+    "coverage": { "score": 0.80, "evidence": "Covers Discover→Define→Prioritize→Deliver stages. Excludes strategic planning (OKR, market sizing) and stakeholder comms — intentional scoping, not gaps." },
+    "non_redundancy": { "score": 0.95, "evidence": "Each member occupies a distinct phase with unique outputs. No two skills produce the same artifact. No alternatives edges within the pack." },
+    "workflow_coherence": { "score": 0.92, "evidence": "Four chains_with edges (weights 0.85–0.92) with explicit bidirectional routing between stages. Interview synthesis → problem-statement → PRD → user stories forms a clean pipeline." },
+    "compatibility": { "score": 0.85, "evidence": "All skills share markdown-based, phase-gated, evidence-dependent assumptions. No tool conflicts. One strengthens edge (interview synthesis → prioritization framework) documented." },
+    "conflict_control": { "score": 1.0, "evidence": "No conflicts found in any pairwise comparison. Zero conflicts_with edges across all analyzed skill pairs in the source group." },
+    "evidence_quality": { "score": 0.85, "evidence": "All six relation edges cite explicit analysis quotes with weights ≥ 0.75. Analysis confidence ranges from medium to high. All member versions pinned." },
+    "actionability": { "score": 0.80, "evidence": "5-stage workflow with clear entry/exit points. Interview synthesis is the natural entry; user stories are the natural exit. Phase gating with explicit routing prevents skipping stages." },
+    "freshness": { "score": 0.75, "evidence": "All skill records from 2026-07-09 sync. Source snapshot is current. No stale version signals detected." },
+    "source_quality": { "score": 0.85, "evidence": "Single source (product-on-purpose, Apache-2.0), verified license, public GitHub repo, high-confidence activation." }
+  },
+
+  "failure_modes": [
+    {
+      "dimension": "freshness",
+      "severity": "minor",
+      "blocking": false,
+      "owner": "source-sync",
+      "repairable_this_run": false,
+      "recommendation": "Re-sync source before next evaluation cycle to ensure version pins remain valid."
+    },
+    {
+      "dimension": "actionability",
+      "severity": "minor",
+      "blocking": false,
+      "owner": "pack-synthesis",
+      "repairable_this_run": false,
+      "recommendation": "The pack describes 'Discover→Define→Prioritize→Deliver' but omits competitive analysis and market sizing from the workflow. Consider whether these excluded skills could form a companion strategy pack."
+    }
+  ],
+
+  "recommendations": [
+    { "action": "promote_to_published", "owner": "catalog-data", "reason": "Score 0.85 exceeds 0.78 publication threshold. No blocking failures. Six evidence-backed edges with solid cross-references." },
+    { "action": "render_public_page", "owner": "catalog-publishing", "reason": "After promotion, render public docs/skills/ page for this pack so human visitors can discover it." },
+    { "action": "synthesize_companion_pack", "owner": "pack-synthesis", "reason": "The excluded skills (competitive-analysis, market-sizing, OKR-writer, stakeholder-briefings) have edges within the same source group. A 'PM Strategy Pack' could cover the strategic planning layer these excluded skills address.", "priority": "next_run" }
+  ],
+
+  "score_delta": null,
+  "prior_score": null,
+  "prior_attempt": null
+}
