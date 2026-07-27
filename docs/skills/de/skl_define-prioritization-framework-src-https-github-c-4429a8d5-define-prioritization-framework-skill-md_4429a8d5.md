@@ -30,7 +30,7 @@ Use when the trigger semantics and task stage match the job. Do not use when req
 
 ## Related Packs
 
-- [Product Management Workflow Pack](../../packs/product-management/pack_pm-workflow-pack.md)
+No published packs use this skill yet.
 
 ## Related Skills
 
