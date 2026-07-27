@@ -18,3 +18,7 @@ Record compatibility in the pack record:
 - `compatibility.conflicts` — conflicts and mitigation/exclusion decisions.
 
 Unresolved high-severity conflicts should prevent a pack from being eligible for evaluation passing.
+
+## Relation Edges vs. Artifact Compatibility
+
+Relation edges (`chains_with`, `strengthens` etc.) inform intent discovery and stage ordering. They do not prove artifact-level compatibility. Verify handoffs against actual skill records and analyses — do not assume two skills are compatible just because a relation edge exists between them. In contract preflight, every adjacent handoff must be verified by inspecting the member skills' input/output contracts, not by re-quoting the relation edge.

@@ -94,9 +94,36 @@ function packDraft(packId) {
     excluded: [],
     workflow: {
       summary: 'Exercise both members',
-      stages: eligibleMembers.map((member) => ({ name: member.stage, description: `Run ${member.skill_id}` })),
+      entry: { description: 'Start with skill 1 input', input_contract: 'A user prompt or structured input' },
+      terminal: { description: 'End with skill 2 output', output_contract: 'A completed task result' },
+      stages: [
+        {
+          stage_id: 'stage-1',
+          name: 'Stage 1',
+          description: `Run ${eligibleMembers[0].skill_id}`,
+          member_ids: [eligibleMembers[0].skill_id],
+          handoffs: [
+            {
+              from_stage: 'stage-1',
+              from_skill: eligibleMembers[0].skill_id,
+              to_stage: 'stage-2',
+              to_skill: eligibleMembers[1].skill_id,
+              produced_artifact: 'intermediate result',
+              consumed_as: 'input',
+            },
+          ],
+        },
+        {
+          stage_id: 'stage-2',
+          name: 'Stage 2',
+          description: `Run ${eligibleMembers[1].skill_id}`,
+          member_ids: [eligibleMembers[1].skill_id],
+          handoffs: [],
+        },
+      ],
+      branches: [],
     },
-    compatibility: { notes: 'Test members are independently eligible' },
+    compatibility: { notes: 'Test members are independently eligible', chains: [], strengthens: [], alternatives: [], conflicts: [], unresolved: [] },
     evidence: { analysis_paths: [], relation_edges: [] },
   }
 }

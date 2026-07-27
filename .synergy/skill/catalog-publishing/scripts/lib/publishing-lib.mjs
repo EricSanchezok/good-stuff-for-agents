@@ -546,7 +546,7 @@ function packRouteSteps(pack, model) {
 function routeStepFromWorkflowStage(stage, model) {
   const name = stage.name ?? stage.stage ?? 'Next step'
   const description = stage.description ?? 'Use the matching member skills for this part of the route.'
-  const ids = stage.member_skill_ids ?? stage.skill_ids ?? []
+  const ids = stage.member_ids ?? []
   const memberNames = ids.map((id) => skillNameFor(id, model)).filter(Boolean)
   const suffix = memberNames.length ? ` I put ${inlineHumanList(memberNames)} here.` : ''
   return `**${name}** — ${description}${suffix}`
@@ -562,9 +562,6 @@ function packMemberJobs(pack, model) {
 
 function packTrustNote(pack) {
   const pieces = []
-  if (pack.evidence?.all_analyzed) pieces.push('I checked that every member skill has analysis behind it')
-  if (pack.evidence?.license_verified) pieces.push('the licenses are recorded as verified')
-  if (pack.evidence?.source_count) pieces.push(`the route draws from ${pack.evidence.source_count} ${pack.evidence.source_count === 1 ? 'source' : 'sources'}`)
   if (typeof pack.evaluation?.score === 'number') pieces.push(`evaluation landed at ${score(pack.evaluation.score)}`)
   const compatibility = normalizeCompatibilityForPublishing(pack.compatibility)
   const compatibilityNote = compatibility.notes ? ` ${compatibility.notes}` : ''

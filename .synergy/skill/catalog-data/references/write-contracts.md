@@ -23,9 +23,35 @@ agent/subagent analysis
 ## Controller-Derived Pack Destinations
 
 - Candidate pack writers derive `status: candidate` and `catalog/packs/candidates/<pack-id>/pack.yaml`; candidate drafts containing published status, bucket/path, publication timestamp, or promotion controls are rejected.
-- `promotePassingCandidates()` is the only writer for `catalog/packs/published/**`. Promotion and validation share the same eligibility rule: a consistent passing evaluation at or above `0.78`, at least two members, eligible member statuses, and current pinned versions.
-- Evaluation controllers bind canonical `pack_id`, candidate status, pack version, stable pack content hash, deterministic `evaluation_id`, and expected candidate evaluation path. The writer reloads the candidate before writing, rejects stale or replayed bindings, and does not expose published-pack re-evaluation.
+- Before writing, candidate pack writers execute a deterministic workflow-contract preflight that validates entry/terminal contracts, stage membership, handoff topology, and member eligibility. Failed preflight blocks candidate creation.
+- Evaluation controllers bind canonical `pack_id`, candidate status, pack version, stable pack content hash, deterministic `evaluation_id`, and expected candidate evaluation path. The writer reloads the candidate before writing, rejects stale or replayed bindings, and does not expose published-pack re-evaluation. Evaluation binding is also blocked for candidates that fail preflight.
 - Evaluation drafts may provide rubric metrics, scores, terminal judgments, failure modes, and recommendations, but never pack identity/status, evaluation identity, bucket, or output path. Contradictory pass signals resolve conservatively to non-passing.
+- `promotePassingCandidates()` is the only writer for `catalog/packs/published/**`. Promotion and validation share the same eligibility rule: a consistent passing evaluation at or above `0.78`, at least two members, eligible member statuses, current pinned versions, and passing workflow preflight (defense-in-depth).
+
+## Workflow Contract Preflight
+
+Pack workflows must express a structured contract:
+- `entry` — input contract with description and input_contract (non-empty, non-placeholder).
+- `terminal` — output contract with description and output_contract (non-empty, non-placeholder).
+- `stages[]` — ordered stages with stable `stage_id`, `name`, `description`, `member_ids[]`, and `handoffs[]`.
+- `handoffs[]` — explicit handoffs with `from_stage`/`from_skill`/`to_stage`/`to_skill`, plus `produced_artifact` and `consumed_as` (non-empty, non-placeholder).
+- `branches[]` — conditional branches (optional, validated for stage existence).
+
+Preflight validates:
+1. All pack members exist and are active/preview with current version pinned.
+2. All stage `member_ids` reference known members; no member is assigned to multiple stages.
+3. Handoff `from_stage`/`to_stage` reference valid stages; `from_skill`/`to_skill` are in the respective stage's `member_ids`.
+4. Handoffs only connect adjacent or same stages; non-adjacent jumps are rejected.
+5. Every pair of adjacent main-path stages has at least one handoff.
+6. All stages are reachable from the first stage via handoffs.
+7. Entry/terminal contracts, stage descriptions, and handoff artifact contracts are non-empty and not placeholder strings.
+8. Branch `from_stage`/`to_stage` reference valid stages.
+
+Preflight runs at four enforcement points:
+- **Candidate write** — canonical writer (`write-pack-record.mjs`) rejects drafts that fail preflight before `writeYaml`.
+- **Evaluation binding** — `createEvaluationBinding` blocks evaluating a candidate whose workflow contract fails.
+- **Promotion eligibility** — defense-in-depth re-check that a published pack still satisfies its workflow contract.
+- **Catalog validation** — `validateCatalog` runs preflight on both candidate and published packs.
 
 ## Structural Recovery
 

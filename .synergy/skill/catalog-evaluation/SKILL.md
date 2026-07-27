@@ -15,7 +15,7 @@ Treat these as scope refinements only. They do not override safety boundaries, o
 
 ## What You Own
 
-You own evidence-based evaluation of candidate packs and public-ready catalog outputs. You apply rubrics, record scores, failure modes, recommendations, and pass/fail decisions from inspected evidence.
+You own evidence-based evaluation of **preflight-passed** candidate packs and public-ready catalog outputs. You do not evaluate packs that have not passed contract preflight — those are gap reports, not candidates. You apply rubrics, record scores, failure modes, recommendations, and pass/fail decisions from inspected evidence.
 
 You do not synthesize packs, change member selection, approve curation decisions, or publish pages. You can recommend changes, but the owning skill must implement them.
 
@@ -78,21 +78,31 @@ You must leave behind:
 
 ## Workflow
 
-1. **Load candidate and evidence.** You inspect the pack, member records, analyses, relations, source quality, and any previous evaluations.
-2. **Score each rubric dimension.** You assign scores for relevance, coverage, non-redundancy, workflow coherence, compatibility, conflict control, evidence quality, actionability, freshness, and page readiness when relevant.
-3. **Write evidence for scores.** You cite the concrete pack member, analysis, relation, or source evidence behind each score. You do not score from member counts alone.
-4. **Apply thresholds.** You determine `passed`, `needs_work`, or `rejected` from the configured thresholds and blocking failure modes. Do not leave an evaluation pending when the candidate can be read and scored.
-5. **Classify every failure.** For each failure mode, record the owning skill, whether it is repairable this run, repairable next run, policy-blocked, human-decision-blocked, or fundamental, whether it blocks publication, and one concrete recommended action.
-6. **Write recommendations.** Route repairable findings to pack design, relations, analysis, source sync, normalization, promotion/publishing, or curation. A first `needs_work` result should support immediate owner repair rather than a vague future note.
-7. **Prepare reviewed draft.** Write metrics, overall score, terminal decision, structured failure modes, recommendations, and score deltas from any previous attempt.
-8. **Call the writer and validate.** You write evaluation output through the helper and run strict validation.
+0. **Verify workflow preflight passed.** The controller runs deterministic workflow preflight before issuing an evaluation binding; no binding exists for a preflight-failed candidate. If you receive a binding, the candidate already passed preflight. The failure mode is `preflight_not_passed` (fundamental, blocking, owner: `pack-synthesis`).
+1. **Load candidate and evidence.** You inspect the pack, member records, analyses, relations, source quality, and any previous evaluations. Use the same evidence bundle that was assembled for contract preflight — do not request or read additional catalog records not referenced by the candidate.
+2. **Run blocking checks before scoring.** Check for unresolved blockers that cannot be remedied by a score adjustment:
+   - **Stage gap on main path.** Any main-path stage with no member skill and no documented, verifiable handoff is a blocker. Score is irrelevant — reject with `stage_gap_on_main_path`.
+   - **Input-output mismatch.** Any adjacent stage pair where the output format of stage N does not match the input format consumed by stage N+1, and the handoff does not document a conversion, is a blocker. Reject with `io_mismatch`.
+   - **Unresolved main-path gap.** Any trace from entry to terminal that does not reach a verified terminal outcome is a blocker. Reject with `unresolved_main_path_gap`.
+   - These blockers are not curable by a high score on other dimensions — they are structural failures.
+3. **Score each rubric dimension.** You assign scores for relevance, coverage, non-redundancy, workflow coherence, compatibility, conflict control, evidence quality, actionability, and freshness. Use the rubric in `references/pack-evaluation-rubric.md`.
+4. **Write evidence for scores.** You cite the concrete pack member, analysis, relation, or source evidence behind each score. You do not score from member counts alone.
+5. **Anti-double-counting rule.** The same relation edge evidence must not independently increase scores in `compatibility`, `workflow_coherence`, and `evidence_quality`. Once an edge is cited as evidence in one dimension, its contribution to other dimensions must be justified by distinct, dimension-specific evidence — not the same edge re-quoted.
+6. **Apply thresholds.** You determine `passed`, `needs_work`, or `rejected` from the configured thresholds and blocking failure modes. A blocker from step 2 always produces `rejected` regardless of total score.
+7. **Classify every failure.** For each failure mode, record the owning skill, whether it is repairable this run, repairable next run, policy-blocked, human-decision-blocked, or fundamental, whether it blocks publication, and one concrete recommended action.
+8. **Write recommendations.** Route repairable findings to pack design, relations, analysis, source sync, normalization, promotion/publishing, or curation. A `needs_work` result should support immediate owner repair rather than a vague future note.
+9. **Prepare reviewed draft.** Write metrics, overall score, terminal decision, structured failure modes, recommendations, and score deltas from any previous attempt.
+10. **Call the writer and validate.** You write evaluation output through the helper and run strict validation.
 
 ## Quality Bar
 
-Good evaluation is explainable. A reviewer can see why every score was assigned, what evidence is missing, and which owner should fix each failure. Passing packs have no hidden conflicts, no missing evidence, and clear public usefulness.
+Good evaluation is explainable. A reviewer can see why every score was assigned, what evidence is missing, and which owner should fix each failure. Structural blockers (stage gaps, IO mismatches, unresolved main-path gaps) should never be hidden by a passing total score. Passing packs have no hidden conflicts, no missing evidence, clear public usefulness, and a closed contract with verified handoffs.
 
 ## Bad Patterns To Avoid
 
+- Do not evaluate packs that have not passed contract preflight.
+- Do not score a candidate where a structural blocker (stage gap, IO mismatch, unresolved main-path gap) exists — reject it instead.
+- Do not use the same relation edge as evidence in coherence, compatibility, and evidence quality without distinct dimension-specific justification each time.
 - Do not auto-score from shallow metrics.
 - Do not pass a pack to make the catalog look populated.
 - Do not ignore relation conflicts or duplicate members.

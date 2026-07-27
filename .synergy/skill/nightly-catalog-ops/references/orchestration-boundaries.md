@@ -15,6 +15,9 @@ Use `catalog-growth-ops` for demand scan, discovery planning, source discovery, 
 Stop or block the affected target when:
 
 - validation cannot pass after at most 2 reversible, meaning-preserving structural repair attempts;
+- contract preflight fails and one bridge repair does not close the gap;
+- the selected target's failure fingerprint (intent + gap set) matches a prior run — skip immediately without spending budget;
+- evaluation fails after one post-evaluation repair attempt;
 - license is unclear or legally risky;
 - source is private, credentialed, or sensitive;
 - merge/delete/irreversible curation is required;
@@ -23,6 +26,36 @@ Stop or block the affected target when:
 - an external identity action would be required.
 
 A policy or human-decision blocker ends work on that target, not automatically the whole publication effort. Switch to the next ranked target when validation remains healthy and the 2-target run budget has not been exhausted.
+
+## Contract Preflight Gate
+
+Before synthesis writes a candidate and before evaluation scores it, the target's pack contract must pass preflight. Preflight requires:
+
+- defined entry input (what the agent user supplies to start);
+- defined terminal outcome (what the pack produces when complete);
+- ordered stages with a member skill or documented gap per main-path stage;
+- structured adjacent handoffs between consecutive stages;
+- conditional branches documented with trigger conditions;
+- every main-path trace from entry to terminal is closed.
+
+A target that fails preflight moves to one bridge repair. If it still fails, reject the target and record the failure fingerprint — the set of (intent, stage that gapped, handoff that broke). This fingerprint is compared across runs; matching fingerprints mean the same unresolved problem and the target is skipped.
+
+## Failure Fingerprint Dedup
+
+Every target that fails contract preflight or ends `rejected` leaves a failure fingerprint:
+
+```
+{
+  "target_id": "...",
+  "fingerprint": {
+    "intent": "...",
+    "gaps": ["stage_x_no_member", "handoff_y_unresolved", ...],
+    "run_id": "..."
+  }
+}
+```
+
+Before selecting any target, check prior-run fingerprints. If the intent and gap set match an existing fingerprint exactly, skip the target. The dedup check is performed by the orchestrator; each owner skill only needs to produce the fingerprint when it rejects a target.
 
 ## Continue Conditions
 

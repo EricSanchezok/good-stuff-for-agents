@@ -1,16 +1,138 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "title": "Pack Record",
+  "title": "Pack Record v2",
   "type": "object",
   "required": ["schema_version", "pack_id", "name", "status", "intent", "domain", "created_by_run", "version", "members", "excluded", "workflow", "compatibility", "evidence", "evaluation", "updated_at"],
+  "additionalProperties": false,
   "properties": {
-    "schema_version": { "const": 1 },
+    "schema_version": { "const": 2 },
     "pack_id": { "type": "string", "pattern": "^pack_" },
-    "name": { "type": "string" },
+    "name": { "type": "string", "minLength": 1 },
     "status": { "enum": ["candidate", "rejected", "published", "stale", "superseded", "archived"] },
-    "intent": { "type": "string" },
-    "domain": { "type": "string" },
-    "members": { "type": "array" },
-    "evaluation": { "type": "object" }
+    "intent": { "type": "string", "minLength": 1 },
+    "domain": { "type": "string", "minLength": 1 },
+    "created_by_run": { "type": "string" },
+    "version": { "type": "string" },
+    "members": {
+      "type": "array",
+      "minItems": 2,
+      "items": {
+        "type": "object",
+        "required": ["skill_id", "version_id", "role", "stage", "inclusion_reason"],
+        "additionalProperties": false,
+        "properties": {
+          "skill_id": { "type": "string", "minLength": 1 },
+          "version_id": { "type": "string", "minLength": 1 },
+          "role": { "type": "string", "minLength": 1 },
+          "stage": { "type": "string", "minLength": 1 },
+          "inclusion_reason": { "type": "string", "minLength": 1 }
+        }
+      }
+    },
+    "excluded": { "type": "array" },
+    "evaluation": {
+      "type": "object",
+      "required": ["evaluation_id", "score", "status"],
+      "additionalProperties": false,
+      "properties": {
+        "evaluation_id": { "type": ["string", "null"] },
+        "score": { "type": ["number", "null"] },
+        "status": { "type": "string" }
+      }
+    },
+    "workflow": {
+      "type": "object",
+      "required": ["entry", "terminal", "stages", "branches"],
+      "additionalProperties": false,
+      "properties": {
+        "summary": { "type": "string" },
+        "entry": {
+          "type": "object",
+          "required": ["description", "input_contract"],
+          "additionalProperties": false,
+          "properties": {
+            "description": { "type": "string", "minLength": 1 },
+            "input_contract": { "type": "string", "minLength": 1 }
+          }
+        },
+        "terminal": {
+          "type": "object",
+          "required": ["description", "output_contract"],
+          "additionalProperties": false,
+          "properties": {
+            "description": { "type": "string", "minLength": 1 },
+            "output_contract": { "type": "string", "minLength": 1 }
+          }
+        },
+        "stages": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "required": ["stage_id", "name", "description", "member_ids", "handoffs"],
+            "additionalProperties": false,
+            "properties": {
+              "stage_id": { "type": "string", "minLength": 1 },
+              "name": { "type": "string", "minLength": 1 },
+              "description": { "type": "string", "minLength": 1 },
+              "member_ids": { "type": "array", "minItems": 1, "items": { "type": "string", "minLength": 1 } },
+              "handoffs": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "required": ["from_stage", "from_skill", "to_stage", "to_skill", "produced_artifact", "consumed_as"],
+                  "additionalProperties": false,
+                  "properties": {
+                    "from_stage": { "type": "string", "minLength": 1 },
+                    "from_skill": { "type": "string", "minLength": 1 },
+                    "to_stage": { "type": "string", "minLength": 1 },
+                    "to_skill": { "type": "string", "minLength": 1 },
+                    "produced_artifact": { "type": "string", "minLength": 1 },
+                    "consumed_as": { "type": "string", "minLength": 1 }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "branches": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["condition", "description", "from_stage", "to_stage"],
+            "additionalProperties": false,
+            "properties": {
+              "condition": { "type": "string", "minLength": 1 },
+              "description": { "type": "string", "minLength": 1 },
+              "from_stage": { "type": "string", "minLength": 1 },
+              "to_stage": { "type": "string", "minLength": 1 }
+            }
+          }
+        }
+      }
+    },
+    "compatibility": {
+      "type": "object",
+      "required": ["notes", "chains", "strengthens", "alternatives", "conflicts", "unresolved"],
+      "additionalProperties": false,
+      "properties": {
+        "notes": { "type": "string" },
+        "chains": { "type": "array", "items": { "type": "object" } },
+        "strengthens": { "type": "array", "items": { "type": "object" } },
+        "alternatives": { "type": "array", "items": { "type": "object" } },
+        "conflicts": { "type": "array", "items": { "type": "object" } },
+        "unresolved": { "type": "array", "items": { "type": "object" } }
+      }
+    },
+    "evidence": {
+      "type": "object",
+      "required": ["analysis_paths", "relation_edges"],
+      "additionalProperties": false,
+      "properties": {
+        "analysis_paths": { "type": "array", "items": { "type": "string" } },
+        "relation_edges": { "type": "array", "items": { "type": "object" } }
+      }
+    },
+    "updated_at": { "type": "string", "minLength": 1 }
   }
 }

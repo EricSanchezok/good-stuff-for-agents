@@ -7,18 +7,18 @@ A growth run succeeds when it advances catalog evidence and publication readines
 All applicable conditions pass:
 
 - demand and catalog gaps were inspected;
-- publication targets were ranked and the selected target has a reason;
+- in target mode, the minimal evidence bundle was assembled and handed to preflight;
+- in no-target mode, publication targets were ranked and the selected target has a reason;
 - activated or preview sources satisfy activation policy;
-- downstream phases ran when inputs existed;
-- a repairable selected target was advanced, evaluated, or published within budget;
-- every repair attempt records a substantive input or design change;
+- downstream phases ran only for the scope needed (target evidence or full pipeline);
+- a repairable selected target passed contract preflight, was evaluated, and published within budget;
 - no fake source, skill, analysis, relation, pack, or evaluation was created;
 - validation and index rebuild pass;
-- the growth report records publication progress and blockers.
+- the growth report records evidence assembly, failure fingerprints, publication progress, and blockers.
 
 ## Partial Success
 
-Use partial success only when evidence or a target materially advanced but publication remains blocked after owner-routed repair, target switching, or exhausted run budget. Existing repairable candidates that were not attempted cannot be hidden behind unrelated discovery or analysis progress.
+Use partial success only when evidence or a target materially advanced but publication remains blocked after owner-routed repair, target switching, or exhausted run budget. Existing repairable candidates that were not attempted cannot be hidden behind unrelated discovery or analysis progress. A target that reaches `insufficient_evidence` cleanly is partial success when the gap is documented with a failure fingerprint.
 
 ## Failure
 

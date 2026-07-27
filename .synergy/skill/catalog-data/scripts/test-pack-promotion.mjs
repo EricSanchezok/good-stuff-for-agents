@@ -8,8 +8,43 @@ const skills = new Map([
   ['blocked-skill', { ...eligibleSkill('blocked-version'), status: 'blocked' }],
 ])
 
+const validWorkflow = {
+  summary: 'test',
+  entry: { description: 'Start', input_contract: 'An input' },
+  terminal: { description: 'End', output_contract: 'An output' },
+  stages: [
+    {
+      stage_id: 'stage-1',
+      name: 'Stage 1',
+      description: 'First',
+      member_ids: ['skill-a'],
+      handoffs: [
+        {
+          from_stage: 'stage-1',
+          from_skill: 'skill-a',
+          to_stage: 'stage-2',
+          to_skill: 'skill-b',
+          produced_artifact: 'result-a',
+          consumed_as: 'input-b',
+        },
+      ],
+    },
+    {
+      stage_id: 'stage-2',
+      name: 'Stage 2',
+      description: 'Second',
+      member_ids: ['skill-b'],
+      handoffs: [],
+    },
+  ],
+  branches: [],
+}
+
 const passingRecord = {
+  schema_version: 2,
   evaluation: { status: 'passed', passed: true, score: 0.78 },
+  workflow: validWorkflow,
+  compatibility: { notes: 'ok', chains: [], strengthens: [], alternatives: [], conflicts: [], unresolved: [] },
   members: [
     { skill_id: 'skill-a', version_id: 'version-a' },
     { skill_id: 'skill-b', version_id: 'version-b' },
@@ -88,6 +123,56 @@ const tests = [
     },
     expected: false,
   },
+  {
+    name: 'rejects promotion for preflight-failed pack (missing handoff)',
+    record: withWorkflow(passingRecord, {
+      ...validWorkflow,
+      stages: [
+        { ...validWorkflow.stages[0], handoffs: [] },
+        validWorkflow.stages[1],
+      ],
+    }),
+    fileEvaluation: { status: 'passed', passed: true, overall_score: 0.85 },
+    expected: false,
+  },
+  {
+    name: 'rejects promotion for preflight-failed pack (empty terminal)',
+    record: withWorkflow(passingRecord, {
+      ...validWorkflow,
+      terminal: { description: 'TBD', output_contract: 'TBD' },
+    }),
+    fileEvaluation: { status: 'passed', passed: true, overall_score: 0.85 },
+    expected: false,
+  },
+  {
+    name: 'rejects promotion for preflight-failed pack (unknown member)',
+    record: withWorkflow(passingRecord, {
+      ...validWorkflow,
+      stages: [
+        {
+          stage_id: 'stage-1',
+          name: 'S1',
+          description: 'First',
+          member_ids: ['skill-a', 'unknown-skill'],
+          handoffs: [
+            { from_stage: 'stage-1', from_skill: 'skill-a', to_stage: 'stage-2', to_skill: 'skill-b', produced_artifact: 'a', consumed_as: 'b' },
+          ],
+        },
+        validWorkflow.stages[1],
+      ],
+    }),
+    fileEvaluation: { status: 'passed', passed: true, overall_score: 0.85 },
+    expected: false,
+  },
+  {
+    name: 'rejects promotion for unresolved compatibility',
+    record: {
+      ...passingRecord,
+      compatibility: { notes: 'test', chains: [], strengthens: [], alternatives: [], conflicts: [], unresolved: [{ why: 'gap' }] },
+    },
+    fileEvaluation: { status: 'passed', passed: true, overall_score: 0.85 },
+    expected: false,
+  },
 ]
 
 for (const test of tests) {
@@ -106,4 +191,8 @@ function eligibleSkill(versionId) {
 
 function withEvaluation(record, evaluation) {
   return { ...record, evaluation }
+}
+
+function withWorkflow(record, workflow) {
+  return { ...record, workflow }
 }
