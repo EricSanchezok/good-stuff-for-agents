@@ -1,0 +1,152 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Analysis Record v2",
+  "description": "Canonical machine-readable analysis record with stable claim groups. Each claim has a stable id, text/semantic content, and optional severity. Markdown artifacts are not forced into JSON types.",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "analysis_id",
+    "skill_id",
+    "source_hash",
+    "claims",
+    "confidence",
+    "updated_at",
+    "created_by_run"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": { "const": 2 },
+    "analysis_id": {
+      "type": "string",
+      "pattern": "^anl_",
+      "description": "Stable unique analysis identifier"
+    },
+    "skill_id": {
+      "type": "string",
+      "pattern": "^skl_",
+      "description": "Referenced skill record"
+    },
+    "source_hash": {
+      "type": "string",
+      "description": "Source snapshot hash this analysis was derived from"
+    },
+    "analysis_version": {
+      "type": "integer",
+      "minimum": 1,
+      "description": "Monotonic analysis version counter"
+    },
+    "claims": {
+      "type": "object",
+      "description": "Claim groups keyed by semantic category",
+      "required": [
+        "requires",
+        "produces",
+        "preconditions",
+        "refusal",
+        "failure_warnings",
+        "tool_constraints",
+        "alternatives",
+        "judgement"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "requires": {
+          "type": "object",
+          "description": "Required and optional dependencies the skill demands",
+          "required": ["required", "optional"],
+          "additionalProperties": false,
+          "properties": {
+            "required": {
+              "type": "array",
+              "items": { "$ref": "#/$defs/claim" }
+            },
+            "optional": {
+              "type": "array",
+              "items": { "$ref": "#/$defs/claim" }
+            }
+          }
+        },
+        "produces": {
+          "type": "array",
+          "description": "What the skill produces or guarantees",
+          "items": { "$ref": "#/$defs/claim" }
+        },
+        "preconditions": {
+          "type": "array",
+          "description": "Conditions that must hold before the skill can execute",
+          "items": { "$ref": "#/$defs/claim" }
+        },
+        "refusal": {
+          "type": "array",
+          "description": "Scenarios where the skill refuses to operate",
+          "items": { "$ref": "#/$defs/claim" }
+        },
+        "failure_warnings": {
+          "type": "array",
+          "description": "Known failure modes with severity",
+          "items": { "$ref": "#/$defs/claim" }
+        },
+        "tool_constraints": {
+          "type": "array",
+          "description": "Constraints on tool usage and permissions",
+          "items": { "$ref": "#/$defs/claim" }
+        },
+        "alternatives": {
+          "type": "array",
+          "description": "Known alternative skills or approaches",
+          "items": { "$ref": "#/$defs/claim" }
+        },
+        "judgement": {
+          "type": "array",
+          "description": "Analyst judgement claims",
+          "items": { "$ref": "#/$defs/claim" }
+        }
+      }
+    },
+    "confidence": {
+      "type": "string",
+      "enum": ["high", "medium", "low", "unknown"],
+      "description": "Overall confidence in this analysis"
+    },
+    "updated_at": {
+      "type": "string",
+      "description": "ISO 8601 timestamp"
+    },
+    "created_by_run": {
+      "type": "string",
+      "description": "Run ID that produced this analysis"
+    },
+    "notes": {
+      "type": "string",
+      "description": "Freeform analyst notes"
+    }
+  },
+  "$defs": {
+    "claim": {
+      "type": "object",
+      "required": ["claim_id", "content"],
+      "additionalProperties": false,
+      "properties": {
+        "claim_id": {
+          "type": "string",
+          "pattern": "^clm_",
+          "description": "Stable claim identifier within this analysis"
+        },
+        "content": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Semantic content of the claim"
+        },
+        "severity": {
+          "type": "string",
+          "enum": ["critical", "high", "medium", "low", "info"],
+          "description": "Severity when relevant (failure_warnings, preconditions)"
+        },
+        "required": {
+          "type": "boolean",
+          "description": "Whether this claim represents a hard requirement"
+        }
+      }
+    }
+  }
+}

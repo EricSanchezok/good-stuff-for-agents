@@ -119,7 +119,13 @@ async function syncGithubSource(source) {
 }
 
 async function githubJson(url) {
-  const response = await fetch(url, { headers: { Accept: 'application/vnd.github+json', 'User-Agent': 'skill-intelligence-catalog' } })
+  const token = process.env.GH_TOKEN || process.env.GITHUB_TOKEN || null
+  const headers = {
+    Accept: 'application/vnd.github+json',
+    'User-Agent': 'skill-intelligence-catalog',
+    ...(token ? { Authorization: `Bearer ${token}` } : {}),
+  }
+  const response = await fetch(url, { headers })
   if (!response.ok) throw new Error(`GitHub request failed ${response.status}: ${url}`)
   return response.json()
 }

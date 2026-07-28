@@ -1,39 +1,48 @@
 # Evaluation Failure Modes
 
-## Structural Blockers (cannot be offset by score)
+Record blockers before score findings. Every finding names the owner and one change that can be verified on the next independent evaluation.
 
-These failures are fundamental — no weight on any rubric dimension can compensate for them. A candidate with any structural blocker is `rejected` regardless of total score.
+## Blockers
 
-| Failure Mode | Owner | Description |
-| --- | --- | --- |
-| `preflight_not_passed` | `pack-synthesis` | Candidate failed deterministic workflow preflight. The controller runs preflight before issuing an evaluation binding; no binding exists for a preflight-failed candidate. |
-| `stage_gap_on_main_path` | `pack-synthesis` | A main-path stage has no member skill and no documented, verifiable handoff that fills the gap. |
-| `io_mismatch` | `pack-synthesis` | Adjacent stages have incompatible output→input formats and the handoff does not document a conversion. |
-| `unresolved_main_path_gap` | `pack-synthesis` | At least one trace from entry to terminal does not reach a verified terminal outcome. |
-| `conflict_unresolved` | `pack-synthesis` | Included members have an unresolved `conflicts_with` edge. |
+| Code | Owner | Meaning |
+|---|---|---|
+| `missing_session_ids` | orchestrator | Synthesis or evaluation session identity is absent. |
+| `same_session` | orchestrator | The same session attempted synthesis and evaluation. |
+| `missing_proof` | `pack-synthesis` | Candidate-time `preflight-proof.json` or its digest is absent. |
+| `stale_proof` | `pack-synthesis` | Candidate, evidence, binding, evaluation digest, and existing proof no longer agree. |
+| `dag_invalid` | `pack-synthesis` | The workflow is cyclic, unreachable, malformed, or cannot close at a terminal sink. |
+| `required_handoff_unbound` | `pack-synthesis` or `skill-dedup-relations` | A required edge lacks a Relation v2 exact pair backed by producer and consumer claims. |
+| `required_input_mislabeled_optional` | `skill-deep-analysis` or `skill-dedup-relations` | A handoff treats an Analysis v2 optional requirement as mandatory. |
+| `fan_evidence_incomplete` | `pack-synthesis` | A fan-out branch or fan-in contribution lacks its own compatible artifact evidence. |
+| `strengthens_used_as_handoff` | `pack-synthesis` | Optional strengthening evidence is being used to close a required route. |
+| `precondition_unmet` | `pack-synthesis` | A material precondition, refusal boundary, tool constraint, or permission requirement is not represented or satisfied. |
+| `alternative_not_disposed` | `pack-synthesis` or `skill-dedup-relations` | A behavior-changing alternative has no Pack-specific decision. |
+| `conflict_unresolved` | `pack-synthesis` | Included members retain an unresolved material conflict. |
+| `failure_warning_not_disposed` | `catalog-evaluation` | An Analysis v2 failure-warning claim has no evaluation warning with the same claim ID and an explicit disposition. |
+| `member_ineligible` | `skill-normalization` or `source-sync` | A member is missing, blocked, removed, broken, or no longer pinned to its current version. |
+| `evidence_missing` | evidence owner | A required analysis, relation, source fact, or claim cannot be resolved from canonical records. |
+| `policy_blocked` | `catalog-curation` | Publication depends on a human-owned license, curation, or policy decision. |
 
-## Scorable Failure Modes
+Any blocker produces `rejected`. Do not convert a blocker into a low metric to keep the candidate alive.
 
-These failures affect scores and can produce `needs_work` or `rejected` depending on severity.
+## Score Findings
 
-| Failure Mode | Owner | Description |
-| --- | --- | --- |
-| `intent_too_broad` | `pack-synthesis` | Task intent is too broad to define a coherent workflow. |
-| `skill_overlap` | `pack-synthesis` | Multiple skills cover the same stage without a documented reason. |
-| `missing_workflow_stage` | `pack-synthesis` | A necessary workflow stage is absent (non-main-path). |
-| `stale_member_version` | `skill-normalization` or `source-sync` | A member's pinned version is not current. |
-| `weak_evidence` | `skill-deep-analysis` or `skill-dedup-relations` | Claims in the candidate are not traceable to analysis or relation evidence. |
-| `license_concentration` | `source-discovery` or `catalog-curation` | Unknown-license skills form too large a proportion of the pack. |
-| `poor_source_quality` | `source-discovery` | Member skills come from low-quality or inactive sources. |
-| `page_not_traceable` | `catalog-publishing` | Generated public page cannot be traced back to catalog records. |
-| `manual_creation` | `pack-synthesis` | Candidate appears hand-crafted rather than synthesized from catalog evidence. |
+When there are no blockers, score findings determine whether the candidate passes, needs work, or is rejected:
 
-Every failure mode in evaluation output must include:
+- a dimension from `0.50` through `0.69` produces `needs_work` unless another dimension is lower;
+- any dimension below `0.50` produces `rejected`;
+- every dimension at least `0.70` produces `passed`.
 
-- `failure_mode` — stable concise identifier from the tables above;
-- `owner` — the skill responsible for the next change;
-- `repairability` — `this_run`, `next_run`, `policy_blocked`, `human_decision`, or `fundamental` (structural blockers are always `fundamental`);
-- `blocking` — whether it blocks publication (structural blockers are always blocking);
-- `recommended_action` — one concrete change that can be verified on reevaluation.
+Useful stable findings include `intent_too_broad`, `coverage_thin`, `skill_overlap`, `workflow_unclear`, `compatibility_weak`, `conflict_control_weak`, `weak_evidence`, `poor_actionability`, `stale_context`, and `poor_source_quality`.
 
-A `needs_work` result should be executable by its owners. Do not return vague advice such as "improve evidence." State which analysis, relation, member, stage, version, conflict, or source fact must change. Evaluation classifies and routes repairs; it never lowers the publication threshold.
+## Recommendation Contract
+
+For each blocker or score finding, record:
+
+- the stable code or affected metric;
+- the owning skill;
+- the concrete evidence that supports the finding;
+- whether the repair belongs to the current orchestration window, a later run, a human decision, or a fundamental redesign;
+- one specific action whose completion can be checked.
+
+“Improve evidence” is not actionable. Name the missing claim pair, graph branch, alternative disposition, warning claim, member pin, source fact, or proof refresh required.

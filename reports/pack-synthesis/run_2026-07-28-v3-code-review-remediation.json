@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "run_id": "run_2026-07-28-v3",
+  "intent_digest": "sha256:9b440b10695db74607341b53bb295b25998eb2e7cc8d10786ee4393b2965f33d",
+  "intent": {
+    "domain": "code-review-remediation",
+    "source": "issue_demand",
+    "reason": "Controller-bound demand: 2 explicit skill IDs, domains: code-review-remediation",
+    "seed_skill_ids": [
+      "skl_coderabbit-autofix-src-https-github-com-coderabbit-7ec3dc4b-skills-8f2a22eb-skills-autofix-skill-md_7ec3dc4b",
+      "skl_coderabbit-code-review-src-https-github-com-codera-9e16a0ae-lls-8f2a22eb-skills-code-review-skill-md_9e16a0ae"
+    ]
+  },
+  "synthesis_session_id": "ses_05a58e4d0fferdLkRkOwdvkEbG",
+  "outcome": "no_pack_clean",
+  "failure_fingerprint": "pack_v3_no_chains_with:9b440b10695db74607341b53bb295b25998eb2e7cc8d10786ee4393b2965f33d:code_review_to_autofix:clm_10a9c7605ab4",
+  "evidence": {
+    "analysis_ids": [
+      "anl_b02eacb7945a7f14",
+      "anl_2184e21c5dce1bf5"
+    ],
+    "analysis_paths": [
+      "catalog/analyses/co/skl_coderabbit-autofix-src-https-github-com-coderabbit-7ec3dc4b-skills-8f2a22eb-skills-autofix-skill-md_7ec3dc4b.md",
+      "catalog/analyses/co/skl_coderabbit-code-review-src-https-github-com-codera-9e16a0ae-lls-8f2a22eb-skills-code-review-skill-md_9e16a0ae.md"
+    ],
+    "relation_ids": [],
+    "relation_readiness_report": "reports/skill-relations/run_2026-07-28-v3.md"
+  },
+  "missing_evidence": [
+    {
+      "owner": "skill-deep-analysis",
+      "reason": "The current Code Review source and Analysis v2 produce findings and fix guidance, but do not establish the completed GitHub CodeRabbit review with an unresolved current root thread required by Autofix. This claim must not be added unless a source artifact actually supports it.",
+      "claim_or_relation_needed": "Source-backed producer evidence that exactly yields the artifact required by Autofix claim clm_10a9c7605ab4, or a different analyzed producer skill that does."
+    },
+    {
+      "owner": "skill-dedup-relations",
+      "reason": "No canonical Relation v2 edge exists, so the required two-member handoff cannot cite an exact chains_with record.",
+      "claim_or_relation_needed": "After the relation readiness gate is met, an evidence-backed chains_with record from the exact producer claim to Autofix requires.required claim clm_10a9c7605ab4."
+    }
+  ],
+  "candidate_written": false,
+  "evaluation_required": false,
+  "promotion_required": false
+}

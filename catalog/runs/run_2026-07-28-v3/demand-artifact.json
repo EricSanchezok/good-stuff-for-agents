@@ -1,0 +1,12 @@
+{
+  "kind": "issue_demand_binding",
+  "run_id": "run_2026-07-28-v3",
+  "workload_digest": "sha256:c1067ef4fd025495fd1feed81e2ec7d8d9c3b689f91fa1b72d4512ec3a9b5a5f",
+  "demand_skill_ids": [
+    "skl_coderabbit-autofix-src-https-github-com-coderabbit-7ec3dc4b-skills-8f2a22eb-skills-autofix-skill-md_7ec3dc4b",
+    "skl_coderabbit-code-review-src-https-github-com-codera-9e16a0ae-lls-8f2a22eb-skills-code-review-skill-md_9e16a0ae"
+  ],
+  "domain_slugs": [
+    "code-review-remediation"
+  ]
+}

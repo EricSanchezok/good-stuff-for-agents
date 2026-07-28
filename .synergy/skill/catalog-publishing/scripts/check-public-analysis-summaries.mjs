@@ -1,40 +1,35 @@
 #!/usr/bin/env node
-import { readFileSync } from 'node:fs'
+import { existsSync, readFileSync } from 'node:fs'
 import { dirname, join } from 'node:path'
 import { fileURLToPath } from 'node:url'
+import { loadSkillRecords, prefixFor } from '../../catalog-data/scripts/lib/catalog-lib.mjs'
 import { analysisSummariesFromText, containsInternalAnalysisLanguage } from './lib/publishing-lib.mjs'
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..', '..', '..', '..')
-const cases = [
-  {
-    name: 'literature-review',
-    analysis: 'catalog/analyses/li/skl_literature-review-src-https-github-com-k-dense-ai-53dfc208-db6d39-skills-literature-review-skill-md_53dfc208.md',
-    page: 'docs/skills/li/skl_literature-review-src-https-github-com-k-dense-ai-53dfc208-db6d39-skills-literature-review-skill-md_53dfc208.md',
-    summaryIncludes: 'A full 7-phase systematic literature review methodology',
-  },
-  {
-    name: 'analyze-feature-requests',
-    analysis: 'catalog/analyses/an/skl_analyze-feature-requests-src-https-github-com-phur-80ef1368-skills-analyze-feature-requests-skill-md_80ef1368.md',
-    page: 'docs/skills/an/skl_analyze-feature-requests-src-https-github-com-phur-80ef1368-skills-analyze-feature-requests-skill-md_80ef1368.md',
-    summaryIncludes: 'A feature-request triage skill',
-  },
-]
-
+const skills = loadSkillRecords().map(({ record }) => record)
 const errors = []
-for (const fixture of cases) {
-  const analysis = read(fixture.analysis)
-  const expected = analysisSummariesFromText(analysis)
-  const page = read(fixture.page)
+
+for (const skill of skills) {
+  const skillId = skill.canonical_skill_id
+  const analysisPath = skill.analysis?.path
+  const pagePath = `docs/skills/${prefixFor(skillId)}/${skillId}.md`
+  const page = read(pagePath)
   const renderedSummary = section(page, 'Summary')
   const renderedPublicSummary = section(page, 'Public Analysis Summary')
 
-  check(expected.summary.includes(fixture.summaryIncludes), `${fixture.name}: visitor-facing summary was not selected`)
-  check(!containsInternalAnalysisLanguage(expected.summary), `${fixture.name}: selected summary contains internal analysis language`)
-  check(!expected.publicSummary || !containsInternalAnalysisLanguage(expected.publicSummary), `${fixture.name}: public analysis summary contains internal analysis language`)
-  check(normalize(expected.summary) !== normalize(expected.publicSummary), `${fixture.name}: summary duplicates public analysis summary`)
-  check(renderedSummary === expected.summary, `${fixture.name}: rendered Summary does not match deterministic selection`)
-  check(renderedPublicSummary === (expected.publicSummary ?? ''), `${fixture.name}: rendered Public Analysis Summary does not match deterministic selection`)
-  check(normalize(renderedSummary) !== normalize(renderedPublicSummary), `${fixture.name}: rendered summaries are duplicated`)
+  if (!analysisPath || !existsSync(join(ROOT, analysisPath))) {
+    check(renderedSummary === 'Analysis pending.', `${skillId}: missing analysis did not render the pending summary`)
+    check(renderedPublicSummary === '', `${skillId}: missing analysis rendered a public analysis summary`)
+    continue
+  }
+
+  const expected = analysisSummariesFromText(read(analysisPath))
+  check(!containsInternalAnalysisLanguage(expected.summary), `${skillId}: selected summary contains internal analysis language`)
+  check(!expected.publicSummary || !containsInternalAnalysisLanguage(expected.publicSummary), `${skillId}: public analysis summary contains internal analysis language`)
+  check(normalize(expected.summary) !== normalize(expected.publicSummary), `${skillId}: summary duplicates public analysis summary`)
+  check(renderedSummary === expected.summary, `${skillId}: rendered Summary does not match deterministic selection`)
+  check(renderedPublicSummary === (expected.publicSummary ?? ''), `${skillId}: rendered Public Analysis Summary does not match deterministic selection`)
+  check(normalize(renderedSummary) !== normalize(renderedPublicSummary), `${skillId}: rendered summaries are duplicated`)
 }
 
 for (const phrase of [
@@ -49,7 +44,7 @@ if (errors.length) {
   for (const error of errors) console.error(`public-analysis-error: ${error}`)
   process.exit(2)
 }
-console.log(JSON.stringify({ ok: true, checked_skills: cases.map(({ name }) => name), checked_patterns: 3 }, null, 2))
+console.log(JSON.stringify({ ok: true, checked_skills: skills.map(({ canonical_skill_id: skillId }) => skillId), checked_patterns: 3 }, null, 2))
 
 function read(path) {
   return readFileSync(join(ROOT, path), 'utf8')

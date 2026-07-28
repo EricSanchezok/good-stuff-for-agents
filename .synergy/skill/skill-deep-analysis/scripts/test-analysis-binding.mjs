@@ -5,13 +5,15 @@ import { createHash } from 'node:crypto'
 import { copyFileSync, existsSync, mkdirSync, mkdtempSync, readFileSync, rmSync, symlinkSync, writeFileSync } from 'node:fs'
 import { tmpdir } from 'node:os'
 import { dirname, join, relative } from 'node:path'
-import { analysisPath, CATALOG, ROOT } from '../../catalog-data/scripts/lib/catalog-lib.mjs'
+import { analysisPath, CATALOG, parseYaml, ROOT } from '../../catalog-data/scripts/lib/catalog-lib.mjs'
 import {
   assertRemoteTreePath,
   buildRawGithubUrl,
   gitBlobOid,
   MAX_REMOTE_PATH_BYTES,
 } from '../../source-sync/scripts/lib/remote-artifact.mjs'
+import { loadAnalysesBySkillId } from '../../catalog-data/scripts/lib/pack-v3-lib.mjs'
+import { analysisSchemaV2, validateAgainstSchema } from '../../catalog-data/scripts/lib/schema-validators.mjs'
 import {
   ANALYSIS_DISPATCH_INSTRUCTIONS,
   assertAnalysisDispatch,
@@ -22,6 +24,8 @@ import {
   claimAnalysisDispatch,
   createAnalysisDispatch,
   createAnalyzerInput,
+  deriveAnalysisId,
+  deriveClaimId,
   dispatchPathFor,
   expectedAnalysisOutput,
   releaseAnalysisDispatchClaim,
@@ -342,7 +346,7 @@ function testBoundWriter() {
   ]) {
     const result = runControllerWriter({ ...validSemanticDraft(), [field]: value }, dispatchRelative)
     assert.notEqual(result.status, 0, `${field} semantic escalation unexpectedly passed`)
-    assert.match(result.stderr, /must contain exactly/u)
+    assert.match(result.stderr, /contains unknown keys/u)
     assert.equal(existsSync(outputPath), false)
   }
 

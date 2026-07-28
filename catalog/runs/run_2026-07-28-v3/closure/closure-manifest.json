@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "kind": "closure_evidence_manifest",
+  "run_id": "run_2026-07-28-v3",
+  "snapshot_digest": "419b2e6278dd4c069932cb13e683744b0fc22716166ca7d16110666e82c98bd6",
+  "prepared_digest": "0fe47b82772f31bd06b55707e842805f7fe6c138d60a30171eb4da5917d84868",
+  "closure": {
+    "digest": "77ad798931d129703031da6ea27d9281791fe60cb154f2f4fe9d7c0eb737fc00",
+    "intents": [
+      {
+        "intent": {
+          "domain": "code-review-remediation",
+          "reason": "Controller-bound demand: 2 explicit skill IDs, domains: code-review-remediation",
+          "source": "issue_demand",
+          "score": 0.95,
+          "seed_skill_ids": [
+            "skl_coderabbit-autofix-src-https-github-com-coderabbit-7ec3dc4b-skills-8f2a22eb-skills-autofix-skill-md_7ec3dc4b",
+            "skl_coderabbit-code-review-src-https-github-com-codera-9e16a0ae-lls-8f2a22eb-skills-code-review-skill-md_9e16a0ae"
+          ],
+          "max_analysis_budget": 2
+        },
+        "seed_skill_ids": [],
+        "seeds_resolved": 0
+      }
+    ],
+    "evidence_manifest": {
+      "resolved_intents": 1,
+      "total_seeds": 0,
+      "total_budget": 0,
+      "evidence_bundles": [
+        {
+          "intent_domain": "code-review-remediation",
+          "intent_source": "issue_demand",
+          "seed_count": 0,
+          "seed_ids": [],
+          "seed_evidence_hashes": []
+        }
+      ],
+      "snapshot_bound": true
+    }
+  },
+  "generated_at": "2026-07-28T04:10:17.631Z"
+}

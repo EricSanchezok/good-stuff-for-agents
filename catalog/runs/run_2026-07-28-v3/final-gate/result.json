@@ -1,0 +1,216 @@
+{
+  "_single_invocation": true,
+  "checks": [
+    {
+      "duration_ms": 459,
+      "exit_code": 0,
+      "name": "catalog-strict-validation",
+      "passed": true,
+      "script": "catalog:validate"
+    },
+    {
+      "duration_ms": 496,
+      "exit_code": 0,
+      "name": "catalog-indexes",
+      "passed": true,
+      "script": "catalog:index"
+    },
+    {
+      "duration_ms": 725,
+      "exit_code": 0,
+      "name": "public-render",
+      "passed": true,
+      "script": "publish:render"
+    },
+    {
+      "duration_ms": 523,
+      "exit_code": 0,
+      "name": "public-drift",
+      "passed": true,
+      "script": "publish:check"
+    },
+    {
+      "duration_ms": 293,
+      "exit_code": 0,
+      "name": "public-links",
+      "passed": true,
+      "script": "publish:links"
+    },
+    {
+      "duration_ms": 114,
+      "exit_code": 0,
+      "name": "public-boundary",
+      "passed": true,
+      "script": "publish:boundary"
+    },
+    {
+      "duration_ms": 230,
+      "exit_code": 0,
+      "name": "public-summaries",
+      "passed": true,
+      "script": "publish:summaries"
+    },
+    {
+      "duration_ms": 127,
+      "exit_code": 0,
+      "name": "extraction-test",
+      "passed": true,
+      "script": "skill:extraction:test"
+    },
+    {
+      "duration_ms": 170,
+      "exit_code": 0,
+      "name": "normalization-bootstrap-test",
+      "passed": true,
+      "script": "skill:normalization:bootstrap:test"
+    },
+    {
+      "duration_ms": 2236,
+      "exit_code": 0,
+      "name": "analysis-binding-test",
+      "passed": true,
+      "script": "analysis:binding:test"
+    },
+    {
+      "duration_ms": 522,
+      "exit_code": 0,
+      "name": "relation-v2-test",
+      "passed": true,
+      "script": "relations:v2:test"
+    },
+    {
+      "duration_ms": 117,
+      "exit_code": 0,
+      "name": "pack-schema-test",
+      "passed": true,
+      "script": "pack:schema:test"
+    },
+    {
+      "duration_ms": 187,
+      "exit_code": 0,
+      "name": "pack-core-test",
+      "passed": true,
+      "script": "pack:core:test"
+    },
+    {
+      "duration_ms": 120,
+      "exit_code": 0,
+      "name": "pack-preflight-test",
+      "passed": true,
+      "script": "pack:preflight:test"
+    },
+    {
+      "duration_ms": 231,
+      "exit_code": 1,
+      "name": "pack-proof-test",
+      "passed": false,
+      "script": "pack:proof:test"
+    },
+    {
+      "duration_ms": 174,
+      "exit_code": 0,
+      "name": "pack-promotion-test",
+      "passed": true,
+      "script": "pack:promotion:test"
+    },
+    {
+      "duration_ms": 263,
+      "exit_code": 1,
+      "name": "pack-destination-test",
+      "passed": false,
+      "script": "pack:destination:test"
+    },
+    {
+      "duration_ms": 221,
+      "exit_code": 1,
+      "name": "evaluation-binding-test",
+      "passed": false,
+      "script": "evaluation:binding:test"
+    },
+    {
+      "duration_ms": 256,
+      "exit_code": 0,
+      "name": "path-safety-test",
+      "passed": true,
+      "script": "path:safety:test"
+    },
+    {
+      "duration_ms": 268,
+      "exit_code": 0,
+      "name": "issue-intake-test",
+      "passed": true,
+      "script": "issue:intake:test"
+    },
+    {
+      "duration_ms": 141,
+      "exit_code": 0,
+      "name": "issue-pipeline-test",
+      "passed": true,
+      "script": "issue:pipeline:test"
+    },
+    {
+      "duration_ms": 286,
+      "exit_code": 0,
+      "name": "issue-stage-test",
+      "passed": true,
+      "script": "issue:stage:test"
+    },
+    {
+      "duration_ms": 3292,
+      "exit_code": 0,
+      "name": "nightly-context-test",
+      "passed": true,
+      "script": "nightly:context:test"
+    },
+    {
+      "duration_ms": 211,
+      "exit_code": 0,
+      "name": "nightly-final-gate-test",
+      "passed": true,
+      "script": "nightly:final-gate:test"
+    },
+    {
+      "duration_ms": 147,
+      "exit_code": 0,
+      "name": "nightly-seal-test",
+      "passed": true,
+      "script": "nightly:seal:test"
+    },
+    {
+      "duration_ms": 209,
+      "exit_code": 0,
+      "name": "nightly-validator-test",
+      "passed": true,
+      "script": "nightly:validator:test"
+    },
+    {
+      "duration_ms": 1365,
+      "exit_code": 0,
+      "name": "nightly-git-test",
+      "passed": true,
+      "script": "nightly:git:test"
+    },
+    {
+      "duration_ms": 628,
+      "exit_code": 0,
+      "name": "catalog-reset-test",
+      "passed": true,
+      "script": "catalog:reset:test"
+    },
+    {
+      "duration_ms": 119,
+      "exit_code": 0,
+      "name": "pack-publishing-test",
+      "passed": true,
+      "script": "publish:pack-v3:test"
+    }
+  ],
+  "context_digest": "0fe47b82772f31bd06b55707e842805f7fe6c138d60a30171eb4da5917d84868",
+  "digest": "294936ef7ac7d3fa55ab8b438d76f7b411f72bdf0f4944210d5b76c34a9bb118",
+  "finished_at": "2026-07-28T04:12:12.726Z",
+  "gate_id": "gate_323d854693d1e6db",
+  "invoked_count": 1,
+  "passed": false,
+  "run_id": "run_2026-07-28-v3",
+  "started_at": "2026-07-28T04:11:58.594Z"
+}

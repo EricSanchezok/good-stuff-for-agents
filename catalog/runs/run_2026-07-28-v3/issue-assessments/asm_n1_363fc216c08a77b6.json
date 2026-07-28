@@ -1,0 +1,64 @@
+{
+  "assessed_at": "2026-07-27T22:01:40.680Z",
+  "assessed_by_run": "run_2026-07-28-v3",
+  "assessment_digest": "sha256:5130f1bde62e134cdef09bcc39a7334704a586e9cba82e5e363fc216c08a77b6",
+  "assessment_id": "asm_n1_363fc216c08a77b6",
+  "classification": {
+    "criteria": [
+      {
+        "criterion_id": "comment-diff-ingestion",
+        "status": "unsatisfied",
+        "text": "Collect review comments together with the current pull-request diff."
+      },
+      {
+        "criterion_id": "claim-verification",
+        "status": "unsatisfied",
+        "text": "Verify each review claim against source code with file and line evidence."
+      },
+      {
+        "criterion_id": "finding-triage",
+        "status": "unsatisfied",
+        "text": "Classify, deduplicate, and scope findings to the current change or follow-up."
+      },
+      {
+        "criterion_id": "consolidated-report",
+        "status": "unsatisfied",
+        "text": "Produce one consolidated review report without assuming every comment is correct."
+      }
+    ],
+    "kind": "skill_request"
+  },
+  "content_digest": "sha256:5a6e4c2a12d44abc9b7e8aa89785443375a40780f6be905464f8f1b86c57313f",
+  "fulfillment_state": "not_started",
+  "gap_criteria": [
+    {
+      "criterion_id": "comment-diff-ingestion",
+      "text": "Collect review comments together with the current pull-request diff."
+    },
+    {
+      "criterion_id": "claim-verification",
+      "text": "Verify each review claim against source code with file and line evidence."
+    },
+    {
+      "criterion_id": "finding-triage",
+      "text": "Classify, deduplicate, and scope findings to the current change or follow-up."
+    },
+    {
+      "criterion_id": "consolidated-report",
+      "text": "Produce one consolidated review report without assuming every comment is correct."
+    }
+  ],
+  "issue_number": 1,
+  "issue_title": "Looking for skills to verify and triage review comments on a large pull request",
+  "notes": "The current CodeRabbit records are not yet analyzed and no published pack covers the requested workflow.",
+  "public_evidence": {
+    "boundary": "Published catalog skills and packs only",
+    "related_entities": []
+  },
+  "repository": {
+    "owner": "EricSanchezok",
+    "repo": "good-stuff-for-agents"
+  },
+  "schema_version": 1,
+  "updated_at_bound": "2026-07-21T11:44:08Z"
+}

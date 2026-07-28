@@ -1,0 +1,21 @@
+{
+  "assessment_digest": "sha256:3df33f7ae071391e2ccd5faf655bb96817f1b2f2c61243c09720d467bcab103c",
+  "assessment_id": "asm_n4_9720d467bcab103c",
+  "comment_id": 5097284518,
+  "created_at": "2026-07-27T22:01:34.649Z",
+  "created_by_run": "run_2026-07-28-v3",
+  "dedup_fingerprint": "sha256:aac8f8184d43334b0dbf084e9009aebe8b9f4c8b99b5e9531b7f3f65239c6c1f",
+  "issue_number": 4,
+  "repository": "EricSanchezok/good-stuff-for-agents",
+  "response_id": "rsp_n4_1b7f3f65239c6c1f_posted",
+  "response_state": "posted",
+  "schema_version": 1,
+  "template_version": "issue-factual-v1",
+  "toctou_state": {
+    "bound_digest": "sha256:e09abef11667aa246aa9dd4a4fff29341265841c5141319c803292cf537eb3b2",
+    "checked_at": "2026-07-27T22:01:32.695Z",
+    "current_digest": "sha256:e09abef11667aa246aa9dd4a4fff29341265841c5141319c803292cf537eb3b2",
+    "issue_updated_at": "2026-07-21T11:44:13Z",
+    "staleness": "current"
+  }
+}

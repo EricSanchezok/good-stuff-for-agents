@@ -1,0 +1,64 @@
+{
+  "assessed_at": "2026-07-27T22:01:34.652Z",
+  "assessed_by_run": "run_2026-07-28-v3",
+  "assessment_digest": "sha256:9fb34d5df7593b6d1742fe2d1046c2f34360c33ee24197911425d7f2b911ce81",
+  "assessment_id": "asm_n3_1425d7f2b911ce81",
+  "classification": {
+    "criteria": [
+      {
+        "criterion_id": "persistent-state-recovery",
+        "status": "unsatisfied",
+        "text": "Reread authoritative persistent plans and notes."
+      },
+      {
+        "criterion_id": "environment-reconciliation",
+        "status": "unsatisfied",
+        "text": "Inspect current repository or environment state and compare it with the plan."
+      },
+      {
+        "criterion_id": "progress-reconstruction",
+        "status": "unsatisfied",
+        "text": "Reconstruct completed work, pending work, blockers, and stale decisions."
+      },
+      {
+        "criterion_id": "recovery-checkpoint",
+        "status": "unsatisfied",
+        "text": "Produce a concise checkpoint before resuming execution."
+      }
+    ],
+    "kind": "skill_request"
+  },
+  "content_digest": "sha256:1c4f5ce10b43de0ccc46f1934be441b0b90c0939bb640806ec4cf7015c7dd9c6",
+  "fulfillment_state": "not_started",
+  "gap_criteria": [
+    {
+      "criterion_id": "persistent-state-recovery",
+      "text": "Reread authoritative persistent plans and notes."
+    },
+    {
+      "criterion_id": "environment-reconciliation",
+      "text": "Inspect current repository or environment state and compare it with the plan."
+    },
+    {
+      "criterion_id": "progress-reconstruction",
+      "text": "Reconstruct completed work, pending work, blockers, and stale decisions."
+    },
+    {
+      "criterion_id": "recovery-checkpoint",
+      "text": "Produce a concise checkpoint before resuming execution."
+    }
+  ],
+  "issue_number": 3,
+  "issue_title": "Looking for skills to recover a long-running agent task after context compaction",
+  "notes": "No current canonical evidence covers post-compaction execution recovery.",
+  "public_evidence": {
+    "boundary": "Published catalog skills and packs only",
+    "related_entities": []
+  },
+  "repository": {
+    "owner": "EricSanchezok",
+    "repo": "good-stuff-for-agents"
+  },
+  "schema_version": 1,
+  "updated_at_bound": "2026-07-21T11:44:11Z"
+}

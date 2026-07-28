@@ -9,7 +9,6 @@ const steps = []
 
 try {
   step('validate-start', () => validateOrThrow())
-  step('migrate', () => runScript('.synergy/skill/catalog-data/scripts/migrate-catalog.mjs'))
   step('source-sync', () => runScript('.synergy/skill/source-sync/scripts/sync-sources.mjs'))
   step('build-indexes', () => runScript('.synergy/skill/catalog-data/scripts/build-indexes.mjs'))
   step('render-public-pages', () => renderAll())

@@ -1,13 +1,16 @@
 # Coverage State Format
 
-## File location
-
-`catalog/coverage.json`
-
 ## Purpose
 
-This file tracks per-domain search history across all growth rounds. It is the
-state backing the diversity constraint in `demand-scan-policy.md` Step 6.
+`catalog/coverage.json` is historical discovery telemetry. It records domains touched by actual bounded source discovery; it does not select Nightly targets, require a discovery round, or authorize broad growth.
+
+Nightly Catalog v3 gets zero to two immutable intents from the prepared context. Consult coverage only after a current intent identifies a concrete source-evidence gap and target-gap discovery is otherwise permitted. Coverage may break ties between equally direct leads, but it cannot broaden or replace the intent.
+
+## File Location
+
+```txt
+catalog/coverage.json
+```
 
 ## Schema
 
@@ -27,80 +30,58 @@ state backing the diversity constraint in `demand-scan-policy.md` Step 6.
 }
 ```
 
-### Fields
+| Field | Type | Meaning |
+|---|---|---|
+| `version` | integer | Schema version; currently `1`. |
+| `updated_at` | ISO 8601 UTC | Time of the latest canonical update. |
+| `domains` | object | Map of `domain_id` to historical discovery statistics. |
+| `domains.<id>.visits` | integer | Number of bounded discovery executions that actually inspected the domain. |
+| `domains.<id>.last_used` | ISO 8601 UTC | Most recent bounded discovery execution in the domain. |
+| `domains.<id>.first_used` | ISO 8601 UTC | First bounded discovery execution in the domain. |
+| `domains.<id>.sources_discovered` | integer | Best-effort count of activated sources attributed to the domain. |
+| `domains.<id>.skills_discovered` | integer | Best-effort count of canonical skills attributed to the domain. |
 
-| Field | Type | Description |
-|-------|------|-------------|
-| `version` | integer | Schema version. Currently `1`. |
-| `updated_at` | ISO 8601 UTC | Timestamp of last write. |
-| `domains` | object | Map of `domain_id` → domain stats. |
-| `domains.<id>.visits` | integer | Total number of rounds that selected this domain. |
-| `domains.<id>.last_used` | ISO 8601 UTC | Timestamp of most recent selection. |
-| `domains.<id>.first_used` | ISO 8601 UTC | Timestamp of first selection. |
-| `domains.<id>.sources_discovered` | integer | Total sources activated whose primary domain is this. |
-| `domains.<id>.skills_discovered` | integer | Total skills cataloged whose primary domain is this. |
+A Pack intent that is decided entirely from current canonical evidence does not increment visits. An Issue classification does not increment visits. Reading a source without an authorized target-gap search does not create coverage state.
 
-`sources_discovered` and `skills_discovered` are best-effort counters. Update them
-at the end of each growth run based on what was newly added.
+## Empty State
 
-### Empty state
+If the file is absent, treat historical visits as unknown or zero for tie-breaking only. Do not create discovery work merely to populate the file. The absence of coverage telemetry does not block Issue handling, target evidence assembly, `no_pack_clean`, or a successful zero-Pack run.
 
-When no coverage data exists (first run, or file missing), all domains are treated
-as having 0 visits. The file is created after the first theme selection.
+## Domain Taxonomy
 
-## Domain taxonomy
+The taxonomy stays coarse because it is routing telemetry, not a semantic classification system.
 
-The taxonomy is intentionally coarse (8 categories) to keep coverage signals
-meaningful. More fine-grained classification belongs in skill-level analysis,
-not in discovery routing.
+| `domain_id` | Label | Scope |
+|---|---|---|
+| `dev` | Development & Engineering | Programming, frameworks, DevOps, cloud, infrastructure, and code tooling |
+| `design` | Design & UI/UX | Product design, design systems, prototyping, visual design, and accessibility |
+| `pm` | Product Management | Product strategy, discovery, roadmaps, prioritization, and stakeholder work |
+| `marketing` | Marketing & Growth | SEO, content, advertising, analytics, experimentation, and brand |
+| `science` | Scientific & Data | Research tooling, data science, visualization, and computational science |
+| `writing` | Writing & Content | Copywriting, documentation, editorial workflows, and technical writing |
+| `enterprise` | Enterprise & Business | Compliance, legal, finance, HR, operations, and procurement |
+| `meta` | Meta & Agent Tooling | Skill creation, agent frameworks, MCP, prompting, and orchestration |
 
-| domain_id | Label | Description |
-|-----------|-------|-------------|
-| `dev` | Development & Engineering | Programming languages, frameworks, DevOps, cloud infrastructure, code tooling |
-| `design` | Design & UI/UX | Figma, design systems, prototyping, visual design, accessibility |
-| `pm` | Product Management | PRDs, roadmaps, stakeholder management, strategy, prioritization |
-| `marketing` | Marketing & Growth | SEO, content, ads, analytics, brand, AB testing |
-| `science` | Scientific & Data | Bioinformatics, cheminformatics, data science, visualization, research tooling |
-| `writing` | Writing & Content | Copywriting, documentation, content strategy, technical writing |
-| `enterprise` | Enterprise & Business | Compliance, legal, finance, HR, operations, procurement |
-| `meta` | Meta & Agent Tooling | Skill creation, MCP servers, agent frameworks, prompt engineering |
-
-## ID assignment rules
-
-When selecting themes, map your chosen discovery direction to one or more
-domain_ids. A single round may touch up to 2 domains. If a round bridges
-multiple categories, pick the primary one. Be consistent across rounds.
+Map an executed target-gap search to no more than two domains. When a search crosses categories, choose the primary domain needed by the immutable intent. Domain assignment must not alter the intent, candidate membership, or evidence claims.
 
 Examples:
-- "Figma design systems" → `design`
-- "Azure cloud infrastructure agent skills" → `dev`
-- "Marketing SEO content tools" → `marketing`
-- "Bioinformatics and cheminformatics libraries" → `science`
-- "Agent skill creation frameworks" → `meta`
-- "Legal compliance document review" → `enterprise`
 
-Existing catalog sources and their primary domains (for backfill reference):
+- Figma design-system evidence → `design`
+- Azure infrastructure evidence → `dev`
+- SEO workflow evidence → `marketing`
+- Bioinformatics workflow evidence → `science`
+- Skill-authoring framework evidence → `meta`
+- Legal document-review evidence → `enterprise`
 
-| Source | Primary domain |
-|--------|---------------|
-| Anthropic Agent Skills | `meta` / `design` |
-| CodeRabbit Skills | `dev` |
-| Marketing Skills (Corey Haines) | `marketing` |
-| Figma MCP Skills | `design` |
-| K-Dense Scientific Agent Skills | `science` |
-| Frontend Designer Skill | `design` |
-| Matteo Collina's Skills | `dev` |
-| Microsoft Agent Skills | `dev` |
-| PM Skills Marketplace (phuryn) | `pm` |
-| PM Skills (Product on Purpose) | `pm` |
-| Skills for Figma (Southleft) | `design` |
-| Claude Marketing (Rebecca Rae Barton) | `marketing` |
+## Update Boundary
 
-This mapping is advisory. Discovery rounds may select any domain regardless of
-existing source coverage.
+Update coverage only after bounded discovery actually ran and only through an available canonical `catalog-data` write path. If no canonical writer supports the update, return the reviewed delta to `catalog-data`; do not hand-edit the file or invent a local compatibility writer.
 
-## Maintenance
+An update records only what happened:
 
-The coverage file is read on every growth run and updated after theme selection
-and at the end of the run. Do not hand-edit it. If the taxonomy needs expansion,
-propose the change in the growth report for the next curator to review.
+- increment visits for domains actually inspected;
+- set `first_used` and `last_used` from the current run;
+- update best-effort source and skill counts from canonical outputs;
+- leave untouched domains unchanged.
+
+Taxonomy changes are curation decisions. Record the proposed change and route it to the owning policy rather than changing IDs during target execution.

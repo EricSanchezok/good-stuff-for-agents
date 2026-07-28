@@ -1,16 +1,25 @@
 #!/usr/bin/env node
 import { CATALOG, appendJsonl, nowIso, readDraft } from './lib/catalog-lib.mjs'
+import { validateAgainstSchema, relationSchemaV2 } from './lib/schema-validators.mjs'
 import { join } from 'node:path'
-const draft = readDraft(process.argv.slice(2))
+
+const args = process.argv.slice(2)
+const validateOnly = args.includes('--validate-only')
+const draft = readDraft(args.filter((arg) => arg !== '--validate-only'))
+
 const record = {
-  schema_version: 1,
-  subject: draft.subject,
-  predicate: draft.predicate,
-  object: draft.object,
+  ...draft,
   weight: draft.weight ?? 0,
   evidence: draft.evidence ?? '',
-  source: draft.source ?? 'manual',
   created_at: draft.created_at ?? nowIso(),
+  created_by_run: draft.created_by_run ?? 'manual',
 }
-appendJsonl(join(CATALOG, 'relations', 'edges-00000.jsonl'), record)
+
+const result = validateAgainstSchema(record, relationSchemaV2)
+if (!result.ok) {
+  for (const err of result.errors) console.error(err)
+  process.exit(1)
+}
+
+if (!validateOnly) appendJsonl(join(CATALOG, 'relations', 'edges-00000.jsonl'), record)
 console.log(JSON.stringify(record, null, 2))

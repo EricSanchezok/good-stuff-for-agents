@@ -1,19 +1,19 @@
-# Commit Policy
+# Trusted-Controller Commit Policy
 
-Nightly automation may commit only meaningful repository-local changes: catalog records, generated indexes, generated README/docs, and reports.
+`catalog-maintenance` never creates commits. When maintenance produces meaningful repository-local changes, it reports the exact changed paths and verification evidence.
 
-Before committing:
+A separately trusted controller may commit only after:
 
-1. run strict validation;
-2. render docs;
-3. pass drift and link checks;
-4. inspect git status and diff;
-5. ensure no secrets, temp files, or prohibited paths are included.
+1. current explicit user or scheduler authorization;
+2. strict validation and required public checks from trusted code;
+3. review of staged and unstaged bytes;
+4. exclusion of unrelated changes, secrets, temporary files, and prohibited paths;
+5. exact binding of intended blobs, index, tree, branch, and parent `HEAD`.
 
-Every commit message must include:
+Every repository commit includes:
 
-```txt
+```text
 Co-authored-by: synergy-agent <299070056+synergy-agent@users.noreply.github.com>
 ```
 
-No meaningful changes means no commit. Do not amend or rewrite history unless explicitly instructed by a human and safe under the repo policy.
+No meaningful changes means no commit. Never amend, rewrite history, skip hooks, or force a Git operation unless the user explicitly requests it and repository policy permits it.

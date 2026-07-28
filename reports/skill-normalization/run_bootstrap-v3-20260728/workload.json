@@ -1,0 +1,138 @@
+{
+  "candidate_count": 2,
+  "created_at": "2026-07-27T21:33:23.368Z",
+  "input_bindings": {
+    "candidate_jsonl_digest": "sha256:56c817b3f55b43d98d7d836d642c0e6eb19cbab76e63f117455eacce49dd324e",
+    "existing_records_digest": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "snapshot_manifests_digest": "sha256:29679e364977e51a0142f6c36fb4fa49fde5b882d290b50d5b6bf8d0ae4cda37",
+    "source_registry_digest": "sha256:c86d7b4929d971dc4f1ccd0017f4b649fcf3b51a793e7bc586d3a5ab79e50193"
+  },
+  "item_count": 2,
+  "items": [
+    {
+      "candidate": {
+        "candidate_id": "cand_src-https-github-com-coderabbitai-skills-coderabbit-skills-8f2a22eb-skills-autofix-skill-md_122bfbc1",
+        "content_digest": "git_sha1:04e1f0ae7090f8cbf8467bcb613c062dba70387e",
+        "declared_name": "autofix",
+        "extracted_at": "2026-07-27T21:33:22.850Z",
+        "format": "SKILL.md",
+        "parse_confidence": "high",
+        "path": "skills/autofix/SKILL.md",
+        "provenance": {
+          "artifact_binding": {
+            "git_blob_oid": "git_sha1:04e1f0ae7090f8cbf8467bcb613c062dba70387e",
+            "pinned_commit": "c61c4908d36dda6fb08a343cc8b19c59fbb47de3",
+            "raw_url": "https://raw.githubusercontent.com/coderabbitai/skills/c61c4908d36dda6fb08a343cc8b19c59fbb47de3/skills/autofix/SKILL.md",
+            "remote_path": "skills/autofix/SKILL.md",
+            "source_id": "src_https-github-com-coderabbitai-skills-coderabbit-skills_8f2a22eb"
+          },
+          "git_blob_oid": "git_sha1:04e1f0ae7090f8cbf8467bcb613c062dba70387e",
+          "raw_url": "https://raw.githubusercontent.com/coderabbitai/skills/c61c4908d36dda6fb08a343cc8b19c59fbb47de3/skills/autofix/SKILL.md",
+          "size": 11589,
+          "upstream_ref": "c61c4908d36dda6fb08a343cc8b19c59fbb47de3",
+          "url": "https://github.com/coderabbitai/skills/blob/c61c4908d36dda6fb08a343cc8b19c59fbb47de3/skills/autofix/SKILL.md"
+        },
+        "schema_version": 1,
+        "source_id": "src_https-github-com-coderabbitai-skills-coderabbit-skills_8f2a22eb"
+      },
+      "existing_match": null,
+      "identity_hint": {
+        "canonical_name": "autofix",
+        "canonical_skill_id": "skl_autofix-src-https-github-com-coderabbitai-skills-coderabbit-skills-8f2a22eb-skills-autofix-skill-md_25a31687",
+        "display_name": "autofix"
+      },
+      "item_digest": "sha256:ed61e7b4293d36951e8a5a8ccee18e0c7bbeb3c74593fbac5c410f7bb6a4da30",
+      "snapshot": {
+        "artifact_binding": {
+          "git_blob_oid": "git_sha1:04e1f0ae7090f8cbf8467bcb613c062dba70387e",
+          "pinned_commit": "c61c4908d36dda6fb08a343cc8b19c59fbb47de3",
+          "raw_url": "https://raw.githubusercontent.com/coderabbitai/skills/c61c4908d36dda6fb08a343cc8b19c59fbb47de3/skills/autofix/SKILL.md",
+          "remote_path": "skills/autofix/SKILL.md",
+          "source_id": "src_https-github-com-coderabbitai-skills-coderabbit-skills_8f2a22eb"
+        },
+        "manifest_path": "catalog/sources/snapshots/src_https-github-com-coderabbitai-skills-coderabbit-skills_8f2a22eb_2026-07-27T21-32-44-834Z.json",
+        "source_id": "src_https-github-com-coderabbitai-skills-coderabbit-skills_8f2a22eb",
+        "upstream_ref": "c61c4908d36dda6fb08a343cc8b19c59fbb47de3"
+      },
+      "source": {
+        "last_checked_at": "2026-07-27T21:32:44.834Z",
+        "last_ref": "c61c4908d36dda6fb08a343cc8b19c59fbb47de3",
+        "license": {
+          "evidence": "LICENSE file in repo root; README states MIT",
+          "spdx": "MIT",
+          "verified": true
+        },
+        "name": "CodeRabbit Skills",
+        "source_id": "src_https-github-com-coderabbitai-skills-coderabbit-skills_8f2a22eb",
+        "status": "active",
+        "type": "github_repo",
+        "url": "https://github.com/coderabbitai/skills"
+      }
+    },
+    {
+      "candidate": {
+        "candidate_id": "cand_src-https-github-com-coderabbitai-skills-coderabbit-skills-8f2a22eb-skills-code-review-skill-md_659b3c88",
+        "content_digest": "git_sha1:d9fc3f304df4785725febc3050dab2f390874f99",
+        "declared_name": "code-review",
+        "extracted_at": "2026-07-27T21:33:22.879Z",
+        "format": "SKILL.md",
+        "parse_confidence": "high",
+        "path": "skills/code-review/SKILL.md",
+        "provenance": {
+          "artifact_binding": {
+            "git_blob_oid": "git_sha1:d9fc3f304df4785725febc3050dab2f390874f99",
+            "pinned_commit": "c61c4908d36dda6fb08a343cc8b19c59fbb47de3",
+            "raw_url": "https://raw.githubusercontent.com/coderabbitai/skills/c61c4908d36dda6fb08a343cc8b19c59fbb47de3/skills/code-review/SKILL.md",
+            "remote_path": "skills/code-review/SKILL.md",
+            "source_id": "src_https-github-com-coderabbitai-skills-coderabbit-skills_8f2a22eb"
+          },
+          "git_blob_oid": "git_sha1:d9fc3f304df4785725febc3050dab2f390874f99",
+          "raw_url": "https://raw.githubusercontent.com/coderabbitai/skills/c61c4908d36dda6fb08a343cc8b19c59fbb47de3/skills/code-review/SKILL.md",
+          "size": 5253,
+          "upstream_ref": "c61c4908d36dda6fb08a343cc8b19c59fbb47de3",
+          "url": "https://github.com/coderabbitai/skills/blob/c61c4908d36dda6fb08a343cc8b19c59fbb47de3/skills/code-review/SKILL.md"
+        },
+        "schema_version": 1,
+        "source_id": "src_https-github-com-coderabbitai-skills-coderabbit-skills_8f2a22eb"
+      },
+      "existing_match": null,
+      "identity_hint": {
+        "canonical_name": "code-review",
+        "canonical_skill_id": "skl_code-review-src-https-github-com-coderabbitai-skil-56e21b29-lls-8f2a22eb-skills-code-review-skill-md_56e21b29",
+        "display_name": "code-review"
+      },
+      "item_digest": "sha256:cad9fb2d9fb38c86d09f70e39fac8da8a7666ba4201611dc8d06b58886c49740",
+      "snapshot": {
+        "artifact_binding": {
+          "git_blob_oid": "git_sha1:d9fc3f304df4785725febc3050dab2f390874f99",
+          "pinned_commit": "c61c4908d36dda6fb08a343cc8b19c59fbb47de3",
+          "raw_url": "https://raw.githubusercontent.com/coderabbitai/skills/c61c4908d36dda6fb08a343cc8b19c59fbb47de3/skills/code-review/SKILL.md",
+          "remote_path": "skills/code-review/SKILL.md",
+          "source_id": "src_https-github-com-coderabbitai-skills-coderabbit-skills_8f2a22eb"
+        },
+        "manifest_path": "catalog/sources/snapshots/src_https-github-com-coderabbitai-skills-coderabbit-skills_8f2a22eb_2026-07-27T21-32-44-834Z.json",
+        "source_id": "src_https-github-com-coderabbitai-skills-coderabbit-skills_8f2a22eb",
+        "upstream_ref": "c61c4908d36dda6fb08a343cc8b19c59fbb47de3"
+      },
+      "source": {
+        "last_checked_at": "2026-07-27T21:32:44.834Z",
+        "last_ref": "c61c4908d36dda6fb08a343cc8b19c59fbb47de3",
+        "license": {
+          "evidence": "LICENSE file in repo root; README states MIT",
+          "spdx": "MIT",
+          "verified": true
+        },
+        "name": "CodeRabbit Skills",
+        "source_id": "src_https-github-com-coderabbitai-skills-coderabbit-skills_8f2a22eb",
+        "status": "active",
+        "type": "github_repo",
+        "url": "https://github.com/coderabbitai/skills"
+      }
+    }
+  ],
+  "provenance_blocked": [],
+  "provenance_blocked_count": 0,
+  "run_id": "run_bootstrap-v3-20260728",
+  "schema_version": 2,
+  "workload_digest": "sha256:3b79c1b6681365a47660e109b98f9cc67ad23f5c2c38d18ae34990238ee6e525"
+}

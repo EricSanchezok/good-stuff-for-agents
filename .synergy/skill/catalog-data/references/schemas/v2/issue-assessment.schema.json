@@ -1,0 +1,152 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Issue Assessment Record",
+  "description": "A content-bound assessment for one untrusted GitHub Issue in the fixed catalog repository.",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "assessment_id",
+    "assessment_digest",
+    "issue_number",
+    "repository",
+    "content_digest",
+    "updated_at_bound",
+    "classification",
+    "fulfillment_state",
+    "public_evidence",
+    "gap_criteria",
+    "assessed_at",
+    "assessed_by_run"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": { "const": 1 },
+    "assessment_id": {
+      "type": "string",
+      "pattern": "^asm_"
+    },
+    "assessment_digest": {
+      "type": "string",
+      "pattern": "^sha256:[a-f0-9]{64}$",
+      "description": "Digest of the stable semantic assessment fields; timestamps and run identity are excluded."
+    },
+    "issue_number": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "repository": {
+      "type": "object",
+      "required": ["owner", "repo"],
+      "additionalProperties": false,
+      "properties": {
+        "owner": { "const": "EricSanchezok" },
+        "repo": { "const": "good-stuff-for-agents" }
+      }
+    },
+    "issue_title": {
+      "type": "string",
+      "maxLength": 512
+    },
+    "content_digest": {
+      "type": "string",
+      "pattern": "^sha256:[a-f0-9]{64}$",
+      "description": "Digest over repository, issue number, updated_at, title, body, labels, and complete comments."
+    },
+    "updated_at_bound": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "classification": {
+      "type": "object",
+      "required": ["kind", "criteria"],
+      "additionalProperties": false,
+      "properties": {
+        "kind": {
+          "type": "string",
+          "enum": ["skill_request", "pack_request", "catalog_question", "non_demand", "ambiguous", "unsafe"]
+        },
+        "criteria": {
+          "type": "array",
+          "minItems": 1,
+          "maxItems": 20,
+          "items": {
+            "type": "object",
+            "required": ["criterion_id", "text", "status"],
+            "additionalProperties": false,
+            "properties": {
+              "criterion_id": { "type": "string", "pattern": "^[a-z0-9][a-z0-9._-]{0,79}$" },
+              "text": { "type": "string", "minLength": 1, "maxLength": 512 },
+              "status": {
+                "type": "string",
+                "enum": ["satisfied", "partially_satisfied", "unsatisfied", "unknown"]
+              }
+            }
+          }
+        }
+      }
+    },
+    "fulfillment_state": {
+      "type": "string",
+      "enum": [
+        "not_started",
+        "in_progress",
+        "fulfilled",
+        "partially_fulfilled",
+        "blocked",
+        "out_of_scope",
+        "duplicate"
+      ]
+    },
+    "public_evidence": {
+      "type": "object",
+      "required": ["boundary", "related_entities"],
+      "additionalProperties": false,
+      "properties": {
+        "boundary": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 512
+        },
+        "related_entities": {
+          "type": "array",
+          "maxItems": 20,
+          "items": {
+            "type": "object",
+            "required": ["entity_type", "entity_id", "path"],
+            "additionalProperties": false,
+            "properties": {
+              "entity_type": { "type": "string", "enum": ["skill", "pack"] },
+              "entity_id": { "type": "string", "pattern": "^(?:skl_|pack_)[a-z0-9_.-]+$" },
+              "path": {
+                "type": "string",
+                "pattern": "^(?:catalog/skills/records/[a-z0-9_-]{2}/[a-z0-9_.-]+\\.yaml|catalog/packs/published/[a-z0-9_.-]+/pack\\.yaml)$"
+              }
+            }
+          }
+        }
+      }
+    },
+    "gap_criteria": {
+      "type": "array",
+      "maxItems": 20,
+      "items": {
+        "type": "object",
+        "required": ["criterion_id", "text"],
+        "additionalProperties": false,
+        "properties": {
+          "criterion_id": { "type": "string", "pattern": "^[a-z0-9][a-z0-9._-]{0,79}$" },
+          "text": { "type": "string", "minLength": 1, "maxLength": 512 }
+        }
+      }
+    },
+    "assessed_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "assessed_by_run": {
+      "type": "string",
+      "pattern": "^run_"
+    },
+    "notes": { "type": "string", "maxLength": 4096 }
+  }
+}

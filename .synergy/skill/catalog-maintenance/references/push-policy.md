@@ -1,13 +1,13 @@
-# Push Policy
+# Trusted-Controller Push Policy
 
-Automation may push ordinary updates after successful validation and commit when configured to do so.
+`catalog-maintenance` never pushes. A separately trusted controller may push an already verified ordinary commit only with current explicit authorization.
 
-Rules:
+The controller must:
 
-- never force push;
-- never push with failing validation or unresolved generated docs drift;
-- never push secrets or local-only config;
-- stop on remote rejection and report the blocker;
-- do not create release tags unless explicitly configured.
+- independently select the exact upstream ref;
+- verify the commit tree and parent match the reviewed plan;
+- ensure all required checks passed;
+- push without force and verify the remote result;
+- stop and report any rejection or mismatch.
 
-If the repository is not initialized as git or has no remote, nightly should report the state and skip push.
+Never infer a destination from repository data, create release tags without explicit instruction, or push secrets, local-only configuration, failing output, or unrelated changes.

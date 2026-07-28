@@ -1,0 +1,125 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Terminal Ledger",
+  "description": "Single computation source for run report, summary, and manifest. Captures terminal states for source, skill, relation, pack, issue, and run outcomes.",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "ledger_id",
+    "run_id",
+    "timestamp",
+    "source_outcomes",
+    "skill_outcomes",
+    "relation_outcomes",
+    "pack_outcomes",
+    "issue_outcomes",
+    "run_outcome"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": { "const": 1 },
+    "ledger_id": {
+      "type": "string",
+      "pattern": "^ldg_"
+    },
+    "run_id": {
+      "type": "string",
+      "pattern": "^run_"
+    },
+    "timestamp": {
+      "type": "string",
+      "description": "ISO 8601 timestamp"
+    },
+    "source_outcomes": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/terminal_entry" }
+    },
+    "skill_outcomes": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/terminal_entry" }
+    },
+    "relation_outcomes": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/terminal_entry" }
+    },
+    "pack_outcomes": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/terminal_entry" }
+    },
+    "issue_outcomes": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/terminal_entry" }
+    },
+    "run_outcome": {
+      "type": "object",
+      "required": ["status", "summary"],
+      "additionalProperties": false,
+      "properties": {
+        "status": {
+          "type": "string",
+          "enum": ["success", "partial", "failed", "no_pack_clean", "reply_blocked"],
+          "description": "Terminal run status"
+        },
+        "summary": {
+          "type": "string",
+          "minLength": 1
+        },
+        "total_actions": { "type": "integer", "minimum": 0 },
+        "errors": { "type": "integer", "minimum": 0 },
+        "warnings": { "type": "integer", "minimum": 0 }
+      }
+    }
+  },
+  "$defs": {
+    "terminal_entry": {
+      "type": "object",
+      "required": ["entity_id", "state"],
+      "additionalProperties": false,
+      "properties": {
+        "entity_id": {
+          "type": "string",
+          "description": "Catalog entity ID"
+        },
+        "state": {
+          "type": "string",
+          "enum": [
+            "unchanged",
+            "discovered",
+            "activated",
+            "updated",
+            "synced",
+            "analyzed",
+            "related",
+            "packaged",
+            "evaluated",
+            "published",
+            "promoted",
+            "rejected",
+            "superseded",
+            "deprecated",
+            "blocked",
+            "broken",
+            "removed",
+            "skipped",
+            "error",
+            "no_pack_clean",
+            "reply_blocked",
+            "draft",
+            "dry_run",
+            "duplicate",
+            "posted",
+            "held_for_review",
+            "no_action"
+          ]
+        },
+        "detail": { "type": "string" },
+        "error_code": { "type": "string" },
+        "paths": {
+          "type": "array",
+          "items": { "type": "string", "minLength": 1 },
+          "uniqueItems": true
+        }
+      }
+    }
+  }
+}

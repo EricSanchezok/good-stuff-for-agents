@@ -1,0 +1,64 @@
+{
+  "assessed_at": "2026-07-27T22:01:30.839Z",
+  "assessed_by_run": "run_2026-07-28-v3",
+  "assessment_digest": "sha256:3df33f7ae071391e2ccd5faf655bb96817f1b2f2c61243c09720d467bcab103c",
+  "assessment_id": "asm_n4_9720d467bcab103c",
+  "classification": {
+    "criteria": [
+      {
+        "criterion_id": "contract-question-extraction",
+        "status": "unsatisfied",
+        "text": "Extract contract questions from plans or codebases."
+      },
+      {
+        "criterion_id": "agreement-matrix",
+        "status": "unsatisfied",
+        "text": "Track pending, agreed, conflicting, and superseded contract items."
+      },
+      {
+        "criterion_id": "schema-comparison",
+        "status": "unsatisfied",
+        "text": "Compare schemas and semantics and surface incompatibilities."
+      },
+      {
+        "criterion_id": "durable-verification",
+        "status": "unsatisfied",
+        "text": "Record the durable contract and verify both implementations against it."
+      }
+    ],
+    "kind": "skill_request"
+  },
+  "content_digest": "sha256:e09abef11667aa246aa9dd4a4fff29341265841c5141319c803292cf537eb3b2",
+  "fulfillment_state": "not_started",
+  "gap_criteria": [
+    {
+      "criterion_id": "contract-question-extraction",
+      "text": "Extract contract questions from plans or codebases."
+    },
+    {
+      "criterion_id": "agreement-matrix",
+      "text": "Track pending, agreed, conflicting, and superseded contract items."
+    },
+    {
+      "criterion_id": "schema-comparison",
+      "text": "Compare schemas and semantics and surface incompatibilities."
+    },
+    {
+      "criterion_id": "durable-verification",
+      "text": "Record the durable contract and verify both implementations against it."
+    }
+  ],
+  "issue_number": 4,
+  "issue_title": "Looking for skills to coordinate an API contract between independent agent sessions",
+  "notes": "No current canonical evidence covers independent API-contract coordination.",
+  "public_evidence": {
+    "boundary": "Published catalog skills and packs only",
+    "related_entities": []
+  },
+  "repository": {
+    "owner": "EricSanchezok",
+    "repo": "good-stuff-for-agents"
+  },
+  "schema_version": 1,
+  "updated_at_bound": "2026-07-21T11:44:13Z"
+}

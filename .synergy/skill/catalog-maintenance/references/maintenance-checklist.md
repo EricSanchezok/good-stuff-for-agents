@@ -5,16 +5,15 @@ Use this checklist only for deterministic catalog maintenance. If the run needs 
 Run order:
 
 1. Check `git status --short --branch`.
-2. Validate catalog strictly.
-3. Apply catalog migrations only when schema versions require it.
-4. Sync approved `active` and `preview` sources, independently per source.
-5. Build indexes.
-6. Render public pages from valid catalog data.
-7. Run docs drift check.
-8. Run public link check.
-9. Run public-boundary scan when public pages changed.
-10. Report catalog health and source sync results.
-11. Commit/push only if the user or approved automation explicitly authorized a maintenance-only git action.
+2. Validate the current canonical schemas strictly; legacy records fail rather than migrate in place.
+3. Sync approved `active` and `preview` sources, independently per source.
+4. Build indexes.
+5. Render public pages from valid catalog data.
+6. Run docs drift check.
+7. Run public link check.
+8. Run public-boundary scan when public pages changed.
+9. Report catalog health and source sync results.
+10. Leave Git unchanged unless a separately trusted controller acts on explicit authorization.
 
 Exit codes: 0 green, 1 non-fatal source failures, 2 fatal invariant failure.
 

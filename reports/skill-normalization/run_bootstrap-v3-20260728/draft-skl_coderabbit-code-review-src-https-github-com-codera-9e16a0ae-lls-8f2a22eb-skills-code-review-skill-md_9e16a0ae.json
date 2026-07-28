@@ -1,0 +1,66 @@
+{
+  "decision": "new",
+  "draft": {
+    "analysis": {
+      "hash": null,
+      "path": "catalog/analyses/co/skl_coderabbit-code-review-src-https-github-com-codera-9e16a0ae-lls-8f2a22eb-skills-code-review-skill-md_9e16a0ae.md"
+    },
+    "canonical_name": "coderabbit-code-review",
+    "canonical_skill_id": "skl_coderabbit-code-review-src-https-github-com-codera-9e16a0ae-lls-8f2a22eb-skills-code-review-skill-md_9e16a0ae",
+    "capabilities": {
+      "atomic_capabilities": [],
+      "domains": [],
+      "task_types": [],
+      "workflow_stages": []
+    },
+    "curation": {
+      "notes": []
+    },
+    "display_name": "CodeRabbit Code Review",
+    "identity": {
+      "aliases": [],
+      "current_version_id": "git_sha1:d9fc3f304df4785725febc3050dab2f390874f99",
+      "source_skill_ids": [
+        "cand_src-https-github-com-coderabbitai-skills-coderabbit-skills-8f2a22eb-skills-code-review-skill-md_659b3c88"
+      ]
+    },
+    "interfaces": {
+      "handoff_outputs": [],
+      "inputs": [],
+      "outputs": []
+    },
+    "quality": {
+      "confidence": "unknown",
+      "score": null
+    },
+    "relations": {
+      "complements": [],
+      "conflicts": [],
+      "duplicates": []
+    },
+    "risk": {
+      "risk_surfaces": [],
+      "side_effect_level": "none"
+    },
+    "source": {
+      "license": {
+        "evidence": "LICENSE file in repo root; README states MIT",
+        "spdx": "MIT",
+        "verified": true
+      },
+      "path": "skills/code-review/SKILL.md",
+      "source_id": "src_https-github-com-coderabbitai-skills-coderabbit-skills_8f2a22eb",
+      "upstream_ref": "c61c4908d36dda6fb08a343cc8b19c59fbb47de3",
+      "url": "https://raw.githubusercontent.com/coderabbitai/skills/c61c4908d36dda6fb08a343cc8b19c59fbb47de3/skills/code-review/SKILL.md"
+    },
+    "status": "active",
+    "tools": {
+      "optional": [],
+      "required": []
+    }
+  },
+  "finalize_digest": "sha256:40d5712732f89b007d8adee282e6ef35ec5f20fce0288d140d7d0ea8c0a510e6",
+  "item_digest": "sha256:cad9fb2d9fb38c86d09f70e39fac8da8a7666ba4201611dc8d06b58886c49740",
+  "reason": "The pinned artifact defines a distinct CodeRabbit CLI review workflow that scopes changed code, groups findings by severity, and supports iterative review and repair without conflating it with generic code review.",
+  "schema_version": 1
+}

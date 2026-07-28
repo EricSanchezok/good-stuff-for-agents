@@ -19,7 +19,7 @@ Exit with code 2 and do not publish or commit when:
 
 - strict validation still fails after the bounded structural repair path;
 - repair would require inferring missing semantic fields;
-- migration fails;
+- a legacy or unsupported schema is present;
 - a canonical write is incomplete;
 - docs drift remains after render repair;
 - link check fails for generated internal links after repair;

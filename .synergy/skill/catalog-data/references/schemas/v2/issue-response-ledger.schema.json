@@ -1,0 +1,105 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Issue Response Ledger",
+  "description": "A deduplicated record of one restricted factual GitHub Issue response decision.",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "response_id",
+    "assessment_id",
+    "assessment_digest",
+    "repository",
+    "issue_number",
+    "template_version",
+    "response_state",
+    "comment_id",
+    "dedup_fingerprint",
+    "toctou_state",
+    "created_at",
+    "created_by_run"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": { "const": 1 },
+    "response_id": {
+      "type": "string",
+      "pattern": "^rsp_"
+    },
+    "assessment_id": {
+      "type": "string",
+      "pattern": "^asm_"
+    },
+    "assessment_digest": {
+      "type": "string",
+      "pattern": "^sha256:[a-f0-9]{64}$"
+    },
+    "repository": {
+      "const": "EricSanchezok/good-stuff-for-agents"
+    },
+    "issue_number": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "template_version": {
+      "type": "string",
+      "pattern": "^issue-factual-v[0-9]+$"
+    },
+    "response_state": {
+      "type": "string",
+      "enum": [
+        "draft",
+        "posted",
+        "posted_confirmed",
+        "held_for_review",
+        "blocked",
+        "superseded",
+        "no_action",
+        "reply_blocked"
+      ]
+    },
+    "comment_id": {
+      "type": ["integer", "null"],
+      "minimum": 1
+    },
+    "dedup_fingerprint": {
+      "type": "string",
+      "pattern": "^sha256:[a-f0-9]{64}$"
+    },
+    "toctou_state": {
+      "type": "object",
+      "required": ["checked_at", "issue_updated_at", "staleness", "bound_digest", "current_digest"],
+      "additionalProperties": false,
+      "properties": {
+        "checked_at": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "issue_updated_at": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "staleness": {
+          "type": "string",
+          "enum": ["current", "stale_response", "stale_issue", "unknown"]
+        },
+        "bound_digest": {
+          "type": "string",
+          "pattern": "^sha256:[a-f0-9]{64}$"
+        },
+        "current_digest": {
+          "type": ["string", "null"],
+          "pattern": "^sha256:[a-f0-9]{64}$"
+        }
+      }
+    },
+    "created_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "created_by_run": {
+      "type": "string",
+      "pattern": "^run_"
+    },
+    "notes": { "type": "string", "maxLength": 4096 }
+  }
+}

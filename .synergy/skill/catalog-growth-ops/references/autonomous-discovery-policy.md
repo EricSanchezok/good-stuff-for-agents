@@ -1,57 +1,83 @@
-# Autonomous Discovery Policy
+# Target-Gap Discovery Policy
 
-Use this policy when running discovery within a growth run. Do not ask the user for targets, counts, themes, or domains. Do not assume any particular domain is more important than others.
+Use this policy only after a current immutable intent's minimal evidence bundle identifies a concrete source-evidence gap. Discovery is not a default Nightly phase and never creates or changes an intent.
 
-## Discovery strategy: two channels in rotation
+## Entry Conditions
 
-### Channel A: Awesome-list reverse-index
+Discovery may begin only when all conditions are true:
 
-- Take awesome-list sources from the catalog
-- Crawl linked projects (30–50 per round)
-- A linked project is a source candidate if it has ANY skill signal
-- Target: 3–8 new independent source candidates per round
-- Do NOT skip projects in non-engineering domains
+- the controller supplied the intent in the immutable prepared context;
+- current canonical records and approved snapshots cannot satisfy a named evidence need;
+- the missing item has an owner and is necessary to decide one candidate;
+- the search can be bounded by query count, result count, and source activation count;
+- a repeated target failure fingerprint does not already prove the same search futile.
 
-### Channel B: Domain-concept search
+If any condition fails, return the exact gap or `no_pack_clean` instead of searching broadly.
 
-- Use demand scan policy to pick 1–2 under-covered areas
-- Generate search queries for those areas using domain concepts + agent/skill language
-- Inspect 10–20 results per area
-- Target: 2–5 new source candidates per area
+## Search Brief
 
-### Rotation
+Write a brief before searching:
 
-Alternate between channels across rounds so you don't repeatedly search the same surface. For example: A, B, B, A, B, B, A...
+| Field | Requirement |
+|---|---|
+| Intent | Exact prepared intent ID and binding |
+| Missing evidence | Capability, artifact, analysis input, or relation endpoint needed |
+| Consumer | Owner phase that will use the result |
+| Current evidence | Canonical records already checked |
+| Search boundary | Channels, queries, results, and time budget |
+| Stop condition | Evidence found, policy block, repeated fingerprint, or budget exhausted |
 
-## Source quality
+## Channels
 
-PREFER:
+Choose the narrowest channel that can resolve the gap:
 
-- Public GitHub URL or accessible docs site
-- Any form of skill-like content (structured or semi-structured)
-- Any license signal (record it; don't block on it at discovery time)
-- Maintained activity (updated in the last 12 months)
-- Sources in areas with low catalog coverage
+- **Approved-source inspection:** inspect target-relevant paths in an already approved source.
+- **Known-lead inspection:** inspect a bounded public lead previously recorded under policy.
+- **Reverse index:** follow a small number of relevant links from an approved directory source.
+- **Domain-concept search:** use the target domain's language to find public skill-like artifacts.
 
-AVOID:
+Do not rotate channels for coverage's sake. Change channels only when the current one cannot resolve the same documented gap within budget.
 
-- Pure awesome-lists or link directories (these are Channel A fuel, not sources)
-- Sources where ALL skills are duplicates per pre-ingestion dedup
-- Sources with private access or credential requirements
-- Sources with explicitly forbidden redistribution
+## Default Limits
 
-Do NOT avoid a source just because its domain is unfamiliar or non-technical.
+Unless the controller sets a smaller budget:
 
-## Batch limits
+- inspect no more than 10 queries total for one intent;
+- inspect no more than 20 results total;
+- activate no more than 3 target-relevant sources;
+- extract no more than 50 candidates from any one source batch;
+- stop as soon as the minimum evidence bundle can proceed.
 
-Per round:
+These are ceilings, not quotas. Finding one sufficient source is better than filling the batch.
 
-- Maximum 3–5 newly activated sources
-- No source that would produce > 50 raw candidates in one round (split into batches)
-- Agent chooses the exact count from evidence quality; do not ask the user
+## Source Decisions
 
-## Evidence to record
+A discovered source remains a lead until `source-discovery` qualifies it and `source-activation-policy.md` permits activation. Prefer public, maintained, parseable sources with clear provenance and license evidence. Block private, credentialed, sensitive, unsupported, or legally unclear sources.
 
-For each accepted source: channel used, search query, URL, license signal, parseability level, dedup result summary, activity signal, and activation rationale.
+Activation does not establish skill quality. Sync, extraction, normalization, analysis, and relation owners must produce the canonical evidence needed by the target.
 
-For each rejected source: URL, rejection reason, and evidence checked.
+## Evidence To Record
+
+For every inspected lead, record:
+
+- intent and exact gap binding;
+- channel and query or parent lead;
+- URL and public-access result;
+- provenance and license signal;
+- parseability and supported-sync result;
+- duplicate check;
+- decision and reason;
+- downstream owner and produced evidence paths, if accepted.
+
+Unrelated discoveries do not become current-run work. Do not broaden extraction, analysis, or relation review beyond the target bundle.
+
+## Terminal Results
+
+Discovery ends with one of:
+
+- `evidence_found` — the owning phases can complete the minimum bundle;
+- `blocked_policy` — license, access, safety, or tooling prevents use;
+- `insufficient_evidence` — the bounded search found no adequate source;
+- `skipped_repeat` — the same target gap and fingerprint already failed.
+
+For any non-success terminal, return a stable failure fingerprint and the smallest next-owner action. A clean `insufficient_evidence` result may lead to `no_pack_clean`.

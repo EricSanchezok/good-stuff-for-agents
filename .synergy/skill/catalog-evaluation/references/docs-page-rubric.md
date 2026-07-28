@@ -1,14 +1,15 @@
 # Docs Page Rubric
 
-Public pages should be useful, navigable, and safe for visitors.
+Public-page readiness is a separate review of rendered visitor-facing output. It does not change the Pack decision or repair catalog records.
 
-Check that each page has:
+A ready page:
 
-- clear status labels for preview, stale, deprecated, removed, or blocked content when those labels help visitors;
-- no candidate-only pack content;
-- links that resolve inside the repo;
-- public summaries that avoid license-prohibited raw mirrors;
-- human-readable provenance when it helps users judge reuse;
-- no internal maintenance details or hidden metadata.
+- presents only promoted catalog content;
+- explains the Pack's intent, members, DAG route, conditions, and outcomes in visitor-friendly language;
+- makes alternatives, conflicts, warnings, and status limitations visible when they affect selection or use;
+- links to valid public catalog destinations;
+- uses human-readable provenance without exposing restricted raw mirrors;
+- contains no internal workflow mechanics, controller fields, hashes, hidden metadata, proof details, or automation instructions;
+- traces every public claim to approved catalog records.
 
-Docs quality is evaluated after rendering; schema validation still belongs to catalog-data.
+Score page readiness only after rendering. Schema validation belongs to `catalog-data`; rendering and link repair belong to `catalog-publishing`. A page failure cannot be hidden by a passing Pack evaluation.

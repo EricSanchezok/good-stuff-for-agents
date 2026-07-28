@@ -1,0 +1,80 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Nightly Run Summary v3",
+  "description": "Deterministic machine-readable summary rendered only from the immutable run context, terminal ledger, final gate, and resolved targets.",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "run_id",
+    "ledger_id",
+    "context_digest",
+    "ledger_digest",
+    "timestamp",
+    "run_outcome",
+    "gate",
+    "intents",
+    "outcome_counts"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": { "const": 3 },
+    "run_id": { "type": "string", "pattern": "^run_" },
+    "ledger_id": { "type": "string", "pattern": "^ldg_" },
+    "context_digest": { "type": "string", "pattern": "^[a-f0-9]{64}$" },
+    "ledger_digest": { "type": "string", "pattern": "^[a-f0-9]{64}$" },
+    "timestamp": { "type": "string", "format": "date-time" },
+    "run_outcome": {
+      "type": "object",
+      "required": ["status", "summary", "total_actions", "errors", "warnings"],
+      "additionalProperties": false,
+      "properties": {
+        "status": { "type": "string", "enum": ["success", "partial", "failed", "no_pack_clean", "reply_blocked"] },
+        "summary": { "type": "string", "minLength": 1 },
+        "total_actions": { "type": "integer", "minimum": 0 },
+        "errors": { "type": "integer", "minimum": 0 },
+        "warnings": { "type": "integer", "minimum": 0 }
+      }
+    },
+    "gate": {
+      "type": "object",
+      "required": ["gate_id", "decision", "passed", "errors", "warnings"],
+      "additionalProperties": false,
+      "properties": {
+        "gate_id": { "type": "string", "minLength": 1 },
+        "decision": { "type": "string", "enum": ["pass", "fail"] },
+        "passed": { "type": "boolean" },
+        "errors": { "type": "array", "items": { "type": "string" } },
+        "warnings": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "intents": {
+      "type": "array",
+      "maxItems": 2,
+      "items": {
+        "type": "object",
+        "required": ["domain", "source", "reason", "score", "seed_skill_ids", "max_analysis_budget"],
+        "additionalProperties": false,
+        "properties": {
+          "domain": { "type": "string", "minLength": 1 },
+          "source": { "type": "string", "minLength": 1 },
+          "reason": { "type": "string", "minLength": 1 },
+          "score": { "type": "number", "minimum": 0, "maximum": 1 },
+          "seed_skill_ids": { "type": "array", "items": { "type": "string", "pattern": "^skl_" } },
+          "max_analysis_budget": { "type": "integer", "minimum": 0 }
+        }
+      }
+    },
+    "outcome_counts": {
+      "type": "object",
+      "required": ["sources", "skills", "relations", "packs", "issues"],
+      "additionalProperties": false,
+      "properties": {
+        "sources": { "type": "integer", "minimum": 0 },
+        "skills": { "type": "integer", "minimum": 0 },
+        "relations": { "type": "integer", "minimum": 0 },
+        "packs": { "type": "integer", "minimum": 0 },
+        "issues": { "type": "integer", "minimum": 0 }
+      }
+    }
+  }
+}

@@ -1,6 +1,6 @@
 ---
 name: catalog-data
-description: Own canonical catalog data writes, schemas, validation, formatting, migrations, indexes, hashes, and impact checks for the Skill Intelligence Catalog.
+description: Own canonical catalog data writes, schemas, validation, formatting, indexes, hashes, and impact checks for the Skill Intelligence Catalog.
 ---
 
 # Catalog Data Integrity SOP
@@ -23,7 +23,7 @@ You do not decide whether a source is useful, whether a skill is valuable, wheth
 
 Use this skill when you need to:
 
-- validate, format, migrate, hash, or index catalog records;
+- validate, format, hash, or index current-schema catalog records;
 - write a canonical source, skill, pack, analysis, evaluation, relation, run, or state record from an agent-authored draft;
 - inspect schema contracts before another skill writes data;
 - detect mechanical impact from changed catalog records;
@@ -50,7 +50,7 @@ You must leave behind one or more of:
 
 - updated canonical catalog records;
 - formatted catalog records;
-- migration output;
+- explicit rejection evidence for unsupported legacy schemas;
 - rebuilt indexes under `catalog/indexes/`;
 - catalog hash output;
 - impact report output;
@@ -62,8 +62,7 @@ You must leave behind one or more of:
 - `references/write-contracts.md` before writing any canonical record.
 - `references/identity-rules.md` before creating or updating stable IDs.
 - `references/validation-policy.md` before interpreting validator failures.
-- `references/migration-policy.md` before changing schema versions.
-- `references/schema-authoring.md` before editing schemas.
+- `references/schema-authoring.md` before editing schemas; current production writers reject legacy versions rather than migrating them in place.
 - `../shared-references/script-policy.md` before adding or exposing a helper.
 
 ## Helper Scripts You May Call
@@ -72,7 +71,6 @@ You must leave behind one or more of:
 |---|---|---|---|---|---|
 | `scripts/validate-catalog.mjs` | Validate catalog structure and schema | Existing catalog files; use `--strict` for release checks | JSON/text validation result | Block on errors | `npm --prefix .synergy run catalog:validate` |
 | `scripts/format-catalog.mjs` | Normalize YAML/JSON formatting | Existing catalog records | Rewritten formatted records | Block on parse errors | rerun validation |
-| `scripts/migrate-catalog.mjs` | Apply known schema migrations | Existing catalog records | Migrated records and report | Block if migration is unknown | rerun validation |
 | `scripts/build-indexes.mjs` | Rebuild deterministic indexes | Valid catalog records | `catalog/indexes/**` | Block on invalid records | `npm --prefix .synergy run catalog:index` |
 | `scripts/compute-catalog-hash.mjs` | Compute catalog content hash | Valid catalog records | hash JSON/text | Diagnostic only | compare with manifest when needed |
 | `scripts/detect-impact.mjs` | Report mechanical downstream impact | Changed catalog records | impact report | Diagnostic only unless release-blocking | inspect report |
@@ -86,7 +84,7 @@ You must leave behind one or more of:
 | `scripts/append-relation.mjs` | Append reviewed relation edge | Complete relation draft | JSONL relation edge | Block on missing endpoints | validation |
 | `scripts/write-pack-record.mjs` | Write one candidate pack at its derived path | Semantic candidate draft without destination controls | Candidate YAML pack record | Reject published status, bucket/path, timestamp, or promotion controls | validation |
 | `scripts/write-evaluation.mjs` | Write one controller-bound candidate evaluation | Controller envelope with current pack binding and semantic evaluation draft | Candidate evaluation JSON | Reject direct drafts, stale/replayed bindings, and destination controls | validation |
-| `scripts/promote-pack-candidates.mjs` | Solely create published packs after deterministic eligibility checks | Existing candidate records and evaluations | promoted pack records | Skip candidates below `0.78`, with non-passing evaluation, fewer than two eligible members, or stale member versions | validation and publish checks |
+| `scripts/promote-pack-candidates.mjs` | Solely create published packs after deterministic eligibility checks | Pack v3 candidate, current proof, and independent Evaluation v2 | published pack plus copied proof/evaluation; candidate removed | Skip non-passing, stale-proof, ineligible-member, or stale-version candidates | validation and publish checks |
 | `scripts/append-run-event.mjs` | Append run event | Run event draft | JSONL event | Warn and continue for non-critical event logs | validation |
 
 ## Workflow
@@ -108,7 +106,7 @@ Good catalog-data work is boring, deterministic, and auditable. IDs are stable, 
 - Do not hand-edit canonical YAML or JSONL records when a writer exists.
 - Do not create placeholder records to make the catalog look populated.
 - Do not infer semantic fields from filenames when the owning skill has not supplied them.
-- Do not hide validation failures by changing schemas without a migration rationale.
+- Do not hide validation failures by accepting or translating unsupported legacy schemas.
 - Do not keep helpers whose names imply judgment they do not perform.
 
 ## Failure Handling
@@ -116,7 +114,7 @@ Good catalog-data work is boring, deterministic, and auditable. IDs are stable, 
 - If a draft is missing required semantic fields, block and return it to the owning skill.
 - If a stable ID collides, inspect identity rules and existing records before writing.
 - If validation fails after a write, fix the draft or writer and rerun strict validation. For pre-existing malformed canonical data, use a narrow recovery helper only when complete evidence preserves meaning; never parse around damage and guess the missing record.
-- If a migration is needed, write the migration path first and validate before touching unrelated records.
+- If a legacy record is encountered, reject it and regenerate or rewrite it through the current canonical owner workflow; do not add an in-place compatibility path.
 - If only some records in a batch fail, write successful deterministic outputs only when the helper supports partial reporting and you can name skipped records.
 
 ## Verification
@@ -130,11 +128,13 @@ npm --prefix .synergy run catalog:hash
 npm --prefix .synergy run catalog:impact
 ```
 
-For release-ready changes, run the full project check:
+For a release-ready Nightly run, the controller invokes the canonical final gate exactly once after all owner stages complete:
 
 ```bash
-npm --prefix .synergy run check
+npm --prefix .synergy run nightly:final-gate -- --prefix .synergy --run-id <run-id> --context-digest <prepare-run-digest>
 ```
+
+Do not add or invoke a parallel aggregate check path.
 
 ## Handoff
 

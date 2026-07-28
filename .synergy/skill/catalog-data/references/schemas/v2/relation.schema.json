@@ -1,0 +1,201 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Relation Record v2",
+  "description": "Stable relation record with exact-pair binding for chains_with. Strengthens is informational, not a required handoff. Alternatives and conflicts carry disposition inputs.",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "relation_id",
+    "predicate",
+    "weight",
+    "evidence",
+    "created_at",
+    "created_by_run"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": { "const": 2 },
+    "relation_id": {
+      "type": "string",
+      "pattern": "^rel_",
+      "description": "Stable unique relation identifier"
+    },
+    "predicate": {
+      "type": "string",
+      "enum": ["chains_with", "strengthens", "alternatives", "conflicts_with"],
+      "description": "Relation predicate type"
+    },
+    "subject": {
+      "type": "string",
+      "description": "Subject entity ID (skill_id)"
+    },
+    "object": {
+      "type": "string",
+      "description": "Object entity ID (skill_id)"
+    },
+    "weight": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1
+    },
+    "evidence": {
+      "type": "string",
+      "description": "Evidence backing this relation"
+    },
+    "created_at": {
+      "type": "string",
+      "description": "ISO 8601 timestamp"
+    },
+    "created_by_run": {
+      "type": "string",
+      "description": "Run ID that produced this relation"
+    },
+    "chains_with": {
+      "type": "object",
+      "description": "Exact-pair chains_with binding. Only valid when predicate is chains_with.",
+      "required": [
+        "producer_skill",
+        "consumer_skill",
+        "producer_claim_id",
+        "consumer_claim_id",
+        "direction"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "producer_skill": {
+          "type": "string",
+          "description": "Upstream skill ID"
+        },
+        "consumer_skill": {
+          "type": "string",
+          "description": "Downstream skill ID"
+        },
+        "producer_claim_id": {
+          "type": "string",
+          "description": "Claim ID from producer's analysis that produces the artifact"
+        },
+        "consumer_claim_id": {
+          "type": "string",
+          "description": "Claim ID from consumer's analysis that requires the artifact"
+        },
+        "direction": {
+          "type": "string",
+          "enum": ["sequential", "fan_in", "fan_out", "conditional"],
+          "description": "Topology semantics of the chain"
+        },
+        "description": {
+          "type": "string",
+          "description": "Human-readable description of the chain"
+        }
+      }
+    },
+    "strengthens": {
+      "type": "object",
+      "description": "Informational strengthens relation. Not a required handoff. Only valid when predicate is strengthens.",
+      "required": ["strengthening_skill", "strengthened_skill", "reason"],
+      "additionalProperties": false,
+      "properties": {
+        "strengthening_skill": {
+          "type": "string",
+          "description": "Skill that provides the strengthening"
+        },
+        "strengthened_skill": {
+          "type": "string",
+          "description": "Skill being strengthened"
+        },
+        "reason": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Why this strengthening relationship exists"
+        },
+        "is_required_handoff": {
+          "type": "boolean",
+          "default": false,
+          "description": "Must be false — strengthens is never a required handoff"
+        }
+      }
+    },
+    "alternatives": {
+      "type": "object",
+      "description": "Disposition inputs for alternative skills. Only valid when predicate is alternatives.",
+      "required": ["candidate_a", "candidate_b", "disposition"],
+      "additionalProperties": false,
+      "properties": {
+        "candidate_a": {
+          "type": "string",
+          "description": "First skill in the alternative pair"
+        },
+        "candidate_b": {
+          "type": "string",
+          "description": "Second skill in the alternative pair"
+        },
+        "disposition": {
+          "type": "string",
+          "enum": ["prefer_a", "prefer_b", "contextual", "undecided"],
+          "description": "Disposition recommendation"
+        },
+        "context_note": {
+          "type": "string"
+        }
+      }
+    },
+    "conflicts_with": {
+      "type": "object",
+      "description": "Disposition inputs for conflicting skills. Only valid when predicate is conflicts_with.",
+      "required": ["skill_a", "skill_b", "disposition"],
+      "additionalProperties": false,
+      "properties": {
+        "skill_a": {
+          "type": "string",
+          "description": "First conflicting skill"
+        },
+        "skill_b": {
+          "type": "string",
+          "description": "Second conflicting skill"
+        },
+        "disposition": {
+          "type": "string",
+          "enum": ["mutually_exclusive", "avoid_a", "avoid_b", "conditional_separation", "undecided"],
+          "description": "Conflict disposition"
+        },
+        "mitigation_note": {
+          "type": "string"
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": { "predicate": { "const": "chains_with" } }
+      },
+      "then": {
+        "required": ["chains_with"]
+      }
+    },
+    {
+      "if": {
+        "properties": { "predicate": { "const": "strengthens" } }
+      },
+      "then": {
+        "required": ["strengthens"]
+      }
+    },
+    {
+      "if": {
+        "properties": { "predicate": { "const": "alternatives" } }
+      },
+      "then": {
+        "required": ["alternatives"]
+      }
+    },
+    {
+      "if": {
+        "properties": { "predicate": { "const": "conflicts_with" } }
+      },
+      "then": {
+        "required": ["conflicts_with"]
+      }
+    }
+  ]
+}

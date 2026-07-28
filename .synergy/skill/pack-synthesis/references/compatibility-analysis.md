@@ -1,24 +1,33 @@
 # Compatibility Analysis
 
-Before writing a candidate pack, analyze compatibility across:
+Compatibility asks a stricter question than whether two skills seem complementary: can the graph move a concrete artifact between them under their documented claims, preconditions, tools, permissions, and failure boundaries?
 
-- workflow order and handoff outputs;
-- input/output formats;
-- required tools and permission levels;
-- side effects and approval boundaries;
-- license and source confidence;
-- relation graph: `chains_with` (sequential handoffs), `strengthens` (quality gates), `alternatives` (choose one), `conflicts_with` (cannot coexist);
-- version freshness.
+## Required Transfers
 
-Record compatibility in the pack record:
+For each required edge, inspect the upstream Analysis v2 `produces` claims and downstream `requires.required` claims. Cite a Relation v2 `chains_with` record that binds the exact producer skill and claim ID to the exact consumer skill and claim ID. Confirm that the relation direction matches `sequential`, `fan_out`, `fan_in`, or `conditional` use in the DAG.
 
-- `compatibility.chains` — sequential handoffs that define the pack's natural order;
-- `compatibility.strengthens` — quality gates and cross-checking that raise output quality;
-- `compatibility.alternatives` — deliberate redundancy or functional overlap that is intentional and documented;
-- `compatibility.conflicts` — conflicts and mitigation/exclusion decisions.
+The Pack edge should describe the same artifact in operational language: what is produced and how it is consumed. A relation ID without a resolving claim pair is not handoff evidence. A downstream optional requirement cannot be promoted to a required input merely because the workflow needs it.
 
-Unresolved high-severity conflicts should prevent a pack from being eligible for evaluation passing.
+## Fan-Out And Fan-In
 
-## Relation Edges vs. Artifact Compatibility
+A fan-out is compatible only when each outgoing branch can consume the artifact or decision it receives. Check every producer/consumer pair separately and retain branch-specific evidence.
 
-Relation edges (`chains_with`, `strengthens` etc.) inform intent discovery and stage ordering. They do not prove artifact-level compatibility. Verify handoffs against actual skill records and analyses — do not assume two skills are compatible just because a relation edge exists between them. In contract preflight, every adjacent handoff must be verified by inspecting the member skills' input/output contracts, not by re-quoting the relation edge.
+A fan-in is compatible only when the receiving node can accept every incoming artifact and has a defined way to combine them. Identify the contribution from each branch, the merge strategy, and any ordering or concurrency constraint. Evidence for one input does not cover its siblings.
+
+## Quality Improvement Is Not Dependency
+
+`strengthens` records a quality gain, review, or corroborating effect. Keep it in `compatibility.strengthens` with a disposition that explains the benefit. Never use it to close a required route, replace a missing consumer requirement, or justify an artifact transfer.
+
+## Preconditions And Warnings
+
+Trace member preconditions into graph entry contracts, node conditions, or upstream preparation. Check refusal claims, tool constraints, permissions, side effects, license limits, and source confidence before combining members.
+
+Known failure warnings remain live through synthesis. Add mitigation where the Pack can reduce risk, then hand the warning claim IDs to evaluation for explicit disposition. Silence is not acceptance.
+
+## Alternatives And Conflicts
+
+Record relevant alternatives and conflicts with their Pack-specific dispositions. Compatibility is not established while a behavior-changing alternative is undecided or an included conflict lacks verified conditional separation or mitigation.
+
+## Freshness
+
+All members pin current versions, and cited analyses and relations must describe those versions and the current graph. Any proof-bound change requires the candidate to be written again so its preflight proof reflects the new evidence set.

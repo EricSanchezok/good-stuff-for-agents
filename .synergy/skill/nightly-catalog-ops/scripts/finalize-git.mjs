@@ -19,6 +19,7 @@ try {
   const plan = createFinalizationPlan({
     summary: summaryDocument.value,
     summaryPath: options.summary,
+    summarySha256: summaryDocument.sha256,
     summaryArtifact: artifactState(options.summary, repositoryState),
     manifest: manifestDocument.value,
     manifestPath: options.touchedPaths,
@@ -43,7 +44,7 @@ try {
   }
   const stream = plan.ready_for_trusted_controller_review ? process.stdout : process.stderr
   stream.write(`${JSON.stringify(output, null, 2)}\n`)
-  process.exit(plan.ready_for_trusted_controller_review ? 0 : 2)
+  process.exitCode = plan.ready_for_trusted_controller_review ? 0 : 2
 } catch (error) {
   process.stderr.write(`nightly-git-audit-error: ${error.message}\n`)
   process.exit(2)

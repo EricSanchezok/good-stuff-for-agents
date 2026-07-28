@@ -1,0 +1,16 @@
+{
+  "binding": {
+    "canonical_skill_id": "skl_coderabbit-code-review-src-https-github-com-codera-9e16a0ae-lls-8f2a22eb-skills-code-review-skill-md_9e16a0ae",
+    "current_version_id": "git_sha1:d9fc3f304df4785725febc3050dab2f390874f99",
+    "expected_output_path": "catalog/analyses/co/skl_coderabbit-code-review-src-https-github-com-codera-9e16a0ae-lls-8f2a22eb-skills-code-review-skill-md_9e16a0ae.md",
+    "git_blob_oid": "git_sha1:d9fc3f304df4785725febc3050dab2f390874f99",
+    "pinned_commit": "c61c4908d36dda6fb08a343cc8b19c59fbb47de3",
+    "raw_url": "https://raw.githubusercontent.com/coderabbitai/skills/c61c4908d36dda6fb08a343cc8b19c59fbb47de3/skills/code-review/SKILL.md",
+    "remote_path": "skills/code-review/SKILL.md",
+    "source_id": "src_https-github-com-coderabbitai-skills-coderabbit-skills_8f2a22eb"
+  },
+  "dispatch_digest": "sha256:9ecd51e715a50f0e25071e7aa7d3eb59c3401e7ddbcd32eab3653ae3823be2f1",
+  "kind": "skill-analysis-dispatch",
+  "run_id": "run_2026-07-28-v3",
+  "schema_version": 2
+}

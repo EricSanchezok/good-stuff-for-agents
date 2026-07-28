@@ -1,0 +1,397 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Pack Record v3",
+  "description": "Pack record with explicit DAG workflow edges, entry roots, terminal sinks, member version pins, relation usage dispositions, artifact mapping, and mitigation. No inline evaluation. No v1/v2 support.",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "pack_id",
+    "name",
+    "status",
+    "intent",
+    "domain",
+    "version",
+    "members",
+    "workflow",
+    "compatibility",
+    "evidence",
+    "mitigation",
+    "artifact_mapping",
+    "created_by_run",
+    "updated_at"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": { "const": 3 },
+    "pack_id": {
+      "type": "string",
+      "pattern": "^pack_"
+    },
+    "name": {
+      "type": "string",
+      "minLength": 1
+    },
+    "status": {
+      "enum": ["candidate", "rejected", "published", "stale", "superseded", "archived"]
+    },
+    "intent": {
+      "type": "string",
+      "minLength": 1
+    },
+    "domain": {
+      "type": "string",
+      "minLength": 1
+    },
+    "version": {
+      "type": "string",
+      "minLength": 1
+    },
+    "description": {
+      "type": "string"
+    },
+    "members": {
+      "type": "array",
+      "minItems": 2,
+      "items": {
+        "type": "object",
+        "required": ["skill_id", "version_id", "role"],
+        "additionalProperties": false,
+        "properties": {
+          "skill_id": {
+            "type": "string",
+            "pattern": "^skl_"
+          },
+          "version_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "role": {
+            "type": "string",
+            "minLength": 1
+          },
+          "inclusion_reason": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "excluded": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["skill_id", "reason"],
+        "additionalProperties": false,
+        "properties": {
+          "skill_id": { "type": "string", "pattern": "^skl_" },
+          "reason": { "type": "string", "minLength": 1 }
+        }
+      }
+    },
+    "workflow": {
+      "type": "object",
+      "description": "DAG workflow: nodes + explicit edges. Supports sequential, fan_in, fan_out, conditional.",
+      "required": ["nodes", "edges", "entry_roots", "terminal_sinks"],
+      "additionalProperties": false,
+      "properties": {
+        "nodes": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "$ref": "#/$defs/node" }
+        },
+        "edges": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/edge" }
+        },
+        "entry_roots": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "type": "string" },
+          "description": "Node IDs that serve as DAG entry points"
+        },
+        "terminal_sinks": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "type": "string" },
+          "description": "Node IDs that serve as DAG terminal sinks"
+        }
+      }
+    },
+    "compatibility": {
+      "type": "object",
+      "required": ["notes", "chains", "strengthens", "alternatives", "conflicts"],
+      "additionalProperties": false,
+      "properties": {
+        "notes": { "type": "string" },
+        "chains": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/relation_usage" }
+        },
+        "strengthens": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/relation_usage" }
+        },
+        "alternatives": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/relation_usage" }
+        },
+        "conflicts": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/relation_usage" }
+        }
+      }
+    },
+    "evidence": {
+      "type": "object",
+      "required": ["analysis_ids", "relation_ids"],
+      "additionalProperties": false,
+      "properties": {
+        "analysis_ids": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "relation_ids": {
+          "type": "array",
+          "items": { "type": "string" }
+        }
+      }
+    },
+    "mitigation": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["risk", "strategy"],
+        "additionalProperties": false,
+        "properties": {
+          "risk": { "type": "string", "minLength": 1 },
+          "strategy": { "type": "string", "minLength": 1 },
+          "contingency": { "type": "string" }
+        }
+      }
+    },
+    "artifact_mapping": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["node_id", "artifact", "description"],
+        "additionalProperties": false,
+        "properties": {
+          "node_id": { "type": "string" },
+          "claim_id": { "type": "string" },
+          "artifact": { "type": "string", "minLength": 1 },
+          "description": { "type": "string", "minLength": 1 }
+        }
+      }
+    },
+    "created_by_run": {
+      "type": "string"
+    },
+    "updated_at": {
+      "type": "string"
+    }
+  },
+  "$defs": {
+    "node": {
+      "type": "object",
+      "required": ["node_id", "type", "member_ids", "entry_contract", "output_contract"],
+      "additionalProperties": false,
+      "properties": {
+        "node_id": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Stable node identifier within the workflow DAG"
+        },
+        "type": {
+          "type": "string",
+          "enum": ["task", "decision_gate", "fan_out", "fan_in", "sequential", "conditional"],
+          "description": "Node type governing execution semantics"
+        },
+        "member_ids": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "Member skill IDs assigned to this node"
+        },
+        "label": {
+          "type": "string",
+          "description": "Human-readable label"
+        },
+        "description": {
+          "type": "string"
+        },
+        "entry_contract": {
+          "type": "object",
+          "description": "Structured entry contract declaring required claim IDs and preconditions",
+          "required": ["required_claim_ids", "precondition_claim_ids", "refusal_claim_ids", "tool_constraint_claim_ids", "description"],
+          "additionalProperties": false,
+          "properties": {
+            "required_claim_ids": {
+              "type": "array",
+              "items": { "type": "string" },
+              "description": "Claim IDs for required inputs this node needs from outside the DAG"
+            },
+            "precondition_claim_ids": {
+              "type": "array",
+              "items": { "type": "string" },
+              "description": "Claim IDs for preconditions that must hold before this node executes"
+            },
+            "refusal_claim_ids": {
+              "type": "array",
+              "items": { "type": "string" },
+              "description": "Claim IDs for refusal conditions this node acknowledges"
+            },
+            "tool_constraint_claim_ids": {
+              "type": "array",
+              "items": { "type": "string" },
+              "description": "Claim IDs for tool constraints this node must respect"
+            },
+            "description": {
+              "type": "string",
+              "minLength": 1,
+              "description": "Human-readable description of the entry contract"
+            }
+          }
+        },
+        "output_contract": {
+          "type": "object",
+          "description": "Structured output contract declaring what this node produces",
+          "required": ["produces_claim_ids", "description"],
+          "additionalProperties": false,
+          "properties": {
+            "produces_claim_ids": {
+              "type": "array",
+              "items": { "type": "string" },
+              "description": "Claim IDs for artifacts this node produces"
+            },
+            "description": {
+              "type": "string",
+              "minLength": 1,
+              "description": "Human-readable description of the output contract"
+            }
+          }
+        },
+        "condition": {
+          "type": "string",
+          "description": "For conditional/decision_gate nodes"
+        },
+        "fan_config": {
+          "type": "object",
+          "description": "Configuration for fan_out/fan_in nodes",
+          "additionalProperties": false,
+          "properties": {
+            "strategy": {
+              "type": "string",
+              "enum": ["parallel", "round_robin", "best_of", "merge"]
+            },
+            "max_concurrency": { "type": "integer", "minimum": 1 }
+          }
+        }
+      }
+    },
+    "edge": {
+      "type": "object",
+      "required": ["edge_id", "from_node", "to_node", "direction", "artifact_handoff"],
+      "additionalProperties": false,
+      "properties": {
+        "edge_id": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Stable edge identifier within the workflow DAG"
+        },
+        "from_node": {
+          "type": "string",
+          "description": "Source node ID"
+        },
+        "to_node": {
+          "type": "string",
+          "description": "Target node ID"
+        },
+        "direction": {
+          "type": "string",
+          "enum": ["sequential", "fan_in", "fan_out", "conditional"],
+          "description": "Edge topology semantics"
+        },
+        "condition": {
+          "type": "string",
+          "description": "Branch condition for conditional edges"
+        },
+        "artifact_handoff": {
+          "type": "object",
+          "description": "Exact claim-bound artifact contract for this edge",
+          "required": [
+            "relation_id",
+            "producer_skill_id",
+            "producer_claim_id",
+            "consumer_skill_id",
+            "consumer_claim_id",
+            "produced",
+            "consumed_as"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "relation_id": {
+              "type": "string",
+              "pattern": "^rel_",
+              "description": "Relation ID that back this handoff binding"
+            },
+            "producer_skill_id": {
+              "type": "string",
+              "pattern": "^skl_",
+              "description": "Upstream skill ID producing the artifact"
+            },
+            "producer_claim_id": {
+              "type": "string",
+              "pattern": "^clm_",
+              "description": "Claim ID from producer analysis for the produced artifact"
+            },
+            "consumer_skill_id": {
+              "type": "string",
+              "pattern": "^skl_",
+              "description": "Downstream skill ID consuming the artifact"
+            },
+            "consumer_claim_id": {
+              "type": "string",
+              "pattern": "^clm_",
+              "description": "Claim ID from consumer analysis for the required artifact"
+            },
+            "produced": {
+              "type": "string",
+              "minLength": 1,
+              "description": "Human-readable description of what is produced"
+            },
+            "consumed_as": {
+              "type": "string",
+              "minLength": 1,
+              "description": "Human-readable description of how it is consumed"
+            }
+          }
+        }
+      }
+    },
+    "relation_usage": {
+      "type": "object",
+      "required": ["relation_id", "state", "disposition"],
+      "additionalProperties": false,
+      "properties": {
+        "relation_id": {
+          "type": "string",
+          "pattern": "^rel_"
+        },
+        "state": {
+          "type": "string",
+          "enum": ["used", "excluded", "not_applicable"],
+          "description": "Disposition state of this relation in the pack"
+        },
+        "disposition": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Concrete disposition for how this relation is handled"
+        },
+        "claim_ids": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "Claim IDs from analyses this usage disposes"
+        },
+        "note": { "type": "string" }
+      }
+    }
+  }
+}

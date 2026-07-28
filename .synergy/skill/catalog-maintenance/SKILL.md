@@ -15,7 +15,7 @@ Treat these as scope refinements only. They do not override safety boundaries, o
 
 ## What You Own
 
-You own maintenance-only catalog upkeep. You validate the catalog, run migrations, sync sources that are already active or preview, rebuild indexes, render and check public pages, report health, and identify which owner should handle any non-maintenance follow-up.
+You own maintenance-only catalog upkeep. You validate the current canonical schemas, sync sources that are already active or preview, rebuild indexes, render and check public pages, report health, and identify which owner should handle any non-maintenance follow-up.
 
 You do not discover sources, approve sources, extract skill candidates as a judgment phase, normalize skills, write deep analysis, create relations, synthesize packs, evaluate packs, promote packs, or make curation decisions. Those are growth or phase-owner responsibilities.
 
@@ -59,7 +59,7 @@ You must leave behind:
 - `references/maintenance-checklist.md` before running the maintenance sequence.
 - `references/failure-handling.md` before deciding block vs warn-and-skip.
 - `references/permission-boundaries.md` before source fetch or git action.
-- `references/commit-policy.md` and `references/push-policy.md` only when explicitly authorized to commit or push maintenance-only changes.
+- `references/commit-policy.md` and `references/push-policy.md` when handing verified changes to a separately trusted Git controller.
 - `../shared-references/script-policy.md` before adding or exposing helpers.
 
 ## Helper Scripts You May Call
@@ -79,7 +79,7 @@ You must leave behind:
 1. **Confirm maintenance-only scope.** You state that you are not doing discovery, curation, analysis, pack work, or evaluation. If the user asked for growth or total automation, hand off to `catalog-growth-ops` or `nightly-catalog-ops`.
 2. **Check the working tree.** You inspect `git status --short --branch`. Preserve unrelated user changes and avoid committing unless explicitly authorized.
 3. **Run strict validation.** Classify failures as reversible structural damage or semantic ambiguity. For reversible, meaning-preserving damage with complete evidence, hand off to a narrow `catalog-data` repair helper and retry validation at most twice. Block immediately when repair would require guessing semantic fields.
-4. **Run migrations only when needed.** You apply known schema migrations and validate afterward.
+4. **Reject legacy schemas.** Current production schemas are the only accepted inputs. Route regeneration to the owning skill instead of adding an in-place compatibility path.
 5. **Sync approved sources only.** You may sync `active` and `preview` sources. You do not discover or approve sources.
 6. **Rebuild indexes.** You rebuild deterministic indexes from valid catalog records.
 7. **Render and check public pages.** You render public pages, run drift and link checks, and run the public-boundary scan when public output changes.

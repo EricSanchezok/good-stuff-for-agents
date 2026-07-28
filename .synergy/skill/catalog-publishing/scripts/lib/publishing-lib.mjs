@@ -5,6 +5,7 @@ import {
   ROOT,
   buildIndexes,
   computeCatalogHash,
+  evaluationPathForPack,
   loadPackRecords,
   loadRegistry,
   loadSkillRecords,
@@ -32,6 +33,7 @@ export function renderAll() {
   const manifest = buildIndexes()
   const model = loadModel(manifest)
   const pages = buildRenderedPages(model)
+  ensureDir(DOCS, ROOT)
   cleanGeneratedMarkdown(pages)
   for (const [path, content] of pages.entries()) writeTextAtomic(path, content, path === join(ROOT, 'README.md') ? ROOT : DOCS)
   ensureGeneratedDirectories()
@@ -102,11 +104,28 @@ function loadModel(manifest) {
   const skills = loadSkillRecords().map(({ path, record }) => ({ ...record, __path: relative(ROOT, path), __hash: sha256(readText(path)) })).sort((a, b) => a.canonical_skill_id.localeCompare(b.canonical_skill_id))
   const registry = loadRegistry()
   const sources = registry.sources.map((source) => ({ ...source, __path: 'catalog/sources/registry.yaml', __hash: sha256(stableStringify(source)) })).sort((a, b) => a.source_id.localeCompare(b.source_id))
-  const packs = loadPackRecords('published').map(({ path, record }) => ({ ...record, __path: relative(ROOT, path), __hash: sha256(readText(path)) })).sort((a, b) => a.pack_id.localeCompare(b.pack_id))
+  const packs = loadPackRecords('published').map(({ path, record }) => {
+    const evaluationPath = evaluationPathForPack(record.pack_id, 'published')
+    return {
+      ...record,
+      __path: relative(ROOT, path),
+      __hash: sha256(readText(path)),
+      __evaluation: loadPublishedEvaluation(evaluationPath, record.pack_id),
+    }
+  }).sort((a, b) => a.pack_id.localeCompare(b.pack_id))
   const relations = readJsonl(join(CATALOG, 'relations', 'edges-00000.jsonl'))
   const analyses = new Map(skills.map((skill) => [skill.canonical_skill_id, loadAnalysisSummary(skill.analysis?.path)]))
   const domains = deriveDomains(skills, packs)
   return { catalogHash, generatedAt, manifest, skills, sources, packs, relations, analyses, domains }
+}
+
+export function loadPublishedEvaluation(path, packId) {
+  if (!existsSync(path)) throw new Error(`published pack is missing evaluation: ${relative(ROOT, path)}`)
+  const evaluation = JSON.parse(readText(path))
+  if (evaluation?.schema_version !== 2 || evaluation?.pack_id !== packId || evaluation?.decision?.passed !== true || evaluation?.decision?.level !== 'passed') {
+    throw new Error(`published pack evaluation is not a passing v2 record bound to ${packId}: ${relative(ROOT, path)}`)
+  }
+  return evaluation
 }
 
 function readManifest() {
@@ -326,11 +345,11 @@ function renderReportsIndex(model) {
 }
 
 
-function renderPackPage(model, pack) {
+export function renderPackPage(model, pack) {
   const route = packRouteSteps(pack, model)
   const members = packMemberJobs(pack, model)
   const note = packUseNote(pack)
-  return page(recordFrontmatter(model, 'pack', pack.pack_id, pack.__path, pack.__hash, pack.evaluation?.evaluation_id), `# ${pack.name}
+  return page(recordFrontmatter(model, 'pack', pack.pack_id, pack.__path, pack.__hash, pack.__evaluation?.evaluation_id), `# ${pack.name}
 
 ${packLead(pack)}
 
@@ -494,7 +513,9 @@ function packShortDescription(pack) {
 
 function confidenceLabel(pack) {
   const parts = []
-  if (typeof pack.evaluation?.score === 'number') parts.push(`${Math.round(pack.evaluation.score * 100)}% confidence`)
+  const minMetric = pack.__evaluation?.decision?.min_metric
+  if (typeof minMetric === 'number') parts.push(`${Math.round(minMetric * 100)}% minimum review score`)
+  else if (pack.__evaluation?.decision?.passed === true) parts.push('Passed independent review')
   const freshness = pack.status === 'stale' ? 'freshness note inside' : humanStatus(pack.status)
   if (freshness) parts.push(freshness)
   return parts.join(' · ') || 'Evidence still being checked'
@@ -525,64 +546,113 @@ function packUseCases(pack) {
       'The work needs a launch path instead of stopping at “the code compiles.”',
     ]
   }
-  const stages = unique((pack.members ?? []).map((member) => member.stage).filter(Boolean)).slice(0, 3)
-  if (stages.length) return stages.map((stage) => `An agent needs ${readable(stage)} help inside a ${readableDomain(pack.domain)} task.`)
-  return [pack.intent ?? `A ${readableDomain(pack.domain)} task needs a prepared skill route.`]
+  const useCases = [pack.intent ?? `A ${readableDomain(pack.domain)} task needs a prepared skill route.`]
+  const nodeTypes = new Set((pack.workflow?.nodes ?? []).map((node) => node.type))
+  const edgeDirections = new Set((pack.workflow?.edges ?? []).map((edge) => edge.direction))
+  if (nodeTypes.has('decision_gate') || nodeTypes.has('conditional') || edgeDirections.has('conditional')) {
+    useCases.push('The task needs an explicit decision point instead of one rigid path.')
+  }
+  if (nodeTypes.has('fan_out') || nodeTypes.has('fan_in') || edgeDirections.has('fan_out') || edgeDirections.has('fan_in')) {
+    useCases.push('Independent work should split cleanly and rejoin with a deliberate merge.')
+  }
+  if (edgeDirections.has('sequential')) useCases.push('One part of the work must hand a concrete result to the next.')
+  return useCases.slice(0, 3)
 }
 
 function packRouteSteps(pack, model) {
-  const workflow = normalizeWorkflowForPublishing(pack.workflow)
-  if (workflow.stages.length) {
-    return workflow.stages.map((stage) => routeStepFromWorkflowStage(stage, model))
-  }
-  if (workflow.summary) return splitRouteSummary(workflow.summary)
-  const grouped = groupMembersByStage(pack.members ?? [])
-  if (grouped.length) {
-    return grouped.map(([stage, members]) => `**${titleCase(stage)}** — ${members.map((member) => member.role ? readable(member.role) : memberLabel(member, model)).join(', ')} keep this part of the route covered.`)
-  }
-  return [`**Start with the goal** — ${pack.intent ?? `Use the pack for ${readableDomain(pack.domain)} work and follow the member skills in order.`}`]
+  return orderedWorkflowNodes(pack.workflow).map((node) => routeStepFromWorkflowNode(node, pack.workflow, model))
 }
 
-function routeStepFromWorkflowStage(stage, model) {
-  const name = stage.name ?? stage.stage ?? 'Next step'
-  const description = stage.description ?? 'Use the matching member skills for this part of the route.'
-  const ids = stage.member_ids ?? []
-  const memberNames = ids.map((id) => skillNameFor(id, model)).filter(Boolean)
-  const suffix = memberNames.length ? ` I put ${inlineHumanList(memberNames)} here.` : ''
-  return `**${name}** — ${description}${suffix}`
+function orderedWorkflowNodes(workflow) {
+  const nodes = Array.isArray(workflow?.nodes) ? workflow.nodes : []
+  const edges = Array.isArray(workflow?.edges) ? workflow.edges : []
+  const nodeById = new Map(nodes.map((node) => [node.node_id, node]))
+  const inDegree = new Map(nodes.map((node) => [node.node_id, 0]))
+  const outgoing = new Map(nodes.map((node) => [node.node_id, []]))
+  for (const edge of edges) {
+    if (!nodeById.has(edge.from_node) || !nodeById.has(edge.to_node)) continue
+    outgoing.get(edge.from_node).push(edge)
+    inDegree.set(edge.to_node, inDegree.get(edge.to_node) + 1)
+  }
+  const rootRank = new Map((workflow?.entry_roots ?? []).map((nodeId, index) => [nodeId, index]))
+  const compareNodeIds = (left, right) => (rootRank.get(left) ?? Number.MAX_SAFE_INTEGER) - (rootRank.get(right) ?? Number.MAX_SAFE_INTEGER) || left.localeCompare(right)
+  const ready = [...inDegree.entries()].filter(([, degree]) => degree === 0).map(([nodeId]) => nodeId).sort(compareNodeIds)
+  const ordered = []
+  while (ready.length) {
+    const nodeId = ready.shift()
+    ordered.push(nodeById.get(nodeId))
+    for (const edge of outgoing.get(nodeId).sort((left, right) => left.edge_id.localeCompare(right.edge_id))) {
+      const nextDegree = inDegree.get(edge.to_node) - 1
+      inDegree.set(edge.to_node, nextDegree)
+      if (nextDegree === 0) {
+        ready.push(edge.to_node)
+        ready.sort(compareNodeIds)
+      }
+    }
+  }
+  if (ordered.length !== nodes.length) throw new Error('published pack workflow is not a complete DAG')
+  return ordered
+}
+
+function routeStepFromWorkflowNode(node, workflow, model) {
+  const label = node.label ?? titleCase(node.node_id)
+  const description = node.description ?? `Use this ${readable(node.type)} step to move the route forward.`
+  const memberNames = (node.member_ids ?? []).map((id) => skillNameFor(id, model) ?? id)
+  const memberNote = memberNames.length ? ` I put ${inlineHumanList(memberNames)} here.` : ''
+  const contractNote = [
+    node.entry_contract ? `Start with ${sentenceFragment(node.entry_contract)}.` : '',
+    node.output_contract ? `Finish with ${sentenceFragment(node.output_contract)}.` : '',
+  ].filter(Boolean).join(' ')
+  const transitions = (workflow?.edges ?? []).filter((edge) => edge.from_node === node.node_id).map((edge) => routeTransition(edge, workflow))
+  const transitionNote = transitions.length ? ` ${transitions.join(' ')}` : ''
+  return `**${label}** — ${description}${memberNote}${contractNote ? ` ${contractNote}` : ''}${transitionNote}`
+}
+
+function routeTransition(edge, workflow) {
+  const target = (workflow?.nodes ?? []).find((node) => node.node_id === edge.to_node)
+  const targetLabel = target?.label ?? titleCase(edge.to_node)
+  const direction = edge.direction === 'fan_out'
+    ? `Continue in parallel to ${targetLabel}`
+    : edge.direction === 'fan_in'
+      ? `Merge into ${targetLabel}`
+      : edge.direction === 'conditional'
+        ? `If ${sentenceFragment(edge.condition ?? 'the branch applies')}, continue to ${targetLabel}`
+        : `Then continue to ${targetLabel}`
+  const handoff = edge.artifact_handoff
+  if (!handoff) return `${direction}.`
+  return `${direction}, handing off ${sentenceFragment(handoff.produced)} as ${sentenceFragment(handoff.consumed_as)}.`
 }
 
 function packMemberJobs(pack, model) {
   return table(['Skill', 'Job in the pack'], (pack.members ?? []).map((member) => {
     const skillName = skillNameFor(member.skill_id, model) ?? member.skill_id
-    const job = member.inclusion_reason ?? `${titleCase(member.stage ?? member.role ?? 'support')} support for this route.`
+    const job = member.inclusion_reason ?? `${titleCase(member.role)} support for this route.`
     return [`[${skillName}](${publicHref(`../../skills/${prefixFor(member.skill_id)}/${member.skill_id}.md`)})`, job]
   }))
 }
 
 function packTrustNote(pack) {
-  const pieces = []
-  if (typeof pack.evaluation?.score === 'number') pieces.push(`evaluation landed at ${score(pack.evaluation.score)}`)
+  const evaluation = pack.__evaluation
+  const minMetric = evaluation?.decision?.min_metric
+  const reviewNote = typeof minMetric === 'number'
+    ? `an independent review passed every dimension at 0.70 or higher; the lowest score was ${score(minMetric)}`
+    : 'an independent review passed every required dimension with no blocker'
+  const checkedClaims = evaluation?.checked_claim_ids?.length ?? 0
+  const evidenceNote = checkedClaims ? ` The review checked ${checkedClaims} specific evidence ${checkedClaims === 1 ? 'claim' : 'claims'}.` : ''
   const compatibility = normalizeCompatibilityForPublishing(pack.compatibility)
   const compatibilityNote = compatibility.notes ? ` ${compatibility.notes}` : ''
-  const base = pieces.length ? `I trust this shelf pick because ${inlineHumanList(pieces)}.` : 'I trust this shelf pick only as far as the recorded catalog evidence supports it.'
-  const conflictNote = compatibility.conflicts.length || compatibility.unresolved.length ? '' : ' I didn’t find a blocking conflict in the published notes.'
-  return `${base}${compatibilityNote}${conflictNote}`
+  const conflictNote = compatibility.conflicts.length ? '' : ' I didn’t find a blocking conflict in the published notes.'
+  return `I trust this shelf pick because ${reviewNote}.${evidenceNote}${compatibilityNote}${conflictNote}`
 }
 
 function packUseNote(pack) {
   const compatibility = normalizeCompatibilityForPublishing(pack.compatibility)
-  const warnings = [...compatibility.unresolved, ...compatibility.conflicts]
-  if (warnings.length) return `Tiny caution flag: ${warnings.map((item) => typeof item === 'string' ? item : JSON.stringify(item)).join(' ')} Check that before relying on the route.`
-  if (pack.status === 'stale') return humanStatus('stale')
-  if (pack.status && !['active', 'published'].includes(pack.status)) return humanStatus(pack.status)
-  return ''
-}
-
-function normalizeWorkflowForPublishing(workflow) {
-  if (typeof workflow === 'string') return { summary: workflow, stages: [] }
-  if (!workflow || typeof workflow !== 'object') return { summary: '', stages: [] }
-  return { summary: workflow.summary ?? '', stages: Array.isArray(workflow.stages) ? workflow.stages : [] }
+  const notices = compatibility.conflicts.map(relationUsageNote).filter(Boolean)
+  notices.push(...(pack.mitigation ?? []).map((item) => `${item.risk}: ${item.strategy}${item.contingency ? ` If needed, ${sentenceFragment(item.contingency)}.` : ''}`))
+  notices.push(...(pack.__evaluation?.warnings ?? []).map((warning) => warning.message))
+  if (pack.status === 'stale') notices.push(humanStatus('stale'))
+  else if (pack.status && pack.status !== 'published') notices.push(humanStatus(pack.status))
+  return notices.length ? `Tiny caution flag: ${notices.join(' ')}` : ''
 }
 
 function normalizeCompatibilityForPublishing(compatibility) {
@@ -592,32 +662,16 @@ function normalizeCompatibilityForPublishing(compatibility) {
     strengthens: Array.isArray(compatibility?.strengthens) ? compatibility.strengthens : [],
     alternatives: Array.isArray(compatibility?.alternatives) ? compatibility.alternatives : [],
     conflicts: Array.isArray(compatibility?.conflicts) ? compatibility.conflicts : [],
-    unresolved: Array.isArray(compatibility?.unresolved) ? compatibility.unresolved : [],
   }
 }
 
-function splitRouteSummary(summary) {
-  return String(summary)
-    .split(/\s*(?:→|->)\s*/)
-    .map((step) => step.replace(/^\d+\)\s*/, '').trim())
-    .filter(Boolean)
-    .map((step) => {
-      const match = step.match(/^([^()]+)(?:\(([^)]+)\))?$/)
-      if (!match) return `**${titleCase(step)}** — Follow this part of the route.`
-      const name = titleCase(match[1].trim())
-      const detail = match[2] ? readable(match[2]).replace(/\+/g, ' and ') : 'Follow the matching member skills for this part of the route.'
-      return `**${name}** — ${detail}`
-    })
+function relationUsageNote(usage) {
+  if (typeof usage === 'string') return usage
+  return usage?.note ?? usage?.disposition ?? ''
 }
 
-function groupMembersByStage(members) {
-  const groups = new Map()
-  for (const member of members) {
-    const stage = member.stage ?? 'support'
-    if (!groups.has(stage)) groups.set(stage, [])
-    groups.get(stage).push(member)
-  }
-  return [...groups.entries()]
+function sentenceFragment(value) {
+  return String(value ?? '').trim().replace(/[.!?]+$/, '')
 }
 
 function skillNameFor(skillId, model) {
@@ -627,10 +681,6 @@ function skillNameFor(skillId, model) {
 function sourceNameFor(sourceId, model) {
   if (!sourceId) return '—'
   return model.sources.find((source) => source.source_id === sourceId)?.name ?? sourceId
-}
-
-function memberLabel(member, model) {
-  return skillNameFor(member.skill_id, model) ?? readable(member.role ?? member.stage ?? 'support')
 }
 
 function publicHref(path) {
@@ -657,10 +707,6 @@ function readable(value) {
 
 function titleCase(value) {
   return readable(value).replace(/\b\w/g, (char) => char.toUpperCase())
-}
-
-function unique(values) {
-  return [...new Set(values)]
 }
 
 function inlineHumanList(items) {
@@ -758,10 +804,7 @@ export function checkPublicBoundary() {
     /\.mjs\b/,
     /\bskill_installed\b/,
     /\bappend-run-event\b/,
-    /\bcheck-terminal-states\b/,
     /\bfinalize-git\b/,
-    /\bwrite-run-report\b/,
-    /\bcheck-run-report\b/,
     /\bcheck-public-boundary\b/,
     /\bmaintenance-check\b/,
     /\bin this batch\b/i,

@@ -249,9 +249,68 @@ export function sortDeep(value) {
   return value
 }
 
+export function sortProofDeep(value) {
+  if (Array.isArray(value)) {
+    return value
+      .map(sortProofDeep)
+      .sort((left, right) => JSON.stringify(left).localeCompare(JSON.stringify(right)))
+  }
+  if (value && typeof value === 'object') {
+    const sorted = {}
+    for (const key of Object.keys(value).sort()) sorted[key] = sortProofDeep(value[key])
+    return sorted
+  }
+  return value
+}
+
+export function buildCanonicalPackProofInput({ pack, analyses, relations, skills, rulesVersion = 'v3.2.0' }) {
+  const { updated_at: _updatedAt, ...packContent } = pack
+  const analysisIds = [...(pack.evidence?.analysis_ids ?? [])].sort()
+  const relationIds = [...(pack.evidence?.relation_ids ?? [])].sort()
+  const memberIds = [...new Set((pack.members ?? []).map((member) => member.skill_id))].sort()
+
+  return {
+    proof_rules_version: rulesVersion,
+    pack: sortProofDeep(packContent),
+    analyses: sortProofDeep(analysisIds.map((analysisId) => {
+      const analysis = analyses.get(analysisId)
+      if (!analysis) throw new Error(`Analysis ${analysisId} not found in loaded analyses`)
+      return { analysis_id: analysisId, ...sortProofDeep(analysis) }
+    })),
+    relations: sortProofDeep(relationIds.map((relationId) => {
+      const relation = relations.get(relationId)
+      if (!relation) throw new Error(`Relation ${relationId} not found in loaded relations`)
+      return { relation_id: relationId, ...sortProofDeep(relation) }
+    })),
+    skill_evidence: sortProofDeep(memberIds.map((skillId) => {
+      const skill = skills.get(skillId)
+      if (!skill) throw new Error(`Skill ${skillId} not found in loaded skills`)
+      return {
+        skill_id: skillId,
+        status: skill.status,
+        current_version_id: skill.identity?.current_version_id ?? null,
+      }
+    })),
+  }
+}
+
+export function computeCanonicalPackProofDigest(input) {
+  return sha256(stableStringify(buildCanonicalPackProofInput(input)))
+}
+
 export function parseYamlFile(path) {
   const content = readText(path)
   return parseYaml(content, path)
+}
+
+export function parseMarkdownFrontmatter(content, label = '<markdown>') {
+  const match = content.match(/^---\r?\n([\s\S]*?)\r?\n---(?:\r?\n|$)/u)
+  if (!match) throw new Error(`Missing or unclosed YAML frontmatter in ${label}`)
+  return parseYaml(match[1], `${label} frontmatter`)
+}
+
+export function parseMarkdownFrontmatterFile(path) {
+  return parseMarkdownFrontmatter(readText(path), path)
 }
 
 function pythonBin() {
@@ -473,14 +532,16 @@ export function createEvaluationBinding(packId) {
   if (pack.pack_id !== packId || pack.status !== 'candidate') {
     throw new Error(`Pack ${packId} is not a current candidate`)
   }
-  const memberIds = (pack.members || []).map((m) => m.skill_id)
-  const skills = new Map(loadSkillsById(memberIds).map(({ record: r }) => [r.canonical_skill_id, r]))
-  const preflight = preflightPackWorkflow(pack, skills)
-  if (!preflight.ok) {
-    const reasons = preflight.errors.map((e) => `  - [${e.code}] ${e.reason}`).join('\n')
-    throw new Error(`Cannot bind evaluation: candidate pack ${packId} failed workflow preflight:\n${reasons}`)
-  }
+  if (pack.schema_version !== 3) throw new Error(`Pack ${packId} must be schema v3 for evaluation binding`)
   const packHash = packContentHash(pack)
+  const proofPath = join(dirname(packPath), 'preflight-proof.json')
+  let proofDigest = null
+  if (existsSync(proofPath)) {
+    try {
+      const proofRecord = JSON.parse(readText(proofPath))
+      proofDigest = proofRecord.content_digest ?? null
+    } catch { /* proof unavailable */ }
+  }
   return {
     schema_version: 1,
     kind: 'pack_evaluation_binding',
@@ -488,6 +549,7 @@ export function createEvaluationBinding(packId) {
     pack_status: 'candidate',
     pack_version: pack.version,
     pack_hash: packHash,
+    proof_digest: proofDigest,
     evaluation_id: idFor('eval', [packId, 'candidate', packHash]),
     expected_path: relative(ROOT, evaluationPathForPack(packId, 'candidate')),
   }
@@ -610,25 +672,20 @@ function validateSkill(skill, errors, label) {
 }
 
 function validatePack(pack, errors, label, skills) {
-  required(pack, ['schema_version', 'pack_id', 'name', 'status', 'intent', 'domain', 'created_by_run', 'version', 'members', 'excluded', 'workflow', 'compatibility', 'evidence', 'evaluation', 'updated_at'], errors, label)
-  if (pack.schema_version !== 2) errors.push(`${label} schema_version must be 2 (found ${pack.schema_version})`)
+  if (pack.schema_version !== undefined && pack.schema_version < 3) errors.push(`${label} schema_version must be >= 3 (found ${pack.schema_version})`)
+  required(pack, ['schema_version', 'pack_id', 'name', 'status', 'intent', 'domain', 'created_by_run', 'version', 'members', 'excluded', 'workflow', 'compatibility', 'evidence', 'mitigation', 'artifact_mapping', 'updated_at'], errors, label)
   if (pack.status) errors.push(...enumErrors(STATUS.pack, pack.status, `${label}.status`))
+  if ('evaluation' in pack) errors.push(`${label}: v3+ pack must not include inline evaluation`)
   if (!Array.isArray(pack.members)) errors.push(`${label}.members must be array`)
-  if (pack.members) required(pack.members, [], errors, `${label}.members`)
-  for (const [idx, member] of (pack.members || []).entries()) required(member, ['skill_id', 'version_id', 'role', 'stage', 'inclusion_reason'], errors, `${label}.members[${idx}]`)
+  for (const [idx, member] of (pack.members || []).entries()) required(member, ['skill_id', 'version_id', 'role'], errors, `${label}.members[${idx}]`)
   if (label.includes('published') && (pack.status === 'candidate' || pack.status === 'rejected')) errors.push(`${label}: published pack must not have status ${pack.status}`)
   if (label.includes('candidates') && (pack.status === 'published' || pack.status === 'stale')) errors.push(`${label}: candidate pack must not have status ${pack.status}`)
-  if (pack.workflow) required(pack.workflow, ['entry', 'terminal'], errors, `${label}.workflow`)
-  if (!Array.isArray(pack.workflow?.stages)) errors.push(`${label}.workflow.stages must be array`)
-  if (!Array.isArray(pack.workflow?.branches)) errors.push(`${label}.workflow.branches must be array`)
-  for (const [idx, stage] of (pack.workflow?.stages ?? []).entries()) {
-    required(stage, ['stage_id', 'name', 'description', 'member_ids', 'handoffs'], errors, `${label}.workflow.stages[${idx}]`)
-    if (!Array.isArray(stage.member_ids)) errors.push(`${label}.workflow.stages[${idx}].member_ids must be array`)
-    if (!Array.isArray(stage.handoffs)) errors.push(`${label}.workflow.stages[${idx}].handoffs must be array`)
-  }
-  if (skills) {
-    const preflight = preflightPackWorkflow(pack, skills)
-    for (const issue of preflight.errors) errors.push(`${label}: workflow preflight failed: [${issue.code}] ${issue.reason}`)
+  if (pack.workflow) {
+    required(pack.workflow, ['nodes', 'edges', 'entry_roots', 'terminal_sinks'], errors, `${label}.workflow`)
+    if (!Array.isArray(pack.workflow.nodes)) errors.push(`${label}.workflow.nodes must be array`)
+    if (!Array.isArray(pack.workflow.edges)) errors.push(`${label}.workflow.edges must be array`)
+    if (!Array.isArray(pack.workflow.entry_roots)) errors.push(`${label}.workflow.entry_roots must be array`)
+    if (!Array.isArray(pack.workflow.terminal_sinks)) errors.push(`${label}.workflow.terminal_sinks must be array`)
   }
 }
 
@@ -643,30 +700,66 @@ function validatePublishedPack(pack, errors, label, skills) {
       errors.push(`${label}: published evaluation is invalid JSON: ${error.message}`)
     }
   }
-  for (const reason of packPromotionIneligibilityReasons(pack, evaluation, skills, { requireFileEvaluation: true })) {
-    errors.push(`${label}: published pack invariant failed: ${reason}`)
+  if (!evaluation) {
+    errors.push(`${label}: published pack is missing v2 evaluation file`)
+  } else if (evaluation.schema_version !== 2) {
+    errors.push(`${label}: published evaluation must be v2`)
+  } else if (evaluation.decision?.passed !== true) {
+    errors.push(`${label}: published pack evaluation must have a passed decision`)
+  } else if (evaluation.pack_id !== pack.pack_id) {
+    errors.push(`${label}: evaluation pack_id must match pack`)
+  }
+  for (const member of (pack.members ?? [])) {
+    const skill = skills.get(member.skill_id)
+    if (!skill) {
+      errors.push(`${label}: member ${member.skill_id} does not exist`)
+      continue
+    }
+    if (!['active', 'preview'].includes(skill.status)) errors.push(`${label}: member ${member.skill_id} status ${skill.status} is not eligible`)
+    if (skill.identity?.current_version_id !== member.version_id) errors.push(`${label}: member ${member.skill_id} does not pin its current version`)
+  }
+  const proofPath = publishedProofPath(pack.pack_id)
+  if (!existsSync(proofPath)) {
+    errors.push(`${label}: published pack is missing preflight-proof.json`)
   }
 }
 
 function validateRelation(edge, errors, label) {
-  required(edge, ['schema_version', 'subject', 'predicate', 'object', 'weight', 'evidence', 'source', 'created_at'], errors, label)
+  required(edge, ['schema_version', 'relation_id', 'predicate', 'weight', 'evidence', 'created_at', 'created_by_run'], errors, label)
+  if (edge.schema_version !== 2) errors.push(`${label}.schema_version must be 2`)
   if (edge.predicate && !RELATION_PREDICATES.has(edge.predicate)) errors.push(`${label}.predicate invalid: ${edge.predicate}`)
 }
 
+export function validateRelationRecord(edge, label = 'relation') {
+  const errors = []
+  validateRelation(edge, errors, label)
+  return errors
+}
+
 function validateAnalysisMarkdown(path, errors, warnings) {
-  const text = readText(path)
   const label = relative(ROOT, path)
-  if (!text.startsWith('---\n') && !text.startsWith('---\r\n')) {
-    errors.push(`${label} must have YAML frontmatter`)
+  let fm
+  try {
+    fm = parseMarkdownFrontmatterFile(path)
+  } catch (error) {
+    errors.push(`${label} must have closed YAML frontmatter: ${error.message}`)
     return
   }
-  const parts = text.split('---')
-  if (parts.length < 3) {
-    errors.push(`${label} frontmatter is not closed`)
+  if (!fm || fm.schema_version !== 2) {
+    errors.push(`${label} frontmatter schema_version must be 2`)
     return
   }
-  const fm = parseYaml(parts[1], `${label} frontmatter`)
-  required(fm, ['schema_version', 'skill_id', 'source_hash', 'analysis_version', 'confidence', 'updated_at'], errors, `${label}.frontmatter`)
+  required(fm, ['schema_version', 'analysis_id', 'skill_id', 'source_hash', 'claims', 'confidence', 'updated_at', 'created_by_run'], errors, `${label}.frontmatter`)
+  if (fm.analysis_id && !/^anl_/.test(fm.analysis_id)) errors.push(`${label}.frontmatter analysis_id must start with anl_`)
+  if (fm.skill_id && !/^skl_/.test(fm.skill_id)) errors.push(`${label}.frontmatter skill_id must start with skl_`)
+  if (fm.confidence && !['high', 'medium', 'low', 'unknown'].includes(fm.confidence)) errors.push(`${label}.frontmatter confidence must be high, medium, low, or unknown`)
+  if (fm.analysis_version !== undefined && (!Number.isInteger(fm.analysis_version) || fm.analysis_version < 1)) errors.push(`${label}.frontmatter analysis_version must be a positive integer`)
+  if (fm.claims) {
+    const claimGroups = ['requires', 'produces', 'preconditions', 'refusal', 'failure_warnings', 'tool_constraints', 'alternatives', 'judgement']
+    for (const group of claimGroups) {
+      if (!(group in fm.claims)) errors.push(`${label}.frontmatter.claims missing required group: ${group}`)
+    }
+  }
 }
 
 function required(obj, keys, errors, label) {
@@ -754,328 +847,55 @@ function writeShards(skills) {
   }
 }
 
-function hasOnlyPassingSignals(evaluation, requireSignal = false) {
-  const signals = []
-  if (Object.hasOwn(evaluation, 'status')) signals.push(evaluation.status === 'passed')
-  if (Object.hasOwn(evaluation, 'passed')) signals.push(evaluation.passed === true)
-  return (!requireSignal || signals.length > 0) && signals.every(Boolean)
+// --- V3 Pack Promotion ---
+
+export function publishedProofPath(packId) {
+  assertCatalogId('pack', packId)
+  return resolveWithin(CATALOG, 'packs', 'published', packId, 'preflight-proof.json')
 }
 
-export function packPromotionIneligibilityReasons(record, fileEvaluation, skills, { requireFileEvaluation = false } = {}) {
-  const reasons = []
-  const inlineEvaluation = record.evaluation ?? {}
-  const primaryEvaluation = fileEvaluation ?? inlineEvaluation
-  if (requireFileEvaluation && !fileEvaluation) reasons.push('passing evaluation file is required')
-  if (fileEvaluation) {
-    if (fileEvaluation.status !== 'passed' || fileEvaluation.passed !== true) reasons.push('evaluation status and passed signals must consistently pass')
-    if (requireFileEvaluation && fileEvaluation.output_id !== record.pack_id) reasons.push('evaluation must be bound to the same pack')
-    if (requireFileEvaluation && (!fileEvaluation.evaluation_id || inlineEvaluation.evaluation_id !== fileEvaluation.evaluation_id)) reasons.push('inline and file evaluation IDs must match')
-  } else if (!hasOnlyPassingSignals(primaryEvaluation, true)) {
-    reasons.push('evaluation status and passed signals must consistently pass')
-  }
-  if (fileEvaluation && !hasOnlyPassingSignals(inlineEvaluation)) reasons.push('inline evaluation contradicts the evaluation file')
+/**
+ * Independent content-digest recomputation for promotion verification.
+ * Loads exact current Analysis v2 + Relation v2 + member skill evidence
+ * and computes the canonical proof digest. Does NOT run preflight.
+ * Returns null if evidence is missing or malformed.
+ */
+function recomputePackProofDigest(record, skillRecords) {
+  const analysisIds = record.evidence?.analysis_ids ?? []
+  const relationIds = record.evidence?.relation_ids ?? []
+  const analyses = new Map()
+  const relations = new Map()
 
-  const score = primaryEvaluation.overall_score ?? primaryEvaluation.score
-  if (!Number.isFinite(score) || score < 0.78) reasons.push('evaluation score must be at least 0.78')
-
-  const members = record.members ?? []
-  if (members.length < 2) reasons.push('at least two members are required')
-  for (const member of members) {
-    const skill = skills.get(member.skill_id)
-    if (!skill) {
-      reasons.push(`member ${member.skill_id} does not exist`)
-      continue
-    }
-    if (!['active', 'preview'].includes(skill.status)) reasons.push(`member ${member.skill_id} status ${skill.status} is not eligible`)
-    if (skill.identity?.current_version_id !== member.version_id) reasons.push(`member ${member.skill_id} does not pin its current version`)
-  }
-
-  const preflight = preflightPackWorkflow(record, skills)
-  for (const issue of preflight.errors) reasons.push(`workflow preflight: ${issue.reason}`)
-
-  return reasons
-}
-
-const PLACEHOLDER_RE = /^(?:TODO|TBD|FIXME|placeholder|PLACEHOLDER|\.\.\.|N\/A|n\/a|none|empty|xxx|tbc|TBC)$/
-
-function isEmptyOrPlaceholder(value) {
-  if (typeof value !== 'string') return true
-  const trimmed = value.trim()
-  return trimmed.length === 0 || PLACEHOLDER_RE.test(trimmed)
-}
-
-export function assertPackCandidateDraft(draft) {
-  if (!draft || typeof draft !== 'object' || Array.isArray(draft)) throw new Error('Pack candidate draft must be an object')
-  if (Object.hasOwn(draft, 'status') && draft.status !== 'candidate') throw new Error('Pack candidate draft status must be candidate')
-  const controlledFields = new Set(['record_bucket', 'published_at', 'output_path', 'expected_path', 'destination'])
-  for (const field of Object.keys(draft)) {
-    if (controlledFields.has(field) || /^promot(?:e|ed|ion)/.test(field)) throw new Error(`Pack candidate draft must not include controller field ${field}`)
-  }
-  if (isEmptyOrPlaceholder(draft.pack_id)) throw new Error('Pack draft is missing pack_id')
-  if (isEmptyOrPlaceholder(draft.name)) throw new Error('Pack draft is missing name')
-  if (isEmptyOrPlaceholder(draft.intent)) throw new Error('Pack draft is missing intent')
-  if (isEmptyOrPlaceholder(draft.domain)) throw new Error('Pack draft is missing domain')
-  if (!Array.isArray(draft.members) || draft.members.length < 2) throw new Error('Pack draft must include at least 2 reviewed members')
-  const memberSkillIds = new Set()
-  for (const member of draft.members) {
-    if (!member.skill_id) throw new Error('Pack draft has a member without skill_id')
-    if (memberSkillIds.has(member.skill_id)) throw new Error(`Pack draft has duplicate member skill_id: ${member.skill_id}`)
-    memberSkillIds.add(member.skill_id)
-    if (!member.version_id) throw new Error(`Pack draft member ${member.skill_id} is missing version_id`)
-    if (!member.role) throw new Error(`Pack draft member ${member.skill_id} is missing role`)
-    if (!member.stage) throw new Error(`Pack draft member ${member.skill_id} is missing stage`)
-    if (!member.inclusion_reason) throw new Error(`Pack draft member ${member.skill_id} is missing inclusion_reason`)
-  }
-  if (!draft.workflow || typeof draft.workflow !== 'object' || Array.isArray(draft.workflow)) throw new Error('Pack draft must include structured workflow with entry, terminal and stages')
-  if (!draft.workflow.entry || typeof draft.workflow.entry !== 'object' || Array.isArray(draft.workflow.entry)) throw new Error('Pack draft workflow.entry must be an object with description and input_contract')
-  if (!draft.workflow.terminal || typeof draft.workflow.terminal !== 'object' || Array.isArray(draft.workflow.terminal)) throw new Error('Pack draft workflow.terminal must be an object with description and output_contract')
-  if (!Array.isArray(draft.workflow.stages) || draft.workflow.stages.length < 1) throw new Error('Pack draft workflow.stages must be a non-empty array')
-  const stageIds = new Set()
-  for (const stage of draft.workflow.stages) {
-    if (!stage || typeof stage !== 'object') throw new Error('Pack draft has a non-object workflow stage')
-    if (isEmptyOrPlaceholder(stage.stage_id)) throw new Error('Pack draft workflow stage is missing stage_id')
-    if (stageIds.has(stage.stage_id)) throw new Error(`Pack draft has duplicate workflow stage_id: ${stage.stage_id}`)
-    stageIds.add(stage.stage_id)
-    if (isEmptyOrPlaceholder(stage.name)) throw new Error(`Pack draft workflow stage ${stage.stage_id} has empty or placeholder name`)
-    if (!stage.description) throw new Error(`Pack draft workflow stage ${stage.stage_id} is missing description`)
-    if (!Array.isArray(stage.member_ids) || stage.member_ids.length === 0) throw new Error(`Pack draft workflow stage ${stage.stage_id} must have non-empty member_ids`)
-    if (!Array.isArray(stage.handoffs)) throw new Error(`Pack draft workflow stage ${stage.stage_id} must have handoffs array`)
-    for (const mid of stage.member_ids) {
-      if (!memberSkillIds.has(mid)) throw new Error(`Pack draft workflow stage ${stage.stage_id} references member ${mid} not in pack members`)
-    }
-  }
-  if (!Array.isArray(draft.workflow.branches)) throw new Error('Pack draft workflow.branches must be array')
-  for (const branch of draft.workflow.branches) {
-    if (isEmptyOrPlaceholder(branch.condition)) throw new Error('Pack draft branch has empty or placeholder condition')
-    if (isEmptyOrPlaceholder(branch.description)) throw new Error('Pack draft branch has empty or placeholder description')
-    if (isEmptyOrPlaceholder(branch.from_stage)) throw new Error('Pack draft branch has empty or placeholder from_stage')
-    if (isEmptyOrPlaceholder(branch.to_stage)) throw new Error('Pack draft branch has empty or placeholder to_stage')
-  }
-  if (!draft.compatibility || typeof draft.compatibility !== 'object' || Array.isArray(draft.compatibility)) throw new Error('Pack draft must include compatibility object')
-  if (typeof draft.compatibility.notes !== 'string') throw new Error('Pack draft compatibility.notes must be a string')
-  if (!draft.evidence || typeof draft.evidence !== 'object' || Array.isArray(draft.evidence)) throw new Error('Pack draft must include evidence object')
-  if (!draft.members.find(() => true)) throw new Error('Pack draft members must be non-empty')
-}
-
-export function preflightPackWorkflow(record, skills) {
-  const errors = []
-  const workflow = record.workflow || {}
-  const stages = Array.isArray(workflow.stages) ? workflow.stages : []
-  const members = Array.isArray(record.members) ? record.members : []
-
-  const memberById = new Map()
-
-  // duplicate member skill_id check
-  for (const member of members) {
-    if (memberById.has(member.skill_id)) {
-      errors.push({ code: 'member_duplicate_skill_id', reason: `member skill_id ${member.skill_id} appears more than once in pack members` })
-    }
-    memberById.set(member.skill_id, member)
-  }
-
-  for (const member of members) {
-    const skill = skills.get(member.skill_id)
-    if (!skill) {
-      errors.push({ code: 'member_missing', reason: `member ${member.skill_id} not found in skill catalog` })
-      continue
-    }
-    if (!['active', 'preview'].includes(skill.status)) {
-      errors.push({ code: 'member_blocked', reason: `member ${member.skill_id} has status ${skill.status} (expected active or preview)` })
-    }
-    if (skill.identity?.current_version_id !== member.version_id) {
-      errors.push({ code: 'member_version_stale', reason: `member ${member.skill_id} pins version ${member.version_id} but current is ${skill.identity?.current_version_id ?? 'unknown'}` })
-    }
-  }
-
-  const stageIds = new Set()
-  const stageMemberAssignment = new Map()
-  const stageById = new Map()
-
-  for (const stage of stages) {
-    const sid = stage.stage_id
-    if (!sid) {
-      errors.push({ code: 'stage_no_id', reason: 'stage is missing stage_id' })
-      continue
-    }
-    if (stageIds.has(sid)) {
-      errors.push({ code: 'stage_duplicate_id', reason: `stage ${sid} appears more than once` })
-      continue
-    }
-    stageIds.add(sid)
-    stageById.set(sid, stage)
-
-    if (isEmptyOrPlaceholder(stage.description)) {
-      errors.push({ code: 'empty_stage_description', reason: `stage ${sid} has empty or placeholder description` })
+  try {
+    const analysesRoot = join(CATALOG, 'analyses')
+    const requestedNames = new Map(analysisIds.map((analysisId) => [`${analysisId}.md`, analysisId]))
+    for (const path of listFiles(analysesRoot, candidate => candidate.endsWith('.md'))) {
+      const name = path.slice(Math.max(path.lastIndexOf('/'), path.lastIndexOf('\\')) + 1)
+      const requestedId = requestedNames.get(name)
+      if (!requestedId) continue
+      const analysis = parseMarkdownFrontmatterFile(path)
+      if (analysis.analysis_id !== requestedId) return null
+      analyses.set(requestedId, analysis)
     }
 
-    const mids = Array.isArray(stage.member_ids) ? stage.member_ids : []
-    if (mids.length === 0) {
-      errors.push({ code: 'stage_no_members', reason: `stage ${sid} has no member_ids` })
-    }
-
-    for (const mid of mids) {
-      if (!memberById.has(mid)) {
-        errors.push({ code: 'stage_member_unknown', reason: `stage ${sid} references member ${mid} not in pack members` })
-      }
-      const existing = stageMemberAssignment.get(mid)
-      if (existing) {
-        errors.push({ code: 'stage_member_duplicate', reason: `member ${mid} assigned to both stage ${existing} and stage ${sid}` })
-      } else {
-        stageMemberAssignment.set(mid, sid)
+    const relationFiles = readdirSync(join(CATALOG, 'relations'))
+      .filter(file => file.startsWith('edges-') && file.endsWith('.jsonl'))
+    for (const file of relationFiles) {
+      for (const relation of readJsonl(join(CATALOG, 'relations', file))) {
+        if (relationIds.includes(relation.relation_id)) relations.set(relation.relation_id, relation)
       }
     }
 
-    const handoffs = Array.isArray(stage.handoffs) ? stage.handoffs : []
-    for (const h of handoffs) {
-      if (isEmptyOrPlaceholder(h.produced_artifact) && isEmptyOrPlaceholder(h.consumed_as)) {
-        errors.push({ code: 'empty_artifact_contract', reason: `handoff from ${h.from_stage ?? '?'}/${h.from_skill ?? '?'} to ${h.to_stage ?? '?'}/${h.to_skill ?? '?'} has empty produced_artifact and consumed_as` })
-      } else if (isEmptyOrPlaceholder(h.produced_artifact)) {
-        errors.push({ code: 'empty_artifact_contract', reason: `handoff from ${h.from_stage ?? '?'}/${h.from_skill ?? '?'} to ${h.to_stage ?? '?'}/${h.to_skill ?? '?'} has empty produced_artifact` })
-      } else if (isEmptyOrPlaceholder(h.consumed_as)) {
-        errors.push({ code: 'empty_artifact_contract', reason: `handoff from ${h.from_stage ?? '?'}/${h.from_skill ?? '?'} to ${h.to_stage ?? '?'}/${h.to_skill ?? '?'} has empty consumed_as` })
-      }
-    }
+    return computeCanonicalPackProofDigest({
+      pack: record,
+      analyses,
+      relations,
+      skills: skillRecords,
+      rulesVersion: 'v3.2.0',
+    })
+  } catch {
+    return null
   }
-
-  // every pack member must be assigned to exactly one stage
-  for (const member of members) {
-    if (!stageMemberAssignment.has(member.skill_id)) {
-      errors.push({ code: 'member_unassigned', reason: `member ${member.skill_id} is not assigned to any stage` })
-    }
-  }
-
-  const orderedStageIds = stages.map((s) => s.stage_id).filter(Boolean)
-
-  for (const stage of stages) {
-    const stageId = stage.stage_id
-    for (const h of (Array.isArray(stage.handoffs) ? stage.handoffs : [])) {
-      // handoff must be owned by its from_stage
-      if (h.from_stage !== stageId) {
-        errors.push({ code: 'handoff_misplaced', reason: `handoff from ${h.from_stage}/${h.from_skill} to ${h.to_stage}/${h.to_skill} is stored in stage ${stageId} but its from_stage is ${h.from_stage}` })
-      }
-
-      if (!stageIds.has(h.from_stage)) {
-        errors.push({ code: 'handoff_from_stage_unknown', reason: `handoff from_stage ${h.from_stage} is not a defined stage` })
-      }
-      if (!stageIds.has(h.to_stage)) {
-        errors.push({ code: 'handoff_to_stage_unknown', reason: `handoff to_stage ${h.to_stage} is not a defined stage` })
-      }
-
-      if (stageIds.has(h.from_stage)) {
-        const srcStage = stageById.get(h.from_stage)
-        const srcMemberIds = Array.isArray(srcStage.member_ids) ? srcStage.member_ids : []
-        if (!srcMemberIds.includes(h.from_skill)) {
-          errors.push({ code: 'handoff_member_not_in_stage', reason: `handoff from_skill ${h.from_skill} is not assigned to stage ${h.from_stage}` })
-        }
-      }
-      if (stageIds.has(h.to_stage)) {
-        const dstStage = stageById.get(h.to_stage)
-        const dstMemberIds = Array.isArray(dstStage.member_ids) ? dstStage.member_ids : []
-        if (!dstMemberIds.includes(h.to_skill)) {
-          errors.push({ code: 'handoff_member_not_in_stage', reason: `handoff to_skill ${h.to_skill} is not assigned to stage ${h.to_stage}` })
-        }
-      }
-
-      const fromIdx = orderedStageIds.indexOf(h.from_stage)
-      const toIdx = orderedStageIds.indexOf(h.to_stage)
-
-      if (h.from_stage === h.to_stage) {
-        continue
-      }
-      if (fromIdx >= 0 && toIdx >= 0 && toIdx !== fromIdx + 1) {
-        errors.push({ code: 'handoff_not_adjacent', reason: `handoff jumps from stage ${h.from_stage} (index ${fromIdx}) to stage ${h.to_stage} (index ${toIdx}) — only forward-adjacent (fromIdx+1 === toIdx) or same-stage handoffs allowed` })
-      }
-    }
-  }
-
-  // main-path closure: each adjacent pair must have at least one forward handoff
-  if (orderedStageIds.length >= 2) {
-    for (let i = 0; i < orderedStageIds.length - 1; i++) {
-      const currentSid = orderedStageIds[i]
-      const nextSid = orderedStageIds[i + 1]
-      let hasHandoff = false
-      for (const stage of stages) {
-        for (const h of (Array.isArray(stage.handoffs) ? stage.handoffs : [])) {
-          if (h.from_stage === currentSid && h.to_stage === nextSid) hasHandoff = true
-        }
-      }
-      if (!hasHandoff) {
-        errors.push({ code: 'missing_main_handoff', reason: `no forward handoff between adjacent stages ${currentSid} and ${nextSid}` })
-      }
-    }
-  }
-
-  const entry = workflow.entry
-  if (!entry || typeof entry !== 'object') {
-    errors.push({ code: 'missing_entry', reason: 'workflow is missing entry contract' })
-  } else {
-    if (isEmptyOrPlaceholder(entry.description)) errors.push({ code: 'empty_entry_description', reason: 'entry contract has empty or placeholder description' })
-    if (isEmptyOrPlaceholder(entry.input_contract)) errors.push({ code: 'empty_entry_contract', reason: 'entry contract has empty or placeholder input_contract' })
-  }
-
-  const terminal = workflow.terminal
-  if (!terminal || typeof terminal !== 'object') {
-    errors.push({ code: 'missing_terminal', reason: 'workflow is missing terminal contract' })
-  } else {
-    if (isEmptyOrPlaceholder(terminal.description)) errors.push({ code: 'empty_terminal_description', reason: 'terminal contract has empty or placeholder description' })
-    if (isEmptyOrPlaceholder(terminal.output_contract)) errors.push({ code: 'empty_terminal_contract', reason: 'terminal contract has empty or placeholder output_contract' })
-  }
-
-  if (orderedStageIds.length > 0) {
-    const firstSid = orderedStageIds[0]
-    const lastSid = orderedStageIds[orderedStageIds.length - 1]
-
-    const reachableFromEntry = new Set()
-    reachableFromEntry.add(firstSid)
-    let changed = true
-    while (changed) {
-      changed = false
-      for (const stage of stages) {
-        for (const h of (Array.isArray(stage.handoffs) ? stage.handoffs : [])) {
-          if (reachableFromEntry.has(h.from_stage) && !reachableFromEntry.has(h.to_stage)) {
-            reachableFromEntry.add(h.to_stage)
-            changed = true
-          }
-        }
-      }
-    }
-
-    if (!reachableFromEntry.has(lastSid)) {
-      errors.push({ code: 'unresolved_gap', reason: `terminal stage ${lastSid} is not reachable from entry stage ${firstSid} via handoffs` })
-    }
-    for (const sid of orderedStageIds) {
-      if (!reachableFromEntry.has(sid)) {
-        errors.push({ code: 'unresolved_gap', reason: `stage ${sid} is not reachable from entry stage ${firstSid}` })
-      }
-    }
-  }
-
-  for (const branch of (Array.isArray(workflow.branches) ? workflow.branches : [])) {
-    if (isEmptyOrPlaceholder(branch.condition)) {
-      errors.push({ code: 'empty_branch_condition', reason: 'branch has empty or placeholder condition' })
-    }
-    if (isEmptyOrPlaceholder(branch.description)) {
-      errors.push({ code: 'empty_branch_description', reason: 'branch has empty or placeholder description' })
-    }
-    if (branch.from_stage && !stageIds.has(branch.from_stage)) {
-      errors.push({ code: 'branch_from_stage_unknown', reason: `branch from_stage ${branch.from_stage} is not a defined stage` })
-    }
-    if (branch.to_stage && !stageIds.has(branch.to_stage)) {
-      errors.push({ code: 'branch_to_stage_unknown', reason: `branch to_stage ${branch.to_stage} is not a defined stage` })
-    }
-  }
-
-  // unresolved compatibility blocks candidate
-  const unresolved = Array.isArray(record.compatibility?.unresolved) ? record.compatibility.unresolved : []
-  if (unresolved.length > 0) {
-    errors.push({ code: 'compatibility_unresolved', reason: `compatibility.unresolved is non-empty (${unresolved.length} items) — unresolved gaps block evaluation` })
-  }
-
-  return { ok: errors.length === 0, errors }
-}
-
-export function isPackPromotionEligible(record, fileEvaluation, skills, options = {}) {
-  return packPromotionIneligibilityReasons(record, fileEvaluation, skills, options).length === 0
 }
 
 export function promotePassingCandidates(cleanup = false, selectedPackIds = null) {
@@ -1083,6 +903,8 @@ export function promotePassingCandidates(cleanup = false, selectedPackIds = null
   const skills = new Map(loadSkillRecords().map(({ record }) => [record.canonical_skill_id, record]))
   for (const { path, record } of loadPackRecords('candidates')) {
     if (selectedPackIds && !selectedPackIds.has(record.pack_id)) continue
+    if (record.schema_version !== 3) continue
+
     const evalPath = evaluationPathForPack(record.pack_id, 'candidate')
     let fileEvaluation = null
     if (existsSync(evalPath)) {
@@ -1091,31 +913,63 @@ export function promotePassingCandidates(cleanup = false, selectedPackIds = null
         if (!fileEvaluation || typeof fileEvaluation !== 'object' || Array.isArray(fileEvaluation)) continue
       } catch { continue }
     }
-    if (!isPackPromotionEligible(record, fileEvaluation, skills, { requireFileEvaluation: true })) continue
+    if (!fileEvaluation || fileEvaluation.schema_version !== 2) continue
+    if (fileEvaluation.decision?.passed !== true) continue
+    if (fileEvaluation.pack_id !== record.pack_id) continue
 
-    if (!record.evaluation?.status || record.evaluation.status !== 'passed') {
-      record.evaluation = { ...(record.evaluation ?? {}), status: 'passed' }
-      writeYaml(path, record)
+    const candidateDir = dirname(path)
+    const proofPath = join(candidateDir, 'preflight-proof.json')
+    if (!existsSync(proofPath)) continue
+
+    let storedProof = null
+    try { storedProof = JSON.parse(readText(proofPath)) } catch { continue }
+
+    const storedDigest = storedProof.content_digest
+    if (!storedDigest) continue
+
+    // Proof content_digest must match evaluation's bound proof_digest
+    if (storedDigest !== fileEvaluation.proof_digest) continue
+
+    // --- Independent promotion proof verification ---
+    // Promotion must NOT trust evaluation — it independently recomputes
+    // the current content digest from exact canonical files and compares.
+    // Any staleness in current analysis/relation/skill evidence blocks promotion.
+
+    // Re-check member eligibility independently
+    let memberOk = true
+    const memberSkills = new Map()
+    for (const member of (record.members ?? [])) {
+      const skill = skills.get(member.skill_id)
+      if (!skill) { memberOk = false; break }
+      if (!['active', 'preview'].includes(skill.status)) { memberOk = false; break }
+      if (skill.identity?.current_version_id !== member.version_id) { memberOk = false; break }
+      memberSkills.set(member.skill_id, skill)
+    }
+    if (!memberOk) continue
+
+    // Independently recompute the current content digest
+    try {
+      const currentDigest = recomputePackProofDigest(record, memberSkills)
+      if (currentDigest !== storedDigest) continue
+    } catch {
+      // Malformed/missing evidence — fail closed, do not promote
+      continue
     }
 
     const published = { ...record, status: 'published', updated_at: nowIso() }
     const target = packRecordPath(record.pack_id, 'published')
     writeYaml(target, published)
-    const evalSource = evaluationPathForPack(record.pack_id, 'candidate')
+
     const evalTarget = evaluationPathForPack(record.pack_id, 'published')
-    if (existsSync(evalSource)) writeTextAtomic(evalTarget, readText(evalSource))
-    const evidenceSource = evidencePathForPack(record.pack_id, 'candidate')
-    const evidenceTarget = evidencePathForPack(record.pack_id, 'published')
-    if (existsSync(evidenceSource)) writeTextAtomic(evidenceTarget, readText(evidenceSource))
+    writeTextAtomic(evalTarget, readText(evalPath))
+
+    const publishedProofTarget = publishedProofPath(record.pack_id)
+    writeTextAtomic(publishedProofTarget, readText(proofPath))
+
     changed.push(relative(ROOT, target))
 
-    if (cleanup) {
-      removeSafeContainedPath(CATALOG, path, { force: true, type: 'file' })
-      if (existsSync(evalSource)) removeSafeContainedPath(CATALOG, evalSource, { force: true, type: 'file' })
-      if (existsSync(evidenceSource)) removeSafeContainedPath(CATALOG, evidenceSource, { force: true, type: 'file' })
-      const candidateDir = dirname(path)
-      if (existsSync(candidateDir) && readdirSync(candidateDir).length === 0) removeSafeContainedPath(CATALOG, candidateDir, { force: true, type: 'directory' })
-    }
+    // Always clean up candidate directory after successful promotion
+    removeSafeContainedPath(CATALOG, candidateDir, { recursive: true, force: true, type: 'directory' })
   }
   return changed
 }

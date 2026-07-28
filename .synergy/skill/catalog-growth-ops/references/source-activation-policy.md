@@ -1,6 +1,6 @@
 # Source Activation Policy
 
-Use this policy before activating a source during autonomous growth.
+Use this policy before activating a source discovered for a concrete, current intent gap. Activation does not widen the intent or authorize unrelated ingestion.
 
 ## Core Boundary
 
@@ -45,7 +45,7 @@ Use `preview` when:
 - the source may be small, niche, semi-structured, or newly discovered;
 - you do not yet want to imply mature catalog confidence.
 
-Preview is the preferred status for broad discovery sources whose safety is clear but whose semantic value still needs evidence.
+Preview is the preferred status for a target-relevant source whose safety is clear but whose semantic value still needs downstream evidence.
 
 ## Do Not Block For Content Taste
 

@@ -1,71 +1,89 @@
 # Catalog Data Write Contracts
 
-All canonical writes must flow through `scripts/`.
+All canonical writes flow through current-schema helpers under `scripts/`. Legacy records fail validation and must be regenerated through their owner workflow; there is no in-place compatibility or migration path.
 
-## Draft-to-write flow
+## Draft-to-Write Flow
 
-```txt
-agent/subagent analysis
-  → draft JSON in catalog/runs/<run-id>/drafts/ or stdin
-  → write/append script
-  → normalization and defaults
+```text
+owner semantic judgment
+  → complete draft or controller envelope
+  → one narrow canonical writer
+  → current-schema validation
   → atomic write
-  → strict validation
+  → strict catalog validation
 ```
 
-## Ownership
+Operational skills must not hand-edit canonical YAML or JSONL. Model- or remote-derived content supplies semantic data only; it never selects IDs, status, buckets, paths, sessions, permissions, or external actions.
 
-- `catalog-data` owns canonical writes, validation, formatting, migrations, catalog hashes, indexes, and impact detection.
-- `catalog-publishing` owns rendering README/docs only.
-- Operational skills must not directly write YAML/JSONL.
-- Agent/model/remote-derived drafts provide semantic judgments only and never select a destination, bucket, record status, canonical identity, or output path.
+## Current Production Schemas
 
-## Controller-Derived Pack Destinations
+- Analysis: v2 claim records.
+- Relation: v2 predicate-specific records.
+- Pack: v3 DAG records with no inline evaluation.
+- Evaluation: v2 independent decision records.
+- Nightly summary: v3, rendered from the sealed ledger.
 
-- Candidate pack writers derive `status: candidate` and `catalog/packs/candidates/<pack-id>/pack.yaml`; candidate drafts containing published status, bucket/path, publication timestamp, or promotion controls are rejected.
-- Before writing, candidate pack writers execute a deterministic workflow-contract preflight that validates entry/terminal contracts, stage membership, handoff topology, and member eligibility. Failed preflight blocks candidate creation.
-- Evaluation controllers bind canonical `pack_id`, candidate status, pack version, stable pack content hash, deterministic `evaluation_id`, and expected candidate evaluation path. The writer reloads the candidate before writing, rejects stale or replayed bindings, and does not expose published-pack re-evaluation. Evaluation binding is also blocked for candidates that fail preflight.
-- Evaluation drafts may provide rubric metrics, scores, terminal judgments, failure modes, and recommendations, but never pack identity/status, evaluation identity, bucket, or output path. Contradictory pass signals resolve conservatively to non-passing.
-- `promotePassingCandidates()` is the only writer for `catalog/packs/published/**`. Promotion and validation share the same eligibility rule: a consistent passing evaluation at or above `0.78`, at least two members, eligible member statuses, current pinned versions, and passing workflow preflight (defense-in-depth).
+## Pack v3 Candidate Write
 
-## Workflow Contract Preflight
+`write-pack-record.mjs` is the only candidate Pack writer. It:
 
-Pack workflows must express a structured contract:
-- `entry` — input contract with description and input_contract (non-empty, non-placeholder).
-- `terminal` — output contract with description and output_contract (non-empty, non-placeholder).
-- `stages[]` — ordered stages with stable `stage_id`, `name`, `description`, `member_ids[]`, and `handoffs[]`.
-- `handoffs[]` — explicit handoffs with `from_stage`/`from_skill`/`to_stage`/`to_skill`, plus `produced_artifact` and `consumed_as` (non-empty, non-placeholder).
-- `branches[]` — conditional branches (optional, validated for stage existence).
+- accepts a semantic draft without destination or promotion controls;
+- derives `status: candidate` and `catalog/packs/candidates/<pack-id>/pack.yaml`;
+- validates member eligibility and current version pins;
+- validates DAG nodes, edges, roots, sinks, reachability, cycles, artifact handoffs, and claim-backed relation usage;
+- writes the Pack v3 record atomically;
+- computes the complete semantic preflight exactly once and writes `preflight-proof.json` beside the candidate.
 
-Preflight validates:
-1. All pack members exist and are active/preview with current version pinned.
-2. All stage `member_ids` reference known members; no member is assigned to multiple stages.
-3. Handoff `from_stage`/`to_stage` reference valid stages; `from_skill`/`to_skill` are in the respective stage's `member_ids`.
-4. Handoffs only connect adjacent or same stages; non-adjacent jumps are rejected.
-5. Every pair of adjacent main-path stages has at least one handoff.
-6. All stages are reachable from the first stage via handoffs.
-7. Entry/terminal contracts, stage descriptions, and handoff artifact contracts are non-empty and not placeholder strings.
-8. Branch `from_stage`/`to_stage` reference valid stages.
+The proof contains the current rules version and a digest bound to the Pack, selected analyses, relations, checked claims, compatibility, and mitigation. There is no second proof filename.
 
-Preflight runs at four enforcement points:
-- **Candidate write** — canonical writer (`write-pack-record.mjs`) rejects drafts that fail preflight before `writeYaml`.
-- **Evaluation binding** — `createEvaluationBinding` blocks evaluating a candidate whose workflow contract fails.
-- **Promotion eligibility** — defense-in-depth re-check that a published pack still satisfies its workflow contract.
-- **Catalog validation** — `validateCatalog` runs preflight on both candidate and published packs.
+## Evaluation v2 Write
+
+`write-evaluation.mjs` is the only Evaluation writer. The controller first requests a binding for one canonical candidate. The binding fixes:
+
+- Pack ID, status, version, and content hash;
+- deterministic evaluation ID and candidate evaluation path;
+- current `preflight-proof.json` digest;
+- synthesis-session identity.
+
+The writer accepts only `{binding, draft}`, rereads current candidate and proof state immediately before writing, rejects stale or replayed bindings, and never mutates Pack YAML. The semantic draft supplies the ten metric objects, warnings, blockers, checked claim IDs, evaluation session ID, and run identity; it cannot supply controlled identity/path fields.
+
+Evaluation applies blocker-first MIN-gate semantics:
+
+- any structural blocker: `rejected`;
+- no blocker and every metric at least `0.70`: `passed`;
+- no blocker with any metric from `0.50` through `0.69`: `needs_work`;
+- any metric below `0.50`: `rejected`.
+
+Synthesis and evaluation session IDs must differ. The resulting Evaluation v2 binds to the current proof digest.
+
+## Promotion
+
+`promotePassingCandidates()` is the only writer for `catalog/packs/published/**`. It does not rerun semantic preflight. It verifies:
+
+1. Pack schema v3 and candidate status;
+2. at least two eligible members with current version pins;
+3. current candidate proof exists and matches Evaluation v2;
+4. independent Evaluation decision is exactly `passed` with no blockers;
+5. evaluation Pack/session/proof bindings are consistent.
+
+Successful promotion creates the sole published Pack, copies the bound evaluation and proof, removes the candidate directory, and leaves no inline evaluation state. Non-passing or stale candidates remain unpublished.
+
+## Relation v2 Write
+
+`append-relation.mjs` accepts a complete v2 relation, validates the predicate-specific block, and atomically appends it without semantic loss. It rejects v1, unknown fields, invalid enums, and missing relation/claim topology.
 
 ## Structural Recovery
 
-Malformed canonical data may be repaired only through a narrow helper that consumes a reviewed draft, matches the declared corruption exactly, preserves complete semantic fields from existing evidence, rewrites atomically, and fails before writing if the remainder cannot parse. Recovery helpers must not infer missing meaning. Strict validation is mandatory immediately afterward.
+Malformed current-schema data may be repaired only through a narrow helper that consumes complete reviewed evidence, matches the declared corruption exactly, and writes atomically without guessing. Unsupported legacy records are regenerated through owner workflows.
 
-## Atomicity
+## Filesystem Safety
 
-Writer scripts must write temp files and rename after successful serialization. JSONL appenders must re-write complete files atomically when practical.
+Writers reject symbolic links in targets or existing ancestors, enforce realpath containment, create missing directories one level at a time, and use temp-file-plus-rename writes. JSONL appenders rewrite the complete file atomically when practical.
 
-Deterministic writers and cleanup routines must reject symbolic links in the target or any existing ancestor, verify realpath containment against their declared root immediately before the operation, and create missing directories one level at a time with a fresh `lstat`/realpath check after each level. These checks narrow check-to-use windows and block repository symlink escapes, but they do not provide dirfd-style protection against a malicious same-permission process that continuously swaps path components during the final filesystem syscall.
+## Formatting and Verification
 
-## Formatting
-
-- YAML keys are stable-sorted.
-- JSONL records are one object per line.
-- Empty JSONL files are valid.
+- YAML and JSON use deterministic key ordering where defined.
+- JSONL stores one object per line; empty JSONL is valid.
 - Timestamps use ISO 8601.
+
+After a write, run the narrow contract test and strict validation. Rebuild indexes before publishing when canonical records changed.

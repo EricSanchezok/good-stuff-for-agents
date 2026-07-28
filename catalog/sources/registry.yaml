@@ -9,22 +9,20 @@ sources:
   schema_version: 1
   source_id: src_https-github-com-anthropics-skills-anthropic-agent-skills_04f79b56
   state:
-    consecutive_failures: 2
-    last_checked_at: '2026-07-23T17:05:22.188Z'
-    last_ref: 1f630fdf9259cec4a14913127dfd7c3b69ef72eb
-    last_success_at: '2026-07-23T16:37:20.372Z'
+    consecutive_failures: 0
+    last_checked_at: '2026-07-27T21:32:43.524Z'
+    last_ref: b29e7cf65e5cb78a5ac33d582270551bc74a14eb
+    last_success_at: '2026-07-27T21:32:43.524Z'
   status: active
   sync:
     default_ref: main
     exclude:
     - node_modules/**
     - .git/**
-    frequency: daily
     include:
     - '**/SKILL.md'
-    strategy: git
   type: github_repo
-  updated_at: '2026-07-09T18:08:30.645Z'
+  updated_at: '2026-07-27T21:31:22.438Z'
   url: https://github.com/anthropics/skills
 - license:
     evidence: LICENSE file in repo root; README states MIT
@@ -34,10 +32,10 @@ sources:
   schema_version: 1
   source_id: src_https-github-com-coderabbitai-skills-coderabbit-skills_8f2a22eb
   state:
-    consecutive_failures: 2
-    last_checked_at: '2026-07-23T17:05:23.985Z'
+    consecutive_failures: 0
+    last_checked_at: '2026-07-27T21:32:44.834Z'
     last_ref: c61c4908d36dda6fb08a343cc8b19c59fbb47de3
-    last_success_at: '2026-07-23T16:37:23.385Z'
+    last_success_at: '2026-07-27T21:32:44.834Z'
   status: active
   sync:
     default_ref: main
@@ -45,12 +43,10 @@ sources:
     - node_modules/**
     - .git/**
     - assets/**
-    frequency: daily
     include:
     - '**/SKILL.md'
-    strategy: git
   type: github_repo
-  updated_at: '2026-07-09T17:19:39.155Z'
+  updated_at: '2026-07-27T21:31:24.196Z'
   url: https://github.com/coderabbitai/skills
 - license:
     evidence: LICENSE file in repo root; README states MIT
@@ -60,22 +56,20 @@ sources:
   schema_version: 1
   source_id: src_https-github-com-coreyhaines31-marketingskills-marketing-skills-corey-haines_ef920698
   state:
-    consecutive_failures: 2
-    last_checked_at: '2026-07-23T17:05:24.769Z'
-    last_ref: c21a984a56da10fb6085e6334f6f60929220a4da
-    last_success_at: '2026-07-23T16:37:26.392Z'
+    consecutive_failures: 0
+    last_checked_at: '2026-07-27T21:32:46.193Z'
+    last_ref: 7868cb9251fad80a73d26e488a5ad5f6c4a9f335
+    last_success_at: '2026-07-27T21:32:46.193Z'
   status: active
   sync:
     default_ref: main
     exclude:
     - node_modules/**
     - .git/**
-    frequency: daily
     include:
     - '**/SKILL.md'
-    strategy: git
   type: github_repo
-  updated_at: '2026-07-09T18:59:58.698Z'
+  updated_at: '2026-07-27T21:31:24.898Z'
   url: https://github.com/coreyhaines31/marketingskills
 - license:
     evidence: LICENSE file in repo root confirms Apache License 2.0
@@ -85,22 +79,20 @@ sources:
   schema_version: 1
   source_id: src_https-github-com-cuga-project-cuga-agent-cuga-agent-ibm-research_5709bc42
   state:
-    consecutive_failures: 3
-    last_checked_at: '2026-07-23T17:05:25.518Z'
-    last_ref: a925727389884ad78f643b60917ab0707a00ec62
-    last_success_at: '2026-07-23T16:24:52.317Z'
+    consecutive_failures: 0
+    last_checked_at: '2026-07-27T21:32:48.048Z'
+    last_ref: fbb9f1855894fc42cf5f2262a6878cab0cb2a377
+    last_success_at: '2026-07-27T21:32:48.048Z'
   status: preview
   sync:
     default_ref: main
     exclude:
     - node_modules/**
     - .git/**
-    frequency: daily
     include:
     - .claude/commands/**
-    strategy: git
   type: github_repo
-  updated_at: '2026-07-20T00:00:00.000Z'
+  updated_at: '2026-07-27T21:31:25.998Z'
   url: https://github.com/cuga-project/cuga-agent
 - license:
     evidence: Repo governed by Figma Developer Terms. Skills are downloadable and
@@ -111,22 +103,20 @@ sources:
   schema_version: 1
   source_id: src_https-github-com-figma-mcp-server-guide-figma-mcp-skills_dde79ddd
   state:
-    consecutive_failures: 3
-    last_checked_at: '2026-07-23T17:05:26.491Z'
+    consecutive_failures: 0
+    last_checked_at: '2026-07-27T21:32:49.403Z'
     last_ref: 07316dd2920d61303ca0e52812b31f5f341e7b15
-    last_success_at: '2026-07-23T16:24:55.358Z'
+    last_success_at: '2026-07-27T21:32:49.403Z'
   status: preview
   sync:
     default_ref: main
     exclude:
     - node_modules/**
     - .git/**
-    frequency: daily
     include:
     - '**/SKILL.md'
-    strategy: git
   type: github_repo
-  updated_at: '2026-07-09T18:08:30.843Z'
+  updated_at: '2026-07-27T21:31:26.686Z'
   url: https://github.com/figma/mcp-server-guide
 - license:
     evidence: MIT license stated in README
@@ -136,24 +126,22 @@ sources:
   schema_version: 1
   source_id: src_https-github-com-fujishigetemma-semantic-scholar-mcp-semantic-scholar-mcp-server_1c7ee5c5
   state:
-    consecutive_failures: 3
-    last_checked_at: '2026-07-23T17:05:27.478Z'
+    consecutive_failures: 0
+    last_checked_at: '2026-07-27T21:32:50.697Z'
     last_ref: ead98e835620941b26bac952b5e330405693d9c8
-    last_success_at: '2026-07-23T16:24:58.425Z'
+    last_success_at: '2026-07-27T21:32:50.697Z'
   status: preview
   sync:
     default_ref: main
     exclude:
     - node_modules/**
     - .git/**
-    frequency: daily
     include:
     - '**/CLAUDE.md'
     - .claude/**
     - '**/README.md'
-    strategy: git
   type: github_repo
-  updated_at: '2026-07-13T21:02:58.374Z'
+  updated_at: '2026-07-27T21:31:27.345Z'
   url: https://github.com/FujishigeTemma/semantic-scholar-mcp
 - license:
     evidence: GitHub API confirms MIT license
@@ -163,24 +151,22 @@ sources:
   schema_version: 1
   source_id: src_https-github-com-hermeticormus-markdown-discipline-skills-markdown-discipline-skills_ddaf87e0
   state:
-    consecutive_failures: 3
-    last_checked_at: '2026-07-23T17:05:28.238Z'
+    consecutive_failures: 0
+    last_checked_at: '2026-07-27T21:32:51.980Z'
     last_ref: ae8c782f68db306d348320bee0c23a551f913fe1
-    last_success_at: '2026-07-23T16:25:02.071Z'
+    last_success_at: '2026-07-27T21:32:51.980Z'
   status: active
   sync:
     default_ref: main
     exclude:
     - node_modules/**
     - .git/**
-    frequency: daily
     include:
     - '**/SKILL.md'
     - '**/CLAUDE.md'
     - .cursor/rules/**
-    strategy: git
   type: github_repo
-  updated_at: '2026-07-13T21:02:58.540Z'
+  updated_at: '2026-07-27T21:31:28.104Z'
   url: https://github.com/HermeticOrmus/markdown-discipline-skills
 - license:
     evidence: LICENSE file confirms BSD 3-Clause
@@ -190,23 +176,21 @@ sources:
   schema_version: 1
   source_id: src_https-github-com-jupyterlab-jupyter-ai-jupyter-ai-jupyterlab_e47112b5
   state:
-    consecutive_failures: 3
-    last_checked_at: '2026-07-23T17:05:28.991Z'
-    last_ref: 53a4d5cda32d9e98b43d6a302f9f287cb0c7b8e6
-    last_success_at: '2026-07-23T16:25:07.612Z'
+    consecutive_failures: 0
+    last_checked_at: '2026-07-27T21:32:53.356Z'
+    last_ref: 2320863576025568589bb908204ede253f86dc8d
+    last_success_at: '2026-07-27T21:32:53.356Z'
   status: preview
   sync:
     default_ref: main
     exclude:
     - node_modules/**
     - .git/**
-    frequency: daily
     include:
     - '**/README.md'
     - docs/**
-    strategy: git
   type: github_repo
-  updated_at: '2026-07-13T21:02:58.457Z'
+  updated_at: '2026-07-27T21:31:28.827Z'
   url: https://github.com/jupyterlab/jupyter-ai
 - license:
     evidence: LICENSE.md file in repo root; README states MIT (individual skills may
@@ -217,10 +201,10 @@ sources:
   schema_version: 1
   source_id: src_https-github-com-k-dense-ai-scientific-agent-skills-k-dense-scientific-agent-skills_5bdb6d39
   state:
-    consecutive_failures: 3
-    last_checked_at: '2026-07-23T17:05:29.739Z'
-    last_ref: 831d49eb77eed3c792be2970921b46764012ef00
-    last_success_at: '2026-07-23T16:25:11.014Z'
+    consecutive_failures: 0
+    last_checked_at: '2026-07-27T21:32:54.993Z'
+    last_ref: 81e316bc89f7fda176b092d2bceb959204710b0a
+    last_success_at: '2026-07-27T21:32:54.993Z'
   status: active
   sync:
     default_ref: main
@@ -229,12 +213,10 @@ sources:
     - .git/**
     - docs/**
     - .github/**
-    frequency: daily
     include:
     - '**/SKILL.md'
-    strategy: git
   type: github_repo
-  updated_at: '2026-07-09T17:19:39.330Z'
+  updated_at: '2026-07-27T21:31:29.602Z'
   url: https://github.com/K-Dense-AI/scientific-agent-skills
 - license:
     evidence: LICENSE file in repo root confirms Apache License 2.0
@@ -244,22 +226,20 @@ sources:
   schema_version: 1
   source_id: src_https-github-com-kozz36-frontend-designer-skill-frontend-designer-skill_929a1309
   state:
-    consecutive_failures: 3
-    last_checked_at: '2026-07-23T17:05:30.510Z'
+    consecutive_failures: 0
+    last_checked_at: '2026-07-27T21:32:56.333Z'
     last_ref: 5e4dc12811bd106e3184a863656e141aed398a3f
-    last_success_at: '2026-07-23T16:25:14.155Z'
+    last_success_at: '2026-07-27T21:32:56.333Z'
   status: preview
   sync:
     default_ref: main
     exclude:
     - node_modules/**
     - .git/**
-    frequency: daily
     include:
     - '**/SKILL.md'
-    strategy: git
   type: github_repo
-  updated_at: '2026-07-09T18:08:31.016Z'
+  updated_at: '2026-07-27T21:31:30.262Z'
   url: https://github.com/kozz36/frontend-designer-skill
 - license:
     evidence: LICENSE file in repo root; README states MIT
@@ -269,10 +249,10 @@ sources:
   schema_version: 1
   source_id: src_https-github-com-mcollina-skills-matteo-collina-s-skills_faf2f289
   state:
-    consecutive_failures: 3
-    last_checked_at: '2026-07-23T17:05:31.298Z'
-    last_ref: 879c9deb0d3a3551086e7c737577dc6cd76fd0c7
-    last_success_at: '2026-07-23T16:25:17.132Z'
+    consecutive_failures: 0
+    last_checked_at: '2026-07-27T21:32:57.653Z'
+    last_ref: 7cfdaf97386f51be412d5351aa2f0acbf958e067
+    last_success_at: '2026-07-27T21:32:57.653Z'
   status: active
   sync:
     default_ref: main
@@ -281,12 +261,10 @@ sources:
     - .git/**
     - docs/**
     - src/**
-    frequency: daily
     include:
     - '**/SKILL.md'
-    strategy: git
   type: github_repo
-  updated_at: '2026-07-09T17:19:39.242Z'
+  updated_at: '2026-07-27T21:31:30.959Z'
   url: https://github.com/mcollina/skills
 - license:
     evidence: LICENSE file in repo root; README states MIT
@@ -296,10 +274,10 @@ sources:
   schema_version: 1
   source_id: src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e
   state:
-    consecutive_failures: 3
-    last_checked_at: '2026-07-23T17:05:32.040Z'
-    last_ref: cc93536d8b809e177a7d1008b276ce41a9456a9c
-    last_success_at: '2026-07-23T16:25:22.707Z'
+    consecutive_failures: 0
+    last_checked_at: '2026-07-27T21:32:59.220Z'
+    last_ref: 4f1db7ec55caf11e3b143c91220bd79a632bc55b
+    last_success_at: '2026-07-27T21:32:59.220Z'
   status: active
   sync:
     default_ref: main
@@ -308,12 +286,10 @@ sources:
     - .git/**
     - tests/**
     - docs/**
-    frequency: daily
     include:
     - '**/SKILL.md'
-    strategy: git
   type: github_repo
-  updated_at: '2026-07-09T17:19:39.028Z'
+  updated_at: '2026-07-27T21:31:31.625Z'
   url: https://github.com/microsoft/skills
 - license:
     evidence: LICENSE file in repo root confirms MIT
@@ -323,22 +299,20 @@ sources:
   schema_version: 1
   source_id: src_https-github-com-openclaw-agent-skills-openclaw-agent-skills_088582b8
   state:
-    consecutive_failures: 3
-    last_checked_at: '2026-07-23T17:05:32.777Z'
-    last_ref: b8d146484334b6c3e604060e6dbe18f8eff5d8bd
-    last_success_at: '2026-07-23T16:25:25.907Z'
+    consecutive_failures: 0
+    last_checked_at: '2026-07-27T21:33:00.696Z'
+    last_ref: fe588b1a6267eb47f785d0c748db9f6f3e9a3b4f
+    last_success_at: '2026-07-27T21:33:00.696Z'
   status: preview
   sync:
     default_ref: main
     exclude:
     - node_modules/**
     - .git/**
-    frequency: daily
     include:
     - '**/SKILL.md'
-    strategy: git
   type: github_repo
-  updated_at: '2026-07-10T13:59:28.455Z'
+  updated_at: '2026-07-27T21:31:32.300Z'
   url: https://github.com/openclaw/agent-skills
 - license:
     evidence: LICENSE file in repo root; README badge confirms MIT
@@ -348,22 +322,20 @@ sources:
   schema_version: 1
   source_id: src_https-github-com-phuryn-pm-skills-pm-skills-marketplace-phuryn_8ac36372
   state:
-    consecutive_failures: 3
-    last_checked_at: '2026-07-23T17:05:33.534Z'
+    consecutive_failures: 0
+    last_checked_at: '2026-07-27T21:33:02.005Z'
     last_ref: 18468a95b427e70e258b51389796367c6f684e7d
-    last_success_at: '2026-07-23T16:25:29.184Z'
+    last_success_at: '2026-07-27T21:33:02.005Z'
   status: active
   sync:
     default_ref: main
     exclude:
     - node_modules/**
     - .git/**
-    frequency: daily
     include:
     - '**/SKILL.md'
-    strategy: git
   type: github_repo
-  updated_at: '2026-07-09T18:59:58.978Z'
+  updated_at: '2026-07-27T21:31:32.931Z'
   url: https://github.com/phuryn/pm-skills
 - license:
     evidence: LICENSE file in repo root; README states Apache 2.0
@@ -373,10 +345,10 @@ sources:
   schema_version: 1
   source_id: src_https-github-com-product-on-purpose-pm-skills-pm-skills-product-on-purpose_f2ce15e5
   state:
-    consecutive_failures: 3
-    last_checked_at: '2026-07-23T17:05:34.264Z'
+    consecutive_failures: 0
+    last_checked_at: '2026-07-27T21:33:03.497Z'
     last_ref: 9432e2771eb7c221c9454a210c6ae55b6ee25d54
-    last_success_at: '2026-07-23T16:25:32.579Z'
+    last_success_at: '2026-07-27T21:33:03.497Z'
   status: preview
   sync:
     default_ref: main
@@ -386,12 +358,10 @@ sources:
     - docs/**
     - .github/**
     - site/**
-    frequency: daily
     include:
     - '**/SKILL.md'
-    strategy: git
   type: github_repo
-  updated_at: '2026-07-09T18:59:59.065Z'
+  updated_at: '2026-07-27T21:31:33.592Z'
   url: https://github.com/product-on-purpose/pm-skills
 - license:
     evidence: LICENSE file in repo root confirms MIT
@@ -401,22 +371,20 @@ sources:
   schema_version: 1
   source_id: src_https-github-com-southleft-skills-for-figma-skills-for-figma-southleft_ea9f2b3d
   state:
-    consecutive_failures: 3
-    last_checked_at: '2026-07-23T17:05:35.015Z'
+    consecutive_failures: 0
+    last_checked_at: '2026-07-27T21:33:04.900Z'
     last_ref: 79bda1e76044d1e9d9b60bb211507e64833af92b
-    last_success_at: '2026-07-23T16:25:36.274Z'
+    last_success_at: '2026-07-27T21:33:04.900Z'
   status: preview
   sync:
     default_ref: main
     exclude:
     - node_modules/**
     - .git/**
-    frequency: daily
     include:
     - '**/SKILL.md'
-    strategy: git
   type: github_repo
-  updated_at: '2026-07-09T18:08:30.929Z'
+  updated_at: '2026-07-27T21:31:34.277Z'
   url: https://github.com/southleft/skills-for-figma
 - license:
     evidence: LICENSE file in repo root; README states MIT
@@ -426,10 +394,10 @@ sources:
   schema_version: 1
   source_id: src_https-github-com-thatrebeccarae-claude-marketing-claude-marketing-rebecca-rae-barton_8a108923
   state:
-    consecutive_failures: 3
-    last_checked_at: '2026-07-23T17:05:35.724Z'
+    consecutive_failures: 0
+    last_checked_at: '2026-07-27T21:33:06.280Z'
     last_ref: a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba
-    last_success_at: '2026-07-23T16:25:39.115Z'
+    last_success_at: '2026-07-27T21:33:06.280Z'
   status: preview
   sync:
     default_ref: main
@@ -438,10 +406,8 @@ sources:
     - .git/**
     - examples/**
     - skill-packs/**
-    frequency: daily
     include:
     - '**/SKILL.md'
-    strategy: git
   type: github_repo
-  updated_at: '2026-07-09T18:59:58.891Z'
+  updated_at: '2026-07-27T21:31:34.917Z'
   url: https://github.com/thatrebeccarae/claude-marketing

@@ -1,0 +1,160 @@
+{
+  "semantic_digest": "9a092df7fd6558f09d3b443ecce5af6ee8857acd44c9175cbede27a07de72520",
+  "snapshot_digest": "f64dee1b1b93f19d251e402c503a6630a9aea1564c702b74f9983f16b825d1d2",
+  "evidence_manifest_digest": "5e69cf04c4015b7c5143351555d15913d30607b4253bdd79371490f376293568",
+  "evidence_manifest": {
+    "entries": [
+      {
+        "path": "catalog/analyses/co/skl_coderabbit-autofix-src-https-github-com-coderabbit-7ec3dc4b-skills-8f2a22eb-skills-autofix-skill-md_7ec3dc4b.md",
+        "kind": "analysis_record",
+        "sha256": "56acbefdda6c7619427298234996beb8c1e0aa466628582fc871d9899e98c678"
+      },
+      {
+        "path": "catalog/analyses/co/skl_coderabbit-code-review-src-https-github-com-codera-9e16a0ae-lls-8f2a22eb-skills-code-review-skill-md_9e16a0ae.md",
+        "kind": "analysis_record",
+        "sha256": "a375381a9c75409ac99e81b963629e4a3ecdcbe44c547750c2e9ab0655a5e324"
+      },
+      {
+        "path": "catalog/runs/run_2026-07-28-v3-final/demand-artifact.json",
+        "kind": "demand_artifact",
+        "sha256": "1f55cc509a50290ff59d690eba55d925c310504ca32f787b81b65c716fe3e0ef"
+      },
+      {
+        "path": "catalog/runs/run_2026-07-28-v3-final/issue-stage/workload.json",
+        "kind": "issue_workload",
+        "sha256": "4070e35eea06c27075a31fe98251779702326924b8a7aa5bc1d1a62119b8a2a6"
+      },
+      {
+        "path": "catalog/skills/records/co/skl_coderabbit-autofix-src-https-github-com-coderabbit-7ec3dc4b-skills-8f2a22eb-skills-autofix-skill-md_7ec3dc4b.yaml",
+        "kind": "skill_record",
+        "sha256": "6a1548f668be7ec248d04fbd0a0ddac602243b8532e4254d246f4d2b9a986b18"
+      },
+      {
+        "path": "catalog/skills/records/co/skl_coderabbit-code-review-src-https-github-com-codera-9e16a0ae-lls-8f2a22eb-skills-code-review-skill-md_9e16a0ae.yaml",
+        "kind": "skill_record",
+        "sha256": "dd7cd7a59fe86fc6bea2bc36830c6a58af2a86a427592cdc06e1e96621aa8dd7"
+      },
+      {
+        "path": "catalog/sources/registry.yaml",
+        "kind": "source_registry",
+        "sha256": "c86d7b4929d971dc4f1ccd0017f4b649fcf3b51a793e7bc586d3a5ab79e50193"
+      },
+      {
+        "path": "catalog/sources/state.jsonl",
+        "kind": "source_state",
+        "sha256": "fc4d2d484e6213d586625427a48bfb5dc4824d619aa9ffb70757994392df8eb2"
+      }
+    ]
+  },
+  "demand_metadata": {
+    "run_id": "run_2026-07-28-v3-final",
+    "workload_digest": "sha256:fe99e337da41b5847dc8f8ad9b858f517a874c967e28b157bde2cf36861a640c",
+    "demand_skill_ids": [
+      "skl_coderabbit-autofix-src-https-github-com-coderabbit-7ec3dc4b-skills-8f2a22eb-skills-autofix-skill-md_7ec3dc4b",
+      "skl_coderabbit-code-review-src-https-github-com-codera-9e16a0ae-lls-8f2a22eb-skills-code-review-skill-md_9e16a0ae"
+    ],
+    "domain_slugs": [
+      "code-review-remediation"
+    ],
+    "digest": "7e596eb98b451a844c02d91467937215f51b1a81c8615552f988275ee8395f5e"
+  },
+  "generated_at": "2026-07-28T04:53:54.488Z",
+  "context": {
+    "catalogCounts": {
+      "sources": {
+        "total": 17,
+        "active": 8,
+        "candidate": 0,
+        "published": 0,
+        "stale": 0,
+        "added_since_last_run": 0
+      },
+      "skills": {
+        "total": 2,
+        "active": 2,
+        "candidate": 0,
+        "published": 0,
+        "stale": 0,
+        "added_since_last_run": 0
+      },
+      "analyses": {
+        "total": 2,
+        "active": 2,
+        "candidate": 0,
+        "published": 0,
+        "stale": 0,
+        "added_since_last_run": 0
+      },
+      "relations": {
+        "total": 0,
+        "active": 0,
+        "candidate": 0,
+        "published": 0,
+        "stale": 0,
+        "added_since_last_run": 0
+      },
+      "packs": {
+        "total": 0,
+        "active": 0,
+        "candidate": 0,
+        "published": 0,
+        "stale": 0,
+        "added_since_last_run": 0
+      },
+      "evaluations": {
+        "total": 0,
+        "active": 0,
+        "candidate": 0,
+        "published": 0,
+        "stale": 0,
+        "added_since_last_run": 0
+      },
+      "issues": {
+        "total": 0,
+        "active": 0,
+        "candidate": 0,
+        "published": 0,
+        "stale": 0,
+        "added_since_last_run": 0
+      }
+    },
+    "freshness": {
+      "sources_stale_count": 0,
+      "skills_stale_count": 0,
+      "analyses_stale_count": 0,
+      "oldest_stale_iso": "2026-07-27T21:32:43.713Z"
+    },
+    "coverage": {
+      "skills_with_analysis": 2,
+      "skills_without_analysis": 0,
+      "coverage_ratio": 1
+    },
+    "relations": {
+      "total_edges": 0,
+      "by_predicate": {},
+      "chains_count": 0,
+      "strengthens_count": 0,
+      "alternatives_count": 0,
+      "conflicts_count": 0
+    },
+    "packLifecycle": {
+      "total_candidate": 0,
+      "total_published": 0,
+      "new_since_last_run": 0,
+      "stale_packs": 0,
+      "promoted_this_run": 0,
+      "rejected_this_run": 0
+    },
+    "issueDigest": {
+      "open": 6,
+      "acknowledged": 0,
+      "fulfilled": 0,
+      "blocked": 0
+    },
+    "issueWorkloadDigest": "sha256:fe99e337da41b5847dc8f8ad9b858f517a874c967e28b157bde2cf36861a640c",
+    "demandDigest": "7e596eb98b451a844c02d91467937215f51b1a81c8615552f988275ee8395f5e",
+    "priorFingerprint": "",
+    "notes": "",
+    "runId": "run_2026-07-28-v3-final"
+  }
+}

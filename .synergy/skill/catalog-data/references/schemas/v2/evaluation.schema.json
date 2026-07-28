@@ -1,0 +1,187 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Evaluation Record v2",
+  "description": "Independent evaluation record with separate synthesis and evaluation session IDs, MIN-gate metric thresholds (0.70), blockers, checked claims, proof digest binding, and a deterministic decision. Candidates do not own their pass decision.",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "evaluation_id",
+    "synthesis_session_id",
+    "evaluation_session_id",
+    "pack_id",
+    "metrics",
+    "blockers",
+    "checked_claim_ids",
+    "warnings",
+    "proof_digest",
+    "decision",
+    "created_by_run",
+    "created_at"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": { "const": 2 },
+    "evaluation_id": {
+      "type": "string",
+      "pattern": "^eval_",
+      "description": "Stable unique evaluation identifier"
+    },
+    "synthesis_session_id": {
+      "type": "string",
+      "description": "Pack synthesis session that produced the candidate"
+    },
+    "evaluation_session_id": {
+      "type": "string",
+      "description": "Evaluation session that judged the candidate"
+    },
+    "pack_id": {
+      "type": "string",
+      "pattern": "^pack_",
+      "description": "Referenced pack record"
+    },
+    "metrics": {
+      "type": "object",
+      "description": "Evaluated metrics. Each must be >= 0.70 MIN-gate threshold.",
+      "required": [
+        "relevance",
+        "coverage",
+        "non_redundancy",
+        "workflow_coherence",
+        "compatibility",
+        "conflict_control",
+        "evidence_quality",
+        "actionability",
+        "freshness",
+        "source_quality"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "relevance": { "$ref": "#/$defs/metric" },
+        "coverage": { "$ref": "#/$defs/metric" },
+        "non_redundancy": { "$ref": "#/$defs/metric" },
+        "workflow_coherence": { "$ref": "#/$defs/metric" },
+        "compatibility": { "$ref": "#/$defs/metric" },
+        "conflict_control": { "$ref": "#/$defs/metric" },
+        "evidence_quality": { "$ref": "#/$defs/metric" },
+        "actionability": { "$ref": "#/$defs/metric" },
+        "freshness": { "$ref": "#/$defs/metric" },
+        "source_quality": { "$ref": "#/$defs/metric" }
+      }
+    },
+    "blockers": {
+      "type": "array",
+      "description": "Blocking issues found during evaluation",
+      "items": { "$ref": "#/$defs/finding" }
+    },
+    "checked_claim_ids": {
+      "type": "array",
+      "description": "Claim IDs that were checked during evaluation",
+      "items": { "type": "string" }
+    },
+    "warnings": {
+      "type": "array",
+      "description": "Non-blocking warnings with disposition",
+      "items": {
+        "type": "object",
+        "required": ["message", "disposition"],
+        "additionalProperties": false,
+        "properties": {
+          "message": { "type": "string", "minLength": 1 },
+          "disposition": {
+            "type": "string",
+            "enum": ["acknowledged", "mitigated", "deferred", "accepted"],
+            "description": "How this warning was handled"
+          },
+          "claim_id": { "type": "string" }
+        }
+      }
+    },
+    "proof_digest": {
+      "type": "string",
+      "description": "Content-addressed proof digest bound to this evaluation. Generated once by the pack candidate canonical writer; never recomputed or overwritten by evaluation."
+    },
+    "decision": {
+      "type": "object",
+      "description": "Deterministic decision computed from metrics and blockers",
+      "required": ["passed", "level", "reason"],
+      "additionalProperties": false,
+      "properties": {
+        "passed": {
+          "type": "boolean",
+          "description": "Whether the candidate passes. True only for 'passed' level."
+        },
+        "level": {
+          "type": "string",
+          "enum": ["passed", "needs_work", "rejected"],
+          "description": "Decision level: passed (all metrics >=0.70, zero structural blockers), needs_work (no structural blockers but low/missing metrics), rejected (structural blocker)."
+        },
+        "reason": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Human-readable reason for the decision"
+        },
+        "min_metric": {
+          "type": "number",
+          "description": "Lowest metric score"
+        },
+        "blocker_count": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "findings": {
+          "type": "array",
+          "description": "Actionable findings for needs_work decisions (below-MIN metrics, missing metrics). Not required for passed or rejected.",
+          "items": {
+            "type": "object",
+            "required": ["kind", "detail"],
+            "additionalProperties": false,
+            "properties": {
+              "kind": {
+                "type": "string",
+                "enum": ["metric_below_min", "metric_missing"],
+                "description": "Finding kind"
+              },
+              "metric": { "type": "string" },
+              "score": { "type": "number" },
+              "threshold": { "type": "number" },
+              "detail": { "type": "string", "minLength": 1 }
+            }
+          }
+        }
+      }
+    },
+    "created_by_run": {
+      "type": "string"
+    },
+    "created_at": {
+      "type": "string",
+      "description": "ISO 8601 timestamp"
+    }
+  },
+  "$defs": {
+    "metric": {
+      "type": "object",
+      "required": ["score"],
+      "additionalProperties": false,
+      "properties": {
+        "score": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1,
+          "description": "Metric score. The MIN-gate threshold (0.70) is applied at decision time, not at schema validation."
+        },
+        "note": { "type": "string" }
+      }
+    },
+    "finding": {
+      "type": "object",
+      "required": ["code", "description"],
+      "additionalProperties": false,
+      "properties": {
+        "code": { "type": "string", "minLength": 1 },
+        "description": { "type": "string", "minLength": 1 },
+        "claim_id": { "type": "string" }
+      }
+    }
+  }
+}

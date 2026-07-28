@@ -1,86 +1,69 @@
-# Growth Report Template
+# Growth Owner Report Template
 
-Write internal growth reports under:
-
-```txt
-reports/catalog-growth-ops/<YYYY-MM-DD-HHmmss>-growth.md
-```
-
-Use this structure:
+Nightly Catalog v3 has one ledger-driven report. During a Nightly run, return structured owner output to the controller rather than creating a parallel report. Use this Markdown template only for an explicitly requested growth-only diagnostic, and bind it to the same immutable context.
 
 ```md
-# Catalog Growth Report — <date>
+# Catalog Growth Owner Report — <date>
 
-## Scope
-- Run mode:
-- Authorization:
-- Starting catalog counts:
+## Run Binding
+- Run ID:
+- Immutable context digest:
+- Prepared intent count: 0 / 1 / 2
+- Context or intent mutation detected: no
 
-## Demand Signals Inspected
-- Signal:
-- Evidence:
-- Selected themes:
+## Fixed Issue Stage
+- Repository: EricSanchezok/good-stuff-for-agents
+- Open-Issue list fully paginated: yes / no
+- Total open Issues scanned:
+- Complete comment pagination verified: yes / no
+- Changed or unassessed Issues processed:
 
-## GitHub Issue Intake (Internal, Draft-Only)
-- Repository / Issue:
-- Intake status:
-- Issue updated_at:
-- Content digest:
-- Classification:
-- Fulfillment status:
-- Criteria evidence or gaps:
-- Injection indicators:
-- Requested privileged actions:
-- URL/attachment leads recorded but not fetched:
-- Internal draft response recommended:
-- Internal draft response suggestion:
-- Human checkpoint: required / not completed
-- External action taken: none
+| Issue | Intake | Classification | Fulfillment | TOCTOU | Dedup | Response state | Comment ID | Assessment path | Response-ledger path |
+|---:|---|---|---|---|---|---|---:|---|---|
 
-Do not copy attack payloads, secrets, full Issue bodies, attachment contents, or unnecessary personal data into the report. Omit this section when no Issue signal was processed.
+- Held for review:
+- Reply blocked:
+- No action because already posted:
+- Restricted comments posted:
+- Other GitHub mutations: none
 
-## Discovery Summary
-| Source | URL | Decision | Evidence | License | Parseability | Reason |
-|---|---|---|---|---|---|---|
+Do not copy Issue bodies, comments, attack payloads, secrets, attachment contents, or unnecessary personal data into this report. Record digests, criterion IDs, canonical evidence paths, and terminal reasons instead.
 
-## Activation Summary
-- Activated:
-- Preview:
-- Candidate only:
-- Blocked:
-- Rejected:
+## Intent Outcomes
 
-## Sync / Extraction / Normalization
-- Sources synced:
-- Snapshots:
-- Skill candidates:
-- Skill records:
-- Blockers:
+### Intent <id>
+- Intent matches prepared object: yes / no
+- Terminal: promoted / rejected / no_pack_clean / blocked / skipped_repeat
+- Prior failure fingerprint checked:
+- Failure fingerprint:
+- Minimal evidence-bundle path or inventory:
+- Missing evidence and owner:
+- Preflight proof path and digest:
+- Preflight repair used: yes / no
+- Evaluation session isolated: yes / no
+- Evaluation path:
+- Post-evaluation repair used: yes / no
+- Canonical Pack writer result:
+- Canonical Evaluation writer result:
 
-## Analysis / Relations
-- Analyses written:
-- Relation edges:
-- Duplicate/merge blockers:
+Repeat this section no more than twice.
 
-## Pack Lifecycle
-- Pack intents considered:
-- Candidate packs written/updated:
-- Evaluations written:
-- Terminal states:
-  - no-op:
-  - evaluated passed:
-  - evaluated needs_work:
-  - evaluated rejected:
-  - promotion-ready:
-  - blocked:
-- Promotion/publishing handoff:
+## Bounded Evidence Work
+| Owner phase | Exact target gap | Inputs | Outputs | Deferred reason |
+|---|---|---|---|---|
 
-## Verification
+- Unrelated discovery or backfill performed: no
+- Repeated failure fingerprint retried: no
+
+## Validation
 - Commands:
 - Results:
+- Remaining structural blockers:
 
-## Next-Run Priorities
-- Priority:
-- Owner:
-- Reason:
+## Return To Controller
+- Issue stage complete:
+- Intent terminals complete:
+- Zero-Pack result valid:
+- Paths returned for sealing:
+- Owner-classified blockers:
 ```

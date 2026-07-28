@@ -38,6 +38,46 @@ Do not use this skill to create candidate shells; use `skill-extraction`. Do not
 
 Do not use this skill as mini-analysis. If you find yourself deciding what the skill is good for, what hidden assumptions it makes, what risks it carries in practice, or whether it is high quality, stop. That belongs downstream.
 
+## The One Normalization Route
+
+Normalization uses a two-phase bounded workload: **prepare** produces a deterministic workload with immutable bindings; a semantic agent returns decisions against those bindings; **finalize** validates bindings and writes canonical records. There is no other route.
+
+Phase 1 — prepare:
+
+```bash
+node skill/skill-normalization/scripts/prepare-workload.mjs <run-id>
+```
+
+- Loads `catalog/skills/candidates/<run-id>.jsonl`, source registry, existing skill records, and snapshot manifests from `catalog/sources/snapshots/`.
+- Binds input digests (`candidate_jsonl_digest`, `source_registry_digest`, `existing_records_digest`, `snapshot_manifests_digest`) into the workload for TOCTOU protection.
+- Detects duplicate candidate IDs and duplicate source+path combinations within the batch.
+- Rejects candidates missing `source_id`, `path`, `content_digest`, `declared_name`, or `candidate_id` into `provenance_blocked` with `terminal: "provenance_blocked"`.
+- Resolves every candidate's `provenance` against canonical snapshot manifests. The provenance `artifact_binding` must match exactly one snapshot artifact on source_id, remote_path, pinned_commit, and blob OID/digest. Registry current ref alone is insufficient. Missing, inconsistent, or ambiguous snapshots are `provenance_blocked` with a deterministic reason.
+- Computes deterministic identity hints (not decisions), per-item digests, and a workload digest binding all inputs.
+- Emits `reports/skill-normalization/<run-id>/workload.json` with immutable bindings.
+
+Phase 2 — review (by semantic agent, NOT by script):
+
+The semantic agent reads the workload and returns a decisions document. Each decision binds to exactly one `item_digest` and must supply `decision` (one of `new`, `update`, `duplicate_needs_curation`, `rejected`, `blocked`) and `reason`. For `new` decisions, the agent must supply `canonical_name` (the reviewed semantic name; the finalizer computes the canonical skill ID from it). The agent may supply `draft_fields.display_name` only; all identity, source, status, and semantic fields are controlled by the finalizer. Unknown keys anywhere in the decisions document are rejected. The decisions file must be placed at `reports/skill-normalization/<run-id>/decisions.json`.
+
+Phase 3 — finalize:
+
+```bash
+node skill/skill-normalization/scripts/finalize-workload.mjs --run-id <run-id> [--dry-run]
+```
+
+The decisions path is derived from the run-id (`reports/skill-normalization/<run-id>/decisions.json`); it is not accepted as a CLI argument.
+
+- Checks idempotence: if the workload was already finalized with the exact same decisions digest, returns `already_finalized` without mutation. If finalized with different decisions, fails closed.
+- Verifies workload digest and all three input bindings (candidate JSONL, source registry, existing records) against current files; rejects if any have drifted.
+- Validates every item is covered exactly once, no unknown/stale/duplicate bindings, no controlled or disallowed fields in `draft_fields`, no unknown keys at document or decision level, field size limits enforced.
+- Runs preflight: builds all drafts, detects ID collisions, and fails the entire batch before any write.
+- `new` decisions write through the canonical `write-skill-record.mjs` with schema-required sparse fields. The canonical skill ID is computed from the reviewed `canonical_name` + `source_id` + `path`.
+- `update` decisions preserve every existing curation/analysis/relations/quality/capabilities/interfaces/tools/risk field while updating version, provenance, and `source_skill_ids`. Preserves `created_at` and stable ID.
+- `duplicate_needs_curation`, `rejected`, `blocked` leave per-candidate outcome files but no canonical write.
+- `provenance_blocked` candidates are included in outcomes with terminal status.
+- Writes `reports/skill-normalization/<run-id>/finalization-outcomes.json` with `decisions_digest` for idempotence.
+
 ## Inputs You Should Gather First
 
 You should gather:
@@ -53,9 +93,12 @@ You should gather:
 
 You must leave behind:
 
-- normalized draft JSON under `reports/skill-normalization/<skill-id>.json` for non-trivial records;
-- canonical skill YAML under `catalog/skills/records/<prefix>/<skill-id>.yaml` written through catalog-data;
-- blocked/duplicate/rejected report entries when records are not written;
+- workload: `reports/skill-normalization/<run-id>/workload.json`
+- per-candidate outcome files: `reports/skill-normalization/<run-id>/outcome-<skill-id>.json`
+- per-candidate draft files: `reports/skill-normalization/<run-id>/draft-<skill-id>.json`
+- finalization summary: `reports/skill-normalization/<run-id>/finalization-outcomes.json`
+- canonical skill YAML under `catalog/skills/records/<prefix>/<skill-id>.yaml` written through `write-skill-record.mjs`;
+- blocked/duplicate/rejected/unmatched outcome entries recorded in the summary;
 - analysis handoff list with skill IDs, source paths, and content digests;
 - validation result.
 
@@ -71,19 +114,67 @@ You must leave behind:
 
 | Helper | Deterministic purpose | Input contract | Output contract | Failure policy | Verification |
 |---|---|---|---|---|---|
+| `scripts/prepare-workload.mjs` | Load candidates, bind evidence, emit immutable workload | `--run-id` or `<run-id>` positional | workload.json under `reports/skill-normalization/<run-id>/` | Block if candidate file missing or all candidates rejected | `scripts/test-normalization-bootstrap.mjs` |
+| `scripts/finalize-workload.mjs` | Validate bindings, apply decisions, write canonical records | `--run-id`, optional `--dry-run` | finalization-outcomes.json, canonical YAML | Block on digest mismatch, stale bindings, controlled fields | `scripts/test-normalization-bootstrap.mjs` |
 | `scripts/write-normalized-skills.mjs` | Write canonical skill records from reviewed normalized drafts | JSON object with `skills` array or single normalized draft | JSON result with written skill IDs | Block on malformed or incomplete drafts | strict validation |
 | `../catalog-data/scripts/write-skill-record.mjs` | Write one canonical skill record | Complete normalized skill draft | YAML skill record | Block on ambiguous identity | strict validation |
 | `../catalog-data/scripts/validate-catalog.mjs` | Validate output | Existing catalog files | validation result | Block on errors | `npm --prefix .synergy run catalog:validate` |
 
 ## Workflow
 
-1. **Load candidates and evidence.** Read candidate JSONL, source records, snapshot manifests, and existing records. Confirm that every candidate can be traced back to `source_id` + `source.path` + `content_digest`. If that evidence thread is broken, block the candidate and return it to sync/extraction repair.
-2. **Resolve identity.** Decide new, update, duplicate-needs-curation, rejected, or blocked using source ID, source path, declared name, content digest, and existing records. Do not use filename alone. Do not silently merge possible duplicates.
-3. **Create minimal canonical record.** Fill stable ID, display/canonical name from explicit metadata, source mapping, version/content digest, status, and schema-required empty/unknown fields. Keep the record schema-valid without pretending to understand the skill deeply.
-4. **Avoid semantic inflation.** Leave capabilities, interfaces, tools, and risk empty/unknown unless the candidate explicitly states them. Do not infer from title, filename, source popularity, or your guess about the domain.
-5. **Write records through helper.** Use existing writer scripts only after the identity decision is clear and the draft preserves source provenance and content digest.
-6. **Validate.** Run strict validation and fix structural failures without weakening identity requirements.
-7. **Hand off to deep analysis.** Provide skill IDs plus source paths/content digests. State identity uncertainties, duplicate suspicions, rejected candidates, and blocked candidates. Deep analysis must be able to recover the original artifact from your handoff.
+1. **Prepare workload.** Run `scripts/prepare-workload.mjs <run-id>` to produce a deterministic, digest-bound workload with all candidates, existing matches, source summaries, and identity scaffolds. Every item is bound to its `item_digest`; no untrusted text chooses paths or commands.
+2. **Resolve identity (semantic agent).** Review each workload item. Decide new, update, duplicate-needs-curation, rejected, or blocked using source ID, source path, declared name, content digest, and existing records. Do not use filename alone. Do not silently merge possible duplicates. Each decision must reference the exact `item_digest` and include a `reason`. Controlled fields (`canonical_skill_id`, `identity`, `source`, `status`, etc.) are prohibited in `draft_fields`. Write the decisions JSON to `reports/skill-normalization/<run-id>/decisions.json`.
+3. **Finalize.** Run `scripts/finalize-workload.mjs --run-id <run-id>`. The finalizer loads the decisions from `reports/skill-normalization/<run-id>/decisions.json` (derived from the run-id, not a CLI argument), validates digest/coverage/bindings, applies decisions, writes canonical records for `new`/`update`, and writes outcome files for all.
+4. **Validate.** Run strict validation and fix structural failures without weakening identity requirements.
+5. **Hand off to deep analysis.** Provide skill IDs plus source paths/content digests. State identity uncertainties, duplicate suspicions, rejected candidates, and blocked candidates. Deep analysis must be able to recover the original artifact from your handoff.
+
+## Decisions Document Format
+
+```json
+{
+  "schema_version": 1,
+  "run_id": "run_2026-07-13-210300",
+  "workload_digest": "sha256:abc123...",
+  "decisions": [
+    {
+      "item_digest": "sha256:def456...",
+      "decision": "new",
+      "canonical_name": "my-skill",
+      "reason": "First normalization for this candidate",
+      "draft_fields": { "display_name": "Optional Display Name" }
+    },
+    {
+      "item_digest": "sha256:789abc...",
+      "decision": "update",
+      "reason": "Upstream content changed",
+      "draft_fields": { "display_name": "Updated Display Name" }
+    },
+    {
+      "item_digest": "sha256:fedcba...",
+      "decision": "duplicate_needs_curation",
+      "reason": "Same source+path as existing skill X"
+    },
+    {
+      "item_digest": "sha256:987654...",
+      "decision": "rejected",
+      "reason": "Not a skill artifact"
+    },
+    {
+      "item_digest": "sha256:abcdef...",
+      "decision": "blocked",
+      "reason": "License unclear"
+    }
+  ]
+}
+```
+
+Valid decisions: `new`, `update`, `duplicate_needs_curation`, `rejected`, `blocked`.
+
+Allowed decision-level keys: `item_digest`, `decision`, `canonical_name` (required for `new`, prohibited for others), `reason`, `draft_fields`.
+Allowed `draft_fields`: only `display_name`.
+
+`workload_digest` must match the workload exactly; any mismatch (stale workload) is rejected.
+Every workload item must have exactly one decision. Unknown keys at any level are rejected. Reasons are capped at 2000 UTF-8 bytes. Display names are capped at 200 UTF-8 bytes. Canonical names are capped at 200 UTF-8 bytes and must match `/^[a-z0-9]([a-z0-9._-]*[a-z0-9])?$/`.
 
 ## Quality Bar
 
@@ -105,20 +196,28 @@ A normalized record is allowed to be semantically sparse. Sparse is honest when 
 - Do not reinterpret the license. Map sync's SPDX/evidence directly.
 - Do not re-derive `content_digest` or compute a new hash for `version_id`.
 - Do not vary the `canonical_skill_id` derivation algorithm across runs.
+- Do not attempt to auto-normalize every candidate as `new` from filename/declared_name alone. The semantic agent must review each workload item.
+- Do not put controlled fields (`canonical_skill_id`, `identity`, `source`, `status`, etc.) in `draft_fields`. Only `display_name` is allowed.
 
 ## Failure Handling
 
-- If identity is ambiguous, block the candidate and hand off to `catalog-curation` with the exact ambiguity.
-- If source path or content digest is missing, return to `source-sync` or `skill-extraction` rather than guessing.
-- If source license or source record context is missing, return to source activation/sync owners.
+- If identity is ambiguous, use `duplicate_needs_curation` or `blocked` as appropriate. Hand off to `catalog-curation` with the exact ambiguity.
+- If source path or content digest is missing, the prepare phase blocks the candidate into `provenance_blocked`; return to `source-sync` or `skill-extraction`.
+- If source license or source record context is missing, use `blocked`.
+- If the workload digest in the decisions does not match, fix the decisions document — re-prepare if the candidate file changed.
+- If any input binding (candidate JSONL, source registry, existing records) has drifted since prepare, finalize rejects the run. Re-prepare to bind current state.
+- If preflight detects ID collisions (two `new` decisions resolving to the same target skill ID, or a `new` colliding with an `update` target), the entire batch is blocked before any write.
 - If a draft fails validation, repair the draft rather than weakening the schema.
 - If only some candidates are ready, write ready identity records and report blocked/deferred ones with explicit reasons.
+- Finalize is idempotent: running it again with the exact same decisions document returns `already_finalized` without mutation. Running it with different decisions after finalization fails closed.
+- `provenance_blocked` candidates are tracked in workload and outcomes; every candidate from the input JSONL must appear in the outcome report.
 
 ## Verification
 
 Run:
 
 ```bash
+node skill/skill-normalization/scripts/test-normalization-bootstrap.mjs
 npm --prefix .synergy run catalog:validate
 npm --prefix .synergy run catalog:index
 ```

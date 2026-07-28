@@ -1,0 +1,266 @@
+{
+  "schema_version": 1,
+  "kind": "issue_semantic_drafts",
+  "run_id": "run_2026-07-28-v3",
+  "workload_digest": "sha256:c1067ef4fd025495fd1feed81e2ec7d8d9c3b689f91fa1b72d4512ec3a9b5a5f",
+  "drafts": [
+    {
+      "issue_number": 6,
+      "issue_binding": {
+        "repository": "EricSanchezok/good-stuff-for-agents",
+        "issue_number": 6,
+        "updated_at": "2026-07-21T11:44:16Z",
+        "content_digest": "sha256:82a89f899eaec66de44c9d6d21513c7ca47d5af85d2f03c858b2eee5be75f4ef"
+      },
+      "fulfillment_assessment": {
+        "schema_version": 1,
+        "kind": "github_issue_fulfillment_assessment",
+        "issue_binding": {
+          "repository": "EricSanchezok/good-stuff-for-agents",
+          "issue_number": 6,
+          "updated_at": "2026-07-21T11:44:16Z",
+          "content_digest": "sha256:82a89f899eaec66de44c9d6d21513c7ca47d5af85d2f03c858b2eee5be75f4ef"
+        },
+        "classification": {
+          "kind": "skill_request",
+          "criteria": [
+            { "id": "shell-detection", "text": "Detect the executing shell separately from the configured login shell." },
+            { "id": "cross-shell-generation", "text": "Generate compatible Bash, Zsh, Fish, or POSIX sh command variants." },
+            { "id": "safe-secret-handling", "text": "Keep secrets out of shell history and interactive command output." },
+            { "id": "command-validation", "text": "Validate important setup commands before presenting them." }
+          ]
+        },
+        "fulfillment": {
+          "status": "not_satisfied",
+          "rationale": "The current catalog has no analyzed shell-compatibility skill or published pack that satisfies these criteria.",
+          "criteria": [
+            { "criterion_id": "shell-detection", "status": "gap", "evidence": [] },
+            { "criterion_id": "cross-shell-generation", "status": "gap", "evidence": [] },
+            { "criterion_id": "safe-secret-handling", "status": "gap", "evidence": [] },
+            { "criterion_id": "command-validation", "status": "gap", "evidence": [] }
+          ]
+        },
+        "draft_response": { "recommended": false, "body": null },
+        "human_checkpoint": { "required": true, "action": "review_only" }
+      },
+      "evidence_index": {},
+      "public_evidence_boundary": "Published catalog skills and packs only",
+      "notes": "Static security indicators constrain automatic reply handling; they are not fulfillment evidence and do not make the demand itself unsafe."
+    },
+    {
+      "issue_number": 5,
+      "issue_binding": {
+        "repository": "EricSanchezok/good-stuff-for-agents",
+        "issue_number": 5,
+        "updated_at": "2026-07-21T11:44:14Z",
+        "content_digest": "sha256:47e579f8fb26bc3c641e4a894185f9f9220fd23fc7ef9a57c59f6cfe399d7638"
+      },
+      "fulfillment_assessment": {
+        "schema_version": 1,
+        "kind": "github_issue_fulfillment_assessment",
+        "issue_binding": {
+          "repository": "EricSanchezok/good-stuff-for-agents",
+          "issue_number": 5,
+          "updated_at": "2026-07-21T11:44:14Z",
+          "content_digest": "sha256:47e579f8fb26bc3c641e4a894185f9f9220fd23fc7ef9a57c59f6cfe399d7638"
+        },
+        "classification": {
+          "kind": "skill_request",
+          "criteria": [
+            { "id": "authoritative-discovery", "text": "Find authoritative MCP installation and transport documentation." },
+            { "id": "safe-configuration", "text": "Apply the smallest safe configuration change while preserving credentials and unrelated settings." },
+            { "id": "live-verification", "text": "Verify the server connection and expected tool registration." },
+            { "id": "rollback-troubleshooting", "text": "Provide rollback and troubleshooting guidance." }
+          ]
+        },
+        "fulfillment": {
+          "status": "not_satisfied",
+          "rationale": "The current catalog has no analyzed MCP installation workflow skill or published pack that satisfies these criteria.",
+          "criteria": [
+            { "criterion_id": "authoritative-discovery", "status": "gap", "evidence": [] },
+            { "criterion_id": "safe-configuration", "status": "gap", "evidence": [] },
+            { "criterion_id": "live-verification", "status": "gap", "evidence": [] },
+            { "criterion_id": "rollback-troubleshooting", "status": "gap", "evidence": [] }
+          ]
+        },
+        "draft_response": { "recommended": false, "body": null },
+        "human_checkpoint": { "required": true, "action": "review_only" }
+      },
+      "evidence_index": {},
+      "public_evidence_boundary": "Published catalog skills and packs only",
+      "notes": "No current canonical evidence covers the requested MCP installation lifecycle."
+    },
+    {
+      "issue_number": 4,
+      "issue_binding": {
+        "repository": "EricSanchezok/good-stuff-for-agents",
+        "issue_number": 4,
+        "updated_at": "2026-07-21T11:44:13Z",
+        "content_digest": "sha256:e09abef11667aa246aa9dd4a4fff29341265841c5141319c803292cf537eb3b2"
+      },
+      "fulfillment_assessment": {
+        "schema_version": 1,
+        "kind": "github_issue_fulfillment_assessment",
+        "issue_binding": {
+          "repository": "EricSanchezok/good-stuff-for-agents",
+          "issue_number": 4,
+          "updated_at": "2026-07-21T11:44:13Z",
+          "content_digest": "sha256:e09abef11667aa246aa9dd4a4fff29341265841c5141319c803292cf537eb3b2"
+        },
+        "classification": {
+          "kind": "skill_request",
+          "criteria": [
+            { "id": "contract-question-extraction", "text": "Extract contract questions from plans or codebases." },
+            { "id": "agreement-matrix", "text": "Track pending, agreed, conflicting, and superseded contract items." },
+            { "id": "schema-comparison", "text": "Compare schemas and semantics and surface incompatibilities." },
+            { "id": "durable-verification", "text": "Record the durable contract and verify both implementations against it." }
+          ]
+        },
+        "fulfillment": {
+          "status": "not_satisfied",
+          "rationale": "The current catalog has no analyzed API-contract coordination skill or published pack that satisfies these criteria.",
+          "criteria": [
+            { "criterion_id": "contract-question-extraction", "status": "gap", "evidence": [] },
+            { "criterion_id": "agreement-matrix", "status": "gap", "evidence": [] },
+            { "criterion_id": "schema-comparison", "status": "gap", "evidence": [] },
+            { "criterion_id": "durable-verification", "status": "gap", "evidence": [] }
+          ]
+        },
+        "draft_response": { "recommended": false, "body": null },
+        "human_checkpoint": { "required": true, "action": "review_only" }
+      },
+      "evidence_index": {},
+      "public_evidence_boundary": "Published catalog skills and packs only",
+      "notes": "No current canonical evidence covers independent API-contract coordination."
+    },
+    {
+      "issue_number": 3,
+      "issue_binding": {
+        "repository": "EricSanchezok/good-stuff-for-agents",
+        "issue_number": 3,
+        "updated_at": "2026-07-21T11:44:11Z",
+        "content_digest": "sha256:1c4f5ce10b43de0ccc46f1934be441b0b90c0939bb640806ec4cf7015c7dd9c6"
+      },
+      "fulfillment_assessment": {
+        "schema_version": 1,
+        "kind": "github_issue_fulfillment_assessment",
+        "issue_binding": {
+          "repository": "EricSanchezok/good-stuff-for-agents",
+          "issue_number": 3,
+          "updated_at": "2026-07-21T11:44:11Z",
+          "content_digest": "sha256:1c4f5ce10b43de0ccc46f1934be441b0b90c0939bb640806ec4cf7015c7dd9c6"
+        },
+        "classification": {
+          "kind": "skill_request",
+          "criteria": [
+            { "id": "persistent-state-recovery", "text": "Reread authoritative persistent plans and notes." },
+            { "id": "environment-reconciliation", "text": "Inspect current repository or environment state and compare it with the plan." },
+            { "id": "progress-reconstruction", "text": "Reconstruct completed work, pending work, blockers, and stale decisions." },
+            { "id": "recovery-checkpoint", "text": "Produce a concise checkpoint before resuming execution." }
+          ]
+        },
+        "fulfillment": {
+          "status": "not_satisfied",
+          "rationale": "The current catalog has no analyzed context-recovery skill or published pack that satisfies these criteria.",
+          "criteria": [
+            { "criterion_id": "persistent-state-recovery", "status": "gap", "evidence": [] },
+            { "criterion_id": "environment-reconciliation", "status": "gap", "evidence": [] },
+            { "criterion_id": "progress-reconstruction", "status": "gap", "evidence": [] },
+            { "criterion_id": "recovery-checkpoint", "status": "gap", "evidence": [] }
+          ]
+        },
+        "draft_response": { "recommended": false, "body": null },
+        "human_checkpoint": { "required": true, "action": "review_only" }
+      },
+      "evidence_index": {},
+      "public_evidence_boundary": "Published catalog skills and packs only",
+      "notes": "No current canonical evidence covers post-compaction execution recovery."
+    },
+    {
+      "issue_number": 2,
+      "issue_binding": {
+        "repository": "EricSanchezok/good-stuff-for-agents",
+        "issue_number": 2,
+        "updated_at": "2026-07-21T11:44:10Z",
+        "content_digest": "sha256:962d9a3e86ff3b72fb4641c266286d3e39efd88c41acaa3aec179b52ea7c1b40"
+      },
+      "fulfillment_assessment": {
+        "schema_version": 1,
+        "kind": "github_issue_fulfillment_assessment",
+        "issue_binding": {
+          "repository": "EricSanchezok/good-stuff-for-agents",
+          "issue_number": 2,
+          "updated_at": "2026-07-21T11:44:10Z",
+          "content_digest": "sha256:962d9a3e86ff3b72fb4641c266286d3e39efd88c41acaa3aec179b52ea7c1b40"
+        },
+        "classification": {
+          "kind": "pack_request",
+          "criteria": [
+            { "id": "risk-area-segmentation", "text": "Divide a large repair into independent risk areas." },
+            { "id": "independent-audits", "text": "Audit each risk area independently against intended behavior." },
+            { "id": "regression-coverage", "text": "Verify regression coverage and detect repair-induced regressions." },
+            { "id": "finding-consolidation", "text": "Deduplicate findings and distinguish confirmed from speculative concerns." }
+          ]
+        },
+        "fulfillment": {
+          "status": "not_satisfied",
+          "rationale": "The current catalog has no analyzed multi-axis regression-audit pack that satisfies these criteria.",
+          "criteria": [
+            { "criterion_id": "risk-area-segmentation", "status": "gap", "evidence": [] },
+            { "criterion_id": "independent-audits", "status": "gap", "evidence": [] },
+            { "criterion_id": "regression-coverage", "status": "gap", "evidence": [] },
+            { "criterion_id": "finding-consolidation", "status": "gap", "evidence": [] }
+          ]
+        },
+        "draft_response": { "recommended": false, "body": null },
+        "human_checkpoint": { "required": true, "action": "review_only" }
+      },
+      "evidence_index": {},
+      "public_evidence_boundary": "Published catalog skills and packs only",
+      "notes": "The current CodeRabbit records are not yet analyzed and no published pack covers the requested workflow."
+    },
+    {
+      "issue_number": 1,
+      "issue_binding": {
+        "repository": "EricSanchezok/good-stuff-for-agents",
+        "issue_number": 1,
+        "updated_at": "2026-07-21T11:44:08Z",
+        "content_digest": "sha256:5a6e4c2a12d44abc9b7e8aa89785443375a40780f6be905464f8f1b86c57313f"
+      },
+      "fulfillment_assessment": {
+        "schema_version": 1,
+        "kind": "github_issue_fulfillment_assessment",
+        "issue_binding": {
+          "repository": "EricSanchezok/good-stuff-for-agents",
+          "issue_number": 1,
+          "updated_at": "2026-07-21T11:44:08Z",
+          "content_digest": "sha256:5a6e4c2a12d44abc9b7e8aa89785443375a40780f6be905464f8f1b86c57313f"
+        },
+        "classification": {
+          "kind": "skill_request",
+          "criteria": [
+            { "id": "comment-diff-ingestion", "text": "Collect review comments together with the current pull-request diff." },
+            { "id": "claim-verification", "text": "Verify each review claim against source code with file and line evidence." },
+            { "id": "finding-triage", "text": "Classify, deduplicate, and scope findings to the current change or follow-up." },
+            { "id": "consolidated-report", "text": "Produce one consolidated review report without assuming every comment is correct." }
+          ]
+        },
+        "fulfillment": {
+          "status": "not_satisfied",
+          "rationale": "The current catalog has no analyzed review-comment verification and triage workflow that satisfies these criteria.",
+          "criteria": [
+            { "criterion_id": "comment-diff-ingestion", "status": "gap", "evidence": [] },
+            { "criterion_id": "claim-verification", "status": "gap", "evidence": [] },
+            { "criterion_id": "finding-triage", "status": "gap", "evidence": [] },
+            { "criterion_id": "consolidated-report", "status": "gap", "evidence": [] }
+          ]
+        },
+        "draft_response": { "recommended": false, "body": null },
+        "human_checkpoint": { "required": true, "action": "review_only" }
+      },
+      "evidence_index": {},
+      "public_evidence_boundary": "Published catalog skills and packs only",
+      "notes": "The current CodeRabbit records are not yet analyzed and no published pack covers the requested workflow."
+    }
+  ]
+}

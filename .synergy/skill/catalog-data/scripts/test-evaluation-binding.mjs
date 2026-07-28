@@ -1,9 +1,10 @@
 #!/usr/bin/env node
 import assert from 'node:assert/strict'
-import { existsSync, readFileSync, rmSync } from 'node:fs'
+import { existsSync, readFileSync, rmSync, writeFileSync, appendFileSync, mkdirSync } from 'node:fs'
 import { dirname, join } from 'node:path'
 import { spawnSync } from 'node:child_process'
 import {
+  CATALOG,
   createEvaluationBinding,
   evaluationPathForPack,
   loadSkillRecords,
@@ -15,16 +16,20 @@ import {
   writeYaml,
 } from './lib/catalog-lib.mjs'
 
-const candidateWriter = join(ROOT, '.synergy', 'skill', 'pack-synthesis', 'scripts', 'write-pack-candidate.mjs')
-const evaluationController = join(ROOT, '.synergy', 'skill', 'catalog-evaluation', 'scripts', 'write-evaluation-draft.mjs')
+const packWriter = join(ROOT, '.synergy', 'skill', 'catalog-data', 'scripts', 'write-pack-record.mjs')
 const evaluationWriter = join(ROOT, '.synergy', 'skill', 'catalog-data', 'scripts', 'write-evaluation.mjs')
 const packIds = {
-  normal: 'pack_test-evaluation-normal_20000001',
-  stale: 'pack_test-evaluation-stale_20000002',
-  contradictory: 'pack_test-evaluation-contradictory_20000003',
+  normal: 'pack_test-evalbind-normal_20000001',
+  stale: 'pack_test-evalbind-stale_20000002',
 }
+const REL_ID = 'rel_test-evalbind'
+const REL_DIR = join(CATALOG, 'relations')
+const REL_PATH = join(REL_DIR, 'edges-00000.jsonl')
+const REL_DIR_EXISTED = existsSync(REL_DIR)
+const REL_PATH_EXISTED = existsSync(REL_PATH)
+const REL_ORIGINAL_CONTENT = REL_PATH_EXISTED ? readFileSync(REL_PATH, 'utf8') : null
 
-const members = loadSkillRecords()
+const eligibleMembers = loadSkillRecords()
   .map(({ record }) => record)
   .filter((record) => ['active', 'preview'].includes(record.status) && record.identity?.current_version_id)
   .slice(0, 2)
@@ -32,69 +37,162 @@ const members = loadSkillRecords()
     skill_id: record.canonical_skill_id,
     version_id: record.identity.current_version_id,
     role: `role-${index + 1}`,
-    stage: `stage-${index + 1}`,
     inclusion_reason: `test member ${index + 1}`,
   }))
-assert.equal(members.length, 2, 'fixture requires two eligible catalog skills')
+assert.equal(eligibleMembers.length, 2, 'fixture requires two eligible catalog skills')
+
+const [skl0, skl1] = eligibleMembers
+const analysisPrefix = (id) => id.replace(/^[^_]+_/, '').slice(0, 2).toLowerCase().replace(/[^a-z0-9]/g, 'x') || 'xx'
+
+const ANL_ID_0 = `anl_${skl0.skill_id}`
+const ANL_ID_1 = `anl_${skl1.skill_id}`
+const PREFIX_0 = analysisPrefix(skl0.skill_id)
+const PREFIX_1 = analysisPrefix(skl1.skill_id)
+const ANL_PATH_0 = join(CATALOG, 'analyses', PREFIX_0, `${ANL_ID_0}.md`)
+const ANL_PATH_1 = join(CATALOG, 'analyses', PREFIX_1, `${ANL_ID_1}.md`)
+
+function restoreRelationFixture() {
+  if (REL_PATH_EXISTED) {
+    mkdirSync(REL_DIR, { recursive: true })
+    writeFileSync(REL_PATH, REL_ORIGINAL_CONTENT)
+    return
+  }
+  rmSync(REL_PATH, { force: true })
+  if (!REL_DIR_EXISTED) rmSync(REL_DIR, { recursive: true, force: true })
+}
+
+function makeAnalysisContent(analysisId, skillId, { requiredClaimIds, producesClaimIds }) {
+  const required = requiredClaimIds.length === 0
+    ? '    required: []'
+    : `    required:\n${requiredClaimIds.map((claimId) => `      - claim_id: ${claimId}\n        content: Required claim ${claimId}`).join('\n')}`
+  const produces = producesClaimIds.length === 0
+    ? '  produces: []'
+    : `  produces:\n${producesClaimIds.map((claimId) => `    - claim_id: ${claimId}\n      content: Produces claim ${claimId}`).join('\n')}`
+  return `---
+schema_version: 2
+analysis_id: ${analysisId}
+skill_id: ${skillId}
+source_hash: sha256:test-evalbind-fixture
+analysis_version: 1
+claims:
+  requires:
+${required}
+    optional: []
+${produces}
+  preconditions: []
+  refusal: []
+  failure_warnings: []
+  tool_constraints: []
+  alternatives: []
+  judgement: []
+confidence: high
+updated_at: '2026-07-27T12:00:00Z'
+created_by_run: run_test-evalbind
+---`
+}
+
+function ec(desc) {
+  return { required_claim_ids: [], precondition_claim_ids: [], refusal_claim_ids: [], tool_constraint_claim_ids: [], description: desc }
+}
+function oc(desc, producesClaimIds) {
+  return { produces_claim_ids: producesClaimIds, description: desc }
+}
+function handoff(relId, producerId, producerClaim, consumerId, consumerClaim, produced, consumed) {
+  return { relation_id: relId, producer_skill_id: producerId, producer_claim_id: producerClaim, consumer_skill_id: consumerId, consumer_claim_id: consumerClaim, produced, consumed_as: consumed }
+}
 
 try {
-  run(candidateWriter, [], packDraft(packIds.normal))
-  run(candidateWriter, [], packDraft(packIds.stale))
-  run(candidateWriter, [], packDraft(packIds.contradictory))
+  // Create analysis fixtures
+  mkdirSync(join(CATALOG, 'analyses', PREFIX_0), { recursive: true })
+  mkdirSync(join(CATALOG, 'analyses', PREFIX_1), { recursive: true })
+  writeFileSync(ANL_PATH_0, makeAnalysisContent(ANL_ID_0, skl0.skill_id, {
+    requiredClaimIds: [],
+    producesClaimIds: ['clm_prd_eval'],
+  }))
+  writeFileSync(ANL_PATH_1, makeAnalysisContent(ANL_ID_1, skl1.skill_id, {
+    requiredClaimIds: ['clm_req_eval'],
+    producesClaimIds: ['clm_prd_eval-final'],
+  }))
+  // Create v2 relation record in catalog for the test
+  mkdirSync(REL_DIR, { recursive: true })
+  const testRelation = {
+    schema_version: 2,
+    relation_id: REL_ID,
+    predicate: 'chains_with',
+    subject: eligibleMembers[0].skill_id,
+    object: eligibleMembers[1].skill_id,
+    weight: 0.85,
+    evidence: 'Test relation for evaluation binding tests',
+    created_at: '2026-07-27T12:00:00Z',
+    created_by_run: 'run_test-evalbind',
+    chains_with: {
+      producer_skill: eligibleMembers[0].skill_id,
+      consumer_skill: eligibleMembers[1].skill_id,
+      producer_claim_id: 'clm_prd_eval',
+      consumer_claim_id: 'clm_req_eval',
+      direction: 'sequential',
+      description: 'Producer feeds consumer for evalbind test',
+    },
+  }
+  appendFileSync(REL_PATH, JSON.stringify(testRelation) + '\n')
 
-  const binding = run(evaluationController, ['--pack-id', packIds.normal, '--create-binding'])
+  run(packWriter, [], packDraft(packIds.normal))
+  run(packWriter, [], packDraft(packIds.stale))
+
+  // Create binding
+  const binding = run(evaluationWriter, ['--pack-id', packIds.normal, '--create-binding'])
   assert.equal(binding.pack_id, packIds.normal)
   assert.equal(binding.pack_status, 'candidate')
   assert.match(binding.evaluation_id, /^eval_/)
+  assert.ok(binding.proof_digest, 'binding should include proof_digest')
   const expectedEvalPath = `catalog/packs/candidates/${packIds.normal}/evaluation.json`.replace(/\//g, process.platform === 'win32' ? '\\' : '/')
   assert.equal(binding.expected_path, expectedEvalPath)
 
+  // Reject forged bindings
   for (const [field, value] of [
     ['pack_id', packIds.stale],
     ['evaluation_id', 'eval_forged_20000001'],
     ['pack_status', 'published'],
-    ['output_path', `catalog/packs/published/${packIds.normal}/evaluation.json`],
   ]) {
-    assertRejected(evaluationController, ['--pack-id', packIds.normal], { ...evaluationDraft(), [field]: value }, new RegExp(field))
+    assertRejected(evaluationWriter, ['--pack-id', packIds.normal], {
+      binding: { ...binding, [field]: value },
+      draft: evaluationDraft(binding.evaluation_id, binding.proof_digest),
+    }, new RegExp(field))
   }
 
-  assertRejected(evaluationController, ['--pack-id', packIds.normal], {
-    binding: { ...binding, evaluation_id: 'eval_forged_20000002' },
-    draft: evaluationDraft(),
-  }, /evaluation_id does not match controller binding/)
+  // Write evaluation
+  const result = run(evaluationWriter, ['--pack-id', packIds.normal], {
+    binding,
+    draft: evaluationDraft(binding.evaluation_id, binding.proof_digest),
+  })
+  const evaluation = result
+  assert.equal(evaluation.schema_version, 2)
+  assert.equal(evaluation.pack_id, packIds.normal)
+  assert.equal(evaluation.evaluation_id, binding.evaluation_id)
+  assert.equal(evaluation.decision.passed, true)
+  assert.equal(evaluation.decision.level, 'passed')
 
+  // Verify evaluation file was written
+  const evalPath = evaluationPathForPack(packIds.normal, 'candidate')
+  assert.equal(existsSync(evalPath), true)
+  const writtenEval = JSON.parse(readFileSync(evalPath, 'utf8'))
+  assert.equal(writtenEval.evaluation_id, binding.evaluation_id)
+  assert.equal(writtenEval.schema_version, 2)
+
+  // Pack YAML must not have inline evaluation
+  const pack = parseYamlFile(packRecordPath(packIds.normal, 'candidate'))
+  assert.ok(!('evaluation' in pack), 'pack must not have inline evaluation')
+
+  // Reject reuse of binding
+  assertRejected(evaluationWriter, [], { binding, draft: evaluationDraft(binding.evaluation_id, binding.proof_digest) }, /already been used/)
+
+  // Stale binding (pack changed after binding)
   const staleBinding = createEvaluationBinding(packIds.stale)
   const stalePackPath = packRecordPath(packIds.stale, 'candidate')
   const stalePack = parseYamlFile(stalePackPath)
   stalePack.intent = 'Changed after the controller issued its binding'
   writeYaml(stalePackPath, stalePack)
-  assertRejected(evaluationWriter, [], { binding: staleBinding, draft: evaluationDraft() }, /stale or mismatched/)
-
-  const publishedPath = evaluationPathForPack(packIds.normal, 'published')
-  const publishedSentinel = stableStringify({ evaluation_id: 'eval_published-sentinel_20000001', output_id: packIds.normal })
-  writeTextAtomic(publishedPath, publishedSentinel)
-
-  const result = run(evaluationController, ['--pack-id', packIds.normal], evaluationDraft())
-  const evaluation = result.records[0]
-  assert.equal(evaluation.output_id, packIds.normal)
-  assert.equal(evaluation.evaluation_id, binding.evaluation_id)
-  assert.equal(evaluation.status, 'passed')
-  assert.equal(evaluation.passed, true)
-  assert.equal(JSON.parse(readFileSync(publishedPath, 'utf8')).evaluation_id, 'eval_published-sentinel_20000001')
-  assert.equal(JSON.parse(readFileSync(evaluationPathForPack(packIds.normal, 'candidate'), 'utf8')).evaluation_id, binding.evaluation_id)
-
-  assertRejected(evaluationWriter, [], { binding, draft: evaluationDraft() }, /already been used/)
-
-  const updatedPack = parseYamlFile(packRecordPath(packIds.normal, 'candidate'))
-  assert.deepEqual(updatedPack.evaluation, { evaluation_id: binding.evaluation_id, score: 0.9, status: 'passed' })
-
-  const contradictory = run(evaluationController, ['--pack-id', packIds.contradictory], {
-    ...evaluationDraft(),
-    passed: false,
-    status: 'passed',
-  }).records[0]
-  assert.equal(contradictory.passed, false)
-  assert.equal(contradictory.status, 'needs_work')
+  assertRejected(evaluationWriter, [], { binding: staleBinding, draft: evaluationDraft(staleBinding.evaluation_id, staleBinding.proof_digest) }, /stale or mismatched/)
 
   console.log('evaluation binding tests passed')
 } finally {
@@ -102,60 +200,62 @@ try {
     rmSync(dirname(packRecordPath(packId, 'candidate')), { recursive: true, force: true })
     rmSync(dirname(packRecordPath(packId, 'published')), { recursive: true, force: true })
   }
+  // Remove test analysis fixtures
+  try { rmSync(ANL_PATH_0, { force: true }) } catch {}
+  try { rmSync(ANL_PATH_1, { force: true }) } catch {}
+  restoreRelationFixture()
 }
 
 function packDraft(packId) {
+  const relId = REL_ID
   return {
     pack_id: packId,
     name: `Test ${packId}`,
     intent: 'Verify controller-derived evaluation destinations',
     domain: 'testing',
-    members,
+    members: eligibleMembers,
     excluded: [],
     workflow: {
-      summary: 'Exercise both members',
-      entry: { description: 'Start with skill 1 input', input_contract: 'A user prompt or structured input' },
-      terminal: { description: 'End with skill 2 output', output_contract: 'A completed task result' },
-      stages: [
+      nodes: [
         {
-          stage_id: 'stage-1',
-          name: 'Stage 1',
-          description: `Run ${members[0].skill_id}`,
-          member_ids: [members[0].skill_id],
-          handoffs: [
-            {
-              from_stage: 'stage-1',
-              from_skill: members[0].skill_id,
-              to_stage: 'stage-2',
-              to_skill: members[1].skill_id,
-              produced_artifact: 'intermediate result',
-              consumed_as: 'input',
-            },
-          ],
+          node_id: 'n1', type: 'task', member_ids: [eligibleMembers[0].skill_id],
+          label: 'Stage 1', entry_contract: ec('User input'), output_contract: oc('Intermediate', ['clm_prd_eval']),
         },
         {
-          stage_id: 'stage-2',
-          name: 'Stage 2',
-          description: `Run ${members[1].skill_id}`,
-          member_ids: [members[1].skill_id],
-          handoffs: [],
+          node_id: 'n2', type: 'task', member_ids: [eligibleMembers[1].skill_id],
+          label: 'Stage 2', entry_contract: ec('Receives intermediate'), output_contract: oc('Final', ['clm_prd_eval-final']),
         },
       ],
-      branches: [],
+      edges: [
+        {
+          edge_id: 'e1', from_node: 'n1', to_node: 'n2', direction: 'sequential',
+          artifact_handoff: handoff(relId, eligibleMembers[0].skill_id, 'clm_prd_eval', eligibleMembers[1].skill_id, 'clm_req_eval', 'intermediate', 'input'),
+        },
+      ],
+      entry_roots: ['n1'],
+      terminal_sinks: ['n2'],
     },
-    compatibility: { notes: 'Test members are independently eligible', chains: [], strengthens: [], alternatives: [], conflicts: [], unresolved: [] },
-    evidence: { analysis_paths: [], relation_edges: [] },
+    compatibility: { notes: 'Test members are independently eligible', chains: [{ relation_id: relId, state: 'used', disposition: 'required' }], strengthens: [], alternatives: [], conflicts: [] },
+    evidence: { analysis_ids: [ANL_ID_0, ANL_ID_1], relation_ids: [relId] },
+    mitigation: [],
+    artifact_mapping: [],
   }
 }
 
-function evaluationDraft() {
+function evaluationDraft(evaluationId, proofDigest) {
   return {
-    metrics: { relevance: 0.9 },
-    overall_score: 0.9,
-    passed: true,
-    status: 'passed',
-    failure_modes: [],
-    recommendations: [],
+    synthesis_session_id: 'synth_test-evalbind',
+    evaluation_session_id: 'evalses_test-evalbind',
+    metrics: {
+      relevance: { score: 0.85 }, coverage: { score: 0.80 }, non_redundancy: { score: 0.90 },
+      workflow_coherence: { score: 0.88 }, compatibility: { score: 0.82 }, conflict_control: { score: 0.95 },
+      evidence_quality: { score: 0.75 }, actionability: { score: 0.80 }, freshness: { score: 0.78 },
+      source_quality: { score: 0.85 },
+    },
+    blockers: [],
+    checked_claim_ids: ['clm_prd_eval', 'clm_req_eval', 'clm_prd_eval-final'],
+    warnings: [],
+    proof_digest: proofDigest,
   }
 }
 

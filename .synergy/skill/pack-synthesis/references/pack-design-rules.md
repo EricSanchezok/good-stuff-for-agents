@@ -1,39 +1,44 @@
-# Pack Design Rules
+# Pack v3 Design Rules
 
-A pack is a task-shaped workflow that closes, not a tag bundle.
+A Pack is a task-shaped DAG that closes from explicit inputs to explicit outcomes. It is not a tag bundle, a popularity list, or a linear order implied by array position.
 
-## Contract Preflight Rules
+## The Graph Must Be Executable
 
-Before synthesis writes a candidate, the pack contract must close. A closed contract has:
+Define stable nodes and explicit edges. Identify every valid starting node in `entry_roots` and every valid completion node in `terminal_sinks`. The graph must be acyclic, every node must be reachable from a root, and every intended route must terminate at a sink.
 
-- **Entry input.** A concrete artifact or description the user/agent provides to start. Not "anything" — a verifiable type or shape.
-- **Terminal outcome.** A concrete, verifiable end state the pack produces when complete.
-- **Ordered stages.** Every main-path stage has either a member skill assigned or a documented, unfillable gap.
-- **Adjacent handoffs.** Between every consecutive stage, a defined handoff format showing what moves from stage N to stage N+1 and how the receiving stage consumes it.
-- **Conditional branches.** Every decision point documents the trigger condition, branch path, and how the branch rejoins or terminates.
-- **Closed main paths.** Every trace from entry to terminal along every main path is resolved. An unresolved stage on a main path breaks the contract.
+Assign each member once. A node may coordinate several members when the contract calls for it, but no member may float outside the graph or silently perform work in more than one node.
 
-Relation edges (`chains_with`, `strengthens`, etc.) inform intent discovery and stage ordering but do not prove artifact compatibility. Handoff verification must be performed against the actual skill records and analyses, not inferred from relation edges alone.
+Use topology deliberately:
 
-## Good Packs
+- `sequential` transfers an artifact from one node to the next;
+- `conditional` chooses a route under a stated condition;
+- `fan_out` creates independently justified outgoing branches;
+- `fan_in` combines named incoming artifacts under a clear merge contract.
 
-- have a clear task intent and a closed contract;
-- include complementary skills across workflow stages;
-- keep overlap intentional and explained;
-- pin member versions;
-- include exclusion reasons for high-ranking non-members;
-- can be used by an agent without guessing the order or handoffs;
-- document entry input, terminal outcome, stage handoffs, and conditional branches.
+Parallel-looking shapes are not enough. Each fan-out branch must have evidence that its consumer can accept the branch artifact. Each fan-in input must have evidence that the receiving node can consume and combine it. Reusing one generic claim for every branch weakens the contract.
+
+## Required Handoffs Are Exact-Pair Claims
+
+Every required producer-to-consumer transfer is grounded in a Relation v2 `chains_with` record. Its producer skill and `produces` claim must match the upstream member; its consumer skill and `requires.required` claim must match the downstream member; and its direction must match the edge topology.
+
+A `strengthens` relation describes improvement, review, or corroboration. It is informational and never a required handoff. If removing a strengthening skill breaks the route, the design needs a valid required chain rather than stronger wording.
+
+## Dispositions Are Part Of The Design
+
+Alternatives and conflicts cannot remain as unexplained graph trivia. Record why an alternative was chosen or excluded. For a conflict, exclude one side, separate the pair under explicit conditions, split the Pack, or block candidate creation.
+
+Analysis claims also need disposition:
+
+- preconditions become entry contracts, node conditions, upstream preparation, or blockers;
+- refusal and tool constraints become feasibility or authorization boundaries;
+- failure warnings become visible risks, synthesis mitigations where possible, and warning claims handed to evaluation.
+
+## Prefer The Smallest Closed Pack
+
+Include only skills that contribute distinct task value. Pin current versions and explain each inclusion. Explain the exclusion of plausible alternatives, especially those supported by relation evidence.
+
+Two well-supported members are better than a larger redundant graph. A gap report is better than a candidate whose route depends on guesswork.
 
 ## Anti-Patterns
 
-- fake seed packs created for appearance;
-- domain grab bags with no workflow;
-- packs submitted as candidates before contract preflight passes;
-- adding weak skills to reach a target count;
-- including conflicting skills without resolution;
-- omitting license/confidence limitations;
-- publishing candidate packs directly;
-- using relation edges as proof of artifact compatibility without verifying handoffs.
-
-Default target size is 3–15 skills, but a smaller pack is better than a redundant one. A gap report (documented incomplete contract) is a valid output; do not produce a candidate for an unclosed contract.
+Reject designs that rely on domain similarity, hide known conflicts, use optional requirements as mandatory inputs, treat `strengthens` as dependency evidence, leave nodes unreachable, create cycles, omit branch-specific fan evidence, or write a candidate before canonical preflight succeeds.
