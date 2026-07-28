@@ -10,9 +10,9 @@ sources:
   source_id: src_https-github-com-anthropics-skills-anthropic-agent-skills_04f79b56
   state:
     consecutive_failures: 0
-    last_checked_at: '2026-07-27T21:32:43.524Z'
+    last_checked_at: '2026-07-28T18:56:36.525Z'
     last_ref: b29e7cf65e5cb78a5ac33d582270551bc74a14eb
-    last_success_at: '2026-07-27T21:32:43.524Z'
+    last_success_at: '2026-07-28T18:56:36.525Z'
   status: active
   sync:
     default_ref: main
@@ -33,9 +33,9 @@ sources:
   source_id: src_https-github-com-coderabbitai-skills-coderabbit-skills_8f2a22eb
   state:
     consecutive_failures: 0
-    last_checked_at: '2026-07-27T21:32:44.834Z'
+    last_checked_at: '2026-07-28T18:56:38.388Z'
     last_ref: c61c4908d36dda6fb08a343cc8b19c59fbb47de3
-    last_success_at: '2026-07-27T21:32:44.834Z'
+    last_success_at: '2026-07-28T18:56:38.388Z'
   status: active
   sync:
     default_ref: main
@@ -57,9 +57,9 @@ sources:
   source_id: src_https-github-com-coreyhaines31-marketingskills-marketing-skills-corey-haines_ef920698
   state:
     consecutive_failures: 0
-    last_checked_at: '2026-07-27T21:32:46.193Z'
+    last_checked_at: '2026-07-28T18:56:40.382Z'
     last_ref: 7868cb9251fad80a73d26e488a5ad5f6c4a9f335
-    last_success_at: '2026-07-27T21:32:46.193Z'
+    last_success_at: '2026-07-28T18:56:40.382Z'
   status: active
   sync:
     default_ref: main
@@ -80,9 +80,9 @@ sources:
   source_id: src_https-github-com-cuga-project-cuga-agent-cuga-agent-ibm-research_5709bc42
   state:
     consecutive_failures: 0
-    last_checked_at: '2026-07-27T21:32:48.048Z'
-    last_ref: fbb9f1855894fc42cf5f2262a6878cab0cb2a377
-    last_success_at: '2026-07-27T21:32:48.048Z'
+    last_checked_at: '2026-07-28T18:56:42.732Z'
+    last_ref: ad97388a600f417866ae16b88ad2aeca76dee9cf
+    last_success_at: '2026-07-28T18:56:42.732Z'
   status: preview
   sync:
     default_ref: main
@@ -104,9 +104,9 @@ sources:
   source_id: src_https-github-com-figma-mcp-server-guide-figma-mcp-skills_dde79ddd
   state:
     consecutive_failures: 0
-    last_checked_at: '2026-07-27T21:32:49.403Z'
+    last_checked_at: '2026-07-28T18:56:44.633Z'
     last_ref: 07316dd2920d61303ca0e52812b31f5f341e7b15
-    last_success_at: '2026-07-27T21:32:49.403Z'
+    last_success_at: '2026-07-28T18:56:44.633Z'
   status: preview
   sync:
     default_ref: main
