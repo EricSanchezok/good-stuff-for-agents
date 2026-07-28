@@ -1,11 +1,9 @@
 import {
   validateAssessmentSchema,
-  validateResponseLedgerSchema,
-  buildResponseLedger,
-  computeDedupFingerprint,
   ISSUE_REPLY_TEMPLATE_VERSION,
 } from './issue-assessment-writer.mjs'
 import { normalizeIssueIntake, TRUSTED_REPOSITORY } from './issue-intake.mjs'
+import { lookupPreviousResponse } from './issue-response-ledger.mjs'
 
 export const REPLY_LIMITS = Object.freeze({
   maxReplyBytes: 8_192,
@@ -73,81 +71,92 @@ export function checkTOCTOU({ intake, currentPayload }) {
   return { ...base, staleness: 'current', changed: false, reason: null }
 }
 
-export function checkDedup({ fingerprint, previousLedgers }) {
-  const existing = (previousLedgers ?? []).find((ledger) =>
-    validateResponseLedgerSchema(ledger).ok &&
-    ledger.dedup_fingerprint === fingerprint &&
-    (ledger.response_state === 'posted' || ledger.response_state === 'posted_confirmed') &&
-    Number.isInteger(ledger.comment_id)
-  )
-  return existing
-    ? {
-        duplicate: true,
-        existing_response_id: existing.response_id,
-        existing_comment_id: existing.comment_id,
-        existing_created_at: existing.created_at,
-      }
-    : { duplicate: false, existing_response_id: null, existing_comment_id: null }
-}
-
 export async function runRestrictedIssueReply({
   intake,
   assessment,
-  previousLedgers = [],
+  canonicalRecords = [],
   fetchCurrentIssue,
   commentRunner,
-  runId,
   apply = false,
+  persistCanonical = null,
   templateVersion = ISSUE_REPLY_TEMPLATE_VERSION,
 }) {
   assertAssessmentBinding(intake, assessment)
   if (typeof fetchCurrentIssue !== 'function') throw new Error('fetchCurrentIssue must be a function')
 
+  // Security requires human review — held_for_review immediately
   if (intake.security?.requires_human_review) {
-    const toctouState = {
-      checked_at: new Date().toISOString(),
-      issue_updated_at: intake.issue_binding.updated_at,
-      bound_digest: intake.issue_binding.content_digest,
-      current_digest: intake.issue_binding.content_digest,
-      staleness: 'unknown',
-      changed: true,
-      reason: 'intake contains injection indicators or requested privileged actions',
+    if (persistCanonical) {
+      const { buildCanonicalResponse } = await import('./issue-response-ledger.mjs')
+      const record = buildCanonicalResponse({
+        issueNumber: assessment.issue_number,
+        contentDigest: assessment.content_digest,
+        templateVersion,
+        responseVariant: 'held_for_review',
+      })
+      persistCanonical(record)
     }
-    const { record: ledger } = buildResponseLedger({ assessment, responseState: 'held_for_review', commentId: null, toctouState, runId, templateVersion })
-    return { status: 'held_for_review', posted: false, comment_id: null, body: null, ledger, toctou: toctouState }
+    return { status: 'held_for_review', posted: false, comment_id: null, body: null }
   }
 
+  // Re-fetch current state for TOCTOU check
   const currentPayload = await fetchCurrentIssue({
     repository: TRUSTED_REPOSITORY,
     issueNumber: assessment.issue_number,
   })
   const toctouState = checkTOCTOU({ intake, currentPayload })
   if (toctouState.staleness !== 'current') {
-    const { record: ledger } = buildResponseLedger({ assessment, responseState: 'reply_blocked', commentId: null, toctouState, runId, templateVersion })
-    return { status: 'reply_blocked', posted: false, comment_id: null, body: null, ledger, toctou: toctouState }
+    if (persistCanonical) {
+      const { buildCanonicalResponse } = await import('./issue-response-ledger.mjs')
+      const record = buildCanonicalResponse({
+        issueNumber: assessment.issue_number,
+        contentDigest: assessment.content_digest,
+        templateVersion,
+        responseVariant: 'reply_blocked',
+      })
+      persistCanonical(record)
+    }
+    return { status: 'reply_blocked', posted: false, comment_id: null, body: null }
   }
 
-  const fingerprint = computeDedupFingerprint({
-    repository: TRUSTED_REPOSITORY,
+  // Unified dedup: check canonical records only
+  const prev = lookupPreviousResponse({
     issueNumber: assessment.issue_number,
-    assessmentDigest: assessment.assessment_digest,
+    contentDigest: assessment.content_digest,
     templateVersion,
+    canonicalRecords,
   })
-  const dedup = checkDedup({ fingerprint, previousLedgers })
-  if (dedup.duplicate) {
-    const { record: ledger } = buildResponseLedger({ assessment, responseState: 'no_action', commentId: null, toctouState, runId, templateVersion, notes: `already posted as comment ${dedup.existing_comment_id}` })
-    return { status: 'duplicate', posted: false, comment_id: dedup.existing_comment_id, body: null, ledger, toctou: toctouState }
+  if (prev.found) {
+    if (persistCanonical) {
+      const { buildCanonicalResponse } = await import('./issue-response-ledger.mjs')
+      const record = buildCanonicalResponse({
+        issueNumber: assessment.issue_number,
+        contentDigest: assessment.content_digest,
+        templateVersion,
+        responseVariant: 'no_action',
+      })
+      persistCanonical(record)
+    }
+    return { status: 'duplicate', posted: false, comment_id: prev.comment_id, body: null }
   }
 
   const reply = renderReply(assessment)
   if (!reply.ok) {
-    const { record: ledger } = buildResponseLedger({ assessment, responseState: 'reply_blocked', commentId: null, toctouState, runId, templateVersion, notes: reply.errors.join('; ') })
-    return { status: 'reply_blocked', posted: false, comment_id: null, body: null, ledger, toctou: toctouState }
+    if (persistCanonical) {
+      const { buildCanonicalResponse } = await import('./issue-response-ledger.mjs')
+      const record = buildCanonicalResponse({
+        issueNumber: assessment.issue_number,
+        contentDigest: assessment.content_digest,
+        templateVersion,
+        responseVariant: 'reply_blocked',
+      })
+      persistCanonical(record)
+    }
+    return { status: 'reply_blocked', posted: false, comment_id: null, body: null }
   }
 
   if (!apply) {
-    const { record: ledger } = buildResponseLedger({ assessment, responseState: 'draft', commentId: null, toctouState, runId, templateVersion })
-    return { status: 'dry_run', posted: false, comment_id: null, body: reply.body, ledger, toctou: toctouState }
+    return { status: 'dry_run', posted: false, comment_id: null, body: reply.body }
   }
   if (typeof commentRunner !== 'function') throw new Error('commentRunner must be a function when apply=true')
 
@@ -155,13 +164,23 @@ export async function runRestrictedIssueReply({
     repository: TRUSTED_REPOSITORY,
     issueNumber: assessment.issue_number,
     body: reply.body,
-    dedupFingerprint: fingerprint,
   })
   const commentId = Number.isInteger(result) ? result : result?.comment_id
   if (!Number.isInteger(commentId) || commentId <= 0) throw new Error('commentRunner must return a positive comment ID')
 
-  const { record: ledger } = buildResponseLedger({ assessment, responseState: 'posted', commentId, toctouState, runId, templateVersion })
-  return { status: 'posted', posted: true, comment_id: commentId, body: reply.body, ledger, toctou: toctouState }
+  if (persistCanonical) {
+    const { buildCanonicalResponse } = await import('./issue-response-ledger.mjs')
+    const record = buildCanonicalResponse({
+      issueNumber: assessment.issue_number,
+      contentDigest: assessment.content_digest,
+      templateVersion,
+      responseVariant: 'posted',
+      commentId,
+      assessmentDigest: assessment.assessment_digest,
+    })
+    persistCanonical(record)
+  }
+  return { status: 'posted', posted: true, comment_id: commentId, body: reply.body }
 }
 
 function assertAssessmentBinding(intake, assessment) {

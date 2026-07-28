@@ -1,0 +1,72 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Canonical Issue Response",
+  "description": "A single current-store record of one GitHub Issue response decision — bootstrap confirmed or run-produced (posted/held_for_review/reply_blocked/no_action). No run-scoped fields.",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "kind",
+    "response_id",
+    "repository",
+    "issue_number",
+    "template_version",
+    "response_variant",
+    "content_digest",
+    "dedup_fingerprint",
+    "created_at"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": { "const": 3 },
+    "kind": {
+      "type": "string",
+      "const": "canonical_issue_response"
+    },
+    "response_id": {
+      "type": "string",
+      "pattern": "^cir_"
+    },
+    "repository": {
+      "const": "EricSanchezok/good-stuff-for-agents"
+    },
+    "issue_number": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "template_version": {
+      "type": "string",
+      "pattern": "^issue-factual-v[0-9]+$"
+    },
+    "response_variant": {
+      "type": "string",
+      "enum": [
+        "bootstrap",
+        "posted",
+        "held_for_review",
+        "reply_blocked",
+        "no_action"
+      ]
+    },
+    "content_digest": {
+      "type": "string",
+      "pattern": "^sha256:[a-f0-9]{64}$"
+    },
+    "comment_id": {
+      "type": ["integer", "null"],
+      "minimum": 1
+    },
+    "assessment_digest": {
+      "type": ["string", "null"],
+      "pattern": "^sha256:[a-f0-9]{64}$"
+    },
+    "dedup_fingerprint": {
+      "type": "string",
+      "pattern": "^sha256:[a-f0-9]{64}$"
+    },
+    "created_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "notes": { "type": "string", "maxLength": 4096 }
+  }
+}

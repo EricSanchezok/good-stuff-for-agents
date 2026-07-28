@@ -19,11 +19,20 @@ export const analysisSchemaV2 = loadSchema('v2/analysis.schema.json')
 export const relationSchemaV2 = loadSchema('v2/relation.schema.json')
 export const packSchemaV3 = loadSchema('v3/pack.schema.json')
 export const evaluationSchemaV2 = loadSchema('v2/evaluation.schema.json')
-export const runContextSchemaV1 = loadSchema('v2/run-context.schema.json')
-export const terminalLedgerSchemaV1 = loadSchema('v2/terminal-ledger.schema.json')
 export const issueAssessmentSchemaV1 = loadSchema('v2/issue-assessment.schema.json')
 export const issueResponseLedgerSchemaV1 = loadSchema('v2/issue-response-ledger.schema.json')
+
+// --- Current v3 Nightly schemas (Blueprint) ---
+export const runContextSchemaV3 = loadSchema('v3/run-context.schema.json')
+export const phaseEventSchemaV3 = loadSchema('v3/phase-event.schema.json')
+export const gateResultSchemaV3 = loadSchema('v3/gate-result.schema.json')
+export const sealSchemaV3 = loadSchema('v3/seal.schema.json')
+export const auditReceiptSchemaV3 = loadSchema('v3/audit-receipt.schema.json')
+export const terminalSchemaV3 = loadSchema('v3/terminal.schema.json')
+export const runLedgerSchemaV3 = loadSchema('v3/run-ledger.schema.json')
 export const runSummarySchemaV3 = loadSchema('v3/run-summary.schema.json')
+export const sealManifestSchemaV3 = loadSchema('v3/seal-manifest.schema.json')
+export const canonicalIssueResponseSchemaV3 = loadSchema('v3/canonical-issue-response.schema.json')
 
 // --- Lightweight structural validation (not full JSON Schema) ---
 // Validates required structure, types, patterns, and enums per schema contracts.
@@ -72,17 +81,36 @@ export function validateAgainstSchema(record, schema) {
     }
   }
 
-  // Root-level allOf conditional required checks
+  // Root-level allOf conditional required checks and property enum constraints
   if (schema.allOf) {
     for (const cond of schema.allOf) {
       if (cond.if?.properties) {
         const ifMatch = Object.entries(cond.if.properties).every(
-          ([k, p]) => record[k] !== undefined && record[k] === p.const
+          ([k, p]) => record[k] !== undefined && (
+            (p.const !== undefined && matchConst(record[k], p.const)) ||
+            (Array.isArray(p.enum) && p.enum.includes(record[k]))
+          )
         )
-        if (ifMatch && cond.then?.required) {
-          for (const rk of cond.then.required) {
-            if (!(rk in record)) {
-              errors.push(`conditional required: "${rk}" is required (${JSON.stringify(cond.if.properties)})`)
+        if (ifMatch) {
+          if (cond.then?.required) {
+            for (const rk of cond.then.required) {
+              if (!(rk in record)) {
+                errors.push(`conditional required: "${rk}" is required (${JSON.stringify(cond.if.properties)})`)
+              }
+            }
+          }
+          if (cond.then?.properties) {
+            for (const [pk, pv] of Object.entries(cond.then.properties)) {
+              if (pk in record) {
+                if (pv.enum && !pv.enum.includes(record[pk])) {
+                  errors.push(`conditional: ${pk} must be in [${pv.enum}], got ${JSON.stringify(record[pk])}`)
+                }
+                if (pv.const !== undefined && record[pk] !== pv.const) {
+                  errors.push(`conditional: ${pk} must be ${JSON.stringify(pv.const)}, got ${JSON.stringify(record[pk])}`)
+                }
+              } else {
+                errors.push(`conditional: ${pk} missing for branch ${JSON.stringify(cond.if.properties)}`)
+              }
             }
           }
         }
@@ -493,101 +521,6 @@ export function buildEvaluationV2(overrides = {}) {
     },
     created_by_run: 'run_fixture-test_20000001',
     created_at: '2026-07-27T12:00:00Z',
-    ...overrides,
-  }
-}
-
-export function buildRunContext(overrides = {}) {
-  return {
-    schema_version: 1,
-    run_id: 'run_test-valid_20000001',
-    snapshot_id: 'snap_test-valid_20000001',
-    timestamp: '2026-07-27T12:00:00Z',
-    snapshot_digest: 'a'.repeat(64),
-    evidence_manifest_digest: 'b'.repeat(64),
-    catalog_counts: {
-      sources: { total: 10, active: 8, candidate: 2, added_since_last_run: 1 },
-      skills: { total: 25, active: 20, candidate: 5, added_since_last_run: 3 },
-      analyses: { total: 20, active: 18, stale: 2 },
-      relations: { total: 15 },
-      packs: { total: 5, candidate: 3, published: 2 },
-      evaluations: { total: 3 },
-      issues: { total: 2 },
-    },
-    freshness: {
-      sources_stale_count: 1,
-      skills_stale_count: 2,
-      analyses_stale_count: 3,
-      oldest_stale_iso: '2026-06-01T00:00:00Z',
-      freshness_cutoff: '2026-07-20T00:00:00Z',
-    },
-    coverage: {
-      skills_with_analysis: 20,
-      skills_without_analysis: 5,
-      coverage_ratio: 0.8,
-      active_skills_with_analysis: 18,
-    },
-    relations: {
-      total_edges: 15,
-      by_predicate: { chains_with: 10, strengthens: 3, alternatives: 1, conflicts_with: 1 },
-      chains_count: 10,
-      strengthens_count: 3,
-      alternatives_count: 1,
-      conflicts_count: 1,
-    },
-    pack_lifecycle: {
-      total_candidate: 3,
-      total_published: 2,
-      new_since_last_run: 0,
-      stale_packs: 1,
-      promoted_this_run: 0,
-      rejected_this_run: 0,
-    },
-    issue_digest: {
-      open: 1,
-      acknowledged: 1,
-      fulfilled: 0,
-      blocked: 0,
-    },
-    demand_metadata: {
-      demand_skill_ids: ['skl_test-valid_20000001'],
-      domain_slugs: ['test-domain'],
-    },
-    prior_fingerprint: 'sha256:previous_run_hash',
-    ...overrides,
-  }
-}
-
-export function buildTerminalLedger(overrides = {}) {
-  return {
-    schema_version: 1,
-    ledger_id: 'ldg_test-valid_20000001',
-    run_id: 'run_test-valid_20000001',
-    timestamp: '2026-07-27T12:00:00Z',
-    source_outcomes: [
-      { entity_id: 'src_test-a_20000001', state: 'synced' },
-      { entity_id: 'src_test-b_20000001', state: 'unchanged' },
-    ],
-    skill_outcomes: [
-      { entity_id: 'skl_test-a_20000001', state: 'analyzed' },
-      { entity_id: 'skl_test-b_20000001', state: 'analyzed' },
-    ],
-    relation_outcomes: [
-      { entity_id: 'rel_test-valid_20000001', state: 'related' },
-    ],
-    pack_outcomes: [
-      { entity_id: 'pack_test-valid_20000001', state: 'evaluated' },
-    ],
-    issue_outcomes: [
-      { entity_id: 'issue_1', state: 'updated' },
-    ],
-    run_outcome: {
-      status: 'success',
-      summary: 'All phases completed successfully',
-      total_actions: 10,
-      errors: 0,
-      warnings: 0,
-    },
     ...overrides,
   }
 }

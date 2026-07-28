@@ -1,0 +1,139 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Nightly Run Context v3",
+  "description": "Immutable run-context snapshot. schema_version 3 binds issues event, workload, demand, evidence manifest digests, and includes a self digest.",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "run_id",
+    "snapshot_id",
+    "timestamp",
+    "catalog_counts",
+    "freshness",
+    "coverage",
+    "relations",
+    "pack_lifecycle",
+    "issue_digest",
+    "demand_metadata",
+    "prior_fingerprint",
+    "snapshot_digest",
+    "evidence_manifest_digest",
+    "issues_event_digest",
+    "workload_digest",
+    "demand_digest",
+    "digest"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": { "const": 3 },
+    "run_id": { "type": "string", "pattern": "^run_" },
+    "snapshot_id": { "type": "string" },
+    "timestamp": { "type": "string" },
+    "catalog_counts": {
+      "type": "object",
+      "required": ["sources", "skills", "analyses", "relations", "packs", "evaluations", "issues"],
+      "additionalProperties": false,
+      "properties": {
+        "sources": { "$ref": "#/$defs/count_entry" },
+        "skills": { "$ref": "#/$defs/count_entry" },
+        "analyses": { "$ref": "#/$defs/count_entry" },
+        "relations": { "$ref": "#/$defs/count_entry" },
+        "packs": { "$ref": "#/$defs/count_entry" },
+        "evaluations": { "$ref": "#/$defs/count_entry" },
+        "issues": { "$ref": "#/$defs/count_entry" }
+      }
+    },
+    "freshness": {
+      "type": "object",
+      "required": ["sources_stale_count", "skills_stale_count", "analyses_stale_count"],
+      "additionalProperties": false,
+      "properties": {
+        "sources_stale_count": { "type": "integer", "minimum": 0 },
+        "skills_stale_count": { "type": "integer", "minimum": 0 },
+        "analyses_stale_count": { "type": "integer", "minimum": 0 },
+        "oldest_stale_iso": { "type": "string" },
+        "freshness_cutoff": { "type": "string" }
+      }
+    },
+    "coverage": {
+      "type": "object",
+      "required": ["skills_with_analysis", "skills_without_analysis", "coverage_ratio"],
+      "additionalProperties": false,
+      "properties": {
+        "skills_with_analysis": { "type": "integer", "minimum": 0 },
+        "skills_without_analysis": { "type": "integer", "minimum": 0 },
+        "coverage_ratio": { "type": "number", "minimum": 0, "maximum": 1 },
+        "active_skills_with_analysis": { "type": "integer", "minimum": 0 }
+      }
+    },
+    "relations": {
+      "type": "object",
+      "required": ["total_edges", "by_predicate", "chains_count", "strengthens_count", "alternatives_count", "conflicts_count"],
+      "additionalProperties": false,
+      "properties": {
+        "total_edges": { "type": "integer", "minimum": 0 },
+        "by_predicate": { "type": "object" },
+        "chains_count": { "type": "integer", "minimum": 0 },
+        "strengthens_count": { "type": "integer", "minimum": 0 },
+        "alternatives_count": { "type": "integer", "minimum": 0 },
+        "conflicts_count": { "type": "integer", "minimum": 0 }
+      }
+    },
+    "pack_lifecycle": {
+      "type": "object",
+      "required": ["total_candidate", "total_published", "new_since_last_run", "stale_packs"],
+      "additionalProperties": false,
+      "properties": {
+        "total_candidate": { "type": "integer", "minimum": 0 },
+        "total_published": { "type": "integer", "minimum": 0 },
+        "new_since_last_run": { "type": "integer", "minimum": 0 },
+        "stale_packs": { "type": "integer", "minimum": 0 },
+        "promoted_this_run": { "type": "integer", "minimum": 0 },
+        "rejected_this_run": { "type": "integer", "minimum": 0 }
+      }
+    },
+    "issue_digest": {
+      "type": "object",
+      "required": ["open", "acknowledged", "fulfilled", "blocked"],
+      "additionalProperties": false,
+      "properties": {
+        "open": { "type": "integer", "minimum": 0 },
+        "acknowledged": { "type": "integer", "minimum": 0 },
+        "fulfilled": { "type": "integer", "minimum": 0 },
+        "blocked": { "type": "integer", "minimum": 0 }
+      }
+    },
+    "demand_metadata": {
+      "type": "object",
+      "required": ["demand_skill_ids", "domain_slugs"],
+      "additionalProperties": false,
+      "properties": {
+        "demand_skill_ids": { "type": "array", "uniqueItems": true, "items": { "type": "string" } },
+        "domain_slugs": { "type": "array", "uniqueItems": true, "items": { "type": "string", "minLength": 1 } }
+      }
+    },
+    "prior_fingerprint": { "type": "string" },
+    "snapshot_digest": { "type": "string", "pattern": "^sha256:[a-f0-9]{64}$" },
+    "evidence_manifest_digest": { "type": "string", "pattern": "^sha256:[a-f0-9]{64}$" },
+    "issues_event_digest": { "type": "string", "pattern": "^sha256:[a-f0-9]{64}$" },
+    "workload_digest": { "type": "string", "pattern": "^sha256:[a-f0-9]{64}$" },
+    "demand_digest": { "type": "string", "pattern": "^sha256:[a-f0-9]{64}$" },
+    "digest": { "type": "string", "pattern": "^sha256:[a-f0-9]{64}$" },
+    "notes": { "type": "string" }
+  },
+  "$defs": {
+    "count_entry": {
+      "type": "object",
+      "required": ["total"],
+      "additionalProperties": false,
+      "properties": {
+        "total": { "type": "integer", "minimum": 0 },
+        "active": { "type": "integer", "minimum": 0 },
+        "candidate": { "type": "integer", "minimum": 0 },
+        "published": { "type": "integer", "minimum": 0 },
+        "stale": { "type": "integer", "minimum": 0 },
+        "added_since_last_run": { "type": "integer", "minimum": 0 }
+      }
+    }
+  }
+}

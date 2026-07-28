@@ -1,42 +1,41 @@
 #!/usr/bin/env node
 /**
- * Deterministic Issue-stage orchestrator for Nightly Catalog v3.
- *
- * Two-phase CLI:
- *   issue-stage-orchestrator.mjs --prepare --run-id <id>
- *   issue-stage-orchestrator.mjs --finalize --run-id <id> --workload <path> --drafts <path> [--apply]
- *
- * Production paths are always under catalog/runs/<run-id>/.
- * All exported functions accept injected exec/client functions for testing.
- * gh auth/API failures are isolated — they never crash the Nightly and
- * produce explicit reply_blocked diagnostics instead.
- */
+* Deterministic Issue-stage orchestrator for Nightly Catalog v3.
+*
+* Two-phase CLI:
+*   issue-stage-orchestrator.mjs --prepare --run-id <id> --workload <path>
+*   issue-stage-orchestrator.mjs --finalize --run-id <id> --workload <path> --drafts <path> --output <path> [--apply]
+*
+* Programmatic exports accept explicit workload/output paths from the
+* controller. No default catalog/runs paths are decided by this module.
+* All exported functions accept injected exec/client functions for testing.
+* gh auth/API failures are isolated — they never crash the Nightly and
+* produce explicit reply_blocked diagnostics instead.
+*/
 
 import { createHash } from 'node:crypto'
 import { execFileSync } from 'node:child_process'
 import { mkdirSync, readFileSync, writeFileSync } from 'node:fs'
-import { isAbsolute, relative, resolve } from 'node:path'
+import { resolve } from 'node:path'
 import { fileURLToPath } from 'node:url'
 import { dirname } from 'node:path'
 
-import { ROOT, assertCatalogId, ensureDir, writeTextAtomic } from '../../catalog-data/scripts/lib/catalog-lib.mjs'
-
-// Path helpers that work both inside and outside ROOT
-function isInsideWorkingTree(path) {
-  if (!path) return false
-  try { const rel = relative(ROOT, resolve(path)); return !rel.startsWith('..') && !isAbsolute(rel) } catch { return false }
-}
-function ensureDirAnywhere(p) { const abs = resolve(p); isInsideWorkingTree(abs) ? ensureDir(abs, ROOT) : mkdirSync(abs, { recursive: true }); return abs }
-function writeAtomicAnywhere(p, content) { const abs = resolve(p); isInsideWorkingTree(abs) ? writeTextAtomic(abs, content, ROOT) : (mkdirSync(dirname(abs), { recursive: true }), writeFileSync(abs, content, 'utf8')) }
+import { assertCatalogId } from '../../catalog-data/scripts/lib/catalog-lib.mjs'
 import { createIssueLedgerStore } from '../../catalog-data/scripts/lib/issue-ledger-store.mjs'
 import { TRUSTED_REPOSITORY } from './lib/issue-intake.mjs'
 import { scanIssues } from './lib/issue-scan.mjs'
 import { createGhIssueClient } from './lib/issue-github-client.mjs'
 import { createGhIssueCommentRunner } from './lib/issue-comment-runner.mjs'
-import { buildAssessmentFromFulfillment, buildResponseLedger } from './lib/issue-assessment-writer.mjs'
+import { buildAssessmentFromFulfillment } from './lib/issue-assessment-writer.mjs'
+import { ISSUE_REPLY_TEMPLATE_VERSION } from './lib/issue-assessment-writer.mjs'
 import { runRestrictedIssueReply } from './lib/issue-reply-controller.mjs'
+import { computeIssueIdentityFingerprint } from './lib/issue-response-ledger.mjs'
 
 const __dirname = dirname(fileURLToPath(import.meta.url))
+
+// Path helpers for controller output — write to explicit paths only
+function ensureDirAnywhere(p) { mkdirSync(resolve(p), { recursive: true }); return resolve(p) }
+function writeAtomicAnywhere(p, content) { const abs = resolve(p); mkdirSync(dirname(abs), { recursive: true }); writeFileSync(abs, content, 'utf8'); return abs }
 
 // ---------------------------------------------------------------------------
 // gh auth check — isolate failure
@@ -74,55 +73,30 @@ function extractGhError(err) {
 }
 
 // ---------------------------------------------------------------------------
-// Path helpers
-// ---------------------------------------------------------------------------
-
-function runsDir(runId, { baseDir = resolve(ROOT, 'catalog'), runsDirectory = 'runs' } = {}) {
-  return resolve(baseDir, runsDirectory, runId)
-}
-
-function assertRunPath(label, filePath, runId) {
-  const abs = resolve(filePath)
-  const allowed = runsDir(runId)
-  const rel = relative(allowed, abs)
-  if (rel.startsWith('..') || isAbsolute(rel)) {
-    throw new Error(`${label} must be under catalog/runs/<run-id>/: ${filePath}`)
-  }
-  return abs
-}
-
-function repoRelativePath(absolutePath) {
-  if (!absolutePath) return null
-  try {
-    const rel = relative(ROOT, absolutePath)
-    if (rel.startsWith('..')) return absolutePath.replaceAll('\\', '/')
-    return rel.replaceAll('\\', '/')
-  } catch {
-    return absolutePath
-  }
-}
-
-// ---------------------------------------------------------------------------
 // Prepare phase
 // ---------------------------------------------------------------------------
 
 /**
  * @param {object} opts
  * @param {string} opts.runId
+ * @param {string} opts.workloadPath  — explicit path from controller (required)
  * @param {Function} [opts.execFile]
- * @param {string} [opts.workloadPath]  — defaults to catalog/runs/<runId>/issue-stage/workload.json
  * @param {object} [opts.storeOptions]
  * @returns {object}
  */
 export function prepareIssueStage({
   runId,
   execFile = execFileSync,
-  workloadPath = null,
+  workloadPath,
   storeOptions = {},
 }) {
   const errors = []
   const normalizedRunId = normalizeRunId(runId, errors)
   if (errors.length > 0) {
+    return failPrepare(errors)
+  }
+  if (!workloadPath) {
+    errors.push('workloadPath is required')
     return failPrepare(errors)
   }
 
@@ -147,26 +121,20 @@ export function prepareIssueStage({
   const acceptedResults = scan.results.filter((r) => r.intake_status === 'accepted')
   const rejectedResults = scan.results.filter((r) => r.intake_status !== 'accepted')
 
-  // Bind previous ledgers for each accepted issue
+  // Bind canonical response records for each accepted issue
   const store = createIssueLedgerStore(storeOptions)
+  const allCanonicalRecords = store.loadAllCanonicalResponses()
   const allAcceptedIssues = []
   for (const result of acceptedResults) {
-    let previousLedgers = []
-    try {
-      previousLedgers = store.loadPreviousLedgers({
-        issueNumber: result.issue_number,
-        repository: TRUSTED_REPOSITORY,
-      })
-    } catch (_err) { /* non-fatal */ }
+    const issueRecords = allCanonicalRecords.filter((r) => r.issue_number === result.issue_number)
     allAcceptedIssues.push({
       issue_number: result.issue_number,
       intake: result.intake,
-      previous_ledgers: previousLedgers,
+      canonical_records: issueRecords,
     })
   }
 
-  const outputPath = workloadPath || resolve(runsDir(normalizedRunId, storeOptions), 'issue-stage', 'workload.json')
-  ensureDirAnywhere(dirname(outputPath))
+  ensureDirAnywhere(dirname(workloadPath))
 
   const workloadDoc = {
     schema_version: 1,
@@ -192,7 +160,7 @@ export function prepareIssueStage({
   workloadDoc.workload_digest = digest
   workloadDoc.prepared_at = new Date().toISOString()
 
-  writeAtomicAnywhere(outputPath, JSON.stringify(workloadDoc, null, 2) + '\n')
+  writeAtomicAnywhere(workloadPath, JSON.stringify(workloadDoc, null, 2) + '\n')
 
   return {
     ok: true,
@@ -201,7 +169,7 @@ export function prepareIssueStage({
     gh_available: ghAvailable,
     workload_digest: digest,
     scan: scan.summary,
-    workload_path: outputPath,
+    workload_path: workloadPath,
     workload_summary: {
       total_fetched: fetchedIssues.length,
       accepted: acceptedResults.length,
@@ -221,11 +189,11 @@ export function prepareIssueStage({
  * @param {string} opts.runId
  * @param {string} opts.workloadPath
  * @param {string} opts.draftsPath
+ * @param {string} opts.outputPath  — explicit output path from controller (required)
  * @param {boolean} [opts.apply=false]
  * @param {Function} [opts.execFile]
  * @param {Function} [opts.fetchCurrentIssue]   — overrides gh client for testing
  * @param {Function} [opts.commentRunner]       — overrides gh comment runner for testing
- * @param {string} [opts.outputPath]            — defaults to catalog/runs/<runId>/issue-stage/stages-issues.json
  * @param {object} [opts.storeOptions]
  * @returns {Promise<object>}
  */
@@ -233,17 +201,21 @@ export async function finalizeIssueStage({
   runId,
   workloadPath,
   draftsPath,
+  outputPath,
   apply = false,
   execFile = execFileSync,
   fetchCurrentIssue = null,
   commentRunner = null,
-  outputPath = null,
   storeOptions = {},
 }) {
   const errors = []
   const normalizedRunId = normalizeRunId(runId, errors)
   if (errors.length > 0) {
-    return failFinalize(errors, null)
+    return failFinalize(errors)
+  }
+  if (!outputPath) {
+    errors.push('outputPath is required')
+    return failFinalize(errors)
   }
 
   // 1. Load & validate workload
@@ -252,23 +224,26 @@ export async function finalizeIssueStage({
     workload = JSON.parse(readFileSync(workloadPath, 'utf8'))
   } catch (err) {
     errors.push(`workload_read_failed: ${err.message}`)
-    return failFinalize(errors, normalizedRunId)
+    return failFinalize(errors)
   }
   const wlErrors = validateWorkloadFull(workload, normalizedRunId)
   if (wlErrors.length > 0) {
-    return failFinalize(wlErrors, normalizedRunId)
+    return failFinalize(wlErrors)
   }
 
   // 2. Early fail for incomplete snapshot
   if (workload.snapshot_complete !== true) {
-    const stage = buildIncompleteStage(workload, normalizedRunId)
-    const resolvedOut = writeStageOutput(stage, normalizedRunId, outputPath, storeOptions, errors)
+    const stage = buildIncompleteStage(workload)
+    try {
+      ensureDirAnywhere(dirname(outputPath))
+      writeAtomicAnywhere(outputPath, JSON.stringify(stage, null, 2) + '\n')
+    } catch (err) { errors.push(`output_write_failed: ${err.message}`) }
     return {
       ok: true,
       snapshot_complete: false,
       stages_issues: stage,
       diagnostics: [`snapshot incomplete: ${workload.snapshot_diagnostics || 'unknown'}`],
-      output_path: resolvedOut,
+      output_path: outputPath,
       errors,
     }
   }
@@ -279,11 +254,11 @@ export async function finalizeIssueStage({
     draftsDoc = JSON.parse(readFileSync(draftsPath, 'utf8'))
   } catch (err) {
     errors.push(`drafts_read_failed: ${err.message}`)
-    return failFinalize(errors, normalizedRunId)
+    return failFinalize(errors)
   }
   const draftsByIssue = validateDraftsComplete(draftsDoc, workload, errors)
   if (errors.length > 0) {
-    return failFinalize(errors, normalizedRunId)
+    return failFinalize(errors)
   }
 
   // 4. Instantiate production gh client/runner ONCE (defect #1 fix)
@@ -297,8 +272,9 @@ export async function finalizeIssueStage({
     return ghCommentRunner({ repository: TRUSTED_REPOSITORY, issueNumber, body })
   })
 
-  // 5. Process each accepted issue
+  // Process each accepted issue
   const store = createIssueLedgerStore(storeOptions)
+  const canonicalRecords = store.loadAllCanonicalResponses()
   const assessments = []
   const stageErrors = []
 
@@ -307,7 +283,7 @@ export async function finalizeIssueStage({
     const intake = wlIssue.intake
     const draft = draftsByIssue.get(issueNumber)
 
-    // 5a. Build canonical assessment (MUST succeed — draft is validated)
+    // Build canonical assessment (MUST succeed — draft is validated)
     let assessmentRecord
     try {
       const result = buildAssessmentFromFulfillment({
@@ -320,78 +296,66 @@ export async function finalizeIssueStage({
       })
       assessmentRecord = result.record
     } catch (err) {
-      // Assessment build failure = stage failure (defect #5)
       errors.push(`issue #${issueNumber}: assessment build failed — ${err.message}`)
-      return failFinalize(errors, normalizedRunId)
+      return failFinalize(errors)
     }
 
-    // 5b. Persist assessment (MUST succeed — stage failure if not)
-    let assessmentPath
-    try {
-      assessmentPath = store.persistAssessment({ runId: normalizedRunId, assessment: assessmentRecord })
-    } catch (err) {
-      errors.push(`issue #${issueNumber}: assessment persist failed — ${err.message}`)
-      return failFinalize(errors, normalizedRunId)
-    }
-
-    // 5c. Run restricted reply
+    // Run restricted reply
     let replyResult
     try {
       replyResult = await runRestrictedIssueReply({
         intake,
         assessment: assessmentRecord,
-        previousLedgers: wlIssue.previous_ledgers,
+        canonicalRecords,
         fetchCurrentIssue: effectiveFetch,
         commentRunner: effectiveCommentRunner,
-        runId: normalizedRunId,
         apply,
+        persistCanonical: (rec) => store.persistCanonicalResponse(rec),
       })
     } catch (err) {
       stageErrors.push(`issue #${issueNumber}: reply crashed — ${err.message}`)
-      // Persist a reply_blocked ledger with crash notes
       try {
-        const { record: ledger } = buildResponseLedger({
-          assessment: assessmentRecord,
-          responseState: 'reply_blocked',
-          commentId: null,
-          toctouState: {
-            checked_at: new Date().toISOString(),
-            issue_updated_at: intake.issue_binding.updated_at,
-            bound_digest: intake.issue_binding.content_digest,
-            current_digest: intake.issue_binding.content_digest,
-            staleness: 'unknown',
-          },
-          runId: normalizedRunId,
+        store.persistCanonicalResponse({
+          schema_version: 3,
+          kind: 'canonical_issue_response',
+          response_id: `cir_n${issueNumber}_reply_blocked_${'0'.repeat(16)}`,
+          repository: TRUSTED_REPOSITORY,
+          issue_number: issueNumber,
+          template_version: ISSUE_REPLY_TEMPLATE_VERSION,
+          response_variant: 'reply_blocked',
+          content_digest: intake.issue_binding.content_digest,
+          comment_id: null,
+          assessment_digest: null,
+          dedup_fingerprint: computeIssueIdentityFingerprint({
+            issueNumber, contentDigest: intake.issue_binding.content_digest,
+            templateVersion: ISSUE_REPLY_TEMPLATE_VERSION,
+          }),
+          created_at: new Date().toISOString(),
           notes: `reply crashed: ${err.message}`,
         })
-        const ledgerPath = store.persistResponseLedger({ runId: normalizedRunId, ledger })
-        assessments.push(buildAssessmentEntry(
-          issueNumber, intake, assessmentRecord, assessmentPath, ledgerPath, 'reply_blocked', false, null,
-        ))
-      } catch (persistErr) {
-        errors.push(`issue #${issueNumber}: reply_blocked ledger persist failed — ${persistErr.message}`)
-        return failFinalize(errors, normalizedRunId)
-      }
+      } catch { /* non-fatal */ }
+      assessments.push({
+        issue_number: issueNumber,
+        intake,
+        assessment: assessmentRecord,
+        reply: { status: 'reply_blocked', posted: false, comment_id: null },
+      })
       continue
     }
 
-    // 5d. Persist response ledger
-    let ledgerPath
-    try {
-      ledgerPath = store.persistResponseLedger({ runId: normalizedRunId, ledger: replyResult.ledger })
-    } catch (err) {
-      // Ledger persist failure = stage incomplete (defect #5)
-      errors.push(`issue #${issueNumber}: ledger persist failed — ${err.message}`)
-      return failFinalize(errors, normalizedRunId)
-    }
-
-    assessments.push(buildAssessmentEntry(
-      issueNumber, intake, assessmentRecord, assessmentPath, ledgerPath,
-      replyResult.status, replyResult.posted ?? false, replyResult.comment_id ?? null,
-    ))
+    assessments.push({
+      issue_number: issueNumber,
+      intake,
+      assessment: assessmentRecord,
+      reply: {
+        status: replyResult.status,
+        posted: replyResult.posted ?? false,
+        comment_id: replyResult.comment_id ?? null,
+      },
+    })
   }
 
-  // 6. Build stages.issues
+  // Build stages.issues
   const rejectedEntries = buildRejectedEntries(workload.rejected_issues)
   const allAssessments = [...assessments, ...rejectedEntries]
 
@@ -420,14 +384,17 @@ export async function finalizeIssueStage({
     assessments: allAssessments,
   }
 
-  // 7. Write output
-  const resolvedOut = writeStageOutput(stagesIssues, normalizedRunId, outputPath, storeOptions, errors)
+  // Write output to explicit path
+  try {
+    ensureDirAnywhere(dirname(outputPath))
+    writeAtomicAnywhere(outputPath, JSON.stringify(stagesIssues, null, 2) + '\n')
+  } catch (err) { errors.push(`output_write_failed: ${err.message}`) }
 
   return {
     ok: true,
     stages_issues: stagesIssues,
     diagnostics: stageErrors,
-    output_path: resolvedOut,
+    output_path: outputPath,
     errors,
   }
 }
@@ -589,21 +556,6 @@ function validateDraftsComplete(draftsDoc, workload, errors) {
   return map
 }
 
-function buildAssessmentEntry(issueNumber, intake, assessment, assessmentPath, ledgerPath, status, posted, commentId) {
-  return {
-    issue_number: issueNumber,
-    intake,
-    assessment,
-    reply: {
-      status,
-      assessment_path: repoRelativePath(assessmentPath),
-      response_ledger_path: repoRelativePath(ledgerPath),
-      posted,
-      comment_id: commentId,
-    },
-  }
-}
-
 function buildRejectedEntries(rejectedIssues) {
   if (!Array.isArray(rejectedIssues)) return []
   return rejectedIssues.map((r) => ({
@@ -612,8 +564,6 @@ function buildRejectedEntries(rejectedIssues) {
     assessment: null,
     reply: {
       status: 'reply_blocked',
-      assessment_path: null,
-      response_ledger_path: null,
       posted: false,
       comment_id: null,
     },
@@ -621,7 +571,7 @@ function buildRejectedEntries(rejectedIssues) {
   }))
 }
 
-function buildIncompleteStage(workload, runId) {
+function buildIncompleteStage(workload) {
   const rejectedEntries = buildRejectedEntries(workload.rejected_issues || [])
   const total = (workload.scan_summary?.total_scanned || 0)
   return {
@@ -639,17 +589,6 @@ function buildIncompleteStage(workload, runId) {
   }
 }
 
-function writeStageOutput(stage, runId, outputPath, storeOptions, errors) {
-  const resolvedOut = outputPath || resolve(runsDir(runId, storeOptions), 'issue-stage', 'stages-issues.json')
-  try {
-    ensureDirAnywhere(dirname(resolvedOut))
-    writeAtomicAnywhere(resolvedOut, JSON.stringify(stage, null, 2) + '\n')
-  } catch (err) {
-    errors.push(`output_write_failed: ${err.message}`)
-  }
-  return resolvedOut
-}
-
 function failPrepare(errors) {
   return {
     ok: false,
@@ -664,13 +603,13 @@ function failPrepare(errors) {
   }
 }
 
-function failFinalize(errors, runId) {
+function failFinalize(errors) {
   return {
     ok: false,
     snapshot_complete: null,
     stages_issues: null,
     diagnostics: [],
-    output_path: runId ? resolve(runsDir(runId), 'issue-stage', 'stages-issues.json') : null,
+    output_path: null,
     errors,
   }
 }
@@ -735,10 +674,9 @@ function main(args = process.argv.slice(2)) {
       process.stderr.write('issue-stage-orchestrator: --run-id is required for --prepare\n')
       process.exit(1)
     }
-    // Production: force output under catalog/runs/<runId>/
-    const wlPath = opts.workload || resolve(runsDir(runId), 'issue-stage', 'workload.json')
-    try { assertRunPath('--workload', wlPath, runId) } catch (err) {
-      process.stderr.write(`issue-stage-orchestrator: ${err.message}\n`)
+    const wlPath = opts.workload || null
+    if (!wlPath) {
+      process.stderr.write('issue-stage-orchestrator: --workload is required for --prepare\n')
       process.exit(1)
     }
 
@@ -758,18 +696,9 @@ function main(args = process.argv.slice(2)) {
       process.stderr.write('issue-stage-orchestrator: --run-id is required for --finalize\n')
       process.exit(1)
     }
-    // Production: all paths under catalog/runs/<runId>/
-    try { assertRunPath('--workload', opts.workload, runId) } catch (err) {
-      process.stderr.write(`issue-stage-orchestrator: ${err.message}\n`)
-      process.exit(1)
-    }
-    try { assertRunPath('--drafts', opts.drafts, runId) } catch (err) {
-      process.stderr.write(`issue-stage-orchestrator: ${err.message}\n`)
-      process.exit(1)
-    }
-    const outPath = opts.outputPath || resolve(runsDir(runId), 'issue-stage', 'stages-issues.json')
-    try { assertRunPath('--output', outPath, runId) } catch (err) {
-      process.stderr.write(`issue-stage-orchestrator: ${err.message}\n`)
+    const outPath = opts.outputPath || null
+    if (!outPath) {
+      process.stderr.write('issue-stage-orchestrator: --output is required for --finalize\n')
       process.exit(1)
     }
 

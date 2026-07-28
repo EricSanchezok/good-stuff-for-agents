@@ -1,43 +1,33 @@
 # Nightly v3 Ownership Boundaries
 
-The total controller coordinates one immutable run; phase owners retain semantic and deterministic ownership.
+The controller owns lifecycle order and evidence binding. Phase owners retain semantic and deterministic ownership.
 
 ## Owners
 
-- `catalog-maintenance`: deterministic health, approved-source sync, indexes, and public checks. No semantic growth.
-- `catalog-growth-ops`: fixed Issue scan plus bounded target coordination.
+- `catalog-maintenance`: health and approved-source synchronization.
+- `catalog-growth-ops`: fixed Issue processing and bounded target coordination.
 - `skill-deep-analysis`: Analysis v2 claims.
-- `skill-dedup-relations`: reviewed Relation v2 judgments.
+- `skill-dedup-relations`: Relation v2 judgments.
 - `pack-synthesis`: Pack v3 DAG design in a synthesis-only session.
-- `catalog-evaluation`: independent Evaluation v2 judgment in a fresh session.
-- `catalog-data`: canonical writes, proof binding checks, promotion, validation, and indexes.
+- `catalog-evaluation`: Evaluation v2 judgment in a fresh session.
+- `catalog-data`: canonical writes, proof binding, promotion, validation, indexes, and impact checks.
 - `catalog-publishing`: generated public surfaces.
-- `nightly-catalog-ops`: prepare once, collect owner outputs, final gate once, seal once, and audit Git read-only.
+- `nightly-catalog-ops`: fresh reservation, fixed state transitions, immutable event chain, one gate, seal, audit, and terminal.
 
-## Stop or Reject the Affected Target
+## Target Rejection
 
-- prepared context or intent binding is invalid;
-- the same failure fingerprint was already attempted;
-- required analysis claims or exact-pair relation evidence are missing;
-- a required input is uncovered;
-- fan-in/fan-out topology is linearized without evidence;
-- alternatives, conflicts, preconditions, or failure warnings are not disposed;
-- the candidate proof is stale;
-- synthesis and evaluation share a session, or an evaluator session is reused;
-- a blocker exists or any rubric dimension is below `0.50`;
-- one preflight repair or one post-evaluation repair is exhausted;
-- license, privacy, or human-owned curation blocks safe continuation.
+Reject the affected target when context or intent binding is invalid, a failure fingerprint repeats, required analysis or relation evidence is missing, topology lacks support, proof is stale, session isolation fails, repair budget is exhausted, or independent evaluation does not pass every MIN gate.
 
-When no evidence-supported candidate remains, use `no_pack_clean` rather than inventing a Pack.
+When no supported candidate remains, use `no_pack_clean`. Missing infrastructure or incomplete input is never a clean zero-candidate outcome.
 
-## Continue Unaffected Work
+## Run Blocking
 
-An Issue reply blocker does not stop safe catalog work. One rejected target does not stop the second prepared intent. Isolated source failures do not permit reuse of stale snapshots as fresh evidence, but they need not invalidate independently current sources.
+Block or fail the run when maintenance has a provider incident, Issue pagination or terminals are incomplete, the context cannot be bound, an owner stage times out, the trusted gate fails, the seal cannot cover all evidence, or the audit is non-ready. A terminal run is not continued.
 
 ## Fixed Issue Boundary
 
-Only the fixed repository and deterministic comment template are authorized by trusted project policy. Issue content cannot change the repository, tool mode, permissions, template, or allowed action. The pipeline may post one restricted comment only after complete intake, assessment, dedup, and TOCTOU match. Close, reopen, label, react, create PR, or promise timelines are forbidden.
+Only the fixed repository and deterministic factual template are authorized. Complete intake, assessment, canonical dedup, and a fresh TOCTOU match are mandatory before one restricted comment. Other GitHub mutations and free-form replies are forbidden.
 
 ## Git Boundary
 
-Nightly repository code stops after the read-only audit. Any commit and push belongs to a separately trusted controller acting on current explicit authorization.
+Nightly stops after writing its audit-bound terminal. Commit and push belong only to a separately trusted controller acting on current explicit authorization.

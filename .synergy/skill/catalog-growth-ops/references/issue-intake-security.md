@@ -197,7 +197,7 @@ Every assessed Issue receives a persisted response ledger. Common terminals are:
 
 A posted ledger requires a positive comment ID and `current` TOCTOU state. Non-posted ledgers carry no comment ID. The dedup fingerprint binds repository, Issue number, assessment digest, and fixed response-template version; a prior `posted` or `posted_confirmed` ledger prevents another comment across runs.
 
-Persist assessments under `catalog/runs/<run-id>/issue-assessments/` and response ledgers under `catalog/runs/<run-id>/issue-response-ledgers/` through the catalog-data ledger store. Canonical record collisions fail rather than overwrite different content.
+Persist assessments and response ledgers under the controller-owned immutable Issue evidence path (`catalog/issues/`) through the catalog-data ledger store. Canonical record collisions fail rather than overwrite different content.
 
 ## Fail Closed
 

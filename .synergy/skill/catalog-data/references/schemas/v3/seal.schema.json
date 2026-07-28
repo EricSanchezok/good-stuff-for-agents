@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Nightly Seal v3",
+  "description": "Seal output that binds the run context, final gate result, validated terminal ledger, and touched-paths manifest into a canonical seal digest.",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "seal_id",
+    "run_id",
+    "context_digest",
+    "gate_event_digest",
+    "gate_result_digest",
+    "ledger_digest",
+    "manifest_digest",
+    "seal_digest"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": { "const": 3 },
+    "seal_id": { "type": "string", "pattern": "^seal_" },
+    "run_id": { "type": "string", "pattern": "^run_" },
+    "context_digest": { "type": "string", "pattern": "^sha256:[a-f0-9]{64}$" },
+    "gate_event_digest": { "type": "string", "pattern": "^sha256:[a-f0-9]{64}$" },
+    "gate_result_digest": { "type": "string", "pattern": "^sha256:[a-f0-9]{64}$" },
+    "ledger_digest": { "type": "string", "pattern": "^sha256:[a-f0-9]{64}$" },
+    "manifest_digest": { "type": "string", "pattern": "^sha256:[a-f0-9]{64}$" },
+    "seal_digest": { "type": "string", "pattern": "^sha256:[a-f0-9]{64}$" }
+  }
+}

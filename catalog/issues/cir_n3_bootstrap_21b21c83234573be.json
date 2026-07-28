@@ -1,0 +1,15 @@
+{
+  "assessment_digest": null,
+  "comment_id": 5097284956,
+  "content_digest": "sha256:709eab6d7506981062c71f9caea017eae89c30d578459c83a29f6ada1f549dad",
+  "created_at": "2026-07-27T22:01:37Z",
+  "dedup_fingerprint": "sha256:b65435d9bc9ddc125d8d593c2b6bc96c90c373abbdb3e47421b21c83234573be",
+  "issue_number": 3,
+  "kind": "canonical_issue_response",
+  "notes": "Bootstrap from live comment 5097284956 by EricSanchezok posted 2026-07-27T22:01:37Z.",
+  "repository": "EricSanchezok/good-stuff-for-agents",
+  "response_id": "cir_n3_bootstrap_21b21c83234573be",
+  "response_variant": "bootstrap",
+  "schema_version": 3,
+  "template_version": "issue-factual-v1"
+}

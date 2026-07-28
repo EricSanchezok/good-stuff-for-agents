@@ -1,0 +1,52 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Nightly Terminal Phase v3",
+  "description": "Payload bound to the terminal phase event. Code-enforced semantics: completed only from audit with ready=true; audit_blocked only from audit with ready=false; blocked/failed/interrupted from any phase with outcome=null.",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "run_id",
+    "status",
+    "outcome",
+    "summary",
+    "total_actions",
+    "errors",
+    "warnings",
+    "last_phase_event_digest",
+    "terminal_digest"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": { "const": 3 },
+    "run_id": { "type": "string", "pattern": "^run_" },
+    "status": { "type": "string", "enum": ["completed", "blocked", "failed", "interrupted", "audit_blocked"] },
+    "outcome": { "type": ["string", "null"], "enum": ["published", "no_pack_clean", null] },
+    "summary": { "type": "string", "minLength": 1 },
+    "total_actions": { "type": "integer", "minimum": 0 },
+    "errors": { "type": "integer", "minimum": 0 },
+    "warnings": { "type": "integer", "minimum": 0 },
+    "last_phase_event_digest": { "type": "string", "pattern": "^sha256:[a-f0-9]{64}$" },
+    "terminal_digest": { "type": "string", "pattern": "^sha256:[a-f0-9]{64}$" }
+  },
+  "allOf": [
+    {
+      "if": { "properties": { "status": { "const": "completed" } } },
+      "then": {
+        "properties": { "outcome": { "enum": ["published", "no_pack_clean"] } },
+        "required": ["outcome"]
+      }
+    },
+    {
+      "if": { "properties": { "status": { "const": "audit_blocked" } } },
+      "then": {
+        "properties": { "outcome": { "const": null } }
+      }
+    },
+    {
+      "if": { "properties": { "status": { "enum": ["blocked", "failed", "interrupted"] } } },
+      "then": {
+        "properties": { "outcome": { "const": null } }
+      }
+    }
+  ]
+}

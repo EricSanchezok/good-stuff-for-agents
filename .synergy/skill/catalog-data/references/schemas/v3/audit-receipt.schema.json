@@ -1,0 +1,43 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Nightly Audit Receipt v3",
+  "description": "Read-only Git audit receipt. Bound to the audit phase event. Records full seal-to-audit evidence chain with deterministic changed_paths.",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "audit_id",
+    "run_id",
+    "seal_event_digest",
+    "baseline_head",
+    "seal_digest",
+    "manifest_digest",
+    "changed_paths",
+    "changed_paths_digest",
+    "ready",
+    "errors",
+    "warnings",
+    "receipt_digest"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": { "const": 3 },
+    "audit_id": { "type": "string", "pattern": "^audit_" },
+    "run_id": { "type": "string", "pattern": "^run_" },
+    "seal_event_digest": { "type": "string", "pattern": "^sha256:[a-f0-9]{64}$" },
+    "baseline_head": { "type": "string", "pattern": "^[a-f0-9]{40}$" },
+    "seal_digest": { "type": "string", "pattern": "^sha256:[a-f0-9]{64}$" },
+    "manifest_digest": { "type": "string", "pattern": "^sha256:[a-f0-9]{64}$" },
+    "changed_paths": { "type": "array", "items": { "type": "string", "minLength": 1 }, "uniqueItems": true },
+    "changed_paths_digest": { "type": "string", "pattern": "^sha256:[a-f0-9]{64}$" },
+    "ready": { "type": "boolean" },
+    "errors": { "type": "array", "items": { "type": "string" } },
+    "warnings": { "type": "array", "items": { "type": "string" } },
+    "receipt_digest": { "type": "string", "pattern": "^sha256:[a-f0-9]{64}$" }
+  },
+  "allOf": [
+    {
+      "if": { "properties": { "ready": { "const": true } } },
+      "then": { "properties": { "errors": { "maxItems": 0 } } }
+    }
+  ]
+}

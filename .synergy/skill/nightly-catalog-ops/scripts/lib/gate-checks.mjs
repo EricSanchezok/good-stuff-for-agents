@@ -1,45 +1,44 @@
-import { createHash } from 'node:crypto';
+import { createHash } from 'node:crypto'
+
+import { canonicalStringify } from './phase-state-machine.mjs'
 
 export const TRUSTED_CHECKS = Object.freeze([
-  { name: 'catalog-strict-validation', script: 'catalog:validate' },
-  { name: 'catalog-indexes', script: 'catalog:index' },
-  { name: 'public-render', script: 'publish:render' },
-  { name: 'public-drift', script: 'publish:check' },
-  { name: 'public-links', script: 'publish:links' },
-  { name: 'public-boundary', script: 'publish:boundary' },
-  { name: 'public-summaries', script: 'publish:summaries' },
-  { name: 'extraction-test', script: 'skill:extraction:test' },
-  { name: 'normalization-bootstrap-test', script: 'skill:normalization:bootstrap:test' },
-  { name: 'analysis-binding-test', script: 'analysis:binding:test' },
-  { name: 'relation-v2-test', script: 'relations:v2:test' },
-  { name: 'pack-schema-test', script: 'pack:schema:test' },
-  { name: 'pack-core-test', script: 'pack:core:test' },
-  { name: 'pack-preflight-test', script: 'pack:preflight:test' },
-  { name: 'pack-proof-test', script: 'pack:proof:test' },
-  { name: 'pack-promotion-test', script: 'pack:promotion:test' },
-  { name: 'pack-destination-test', script: 'pack:destination:test' },
-  { name: 'evaluation-binding-test', script: 'evaluation:binding:test' },
-  { name: 'path-safety-test', script: 'path:safety:test' },
-  { name: 'issue-intake-test', script: 'issue:intake:test' },
-  { name: 'issue-pipeline-test', script: 'issue:pipeline:test' },
-  { name: 'issue-stage-test', script: 'issue:stage:test' },
-  { name: 'nightly-context-test', script: 'nightly:context:test' },
-  { name: 'nightly-final-gate-test', script: 'nightly:final-gate:test' },
-  { name: 'nightly-seal-test', script: 'nightly:seal:test' },
-  { name: 'nightly-validator-test', script: 'nightly:validator:test' },
-  { name: 'nightly-git-test', script: 'nightly:git:test' },
-  { name: 'catalog-reset-test', script: 'catalog:reset:test' },
-  { name: 'pack-publishing-test', script: 'publish:pack-v3:test' },
-]);
-
-export const REQUIRED_CHECK_NAMES = Object.freeze(new Set(TRUSTED_CHECKS.map((check) => check.name)));
-export const STRUCTURAL_CHECK_NAMES = Object.freeze(new Set(TRUSTED_CHECKS.slice(0, 7).map((check) => check.name)));
+  Object.freeze({ name: 'catalog_validate', script: 'catalog:validate' }),
+  Object.freeze({ name: 'catalog_status', script: 'catalog:status' }),
+  Object.freeze({ name: 'catalog_reset_test', script: 'catalog:reset:test' }),
+  Object.freeze({ name: 'skill_extraction_test', script: 'skill:extraction:test' }),
+  Object.freeze({ name: 'skill_normalization_bootstrap_test', script: 'skill:normalization:bootstrap:test' }),
+  Object.freeze({ name: 'analysis_binding_test', script: 'analysis:binding:test' }),
+  Object.freeze({ name: 'relations_v2_test', script: 'relations:v2:test' }),
+  Object.freeze({ name: 'pack_schema_test', script: 'pack:schema:test' }),
+  Object.freeze({ name: 'pack_core_test', script: 'pack:core:test' }),
+  Object.freeze({ name: 'pack_preflight_test', script: 'pack:preflight:test' }),
+  Object.freeze({ name: 'pack_proof_test', script: 'pack:proof:test' }),
+  Object.freeze({ name: 'pack_promotion_test', script: 'pack:promotion:test' }),
+  Object.freeze({ name: 'pack_destination_test', script: 'pack:destination:test' }),
+  Object.freeze({ name: 'evaluation_binding_test', script: 'evaluation:binding:test' }),
+  Object.freeze({ name: 'path_safety_test', script: 'path:safety:test' }),
+  Object.freeze({ name: 'issue_intake_test', script: 'issue:intake:test' }),
+  Object.freeze({ name: 'issue_response_ledger_test', script: 'issue:response-ledger:test' }),
+  Object.freeze({ name: 'issue_pipeline_test', script: 'issue:pipeline:test' }),
+  Object.freeze({ name: 'issue_stage_test', script: 'issue:stage:test' }),
+  Object.freeze({ name: 'source_http_classifier_test', script: 'source:http-classifier:test' }),
+  Object.freeze({ name: 'publish_check', script: 'publish:check' }),
+  Object.freeze({ name: 'publish_links', script: 'publish:links' }),
+  Object.freeze({ name: 'publish_boundary', script: 'publish:boundary' }),
+  Object.freeze({ name: 'publish_summaries', script: 'publish:summaries' }),
+  Object.freeze({ name: 'publish_pack_v3_test', script: 'publish:pack-v3:test' }),
+  Object.freeze({ name: 'nightly_foundation_test', script: 'nightly:foundation:test' }),
+  Object.freeze({ name: 'nightly_controller_test', script: 'nightly:controller:test' }),
+  Object.freeze({ name: 'nightly_legacy_absence_test', script: 'nightly:legacy-absence:test' }),
+  Object.freeze({ name: 'catalog_impact', script: 'catalog:impact' }),
+])
 
 export function computeGateResultDigest(gateResult) {
   const payload = {
     gate_id: gateResult.gate_id,
     run_id: gateResult.run_id,
-    context_digest: gateResult.context_digest,
+    pre_gate_event_digest: gateResult.pre_gate_event_digest,
     passed: gateResult.passed,
     invoked_count: gateResult.invoked_count,
     started_at: gateResult.started_at,
@@ -51,91 +50,72 @@ export function computeGateResultDigest(gateResult) {
       exit_code: check.exit_code,
       duration_ms: check.duration_ms,
     })),
-  };
-  return createHash('sha256').update(JSON.stringify(payload)).digest('hex');
+    evidence_logs: (gateResult.evidence_logs ?? []).map((log) => ({
+      check_name: log.check_name,
+      stdout_digest: log.stdout_digest,
+      stderr_digest: log.stderr_digest,
+      stdout_path: log.stdout_path,
+      stderr_path: log.stderr_path,
+    })),
+  }
+
+  return createHash('sha256').update(canonicalStringify(payload)).digest('hex')
 }
 
-export function validateGateResultAgainstTrusted(gateResult, { requireRunId, requireContextDigest } = {}) {
-  const errors = [];
+export function validateGateResultAgainstTrusted(gateResult) {
+  const errors = []
 
-  if (!gateResult || typeof gateResult !== 'object' || Array.isArray(gateResult)) {
-    return ['gate_result_missing: gate_result must be a non-null object'];
+  if (!gateResult || typeof gateResult !== 'object') {
+    return { ok: false, errors: ['gate_result: expected object'] }
   }
 
-  if (!/^gate_[a-f0-9]{16}$/u.test(gateResult.gate_id ?? '')) {
-    errors.push('gate_result_gate_id: must be a deterministic gate identifier');
+  if (gateResult.invoked_count !== 1) {
+    errors.push('gate_result.invoked_count: must equal 1')
   }
-  if (!/^run_[a-z0-9_-]+$/u.test(gateResult.run_id ?? '')) {
-    errors.push('gate_result_run_id: must be a lowercase run ID');
-  }
-  if (!/^[a-f0-9]{64}$/u.test(gateResult.context_digest ?? '')) {
-    errors.push('gate_result_context_digest: must be a lowercase SHA-256 digest');
-  }
-  if (gateResult.invoked_count !== 1 || gateResult._single_invocation !== true) {
-    errors.push('gate_result_invocation: invoked_count must be 1 and _single_invocation must be true');
-  }
-  if (gateResult.passed !== true) {
-    errors.push('gate_result_passed: canonical final gate must pass');
-  }
-  if (!isTimestamp(gateResult.started_at) || !isTimestamp(gateResult.finished_at)) {
-    errors.push('gate_result_timestamps: started_at and finished_at must be ISO timestamps');
-  } else if (gateResult.finished_at < gateResult.started_at) {
-    errors.push('gate_result_timestamps: finished_at must not precede started_at');
-  }
-  if (!/^[a-f0-9]{64}$/u.test(gateResult.digest ?? '')) {
-    errors.push('gate_result_digest: missing or invalid SHA-256 digest');
+
+  if (!/^sha256:[a-f0-9]{64}$/u.test(gateResult.result_digest ?? '')) {
+    errors.push('gate_result.result_digest: missing or invalid SHA-256 digest')
   }
 
   if (!Array.isArray(gateResult.checks)) {
-    errors.push('gate_result_checks: must be an array');
+    errors.push('gate_result.checks: expected array')
   } else {
     if (gateResult.checks.length !== TRUSTED_CHECKS.length) {
-      errors.push(`gate_result_check_count: expected ${TRUSTED_CHECKS.length}, got ${gateResult.checks.length}`);
+      errors.push(`gate_result.checks: expected ${TRUSTED_CHECKS.length}, got ${gateResult.checks.length}`)
     }
 
-    const seen = new Set();
-    const count = Math.max(gateResult.checks.length, TRUSTED_CHECKS.length);
-    for (let index = 0; index < count; index += 1) {
-      const actual = gateResult.checks[index];
-      const expected = TRUSTED_CHECKS[index];
-      if (!actual || typeof actual !== 'object' || Array.isArray(actual)) {
-        errors.push(`gate_result_check[${index}]: missing or invalid check entry`);
-        continue;
-      }
-      if (seen.has(actual.name)) errors.push(`gate_result_check[${index}]: duplicate check name ${actual.name}`);
-      seen.add(actual.name);
-      if (!expected) {
-        errors.push(`gate_result_check[${index}]: unexpected check ${actual.name}`);
-        continue;
+    TRUSTED_CHECKS.forEach((expected, index) => {
+      const actual = gateResult.checks[index]
+      if (!actual) {
+        errors.push(`gate_result.checks[${index}]: missing ${expected.name}`)
+        return
       }
       if (actual.name !== expected.name) {
-        errors.push(`gate_result_check[${index}]: expected name ${expected.name}, got ${actual.name}`);
+        errors.push(`gate_result.checks[${index}].name: expected ${expected.name}, got ${actual.name}`)
       }
       if (actual.script !== expected.script) {
-        errors.push(`gate_result_check[${index}]: expected script ${expected.script}, got ${actual.script}`);
+        errors.push(`gate_result.checks[${index}].script: expected ${expected.script}, got ${actual.script}`)
       }
-      if (actual.passed !== true || actual.exit_code !== 0) {
-        errors.push(`gate_result_check[${index}]: ${expected.name} did not pass with exit code 0`);
-      }
-      if (!Number.isInteger(actual.duration_ms) || actual.duration_ms < 0) {
-        errors.push(`gate_result_check[${index}]: duration_ms must be a non-negative integer`);
-      }
+    })
+  }
+
+  if (!Array.isArray(gateResult.evidence_logs)) {
+    errors.push('gate_result.evidence_logs: expected array')
+  } else if (gateResult.evidence_logs.length !== TRUSTED_CHECKS.length) {
+    errors.push(`gate_result.evidence_logs: expected ${TRUSTED_CHECKS.length}, got ${gateResult.evidence_logs.length}`)
+  }
+
+  if (gateResult.passed === true) {
+    const failed = (gateResult.checks ?? []).filter((check) => check.passed !== true)
+    if (failed.length > 0) {
+      errors.push(`gate_result.passed: true but ${failed.length} check(s) did not pass`)
     }
   }
 
-  if (gateResult.digest && gateResult.digest !== computeGateResultDigest(gateResult)) {
-    errors.push('gate_result_digest_mismatch: digest does not match canonical payload');
-  }
-  if (requireRunId && gateResult.run_id !== requireRunId) {
-    errors.push(`gate_result_run_id_mismatch: expected ${requireRunId}, got ${gateResult.run_id}`);
-  }
-  if (requireContextDigest && gateResult.context_digest !== requireContextDigest) {
-    errors.push('gate_result_context_digest_mismatch');
+  const expectedDigest = `sha256:${computeGateResultDigest(gateResult)}`
+  if (gateResult.result_digest && gateResult.result_digest !== expectedDigest) {
+    errors.push('gate_result.result_digest: content mismatch')
   }
 
-  return errors;
-}
-
-function isTimestamp(value) {
-  return typeof value === 'string' && Number.isFinite(Date.parse(value));
+  return { ok: errors.length === 0, errors }
 }

@@ -46,8 +46,11 @@ function teardownTemp() {
   if (tempDir) { try { rmSync(tempDir, { recursive: true, force: true }) } catch (_) {} }
 }
 function fakeStoreDir() {
-  mkdirSync(join(tempDir, 'catalog', 'runs'), { recursive: true })
+  mkdirSync(join(tempDir, 'catalog', 'issues'), { recursive: true })
   return join(tempDir, 'catalog')
+}
+function defaultOutPath() {
+  return join(tempDir, 'stages-issues.json')
 }
 
 // ---------------------------------------------------------------------------
@@ -307,10 +310,12 @@ test('finalize of incomplete snapshot produces blocked stage with all_open_issue
     const wlPath = join(tempDir, 'workload.json')
     prepareIssueStage({ runId: RUN_ID, execFile, workloadPath: wlPath })
 
+    const outPath = join(tempDir, 'stages-issues.json')
     const result = await finalizeIssueStage({
       runId: RUN_ID,
       workloadPath: wlPath,
       draftsPath: join(tempDir, 'drafts.json'), // won't be read — blocked early
+      outputPath: outPath,
       apply: false,
       storeOptions: { baseDir: fakeStoreDir() },
     })
@@ -340,6 +345,7 @@ test('real default seam uses only injected execFile for dry-run fetch', async ()
 
     const result = await finalizeIssueStage({
       runId: RUN_ID, workloadPath: wlPath, draftsPath, apply: false,
+      outputPath: defaultOutPath(),
       execFile, // only execFile — no fetchCurrentIssue/commentRunner override
       storeOptions: { baseDir: storeBase },
     })
@@ -347,11 +353,9 @@ test('real default seam uses only injected execFile for dry-run fetch', async ()
     assert.equal(result.ok, true)
     assert.equal(result.stages_issues.all_open_issues_processed, true)
     assert.ok(result.output_path.startsWith(tempDir), `stage output escaped tempDir: ${result.output_path}`)
-    assert.equal(existsSync(join(__dirname, '..', '..', '..', '..', 'catalog', 'runs', RUN_ID)), false)
+    assert.ok(existsSync(result.output_path), 'stage output must exist')
     const a = result.stages_issues.assessments[0]
     assert.ok(a.assessment)
-    assert.ok(a.reply.assessment_path)
-    assert.ok(a.reply.response_ledger_path)
     assert.equal(validateAssessmentSchema(a.assessment).ok, true)
   } finally { teardownTemp() }
 })
@@ -394,6 +398,7 @@ test('real default seam uses only injected execFile for apply', async () => {
 
     const result = await finalizeIssueStage({
       runId: RUN_ID, workloadPath: wlPath, draftsPath, apply: true,
+      outputPath: defaultOutPath(),
       execFile,
       storeOptions: { baseDir: storeBase },
     })
@@ -426,6 +431,7 @@ test('finalize rejects workload with mismatched workload_digest', async () => {
 
     const result = await finalizeIssueStage({
       runId: RUN_ID, workloadPath: wlPath, draftsPath,
+      outputPath: defaultOutPath(),
       apply: false, fetchCurrentIssue: async () => payloads[0],
       commentRunner: async () => ({ comment_id: 1 }),
       storeOptions: { baseDir: storeBase },
@@ -451,6 +457,7 @@ test('finalize rejects drafts with wrong workload_digest', async () => {
 
     const result = await finalizeIssueStage({
       runId: RUN_ID, workloadPath: wlPath, draftsPath,
+      outputPath: defaultOutPath(),
       apply: false, fetchCurrentIssue: async ({ issueNumber }) => payloads[issueNumber - 1],
       commentRunner: async () => ({ comment_id: 1 }),
       storeOptions: { baseDir: storeBase },
@@ -476,6 +483,7 @@ test('finalize rejects drafts with missing issue_binding', async () => {
 
     const result = await finalizeIssueStage({
       runId: RUN_ID, workloadPath: wlPath, draftsPath,
+      outputPath: defaultOutPath(),
       apply: false, fetchCurrentIssue: async ({ issueNumber }) => payloads[issueNumber - 1],
       commentRunner: async () => ({ comment_id: 1 }),
       storeOptions: { baseDir: storeBase },
@@ -504,6 +512,7 @@ test('finalize rejects when draft is missing for an accepted issue', async () =>
 
     const result = await finalizeIssueStage({
       runId: RUN_ID, workloadPath: wlPath, draftsPath,
+      outputPath: defaultOutPath(),
       apply: false, fetchCurrentIssue: async ({ issueNumber }) => payloads[issueNumber - 1],
       commentRunner: async () => ({ comment_id: 1 }),
       storeOptions: { baseDir: storeBase },
@@ -532,6 +541,7 @@ test('finalize rejects extra draft for unknown issue', async () => {
 
     const result = await finalizeIssueStage({
       runId: RUN_ID, workloadPath: wlPath, draftsPath,
+      outputPath: defaultOutPath(),
       apply: false, fetchCurrentIssue: async ({ issueNumber }) => payloads[issueNumber - 1],
       commentRunner: async () => ({ comment_id: 1 }),
       storeOptions: { baseDir: storeBase },
@@ -559,6 +569,7 @@ test('finalize produces valid stage shape for accepted issues (dry run)', async 
     let commentCount = 0
     const result = await finalizeIssueStage({
       runId: RUN_ID, workloadPath: wlPath, draftsPath, apply: false,
+      outputPath: defaultOutPath(),
       fetchCurrentIssue: async ({ repository, issueNumber }) => {
         assert.equal(repository, TRUSTED_REPOSITORY)
         return payloads[issueNumber - 1]
@@ -572,11 +583,9 @@ test('finalize produces valid stage shape for accepted issues (dry run)', async 
     assert.equal(result.stages_issues.all_open_issues_processed, true)
     assert.equal(result.stages_issues.assessments.length, 4)
 
-    // Every assessment has non-null canonical paths (defect #5)
+    // Every assessment has assessment attached
     for (const a of result.stages_issues.assessments) {
       assert.ok(a.assessment, `assessment for #${a.issue_number} must not be null`)
-      assert.ok(a.reply.assessment_path, `assessment_path for #${a.issue_number} must not be null`)
-      assert.ok(a.reply.response_ledger_path, `response_ledger_path for #${a.issue_number} must not be null`)
       assert.ok(validateAssessmentSchema(a.assessment).ok)
     }
 
@@ -612,6 +621,7 @@ test('apply mode posts one comment per eligible issue', async () => {
         postedComments.push({ issueNumber, body })
         return { comment_id: 5000 + issueNumber }
       },
+      outputPath: defaultOutPath(),
       storeOptions: { baseDir: storeBase },
     })
 
@@ -648,6 +658,7 @@ test('dedup prevents repeat comment on unchanged digest', async () => {
       runId: firstRunId, workloadPath: wlPath, draftsPath, apply: true,
       fetchCurrentIssue: async ({ issueNumber }) => payloads[issueNumber - 1],
       commentRunner: async () => { c1++; return { comment_id: 7000 } },
+      outputPath: defaultOutPath(),
       storeOptions: { baseDir: storeBase },
     })
     assert.equal(c1, 1)
@@ -666,6 +677,7 @@ test('dedup prevents repeat comment on unchanged digest', async () => {
       runId: secondRunId, workloadPath: wlPath2, draftsPath: draftsPath2, apply: true,
       fetchCurrentIssue: async ({ issueNumber }) => payloads[issueNumber - 1],
       commentRunner: async () => { c2++; return { comment_id: 8000 } },
+      outputPath: defaultOutPath(),
       storeOptions: { baseDir: storeBase },
     })
 
@@ -698,6 +710,7 @@ test('TOCTOU mismatch blocks reply and persists reply_blocked', async () => {
       runId: RUN_ID, workloadPath: wlPath, draftsPath, apply: true,
       fetchCurrentIssue: async () => stalePayload,
       commentRunner: async () => { commentCount++; return { comment_id: 9999 } },
+      outputPath: defaultOutPath(),
       storeOptions: { baseDir: storeBase },
     })
 
@@ -705,7 +718,6 @@ test('TOCTOU mismatch blocks reply and persists reply_blocked', async () => {
     const i5 = result.stages_issues.assessments.find((a) => a.issue_number === 5)
     assert.equal(i5.reply.status, 'reply_blocked')
     assert.equal(i5.reply.posted, false)
-    assert.ok(i5.reply.response_ledger_path)
   } finally { teardownTemp() }
 })
 
@@ -734,6 +746,7 @@ test('injection intake is held_for_review without re-fetch or comment', async ()
       runId: RUN_ID, workloadPath: wlPath, draftsPath, apply: true,
       fetchCurrentIssue: async () => { fetchCount++; return unsafePayload },
       commentRunner: async () => { commentCount++; return { comment_id: 9999 } },
+      outputPath: defaultOutPath(),
       storeOptions: { baseDir: storeBase },
     })
 
@@ -767,6 +780,7 @@ test('assessment build failure causes finalize to fail (not emit null-path entry
       runId: RUN_ID, workloadPath: wlPath, draftsPath, apply: false,
       fetchCurrentIssue: async ({ issueNumber }) => payloads[issueNumber - 1],
       commentRunner: async () => ({ comment_id: 1 }),
+      outputPath: defaultOutPath(),
       storeOptions: { baseDir: storeBase },
     })
 
@@ -807,6 +821,7 @@ test('rejected issues appear in scan total and assessments', async () => {
       runId: RUN_ID, workloadPath: wlPath, draftsPath, apply: false,
       fetchCurrentIssue: async ({ issueNumber }) => payloads[issueNumber - 1],
       commentRunner: async () => ({ comment_id: 1 }),
+      outputPath: defaultOutPath(),
       storeOptions: { baseDir: storeBase },
     })
 
@@ -845,6 +860,7 @@ test('scan.by_state reconciles total = open+acknowledged+fulfilled+blocked', asy
       runId: RUN_ID, workloadPath: wlPath, draftsPath, apply: false,
       fetchCurrentIssue: async ({ issueNumber }) => payloads[issueNumber - 1],
       commentRunner: async () => ({ comment_id: 1 }),
+      outputPath: defaultOutPath(),
       storeOptions: { baseDir: storeBase },
     })
 
@@ -866,8 +882,8 @@ test('CLI rejects unknown flags', () => {
   assert.ok(result.stderr.includes('unknown flag'))
 })
 
-// --- state-change test (retained) ---
-test('state-change emits new posted comment (not dedup)', async () => {
+// --- state-change test ---
+test('unchanged content dedups regardless of fulfillment change', async () => {
   setupTemp()
   try {
     const storeBase = fakeStoreDir()
@@ -885,10 +901,11 @@ test('state-change emits new posted comment (not dedup)', async () => {
       runId: RUN_ID, workloadPath: wlPath, draftsPath, apply: true,
       fetchCurrentIssue: async ({ issueNumber }) => payloads[issueNumber - 1],
       commentRunner: async () => ({ comment_id: 8001 }),
+      outputPath: defaultOutPath(),
       storeOptions: { baseDir: storeBase },
     })
 
-    // State-change run
+    // State-change run: same content, different fulfillment — dedup should prevent repeat
     const wlPath2 = join(tempDir, 'workload2.json')
     prepareIssueStage({ runId: 'run_state_change_b01', execFile, workloadPath: wlPath2, storeOptions: { baseDir: storeBase } })
     const wl2 = JSON.parse(readFileSync(wlPath2, 'utf8'))
@@ -901,14 +918,14 @@ test('state-change emits new posted comment (not dedup)', async () => {
       runId: 'run_state_change_b01', workloadPath: wlPath2, draftsPath: draftsPath2, apply: true,
       fetchCurrentIssue: async ({ issueNumber }) => payloads[issueNumber - 1],
       commentRunner: async () => { c++; return { comment_id: 8002 } },
+      outputPath: defaultOutPath(),
       storeOptions: { baseDir: storeBase },
     })
 
     assert.equal(r2.ok, true)
-    assert.equal(c, 1)
+    assert.equal(c, 0, 'unchanged content must not produce repeat comment')
     const i1 = r2.stages_issues.assessments.find((a) => a.issue_number === 1)
-    assert.equal(i1.reply.status, 'posted')
-    assert.equal(i1.reply.comment_id, 8002)
+    assert.ok(['duplicate', 'no_action'].includes(i1.reply.status), `expected dedup, got ${i1.reply.status}`)
   } finally { teardownTemp() }
 })
 

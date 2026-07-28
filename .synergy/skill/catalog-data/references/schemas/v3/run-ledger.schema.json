@@ -1,0 +1,90 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Nightly Run Ledger v3",
+  "description": "Immutable terminal ledger with source, issue, intent, candidate counts derived from actual phase outputs. Zero candidates => no_pack_clean; promoted => published.",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "ledger_id",
+    "run_id",
+    "timestamp",
+    "source_outcomes",
+    "issue_outcomes",
+    "intent_outcomes",
+    "candidate_outcomes",
+    "run_outcome",
+    "ledger_digest"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": { "const": 3 },
+    "ledger_id": { "type": "string", "pattern": "^ldg_" },
+    "run_id": { "type": "string", "pattern": "^run_" },
+    "timestamp": { "type": "string" },
+    "source_outcomes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["source_id", "state"],
+        "additionalProperties": false,
+        "properties": {
+          "source_id": { "type": "string", "minLength": 1 },
+          "state": { "type": "string", "enum": ["synced", "unchanged", "error", "incident"] },
+          "error": { "type": "string" }
+        }
+      }
+    },
+    "issue_outcomes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["issue_number", "state"],
+        "additionalProperties": false,
+        "properties": {
+          "issue_number": { "type": "integer", "minimum": 1 },
+          "state": { "type": "string", "enum": ["acknowledged", "fulfilled", "held", "blocked", "dedup_skipped"] },
+          "assessment_id": { "type": "string" }
+        }
+      }
+    },
+    "intent_outcomes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["domain", "source", "disposition"],
+        "additionalProperties": false,
+        "properties": {
+          "domain": { "type": "string", "minLength": 1 },
+          "source": { "type": "string", "minLength": 1 },
+          "disposition": { "type": "string", "enum": ["executed", "no_pack_clean", "timeout", "interrupted", "missing_executor"] },
+          "seed_skill_ids": { "type": "array", "items": { "type": "string" } }
+        }
+      }
+    },
+    "candidate_outcomes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["pack_id", "terminal"],
+        "additionalProperties": false,
+        "properties": {
+          "pack_id": { "type": "string", "pattern": "^pack_" },
+          "terminal": { "type": "string", "enum": ["promoted", "rejected", "no_pack_clean"] }
+        }
+      }
+    },
+    "run_outcome": {
+      "type": "object",
+      "required": ["status", "summary", "total_actions", "errors", "warnings"],
+      "additionalProperties": false,
+      "properties": {
+        "status": { "type": "string", "enum": ["no_pack_clean", "published", "blocked", "failed", "interrupted", "audit_blocked"] },
+        "summary": { "type": "string", "minLength": 1 },
+        "total_actions": { "type": "integer", "minimum": 0 },
+        "errors": { "type": "integer", "minimum": 0 },
+        "warnings": { "type": "integer", "minimum": 0 }
+      }
+    },
+    "ledger_digest": { "type": "string", "pattern": "^sha256:[a-f0-9]{64}$" }
+  }
+}

@@ -4,14 +4,12 @@ import { normalizeIssueIntake, TRUSTED_REPOSITORY } from './lib/issue-intake.mjs
 import { scanIssues } from './lib/issue-scan.mjs'
 import {
   buildAssessmentFromFulfillment,
-  buildResponseLedger,
-  computeDedupFingerprint,
   ISSUE_REPLY_TEMPLATE_VERSION,
   validateAssessmentSchema,
-  validateResponseLedgerSchema,
 } from './lib/issue-assessment-writer.mjs'
 import { checkTOCTOU, renderReply, runRestrictedIssueReply } from './lib/issue-reply-controller.mjs'
 import { createGhIssueClient } from './lib/issue-github-client.mjs'
+import { buildBootstrapResponse, buildCanonicalResponse, TRUSTED_COMMENT_AUTHORS } from './lib/issue-response-ledger.mjs'
 
 const RUN_ID = 'run_issue-pipeline_20000001'
 const TIMESTAMP = '2026-07-27T12:00:00.000Z'
@@ -121,7 +119,7 @@ test('restricted reply dry-run re-fetches but never invokes comment runner', asy
   const result = await runRestrictedIssueReply({
     intake,
     assessment,
-    previousLedgers: [],
+    canonicalRecords: [],
     fetchCurrentIssue: async () => {
       fetchCount += 1
       return payload
@@ -136,13 +134,12 @@ test('restricted reply dry-run re-fetches but never invokes comment runner', asy
   assert.equal(result.status, 'dry_run')
   assert.equal(fetchCount, 1)
   assert.equal(commentCount, 0)
-  assert.equal(result.ledger.response_state, 'draft')
-  assert.equal(validateResponseLedgerSchema(result.ledger).ok, true)
 })
 
 test('apply posts exactly one comment and persists the same dedup fingerprint', async () => {
   const { payload, intake, assessment } = assessmentFixture()
   let commentCount = 0
+  let persistedRecord = null
   const result = await runRestrictedIssueReply({
     intake,
     assessment,
@@ -156,37 +153,30 @@ test('apply posts exactly one comment and persists the same dedup fingerprint', 
     },
     runId: RUN_ID,
     apply: true,
+    persistCanonical: (rec) => { persistedRecord = rec },
   })
   assert.equal(result.status, 'posted')
   assert.equal(result.comment_id, 987654321)
   assert.equal(commentCount, 1)
-  assert.equal(result.ledger.response_state, 'posted')
-  assert.equal(
-    result.ledger.dedup_fingerprint,
-    computeDedupFingerprint({
-      repository: TRUSTED_REPOSITORY,
-      issueNumber: assessment.issue_number,
-      assessmentDigest: assessment.assessment_digest,
-      templateVersion: ISSUE_REPLY_TEMPLATE_VERSION,
-    }),
-  )
+  assert.equal(persistedRecord.kind, 'canonical_issue_response')
+  assert.equal(persistedRecord.response_variant, 'posted')
 })
 
-test('posted ledger prevents a second cross-run comment', async () => {
+test('posted canonical record prevents a second cross-run comment', async () => {
   const { payload, intake, assessment } = assessmentFixture()
-  const toctouState = checkTOCTOU({ intake, currentPayload: payload })
-  const { record: posted } = buildResponseLedger({
-    assessment,
-    responseState: 'posted',
+  const posted = buildCanonicalResponse({
+    issueNumber: assessment.issue_number,
+    contentDigest: assessment.content_digest,
+    templateVersion: ISSUE_REPLY_TEMPLATE_VERSION,
+    responseVariant: 'posted',
     commentId: 123,
-    toctouState,
-    runId: 'run_previous_20000001',
+    assessmentDigest: assessment.assessment_digest,
   })
   let commentCount = 0
   const result = await runRestrictedIssueReply({
     intake,
     assessment,
-    previousLedgers: [posted],
+    canonicalRecords: [posted],
     fetchCurrentIssue: async () => payload,
     commentRunner: async () => {
       commentCount += 1
@@ -198,7 +188,6 @@ test('posted ledger prevents a second cross-run comment', async () => {
   assert.equal(result.status, 'duplicate')
   assert.equal(result.comment_id, 123)
   assert.equal(commentCount, 0)
-  assert.equal(result.ledger.response_state, 'no_action')
 })
 
 test('stale Issue blocks the comment after the mandatory re-fetch', async () => {
@@ -218,7 +207,6 @@ test('stale Issue blocks the comment after the mandatory re-fetch', async () => 
     apply: true,
   })
   assert.equal(result.status, 'reply_blocked')
-  assert.equal(result.toctou.staleness, 'stale_response')
   assert.equal(commentCount, 0)
 })
 
@@ -255,7 +243,32 @@ test('injection or privileged-action intake is held without re-fetch or comment'
   assert.equal(result.status, 'held_for_review')
   assert.equal(fetchCount, 0)
   assert.equal(commentCount, 0)
-  assert.equal(result.ledger.response_state, 'held_for_review')
+})
+
+test('bootstrap record prevents repeat comment via lookupPreviousResponse', async () => {
+  const { payload, intake, assessment } = assessmentFixture()
+  const bootstrapRec = buildBootstrapResponse({
+    issueNumber: assessment.issue_number,
+    contentDigest: assessment.content_digest,
+    updatedAt: intake.issue_binding.updated_at,
+    commentId: 5097200000,
+    commentCreatedAt: TIMESTAMP,
+    commentAuthor: TRUSTED_COMMENT_AUTHORS[0],
+    templateVersion: ISSUE_REPLY_TEMPLATE_VERSION,
+  })
+  let commentCount = 0
+  const result = await runRestrictedIssueReply({
+    intake,
+    assessment,
+    canonicalRecords: [bootstrapRec],
+    fetchCurrentIssue: async () => payload,
+    commentRunner: async () => { commentCount++; return { comment_id: 456 } },
+    runId: RUN_ID,
+    apply: true,
+  })
+  assert.equal(result.status, 'duplicate')
+  assert.equal(result.comment_id, 5097200000)
+  assert.equal(commentCount, 0)
 })
 
 test('GitHub client fixes repository, fetches complete comments, and returns comment ID', () => {

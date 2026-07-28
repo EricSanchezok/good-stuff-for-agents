@@ -1,0 +1,72 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Nightly Gate Result v3",
+  "description": "Result of the single final-gate invocation. Bound to pre_gate_event_digest with deterministic gate_id.",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "gate_id",
+    "run_id",
+    "pre_gate_event_digest",
+    "passed",
+    "invoked_count",
+    "started_at",
+    "finished_at",
+    "checks",
+    "evidence_logs",
+    "decision",
+    "errors",
+    "result_digest"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": { "const": 3 },
+    "gate_id": { "type": "string", "pattern": "^gate_[a-f0-9]{16}$" },
+    "run_id": { "type": "string", "pattern": "^run_" },
+    "pre_gate_event_digest": { "type": "string", "pattern": "^sha256:[a-f0-9]{64}$" },
+    "passed": { "type": "boolean" },
+    "invoked_count": { "type": "integer", "minimum": 1, "maximum": 1 },
+    "started_at": { "type": "string" },
+    "finished_at": { "type": "string" },
+    "decision": { "type": "string", "enum": ["pass", "fail"] },
+    "errors": { "type": "array", "items": { "type": "string" } },
+    "checks": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["name", "script", "passed", "exit_code", "duration_ms"],
+        "additionalProperties": false,
+        "properties": {
+          "name": { "type": "string", "minLength": 1 },
+          "script": { "type": "string", "minLength": 1 },
+          "passed": { "type": "boolean" },
+          "exit_code": { "type": "integer" },
+          "duration_ms": { "type": "integer", "minimum": 0 }
+        }
+      }
+    },
+    "evidence_logs": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["check_name", "stdout_digest", "stderr_digest", "stdout_path", "stderr_path"],
+        "additionalProperties": false,
+        "properties": {
+          "check_name": { "type": "string", "minLength": 1 },
+          "stdout_digest": { "type": "string", "pattern": "^sha256:[a-f0-9]{64}$" },
+          "stderr_digest": { "type": "string", "pattern": "^sha256:[a-f0-9]{64}$" },
+          "stdout_path": { "type": "string", "minLength": 1 },
+          "stderr_path": { "type": "string", "minLength": 1 }
+        }
+      }
+    },
+    "warnings": { "type": "array", "items": { "type": "string" } },
+    "result_digest": { "type": "string", "pattern": "^sha256:[a-f0-9]{64}$" }
+  },
+  "allOf": [
+    {
+      "if": { "properties": { "passed": { "const": false } } },
+      "then": { "required": ["checks"] }
+    }
+  ]
+}

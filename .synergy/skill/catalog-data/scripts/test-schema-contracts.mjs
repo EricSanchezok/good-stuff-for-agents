@@ -5,18 +5,24 @@ import {
   relationSchemaV2,
   packSchemaV3,
   evaluationSchemaV2,
-  runContextSchemaV1,
-  terminalLedgerSchemaV1,
   issueAssessmentSchemaV1,
   issueResponseLedgerSchemaV1,
+  runContextSchemaV3,
+  phaseEventSchemaV3,
+  gateResultSchemaV3,
+  sealSchemaV3,
+  auditReceiptSchemaV3,
+  terminalSchemaV3,
+  runLedgerSchemaV3,
+  runSummarySchemaV3,
+  sealManifestSchemaV3,
+  canonicalIssueResponseSchemaV3,
   validateAgainstSchema,
   buildAnalysisV2,
   buildRelationV2,
   buildPackV3,
   buildPackV3FanIn,
   buildEvaluationV2,
-  buildRunContext,
-  buildTerminalLedger,
   buildIssueAssessment,
   buildIssueResponseLedger,
   buildAnalysisV1,
@@ -30,10 +36,18 @@ assert.ok(analysisSchemaV2, 'analysis v2 schema must load')
 assert.ok(relationSchemaV2, 'relation v2 schema must load')
 assert.ok(packSchemaV3, 'pack v3 schema must load')
 assert.ok(evaluationSchemaV2, 'evaluation v2 schema must load')
-assert.ok(runContextSchemaV1, 'run-context schema must load')
-assert.ok(terminalLedgerSchemaV1, 'terminal-ledger schema must load')
 assert.ok(issueAssessmentSchemaV1, 'issue-assessment schema must load')
 assert.ok(issueResponseLedgerSchemaV1, 'issue-response-ledger schema must load')
+assert.ok(runContextSchemaV3, 'run-context v3 schema must load')
+assert.ok(phaseEventSchemaV3, 'phase-event v3 schema must load')
+assert.ok(gateResultSchemaV3, 'gate-result v3 schema must load')
+assert.ok(sealSchemaV3, 'seal v3 schema must load')
+assert.ok(auditReceiptSchemaV3, 'audit-receipt v3 schema must load')
+assert.ok(terminalSchemaV3, 'terminal v3 schema must load')
+assert.ok(runLedgerSchemaV3, 'run-ledger v3 schema must load')
+assert.ok(runSummarySchemaV3, 'run-summary v3 schema must load')
+assert.ok(sealManifestSchemaV3, 'seal-manifest v3 schema must load')
+assert.ok(canonicalIssueResponseSchemaV3, 'canonical Issue response v3 schema must load')
 
 // ============================================================
 // Analysis v2
@@ -421,58 +435,6 @@ for (const missing of ['nodes', 'edges', 'entry_roots', 'terminal_sinks']) {
   record.warnings = [{ message: 'Test', disposition: 'invalid' }]
   const result = validateAgainstSchema(record, evaluationSchemaV2)
   assert.ok(!result.ok, 'warning with invalid disposition should be rejected')
-}
-
-// ============================================================
-// Run Context
-// ============================================================
-
-{
-  const record = buildRunContext()
-  const result = validateAgainstSchema(record, runContextSchemaV1)
-  assert.ok(result.ok, `run-context valid: ${result.errors.join('; ')}`)
-}
-
-// missing required fields
-for (const missing of ['snapshot_digest', 'evidence_manifest_digest', 'catalog_counts', 'freshness', 'coverage', 'relations', 'pack_lifecycle', 'issue_digest', 'demand_metadata', 'prior_fingerprint']) {
-  const record = buildRunContext()
-  delete record[missing]
-  const result = validateAgainstSchema(record, runContextSchemaV1)
-  assert.ok(!result.ok, `run-context should reject missing ${missing}`)
-}
-
-// ============================================================
-// Terminal Ledger
-// ============================================================
-
-{
-  const record = buildTerminalLedger()
-  const result = validateAgainstSchema(record, terminalLedgerSchemaV1)
-  assert.ok(result.ok, `terminal-ledger valid: ${result.errors.join('; ')}`)
-}
-
-// run_outcome includes no_pack_clean and reply_blocked states
-for (const status of ['success', 'partial', 'failed', 'no_pack_clean', 'reply_blocked']) {
-  const record = buildTerminalLedger()
-  record.run_outcome = { status, summary: `State: ${status}`, total_actions: 0, errors: 0, warnings: 0 }
-  const result = validateAgainstSchema(record, terminalLedgerSchemaV1)
-  assert.ok(result.ok, `run_outcome status '${status}' should be valid`)
-}
-
-// invalid run_outcome status rejected
-{
-  const record = buildTerminalLedger()
-  record.run_outcome = { status: 'unknown_state', summary: 'bad', total_actions: 0, errors: 0, warnings: 0 }
-  const result = validateAgainstSchema(record, terminalLedgerSchemaV1)
-  assert.ok(!result.ok, 'invalid run_outcome status should be rejected')
-}
-
-// terminal_entry states include all required values
-for (const state of ['no_pack_clean', 'reply_blocked', 'unchanged', 'synced', 'analyzed', 'related', 'evaluated', 'published', 'blocked']) {
-  const record = buildTerminalLedger()
-  record.source_outcomes = [{ entity_id: 'src_test', state, detail: 'test' }]
-  const result = validateAgainstSchema(record, terminalLedgerSchemaV1)
-  assert.ok(result.ok, `terminal entry state '${state}' should be valid`)
 }
 
 // ============================================================

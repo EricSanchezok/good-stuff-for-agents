@@ -128,13 +128,13 @@ npm --prefix .synergy run catalog:hash
 npm --prefix .synergy run catalog:impact
 ```
 
-For a release-ready Nightly run, the controller invokes the canonical final gate exactly once after all owner stages complete:
+For a release-ready Nightly run, invoke the single production controller:
 
 ```bash
-npm --prefix .synergy run nightly:final-gate -- --prefix .synergy --run-id <run-id> --context-digest <prepare-run-digest>
+npm --prefix .synergy run nightly
 ```
 
-Do not add or invoke a parallel aggregate check path.
+The controller owns the one trusted final-gate invocation after all owner stages complete. Do not call a gate phase independently or add a parallel aggregate check path.
 
 ## Handoff
 

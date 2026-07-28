@@ -1,0 +1,40 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Nightly Phase Event v3",
+  "description": "Immutable hash-linked event for a single Blueprint phase. Write-once, hash-linked via atomic publish.",
+  "type": "object",
+  "required": [
+    "event_index",
+    "run_id",
+    "phase",
+    "timestamp",
+    "prev_event_digest",
+    "output_descriptors",
+    "input_digests",
+    "event_digest"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "event_index": { "type": "integer", "minimum": 0, "maximum": 8 },
+    "run_id": { "type": "string", "pattern": "^run_" },
+    "phase": { "type": "string", "enum": ["init", "maintenance", "issues", "context", "targets", "gate", "seal", "audit", "terminal"] },
+    "timestamp": { "type": "string" },
+    "prev_event_digest": { "type": ["string", "null"] },
+    "output_descriptors": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["label", "digest", "byte_length", "repo_relative_path"],
+        "additionalProperties": false,
+        "properties": {
+          "label": { "type": "string", "minLength": 1, "not": { "pattern": "[/\\\\]" } },
+          "digest": { "type": "string", "pattern": "^sha256:[a-f0-9]{64}$" },
+          "byte_length": { "type": "integer", "minimum": 0 },
+          "repo_relative_path": { "type": "string", "minLength": 1, "not": { "pattern": "\\.\\." } }
+        }
+      }
+    },
+    "input_digests": { "type": "array", "items": { "type": "string", "pattern": "^sha256:[a-f0-9]{64}$" } },
+    "event_digest": { "type": "string", "pattern": "^sha256:[a-f0-9]{64}$" }
+  }
+}

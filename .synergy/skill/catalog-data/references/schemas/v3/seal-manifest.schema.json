@@ -1,0 +1,27 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Nightly Seal Manifest v3",
+  "description": "Exact sorted path set from git porcelain -z --untracked-files=all, includes pre-declared future paths (seal event, audit receipt/event, terminal output/event).",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "baseline_head",
+    "ledger_digest",
+    "summary_digest",
+    "paths",
+    "manifest_digest"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": { "const": 3 },
+    "baseline_head": { "type": "string", "pattern": "^[a-f0-9]{40}$" },
+    "ledger_digest": { "type": "string", "pattern": "^sha256:[a-f0-9]{64}$" },
+    "summary_digest": { "type": "string", "pattern": "^sha256:[a-f0-9]{64}$" },
+    "paths": {
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 },
+      "uniqueItems": true
+    },
+    "manifest_digest": { "type": "string", "pattern": "^sha256:[a-f0-9]{64}$" }
+  }
+}

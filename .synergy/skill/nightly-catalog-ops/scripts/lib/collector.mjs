@@ -94,51 +94,6 @@ export function collectRunContextInput(opts = {}) {
   });
 }
 
-/**
- * Verify that the current canonical state has not changed since a prior snapshot digest.
- * Recomputes raw hashes including Issue workload/demand artifact from saved collector binding.
- * Unchanged => { ok: true }; same-count content edit => stale.
- *
- * Returns { ok: true, staleness: 'current', digest, snapshotDigest } or
- *         { ok: false, staleness: 'stale', digest, snapshotDigest, expectedDigest, expectedSnapshotDigest }
- */
-export function checkEvidenceFreshness(opts = {}) {
-  const catalogRoot = opts.catalogRoot || findCatalogRoot();
-  const reader = opts.reader || buildDefaultReader();
-  const expectedSnapshotDigest = opts.expectedSnapshotDigest;
-  const expectedDigest = opts.expectedDigest;
-
-  if (!expectedSnapshotDigest && !expectedDigest) {
-    throw new Error('expectedSnapshotDigest or expectedDigest is required for freshness check');
-  }
-
-  const { digest, snapshotDigest, evidenceManifestDigest } = collectRunContextInput({
-    catalogRoot,
-    reader,
-    issueWorkloadPath: opts.issueWorkloadPath,
-    demandArtifactPath: opts.demandArtifactPath,
-    referenceTimestamp: opts.referenceTimestamp,
-  });
-
-  // Check snapshot digest first (most reliable)
-  if (expectedSnapshotDigest) {
-    if (snapshotDigest === expectedSnapshotDigest) {
-      return { ok: true, staleness: 'current', digest, snapshotDigest, evidenceManifestDigest };
-    }
-    return { ok: false, staleness: 'stale', digest, snapshotDigest, evidenceManifestDigest, expectedSnapshotDigest };
-  }
-
-  // Fallback: compare semantic digest
-  if (expectedDigest) {
-    if (digest === expectedDigest) {
-      return { ok: true, staleness: 'current', digest, snapshotDigest, evidenceManifestDigest };
-    }
-    return { ok: false, staleness: 'stale', digest, snapshotDigest, evidenceManifestDigest, expectedDigest };
-  }
-
-  return { ok: false, staleness: 'stale', digest, snapshotDigest, evidenceManifestDigest };
-}
-
 // ---- Evidence manifest ----
 
 function buildEvidenceManifest(catalogRoot, reader, issueWorkloadPath, demandArtifactPath) {
@@ -231,28 +186,50 @@ function buildEvidenceManifest(catalogRoot, reader, issueWorkloadPath, demandArt
     entries.push(entry(demandArtifactPath, 'demand_artifact'));
   }
 
-  // Terminal ledger fingerprint source
+  // v3 run layout evidence: outputs/run-ledger.json, outputs/terminal.json, events chain
   const runsDir = join(catalogRoot, 'runs');
   if (reader.exists(runsDir)) {
     const entryNames = reader.readDir(runsDir);
     const sorted = entryNames.filter((n) => n.startsWith('run_')).sort().reverse();
     for (const runDir of sorted) {
-      const ledgerDir = join(runsDir, runDir, 'terminal-ledger');
-      if (reader.exists(ledgerDir)) {
-        const ledgerFiles = reader.readDir(ledgerDir).sort().reverse();
-        for (const lf of ledgerFiles) {
-          const ledgerPath = join(ledgerDir, lf);
+      // v3 ledger
+      const ledgerPath = join(runsDir, runDir, 'outputs', 'run-ledger.json');
+      if (reader.exists(ledgerPath)) {
+        try {
+          const raw = reader.readText(ledgerPath);
+          const ledger = JSON.parse(raw);
+          if (ledger && ledger.run_id && ledger.ledger_digest) {
+            entries.push(entry(ledgerPath, 'run_ledger_v3'));
+          }
+        } catch { /* skip */ }
+      }
+      // v3 terminal
+      const terminalPath = join(runsDir, runDir, 'outputs', 'terminal.json');
+      if (reader.exists(terminalPath)) {
+        try {
+          const raw = reader.readText(terminalPath);
+          const terminal = JSON.parse(raw);
+          if (terminal && terminal.run_id && terminal.terminal_digest) {
+            entries.push(entry(terminalPath, 'terminal_v3'));
+          }
+        } catch { /* skip */ }
+      }
+      // events chain
+      const eventsDir = join(runsDir, runDir, 'events');
+      if (reader.exists(eventsDir)) {
+        const eventFiles = reader.readDir(eventsDir).filter(f => f.endsWith('.json')).sort();
+        for (const ef of eventFiles) {
+          const eventPath = join(eventsDir, ef);
           try {
-            const raw = reader.readText(ledgerPath);
-            const ledger = JSON.parse(raw);
-            if (ledger && ledger.run_id) {
-              entries.push(entry(ledgerPath, 'terminal_ledger'));
-              break; // only latest valid ledger
+            const raw = reader.readText(eventPath);
+            const evt = JSON.parse(raw);
+            if (evt && evt.event_digest) {
+              entries.push(entry(eventPath, 'phase_event_v3'));
             }
           } catch { /* skip */ }
         }
-        if (entries.some(e => e.kind === 'terminal_ledger')) break; // found it
       }
+      if (entries.some(e => e.kind === 'run_ledger_v3')) break; // found latest v3 ledger
     }
   }
 
@@ -628,23 +605,28 @@ function collectPriorFingerprint(catalogRoot, reader) {
   const sorted = entryNames.filter((n) => n.startsWith('run_')).sort().reverse();
 
   for (const runDir of sorted) {
-    const ledgerDir = join(catalogRoot, 'runs', runDir, 'terminal-ledger');
-    if (reader.exists(ledgerDir)) {
-      const ledgerFiles = reader.readDir(ledgerDir).sort().reverse();
-      for (const f of ledgerFiles) {
-        const ledgerPath = join(ledgerDir, f);
-        try {
-          const raw = reader.readText(ledgerPath);
-          const ledger = JSON.parse(raw);
-          // Must be a valid sealed ledger with run_id and digest
-          if (ledger && ledger.run_id && ledger.digest && typeof ledger.digest === 'string') {
-            // Hash the raw ledger content
-            return `sha256:${createHash('sha256').update(raw).digest('hex')}`;
-          }
-        } catch { /* skip malformed */ }
-      }
+    // v3 run layout: <run>/outputs/run-ledger.json
+    const ledgerPath = join(runsDir, runDir, 'outputs', 'run-ledger.json');
+    if (reader.exists(ledgerPath)) {
+      try {
+        const raw = reader.readText(ledgerPath);
+        const ledger = JSON.parse(raw);
+        if (ledger && ledger.run_id && ledger.ledger_digest && typeof ledger.ledger_digest === 'string') {
+          return `sha256:${createHash('sha256').update(raw).digest('hex')}`;
+        }
+      } catch { /* skip malformed */ }
     }
-    // No valid ledger in this run dir; move to next
+    // Also check events chain and terminal output if ledger not found
+    const terminalPath = join(runsDir, runDir, 'outputs', 'terminal.json');
+    if (reader.exists(terminalPath)) {
+      try {
+        const raw = reader.readText(terminalPath);
+        const terminal = JSON.parse(raw);
+        if (terminal && terminal.run_id && terminal.terminal_digest && typeof terminal.terminal_digest === 'string') {
+          return `sha256:${createHash('sha256').update(raw).digest('hex')}`;
+        }
+      } catch { /* skip malformed */ }
+    }
   }
 
   return '';
@@ -957,13 +939,5 @@ function isCatalogRoot(path) {
   return existsSync(join(path, 'AGENTS.md')) && existsSync(join(path, 'catalog'));
 }
 
-export function loadCanonicalClosureEvidence(catalogRoot = findCatalogRoot(), reader = buildDefaultReader()) {
-  return {
-    skills: loadSkillRecords(catalogRoot, reader, true),
-    analyses: loadAnalysisRecords(catalogRoot, reader, true),
-    relations: loadRelationRecords(catalogRoot, reader, true),
-  };
-}
-
 // ---- Export helpers for test access ----
-export { TRUSTED_REPOSITORY, buildEvidenceManifest, collectDemandArtifact, computeDemandDigest, computeInputDigest, computeManifestDigest };
+export { buildEvidenceManifest, collectDemandArtifact, computeDemandDigest, computeInputDigest, computeManifestDigest };

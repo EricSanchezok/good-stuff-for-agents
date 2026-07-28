@@ -30,7 +30,7 @@ A helper must not:
 - score publication readiness without agent-authored rubric evidence;
 - perform curation decisions that belong to a human or explicit reviewer.
 
-Name a helper after the deterministic action it actually performs. Prefer names such as `ingest-source-candidates.mjs`, `write-normalized-skills.mjs`, `write-analysis-drafts.mjs`, `append-relation-drafts.mjs`, `write-pack-record.mjs`, `write-evaluation.mjs`, `activate-source-candidates.mjs`, `prepare-run.mjs`, `seal-run.mjs`, and `maintenance-check.mjs`.
+Name a helper after the deterministic action it actually performs. Prefer names such as `ingest-source-candidates.mjs`, `write-normalized-skills.mjs`, `write-analysis-drafts.mjs`, `append-relation-drafts.mjs`, `write-pack-record.mjs`, `write-evaluation.mjs`, `activate-source-candidates.mjs`, and `maintenance-check.mjs`.
 
 Do not keep a legacy name that implies autonomous judgment when the helper only ingests or writes supplied data.
 

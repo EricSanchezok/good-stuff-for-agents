@@ -128,7 +128,7 @@ Judgment happens in owner skills. These helpers validate or write decisions alre
 |---|---|---|
 | `scripts/issue-intake-validator.mjs` | Validate and minimize one complete Issue snapshot | Fixed repository; fail closed on schema, completeness, or budget failure |
 | `scripts/issue-fulfillment-validator.mjs` | Validate isolated assessment structure and trusted evidence bindings | Issue text and scores are never fulfillment evidence |
-| `scripts/issue-stage-orchestrator.mjs` | Two-phase CLI (`--prepare`/`--finalize`) wiring fetch→scan→workload→semantic drafts→assessment→TOCTOU→reply→ledger→stages.issues for seal-run consumption | gh auth/API failures are isolated; never crash the Nightly |
+| `scripts/issue-stage-orchestrator.mjs` | Two-phase programmatic boundary wiring fetch→scan→workload→semantic drafts→assessment→TOCTOU→reply→canonical ledger→controller evidence | GitHub auth/API failures fail closed without escaping the Nightly lifecycle |
 | Issue pipeline modules under `scripts/lib/` | Scan, render the fixed response, enforce TOCTOU/dedup, and execute the restricted comment | Do not bypass the controller or call a broader GitHub action |
 | `../catalog-curation/scripts/activate-source-candidates.mjs` | Activate reviewed sources | Only after source-discovery and activation-policy judgment |
 | `../source-sync/scripts/sync-sources.mjs` | Sync approved target-relevant sources | Preserve source evidence and per-source failures |
@@ -190,7 +190,7 @@ Run the smallest relevant checks after growth-owned writes:
 ```bash
 npm --prefix .synergy run issue:intake:test
 npm --prefix .synergy run issue:pipeline:test
-npm --prefix .synergy run issue:orchestrator:test
+npm --prefix .synergy run issue:stage:test
 npm --prefix .synergy run catalog:validate
 npm --prefix .synergy run catalog:index
 npm --prefix .synergy run catalog:impact
