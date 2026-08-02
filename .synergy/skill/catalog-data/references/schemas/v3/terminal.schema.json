@@ -19,8 +19,8 @@
   "properties": {
     "schema_version": { "const": 3 },
     "run_id": { "type": "string", "pattern": "^run_" },
-    "status": { "type": "string", "enum": ["completed", "blocked", "failed", "interrupted", "audit_blocked"] },
-    "outcome": { "type": ["string", "null"], "enum": ["published", "no_pack_clean", null] },
+    "status": { "type": "string", "enum": ["completed", "blocked", "failed", "interrupted", "audit_blocked", "insufficient_evidence"] },
+    "outcome": { "type": ["string", "null"], "enum": ["published", "no_pack_clean", "insufficient_evidence", null] },
     "summary": { "type": "string", "minLength": 1 },
     "total_actions": { "type": "integer", "minimum": 0 },
     "errors": { "type": "integer", "minimum": 0 },

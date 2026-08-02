@@ -15,9 +15,9 @@
   ],
   "additionalProperties": false,
   "properties": {
-    "event_index": { "type": "integer", "minimum": 0, "maximum": 8 },
+    "event_index": { "type": "integer", "minimum": 0, "maximum": 12 },
     "run_id": { "type": "string", "pattern": "^run_" },
-    "phase": { "type": "string", "enum": ["init", "maintenance", "issues", "context", "targets", "gate", "seal", "audit", "terminal"] },
+    "phase": { "type": "string", "enum": ["init", "maintenance", "issues", "context", "targets", "gate", "seal", "audit", "terminal", "paused_for_assessment", "paused_for_targets"] },
     "timestamp": { "type": "string" },
     "prev_event_digest": { "type": ["string", "null"] },
     "output_descriptors": {

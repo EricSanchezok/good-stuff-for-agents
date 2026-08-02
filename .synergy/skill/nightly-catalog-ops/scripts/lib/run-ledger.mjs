@@ -17,6 +17,10 @@ export function buildRunLedgerV3({
   candidateOutcomes,
   errors = 0,
   warnings = 0,
+  gapClass = null,
+  exhaustionTrace = null,
+  rollingYield = null,
+  evidence = null,
 }) {
   const sourceOutcomes = (maintenanceOutcomes || []).map(o => ({
     source_id: o.source_id,
@@ -64,11 +68,102 @@ export function buildRunLedgerV3({
       total_actions: totalActions,
       errors,
       warnings,
+      gap_class: gapClass,
+      rolling_yield: rollingYield,
     },
   };
+
+  if (exhaustionTrace) {
+    ledger.run_outcome.exhaustion_trace = exhaustionTrace;
+  }
+  if (evidence) {
+    ledger.evidence = evidence;
+  }
 
   const { ledger_digest, ...rest } = ledger;
   ledger.ledger_digest = `sha256:${createHash('sha256').update(canonicalStringify(rest)).digest('hex')}`;
 
   return Object.freeze(ledger);
+}
+
+/**
+ * Build an exhaustion proof when no pack can be produced.
+ * Validates that there is truly no demand, no backlog, no new artifacts,
+ * and no relation potential. Returns schema-valid proof or throws.
+ */
+export function buildExhaustionProof({
+  evidenceIndex,
+  issueDemandMetadata,
+  intents,
+  budgetExhausted = false,
+} = {}) {
+  const demandSkillIds = issueDemandMetadata?.demand_skill_ids || [];
+  const hasDemand = demandSkillIds.length > 0;
+
+  const flags = evidenceIndex?.gap_flags || {};
+  const hasBacklog = flags.unevaluated_snapshots || flags.unnormalized_candidates || flags.analysis_gaps;
+  const hasNewArtifacts = (evidenceIndex?.snapshot_artifact_count || 0) > 0 && (evidenceIndex?.candidate_count || 0) > 0;
+  const hasRelationPotential = flags.relation_potential;
+  const hasActiveIntents = intents?.intents?.length > 0;
+
+  const exhaustionEntries = [
+    { dimension: 'demand', found: hasDemand, detail: `${demandSkillIds.length} skill IDs in demand` },
+    { dimension: 'backlog', found: hasBacklog, detail: `snapshot=${flags.unevaluated_snapshots}, candidate=${flags.unnormalized_candidates}, analysis=${flags.analysis_gaps}` },
+    { dimension: 'new_artifacts', found: hasNewArtifacts, detail: `${evidenceIndex?.snapshot_artifact_count || 0} snapshots, ${evidenceIndex?.candidate_count || 0} candidates` },
+    { dimension: 'relation_potential', found: hasRelationPotential, detail: `${evidenceIndex?.analysis_count || 0} analyses, ${flags.same_domain_group_count || 0} domain groups` },
+    { dimension: 'active_intents', found: hasActiveIntents, detail: `${intents?.intents?.length || 0} intents` },
+  ];
+
+  const anyGap = hasDemand || hasBacklog || hasNewArtifacts || hasRelationPotential || hasActiveIntents;
+
+  return {
+    schema_version: 1,
+    kind: 'exhaustion_proof',
+    gap_class: anyGap ? 'gap_exists' : 'truly_exhausted',
+    exhaustion_trace: exhaustionEntries,
+    budget_exhausted: budgetExhausted,
+    valid_no_pack_clean: !anyGap,
+    produced_at: new Date().toISOString(),
+  };
+}
+
+/**
+ * Compute rolling yield from the last N completed run ledgers.
+ */
+import { existsSync, readFileSync, readdirSync } from 'node:fs';
+import { join } from 'node:path';
+
+export function computeRollingYield({ runsRoot, catalogRoot, windowSize = 5 } = {}) {
+
+  try {
+    const runsDir = runsRoot || join(catalogRoot, 'runs');
+    if (!existsSync(runsDir)) return null;
+
+    const entries = readdirSync(runsDir).filter(n => n.startsWith('run_')).sort().reverse();
+    const completedRuns = [];
+
+    for (const entry of entries) {
+      const terminalPath = join(runsDir, entry, 'outputs', 'terminal.json');
+      if (!existsSync(terminalPath)) continue;
+      try {
+        const terminal = JSON.parse(readFileSync(terminalPath, 'utf8'));
+        if (terminal.status === 'completed') {
+          completedRuns.push({ runId: entry, outcome: terminal.outcome });
+        }
+      } catch { /* skip */ }
+      if (completedRuns.length >= windowSize) break;
+    }
+
+    if (completedRuns.length === 0) return { window: 0, published: 0, ratio: 0, entries: [] };
+
+    const publishedCount = completedRuns.filter(r => r.outcome === 'published').length;
+    return {
+      window: completedRuns.length,
+      published: publishedCount,
+      ratio: completedRuns.length > 0 ? parseFloat((publishedCount / completedRuns.length).toFixed(4)) : 0,
+      entries: completedRuns,
+    };
+  } catch {
+    return { window: 0, published: 0, ratio: 0, entries: [] };
+  }
 }

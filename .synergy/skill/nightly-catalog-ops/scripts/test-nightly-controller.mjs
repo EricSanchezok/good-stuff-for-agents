@@ -778,7 +778,7 @@ test('dirty worktree rejected before reservation', async () => {
 //  13. Nonzero intents + no executor = blocked (not no_pack_clean)
 // ══════════════════════════════════════════════════════════════════════
 
-test('nonzero intents without executor → blocked (not no_pack_clean)', async () => {
+test('nonzero intents without executor → paused_for_targets (C6 pause protocol)', async () => {
   const root = tmpDir();
   try {
     const result = await executeNightly({
@@ -797,17 +797,21 @@ test('nonzero intents without executor → blocked (not no_pack_clean)', async (
       timestamp: '2026-01-15T00:00:16.000Z',
     });
 
-    assert.equal(result.status, 'blocked');
+    // C6: nonzero intents + no executor = pause (not blocked)
+    assert.equal(result.status, 'paused_for_targets');
     assert.equal(result.outcome, null);
-    assert.ok(result.error && result.error.includes('executor'),
-      `Expected executor error, got: ${result.error}`);
+    assert.ok(result.intents && result.intents.length > 0,
+      'Should have intents in handoff');
+    assert.ok(result.handoff_digest, 'Should have handoff digest');
 
     const chain = readChain({ runsRoot: root, runId: result.run_id });
     assert.ok(chain.ok);
-    assert.equal(chain.lastEvent.phase, 'terminal');
+    // Chain should end at paused_for_targets, not terminal
+    assert.equal(chain.lastEvent.phase, 'paused_for_targets');
     assert.ok(chain.events.find(e => e.phase === 'context'));
+    // Targets event should NOT be written (pause before execution)
     assert.ok(!chain.events.find(e => e.phase === 'targets'),
-      'Targets event should not be written when executor is missing');
+      'Targets event should not be written when executor is missing — paused instead');
   } finally {
     rmSync(root, { recursive: true, force: true });
   }
@@ -930,10 +934,10 @@ test('missing required adapters throw immediately', async () => {
 });
 
 // ══════════════════════════════════════════════════════════════════════
-//  18. New unassessed ordinary issues → blocked
+//  18. New unassessed issues pause for semantic assessment (not blocked)
 // ══════════════════════════════════════════════════════════════════════
 
-test('new unassessed issues without semantic executor → blocked', async () => {
+test('new unassessed issues pause for semantic assessment', async () => {
   const root = tmpDir();
   try {
     const result = await executeNightly({
@@ -946,15 +950,18 @@ test('new unassessed issues without semantic executor → blocked', async () => 
         ok: true,
         newUnassessed: [{ issue_number: 7, title: 'New feature request' }],
         _assessed_unassessed: false,
+        workloadPath: join(root, 'run_x', 'issue-workload.json'),
       }),
       contextCollector: okContextCollector(),
       timestamp: '2026-01-15T00:00:21.000Z',
     });
 
-    assert.equal(result.status, 'blocked');
+    // New behavior: pauses instead of blocking
+    assert.equal(result.status, 'paused_for_assessment');
     assert.equal(result.outcome, null);
-    assert.ok(result.error && result.error.includes('unassessed'),
-      `Expected unassessed error, got: ${result.error}`);
+    assert.ok(result.new_unassessed && result.new_unassessed.length > 0,
+      'Should have new unassessed references');
+    assert.ok(result.workload_path, 'Should have workload path');
   } finally {
     rmSync(root, { recursive: true, force: true });
   }

@@ -28,7 +28,7 @@ export const TRUSTED_CHECKS = Object.freeze([
   Object.freeze({ name: 'publish_boundary', script: 'publish:boundary' }),
   Object.freeze({ name: 'publish_summaries', script: 'publish:summaries' }),
   Object.freeze({ name: 'publish_pack_v3_test', script: 'publish:pack-v3:test' }),
-  Object.freeze({ name: 'nightly_foundation_test', script: 'nightly:foundation:test' }),
+  Object.freeze({ name: 'nightly_runtime_test', script: 'nightly:runtime:test' }),
   Object.freeze({ name: 'nightly_controller_test', script: 'nightly:controller:test' }),
   Object.freeze({ name: 'nightly_legacy_absence_test', script: 'nightly:legacy-absence:test' }),
   Object.freeze({ name: 'catalog_impact', script: 'catalog:impact' }),

@@ -15,9 +15,11 @@ import { spawnSync } from 'node:child_process';
 import { join } from 'node:path';
 import { createHash } from 'node:crypto';
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs';
-import { executeNightly } from './lib/nightly-controller-core.mjs';
+import { executeNightly, resumeNightly } from './lib/nightly-controller-core.mjs';
 import { selectTargetIntents } from './lib/target-selector.mjs';
+import { selectTargetIntentsColdStart } from './lib/cold-start-selector.mjs';
 import { collectRunContextInput } from './lib/collector.mjs';
+import { validateTargetResults as _validateTargetResults, computeIntentDigest as _computeIntentDigest } from './lib/target-result-writer.mjs';
 import { loadRegistry as _loadRegistry, validateCatalog as _validateCatalog, writeTextAtomic as _writeTextAtomic, ROOT, CATALOG } from '../../catalog-data/scripts/lib/catalog-lib.mjs';
 import { catalogData as _catalogData } from '../../catalog-data/scripts/lib/pipeline-cli.mjs';
 import { syncApprovedSources as _syncApprovedSources } from '../../source-sync/scripts/sync-sources-lib.mjs';
@@ -322,10 +324,13 @@ async function productionIssueExecutor({ runId, runsRoot, repositoryRoot, deps }
       newUnassessed = []
     }
 
+    // C1/C19: no drafts + accepted issues = reachable pause semantics, not blocked
+    // ok: true when there IS a workload but drafts are pending (pause path)
+    // ok: true when acceptedCount === 0 (no work to do)
     return {
-      ok: acceptedCount === 0,
+      ok: true,
       error: acceptedCount > 0
-        ? `blocked: ${acceptedCount} accepted issue(s) require semantic assessment drafts (no drafts found at ${draftsPath})`
+        ? `semantic_drafts_pending: ${acceptedCount} accepted issue(s) require semantic assessment drafts`
         : undefined,
       snapshot: {
         open: acceptedCount,
@@ -335,9 +340,7 @@ async function productionIssueExecutor({ runId, runsRoot, repositoryRoot, deps }
       },
       workloadPath: workloadPath,
       demandArtifactPath: null,
-      errors: acceptedCount > 0
-        ? [`semantic_drafts_missing: ${acceptedCount} accepted issues require drafts`]
-        : [],
+      errors: [],
       newUnassessed,
       issueOutcomes: [],
       stageTerminals: [],
@@ -453,6 +456,60 @@ async function productionIssueExecutor({ runId, runsRoot, repositoryRoot, deps }
   }
 }
 
+// ══════════════════════════════════════════════════════════════════════
+//  Production target-result executor — read-only, validates write-once file
+// ══════════════════════════════════════════════════════════════════════
+
+function productionTargetResultExecutor({
+  runId, runsRoot, contextDigest, intents, evidenceIndex,
+  _validate = null,
+}) {
+  const validate = _validate || _validateTargetResults;
+  const computeDigest = _computeIntentDigest;
+  const vr = validate({ runId, runsRoot, expectedContextDigest: contextDigest });
+  if (!vr.ok) {
+    return {
+      candidateResults: [],
+      intentResults: [],
+      interrupted: true,
+      timeout: false,
+      error: `target_result_validation_failed: ${vr.error}`,
+    };
+  }
+
+  // Verify intent coverage: each authoritative intent must have a matching intentResult
+  const intentResults = vr.intentResults || [];
+  const intentResultByDigest = new Map();
+  for (const ir of intentResults) {
+    intentResultByDigest.set(ir.intent_digest, ir);
+  }
+
+  const missing = [];
+  for (const intent of (intents || [])) {
+    const iDigest = computeDigest(intent);
+    if (!intentResultByDigest.has(iDigest)) {
+      missing.push(iDigest);
+    }
+  }
+  if (missing.length > 0) {
+    return {
+      candidateResults: [],
+      intentResults: [],
+      interrupted: true,
+      timeout: false,
+      error: `intent_coverage_mismatch: ${missing.length} intents not covered by target-result.json`,
+    };
+  }
+
+  return {
+    candidateResults: vr.candidateResults || [],
+    intentResults: vr.intentResults || [],
+    interrupted: false,
+    timeout: false,
+    error: undefined,
+  };
+}
+
 function buildDemandMetadata(stagesIssues, runId, workloadPath, _deps = {}) {
   const _readFile = _deps.readFile || readFileSync;
   const demandSkillIds = []
@@ -545,20 +602,55 @@ function productionAuditPlanner({ baselineHead, sealDigest, manifestDigest, chan
 // ══════════════════════════════════════════════════════════════════════
 
 async function main() {
-  // Reject all arguments — production CLI takes none
   const args = process.argv.slice(2);
-  if (args.length > 0) {
-    process.stderr.write(`[nightly] ERROR: unknown arguments: ${args.join(' ')}\n`);
-    process.stderr.write('[nightly] Usage: node nightly-controller.mjs  (no arguments accepted)\n');
-    process.exitCode = 1;
-    return;
-  }
-
   const repoAdapter = buildProductionRepoAdapter();
-
   const onProgress = (msg) => {
     process.stderr.write(`[nightly] ${msg}\n`);
   };
+
+  // ── --resume <runId> ──────────────────────────────────────────────
+  if (args.length === 2 && args[0] === '--resume') {
+    const runId = args[1];
+    if (!/^run_[a-f0-9]{16}$/.test(runId)) {
+      process.stderr.write(`[nightly] ERROR: invalid --resume runId: ${runId}\n`);
+      process.exitCode = 1;
+      return;
+    }
+
+    process.stderr.write(`[nightly] Resuming run: ${runId}\n`);
+    let result;
+    try {
+      result = await resumeNightly({
+        runId,
+        runsRoot: RUNS_ROOT,
+        repositoryRoot: ROOT,
+        repositoryAdapter: repoAdapter,
+        issueExecutor: productionIssueExecutor,
+        contextCollector: productionContextCollector,
+        gateExecutor: productionGateExecutor,
+        auditPlanner: productionAuditPlanner,
+        targetSelector: selectTargetIntentsColdStart,
+        targetExecutor: productionTargetResultExecutor,
+        onProgress,
+      });
+    } catch (e) {
+      process.stderr.write(`[nightly] FATAL: ${e.message}\n`);
+      process.exitCode = 1;
+      return;
+    }
+
+    process.stdout.write(JSON.stringify(result, null, 2) + '\n');
+    if (result.status !== 'completed') process.exitCode = 1;
+    return;
+  }
+
+  // ── Normal invocation: no unsupported flags ────────────────────────
+  if (args.length > 0) {
+    process.stderr.write(`[nightly] ERROR: unknown arguments: ${args.join(' ')}\n`);
+    process.stderr.write('[nightly] Usage: node nightly-controller.mjs [--resume <runId>]\n');
+    process.exitCode = 1;
+    return;
+  }
 
   let result;
   try {
@@ -571,7 +663,7 @@ async function main() {
       contextCollector: productionContextCollector,
       gateExecutor: productionGateExecutor,
       auditPlanner: productionAuditPlanner,
-      targetSelector: selectTargetIntents,
+      targetSelector: selectTargetIntentsColdStart,
       targetExecutor: null,
       onProgress,
     });
@@ -604,6 +696,7 @@ export {
   productionContextCollector,
   productionMaintenanceExecutor,
   productionIssueExecutor,
+  productionTargetResultExecutor,
   productionGateExecutor,
   productionAuditPlanner,
 };

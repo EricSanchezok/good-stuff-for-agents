@@ -10,9 +10,9 @@ sources:
   source_id: src_https-github-com-anthropics-skills-anthropic-agent-skills_04f79b56
   state:
     consecutive_failures: 0
-    last_checked_at: '2026-07-28T18:56:36.525Z'
+    last_checked_at: '2026-08-02T05:23:21.640Z'
     last_ref: b29e7cf65e5cb78a5ac33d582270551bc74a14eb
-    last_success_at: '2026-07-28T18:56:36.525Z'
+    last_success_at: '2026-08-02T05:23:21.640Z'
   status: active
   sync:
     default_ref: main
@@ -33,9 +33,9 @@ sources:
   source_id: src_https-github-com-coderabbitai-skills-coderabbit-skills_8f2a22eb
   state:
     consecutive_failures: 0
-    last_checked_at: '2026-07-28T18:56:38.388Z'
+    last_checked_at: '2026-08-02T05:23:23.358Z'
     last_ref: c61c4908d36dda6fb08a343cc8b19c59fbb47de3
-    last_success_at: '2026-07-28T18:56:38.388Z'
+    last_success_at: '2026-08-02T05:23:23.358Z'
   status: active
   sync:
     default_ref: main
@@ -57,9 +57,9 @@ sources:
   source_id: src_https-github-com-coreyhaines31-marketingskills-marketing-skills-corey-haines_ef920698
   state:
     consecutive_failures: 0
-    last_checked_at: '2026-07-28T18:56:40.382Z'
+    last_checked_at: '2026-08-02T05:23:24.971Z'
     last_ref: 7868cb9251fad80a73d26e488a5ad5f6c4a9f335
-    last_success_at: '2026-07-28T18:56:40.382Z'
+    last_success_at: '2026-08-02T05:23:24.971Z'
   status: active
   sync:
     default_ref: main
@@ -80,9 +80,9 @@ sources:
   source_id: src_https-github-com-cuga-project-cuga-agent-cuga-agent-ibm-research_5709bc42
   state:
     consecutive_failures: 0
-    last_checked_at: '2026-07-28T18:56:42.732Z'
-    last_ref: ad97388a600f417866ae16b88ad2aeca76dee9cf
-    last_success_at: '2026-07-28T18:56:42.732Z'
+    last_checked_at: '2026-08-02T05:23:27.112Z'
+    last_ref: 660ff79398ba741ca3c07dec7f43bc5074a1e1ad
+    last_success_at: '2026-08-02T05:23:27.112Z'
   status: preview
   sync:
     default_ref: main
@@ -104,9 +104,9 @@ sources:
   source_id: src_https-github-com-figma-mcp-server-guide-figma-mcp-skills_dde79ddd
   state:
     consecutive_failures: 0
-    last_checked_at: '2026-07-28T18:56:44.633Z'
-    last_ref: 07316dd2920d61303ca0e52812b31f5f341e7b15
-    last_success_at: '2026-07-28T18:56:44.633Z'
+    last_checked_at: '2026-08-02T05:23:28.719Z'
+    last_ref: ef474d181a6eca44b37722f839e8a7eb58d644ec
+    last_success_at: '2026-08-02T05:23:28.719Z'
   status: preview
   sync:
     default_ref: main
@@ -127,9 +127,9 @@ sources:
   source_id: src_https-github-com-fujishigetemma-semantic-scholar-mcp-semantic-scholar-mcp-server_1c7ee5c5
   state:
     consecutive_failures: 0
-    last_checked_at: '2026-07-27T21:32:50.697Z'
+    last_checked_at: '2026-08-02T05:23:30.099Z'
     last_ref: ead98e835620941b26bac952b5e330405693d9c8
-    last_success_at: '2026-07-27T21:32:50.697Z'
+    last_success_at: '2026-08-02T05:23:30.099Z'
   status: preview
   sync:
     default_ref: main
@@ -152,9 +152,9 @@ sources:
   source_id: src_https-github-com-hermeticormus-markdown-discipline-skills-markdown-discipline-skills_ddaf87e0
   state:
     consecutive_failures: 0
-    last_checked_at: '2026-07-27T21:32:51.980Z'
+    last_checked_at: '2026-08-02T05:23:31.639Z'
     last_ref: ae8c782f68db306d348320bee0c23a551f913fe1
-    last_success_at: '2026-07-27T21:32:51.980Z'
+    last_success_at: '2026-08-02T05:23:31.639Z'
   status: active
   sync:
     default_ref: main
@@ -177,9 +177,9 @@ sources:
   source_id: src_https-github-com-jupyterlab-jupyter-ai-jupyter-ai-jupyterlab_e47112b5
   state:
     consecutive_failures: 0
-    last_checked_at: '2026-07-27T21:32:53.356Z'
-    last_ref: 2320863576025568589bb908204ede253f86dc8d
-    last_success_at: '2026-07-27T21:32:53.356Z'
+    last_checked_at: '2026-08-02T05:23:33.489Z'
+    last_ref: 1e7ad24042b26104dfe2cabd1c73c587776a2a1d
+    last_success_at: '2026-08-02T05:23:33.489Z'
   status: preview
   sync:
     default_ref: main
@@ -202,9 +202,9 @@ sources:
   source_id: src_https-github-com-k-dense-ai-scientific-agent-skills-k-dense-scientific-agent-skills_5bdb6d39
   state:
     consecutive_failures: 0
-    last_checked_at: '2026-07-27T21:32:54.993Z'
-    last_ref: 81e316bc89f7fda176b092d2bceb959204710b0a
-    last_success_at: '2026-07-27T21:32:54.993Z'
+    last_checked_at: '2026-08-02T05:23:35.575Z'
+    last_ref: ad21a3868923628330734375dddbf7b86ea84222
+    last_success_at: '2026-08-02T05:23:35.575Z'
   status: active
   sync:
     default_ref: main
@@ -227,9 +227,9 @@ sources:
   source_id: src_https-github-com-kozz36-frontend-designer-skill-frontend-designer-skill_929a1309
   state:
     consecutive_failures: 0
-    last_checked_at: '2026-07-27T21:32:56.333Z'
+    last_checked_at: '2026-08-02T05:23:36.989Z'
     last_ref: 5e4dc12811bd106e3184a863656e141aed398a3f
-    last_success_at: '2026-07-27T21:32:56.333Z'
+    last_success_at: '2026-08-02T05:23:36.989Z'
   status: preview
   sync:
     default_ref: main
@@ -250,9 +250,9 @@ sources:
   source_id: src_https-github-com-mcollina-skills-matteo-collina-s-skills_faf2f289
   state:
     consecutive_failures: 0
-    last_checked_at: '2026-07-27T21:32:57.653Z'
+    last_checked_at: '2026-08-02T05:23:38.287Z'
     last_ref: 7cfdaf97386f51be412d5351aa2f0acbf958e067
-    last_success_at: '2026-07-27T21:32:57.653Z'
+    last_success_at: '2026-08-02T05:23:38.287Z'
   status: active
   sync:
     default_ref: main
@@ -275,9 +275,9 @@ sources:
   source_id: src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e
   state:
     consecutive_failures: 0
-    last_checked_at: '2026-07-27T21:32:59.220Z'
-    last_ref: 4f1db7ec55caf11e3b143c91220bd79a632bc55b
-    last_success_at: '2026-07-27T21:32:59.220Z'
+    last_checked_at: '2026-08-02T05:23:40.195Z'
+    last_ref: 4a2873faffc1b101a33a0b59c24713d4ed78142f
+    last_success_at: '2026-08-02T05:23:40.195Z'
   status: active
   sync:
     default_ref: main
@@ -300,9 +300,9 @@ sources:
   source_id: src_https-github-com-openclaw-agent-skills-openclaw-agent-skills_088582b8
   state:
     consecutive_failures: 0
-    last_checked_at: '2026-07-27T21:33:00.696Z'
-    last_ref: fe588b1a6267eb47f785d0c748db9f6f3e9a3b4f
-    last_success_at: '2026-07-27T21:33:00.696Z'
+    last_checked_at: '2026-08-02T05:23:41.698Z'
+    last_ref: 7ae92605c02372f0a0616de6f2be7144b5bec43a
+    last_success_at: '2026-08-02T05:23:41.698Z'
   status: preview
   sync:
     default_ref: main
@@ -323,9 +323,9 @@ sources:
   source_id: src_https-github-com-phuryn-pm-skills-pm-skills-marketplace-phuryn_8ac36372
   state:
     consecutive_failures: 0
-    last_checked_at: '2026-07-27T21:33:02.005Z'
+    last_checked_at: '2026-08-02T05:23:43.112Z'
     last_ref: 18468a95b427e70e258b51389796367c6f684e7d
-    last_success_at: '2026-07-27T21:33:02.005Z'
+    last_success_at: '2026-08-02T05:23:43.112Z'
   status: active
   sync:
     default_ref: main
@@ -346,9 +346,9 @@ sources:
   source_id: src_https-github-com-product-on-purpose-pm-skills-pm-skills-product-on-purpose_f2ce15e5
   state:
     consecutive_failures: 0
-    last_checked_at: '2026-07-27T21:33:03.497Z'
-    last_ref: 9432e2771eb7c221c9454a210c6ae55b6ee25d54
-    last_success_at: '2026-07-27T21:33:03.497Z'
+    last_checked_at: '2026-08-02T05:23:45.759Z'
+    last_ref: 55d33099de37bc2b655a01e49adf9522a050d4f7
+    last_success_at: '2026-08-02T05:23:45.759Z'
   status: preview
   sync:
     default_ref: main
@@ -372,9 +372,9 @@ sources:
   source_id: src_https-github-com-southleft-skills-for-figma-skills-for-figma-southleft_ea9f2b3d
   state:
     consecutive_failures: 0
-    last_checked_at: '2026-07-27T21:33:04.900Z'
+    last_checked_at: '2026-08-02T05:23:47.138Z'
     last_ref: 79bda1e76044d1e9d9b60bb211507e64833af92b
-    last_success_at: '2026-07-27T21:33:04.900Z'
+    last_success_at: '2026-08-02T05:23:47.138Z'
   status: preview
   sync:
     default_ref: main
@@ -395,9 +395,9 @@ sources:
   source_id: src_https-github-com-thatrebeccarae-claude-marketing-claude-marketing-rebecca-rae-barton_8a108923
   state:
     consecutive_failures: 0
-    last_checked_at: '2026-07-27T21:33:06.280Z'
+    last_checked_at: '2026-08-02T05:23:48.578Z'
     last_ref: a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba
-    last_success_at: '2026-07-27T21:33:06.280Z'
+    last_success_at: '2026-08-02T05:23:48.578Z'
   status: preview
   sync:
     default_ref: main

@@ -335,7 +335,22 @@ export function eventExists({ runsRoot, runId, phase }) {
   if (!runsRoot) runsRoot = RUNS_ROOT;
   const dir = eventsDir(runsRoot, runId);
   if (!existsSync(dir)) return false;
-  const files = readdirSync(dir).filter(f => f.endsWith('.json'));
+  let entries;
+  try {
+    entries = readdirSync(dir);
+  } catch { return false; }
+  // Only regular .json files matching the <index>-<phase>.json naming pattern
+  const files = entries.filter(f => {
+    if (!f.endsWith('.json')) return false;
+    // Must match the expected naming convention: <index>-<phase>.json
+    if (!/^\d+-/.test(f)) return false;
+    // Skip temp files and directories
+    try {
+      const full = join(dir, f);
+      if (statSync(full).isDirectory()) return false;
+      return true;
+    } catch { return false; }
+  });
   for (const file of files) {
     const event = readEventFile(join(dir, file));
     if (event && event.phase === phase) return true;

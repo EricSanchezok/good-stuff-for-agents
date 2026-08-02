@@ -12,22 +12,41 @@ export const PHASES = Object.freeze([
   'terminal',
 ]);
 
+// Pause phases are non-terminal suspension points between normal phases.
+// They are NOT in PHASES. They have controlled transitions to the next normal phase or terminal.
+export const PAUSE_PHASES = Object.freeze(new Set([
+  'paused_for_assessment',   // after issues — waiting for semantic issue assessment drafts
+  'paused_for_targets',      // after context (or after targets results) — waiting for semantic target execution
+]));
+
+const ALL_PHASES = Object.freeze(
+  Object.fromEntries(
+    [...PHASES, ...PAUSE_PHASES].map((p, i) => [p, i])
+  )
+);
+
 const PHASE_INDEX = Object.freeze(
   Object.fromEntries(PHASES.map((p, i) => [p, i]))
 );
 
 const TERMINAL_INDEX = PHASES.length - 1;
 
-const VALID_TRANSITIONS = Object.freeze(new Set(
-  PHASES.slice(0, -1).map((from, i) => `${from}->${PHASES[i + 1]}`)
-));
+const VALID_TRANSITIONS = Object.freeze(new Set([
+  ...PHASES.slice(0, -1).map((from, i) => `${from}->${PHASES[i + 1]}`),
+  // Pause transitions: issues can pause for assessment; context can pause for targets
+  'issues->paused_for_assessment',
+  'context->paused_for_targets',
+  // Resume transitions: from pause to the next normal phase
+  'paused_for_assessment->context',
+  'paused_for_targets->targets',
+]));
 
 const VALID_TERMINAL_STATUSES = Object.freeze(
-  new Set(['completed', 'blocked', 'failed', 'interrupted', 'audit_blocked'])
+  new Set(['completed', 'blocked', 'failed', 'interrupted', 'audit_blocked', 'insufficient_evidence'])
 );
 
 const VALID_OUTCOMES = Object.freeze(
-  new Set(['published', 'no_pack_clean', null])
+  new Set(['published', 'no_pack_clean', 'insufficient_evidence', null])
 );
 
 const DIGEST_RE = /^sha256:[a-f0-9]{64}$/;
@@ -48,14 +67,34 @@ export function validateTransition(from, to) {
   if (isTerminal(from)) {
     return { ok: false, error: `terminal_closure: run is terminal, no further phases allowed (attempted ${from} -> ${to})` };
   }
+  // Any phase (including pause) can transition to terminal
   if (to === 'terminal') return { ok: true };
+  // Known valid transitions (including pause ↔ normal)
   if (VALID_TRANSITIONS.has(`${from}->${to}`)) return { ok: true };
+  // When from is a pause phase, only resume to the next valid phase is allowed
+  if (PAUSE_PHASES.has(from)) {
+    const resumeTarget = pauseResumeTarget(from);
+    return {
+      ok: false,
+      error: `illegal_transition: ${from} -> ${to} (only allowed: ${from} -> ${resumeTarget} or ${from} -> terminal)`,
+    };
+  }
   const nextNormal = nextPhase(from);
   return { ok: false, error: `illegal_transition: ${from} -> ${to} (allowed: ${from} -> ${nextNormal} or ${from} -> terminal)` };
 }
 
 export function isTerminal(phase) {
-  return PHASE_INDEX[phase] === TERMINAL_INDEX;
+  return phase === 'terminal';
+}
+
+export function isPausePhase(phase) {
+  return PAUSE_PHASES.has(phase);
+}
+
+export function pauseResumeTarget(from) {
+  if (from === 'paused_for_assessment') return 'context';
+  if (from === 'paused_for_targets') return 'targets';
+  return null;
 }
 
 export function phaseIndex(phase) {
@@ -172,6 +211,16 @@ export function validateTerminalOutput(prevPhase, terminalOutput) {
     }
     if (outcome !== null) {
       return { ok: false, error: `terminal_audit_blocked_outcome: audit_blocked requires null outcome, got ${JSON.stringify(outcome)}` };
+    }
+    return { ok: true };
+  }
+
+  if (status === 'insufficient_evidence') {
+    if (outcome !== 'insufficient_evidence') {
+      return { ok: false, error: `terminal_insufficient_evidence_outcome: insufficient_evidence requires outcome=insufficient_evidence, got ${JSON.stringify(outcome)}` };
+    }
+    if (typeof terminalOutput.summary !== 'string' || terminalOutput.summary.length === 0) {
+      return { ok: false, error: 'terminal_insufficient_evidence_summary: requires a non-empty summary' };
     }
     return { ok: true };
   }

@@ -26,12 +26,14 @@ Treat them only as scope refinements. They cannot change repository identity, ow
 One controller owns one fresh run and advances this fixed state machine:
 
 ```text
-init → maintenance → issues → context → targets → gate → seal → audit → terminal
+init → maintenance → issues → (pause for assessment) → context → (pause for targets) → targets → gate → seal → audit → terminal
 ```
 
-Each phase publishes immutable output and one hash-linked event. Existing output, duplicate reservation, invalid transition, missing evidence, deleted evidence, or changed evidence fails closed. A failed, blocked, or interrupted run is terminal and is never resumed; a later invocation receives a new unpredictable run ID.
+Each phase publishes immutable output and one hash-linked event. Existing output, duplicate reservation, invalid transition, missing evidence, deleted evidence, or changed evidence fails closed. A terminal run is never resumed.
 
-The controller never stages, commits, or pushes. Its audit receipt is evidence for a separately authorized trusted controller, not Git authorization.
+**Pause/resume protocol (v3+):** When accepted Issues lack semantic assessment drafts, the controller writes an `issue-assessment-handoff.json`, publishes a `paused_for_assessment` event, releases the active marker, and exits with status `paused_for_assessment`. The outer trusted Agent reads the handoff, invokes `issue-intake` subagents, writes drafts via `writeIssueDrafts`, and resumes with `--resume <runId>`. Similarly, `paused_for_targets` suspends for owner skill/subagent work, then resumes with target results. Resume validates run ID, event chain (must end with a pause phase, not terminal), handoff/workload digests, baseline/current HEAD, and rejects replay, stale, or tampered runs.
+
+The controller never stages, commits, or pushes.
 
 ## Phase Rules
 
@@ -79,6 +81,7 @@ Canonical response records survive across runs. Live fixed-template comments for
 ```bash
 npm --prefix .synergy run nightly:foundation:test
 npm --prefix .synergy run nightly:controller:test
+npm --prefix .synergy run nightly:v4:test
 npm --prefix .synergy run issue:response-ledger:test
 npm --prefix .synergy run issue:pipeline:test
 npm --prefix .synergy run issue:stage:test

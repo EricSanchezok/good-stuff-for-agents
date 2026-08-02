@@ -51,7 +51,11 @@
     "nightly": "node skill/nightly-catalog-ops/scripts/nightly-controller.mjs",
     "nightly:foundation:test": "node skill/nightly-catalog-ops/scripts/test-nightly-foundation.mjs",
     "nightly:controller:test": "node skill/nightly-catalog-ops/scripts/test-nightly-controller.mjs",
-    "nightly:legacy-absence:test": "node skill/nightly-catalog-ops/scripts/test-nightly-legacy-absence.mjs"
+    "nightly:legacy-absence:test": "node skill/nightly-catalog-ops/scripts/test-nightly-legacy-absence.mjs",
+    "nightly:target-result": "node skill/nightly-catalog-ops/scripts/lib/target-result-writer.mjs",
+    "nightly:v4:test": "node skill/nightly-catalog-ops/scripts/test-nightly-v4.mjs",
+    "nightly:delivery-guard": "node skill/nightly-catalog-ops/scripts/lib/delivery-guard.mjs",
+    "nightly:runtime:test": "node skill/nightly-catalog-ops/scripts/test-nightly-foundation.mjs && node skill/nightly-catalog-ops/scripts/test-nightly-controller.mjs && node skill/nightly-catalog-ops/scripts/test-nightly-legacy-absence.mjs && node skill/nightly-catalog-ops/scripts/test-nightly-v4.mjs"
   },
   "dependencies": {},
   "devDependencies": {}
