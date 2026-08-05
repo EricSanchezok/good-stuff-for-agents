@@ -1,0 +1,95 @@
+
+--- Identity ---
+  PASS: computeTargetSkillId produces deterministic ID from canonical_name + source + path
+  PASS: computeTargetSkillId rejects empty canonical_name
+  PASS: computeTargetSkillId produces valid IDs with punctuation in name (slugify handles it)
+  PASS: buildWorkloadIdentityHint returns hint not decision; different name = different hint
+  PASS: findExistingMatch — exact_id match
+  PASS: findExistingMatch — no match for novel skill
+  PASS: findExistingMatch — source_path match with different name
+
+--- Provenance Validation ---
+  PASS: validateCandidateProvenance — passes valid candidate
+  PASS: validateCandidateProvenance — rejects missing source_id
+  PASS: validateCandidateProvenance — rejects missing path
+  PASS: validateCandidateProvenance — rejects missing content_digest
+  PASS: validateCandidateProvenance — rejects missing declared_name
+  PASS: validateCandidateProvenance — rejects missing candidate_id
+
+--- Digest & Binding ---
+  PASS: computeWorkloadDigest — deterministic
+  PASS: computeWorkloadDigest — different inputs give different digest
+  PASS: computeWorkloadDigest — binds provenance_blocked
+  PASS: computeItemDigest — deterministic for same data
+  PASS: computeInputBindings — computes digests from files
+
+--- Source Validation ---
+  PASS: source not found in registry produces null sourceSummary
+
+--- Decisions Validation ---
+  PASS: validateDecisions — accepts valid new decisions with canonical_name
+  PASS: validateDecisions — rejects new without canonical_name
+  PASS: validateDecisions — rejects canonical_name on non-new decisions
+  PASS: validateDecisions — rejects unknown top-level decision key
+  PASS: validateDecisions — rejects unknown top-level document key
+  PASS: validateDecisions — rejects disallowed draft_fields key
+  PASS: validateDecisions — rejects controlled field in draft_fields
+  PASS: validateDecisions — rejects non-object draft_fields
+  PASS: validateDecisions — rejects wrong schema_version
+  PASS: validateDecisions — rejects wrong run_id
+  PASS: validateDecisions — rejects unknown item_digest
+  PASS: validateDecisions — rejects invalid decision value
+  PASS: validateDecisions — rejects update for item with no existing_match
+  PASS: validateDecisions — rejects missing reason
+  PASS: validateDecisions — rejects duplicate item_digest
+  PASS: validateDecisions — rejects workload_digest mismatch
+  PASS: validateDecisions — rejects insufficient decision count
+  PASS: validateDecisions — accepts all valid decision types
+  PASS: validateDecisions — rejects oversize reason
+  PASS: validateDecisions — rejects non-object decisions array element
+
+--- Preflight ---
+  PASS: runPreflight — succeeds for valid decisions
+  PASS: runPreflight — detects ID collision: two new items with same target
+  PASS: runPreflight — detects collision between new and update for same skill
+
+--- Draft Building ---
+  PASS: buildNewDraft — produces new record with all required fields
+  PASS: buildUpdateDraft — preserves all existing semantic/curation fields
+  PASS: buildUpdateDraft — preserves display_name from draft_fields
+
+--- Apply Decisions ---
+  PASS: applyDecisions — new writes draft via injected writer
+  PASS: applyDecisions — provenance_blocked items appear in outcomes
+  PASS: applyDecisions — update writes and preserves fields
+  PASS: applyDecisions — non-writable terminals produce no writes
+  PASS: applyDecisions — dry-run does not write
+  PASS: applyDecisions — preflight failure (collision) throws
+
+--- Idempotence ---
+  PASS: computeDecisionsDigest — deterministic
+  PASS: computeDecisionsDigest — different decisions give different digests
+  PASS: checkAlreadyFinalized — returns not finalized when no file
+  PASS: checkAlreadyFinalized — returns same=true for identical digest
+  PASS: checkAlreadyFinalized — returns same=false for different digest
+  PASS: checkAlreadyFinalized — repeat finalize with same decisions is no-op
+
+--- Integration ---
+  PASS: integration: prepare → load → decisions → finalize (new)
+  PASS: integration: stale candidate JSONL after prepare is rejected
+  PASS: integration: workload rejections include provenance_blocked items
+  PASS: integration: update preserves existing record fields end-to-end
+
+--- Outcome Report ---
+  PASS: writeOutcomeReport produces valid report file
+
+--- Provenance Chain ---
+  PASS: provenance: exact-match snapshot resolution succeeds
+  PASS: provenance: candidate missing provenance is blocked
+  PASS: provenance: wrong blob OID in provenance is blocked
+  PASS: provenance: missing snapshot manifest is blocked
+  PASS: provenance: workload binds snapshot manifests raw hash, edit after prepare rejected
+  PASS: provenance: new draft uses pinned provenance ref, not later registry ref
+  PASS: provenance: all candidate outcomes remain complete (provenance_blocked tracked)
+
+69 passed, 0 failed

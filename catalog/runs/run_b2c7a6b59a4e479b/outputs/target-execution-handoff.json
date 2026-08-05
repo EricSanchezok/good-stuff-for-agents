@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "kind": "target_execution_handoff",
+  "run_id": "run_b2c7a6b59a4e479b",
+  "paused_at": "2026-08-05T12:39:22.883Z",
+  "context_digest": "sha256:a9dc77eff7858e7ea2f2c37cc4587bd1e71848d75238b6049d3cfc1ebef075b8",
+  "intents": [
+    {
+      "domain": "demand",
+      "reason": "Controller-bound issue demand: 1 explicit skill IDs",
+      "source": "issue_demand",
+      "score": 0.95,
+      "seed_skill_ids": [
+        "skl_coderabbit-autofix-src-https-github-com-coderabbit-7ec3dc4b-skills-8f2a22eb-skills-autofix-skill-md_7ec3dc4b"
+      ],
+      "max_analysis_budget": 1
+    }
+  ],
+  "required_owners": [
+    "demand"
+  ],
+  "evidence_budget": [
+    1
+  ],
+  "evidence_index_digest": "sha256:f035f3533d1003d3963ba9a6a27340e189b422261b7ef9fc70b2920be220fc92",
+  "session_isolation": "per_intent"
+}
