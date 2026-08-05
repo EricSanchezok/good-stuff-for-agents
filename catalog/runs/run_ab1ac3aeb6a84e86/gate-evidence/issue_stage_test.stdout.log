@@ -1,0 +1,23 @@
+ok - checkGhAuth reports missing gh CLI gracefully
+ok - checkGhAuth reports unauthenticated gracefully
+ok - prepare fetches multiple pages, filters PRs, and emits workload_digest
+ok - prepare with gh unavailable returns snapshot_complete=false
+ok - finalize of incomplete snapshot produces blocked stage with all_open_issues_processed=false
+ok - real default seam uses only injected execFile for dry-run fetch
+ok - real default seam uses only injected execFile for apply
+ok - finalize rejects workload with mismatched workload_digest
+ok - finalize rejects drafts with wrong workload_digest
+ok - finalize rejects drafts with missing issue_binding
+ok - finalize rejects when draft is missing for an accepted issue
+ok - finalize rejects extra draft for unknown issue
+ok - finalize produces valid stage shape for accepted issues (dry run)
+ok - apply mode posts one comment per eligible issue
+ok - dedup prevents repeat comment on unchanged digest
+ok - TOCTOU mismatch blocks reply and persists reply_blocked
+ok - injection intake is held_for_review without re-fetch or comment
+ok - assessment build failure causes finalize to fail (not emit null-path entry)
+ok - rejected issues appear in scan total and assessments
+ok - scan.by_state reconciles total = open+acknowledged+fulfilled+blocked
+ok - CLI rejects unknown flags
+ok - unchanged content dedups regardless of fulfillment change
+22 issue stage orchestrator tests passed

@@ -1,0 +1,15 @@
+{
+  "assessment_digest": null,
+  "comment_id": null,
+  "content_digest": "sha256:2fa72b42540a38a81c240c64ccba54e3e3a173722ba6542b8fff273bf0d7ae03",
+  "created_at": "2026-08-05T11:36:23.065Z",
+  "dedup_fingerprint": "sha256:73ecc063f44c965949583f373ef30269759864f500c6ad3199e6f523d733f36d",
+  "issue_number": 2,
+  "kind": "canonical_issue_response",
+  "notes": "reply crashed: Canonical response collision at /Users/eric/projects/good-stuff-for-agents/catalog/issues/cir_n2_no_action_99e6f523d733f36d.json",
+  "repository": "EricSanchezok/good-stuff-for-agents",
+  "response_id": "cir_n2_reply_blocked_0000000000000000",
+  "response_variant": "reply_blocked",
+  "schema_version": 3,
+  "template_version": "issue-factual-v1"
+}

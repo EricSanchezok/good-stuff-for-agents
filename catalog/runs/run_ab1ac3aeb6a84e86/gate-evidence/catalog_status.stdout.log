@@ -1,0 +1,96 @@
+{
+  "validation": {
+    "ok": true,
+    "errors": [],
+    "warnings": []
+  },
+  "manifest": {
+    "catalog_hash": "sha256:0d9c4ef632445d8b096d961898b91e8dfa6c7bde0bc951df28010efa2007d250",
+    "counts": {
+      "domains": 0,
+      "packs": 0,
+      "skills": 2,
+      "sources": 17
+    },
+    "generated_at": "2026-08-02T07:04:34.160Z",
+    "schema_version": 1,
+    "shards": [
+      "catalog/indexes/shards/skills-00000.jsonl"
+    ]
+  },
+  "docs_drift_ok": false,
+  "docs_drift": [
+    {
+      "path": "docs/sources/src_https-github-com-anthropics-skills-anthropic-agent-skills_04f79b56.md",
+      "type": "changed"
+    },
+    {
+      "path": "docs/sources/src_https-github-com-coderabbitai-skills-coderabbit-skills_8f2a22eb.md",
+      "type": "changed"
+    },
+    {
+      "path": "docs/sources/src_https-github-com-coreyhaines31-marketingskills-marketing-skills-corey-haines_ef920698.md",
+      "type": "changed"
+    },
+    {
+      "path": "docs/sources/src_https-github-com-cuga-project-cuga-agent-cuga-agent-ibm-research_5709bc42.md",
+      "type": "changed"
+    },
+    {
+      "path": "docs/sources/src_https-github-com-figma-mcp-server-guide-figma-mcp-skills_dde79ddd.md",
+      "type": "changed"
+    },
+    {
+      "path": "docs/sources/src_https-github-com-fujishigetemma-semantic-scholar-mcp-semantic-scholar-mcp-server_1c7ee5c5.md",
+      "type": "changed"
+    },
+    {
+      "path": "docs/sources/src_https-github-com-hermeticormus-markdown-discipline-skills-markdown-discipline-skills_ddaf87e0.md",
+      "type": "changed"
+    },
+    {
+      "path": "docs/sources/src_https-github-com-jupyterlab-jupyter-ai-jupyter-ai-jupyterlab_e47112b5.md",
+      "type": "changed"
+    },
+    {
+      "path": "docs/sources/src_https-github-com-k-dense-ai-scientific-agent-skills-k-dense-scientific-agent-skills_5bdb6d39.md",
+      "type": "changed"
+    },
+    {
+      "path": "docs/sources/src_https-github-com-kozz36-frontend-designer-skill-frontend-designer-skill_929a1309.md",
+      "type": "changed"
+    },
+    {
+      "path": "docs/sources/src_https-github-com-mcollina-skills-matteo-collina-s-skills_faf2f289.md",
+      "type": "changed"
+    },
+    {
+      "path": "docs/sources/src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e.md",
+      "type": "changed"
+    },
+    {
+      "path": "docs/sources/src_https-github-com-openclaw-agent-skills-openclaw-agent-skills_088582b8.md",
+      "type": "changed"
+    },
+    {
+      "path": "docs/sources/src_https-github-com-phuryn-pm-skills-pm-skills-marketplace-phuryn_8ac36372.md",
+      "type": "changed"
+    },
+    {
+      "path": "docs/sources/src_https-github-com-product-on-purpose-pm-skills-pm-skills-product-on-purpose_f2ce15e5.md",
+      "type": "changed"
+    },
+    {
+      "path": "docs/sources/src_https-github-com-southleft-skills-for-figma-skills-for-figma-southleft_ea9f2b3d.md",
+      "type": "changed"
+    },
+    {
+      "path": "docs/sources/src_https-github-com-thatrebeccarae-claude-marketing-claude-marketing-rebecca-rae-barton_8a108923.md",
+      "type": "changed"
+    }
+  ],
+  "public_boundary_ok": true,
+  "public_boundary_errors": [],
+  "public_boundary_warnings": [],
+  "repo": "/Users/eric/projects/good-stuff-for-agents"
+}
