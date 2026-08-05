@@ -51,7 +51,15 @@ export function createIssueLedgerStore({ baseDir = CATALOG, issuesDirectory = CA
     const path = resolveWithin(baseDir, issuesDirectory, `${record.response_id}.json`)
     const content = stableStringify(record)
     if (existsSync(path)) {
-      if (readText(path) !== content) {
+      // Write-once idempotency: the response_id is content-derived and
+      // stable across runs for the same issue/digest/variant, but
+      // created_at is a fresh timestamp on every build. Compare semantic
+      // content (created_at stripped) so re-finalizing an unchanged issue
+      // is a no-op instead of a collision. Real content differences
+      // (tampering, changed assessment) still collide.
+      let existing
+      try { existing = JSON.parse(readText(path)) } catch { existing = null }
+      if (!existing || stableStringify(stripCreatedAt(existing)) !== stableStringify(stripCreatedAt(record))) {
         throw new Error(`Canonical response collision at ${path}`)
       }
       return path
@@ -86,4 +94,10 @@ export function createIssueLedgerStore({ baseDir = CATALOG, issuesDirectory = CA
     loadAllCanonicalResponses,
     issuesRoot,
   })
+}
+
+function stripCreatedAt(record) {
+  if (!record || typeof record !== 'object' || Array.isArray(record)) return record
+  const { created_at, ...rest } = record
+  return rest
 }
