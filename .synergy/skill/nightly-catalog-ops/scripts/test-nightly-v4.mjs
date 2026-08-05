@@ -1195,6 +1195,129 @@ test('e2e: resume with target-result missing fails closed', async () => {
   }
 });
 
+test('e2e: pause for assessment → write drafts → resume to completed', async () => {
+  const root = tmpDir();
+  let pausedRunId;
+  try {
+    // Step 1: execute → expect paused_for_assessment
+    const freshResult = await executeNightly({
+      runsRoot: root,
+      repositoryRoot: root,
+      repositoryAdapter: cleanRepoAdapter(),
+      changedPathsCollector: () => [],
+      maintenanceExecutor: okMaintenanceExecutor(),
+      issueExecutor: okIssueExecutor({
+        ok: true,
+        newUnassessed: [
+          { issue_number: 1, title: 'Issue 1' },
+          { issue_number: 2, title: 'Issue 2' },
+        ],
+        _assessed_unassessed: false,
+      }),
+      contextCollector: okContextCollector(),
+      targetSelector: () => ({ intents: [], total: 0 }),
+      timestamp: '2026-07-03T10:00:00.000Z',
+    });
+
+    assert.equal(freshResult.status, 'paused_for_assessment');
+    assert.ok(freshResult.new_unassessed.length === 2);
+    pausedRunId = freshResult.run_id;
+
+    // Step 2: write workload + drafts as the outer agent would
+    const runDir = join(root, pausedRunId);
+    mkdirSync(runDir, { recursive: true });
+    const makeIntake = (n) => ({
+      schema_version: 1,
+      kind: 'github_issue_intake',
+      intake_status: 'accepted',
+      issue_binding: {
+        repository: 'EricSanchezok/good-stuff-for-agents',
+        issue_number: n,
+        updated_at: '2026-01-15T01:00:00.000Z',
+        content_digest: `sha256:${'0'.repeat(63)}${n}`,
+      },
+    });
+    const workload = {
+      schema_version: 1,
+      kind: 'issue_workload',
+      run_id: pausedRunId,
+      repository: 'EricSanchezok/good-stuff-for-agents',
+      snapshot_complete: true,
+      workload_digest: 'sha256:' + 'a'.repeat(64),
+      all_accepted_issues: [
+        { issue_number: 1, intake: makeIntake(1) },
+        { issue_number: 2, intake: makeIntake(2) },
+      ],
+    };
+    const workloadPath = join(runDir, 'issue-workload.json');
+    writeFileSync(workloadPath, JSON.stringify(workload));
+
+    const mkDraft = (n) => {
+      const binding = { ...makeIntake(n).issue_binding };
+      return {
+        issue_number: n,
+        issue_binding: { ...binding },
+        intake: makeIntake(n),
+        fulfillment_assessment: {
+          schema_version: 1,
+          kind: 'github_issue_fulfillment_assessment',
+          issue_binding: { ...binding },
+          classification: {
+            kind: 'skill_request',
+            criteria: [{ id: 'criterion-1', text: 'Provide test utility capability.' }],
+          },
+          fulfillment: {
+            status: 'not_satisfied',
+            rationale: 'Validated against canonical published catalog records.',
+            criteria: [{ criterion_id: 'criterion-1', status: 'gap', evidence: [] }],
+          },
+          draft_response: { recommended: false, body: null },
+          human_checkpoint: { required: true, action: 'review_only' },
+        },
+        evidence_index: {},
+        public_evidence_boundary: 'Published catalog skills and packs only',
+        notes: '',
+      };
+    };
+    const writeResult = writeIssueDrafts({
+      runId: pausedRunId,
+      workloadPath,
+      runsRoot: root,
+      drafts: [mkDraft(1), mkDraft(2)],
+    });
+    assert.ok(writeResult.coverage.covered === 2);
+
+    // Step 3: resume → must complete with exactly one context event
+    const resumeResult = await resumeNightly({
+      runId: pausedRunId,
+      runsRoot: root,
+      repositoryRoot: root,
+      repositoryAdapter: cleanRepoAdapter(),
+      issueExecutor: okIssueExecutor({
+        ok: true,
+        newUnassessed: [],
+        _assessed_unassessed: true,
+      }),
+      contextCollector: okContextCollector(),
+      targetSelector: () => ({ intents: [], total: 0 }),
+      gateExecutor: okGateExecutor(true),
+      auditPlanner: () => ({ ready: true, errors: [], warnings: [] }),
+      timestamp: '2026-07-03T10:05:00.000Z',
+    });
+
+    assert.equal(resumeResult.status, 'completed');
+    assert.equal(resumeResult.outcome, 'no_pack_clean');
+
+    // Chain must contain exactly one context event
+    const chain = readChain({ runsRoot: root, runId: pausedRunId });
+    assert.ok(chain.ok, chain.error);
+    const contextEvents = chain.events.filter((e) => e.phase === 'context');
+    assert.equal(contextEvents.length, 1, 'exactly one context event expected');
+  } finally {
+    rmSync(root, { recursive: true, force: true });
+  }
+});
+
 test('target-result writer: non-promoted without gap/error rejected', () => {
   const root = tmpDir();
   try {

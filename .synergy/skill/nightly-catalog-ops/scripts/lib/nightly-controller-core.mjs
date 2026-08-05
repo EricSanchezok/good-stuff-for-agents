@@ -1175,15 +1175,8 @@ async function _resumeFromAssessment({
     }),
   });
 
-  // The chain already has the pause event at the end. Now append context.
-  // We read the chain to get the current last event for proper linking.
-  appendPhaseEvent({
-    runsRoot, runId, phase: 'context', timestamp: ts(),
-    outputDescriptors: [],
-    inputDigests: [],
-  });
-
-  // Now run the normal context stage
+  // runContextStage appends the single context phase event itself.
+  // A manual append here would duplicate it and fail the chain.
   const contextResult = runContextStage({
     runId, runsRoot, repositoryRoot, contextCollector,
     issueResult, ts, onProgress,
