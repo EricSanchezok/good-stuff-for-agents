@@ -1,0 +1,27 @@
+{
+  "validation": {
+    "ok": true,
+    "errors": [],
+    "warnings": []
+  },
+  "manifest": {
+    "catalog_hash": "sha256:afc4227903bf519a129b267574088f36a8730b7e240520800e4d52e94739c6ce",
+    "counts": {
+      "domains": 0,
+      "packs": 0,
+      "skills": 2,
+      "sources": 17
+    },
+    "generated_at": "2026-08-05T12:13:51.115Z",
+    "schema_version": 1,
+    "shards": [
+      "catalog/indexes/shards/skills-00000.jsonl"
+    ]
+  },
+  "docs_drift_ok": true,
+  "docs_drift": [],
+  "public_boundary_ok": true,
+  "public_boundary_errors": [],
+  "public_boundary_warnings": [],
+  "repo": "/Users/eric/projects/good-stuff-for-agents"
+}

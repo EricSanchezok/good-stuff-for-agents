@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "kind": "issue_semantic_drafts",
+  "run_id": "run_02b62b3603d14352",
+  "paused_at": "2026-08-05T12:13:03.337Z",
+  "unassessed": [
+    {
+      "issue_number": 6,
+      "title": "Issue #6"
+    },
+    {
+      "issue_number": 5,
+      "title": "Issue #5"
+    },
+    {
+      "issue_number": 4,
+      "title": "Issue #4"
+    },
+    {
+      "issue_number": 3,
+      "title": "Issue #3"
+    },
+    {
+      "issue_number": 2,
+      "title": "Issue #2"
+    },
+    {
+      "issue_number": 1,
+      "title": "Issue #1"
+    }
+  ],
+  "workload_path": "/Users/eric/projects/good-stuff-for-agents/catalog/runs/run_02b62b3603d14352/issue-workload.json"
+}

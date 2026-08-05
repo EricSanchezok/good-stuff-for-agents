@@ -1,0 +1,51 @@
+ok - issue-intake agent is a zero-tool pure-reasoning agent
+ok - legitimate issue is accepted without privileged flags
+ok - common gh camelCase fields normalize to the canonical binding
+ok - role spoofing and instruction override are marked as injection indicators
+ok - fake maintainer authorization is marked but grants no authority
+ok - secret exfiltration is marked as a privileged action
+ok - shell execution is marked as a privileged action
+ok - git commit and push are marked as privileged actions
+ok - Synergy config mutation is marked as a privileged action
+ok - Issue comment close and pull request creation are marked as GitHub mutation
+ok - dependency installation is marked as a privileged action
+ok - gate override is marked as a privileged action
+ok - dangerous schemes private hosts and attachments remain unfetched leads
+ok - wrong repository is rejected fail-closed
+ok - incomplete comments pagination is rejected
+ok - incomplete labels pagination is rejected
+ok - comment author normalization accepts login only
+ok - oversized whole input is rejected before field processing
+ok - oversized body is rejected
+ok - excessive comment count is rejected
+ok - oversized individual comment is rejected
+ok - oversized aggregate comments are rejected
+ok - excessive URL count is rejected
+ok - Markdown images are attachment leads regardless of host path or extension
+ok - Markdown image scanner handles escaped and balanced delimiters
+ok - Markdown reference images normalize escaped nested case and whitespace labels
+ok - malformed Markdown image openers fail closed as reviewable attachments
+ok - malformed Markdown image openers enforce the attachment budget
+ok - repeated Markdown image destinations each consume attachment budget
+ok - Markdown image references enforce the attachment budget without file extensions
+ok - excessive attachment count is rejected
+ok - DNS terminal dots preserve localhost and reserved host classification
+ok - IPv6 non-public reserved and mapped IPv4 hosts are classified statically
+ok - intake budgets expose every implemented byte and count field
+ok - content digest changes when issue content changes
+ok - all five fulfillment states accept their closed valid matrices
+ok - TOCTOU updated_at mismatch rejects the assessment
+ok - TOCTOU content_digest mismatch rejects the assessment
+ok - satisfied criteria require trusted evidence and gap criteria reject catalog evidence
+ok - overall fulfillment statuses reject every incompatible criterion matrix
+ok - unsafe classification criterion and fulfillment imply each other
+ok - non-demand classification maps only to ambiguous fulfillment
+ok - zero criteria cannot produce vacuous fulfillment success
+ok - publication score cannot be fulfillment evidence
+ok - unknown evidence is rejected
+ok - trusted canonical ID with a non-canonical mismatched path is rejected
+ok - nested forbidden assessment keys are rejected recursively
+ok - assessment cannot weaken the human checkpoint or add authorization
+ok - intake CLI preserves accepted and rejected JSON behavior
+ok - fulfillment CLI preserves success and TOCTOU failure JSON behavior
+50 issue intake security tests passed
