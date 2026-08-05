@@ -868,14 +868,10 @@ function recomputePackProofDigest(record, skillRecords) {
 
   try {
     const analysesRoot = join(CATALOG, 'analyses')
-    const requestedNames = new Map(analysisIds.map((analysisId) => [`${analysisId}.md`, analysisId]))
     for (const path of listFiles(analysesRoot, candidate => candidate.endsWith('.md'))) {
-      const name = path.slice(Math.max(path.lastIndexOf('/'), path.lastIndexOf('\\')) + 1)
-      const requestedId = requestedNames.get(name)
-      if (!requestedId) continue
       const analysis = parseMarkdownFrontmatterFile(path)
-      if (analysis.analysis_id !== requestedId) return null
-      analyses.set(requestedId, analysis)
+      if (!analysis || !analysis.analysis_id || !analysisIds.includes(analysis.analysis_id)) continue
+      analyses.set(analysis.analysis_id, analysis)
     }
 
     const relationFiles = readdirSync(join(CATALOG, 'relations'))

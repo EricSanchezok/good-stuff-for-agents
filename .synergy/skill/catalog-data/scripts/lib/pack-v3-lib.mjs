@@ -1061,17 +1061,12 @@ export function loadAnalysesByIds(analysisIds) {
   } catch { /* no analyses directory */ }
 
   for (const path of paths) {
-    const requestedId = requestedNames.get(path.slice(path.lastIndexOf('/') + 1))
-      ?? requestedNames.get(path.slice(path.lastIndexOf('\\') + 1))
-    if (!requestedId) continue
     const analysis = parseMarkdownFrontmatterFile(path)
-    if (analysis.analysis_id !== requestedId) {
-      throw new Error(`Analysis file ${path} declares ${analysis.analysis_id ?? 'no analysis_id'}, expected ${requestedId}`)
-    }
+    if (!analysis || !analysis.analysis_id || !ids.has(analysis.analysis_id)) continue
     if (analysis.schema_version !== 2) {
       throw new Error(`analysis ${path} has schema_version ${analysis.schema_version}, only v2 is supported`)
     }
-    result.set(requestedId, analysis)
+    result.set(analysis.analysis_id, analysis)
   }
 
   for (const id of ids) {
