@@ -1,0 +1,14 @@
+{
+  "assessment_digest": null,
+  "comment_id": null,
+  "content_digest": "sha256:d019cdad8c601a492001b1ffe4e1c854130c582911c9a72c3e84ec033d6cde40",
+  "created_at": "2026-08-05T11:13:02.201Z",
+  "dedup_fingerprint": "sha256:8bb957a94d4d5c7df22423876fb1d3427874a2d1da4855e8cdcc943b8edd8da9",
+  "issue_number": 1,
+  "kind": "canonical_issue_response",
+  "repository": "EricSanchezok/good-stuff-for-agents",
+  "response_id": "cir_n1_no_action_cdcc943b8edd8da9",
+  "response_variant": "no_action",
+  "schema_version": 3,
+  "template_version": "issue-factual-v1"
+}
