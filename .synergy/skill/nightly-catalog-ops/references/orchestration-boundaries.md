@@ -22,7 +22,7 @@ When no supported candidate remains, use `no_pack_clean`. Missing infrastructure
 
 ## Run Blocking
 
-Block or fail the run when maintenance has a provider incident, Issue pagination or terminals are incomplete, the context cannot be bound, an owner stage times out, the trusted gate fails, the seal cannot cover all evidence, or the audit is non-ready. A terminal run is not continued.
+Block or fail the run when maintenance has a total source-sync failure (every attempted source hit a provider incident), Issue pagination or terminals are incomplete, the context cannot be bound, an owner stage times out, the trusted gate fails, the seal cannot cover all evidence, or the audit is non-ready. Partial provider incidents are recorded and the run continues. A terminal run is not continued.
 
 ## Fixed Issue Boundary
 

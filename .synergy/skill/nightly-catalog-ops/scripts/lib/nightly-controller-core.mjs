@@ -984,8 +984,14 @@ export async function executeNightly({
       runId, runsRoot, repositoryRoot, maintenanceExecutor, ts, onProgress,
     });
 
-    // Provider incidents → blocked
-    if (maintenanceResult.providerIncidents && maintenanceResult.providerIncidents.length > 0) {
+    // Provider incidents: partial source failures continue the run;
+    // only a total sync failure (no source synced, no source-level
+    // result at all — every attempt hit a provider incident) blocks.
+    const syncSucceededCount = (maintenanceResult.sourceResults || [])
+      .filter(sr => sr.ok === true).length;
+    const syncAttemptedCount = (maintenanceResult.sourceResults || []).length;
+    const totalIncidents = (maintenanceResult.providerIncidents || []).length;
+    if (totalIncidents > 0 && syncSucceededCount === 0 && syncAttemptedCount === 0) {
       const incidentDescs = maintenanceResult.providerIncidents.map(i =>
         `${i.source_id}: ${i.error}${i.status_code ? ` (${i.status_code})` : ''}`,
       ).join('; ');

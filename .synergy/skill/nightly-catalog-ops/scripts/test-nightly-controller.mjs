@@ -322,6 +322,92 @@ test('provider incident blocks before context', async () => {
 });
 
 // ══════════════════════════════════════════════════════════════════════
+//  4b. Partial provider incident → run continues past maintenance
+// ══════════════════════════════════════════════════════════════════════
+
+test('partial provider incident continues past maintenance', async () => {
+  const root = tmpDir();
+  try {
+    const result = await executeNightly({
+      runsRoot: root,
+      repositoryRoot: root,
+      repositoryAdapter: cleanRepoAdapter(),
+      changedPathsCollector: okChangedPathsCollector([]),
+      maintenanceExecutor: async () => ({
+        ok: true,
+        health: 'ok',
+        sourceResults: [
+          { source_id: 'src_ok', ok: true, error: undefined, skills_found: 3 },
+        ],
+        providerIncidents: [
+          { source_id: 'src_test', provider: 'github', error: 'HTTP 403 rate-limited', status_code: 403 },
+        ],
+      }),
+      issueExecutor: okIssueExecutor(),
+      contextCollector: okContextCollector(),
+      targetSelector: () => ({
+        intents: [{ domain: 'test', reason: 'test', source: 'test', score: 0.5, seed_skill_ids: [], max_analysis_budget: 1 }],
+        total: 1, max_targets: 2, capped: false, has_demand: false,
+      }),
+      targetExecutor: okTargetExecutor([]),
+      gateExecutor: okGateExecutor(true),
+      auditPlanner: okAuditPlanner(true),
+      timestamp: '2026-01-15T00:00:03.100Z',
+    });
+
+    // Partial incident must NOT block: run continues past maintenance.
+    // Empty candidate results without exhaustion proof → insufficient_evidence
+    // (fail-closed), which still proves the run was not blocked by the incident.
+    assert.notEqual(result.status, 'blocked', 'partial incident must not block the run');
+    assert.equal(result.status, 'insufficient_evidence');
+    const chain = readChain({ runsRoot: root, runId: result.run_id });
+    assert.ok(chain.ok);
+    assert.ok(chain.events.some(e => e.phase === 'context'), 'run should reach context despite partial incident');
+  } finally {
+    rmSync(root, { recursive: true, force: true });
+  }
+});
+
+// ══════════════════════════════════════════════════════════════════════
+//  4c. Total provider failure → blocked before context
+// ══════════════════════════════════════════════════════════════════════
+
+test('total provider failure blocks before context', async () => {
+  const root = tmpDir();
+  try {
+    const result = await executeNightly({
+      runsRoot: root,
+      repositoryRoot: root,
+      repositoryAdapter: cleanRepoAdapter(),
+      changedPathsCollector: okChangedPathsCollector([]),
+      maintenanceExecutor: async () => ({
+        ok: true,
+        health: 'degraded',
+        sourceResults: [], // no source-level result at all
+        providerIncidents: [
+          { source_id: 'src_a', provider: 'github', error: 'HTTP 403', status_code: 403 },
+          { source_id: 'src_b', provider: 'github', error: 'HTTP 500', status_code: 500 },
+        ],
+      }),
+      issueExecutor: okIssueExecutor(),
+      contextCollector: okContextCollector(),
+      timestamp: '2026-01-15T00:00:03.200Z',
+    });
+
+    assert.equal(result.status, 'blocked');
+    assert.equal(result.outcome, null);
+    assert.ok(result.error && result.error.includes('provider_incident_blocked'));
+
+    const chain = readChain({ runsRoot: root, runId: result.run_id });
+    assert.ok(chain.ok);
+    assert.equal(chain.lastEvent.phase, 'terminal');
+    assert.ok(chain.events.length < 5);
+  } finally {
+    rmSync(root, { recursive: true, force: true });
+  }
+});
+
+// ══════════════════════════════════════════════════════════════════════
 //  5. Target timeout/interrupted
 // ══════════════════════════════════════════════════════════════════════
 
