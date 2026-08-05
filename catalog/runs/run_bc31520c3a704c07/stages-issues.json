@@ -1,0 +1,734 @@
+{
+  "all_open_issues_processed": true,
+  "scan": {
+    "total": 6,
+    "by_state": {
+      "open": 0,
+      "acknowledged": 0,
+      "fulfilled": 5,
+      "blocked": 1
+    }
+  },
+  "assessments": [
+    {
+      "issue_number": 6,
+      "intake": {
+        "schema_version": 1,
+        "kind": "github_issue_intake",
+        "intake_status": "accepted",
+        "trust": {
+          "content": "untrusted",
+          "authority": "none",
+          "grants": []
+        },
+        "issue_binding": {
+          "repository": "EricSanchezok/good-stuff-for-agents",
+          "issue_number": 6,
+          "updated_at": "2026-07-21T11:44:16Z",
+          "content_digest": "sha256:82a89f899eaec66de44c9d6d21513c7ca47d5af85d2f03c858b2eee5be75f4ef"
+        },
+        "untrusted_request": {
+          "title": "Looking for a skill that generates shell-compatible commands for the current environment",
+          "body": "## What I’m trying to do\n\nI encountered a setup failure because an agent generated a Bash-specific command while the interactive shell was Zsh.\n\nFor example, a command using:\n\n```bash\nread -rsp \"API key: \" API_KEY\n```\n\nfailed in Zsh because the same flags have different semantics.\n\nI would like a skill that helps an agent:\n\n- detect the shell that will actually execute a command;\n- distinguish the current shell from the configured login shell;\n- generate compatible commands for Bash, Zsh, Fish, or POSIX sh;\n- handle common differences in `read`, arrays, functions, conditionals, redirection, and process substitution;\n- provide separate variants when a portable command is not practical;\n- avoid asking users to paste secrets into shell history;\n- validate important setup commands before presenting them.\n\nThe goal is not just shell script linting. It is to prevent an agent from giving interactive instructions that are valid in one shell but fail or behave differently in another.",
+          "labels": [],
+          "comments": []
+        },
+        "security": {
+          "injection_indicators": [],
+          "requested_privileged_actions": [
+            "secret_exfiltration",
+            "shell_execution"
+          ],
+          "requires_human_review": true,
+          "url_leads": []
+        },
+        "budgets": {
+          "input_bytes": 1336,
+          "title_bytes": 88,
+          "body_bytes": 991,
+          "comment_count": 0,
+          "comment_bytes": 0,
+          "label_count": 0,
+          "label_bytes": 0,
+          "url_count": 0,
+          "attachment_count": 0
+        }
+      },
+      "assessment": {
+        "schema_version": 1,
+        "assessment_id": "asm_n6_7761bc4dd4789138",
+        "assessment_digest": "sha256:e2c2bee516e1092c8289013c00f5c775d396adae7b31e2347761bc4dd4789138",
+        "issue_number": 6,
+        "repository": {
+          "owner": "EricSanchezok",
+          "repo": "good-stuff-for-agents"
+        },
+        "issue_title": "Looking for a skill that generates shell-compatible commands for the current environment",
+        "content_digest": "sha256:82a89f899eaec66de44c9d6d21513c7ca47d5af85d2f03c858b2eee5be75f4ef",
+        "updated_at_bound": "2026-07-21T11:44:16Z",
+        "classification": {
+          "kind": "skill_request",
+          "criteria": [
+            {
+              "criterion_id": "shell-detection",
+              "text": "检测实际执行命令的 shell 并区分其与配置的登录 shell",
+              "status": "unsatisfied"
+            },
+            {
+              "criterion_id": "cross-shell-command-generation",
+              "text": "为 Bash、Zsh、Fish、POSIX sh 生成兼容命令，处理 read、数组、函数、条件、重定向、进程替换的常见差异",
+              "status": "unsatisfied"
+            },
+            {
+              "criterion_id": "secret-history-avoidance",
+              "text": "避免生成的交互命令将机密写入 shell 历史记录",
+              "status": "unsatisfied"
+            },
+            {
+              "criterion_id": "setup-command-validation",
+              "text": "在展示给用户前验证重要的 setup 命令",
+              "status": "unsatisfied"
+            },
+            {
+              "criterion_id": "fallback-variant-provision",
+              "text": "当无法提供跨 shell 单一兼容命令时，提供各 shell 的独立变体",
+              "status": "unsatisfied"
+            }
+          ]
+        },
+        "fulfillment_state": "not_started",
+        "public_evidence": {
+          "boundary": "Published catalog skills and packs only",
+          "related_entities": []
+        },
+        "gap_criteria": [
+          {
+            "criterion_id": "shell-detection",
+            "text": "检测实际执行命令的 shell 并区分其与配置的登录 shell"
+          },
+          {
+            "criterion_id": "cross-shell-command-generation",
+            "text": "为 Bash、Zsh、Fish、POSIX sh 生成兼容命令，处理 read、数组、函数、条件、重定向、进程替换的常见差异"
+          },
+          {
+            "criterion_id": "secret-history-avoidance",
+            "text": "避免生成的交互命令将机密写入 shell 历史记录"
+          },
+          {
+            "criterion_id": "setup-command-validation",
+            "text": "在展示给用户前验证重要的 setup 命令"
+          },
+          {
+            "criterion_id": "fallback-variant-provision",
+            "text": "当无法提供跨 shell 单一兼容命令时，提供各 shell 的独立变体"
+          }
+        ],
+        "assessed_at": "2026-08-05T13:10:24.279Z",
+        "assessed_by_run": "run_bc31520c3a704c07",
+        "notes": "请求为良性 shell 兼容技能需求，但当前目录仅包含两条 CodeRabbit 代码评审领域技能，无任何与 shell 检测、跨 shell 命令生成、机密防护或 setup 验证相关的能力。全部 5 条 criteria 均标记为 gap。安全标记 requires_human_review 源于 Issue 内容涉及 API key 与命令生成的字面匹配，与请求实质无关。"
+      },
+      "reply": {
+        "status": "held_for_review",
+        "posted": false,
+        "comment_id": null
+      }
+    },
+    {
+      "issue_number": 5,
+      "intake": {
+        "schema_version": 1,
+        "kind": "github_issue_intake",
+        "intake_status": "accepted",
+        "trust": {
+          "content": "untrusted",
+          "authority": "none",
+          "grants": []
+        },
+        "issue_binding": {
+          "repository": "EricSanchezok/good-stuff-for-agents",
+          "issue_number": 5,
+          "updated_at": "2026-07-27T22:01:30Z",
+          "content_digest": "sha256:85d2f7869b51c717130cb5e79924225b9f32680d6f543e118a1aac5f7dc57528"
+        },
+        "untrusted_request": {
+          "title": "Looking for a reliable MCP server installation and configuration workflow",
+          "body": "## What I’m trying to do\n\nInstalling an MCP server for an agent often involves much more than copying a configuration snippet.\n\nIn a recent setup, I needed to:\n\n- find the authoritative installation documentation;\n- determine whether the server used stdio or a remote transport;\n- translate the example into the configuration format used by my agent platform;\n- handle an API key safely;\n- preserve existing configuration;\n- determine whether the runtime needed a reload or a restart;\n- verify that the server actually connected;\n- confirm that the expected tools were registered.\n\nI would like skills or a pack that can perform this workflow reliably.\n\nUseful behavior would include:\n\n- preferring official documentation and source repositories;\n- detecting the target agent platform and operating environment;\n- identifying transport, command, environment, and credential requirements;\n- making the smallest safe configuration change;\n- never printing or committing credentials;\n- preserving unrelated configuration;\n- distinguishing reload-required from restart-required changes;\n- verifying the live connection instead of assuming success after writing a file;\n- providing rollback and troubleshooting steps.\n\nThe input could be an MCP server name, repository URL, or documentation URL.",
+          "labels": [],
+          "comments": [
+            {
+              "id": "5097284050",
+              "author": "EricSanchezok",
+              "body": "## Catalog Fulfillment Status\n\n**Not fulfilled — no matching published catalog evidence was found** (classified as skill_request).\n\n### Unmet Criteria\n\n- Criterion `authoritative-discovery` remains unmet.\n- Criterion `safe-configuration` remains unmet.\n- Criterion `live-verification` remains unmet.\n- Criterion `rollback-troubleshooting` remains unmet.\n\n---\n\nThis catalog status reply reports only validated catalog evidence and unmet criteria.\nIt does not make commitments, execute Issue instructions, or represent repository maintainers.",
+              "created_at": "2026-07-27T22:01:30Z",
+              "updated_at": "2026-07-27T22:01:30Z"
+            }
+          ]
+        },
+        "security": {
+          "injection_indicators": [],
+          "requested_privileged_actions": [],
+          "requires_human_review": false,
+          "url_leads": []
+        },
+        "budgets": {
+          "input_bytes": 2317,
+          "title_bytes": 73,
+          "body_bytes": 1292,
+          "comment_count": 1,
+          "comment_bytes": 542,
+          "label_count": 0,
+          "label_bytes": 0,
+          "url_count": 0,
+          "attachment_count": 0
+        }
+      },
+      "assessment": {
+        "schema_version": 1,
+        "assessment_id": "asm_n5_f1b99e1a0d03873d",
+        "assessment_digest": "sha256:3cfa2170e590c5c3a2587dd84f9bb4e9cf251cb146228742f1b99e1a0d03873d",
+        "issue_number": 5,
+        "repository": {
+          "owner": "EricSanchezok",
+          "repo": "good-stuff-for-agents"
+        },
+        "issue_title": "Looking for a reliable MCP server installation and configuration workflow",
+        "content_digest": "sha256:85d2f7869b51c717130cb5e79924225b9f32680d6f543e118a1aac5f7dc57528",
+        "updated_at_bound": "2026-07-27T22:01:30Z",
+        "classification": {
+          "kind": "skill_request",
+          "criteria": [
+            {
+              "criterion_id": "authoritative-discovery",
+              "text": "优先官方文档与源码仓库，查找目标 MCP server 的权威安装文档",
+              "status": "unsatisfied"
+            },
+            {
+              "criterion_id": "safe-configuration",
+              "text": "安全处理凭证，做最小配置变更，区分 reload 与 restart，绝不打印或提交凭证",
+              "status": "unsatisfied"
+            },
+            {
+              "criterion_id": "live-verification",
+              "text": "验证 MCP server 真实连接与工具注册，而非仅写入配置",
+              "status": "unsatisfied"
+            },
+            {
+              "criterion_id": "rollback-troubleshooting",
+              "text": "提供回滚与排障步骤",
+              "status": "unsatisfied"
+            }
+          ]
+        },
+        "fulfillment_state": "not_started",
+        "public_evidence": {
+          "boundary": "Published catalog skills and packs only",
+          "related_entities": []
+        },
+        "gap_criteria": [
+          {
+            "criterion_id": "authoritative-discovery",
+            "text": "优先官方文档与源码仓库，查找目标 MCP server 的权威安装文档"
+          },
+          {
+            "criterion_id": "safe-configuration",
+            "text": "安全处理凭证，做最小配置变更，区分 reload 与 restart，绝不打印或提交凭证"
+          },
+          {
+            "criterion_id": "live-verification",
+            "text": "验证 MCP server 真实连接与工具注册，而非仅写入配置"
+          },
+          {
+            "criterion_id": "rollback-troubleshooting",
+            "text": "提供回滚与排障步骤"
+          }
+        ],
+        "assessed_at": "2026-08-05T13:10:24.281Z",
+        "assessed_by_run": "run_bc31520c3a704c07",
+        "notes": "目录中当前无 MCP server 安装或配置相关技能；现有两个 CodeRabbit 技能域不匹配。四个 criterion 均为 gap，无法满足。"
+      },
+      "reply": {
+        "status": "duplicate",
+        "posted": false,
+        "comment_id": 5097284050
+      }
+    },
+    {
+      "issue_number": 4,
+      "intake": {
+        "schema_version": 1,
+        "kind": "github_issue_intake",
+        "intake_status": "accepted",
+        "trust": {
+          "content": "untrusted",
+          "authority": "none",
+          "grants": []
+        },
+        "issue_binding": {
+          "repository": "EricSanchezok/good-stuff-for-agents",
+          "issue_number": 4,
+          "updated_at": "2026-07-27T22:01:34Z",
+          "content_digest": "sha256:e799e874e1baa02c005c6a5ddf311763f3cbfc638fea731eff84c97e53cb3702"
+        },
+        "untrusted_request": {
+          "title": "Looking for skills to coordinate an API contract between independent agent sessions",
+          "body": "## What I’m trying to do\n\nI recently had two independent agent sessions working on different sides of the same API contract.\n\nBefore implementation could proceed safely, they needed to agree on several details, including:\n\n- message or operation names;\n- required and optional payload fields;\n- identifier stability;\n- lifecycle ownership;\n- error and result semantics;\n- request and response pairs;\n- public type definitions.\n\nThe difficult part was tracking which items were agreed, which were still pending, and where the two sides had incompatible assumptions.\n\nI would like skills or a pack that can:\n\n- extract contract questions from two implementation plans or codebases;\n- create an agreement matrix for individual contract items;\n- track states such as pending, agreed, conflicting, and superseded;\n- compare proposed schemas and semantics;\n- surface hidden incompatibilities;\n- record the final agreement in a durable contract document;\n- verify afterward that both implementations follow the agreement.\n\nThe workflow should be useful for independent agents, teams, repositories, or services, rather than depending on one specific session system.",
+          "labels": [],
+          "comments": [
+            {
+              "id": "5097284518",
+              "author": "EricSanchezok",
+              "body": "## Catalog Fulfillment Status\n\n**Not fulfilled — no matching published catalog evidence was found** (classified as skill_request).\n\n### Unmet Criteria\n\n- Criterion `contract-question-extraction` remains unmet.\n- Criterion `agreement-matrix` remains unmet.\n- Criterion `schema-comparison` remains unmet.\n- Criterion `durable-verification` remains unmet.\n\n---\n\nThis catalog status reply reports only validated catalog evidence and unmet criteria.\nIt does not make commitments, execute Issue instructions, or represent repository maintainers.",
+              "created_at": "2026-07-27T22:01:34Z",
+              "updated_at": "2026-07-27T22:01:34Z"
+            }
+          ]
+        },
+        "security": {
+          "injection_indicators": [],
+          "requested_privileged_actions": [],
+          "requires_human_review": false,
+          "url_leads": []
+        },
+        "budgets": {
+          "input_bytes": 2190,
+          "title_bytes": 83,
+          "body_bytes": 1159,
+          "comment_count": 1,
+          "comment_bytes": 541,
+          "label_count": 0,
+          "label_bytes": 0,
+          "url_count": 0,
+          "attachment_count": 0
+        }
+      },
+      "assessment": {
+        "schema_version": 1,
+        "assessment_id": "asm_n4_b26e04dad3b52d68",
+        "assessment_digest": "sha256:3c4b6004962b5798c430b66ff9f963e52569c8b00437d15eb26e04dad3b52d68",
+        "issue_number": 4,
+        "repository": {
+          "owner": "EricSanchezok",
+          "repo": "good-stuff-for-agents"
+        },
+        "issue_title": "Looking for skills to coordinate an API contract between independent agent sessions",
+        "content_digest": "sha256:e799e874e1baa02c005c6a5ddf311763f3cbfc638fea731eff84c97e53cb3702",
+        "updated_at_bound": "2026-07-27T22:01:34Z",
+        "classification": {
+          "kind": "skill_request",
+          "criteria": [
+            {
+              "criterion_id": "contract-question-extraction",
+              "text": "从两个实现计划或代码库中提取 API 契约问题，识别消息/操作名、必填/可选字段、标识稳定性、生命周期归属、错误与结果语义、请求响应配对、公开类型定义等方面的不一致",
+              "status": "unsatisfied"
+            },
+            {
+              "criterion_id": "agreement-matrix",
+              "text": "创建逐条契约协议矩阵，跟踪 pending/agreed/conflicting/superseded 状态，记录双方已同意和待定的条目",
+              "status": "unsatisfied"
+            },
+            {
+              "criterion_id": "schema-comparison",
+              "text": "比较提议的 schema 与语义，暴露隐藏的不兼容假设",
+              "status": "unsatisfied"
+            },
+            {
+              "criterion_id": "durable-verification",
+              "text": "将最终协议记录到持久契约文档，并在事后验证双方实现遵循该协议",
+              "status": "unsatisfied"
+            }
+          ]
+        },
+        "fulfillment_state": "not_started",
+        "public_evidence": {
+          "boundary": "Published catalog skills and packs only",
+          "related_entities": []
+        },
+        "gap_criteria": [
+          {
+            "criterion_id": "contract-question-extraction",
+            "text": "从两个实现计划或代码库中提取 API 契约问题，识别消息/操作名、必填/可选字段、标识稳定性、生命周期归属、错误与结果语义、请求响应配对、公开类型定义等方面的不一致"
+          },
+          {
+            "criterion_id": "agreement-matrix",
+            "text": "创建逐条契约协议矩阵，跟踪 pending/agreed/conflicting/superseded 状态，记录双方已同意和待定的条目"
+          },
+          {
+            "criterion_id": "schema-comparison",
+            "text": "比较提议的 schema 与语义，暴露隐藏的不兼容假设"
+          },
+          {
+            "criterion_id": "durable-verification",
+            "text": "将最终协议记录到持久契约文档，并在事后验证双方实现遵循该协议"
+          }
+        ],
+        "assessed_at": "2026-08-05T13:10:26.650Z",
+        "assessed_by_run": "run_bc31520c3a704c07",
+        "notes": "两条目录 skill 均为 CodeRabbit 代码评审工具链，能力边界清晰限定在 Git 仓库内 PR 评审与补丁应用。Issue #4 请求的是跨 agent 会话 API 契约协调技能，涉及协议发现、对齐矩阵、语义比较、持久文档化与事后验证，属于完全不同的能力域。当前目录无任何可部分满足该需求的 skill 或 pack。保守评估下 4 条标准均为 gap。"
+      },
+      "reply": {
+        "status": "duplicate",
+        "posted": false,
+        "comment_id": 5097284518
+      }
+    },
+    {
+      "issue_number": 3,
+      "intake": {
+        "schema_version": 1,
+        "kind": "github_issue_intake",
+        "intake_status": "accepted",
+        "trust": {
+          "content": "untrusted",
+          "authority": "none",
+          "grants": []
+        },
+        "issue_binding": {
+          "repository": "EricSanchezok/good-stuff-for-agents",
+          "issue_number": 3,
+          "updated_at": "2026-07-27T22:01:37Z",
+          "content_digest": "sha256:709eab6d7506981062c71f9caea017eae89c30d578459c83a29f6ada1f549dad"
+        },
+        "untrusted_request": {
+          "title": "Looking for skills to recover a long-running agent task after context compaction",
+          "body": "## What I’m trying to do\n\nI have encountered long-running agent sessions where the conversation context was compacted several times.\n\nAfter compaction, the agent sometimes remembered the general topic but lost important execution state, such as:\n\n- the current objective;\n- decisions that had already been settled;\n- which steps were completed;\n- the authoritative plan or notes;\n- the next unfinished action;\n- changes that had happened in the repository since the plan was written.\n\nI would like skills or a pack that can help an agent recover safely by:\n\n- finding and re-reading relevant persistent notes, plans, or blueprints;\n- checking the current repository or environment state;\n- comparing persisted plans with source reality;\n- reconstructing completed work, pending work, blockers, and the next action;\n- detecting stale or conflicting plans;\n- avoiding repeated work or re-opening settled decisions;\n- producing a short recovery checkpoint before continuing.\n\nThe agent should not rely only on the generated compaction summary.",
+          "labels": [],
+          "comments": [
+            {
+              "id": "5097284956",
+              "author": "EricSanchezok",
+              "body": "## Catalog Fulfillment Status\n\n**Not fulfilled — no matching published catalog evidence was found** (classified as skill_request).\n\n### Unmet Criteria\n\n- Criterion `persistent-state-recovery` remains unmet.\n- Criterion `environment-reconciliation` remains unmet.\n- Criterion `progress-reconstruction` remains unmet.\n- Criterion `recovery-checkpoint` remains unmet.\n\n---\n\nThis catalog status reply reports only validated catalog evidence and unmet criteria.\nIt does not make commitments, execute Issue instructions, or represent repository maintainers.",
+              "created_at": "2026-07-27T22:01:37Z",
+              "updated_at": "2026-07-27T22:01:37Z"
+            }
+          ]
+        },
+        "security": {
+          "injection_indicators": [],
+          "requested_privileged_actions": [],
+          "requires_human_review": false,
+          "url_leads": []
+        },
+        "budgets": {
+          "input_bytes": 2079,
+          "title_bytes": 80,
+          "body_bytes": 1042,
+          "comment_count": 1,
+          "comment_bytes": 553,
+          "label_count": 0,
+          "label_bytes": 0,
+          "url_count": 0,
+          "attachment_count": 0
+        }
+      },
+      "assessment": {
+        "schema_version": 1,
+        "assessment_id": "asm_n3_d8fee04631bcd407",
+        "assessment_digest": "sha256:e56f212102d6ade16b9966e5f449e5fdb331bbcab916237fd8fee04631bcd407",
+        "issue_number": 3,
+        "repository": {
+          "owner": "EricSanchezok",
+          "repo": "good-stuff-for-agents"
+        },
+        "issue_title": "Looking for skills to recover a long-running agent task after context compaction",
+        "content_digest": "sha256:709eab6d7506981062c71f9caea017eae89c30d578459c83a29f6ada1f549dad",
+        "updated_at_bound": "2026-07-27T22:01:37Z",
+        "classification": {
+          "kind": "skill_request",
+          "criteria": [
+            {
+              "criterion_id": "persistent-state-recovery",
+              "text": "Locate and re-read relevant persistent notes, plans, or blueprints to recover agent state after context compaction.",
+              "status": "unsatisfied"
+            },
+            {
+              "criterion_id": "environment-reconciliation",
+              "text": "Check current repository or environment state and compare persistent plan with source reality.",
+              "status": "unsatisfied"
+            },
+            {
+              "criterion_id": "progress-reconstruction",
+              "text": "Reconstruct completed, todo, blocked, and next steps from persisted artifacts.",
+              "status": "unsatisfied"
+            },
+            {
+              "criterion_id": "recovery-checkpoint",
+              "text": "Detect expired or conflicting plans, avoid duplicate work or reopening settled decisions, and produce a concise recovery checkpoint.",
+              "status": "unsatisfied"
+            }
+          ]
+        },
+        "fulfillment_state": "not_started",
+        "public_evidence": {
+          "boundary": "Published catalog skills and packs only",
+          "related_entities": []
+        },
+        "gap_criteria": [
+          {
+            "criterion_id": "persistent-state-recovery",
+            "text": "Locate and re-read relevant persistent notes, plans, or blueprints to recover agent state after context compaction."
+          },
+          {
+            "criterion_id": "environment-reconciliation",
+            "text": "Check current repository or environment state and compare persistent plan with source reality."
+          },
+          {
+            "criterion_id": "progress-reconstruction",
+            "text": "Reconstruct completed, todo, blocked, and next steps from persisted artifacts."
+          },
+          {
+            "criterion_id": "recovery-checkpoint",
+            "text": "Detect expired or conflicting plans, avoid duplicate work or reopening settled decisions, and produce a concise recovery checkpoint."
+          }
+        ],
+        "assessed_at": "2026-08-05T13:10:28.506Z",
+        "assessed_by_run": "run_bc31520c3a704c07",
+        "notes": "The two available catalog skills operate exclusively in the code review domain. Agent session recovery through persistent state, environment reconciliation, progress reconstruction, and checkpoint generation belongs to a fundamentally different operational domain and is not addressed by any current catalog entry."
+      },
+      "reply": {
+        "status": "duplicate",
+        "posted": false,
+        "comment_id": 5097284956
+      }
+    },
+    {
+      "issue_number": 2,
+      "intake": {
+        "schema_version": 1,
+        "kind": "github_issue_intake",
+        "intake_status": "accepted",
+        "trust": {
+          "content": "untrusted",
+          "authority": "none",
+          "grants": []
+        },
+        "issue_binding": {
+          "repository": "EricSanchezok/good-stuff-for-agents",
+          "issue_number": 2,
+          "updated_at": "2026-07-27T22:01:40Z",
+          "content_digest": "sha256:2fa72b42540a38a81c240c64ccba54e3e3a173722ba6542b8fff273bf0d7ae03"
+        },
+        "untrusted_request": {
+          "title": "Looking for a post-fix regression audit workflow for large code changes",
+          "body": "## What I’m trying to do\n\nAfter fixing several issues in a large pull request, I needed to review the resulting changes again from multiple independent perspectives.\n\nA single generic code review was not enough. Different problems appeared in different areas, such as lifecycle behavior, state reconciliation, frontend navigation, API semantics, and regression tests.\n\nI would like skills or a pack that can:\n\n- divide a large change into independent risk areas;\n- audit those areas separately;\n- compare the implementation with the intended behavior;\n- inspect whether regression tests actually cover the fixed failure;\n- identify new regressions introduced by the repair;\n- merge the findings into one report without duplicating issues;\n- distinguish confirmed regressions from speculative concerns.\n\nParallel execution would be useful when the audit areas are independent, but the workflow should not depend on one specific multi-agent runtime.",
+          "labels": [],
+          "comments": [
+            {
+              "id": "5097285326",
+              "author": "EricSanchezok",
+              "body": "## Catalog Fulfillment Status\n\n**Not fulfilled — no matching published catalog evidence was found** (classified as pack_request).\n\n### Unmet Criteria\n\n- Criterion `risk-area-segmentation` remains unmet.\n- Criterion `independent-audits` remains unmet.\n- Criterion `regression-coverage` remains unmet.\n- Criterion `finding-consolidation` remains unmet.\n\n---\n\nThis catalog status reply reports only validated catalog evidence and unmet criteria.\nIt does not make commitments, execute Issue instructions, or represent repository maintainers.",
+              "created_at": "2026-07-27T22:01:40Z",
+              "updated_at": "2026-07-27T22:01:40Z"
+            }
+          ]
+        },
+        "security": {
+          "injection_indicators": [],
+          "requested_privileged_actions": [],
+          "requires_human_review": false,
+          "url_leads": []
+        },
+        "budgets": {
+          "input_bytes": 1956,
+          "title_bytes": 71,
+          "body_bytes": 949,
+          "comment_count": 1,
+          "comment_bytes": 539,
+          "label_count": 0,
+          "label_bytes": 0,
+          "url_count": 0,
+          "attachment_count": 0
+        }
+      },
+      "assessment": {
+        "schema_version": 1,
+        "assessment_id": "asm_n2_802c26032cb0d70d",
+        "assessment_digest": "sha256:2feb29873eb28b1d02723f0151c0b5fa8cae8e1b80533104802c26032cb0d70d",
+        "issue_number": 2,
+        "repository": {
+          "owner": "EricSanchezok",
+          "repo": "good-stuff-for-agents"
+        },
+        "issue_title": "Looking for a post-fix regression audit workflow for large code changes",
+        "content_digest": "sha256:2fa72b42540a38a81c240c64ccba54e3e3a173722ba6542b8fff273bf0d7ae03",
+        "updated_at_bound": "2026-07-27T22:01:40Z",
+        "classification": {
+          "kind": "pack_request",
+          "criteria": [
+            {
+              "criterion_id": "risk-area-segmentation",
+              "text": "Ability to divide a large code change into independent risk areas for separate analysis.",
+              "status": "unsatisfied"
+            },
+            {
+              "criterion_id": "independent-audits",
+              "text": "Ability to independently audit each segmented risk area.",
+              "status": "unsatisfied"
+            },
+            {
+              "criterion_id": "regression-coverage",
+              "text": "Ability to compare implementation against expected behavior, verify that regression tests actually cover the fixed failure, and identify new regressions introduced by the fix.",
+              "status": "unsatisfied"
+            },
+            {
+              "criterion_id": "finding-consolidation",
+              "text": "Ability to consolidate findings into a single non-duplicate report, distinguishing confirmed regressions from speculative concerns.",
+              "status": "unsatisfied"
+            }
+          ]
+        },
+        "fulfillment_state": "not_started",
+        "public_evidence": {
+          "boundary": "Published catalog skills and packs only",
+          "related_entities": []
+        },
+        "gap_criteria": [
+          {
+            "criterion_id": "risk-area-segmentation",
+            "text": "Ability to divide a large code change into independent risk areas for separate analysis."
+          },
+          {
+            "criterion_id": "independent-audits",
+            "text": "Ability to independently audit each segmented risk area."
+          },
+          {
+            "criterion_id": "regression-coverage",
+            "text": "Ability to compare implementation against expected behavior, verify that regression tests actually cover the fixed failure, and identify new regressions introduced by the fix."
+          },
+          {
+            "criterion_id": "finding-consolidation",
+            "text": "Ability to consolidate findings into a single non-duplicate report, distinguishing confirmed regressions from speculative concerns."
+          }
+        ],
+        "assessed_at": "2026-08-05T13:10:30.255Z",
+        "assessed_by_run": "run_bc31520c3a704c07",
+        "notes": "Both catalog skills focus on general code review or review-fix application, not post-fix regression auditing. The gap between the requested workflow and available evidence is complete: none of the four criteria have any supporting catalog evidence."
+      },
+      "reply": {
+        "status": "duplicate",
+        "posted": false,
+        "comment_id": 5097285326
+      }
+    },
+    {
+      "issue_number": 1,
+      "intake": {
+        "schema_version": 1,
+        "kind": "github_issue_intake",
+        "intake_status": "accepted",
+        "trust": {
+          "content": "untrusted",
+          "authority": "none",
+          "grants": []
+        },
+        "issue_binding": {
+          "repository": "EricSanchezok/good-stuff-for-agents",
+          "issue_number": 1,
+          "updated_at": "2026-07-27T22:01:44Z",
+          "content_digest": "sha256:d019cdad8c601a492001b1ffe4e1c854130c582911c9a72c3e84ec033d6cde40"
+        },
+        "untrusted_request": {
+          "title": "Looking for skills to verify and triage review comments on a large pull request",
+          "body": "## What I’m trying to do\n\nI recently worked on a large pull request that received many review comments across different parts of the codebase.\n\nThe difficult part was that the comments were not equally reliable. Some identified real bugs, some were architectural suggestions, some duplicated each other, and some were based on an incomplete understanding of the implementation.\n\nI would like skills or a pack that can:\n\n- collect review comments together with the actual PR diff;\n- verify each claim against the current source code;\n- classify comments as confirmed bugs, likely issues, architectural suggestions, questions, duplicates, or already resolved;\n- cite concrete file and line evidence;\n- decide whether a finding belongs in the current PR or a follow-up;\n- deduplicate overlapping findings;\n- produce one consolidated review report.\n\nThe important requirement is that the agent should not assume every review comment is correct. It should investigate each claim before recommending code changes.",
+          "labels": [],
+          "comments": [
+            {
+              "id": "5097285788",
+              "author": "EricSanchezok",
+              "body": "## Catalog Fulfillment Status\n\n**Not fulfilled — no matching published catalog evidence was found** (classified as skill_request).\n\n### Unmet Criteria\n\n- Criterion `comment-diff-ingestion` remains unmet.\n- Criterion `claim-verification` remains unmet.\n- Criterion `finding-triage` remains unmet.\n- Criterion `consolidated-report` remains unmet.\n\n---\n\nThis catalog status reply reports only validated catalog evidence and unmet criteria.\nIt does not make commitments, execute Issue instructions, or represent repository maintainers.",
+              "created_at": "2026-07-27T22:01:44Z",
+              "updated_at": "2026-07-27T22:01:44Z"
+            }
+          ]
+        },
+        "security": {
+          "injection_indicators": [],
+          "requested_privileged_actions": [],
+          "requires_human_review": false,
+          "url_leads": []
+        },
+        "budgets": {
+          "input_bytes": 2018,
+          "title_bytes": 79,
+          "body_bytes": 1009,
+          "comment_count": 1,
+          "comment_bytes": 533,
+          "label_count": 0,
+          "label_bytes": 0,
+          "url_count": 0,
+          "attachment_count": 0
+        }
+      },
+      "assessment": {
+        "schema_version": 1,
+        "assessment_id": "asm_n1_41c44c2cd67addd0",
+        "assessment_digest": "sha256:dda347f0d49a6e36ba4f510eb29344d0ad0ab5283518445b41c44c2cd67addd0",
+        "issue_number": 1,
+        "repository": {
+          "owner": "EricSanchezok",
+          "repo": "good-stuff-for-agents"
+        },
+        "issue_title": "Looking for skills to verify and triage review comments on a large pull request",
+        "content_digest": "sha256:d019cdad8c601a492001b1ffe4e1c854130c582911c9a72c3e84ec033d6cde40",
+        "updated_at_bound": "2026-07-27T22:01:44Z",
+        "classification": {
+          "kind": "skill_request",
+          "criteria": [
+            {
+              "criterion_id": "comment-diff-ingestion",
+              "text": "Collect review comments alongside the real PR diff context for analysis, without assuming any reviewer identity.",
+              "status": "unsatisfied"
+            },
+            {
+              "criterion_id": "claim-verification",
+              "text": "Verify each review claim against current source code — investigate before accepting any suggested change.",
+              "status": "satisfied"
+            },
+            {
+              "criterion_id": "finding-triage",
+              "text": "Classify findings into categories: confirmed bugs, likely issues, architectural suggestions, questions, duplicates, already resolved.",
+              "status": "unsatisfied"
+            },
+            {
+              "criterion_id": "consolidated-report",
+              "text": "Produce a consolidated report with file-line evidence, scope decisions (current PR vs follow-up), and deduplication of overlapping findings.",
+              "status": "unsatisfied"
+            }
+          ]
+        },
+        "fulfillment_state": "partially_fulfilled",
+        "public_evidence": {
+          "boundary": "Published catalog skills and packs only",
+          "related_entities": [
+            {
+              "entity_type": "skill",
+              "entity_id": "skl_coderabbit-autofix-src-https-github-com-coderabbit-7ec3dc4b-skills-8f2a22eb-skills-autofix-skill-md_7ec3dc4b",
+              "path": "catalog/skills/records/co/skl_coderabbit-autofix-src-https-github-com-coderabbit-7ec3dc4b-skills-8f2a22eb-skills-autofix-skill-md_7ec3dc4b.yaml"
+            }
+          ]
+        },
+        "gap_criteria": [
+          {
+            "criterion_id": "comment-diff-ingestion",
+            "text": "Collect review comments alongside the real PR diff context for analysis, without assuming any reviewer identity."
+          },
+          {
+            "criterion_id": "finding-triage",
+            "text": "Classify findings into categories: confirmed bugs, likely issues, architectural suggestions, questions, duplicates, already resolved."
+          },
+          {
+            "criterion_id": "consolidated-report",
+            "text": "Produce a consolidated report with file-line evidence, scope decisions (current PR vs follow-up), and deduplication of overlapping findings."
+          }
+        ],
+        "assessed_at": "2026-08-05T13:10:31.931Z",
+        "assessed_by_run": "run_bc31520c3a704c07",
+        "notes": "Catalog contains only two CodeRabbit skills with no published packs. Claim-verification capability exists in Autofix but is tightly coupled to CodeRabbit bot review threads. The remaining three criteria — general-purpose review comment ingestion, multi-category finding triage, and consolidated deduplicated reporting — are not addressed by any catalog entry."
+      },
+      "reply": {
+        "status": "duplicate",
+        "posted": false,
+        "comment_id": 5097285788
+      }
+    }
+  ]
+}

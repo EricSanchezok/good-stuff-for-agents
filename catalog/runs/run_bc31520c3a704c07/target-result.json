@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "run_id": "run_bc31520c3a704c07",
+  "context_digest": "sha256:a5bc53c97d5dbe62fcbebbee595b1e32f46865ca5f7342581cb26560dd301b36",
+  "intents": [
+    {
+      "domain": "demand",
+      "reason": "Controller-bound issue demand: 1 explicit skill IDs",
+      "source": "issue_demand",
+      "score": 0.95,
+      "seed_skill_ids": [
+        "skl_coderabbit-autofix-src-https-github-com-coderabbit-7ec3dc4b-skills-8f2a22eb-skills-autofix-skill-md_7ec3dc4b"
+      ],
+      "max_analysis_budget": 1
+    }
+  ],
+  "candidate_results": [],
+  "intent_results": [
+    {
+      "intent_digest": "sha256:fddddfc303425c86635bf358a01db5cc13958b63e52be32972cef4fe1daf81b2",
+      "terminal": "no_pack_clean",
+      "gap_class": "capability_gap",
+      "error": "capability_gap:ingest_triage_dedupe_merged_report_uncovered|missing_relation_evidence:chains_with:0_records"
+    }
+  ],
+  "session_descriptors": [
+    {
+      "session_id": "ses_02e3f7351ffeCqPx84j39tB4OC",
+      "kind": "synthesis"
+    }
+  ],
+  "created_at": "2026-08-05T13:10:54.382Z"
+}

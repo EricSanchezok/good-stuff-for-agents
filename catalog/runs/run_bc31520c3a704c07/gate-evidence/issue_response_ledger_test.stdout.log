@@ -1,0 +1,24 @@
+ok - matchesReplyTemplate detects catalog reply format
+ok - matchesReplyTemplate rejects arbitrary comments
+ok - fingerprint is stable and sha256-prefixed
+ok - fingerprint differs by issue number
+ok - fingerprint differs by content digest
+ok - fingerprint rejects invalid inputs
+ok - buildBootstrapResponse produces canonical_issue_response record
+ok - buildBootstrapResponse write-once: same inputs produce same response_id
+ok - buildBootstrapResponse rejects wrong author
+ok - buildBootstrapResponse rejects invalid inputs
+ok - buildCanonicalResponse produces canonical_issue_response for posted variant
+ok - buildCanonicalResponse rejects posted without commentId
+ok - bootstrapIssueLedgers bootstraps #1-#5 with real intake + template match + author check
+ok - bootstrapIssueLedgers uses normalizeIssueIntake (single computation point)
+ok - bootstrapIssueLedgers rejects wrong author
+ok - #6 security intake is NOT bootstrapped
+ok - lookupPreviousResponse finds canonical bootstrap record
+ok - lookupPreviousResponse returns not found for changed content
+ok - lookupPreviousResponse finds posted canonical record
+ok - buildDemandMetadata blocks on incomplete terminals
+ok - buildDemandMetadata requires both snapshot and allOpenIssuesProcessed
+ok - buildDemandMetadata produces demand from safe terminals
+ok - changed content digest skips bootstrap dedup and allows new assessment
+23 issue response ledger tests passed

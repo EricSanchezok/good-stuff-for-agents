@@ -1,0 +1,30 @@
+{
+  "ok": true,
+  "expected": [
+    "README.md",
+    "docs/domains/README.md",
+    "docs/packs/README.md",
+    "docs/reports/README.md",
+    "docs/skills/README.md",
+    "docs/skills/co/skl_coderabbit-autofix-src-https-github-com-coderabbit-7ec3dc4b-skills-8f2a22eb-skills-autofix-skill-md_7ec3dc4b.md",
+    "docs/skills/co/skl_coderabbit-code-review-src-https-github-com-codera-9e16a0ae-lls-8f2a22eb-skills-code-review-skill-md_9e16a0ae.md",
+    "docs/sources/README.md",
+    "docs/sources/src_https-github-com-anthropics-skills-anthropic-agent-skills_04f79b56.md",
+    "docs/sources/src_https-github-com-coderabbitai-skills-coderabbit-skills_8f2a22eb.md",
+    "docs/sources/src_https-github-com-coreyhaines31-marketingskills-marketing-skills-corey-haines_ef920698.md",
+    "docs/sources/src_https-github-com-cuga-project-cuga-agent-cuga-agent-ibm-research_5709bc42.md",
+    "docs/sources/src_https-github-com-figma-mcp-server-guide-figma-mcp-skills_dde79ddd.md",
+    "docs/sources/src_https-github-com-fujishigetemma-semantic-scholar-mcp-semantic-scholar-mcp-server_1c7ee5c5.md",
+    "docs/sources/src_https-github-com-hermeticormus-markdown-discipline-skills-markdown-discipline-skills_ddaf87e0.md",
+    "docs/sources/src_https-github-com-jupyterlab-jupyter-ai-jupyter-ai-jupyterlab_e47112b5.md",
+    "docs/sources/src_https-github-com-k-dense-ai-scientific-agent-skills-k-dense-scientific-agent-skills_5bdb6d39.md",
+    "docs/sources/src_https-github-com-kozz36-frontend-designer-skill-frontend-designer-skill_929a1309.md",
+    "docs/sources/src_https-github-com-mcollina-skills-matteo-collina-s-skills_faf2f289.md",
+    "docs/sources/src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e.md",
+    "docs/sources/src_https-github-com-openclaw-agent-skills-openclaw-agent-skills_088582b8.md",
+    "docs/sources/src_https-github-com-phuryn-pm-skills-pm-skills-marketplace-phuryn_8ac36372.md",
+    "docs/sources/src_https-github-com-product-on-purpose-pm-skills-pm-skills-product-on-purpose_f2ce15e5.md",
+    "docs/sources/src_https-github-com-southleft-skills-for-figma-skills-for-figma-southleft_ea9f2b3d.md",
+    "docs/sources/src_https-github-com-thatrebeccarae-claude-marketing-claude-marketing-rebecca-rae-barton_8a108923.md"
+  ]
+}
