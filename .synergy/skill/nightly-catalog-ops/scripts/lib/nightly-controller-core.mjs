@@ -1234,6 +1234,52 @@ async function _resumeFromTargets({
     } catch {}
   }
 
+  // Reconstruct issue outcomes and stage terminals from the finalized stage
+  // output when present. issues-prepared.json (prepare phase) carries
+  // neither, and the gate ledger derivation requires them.
+  const stagesPath = join(runsRoot, runId, 'stages-issues.json');
+  if (existsSync(stagesPath)) {
+    try {
+      const stages = JSON.parse(readFileSync(stagesPath, 'utf8'));
+      const assessments = Array.isArray(stages.assessments) ? stages.assessments : [];
+      if (assessments.length > 0) {
+        const issueOutcomes = [];
+        const stageTerminals = [];
+        for (const a of assessments) {
+          if (a.issue_number == null) continue;
+          stageTerminals.push({
+            issue_number: a.issue_number,
+            assessment: a.assessment,
+            reply: a.reply,
+          });
+          const state = a.reply?.status === 'posted' ? 'fulfilled'
+            : a.reply?.status === 'held_for_review' ? 'held'
+            : a.reply?.status === 'reply_blocked' ? 'blocked'
+            : 'acknowledged';
+          issueOutcomes.push({
+            issue_number: a.issue_number,
+            state,
+            assessment_id: a.assessment?.assessment_id || undefined,
+          });
+        }
+        issueResult = { ...issueResult, issueOutcomes, stageTerminals };
+      }
+    } catch {}
+  }
+
+  // Reconstruct demand metadata from the run demand artifact so the
+  // exhaustion proof sees the same demand signal as the fresh path.
+  const demandPath = join(runsRoot, runId, 'demand.json');
+  if (existsSync(demandPath)) {
+    try {
+      const demand = JSON.parse(readFileSync(demandPath, 'utf8'));
+      issueResult.demandMetadata = {
+        demand_skill_ids: demand.demand_skill_ids || [],
+        domain_slugs: demand.domain_slugs || [],
+      };
+    } catch {}
+  }
+
   // Read target intents from output — check both bindings (intents and handoff)
   let targetsPath = join(outDir, 'target-intents.json');
   if (!existsSync(targetsPath)) {
