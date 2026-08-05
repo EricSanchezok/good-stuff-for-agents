@@ -31,6 +31,11 @@ import {
 import { reserveRun } from './run-reservation.mjs';
 import { buildRunLedgerV3, buildExhaustionProof, computeRollingYield } from './run-ledger.mjs';
 import {
+  readBacklog,
+  mergeBacklog,
+  writeBacklog,
+} from './growth-backlog.mjs';
+import {
   collectChangedPaths,
   buildManifestV3,
   checkAuditPaths,
@@ -426,6 +431,9 @@ async function runSelectAndPrepareTargetsStage({
   // Build evidence index for cold-start selectors
   const evidenceIndex = buildEvidenceIndex({ catalogRoot });
 
+  // Read cross-run growth backlog for cold-start selector
+  const backlog = readBacklog({ catalogRoot });
+
   // Build the target selection input
   const demandMetadata = issueResult.demandMetadata
     || (collected.demandMetadata)
@@ -441,6 +449,7 @@ async function runSelectAndPrepareTargetsStage({
     catalogRoot,
     reader: null, // not needed for fixtures, real reader used in production
     maxTargets: 2,
+    backlog,
   });
 
   // If there are nonzero intents and no targetExecutor, pause for targets
@@ -448,9 +457,16 @@ async function runSelectAndPrepareTargetsStage({
   if ((intents.intents || []).length > 0) {
     if (!targetExecutor) {
       // Pause for targets instead of blocking
+      // Compute backlog digest for handoff binding (if backlog exists)
+      let backlogDigest = null
+      if (backlog && backlog.entries && backlog.entries.length > 0) {
+        backlogDigest = `sha256:${createHash('sha256').update(
+          JSON.stringify(backlog.entries)
+        ).digest('hex')}`
+      }
       return _pauseForTargets({
         runsRoot, runId, repositoryRoot, onProgress,
-        intents, contextDigest, evidenceIndex,
+        intents, contextDigest, evidenceIndex, backlogDigest,
       });
     }
 
@@ -606,12 +622,14 @@ async function runGateSealAuditTerminalStages({
   const issueOutcomes = _deriveIssueOutcomes(issueResult);
 
   // Exhaustion proof before terminal determination
-  const evidenceIndex = buildEvidenceIndex({ catalogRoot: join(repositoryRoot, 'catalog') });
+  const catalogRootPt = join(repositoryRoot, 'catalog')
+  const evidenceIndex = buildEvidenceIndex({ catalogRoot: catalogRootPt });
   const hasPromotedCandidates = candidateResults.some(c => c.terminal === 'promoted');
 
   let terminalStatus = 'completed';
   let terminalOutcome = 'no_pack_clean';
   let termSummary = '';
+  let backlogDigest = null;
 
   if (hasPromotedCandidates) {
     terminalOutcome = 'published';
@@ -636,9 +654,31 @@ async function runGateSealAuditTerminalStages({
     } else {
       termSummary = 'Run completed with no packs to publish. Zero packs is a clean terminal state.';
     }
+
+    // Merge unresolved dimensions into cross-run growth backlog
+    try {
+      const unsolvedDimensions = proof.exhaustion_trace
+        .filter(e => e.found && e.dimension !== 'funnel')
+      const existingDemandSkills = (demandMetadata.demand_skill_ids || [])
+      const entries = unsolvedDimensions.map(d => ({
+        dimension: d.dimension,
+        seeds: d.dimension === 'demand' ? existingDemandSkills : [],
+        reason: `run_${runId}: ${d.detail}`,
+        source: 'run_ledger',
+        discovered_sources: [],
+        attempts: 0,
+        status: 'pending',
+      }))
+      if (entries.length > 0) {
+        const merged = mergeBacklog({ catalogRoot: catalogRootPt, entries })
+        const writeResult = writeBacklog({ catalogRoot: catalogRootPt, entries: merged.entries })
+        backlogDigest = writeResult.digest
+      }
+    } catch { /* backlog best-effort */ }
   }
 
-  const rollingYield = computeRollingYield({ runsRoot, catalogRoot: join(repositoryRoot, 'catalog'), windowSize: 5 });
+  const rollingYield = computeRollingYield({ runsRoot, catalogRoot: catalogRootPt, windowSize: 5 });
+  const funnel = evidenceIndex.funnel || null;
 
   const ledger = buildRunLedgerV3({
     runId,
@@ -653,6 +693,7 @@ async function runGateSealAuditTerminalStages({
     errors: 0,
     warnings: 0,
     rollingYield: rollingYield ? rollingYield.ratio : null,
+    growthFunnel: funnel,
   });
 
   const ledgerOut = publishOutput({
@@ -669,6 +710,8 @@ async function runGateSealAuditTerminalStages({
     ledger_digest: ledger.ledger_digest,
     outcome: terminalOutcome,
     rolling_yield: rollingYield ? rollingYield.ratio : null,
+    ...(funnel ? { growth_funnel: funnel } : {}),
+    ...(backlogDigest ? { backlog_digest: backlogDigest } : {}),
   };
   const { summary_digest, ...summaryRest } = summary;
   summary.summary_digest = `sha256:${createHash('sha256').update(canonicalStringify(summaryRest)).digest('hex')}`;
@@ -1475,10 +1518,10 @@ function _pausedForAssessment({ runsRoot, runId, onProgress, issueResult }) {
   return { digest: handoffOut.digest, path: handoffOut.repo_relative_path };
 }
 
-function _pauseForTargets({ runsRoot, runId, repositoryRoot, onProgress, intents, contextDigest, evidenceIndex }) {
+function _pauseForTargets({ runsRoot, runId, repositoryRoot, onProgress, intents, contextDigest, evidenceIndex, backlogDigest }) {
   onProgress(`Paused for targets: ${intents.intents.length} intent(s) require target execution`);
 
-  const handoffContent = JSON.stringify({
+  const handoff = {
     schema_version: 1,
     kind: 'target_execution_handoff',
     run_id: runId,
@@ -1489,7 +1532,9 @@ function _pauseForTargets({ runsRoot, runId, repositoryRoot, onProgress, intents
     evidence_budget: intents.intents.map(i => i.max_analysis_budget || 50),
     evidence_index_digest: evidenceIndex.evidence_index_digest || '',
     session_isolation: 'per_intent',
-  }, null, 2);
+  };
+  if (backlogDigest) handoff.backlog_digest = backlogDigest;
+  const handoffContent = JSON.stringify(handoff, null, 2);
 
   const handoffOut = publishOutput({
     runsRoot, runId, repositoryRoot,

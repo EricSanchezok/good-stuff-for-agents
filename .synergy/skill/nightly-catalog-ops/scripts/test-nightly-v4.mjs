@@ -1379,6 +1379,456 @@ test('trusted 29 checks count is unchanged', async () => {
 });
 
 // ══════════════════════════════════════════════════════════════════════
+//  SECTION J: Growth Backlog (R1)
+// ══════════════════════════════════════════════════════════════════════
+
+import {
+  readBacklog,
+  mergeBacklog,
+  writeBacklog,
+  backlogToIntents,
+  computeFingerprint,
+} from './lib/growth-backlog.mjs';
+
+test('growth-backlog: readBacklog returns empty for non-existent file', () => {
+  const root = tmpDir();
+  try {
+    const result = readBacklog({ catalogRoot: root });
+    assert.deepEqual(result.entries, []);
+  } finally {
+    rmSync(root, { recursive: true, force: true });
+  }
+});
+
+test('growth-backlog: writeBacklog + readBacklog roundtrip', () => {
+  const root = tmpDir();
+  try {
+    const entries = [
+      {
+        fingerprint: 'fp_test_001',
+        dimension: 'demand',
+        seeds: ['skl_a', 'skl_b'],
+        reason: 'Test entry',
+        source: 'test',
+        created_at: '2026-08-01T00:00:00Z',
+        updated_at: '2026-08-05T00:00:00Z',
+        attempts: 1,
+        status: 'pending',
+      },
+    ];
+    const writeResult = writeBacklog({ catalogRoot: root, entries });
+    assert.ok(writeResult.digest.startsWith('sha256:'));
+    assert.equal(writeResult.entry_count, 1);
+
+    const read = readBacklog({ catalogRoot: root });
+    assert.equal(read.entries.length, 1);
+    assert.equal(read.entries[0].fingerprint, 'fp_test_001');
+    assert.equal(read.entries[0].dimension, 'demand');
+    assert.equal(read.entries[0].status, 'pending');
+  } finally {
+    rmSync(root, { recursive: true, force: true });
+  }
+});
+
+test('growth-backlog: mergeBacklog deduplicates by fingerprint and increments attempts', () => {
+  const root = tmpDir();
+  try {
+    const fp = computeFingerprint('demand', ['skl_a', 'skl_b']);
+    const initial = [{ fingerprint: fp, dimension: 'demand', seeds: ['skl_a', 'skl_b'], reason: 'first', source: 'test', created_at: '2026-08-01T00:00:00Z', attempts: 1, status: 'pending' }];
+    writeBacklog({ catalogRoot: root, entries: initial });
+
+    // Merge same entry again
+    const merged = mergeBacklog({
+      catalogRoot: root,
+      entries: [{ dimension: 'demand', seeds: ['skl_a', 'skl_b'], reason: 'second', source: 'test' }],
+    });
+    assert.equal(merged.entries.length, 1);
+    assert.equal(merged.entries[0].attempts, 2);
+    assert.equal(merged.entries[0].reason, 'second');
+  } finally {
+    rmSync(root, { recursive: true, force: true });
+  }
+});
+
+test('growth-backlog: mergeBacklog marks stale when attempts >= 3', () => {
+  const root = tmpDir();
+  try {
+    const fp = computeFingerprint('demand', ['skl_stale']);
+    const initial = [{ fingerprint: fp, dimension: 'demand', seeds: ['skl_stale'], reason: 'test', source: 'test', created_at: '2026-08-01T00:00:00Z', attempts: 2, status: 'pending' }];
+    writeBacklog({ catalogRoot: root, entries: initial });
+
+    const merged = mergeBacklog({
+      catalogRoot: root,
+      entries: [{ dimension: 'demand', seeds: ['skl_stale'], reason: 'third attempt', source: 'test' }],
+    });
+    assert.equal(merged.entries[0].attempts, 3);
+    assert.equal(merged.entries[0].status, 'stale');
+  } finally {
+    rmSync(root, { recursive: true, force: true });
+  }
+});
+
+test('growth-backlog: backlogToIntents excludes stale/blocked, sorts by attempts ASC', () => {
+  const backlog = {
+    entries: [
+      { fingerprint: 'fp1', dimension: 'analysis', seeds: ['skl_old'], reason: 'old', source: 'test', created_at: '2026-08-01T00:00:00Z', attempts: 3, status: 'stale' },
+      { fingerprint: 'fp2', dimension: 'demand', seeds: ['skl_new'], reason: 'new', source: 'test', created_at: '2026-08-05T00:00:00Z', attempts: 0, status: 'pending' },
+      { fingerprint: 'fp3', dimension: 'relations', seeds: ['skl_mid'], reason: 'mid', source: 'test', created_at: '2026-08-03T00:00:00Z', attempts: 1, status: 'pending' },
+      { fingerprint: 'fp4', dimension: 'snapshot', seeds: ['snp_blocked'], reason: 'blocked', source: 'test', created_at: '2026-08-04T00:00:00Z', attempts: 0, status: 'blocked' },
+    ],
+  };
+  const intents = backlogToIntents({ backlog, maxTargets: 3 });
+  assert.equal(intents.length, 2);
+  // First should be 'new' (attempts=0), then 'mid' (attempts=1)
+  assert.equal(intents[0].domain, 'demand');
+  assert.equal(intents[1].domain, 'relations');
+  // Stale (attempts>=3) excluded
+  // Blocked excluded
+});
+
+test('growth-backlog: mergeBacklog skips existing stale/blocked entries', () => {
+  const root = tmpDir();
+  try {
+    const fpStale = computeFingerprint('demand', ['skl_stale2']);
+    const fpBlocked = computeFingerprint('analysis', ['skl_blocked']);
+    const initial = [
+      { fingerprint: fpStale, dimension: 'demand', seeds: ['skl_stale2'], reason: 'old', source: 'test', created_at: '2026-08-01T00:00:00Z', attempts: 3, status: 'stale' },
+      { fingerprint: fpBlocked, dimension: 'analysis', seeds: ['skl_blocked'], reason: 'blocked', source: 'test', created_at: '2026-08-02T00:00:00Z', attempts: 0, status: 'blocked' },
+    ];
+    writeBacklog({ catalogRoot: root, entries: initial });
+
+    const merged = mergeBacklog({
+      catalogRoot: root,
+      entries: [
+        { dimension: 'demand', seeds: ['skl_stale2'], reason: 'retry', source: 'test' },
+        { dimension: 'analysis', seeds: ['skl_blocked'], reason: 'retry2', source: 'test' },
+      ],
+    });
+    // Stale/blocked entries are removed, new entries take their place
+    assert.equal(merged.entries.length, 2);
+    // Both should now be pending (not stale/blocked since mergeBacklog skips those and creates new)
+    for (const e of merged.entries) {
+      assert.equal(e.status, 'pending');
+    }
+  } finally {
+    rmSync(root, { recursive: true, force: true });
+  }
+});
+
+test('growth-backlog: backlogToIntents marks stale when attempts >= 3', () => {
+  const backlog = {
+    entries: [
+      { fingerprint: 'fp_become_stale', dimension: 'analysis', seeds: ['skl_go'], reason: 'test', source: 'test', created_at: '2026-08-01T00:00:00Z', attempts: 3, status: 'pending' },
+    ],
+  };
+  const intents = backlogToIntents({ backlog, maxTargets: 2 });
+  // Should be empty: attempts>=3 gets marked stale and excluded
+  assert.equal(intents.length, 0);
+  assert.equal(backlog.entries[0].status, 'stale');
+});
+
+test('growth-backlog: writeBacklog produces valid JSON with schema_version', () => {
+  const root = tmpDir();
+  try {
+    writeBacklog({ catalogRoot: root, entries: [] });
+    const path = join(root, 'growth', 'backlog.json');
+    assert.ok(existsSync(path));
+    const raw = JSON.parse(readFileSync(path, 'utf8'));
+    assert.equal(raw.schema_version, 1);
+    assert.ok(raw.updated_at);
+    assert.deepEqual(raw.entries, []);
+  } finally {
+    rmSync(root, { recursive: true, force: true });
+  }
+});
+
+// ══════════════════════════════════════════════════════════════════════
+//  SECTION K: Cold-Start Selector Backlog Priority + Demand Gap (R1+R2)
+// ══════════════════════════════════════════════════════════════════════
+
+test('cold-start: backlog intents take priority over new gaps', () => {
+  const backlog = {
+    entries: [
+      { fingerprint: 'fp_backlog_prio', dimension: 'analysis', seeds: ['skl_backlog_a'], reason: 'backlog entry', source: 'test', created_at: '2026-08-01T00:00:00Z', attempts: 0, status: 'pending' },
+    ],
+  };
+
+  // Use a fake evidenceIndex that WOULD produce a snapshot_backlog intent
+  const fakeIndex = {
+    snapshot_artifact_count: 5,
+    snapshot_digest: 'sha256:abc',
+    candidate_count: 0,
+    candidate_digest: '',
+    skill_record_count: 2,
+    skill_digest: '',
+    analysis_count: 1,
+    analysis_digest: '',
+    skill_ids_with_analysis_count: 0,
+    analysis_coverage_ratio: 0,
+    relation_count: 0,
+    relation_digest: '',
+    relation_predicate_counts: {},
+    pack_candidate_count: 0,
+    pack_published_count: 0,
+    gap_flags: {
+      unevaluated_snapshots: true,
+      unnormalized_candidates: false,
+      analysis_gaps: true,
+      relation_potential: false,
+      same_domain_group_count: 0,
+    },
+    evidence_index_digest: 'sha256:fake',
+  };
+
+  const result = selectTargetIntentsColdStart({
+    evidenceIndex: fakeIndex,
+    maxTargets: 2,
+    backlog,
+  });
+
+  assert.ok(result.backlog_used >= 1);
+  // Backlog intent should come first
+  assert.equal(result.intents[0].source, 'backlog');
+  assert.equal(result.intents[0].domain, 'analysis');
+});
+
+test('cold-start: backlog intents capped at maxTargets', () => {
+  const backlog = {
+    entries: [
+      { fingerprint: 'fp_bl1', dimension: 'analysis', seeds: ['skl_bl_a'], reason: 'bl1', source: 'test', created_at: '2026-08-01T00:00:00Z', attempts: 0, status: 'pending' },
+      { fingerprint: 'fp_bl2', dimension: 'relations', seeds: ['skl_bl_b'], reason: 'bl2', source: 'test', created_at: '2026-08-02T00:00:00Z', attempts: 0, status: 'pending' },
+      { fingerprint: 'fp_bl3', dimension: 'demand', seeds: ['skl_bl_c'], reason: 'bl3', source: 'test', created_at: '2026-08-03T00:00:00Z', attempts: 0, status: 'pending' },
+    ],
+  };
+
+  const result = selectTargetIntentsColdStart({
+    evidenceIndex: {
+      snapshot_artifact_count: 0, candidate_count: 0, skill_record_count: 0,
+      analysis_count: 0, skill_ids_with_analysis_count: 0,
+      analysis_coverage_ratio: 0, relation_count: 0,
+      relation_predicate_counts: {}, pack_candidate_count: 0, pack_published_count: 0,
+      gap_flags: { unevaluated_snapshots: false, unnormalized_candidates: false, analysis_gaps: false, relation_potential: false, same_domain_group_count: 0 },
+      evidence_index_digest: 'sha256:fake',
+    },
+    maxTargets: 2,
+    backlog,
+  });
+
+  assert.equal(result.intents.length, 2);
+  assert.equal(result.backlog_used, 2);
+  // capped is false: exactly 2 intents fills quota (not exceeds it)
+  assert.equal(result.capped, false);
+});
+
+test('cold-start: requires_source_discovery=true when demand seeds have zero coverage', () => {
+  // Seeds not in any analysis frontmatter, and no snapshots
+  const result = selectTargetIntentsColdStart({
+    issueDemandMetadata: { demand_skill_ids: ['skl_cr_newcapability'], domain_slugs: ['code-review'] },
+    evidenceIndex: {
+      snapshot_artifact_count: 0,
+      candidate_count: 0,
+      skill_record_count: 0,
+      analysis_count: 0,
+      skill_ids_with_analysis_count: 0,
+      analysis_coverage_ratio: 0,
+      relation_count: 0,
+      relation_predicate_counts: {},
+      pack_candidate_count: 0,
+      pack_published_count: 0,
+      gap_flags: { unevaluated_snapshots: false, unnormalized_candidates: false, analysis_gaps: false, relation_potential: false, same_domain_group_count: 0 },
+      evidence_index_digest: 'sha256:fake',
+    },
+    maxTargets: 2,
+  });
+
+  assert.equal(result.intents.length, 1);
+  assert.equal(result.intents[0].source, 'issue_demand');
+  assert.equal(result.intents[0].requires_source_discovery, true);
+  assert.ok(result.intents[0].demand_gap_reason.includes('capability_keywords'));
+});
+
+test('cold-start: requires_source_discovery=false when coverage exists', () => {
+  // With snapshot_artifact_count > 0 (source group covered), demand gap should not trigger
+  const result = selectTargetIntentsColdStart({
+    issueDemandMetadata: { demand_skill_ids: ['skl_co_coveredskill'], domain_slugs: ['code-review'] },
+    evidenceIndex: {
+      snapshot_artifact_count: 3,
+      candidate_count: 0,
+      skill_record_count: 2,
+      analysis_count: 1,
+      skill_ids_with_analysis_count: 1,
+      analysis_coverage_ratio: 0.5,
+      relation_count: 0,
+      relation_predicate_counts: {},
+      pack_candidate_count: 0,
+      pack_published_count: 0,
+      gap_flags: { unevaluated_snapshots: false, unnormalized_candidates: false, analysis_gaps: true, relation_potential: false, same_domain_group_count: 0 },
+      evidence_index_digest: 'sha256:fake',
+    },
+    maxTargets: 2,
+  });
+
+  assert.equal(result.intents.length, 1);
+  assert.equal(result.intents[0].source, 'issue_demand');
+  // Shouldn't have requires_source_discovery since snapshots > 0
+  assert.ok(!result.intents[0].requires_source_discovery);
+});
+
+test('cold-start: backlog intents and new intents do not duplicate seeds', () => {
+  const backlog = {
+    entries: [
+      { fingerprint: 'fp_overlap', dimension: 'analysis', seeds: ['skl_shared', 'skl_bl_extra'], reason: 'backlog', source: 'test', created_at: '2026-08-01T00:00:00Z', attempts: 0, status: 'pending' },
+    ],
+  };
+
+  const result = selectTargetIntentsColdStart({
+    issueDemandMetadata: { demand_skill_ids: ['skl_shared'], domain_slugs: ['code-review'] },
+    evidenceIndex: {
+      snapshot_artifact_count: 0, candidate_count: 0, skill_record_count: 3,
+      analysis_count: 0, skill_ids_with_analysis_count: 0,
+      analysis_coverage_ratio: 0, relation_count: 0,
+      relation_predicate_counts: {}, pack_candidate_count: 0, pack_published_count: 0,
+      gap_flags: { unevaluated_snapshots: false, unnormalized_candidates: false, analysis_gaps: true, relation_potential: false, same_domain_group_count: 0 },
+      evidence_index_digest: 'sha256:fake',
+    },
+    maxTargets: 2,
+    backlog,
+  });
+
+  // skl_shared was already consumed by the backlog intent, so demand generates no separate intent
+  // Result: 1 intent (backlog only), seeds are unique across intents
+  const allSeeds = new Set();
+  for (const intent of result.intents) {
+    for (const s of intent.seed_skill_ids) {
+      allSeeds.add(s);
+    }
+  }
+  assert.equal(result.intents.length, 1);
+  assert.equal(result.intents[0].source, 'backlog');
+  // skl_bl_extra is in the backlog seeds
+  assert.ok(allSeeds.has('skl_bl_extra'));
+});
+
+// ══════════════════════════════════════════════════════════════════════
+//  SECTION L: Growth Funnel (R3)
+// ══════════════════════════════════════════════════════════════════════
+
+import { buildRunLedgerV3 } from './lib/run-ledger.mjs';
+
+test('funnel: buildEvidenceIndex returns funnel with correct counts', () => {
+  const root = tmpDir();
+  try {
+    // Create minimal catalog structure
+    const snapDir = join(root, 'sources', 'snapshots');
+    mkdirSync(snapDir, { recursive: true });
+    writeFileSync(join(snapDir, 'src1.json'), JSON.stringify({ name: 'source1' }));
+
+    const recordsDir = join(root, 'skills', 'records', 'co');
+    mkdirSync(recordsDir, { recursive: true });
+    writeFileSync(join(recordsDir, 'skl_co_test_funnel.yaml'), 'canonical_skill_id: skl_co_test_funnel');
+
+    const analysesDir = join(root, 'analyses', 'co');
+    mkdirSync(analysesDir, { recursive: true });
+    writeFileSync(join(analysesDir, 'skl_co_test_funnel.md'), '---\nskill_id: skl_co_test_funnel\n---\n# Analysis');
+
+    const index = buildEvidenceIndex({ catalogRoot: root });
+    assert.ok(index.funnel);
+    assert.equal(index.funnel.snapshots, 1);
+    assert.equal(index.funnel.skills, 1);
+    assert.equal(index.funnel.analyses, 1);
+    assert.equal(index.funnel.candidates, 0);
+    assert.equal(index.funnel.relations, 0);
+    assert.equal(index.funnel.packs_published, 0);
+  } finally {
+    rmSync(root, { recursive: true, force: true });
+  }
+});
+
+test('funnel: buildRunLedgerV3 includes growth_funnel in output', () => {
+  const funnel = {
+    snapshots: 5, candidates: 10, skills: 3, analyses: 2, relations: 0, packs_published: 0,
+  };
+  const ledger = buildRunLedgerV3({
+    runId: 'run_funnel_test',
+    timestamp: '2026-08-05T00:00:00Z',
+    maintenanceOutcomes: [],
+    issueOutcomes: [],
+    intentOutcomes: [],
+    candidateOutcomes: [],
+    growthFunnel: funnel,
+  });
+
+  assert.ok(ledger.growth_funnel);
+  assert.equal(ledger.growth_funnel.snapshots, 5);
+  assert.equal(ledger.growth_funnel.analyses, 2);
+  assert.equal(ledger.growth_funnel.relations, 0);
+  // Verify it's in the digest
+  assert.ok(ledger.ledger_digest.startsWith('sha256:'));
+});
+
+test('funnel: buildExhaustionProof includes funnel dimension', () => {
+  const proof = buildExhaustionProof({
+    evidenceIndex: {
+      snapshot_artifact_count: 3,
+      candidate_count: 5,
+      skill_record_count: 2,
+      analysis_count: 1,
+      relation_count: 0,
+      pack_published_count: 0,
+      gap_flags: { unevaluated_snapshots: false, unnormalized_candidates: false, analysis_gaps: true, relation_potential: false, same_domain_group_count: 0 },
+      funnel: { snapshots: 3, candidates: 5, skills: 2, analyses: 1, relations: 0, packs_published: 0 },
+    },
+    intents: { intents: [] },
+  });
+
+  const funnelTrace = proof.exhaustion_trace.find(e => e.dimension === 'funnel');
+  assert.ok(funnelTrace);
+  assert.ok(funnelTrace.detail.includes('snapshots=3'));
+  assert.ok(funnelTrace.detail.includes('analyses=1'));
+});
+
+test('funnel: buildRunLedgerV3 without growthFunnel does not include field', () => {
+  const ledger = buildRunLedgerV3({
+    runId: 'run_no_funnel',
+    timestamp: '2026-08-05T00:00:00Z',
+    maintenanceOutcomes: [],
+    issueOutcomes: [],
+    intentOutcomes: [],
+    candidateOutcomes: [],
+  });
+
+  assert.equal(ledger.growth_funnel, undefined);
+  assert.ok(ledger.ledger_digest.startsWith('sha256:'));
+});
+
+// ══════════════════════════════════════════════════════════════════════
+//  SECTION M: Delivery Guard allows catalog/growth/ paths (R1 guard)
+// ══════════════════════════════════════════════════════════════════════
+
+import { NIGHTLY_ALLOWED_PATHS, checkAuditPaths } from './lib/manifest-collector.mjs';
+
+test('delivery-guard: catalog/growth/ is in allowed paths or passes audit check', () => {
+  // catalog/ is already in NIGHTLY_ALLOWED_PATHS with trailing /
+  assert.ok(NIGHTLY_ALLOWED_PATHS.includes('catalog/'));
+  // catalog/growth/backlog.json should pass audit
+  const result = checkAuditPaths({
+    changedPaths: ['catalog/growth/backlog.json'],
+    allowedDirs: NIGHTLY_ALLOWED_PATHS,
+  });
+  assert.ok(result.ready);
+  assert.equal(result.errors.length, 0);
+});
+
+test('delivery-guard: catalog/growth/* paths are allowed (audit check)', () => {
+  const result = checkAuditPaths({
+    changedPaths: ['catalog/growth/backlog.json', 'catalog/growth/other.json'],
+    allowedDirs: NIGHTLY_ALLOWED_PATHS,
+  });
+  assert.ok(result.ready);
+  assert.equal(result.errors.length, 0);
+});
+
+// ══════════════════════════════════════════════════════════════════════
 //  Run all tests
 // ══════════════════════════════════════════════════════════════════════
 

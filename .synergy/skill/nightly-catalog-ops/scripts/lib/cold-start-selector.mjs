@@ -19,6 +19,7 @@ import { existsSync, readFileSync, readdirSync, statSync } from 'node:fs';
 import { join, dirname } from 'node:path';
 import { buildEvidenceIndex } from './evidence-index-builder.mjs';
 import { parseYaml } from '../../../catalog-data/scripts/lib/catalog-lib.mjs';
+import { backlogToIntents } from './growth-backlog.mjs';
 
 export function selectTargetIntentsColdStart({
   coverage,
@@ -31,6 +32,7 @@ export function selectTargetIntentsColdStart({
   catalogRoot,
   reader,
   _parseYaml,
+  backlog,
 } = {}) {
   const intents = [];
   const seenSeeds = new Set();
@@ -44,21 +46,89 @@ export function selectTargetIntentsColdStart({
     (issueDemandMetadata.demand_skill_ids?.length > 0 ||
      issueDemandMetadata.domain_slugs?.length > 0);
 
+  // 0. Cross-run growth backlog: highest priority (carry unresolved dimensions forward)
+  let backlogUsed = 0
+  if (backlog && backlog.entries && backlog.entries.length > 0 && intents.length < maxTargets) {
+    const backlogIntents = backlogToIntents({ backlog, maxTargets: maxTargets - intents.length })
+    for (const intent of backlogIntents) {
+      const seeds = (intent.seed_skill_ids || []).filter(s => !seenSeeds.has(s))
+      if (seeds.length > 0) {
+        intent.seed_skill_ids = seeds
+        intents.push(intent)
+        seeds.forEach(s => seenSeeds.add(s))
+        backlogUsed++
+      }
+    }
+  }
+
   // 1. Issue demand: highest priority (Controller-bound)
   if (hasExplicitDemand && intents.length < maxTargets) {
     const demandIds = issueDemandMetadata.demand_skill_ids || [];
     const domainSlugs = issueDemandMetadata.domain_slugs || [];
-    const seeds = demandIds.filter(id => typeof id === 'string' && id.startsWith('skl_'));
+    const seeds = demandIds.filter(id => typeof id === 'string' && id.startsWith('skl_')).filter(s => !seenSeeds.has(s));
     if (seeds.length > 0) {
       const domain = domainSlugs.length > 0 ? domainSlugs[0] : 'demand';
-      intents.push({
+
+      // Demand→source-discovery gap marking: check if demand seeds have zero coverage
+      const skillIdsWithAnalysis = new Set()
+      if (index.skill_ids_with_analysis_count > 0) {
+        // Collect skill_ids from index if available; otherwise infer from analysis frontmatter
+        try {
+          const analysesDir = catalogRoot ? join(catalogRoot, 'analyses') : null
+          if (analysesDir && reader && reader.exists(analysesDir)) {
+            const shards = reader.readDir(analysesDir)
+            for (const shard of shards) {
+              const shardPath = join(analysesDir, shard)
+              if (!reader.isDir(shardPath)) continue
+              const files = reader.readDir(shardPath)
+              for (const f of files) {
+                if (!f.endsWith('.md')) continue
+                try {
+                  const content = reader.readText(join(shardPath, f))
+                  const fm = extractFrontmatterStatic(content)
+                  if (fm) {
+                    const parsed = yamlParser(fm, join(shardPath, f))
+                    if (parsed && typeof parsed === 'object' && parsed.skill_id) {
+                      skillIdsWithAnalysis.add(parsed.skill_id)
+                    }
+                  }
+                } catch {}
+              }
+            }
+          }
+        } catch {}
+      }
+
+      // Determine if demand seeds are uncovered: none of the demand skill IDs appear in any analysis frontmatter
+      const uncoveredSeeds = seeds.filter(s => !skillIdsWithAnalysis.has(s))
+      // Crude source-group coverage check: if we have zero snapshots for the implied domain
+      const sourceGroupCovered = (index.snapshot_artifact_count || 0) > 0
+
+      let requiresSourceDiscovery = false
+      let demandGapReason = null
+      if (uncoveredSeeds.length === seeds.length && !sourceGroupCovered) {
+        requiresSourceDiscovery = true
+        const keywords = seeds.map(s => {
+          const parts = typeof s === 'string' ? s.split('_') : []
+          if (parts.length >= 3) return parts[1]
+          return s
+        })
+        demandGapReason = `capability_keywords: ${[...new Set(keywords)].join(', ')}`
+      }
+
+      const intent = {
         domain,
         reason: `Controller-bound issue demand: ${seeds.length} explicit skill IDs`,
         source: 'issue_demand',
         score: 0.95,
         seed_skill_ids: seeds.slice(0, 50),
         max_analysis_budget: Math.min(50, Math.max(1, seeds.length)),
-      });
+      }
+      if (requiresSourceDiscovery) {
+        intent.requires_source_discovery = true
+        intent.demand_gap_reason = demandGapReason
+      }
+      intents.push(intent);
       seeds.forEach(s => seenSeeds.add(s));
     }
   }
@@ -149,6 +219,7 @@ export function selectTargetIntentsColdStart({
     has_demand: hasExplicitDemand,
     evidence_index: index,
     reason: final.length === 0 ? 'no_eligible_evidence' : undefined,
+    backlog_used: backlogUsed,
   };
 }
 

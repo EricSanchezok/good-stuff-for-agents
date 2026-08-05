@@ -554,4 +554,161 @@ for (const staleness of ['current', 'stale_response', 'stale_issue', 'unknown'])
   assert.ok(!ok, 'evaluationV1 → evaluationV2 must reject')
 }
 
+// valid run-ledger with growth_funnel
+{
+  const record = {
+    schema_version: 3,
+    ledger_id: 'ldg_run_test_90000001',
+    run_id: 'run_test_90000001',
+    timestamp: '2026-07-27T12:00:00Z',
+    source_outcomes: [],
+    issue_outcomes: [],
+    intent_outcomes: [],
+    candidate_outcomes: [],
+    run_outcome: {
+      status: 'no_pack_clean',
+      summary: 'Test run with growth funnel.',
+      total_actions: 9,
+      errors: 0,
+      warnings: 0,
+    },
+    ledger_digest: 'sha256:' + '0'.repeat(64),
+    growth_funnel: {
+      snapshots: 5, candidates: 10, skills: 3, analyses: 2, relations: 0, packs_published: 0,
+    },
+  }
+  const result = validateAgainstSchema(record, runLedgerSchemaV3)
+  assert.ok(result.ok, `run-ledger v3 with growth_funnel valid: ${result.errors.join('; ')}`)
+}
+
+// valid run-summary with growth_funnel
+{
+  const record = {
+    schema_version: 3,
+    run_id: 'run_test_90000002',
+    ledger_id: 'ldg_run_test_90000002',
+    context_digest: 'sha256:' + 'a'.repeat(64),
+    ledger_digest: 'sha256:' + 'b'.repeat(64),
+    timestamp: '2026-07-27T12:00:00.000Z',
+    run_outcome: {
+      status: 'no_pack_clean',
+      summary: 'Test summary with growth funnel.',
+      total_actions: 9, errors: 0, warnings: 0,
+    },
+    gate: {
+      gate_id: 'gate_test', decision: 'pass', passed: true, errors: [], warnings: [],
+    },
+    intents: [],
+    outcome_counts: { sources: 5, skills: 3, relations: 0, packs: 0, issues: 0 },
+    growth_funnel: {
+      snapshots: 5, candidates: 10, skills: 3, analyses: 2, relations: 0, packs_published: 0,
+    },
+  }
+  const result = validateAgainstSchema(record, runSummarySchemaV3)
+  assert.ok(result.ok, `run-summary v3 with growth_funnel valid: ${result.errors.join('; ')}`)
+}
+
+// run-ledger without growth_funnel still valid (optional field)
+{
+  const record = {
+    schema_version: 3,
+    ledger_id: 'ldg_run_test_90000003',
+    run_id: 'run_test_90000003',
+    timestamp: '2026-07-27T12:00:00Z',
+    source_outcomes: [],
+    issue_outcomes: [],
+    intent_outcomes: [],
+    candidate_outcomes: [],
+    run_outcome: {
+      status: 'no_pack_clean',
+      summary: 'Test run without growth funnel.',
+      total_actions: 9,
+      errors: 0,
+      warnings: 0,
+    },
+    ledger_digest: 'sha256:' + '0'.repeat(64),
+  }
+  const result = validateAgainstSchema(record, runLedgerSchemaV3)
+  assert.ok(result.ok, `run-ledger v3 without growth_funnel valid: ${result.errors.join('; ')}`)
+}
+
+// run-summary without growth_funnel still valid (optional field)
+{
+  const record = {
+    schema_version: 3,
+    run_id: 'run_test_90000004',
+    ledger_id: 'ldg_run_test_90000004',
+    context_digest: 'sha256:' + 'c'.repeat(64),
+    ledger_digest: 'sha256:' + 'd'.repeat(64),
+    timestamp: '2026-07-27T12:00:00.000Z',
+    run_outcome: {
+      status: 'no_pack_clean',
+      summary: 'Test summary without growth funnel.',
+      total_actions: 9, errors: 0, warnings: 0,
+    },
+    gate: {
+      gate_id: 'gate_test', decision: 'pass', passed: true, errors: [], warnings: [],
+    },
+    intents: [],
+    outcome_counts: { sources: 5, skills: 3, relations: 0, packs: 0, issues: 0 },
+  }
+  const result = validateAgainstSchema(record, runSummarySchemaV3)
+  assert.ok(result.ok, `run-summary v3 without growth_funnel valid: ${result.errors.join('; ')}`)
+}
+
+// growth_funnel with extra fields rejected (additionalProperties: false)
+{
+  const record = {
+    schema_version: 3,
+    ledger_id: 'ldg_run_test_90000005',
+    run_id: 'run_test_90000005',
+    timestamp: '2026-07-27T12:00:00Z',
+    source_outcomes: [],
+    issue_outcomes: [],
+    intent_outcomes: [],
+    candidate_outcomes: [],
+    run_outcome: {
+      status: 'no_pack_clean',
+      summary: 'Test ledger with bad funnel.',
+      total_actions: 9,
+      errors: 0,
+      warnings: 0,
+    },
+    ledger_digest: 'sha256:' + '0'.repeat(64),
+    growth_funnel: {
+      snapshots: 5, candidates: 10, skills: 3, analyses: 2, relations: 0, packs_published: 0,
+      extra_field: 1,
+    },
+  }
+  const result = validateAgainstSchema(record, runLedgerSchemaV3)
+  assert.ok(!result.ok, 'run-ledger growth_funnel with extra field should be rejected')
+}
+
+// growth_funnel with negative value rejected
+{
+  const record = {
+    schema_version: 3,
+    ledger_id: 'ldg_run_test_90000006',
+    run_id: 'run_test_90000006',
+    timestamp: '2026-07-27T12:00:00Z',
+    source_outcomes: [],
+    issue_outcomes: [],
+    intent_outcomes: [],
+    candidate_outcomes: [],
+    run_outcome: {
+      status: 'no_pack_clean',
+      summary: 'Test ledger with negative funnel.',
+      total_actions: 9,
+      errors: 0,
+      warnings: 0,
+    },
+    ledger_digest: 'sha256:' + '0'.repeat(64),
+    growth_funnel: {
+      snapshots: -1, candidates: 10, skills: 3, analyses: 2, relations: 0, packs_published: 0,
+    },
+  }
+  const result = validateAgainstSchema(record, runLedgerSchemaV3)
+  assert.ok(!result.ok, 'run-ledger growth_funnel with negative value should be rejected')
+}
+
 console.log('schema v2/v3 contract tests passed')

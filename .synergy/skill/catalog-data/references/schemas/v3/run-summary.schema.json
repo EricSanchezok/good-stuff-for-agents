@@ -78,6 +78,18 @@
         "packs": { "type": "integer", "minimum": 0 },
         "issues": { "type": "integer", "minimum": 0 }
       }
+    },
+    "growth_funnel": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "snapshots": { "type": "integer", "minimum": 0 },
+        "candidates": { "type": "integer", "minimum": 0 },
+        "skills": { "type": "integer", "minimum": 0 },
+        "analyses": { "type": "integer", "minimum": 0 },
+        "relations": { "type": "integer", "minimum": 0 },
+        "packs_published": { "type": "integer", "minimum": 0 }
+      }
     }
   }
 }

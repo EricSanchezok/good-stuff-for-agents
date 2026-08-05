@@ -53,6 +53,26 @@ Outer Agent:
    ```
 4. Resumes: `npm --prefix .synergy run nightly -- --resume <runId>`
 
+### Growth Workflow (L0-L7) — target-driven, not full backfill
+
+Evidence processing is goal-driven owner work, driven by the handoff intents. Process intents in priority order, always closing the loop back into the run:
+
+```text
+L0.5  demand → source discovery   (if intent.requires_source_discovery)
+L1    extraction
+L2    normalization
+L3    deep analysis (parallel per intent)
+L4    relations
+L5    pack synthesis
+L6    independent evaluation
+L7    gate + seal + audit + terminal
+```
+
+- **L0.5 需求补源**: If an intent carries `requires_source_discovery: true`, the demand capability has no source coverage. Use the `source-discovery` skill to find and qualify candidate upstream sources for the demanded capability, then sync approved sources (`catalog-maintenance`) so the next run (or the same run's backlog) has evidence to consume. Bounded: discovery is limited to the demanded capability; do not mass-discover.
+- **L3 并行分析**: Multiple intents in one run may dispatch `skill-deep-analysis` subagents in parallel (one session per skill or per intent, never shared). Keep synthesis and evaluation in different isolated sessions.
+- **Backlog**: If an intent cannot be completed this run (missing source, missing analysis, missing relations), record it through the growth backlog (`catalog/growth/backlog.json`) so the next run resumes where this one stopped instead of restarting from scratch.
+- **No-pack invariant**: `no_pack_clean` is legal only after the exhaustion proof shows no demand, no backlog, no new artifacts, and no relation potential. `insufficient_evidence` is the correct terminal when gaps remain.
+
 ### Resume
 
 ```bash

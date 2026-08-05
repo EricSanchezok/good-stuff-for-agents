@@ -21,6 +21,7 @@ export function buildRunLedgerV3({
   exhaustionTrace = null,
   rollingYield = null,
   evidence = null,
+  growthFunnel = null,
 }) {
   const sourceOutcomes = (maintenanceOutcomes || []).map(o => ({
     source_id: o.source_id,
@@ -79,6 +80,9 @@ export function buildRunLedgerV3({
   if (evidence) {
     ledger.evidence = evidence;
   }
+  if (growthFunnel) {
+    ledger.growth_funnel = growthFunnel;
+  }
 
   const { ledger_digest, ...rest } = ledger;
   ledger.ledger_digest = `sha256:${createHash('sha256').update(canonicalStringify(rest)).digest('hex')}`;
@@ -106,12 +110,18 @@ export function buildExhaustionProof({
   const hasRelationPotential = flags.relation_potential;
   const hasActiveIntents = intents?.intents?.length > 0;
 
+  const funnel = evidenceIndex?.funnel
+  const funnelSummary = funnel
+    ? `snapshots=${funnel.snapshots} candidates=${funnel.candidates} skills=${funnel.skills} analyses=${funnel.analyses} relations=${funnel.relations} packs=${funnel.packs_published}`
+    : 'funnel_not_available'
+
   const exhaustionEntries = [
     { dimension: 'demand', found: hasDemand, detail: `${demandSkillIds.length} skill IDs in demand` },
     { dimension: 'backlog', found: hasBacklog, detail: `snapshot=${flags.unevaluated_snapshots}, candidate=${flags.unnormalized_candidates}, analysis=${flags.analysis_gaps}` },
     { dimension: 'new_artifacts', found: hasNewArtifacts, detail: `${evidenceIndex?.snapshot_artifact_count || 0} snapshots, ${evidenceIndex?.candidate_count || 0} candidates` },
     { dimension: 'relation_potential', found: hasRelationPotential, detail: `${evidenceIndex?.analysis_count || 0} analyses, ${flags.same_domain_group_count || 0} domain groups` },
     { dimension: 'active_intents', found: hasActiveIntents, detail: `${intents?.intents?.length || 0} intents` },
+    { dimension: 'funnel', found: funnel ? Object.values(funnel).some(v => v > 0) : false, detail: funnelSummary },
   ];
 
   const anyGap = hasDemand || hasBacklog || hasNewArtifacts || hasRelationPotential || hasActiveIntents;

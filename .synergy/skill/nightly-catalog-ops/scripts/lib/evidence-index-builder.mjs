@@ -225,6 +225,14 @@ export function buildEvidenceIndex(opts = {}) {
       relation_potential: hasRelationPotential,
       same_domain_group_count: domainGroups.size,
     },
+    funnel: {
+      snapshots: snapshotArtifactCount,
+      candidates: candidateCount,
+      skills: skillRecordCount,
+      analyses: analysisCount,
+      relations: relationCount,
+      packs_published: packPublishedCount,
+    },
   };
 
   const ordered = {
