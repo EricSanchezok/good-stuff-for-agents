@@ -24,6 +24,7 @@ import { loadRegistry as _loadRegistry, validateCatalog as _validateCatalog, wri
 import { catalogData as _catalogData } from '../../catalog-data/scripts/lib/pipeline-cli.mjs';
 import { syncApprovedSources as _syncApprovedSources } from '../../source-sync/scripts/sync-sources-lib.mjs';
 import { prepareIssueStage as _prepareIssueStage, finalizeIssueStage as _finalizeIssueStage, checkGhAuth as _checkGhAuth } from '../../catalog-growth-ops/scripts/issue-stage-orchestrator.mjs';
+import { renderAll as _renderAll } from '../../catalog-publishing/scripts/lib/publishing-lib.mjs';
 
 const RUNS_ROOT = join(CATALOG, 'runs');
 
@@ -202,6 +203,7 @@ async function productionMaintenanceExecutor({ runId, runsRoot, head, deps } = {
   const syncApprovedSources = deps?.syncApprovedSources || _syncApprovedSources;
   const catalogData = deps?.catalogData || _catalogData;
   const writeTextAtomic = deps?.writeTextAtomic || _writeTextAtomic;
+  const renderAll = deps?.renderAll || _renderAll;
 
   const validation = validateCatalog({ strict: true });
   if (!validation.ok) {
@@ -218,6 +220,10 @@ async function productionMaintenanceExecutor({ runId, runsRoot, head, deps } = {
       writeTextAtomic(path, content);
     },
   });
+
+  // Rebuild indexes and public docs after source sync so the trusted gate
+  // (catalog:status, publish:check) sees no drift. Fail closed on render error.
+  renderAll();
 
   const sourceResults = [];
   for (const se of syncSummary.source_errors) {
