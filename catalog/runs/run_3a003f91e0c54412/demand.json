@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "kind": "issue_demand_binding",
+  "run_id": "run_3a003f91e0c54412",
+  "workload_digest": "sha256:82c2fbee6b7c341840cc25856d9c10eb2c4a17e00e96e8a31a8f5d7ada7d1a1d",
+  "demand_skill_ids": [
+    "skl_coderabbit-autofix-src-https-github-com-coderabbit-7ec3dc4b-skills-8f2a22eb-skills-autofix-skill-md_7ec3dc4b"
+  ],
+  "domain_slugs": [],
+  "created_at": "2026-08-05T11:44:18.111Z",
+  "digest": "sha256:d12c5a5ece053709b6b940b51b4b1d804fe48c95199e95a43598a7a67a054d5e"
+}
