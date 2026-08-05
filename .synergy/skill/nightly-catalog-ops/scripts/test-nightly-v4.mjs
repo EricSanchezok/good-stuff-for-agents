@@ -283,6 +283,13 @@ test('issue drafts write-once and validate', async () => {
     assert.ok(result.coverage.covered === 2);
     assert.ok(result.coverage.missing.length === 0);
 
+    // Written document must carry the consumer-required kind/schema fields
+    const written = JSON.parse(readFileSync(result.path, 'utf8'));
+    assert.equal(written.kind, 'issue_semantic_drafts');
+    assert.equal(written.schema_version, 1);
+    assert.equal(written.run_id, 'run_drafts');
+    assert.equal(written.workload_digest, workload.workload_digest);
+
     // Validate
     const validation = validateIssueDrafts({ runId: 'run_drafts', workloadPath, runsRoot: root });
     assert.ok(validation.ok, validation.error);

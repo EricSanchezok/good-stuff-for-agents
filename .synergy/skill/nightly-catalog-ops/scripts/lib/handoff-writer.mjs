@@ -148,6 +148,7 @@ export function writeIssueDrafts({
 
   const content = JSON.stringify({
     schema_version: 1,
+    kind: 'issue_semantic_drafts',
     run_id: runId,
     workload_digest: workload.workload_digest || '',
     drafts,
@@ -201,6 +202,14 @@ export function validateIssueDrafts({ runId, workloadPath, runsRoot } = {}) {
   // Binding check: run_id match
   if (draftsDoc.run_id !== runId) {
     return { ok: false, error: `drafts_run_id_mismatch: ${draftsDoc.run_id} vs ${runId}` };
+  }
+
+  // Document kind/schema — must match the consumer's validateDraftsComplete
+  if (draftsDoc.schema_version !== 1) {
+    return { ok: false, error: `drafts_invalid: schema_version must be 1, got ${draftsDoc.schema_version}` };
+  }
+  if (draftsDoc.kind !== 'issue_semantic_drafts') {
+    return { ok: false, error: `drafts_invalid: kind must be "issue_semantic_drafts", got ${draftsDoc.kind}` };
   }
 
   // Workload digest binding
