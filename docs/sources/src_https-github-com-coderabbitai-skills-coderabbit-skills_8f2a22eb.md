@@ -10,7 +10,7 @@
 
 ## Shelf health
 
-I last saw this source respond successfully around 2026-08-05T14:26:56.888Z.
+I last saw this source respond successfully around 2026-08-05T14:39:38.037Z.
 
 ## Tracked Skills
 
@@ -19,4 +19,4 @@ I last saw this source respond successfully around 2026-08-05T14:26:56.888Z.
 
 ## Packs Using This Source
 
-No published packs use this source yet.
+- [CodeRabbit Review Remediation Workflow](../packs/code-review/pack_coderabbit-review-remediation_f00daeba.md)

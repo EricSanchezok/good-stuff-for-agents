@@ -31,11 +31,12 @@ Use when the trigger semantics and task stage match the job. Do not use when req
 
 ## Related Packs
 
-No published packs use this skill yet.
+- [CodeRabbit Review Remediation Workflow](../../packs/code-review/pack_coderabbit-review-remediation_f00daeba.md)
 
 ## Related Skills
 
-No related skills are public yet.
+- chains with: [CodeRabbit Autofix](../co/skl_coderabbit-autofix-src-https-github-com-coderabbit-7ec3dc4b-skills-8f2a22eb-skills-autofix-skill-md_7ec3dc4b.md)
+- alternatives: [CodeRabbit Autofix](../co/skl_coderabbit-autofix-src-https-github-com-coderabbit-7ec3dc4b-skills-8f2a22eb-skills-autofix-skill-md_7ec3dc4b.md)
 
 ## Confidence and Limitations
 

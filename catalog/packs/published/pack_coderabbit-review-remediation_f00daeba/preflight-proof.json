@@ -1,0 +1,32 @@
+{
+  "analysis_hashes": {
+    "anl_2184e21c5dce1bf5": "sha256:8e36016fe35e9425920847190dbeb939c205ff49546bf61716bcfa57ba5ea51c",
+    "anl_b02eacb7945a7f14": "sha256:c1538bfeb71fb0bbac99a5ba709c6fb4a405291f333455c007be916015bd4569"
+  },
+  "analysis_ids": [
+    "anl_2184e21c5dce1bf5",
+    "anl_b02eacb7945a7f14"
+  ],
+  "content_digest": "sha256:6c9d3b72302b554a2e382fc8b31a109992b4fc4ccac2e297a5c5f3a639fbf76e",
+  "created_at": "2026-08-05T14:58:28.259Z",
+  "created_by_run": "run_9029deeaa50949fd",
+  "pack_id": "pack_coderabbit-review-remediation_f00daeba",
+  "relation_hashes": {
+    "rel_cr-alt_f9de9437": "sha256:f607977b7668c990326c10d10567abe762bb9607ef0abd1d531ce4a3e9c00459",
+    "rel_cr-chain_f843bc4d": "sha256:1c2ccae69b8395930e53f2a5ea233f3e27b4e5a00a70a73613d0976b7c8c10ec"
+  },
+  "relation_ids": [
+    "rel_cr-alt_f9de9437",
+    "rel_cr-chain_f843bc4d"
+  ],
+  "rules_version": "v3.2.0",
+  "schema_version": 1,
+  "skill_evidence_hashes": {
+    "skl_coderabbit-autofix-src-https-github-com-coderabbit-7ec3dc4b-skills-8f2a22eb-skills-autofix-skill-md_7ec3dc4b": "sha256:267da84dba461797adea907e566423c1171a8da26f1199f5ce1c82cbd9a5de3f",
+    "skl_coderabbit-code-review-src-https-github-com-codera-9e16a0ae-lls-8f2a22eb-skills-code-review-skill-md_9e16a0ae": "sha256:43279483614f9c0ddb227a187077801b6571eab902c0ed5fe678cf15c7eb6c58"
+  },
+  "skill_evidence_ids": [
+    "skl_coderabbit-autofix-src-https-github-com-coderabbit-7ec3dc4b-skills-8f2a22eb-skills-autofix-skill-md_7ec3dc4b",
+    "skl_coderabbit-code-review-src-https-github-com-codera-9e16a0ae-lls-8f2a22eb-skills-code-review-skill-md_9e16a0ae"
+  ]
+}

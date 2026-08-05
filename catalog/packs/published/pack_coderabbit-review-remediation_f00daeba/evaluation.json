@@ -1,0 +1,199 @@
+{
+  "blockers": [],
+  "checked_claim_ids": [
+    "clm_02587127cc48",
+    "clm_03d3fd001a5c",
+    "clm_10a9c7605ab4",
+    "clm_11a7fb890801",
+    "clm_158c5ab198e3",
+    "clm_1828b76449cd",
+    "clm_1a2995e06f3d",
+    "clm_1f76c26ae9df",
+    "clm_2055f5a99683",
+    "clm_20d8930ca32a",
+    "clm_22c515b6290f",
+    "clm_28007d0157fe",
+    "clm_2ce23cfa016e",
+    "clm_39d3824bac23",
+    "clm_39fc90bc930f",
+    "clm_3e4b64c047ed",
+    "clm_403ca5d8b50a",
+    "clm_40e48aadd1c3",
+    "clm_42dcce04008a",
+    "clm_494a605a1406",
+    "clm_4d9b0f45eb97",
+    "clm_4e45715920ee",
+    "clm_4ed19d34a4c0",
+    "clm_52e21a7f5e44",
+    "clm_567ba23549eb",
+    "clm_5b6e7060951a",
+    "clm_5fe202229e03",
+    "clm_66346ff946a3",
+    "clm_6cc35dec04b2",
+    "clm_6f12628d62fb",
+    "clm_70223785e528",
+    "clm_706058233ebf",
+    "clm_74c6008d8fce",
+    "clm_758e49d31d34",
+    "clm_77635e606edb",
+    "clm_77931b78c136",
+    "clm_80ade1706c8b",
+    "clm_845ad396e9a7",
+    "clm_85cca7b1062e",
+    "clm_89221e3473ec",
+    "clm_8a07f64606f8",
+    "clm_8cf9849bd2f0",
+    "clm_91dd448f08c4",
+    "clm_95a71c1b761b",
+    "clm_9f3647651699",
+    "clm_a03998d324cd",
+    "clm_a164f1fe804d",
+    "clm_a338b9892a37",
+    "clm_aa6c7dbf3998",
+    "clm_ad54044355c7",
+    "clm_b3f06cb2a0e6",
+    "clm_b893010246cb",
+    "clm_b96b08f15aec",
+    "clm_ba08086914fa",
+    "clm_c6602fc7ce9d",
+    "clm_c6f1fc62c5d3",
+    "clm_c9dba2c7f43e",
+    "clm_cefad09b349b",
+    "clm_cf4ac487f39b",
+    "clm_d3233b72cb94",
+    "clm_d65a9fc901e0",
+    "clm_dc8f237da279",
+    "clm_e3b05443bb5b",
+    "clm_e473ae1c67c6",
+    "clm_e4c924397a53",
+    "clm_eb0a44cac29b",
+    "clm_ec1117a28451",
+    "clm_f441cf841512",
+    "clm_f5022775d155",
+    "clm_fcde642fd8ac"
+  ],
+  "created_at": "2026-08-05T14:59:42.440Z",
+  "created_by_run": "run_manual",
+  "decision": {
+    "blocker_count": 0,
+    "level": "passed",
+    "min_metric": 0.78,
+    "passed": true,
+    "reason": "All metrics pass MIN-gate (>= 0.70), no structural blockers"
+  },
+  "evaluation_id": "eval_pack-coderabbit-review-remediation-f00daeba-candid-18d5f072-101536ebbe50c3ff165a033d33e4ebd7d00a43e9_18d5f072",
+  "evaluation_session_id": "ses_bbbbbbbbbbbbbbbbbbbb",
+  "metrics": {
+    "actionability": {
+      "score": 0.82
+    },
+    "compatibility": {
+      "score": 0.85
+    },
+    "conflict_control": {
+      "score": 0.9
+    },
+    "coverage": {
+      "score": 0.8
+    },
+    "evidence_quality": {
+      "score": 0.8
+    },
+    "freshness": {
+      "score": 0.78
+    },
+    "non_redundancy": {
+      "score": 0.82
+    },
+    "relevance": {
+      "score": 0.85
+    },
+    "source_quality": {
+      "score": 0.85
+    },
+    "workflow_coherence": {
+      "score": 0.88
+    }
+  },
+  "pack_id": "pack_coderabbit-review-remediation_f00daeba",
+  "proof_digest": "sha256:6c9d3b72302b554a2e382fc8b31a109992b4fc4ccac2e297a5c5f3a639fbf76e",
+  "schema_version": 2,
+  "synthesis_session_id": "ses_aaaaaaaaaaaaaaaaaaaa",
+  "warnings": [
+    {
+      "claim_id": "clm_d8934934cbe7",
+      "disposition": "mitigated",
+      "message": "disposed: The review sends source-code diffs to an external CodeRabbit service; an incorrect scope can disclose secrets, proprietary code, or unrelate"
+    },
+    {
+      "claim_id": "clm_d462086af6b4",
+      "disposition": "mitigated",
+      "message": "disposed: Severity labels and a clean or info-only result are vendor judgments, not proof that the code is correct, secure, tested, or architecturally"
+    },
+    {
+      "claim_id": "clm_a5b6e42c89dd",
+      "disposition": "mitigated",
+      "message": "disposed: Review output is explicitly untrusted and may be incorrect, irrelevant, or unsafe to follow without checking the underlying code and tests."
+    },
+    {
+      "claim_id": "clm_094134a1fb7d",
+      "disposition": "mitigated",
+      "message": "disposed: The autonomous fix loop has no stated iteration cap, mandatory test gate, patch-size limit, rollback requirement, or independent verificatio"
+    },
+    {
+      "claim_id": "clm_d70025f6c5f2",
+      "disposition": "mitigated",
+      "message": "disposed: Broad diffs, generated files, or mixed concerns can create noisy findings and make the remediation loop wasteful or damaging."
+    },
+    {
+      "claim_id": "clm_dd46323b5b03",
+      "disposition": "mitigated",
+      "message": "disposed: Service outages, expired authentication, or incompatible CLI versions block the workflow rather than falling back to local review."
+    },
+    {
+      "claim_id": "clm_4c9ddf3942e9",
+      "disposition": "mitigated",
+      "message": "disposed: A dirty working tree only triggers a warning rather than an explicit hard stop; without precise staging, the consolidated commit could absor"
+    },
+    {
+      "claim_id": "clm_3b5596a9be74",
+      "disposition": "mitigated",
+      "message": "disposed: Unpushed commits or a missing PR force a push-or-create decision followed by an exit, so the process cannot complete in one session and late"
+    },
+    {
+      "claim_id": "clm_0821985e241c",
+      "disposition": "mitigated",
+      "message": "disposed: A fixed allowlist of CodeRabbit identities can silently miss valid feedback if the bot account or installation identity changes."
+    },
+    {
+      "claim_id": "clm_910c50db54a2",
+      "disposition": "mitigated",
+      "message": "disposed: Accepting root comments only can omit a correction, clarification, or changed recommendation recorded in a thread reply."
+    },
+    {
+      "claim_id": "clm_8ea009a10003",
+      "disposition": "mitigated",
+      "message": "disposed: Stacked PRs, fork workflows, rebases, or multiple PRs for one branch can make current-PR resolution and preserved line anchors point at the "
+    },
+    {
+      "claim_id": "clm_af506368917b",
+      "disposition": "mitigated",
+      "message": "disposed: Per-change approval scales poorly for large mechanical reviews and can cause approval fatigue or rubber-stamping, defeating the intended saf"
+    },
+    {
+      "claim_id": "clm_50c3a67403a7",
+      "disposition": "mitigated",
+      "message": "disposed: Validation is optional and command selection is unspecified, so approved fixes may be pushed without adequate tests or an unsafe repository "
+    },
+    {
+      "claim_id": "clm_ba54fce38295",
+      "disposition": "mitigated",
+      "message": "disposed: Broad but legitimate architectural or infrastructure findings are deliberately rejected, leaving the issue unresolved unless handed to a dif"
+    },
+    {
+      "claim_id": "clm_5bf62c4a739e",
+      "disposition": "mitigated",
+      "message": "disposed: A summary described as local-state-only can still leak sensitive branch, file, or test details if sanitization is implemented carelessly."
+    }
+  ]
+}

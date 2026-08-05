@@ -1,12 +1,12 @@
 {
-  "catalog_hash": "sha256:2c5c871cf6df6e6b2ede1eed1e0d55e79296786c1b861951eeec6e2fca87eede",
+  "catalog_hash": "sha256:a9f8bc4a875a3587c3beb243f3983d4fc7e783b90fe8788573ef396bf34702ef",
   "counts": {
-    "domains": 0,
-    "packs": 0,
+    "domains": 1,
+    "packs": 1,
     "skills": 2,
     "sources": 17
   },
-  "generated_at": "2026-08-05T14:35:36.146Z",
+  "generated_at": "2026-08-05T15:02:38.939Z",
   "schema_version": 1,
   "shards": [
     "catalog/indexes/shards/skills-00000.jsonl"

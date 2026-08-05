@@ -7,10 +7,10 @@
 <p align="center"><strong>I’m collecting the good stuff for agents: useful skills, trustworthy sources, and ready-to-run packs.</strong></p>
 
 <p align="center">
-  <a href="docs/packs/README.md"><img alt="Published packs" src="https://img.shields.io/badge/packs-0-F7C66A?style=for-the-badge&labelColor=101014"></a>
+  <a href="docs/packs/README.md"><img alt="Published packs" src="https://img.shields.io/badge/packs-1-F7C66A?style=for-the-badge&labelColor=101014"></a>
   <a href="docs/skills/README.md"><img alt="Indexed skills" src="https://img.shields.io/badge/skills-2-B879FF?style=for-the-badge&labelColor=101014"></a>
   <a href="docs/sources/README.md"><img alt="Tracked sources" src="https://img.shields.io/badge/sources-17-61F4C6?style=for-the-badge&labelColor=101014"></a>
-  <a href="docs/domains/README.md"><img alt="Domains" src="https://img.shields.io/badge/domains-0-FFF7DF?style=for-the-badge&labelColor=101014"></a>
+  <a href="docs/domains/README.md"><img alt="Domains" src="https://img.shields.io/badge/domains-1-FFF7DF?style=for-the-badge&labelColor=101014"></a>
 </p>
 
 <p align="center">
@@ -40,8 +40,10 @@ I try to keep it bright and useful: less rummaging through raw lists, more “st
 
 These are ready routes, not piles of loose parts.
 
-> I’m still warming up the first public packs. Once I trust a route, I’ll set it here on the shelf.
+| Pack | What I made it for | Confidence |
+| --- | --- | --- |
+| [CodeRabbit Review Remediation Workflow](docs/packs/code-review/pack_coderabbit-review-remediation_f00daeba.md) | Governed review-to-remediation of CodeRabbit findings: severity-grouped review findings feed an independently-verified, human-gated fix workflow. | 78% minimum review score · Ready to use |
 
 ## Browse by domain
 
-> No public domains yet. I’ll draw the map as the shelves fill in.
+- [Code Review](docs/domains/code-review.md) · 1 packs · 0 skills

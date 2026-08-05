@@ -32,11 +32,12 @@ Use when the trigger semantics and task stage match the job. Do not use when req
 
 ## Related Packs
 
-No published packs use this skill yet.
+- [CodeRabbit Review Remediation Workflow](../../packs/code-review/pack_coderabbit-review-remediation_f00daeba.md)
 
 ## Related Skills
 
-No related skills are public yet.
+- chains with: [CodeRabbit Code Review](../co/skl_coderabbit-code-review-src-https-github-com-codera-9e16a0ae-lls-8f2a22eb-skills-code-review-skill-md_9e16a0ae.md)
+- alternatives: [CodeRabbit Code Review](../co/skl_coderabbit-code-review-src-https-github-com-codera-9e16a0ae-lls-8f2a22eb-skills-code-review-skill-md_9e16a0ae.md)
 
 ## Public Analysis Summary
 
