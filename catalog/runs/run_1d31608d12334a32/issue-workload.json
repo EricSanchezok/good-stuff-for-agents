@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "kind": "issue_workload",
+  "run_id": "run_1d31608d12334a32",
+  "repository": "EricSanchezok/good-stuff-for-agents",
+  "snapshot_complete": false,
+  "snapshot_diagnostics": "Get \"https://api.github.com/repos/EricSanchezok/good-stuff-for-agents/issues/1/comments?per_page=100\": dial tcp 100.64.0.35:443: i/o timeout",
+  "gh_available": true,
+  "gh_authenticated": true,
+  "scan_summary": {
+    "total_scanned": 0,
+    "accepted": 0,
+    "rejected": 0,
+    "run_id": "run_1d31608d12334a32",
+    "scanned_at": "2026-08-05T11:33:52.457Z",
+    "scan_digest": "sha256:82fdf8ff57694509e926abaf064ac37818070827a66e4c77652902e73976e727"
+  },
+  "all_accepted_issues": [],
+  "rejected_issues": [],
+  "workload_digest": "sha256:2c8963dba59a7e3dc8888e3d504196ed09c0ea80ebae533b957c9bc27aec9a21",
+  "prepared_at": "2026-08-05T11:33:52.460Z"
+}
