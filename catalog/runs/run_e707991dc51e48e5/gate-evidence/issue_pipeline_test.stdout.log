@@ -1,0 +1,14 @@
+ok - scan accepts every unique open Issue and binds full content
+ok - scan rejects closed and duplicate Issues
+ok - zero-tool fulfillment output converts to a content-addressed canonical assessment
+ok - assessment digest and derived gap criteria cannot be tampered
+ok - reply is deterministic and exposes only canonical evidence plus criterion IDs
+ok - TOCTOU compares the complete canonical Issue snapshot
+ok - restricted reply dry-run re-fetches but never invokes comment runner
+ok - apply posts exactly one comment and persists the same dedup fingerprint
+ok - posted canonical record prevents a second cross-run comment
+ok - stale Issue blocks the comment after the mandatory re-fetch
+ok - injection or privileged-action intake is held without re-fetch or comment
+ok - bootstrap record prevents repeat comment via lookupPreviousResponse
+ok - GitHub client fixes repository, fetches complete comments, and returns comment ID
+13 issue pipeline tests passed

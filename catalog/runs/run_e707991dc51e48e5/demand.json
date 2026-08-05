@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "kind": "issue_demand_binding",
+  "run_id": "run_e707991dc51e48e5",
+  "workload_digest": "sha256:5cf4b501ecd4ea4f678b8a5af12bac4f9006c558e92a3bec739b826c4767dac8",
+  "demand_skill_ids": [
+    "skl_coderabbit-code-review-src-https-github-com-codera-9e16a0ae-lls-8f2a22eb-skills-code-review-skill-md_9e16a0ae"
+  ],
+  "domain_slugs": [],
+  "created_at": "2026-08-05T15:29:37.587Z",
+  "digest": "sha256:1edd7c890976b450ee60741ee96a07558b10994694fb755684d5ee4941c7281d"
+}

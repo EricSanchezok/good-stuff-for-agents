@@ -1,0 +1,1 @@
+{"schema_version":3,"run_id":"run_e707991dc51e48e5","status":"failed","outcome":null,"summary":"Gate failed: catalog_status, publish_check","total_actions":0,"errors":1,"warnings":0,"last_phase_event_digest":"sha256:a43868a6a30121c4b6f7c8c6e2fea44ea149979405b5b16c333c87f85277007b","terminal_digest":"sha256:7bd9514286cd9edf2f2f0abbed7f76d80b67b66b38e1c5df43b6a32e98b5e2ff"}

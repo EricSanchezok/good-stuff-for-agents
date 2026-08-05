@@ -1,0 +1,39 @@
+ok - normal no_pack_clean: 9 events, completed, no_pack_clean outcome
+ok - published candidate: promoted candidate → published outcome
+ok - incomplete issue snapshot blocks before context
+ok - provider incident blocks before context
+ok - partial provider incident continues past maintenance
+ok - total provider failure blocks before context
+ok - target timeout produces interrupted terminal
+ok - target interrupted produces interrupted terminal
+ok - gate failure writes one failed result, cannot rerun same ID
+ok - missing gate executor is blocked, not minimal success
+ok - audit blocked: .synergy code changes detected
+ok - concurrent reservation rejected when another run is active
+ok - stale active marker is rejected, not silently deleted
+ok - tampered output causes chain verification failure
+ok - deleted output causes chain verification failure
+ok - CLI import produces zero stdout/stderr
+ok - CLI rejects unknown args
+ok - result is JSON-serializable and parseable
+ok - dirty worktree rejected before reservation
+ok - nonzero intents without executor → paused_for_targets (C6 pause protocol)
+ok - zero intents + no executor produces no_pack_clean
+ok - run IDs are always fresh and unpredictable
+ok - no resume: each run gets fresh run ID
+ok - missing required adapters throw immediately
+ok - new unassessed issues pause for semantic assessment
+ok - audit planner returns not ready → audit_blocked
+ok - core module import works from .synergy cwd
+ok - v3 ledger schema validates and has current fields
+ok - terminal payload digest is self-consistent
+ok - production maintenance executor is not a stub — fails without valid catalog
+ok - production issue executor is not a stub — fails when gh unauth/unavailable
+ok - production gate executor uses npm run, not console.log placeholder
+ok - production audit planner is not a stub — rejects code changes
+ok - controller exports all required production adapters
+ok - finding-3: issue executor returns real issueOutcomes with real issue numbers
+ok - finding-5: gate executor sanitizes env (no leaked secrets)
+ok - finding-6: productionAuditPlanner uses shared NIGHTLY_ALLOWED_PATHS from manifest-collector
+
+37 controller e2e tests passed
