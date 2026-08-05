@@ -24,32 +24,29 @@ export function collectChangedPaths({ repositoryRoot }) {
 
   const paths = new Set();
   const output = result.stdout;
-  // -z format: XY\0path\0
-  const entries = output.split('\0').filter(Boolean);
-  for (let i = 0; i < entries.length; i++) {
-    const entry = entries[i];
-    if (entry.length === 2) {
-      // Status code followed by path in next entry
-      if (i + 1 < entries.length) {
-        const path = entries[i + 1];
-        if (path) paths.add(path);
-        i++;
-      }
-    } else if (entry.length === 3) {
-      // Status code + space + path (rename case), handled in next entry
-      if (i + 1 < entries.length) {
-        const path = entries[i + 1];
-        if (path) paths.add(path);
-        i++;
-      }
-    } else {
-      // Could be a path with leading status chars stripped
-      // The -z format with --porcelain: XY\0path\0 for each entry
-      paths.add(entry);
+  // -z format: each record is "XY <path>\0"; rename/copy records emit a
+  // second bare "<source-path>\0" field. The 3-char "XY " prefix must be
+  // stripped from every status field; the bare rename source field is
+  // already a plain path.
+  const fields = output.split('\0').filter(Boolean);
+  for (let i = 0; i < fields.length; i++) {
+    const field = fields[i];
+    const isRenameOrCopy = field[0] === 'R' || field[0] === 'C';
+    const path = field.length > 3 ? field.slice(3) : '';
+    if (path) paths.add(path);
+    if (isRenameOrCopy && i + 1 < fields.length) {
+      const source = fields[i + 1];
+      if (source) paths.add(source);
+      i++;
     }
   }
 
-  return [...paths].sort();
+  // The controller's runtime active-marker is internal state, never a
+  // deliverable. Exclude it even when it is not gitignored so it can
+  // never leak into a seal manifest.
+  const filtered = [...paths].filter((p) => !p.endsWith('.active-run') && !p.includes('/.active-run'));
+
+  return filtered.sort();
 }
 
 export function buildManifestV3({

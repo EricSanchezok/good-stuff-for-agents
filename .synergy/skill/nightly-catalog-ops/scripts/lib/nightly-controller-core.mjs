@@ -800,6 +800,7 @@ async function runGateSealAuditTerminalStages({
       summary: errSummary, errors: auditErrors.length || 1,
     });
     finalizeTerminal({ runsRoot, runId, repositoryRoot, terminalPayload });
+    removeActiveMarker(runsRoot, runId);
     return {
       run_id: runId, status: 'audit_blocked', outcome: null,
       error: errSummary,
@@ -860,6 +861,11 @@ async function runGateSealAuditTerminalStages({
   }
 
   const finalChain = readChain({ runsRoot, runId });
+
+  // Terminal reached: release the run marker so a later fresh run (or the
+  // delivery guard) does not see a stale marker. Idempotent — safe even
+  // when the caller (executeNightly) also releases it.
+  removeActiveMarker(runsRoot, runId);
 
   return {
     run_id: runId,
