@@ -1182,10 +1182,15 @@ async function _resumeFromAssessment({
     issueResult, ts, onProgress,
   });
 
-  // Continue to targets
+  // Continue to targets. The assessment-resume path must NOT execute
+  // targets: target results are prepared by the outer agent only after a
+  // paused_for_targets handoff. Passing a targetExecutor here would attempt
+  // execution before target-result.json exists. Mirror the fresh path by
+  // leaving the executor null so intents pause for targets.
   const targetResult = await runSelectAndPrepareTargetsStage({
     runId, runsRoot, repositoryRoot,
-    targetSelector, targetExecutor,
+    targetSelector,
+    targetExecutor: null,
     contextResult, issueResult,
     ts, onProgress,
   });
