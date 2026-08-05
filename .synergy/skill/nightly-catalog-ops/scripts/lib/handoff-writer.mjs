@@ -15,6 +15,7 @@ import { createHash } from 'node:crypto';
 import { existsSync, readFileSync, writeFileSync, mkdirSync } from 'node:fs';
 import { join, dirname } from 'node:path';
 import { CATALOG } from '../../../catalog-data/scripts/lib/catalog-lib.mjs';
+import { validateFulfillmentAssessment } from '../../../catalog-growth-ops/scripts/lib/issue-fulfillment.mjs';
 
 /**
  * Write issue assessment drafts — write-once, coverage-binding.
@@ -104,13 +105,22 @@ export function writeIssueDrafts({
     if (!draft.intake || typeof draft.intake !== 'object') {
       throw new Error(`draft[${draft.issue_number}]: intake must be a non-null object`);
     }
-    // fulfillment_assessment must contain assessment_id
+    // fulfillment_assessment must pass the same validation the consumer
+    // (finalizeIssueStage → buildAssessmentFromFulfillment) will apply.
+    // assessment_id is derived by the assessment builder, never accepted as
+    // a draft field.
     if (!draft.fulfillment_assessment || typeof draft.fulfillment_assessment !== 'object') {
       throw new Error(`draft[${draft.issue_number}]: fulfillment_assessment must be a non-null object`);
     }
-    if (typeof draft.fulfillment_assessment.assessment_id !== 'string'
-        || !draft.fulfillment_assessment.assessment_id.startsWith('asm_')) {
-      throw new Error(`draft[${draft.issue_number}]: fulfillment_assessment.assessment_id must start with asm_`);
+    const fulfillmentErrors = validateFulfillmentAssessment({
+      intake: draft.intake,
+      assessment: draft.fulfillment_assessment,
+      evidenceIndex: draft.evidence_index,
+    });
+    if (fulfillmentErrors.length > 0) {
+      throw new Error(
+        `draft[${draft.issue_number}]: fulfillment_assessment invalid — ${fulfillmentErrors.join('; ')}`
+      );
     }
     // evidence_index must be present
     if (!draft.evidence_index || typeof draft.evidence_index !== 'object') {

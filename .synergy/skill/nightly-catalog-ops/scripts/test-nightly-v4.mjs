@@ -231,15 +231,47 @@ test('issue drafts write-once and validate', async () => {
     writeFileSync(workloadPath, JSON.stringify(workload));
 
     // Write drafts with full consumer-schema required fields
-    const mkDraft = (n) => ({
-      issue_number: n,
-      issue_binding: { issue_number: n },
-      intake: {},
-      fulfillment_assessment: { assessment_id: `asm_n${n}_test`, classification: {} },
-      evidence_index: {},
-      public_evidence_boundary: 'none',
-      notes: '',
-    });
+    // Drafts must be consumable by the issue stage finalize path:
+    // writeIssueDrafts now validates fulfillment_assessment through the same
+    // validateFulfillmentAssessment the consumer applies.
+    const mkDraft = (n) => {
+      const binding = {
+        repository: 'EricSanchezok/good-stuff-for-agents',
+        issue_number: n,
+        updated_at: '2026-01-15T01:00:00.000Z',
+        content_digest: `sha256:${'0'.repeat(63)}${n}`,
+      };
+      const intake = {
+        schema_version: 1,
+        kind: 'github_issue_intake',
+        intake_status: 'accepted',
+        issue_binding: { ...binding },
+      };
+      return {
+        issue_number: n,
+        issue_binding: { ...binding },
+        intake,
+        fulfillment_assessment: {
+          schema_version: 1,
+          kind: 'github_issue_fulfillment_assessment',
+          issue_binding: { ...binding },
+          classification: {
+            kind: 'skill_request',
+            criteria: [{ id: 'criterion-1', text: 'Provide test utility capability.' }],
+          },
+          fulfillment: {
+            status: 'not_satisfied',
+            rationale: 'Validated against canonical published catalog records.',
+            criteria: [{ criterion_id: 'criterion-1', status: 'gap', evidence: [] }],
+          },
+          draft_response: { recommended: false, body: null },
+          human_checkpoint: { required: true, action: 'review_only' },
+        },
+        evidence_index: {},
+        public_evidence_boundary: 'Published catalog skills and packs only',
+        notes: '',
+      };
+    };
     const result = writeIssueDrafts({
       runId: 'run_drafts',
       workloadPath,
