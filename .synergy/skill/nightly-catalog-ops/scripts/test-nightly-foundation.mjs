@@ -27,6 +27,10 @@ import {
   runContextSchemaV3, phaseEventSchemaV3, gateResultSchemaV3,
   sealSchemaV3, auditReceiptSchemaV3, terminalSchemaV3, runSummarySchemaV3,
 } from '../../catalog-data/scripts/lib/schema-validators.mjs';
+import {
+  readBacklog, mergeBacklog, writeBacklog, backlogToIntents, computeFingerprint,
+} from './lib/growth-backlog.mjs';
+import { buildExhaustionProof } from './lib/run-ledger.mjs';
 
 const tests = [];
 let failures = 0;
@@ -826,6 +830,139 @@ test('finding-8: run-summary context_digest and ledger_digest use sha256: prefix
     'run-summary schema must require sha256: prefix for context_digest');
   assert.match(runSummarySchemaV3.properties.ledger_digest.pattern, /sha256/,
     'run-summary schema must require sha256: prefix for ledger_digest');
+});
+
+// ══════════════════════════════════════════════════════════════════════
+//  GROWTH BACKLOG: satisfied status + dead-entry cleanup
+// ══════════════════════════════════════════════════════════════════════
+
+test('growth-backlog: satisfied fingerprint is not queued and marked satisfied', () => {
+  const root = tmpRunsRoot();
+  try {
+    const fp = computeFingerprint('demand', ['skl_a', 'skl_b']);
+    const merged = mergeBacklog({
+      catalogRoot: root,
+      entries: [{ dimension: 'demand', seeds: ['skl_a', 'skl_b'], reason: 'r1', source: 'run_ledger', attempts: 0, status: 'pending' }],
+      satisfiedFingerprints: [fp],
+    });
+    const entry = merged.entries.find(e => e.fingerprint === fp);
+    assert.ok(entry, 'satisfied entry must be recorded as evidence');
+    assert.equal(entry.status, 'satisfied');
+    const writeResult = writeBacklog({ catalogRoot: root, entries: merged.entries });
+    const reread = readBacklog({ catalogRoot: root });
+    const persisted = reread.entries.find(e => e.fingerprint === fp);
+    assert.equal(persisted.status, 'satisfied', 'satisfied status must persist to disk');
+    const intents = backlogToIntents({ backlog: reread });
+    assert.equal(intents.some(i => i.seed_skill_ids.includes('skl_a')), false,
+      'satisfied demand must never become an intent');
+  } finally { rmSync(root, { recursive: true, force: true }); }
+});
+
+test('growth-backlog: existing empty-seed dead entries are removed on merge', () => {
+  const root = tmpRunsRoot();
+  try {
+    // Seed a backlog with a dead empty-seed entry
+    const dead = { dimension: 'new_artifacts', seeds: [], reason: 'old', source: 'run_ledger', attempts: 1, status: 'pending' };
+    const deadFp = computeFingerprint('new_artifacts', []);
+    dead.fingerprint = deadFp;
+    dead.created_at = new Date().toISOString();
+    dead.updated_at = new Date().toISOString();
+    writeBacklog({ catalogRoot: root, entries: [dead] });
+    let reread = readBacklog({ catalogRoot: root });
+    assert.equal(reread.entries.length, 1, 'dead entry exists before merge');
+
+    // Merge with a real entry; the dead empty-seed entry must be dropped
+    const merged = mergeBacklog({
+      catalogRoot: root,
+      entries: [{ dimension: 'new_artifacts', seeds: ['src_https-x'], reason: 'r2', source: 'run_ledger', attempts: 0, status: 'pending' }],
+    });
+    writeBacklog({ catalogRoot: root, entries: merged.entries });
+    reread = readBacklog({ catalogRoot: root });
+    assert.equal(reread.entries.some(e => e.seeds.length === 0), false,
+      'empty-seed dead entries must be removed from disk');
+  } finally { rmSync(root, { recursive: true, force: true }); }
+});
+
+test('growth-backlog: new empty-seed entry is dropped, not queued', () => {
+  const root = tmpRunsRoot();
+  try {
+    const merged = mergeBacklog({
+      catalogRoot: root,
+      entries: [{ dimension: 'active_intents', seeds: [], reason: 'r3', source: 'run_ledger', attempts: 0, status: 'pending' }],
+    });
+    assert.equal(merged.entries.length, 0, 'new empty-seed entries must be dropped');
+    const intents = backlogToIntents({ backlog: { entries: merged.entries } });
+    assert.equal(intents.length, 0);
+  } finally { rmSync(root, { recursive: true, force: true }); }
+});
+
+test('growth-backlog: attempts still increment for repeated real entries', () => {
+  const root = tmpRunsRoot();
+  try {
+    const e = { dimension: 'new_artifacts', seeds: ['src_https-x'], reason: 'r', source: 'run_ledger', attempts: 0, status: 'pending' };
+    const m1 = mergeBacklog({ catalogRoot: root, entries: [e] });
+    writeBacklog({ catalogRoot: root, entries: m1.entries });
+    const m2 = mergeBacklog({ catalogRoot: root, entries: [e] });
+    const entry = m2.entries.find(x => x.dimension === 'new_artifacts');
+    assert.equal(entry.attempts, 1, 'attempts must increment on repeated fingerprint');
+  } finally { rmSync(root, { recursive: true, force: true }); }
+});
+
+test('growth-backlog: backlogToIntents generates intent only for pending real seeds', () => {
+  const root = tmpRunsRoot();
+  try {
+    const merged = mergeBacklog({
+      catalogRoot: root,
+      entries: [{ dimension: 'new_artifacts', seeds: ['src_https-x', 'src_https-y'], reason: 'r', source: 'run_ledger', attempts: 0, status: 'pending' }],
+    });
+    const intents = backlogToIntents({ backlog: { entries: merged.entries } });
+    assert.equal(intents.length, 1);
+    assert.deepEqual(intents[0].seed_skill_ids, ['src_https-x', 'src_https-y']);
+    assert.equal(intents[0].source, 'backlog');
+  } finally { rmSync(root, { recursive: true, force: true }); }
+});
+
+// ══════════════════════════════════════════════════════════════════════
+//  EXHAUSTION PROOF: terminal intents are not active gaps
+// ══════════════════════════════════════════════════════════════════════
+
+test('exhaustion: all-terminal intents do not count as active_intents gap', () => {
+  const proof = buildExhaustionProof({
+    evidenceIndex: { gap_flags: {}, funnel: null },
+    issueDemandMetadata: {},
+    intents: {
+      intents: [
+        { domain: 'd1', source: 'backlog', terminal: 'no_pack_clean' },
+        { domain: 'd2', source: 'issue_demand', terminal: 'promoted' },
+      ],
+    },
+  });
+  const active = proof.exhaustion_trace.find(e => e.dimension === 'active_intents');
+  assert.equal(active.found, false, 'terminal intents must not be a gap');
+});
+
+test('exhaustion: unresolved intent counts as active_intents gap', () => {
+  const proof = buildExhaustionProof({
+    evidenceIndex: { gap_flags: {}, funnel: null },
+    issueDemandMetadata: {},
+    intents: {
+      intents: [
+        { domain: 'd1', source: 'backlog', terminal: 'pending' },
+      ],
+    },
+  });
+  const active = proof.exhaustion_trace.find(e => e.dimension === 'active_intents');
+  assert.equal(active.found, true, 'pending intent must be a gap');
+});
+
+test('exhaustion: missing terminal defaults to active (unresolved)', () => {
+  const proof = buildExhaustionProof({
+    evidenceIndex: { gap_flags: {}, funnel: null },
+    issueDemandMetadata: {},
+    intents: { intents: [{ domain: 'd1', source: 'backlog' }] },
+  });
+  const active = proof.exhaustion_trace.find(e => e.dimension === 'active_intents');
+  assert.equal(active.found, true, 'missing terminal must count as unresolved');
 });
 
 // ══════════════════════════════════════════════════════════════════════

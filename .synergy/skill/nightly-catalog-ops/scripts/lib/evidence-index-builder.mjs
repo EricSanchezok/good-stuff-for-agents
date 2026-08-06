@@ -176,11 +176,97 @@ export function buildEvidenceIndex(opts = {}) {
 
   // Pack published
   let packPublishedCount = 0;
+  const publishedPackMemberIds = new Set();
   if (reader.exists(publishedPacksDir)) {
     const packDirs = reader.readDir(publishedPacksDir);
     for (const d of packDirs) {
-      if (reader.exists(join(publishedPacksDir, d, 'pack.yaml'))) packPublishedCount++;
+      const packPath = join(publishedPacksDir, d, 'pack.yaml');
+      if (!reader.exists(packPath)) continue;
+      packPublishedCount++;
+      try {
+        const parsed = parseYaml(reader.readText(packPath), packPath);
+        const members = parsed?.members || [];
+        for (const m of members) {
+          if (m && typeof m.skill_id === 'string' && m.skill_id) publishedPackMemberIds.add(m.skill_id);
+        }
+      } catch { /* skip malformed pack */ }
     }
+  }
+
+  // Covered seeds: source_ids referenced by any candidate or skill record,
+  // and candidate_ids already normalized into a skill record.
+  const coveredSourceIds = new Set();
+  const coveredCandidateIds = new Set();
+  const candidateSeedIds = [];
+
+  // Candidate records: extract source_id + candidate_id
+  if (reader.exists(candidatesDir)) {
+    const files = reader.readDir(candidatesDir);
+    for (const f of files) {
+      if (!f.endsWith('.jsonl')) continue;
+      const path = join(candidatesDir, f);
+      try {
+        const lines = reader.readText(path).trim().split('\n').filter(l => l.trim());
+        for (const line of lines) {
+          try {
+            const cand = JSON.parse(line);
+            if (cand && typeof cand.source_id === 'string' && cand.source_id) {
+              coveredSourceIds.add(cand.source_id);
+            }
+            if (cand && typeof cand.candidate_id === 'string' && cand.candidate_id) {
+              candidateSeedIds.push(cand.candidate_id);
+            }
+          } catch { /* skip */ }
+        }
+      } catch { /* skip malformed */ }
+    }
+  }
+
+  // Skill records: source.source_id + identity.source_skill_ids
+  if (reader.exists(recordsDir)) {
+    const shards = reader.readDir(recordsDir);
+    for (const shard of shards) {
+      const shardPath = join(recordsDir, shard);
+      if (!reader.isDir(shardPath)) continue;
+      const files = reader.readDir(shardPath);
+      for (const f of files) {
+        if (!f.endsWith('.yaml')) continue;
+        const path = join(shardPath, f);
+        try {
+          const parsed = parseYaml(reader.readText(path), path);
+          if (!parsed) continue;
+          const sourceId = parsed?.source?.source_id;
+          if (typeof sourceId === 'string' && sourceId) coveredSourceIds.add(sourceId);
+          const srcSkillIds = parsed?.identity?.source_skill_ids;
+          if (Array.isArray(srcSkillIds)) {
+            for (const sid of srcSkillIds) {
+              if (typeof sid === 'string' && sid) coveredCandidateIds.add(sid);
+            }
+          }
+        } catch { /* skip malformed */ }
+      }
+    }
+  }
+
+  // Unevaluated seeds: snapshots whose source_id is not covered, plus
+  // candidates that have not been normalized into any skill record.
+  const unevaluatedSeedIds = [];
+  if (reader.exists(snapshotDir)) {
+    const entries = reader.readDir(snapshotDir);
+    for (const entry of entries) {
+      if (!entry.endsWith('.json')) continue;
+      const path = join(snapshotDir, entry);
+      try {
+        const parsed = JSON.parse(reader.readText(path));
+        const sid = parsed?.source_id;
+        if (typeof sid === 'string' && sid && !coveredSourceIds.has(sid)) {
+          unevaluatedSeedIds.push(sid);
+        }
+      } catch { /* skip malformed */ }
+    }
+  }
+  for (const cid of candidateSeedIds) {
+    if (!coveredCandidateIds.has(cid)) unevaluatedSeedIds.push(cid);
   }
 
   // Compute gap flags
@@ -218,6 +304,8 @@ export function buildEvidenceIndex(opts = {}) {
     relation_predicate_counts: relationPredicates,
     pack_candidate_count: packCandidateCount,
     pack_published_count: packPublishedCount,
+    published_pack_member_ids: [...publishedPackMemberIds].sort(),
+    unevaluated_seed_ids: [...new Set(unevaluatedSeedIds)].sort(),
     gap_flags: {
       unevaluated_snapshots: hasUnevaluatedSnapshots,
       unnormalized_candidates: hasUnnormalizedCandidates,

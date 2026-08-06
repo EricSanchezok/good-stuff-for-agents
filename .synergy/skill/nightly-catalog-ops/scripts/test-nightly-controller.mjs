@@ -356,10 +356,13 @@ test('partial provider incident continues past maintenance', async () => {
     });
 
     // Partial incident must NOT block: run continues past maintenance.
-    // Empty candidate results without exhaustion proof → insufficient_evidence
-    // (fail-closed), which still proves the run was not blocked by the incident.
+    // The single intent terminated cleanly (no_pack_clean disposition) and
+    // no other evidence gap exists, so with terminal-intent recognition the
+    // exhaustion proof is truly_exhausted → completed/no_pack_clean.
+    // (Before bug (c) fix this incorrectly reported insufficient_evidence.)
     assert.notEqual(result.status, 'blocked', 'partial incident must not block the run');
-    assert.equal(result.status, 'insufficient_evidence');
+    assert.equal(result.status, 'completed');
+    assert.equal(result.outcome, 'no_pack_clean');
     const chain = readChain({ runsRoot: root, runId: result.run_id });
     assert.ok(chain.ok);
     assert.ok(chain.events.some(e => e.phase === 'context'), 'run should reach context despite partial incident');

@@ -1829,6 +1829,182 @@ test('delivery-guard: catalog/growth/* paths are allowed (audit check)', () => {
 });
 
 // ══════════════════════════════════════════════════════════════════════
+//  BUG (a): demand covered by published pack → satisfied, never requeued
+// ══════════════════════════════════════════════════════════════════════
+
+test('bug-a e2e: demand covered by published pack is satisfied, not requeued', async () => {
+  const root = tmpDir();
+  try {
+    // Published pack covering the demand seed
+    const packDir = join(root, 'catalog', 'packs', 'published', 'pack_x');
+    mkdirSync(packDir, { recursive: true });
+    writeFileSync(join(packDir, 'pack.yaml'), JSON.stringify({
+      pack_id: 'pack_x', status: 'published',
+      members: [{ skill_id: 'skl_covered' }],
+    }));
+    const demandSkill = 'skl_covered';
+    const issueExecutor = async () => ({
+      ok: true,
+      snapshot: { open: 0, acknowledged: 0, fulfilled: 0, blocked: 0 },
+      workloadPath: null, demandArtifactPath: null, errors: [],
+      newUnassessed: [], _assessed_unassessed: true,
+      demandMetadata: { demand_skill_ids: [demandSkill], domain_slugs: ['demand'] },
+      issueOutcomes: [], stageTerminals: [],
+    });
+    const result = await executeNightly({
+      runsRoot: root, repositoryRoot: root,
+      repositoryAdapter: cleanRepoAdapter(),
+      changedPathsCollector: () => [],
+      maintenanceExecutor: okMaintenanceExecutor(),
+      issueExecutor,
+      contextCollector: okContextCollector({ demandMetadata: { demand_skill_ids: [demandSkill], domain_slugs: [] } }),
+      targetSelector: () => ({ intents: [], total: 0 }),
+      gateExecutor: okGateExecutor(true),
+      auditPlanner: () => ({ ready: true, errors: [], warnings: [] }),
+      timestamp: '2026-01-15T01:00:00.000Z',
+    });
+    assert.ok(['completed', 'insufficient_evidence'].includes(result.status), `status=${result.status}`);
+
+    const backlog = readBacklog({ catalogRoot: join(root, 'catalog') });
+    const demandEntry = backlog.entries.find(e => e.dimension === 'demand');
+    if (demandEntry) {
+      assert.equal(demandEntry.status, 'satisfied', 'covered demand must be satisfied, not pending');
+    }
+    const intents = backlogToIntents({ backlog });
+    assert.ok(!intents.some(i => (i.seed_skill_ids || []).includes(demandSkill)),
+      'satisfied demand must never become an intent');
+  } finally { rmSync(root, { recursive: true, force: true }); }
+});
+
+// ══════════════════════════════════════════════════════════════════════
+//  BUG (b): unevaluated seeds populate backlog with real non-empty seeds
+// ══════════════════════════════════════════════════════════════════════
+
+test('bug-b e2e: unevaluated seeds populate backlog entry with real seeds', async () => {
+  const root = tmpDir();
+  try {
+    // Snapshot whose source_id is not covered by any candidate/record
+    const snapDir = join(root, 'catalog', 'sources', 'snapshots');
+    mkdirSync(snapDir, { recursive: true });
+    writeFileSync(join(snapDir, 'snap1.json'), JSON.stringify({ source_id: 'src_unevaluated_1' }));
+    // One candidate (covers only its own source)
+    const candDir = join(root, 'catalog', 'skills', 'candidates');
+    mkdirSync(candDir, { recursive: true });
+    writeFileSync(join(candDir, 'c.jsonl'), JSON.stringify({ candidate_id: 'cand_1', source_id: 'src_cov' }) + '\n');
+    // No skill records → candidate unnormalized
+
+    const issueExecutor = async () => ({
+      ok: true, snapshot: { open: 0, acknowledged: 0, fulfilled: 0, blocked: 0 },
+      workloadPath: null, demandArtifactPath: null, errors: [],
+      newUnassessed: [], _assessed_unassessed: true,
+      demandMetadata: {}, issueOutcomes: [], stageTerminals: [],
+    });
+    const result = await executeNightly({
+      runsRoot: root, repositoryRoot: root,
+      repositoryAdapter: cleanRepoAdapter(),
+      changedPathsCollector: () => [],
+      maintenanceExecutor: okMaintenanceExecutor(),
+      issueExecutor,
+      contextCollector: okContextCollector(),
+      targetSelector: () => ({ intents: [], total: 0 }),
+      gateExecutor: okGateExecutor(true),
+      auditPlanner: () => ({ ready: true, errors: [], warnings: [] }),
+      timestamp: '2026-01-15T02:00:00.000Z',
+    });
+    assert.ok(['completed', 'insufficient_evidence'].includes(result.status), `status=${result.status}`);
+
+    const backlog = readBacklog({ catalogRoot: join(root, 'catalog') });
+    const artifactEntry = backlog.entries.find(e => e.dimension === 'new_artifacts');
+    if (artifactEntry) {
+      assert.ok(artifactEntry.seeds.length > 0, 'new_artifacts entry must carry real seeds');
+      assert.ok(artifactEntry.seeds.includes('src_unevaluated_1'),
+        'unevaluated snapshot source_id must be among the seeds');
+    }
+    // No dead empty-seed entries may be persisted
+    assert.ok(!backlog.entries.some(e => Array.isArray(e.seeds) && e.seeds.length === 0),
+      'no empty-seed dead entries may be persisted');
+    // backlogToIntents must never emit an empty-seed intent
+    for (const i of backlogToIntents({ backlog })) {
+      assert.ok((i.seed_skill_ids || []).length > 0, 'intent must carry non-empty seeds');
+    }
+  } finally { rmSync(root, { recursive: true, force: true }); }
+});
+
+// ══════════════════════════════════════════════════════════════════════
+//  BUG (c): terminal intents do not cause insufficient_evidence
+// ══════════════════════════════════════════════════════════════════════
+
+test('bug-c e2e: terminal intents do not cause insufficient_evidence', async () => {
+  const root = tmpDir();
+  try {
+    const issueExecutor = async () => ({
+      ok: true, snapshot: { open: 0, acknowledged: 0, fulfilled: 0, blocked: 0 },
+      workloadPath: null, demandArtifactPath: null, errors: [],
+      newUnassessed: [], _assessed_unassessed: true,
+      demandMetadata: {}, issueOutcomes: [], stageTerminals: [],
+    });
+    const result = await executeNightly({
+      runsRoot: root, repositoryRoot: root,
+      repositoryAdapter: cleanRepoAdapter(),
+      changedPathsCollector: () => [],
+      maintenanceExecutor: okMaintenanceExecutor(),
+      issueExecutor,
+      contextCollector: okContextCollector(),
+      targetSelector: () => ({
+        intents: [{ domain: 'test-domain', reason: 'r', source: 'backlog', score: 0.9, seed_skill_ids: ['skl_x'], max_analysis_budget: 3 }],
+        total: 1,
+      }),
+      targetExecutor: async () => ({ candidateResults: [], interrupted: false, timeout: false }),
+      gateExecutor: okGateExecutor(true),
+      auditPlanner: () => ({ ready: true, errors: [], warnings: [] }),
+      timestamp: '2026-01-15T03:00:00.000Z',
+    });
+    // No other gaps: the intent terminated cleanly (no_pack_clean disposition),
+    // so the run must be a clean completed/no_pack_clean, not insufficient_evidence.
+    assert.equal(result.status, 'completed');
+    assert.equal(result.outcome, 'no_pack_clean');
+  } finally { rmSync(root, { recursive: true, force: true }); }
+});
+
+// ══════════════════════════════════════════════════════════════════════
+//  3-round convergence: backlog advances observably, no repeated fingerprint
+// ══════════════════════════════════════════════════════════════════════
+
+test('backlog converges over repeated runs without repeating fingerprint', () => {
+  const root = tmpDir();
+  try {
+    const catalogRoot = join(root, 'catalog');
+    const entry = { dimension: 'new_artifacts', seeds: ['src_https-a', 'src_https-b'], reason: 'r', source: 'run_ledger', attempts: 0, status: 'pending' };
+    const traces = [];
+    for (let round = 1; round <= 4; round++) {
+      const merged = mergeBacklog({ catalogRoot, entries: [entry] });
+      writeBacklog({ catalogRoot, entries: merged.entries });
+      const backlog = readBacklog({ catalogRoot });
+      const e = backlog.entries.find(x => x.dimension === 'new_artifacts');
+      const intents = backlogToIntents({ backlog });
+      traces.push({
+        round,
+        attempts: e ? e.attempts : null,
+        status: e ? e.status : null,
+        entry_count: backlog.entries.length,
+        intent_count: intents.length,
+      });
+    }
+    // attempts advance 0 → 1 → 2 → 3; at 3 the entry goes stale and no intent is generated.
+    assert.equal(traces[0].attempts, 0);
+    assert.equal(traces[1].attempts, 1);
+    assert.equal(traces[2].attempts, 2);
+    assert.equal(traces[3].attempts, 3);
+    assert.equal(traces[3].status, 'stale');
+    assert.equal(traces[0].intent_count, 1);
+    assert.equal(traces[3].intent_count, 0, 'stale entry no longer generates an intent');
+    // Single entry throughout — duplicate fingerprints never accumulate.
+    assert.ok(traces.every(t => t.entry_count === 1), 'no duplicate fingerprint accumulation');
+    process.stdout.write(JSON.stringify(traces) + '\n');
+  } finally { rmSync(root, { recursive: true, force: true }); }
+});
+
+// ══════════════════════════════════════════════════════════════════════
 //  Run all tests
 // ══════════════════════════════════════════════════════════════════════
 

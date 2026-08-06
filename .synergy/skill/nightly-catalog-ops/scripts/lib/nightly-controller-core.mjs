@@ -34,6 +34,7 @@ import {
   readBacklog,
   mergeBacklog,
   writeBacklog,
+  computeFingerprint,
 } from './growth-backlog.mjs';
 import {
   collectChangedPaths,
@@ -637,7 +638,12 @@ async function runGateSealAuditTerminalStages({
   } else {
     // Build exhaustion proof
     const demandMetadata = issueResult.demandMetadata || {};
-    const intentsObj = { intents: (intentOutcomes || []).map(io => ({ domain: io.domain, source: io.source })) };
+    // Intents carry their terminal state; a missing terminal is treated as
+    // completed because reaching terminal means targets already executed.
+    // intentOutcomes historically use `disposition`; map it as terminal.
+    const intentsObj = { intents: (intentOutcomes || []).map(io => ({
+      domain: io.domain, source: io.source, terminal: io.terminal || io.disposition || 'completed',
+    })) };
     const proof = buildExhaustionProof({
       evidenceIndex,
       issueDemandMetadata: demandMetadata,
@@ -660,17 +666,36 @@ async function runGateSealAuditTerminalStages({
       const unsolvedDimensions = proof.exhaustion_trace
         .filter(e => e.found && e.dimension !== 'funnel')
       const existingDemandSkills = (demandMetadata.demand_skill_ids || [])
-      const entries = unsolvedDimensions.map(d => ({
-        dimension: d.dimension,
-        seeds: d.dimension === 'demand' ? existingDemandSkills : [],
-        reason: `run_${runId}: ${d.detail}`,
-        source: 'run_ledger',
-        discovered_sources: [],
-        attempts: 0,
-        status: 'pending',
-      }))
+      const publishedMemberIds = new Set(evidenceIndex.published_pack_member_ids || [])
+      const unevaluatedSeeds = evidenceIndex.unevaluated_seed_ids || []
+
+      // Satisfied fingerprints: demand seeds already covered by a published pack.
+      const satisfiedFingerprints = []
+      if (existingDemandSkills.length > 0 && existingDemandSkills.every(id => publishedMemberIds.has(id))) {
+        satisfiedFingerprints.push(computeFingerprint('demand', existingDemandSkills))
+      }
+
+      const entries = unsolvedDimensions.map(d => {
+        let seeds = []
+        if (d.dimension === 'demand') {
+          seeds = existingDemandSkills
+        } else {
+          // Non-demand dimensions carry real evidence seeds from the index;
+          // skip dimensions with no extractable seeds (no dead entries).
+          seeds = unevaluatedSeeds
+        }
+        return {
+          dimension: d.dimension,
+          seeds,
+          reason: `run_${runId}: ${d.detail}`,
+          source: 'run_ledger',
+          discovered_sources: [],
+          attempts: 0,
+          status: 'pending',
+        }
+      })
       if (entries.length > 0) {
-        const merged = mergeBacklog({ catalogRoot: catalogRootPt, entries })
+        const merged = mergeBacklog({ catalogRoot: catalogRootPt, entries, satisfiedFingerprints })
         const writeResult = writeBacklog({ catalogRoot: catalogRootPt, entries: merged.entries })
         backlogDigest = writeResult.digest
       }

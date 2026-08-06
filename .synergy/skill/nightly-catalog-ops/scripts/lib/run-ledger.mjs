@@ -104,11 +104,24 @@ export function buildExhaustionProof({
   const demandSkillIds = issueDemandMetadata?.demand_skill_ids || [];
   const hasDemand = demandSkillIds.length > 0;
 
+  // Intents are active only when they exist AND are not yet terminal.
+  // Terminal terminals (promoted/rejected/no_pack_clean/insufficient_evidence/
+  // blocked/failed/cancelled/completed) are finished work, not gaps.
+  const TERMINAL_TERMINALS = new Set([
+    'promoted', 'rejected', 'no_pack_clean', 'insufficient_evidence',
+    'blocked', 'failed', 'cancelled', 'completed',
+  ]);
+  const ACTIVE_TERMINALS = new Set(['pending', 'in_progress', 'running']);
+  const allIntents = intents?.intents || [];
+  const activeIntents = allIntents.filter(i =>
+    !i.terminal || ACTIVE_TERMINALS.has(i.terminal) || !TERMINAL_TERMINALS.has(i.terminal)
+  );
+  const hasActiveIntents = activeIntents.length > 0;
+
   const flags = evidenceIndex?.gap_flags || {};
   const hasBacklog = flags.unevaluated_snapshots || flags.unnormalized_candidates || flags.analysis_gaps;
   const hasNewArtifacts = (evidenceIndex?.snapshot_artifact_count || 0) > 0 && (evidenceIndex?.candidate_count || 0) > 0;
   const hasRelationPotential = flags.relation_potential;
-  const hasActiveIntents = intents?.intents?.length > 0;
 
   const funnel = evidenceIndex?.funnel
   const funnelSummary = funnel
@@ -120,7 +133,7 @@ export function buildExhaustionProof({
     { dimension: 'backlog', found: hasBacklog, detail: `snapshot=${flags.unevaluated_snapshots}, candidate=${flags.unnormalized_candidates}, analysis=${flags.analysis_gaps}` },
     { dimension: 'new_artifacts', found: hasNewArtifacts, detail: `${evidenceIndex?.snapshot_artifact_count || 0} snapshots, ${evidenceIndex?.candidate_count || 0} candidates` },
     { dimension: 'relation_potential', found: hasRelationPotential, detail: `${evidenceIndex?.analysis_count || 0} analyses, ${flags.same_domain_group_count || 0} domain groups` },
-    { dimension: 'active_intents', found: hasActiveIntents, detail: `${intents?.intents?.length || 0} intents` },
+    { dimension: 'active_intents', found: hasActiveIntents, detail: `${activeIntents.length} unresolved / ${allIntents.length} total intents` },
     { dimension: 'funnel', found: funnel ? Object.values(funnel).some(v => v > 0) : false, detail: funnelSummary },
   ];
 

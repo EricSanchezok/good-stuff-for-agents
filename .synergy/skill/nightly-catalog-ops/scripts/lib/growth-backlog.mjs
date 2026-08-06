@@ -13,7 +13,7 @@ import { existsSync, readFileSync, writeFileSync, mkdirSync, renameSync, unlinkS
 import { join } from 'node:path'
 
 const BACKLOG_SCHEMA_VERSION = 1
-const VALID_STATUSES = new Set(['pending', 'stale', 'blocked'])
+const VALID_STATUSES = new Set(['pending', 'stale', 'blocked', 'satisfied'])
 
 // ── Fingerprint ──────────────────────────────────────────────────────
 
@@ -65,13 +65,24 @@ export function readBacklog({ catalogRoot }) {
 
 // ── mergeBacklog ─────────────────────────────────────────────────────
 
-export function mergeBacklog({ catalogRoot, entries }) {
+export function mergeBacklog({ catalogRoot, entries, satisfiedFingerprints = [] }) {
   const existing = readBacklog({ catalogRoot })
   const existingEntries = existing.error ? [] : (existing.entries || [])
+
+  const satisfiedSet = new Set(satisfiedFingerprints || [])
 
   const byFingerprint = new Map()
   for (const e of existingEntries) {
     if (e.status === 'stale' || e.status === 'blocked') continue
+    // Existing-entry cleanup: satisfied fingerprints are marked satisfied
+    // (kept as evidence, never queued); empty-seed dead entries are dropped.
+    if (satisfiedSet.has(e.fingerprint)) {
+      e.status = 'satisfied'
+      e.updated_at = new Date().toISOString()
+      byFingerprint.set(e.fingerprint, e)
+      continue
+    }
+    if (!Array.isArray(e.seeds) || e.seeds.length === 0) continue
     byFingerprint.set(e.fingerprint, e)
   }
 
@@ -80,9 +91,20 @@ export function mergeBacklog({ catalogRoot, entries }) {
 
   for (const entry of entries) {
     if (!entry.dimension || !Array.isArray(entry.seeds)) continue
+    // New-entry adjudication: empty seeds are dropped (no dead entries),
+    // satisfied fingerprints are written as satisfied (never queued).
+    if (entry.seeds.length === 0) continue
     const fp = computeFingerprint(entry.dimension, entry.seeds)
     entry.fingerprint = fp
     entry.updated_at = now
+
+    if (satisfiedSet.has(fp)) {
+      entry.status = 'satisfied'
+      entry.created_at = entry.created_at || now
+      byFingerprint.set(fp, entry)
+      mergedCount++
+      continue
+    }
 
     const prev = byFingerprint.get(fp)
     if (prev) {
@@ -160,6 +182,9 @@ export function backlogToIntents({ backlog, maxTargets = 2 }) {
       continue
     }
     const seeds = (entry.seeds || []).filter(s => typeof s === 'string')
+    // Defensive: never generate an empty-seed intent (dead entry). Cleanup
+    // of persisted empty-seed entries is owned by mergeBacklog, not here.
+    if (seeds.length === 0) continue
     intents.push({
       domain: entry.dimension,
       reason: entry.reason || `Cross-run backlog: ${entry.dimension}`,
