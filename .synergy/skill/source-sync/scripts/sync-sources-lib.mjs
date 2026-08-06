@@ -14,6 +14,8 @@ export async function syncApprovedSources({
   fetchFn = null,
   writeSourceRecord = null,
   writeSnapshot = null,
+  retry = { count: 2, delayMs: 500 },
+  delayFn = null,
 } = {}) {
   if (!Array.isArray(sources)) throw new Error('sources must be an array')
 
@@ -40,74 +42,97 @@ export async function syncApprovedSources({
     })
   }
 
+  const retryCount = Math.max(0, Number(retry?.count ?? 0))
+  const delayMs = Math.max(0, Number(retry?.delayMs ?? 0))
+  const doDelay = delayFn || sleep
+
   for (const source of activeSources) {
-    try {
-      const manifest = await syncGithubSource(source, { fetchFn, writeSnapshot })
-      summary.manifests.push(manifest.path)
-      const changed = source.state?.last_ref !== manifest.upstream_ref
-      if (changed) summary.refreshed += 1
-      else summary.unchanged += 1
+    // Attempt-classify-retry loop: provider incidents are retried (whole
+    // source sync, exponential backoff); source failures are not retried.
+    let attempts = 0
+    let lastClassification = null
+    while (true) {
+      attempts += 1
+      try {
+        const manifest = await syncGithubSource(source, { fetchFn, writeSnapshot })
+        summary.manifests.push(manifest.path)
+        const changed = source.state?.last_ref !== manifest.upstream_ref
+        if (changed) summary.refreshed += 1
+        else summary.unchanged += 1
 
-      if (writeSourceRecord) {
-        writeSourceRecord({
-          ...source,
-          state: {
-            last_checked_at: manifest.checked_at,
-            last_success_at: manifest.checked_at,
-            last_ref: manifest.upstream_ref,
-            consecutive_failures: 0,
-          },
-        })
-      }
-      summary.source_errors.push({
-        source_id: source.source_id,
-        category: 'success',
-        changed,
-        upstream_ref: manifest.upstream_ref,
-        skills_found: manifest.artifacts.length,
-      })
-    } catch (error) {
-      const classification = classifySourceSyncError({ error, sourceId: source.source_id })
-
-      if (classification.category === 'provider_incident') {
-        summary.provider_blocked += 1
-        // Aggregate by provider + status + reason
-        const key = `${classification.status ?? 'transport'}:${classification.reason}`
-        const existing = summary.provider_incidents.find((pi) => pi.key === key)
-        if (existing) {
-          existing.affected_source_ids.push(source.source_id)
-          existing.affected_count += 1
-        } else {
-          summary.provider_incidents.push({
-            key,
-            provider: 'github',
-            status: classification.status,
-            reason: classification.reason,
-            affected_source_ids: [source.source_id],
-            affected_count: 1,
-          })
-        }
-        // NO per-source write for provider incidents
-      } else {
-        summary.source_failed += 1
-        summary.source_errors.push({
-          source_id: source.source_id,
-          category: 'source_failure',
-          status: classification.status,
-          reason: classification.reason,
-        })
-        const failures = (source.state?.consecutive_failures ?? 0) + 1
         if (writeSourceRecord) {
           writeSourceRecord({
             ...source,
             state: {
-              last_checked_at: new Date().toISOString(),
-              last_success_at: source.state?.last_success_at ?? null,
-              last_ref: source.state?.last_ref ?? null,
-              consecutive_failures: failures,
+              last_checked_at: manifest.checked_at,
+              last_success_at: manifest.checked_at,
+              last_ref: manifest.upstream_ref,
+              consecutive_failures: 0,
             },
           })
         }
+        summary.source_errors.push({
+          source_id: source.source_id,
+          category: 'success',
+          changed,
+          upstream_ref: manifest.upstream_ref,
+          skills_found: manifest.artifacts.length,
+        })
+        // Success clears any earlier attempt classification (retry path)
+        lastClassification = null
+        break
+      } catch (error) {
+        const classification = classifySourceSyncError({ error, sourceId: source.source_id })
+        lastClassification = classification
+
+        // Provider incidents may be retried; source failures are terminal.
+        if (classification.category === 'provider_incident' && attempts <= retryCount) {
+          await doDelay(delayMs * attempts)
+          continue
+        }
+        break
+      }
+    }
+
+    const classification = lastClassification
+    if (classification?.category === 'provider_incident') {
+      summary.provider_blocked += 1
+      // Aggregate by provider + status + reason
+      const key = `${classification.status ?? 'transport'}:${classification.reason}`
+      const existing = summary.provider_incidents.find((pi) => pi.key === key)
+      if (existing) {
+        existing.affected_source_ids.push(source.source_id)
+        existing.affected_count += 1
+      } else {
+        summary.provider_incidents.push({
+          key,
+          provider: 'github',
+          status: classification.status,
+          reason: classification.reason,
+          affected_source_ids: [source.source_id],
+          affected_count: 1,
+        })
+      }
+      // NO per-source write for provider incidents
+    } else if (classification) {
+      summary.source_failed += 1
+      summary.source_errors.push({
+        source_id: source.source_id,
+        category: 'source_failure',
+        status: classification.status,
+        reason: classification.reason,
+      })
+      const failures = (source.state?.consecutive_failures ?? 0) + 1
+      if (writeSourceRecord) {
+        writeSourceRecord({
+          ...source,
+          state: {
+            last_checked_at: new Date().toISOString(),
+            last_success_at: source.state?.last_success_at ?? null,
+            last_ref: source.state?.last_ref ?? null,
+            consecutive_failures: failures,
+          },
+        })
       }
     }
   }
@@ -118,6 +143,10 @@ export async function syncApprovedSources({
   }
 
   return summary
+}
+
+function sleep(ms) {
+  return new Promise((resolve) => setTimeout(resolve, ms))
 }
 
 async function syncGithubSource(source, { fetchFn, writeSnapshot } = {}) {

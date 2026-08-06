@@ -209,6 +209,166 @@ test('mixed 17x403 + 1x404: counts accurate, only 404 gets per-source write', as
 })
 
 // ---------------------------------------------------------------------------
+// Retry behavior: provider incidents retried, source failures not
+// ---------------------------------------------------------------------------
+
+function repoPayload() {
+  return { default_branch: 'main' }
+}
+function branchPayload() {
+  return { commit: { sha: 'a'.repeat(40) } }
+}
+function treePayload() {
+  return { tree: [{ type: 'blob', path: 'SKILL.md', sha: 'b'.repeat(40), size: 10 }] }
+}
+
+test('t-retry-1: single-source 403 retried successfully, no failure increment', async () => {
+  const source = {
+    source_id: 'src_retry_ok',
+    status: 'active',
+    url: 'https://github.com/test/retry-ok',
+    state: { consecutive_failures: 0 },
+  }
+  const records = []
+  let repoCalls = 0
+  const fetchFn = async (url) => {
+    if (url.includes('/branches/')) return branchPayload()
+    if (url.includes('/git/trees/')) return treePayload()
+    if (url.includes('/repos/')) {
+      repoCalls += 1
+      if (repoCalls === 1) throw new SourceSyncError(403, 'Forbidden', '')
+      return repoPayload()
+    }
+    throw new Error(`unexpected url: ${url}`)
+  }
+
+  const summary = await syncApprovedSources({
+    sources: [source],
+    fetchFn,
+    writeSourceRecord: (r) => records.push(r),
+    writeSnapshot: () => {},
+    retry: { count: 2, delayMs: 0 },
+    delayFn: async () => {},
+  })
+
+  assert.equal(summary.refreshed, 1, 'source refreshed after retry')
+  assert.equal(summary.provider_blocked, 0)
+  assert.equal(summary.source_failed, 0)
+  assert.equal(summary.provider_incidents.length, 0)
+  assert.equal(records.length, 1, 'exactly one per-source record (success)')
+  assert.equal(records[0].state.consecutive_failures, 0, 'failures not incremented after retry success')
+})
+
+test('t-retry-2: retries exhausted → incident aggregated, other source continues (URL routing)', async () => {
+  const sources = [
+    { source_id: 'src_a', status: 'active', url: 'https://github.com/test/a', state: { consecutive_failures: 0 } },
+    { source_id: 'src_b', status: 'active', url: 'https://github.com/test/b', state: { consecutive_failures: 0 } },
+  ]
+  const records = []
+  const fetchFn = async (url) => {
+    if (url.includes('/branches/')) return branchPayload()
+    if (url.includes('/git/trees/')) return treePayload()
+    if (url.includes('/repos/test/a')) throw new SourceSyncError(403, 'Forbidden', '')
+    if (url.includes('/repos/')) return repoPayload()
+    throw new Error(`unexpected url: ${url}`)
+  }
+
+  const summary = await syncApprovedSources({
+    sources,
+    fetchFn,
+    writeSourceRecord: (r) => records.push(r),
+    writeSnapshot: () => {},
+    retry: { count: 2, delayMs: 0 },
+    delayFn: async () => {},
+  })
+
+  assert.equal(summary.provider_blocked, 1, 'src_a provider_blocked')
+  assert.equal(summary.provider_incidents.length, 1, 'one aggregated incident')
+  assert.ok(summary.provider_incidents[0].affected_source_ids.includes('src_a'), 'incident lists src_a')
+  assert.equal(summary.refreshed, 1, 'src_b refreshed')
+  assert.equal(records.length, 1, 'only src_b gets a per-source write')
+  assert.ok(records[0].source_id === 'src_b')
+})
+
+test('t-retry-3: 404 is not retried, increments source failures', async () => {
+  const source = {
+    source_id: 'src_404_no_retry',
+    status: 'active',
+    url: 'https://github.com/test/nope',
+    state: { consecutive_failures: 0 },
+  }
+  const records = []
+  let fetchCalls = 0
+  const fetchFn = async (url) => {
+    fetchCalls += 1
+    throw new SourceSyncError(404, 'Not Found', 'Not Found')
+  }
+
+  const summary = await syncApprovedSources({
+    sources: [source],
+    fetchFn,
+    writeSourceRecord: (r) => records.push(r),
+    writeSnapshot: () => {},
+    retry: { count: 2, delayMs: 0 },
+    delayFn: async () => {},
+  })
+
+  assert.equal(summary.source_failed, 1)
+  assert.equal(summary.provider_incidents.length, 0)
+  assert.equal(records.length, 1)
+  assert.equal(records[0].state.consecutive_failures, 1, '404 increments consecutive_failures')
+  assert.equal(fetchCalls, 1, '404 not retried')
+})
+
+test('t-retry-4: whole-source retry granularity — fetch call counts 4 vs 1', async () => {
+  // 403 retry success: 1 (first repo call throws) + 3 (retry repo+branch+tree) = 4
+  const sourceOk = {
+    source_id: 'src_gran',
+    status: 'active',
+    url: 'https://github.com/test/gran',
+    state: { consecutive_failures: 0 },
+  }
+  let repoCalls = 0
+  let fetchCallsOk = 0
+  const fetchFnOk = async (url) => {
+    fetchCallsOk += 1
+    if (url.includes('/branches/')) return branchPayload()
+    if (url.includes('/git/trees/')) return treePayload()
+    if (url.includes('/repos/')) {
+      repoCalls += 1
+      if (repoCalls === 1) throw new SourceSyncError(403, 'Forbidden', '')
+      return repoPayload()
+    }
+    throw new Error(`unexpected url: ${url}`)
+  }
+  await syncApprovedSources({
+    sources: [sourceOk],
+    fetchFn: fetchFnOk,
+    writeSourceRecord: () => {},
+    writeSnapshot: () => {},
+    retry: { count: 2, delayMs: 0 },
+    delayFn: async () => {},
+  })
+  assert.equal(fetchCallsOk, 4, '403 retry success = 1 first + 3 retry fetches')
+
+  // 404 not retried: 1 fetch
+  let fetchCalls404 = 0
+  const fetchFn404 = async (url) => {
+    fetchCalls404 += 1
+    throw new SourceSyncError(404, 'Not Found', 'Not Found')
+  }
+  await syncApprovedSources({
+    sources: [{ source_id: 'src_gran404', status: 'active', url: 'https://github.com/test/gran404', state: { consecutive_failures: 0 } }],
+    fetchFn: fetchFn404,
+    writeSourceRecord: () => {},
+    writeSnapshot: () => {},
+    retry: { count: 2, delayMs: 0 },
+    delayFn: async () => {},
+  })
+  assert.equal(fetchCalls404, 1, '404 not retried = 1 fetch')
+})
+
+// ---------------------------------------------------------------------------
 // extractHttpStatus
 // ---------------------------------------------------------------------------
 test('extractHttpStatus from various error shapes', () => {

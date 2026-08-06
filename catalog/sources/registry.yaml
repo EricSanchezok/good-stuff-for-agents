@@ -1,6 +1,54 @@
 schema_version: 1
 sources:
 - license:
+    evidence: https://github.com/addyosmani/agent-skills/blob/main/LICENSE
+    spdx: MIT
+    verified: true
+  name: addyosmani/agent-skills
+  schema_version: 1
+  source_id: src_https-github-com-addyosmani-agent-skills-addyosmani-agent-skills_ec0a2dc8
+  state:
+    consecutive_failures: 0
+    last_checked_at: null
+    last_ref: null
+    last_success_at: null
+  status: preview
+  sync:
+    default_ref: main
+    exclude:
+    - node_modules/**
+    frequency: daily
+    include:
+    - '**/SKILL.md'
+    strategy: git
+  type: github_repo
+  updated_at: '2026-08-06T11:24:02.496Z'
+  url: https://github.com/addyosmani/agent-skills
+- license:
+    evidence: https://github.com/alirezarezvani/claude-skills/blob/main/LICENSE
+    spdx: MIT
+    verified: true
+  name: alirezarezvani/claude-skills
+  schema_version: 1
+  source_id: src_https-github-com-alirezarezvani-claude-skills-alirezarezvani-claude-skills_1b18c64e
+  state:
+    consecutive_failures: 0
+    last_checked_at: null
+    last_ref: null
+    last_success_at: null
+  status: preview
+  sync:
+    default_ref: main
+    exclude:
+    - node_modules/**
+    frequency: daily
+    include:
+    - '**/SKILL.md'
+    strategy: git
+  type: github_repo
+  updated_at: '2026-08-06T11:24:02.979Z'
+  url: https://github.com/alirezarezvani/claude-skills
+- license:
     evidence: Apache 2.0 for most skills per README; document skills (docx/pdf/pptx/xlsx)
       are source-available not open source, packaged as reference implementations
     spdx: Apache-2.0
@@ -144,6 +192,54 @@ sources:
   updated_at: '2026-07-27T21:31:27.345Z'
   url: https://github.com/FujishigeTemma/semantic-scholar-mcp
 - license:
+    evidence: https://github.com/github/awesome-copilot/blob/main/LICENSE
+    spdx: MIT
+    verified: true
+  name: github/awesome-copilot
+  schema_version: 1
+  source_id: src_https-github-com-github-awesome-copilot-github-awesome-copilot_7a815055
+  state:
+    consecutive_failures: 0
+    last_checked_at: null
+    last_ref: null
+    last_success_at: null
+  status: preview
+  sync:
+    default_ref: main
+    exclude:
+    - node_modules/**
+    frequency: daily
+    include:
+    - '**/SKILL.md'
+    strategy: git
+  type: github_repo
+  updated_at: '2026-08-06T11:24:02.822Z'
+  url: https://github.com/github/awesome-copilot
+- license:
+    evidence: https://github.com/google/skills/blob/main/LICENSE
+    spdx: Apache-2.0
+    verified: true
+  name: google/skills
+  schema_version: 1
+  source_id: src_https-github-com-google-skills-google-skills_bc973af1
+  state:
+    consecutive_failures: 0
+    last_checked_at: null
+    last_ref: null
+    last_success_at: null
+  status: active
+  sync:
+    default_ref: main
+    exclude:
+    - node_modules/**
+    frequency: daily
+    include:
+    - '**/SKILL.md'
+    strategy: git
+  type: github_repo
+  updated_at: '2026-08-06T11:24:02.331Z'
+  url: https://github.com/google/skills
+- license:
     evidence: GitHub API confirms MIT license
     spdx: MIT
     verified: true
@@ -168,6 +264,30 @@ sources:
   type: github_repo
   updated_at: '2026-07-27T21:31:28.104Z'
   url: https://github.com/HermeticOrmus/markdown-discipline-skills
+- license:
+    evidence: https://github.com/Jeffallan/claude-skills/blob/main/LICENSE
+    spdx: MIT
+    verified: true
+  name: Jeffallan/claude-skills
+  schema_version: 1
+  source_id: src_https-github-com-jeffallan-claude-skills-jeffallan-claude-skills_4cac5418
+  state:
+    consecutive_failures: 0
+    last_checked_at: null
+    last_ref: null
+    last_success_at: null
+  status: preview
+  sync:
+    default_ref: main
+    exclude:
+    - node_modules/**
+    frequency: daily
+    include:
+    - '**/SKILL.md'
+    strategy: git
+  type: github_repo
+  updated_at: '2026-08-06T11:24:03.133Z'
+  url: https://github.com/Jeffallan/claude-skills
 - license:
     evidence: LICENSE file confirms BSD 3-Clause
     spdx: BSD-3-Clause
@@ -218,6 +338,30 @@ sources:
   type: github_repo
   updated_at: '2026-07-27T21:31:29.602Z'
   url: https://github.com/K-Dense-AI/scientific-agent-skills
+- license:
+    evidence: https://github.com/kepano/obsidian-skills/blob/main/LICENSE
+    spdx: MIT
+    verified: true
+  name: kepano/obsidian-skills
+  schema_version: 1
+  source_id: src_https-github-com-kepano-obsidian-skills-kepano-obsidian-skills_ef40e459
+  state:
+    consecutive_failures: 0
+    last_checked_at: null
+    last_ref: null
+    last_success_at: null
+  status: preview
+  sync:
+    default_ref: main
+    exclude:
+    - node_modules/**
+    frequency: daily
+    include:
+    - '**/SKILL.md'
+    strategy: git
+  type: github_repo
+  updated_at: '2026-08-06T11:24:03.287Z'
+  url: https://github.com/kepano/obsidian-skills
 - license:
     evidence: LICENSE file in repo root confirms Apache License 2.0
     spdx: Apache-2.0
@@ -291,6 +435,30 @@ sources:
   type: github_repo
   updated_at: '2026-07-27T21:31:31.625Z'
   url: https://github.com/microsoft/skills
+- license:
+    evidence: https://github.com/obra/superpowers/blob/main/LICENSE
+    spdx: MIT
+    verified: true
+  name: obra/superpowers
+  schema_version: 1
+  source_id: src_https-github-com-obra-superpowers-obra-superpowers_0e767106
+  state:
+    consecutive_failures: 0
+    last_checked_at: null
+    last_ref: null
+    last_success_at: null
+  status: preview
+  sync:
+    default_ref: main
+    exclude:
+    - node_modules/**
+    frequency: daily
+    include:
+    - '**/SKILL.md'
+    strategy: git
+  type: github_repo
+  updated_at: '2026-08-06T11:24:02.666Z'
+  url: https://github.com/obra/superpowers
 - license:
     evidence: LICENSE file in repo root confirms MIT
     spdx: MIT
@@ -411,3 +579,27 @@ sources:
   type: github_repo
   updated_at: '2026-07-27T21:31:34.917Z'
   url: https://github.com/thatrebeccarae/claude-marketing
+- license:
+    evidence: https://github.com/vaquarkhan/data-engineering-agent-skills/blob/main/LICENSE
+    spdx: MIT
+    verified: true
+  name: vaquarkhan/data-engineering-agent-skills
+  schema_version: 1
+  source_id: src_https-github-com-vaquarkhan-data-engineering-agent-skills-vaquarkhan-data-engineering-agent-skills_908887f1
+  state:
+    consecutive_failures: 0
+    last_checked_at: null
+    last_ref: null
+    last_success_at: null
+  status: preview
+  sync:
+    default_ref: main
+    exclude:
+    - node_modules/**
+    frequency: daily
+    include:
+    - '**/SKILL.md'
+    strategy: git
+  type: github_repo
+  updated_at: '2026-08-06T11:24:03.441Z'
+  url: https://github.com/vaquarkhan/data-engineering-agent-skills
