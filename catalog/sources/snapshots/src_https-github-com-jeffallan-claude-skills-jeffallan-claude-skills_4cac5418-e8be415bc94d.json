@@ -1,0 +1,1660 @@
+{
+  "schema_version": 1,
+  "source_id": "src_https-github-com-jeffallan-claude-skills-jeffallan-claude-skills_4cac5418",
+  "upstream_ref": "e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319",
+  "checked_at": "2026-08-06T11:39:12.966Z",
+  "url": "https://github.com/Jeffallan/claude-skills",
+  "artifacts": [
+    {
+      "source_id": "src_https-github-com-jeffallan-claude-skills-jeffallan-claude-skills_4cac5418",
+      "path": "skills/angular-architect/SKILL.md",
+      "declared_name": "angular-architect",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:5f521ecb8f04d0ad328fd63ebad453028b895d03",
+      "upstream_ref": "e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319",
+      "git_blob_oid": "git_sha1:5f521ecb8f04d0ad328fd63ebad453028b895d03",
+      "url": "https://github.com/Jeffallan/claude-skills/blob/e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319/skills/angular-architect/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/Jeffallan/claude-skills/e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319/skills/angular-architect/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-jeffallan-claude-skills-jeffallan-claude-skills_4cac5418",
+        "canonical_skill_id": null,
+        "remote_path": "skills/angular-architect/SKILL.md",
+        "pinned_commit": "e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319",
+        "git_blob_oid": "git_sha1:5f521ecb8f04d0ad328fd63ebad453028b895d03",
+        "raw_url": "https://raw.githubusercontent.com/Jeffallan/claude-skills/e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319/skills/angular-architect/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:5f521ecb8f04d0ad328fd63ebad453028b895d03",
+        "size": 5993
+      }
+    },
+    {
+      "source_id": "src_https-github-com-jeffallan-claude-skills-jeffallan-claude-skills_4cac5418",
+      "path": "skills/api-designer/SKILL.md",
+      "declared_name": "api-designer",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:9d684655e479051978fad1c5b0aafd34f01b85cd",
+      "upstream_ref": "e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319",
+      "git_blob_oid": "git_sha1:9d684655e479051978fad1c5b0aafd34f01b85cd",
+      "url": "https://github.com/Jeffallan/claude-skills/blob/e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319/skills/api-designer/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/Jeffallan/claude-skills/e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319/skills/api-designer/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-jeffallan-claude-skills-jeffallan-claude-skills_4cac5418",
+        "canonical_skill_id": null,
+        "remote_path": "skills/api-designer/SKILL.md",
+        "pinned_commit": "e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319",
+        "git_blob_oid": "git_sha1:9d684655e479051978fad1c5b0aafd34f01b85cd",
+        "raw_url": "https://raw.githubusercontent.com/Jeffallan/claude-skills/e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319/skills/api-designer/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:9d684655e479051978fad1c5b0aafd34f01b85cd",
+        "size": 7832
+      }
+    },
+    {
+      "source_id": "src_https-github-com-jeffallan-claude-skills-jeffallan-claude-skills_4cac5418",
+      "path": "skills/architecture-designer/SKILL.md",
+      "declared_name": "architecture-designer",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:c3014c38d71393a886a2c3b84fe8c347e33abe45",
+      "upstream_ref": "e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319",
+      "git_blob_oid": "git_sha1:c3014c38d71393a886a2c3b84fe8c347e33abe45",
+      "url": "https://github.com/Jeffallan/claude-skills/blob/e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319/skills/architecture-designer/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/Jeffallan/claude-skills/e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319/skills/architecture-designer/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-jeffallan-claude-skills-jeffallan-claude-skills_4cac5418",
+        "canonical_skill_id": null,
+        "remote_path": "skills/architecture-designer/SKILL.md",
+        "pinned_commit": "e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319",
+        "git_blob_oid": "git_sha1:c3014c38d71393a886a2c3b84fe8c347e33abe45",
+        "raw_url": "https://raw.githubusercontent.com/Jeffallan/claude-skills/e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319/skills/architecture-designer/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:c3014c38d71393a886a2c3b84fe8c347e33abe45",
+        "size": 4750
+      }
+    },
+    {
+      "source_id": "src_https-github-com-jeffallan-claude-skills-jeffallan-claude-skills_4cac5418",
+      "path": "skills/atlassian-mcp/SKILL.md",
+      "declared_name": "atlassian-mcp",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:a10bb0b7e81475083f3e6d9052aec91154655c55",
+      "upstream_ref": "e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319",
+      "git_blob_oid": "git_sha1:a10bb0b7e81475083f3e6d9052aec91154655c55",
+      "url": "https://github.com/Jeffallan/claude-skills/blob/e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319/skills/atlassian-mcp/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/Jeffallan/claude-skills/e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319/skills/atlassian-mcp/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-jeffallan-claude-skills-jeffallan-claude-skills_4cac5418",
+        "canonical_skill_id": null,
+        "remote_path": "skills/atlassian-mcp/SKILL.md",
+        "pinned_commit": "e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319",
+        "git_blob_oid": "git_sha1:a10bb0b7e81475083f3e6d9052aec91154655c55",
+        "raw_url": "https://raw.githubusercontent.com/Jeffallan/claude-skills/e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319/skills/atlassian-mcp/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:a10bb0b7e81475083f3e6d9052aec91154655c55",
+        "size": 5150
+      }
+    },
+    {
+      "source_id": "src_https-github-com-jeffallan-claude-skills-jeffallan-claude-skills_4cac5418",
+      "path": "skills/chaos-engineer/SKILL.md",
+      "declared_name": "chaos-engineer",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:4ae1de95aa44a6c1824ffc881979810589779bb8",
+      "upstream_ref": "e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319",
+      "git_blob_oid": "git_sha1:4ae1de95aa44a6c1824ffc881979810589779bb8",
+      "url": "https://github.com/Jeffallan/claude-skills/blob/e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319/skills/chaos-engineer/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/Jeffallan/claude-skills/e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319/skills/chaos-engineer/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-jeffallan-claude-skills-jeffallan-claude-skills_4cac5418",
+        "canonical_skill_id": null,
+        "remote_path": "skills/chaos-engineer/SKILL.md",
+        "pinned_commit": "e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319",
+        "git_blob_oid": "git_sha1:4ae1de95aa44a6c1824ffc881979810589779bb8",
+        "raw_url": "https://raw.githubusercontent.com/Jeffallan/claude-skills/e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319/skills/chaos-engineer/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:4ae1de95aa44a6c1824ffc881979810589779bb8",
+        "size": 6890
+      }
+    },
+    {
+      "source_id": "src_https-github-com-jeffallan-claude-skills-jeffallan-claude-skills_4cac5418",
+      "path": "skills/cli-developer/SKILL.md",
+      "declared_name": "cli-developer",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:be237502da892479db20dd8bf8be6233cf7bc664",
+      "upstream_ref": "e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319",
+      "git_blob_oid": "git_sha1:be237502da892479db20dd8bf8be6233cf7bc664",
+      "url": "https://github.com/Jeffallan/claude-skills/blob/e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319/skills/cli-developer/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/Jeffallan/claude-skills/e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319/skills/cli-developer/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-jeffallan-claude-skills-jeffallan-claude-skills_4cac5418",
+        "canonical_skill_id": null,
+        "remote_path": "skills/cli-developer/SKILL.md",
+        "pinned_commit": "e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319",
+        "git_blob_oid": "git_sha1:be237502da892479db20dd8bf8be6233cf7bc664",
+        "raw_url": "https://raw.githubusercontent.com/Jeffallan/claude-skills/e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319/skills/cli-developer/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:be237502da892479db20dd8bf8be6233cf7bc664",
+        "size": 4614
+      }
+    },
+    {
+      "source_id": "src_https-github-com-jeffallan-claude-skills-jeffallan-claude-skills_4cac5418",
+      "path": "skills/cloud-architect/SKILL.md",
+      "declared_name": "cloud-architect",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:da96b34518618c033f14f19c13cd2cfec63f67cb",
+      "upstream_ref": "e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319",
+      "git_blob_oid": "git_sha1:da96b34518618c033f14f19c13cd2cfec63f67cb",
+      "url": "https://github.com/Jeffallan/claude-skills/blob/e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319/skills/cloud-architect/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/Jeffallan/claude-skills/e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319/skills/cloud-architect/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-jeffallan-claude-skills-jeffallan-claude-skills_4cac5418",
+        "canonical_skill_id": null,
+        "remote_path": "skills/cloud-architect/SKILL.md",
+        "pinned_commit": "e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319",
+        "git_blob_oid": "git_sha1:da96b34518618c033f14f19c13cd2cfec63f67cb",
+        "raw_url": "https://raw.githubusercontent.com/Jeffallan/claude-skills/e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319/skills/cloud-architect/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:da96b34518618c033f14f19c13cd2cfec63f67cb",
+        "size": 7363
+      }
+    },
+    {
+      "source_id": "src_https-github-com-jeffallan-claude-skills-jeffallan-claude-skills_4cac5418",
+      "path": "skills/code-documenter/SKILL.md",
+      "declared_name": "code-documenter",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:1338f3eb22cc18ed02a3d70a5664af6a7b3328bf",
+      "upstream_ref": "e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319",
+      "git_blob_oid": "git_sha1:1338f3eb22cc18ed02a3d70a5664af6a7b3328bf",
+      "url": "https://github.com/Jeffallan/claude-skills/blob/e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319/skills/code-documenter/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/Jeffallan/claude-skills/e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319/skills/code-documenter/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-jeffallan-claude-skills-jeffallan-claude-skills_4cac5418",
+        "canonical_skill_id": null,
+        "remote_path": "skills/code-documenter/SKILL.md",
+        "pinned_commit": "e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319",
+        "git_blob_oid": "git_sha1:1338f3eb22cc18ed02a3d70a5664af6a7b3328bf",
+        "raw_url": "https://raw.githubusercontent.com/Jeffallan/claude-skills/e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319/skills/code-documenter/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:1338f3eb22cc18ed02a3d70a5664af6a7b3328bf",
+        "size": 5496
+      }
+    },
+    {
+      "source_id": "src_https-github-com-jeffallan-claude-skills-jeffallan-claude-skills_4cac5418",
+      "path": "skills/code-reviewer/SKILL.md",
+      "declared_name": "code-reviewer",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:1f3b9db17c1b07f7ca27c10d3d7e526a3472fb97",
+      "upstream_ref": "e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319",
+      "git_blob_oid": "git_sha1:1f3b9db17c1b07f7ca27c10d3d7e526a3472fb97",
+      "url": "https://github.com/Jeffallan/claude-skills/blob/e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319/skills/code-reviewer/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/Jeffallan/claude-skills/e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319/skills/code-reviewer/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-jeffallan-claude-skills-jeffallan-claude-skills_4cac5418",
+        "canonical_skill_id": null,
+        "remote_path": "skills/code-reviewer/SKILL.md",
+        "pinned_commit": "e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319",
+        "git_blob_oid": "git_sha1:1f3b9db17c1b07f7ca27c10d3d7e526a3472fb97",
+        "raw_url": "https://raw.githubusercontent.com/Jeffallan/claude-skills/e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319/skills/code-reviewer/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:1f3b9db17c1b07f7ca27c10d3d7e526a3472fb97",
+        "size": 5179
+      }
+    },
+    {
+      "source_id": "src_https-github-com-jeffallan-claude-skills-jeffallan-claude-skills_4cac5418",
+      "path": "skills/cpp-pro/SKILL.md",
+      "declared_name": "cpp-pro",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:ef9bb328a9a021059b822631d696ac244e00a9c8",
+      "upstream_ref": "e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319",
+      "git_blob_oid": "git_sha1:ef9bb328a9a021059b822631d696ac244e00a9c8",
+      "url": "https://github.com/Jeffallan/claude-skills/blob/e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319/skills/cpp-pro/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/Jeffallan/claude-skills/e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319/skills/cpp-pro/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-jeffallan-claude-skills-jeffallan-claude-skills_4cac5418",
+        "canonical_skill_id": null,
+        "remote_path": "skills/cpp-pro/SKILL.md",
+        "pinned_commit": "e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319",
+        "git_blob_oid": "git_sha1:ef9bb328a9a021059b822631d696ac244e00a9c8",
+        "raw_url": "https://raw.githubusercontent.com/Jeffallan/claude-skills/e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319/skills/cpp-pro/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:ef9bb328a9a021059b822631d696ac244e00a9c8",
+        "size": 4496
+      }
+    },
+    {
+      "source_id": "src_https-github-com-jeffallan-claude-skills-jeffallan-claude-skills_4cac5418",
+      "path": "skills/csharp-developer/SKILL.md",
+      "declared_name": "csharp-developer",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:20296c8cc9caa2689c78cb1e76da297d561d2a35",
+      "upstream_ref": "e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319",
+      "git_blob_oid": "git_sha1:20296c8cc9caa2689c78cb1e76da297d561d2a35",
+      "url": "https://github.com/Jeffallan/claude-skills/blob/e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319/skills/csharp-developer/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/Jeffallan/claude-skills/e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319/skills/csharp-developer/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-jeffallan-claude-skills-jeffallan-claude-skills_4cac5418",
+        "canonical_skill_id": null,
+        "remote_path": "skills/csharp-developer/SKILL.md",
+        "pinned_commit": "e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319",
+        "git_blob_oid": "git_sha1:20296c8cc9caa2689c78cb1e76da297d561d2a35",
+        "raw_url": "https://raw.githubusercontent.com/Jeffallan/claude-skills/e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319/skills/csharp-developer/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:20296c8cc9caa2689c78cb1e76da297d561d2a35",
+        "size": 5079
+      }
+    },
+    {
+      "source_id": "src_https-github-com-jeffallan-claude-skills-jeffallan-claude-skills_4cac5418",
+      "path": "skills/database-optimizer/SKILL.md",
+      "declared_name": "database-optimizer",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:f7148e95d65a75e6a63ca28e689eab61a407e673",
+      "upstream_ref": "e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319",
+      "git_blob_oid": "git_sha1:f7148e95d65a75e6a63ca28e689eab61a407e673",
+      "url": "https://github.com/Jeffallan/claude-skills/blob/e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319/skills/database-optimizer/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/Jeffallan/claude-skills/e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319/skills/database-optimizer/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-jeffallan-claude-skills-jeffallan-claude-skills_4cac5418",
+        "canonical_skill_id": null,
+        "remote_path": "skills/database-optimizer/SKILL.md",
+        "pinned_commit": "e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319",
+        "git_blob_oid": "git_sha1:f7148e95d65a75e6a63ca28e689eab61a407e673",
+        "raw_url": "https://raw.githubusercontent.com/Jeffallan/claude-skills/e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319/skills/database-optimizer/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:f7148e95d65a75e6a63ca28e689eab61a407e673",
+        "size": 6056
+      }
+    },
+    {
+      "source_id": "src_https-github-com-jeffallan-claude-skills-jeffallan-claude-skills_4cac5418",
+      "path": "skills/debugging-wizard/SKILL.md",
+      "declared_name": "debugging-wizard",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:6f5ab6f8926fd8b6acd2dab6af0bc10150325b22",
+      "upstream_ref": "e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319",
+      "git_blob_oid": "git_sha1:6f5ab6f8926fd8b6acd2dab6af0bc10150325b22",
+      "url": "https://github.com/Jeffallan/claude-skills/blob/e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319/skills/debugging-wizard/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/Jeffallan/claude-skills/e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319/skills/debugging-wizard/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-jeffallan-claude-skills-jeffallan-claude-skills_4cac5418",
+        "canonical_skill_id": null,
+        "remote_path": "skills/debugging-wizard/SKILL.md",
+        "pinned_commit": "e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319",
+        "git_blob_oid": "git_sha1:6f5ab6f8926fd8b6acd2dab6af0bc10150325b22",
+        "raw_url": "https://raw.githubusercontent.com/Jeffallan/claude-skills/e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319/skills/debugging-wizard/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:6f5ab6f8926fd8b6acd2dab6af0bc10150325b22",
+        "size": 3741
+      }
+    },
+    {
+      "source_id": "src_https-github-com-jeffallan-claude-skills-jeffallan-claude-skills_4cac5418",
+      "path": "skills/devops-engineer/SKILL.md",
+      "declared_name": "devops-engineer",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:8b7004b4908ce214dba6a1b55d0804ae798a35d1",
+      "upstream_ref": "e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319",
+      "git_blob_oid": "git_sha1:8b7004b4908ce214dba6a1b55d0804ae798a35d1",
+      "url": "https://github.com/Jeffallan/claude-skills/blob/e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319/skills/devops-engineer/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/Jeffallan/claude-skills/e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319/skills/devops-engineer/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-jeffallan-claude-skills-jeffallan-claude-skills_4cac5418",
+        "canonical_skill_id": null,
+        "remote_path": "skills/devops-engineer/SKILL.md",
+        "pinned_commit": "e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319",
+        "git_blob_oid": "git_sha1:8b7004b4908ce214dba6a1b55d0804ae798a35d1",
+        "raw_url": "https://raw.githubusercontent.com/Jeffallan/claude-skills/e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319/skills/devops-engineer/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:8b7004b4908ce214dba6a1b55d0804ae798a35d1",
+        "size": 5998
+      }
+    },
+    {
+      "source_id": "src_https-github-com-jeffallan-claude-skills-jeffallan-claude-skills_4cac5418",
+      "path": "skills/django-expert/SKILL.md",
+      "declared_name": "django-expert",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:e0f83408ee96325187c6ada39aa9ced8a96a6f6c",
+      "upstream_ref": "e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319",
+      "git_blob_oid": "git_sha1:e0f83408ee96325187c6ada39aa9ced8a96a6f6c",
+      "url": "https://github.com/Jeffallan/claude-skills/blob/e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319/skills/django-expert/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/Jeffallan/claude-skills/e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319/skills/django-expert/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-jeffallan-claude-skills-jeffallan-claude-skills_4cac5418",
+        "canonical_skill_id": null,
+        "remote_path": "skills/django-expert/SKILL.md",
+        "pinned_commit": "e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319",
+        "git_blob_oid": "git_sha1:e0f83408ee96325187c6ada39aa9ced8a96a6f6c",
+        "raw_url": "https://raw.githubusercontent.com/Jeffallan/claude-skills/e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319/skills/django-expert/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:e0f83408ee96325187c6ada39aa9ced8a96a6f6c",
+        "size": 6003
+      }
+    },
+    {
+      "source_id": "src_https-github-com-jeffallan-claude-skills-jeffallan-claude-skills_4cac5418",
+      "path": "skills/dotnet-core-expert/SKILL.md",
+      "declared_name": "dotnet-core-expert",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:86c6999c86d985a8e5e2ed7a5ae0dea4fd9c08e9",
+      "upstream_ref": "e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319",
+      "git_blob_oid": "git_sha1:86c6999c86d985a8e5e2ed7a5ae0dea4fd9c08e9",
+      "url": "https://github.com/Jeffallan/claude-skills/blob/e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319/skills/dotnet-core-expert/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/Jeffallan/claude-skills/e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319/skills/dotnet-core-expert/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-jeffallan-claude-skills-jeffallan-claude-skills_4cac5418",
+        "canonical_skill_id": null,
+        "remote_path": "skills/dotnet-core-expert/SKILL.md",
+        "pinned_commit": "e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319",
+        "git_blob_oid": "git_sha1:86c6999c86d985a8e5e2ed7a5ae0dea4fd9c08e9",
+        "raw_url": "https://raw.githubusercontent.com/Jeffallan/claude-skills/e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319/skills/dotnet-core-expert/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:86c6999c86d985a8e5e2ed7a5ae0dea4fd9c08e9",
+        "size": 5079
+      }
+    },
+    {
+      "source_id": "src_https-github-com-jeffallan-claude-skills-jeffallan-claude-skills_4cac5418",
+      "path": "skills/embedded-systems/SKILL.md",
+      "declared_name": "embedded-systems",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:c591f9a7e4e7e0fa421764a9fff63c0d2e311d8c",
+      "upstream_ref": "e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319",
+      "git_blob_oid": "git_sha1:c591f9a7e4e7e0fa421764a9fff63c0d2e311d8c",
+      "url": "https://github.com/Jeffallan/claude-skills/blob/e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319/skills/embedded-systems/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/Jeffallan/claude-skills/e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319/skills/embedded-systems/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-jeffallan-claude-skills-jeffallan-claude-skills_4cac5418",
+        "canonical_skill_id": null,
+        "remote_path": "skills/embedded-systems/SKILL.md",
+        "pinned_commit": "e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319",
+        "git_blob_oid": "git_sha1:c591f9a7e4e7e0fa421764a9fff63c0d2e311d8c",
+        "raw_url": "https://raw.githubusercontent.com/Jeffallan/claude-skills/e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319/skills/embedded-systems/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:c591f9a7e4e7e0fa421764a9fff63c0d2e311d8c",
+        "size": 6117
+      }
+    },
+    {
+      "source_id": "src_https-github-com-jeffallan-claude-skills-jeffallan-claude-skills_4cac5418",
+      "path": "skills/fastapi-expert/SKILL.md",
+      "declared_name": "fastapi-expert",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:3107e6784dd6b38d499f62e9d92a9c84ae6b695c",
+      "upstream_ref": "e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319",
+      "git_blob_oid": "git_sha1:3107e6784dd6b38d499f62e9d92a9c84ae6b695c",
+      "url": "https://github.com/Jeffallan/claude-skills/blob/e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319/skills/fastapi-expert/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/Jeffallan/claude-skills/e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319/skills/fastapi-expert/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-jeffallan-claude-skills-jeffallan-claude-skills_4cac5418",
+        "canonical_skill_id": null,
+        "remote_path": "skills/fastapi-expert/SKILL.md",
+        "pinned_commit": "e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319",
+        "git_blob_oid": "git_sha1:3107e6784dd6b38d499f62e9d92a9c84ae6b695c",
+        "raw_url": "https://raw.githubusercontent.com/Jeffallan/claude-skills/e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319/skills/fastapi-expert/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:3107e6784dd6b38d499f62e9d92a9c84ae6b695c",
+        "size": 6898
+      }
+    },
+    {
+      "source_id": "src_https-github-com-jeffallan-claude-skills-jeffallan-claude-skills_4cac5418",
+      "path": "skills/feature-forge/SKILL.md",
+      "declared_name": "feature-forge",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:1e17d5f71676443407379ab238b4f049b2630b9e",
+      "upstream_ref": "e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319",
+      "git_blob_oid": "git_sha1:1e17d5f71676443407379ab238b4f049b2630b9e",
+      "url": "https://github.com/Jeffallan/claude-skills/blob/e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319/skills/feature-forge/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/Jeffallan/claude-skills/e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319/skills/feature-forge/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-jeffallan-claude-skills-jeffallan-claude-skills_4cac5418",
+        "canonical_skill_id": null,
+        "remote_path": "skills/feature-forge/SKILL.md",
+        "pinned_commit": "e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319",
+        "git_blob_oid": "git_sha1:1e17d5f71676443407379ab238b4f049b2630b9e",
+        "raw_url": "https://raw.githubusercontent.com/Jeffallan/claude-skills/e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319/skills/feature-forge/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:1e17d5f71676443407379ab238b4f049b2630b9e",
+        "size": 4289
+      }
+    },
+    {
+      "source_id": "src_https-github-com-jeffallan-claude-skills-jeffallan-claude-skills_4cac5418",
+      "path": "skills/fine-tuning-expert/SKILL.md",
+      "declared_name": "fine-tuning-expert",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:882942d36e7a5315743414ee51fbe990d99b98ec",
+      "upstream_ref": "e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319",
+      "git_blob_oid": "git_sha1:882942d36e7a5315743414ee51fbe990d99b98ec",
+      "url": "https://github.com/Jeffallan/claude-skills/blob/e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319/skills/fine-tuning-expert/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/Jeffallan/claude-skills/e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319/skills/fine-tuning-expert/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-jeffallan-claude-skills-jeffallan-claude-skills_4cac5418",
+        "canonical_skill_id": null,
+        "remote_path": "skills/fine-tuning-expert/SKILL.md",
+        "pinned_commit": "e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319",
+        "git_blob_oid": "git_sha1:882942d36e7a5315743414ee51fbe990d99b98ec",
+        "raw_url": "https://raw.githubusercontent.com/Jeffallan/claude-skills/e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319/skills/fine-tuning-expert/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:882942d36e7a5315743414ee51fbe990d99b98ec",
+        "size": 6629
+      }
+    },
+    {
+      "source_id": "src_https-github-com-jeffallan-claude-skills-jeffallan-claude-skills_4cac5418",
+      "path": "skills/flutter-expert/SKILL.md",
+      "declared_name": "flutter-expert",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:61962e150d36be1682a2acc80a0bb9545ad907d9",
+      "upstream_ref": "e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319",
+      "git_blob_oid": "git_sha1:61962e150d36be1682a2acc80a0bb9545ad907d9",
+      "url": "https://github.com/Jeffallan/claude-skills/blob/e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319/skills/flutter-expert/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/Jeffallan/claude-skills/e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319/skills/flutter-expert/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-jeffallan-claude-skills-jeffallan-claude-skills_4cac5418",
+        "canonical_skill_id": null,
+        "remote_path": "skills/flutter-expert/SKILL.md",
+        "pinned_commit": "e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319",
+        "git_blob_oid": "git_sha1:61962e150d36be1682a2acc80a0bb9545ad907d9",
+        "raw_url": "https://raw.githubusercontent.com/Jeffallan/claude-skills/e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319/skills/flutter-expert/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:61962e150d36be1682a2acc80a0bb9545ad907d9",
+        "size": 5632
+      }
+    },
+    {
+      "source_id": "src_https-github-com-jeffallan-claude-skills-jeffallan-claude-skills_4cac5418",
+      "path": "skills/fullstack-guardian/SKILL.md",
+      "declared_name": "fullstack-guardian",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:85b2153c707af2d6abba25bd52fc3a5e2b74a5c3",
+      "upstream_ref": "e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319",
+      "git_blob_oid": "git_sha1:85b2153c707af2d6abba25bd52fc3a5e2b74a5c3",
+      "url": "https://github.com/Jeffallan/claude-skills/blob/e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319/skills/fullstack-guardian/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/Jeffallan/claude-skills/e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319/skills/fullstack-guardian/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-jeffallan-claude-skills-jeffallan-claude-skills_4cac5418",
+        "canonical_skill_id": null,
+        "remote_path": "skills/fullstack-guardian/SKILL.md",
+        "pinned_commit": "e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319",
+        "git_blob_oid": "git_sha1:85b2153c707af2d6abba25bd52fc3a5e2b74a5c3",
+        "raw_url": "https://raw.githubusercontent.com/Jeffallan/claude-skills/e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319/skills/fullstack-guardian/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:85b2153c707af2d6abba25bd52fc3a5e2b74a5c3",
+        "size": 5822
+      }
+    },
+    {
+      "source_id": "src_https-github-com-jeffallan-claude-skills-jeffallan-claude-skills_4cac5418",
+      "path": "skills/game-developer/SKILL.md",
+      "declared_name": "game-developer",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:75519035fc5c9f7ce6a0fca8203f252edf0bc2aa",
+      "upstream_ref": "e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319",
+      "git_blob_oid": "git_sha1:75519035fc5c9f7ce6a0fca8203f252edf0bc2aa",
+      "url": "https://github.com/Jeffallan/claude-skills/blob/e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319/skills/game-developer/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/Jeffallan/claude-skills/e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319/skills/game-developer/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-jeffallan-claude-skills-jeffallan-claude-skills_4cac5418",
+        "canonical_skill_id": null,
+        "remote_path": "skills/game-developer/SKILL.md",
+        "pinned_commit": "e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319",
+        "git_blob_oid": "git_sha1:75519035fc5c9f7ce6a0fca8203f252edf0bc2aa",
+        "raw_url": "https://raw.githubusercontent.com/Jeffallan/claude-skills/e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319/skills/game-developer/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:75519035fc5c9f7ce6a0fca8203f252edf0bc2aa",
+        "size": 5722
+      }
+    },
+    {
+      "source_id": "src_https-github-com-jeffallan-claude-skills-jeffallan-claude-skills_4cac5418",
+      "path": "skills/golang-pro/SKILL.md",
+      "declared_name": "golang-pro",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:5b040caa7f3bb342eb1893c4b5def043dcb99d2f",
+      "upstream_ref": "e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319",
+      "git_blob_oid": "git_sha1:5b040caa7f3bb342eb1893c4b5def043dcb99d2f",
+      "url": "https://github.com/Jeffallan/claude-skills/blob/e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319/skills/golang-pro/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/Jeffallan/claude-skills/e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319/skills/golang-pro/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-jeffallan-claude-skills-jeffallan-claude-skills_4cac5418",
+        "canonical_skill_id": null,
+        "remote_path": "skills/golang-pro/SKILL.md",
+        "pinned_commit": "e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319",
+        "git_blob_oid": "git_sha1:5b040caa7f3bb342eb1893c4b5def043dcb99d2f",
+        "raw_url": "https://raw.githubusercontent.com/Jeffallan/claude-skills/e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319/skills/golang-pro/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:5b040caa7f3bb342eb1893c4b5def043dcb99d2f",
+        "size": 5033
+      }
+    },
+    {
+      "source_id": "src_https-github-com-jeffallan-claude-skills-jeffallan-claude-skills_4cac5418",
+      "path": "skills/graphql-architect/SKILL.md",
+      "declared_name": "graphql-architect",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:2c6916ac97b523799cf0c79e0532d1e451555460",
+      "upstream_ref": "e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319",
+      "git_blob_oid": "git_sha1:2c6916ac97b523799cf0c79e0532d1e451555460",
+      "url": "https://github.com/Jeffallan/claude-skills/blob/e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319/skills/graphql-architect/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/Jeffallan/claude-skills/e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319/skills/graphql-architect/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-jeffallan-claude-skills-jeffallan-claude-skills_4cac5418",
+        "canonical_skill_id": null,
+        "remote_path": "skills/graphql-architect/SKILL.md",
+        "pinned_commit": "e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319",
+        "git_blob_oid": "git_sha1:2c6916ac97b523799cf0c79e0532d1e451555460",
+        "raw_url": "https://raw.githubusercontent.com/Jeffallan/claude-skills/e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319/skills/graphql-architect/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:2c6916ac97b523799cf0c79e0532d1e451555460",
+        "size": 5095
+      }
+    },
+    {
+      "source_id": "src_https-github-com-jeffallan-claude-skills-jeffallan-claude-skills_4cac5418",
+      "path": "skills/java-architect/SKILL.md",
+      "declared_name": "java-architect",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:d714b9f5d8af28fb10136eab08052393dcd1d0fe",
+      "upstream_ref": "e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319",
+      "git_blob_oid": "git_sha1:d714b9f5d8af28fb10136eab08052393dcd1d0fe",
+      "url": "https://github.com/Jeffallan/claude-skills/blob/e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319/skills/java-architect/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/Jeffallan/claude-skills/e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319/skills/java-architect/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-jeffallan-claude-skills-jeffallan-claude-skills_4cac5418",
+        "canonical_skill_id": null,
+        "remote_path": "skills/java-architect/SKILL.md",
+        "pinned_commit": "e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319",
+        "git_blob_oid": "git_sha1:d714b9f5d8af28fb10136eab08052393dcd1d0fe",
+        "raw_url": "https://raw.githubusercontent.com/Jeffallan/claude-skills/e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319/skills/java-architect/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:d714b9f5d8af28fb10136eab08052393dcd1d0fe",
+        "size": 5709
+      }
+    },
+    {
+      "source_id": "src_https-github-com-jeffallan-claude-skills-jeffallan-claude-skills_4cac5418",
+      "path": "skills/javascript-pro/SKILL.md",
+      "declared_name": "javascript-pro",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:7daf34055f7074bcf3c33229cdee8f99e904b44d",
+      "upstream_ref": "e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319",
+      "git_blob_oid": "git_sha1:7daf34055f7074bcf3c33229cdee8f99e904b44d",
+      "url": "https://github.com/Jeffallan/claude-skills/blob/e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319/skills/javascript-pro/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/Jeffallan/claude-skills/e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319/skills/javascript-pro/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-jeffallan-claude-skills-jeffallan-claude-skills_4cac5418",
+        "canonical_skill_id": null,
+        "remote_path": "skills/javascript-pro/SKILL.md",
+        "pinned_commit": "e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319",
+        "git_blob_oid": "git_sha1:7daf34055f7074bcf3c33229cdee8f99e904b44d",
+        "raw_url": "https://raw.githubusercontent.com/Jeffallan/claude-skills/e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319/skills/javascript-pro/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:7daf34055f7074bcf3c33229cdee8f99e904b44d",
+        "size": 4822
+      }
+    },
+    {
+      "source_id": "src_https-github-com-jeffallan-claude-skills-jeffallan-claude-skills_4cac5418",
+      "path": "skills/kotlin-specialist/SKILL.md",
+      "declared_name": "kotlin-specialist",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:b58edb4245698272684feda1405d2fa279438495",
+      "upstream_ref": "e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319",
+      "git_blob_oid": "git_sha1:b58edb4245698272684feda1405d2fa279438495",
+      "url": "https://github.com/Jeffallan/claude-skills/blob/e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319/skills/kotlin-specialist/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/Jeffallan/claude-skills/e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319/skills/kotlin-specialist/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-jeffallan-claude-skills-jeffallan-claude-skills_4cac5418",
+        "canonical_skill_id": null,
+        "remote_path": "skills/kotlin-specialist/SKILL.md",
+        "pinned_commit": "e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319",
+        "git_blob_oid": "git_sha1:b58edb4245698272684feda1405d2fa279438495",
+        "raw_url": "https://raw.githubusercontent.com/Jeffallan/claude-skills/e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319/skills/kotlin-specialist/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:b58edb4245698272684feda1405d2fa279438495",
+        "size": 5935
+      }
+    },
+    {
+      "source_id": "src_https-github-com-jeffallan-claude-skills-jeffallan-claude-skills_4cac5418",
+      "path": "skills/kubernetes-specialist/SKILL.md",
+      "declared_name": "kubernetes-specialist",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:9437ac131714adc5e570ee1b954c3137dcd772e1",
+      "upstream_ref": "e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319",
+      "git_blob_oid": "git_sha1:9437ac131714adc5e570ee1b954c3137dcd772e1",
+      "url": "https://github.com/Jeffallan/claude-skills/blob/e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319/skills/kubernetes-specialist/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/Jeffallan/claude-skills/e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319/skills/kubernetes-specialist/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-jeffallan-claude-skills-jeffallan-claude-skills_4cac5418",
+        "canonical_skill_id": null,
+        "remote_path": "skills/kubernetes-specialist/SKILL.md",
+        "pinned_commit": "e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319",
+        "git_blob_oid": "git_sha1:9437ac131714adc5e570ee1b954c3137dcd772e1",
+        "raw_url": "https://raw.githubusercontent.com/Jeffallan/claude-skills/e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319/skills/kubernetes-specialist/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:9437ac131714adc5e570ee1b954c3137dcd772e1",
+        "size": 8167
+      }
+    },
+    {
+      "source_id": "src_https-github-com-jeffallan-claude-skills-jeffallan-claude-skills_4cac5418",
+      "path": "skills/laravel-specialist/SKILL.md",
+      "declared_name": "laravel-specialist",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:354329ca3372a9d205b028ac2c02f44fc958d9b6",
+      "upstream_ref": "e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319",
+      "git_blob_oid": "git_sha1:354329ca3372a9d205b028ac2c02f44fc958d9b6",
+      "url": "https://github.com/Jeffallan/claude-skills/blob/e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319/skills/laravel-specialist/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/Jeffallan/claude-skills/e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319/skills/laravel-specialist/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-jeffallan-claude-skills-jeffallan-claude-skills_4cac5418",
+        "canonical_skill_id": null,
+        "remote_path": "skills/laravel-specialist/SKILL.md",
+        "pinned_commit": "e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319",
+        "git_blob_oid": "git_sha1:354329ca3372a9d205b028ac2c02f44fc958d9b6",
+        "raw_url": "https://raw.githubusercontent.com/Jeffallan/claude-skills/e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319/skills/laravel-specialist/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:354329ca3372a9d205b028ac2c02f44fc958d9b6",
+        "size": 8348
+      }
+    },
+    {
+      "source_id": "src_https-github-com-jeffallan-claude-skills-jeffallan-claude-skills_4cac5418",
+      "path": "skills/legacy-modernizer/SKILL.md",
+      "declared_name": "legacy-modernizer",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:7ec46285afaf1429743a875ab49c97f3afc70f1e",
+      "upstream_ref": "e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319",
+      "git_blob_oid": "git_sha1:7ec46285afaf1429743a875ab49c97f3afc70f1e",
+      "url": "https://github.com/Jeffallan/claude-skills/blob/e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319/skills/legacy-modernizer/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/Jeffallan/claude-skills/e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319/skills/legacy-modernizer/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-jeffallan-claude-skills-jeffallan-claude-skills_4cac5418",
+        "canonical_skill_id": null,
+        "remote_path": "skills/legacy-modernizer/SKILL.md",
+        "pinned_commit": "e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319",
+        "git_blob_oid": "git_sha1:7ec46285afaf1429743a875ab49c97f3afc70f1e",
+        "raw_url": "https://raw.githubusercontent.com/Jeffallan/claude-skills/e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319/skills/legacy-modernizer/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:7ec46285afaf1429743a875ab49c97f3afc70f1e",
+        "size": 6109
+      }
+    },
+    {
+      "source_id": "src_https-github-com-jeffallan-claude-skills-jeffallan-claude-skills_4cac5418",
+      "path": "skills/mcp-developer/SKILL.md",
+      "declared_name": "mcp-developer",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:51662d791ee920a871ed48e404afc7ffd86fdcce",
+      "upstream_ref": "e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319",
+      "git_blob_oid": "git_sha1:51662d791ee920a871ed48e404afc7ffd86fdcce",
+      "url": "https://github.com/Jeffallan/claude-skills/blob/e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319/skills/mcp-developer/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/Jeffallan/claude-skills/e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319/skills/mcp-developer/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-jeffallan-claude-skills-jeffallan-claude-skills_4cac5418",
+        "canonical_skill_id": null,
+        "remote_path": "skills/mcp-developer/SKILL.md",
+        "pinned_commit": "e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319",
+        "git_blob_oid": "git_sha1:51662d791ee920a871ed48e404afc7ffd86fdcce",
+        "raw_url": "https://raw.githubusercontent.com/Jeffallan/claude-skills/e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319/skills/mcp-developer/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:51662d791ee920a871ed48e404afc7ffd86fdcce",
+        "size": 5724
+      }
+    },
+    {
+      "source_id": "src_https-github-com-jeffallan-claude-skills-jeffallan-claude-skills_4cac5418",
+      "path": "skills/microservices-architect/SKILL.md",
+      "declared_name": "microservices-architect",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:4d84878716c8bd1359768c4911558e659af3d025",
+      "upstream_ref": "e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319",
+      "git_blob_oid": "git_sha1:4d84878716c8bd1359768c4911558e659af3d025",
+      "url": "https://github.com/Jeffallan/claude-skills/blob/e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319/skills/microservices-architect/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/Jeffallan/claude-skills/e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319/skills/microservices-architect/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-jeffallan-claude-skills-jeffallan-claude-skills_4cac5418",
+        "canonical_skill_id": null,
+        "remote_path": "skills/microservices-architect/SKILL.md",
+        "pinned_commit": "e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319",
+        "git_blob_oid": "git_sha1:4d84878716c8bd1359768c4911558e659af3d025",
+        "raw_url": "https://raw.githubusercontent.com/Jeffallan/claude-skills/e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319/skills/microservices-architect/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:4d84878716c8bd1359768c4911558e659af3d025",
+        "size": 6898
+      }
+    },
+    {
+      "source_id": "src_https-github-com-jeffallan-claude-skills-jeffallan-claude-skills_4cac5418",
+      "path": "skills/ml-pipeline/SKILL.md",
+      "declared_name": "ml-pipeline",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:a80e54eeb1e2b26db08344416854fa10d87537e4",
+      "upstream_ref": "e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319",
+      "git_blob_oid": "git_sha1:a80e54eeb1e2b26db08344416854fa10d87537e4",
+      "url": "https://github.com/Jeffallan/claude-skills/blob/e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319/skills/ml-pipeline/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/Jeffallan/claude-skills/e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319/skills/ml-pipeline/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-jeffallan-claude-skills-jeffallan-claude-skills_4cac5418",
+        "canonical_skill_id": null,
+        "remote_path": "skills/ml-pipeline/SKILL.md",
+        "pinned_commit": "e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319",
+        "git_blob_oid": "git_sha1:a80e54eeb1e2b26db08344416854fa10d87537e4",
+        "raw_url": "https://raw.githubusercontent.com/Jeffallan/claude-skills/e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319/skills/ml-pipeline/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:a80e54eeb1e2b26db08344416854fa10d87537e4",
+        "size": 7247
+      }
+    },
+    {
+      "source_id": "src_https-github-com-jeffallan-claude-skills-jeffallan-claude-skills_4cac5418",
+      "path": "skills/monitoring-expert/SKILL.md",
+      "declared_name": "monitoring-expert",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:de67d8aa6a770ddd976a717085278beb6ed549de",
+      "upstream_ref": "e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319",
+      "git_blob_oid": "git_sha1:de67d8aa6a770ddd976a717085278beb6ed549de",
+      "url": "https://github.com/Jeffallan/claude-skills/blob/e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319/skills/monitoring-expert/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/Jeffallan/claude-skills/e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319/skills/monitoring-expert/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-jeffallan-claude-skills-jeffallan-claude-skills_4cac5418",
+        "canonical_skill_id": null,
+        "remote_path": "skills/monitoring-expert/SKILL.md",
+        "pinned_commit": "e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319",
+        "git_blob_oid": "git_sha1:de67d8aa6a770ddd976a717085278beb6ed549de",
+        "raw_url": "https://raw.githubusercontent.com/Jeffallan/claude-skills/e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319/skills/monitoring-expert/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:de67d8aa6a770ddd976a717085278beb6ed549de",
+        "size": 6176
+      }
+    },
+    {
+      "source_id": "src_https-github-com-jeffallan-claude-skills-jeffallan-claude-skills_4cac5418",
+      "path": "skills/nestjs-expert/SKILL.md",
+      "declared_name": "nestjs-expert",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:24a57a71e76ce1763663e0192b8202eb4c9dbea7",
+      "upstream_ref": "e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319",
+      "git_blob_oid": "git_sha1:24a57a71e76ce1763663e0192b8202eb4c9dbea7",
+      "url": "https://github.com/Jeffallan/claude-skills/blob/e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319/skills/nestjs-expert/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/Jeffallan/claude-skills/e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319/skills/nestjs-expert/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-jeffallan-claude-skills-jeffallan-claude-skills_4cac5418",
+        "canonical_skill_id": null,
+        "remote_path": "skills/nestjs-expert/SKILL.md",
+        "pinned_commit": "e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319",
+        "git_blob_oid": "git_sha1:24a57a71e76ce1763663e0192b8202eb4c9dbea7",
+        "raw_url": "https://raw.githubusercontent.com/Jeffallan/claude-skills/e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319/skills/nestjs-expert/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:24a57a71e76ce1763663e0192b8202eb4c9dbea7",
+        "size": 7680
+      }
+    },
+    {
+      "source_id": "src_https-github-com-jeffallan-claude-skills-jeffallan-claude-skills_4cac5418",
+      "path": "skills/nextjs-developer/SKILL.md",
+      "declared_name": "nextjs-developer",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:eafe4b48ecbaecf3b40a6f5b774ece96888383a7",
+      "upstream_ref": "e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319",
+      "git_blob_oid": "git_sha1:eafe4b48ecbaecf3b40a6f5b774ece96888383a7",
+      "url": "https://github.com/Jeffallan/claude-skills/blob/e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319/skills/nextjs-developer/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/Jeffallan/claude-skills/e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319/skills/nextjs-developer/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-jeffallan-claude-skills-jeffallan-claude-skills_4cac5418",
+        "canonical_skill_id": null,
+        "remote_path": "skills/nextjs-developer/SKILL.md",
+        "pinned_commit": "e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319",
+        "git_blob_oid": "git_sha1:eafe4b48ecbaecf3b40a6f5b774ece96888383a7",
+        "raw_url": "https://raw.githubusercontent.com/Jeffallan/claude-skills/e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319/skills/nextjs-developer/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:eafe4b48ecbaecf3b40a6f5b774ece96888383a7",
+        "size": 5511
+      }
+    },
+    {
+      "source_id": "src_https-github-com-jeffallan-claude-skills-jeffallan-claude-skills_4cac5418",
+      "path": "skills/pandas-pro/SKILL.md",
+      "declared_name": "pandas-pro",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:c46bf41c1f27b73f59299f28a33341e3d3b8d078",
+      "upstream_ref": "e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319",
+      "git_blob_oid": "git_sha1:c46bf41c1f27b73f59299f28a33341e3d3b8d078",
+      "url": "https://github.com/Jeffallan/claude-skills/blob/e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319/skills/pandas-pro/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/Jeffallan/claude-skills/e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319/skills/pandas-pro/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-jeffallan-claude-skills-jeffallan-claude-skills_4cac5418",
+        "canonical_skill_id": null,
+        "remote_path": "skills/pandas-pro/SKILL.md",
+        "pinned_commit": "e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319",
+        "git_blob_oid": "git_sha1:c46bf41c1f27b73f59299f28a33341e3d3b8d078",
+        "raw_url": "https://raw.githubusercontent.com/Jeffallan/claude-skills/e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319/skills/pandas-pro/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:c46bf41c1f27b73f59299f28a33341e3d3b8d078",
+        "size": 6001
+      }
+    },
+    {
+      "source_id": "src_https-github-com-jeffallan-claude-skills-jeffallan-claude-skills_4cac5418",
+      "path": "skills/php-pro/SKILL.md",
+      "declared_name": "php-pro",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:af5a1ebe7001829e73df1f0c0c9b0251a700267e",
+      "upstream_ref": "e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319",
+      "git_blob_oid": "git_sha1:af5a1ebe7001829e73df1f0c0c9b0251a700267e",
+      "url": "https://github.com/Jeffallan/claude-skills/blob/e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319/skills/php-pro/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/Jeffallan/claude-skills/e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319/skills/php-pro/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-jeffallan-claude-skills-jeffallan-claude-skills_4cac5418",
+        "canonical_skill_id": null,
+        "remote_path": "skills/php-pro/SKILL.md",
+        "pinned_commit": "e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319",
+        "git_blob_oid": "git_sha1:af5a1ebe7001829e73df1f0c0c9b0251a700267e",
+        "raw_url": "https://raw.githubusercontent.com/Jeffallan/claude-skills/e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319/skills/php-pro/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:af5a1ebe7001829e73df1f0c0c9b0251a700267e",
+        "size": 6074
+      }
+    },
+    {
+      "source_id": "src_https-github-com-jeffallan-claude-skills-jeffallan-claude-skills_4cac5418",
+      "path": "skills/playwright-expert/SKILL.md",
+      "declared_name": "playwright-expert",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:69d2874302d844632285028ff7e66c2e1641f742",
+      "upstream_ref": "e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319",
+      "git_blob_oid": "git_sha1:69d2874302d844632285028ff7e66c2e1641f742",
+      "url": "https://github.com/Jeffallan/claude-skills/blob/e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319/skills/playwright-expert/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/Jeffallan/claude-skills/e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319/skills/playwright-expert/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-jeffallan-claude-skills-jeffallan-claude-skills_4cac5418",
+        "canonical_skill_id": null,
+        "remote_path": "skills/playwright-expert/SKILL.md",
+        "pinned_commit": "e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319",
+        "git_blob_oid": "git_sha1:69d2874302d844632285028ff7e66c2e1641f742",
+        "raw_url": "https://raw.githubusercontent.com/Jeffallan/claude-skills/e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319/skills/playwright-expert/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:69d2874302d844632285028ff7e66c2e1641f742",
+        "size": 5582
+      }
+    },
+    {
+      "source_id": "src_https-github-com-jeffallan-claude-skills-jeffallan-claude-skills_4cac5418",
+      "path": "skills/postgres-pro/SKILL.md",
+      "declared_name": "postgres-pro",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:09295f4f20391319046d09b1299f45bf96f60e3b",
+      "upstream_ref": "e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319",
+      "git_blob_oid": "git_sha1:09295f4f20391319046d09b1299f45bf96f60e3b",
+      "url": "https://github.com/Jeffallan/claude-skills/blob/e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319/skills/postgres-pro/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/Jeffallan/claude-skills/e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319/skills/postgres-pro/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-jeffallan-claude-skills-jeffallan-claude-skills_4cac5418",
+        "canonical_skill_id": null,
+        "remote_path": "skills/postgres-pro/SKILL.md",
+        "pinned_commit": "e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319",
+        "git_blob_oid": "git_sha1:09295f4f20391319046d09b1299f45bf96f60e3b",
+        "raw_url": "https://raw.githubusercontent.com/Jeffallan/claude-skills/e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319/skills/postgres-pro/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:09295f4f20391319046d09b1299f45bf96f60e3b",
+        "size": 5821
+      }
+    },
+    {
+      "source_id": "src_https-github-com-jeffallan-claude-skills-jeffallan-claude-skills_4cac5418",
+      "path": "skills/prompt-engineer/SKILL.md",
+      "declared_name": "prompt-engineer",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:f6f3aebb16108b801a370cd1ed06314c3a8bea3d",
+      "upstream_ref": "e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319",
+      "git_blob_oid": "git_sha1:f6f3aebb16108b801a370cd1ed06314c3a8bea3d",
+      "url": "https://github.com/Jeffallan/claude-skills/blob/e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319/skills/prompt-engineer/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/Jeffallan/claude-skills/e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319/skills/prompt-engineer/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-jeffallan-claude-skills-jeffallan-claude-skills_4cac5418",
+        "canonical_skill_id": null,
+        "remote_path": "skills/prompt-engineer/SKILL.md",
+        "pinned_commit": "e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319",
+        "git_blob_oid": "git_sha1:f6f3aebb16108b801a370cd1ed06314c3a8bea3d",
+        "raw_url": "https://raw.githubusercontent.com/Jeffallan/claude-skills/e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319/skills/prompt-engineer/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:f6f3aebb16108b801a370cd1ed06314c3a8bea3d",
+        "size": 5870
+      }
+    },
+    {
+      "source_id": "src_https-github-com-jeffallan-claude-skills-jeffallan-claude-skills_4cac5418",
+      "path": "skills/python-pro/SKILL.md",
+      "declared_name": "python-pro",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:8934e8c000761b6e1a72ccf224cadd6414978505",
+      "upstream_ref": "e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319",
+      "git_blob_oid": "git_sha1:8934e8c000761b6e1a72ccf224cadd6414978505",
+      "url": "https://github.com/Jeffallan/claude-skills/blob/e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319/skills/python-pro/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/Jeffallan/claude-skills/e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319/skills/python-pro/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-jeffallan-claude-skills-jeffallan-claude-skills_4cac5418",
+        "canonical_skill_id": null,
+        "remote_path": "skills/python-pro/SKILL.md",
+        "pinned_commit": "e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319",
+        "git_blob_oid": "git_sha1:8934e8c000761b6e1a72ccf224cadd6414978505",
+        "raw_url": "https://raw.githubusercontent.com/Jeffallan/claude-skills/e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319/skills/python-pro/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:8934e8c000761b6e1a72ccf224cadd6414978505",
+        "size": 6094
+      }
+    },
+    {
+      "source_id": "src_https-github-com-jeffallan-claude-skills-jeffallan-claude-skills_4cac5418",
+      "path": "skills/rag-architect/SKILL.md",
+      "declared_name": "rag-architect",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:b727473286481e4021718d8828078dd9e22b2fa0",
+      "upstream_ref": "e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319",
+      "git_blob_oid": "git_sha1:b727473286481e4021718d8828078dd9e22b2fa0",
+      "url": "https://github.com/Jeffallan/claude-skills/blob/e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319/skills/rag-architect/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/Jeffallan/claude-skills/e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319/skills/rag-architect/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-jeffallan-claude-skills-jeffallan-claude-skills_4cac5418",
+        "canonical_skill_id": null,
+        "remote_path": "skills/rag-architect/SKILL.md",
+        "pinned_commit": "e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319",
+        "git_blob_oid": "git_sha1:b727473286481e4021718d8828078dd9e22b2fa0",
+        "raw_url": "https://raw.githubusercontent.com/Jeffallan/claude-skills/e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319/skills/rag-architect/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:b727473286481e4021718d8828078dd9e22b2fa0",
+        "size": 7741
+      }
+    },
+    {
+      "source_id": "src_https-github-com-jeffallan-claude-skills-jeffallan-claude-skills_4cac5418",
+      "path": "skills/rails-expert/SKILL.md",
+      "declared_name": "rails-expert",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:13fcb1b7fab3a22dcc0183e88f67fbbfa7eaf5ca",
+      "upstream_ref": "e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319",
+      "git_blob_oid": "git_sha1:13fcb1b7fab3a22dcc0183e88f67fbbfa7eaf5ca",
+      "url": "https://github.com/Jeffallan/claude-skills/blob/e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319/skills/rails-expert/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/Jeffallan/claude-skills/e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319/skills/rails-expert/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-jeffallan-claude-skills-jeffallan-claude-skills_4cac5418",
+        "canonical_skill_id": null,
+        "remote_path": "skills/rails-expert/SKILL.md",
+        "pinned_commit": "e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319",
+        "git_blob_oid": "git_sha1:13fcb1b7fab3a22dcc0183e88f67fbbfa7eaf5ca",
+        "raw_url": "https://raw.githubusercontent.com/Jeffallan/claude-skills/e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319/skills/rails-expert/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:13fcb1b7fab3a22dcc0183e88f67fbbfa7eaf5ca",
+        "size": 5509
+      }
+    },
+    {
+      "source_id": "src_https-github-com-jeffallan-claude-skills-jeffallan-claude-skills_4cac5418",
+      "path": "skills/react-expert/SKILL.md",
+      "declared_name": "react-expert",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:49ac6250367eb7f36904ba98a7cb4e2220671eef",
+      "upstream_ref": "e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319",
+      "git_blob_oid": "git_sha1:49ac6250367eb7f36904ba98a7cb4e2220671eef",
+      "url": "https://github.com/Jeffallan/claude-skills/blob/e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319/skills/react-expert/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/Jeffallan/claude-skills/e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319/skills/react-expert/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-jeffallan-claude-skills-jeffallan-claude-skills_4cac5418",
+        "canonical_skill_id": null,
+        "remote_path": "skills/react-expert/SKILL.md",
+        "pinned_commit": "e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319",
+        "git_blob_oid": "git_sha1:49ac6250367eb7f36904ba98a7cb4e2220671eef",
+        "raw_url": "https://raw.githubusercontent.com/Jeffallan/claude-skills/e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319/skills/react-expert/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:49ac6250367eb7f36904ba98a7cb4e2220671eef",
+        "size": 5260
+      }
+    },
+    {
+      "source_id": "src_https-github-com-jeffallan-claude-skills-jeffallan-claude-skills_4cac5418",
+      "path": "skills/react-native-expert/SKILL.md",
+      "declared_name": "react-native-expert",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:1c3454cb17a51ca85fc1f5459ab50b133a38f830",
+      "upstream_ref": "e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319",
+      "git_blob_oid": "git_sha1:1c3454cb17a51ca85fc1f5459ab50b133a38f830",
+      "url": "https://github.com/Jeffallan/claude-skills/blob/e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319/skills/react-native-expert/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/Jeffallan/claude-skills/e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319/skills/react-native-expert/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-jeffallan-claude-skills-jeffallan-claude-skills_4cac5418",
+        "canonical_skill_id": null,
+        "remote_path": "skills/react-native-expert/SKILL.md",
+        "pinned_commit": "e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319",
+        "git_blob_oid": "git_sha1:1c3454cb17a51ca85fc1f5459ab50b133a38f830",
+        "raw_url": "https://raw.githubusercontent.com/Jeffallan/claude-skills/e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319/skills/react-native-expert/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:1c3454cb17a51ca85fc1f5459ab50b133a38f830",
+        "size": 6512
+      }
+    },
+    {
+      "source_id": "src_https-github-com-jeffallan-claude-skills-jeffallan-claude-skills_4cac5418",
+      "path": "skills/rust-engineer/SKILL.md",
+      "declared_name": "rust-engineer",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:d18c5f31f09386aa675d434e98ade805b6e3f189",
+      "upstream_ref": "e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319",
+      "git_blob_oid": "git_sha1:d18c5f31f09386aa675d434e98ade805b6e3f189",
+      "url": "https://github.com/Jeffallan/claude-skills/blob/e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319/skills/rust-engineer/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/Jeffallan/claude-skills/e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319/skills/rust-engineer/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-jeffallan-claude-skills-jeffallan-claude-skills_4cac5418",
+        "canonical_skill_id": null,
+        "remote_path": "skills/rust-engineer/SKILL.md",
+        "pinned_commit": "e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319",
+        "git_blob_oid": "git_sha1:d18c5f31f09386aa675d434e98ade805b6e3f189",
+        "raw_url": "https://raw.githubusercontent.com/Jeffallan/claude-skills/e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319/skills/rust-engineer/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:d18c5f31f09386aa675d434e98ade805b6e3f189",
+        "size": 6011
+      }
+    },
+    {
+      "source_id": "src_https-github-com-jeffallan-claude-skills-jeffallan-claude-skills_4cac5418",
+      "path": "skills/salesforce-developer/SKILL.md",
+      "declared_name": "salesforce-developer",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:7ad6dc5a8d521eb7d48685b4f482f6773670637f",
+      "upstream_ref": "e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319",
+      "git_blob_oid": "git_sha1:7ad6dc5a8d521eb7d48685b4f482f6773670637f",
+      "url": "https://github.com/Jeffallan/claude-skills/blob/e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319/skills/salesforce-developer/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/Jeffallan/claude-skills/e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319/skills/salesforce-developer/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-jeffallan-claude-skills-jeffallan-claude-skills_4cac5418",
+        "canonical_skill_id": null,
+        "remote_path": "skills/salesforce-developer/SKILL.md",
+        "pinned_commit": "e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319",
+        "git_blob_oid": "git_sha1:7ad6dc5a8d521eb7d48685b4f482f6773670637f",
+        "raw_url": "https://raw.githubusercontent.com/Jeffallan/claude-skills/e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319/skills/salesforce-developer/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:7ad6dc5a8d521eb7d48685b4f482f6773670637f",
+        "size": 7515
+      }
+    },
+    {
+      "source_id": "src_https-github-com-jeffallan-claude-skills-jeffallan-claude-skills_4cac5418",
+      "path": "skills/secure-code-guardian/SKILL.md",
+      "declared_name": "secure-code-guardian",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:008d4ac9cf5bd3a4e7c31285d925afcd860cdba5",
+      "upstream_ref": "e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319",
+      "git_blob_oid": "git_sha1:008d4ac9cf5bd3a4e7c31285d925afcd860cdba5",
+      "url": "https://github.com/Jeffallan/claude-skills/blob/e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319/skills/secure-code-guardian/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/Jeffallan/claude-skills/e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319/skills/secure-code-guardian/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-jeffallan-claude-skills-jeffallan-claude-skills_4cac5418",
+        "canonical_skill_id": null,
+        "remote_path": "skills/secure-code-guardian/SKILL.md",
+        "pinned_commit": "e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319",
+        "git_blob_oid": "git_sha1:008d4ac9cf5bd3a4e7c31285d925afcd860cdba5",
+        "raw_url": "https://raw.githubusercontent.com/Jeffallan/claude-skills/e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319/skills/secure-code-guardian/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:008d4ac9cf5bd3a4e7c31285d925afcd860cdba5",
+        "size": 7044
+      }
+    },
+    {
+      "source_id": "src_https-github-com-jeffallan-claude-skills-jeffallan-claude-skills_4cac5418",
+      "path": "skills/security-reviewer/SKILL.md",
+      "declared_name": "security-reviewer",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:9481290486433aefa724b4bbcf38c75ad71f1f89",
+      "upstream_ref": "e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319",
+      "git_blob_oid": "git_sha1:9481290486433aefa724b4bbcf38c75ad71f1f89",
+      "url": "https://github.com/Jeffallan/claude-skills/blob/e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319/skills/security-reviewer/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/Jeffallan/claude-skills/e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319/skills/security-reviewer/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-jeffallan-claude-skills-jeffallan-claude-skills_4cac5418",
+        "canonical_skill_id": null,
+        "remote_path": "skills/security-reviewer/SKILL.md",
+        "pinned_commit": "e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319",
+        "git_blob_oid": "git_sha1:9481290486433aefa724b4bbcf38c75ad71f1f89",
+        "raw_url": "https://raw.githubusercontent.com/Jeffallan/claude-skills/e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319/skills/security-reviewer/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:9481290486433aefa724b4bbcf38c75ad71f1f89",
+        "size": 4878
+      }
+    },
+    {
+      "source_id": "src_https-github-com-jeffallan-claude-skills-jeffallan-claude-skills_4cac5418",
+      "path": "skills/shopify-expert/SKILL.md",
+      "declared_name": "shopify-expert",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:0de5f37eead765ab4a73a88f3303f53d2b98d113",
+      "upstream_ref": "e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319",
+      "git_blob_oid": "git_sha1:0de5f37eead765ab4a73a88f3303f53d2b98d113",
+      "url": "https://github.com/Jeffallan/claude-skills/blob/e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319/skills/shopify-expert/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/Jeffallan/claude-skills/e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319/skills/shopify-expert/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-jeffallan-claude-skills-jeffallan-claude-skills_4cac5418",
+        "canonical_skill_id": null,
+        "remote_path": "skills/shopify-expert/SKILL.md",
+        "pinned_commit": "e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319",
+        "git_blob_oid": "git_sha1:0de5f37eead765ab4a73a88f3303f53d2b98d113",
+        "raw_url": "https://raw.githubusercontent.com/Jeffallan/claude-skills/e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319/skills/shopify-expert/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:0de5f37eead765ab4a73a88f3303f53d2b98d113",
+        "size": 7122
+      }
+    },
+    {
+      "source_id": "src_https-github-com-jeffallan-claude-skills-jeffallan-claude-skills_4cac5418",
+      "path": "skills/spark-engineer/SKILL.md",
+      "declared_name": "spark-engineer",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:a12e0ad9e91bd2c04b396b32cf2e1258c12c3402",
+      "upstream_ref": "e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319",
+      "git_blob_oid": "git_sha1:a12e0ad9e91bd2c04b396b32cf2e1258c12c3402",
+      "url": "https://github.com/Jeffallan/claude-skills/blob/e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319/skills/spark-engineer/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/Jeffallan/claude-skills/e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319/skills/spark-engineer/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-jeffallan-claude-skills-jeffallan-claude-skills_4cac5418",
+        "canonical_skill_id": null,
+        "remote_path": "skills/spark-engineer/SKILL.md",
+        "pinned_commit": "e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319",
+        "git_blob_oid": "git_sha1:a12e0ad9e91bd2c04b396b32cf2e1258c12c3402",
+        "raw_url": "https://raw.githubusercontent.com/Jeffallan/claude-skills/e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319/skills/spark-engineer/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:a12e0ad9e91bd2c04b396b32cf2e1258c12c3402",
+        "size": 6538
+      }
+    },
+    {
+      "source_id": "src_https-github-com-jeffallan-claude-skills-jeffallan-claude-skills_4cac5418",
+      "path": "skills/spec-miner/SKILL.md",
+      "declared_name": "spec-miner",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:2bb108827fdbb6fa149f294d0723ed0f2b0f21fc",
+      "upstream_ref": "e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319",
+      "git_blob_oid": "git_sha1:2bb108827fdbb6fa149f294d0723ed0f2b0f21fc",
+      "url": "https://github.com/Jeffallan/claude-skills/blob/e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319/skills/spec-miner/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/Jeffallan/claude-skills/e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319/skills/spec-miner/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-jeffallan-claude-skills-jeffallan-claude-skills_4cac5418",
+        "canonical_skill_id": null,
+        "remote_path": "skills/spec-miner/SKILL.md",
+        "pinned_commit": "e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319",
+        "git_blob_oid": "git_sha1:2bb108827fdbb6fa149f294d0723ed0f2b0f21fc",
+        "raw_url": "https://raw.githubusercontent.com/Jeffallan/claude-skills/e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319/skills/spec-miner/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:2bb108827fdbb6fa149f294d0723ed0f2b0f21fc",
+        "size": 4595
+      }
+    },
+    {
+      "source_id": "src_https-github-com-jeffallan-claude-skills-jeffallan-claude-skills_4cac5418",
+      "path": "skills/spring-boot-engineer/SKILL.md",
+      "declared_name": "spring-boot-engineer",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:5ba982ace424791cc77e85aad61a87ae63775f6b",
+      "upstream_ref": "e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319",
+      "git_blob_oid": "git_sha1:5ba982ace424791cc77e85aad61a87ae63775f6b",
+      "url": "https://github.com/Jeffallan/claude-skills/blob/e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319/skills/spring-boot-engineer/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/Jeffallan/claude-skills/e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319/skills/spring-boot-engineer/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-jeffallan-claude-skills-jeffallan-claude-skills_4cac5418",
+        "canonical_skill_id": null,
+        "remote_path": "skills/spring-boot-engineer/SKILL.md",
+        "pinned_commit": "e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319",
+        "git_blob_oid": "git_sha1:5ba982ace424791cc77e85aad61a87ae63775f6b",
+        "raw_url": "https://raw.githubusercontent.com/Jeffallan/claude-skills/e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319/skills/spring-boot-engineer/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:5ba982ace424791cc77e85aad61a87ae63775f6b",
+        "size": 7347
+      }
+    },
+    {
+      "source_id": "src_https-github-com-jeffallan-claude-skills-jeffallan-claude-skills_4cac5418",
+      "path": "skills/sql-pro/SKILL.md",
+      "declared_name": "sql-pro",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:c7d5cf2b90a145fa6d8cc20c7c358d7709b44cce",
+      "upstream_ref": "e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319",
+      "git_blob_oid": "git_sha1:c7d5cf2b90a145fa6d8cc20c7c358d7709b44cce",
+      "url": "https://github.com/Jeffallan/claude-skills/blob/e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319/skills/sql-pro/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/Jeffallan/claude-skills/e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319/skills/sql-pro/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-jeffallan-claude-skills-jeffallan-claude-skills_4cac5418",
+        "canonical_skill_id": null,
+        "remote_path": "skills/sql-pro/SKILL.md",
+        "pinned_commit": "e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319",
+        "git_blob_oid": "git_sha1:c7d5cf2b90a145fa6d8cc20c7c358d7709b44cce",
+        "raw_url": "https://raw.githubusercontent.com/Jeffallan/claude-skills/e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319/skills/sql-pro/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:c7d5cf2b90a145fa6d8cc20c7c358d7709b44cce",
+        "size": 5224
+      }
+    },
+    {
+      "source_id": "src_https-github-com-jeffallan-claude-skills-jeffallan-claude-skills_4cac5418",
+      "path": "skills/sre-engineer/SKILL.md",
+      "declared_name": "sre-engineer",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:219381a6d0ab5809b275ffc710ce9547f2a61e82",
+      "upstream_ref": "e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319",
+      "git_blob_oid": "git_sha1:219381a6d0ab5809b275ffc710ce9547f2a61e82",
+      "url": "https://github.com/Jeffallan/claude-skills/blob/e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319/skills/sre-engineer/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/Jeffallan/claude-skills/e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319/skills/sre-engineer/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-jeffallan-claude-skills-jeffallan-claude-skills_4cac5418",
+        "canonical_skill_id": null,
+        "remote_path": "skills/sre-engineer/SKILL.md",
+        "pinned_commit": "e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319",
+        "git_blob_oid": "git_sha1:219381a6d0ab5809b275ffc710ce9547f2a61e82",
+        "raw_url": "https://raw.githubusercontent.com/Jeffallan/claude-skills/e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319/skills/sre-engineer/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:219381a6d0ab5809b275ffc710ce9547f2a61e82",
+        "size": 6757
+      }
+    },
+    {
+      "source_id": "src_https-github-com-jeffallan-claude-skills-jeffallan-claude-skills_4cac5418",
+      "path": "skills/swift-expert/SKILL.md",
+      "declared_name": "swift-expert",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:9bbbc5a384f34d5c04815cffd62c505184507104",
+      "upstream_ref": "e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319",
+      "git_blob_oid": "git_sha1:9bbbc5a384f34d5c04815cffd62c505184507104",
+      "url": "https://github.com/Jeffallan/claude-skills/blob/e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319/skills/swift-expert/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/Jeffallan/claude-skills/e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319/skills/swift-expert/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-jeffallan-claude-skills-jeffallan-claude-skills_4cac5418",
+        "canonical_skill_id": null,
+        "remote_path": "skills/swift-expert/SKILL.md",
+        "pinned_commit": "e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319",
+        "git_blob_oid": "git_sha1:9bbbc5a384f34d5c04815cffd62c505184507104",
+        "raw_url": "https://raw.githubusercontent.com/Jeffallan/claude-skills/e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319/skills/swift-expert/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:9bbbc5a384f34d5c04815cffd62c505184507104",
+        "size": 5844
+      }
+    },
+    {
+      "source_id": "src_https-github-com-jeffallan-claude-skills-jeffallan-claude-skills_4cac5418",
+      "path": "skills/terraform-engineer/SKILL.md",
+      "declared_name": "terraform-engineer",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:e0a34681e1b455a72698b1cc9ba38405a6478607",
+      "upstream_ref": "e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319",
+      "git_blob_oid": "git_sha1:e0a34681e1b455a72698b1cc9ba38405a6478607",
+      "url": "https://github.com/Jeffallan/claude-skills/blob/e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319/skills/terraform-engineer/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/Jeffallan/claude-skills/e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319/skills/terraform-engineer/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-jeffallan-claude-skills-jeffallan-claude-skills_4cac5418",
+        "canonical_skill_id": null,
+        "remote_path": "skills/terraform-engineer/SKILL.md",
+        "pinned_commit": "e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319",
+        "git_blob_oid": "git_sha1:e0a34681e1b455a72698b1cc9ba38405a6478607",
+        "raw_url": "https://raw.githubusercontent.com/Jeffallan/claude-skills/e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319/skills/terraform-engineer/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:e0a34681e1b455a72698b1cc9ba38405a6478607",
+        "size": 5223
+      }
+    },
+    {
+      "source_id": "src_https-github-com-jeffallan-claude-skills-jeffallan-claude-skills_4cac5418",
+      "path": "skills/test-master/SKILL.md",
+      "declared_name": "test-master",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:19efb7f31b5b32bd4bd026e901f9ce36e6508608",
+      "upstream_ref": "e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319",
+      "git_blob_oid": "git_sha1:19efb7f31b5b32bd4bd026e901f9ce36e6508608",
+      "url": "https://github.com/Jeffallan/claude-skills/blob/e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319/skills/test-master/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/Jeffallan/claude-skills/e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319/skills/test-master/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-jeffallan-claude-skills-jeffallan-claude-skills_4cac5418",
+        "canonical_skill_id": null,
+        "remote_path": "skills/test-master/SKILL.md",
+        "pinned_commit": "e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319",
+        "git_blob_oid": "git_sha1:19efb7f31b5b32bd4bd026e901f9ce36e6508608",
+        "raw_url": "https://raw.githubusercontent.com/Jeffallan/claude-skills/e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319/skills/test-master/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:19efb7f31b5b32bd4bd026e901f9ce36e6508608",
+        "size": 5034
+      }
+    },
+    {
+      "source_id": "src_https-github-com-jeffallan-claude-skills-jeffallan-claude-skills_4cac5418",
+      "path": "skills/the-fool/SKILL.md",
+      "declared_name": "the-fool",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:fdc008af33e14ea39d7285abaf0e926ee772a13a",
+      "upstream_ref": "e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319",
+      "git_blob_oid": "git_sha1:fdc008af33e14ea39d7285abaf0e926ee772a13a",
+      "url": "https://github.com/Jeffallan/claude-skills/blob/e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319/skills/the-fool/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/Jeffallan/claude-skills/e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319/skills/the-fool/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-jeffallan-claude-skills-jeffallan-claude-skills_4cac5418",
+        "canonical_skill_id": null,
+        "remote_path": "skills/the-fool/SKILL.md",
+        "pinned_commit": "e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319",
+        "git_blob_oid": "git_sha1:fdc008af33e14ea39d7285abaf0e926ee772a13a",
+        "raw_url": "https://raw.githubusercontent.com/Jeffallan/claude-skills/e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319/skills/the-fool/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:fdc008af33e14ea39d7285abaf0e926ee772a13a",
+        "size": 6205
+      }
+    },
+    {
+      "source_id": "src_https-github-com-jeffallan-claude-skills-jeffallan-claude-skills_4cac5418",
+      "path": "skills/typescript-pro/SKILL.md",
+      "declared_name": "typescript-pro",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:8db580d766abbed93af22ae85f98395d7d5826f2",
+      "upstream_ref": "e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319",
+      "git_blob_oid": "git_sha1:8db580d766abbed93af22ae85f98395d7d5826f2",
+      "url": "https://github.com/Jeffallan/claude-skills/blob/e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319/skills/typescript-pro/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/Jeffallan/claude-skills/e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319/skills/typescript-pro/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-jeffallan-claude-skills-jeffallan-claude-skills_4cac5418",
+        "canonical_skill_id": null,
+        "remote_path": "skills/typescript-pro/SKILL.md",
+        "pinned_commit": "e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319",
+        "git_blob_oid": "git_sha1:8db580d766abbed93af22ae85f98395d7d5826f2",
+        "raw_url": "https://raw.githubusercontent.com/Jeffallan/claude-skills/e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319/skills/typescript-pro/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:8db580d766abbed93af22ae85f98395d7d5826f2",
+        "size": 5451
+      }
+    },
+    {
+      "source_id": "src_https-github-com-jeffallan-claude-skills-jeffallan-claude-skills_4cac5418",
+      "path": "skills/vue-expert-js/SKILL.md",
+      "declared_name": "vue-expert-js",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:1f5a7f9306e1174240cbb603f78f67dbfc349800",
+      "upstream_ref": "e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319",
+      "git_blob_oid": "git_sha1:1f5a7f9306e1174240cbb603f78f67dbfc349800",
+      "url": "https://github.com/Jeffallan/claude-skills/blob/e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319/skills/vue-expert-js/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/Jeffallan/claude-skills/e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319/skills/vue-expert-js/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-jeffallan-claude-skills-jeffallan-claude-skills_4cac5418",
+        "canonical_skill_id": null,
+        "remote_path": "skills/vue-expert-js/SKILL.md",
+        "pinned_commit": "e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319",
+        "git_blob_oid": "git_sha1:1f5a7f9306e1174240cbb603f78f67dbfc349800",
+        "raw_url": "https://raw.githubusercontent.com/Jeffallan/claude-skills/e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319/skills/vue-expert-js/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:1f5a7f9306e1174240cbb603f78f67dbfc349800",
+        "size": 6073
+      }
+    },
+    {
+      "source_id": "src_https-github-com-jeffallan-claude-skills-jeffallan-claude-skills_4cac5418",
+      "path": "skills/vue-expert/SKILL.md",
+      "declared_name": "vue-expert",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:56af6d032554c08af90684d1d1a4b70cc5c2ef74",
+      "upstream_ref": "e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319",
+      "git_blob_oid": "git_sha1:56af6d032554c08af90684d1d1a4b70cc5c2ef74",
+      "url": "https://github.com/Jeffallan/claude-skills/blob/e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319/skills/vue-expert/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/Jeffallan/claude-skills/e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319/skills/vue-expert/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-jeffallan-claude-skills-jeffallan-claude-skills_4cac5418",
+        "canonical_skill_id": null,
+        "remote_path": "skills/vue-expert/SKILL.md",
+        "pinned_commit": "e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319",
+        "git_blob_oid": "git_sha1:56af6d032554c08af90684d1d1a4b70cc5c2ef74",
+        "raw_url": "https://raw.githubusercontent.com/Jeffallan/claude-skills/e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319/skills/vue-expert/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:56af6d032554c08af90684d1d1a4b70cc5c2ef74",
+        "size": 4283
+      }
+    },
+    {
+      "source_id": "src_https-github-com-jeffallan-claude-skills-jeffallan-claude-skills_4cac5418",
+      "path": "skills/websocket-engineer/SKILL.md",
+      "declared_name": "websocket-engineer",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:19e282a19506f1eabf509a00673ffcf59f087ae5",
+      "upstream_ref": "e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319",
+      "git_blob_oid": "git_sha1:19e282a19506f1eabf509a00673ffcf59f087ae5",
+      "url": "https://github.com/Jeffallan/claude-skills/blob/e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319/skills/websocket-engineer/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/Jeffallan/claude-skills/e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319/skills/websocket-engineer/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-jeffallan-claude-skills-jeffallan-claude-skills_4cac5418",
+        "canonical_skill_id": null,
+        "remote_path": "skills/websocket-engineer/SKILL.md",
+        "pinned_commit": "e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319",
+        "git_blob_oid": "git_sha1:19e282a19506f1eabf509a00673ffcf59f087ae5",
+        "raw_url": "https://raw.githubusercontent.com/Jeffallan/claude-skills/e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319/skills/websocket-engineer/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:19e282a19506f1eabf509a00673ffcf59f087ae5",
+        "size": 6410
+      }
+    },
+    {
+      "source_id": "src_https-github-com-jeffallan-claude-skills-jeffallan-claude-skills_4cac5418",
+      "path": "skills/wordpress-pro/SKILL.md",
+      "declared_name": "wordpress-pro",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:5b7c9523889219f6aeb57879442faa7749c113de",
+      "upstream_ref": "e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319",
+      "git_blob_oid": "git_sha1:5b7c9523889219f6aeb57879442faa7749c113de",
+      "url": "https://github.com/Jeffallan/claude-skills/blob/e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319/skills/wordpress-pro/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/Jeffallan/claude-skills/e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319/skills/wordpress-pro/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-jeffallan-claude-skills-jeffallan-claude-skills_4cac5418",
+        "canonical_skill_id": null,
+        "remote_path": "skills/wordpress-pro/SKILL.md",
+        "pinned_commit": "e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319",
+        "git_blob_oid": "git_sha1:5b7c9523889219f6aeb57879442faa7749c113de",
+        "raw_url": "https://raw.githubusercontent.com/Jeffallan/claude-skills/e8be415bc94d8d6ebddc2fb50e5d03c6e27d4319/skills/wordpress-pro/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:5b7c9523889219f6aeb57879442faa7749c113de",
+        "size": 6278
+      }
+    }
+  ],
+  "digest": "sha256:df6b4636eb337e35413dd137be0376a3078400f8d6e0f9911f6b0b89b759c75e"
+}

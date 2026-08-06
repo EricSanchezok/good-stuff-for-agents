@@ -1,44 +1,90 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-08-06T09:34:59.482Z",
+  "updated_at": "2026-08-06T11:42:12.062Z",
   "entries": [
     {
       "dimension": "demand",
       "seeds": [
         "skl_coderabbit-code-review-src-https-github-com-codera-9e16a0ae-lls-8f2a22eb-skills-code-review-skill-md_9e16a0ae"
       ],
-      "reason": "run_run_22011485d59049d8: 1 skill IDs in demand",
+      "reason": "run_run_95f5eeec43304235: 1 skill IDs in demand",
+      "source": "run_ledger",
+      "discovered_sources": [],
+      "attempts": 0,
+      "status": "satisfied",
+      "fingerprint": "32a12423e9d92e5fee33687bf2f8a38566b0cf24079310a5117be7bbc1ea41ec",
+      "updated_at": "2026-08-06T11:42:12.062Z",
+      "created_at": "2026-08-06T11:42:12.062Z"
+    },
+    {
+      "dimension": "new_artifacts",
+      "seeds": [
+        "src_https-github-com-addyosmani-agent-skills-addyosmani-agent-skills_ec0a2dc8",
+        "src_https-github-com-alirezarezvani-claude-skills-alirezarezvani-claude-skills_1b18c64e",
+        "src_https-github-com-anthropics-skills-anthropic-agent-skills_04f79b56",
+        "src_https-github-com-coreyhaines31-marketingskills-marketing-skills-corey-haines_ef920698",
+        "src_https-github-com-cuga-project-cuga-agent-cuga-agent-ibm-research_5709bc42",
+        "src_https-github-com-figma-mcp-server-guide-figma-mcp-skills_dde79ddd",
+        "src_https-github-com-fujishigetemma-semantic-scholar-mcp-semantic-scholar-mcp-server_1c7ee5c5",
+        "src_https-github-com-github-awesome-copilot-github-awesome-copilot_7a815055",
+        "src_https-github-com-google-skills-google-skills_bc973af1",
+        "src_https-github-com-hermeticormus-markdown-discipline-skills-markdown-discipline-skills_ddaf87e0",
+        "src_https-github-com-jeffallan-claude-skills-jeffallan-claude-skills_4cac5418",
+        "src_https-github-com-jupyterlab-jupyter-ai-jupyter-ai-jupyterlab_e47112b5",
+        "src_https-github-com-k-dense-ai-scientific-agent-skills-k-dense-scientific-agent-skills_5bdb6d39",
+        "src_https-github-com-kepano-obsidian-skills-kepano-obsidian-skills_ef40e459",
+        "src_https-github-com-kozz36-frontend-designer-skill-frontend-designer-skill_929a1309",
+        "src_https-github-com-mcollina-skills-matteo-collina-s-skills_faf2f289",
+        "src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e",
+        "src_https-github-com-openclaw-agent-skills-openclaw-agent-skills_088582b8",
+        "src_https-github-com-phuryn-pm-skills-pm-skills-marketplace-phuryn_8ac36372",
+        "src_https-github-com-product-on-purpose-pm-skills-pm-skills-product-on-purpose_f2ce15e5",
+        "src_https-github-com-southleft-skills-for-figma-skills-for-figma-southleft_ea9f2b3d",
+        "src_https-github-com-thatrebeccarae-claude-marketing-claude-marketing-rebecca-rae-barton_8a108923"
+      ],
+      "reason": "run_run_95f5eeec43304235: 47 snapshots, 2 candidates",
       "source": "run_ledger",
       "discovered_sources": [],
       "attempts": 0,
       "status": "pending",
-      "fingerprint": "32a12423e9d92e5fee33687bf2f8a38566b0cf24079310a5117be7bbc1ea41ec",
-      "updated_at": "2026-08-06T09:22:51.863Z",
-      "created_at": "2026-08-06T09:22:51.863Z"
-    },
-    {
-      "dimension": "new_artifacts",
-      "seeds": [],
-      "reason": "run_run_cf9d5562a9fc4634: 40 snapshots, 2 candidates",
-      "source": "run_ledger",
-      "discovered_sources": [],
-      "attempts": 1,
-      "status": "pending",
-      "fingerprint": "148309c7bfecf0be59aa54ec1a78dad9ba4fbdfb6ab89e186722fdae428cb81b",
-      "updated_at": "2026-08-06T09:34:59.482Z",
-      "created_at": "2026-08-06T09:22:51.863Z"
+      "fingerprint": "6fdcefa69bfcc4ff6ebd4af70fe0cb7afb463e6c2de0beff3e02b0d93324dfa1",
+      "updated_at": "2026-08-06T11:42:12.062Z",
+      "created_at": "2026-08-06T11:42:12.062Z"
     },
     {
       "dimension": "active_intents",
-      "seeds": [],
-      "reason": "run_run_cf9d5562a9fc4634: 1 intents",
+      "seeds": [
+        "src_https-github-com-addyosmani-agent-skills-addyosmani-agent-skills_ec0a2dc8",
+        "src_https-github-com-alirezarezvani-claude-skills-alirezarezvani-claude-skills_1b18c64e",
+        "src_https-github-com-anthropics-skills-anthropic-agent-skills_04f79b56",
+        "src_https-github-com-coreyhaines31-marketingskills-marketing-skills-corey-haines_ef920698",
+        "src_https-github-com-cuga-project-cuga-agent-cuga-agent-ibm-research_5709bc42",
+        "src_https-github-com-figma-mcp-server-guide-figma-mcp-skills_dde79ddd",
+        "src_https-github-com-fujishigetemma-semantic-scholar-mcp-semantic-scholar-mcp-server_1c7ee5c5",
+        "src_https-github-com-github-awesome-copilot-github-awesome-copilot_7a815055",
+        "src_https-github-com-google-skills-google-skills_bc973af1",
+        "src_https-github-com-hermeticormus-markdown-discipline-skills-markdown-discipline-skills_ddaf87e0",
+        "src_https-github-com-jeffallan-claude-skills-jeffallan-claude-skills_4cac5418",
+        "src_https-github-com-jupyterlab-jupyter-ai-jupyter-ai-jupyterlab_e47112b5",
+        "src_https-github-com-k-dense-ai-scientific-agent-skills-k-dense-scientific-agent-skills_5bdb6d39",
+        "src_https-github-com-kepano-obsidian-skills-kepano-obsidian-skills_ef40e459",
+        "src_https-github-com-kozz36-frontend-designer-skill-frontend-designer-skill_929a1309",
+        "src_https-github-com-mcollina-skills-matteo-collina-s-skills_faf2f289",
+        "src_https-github-com-microsoft-skills-microsoft-agent-skills_0215423e",
+        "src_https-github-com-openclaw-agent-skills-openclaw-agent-skills_088582b8",
+        "src_https-github-com-phuryn-pm-skills-pm-skills-marketplace-phuryn_8ac36372",
+        "src_https-github-com-product-on-purpose-pm-skills-pm-skills-product-on-purpose_f2ce15e5",
+        "src_https-github-com-southleft-skills-for-figma-skills-for-figma-southleft_ea9f2b3d",
+        "src_https-github-com-thatrebeccarae-claude-marketing-claude-marketing-rebecca-rae-barton_8a108923"
+      ],
+      "reason": "run_run_95f5eeec43304235: 1 unresolved / 1 total intents",
       "source": "run_ledger",
       "discovered_sources": [],
-      "attempts": 1,
+      "attempts": 0,
       "status": "pending",
-      "fingerprint": "9f1105fdedae8eee179d56ea5092a711486882e1cab1f1f1268639a8b903bd6c",
-      "updated_at": "2026-08-06T09:34:59.482Z",
-      "created_at": "2026-08-06T09:22:51.863Z"
+      "fingerprint": "e671739363b0613ded85f58567fd00bc75fe55debaa7fbbddcd42a96c134e7bc",
+      "updated_at": "2026-08-06T11:42:12.062Z",
+      "created_at": "2026-08-06T11:42:12.062Z"
     }
   ]
 }

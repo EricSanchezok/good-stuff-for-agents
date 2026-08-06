@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "kind": "target_execution_handoff",
+  "run_id": "run_95f5eeec43304235",
+  "paused_at": "2026-08-06T11:40:43.423Z",
+  "context_digest": "sha256:8dcea1f814f019e3055cd4073a754da8ae9efb952d1bfdae879d6506e7112098",
+  "intents": [
+    {
+      "domain": "demand",
+      "reason": "run_run_22011485d59049d8: 1 skill IDs in demand",
+      "source": "backlog",
+      "score": 0.9,
+      "seed_skill_ids": [
+        "skl_coderabbit-code-review-src-https-github-com-codera-9e16a0ae-lls-8f2a22eb-skills-code-review-skill-md_9e16a0ae"
+      ],
+      "max_analysis_budget": 3
+    }
+  ],
+  "required_owners": [
+    "demand"
+  ],
+  "evidence_budget": [
+    3
+  ],
+  "evidence_index_digest": "sha256:cbcd95ea25b56b729374c21928d58142898240c413ff1202f6dbe0816ad56525",
+  "session_isolation": "per_intent",
+  "backlog_digest": "sha256:d2df53a76d857a6887fdfa2eb0b080ba306688d81024a37a76a77453e63052e6"
+}

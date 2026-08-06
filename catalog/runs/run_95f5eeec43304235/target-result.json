@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "run_id": "run_95f5eeec43304235",
+  "context_digest": "sha256:8dcea1f814f019e3055cd4073a754da8ae9efb952d1bfdae879d6506e7112098",
+  "intents": [
+    {
+      "domain": "demand",
+      "reason": "run_run_22011485d59049d8: 1 skill IDs in demand",
+      "source": "backlog",
+      "score": 0.9,
+      "seed_skill_ids": [
+        "skl_coderabbit-code-review-src-https-github-com-codera-9e16a0ae-lls-8f2a22eb-skills-code-review-skill-md_9e16a0ae"
+      ],
+      "max_analysis_budget": 3
+    }
+  ],
+  "candidate_results": [],
+  "intent_results": [
+    {
+      "intent_digest": "sha256:880dc729c0f4f585267a8d00399a37a445b0286b057ddcd8e593b5c130b02ebb",
+      "terminal": "no_pack_clean",
+      "gap_class": "demand_already_satisfied",
+      "error": null,
+      "notes": "Demand seed skl_coderabbit-code-review is a member of published pack pack_coderabbit-review-remediation_f00daeba; no new pack warranted."
+    }
+  ],
+  "session_descriptors": [],
+  "created_at": "2026-08-06T11:40:57.006Z"
+}

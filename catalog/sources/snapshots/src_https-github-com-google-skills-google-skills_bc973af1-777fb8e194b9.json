@@ -1,0 +1,2535 @@
+{
+  "schema_version": 1,
+  "source_id": "src_https-github-com-google-skills-google-skills_bc973af1",
+  "upstream_ref": "777fb8e194b9941c74c85f17b10202614ef4e435",
+  "checked_at": "2026-08-06T11:39:09.779Z",
+  "url": "https://github.com/google/skills",
+  "artifacts": [
+    {
+      "source_id": "src_https-github-com-google-skills-google-skills_bc973af1",
+      "path": "skills/ads/data-manager-api-audience-ingestion/SKILL.md",
+      "declared_name": "data-manager-api-audience-ingestion",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:1142f2f83043f2e10c83bfcfd3c99a1e07d2fc9c",
+      "upstream_ref": "777fb8e194b9941c74c85f17b10202614ef4e435",
+      "git_blob_oid": "git_sha1:1142f2f83043f2e10c83bfcfd3c99a1e07d2fc9c",
+      "url": "https://github.com/google/skills/blob/777fb8e194b9941c74c85f17b10202614ef4e435/skills/ads/data-manager-api-audience-ingestion/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/google/skills/777fb8e194b9941c74c85f17b10202614ef4e435/skills/ads/data-manager-api-audience-ingestion/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-google-skills-google-skills_bc973af1",
+        "canonical_skill_id": null,
+        "remote_path": "skills/ads/data-manager-api-audience-ingestion/SKILL.md",
+        "pinned_commit": "777fb8e194b9941c74c85f17b10202614ef4e435",
+        "git_blob_oid": "git_sha1:1142f2f83043f2e10c83bfcfd3c99a1e07d2fc9c",
+        "raw_url": "https://raw.githubusercontent.com/google/skills/777fb8e194b9941c74c85f17b10202614ef4e435/skills/ads/data-manager-api-audience-ingestion/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:1142f2f83043f2e10c83bfcfd3c99a1e07d2fc9c",
+        "size": 11335
+      }
+    },
+    {
+      "source_id": "src_https-github-com-google-skills-google-skills_bc973af1",
+      "path": "skills/ads/data-manager-api-event-ingestion/SKILL.md",
+      "declared_name": "data-manager-api-event-ingestion",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:eb7c36b1a1e0215daa5027b2aba26e000e868e32",
+      "upstream_ref": "777fb8e194b9941c74c85f17b10202614ef4e435",
+      "git_blob_oid": "git_sha1:eb7c36b1a1e0215daa5027b2aba26e000e868e32",
+      "url": "https://github.com/google/skills/blob/777fb8e194b9941c74c85f17b10202614ef4e435/skills/ads/data-manager-api-event-ingestion/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/google/skills/777fb8e194b9941c74c85f17b10202614ef4e435/skills/ads/data-manager-api-event-ingestion/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-google-skills-google-skills_bc973af1",
+        "canonical_skill_id": null,
+        "remote_path": "skills/ads/data-manager-api-event-ingestion/SKILL.md",
+        "pinned_commit": "777fb8e194b9941c74c85f17b10202614ef4e435",
+        "git_blob_oid": "git_sha1:eb7c36b1a1e0215daa5027b2aba26e000e868e32",
+        "raw_url": "https://raw.githubusercontent.com/google/skills/777fb8e194b9941c74c85f17b10202614ef4e435/skills/ads/data-manager-api-event-ingestion/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:eb7c36b1a1e0215daa5027b2aba26e000e868e32",
+        "size": 9017
+      }
+    },
+    {
+      "source_id": "src_https-github-com-google-skills-google-skills_bc973af1",
+      "path": "skills/ads/data-manager-api-setup/SKILL.md",
+      "declared_name": "data-manager-api-setup",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:4d0dd673467822b258982e8eaaea2b82697aea48",
+      "upstream_ref": "777fb8e194b9941c74c85f17b10202614ef4e435",
+      "git_blob_oid": "git_sha1:4d0dd673467822b258982e8eaaea2b82697aea48",
+      "url": "https://github.com/google/skills/blob/777fb8e194b9941c74c85f17b10202614ef4e435/skills/ads/data-manager-api-setup/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/google/skills/777fb8e194b9941c74c85f17b10202614ef4e435/skills/ads/data-manager-api-setup/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-google-skills-google-skills_bc973af1",
+        "canonical_skill_id": null,
+        "remote_path": "skills/ads/data-manager-api-setup/SKILL.md",
+        "pinned_commit": "777fb8e194b9941c74c85f17b10202614ef4e435",
+        "git_blob_oid": "git_sha1:4d0dd673467822b258982e8eaaea2b82697aea48",
+        "raw_url": "https://raw.githubusercontent.com/google/skills/777fb8e194b9941c74c85f17b10202614ef4e435/skills/ads/data-manager-api-setup/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:4d0dd673467822b258982e8eaaea2b82697aea48",
+        "size": 2798
+      }
+    },
+    {
+      "source_id": "src_https-github-com-google-skills-google-skills_bc973af1",
+      "path": "skills/ads/google-ads-api-account-diagnostics/SKILL.md",
+      "declared_name": "google-ads-api-account-diagnostics",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:932eaa080b6d95ca0d61aa8c2f63c13d0a74e0e4",
+      "upstream_ref": "777fb8e194b9941c74c85f17b10202614ef4e435",
+      "git_blob_oid": "git_sha1:932eaa080b6d95ca0d61aa8c2f63c13d0a74e0e4",
+      "url": "https://github.com/google/skills/blob/777fb8e194b9941c74c85f17b10202614ef4e435/skills/ads/google-ads-api-account-diagnostics/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/google/skills/777fb8e194b9941c74c85f17b10202614ef4e435/skills/ads/google-ads-api-account-diagnostics/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-google-skills-google-skills_bc973af1",
+        "canonical_skill_id": null,
+        "remote_path": "skills/ads/google-ads-api-account-diagnostics/SKILL.md",
+        "pinned_commit": "777fb8e194b9941c74c85f17b10202614ef4e435",
+        "git_blob_oid": "git_sha1:932eaa080b6d95ca0d61aa8c2f63c13d0a74e0e4",
+        "raw_url": "https://raw.githubusercontent.com/google/skills/777fb8e194b9941c74c85f17b10202614ef4e435/skills/ads/google-ads-api-account-diagnostics/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:932eaa080b6d95ca0d61aa8c2f63c13d0a74e0e4",
+        "size": 9883
+      }
+    },
+    {
+      "source_id": "src_https-github-com-google-skills-google-skills_bc973af1",
+      "path": "skills/ads/google-ads-api-mcp-setup/SKILL.md",
+      "declared_name": "google-ads-api-mcp-setup",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:207243ab8dc25709b383169187fa781f602ee7e1",
+      "upstream_ref": "777fb8e194b9941c74c85f17b10202614ef4e435",
+      "git_blob_oid": "git_sha1:207243ab8dc25709b383169187fa781f602ee7e1",
+      "url": "https://github.com/google/skills/blob/777fb8e194b9941c74c85f17b10202614ef4e435/skills/ads/google-ads-api-mcp-setup/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/google/skills/777fb8e194b9941c74c85f17b10202614ef4e435/skills/ads/google-ads-api-mcp-setup/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-google-skills-google-skills_bc973af1",
+        "canonical_skill_id": null,
+        "remote_path": "skills/ads/google-ads-api-mcp-setup/SKILL.md",
+        "pinned_commit": "777fb8e194b9941c74c85f17b10202614ef4e435",
+        "git_blob_oid": "git_sha1:207243ab8dc25709b383169187fa781f602ee7e1",
+        "raw_url": "https://raw.githubusercontent.com/google/skills/777fb8e194b9941c74c85f17b10202614ef4e435/skills/ads/google-ads-api-mcp-setup/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:207243ab8dc25709b383169187fa781f602ee7e1",
+        "size": 24314
+      }
+    },
+    {
+      "source_id": "src_https-github-com-google-skills-google-skills_bc973af1",
+      "path": "skills/ads/google-ads-api-quickstart/SKILL.md",
+      "declared_name": "google-ads-api-quickstart",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:5b67f3ace1ff768a369f2f9c1589370d25fa897f",
+      "upstream_ref": "777fb8e194b9941c74c85f17b10202614ef4e435",
+      "git_blob_oid": "git_sha1:5b67f3ace1ff768a369f2f9c1589370d25fa897f",
+      "url": "https://github.com/google/skills/blob/777fb8e194b9941c74c85f17b10202614ef4e435/skills/ads/google-ads-api-quickstart/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/google/skills/777fb8e194b9941c74c85f17b10202614ef4e435/skills/ads/google-ads-api-quickstart/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-google-skills-google-skills_bc973af1",
+        "canonical_skill_id": null,
+        "remote_path": "skills/ads/google-ads-api-quickstart/SKILL.md",
+        "pinned_commit": "777fb8e194b9941c74c85f17b10202614ef4e435",
+        "git_blob_oid": "git_sha1:5b67f3ace1ff768a369f2f9c1589370d25fa897f",
+        "raw_url": "https://raw.githubusercontent.com/google/skills/777fb8e194b9941c74c85f17b10202614ef4e435/skills/ads/google-ads-api-quickstart/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:5b67f3ace1ff768a369f2f9c1589370d25fa897f",
+        "size": 17610
+      }
+    },
+    {
+      "source_id": "src_https-github-com-google-skills-google-skills_bc973af1",
+      "path": "skills/ads/google-mobile-ads-android-migrate-to-next-gen/SKILL.md",
+      "declared_name": "google-mobile-ads-android-migrate-to-next-gen",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:5a10bec73597451ad4dbe99b7565eb7e80d255be",
+      "upstream_ref": "777fb8e194b9941c74c85f17b10202614ef4e435",
+      "git_blob_oid": "git_sha1:5a10bec73597451ad4dbe99b7565eb7e80d255be",
+      "url": "https://github.com/google/skills/blob/777fb8e194b9941c74c85f17b10202614ef4e435/skills/ads/google-mobile-ads-android-migrate-to-next-gen/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/google/skills/777fb8e194b9941c74c85f17b10202614ef4e435/skills/ads/google-mobile-ads-android-migrate-to-next-gen/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-google-skills-google-skills_bc973af1",
+        "canonical_skill_id": null,
+        "remote_path": "skills/ads/google-mobile-ads-android-migrate-to-next-gen/SKILL.md",
+        "pinned_commit": "777fb8e194b9941c74c85f17b10202614ef4e435",
+        "git_blob_oid": "git_sha1:5a10bec73597451ad4dbe99b7565eb7e80d255be",
+        "raw_url": "https://raw.githubusercontent.com/google/skills/777fb8e194b9941c74c85f17b10202614ef4e435/skills/ads/google-mobile-ads-android-migrate-to-next-gen/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:5a10bec73597451ad4dbe99b7565eb7e80d255be",
+        "size": 39586
+      }
+    },
+    {
+      "source_id": "src_https-github-com-google-skills-google-skills_bc973af1",
+      "path": "skills/ads/google-mobile-ads-banner/SKILL.md",
+      "declared_name": "google-mobile-ads-banner",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:89490ef8ae0c948f05021722641883aa2b73174c",
+      "upstream_ref": "777fb8e194b9941c74c85f17b10202614ef4e435",
+      "git_blob_oid": "git_sha1:89490ef8ae0c948f05021722641883aa2b73174c",
+      "url": "https://github.com/google/skills/blob/777fb8e194b9941c74c85f17b10202614ef4e435/skills/ads/google-mobile-ads-banner/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/google/skills/777fb8e194b9941c74c85f17b10202614ef4e435/skills/ads/google-mobile-ads-banner/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-google-skills-google-skills_bc973af1",
+        "canonical_skill_id": null,
+        "remote_path": "skills/ads/google-mobile-ads-banner/SKILL.md",
+        "pinned_commit": "777fb8e194b9941c74c85f17b10202614ef4e435",
+        "git_blob_oid": "git_sha1:89490ef8ae0c948f05021722641883aa2b73174c",
+        "raw_url": "https://raw.githubusercontent.com/google/skills/777fb8e194b9941c74c85f17b10202614ef4e435/skills/ads/google-mobile-ads-banner/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:89490ef8ae0c948f05021722641883aa2b73174c",
+        "size": 1955
+      }
+    },
+    {
+      "source_id": "src_https-github-com-google-skills-google-skills_bc973af1",
+      "path": "skills/ads/google-mobile-ads-get-started/SKILL.md",
+      "declared_name": "google-mobile-ads-get-started",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:75757774bf4fa240d5a29e8c96e8cdbff9fae4cb",
+      "upstream_ref": "777fb8e194b9941c74c85f17b10202614ef4e435",
+      "git_blob_oid": "git_sha1:75757774bf4fa240d5a29e8c96e8cdbff9fae4cb",
+      "url": "https://github.com/google/skills/blob/777fb8e194b9941c74c85f17b10202614ef4e435/skills/ads/google-mobile-ads-get-started/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/google/skills/777fb8e194b9941c74c85f17b10202614ef4e435/skills/ads/google-mobile-ads-get-started/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-google-skills-google-skills_bc973af1",
+        "canonical_skill_id": null,
+        "remote_path": "skills/ads/google-mobile-ads-get-started/SKILL.md",
+        "pinned_commit": "777fb8e194b9941c74c85f17b10202614ef4e435",
+        "git_blob_oid": "git_sha1:75757774bf4fa240d5a29e8c96e8cdbff9fae4cb",
+        "raw_url": "https://raw.githubusercontent.com/google/skills/777fb8e194b9941c74c85f17b10202614ef4e435/skills/ads/google-mobile-ads-get-started/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:75757774bf4fa240d5a29e8c96e8cdbff9fae4cb",
+        "size": 1056
+      }
+    },
+    {
+      "source_id": "src_https-github-com-google-skills-google-skills_bc973af1",
+      "path": "skills/ads/google-mobile-ads-interstitial/SKILL.md",
+      "declared_name": "google-mobile-ads-interstitial",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:cc5e87719da55ac2057c6b31fee593c16d9ea399",
+      "upstream_ref": "777fb8e194b9941c74c85f17b10202614ef4e435",
+      "git_blob_oid": "git_sha1:cc5e87719da55ac2057c6b31fee593c16d9ea399",
+      "url": "https://github.com/google/skills/blob/777fb8e194b9941c74c85f17b10202614ef4e435/skills/ads/google-mobile-ads-interstitial/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/google/skills/777fb8e194b9941c74c85f17b10202614ef4e435/skills/ads/google-mobile-ads-interstitial/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-google-skills-google-skills_bc973af1",
+        "canonical_skill_id": null,
+        "remote_path": "skills/ads/google-mobile-ads-interstitial/SKILL.md",
+        "pinned_commit": "777fb8e194b9941c74c85f17b10202614ef4e435",
+        "git_blob_oid": "git_sha1:cc5e87719da55ac2057c6b31fee593c16d9ea399",
+        "raw_url": "https://raw.githubusercontent.com/google/skills/777fb8e194b9941c74c85f17b10202614ef4e435/skills/ads/google-mobile-ads-interstitial/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:cc5e87719da55ac2057c6b31fee593c16d9ea399",
+        "size": 1356
+      }
+    },
+    {
+      "source_id": "src_https-github-com-google-skills-google-skills_bc973af1",
+      "path": "skills/ads/google-mobile-ads-rewarded/SKILL.md",
+      "declared_name": "google-mobile-ads-rewarded",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:910d76c896e31f4569558ea23678ce1649203048",
+      "upstream_ref": "777fb8e194b9941c74c85f17b10202614ef4e435",
+      "git_blob_oid": "git_sha1:910d76c896e31f4569558ea23678ce1649203048",
+      "url": "https://github.com/google/skills/blob/777fb8e194b9941c74c85f17b10202614ef4e435/skills/ads/google-mobile-ads-rewarded/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/google/skills/777fb8e194b9941c74c85f17b10202614ef4e435/skills/ads/google-mobile-ads-rewarded/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-google-skills-google-skills_bc973af1",
+        "canonical_skill_id": null,
+        "remote_path": "skills/ads/google-mobile-ads-rewarded/SKILL.md",
+        "pinned_commit": "777fb8e194b9941c74c85f17b10202614ef4e435",
+        "git_blob_oid": "git_sha1:910d76c896e31f4569558ea23678ce1649203048",
+        "raw_url": "https://raw.githubusercontent.com/google/skills/777fb8e194b9941c74c85f17b10202614ef4e435/skills/ads/google-mobile-ads-rewarded/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:910d76c896e31f4569558ea23678ce1649203048",
+        "size": 1349
+      }
+    },
+    {
+      "source_id": "src_https-github-com-google-skills-google-skills_bc973af1",
+      "path": "skills/ads/ima-sdk-basics/SKILL.md",
+      "declared_name": "ima-sdk-basics",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:77e70ff339dfcff4d06e02042d37fa09d2dbea80",
+      "upstream_ref": "777fb8e194b9941c74c85f17b10202614ef4e435",
+      "git_blob_oid": "git_sha1:77e70ff339dfcff4d06e02042d37fa09d2dbea80",
+      "url": "https://github.com/google/skills/blob/777fb8e194b9941c74c85f17b10202614ef4e435/skills/ads/ima-sdk-basics/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/google/skills/777fb8e194b9941c74c85f17b10202614ef4e435/skills/ads/ima-sdk-basics/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-google-skills-google-skills_bc973af1",
+        "canonical_skill_id": null,
+        "remote_path": "skills/ads/ima-sdk-basics/SKILL.md",
+        "pinned_commit": "777fb8e194b9941c74c85f17b10202614ef4e435",
+        "git_blob_oid": "git_sha1:77e70ff339dfcff4d06e02042d37fa09d2dbea80",
+        "raw_url": "https://raw.githubusercontent.com/google/skills/777fb8e194b9941c74c85f17b10202614ef4e435/skills/ads/ima-sdk-basics/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:77e70ff339dfcff4d06e02042d37fa09d2dbea80",
+        "size": 2228
+      }
+    },
+    {
+      "source_id": "src_https-github-com-google-skills-google-skills_bc973af1",
+      "path": "skills/analytics/google-analytics-admin-api-basics/SKILL.md",
+      "declared_name": "google-analytics-admin-api-basics",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:1dd1b543ef4d527ba67fdbaec4cd168ad95d10e2",
+      "upstream_ref": "777fb8e194b9941c74c85f17b10202614ef4e435",
+      "git_blob_oid": "git_sha1:1dd1b543ef4d527ba67fdbaec4cd168ad95d10e2",
+      "url": "https://github.com/google/skills/blob/777fb8e194b9941c74c85f17b10202614ef4e435/skills/analytics/google-analytics-admin-api-basics/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/google/skills/777fb8e194b9941c74c85f17b10202614ef4e435/skills/analytics/google-analytics-admin-api-basics/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-google-skills-google-skills_bc973af1",
+        "canonical_skill_id": null,
+        "remote_path": "skills/analytics/google-analytics-admin-api-basics/SKILL.md",
+        "pinned_commit": "777fb8e194b9941c74c85f17b10202614ef4e435",
+        "git_blob_oid": "git_sha1:1dd1b543ef4d527ba67fdbaec4cd168ad95d10e2",
+        "raw_url": "https://raw.githubusercontent.com/google/skills/777fb8e194b9941c74c85f17b10202614ef4e435/skills/analytics/google-analytics-admin-api-basics/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:1dd1b543ef4d527ba67fdbaec4cd168ad95d10e2",
+        "size": 7717
+      }
+    },
+    {
+      "source_id": "src_https-github-com-google-skills-google-skills_bc973af1",
+      "path": "skills/analytics/google-analytics-data-api-basics/SKILL.md",
+      "declared_name": "google-analytics-data-api-basics",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:2d8152e906a72e59882cb9f82838aeb25fba08bb",
+      "upstream_ref": "777fb8e194b9941c74c85f17b10202614ef4e435",
+      "git_blob_oid": "git_sha1:2d8152e906a72e59882cb9f82838aeb25fba08bb",
+      "url": "https://github.com/google/skills/blob/777fb8e194b9941c74c85f17b10202614ef4e435/skills/analytics/google-analytics-data-api-basics/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/google/skills/777fb8e194b9941c74c85f17b10202614ef4e435/skills/analytics/google-analytics-data-api-basics/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-google-skills-google-skills_bc973af1",
+        "canonical_skill_id": null,
+        "remote_path": "skills/analytics/google-analytics-data-api-basics/SKILL.md",
+        "pinned_commit": "777fb8e194b9941c74c85f17b10202614ef4e435",
+        "git_blob_oid": "git_sha1:2d8152e906a72e59882cb9f82838aeb25fba08bb",
+        "raw_url": "https://raw.githubusercontent.com/google/skills/777fb8e194b9941c74c85f17b10202614ef4e435/skills/analytics/google-analytics-data-api-basics/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:2d8152e906a72e59882cb9f82838aeb25fba08bb",
+        "size": 9595
+      }
+    },
+    {
+      "source_id": "src_https-github-com-google-skills-google-skills_bc973af1",
+      "path": "skills/cloud/agent-platform-alert-configuration/SKILL.md",
+      "declared_name": "agent-platform-alert-configuration",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:368f61c31598e38af505211e6cdb07349af980fe",
+      "upstream_ref": "777fb8e194b9941c74c85f17b10202614ef4e435",
+      "git_blob_oid": "git_sha1:368f61c31598e38af505211e6cdb07349af980fe",
+      "url": "https://github.com/google/skills/blob/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/agent-platform-alert-configuration/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/google/skills/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/agent-platform-alert-configuration/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-google-skills-google-skills_bc973af1",
+        "canonical_skill_id": null,
+        "remote_path": "skills/cloud/agent-platform-alert-configuration/SKILL.md",
+        "pinned_commit": "777fb8e194b9941c74c85f17b10202614ef4e435",
+        "git_blob_oid": "git_sha1:368f61c31598e38af505211e6cdb07349af980fe",
+        "raw_url": "https://raw.githubusercontent.com/google/skills/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/agent-platform-alert-configuration/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:368f61c31598e38af505211e6cdb07349af980fe",
+        "size": 15108
+      }
+    },
+    {
+      "source_id": "src_https-github-com-google-skills-google-skills_bc973af1",
+      "path": "skills/cloud/agent-platform-deploy/SKILL.md",
+      "declared_name": "agent-platform-deploy",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:661fac015af6c3565ebb0bab7800ea9b05cc08ab",
+      "upstream_ref": "777fb8e194b9941c74c85f17b10202614ef4e435",
+      "git_blob_oid": "git_sha1:661fac015af6c3565ebb0bab7800ea9b05cc08ab",
+      "url": "https://github.com/google/skills/blob/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/agent-platform-deploy/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/google/skills/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/agent-platform-deploy/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-google-skills-google-skills_bc973af1",
+        "canonical_skill_id": null,
+        "remote_path": "skills/cloud/agent-platform-deploy/SKILL.md",
+        "pinned_commit": "777fb8e194b9941c74c85f17b10202614ef4e435",
+        "git_blob_oid": "git_sha1:661fac015af6c3565ebb0bab7800ea9b05cc08ab",
+        "raw_url": "https://raw.githubusercontent.com/google/skills/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/agent-platform-deploy/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:661fac015af6c3565ebb0bab7800ea9b05cc08ab",
+        "size": 18900
+      }
+    },
+    {
+      "source_id": "src_https-github-com-google-skills-google-skills_bc973af1",
+      "path": "skills/cloud/agent-platform-endpoint-management/SKILL.md",
+      "declared_name": "agent-platform-endpoint-management",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:bf3cd0fc6e900d2a7a31d2bbe88cdd1738a2c96e",
+      "upstream_ref": "777fb8e194b9941c74c85f17b10202614ef4e435",
+      "git_blob_oid": "git_sha1:bf3cd0fc6e900d2a7a31d2bbe88cdd1738a2c96e",
+      "url": "https://github.com/google/skills/blob/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/agent-platform-endpoint-management/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/google/skills/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/agent-platform-endpoint-management/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-google-skills-google-skills_bc973af1",
+        "canonical_skill_id": null,
+        "remote_path": "skills/cloud/agent-platform-endpoint-management/SKILL.md",
+        "pinned_commit": "777fb8e194b9941c74c85f17b10202614ef4e435",
+        "git_blob_oid": "git_sha1:bf3cd0fc6e900d2a7a31d2bbe88cdd1738a2c96e",
+        "raw_url": "https://raw.githubusercontent.com/google/skills/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/agent-platform-endpoint-management/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:bf3cd0fc6e900d2a7a31d2bbe88cdd1738a2c96e",
+        "size": 6160
+      }
+    },
+    {
+      "source_id": "src_https-github-com-google-skills-google-skills_bc973af1",
+      "path": "skills/cloud/agent-platform-eval-flywheel/SKILL.md",
+      "declared_name": "agent-platform-eval-flywheel",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:57560e3b2ac0b36a1b45043e0ed86c551ffd14d3",
+      "upstream_ref": "777fb8e194b9941c74c85f17b10202614ef4e435",
+      "git_blob_oid": "git_sha1:57560e3b2ac0b36a1b45043e0ed86c551ffd14d3",
+      "url": "https://github.com/google/skills/blob/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/agent-platform-eval-flywheel/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/google/skills/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/agent-platform-eval-flywheel/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-google-skills-google-skills_bc973af1",
+        "canonical_skill_id": null,
+        "remote_path": "skills/cloud/agent-platform-eval-flywheel/SKILL.md",
+        "pinned_commit": "777fb8e194b9941c74c85f17b10202614ef4e435",
+        "git_blob_oid": "git_sha1:57560e3b2ac0b36a1b45043e0ed86c551ffd14d3",
+        "raw_url": "https://raw.githubusercontent.com/google/skills/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/agent-platform-eval-flywheel/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:57560e3b2ac0b36a1b45043e0ed86c551ffd14d3",
+        "size": 19342
+      }
+    },
+    {
+      "source_id": "src_https-github-com-google-skills-google-skills_bc973af1",
+      "path": "skills/cloud/agent-platform-inference/SKILL.md",
+      "declared_name": "agent-platform-inference",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:70e32715eeaa96b4ca11d53fdfbfb0839fa8af0a",
+      "upstream_ref": "777fb8e194b9941c74c85f17b10202614ef4e435",
+      "git_blob_oid": "git_sha1:70e32715eeaa96b4ca11d53fdfbfb0839fa8af0a",
+      "url": "https://github.com/google/skills/blob/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/agent-platform-inference/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/google/skills/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/agent-platform-inference/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-google-skills-google-skills_bc973af1",
+        "canonical_skill_id": null,
+        "remote_path": "skills/cloud/agent-platform-inference/SKILL.md",
+        "pinned_commit": "777fb8e194b9941c74c85f17b10202614ef4e435",
+        "git_blob_oid": "git_sha1:70e32715eeaa96b4ca11d53fdfbfb0839fa8af0a",
+        "raw_url": "https://raw.githubusercontent.com/google/skills/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/agent-platform-inference/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:70e32715eeaa96b4ca11d53fdfbfb0839fa8af0a",
+        "size": 31981
+      }
+    },
+    {
+      "source_id": "src_https-github-com-google-skills-google-skills_bc973af1",
+      "path": "skills/cloud/agent-platform-migrate-from-ai-studio/SKILL.md",
+      "declared_name": "agent-platform-migrate-from-ai-studio",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:fec68368238e4f9242db4ea7d1d49be6a5e23d7d",
+      "upstream_ref": "777fb8e194b9941c74c85f17b10202614ef4e435",
+      "git_blob_oid": "git_sha1:fec68368238e4f9242db4ea7d1d49be6a5e23d7d",
+      "url": "https://github.com/google/skills/blob/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/agent-platform-migrate-from-ai-studio/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/google/skills/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/agent-platform-migrate-from-ai-studio/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-google-skills-google-skills_bc973af1",
+        "canonical_skill_id": null,
+        "remote_path": "skills/cloud/agent-platform-migrate-from-ai-studio/SKILL.md",
+        "pinned_commit": "777fb8e194b9941c74c85f17b10202614ef4e435",
+        "git_blob_oid": "git_sha1:fec68368238e4f9242db4ea7d1d49be6a5e23d7d",
+        "raw_url": "https://raw.githubusercontent.com/google/skills/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/agent-platform-migrate-from-ai-studio/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:fec68368238e4f9242db4ea7d1d49be6a5e23d7d",
+        "size": 14044
+      }
+    },
+    {
+      "source_id": "src_https-github-com-google-skills-google-skills_bc973af1",
+      "path": "skills/cloud/agent-platform-model-registry/SKILL.md",
+      "declared_name": "agent-platform-model-registry",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:37acc00551713f7b89d69f90218f65ea41b334fb",
+      "upstream_ref": "777fb8e194b9941c74c85f17b10202614ef4e435",
+      "git_blob_oid": "git_sha1:37acc00551713f7b89d69f90218f65ea41b334fb",
+      "url": "https://github.com/google/skills/blob/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/agent-platform-model-registry/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/google/skills/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/agent-platform-model-registry/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-google-skills-google-skills_bc973af1",
+        "canonical_skill_id": null,
+        "remote_path": "skills/cloud/agent-platform-model-registry/SKILL.md",
+        "pinned_commit": "777fb8e194b9941c74c85f17b10202614ef4e435",
+        "git_blob_oid": "git_sha1:37acc00551713f7b89d69f90218f65ea41b334fb",
+        "raw_url": "https://raw.githubusercontent.com/google/skills/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/agent-platform-model-registry/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:37acc00551713f7b89d69f90218f65ea41b334fb",
+        "size": 5226
+      }
+    },
+    {
+      "source_id": "src_https-github-com-google-skills-google-skills_bc973af1",
+      "path": "skills/cloud/agent-platform-prompt-management/SKILL.md",
+      "declared_name": "agent-platform-prompt-management",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:9410a197c8cf923e0275df14cee96b29958fe6f1",
+      "upstream_ref": "777fb8e194b9941c74c85f17b10202614ef4e435",
+      "git_blob_oid": "git_sha1:9410a197c8cf923e0275df14cee96b29958fe6f1",
+      "url": "https://github.com/google/skills/blob/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/agent-platform-prompt-management/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/google/skills/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/agent-platform-prompt-management/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-google-skills-google-skills_bc973af1",
+        "canonical_skill_id": null,
+        "remote_path": "skills/cloud/agent-platform-prompt-management/SKILL.md",
+        "pinned_commit": "777fb8e194b9941c74c85f17b10202614ef4e435",
+        "git_blob_oid": "git_sha1:9410a197c8cf923e0275df14cee96b29958fe6f1",
+        "raw_url": "https://raw.githubusercontent.com/google/skills/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/agent-platform-prompt-management/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:9410a197c8cf923e0275df14cee96b29958fe6f1",
+        "size": 7282
+      }
+    },
+    {
+      "source_id": "src_https-github-com-google-skills-google-skills_bc973af1",
+      "path": "skills/cloud/agent-platform-rag-engine-management/SKILL.md",
+      "declared_name": "agent-platform-rag-engine-management",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:7d9ff2c9c022c05a487f406faeb1a6b740a74f73",
+      "upstream_ref": "777fb8e194b9941c74c85f17b10202614ef4e435",
+      "git_blob_oid": "git_sha1:7d9ff2c9c022c05a487f406faeb1a6b740a74f73",
+      "url": "https://github.com/google/skills/blob/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/agent-platform-rag-engine-management/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/google/skills/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/agent-platform-rag-engine-management/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-google-skills-google-skills_bc973af1",
+        "canonical_skill_id": null,
+        "remote_path": "skills/cloud/agent-platform-rag-engine-management/SKILL.md",
+        "pinned_commit": "777fb8e194b9941c74c85f17b10202614ef4e435",
+        "git_blob_oid": "git_sha1:7d9ff2c9c022c05a487f406faeb1a6b740a74f73",
+        "raw_url": "https://raw.githubusercontent.com/google/skills/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/agent-platform-rag-engine-management/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:7d9ff2c9c022c05a487f406faeb1a6b740a74f73",
+        "size": 8693
+      }
+    },
+    {
+      "source_id": "src_https-github-com-google-skills-google-skills_bc973af1",
+      "path": "skills/cloud/agent-platform-skill-registry/SKILL.md",
+      "declared_name": "agent-platform-skill-registry",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:0a827579f25e948c07ccc5848fe39e4906b78ced",
+      "upstream_ref": "777fb8e194b9941c74c85f17b10202614ef4e435",
+      "git_blob_oid": "git_sha1:0a827579f25e948c07ccc5848fe39e4906b78ced",
+      "url": "https://github.com/google/skills/blob/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/agent-platform-skill-registry/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/google/skills/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/agent-platform-skill-registry/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-google-skills-google-skills_bc973af1",
+        "canonical_skill_id": null,
+        "remote_path": "skills/cloud/agent-platform-skill-registry/SKILL.md",
+        "pinned_commit": "777fb8e194b9941c74c85f17b10202614ef4e435",
+        "git_blob_oid": "git_sha1:0a827579f25e948c07ccc5848fe39e4906b78ced",
+        "raw_url": "https://raw.githubusercontent.com/google/skills/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/agent-platform-skill-registry/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:0a827579f25e948c07ccc5848fe39e4906b78ced",
+        "size": 2314
+      }
+    },
+    {
+      "source_id": "src_https-github-com-google-skills-google-skills_bc973af1",
+      "path": "skills/cloud/agent-platform-troubleshooting/SKILL.md",
+      "declared_name": "agent-platform-troubleshooting",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:80157e0e0dbb0b79f958d89424b7f3c46e65ddf7",
+      "upstream_ref": "777fb8e194b9941c74c85f17b10202614ef4e435",
+      "git_blob_oid": "git_sha1:80157e0e0dbb0b79f958d89424b7f3c46e65ddf7",
+      "url": "https://github.com/google/skills/blob/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/agent-platform-troubleshooting/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/google/skills/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/agent-platform-troubleshooting/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-google-skills-google-skills_bc973af1",
+        "canonical_skill_id": null,
+        "remote_path": "skills/cloud/agent-platform-troubleshooting/SKILL.md",
+        "pinned_commit": "777fb8e194b9941c74c85f17b10202614ef4e435",
+        "git_blob_oid": "git_sha1:80157e0e0dbb0b79f958d89424b7f3c46e65ddf7",
+        "raw_url": "https://raw.githubusercontent.com/google/skills/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/agent-platform-troubleshooting/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:80157e0e0dbb0b79f958d89424b7f3c46e65ddf7",
+        "size": 23314
+      }
+    },
+    {
+      "source_id": "src_https-github-com-google-skills-google-skills_bc973af1",
+      "path": "skills/cloud/agent-platform-tuning-management/SKILL.md",
+      "declared_name": "agent-platform-tuning-management",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:5d934301356ed56f95ce3f5fab37dba72b7cafb8",
+      "upstream_ref": "777fb8e194b9941c74c85f17b10202614ef4e435",
+      "git_blob_oid": "git_sha1:5d934301356ed56f95ce3f5fab37dba72b7cafb8",
+      "url": "https://github.com/google/skills/blob/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/agent-platform-tuning-management/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/google/skills/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/agent-platform-tuning-management/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-google-skills-google-skills_bc973af1",
+        "canonical_skill_id": null,
+        "remote_path": "skills/cloud/agent-platform-tuning-management/SKILL.md",
+        "pinned_commit": "777fb8e194b9941c74c85f17b10202614ef4e435",
+        "git_blob_oid": "git_sha1:5d934301356ed56f95ce3f5fab37dba72b7cafb8",
+        "raw_url": "https://raw.githubusercontent.com/google/skills/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/agent-platform-tuning-management/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:5d934301356ed56f95ce3f5fab37dba72b7cafb8",
+        "size": 6266
+      }
+    },
+    {
+      "source_id": "src_https-github-com-google-skills-google-skills_bc973af1",
+      "path": "skills/cloud/agent-platform-tuning/SKILL.md",
+      "declared_name": "agent-platform-tuning",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:aacb1251e2dfaf4122955324fba07fa19a884e20",
+      "upstream_ref": "777fb8e194b9941c74c85f17b10202614ef4e435",
+      "git_blob_oid": "git_sha1:aacb1251e2dfaf4122955324fba07fa19a884e20",
+      "url": "https://github.com/google/skills/blob/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/agent-platform-tuning/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/google/skills/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/agent-platform-tuning/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-google-skills-google-skills_bc973af1",
+        "canonical_skill_id": null,
+        "remote_path": "skills/cloud/agent-platform-tuning/SKILL.md",
+        "pinned_commit": "777fb8e194b9941c74c85f17b10202614ef4e435",
+        "git_blob_oid": "git_sha1:aacb1251e2dfaf4122955324fba07fa19a884e20",
+        "raw_url": "https://raw.githubusercontent.com/google/skills/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/agent-platform-tuning/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:aacb1251e2dfaf4122955324fba07fa19a884e20",
+        "size": 23779
+      }
+    },
+    {
+      "source_id": "src_https-github-com-google-skills-google-skills_bc973af1",
+      "path": "skills/cloud/alloydb-basics/SKILL.md",
+      "declared_name": "alloydb-basics",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:7840bdc381e6c95bb6d0c35bbd89bf67fe57ca2e",
+      "upstream_ref": "777fb8e194b9941c74c85f17b10202614ef4e435",
+      "git_blob_oid": "git_sha1:7840bdc381e6c95bb6d0c35bbd89bf67fe57ca2e",
+      "url": "https://github.com/google/skills/blob/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/alloydb-basics/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/google/skills/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/alloydb-basics/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-google-skills-google-skills_bc973af1",
+        "canonical_skill_id": null,
+        "remote_path": "skills/cloud/alloydb-basics/SKILL.md",
+        "pinned_commit": "777fb8e194b9941c74c85f17b10202614ef4e435",
+        "git_blob_oid": "git_sha1:7840bdc381e6c95bb6d0c35bbd89bf67fe57ca2e",
+        "raw_url": "https://raw.githubusercontent.com/google/skills/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/alloydb-basics/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:7840bdc381e6c95bb6d0c35bbd89bf67fe57ca2e",
+        "size": 6920
+      }
+    },
+    {
+      "source_id": "src_https-github-com-google-skills-google-skills_bc973af1",
+      "path": "skills/cloud/bigquery-ai-ml/SKILL.md",
+      "declared_name": "bigquery-ai-ml",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:3355418bf0915895371a4cfc706b0fe6aa3051e4",
+      "upstream_ref": "777fb8e194b9941c74c85f17b10202614ef4e435",
+      "git_blob_oid": "git_sha1:3355418bf0915895371a4cfc706b0fe6aa3051e4",
+      "url": "https://github.com/google/skills/blob/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/bigquery-ai-ml/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/google/skills/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/bigquery-ai-ml/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-google-skills-google-skills_bc973af1",
+        "canonical_skill_id": null,
+        "remote_path": "skills/cloud/bigquery-ai-ml/SKILL.md",
+        "pinned_commit": "777fb8e194b9941c74c85f17b10202614ef4e435",
+        "git_blob_oid": "git_sha1:3355418bf0915895371a4cfc706b0fe6aa3051e4",
+        "raw_url": "https://raw.githubusercontent.com/google/skills/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/bigquery-ai-ml/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:3355418bf0915895371a4cfc706b0fe6aa3051e4",
+        "size": 2974
+      }
+    },
+    {
+      "source_id": "src_https-github-com-google-skills-google-skills_bc973af1",
+      "path": "skills/cloud/bigquery-basics/SKILL.md",
+      "declared_name": "bigquery-basics",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:45adced754471b53dacdc49711a515441f4f4edc",
+      "upstream_ref": "777fb8e194b9941c74c85f17b10202614ef4e435",
+      "git_blob_oid": "git_sha1:45adced754471b53dacdc49711a515441f4f4edc",
+      "url": "https://github.com/google/skills/blob/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/bigquery-basics/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/google/skills/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/bigquery-basics/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-google-skills-google-skills_bc973af1",
+        "canonical_skill_id": null,
+        "remote_path": "skills/cloud/bigquery-basics/SKILL.md",
+        "pinned_commit": "777fb8e194b9941c74c85f17b10202614ef4e435",
+        "git_blob_oid": "git_sha1:45adced754471b53dacdc49711a515441f4f4edc",
+        "raw_url": "https://raw.githubusercontent.com/google/skills/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/bigquery-basics/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:45adced754471b53dacdc49711a515441f4f4edc",
+        "size": 2777
+      }
+    },
+    {
+      "source_id": "src_https-github-com-google-skills-google-skills_bc973af1",
+      "path": "skills/cloud/bigquery-bigframes/SKILL.md",
+      "declared_name": "bigquery-bigframes",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:893d5a89d62250bcc35d5cf9b3efa22be647fc06",
+      "upstream_ref": "777fb8e194b9941c74c85f17b10202614ef4e435",
+      "git_blob_oid": "git_sha1:893d5a89d62250bcc35d5cf9b3efa22be647fc06",
+      "url": "https://github.com/google/skills/blob/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/bigquery-bigframes/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/google/skills/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/bigquery-bigframes/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-google-skills-google-skills_bc973af1",
+        "canonical_skill_id": null,
+        "remote_path": "skills/cloud/bigquery-bigframes/SKILL.md",
+        "pinned_commit": "777fb8e194b9941c74c85f17b10202614ef4e435",
+        "git_blob_oid": "git_sha1:893d5a89d62250bcc35d5cf9b3efa22be647fc06",
+        "raw_url": "https://raw.githubusercontent.com/google/skills/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/bigquery-bigframes/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:893d5a89d62250bcc35d5cf9b3efa22be647fc06",
+        "size": 5063
+      }
+    },
+    {
+      "source_id": "src_https-github-com-google-skills-google-skills_bc973af1",
+      "path": "skills/cloud/bigtable-basics/SKILL.md",
+      "declared_name": "bigtable-basics",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:cbb63bee2a509a65adfed158f623b0cb8706c872",
+      "upstream_ref": "777fb8e194b9941c74c85f17b10202614ef4e435",
+      "git_blob_oid": "git_sha1:cbb63bee2a509a65adfed158f623b0cb8706c872",
+      "url": "https://github.com/google/skills/blob/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/bigtable-basics/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/google/skills/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/bigtable-basics/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-google-skills-google-skills_bc973af1",
+        "canonical_skill_id": null,
+        "remote_path": "skills/cloud/bigtable-basics/SKILL.md",
+        "pinned_commit": "777fb8e194b9941c74c85f17b10202614ef4e435",
+        "git_blob_oid": "git_sha1:cbb63bee2a509a65adfed158f623b0cb8706c872",
+        "raw_url": "https://raw.githubusercontent.com/google/skills/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/bigtable-basics/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:cbb63bee2a509a65adfed158f623b0cb8706c872",
+        "size": 5130
+      }
+    },
+    {
+      "source_id": "src_https-github-com-google-skills-google-skills_bc973af1",
+      "path": "skills/cloud/cloud-logging-configuration-basics/SKILL.md",
+      "declared_name": "cloud-logging-configuration-basics",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:ad29e88b4362cca5e16904668f2ce5d5c4230fa9",
+      "upstream_ref": "777fb8e194b9941c74c85f17b10202614ef4e435",
+      "git_blob_oid": "git_sha1:ad29e88b4362cca5e16904668f2ce5d5c4230fa9",
+      "url": "https://github.com/google/skills/blob/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/cloud-logging-configuration-basics/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/google/skills/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/cloud-logging-configuration-basics/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-google-skills-google-skills_bc973af1",
+        "canonical_skill_id": null,
+        "remote_path": "skills/cloud/cloud-logging-configuration-basics/SKILL.md",
+        "pinned_commit": "777fb8e194b9941c74c85f17b10202614ef4e435",
+        "git_blob_oid": "git_sha1:ad29e88b4362cca5e16904668f2ce5d5c4230fa9",
+        "raw_url": "https://raw.githubusercontent.com/google/skills/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/cloud-logging-configuration-basics/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:ad29e88b4362cca5e16904668f2ce5d5c4230fa9",
+        "size": 13831
+      }
+    },
+    {
+      "source_id": "src_https-github-com-google-skills-google-skills_bc973af1",
+      "path": "skills/cloud/cloud-logging-cross-project-configuration/SKILL.md",
+      "declared_name": "cloud-logging-cross-project-configuration",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:2bedbf8ac1c31a56e1fd64162329574e74a8c436",
+      "upstream_ref": "777fb8e194b9941c74c85f17b10202614ef4e435",
+      "git_blob_oid": "git_sha1:2bedbf8ac1c31a56e1fd64162329574e74a8c436",
+      "url": "https://github.com/google/skills/blob/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/cloud-logging-cross-project-configuration/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/google/skills/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/cloud-logging-cross-project-configuration/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-google-skills-google-skills_bc973af1",
+        "canonical_skill_id": null,
+        "remote_path": "skills/cloud/cloud-logging-cross-project-configuration/SKILL.md",
+        "pinned_commit": "777fb8e194b9941c74c85f17b10202614ef4e435",
+        "git_blob_oid": "git_sha1:2bedbf8ac1c31a56e1fd64162329574e74a8c436",
+        "raw_url": "https://raw.githubusercontent.com/google/skills/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/cloud-logging-cross-project-configuration/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:2bedbf8ac1c31a56e1fd64162329574e74a8c436",
+        "size": 18161
+      }
+    },
+    {
+      "source_id": "src_https-github-com-google-skills-google-skills_bc973af1",
+      "path": "skills/cloud/cloud-logging-query-generation/SKILL.md",
+      "declared_name": "cloud-logging-query-generation",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:f78e8385077d44d845a3488a219381657d3b1349",
+      "upstream_ref": "777fb8e194b9941c74c85f17b10202614ef4e435",
+      "git_blob_oid": "git_sha1:f78e8385077d44d845a3488a219381657d3b1349",
+      "url": "https://github.com/google/skills/blob/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/cloud-logging-query-generation/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/google/skills/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/cloud-logging-query-generation/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-google-skills-google-skills_bc973af1",
+        "canonical_skill_id": null,
+        "remote_path": "skills/cloud/cloud-logging-query-generation/SKILL.md",
+        "pinned_commit": "777fb8e194b9941c74c85f17b10202614ef4e435",
+        "git_blob_oid": "git_sha1:f78e8385077d44d845a3488a219381657d3b1349",
+        "raw_url": "https://raw.githubusercontent.com/google/skills/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/cloud-logging-query-generation/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:f78e8385077d44d845a3488a219381657d3b1349",
+        "size": 7652
+      }
+    },
+    {
+      "source_id": "src_https-github-com-google-skills-google-skills_bc973af1",
+      "path": "skills/cloud/cloud-monitoring-chart-generation/SKILL.md",
+      "declared_name": "cloud-monitoring-chart-generation",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:56fcef0b639b239fb6f50004688e81eb7f655fc9",
+      "upstream_ref": "777fb8e194b9941c74c85f17b10202614ef4e435",
+      "git_blob_oid": "git_sha1:56fcef0b639b239fb6f50004688e81eb7f655fc9",
+      "url": "https://github.com/google/skills/blob/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/cloud-monitoring-chart-generation/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/google/skills/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/cloud-monitoring-chart-generation/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-google-skills-google-skills_bc973af1",
+        "canonical_skill_id": null,
+        "remote_path": "skills/cloud/cloud-monitoring-chart-generation/SKILL.md",
+        "pinned_commit": "777fb8e194b9941c74c85f17b10202614ef4e435",
+        "git_blob_oid": "git_sha1:56fcef0b639b239fb6f50004688e81eb7f655fc9",
+        "raw_url": "https://raw.githubusercontent.com/google/skills/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/cloud-monitoring-chart-generation/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:56fcef0b639b239fb6f50004688e81eb7f655fc9",
+        "size": 7928
+      }
+    },
+    {
+      "source_id": "src_https-github-com-google-skills-google-skills_bc973af1",
+      "path": "skills/cloud/cloud-monitoring-metric-selection/SKILL.md",
+      "declared_name": "cloud-monitoring-metric-selection",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:9b35f388315514ea2956a466709c3691429a5ffb",
+      "upstream_ref": "777fb8e194b9941c74c85f17b10202614ef4e435",
+      "git_blob_oid": "git_sha1:9b35f388315514ea2956a466709c3691429a5ffb",
+      "url": "https://github.com/google/skills/blob/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/cloud-monitoring-metric-selection/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/google/skills/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/cloud-monitoring-metric-selection/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-google-skills-google-skills_bc973af1",
+        "canonical_skill_id": null,
+        "remote_path": "skills/cloud/cloud-monitoring-metric-selection/SKILL.md",
+        "pinned_commit": "777fb8e194b9941c74c85f17b10202614ef4e435",
+        "git_blob_oid": "git_sha1:9b35f388315514ea2956a466709c3691429a5ffb",
+        "raw_url": "https://raw.githubusercontent.com/google/skills/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/cloud-monitoring-metric-selection/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:9b35f388315514ea2956a466709c3691429a5ffb",
+        "size": 8753
+      }
+    },
+    {
+      "source_id": "src_https-github-com-google-skills-google-skills_bc973af1",
+      "path": "skills/cloud/cloud-run-basics/SKILL.md",
+      "declared_name": "cloud-run-basics",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:713efc4f3f6cb35a9f33c943f44690140d0c261a",
+      "upstream_ref": "777fb8e194b9941c74c85f17b10202614ef4e435",
+      "git_blob_oid": "git_sha1:713efc4f3f6cb35a9f33c943f44690140d0c261a",
+      "url": "https://github.com/google/skills/blob/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/cloud-run-basics/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/google/skills/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/cloud-run-basics/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-google-skills-google-skills_bc973af1",
+        "canonical_skill_id": null,
+        "remote_path": "skills/cloud/cloud-run-basics/SKILL.md",
+        "pinned_commit": "777fb8e194b9941c74c85f17b10202614ef4e435",
+        "git_blob_oid": "git_sha1:713efc4f3f6cb35a9f33c943f44690140d0c261a",
+        "raw_url": "https://raw.githubusercontent.com/google/skills/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/cloud-run-basics/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:713efc4f3f6cb35a9f33c943f44690140d0c261a",
+        "size": 15852
+      }
+    },
+    {
+      "source_id": "src_https-github-com-google-skills-google-skills_bc973af1",
+      "path": "skills/cloud/cloud-sql-basics/SKILL.md",
+      "declared_name": "cloud-sql-basics",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:251f09aa517a02b0e7203edc1fa242c2e71ba0d7",
+      "upstream_ref": "777fb8e194b9941c74c85f17b10202614ef4e435",
+      "git_blob_oid": "git_sha1:251f09aa517a02b0e7203edc1fa242c2e71ba0d7",
+      "url": "https://github.com/google/skills/blob/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/cloud-sql-basics/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/google/skills/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/cloud-sql-basics/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-google-skills-google-skills_bc973af1",
+        "canonical_skill_id": null,
+        "remote_path": "skills/cloud/cloud-sql-basics/SKILL.md",
+        "pinned_commit": "777fb8e194b9941c74c85f17b10202614ef4e435",
+        "git_blob_oid": "git_sha1:251f09aa517a02b0e7203edc1fa242c2e71ba0d7",
+        "raw_url": "https://raw.githubusercontent.com/google/skills/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/cloud-sql-basics/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:251f09aa517a02b0e7203edc1fa242c2e71ba0d7",
+        "size": 3872
+      }
+    },
+    {
+      "source_id": "src_https-github-com-google-skills-google-skills_bc973af1",
+      "path": "skills/cloud/datalineage-bigquery-asset-impact-analysis/SKILL.md",
+      "declared_name": "datalineage-bigquery-asset-impact-analysis",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:890ee413e0b031d27062c542587e8adfe8a31ace",
+      "upstream_ref": "777fb8e194b9941c74c85f17b10202614ef4e435",
+      "git_blob_oid": "git_sha1:890ee413e0b031d27062c542587e8adfe8a31ace",
+      "url": "https://github.com/google/skills/blob/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/datalineage-bigquery-asset-impact-analysis/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/google/skills/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/datalineage-bigquery-asset-impact-analysis/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-google-skills-google-skills_bc973af1",
+        "canonical_skill_id": null,
+        "remote_path": "skills/cloud/datalineage-bigquery-asset-impact-analysis/SKILL.md",
+        "pinned_commit": "777fb8e194b9941c74c85f17b10202614ef4e435",
+        "git_blob_oid": "git_sha1:890ee413e0b031d27062c542587e8adfe8a31ace",
+        "raw_url": "https://raw.githubusercontent.com/google/skills/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/datalineage-bigquery-asset-impact-analysis/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:890ee413e0b031d27062c542587e8adfe8a31ace",
+        "size": 6639
+      }
+    },
+    {
+      "source_id": "src_https-github-com-google-skills-google-skills_bc973af1",
+      "path": "skills/cloud/datalineage-summary/SKILL.md",
+      "declared_name": "datalineage-summary",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:a89379cbf8e29348e4e293b0dd1aaeed1bc57412",
+      "upstream_ref": "777fb8e194b9941c74c85f17b10202614ef4e435",
+      "git_blob_oid": "git_sha1:a89379cbf8e29348e4e293b0dd1aaeed1bc57412",
+      "url": "https://github.com/google/skills/blob/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/datalineage-summary/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/google/skills/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/datalineage-summary/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-google-skills-google-skills_bc973af1",
+        "canonical_skill_id": null,
+        "remote_path": "skills/cloud/datalineage-summary/SKILL.md",
+        "pinned_commit": "777fb8e194b9941c74c85f17b10202614ef4e435",
+        "git_blob_oid": "git_sha1:a89379cbf8e29348e4e293b0dd1aaeed1bc57412",
+        "raw_url": "https://raw.githubusercontent.com/google/skills/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/datalineage-summary/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:a89379cbf8e29348e4e293b0dd1aaeed1bc57412",
+        "size": 6731
+      }
+    },
+    {
+      "source_id": "src_https-github-com-google-skills-google-skills_bc973af1",
+      "path": "skills/cloud/detection-engineering-coverage-evaluation/SKILL.md",
+      "declared_name": "detection-engineering-coverage-evaluation",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:7c02c27a54c139c7ffbc8304ce71a0202a931b39",
+      "upstream_ref": "777fb8e194b9941c74c85f17b10202614ef4e435",
+      "git_blob_oid": "git_sha1:7c02c27a54c139c7ffbc8304ce71a0202a931b39",
+      "url": "https://github.com/google/skills/blob/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/detection-engineering-coverage-evaluation/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/google/skills/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/detection-engineering-coverage-evaluation/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-google-skills-google-skills_bc973af1",
+        "canonical_skill_id": null,
+        "remote_path": "skills/cloud/detection-engineering-coverage-evaluation/SKILL.md",
+        "pinned_commit": "777fb8e194b9941c74c85f17b10202614ef4e435",
+        "git_blob_oid": "git_sha1:7c02c27a54c139c7ffbc8304ce71a0202a931b39",
+        "raw_url": "https://raw.githubusercontent.com/google/skills/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/detection-engineering-coverage-evaluation/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:7c02c27a54c139c7ffbc8304ce71a0202a931b39",
+        "size": 7964
+      }
+    },
+    {
+      "source_id": "src_https-github-com-google-skills-google-skills_bc973af1",
+      "path": "skills/cloud/developer-device-platform-basics/SKILL.md",
+      "declared_name": "developer-device-platform-basics",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:3016747b88a27d0444b41f18dc0d104881a034bb",
+      "upstream_ref": "777fb8e194b9941c74c85f17b10202614ef4e435",
+      "git_blob_oid": "git_sha1:3016747b88a27d0444b41f18dc0d104881a034bb",
+      "url": "https://github.com/google/skills/blob/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/developer-device-platform-basics/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/google/skills/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/developer-device-platform-basics/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-google-skills-google-skills_bc973af1",
+        "canonical_skill_id": null,
+        "remote_path": "skills/cloud/developer-device-platform-basics/SKILL.md",
+        "pinned_commit": "777fb8e194b9941c74c85f17b10202614ef4e435",
+        "git_blob_oid": "git_sha1:3016747b88a27d0444b41f18dc0d104881a034bb",
+        "raw_url": "https://raw.githubusercontent.com/google/skills/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/developer-device-platform-basics/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:3016747b88a27d0444b41f18dc0d104881a034bb",
+        "size": 10055
+      }
+    },
+    {
+      "source_id": "src_https-github-com-google-skills-google-skills_bc973af1",
+      "path": "skills/cloud/firebase-basics/SKILL.md",
+      "declared_name": "firebase-basics",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:f11d29aa62bb2cad530bbebba070040745d1b8a6",
+      "upstream_ref": "777fb8e194b9941c74c85f17b10202614ef4e435",
+      "git_blob_oid": "git_sha1:f11d29aa62bb2cad530bbebba070040745d1b8a6",
+      "url": "https://github.com/google/skills/blob/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/firebase-basics/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/google/skills/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/firebase-basics/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-google-skills-google-skills_bc973af1",
+        "canonical_skill_id": null,
+        "remote_path": "skills/cloud/firebase-basics/SKILL.md",
+        "pinned_commit": "777fb8e194b9941c74c85f17b10202614ef4e435",
+        "git_blob_oid": "git_sha1:f11d29aa62bb2cad530bbebba070040745d1b8a6",
+        "raw_url": "https://raw.githubusercontent.com/google/skills/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/firebase-basics/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:f11d29aa62bb2cad530bbebba070040745d1b8a6",
+        "size": 3321
+      }
+    },
+    {
+      "source_id": "src_https-github-com-google-skills-google-skills_bc973af1",
+      "path": "skills/cloud/gcloud/SKILL.md",
+      "declared_name": "gcloud",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:3e35de5e0076cd295bc3798305571772e934f687",
+      "upstream_ref": "777fb8e194b9941c74c85f17b10202614ef4e435",
+      "git_blob_oid": "git_sha1:3e35de5e0076cd295bc3798305571772e934f687",
+      "url": "https://github.com/google/skills/blob/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/gcloud/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/google/skills/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/gcloud/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-google-skills-google-skills_bc973af1",
+        "canonical_skill_id": null,
+        "remote_path": "skills/cloud/gcloud/SKILL.md",
+        "pinned_commit": "777fb8e194b9941c74c85f17b10202614ef4e435",
+        "git_blob_oid": "git_sha1:3e35de5e0076cd295bc3798305571772e934f687",
+        "raw_url": "https://raw.githubusercontent.com/google/skills/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/gcloud/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:3e35de5e0076cd295bc3798305571772e934f687",
+        "size": 14781
+      }
+    },
+    {
+      "source_id": "src_https-github-com-google-skills-google-skills_bc973af1",
+      "path": "skills/cloud/gemini-agents-api/SKILL.md",
+      "declared_name": "gemini-agents-api",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:94b41e7641397a6c175096681e55a8b206ccec7f",
+      "upstream_ref": "777fb8e194b9941c74c85f17b10202614ef4e435",
+      "git_blob_oid": "git_sha1:94b41e7641397a6c175096681e55a8b206ccec7f",
+      "url": "https://github.com/google/skills/blob/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/gemini-agents-api/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/google/skills/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/gemini-agents-api/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-google-skills-google-skills_bc973af1",
+        "canonical_skill_id": null,
+        "remote_path": "skills/cloud/gemini-agents-api/SKILL.md",
+        "pinned_commit": "777fb8e194b9941c74c85f17b10202614ef4e435",
+        "git_blob_oid": "git_sha1:94b41e7641397a6c175096681e55a8b206ccec7f",
+        "raw_url": "https://raw.githubusercontent.com/google/skills/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/gemini-agents-api/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:94b41e7641397a6c175096681e55a8b206ccec7f",
+        "size": 12794
+      }
+    },
+    {
+      "source_id": "src_https-github-com-google-skills-google-skills_bc973af1",
+      "path": "skills/cloud/gemini-api/SKILL.md",
+      "declared_name": "gemini-api",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:78b3f5c8c4cdc5bac4e34b969a79db11c698a37b",
+      "upstream_ref": "777fb8e194b9941c74c85f17b10202614ef4e435",
+      "git_blob_oid": "git_sha1:78b3f5c8c4cdc5bac4e34b969a79db11c698a37b",
+      "url": "https://github.com/google/skills/blob/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/gemini-api/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/google/skills/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/gemini-api/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-google-skills-google-skills_bc973af1",
+        "canonical_skill_id": null,
+        "remote_path": "skills/cloud/gemini-api/SKILL.md",
+        "pinned_commit": "777fb8e194b9941c74c85f17b10202614ef4e435",
+        "git_blob_oid": "git_sha1:78b3f5c8c4cdc5bac4e34b969a79db11c698a37b",
+        "raw_url": "https://raw.githubusercontent.com/google/skills/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/gemini-api/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:78b3f5c8c4cdc5bac4e34b969a79db11c698a37b",
+        "size": 10223
+      }
+    },
+    {
+      "source_id": "src_https-github-com-google-skills-google-skills_bc973af1",
+      "path": "skills/cloud/gemini-interactions-api/SKILL.md",
+      "declared_name": "gemini-interactions-api",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:60f3913c6e00beeb81352e62bffbb5764dd2deeb",
+      "upstream_ref": "777fb8e194b9941c74c85f17b10202614ef4e435",
+      "git_blob_oid": "git_sha1:60f3913c6e00beeb81352e62bffbb5764dd2deeb",
+      "url": "https://github.com/google/skills/blob/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/gemini-interactions-api/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/google/skills/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/gemini-interactions-api/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-google-skills-google-skills_bc973af1",
+        "canonical_skill_id": null,
+        "remote_path": "skills/cloud/gemini-interactions-api/SKILL.md",
+        "pinned_commit": "777fb8e194b9941c74c85f17b10202614ef4e435",
+        "git_blob_oid": "git_sha1:60f3913c6e00beeb81352e62bffbb5764dd2deeb",
+        "raw_url": "https://raw.githubusercontent.com/google/skills/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/gemini-interactions-api/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:60f3913c6e00beeb81352e62bffbb5764dd2deeb",
+        "size": 20098
+      }
+    },
+    {
+      "source_id": "src_https-github-com-google-skills-google-skills_bc973af1",
+      "path": "skills/cloud/gemini-live-api/SKILL.md",
+      "declared_name": "gemini-live-api",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:79daadc9281152524dea33eeadd0dd9be5d5dfd5",
+      "upstream_ref": "777fb8e194b9941c74c85f17b10202614ef4e435",
+      "git_blob_oid": "git_sha1:79daadc9281152524dea33eeadd0dd9be5d5dfd5",
+      "url": "https://github.com/google/skills/blob/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/gemini-live-api/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/google/skills/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/gemini-live-api/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-google-skills-google-skills_bc973af1",
+        "canonical_skill_id": null,
+        "remote_path": "skills/cloud/gemini-live-api/SKILL.md",
+        "pinned_commit": "777fb8e194b9941c74c85f17b10202614ef4e435",
+        "git_blob_oid": "git_sha1:79daadc9281152524dea33eeadd0dd9be5d5dfd5",
+        "raw_url": "https://raw.githubusercontent.com/google/skills/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/gemini-live-api/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:79daadc9281152524dea33eeadd0dd9be5d5dfd5",
+        "size": 9825
+      }
+    },
+    {
+      "source_id": "src_https-github-com-google-skills-google-skills_bc973af1",
+      "path": "skills/cloud/gke-ai-troubleshooting-handle-disruption-gpu-tpu/SKILL.md",
+      "declared_name": "gke-ai-troubleshooting-handle-disruption-gpu-tpu",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:2c472ef10b3fdf6d31e7478cbd7fa552b5b77be9",
+      "upstream_ref": "777fb8e194b9941c74c85f17b10202614ef4e435",
+      "git_blob_oid": "git_sha1:2c472ef10b3fdf6d31e7478cbd7fa552b5b77be9",
+      "url": "https://github.com/google/skills/blob/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/gke-ai-troubleshooting-handle-disruption-gpu-tpu/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/google/skills/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/gke-ai-troubleshooting-handle-disruption-gpu-tpu/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-google-skills-google-skills_bc973af1",
+        "canonical_skill_id": null,
+        "remote_path": "skills/cloud/gke-ai-troubleshooting-handle-disruption-gpu-tpu/SKILL.md",
+        "pinned_commit": "777fb8e194b9941c74c85f17b10202614ef4e435",
+        "git_blob_oid": "git_sha1:2c472ef10b3fdf6d31e7478cbd7fa552b5b77be9",
+        "raw_url": "https://raw.githubusercontent.com/google/skills/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/gke-ai-troubleshooting-handle-disruption-gpu-tpu/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:2c472ef10b3fdf6d31e7478cbd7fa552b5b77be9",
+        "size": 6505
+      }
+    },
+    {
+      "source_id": "src_https-github-com-google-skills-google-skills_bc973af1",
+      "path": "skills/cloud/gke-ai-troubleshooting-jobset-interruption/SKILL.md",
+      "declared_name": "gke-ai-troubleshooting-jobset-interruption",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:66805e21ff62678525b65d3c52e1736895e62dc3",
+      "upstream_ref": "777fb8e194b9941c74c85f17b10202614ef4e435",
+      "git_blob_oid": "git_sha1:66805e21ff62678525b65d3c52e1736895e62dc3",
+      "url": "https://github.com/google/skills/blob/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/gke-ai-troubleshooting-jobset-interruption/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/google/skills/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/gke-ai-troubleshooting-jobset-interruption/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-google-skills-google-skills_bc973af1",
+        "canonical_skill_id": null,
+        "remote_path": "skills/cloud/gke-ai-troubleshooting-jobset-interruption/SKILL.md",
+        "pinned_commit": "777fb8e194b9941c74c85f17b10202614ef4e435",
+        "git_blob_oid": "git_sha1:66805e21ff62678525b65d3c52e1736895e62dc3",
+        "raw_url": "https://raw.githubusercontent.com/google/skills/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/gke-ai-troubleshooting-jobset-interruption/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:66805e21ff62678525b65d3c52e1736895e62dc3",
+        "size": 11027
+      }
+    },
+    {
+      "source_id": "src_https-github-com-google-skills-google-skills_bc973af1",
+      "path": "skills/cloud/gke-ai-troubleshooting-tpu-vbar-oom/SKILL.md",
+      "declared_name": "gke-ai-troubleshooting-tpu-vbar-oom",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:e156c102045bc8a076cb9c9ae73a8cf7be70926c",
+      "upstream_ref": "777fb8e194b9941c74c85f17b10202614ef4e435",
+      "git_blob_oid": "git_sha1:e156c102045bc8a076cb9c9ae73a8cf7be70926c",
+      "url": "https://github.com/google/skills/blob/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/gke-ai-troubleshooting-tpu-vbar-oom/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/google/skills/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/gke-ai-troubleshooting-tpu-vbar-oom/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-google-skills-google-skills_bc973af1",
+        "canonical_skill_id": null,
+        "remote_path": "skills/cloud/gke-ai-troubleshooting-tpu-vbar-oom/SKILL.md",
+        "pinned_commit": "777fb8e194b9941c74c85f17b10202614ef4e435",
+        "git_blob_oid": "git_sha1:e156c102045bc8a076cb9c9ae73a8cf7be70926c",
+        "raw_url": "https://raw.githubusercontent.com/google/skills/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/gke-ai-troubleshooting-tpu-vbar-oom/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:e156c102045bc8a076cb9c9ae73a8cf7be70926c",
+        "size": 6358
+      }
+    },
+    {
+      "source_id": "src_https-github-com-google-skills-google-skills_bc973af1",
+      "path": "skills/cloud/gke-app-onboarding/SKILL.md",
+      "declared_name": "gke-app-onboarding",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:397959305f093a25cdae395acd9ac88ad91efd29",
+      "upstream_ref": "777fb8e194b9941c74c85f17b10202614ef4e435",
+      "git_blob_oid": "git_sha1:397959305f093a25cdae395acd9ac88ad91efd29",
+      "url": "https://github.com/google/skills/blob/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/gke-app-onboarding/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/google/skills/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/gke-app-onboarding/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-google-skills-google-skills_bc973af1",
+        "canonical_skill_id": null,
+        "remote_path": "skills/cloud/gke-app-onboarding/SKILL.md",
+        "pinned_commit": "777fb8e194b9941c74c85f17b10202614ef4e435",
+        "git_blob_oid": "git_sha1:397959305f093a25cdae395acd9ac88ad91efd29",
+        "raw_url": "https://raw.githubusercontent.com/google/skills/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/gke-app-onboarding/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:397959305f093a25cdae395acd9ac88ad91efd29",
+        "size": 4779
+      }
+    },
+    {
+      "source_id": "src_https-github-com-google-skills-google-skills_bc973af1",
+      "path": "skills/cloud/gke-backup-dr/SKILL.md",
+      "declared_name": "gke-backup-dr",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:bbd652c156643541541bf0ca5fea8be162910c55",
+      "upstream_ref": "777fb8e194b9941c74c85f17b10202614ef4e435",
+      "git_blob_oid": "git_sha1:bbd652c156643541541bf0ca5fea8be162910c55",
+      "url": "https://github.com/google/skills/blob/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/gke-backup-dr/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/google/skills/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/gke-backup-dr/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-google-skills-google-skills_bc973af1",
+        "canonical_skill_id": null,
+        "remote_path": "skills/cloud/gke-backup-dr/SKILL.md",
+        "pinned_commit": "777fb8e194b9941c74c85f17b10202614ef4e435",
+        "git_blob_oid": "git_sha1:bbd652c156643541541bf0ca5fea8be162910c55",
+        "raw_url": "https://raw.githubusercontent.com/google/skills/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/gke-backup-dr/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:bbd652c156643541541bf0ca5fea8be162910c55",
+        "size": 3054
+      }
+    },
+    {
+      "source_id": "src_https-github-com-google-skills-google-skills_bc973af1",
+      "path": "skills/cloud/gke-basics/SKILL.md",
+      "declared_name": "gke-basics",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:086272fb530a5b8cb11d89a3bed1449c53487db3",
+      "upstream_ref": "777fb8e194b9941c74c85f17b10202614ef4e435",
+      "git_blob_oid": "git_sha1:086272fb530a5b8cb11d89a3bed1449c53487db3",
+      "url": "https://github.com/google/skills/blob/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/gke-basics/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/google/skills/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/gke-basics/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-google-skills-google-skills_bc973af1",
+        "canonical_skill_id": null,
+        "remote_path": "skills/cloud/gke-basics/SKILL.md",
+        "pinned_commit": "777fb8e194b9941c74c85f17b10202614ef4e435",
+        "git_blob_oid": "git_sha1:086272fb530a5b8cb11d89a3bed1449c53487db3",
+        "raw_url": "https://raw.githubusercontent.com/google/skills/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/gke-basics/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:086272fb530a5b8cb11d89a3bed1449c53487db3",
+        "size": 3654
+      }
+    },
+    {
+      "source_id": "src_https-github-com-google-skills-google-skills_bc973af1",
+      "path": "skills/cloud/gke-batch-hpc/SKILL.md",
+      "declared_name": "gke-batch-hpc",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:f07fcc5382d13ca5e6998ac90323f94ad03eb8f5",
+      "upstream_ref": "777fb8e194b9941c74c85f17b10202614ef4e435",
+      "git_blob_oid": "git_sha1:f07fcc5382d13ca5e6998ac90323f94ad03eb8f5",
+      "url": "https://github.com/google/skills/blob/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/gke-batch-hpc/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/google/skills/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/gke-batch-hpc/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-google-skills-google-skills_bc973af1",
+        "canonical_skill_id": null,
+        "remote_path": "skills/cloud/gke-batch-hpc/SKILL.md",
+        "pinned_commit": "777fb8e194b9941c74c85f17b10202614ef4e435",
+        "git_blob_oid": "git_sha1:f07fcc5382d13ca5e6998ac90323f94ad03eb8f5",
+        "raw_url": "https://raw.githubusercontent.com/google/skills/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/gke-batch-hpc/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:f07fcc5382d13ca5e6998ac90323f94ad03eb8f5",
+        "size": 5678
+      }
+    },
+    {
+      "source_id": "src_https-github-com-google-skills-google-skills_bc973af1",
+      "path": "skills/cloud/gke-cluster-autoscaler/SKILL.md",
+      "declared_name": "gke-cluster-autoscaler",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:0bfee954c30c0020e71973c7297accccafc24d26",
+      "upstream_ref": "777fb8e194b9941c74c85f17b10202614ef4e435",
+      "git_blob_oid": "git_sha1:0bfee954c30c0020e71973c7297accccafc24d26",
+      "url": "https://github.com/google/skills/blob/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/gke-cluster-autoscaler/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/google/skills/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/gke-cluster-autoscaler/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-google-skills-google-skills_bc973af1",
+        "canonical_skill_id": null,
+        "remote_path": "skills/cloud/gke-cluster-autoscaler/SKILL.md",
+        "pinned_commit": "777fb8e194b9941c74c85f17b10202614ef4e435",
+        "git_blob_oid": "git_sha1:0bfee954c30c0020e71973c7297accccafc24d26",
+        "raw_url": "https://raw.githubusercontent.com/google/skills/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/gke-cluster-autoscaler/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:0bfee954c30c0020e71973c7297accccafc24d26",
+        "size": 11394
+      }
+    },
+    {
+      "source_id": "src_https-github-com-google-skills-google-skills_bc973af1",
+      "path": "skills/cloud/gke-cluster-creation/SKILL.md",
+      "declared_name": "gke-cluster-creation",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:528e1407e165d314f17b5ebd5740f269badc6d8b",
+      "upstream_ref": "777fb8e194b9941c74c85f17b10202614ef4e435",
+      "git_blob_oid": "git_sha1:528e1407e165d314f17b5ebd5740f269badc6d8b",
+      "url": "https://github.com/google/skills/blob/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/gke-cluster-creation/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/google/skills/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/gke-cluster-creation/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-google-skills-google-skills_bc973af1",
+        "canonical_skill_id": null,
+        "remote_path": "skills/cloud/gke-cluster-creation/SKILL.md",
+        "pinned_commit": "777fb8e194b9941c74c85f17b10202614ef4e435",
+        "git_blob_oid": "git_sha1:528e1407e165d314f17b5ebd5740f269badc6d8b",
+        "raw_url": "https://raw.githubusercontent.com/google/skills/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/gke-cluster-creation/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:528e1407e165d314f17b5ebd5740f269badc6d8b",
+        "size": 12439
+      }
+    },
+    {
+      "source_id": "src_https-github-com-google-skills-google-skills_bc973af1",
+      "path": "skills/cloud/gke-compute-classes/SKILL.md",
+      "declared_name": "gke-compute-classes",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:dcf68341fe46ede100c1b764f007339665b6cfe7",
+      "upstream_ref": "777fb8e194b9941c74c85f17b10202614ef4e435",
+      "git_blob_oid": "git_sha1:dcf68341fe46ede100c1b764f007339665b6cfe7",
+      "url": "https://github.com/google/skills/blob/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/gke-compute-classes/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/google/skills/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/gke-compute-classes/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-google-skills-google-skills_bc973af1",
+        "canonical_skill_id": null,
+        "remote_path": "skills/cloud/gke-compute-classes/SKILL.md",
+        "pinned_commit": "777fb8e194b9941c74c85f17b10202614ef4e435",
+        "git_blob_oid": "git_sha1:dcf68341fe46ede100c1b764f007339665b6cfe7",
+        "raw_url": "https://raw.githubusercontent.com/google/skills/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/gke-compute-classes/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:dcf68341fe46ede100c1b764f007339665b6cfe7",
+        "size": 20992
+      }
+    },
+    {
+      "source_id": "src_https-github-com-google-skills-google-skills_bc973af1",
+      "path": "skills/cloud/gke-cost-analysis/SKILL.md",
+      "declared_name": "gke-cost-analysis",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:7731fd64606d4c103a4d42d7f4a9e665252536d9",
+      "upstream_ref": "777fb8e194b9941c74c85f17b10202614ef4e435",
+      "git_blob_oid": "git_sha1:7731fd64606d4c103a4d42d7f4a9e665252536d9",
+      "url": "https://github.com/google/skills/blob/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/gke-cost-analysis/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/google/skills/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/gke-cost-analysis/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-google-skills-google-skills_bc973af1",
+        "canonical_skill_id": null,
+        "remote_path": "skills/cloud/gke-cost-analysis/SKILL.md",
+        "pinned_commit": "777fb8e194b9941c74c85f17b10202614ef4e435",
+        "git_blob_oid": "git_sha1:7731fd64606d4c103a4d42d7f4a9e665252536d9",
+        "raw_url": "https://raw.githubusercontent.com/google/skills/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/gke-cost-analysis/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:7731fd64606d4c103a4d42d7f4a9e665252536d9",
+        "size": 7875
+      }
+    },
+    {
+      "source_id": "src_https-github-com-google-skills-google-skills_bc973af1",
+      "path": "skills/cloud/gke-cost-optimization/SKILL.md",
+      "declared_name": "gke-cost-optimization",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:2bad733efcd523a56a2dd143325b6a1ad1208087",
+      "upstream_ref": "777fb8e194b9941c74c85f17b10202614ef4e435",
+      "git_blob_oid": "git_sha1:2bad733efcd523a56a2dd143325b6a1ad1208087",
+      "url": "https://github.com/google/skills/blob/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/gke-cost-optimization/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/google/skills/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/gke-cost-optimization/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-google-skills-google-skills_bc973af1",
+        "canonical_skill_id": null,
+        "remote_path": "skills/cloud/gke-cost-optimization/SKILL.md",
+        "pinned_commit": "777fb8e194b9941c74c85f17b10202614ef4e435",
+        "git_blob_oid": "git_sha1:2bad733efcd523a56a2dd143325b6a1ad1208087",
+        "raw_url": "https://raw.githubusercontent.com/google/skills/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/gke-cost-optimization/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:2bad733efcd523a56a2dd143325b6a1ad1208087",
+        "size": 10100
+      }
+    },
+    {
+      "source_id": "src_https-github-com-google-skills-google-skills_bc973af1",
+      "path": "skills/cloud/gke-golden-path/SKILL.md",
+      "declared_name": "gke-golden-path",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:a03c68b7d27bd9b41115862964db1d000c4e2455",
+      "upstream_ref": "777fb8e194b9941c74c85f17b10202614ef4e435",
+      "git_blob_oid": "git_sha1:a03c68b7d27bd9b41115862964db1d000c4e2455",
+      "url": "https://github.com/google/skills/blob/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/gke-golden-path/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/google/skills/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/gke-golden-path/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-google-skills-google-skills_bc973af1",
+        "canonical_skill_id": null,
+        "remote_path": "skills/cloud/gke-golden-path/SKILL.md",
+        "pinned_commit": "777fb8e194b9941c74c85f17b10202614ef4e435",
+        "git_blob_oid": "git_sha1:a03c68b7d27bd9b41115862964db1d000c4e2455",
+        "raw_url": "https://raw.githubusercontent.com/google/skills/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/gke-golden-path/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:a03c68b7d27bd9b41115862964db1d000c4e2455",
+        "size": 5885
+      }
+    },
+    {
+      "source_id": "src_https-github-com-google-skills-google-skills_bc973af1",
+      "path": "skills/cloud/gke-inference/SKILL.md",
+      "declared_name": "gke-inference",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:afe4660e66e4f508bfb19211e3c5ad5dd863bee8",
+      "upstream_ref": "777fb8e194b9941c74c85f17b10202614ef4e435",
+      "git_blob_oid": "git_sha1:afe4660e66e4f508bfb19211e3c5ad5dd863bee8",
+      "url": "https://github.com/google/skills/blob/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/gke-inference/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/google/skills/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/gke-inference/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-google-skills-google-skills_bc973af1",
+        "canonical_skill_id": null,
+        "remote_path": "skills/cloud/gke-inference/SKILL.md",
+        "pinned_commit": "777fb8e194b9941c74c85f17b10202614ef4e435",
+        "git_blob_oid": "git_sha1:afe4660e66e4f508bfb19211e3c5ad5dd863bee8",
+        "raw_url": "https://raw.githubusercontent.com/google/skills/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/gke-inference/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:afe4660e66e4f508bfb19211e3c5ad5dd863bee8",
+        "size": 7526
+      }
+    },
+    {
+      "source_id": "src_https-github-com-google-skills-google-skills_bc973af1",
+      "path": "skills/cloud/gke-manifest-generation/SKILL.md",
+      "declared_name": "gke-manifest-generation",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:4ef901df55d8e64439b0ae64bcd427018ef3b6df",
+      "upstream_ref": "777fb8e194b9941c74c85f17b10202614ef4e435",
+      "git_blob_oid": "git_sha1:4ef901df55d8e64439b0ae64bcd427018ef3b6df",
+      "url": "https://github.com/google/skills/blob/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/gke-manifest-generation/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/google/skills/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/gke-manifest-generation/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-google-skills-google-skills_bc973af1",
+        "canonical_skill_id": null,
+        "remote_path": "skills/cloud/gke-manifest-generation/SKILL.md",
+        "pinned_commit": "777fb8e194b9941c74c85f17b10202614ef4e435",
+        "git_blob_oid": "git_sha1:4ef901df55d8e64439b0ae64bcd427018ef3b6df",
+        "raw_url": "https://raw.githubusercontent.com/google/skills/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/gke-manifest-generation/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:4ef901df55d8e64439b0ae64bcd427018ef3b6df",
+        "size": 12346
+      }
+    },
+    {
+      "source_id": "src_https-github-com-google-skills-google-skills_bc973af1",
+      "path": "skills/cloud/gke-multitenancy/SKILL.md",
+      "declared_name": "gke-multitenancy",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:fbef2b89fe6266ea5c758db00a96ae6e1a24aedb",
+      "upstream_ref": "777fb8e194b9941c74c85f17b10202614ef4e435",
+      "git_blob_oid": "git_sha1:fbef2b89fe6266ea5c758db00a96ae6e1a24aedb",
+      "url": "https://github.com/google/skills/blob/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/gke-multitenancy/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/google/skills/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/gke-multitenancy/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-google-skills-google-skills_bc973af1",
+        "canonical_skill_id": null,
+        "remote_path": "skills/cloud/gke-multitenancy/SKILL.md",
+        "pinned_commit": "777fb8e194b9941c74c85f17b10202614ef4e435",
+        "git_blob_oid": "git_sha1:fbef2b89fe6266ea5c758db00a96ae6e1a24aedb",
+        "raw_url": "https://raw.githubusercontent.com/google/skills/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/gke-multitenancy/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:fbef2b89fe6266ea5c758db00a96ae6e1a24aedb",
+        "size": 5360
+      }
+    },
+    {
+      "source_id": "src_https-github-com-google-skills-google-skills_bc973af1",
+      "path": "skills/cloud/gke-networking/SKILL.md",
+      "declared_name": "gke-networking",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:97bfabc5a8cebaa0d7fe4869cc8130dae7d0c5fb",
+      "upstream_ref": "777fb8e194b9941c74c85f17b10202614ef4e435",
+      "git_blob_oid": "git_sha1:97bfabc5a8cebaa0d7fe4869cc8130dae7d0c5fb",
+      "url": "https://github.com/google/skills/blob/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/gke-networking/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/google/skills/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/gke-networking/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-google-skills-google-skills_bc973af1",
+        "canonical_skill_id": null,
+        "remote_path": "skills/cloud/gke-networking/SKILL.md",
+        "pinned_commit": "777fb8e194b9941c74c85f17b10202614ef4e435",
+        "git_blob_oid": "git_sha1:97bfabc5a8cebaa0d7fe4869cc8130dae7d0c5fb",
+        "raw_url": "https://raw.githubusercontent.com/google/skills/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/gke-networking/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:97bfabc5a8cebaa0d7fe4869cc8130dae7d0c5fb",
+        "size": 5948
+      }
+    },
+    {
+      "source_id": "src_https-github-com-google-skills-google-skills_bc973af1",
+      "path": "skills/cloud/gke-observability/SKILL.md",
+      "declared_name": "gke-observability",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:97d727c705691c8285cca0e86b2353da8b0fb67e",
+      "upstream_ref": "777fb8e194b9941c74c85f17b10202614ef4e435",
+      "git_blob_oid": "git_sha1:97d727c705691c8285cca0e86b2353da8b0fb67e",
+      "url": "https://github.com/google/skills/blob/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/gke-observability/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/google/skills/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/gke-observability/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-google-skills-google-skills_bc973af1",
+        "canonical_skill_id": null,
+        "remote_path": "skills/cloud/gke-observability/SKILL.md",
+        "pinned_commit": "777fb8e194b9941c74c85f17b10202614ef4e435",
+        "git_blob_oid": "git_sha1:97d727c705691c8285cca0e86b2353da8b0fb67e",
+        "raw_url": "https://raw.githubusercontent.com/google/skills/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/gke-observability/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:97d727c705691c8285cca0e86b2353da8b0fb67e",
+        "size": 10553
+      }
+    },
+    {
+      "source_id": "src_https-github-com-google-skills-google-skills_bc973af1",
+      "path": "skills/cloud/gke-platform-security/SKILL.md",
+      "declared_name": "gke-platform-security",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:5d486ba23c0b3981d1f1d17459062b7e0c494ddd",
+      "upstream_ref": "777fb8e194b9941c74c85f17b10202614ef4e435",
+      "git_blob_oid": "git_sha1:5d486ba23c0b3981d1f1d17459062b7e0c494ddd",
+      "url": "https://github.com/google/skills/blob/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/gke-platform-security/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/google/skills/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/gke-platform-security/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-google-skills-google-skills_bc973af1",
+        "canonical_skill_id": null,
+        "remote_path": "skills/cloud/gke-platform-security/SKILL.md",
+        "pinned_commit": "777fb8e194b9941c74c85f17b10202614ef4e435",
+        "git_blob_oid": "git_sha1:5d486ba23c0b3981d1f1d17459062b7e0c494ddd",
+        "raw_url": "https://raw.githubusercontent.com/google/skills/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/gke-platform-security/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:5d486ba23c0b3981d1f1d17459062b7e0c494ddd",
+        "size": 9841
+      }
+    },
+    {
+      "source_id": "src_https-github-com-google-skills-google-skills_bc973af1",
+      "path": "skills/cloud/gke-productionize/SKILL.md",
+      "declared_name": "gke-productionize",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:79f222d2ef3b430ddf3681e5b324cc0c3d5011e8",
+      "upstream_ref": "777fb8e194b9941c74c85f17b10202614ef4e435",
+      "git_blob_oid": "git_sha1:79f222d2ef3b430ddf3681e5b324cc0c3d5011e8",
+      "url": "https://github.com/google/skills/blob/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/gke-productionize/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/google/skills/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/gke-productionize/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-google-skills-google-skills_bc973af1",
+        "canonical_skill_id": null,
+        "remote_path": "skills/cloud/gke-productionize/SKILL.md",
+        "pinned_commit": "777fb8e194b9941c74c85f17b10202614ef4e435",
+        "git_blob_oid": "git_sha1:79f222d2ef3b430ddf3681e5b324cc0c3d5011e8",
+        "raw_url": "https://raw.githubusercontent.com/google/skills/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/gke-productionize/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:79f222d2ef3b430ddf3681e5b324cc0c3d5011e8",
+        "size": 5392
+      }
+    },
+    {
+      "source_id": "src_https-github-com-google-skills-google-skills_bc973af1",
+      "path": "skills/cloud/gke-reliability/SKILL.md",
+      "declared_name": "gke-reliability",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:337ff2bf03e5bf113ad4949cfc1db4249d24ec3b",
+      "upstream_ref": "777fb8e194b9941c74c85f17b10202614ef4e435",
+      "git_blob_oid": "git_sha1:337ff2bf03e5bf113ad4949cfc1db4249d24ec3b",
+      "url": "https://github.com/google/skills/blob/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/gke-reliability/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/google/skills/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/gke-reliability/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-google-skills-google-skills_bc973af1",
+        "canonical_skill_id": null,
+        "remote_path": "skills/cloud/gke-reliability/SKILL.md",
+        "pinned_commit": "777fb8e194b9941c74c85f17b10202614ef4e435",
+        "git_blob_oid": "git_sha1:337ff2bf03e5bf113ad4949cfc1db4249d24ec3b",
+        "raw_url": "https://raw.githubusercontent.com/google/skills/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/gke-reliability/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:337ff2bf03e5bf113ad4949cfc1db4249d24ec3b",
+        "size": 6941
+      }
+    },
+    {
+      "source_id": "src_https-github-com-google-skills-google-skills_bc973af1",
+      "path": "skills/cloud/gke-service-networking/SKILL.md",
+      "declared_name": "gke-service-networking",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:6d5608fc444aea5d6862155ada21e91767ce5a41",
+      "upstream_ref": "777fb8e194b9941c74c85f17b10202614ef4e435",
+      "git_blob_oid": "git_sha1:6d5608fc444aea5d6862155ada21e91767ce5a41",
+      "url": "https://github.com/google/skills/blob/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/gke-service-networking/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/google/skills/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/gke-service-networking/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-google-skills-google-skills_bc973af1",
+        "canonical_skill_id": null,
+        "remote_path": "skills/cloud/gke-service-networking/SKILL.md",
+        "pinned_commit": "777fb8e194b9941c74c85f17b10202614ef4e435",
+        "git_blob_oid": "git_sha1:6d5608fc444aea5d6862155ada21e91767ce5a41",
+        "raw_url": "https://raw.githubusercontent.com/google/skills/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/gke-service-networking/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:6d5608fc444aea5d6862155ada21e91767ce5a41",
+        "size": 6110
+      }
+    },
+    {
+      "source_id": "src_https-github-com-google-skills-google-skills_bc973af1",
+      "path": "skills/cloud/gke-storage/SKILL.md",
+      "declared_name": "gke-storage",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:5ec7080844dc7e1008ba83bbecf87ba8873166f6",
+      "upstream_ref": "777fb8e194b9941c74c85f17b10202614ef4e435",
+      "git_blob_oid": "git_sha1:5ec7080844dc7e1008ba83bbecf87ba8873166f6",
+      "url": "https://github.com/google/skills/blob/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/gke-storage/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/google/skills/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/gke-storage/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-google-skills-google-skills_bc973af1",
+        "canonical_skill_id": null,
+        "remote_path": "skills/cloud/gke-storage/SKILL.md",
+        "pinned_commit": "777fb8e194b9941c74c85f17b10202614ef4e435",
+        "git_blob_oid": "git_sha1:5ec7080844dc7e1008ba83bbecf87ba8873166f6",
+        "raw_url": "https://raw.githubusercontent.com/google/skills/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/gke-storage/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:5ec7080844dc7e1008ba83bbecf87ba8873166f6",
+        "size": 4901
+      }
+    },
+    {
+      "source_id": "src_https-github-com-google-skills-google-skills_bc973af1",
+      "path": "skills/cloud/gke-tpu-metrics-monitoring/SKILL.md",
+      "declared_name": "gke-tpu-metrics-monitoring",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:6ba22b8b2a4498f6cfa37c8d0cd3d32662735f34",
+      "upstream_ref": "777fb8e194b9941c74c85f17b10202614ef4e435",
+      "git_blob_oid": "git_sha1:6ba22b8b2a4498f6cfa37c8d0cd3d32662735f34",
+      "url": "https://github.com/google/skills/blob/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/gke-tpu-metrics-monitoring/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/google/skills/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/gke-tpu-metrics-monitoring/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-google-skills-google-skills_bc973af1",
+        "canonical_skill_id": null,
+        "remote_path": "skills/cloud/gke-tpu-metrics-monitoring/SKILL.md",
+        "pinned_commit": "777fb8e194b9941c74c85f17b10202614ef4e435",
+        "git_blob_oid": "git_sha1:6ba22b8b2a4498f6cfa37c8d0cd3d32662735f34",
+        "raw_url": "https://raw.githubusercontent.com/google/skills/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/gke-tpu-metrics-monitoring/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:6ba22b8b2a4498f6cfa37c8d0cd3d32662735f34",
+        "size": 7050
+      }
+    },
+    {
+      "source_id": "src_https-github-com-google-skills-google-skills_bc973af1",
+      "path": "skills/cloud/gke-upgrades/SKILL.md",
+      "declared_name": "gke-upgrades",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:eab51f99df9014621b18a589d362885feca7ac52",
+      "upstream_ref": "777fb8e194b9941c74c85f17b10202614ef4e435",
+      "git_blob_oid": "git_sha1:eab51f99df9014621b18a589d362885feca7ac52",
+      "url": "https://github.com/google/skills/blob/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/gke-upgrades/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/google/skills/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/gke-upgrades/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-google-skills-google-skills_bc973af1",
+        "canonical_skill_id": null,
+        "remote_path": "skills/cloud/gke-upgrades/SKILL.md",
+        "pinned_commit": "777fb8e194b9941c74c85f17b10202614ef4e435",
+        "git_blob_oid": "git_sha1:eab51f99df9014621b18a589d362885feca7ac52",
+        "raw_url": "https://raw.githubusercontent.com/google/skills/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/gke-upgrades/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:eab51f99df9014621b18a589d362885feca7ac52",
+        "size": 17810
+      }
+    },
+    {
+      "source_id": "src_https-github-com-google-skills-google-skills_bc973af1",
+      "path": "skills/cloud/gke-workload-scaling/SKILL.md",
+      "declared_name": "gke-workload-scaling",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:b4eff546dab048a008d2c31233ec619f93064b85",
+      "upstream_ref": "777fb8e194b9941c74c85f17b10202614ef4e435",
+      "git_blob_oid": "git_sha1:b4eff546dab048a008d2c31233ec619f93064b85",
+      "url": "https://github.com/google/skills/blob/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/gke-workload-scaling/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/google/skills/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/gke-workload-scaling/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-google-skills-google-skills_bc973af1",
+        "canonical_skill_id": null,
+        "remote_path": "skills/cloud/gke-workload-scaling/SKILL.md",
+        "pinned_commit": "777fb8e194b9941c74c85f17b10202614ef4e435",
+        "git_blob_oid": "git_sha1:b4eff546dab048a008d2c31233ec619f93064b85",
+        "raw_url": "https://raw.githubusercontent.com/google/skills/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/gke-workload-scaling/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:b4eff546dab048a008d2c31233ec619f93064b85",
+        "size": 4994
+      }
+    },
+    {
+      "source_id": "src_https-github-com-google-skills-google-skills_bc973af1",
+      "path": "skills/cloud/gke-workload-security/SKILL.md",
+      "declared_name": "gke-workload-security",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:382f3f1c35c6fb58976cd4828d58c8163890fbda",
+      "upstream_ref": "777fb8e194b9941c74c85f17b10202614ef4e435",
+      "git_blob_oid": "git_sha1:382f3f1c35c6fb58976cd4828d58c8163890fbda",
+      "url": "https://github.com/google/skills/blob/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/gke-workload-security/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/google/skills/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/gke-workload-security/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-google-skills-google-skills_bc973af1",
+        "canonical_skill_id": null,
+        "remote_path": "skills/cloud/gke-workload-security/SKILL.md",
+        "pinned_commit": "777fb8e194b9941c74c85f17b10202614ef4e435",
+        "git_blob_oid": "git_sha1:382f3f1c35c6fb58976cd4828d58c8163890fbda",
+        "raw_url": "https://raw.githubusercontent.com/google/skills/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/gke-workload-security/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:382f3f1c35c6fb58976cd4828d58c8163890fbda",
+        "size": 7516
+      }
+    },
+    {
+      "source_id": "src_https-github-com-google-skills-google-skills_bc973af1",
+      "path": "skills/cloud/gke-workload-troubleshooting/SKILL.md",
+      "declared_name": "gke-workload-troubleshooting",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:a81cc33d3b236668b3be28437735285abea0a081",
+      "upstream_ref": "777fb8e194b9941c74c85f17b10202614ef4e435",
+      "git_blob_oid": "git_sha1:a81cc33d3b236668b3be28437735285abea0a081",
+      "url": "https://github.com/google/skills/blob/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/gke-workload-troubleshooting/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/google/skills/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/gke-workload-troubleshooting/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-google-skills-google-skills_bc973af1",
+        "canonical_skill_id": null,
+        "remote_path": "skills/cloud/gke-workload-troubleshooting/SKILL.md",
+        "pinned_commit": "777fb8e194b9941c74c85f17b10202614ef4e435",
+        "git_blob_oid": "git_sha1:a81cc33d3b236668b3be28437735285abea0a081",
+        "raw_url": "https://raw.githubusercontent.com/google/skills/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/gke-workload-troubleshooting/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:a81cc33d3b236668b3be28437735285abea0a081",
+        "size": 10466
+      }
+    },
+    {
+      "source_id": "src_https-github-com-google-skills-google-skills_bc973af1",
+      "path": "skills/cloud/google-agents-cli-onboarding/SKILL.md",
+      "declared_name": "google-agents-cli-onboarding",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:720444e3332ca7f4bb1712eb8707ef9d07185f05",
+      "upstream_ref": "777fb8e194b9941c74c85f17b10202614ef4e435",
+      "git_blob_oid": "git_sha1:720444e3332ca7f4bb1712eb8707ef9d07185f05",
+      "url": "https://github.com/google/skills/blob/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/google-agents-cli-onboarding/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/google/skills/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/google-agents-cli-onboarding/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-google-skills-google-skills_bc973af1",
+        "canonical_skill_id": null,
+        "remote_path": "skills/cloud/google-agents-cli-onboarding/SKILL.md",
+        "pinned_commit": "777fb8e194b9941c74c85f17b10202614ef4e435",
+        "git_blob_oid": "git_sha1:720444e3332ca7f4bb1712eb8707ef9d07185f05",
+        "raw_url": "https://raw.githubusercontent.com/google/skills/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/google-agents-cli-onboarding/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:720444e3332ca7f4bb1712eb8707ef9d07185f05",
+        "size": 4018
+      }
+    },
+    {
+      "source_id": "src_https-github-com-google-skills-google-skills_bc973af1",
+      "path": "skills/cloud/google-cloud-global-frontend-configuration/SKILL.md",
+      "declared_name": "google-cloud-global-frontend-configuration",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:924b2c79b4ac7464e7e6b101e16d3bedb99b7018",
+      "upstream_ref": "777fb8e194b9941c74c85f17b10202614ef4e435",
+      "git_blob_oid": "git_sha1:924b2c79b4ac7464e7e6b101e16d3bedb99b7018",
+      "url": "https://github.com/google/skills/blob/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/google-cloud-global-frontend-configuration/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/google/skills/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/google-cloud-global-frontend-configuration/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-google-skills-google-skills_bc973af1",
+        "canonical_skill_id": null,
+        "remote_path": "skills/cloud/google-cloud-global-frontend-configuration/SKILL.md",
+        "pinned_commit": "777fb8e194b9941c74c85f17b10202614ef4e435",
+        "git_blob_oid": "git_sha1:924b2c79b4ac7464e7e6b101e16d3bedb99b7018",
+        "raw_url": "https://raw.githubusercontent.com/google/skills/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/google-cloud-global-frontend-configuration/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:924b2c79b4ac7464e7e6b101e16d3bedb99b7018",
+        "size": 10325
+      }
+    },
+    {
+      "source_id": "src_https-github-com-google-skills-google-skills_bc973af1",
+      "path": "skills/cloud/google-cloud-networking-observability/SKILL.md",
+      "declared_name": "google-cloud-networking-observability",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:aa1aad2e486a993251573b932706577db0a90ce8",
+      "upstream_ref": "777fb8e194b9941c74c85f17b10202614ef4e435",
+      "git_blob_oid": "git_sha1:aa1aad2e486a993251573b932706577db0a90ce8",
+      "url": "https://github.com/google/skills/blob/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/google-cloud-networking-observability/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/google/skills/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/google-cloud-networking-observability/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-google-skills-google-skills_bc973af1",
+        "canonical_skill_id": null,
+        "remote_path": "skills/cloud/google-cloud-networking-observability/SKILL.md",
+        "pinned_commit": "777fb8e194b9941c74c85f17b10202614ef4e435",
+        "git_blob_oid": "git_sha1:aa1aad2e486a993251573b932706577db0a90ce8",
+        "raw_url": "https://raw.githubusercontent.com/google/skills/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/google-cloud-networking-observability/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:aa1aad2e486a993251573b932706577db0a90ce8",
+        "size": 7632
+      }
+    },
+    {
+      "source_id": "src_https-github-com-google-skills-google-skills_bc973af1",
+      "path": "skills/cloud/google-cloud-recipe-auth/SKILL.md",
+      "declared_name": "google-cloud-recipe-auth",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:0f6e79c58eed43b45b541872bbdcb13257d5b23e",
+      "upstream_ref": "777fb8e194b9941c74c85f17b10202614ef4e435",
+      "git_blob_oid": "git_sha1:0f6e79c58eed43b45b541872bbdcb13257d5b23e",
+      "url": "https://github.com/google/skills/blob/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/google-cloud-recipe-auth/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/google/skills/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/google-cloud-recipe-auth/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-google-skills-google-skills_bc973af1",
+        "canonical_skill_id": null,
+        "remote_path": "skills/cloud/google-cloud-recipe-auth/SKILL.md",
+        "pinned_commit": "777fb8e194b9941c74c85f17b10202614ef4e435",
+        "git_blob_oid": "git_sha1:0f6e79c58eed43b45b541872bbdcb13257d5b23e",
+        "raw_url": "https://raw.githubusercontent.com/google/skills/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/google-cloud-recipe-auth/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:0f6e79c58eed43b45b541872bbdcb13257d5b23e",
+        "size": 12219
+      }
+    },
+    {
+      "source_id": "src_https-github-com-google-skills-google-skills_bc973af1",
+      "path": "skills/cloud/google-cloud-recipe-foundation-builder/SKILL.md",
+      "declared_name": "google-cloud-recipe-foundation-builder",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:6894b8b2a17a9f16e51a2d5907c1b3ae31544e40",
+      "upstream_ref": "777fb8e194b9941c74c85f17b10202614ef4e435",
+      "git_blob_oid": "git_sha1:6894b8b2a17a9f16e51a2d5907c1b3ae31544e40",
+      "url": "https://github.com/google/skills/blob/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/google-cloud-recipe-foundation-builder/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/google/skills/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/google-cloud-recipe-foundation-builder/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-google-skills-google-skills_bc973af1",
+        "canonical_skill_id": null,
+        "remote_path": "skills/cloud/google-cloud-recipe-foundation-builder/SKILL.md",
+        "pinned_commit": "777fb8e194b9941c74c85f17b10202614ef4e435",
+        "git_blob_oid": "git_sha1:6894b8b2a17a9f16e51a2d5907c1b3ae31544e40",
+        "raw_url": "https://raw.githubusercontent.com/google/skills/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/google-cloud-recipe-foundation-builder/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:6894b8b2a17a9f16e51a2d5907c1b3ae31544e40",
+        "size": 19259
+      }
+    },
+    {
+      "source_id": "src_https-github-com-google-skills-google-skills_bc973af1",
+      "path": "skills/cloud/google-cloud-recipe-onboarding/SKILL.md",
+      "declared_name": "google-cloud-recipe-onboarding",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:a717981fdea3f6f31c466529cabd74c647f715e1",
+      "upstream_ref": "777fb8e194b9941c74c85f17b10202614ef4e435",
+      "git_blob_oid": "git_sha1:a717981fdea3f6f31c466529cabd74c647f715e1",
+      "url": "https://github.com/google/skills/blob/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/google-cloud-recipe-onboarding/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/google/skills/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/google-cloud-recipe-onboarding/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-google-skills-google-skills_bc973af1",
+        "canonical_skill_id": null,
+        "remote_path": "skills/cloud/google-cloud-recipe-onboarding/SKILL.md",
+        "pinned_commit": "777fb8e194b9941c74c85f17b10202614ef4e435",
+        "git_blob_oid": "git_sha1:a717981fdea3f6f31c466529cabd74c647f715e1",
+        "raw_url": "https://raw.githubusercontent.com/google/skills/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/google-cloud-recipe-onboarding/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:a717981fdea3f6f31c466529cabd74c647f715e1",
+        "size": 12644
+      }
+    },
+    {
+      "source_id": "src_https-github-com-google-skills-google-skills_bc973af1",
+      "path": "skills/cloud/google-cloud-solution-agentic-ai-bidirectional-streaming/SKILL.md",
+      "declared_name": "google-cloud-solution-agentic-ai-bidirectional-streaming",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:020d46f30ce3d1ba505bbda17367232981610e1e",
+      "upstream_ref": "777fb8e194b9941c74c85f17b10202614ef4e435",
+      "git_blob_oid": "git_sha1:020d46f30ce3d1ba505bbda17367232981610e1e",
+      "url": "https://github.com/google/skills/blob/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/google-cloud-solution-agentic-ai-bidirectional-streaming/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/google/skills/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/google-cloud-solution-agentic-ai-bidirectional-streaming/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-google-skills-google-skills_bc973af1",
+        "canonical_skill_id": null,
+        "remote_path": "skills/cloud/google-cloud-solution-agentic-ai-bidirectional-streaming/SKILL.md",
+        "pinned_commit": "777fb8e194b9941c74c85f17b10202614ef4e435",
+        "git_blob_oid": "git_sha1:020d46f30ce3d1ba505bbda17367232981610e1e",
+        "raw_url": "https://raw.githubusercontent.com/google/skills/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/google-cloud-solution-agentic-ai-bidirectional-streaming/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:020d46f30ce3d1ba505bbda17367232981610e1e",
+        "size": 9216
+      }
+    },
+    {
+      "source_id": "src_https-github-com-google-skills-google-skills_bc973af1",
+      "path": "skills/cloud/google-cloud-solution-agentic-ai-borderless-data-lakehouse/SKILL.md",
+      "declared_name": "google-cloud-solution-agentic-ai-borderless-data-lakehouse",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:628831deae61f39b4857b9e67b4ddf9e6f1bdca3",
+      "upstream_ref": "777fb8e194b9941c74c85f17b10202614ef4e435",
+      "git_blob_oid": "git_sha1:628831deae61f39b4857b9e67b4ddf9e6f1bdca3",
+      "url": "https://github.com/google/skills/blob/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/google-cloud-solution-agentic-ai-borderless-data-lakehouse/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/google/skills/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/google-cloud-solution-agentic-ai-borderless-data-lakehouse/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-google-skills-google-skills_bc973af1",
+        "canonical_skill_id": null,
+        "remote_path": "skills/cloud/google-cloud-solution-agentic-ai-borderless-data-lakehouse/SKILL.md",
+        "pinned_commit": "777fb8e194b9941c74c85f17b10202614ef4e435",
+        "git_blob_oid": "git_sha1:628831deae61f39b4857b9e67b4ddf9e6f1bdca3",
+        "raw_url": "https://raw.githubusercontent.com/google/skills/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/google-cloud-solution-agentic-ai-borderless-data-lakehouse/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:628831deae61f39b4857b9e67b4ddf9e6f1bdca3",
+        "size": 9902
+      }
+    },
+    {
+      "source_id": "src_https-github-com-google-skills-google-skills_bc973af1",
+      "path": "skills/cloud/google-cloud-solution-agentic-ai-data-science-workflow/SKILL.md",
+      "declared_name": "google-cloud-solution-agentic-ai-data-science-workflow",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:9271452b4638a227c3983339c7e75e8cda18ff54",
+      "upstream_ref": "777fb8e194b9941c74c85f17b10202614ef4e435",
+      "git_blob_oid": "git_sha1:9271452b4638a227c3983339c7e75e8cda18ff54",
+      "url": "https://github.com/google/skills/blob/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/google-cloud-solution-agentic-ai-data-science-workflow/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/google/skills/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/google-cloud-solution-agentic-ai-data-science-workflow/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-google-skills-google-skills_bc973af1",
+        "canonical_skill_id": null,
+        "remote_path": "skills/cloud/google-cloud-solution-agentic-ai-data-science-workflow/SKILL.md",
+        "pinned_commit": "777fb8e194b9941c74c85f17b10202614ef4e435",
+        "git_blob_oid": "git_sha1:9271452b4638a227c3983339c7e75e8cda18ff54",
+        "raw_url": "https://raw.githubusercontent.com/google/skills/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/google-cloud-solution-agentic-ai-data-science-workflow/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:9271452b4638a227c3983339c7e75e8cda18ff54",
+        "size": 10223
+      }
+    },
+    {
+      "source_id": "src_https-github-com-google-skills-google-skills_bc973af1",
+      "path": "skills/cloud/google-cloud-solution-agentic-analytics-spark-knowledge-catalog/SKILL.md",
+      "declared_name": "google-cloud-solution-agentic-analytics-spark-knowledge-catalog",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:3c956cf60e05eadd533ddacc0b555711f9e21367",
+      "upstream_ref": "777fb8e194b9941c74c85f17b10202614ef4e435",
+      "git_blob_oid": "git_sha1:3c956cf60e05eadd533ddacc0b555711f9e21367",
+      "url": "https://github.com/google/skills/blob/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/google-cloud-solution-agentic-analytics-spark-knowledge-catalog/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/google/skills/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/google-cloud-solution-agentic-analytics-spark-knowledge-catalog/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-google-skills-google-skills_bc973af1",
+        "canonical_skill_id": null,
+        "remote_path": "skills/cloud/google-cloud-solution-agentic-analytics-spark-knowledge-catalog/SKILL.md",
+        "pinned_commit": "777fb8e194b9941c74c85f17b10202614ef4e435",
+        "git_blob_oid": "git_sha1:3c956cf60e05eadd533ddacc0b555711f9e21367",
+        "raw_url": "https://raw.githubusercontent.com/google/skills/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/google-cloud-solution-agentic-analytics-spark-knowledge-catalog/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:3c956cf60e05eadd533ddacc0b555711f9e21367",
+        "size": 17524
+      }
+    },
+    {
+      "source_id": "src_https-github-com-google-skills-google-skills_bc973af1",
+      "path": "skills/cloud/google-cloud-solution-architecture/SKILL.md",
+      "declared_name": "google-cloud-solution-architecture",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:6d42da4ca07825bfcf0bfe5dc6cb8e31f2e548e8",
+      "upstream_ref": "777fb8e194b9941c74c85f17b10202614ef4e435",
+      "git_blob_oid": "git_sha1:6d42da4ca07825bfcf0bfe5dc6cb8e31f2e548e8",
+      "url": "https://github.com/google/skills/blob/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/google-cloud-solution-architecture/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/google/skills/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/google-cloud-solution-architecture/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-google-skills-google-skills_bc973af1",
+        "canonical_skill_id": null,
+        "remote_path": "skills/cloud/google-cloud-solution-architecture/SKILL.md",
+        "pinned_commit": "777fb8e194b9941c74c85f17b10202614ef4e435",
+        "git_blob_oid": "git_sha1:6d42da4ca07825bfcf0bfe5dc6cb8e31f2e548e8",
+        "raw_url": "https://raw.githubusercontent.com/google/skills/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/google-cloud-solution-architecture/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:6d42da4ca07825bfcf0bfe5dc6cb8e31f2e548e8",
+        "size": 12541
+      }
+    },
+    {
+      "source_id": "src_https-github-com-google-skills-google-skills_bc973af1",
+      "path": "skills/cloud/google-cloud-solution-build-deploy-agents/SKILL.md",
+      "declared_name": "google-cloud-solution-build-deploy-agents",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:e5c3ff1f6ab09c5bb5a3120e3a94fd10c3392d4e",
+      "upstream_ref": "777fb8e194b9941c74c85f17b10202614ef4e435",
+      "git_blob_oid": "git_sha1:e5c3ff1f6ab09c5bb5a3120e3a94fd10c3392d4e",
+      "url": "https://github.com/google/skills/blob/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/google-cloud-solution-build-deploy-agents/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/google/skills/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/google-cloud-solution-build-deploy-agents/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-google-skills-google-skills_bc973af1",
+        "canonical_skill_id": null,
+        "remote_path": "skills/cloud/google-cloud-solution-build-deploy-agents/SKILL.md",
+        "pinned_commit": "777fb8e194b9941c74c85f17b10202614ef4e435",
+        "git_blob_oid": "git_sha1:e5c3ff1f6ab09c5bb5a3120e3a94fd10c3392d4e",
+        "raw_url": "https://raw.githubusercontent.com/google/skills/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/google-cloud-solution-build-deploy-agents/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:e5c3ff1f6ab09c5bb5a3120e3a94fd10c3392d4e",
+        "size": 13805
+      }
+    },
+    {
+      "source_id": "src_https-github-com-google-skills-google-skills_bc973af1",
+      "path": "skills/cloud/google-cloud-solution-guided-gke-ai-migration/SKILL.md",
+      "declared_name": "google-cloud-solution-guided-gke-ai-migration",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:48a027789e31453222ea76f29468e3adf414645a",
+      "upstream_ref": "777fb8e194b9941c74c85f17b10202614ef4e435",
+      "git_blob_oid": "git_sha1:48a027789e31453222ea76f29468e3adf414645a",
+      "url": "https://github.com/google/skills/blob/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/google-cloud-solution-guided-gke-ai-migration/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/google/skills/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/google-cloud-solution-guided-gke-ai-migration/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-google-skills-google-skills_bc973af1",
+        "canonical_skill_id": null,
+        "remote_path": "skills/cloud/google-cloud-solution-guided-gke-ai-migration/SKILL.md",
+        "pinned_commit": "777fb8e194b9941c74c85f17b10202614ef4e435",
+        "git_blob_oid": "git_sha1:48a027789e31453222ea76f29468e3adf414645a",
+        "raw_url": "https://raw.githubusercontent.com/google/skills/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/google-cloud-solution-guided-gke-ai-migration/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:48a027789e31453222ea76f29468e3adf414645a",
+        "size": 33146
+      }
+    },
+    {
+      "source_id": "src_https-github-com-google-skills-google-skills_bc973af1",
+      "path": "skills/cloud/google-cloud-solution-n-tier-serverless-web-app/SKILL.md",
+      "declared_name": "google-cloud-solution-n-tier-serverless-web-app",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:b1cddfd733efd3d1f5c3b0f64ff87b4ad4f8510e",
+      "upstream_ref": "777fb8e194b9941c74c85f17b10202614ef4e435",
+      "git_blob_oid": "git_sha1:b1cddfd733efd3d1f5c3b0f64ff87b4ad4f8510e",
+      "url": "https://github.com/google/skills/blob/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/google-cloud-solution-n-tier-serverless-web-app/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/google/skills/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/google-cloud-solution-n-tier-serverless-web-app/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-google-skills-google-skills_bc973af1",
+        "canonical_skill_id": null,
+        "remote_path": "skills/cloud/google-cloud-solution-n-tier-serverless-web-app/SKILL.md",
+        "pinned_commit": "777fb8e194b9941c74c85f17b10202614ef4e435",
+        "git_blob_oid": "git_sha1:b1cddfd733efd3d1f5c3b0f64ff87b4ad4f8510e",
+        "raw_url": "https://raw.githubusercontent.com/google/skills/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/google-cloud-solution-n-tier-serverless-web-app/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:b1cddfd733efd3d1f5c3b0f64ff87b4ad4f8510e",
+        "size": 16263
+      }
+    },
+    {
+      "source_id": "src_https-github-com-google-skills-google-skills_bc973af1",
+      "path": "skills/cloud/google-cloud-solution-rag-enterprise-search-gke-sqldb/SKILL.md",
+      "declared_name": "google-cloud-solution-rag-enterprise-search-gke-sqldb",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:f93e8d79fae13f2710ede2c0e63aa2b3b7c17964",
+      "upstream_ref": "777fb8e194b9941c74c85f17b10202614ef4e435",
+      "git_blob_oid": "git_sha1:f93e8d79fae13f2710ede2c0e63aa2b3b7c17964",
+      "url": "https://github.com/google/skills/blob/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/google-cloud-solution-rag-enterprise-search-gke-sqldb/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/google/skills/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/google-cloud-solution-rag-enterprise-search-gke-sqldb/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-google-skills-google-skills_bc973af1",
+        "canonical_skill_id": null,
+        "remote_path": "skills/cloud/google-cloud-solution-rag-enterprise-search-gke-sqldb/SKILL.md",
+        "pinned_commit": "777fb8e194b9941c74c85f17b10202614ef4e435",
+        "git_blob_oid": "git_sha1:f93e8d79fae13f2710ede2c0e63aa2b3b7c17964",
+        "raw_url": "https://raw.githubusercontent.com/google/skills/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/google-cloud-solution-rag-enterprise-search-gke-sqldb/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:f93e8d79fae13f2710ede2c0e63aa2b3b7c17964",
+        "size": 15903
+      }
+    },
+    {
+      "source_id": "src_https-github-com-google-skills-google-skills_bc973af1",
+      "path": "skills/cloud/google-cloud-storage-basics/SKILL.md",
+      "declared_name": "google-cloud-storage-basics",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:10d5495fada5e222141c15b701192b5bd1f2978c",
+      "upstream_ref": "777fb8e194b9941c74c85f17b10202614ef4e435",
+      "git_blob_oid": "git_sha1:10d5495fada5e222141c15b701192b5bd1f2978c",
+      "url": "https://github.com/google/skills/blob/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/google-cloud-storage-basics/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/google/skills/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/google-cloud-storage-basics/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-google-skills-google-skills_bc973af1",
+        "canonical_skill_id": null,
+        "remote_path": "skills/cloud/google-cloud-storage-basics/SKILL.md",
+        "pinned_commit": "777fb8e194b9941c74c85f17b10202614ef4e435",
+        "git_blob_oid": "git_sha1:10d5495fada5e222141c15b701192b5bd1f2978c",
+        "raw_url": "https://raw.githubusercontent.com/google/skills/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/google-cloud-storage-basics/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:10d5495fada5e222141c15b701192b5bd1f2978c",
+        "size": 7834
+      }
+    },
+    {
+      "source_id": "src_https-github-com-google-skills-google-skills_bc973af1",
+      "path": "skills/cloud/google-cloud-waf-cost-optimization/SKILL.md",
+      "declared_name": "google-cloud-waf-cost-optimization",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:db88022dd5c3e83d65803795bce67fe49d4e62c1",
+      "upstream_ref": "777fb8e194b9941c74c85f17b10202614ef4e435",
+      "git_blob_oid": "git_sha1:db88022dd5c3e83d65803795bce67fe49d4e62c1",
+      "url": "https://github.com/google/skills/blob/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/google-cloud-waf-cost-optimization/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/google/skills/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/google-cloud-waf-cost-optimization/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-google-skills-google-skills_bc973af1",
+        "canonical_skill_id": null,
+        "remote_path": "skills/cloud/google-cloud-waf-cost-optimization/SKILL.md",
+        "pinned_commit": "777fb8e194b9941c74c85f17b10202614ef4e435",
+        "git_blob_oid": "git_sha1:db88022dd5c3e83d65803795bce67fe49d4e62c1",
+        "raw_url": "https://raw.githubusercontent.com/google/skills/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/google-cloud-waf-cost-optimization/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:db88022dd5c3e83d65803795bce67fe49d4e62c1",
+        "size": 10422
+      }
+    },
+    {
+      "source_id": "src_https-github-com-google-skills-google-skills_bc973af1",
+      "path": "skills/cloud/google-cloud-waf-operational-excellence/SKILL.md",
+      "declared_name": "google-cloud-waf-operational-excellence",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:83cb7acac757359ca5212a5ffcf4af24c7cf4c1b",
+      "upstream_ref": "777fb8e194b9941c74c85f17b10202614ef4e435",
+      "git_blob_oid": "git_sha1:83cb7acac757359ca5212a5ffcf4af24c7cf4c1b",
+      "url": "https://github.com/google/skills/blob/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/google-cloud-waf-operational-excellence/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/google/skills/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/google-cloud-waf-operational-excellence/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-google-skills-google-skills_bc973af1",
+        "canonical_skill_id": null,
+        "remote_path": "skills/cloud/google-cloud-waf-operational-excellence/SKILL.md",
+        "pinned_commit": "777fb8e194b9941c74c85f17b10202614ef4e435",
+        "git_blob_oid": "git_sha1:83cb7acac757359ca5212a5ffcf4af24c7cf4c1b",
+        "raw_url": "https://raw.githubusercontent.com/google/skills/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/google-cloud-waf-operational-excellence/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:83cb7acac757359ca5212a5ffcf4af24c7cf4c1b",
+        "size": 6921
+      }
+    },
+    {
+      "source_id": "src_https-github-com-google-skills-google-skills_bc973af1",
+      "path": "skills/cloud/google-cloud-waf-performance-optimization/SKILL.md",
+      "declared_name": "google-cloud-waf-performance-optimization",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:35bfdf1b6c1dde2620a982dfe11f18b48422bb9c",
+      "upstream_ref": "777fb8e194b9941c74c85f17b10202614ef4e435",
+      "git_blob_oid": "git_sha1:35bfdf1b6c1dde2620a982dfe11f18b48422bb9c",
+      "url": "https://github.com/google/skills/blob/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/google-cloud-waf-performance-optimization/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/google/skills/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/google-cloud-waf-performance-optimization/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-google-skills-google-skills_bc973af1",
+        "canonical_skill_id": null,
+        "remote_path": "skills/cloud/google-cloud-waf-performance-optimization/SKILL.md",
+        "pinned_commit": "777fb8e194b9941c74c85f17b10202614ef4e435",
+        "git_blob_oid": "git_sha1:35bfdf1b6c1dde2620a982dfe11f18b48422bb9c",
+        "raw_url": "https://raw.githubusercontent.com/google/skills/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/google-cloud-waf-performance-optimization/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:35bfdf1b6c1dde2620a982dfe11f18b48422bb9c",
+        "size": 7318
+      }
+    },
+    {
+      "source_id": "src_https-github-com-google-skills-google-skills_bc973af1",
+      "path": "skills/cloud/google-cloud-waf-reliability/SKILL.md",
+      "declared_name": "google-cloud-waf-reliability",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:f9d648b12015b365837cebc2d6f8c4c8e2ccf7d1",
+      "upstream_ref": "777fb8e194b9941c74c85f17b10202614ef4e435",
+      "git_blob_oid": "git_sha1:f9d648b12015b365837cebc2d6f8c4c8e2ccf7d1",
+      "url": "https://github.com/google/skills/blob/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/google-cloud-waf-reliability/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/google/skills/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/google-cloud-waf-reliability/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-google-skills-google-skills_bc973af1",
+        "canonical_skill_id": null,
+        "remote_path": "skills/cloud/google-cloud-waf-reliability/SKILL.md",
+        "pinned_commit": "777fb8e194b9941c74c85f17b10202614ef4e435",
+        "git_blob_oid": "git_sha1:f9d648b12015b365837cebc2d6f8c4c8e2ccf7d1",
+        "raw_url": "https://raw.githubusercontent.com/google/skills/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/google-cloud-waf-reliability/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:f9d648b12015b365837cebc2d6f8c4c8e2ccf7d1",
+        "size": 8078
+      }
+    },
+    {
+      "source_id": "src_https-github-com-google-skills-google-skills_bc973af1",
+      "path": "skills/cloud/google-cloud-waf-security/SKILL.md",
+      "declared_name": "google-cloud-waf-security",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:1f19b6167f606757ab5ac528cd041872e280eea6",
+      "upstream_ref": "777fb8e194b9941c74c85f17b10202614ef4e435",
+      "git_blob_oid": "git_sha1:1f19b6167f606757ab5ac528cd041872e280eea6",
+      "url": "https://github.com/google/skills/blob/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/google-cloud-waf-security/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/google/skills/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/google-cloud-waf-security/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-google-skills-google-skills_bc973af1",
+        "canonical_skill_id": null,
+        "remote_path": "skills/cloud/google-cloud-waf-security/SKILL.md",
+        "pinned_commit": "777fb8e194b9941c74c85f17b10202614ef4e435",
+        "git_blob_oid": "git_sha1:1f19b6167f606757ab5ac528cd041872e280eea6",
+        "raw_url": "https://raw.githubusercontent.com/google/skills/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/google-cloud-waf-security/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:1f19b6167f606757ab5ac528cd041872e280eea6",
+        "size": 14775
+      }
+    },
+    {
+      "source_id": "src_https-github-com-google-skills-google-skills_bc973af1",
+      "path": "skills/cloud/google-cloud-waf-sustainability/SKILL.md",
+      "declared_name": "google-cloud-waf-sustainability",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:10362b86aeeb1ba30ab77cad3881e67ce3f77b95",
+      "upstream_ref": "777fb8e194b9941c74c85f17b10202614ef4e435",
+      "git_blob_oid": "git_sha1:10362b86aeeb1ba30ab77cad3881e67ce3f77b95",
+      "url": "https://github.com/google/skills/blob/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/google-cloud-waf-sustainability/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/google/skills/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/google-cloud-waf-sustainability/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-google-skills-google-skills_bc973af1",
+        "canonical_skill_id": null,
+        "remote_path": "skills/cloud/google-cloud-waf-sustainability/SKILL.md",
+        "pinned_commit": "777fb8e194b9941c74c85f17b10202614ef4e435",
+        "git_blob_oid": "git_sha1:10362b86aeeb1ba30ab77cad3881e67ce3f77b95",
+        "raw_url": "https://raw.githubusercontent.com/google/skills/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/google-cloud-waf-sustainability/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:10362b86aeeb1ba30ab77cad3881e67ce3f77b95",
+        "size": 13293
+      }
+    },
+    {
+      "source_id": "src_https-github-com-google-skills-google-skills_bc973af1",
+      "path": "skills/cloud/spanner-basics/SKILL.md",
+      "declared_name": "spanner-basics",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:8d325bdd7d42f87a0ebf5f61088902f7bd3b17fe",
+      "upstream_ref": "777fb8e194b9941c74c85f17b10202614ef4e435",
+      "git_blob_oid": "git_sha1:8d325bdd7d42f87a0ebf5f61088902f7bd3b17fe",
+      "url": "https://github.com/google/skills/blob/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/spanner-basics/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/google/skills/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/spanner-basics/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-google-skills-google-skills_bc973af1",
+        "canonical_skill_id": null,
+        "remote_path": "skills/cloud/spanner-basics/SKILL.md",
+        "pinned_commit": "777fb8e194b9941c74c85f17b10202614ef4e435",
+        "git_blob_oid": "git_sha1:8d325bdd7d42f87a0ebf5f61088902f7bd3b17fe",
+        "raw_url": "https://raw.githubusercontent.com/google/skills/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/spanner-basics/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:8d325bdd7d42f87a0ebf5f61088902f7bd3b17fe",
+        "size": 3246
+      }
+    },
+    {
+      "source_id": "src_https-github-com-google-skills-google-skills_bc973af1",
+      "path": "skills/cloud/workload-manager-basics/SKILL.md",
+      "declared_name": "workload-manager-basics",
+      "format": "SKILL.md",
+      "parse_confidence": "high",
+      "content_digest": "git_sha1:bbf929b7c616b0b2c1e5950060b31bd322881580",
+      "upstream_ref": "777fb8e194b9941c74c85f17b10202614ef4e435",
+      "git_blob_oid": "git_sha1:bbf929b7c616b0b2c1e5950060b31bd322881580",
+      "url": "https://github.com/google/skills/blob/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/workload-manager-basics/SKILL.md",
+      "raw_url": "https://raw.githubusercontent.com/google/skills/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/workload-manager-basics/SKILL.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-google-skills-google-skills_bc973af1",
+        "canonical_skill_id": null,
+        "remote_path": "skills/cloud/workload-manager-basics/SKILL.md",
+        "pinned_commit": "777fb8e194b9941c74c85f17b10202614ef4e435",
+        "git_blob_oid": "git_sha1:bbf929b7c616b0b2c1e5950060b31bd322881580",
+        "raw_url": "https://raw.githubusercontent.com/google/skills/777fb8e194b9941c74c85f17b10202614ef4e435/skills/cloud/workload-manager-basics/SKILL.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:bbf929b7c616b0b2c1e5950060b31bd322881580",
+        "size": 6935
+      }
+    }
+  ],
+  "digest": "sha256:e59a48713d340b88e20d659fa8db649b14686f129d7496a11d92e560cb158a05"
+}

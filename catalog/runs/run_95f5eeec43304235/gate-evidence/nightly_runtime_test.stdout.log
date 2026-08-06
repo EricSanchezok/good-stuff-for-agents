@@ -1,0 +1,195 @@
+ok - PHASES has 9 blueprint phases
+ok - validateTransition: null->init ok, null->other rejected
+ok - validateTransition: direct-to-terminal from every non-terminal
+ok - validateTransition: terminal absorbs
+ok - validateTransition: backward/skip/same rejected
+ok - canonicalStringify: key-order independent
+ok - canonicalStringify: nested
+ok - validateDigest rejects non-hex/non-prefix
+ok - validateDescriptorShape rejects bad label/path/length
+ok - validateInputDigests rejects bad elements
+ok - validateTerminalOutput: completed requires audit phase
+ok - validateTerminalOutput: completed requires published or no_pack_clean
+ok - validateTerminalOutput: audit_blocked requires audit + null outcome
+ok - validateTerminalOutput: blocked/failed/interrupted require null outcome
+ok - validateTerminalOutput: invalid status/outcome rejected
+ok - computeGateId: deterministic
+ok - computeGateId: different inputs produce different ids
+ok - validateBaseline: rejects non-40-hex head
+ok - validateBaseline: rejects non-clean worktree
+ok - validateBaseline: valid baseline accepted
+ok - serializeBaseline: produces canonical JSON
+ok - publishOutput: crash-safe write-once
+ok - publishOutput: rejects path separators in name
+ok - verifyOutputByDescriptor: full field validation
+ok - appendPhaseEvent: refuses terminal — must use appendTerminalEvent
+ok - appendPhaseEvent: validates descriptor shape
+ok - appendPhaseEvent: validates input digests
+ok - writeEventFile: atomic + exclusive
+ok - readChain: detects deleted event
+ok - verifyEventFileOnDisk detects tamper
+ok - chain: output tamper detected with verifyOutputs
+ok - appendTerminalEvent: completed from audit with ready=true audit receipt
+ok - appendTerminalEvent: rejects completed from non-audit phase
+ok - appendTerminalEvent: rejects completed when audit ready=false
+ok - appendTerminalEvent: audit_blocked requires ready=false
+ok - appendTerminalEvent: outcome misuse rejected
+ok - appendTerminalEvent: last_phase_event_digest mismatch rejected
+ok - appendTerminalEvent: terminal_digest mismatch rejected
+ok - reserveRun: baseline serialized, no separate initContent
+ok - reserveRun: rejects dirty worktree
+ok - reserveRun: rejects non-40-hex head
+ok - reserveRun: duplicate rejected
+ok - schema: phase event validates correctly
+ok - schema: phase event rejects bad digest
+ok - schema: terminal rejects completed with null outcome
+ok - schema: terminal rejects blocked with published
+ok - schema: terminal accepts completed with published
+ok - schema: terminal accepts blocked with null outcome
+ok - schema: audit receipt validates
+ok - schema: audit receipt rejects non-40-hex baseline_head
+ok - schema: gate result validates
+ok - schema: seal validates
+ok - full lifecycle: reserve→9 phases→terminal→chain verify with outputs
+ok - event phase enum ONLY contains 9 blueprint phases
+ok - finding-1: _assertMaintResult rejects ok===false (fail-open fixed)
+ok - finding-4: phase event schema validated at write time
+ok - finding-4: phase event schema rejects invalid event_digest
+ok - finding-8: run-summary context_digest and ledger_digest use sha256: prefix
+ok - growth-backlog: satisfied fingerprint is not queued and marked satisfied
+ok - growth-backlog: existing empty-seed dead entries are removed on merge
+ok - growth-backlog: new empty-seed entry is dropped, not queued
+ok - growth-backlog: attempts still increment for repeated real entries
+ok - growth-backlog: backlogToIntents generates intent only for pending real seeds
+ok - exhaustion: all-terminal intents do not count as active_intents gap
+ok - exhaustion: unresolved intent counts as active_intents gap
+ok - exhaustion: missing terminal defaults to active (unresolved)
+
+66 foundation tests passed
+ok - normal no_pack_clean: 9 events, completed, no_pack_clean outcome
+ok - published candidate: promoted candidate → published outcome
+ok - incomplete issue snapshot blocks before context
+ok - provider incident blocks before context
+ok - partial provider incident continues past maintenance
+ok - total provider failure blocks before context
+ok - target timeout produces interrupted terminal
+ok - target interrupted produces interrupted terminal
+ok - gate failure writes one failed result, cannot rerun same ID
+ok - missing gate executor is blocked, not minimal success
+ok - audit blocked: .synergy code changes detected
+ok - concurrent reservation rejected when another run is active
+ok - stale active marker is rejected, not silently deleted
+ok - tampered output causes chain verification failure
+ok - deleted output causes chain verification failure
+ok - CLI import produces zero stdout/stderr
+ok - CLI rejects unknown args
+ok - result is JSON-serializable and parseable
+ok - dirty worktree rejected before reservation
+ok - nonzero intents without executor → paused_for_targets (C6 pause protocol)
+ok - zero intents + no executor produces no_pack_clean
+ok - run IDs are always fresh and unpredictable
+ok - no resume: each run gets fresh run ID
+ok - missing required adapters throw immediately
+ok - new unassessed issues pause for semantic assessment
+ok - audit planner returns not ready → audit_blocked
+ok - core module import works from .synergy cwd
+ok - v3 ledger schema validates and has current fields
+ok - terminal payload digest is self-consistent
+ok - production maintenance executor is not a stub — fails without valid catalog
+ok - production issue executor is not a stub — fails when gh unauth/unavailable
+ok - production gate executor uses npm run, not console.log placeholder
+ok - production audit planner is not a stub — rejects code changes
+ok - controller exports all required production adapters
+ok - finding-3: issue executor returns real issueOutcomes with real issue numbers
+ok - finding-5: gate executor sanitizes env (no leaked secrets)
+ok - finding-6: productionAuditPlanner uses shared NIGHTLY_ALLOWED_PATHS from manifest-collector
+
+37 controller e2e tests passed
+Nightly legacy lifecycle is absent; single controller route is present
+ok - pause phases are recognized
+ok - pause resume targets are correct
+ok - pause transitions are valid
+ok - pause rejects illegal transitions
+ok - pause can transition to terminal
+ok - terminal absorbs pause phases
+ok - PHASES still has exactly 9 entries
+ok - unassessed issues produce pause, not blocked
+ok - issue drafts write-once and validate
+ok - issue drafts missing coverage fails validation
+ok - issue drafts forbidden keys rejected
+ok - resume rejection: missing run directory
+ok - resume rejection: run is terminal
+ok - cold-start: empty context produces no intents
+ok - cold-start: capped at maxTargets
+ok - cold-start: issue demand gets highest priority
+ok - delivery guard: missing run directory rejected
+ok - delivery guard: active marker blocks
+ok - delivery guard: code paths blocked
+ok - exhaustion: truly exhausted = valid no_pack_clean
+ok - exhaustion: has demand = gap_exists (not truly_exhausted)
+ok - exhaustion: budget exhausted + gap exists = false
+ok - gap_class is present in exhaustion proof
+ok - exhaustion_trace includes all dimensions
+ok - delivery guard has no git write calls
+ok - handoff writer has no git write calls
+ok - evidence-index builder has no git write calls
+ok - cold-start selector has no git write calls
+ok - core controller has no git add/commit/push (excluding external process refs and comments)
+ok - target-result writer: happy path write + validate + read roundtrip
+ok - target-result writer: write-once rejected
+ok - target-result writer: incomplete intent coverage rejected
+ok - target-result writer: unknown intent digest rejected
+ok - target-result writer: duplicate intent digest rejected
+ok - target-result writer: promoted without required bindings rejected
+ok - target-result writer: session reuse across intents rejected
+ok - target-result writer: context_digest mismatch rejected
+ok - target-result writer: zero intents rejected
+ok - target-result writer: validate returns error for missing file
+ok - target-result writer: validate rejects run_id mismatch
+ok - target-result writer: promoted with same synth/eval session rejected
+ok - e2e: execute → pause for targets → write target-result → resume to published
+ok - e2e: resume with target-result missing fails closed
+ok - e2e: pause for assessment → write drafts → resume to completed
+ok - target-result writer: non-promoted without gap/error rejected
+ok - cold-start: all intents must have non-empty seed_skill_ids
+ok - target-result: computeIntentDigest is deterministic
+ok - target-result: computeIntentDigest changes with different seeds
+ok - trusted 29 checks count is unchanged
+ok - growth-backlog: readBacklog returns empty for non-existent file
+ok - growth-backlog: writeBacklog + readBacklog roundtrip
+ok - growth-backlog: mergeBacklog deduplicates by fingerprint and increments attempts
+ok - growth-backlog: mergeBacklog marks stale when attempts >= 3
+ok - growth-backlog: backlogToIntents excludes stale/blocked, sorts by attempts ASC
+ok - growth-backlog: mergeBacklog skips existing stale/blocked entries
+ok - growth-backlog: backlogToIntents marks stale when attempts >= 3
+ok - growth-backlog: writeBacklog produces valid JSON with schema_version
+ok - cold-start: backlog intents take priority over new gaps
+ok - cold-start: backlog intents capped at maxTargets
+ok - cold-start: requires_source_discovery=true when demand seeds have zero coverage
+ok - cold-start: requires_source_discovery=false when coverage exists
+ok - cold-start: backlog intents and new intents do not duplicate seeds
+ok - funnel: buildEvidenceIndex returns funnel with correct counts
+ok - funnel: buildRunLedgerV3 includes growth_funnel in output
+ok - funnel: buildExhaustionProof includes funnel dimension
+ok - funnel: buildRunLedgerV3 without growthFunnel does not include field
+ok - delivery-guard: catalog/growth/ is in allowed paths or passes audit check
+ok - delivery-guard: catalog/growth/* paths are allowed (audit check)
+ok - bug-a e2e: demand covered by published pack is satisfied, not requeued
+ok - bug-b e2e: unevaluated seeds populate backlog entry with real seeds
+ok - bug-c e2e: terminal intents do not cause insufficient_evidence
+[{"round":1,"attempts":0,"status":"pending","entry_count":1,"intent_count":1},{"round":2,"attempts":1,"status":"pending","entry_count":1,"intent_count":1},{"round":3,"attempts":2,"status":"pending","entry_count":1,"intent_count":1},{"round":4,"attempts":3,"status":"stale","entry_count":1,"intent_count":0}]
+ok - backlog converges over repeated runs without repeating fingerprint
+ok - t1: full autonomous run fresh→drafts→resume→target-result→resume→terminal with zero interaction
+ok - t2: published delivery via fixture remote — guard ready, exact stage, footer, push
+ok - t3: non-published evidence commit via Protocol B — allowed roots only
+ok - t4: whole-tree interaction-point scan of .synergy docs
+ok - t5: Node controller source scan has no git add/commit/push
+ok - t-apply-1: apply mode posts exactly one comment, dedup prevents repeat
+ok - t-apply-2: held_for_review never fetches or posts and persists
+ok - t-apply-3: production issue executor applies by default (deps seam)
+ok - t-apply-4: issue pipeline has no GitHub mutation beyond POST comments
+ok - t-ry-1: mixed 5-round window 3/5=0.6 with insufficient_evidence excluded
+ok - t-ry-2: window order is run_id name-descending with non-completed skipped
+ok - t-ry-3: empty window when no completed run or missing terminal
+
+84 v4 tests passed

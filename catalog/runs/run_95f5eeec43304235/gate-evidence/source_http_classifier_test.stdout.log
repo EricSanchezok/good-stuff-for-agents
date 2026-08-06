@@ -1,0 +1,22 @@
+ok - 401 is provider_incident, does not increment failures
+ok - 429 is provider_incident, does not increment failures
+ok - generic 403 is provider_incident
+ok - targeted 403 (terms of service) is source_failure
+ok - 404 is source_failure, increments failures
+ok - 5xx are provider_incident
+ok - null status is provider_incident (transport)
+ok - SourceSyncError with 404 is source_failure
+ok - SourceSyncError with 403 provider-level is provider_incident
+ok - transport/timeout error is provider_incident
+ok - content/parse error is source_failure
+ok - isBatchProviderIncident detection
+ok - 17x403 provider incidents: 0 writeSourceRecord calls, 1 provider incident aggregate
+ok - single 404 only writes one source record
+ok - mixed 17x403 + 1x404: counts accurate, only 404 gets per-source write
+ok - t-retry-1: single-source 403 retried successfully, no failure increment
+ok - t-retry-2: retries exhausted → incident aggregated, other source continues (URL routing)
+ok - t-retry-3: 404 is not retried, increments source failures
+ok - t-retry-4: whole-source retry granularity — fetch call counts 4 vs 1
+ok - extractHttpStatus from various error shapes
+ok - inactive sources are skipped
+21 HTTP error classifier tests passed
