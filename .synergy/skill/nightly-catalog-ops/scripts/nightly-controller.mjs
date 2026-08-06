@@ -278,6 +278,10 @@ async function productionIssueExecutor({ runId, runsRoot, repositoryRoot, deps }
     }
   }
 
+  // Apply mode: production issues restricted comments by default. Tests may
+  // opt out via deps.apply === false (dry-run seam).
+  const apply = deps?.apply !== false
+
   const workloadPath = join(runsRoot, runId, 'issue-workload.json')
   const prepareResult = prepareIssueStage({ runId, workloadPath })
 
@@ -353,11 +357,11 @@ async function productionIssueExecutor({ runId, runsRoot, repositoryRoot, deps }
     }
   }
 
-  // Drafts present → finalize
+  // Drafts present → finalize (apply mode: restricted comments posted)
   const outputPath = join(runsRoot, runId, 'stages-issues.json')
   const finalizeResult = await finalizeIssueStage({
     runId, workloadPath, draftsPath, outputPath,
-    apply: false,
+    apply,
   })
 
   if (!finalizeResult.ok) {

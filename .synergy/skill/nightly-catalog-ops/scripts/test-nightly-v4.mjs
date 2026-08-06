@@ -2289,6 +2289,233 @@ test('t5: Node controller source scan has no git add/commit/push', () => {
 });
 
 // ══════════════════════════════════════════════════════════════════════
+//  ISSUE APPLY MODE: t-apply-1..4 (Step 4 Blueprint)
+// ══════════════════════════════════════════════════════════════════════
+
+test('t-apply-1: apply mode posts exactly one comment, dedup prevents repeat', async () => {
+  const { runRestrictedIssueReply } = await import('../../catalog-growth-ops/scripts/lib/issue-reply-controller.mjs');
+  const { buildCanonicalResponse, TRUSTED_COMMENT_AUTHORS } = await import('../../catalog-growth-ops/scripts/lib/issue-response-ledger.mjs');
+  const { normalizeIssueIntake } = await import('../../catalog-growth-ops/scripts/lib/issue-intake.mjs');
+  const { createIssueLedgerStore } = await import('../../catalog-data/scripts/lib/issue-ledger-store.mjs');
+  const { buildAssessmentFromFulfillment } = await import('../../catalog-growth-ops/scripts/lib/issue-assessment-writer.mjs');
+  const { ISSUE_REPLY_TEMPLATE_VERSION } = await import('../../catalog-growth-ops/scripts/lib/issue-assessment-writer.mjs');
+
+  const root = tmpDir();
+  try {
+    const issueNumber = 77;
+    const updatedAt = '2026-07-27T22:01:44Z';
+    const contentDigest = `sha256:${'a'.repeat(63)}1`;
+    const payload = {
+      repository: { full_name: 'EricSanchezok/good-stuff-for-agents' },
+      issue: { number: issueNumber, title: 'T', body: 'body', updated_at: updatedAt, state: 'open', labels: [] },
+      comments: [],
+      comments_complete: true, labels_complete: true,
+    };
+    const intake = normalizeIssueIntake(payload);
+    const assessment = buildAssessmentFromFulfillment({
+      intake,
+      fulfillmentAssessment: {
+        schema_version: 1,
+        kind: 'github_issue_fulfillment_assessment',
+        issue_binding: intake.issue_binding,
+        classification: { kind: 'skill_request', criteria: [{ id: 'c1', text: 't' }] },
+        fulfillment: { status: 'not_satisfied', rationale: 'r', criteria: [{ criterion_id: 'c1', status: 'gap', evidence: [] }] },
+        draft_response: { recommended: false, body: null },
+        human_checkpoint: { required: true, action: 'review_only' },
+      },
+      evidenceIndex: {},
+      publicEvidenceBoundary: 'published catalog only',
+      runId: 'run_apply_test',
+      notes: '',
+    }).record;
+
+    // baseDir must exist for the store's safe-root path validation
+    mkdirSync(join(root, 'catalog'), { recursive: true });
+    const store = createIssueLedgerStore({ baseDir: join(root, 'catalog') });
+    let commentCalls = 0;
+    const runOnce = await runRestrictedIssueReply({
+      intake,
+      assessment,
+      canonicalRecords: store.loadAllCanonicalResponses(),
+      fetchCurrentIssue: async () => payload,
+      commentRunner: async ({ repository, issueNumber, body }) => {
+        commentCalls += 1;
+        assert.ok(body.length > 0);
+        return { comment_id: 987654321 };
+      },
+      apply: true,
+      persistCanonical: (rec) => store.persistCanonicalResponse(rec),
+      templateVersion: ISSUE_REPLY_TEMPLATE_VERSION,
+    });
+    assert.equal(runOnce.status, 'posted');
+    assert.equal(runOnce.comment_id, 987654321);
+    assert.equal(commentCalls, 1, 'exactly one comment in apply mode');
+
+    // Second run with same canonical record → duplicate (no_action semantics), 0 posts
+    const runTwice = await runRestrictedIssueReply({
+      intake,
+      assessment,
+      canonicalRecords: store.loadAllCanonicalResponses(),
+      fetchCurrentIssue: async () => payload,
+      commentRunner: async () => { commentCalls += 1; return { comment_id: 999 }; },
+      apply: true,
+      persistCanonical: (rec) => store.persistCanonicalResponse(rec),
+      templateVersion: ISSUE_REPLY_TEMPLATE_VERSION,
+    });
+    assert.equal(runTwice.status, 'duplicate', 'dedup hit → duplicate (contract no_action)');
+    assert.equal(runTwice.comment_id, 987654321, 'returns the existing comment id');
+    assert.equal(commentCalls, 1, 'no second comment after dedup');
+  } finally { rmSync(root, { recursive: true, force: true }); }
+});
+
+test('t-apply-2: held_for_review never fetches or posts and persists', async () => {
+  const { runRestrictedIssueReply } = await import('../../catalog-growth-ops/scripts/lib/issue-reply-controller.mjs');
+  const { normalizeIssueIntake } = await import('../../catalog-growth-ops/scripts/lib/issue-intake.mjs');
+  const { buildAssessmentFromFulfillment } = await import('../../catalog-growth-ops/scripts/lib/issue-assessment-writer.mjs');
+  const { ISSUE_REPLY_TEMPLATE_VERSION } = await import('../../catalog-growth-ops/scripts/lib/issue-assessment-writer.mjs');
+
+  const root = tmpDir();
+  try {
+    const issueNumber = 78;
+    const updatedAt = '2026-07-21T11:44:16Z';
+    const payload = {
+      repository: { full_name: 'EricSanchezok/good-stuff-for-agents' },
+      issue: { number: issueNumber, title: 'T', body: 'body', updated_at: updatedAt, state: 'open', labels: [] },
+      comments: [],
+      comments_complete: true, labels_complete: true,
+    };
+    const intake = normalizeIssueIntake(payload);
+    // Simulate security flag (secret/shell handling) after intake
+    intake.security.requires_human_review = true;
+    const assessment = buildAssessmentFromFulfillment({
+      intake,
+      fulfillmentAssessment: {
+        schema_version: 1,
+        kind: 'github_issue_fulfillment_assessment',
+        issue_binding: intake.issue_binding,
+        classification: { kind: 'unsafe', criteria: [{ id: 'c1', text: 't' }] },
+        fulfillment: { status: 'unsafe', rationale: 'r', criteria: [{ criterion_id: 'c1', status: 'unsafe', evidence: [] }] },
+        draft_response: { recommended: false, body: null },
+        human_checkpoint: { required: true, action: 'review_only' },
+      },
+      evidenceIndex: {},
+      publicEvidenceBoundary: 'published catalog only',
+      runId: 'run_apply_test2',
+      notes: '',
+    }).record;
+
+    let fetchCalls = 0;
+    let commentCalls = 0;
+    let persisted = null;
+    const result = await runRestrictedIssueReply({
+      intake,
+      assessment,
+      canonicalRecords: [],
+      fetchCurrentIssue: async () => { fetchCalls += 1; return payload; },
+      commentRunner: async () => { commentCalls += 1; return { comment_id: 1 }; },
+      apply: true,
+      persistCanonical: (rec) => { persisted = rec; },
+      templateVersion: ISSUE_REPLY_TEMPLATE_VERSION,
+    });
+    assert.equal(result.status, 'held_for_review');
+    assert.equal(result.posted, false);
+    assert.equal(fetchCalls, 0, 'held_for_review must not re-fetch');
+    assert.equal(commentCalls, 0, 'held_for_review must not post');
+    assert.equal(persisted.response_variant, 'held_for_review', 'canonical record persisted');
+  } finally { rmSync(root, { recursive: true, force: true }); }
+});
+
+test('t-apply-3: production issue executor applies by default (deps seam)', async () => {
+  const { productionIssueExecutor } = await import('./nightly-controller.mjs');
+  const root = tmpDir();
+  try {
+    let captured = null;
+    const spyFinalize = async (opts) => {
+      captured = opts;
+      return {
+        ok: true,
+        stages_issues: { all_open_issues_processed: true, terminal_states: [] },
+      };
+    };
+    // Prepare a workload + drafts so the executor reaches finalize
+    const runId = 'run_apply_seam';
+    const runDir = join(root, runId);
+    mkdirSync(runDir, { recursive: true });
+    const workloadPath = join(runDir, 'issue-workload.json');
+    writeFileSync(workloadPath, JSON.stringify({
+      run_id: runId,
+      workload_digest: `sha256:${'b'.repeat(64)}`,
+      all_accepted_issues: [],
+      all_open_issues_processed: true,
+    }));
+    const draftsPath = join(runDir, 'issue-drafts.json');
+    writeFileSync(draftsPath, JSON.stringify({ schema_version: 1, drafts: [] }));
+    mkdirSync(join(runDir, 'demand.json').slice(0, -10), { recursive: true });
+
+    const exec = async ({ apply, expect }) => {
+      captured = null;
+      const res = await productionIssueExecutor({
+        runId, runsRoot: root, repositoryRoot: root,
+        deps: {
+          checkGhAuth: () => ({ ok: true, authenticated: true }),
+          prepareIssueStage: () => ({
+            ok: true, snapshot_complete: true,
+            workload_summary: { accepted: 0, rejected: 0, total_fetched: 0 },
+            workloadPath,
+          }),
+          finalizeIssueStage: spyFinalize,
+          readFile: readFileSync, fsExists: existsSync,
+          fsMkdir: (p) => mkdirSync(p, { recursive: true }),
+          fsWriteFile: (p, data, opts) => writeFileSync(p, data, { ...opts, flag: 'w' }),
+          buildDemandMetadata: () => ({ demand_skill_ids: [], domain_slugs: [] }),
+          ...(apply !== undefined ? { apply } : {}),
+        },
+      });
+      assert.ok(res.ok, `executor ok: ${res.error}`);
+      assert.equal(captured.apply, expect, `apply=${expect}`);
+    };
+
+    await exec({ apply: undefined, expect: true });
+    await exec({ apply: false, expect: false });
+  } finally { rmSync(root, { recursive: true, force: true }); }
+});
+
+test('t-apply-4: issue pipeline has no GitHub mutation beyond POST comments', () => {
+  const scriptsRoot = join(__dirname, '..', '..', 'catalog-growth-ops', 'scripts');
+  const targets = [
+    join(scriptsRoot, 'issue-stage-orchestrator.mjs'),
+    join(scriptsRoot, 'lib', 'issue-github-client.mjs'),
+    join(scriptsRoot, 'lib', 'issue-comment-runner.mjs'),
+  ];
+  const forbiddenMutations = [
+    '--method', 'PATCH', '--method', 'DELETE', '--method', 'PUT',
+    '/labels', '/reactions', '/pulls', '/issues/', 'close', 'reopen',
+  ];
+  const violations = [];
+  for (const f of targets) {
+    const content = readFileSync(f, 'utf8');
+    // Any POST must be scoped to /comments — check the full statement block
+    // (URL may be on a different line than the --method token).
+    const lines = content.split('\n');
+    lines.forEach((line, idx) => {
+      if (line.includes("'POST'")) {
+        const block = lines.slice(Math.max(0, idx - 1), idx + 2).join('\n');
+        if (!block.includes('/comments')) {
+          violations.push(`${f}:${idx + 1} POST not scoped to /comments: ${line.trim()}`);
+        }
+      }
+    });
+    for (const token of forbiddenMutations) {
+      const idx = content.indexOf(`'${token}'`);
+      if (idx !== -1 && !content.slice(idx - 40, idx + 40).includes('comments')) {
+        violations.push(`${f}: forbidden mutation token ${token}`);
+      }
+    }
+  }
+  assert.deepEqual(violations, [], `non-comment GitHub mutations found: ${violations.join('; ')}`);
+});
+
+// ══════════════════════════════════════════════════════════════════════
 //  Run all tests
 // ══════════════════════════════════════════════════════════════════════
 
