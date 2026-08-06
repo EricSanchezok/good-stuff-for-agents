@@ -965,6 +965,35 @@ test('exhaustion: missing terminal defaults to active (unresolved)', () => {
   assert.equal(active.found, true, 'missing terminal must count as unresolved');
 });
 
+test('exhaustion: demand covered by published pack is not a gap (Bug B regression)', () => {
+  const proof = buildExhaustionProof({
+    evidenceIndex: {
+      gap_flags: {},
+      funnel: null,
+      published_pack_member_ids: ['skl_covered'],
+    },
+    issueDemandMetadata: { demand_skill_ids: ['skl_covered'] },
+    intents: { intents: [] },
+  });
+  const demand = proof.exhaustion_trace.find(e => e.dimension === 'demand');
+  assert.equal(demand.found, false, 'demand fully covered by published pack must not be a gap');
+  assert.equal(proof.valid_no_pack_clean, true);
+});
+
+test('exhaustion: demand with uncovered skill remains a gap', () => {
+  const proof = buildExhaustionProof({
+    evidenceIndex: {
+      gap_flags: {},
+      funnel: null,
+      published_pack_member_ids: ['skl_covered'],
+    },
+    issueDemandMetadata: { demand_skill_ids: ['skl_covered', 'skl_uncovered'] },
+    intents: { intents: [] },
+  });
+  const demand = proof.exhaustion_trace.find(e => e.dimension === 'demand');
+  assert.equal(demand.found, true, 'uncovered demand skill must remain a gap');
+});
+
 // ══════════════════════════════════════════════════════════════════════
 for (const { name, fn } of tests) {
   try { fn(); process.stdout.write(`ok - ${name}\n`); }

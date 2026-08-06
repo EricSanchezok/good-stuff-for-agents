@@ -102,7 +102,12 @@ export function buildExhaustionProof({
   budgetExhausted = false,
 } = {}) {
   const demandSkillIds = issueDemandMetadata?.demand_skill_ids || [];
-  const hasDemand = demandSkillIds.length > 0;
+  // Demand is only a gap when some demanded skill is NOT already covered by
+  // a published pack member. A demand fully satisfied by published packs is
+  // not an unresolved gap (Step 2 semantic).
+  const publishedMemberIds = new Set(evidenceIndex?.published_pack_member_ids || []);
+  const uncoveredDemandIds = demandSkillIds.filter(id => !publishedMemberIds.has(id));
+  const hasDemand = uncoveredDemandIds.length > 0;
 
   // Intents are active only when they exist AND are not yet terminal.
   // Terminal terminals (promoted/rejected/no_pack_clean/insufficient_evidence/

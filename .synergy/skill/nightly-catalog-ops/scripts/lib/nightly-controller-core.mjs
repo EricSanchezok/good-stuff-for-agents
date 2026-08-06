@@ -55,6 +55,7 @@ import {
 import { computeGateResultDigest, validateGateResultAgainstTrusted } from './gate-checks.mjs';
 import { validateIssueDrafts } from './handoff-writer.mjs';
 import { buildEvidenceIndex } from './evidence-index-builder.mjs';
+import { computeIntentDigest } from './target-result-writer.mjs';
 
 // ══════════════════════════════════════════════════════════════════════
 //  Run ID generation
@@ -1456,12 +1457,24 @@ async function _resumeFromTargets({
     contextDigest: collected.context_digest || '',
   };
 
-  const intentOutcomes = (targetsData.intents || []).map(i => ({
-    domain: i.domain,
-    source: i.source,
-    disposition: 'executed',
-    seed_skill_ids: i.seed_skill_ids || [],
-  }));
+  // Consume per-intent terminal from the canonical target-result when
+  // present (e.g. no_pack_clean for satisfied demand) instead of forcing
+  // disposition='executed', which misleads the exhaustion proof.
+  const intentResultsByDigest = new Map(
+    (targetResult.intentResults || []).map(ir => [ir.intent_digest, ir]),
+  );
+  const intentOutcomes = (targetsData.intents || []).map(i => {
+    const digest = computeIntentDigest(i);
+    const ir = intentResultsByDigest.get(digest);
+    return {
+      domain: i.domain,
+      source: i.source,
+      disposition: ir?.terminal || 'executed',
+      terminal: ir?.terminal || 'completed',
+      ...(ir?.gap_class ? { gap_class: ir.gap_class } : {}),
+      seed_skill_ids: i.seed_skill_ids || [],
+    };
+  });
 
   const targetStageResult = {
     intentOutcomes,
