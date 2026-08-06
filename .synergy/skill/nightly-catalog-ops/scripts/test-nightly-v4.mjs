@@ -2516,6 +2516,72 @@ test('t-apply-4: issue pipeline has no GitHub mutation beyond POST comments', ()
 });
 
 // ══════════════════════════════════════════════════════════════════════
+//  ROLLING YIELD: t-ry-1..3 (Step 6 Blueprint)
+// ══════════════════════════════════════════════════════════════════════
+
+function writeTerminalFixture(runsRoot, runId, { status, outcome }) {
+  const runDir = join(runsRoot, runId);
+  mkdirSync(join(runDir, 'outputs'), { recursive: true });
+  writeFileSync(join(runDir, 'outputs', 'terminal.json'), JSON.stringify({
+    schema_version: 3,
+    run_id: runId,
+    status,
+    ...(outcome !== undefined ? { outcome } : {}),
+  }));
+}
+
+test('t-ry-1: mixed 5-round window 3/5=0.6 with insufficient_evidence excluded', () => {
+  const root = tmpDir();
+  try {
+    // 5 completed (published/no_pack_clean mixed) + 1 insufficient_evidence
+    writeTerminalFixture(root, 'run_1', { status: 'completed', outcome: 'published' });
+    writeTerminalFixture(root, 'run_2', { status: 'completed', outcome: 'no_pack_clean' });
+    writeTerminalFixture(root, 'run_3', { status: 'completed', outcome: 'published' });
+    writeTerminalFixture(root, 'run_4', { status: 'completed', outcome: 'no_pack_clean' });
+    writeTerminalFixture(root, 'run_5', { status: 'completed', outcome: 'published' });
+    writeTerminalFixture(root, 'run_6', { status: 'insufficient_evidence' });
+
+    const ry = computeRollingYield({ runsRoot: root, windowSize: 5 });
+    assert.equal(ry.window, 5, 'window excludes insufficient_evidence run');
+    assert.equal(ry.published, 3, 'three published in window');
+    assert.equal(ry.ratio, 0.6, '3/5 = 0.6 (6/10 yield threshold)');
+    assert.equal(ry.entries.length, 5);
+  } finally { rmSync(root, { recursive: true, force: true }); }
+});
+
+test('t-ry-2: window order is run_id name-descending with non-completed skipped', () => {
+  const root = tmpDir();
+  try {
+    // run_0..run_6; run_3 blocked (not completed)
+    writeTerminalFixture(root, 'run_0', { status: 'completed', outcome: 'no_pack_clean' });
+    writeTerminalFixture(root, 'run_1', { status: 'completed', outcome: 'published' });
+    writeTerminalFixture(root, 'run_2', { status: 'completed', outcome: 'no_pack_clean' });
+    writeTerminalFixture(root, 'run_3', { status: 'blocked' });
+    writeTerminalFixture(root, 'run_4', { status: 'completed', outcome: 'published' });
+    writeTerminalFixture(root, 'run_5', { status: 'completed', outcome: 'no_pack_clean' });
+    writeTerminalFixture(root, 'run_6', { status: 'completed', outcome: 'published' });
+
+    const ry = computeRollingYield({ runsRoot: root, windowSize: 5 });
+    // Name-descending completed: run_6, run_5, run_4, run_2, run_1 (run_3 skipped)
+    assert.equal(ry.window, 5);
+    assert.deepEqual(ry.entries.map(e => e.runId), ['run_6', 'run_5', 'run_4', 'run_2', 'run_1']);
+    assert.equal(ry.published, 3);
+  } finally { rmSync(root, { recursive: true, force: true }); }
+});
+
+test('t-ry-3: empty window when no completed run or missing terminal', () => {
+  const root = tmpDir();
+  try {
+    // run_a has no terminal.json; run_b blocked
+    mkdirSync(join(root, 'run_a', 'outputs'), { recursive: true });
+    writeTerminalFixture(root, 'run_b', { status: 'blocked' });
+
+    const ry = computeRollingYield({ runsRoot: root, windowSize: 5 });
+    assert.deepEqual(ry, { window: 0, published: 0, ratio: 0, entries: [] });
+  } finally { rmSync(root, { recursive: true, force: true }); }
+});
+
+// ══════════════════════════════════════════════════════════════════════
 //  Run all tests
 // ══════════════════════════════════════════════════════════════════════
 
