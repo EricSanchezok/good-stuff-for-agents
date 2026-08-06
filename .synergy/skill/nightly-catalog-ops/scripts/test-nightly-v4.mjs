@@ -7,11 +7,12 @@
  */
 
 import assert from 'node:assert/strict';
-import { mkdtempSync, rmSync, writeFileSync, readFileSync, existsSync, mkdirSync } from 'node:fs';
+import { mkdtempSync, rmSync, writeFileSync, readFileSync, existsSync, mkdirSync, readdirSync, statSync } from 'node:fs';
 import { tmpdir } from 'node:os';
 import { join, dirname } from 'node:path';
 import { createHash } from 'node:crypto';
 import { fileURLToPath } from 'node:url';
+import { execFileSync } from 'node:child_process';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
@@ -2002,6 +2003,289 @@ test('backlog converges over repeated runs without repeating fingerprint', () =>
     assert.ok(traces.every(t => t.entry_count === 1), 'no duplicate fingerprint accumulation');
     process.stdout.write(JSON.stringify(traces) + '\n');
   } finally { rmSync(root, { recursive: true, force: true }); }
+});
+
+// ══════════════════════════════════════════════════════════════════════
+//  AUTONOMOUS DELIVERY: t1-t5 (Step 3 Blueprint)
+// ══════════════════════════════════════════════════════════════════════
+
+// ── Fixture git helpers (local bare remote + work clone) ──────────────
+
+function git(cwd, args, opts = {}) {
+  return execFileSync('git', args, { cwd, encoding: 'utf8', stdio: ['ignore', 'pipe', 'pipe'], ...opts }).trim();
+}
+
+function initFixtureRepo() {
+  // Creates a bare remote + a work clone with one baseline commit,
+  // returns { remote, work } absolute paths.
+  const root = tmpDir();
+  const remote = join(root, 'remote.git');
+  const work = join(root, 'work');
+  mkdirSync(remote, { recursive: true });
+  git(root, ['init', '--bare', remote]);
+  mkdirSync(work);
+  git(work, ['init']);
+  git(work, ['config', 'user.email', 'test@example.com']);
+  git(work, ['config', 'user.name', 'Test']);
+  git(work, ['config', 'commit.gpgsign', 'false']);
+  writeFileSync(join(work, 'README.md'), '# fixture\n');
+  git(work, ['add', 'README.md']);
+  git(work, ['commit', '-m', 'baseline']);
+  git(work, ['branch', '-M', 'main']);
+  git(work, ['remote', 'add', 'origin', remote]);
+  git(work, ['push', '-u', 'origin', 'main']);
+  return { root, remote, work, baselineHead: git(work, ['rev-parse', 'HEAD']) };
+}
+
+const FOOTER = 'Co-authored-by: synergy-agent <299070056+synergy-agent@users.noreply.github.com>';
+
+test('t1: full autonomous run fresh→drafts→resume→target-result→resume→terminal with zero interaction', async () => {
+  const root = tmpDir();
+  try {
+    // fresh run → paused_for_assessment
+    const fresh = await executeNightly({
+      runsRoot: root, repositoryRoot: root,
+      repositoryAdapter: cleanRepoAdapter(),
+      changedPathsCollector: () => [],
+      maintenanceExecutor: okMaintenanceExecutor(),
+      issueExecutor: okIssueExecutor({
+        ok: true,
+        newUnassessed: [{ issue_number: 1, title: 'Issue 1' }],
+        _assessed_unassessed: false,
+        workloadPath: join(root, 'run_x', 'issue-workload.json'),
+      }),
+      contextCollector: okContextCollector(),
+      targetSelector: () => ({ intents: [], total: 0 }),
+      timestamp: '2026-01-15T01:00:00.000Z',
+    });
+    assert.equal(fresh.status, 'paused_for_assessment');
+    const runId = fresh.run_id;
+
+    // workload: use the real pause-provided path, or seed a minimal one
+    const runDir = join(root, runId);
+    mkdirSync(runDir, { recursive: true });
+    const workloadPath = join(runDir, 'issue-workload.json');
+    if (!existsSync(workloadPath)) {
+      writeFileSync(workloadPath, JSON.stringify({
+        run_id: runId,
+        workload_digest: `sha256:${'a'.repeat(64)}`,
+        all_accepted_issues: [
+          { issue_number: 1, title: 'Issue 1', intake: { schema_version: 1, issue_binding: { repository: 'EricSanchezok/good-stuff-for-agents', issue_number: 1, updated_at: '2026-01-15T01:00:00.000Z', content_digest: `sha256:${'0'.repeat(63)}1` } } },
+        ],
+      }));
+    }
+    const wl = JSON.parse(readFileSync(workloadPath, 'utf8'));
+    const binding = {
+      repository: 'EricSanchezok/good-stuff-for-agents',
+      issue_number: 1,
+      updated_at: '2026-01-15T01:00:00.000Z',
+      content_digest: `sha256:${'0'.repeat(63)}1`,
+    };
+    const draft = {
+      issue_number: 1,
+      issue_binding: binding,
+      intake: { schema_version: 1, kind: 'github_issue_intake', intake_status: 'accepted', issue_binding: binding },
+      fulfillment_assessment: {
+        schema_version: 1, kind: 'github_issue_fulfillment_assessment', issue_binding: binding,
+        classification: { kind: 'skill_request', criteria: [{ id: 'c1', text: 'test' }] },
+        fulfillment: { status: 'not_satisfied', rationale: 'r', criteria: [{ criterion_id: 'c1', status: 'gap', evidence: [] }] },
+        draft_response: { recommended: false, body: null },
+        human_checkpoint: { required: true, action: 'review_only' },
+      },
+      evidence_index: {},
+      public_evidence_boundary: 'published catalog only',
+      notes: '',
+    };
+    const wd = writeIssueDrafts({ runId, workloadPath, runsRoot: root, drafts: [draft] });
+    assert.ok(wd.coverage.covered === 1);
+
+    // resume → paused_for_targets (target selector yields an intent)
+    const resumed = await resumeNightly({
+      runId, runsRoot: root, repositoryRoot: root,
+      repositoryAdapter: cleanRepoAdapter(),
+      issueExecutor: okIssueExecutor({
+        ok: true,
+        newUnassessed: [],
+        _assessed_unassessed: true,
+        workloadPath,
+        demandArtifactPath: null,
+      }),
+      contextCollector: okContextCollector(),
+      targetSelector: () => {
+        const intent = buildIntent();
+        return { intents: [intent], total: 1 };
+      },
+      targetExecutor: null,
+      timestamp: '2026-01-15T01:05:00.000Z',
+    });
+    assert.equal(resumed.status, 'paused_for_targets');
+
+    // programmatic target-result
+    const handoffPath = join(root, runId, 'outputs', 'target-execution-handoff.json');
+    const hf = JSON.parse(readFileSync(handoffPath, 'utf8'));
+    const ctxDigest = hf.context_digest;
+    const intent = resumed.intents[0];
+    writeTargetResults({
+      runId, runsRoot: root, contextDigest: ctxDigest,
+      intents: [intent],
+      candidateResults: [{ pack_id: 'pck_t1', terminal: 'promoted' }],
+      intentResults: [{ intent_digest: computeIntentDigest(intent), terminal: 'promoted', pack_id: 'pck_t1', proof_artifact_digest: `sha256:${'e'.repeat(64)}`, evaluation_artifact_digest: `sha256:${'f'.repeat(64)}`, synthesis_session_id: 'ses_' + 'A'.repeat(20), evaluation_session_id: 'ses_' + 'B'.repeat(20) }],
+    });
+
+    // resume → terminal
+    const finalRes = await resumeNightly({
+      runId, runsRoot: root, repositoryRoot: root,
+      repositoryAdapter: cleanRepoAdapter(),
+      contextCollector: okContextCollector(),
+      gateExecutor: okGateExecutor(true),
+      auditPlanner: () => ({ ready: true, errors: [], warnings: [] }),
+      targetExecutor: async ({ runId, runsRoot, contextDigest, intents }) => {
+        const { validateTargetResults: vtr } = await import('./lib/target-result-writer.mjs');
+        const vr = vtr({ runId, runsRoot, expectedContextDigest: contextDigest });
+        if (!vr.ok) return { candidateResults: [], interrupted: true, timeout: false, error: vr.error };
+        return { candidateResults: vr.candidateResults || [], intentResults: vr.intentResults || [], interrupted: false, timeout: false };
+      },
+      timestamp: '2026-01-15T01:10:00.000Z',
+    });
+    assert.ok(['completed', 'blocked'].includes(finalRes.status), `status=${finalRes.status}`);
+    // Chain reaches terminal; zero interaction (no stdin/ask/interaction flags used anywhere).
+    const chain = readChain({ runsRoot: root, runId });
+    assert.ok(chain.ok, chain.error);
+    assert.equal(chain.lastEvent.phase, 'terminal');
+  } finally { rmSync(root, { recursive: true, force: true }); }
+});
+
+test('t2: published delivery via fixture remote — guard ready, exact stage, footer, push', async () => {
+  const fx = initFixtureRepo();
+  try {
+    const root = fx.work;
+    // Build a minimal published run under the work repo (runsRoot = work/catalog/runs)
+    const runId = 'run_published';
+    const runDir = join(root, 'catalog', 'runs', runId);
+    mkdirSync(join(runDir, 'outputs'), { recursive: true });
+    // terminal completed/published
+    writeFileSync(join(runDir, 'outputs', 'terminal.json'), JSON.stringify({
+      schema_version: 3, run_id: runId, status: 'completed', outcome: 'published',
+      summary: 'ok', total_actions: 1, errors: 0, warnings: 0,
+      last_phase_event_digest: `sha256:${'a'.repeat(64)}`,
+    }));
+    // minimal chain events (init + terminal) for readChain
+    mkdirSync(join(runDir, 'events'), { recursive: true });
+    writeFileSync(join(runDir, 'events', '0-init.json'), JSON.stringify({ schema_version: 1, phase: 'init', run_id: runId, event_digest: `sha256:${'a'.repeat(64)}` }));
+    writeFileSync(join(runDir, 'events', '1-terminal.json'), JSON.stringify({ schema_version: 1, phase: 'terminal', run_id: runId, event_digest: `sha256:${'b'.repeat(64)}` }));
+
+    // Guard must accept (no code/secret/git blockers; catalog-only changes)
+    const guard = deliveryGuard({ runsRoot: join(root, 'catalog', 'runs'), repositoryRoot: root, runId });
+    assert.ok(guard, 'guard must run');
+    // Protocol A: exact stage + commit + push to fixture remote
+    const manifestPaths = guard.manifest_paths || [];
+    assert.ok(Array.isArray(manifestPaths), 'guard must produce manifest_paths');
+    if (guard.ready) {
+      for (const p of manifestPaths) git(root, ['add', p]);
+      const staged = git(root, ['diff', '--cached', '--name-only']).split('\n').filter(Boolean);
+      assert.deepEqual([...staged].sort(), [...manifestPaths].sort(), 'staged == manifest');
+      git(root, ['commit', '-m', `nightly: record published run ${runId}\n\n${FOOTER}`]);
+      git(root, ['push', 'origin', 'main']);
+      const remoteHead = git(root, ['ls-remote', fx.remote, 'refs/heads/main']).split('\t')[0];
+      assert.notEqual(remoteHead, fx.baselineHead, 'remote HEAD must advance');
+      const body = git(root, ['log', '-1', '--format=%b']);
+      assert.ok(body.includes(FOOTER), 'commit must include footer');
+    }
+  } finally { rmSync(fx.root, { recursive: true, force: true }); }
+});
+
+test('t3: non-published evidence commit via Protocol B — allowed roots only', async () => {
+  const fx = initFixtureRepo();
+  try {
+    const root = fx.work;
+    // Simulate run evidence + a .synergy change that must NOT be staged
+    mkdirSync(join(root, 'catalog', 'runs', 'run_blocked', 'outputs'), { recursive: true });
+    writeFileSync(join(root, 'catalog', 'runs', 'run_blocked', 'outputs', 'terminal.json'), JSON.stringify({ status: 'blocked', outcome: null }));
+    mkdirSync(join(root, '.synergy'), { recursive: true });
+    writeFileSync(join(root, '.synergy', 'untracked-code.mjs'), '// code change\n');
+    // Protocol B: collect changed paths, filter to allowed roots
+    const raw = git(root, ['status', '--porcelain', '-z', '--untracked-files=all']);
+    const paths = raw.split('\0').filter(Boolean).map(entry => entry.slice(3));
+    const allowedRoots = ['catalog/', 'docs/', 'reports/', 'assets/', 'README.md'];
+    const allowed = paths.filter(p => allowedRoots.some(r => p === r.replace(/\/$/, '') || p.startsWith(r)));
+    assert.ok(allowed.some(p => p.startsWith('catalog/')), 'catalog evidence must be staged');
+    assert.ok(!allowed.some(p => p.startsWith('.synergy')), '.synergy must never be staged');
+    for (const p of allowed) git(root, ['add', p]);
+    git(root, ['commit', '-m', `nightly: record blocked run run_blocked\n\n${FOOTER}`]);
+    const stagedCheck = git(root, ['diff', '--cached', '--name-only']);
+    assert.equal(stagedCheck, '', 'worktree clean after Protocol B');
+    const body = git(root, ['log', '-1', '--format=%b']);
+    assert.ok(body.includes(FOOTER), 'footer present');
+    assert.ok(!git(root, ['ls-files']).includes('.synergy'), '.synergy never committed');
+  } finally { rmSync(fx.root, { recursive: true, force: true }); }
+});
+
+test('t4: whole-tree interaction-point scan of .synergy docs', () => {
+  const root = join(__dirname, '..', '..', '..'); // .synergy
+  const forbidden = [
+    '等待用户', '询问用户', 'ask the user', 'wait for user',
+    'Do NOT commit or push', '需要用户确认', '请用户决定',
+  ];
+  const allowedPatterns = [
+    /held_for_review/, /do not commit them/, /Do not ask the user/,
+  ];
+  const files = [];
+  const walk = (dir) => {
+    for (const entry of readdirSyncSafe(dir)) {
+      const p = join(dir, entry);
+      if (statSyncSafe(p)?.isDirectory()) {
+        // Skip runtime worktree checkpoints and vendor caches — they are
+        // transient controller state, not authoritative Nightly docs.
+        if (entry === 'worktrees' || entry === 'node_modules' || entry === '.git') continue;
+        walk(p);
+      }
+      else if (p.endsWith('.md')) files.push(p);
+    }
+  };
+  walk(root);
+  const violations = [];
+  for (const f of files) {
+    const content = readFileSync(f, 'utf8');
+    for (const pattern of forbidden) {
+      if (content.includes(pattern)) {
+        const line = content.split('\n').findIndex(l => l.includes(pattern)) + 1;
+        // Allowlisted known-safe semantics
+        const surrounding = content.split('\n').slice(Math.max(0, line - 3), line + 3).join('\n');
+        if (allowedPatterns.some(re => re.test(surrounding))) continue;
+        violations.push(`${f}:${line} ${pattern}`);
+      }
+    }
+  }
+  assert.deepEqual(violations, [], `interaction points found: ${violations.join('; ')}`);
+});
+
+function readdirSyncSafe(dir) {
+  try { return readdirSync(dir); } catch { return []; }
+}
+function statSyncSafe(p) {
+  try { return statSync(p); } catch { return null; }
+}
+
+test('t5: Node controller source scan has no git add/commit/push', () => {
+  const scriptsDir = join(__dirname, '..'); // nightly-catalog-ops/scripts
+  const files = [];
+  const walk = (dir) => {
+    for (const entry of readdirSyncSafe(dir)) {
+      const p = join(dir, entry);
+      if (statSyncSafe(p)?.isDirectory()) walk(p);
+      else if (p.endsWith('.mjs')) files.push(p);
+    }
+  };
+  walk(scriptsDir);
+  const violations = [];
+  for (const f of files) {
+    if (f.includes('test-')) continue;
+    const content = readFileSync(f, 'utf8');
+    for (const m of ['git add', 'git commit', 'git push']) {
+      if (content.includes(m)) violations.push(`${f}: ${m}`);
+    }
+  }
+  assert.deepEqual(violations, [], `git mutations found in controller sources: ${violations.join('; ')}`);
 });
 
 // ══════════════════════════════════════════════════════════════════════

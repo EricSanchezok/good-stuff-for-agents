@@ -1,9 +1,13 @@
 ---
-description: "Execute single-path Nightly Catalog v3+ production controller with pause/resume"
+description: "Execute the fully autonomous Nightly Catalog production run with automatic Git delivery"
 agent: "synergy"
 ---
 
-## /nightly — V3+ Production Run Orchestrator
+## /nightly — Fully Autonomous Production Run
+
+### Authorization
+
+Issuing `/nightly` **is** the Git commit/push authorization for this run. The outer Agent executes the entire lifecycle below with zero user interaction and zero waiting points. There are no questions, confirmations, or checkpoints in this flow. The command's emission is the only user action.
 
 ### Fresh Invocation
 
@@ -19,39 +23,30 @@ init → maintenance → issues → context → targets → gate → seal → au
 
 Do not invoke phases independently.
 
-### Pause Protocol
+### Autonomous Execution Protocol
 
-If Issues produce `newUnassessed`:
+The outer Agent drives the run to terminal in a mechanical loop with no user interaction:
 
-- Controller writes `paused_for_assessment` with `issue-assessment-handoff.json`
-- Releases active marker
-- Return: `{ status: "paused_for_assessment", new_unassessed, workload_path, handoff_digest, events }`
-
-Outer Agent:
-1. Reads handoff descriptors
-2. Loads `skill/catalog-growth-ops/SKILL.md` for Issue owner procedures
-3. Dispatches `issue-intake` subagents per accepted issue
-4. Writes drafts via canonical `writeIssueDrafts` (write-once, coverage-binding)
-5. Resumes: `npm --prefix .synergy run nightly -- --resume <runId>`
-
-If nonzero `targetSelector` intents exist but no `targetExecutor`:
-
-- Controller writes `paused_for_targets` with `target-execution-handoff.json`
-- Releases active marker
-- Return: `{ status: "paused_for_targets", intents, handoff_digest, events }`
-
-Outer Agent:
-1. Reads handoff for `context_digest`, `intents`, `required_owners`, `evidence_budget`, `session_isolation`
-2. Dispatches owner skills per L0-L7 workflow priority
-3. Writes target results via canonical target-result writer:
-   ```bash
-   node .synergy/skill/nightly-catalog-ops/scripts/lib/target-result-writer.mjs --input <path>
-   # or via stdin:
-   echo '{"runId":"...","contextDigest":"...","intents":[...],"candidateResults":[...],"intentResults":[...],"sessionDescriptors":[...]}' | node .synergy/skill/nightly-catalog-ops/scripts/lib/target-result-writer.mjs
-   # or via npm:
-   npm --prefix .synergy run nightly:target-result -- --input <path>
-   ```
-4. Resumes: `npm --prefix .synergy run nightly -- --resume <runId>`
+1. Run `npm --prefix .synergy run nightly` (fresh).
+2. If it returns `paused_for_assessment`:
+   - Read `catalog/runs/<runId>/outputs/issue-assessment-handoff.json`.
+   - Load `skill/catalog-growth-ops/SKILL.md` for Issue owner procedures.
+   - Dispatch one `issue-intake` subagent per accepted issue.
+   - Write drafts via canonical `writeIssueDrafts` (write-once, coverage-binding).
+   - Resume: `npm --prefix .synergy run nightly -- --resume <runId>`.
+3. If it returns `paused_for_targets`:
+   - Read `catalog/runs/<runId>/outputs/target-execution-handoff.json` for `context_digest`, `intents`, `required_owners`, `evidence_budget`, `session_isolation`.
+   - Execute owner skills per L0-L7 workflow priority (see Growth Workflow below).
+   - Write target results via the canonical target-result writer:
+     ```bash
+     node .synergy/skill/nightly-catalog-ops/scripts/lib/target-result-writer.mjs --input <path>
+     ```
+   - Resume: `npm --prefix .synergy run nightly -- --resume <runId>`.
+4. Repeat steps 2-3 until the controller returns a terminal status. The controller guarantees every step is write-once and tamper-proof.
+5. Read `catalog/runs/<runId>/outputs/terminal.json` and dispatch:
+   - **published** → Git Delivery Protocol A (guard delivery).
+   - **all others** (`blocked`, `insufficient_evidence`, `failed`, `interrupted`, `audit_blocked`, `no_pack_clean`) → Git Delivery Protocol B (evidence commit).
+6. Output a final summary to the user. This is a **report, not a question**.
 
 ### Growth Workflow (L0-L7) — target-driven, not full backfill
 
@@ -88,22 +83,6 @@ Validates:
 
 Rejects: replay, tamper, stale, parallel runs.
 
-### Resume Dispatch
-
-`paused_for_assessment` resume:
-- Validates `validateIssueDrafts` (coverage, binding, forbidden keys)
-- Runs `issueExecutor` with drafts present (it finalizes)
-- Writes `issues-finalized.json` (new output, does not overwrite `issues-prepared.json`)
-- Writes context phase event (transition from pause, not overwriting prior events)
-- Continues `runContextStage` → `runSelectAndPrepareTargetsStage` → `runGateSealAuditTerminalStages`
-
-`paused_for_targets` resume:
-- Validates `target-intents.json` exists and intents are non-empty
-- Requires `targetExecutor` (rejects if null)
-- Executes targets, writes `targets-finalized.json`
-- Writes targets phase event (transition from pause)
-- Continues into `runGateSealAuditTerminalStages`
-
 ### Gate / Seal / Audit / Terminal
 
 Shared path (fresh + resume):
@@ -122,26 +101,36 @@ Shared path (fresh + resume):
 After completed + published terminal:
 
 ```bash
-node .synergy/skill/nightly-catalog-ops/scripts/lib/delivery-guard.mjs <runId> [--fetch-remote]
+node .synergy/skill/nightly-catalog-ops/scripts/lib/delivery-guard.mjs <runId> --fetch-remote
 ```
 
 Pure-read validator (JSON output): `{ ready, errors, warnings, manifest_paths, baseline_head, current_head, remote_head, commit_message }`
 
-Checks: terminal status=completed, outcome=published, audit ready, chain/schema/seal/manifest integrity, baseline=current HEAD, changed paths = manifest exactly (bidirectional), no code/secret/git/ordinary blockers, remote drift (optional).
+Checks: terminal status=completed, outcome=published, audit ready, chain/schema/seal/manifest integrity, baseline=current HEAD, changed paths = manifest exactly (bidirectional), no code/secret/git/ordinary blockers, remote drift.
 
 Commit message includes required `Co-authored-by` footer. Guard never stages, commits, or pushes.
 
-### Outer Agent Git Delivery (after delivery-guard ready=true)
+### Git Delivery Protocol A (published)
 
-1. `git fetch origin main`
-2. Verify `origin/main` = baseline HEAD (TOCTOU)
-3. Stage manifest paths exactly: `git add <path1> <path2> ...` (never `git add -A`)
-4. Commit with guard-provided `commit_message`
-5. `git push origin main` (never force push)
+1. `node .synergy/skill/nightly-catalog-ops/scripts/lib/delivery-guard.mjs <runId> --fetch-remote`
+2. If `ready !== true`: **do not push**. Degrade to Protocol B (evidence commit), report guard errors. Guard failure means no delivery.
+3. `git fetch origin main`; verify `origin/main == baseline_head` (TOCTOU). Drift → fail closed, no push, report.
+4. Stage manifest paths exactly: `git add <path1> <path2> ...` (never `git add -A`).
+5. Verify staged set == manifest paths exactly (bidirectional).
+6. Commit with guard-provided `commit_message` (contains `Co-authored-by` footer).
+7. `git push origin main` — never force push.
+8. If the worktree still contains non-manifest changes after the commit (e.g. `.synergy/` code edits): stage and commit them separately with the required footer to restore a clean worktree. If it cannot be made clean, report (never leave it silently).
 
-### Blocked / Insufficient Evidence
+### Git Delivery Protocol B (non-published evidence commit)
 
-Do NOT commit or push. Report the terminal status and error summary to the user.
+1. Collect changed paths: `git status --porcelain -z --untracked-files=all`.
+2. Filter to paths under `NIGHTLY_ALLOWED_PATHS` roots (`catalog/`, `docs/`, `reports/`, `assets/`, `README.md` — matching the audit allowlist; never `.synergy/`, `.git/`).
+3. Stage those paths exactly (never `git add -A`); commit with message `nightly: record <terminal> run <runId>` + footer; `git push origin main` when network is available. On total network loss, keep the local commit and report.
+4. **Self-heal**: before the next run starts, if local HEAD is ahead of `origin/main`, push normally to catch up and restore the baseline==remote precondition.
+
+### Network Failure
+
+All sources failing simultaneously → controller `blocked` (the only network stall condition). Evidence is still committed locally per Protocol B; push is best-effort and failures are reported.
 
 ### Exit Codes
 

@@ -30,4 +30,4 @@ Only the fixed repository and deterministic factual template are authorized. Com
 
 ## Git Boundary
 
-Nightly stops after writing its audit-bound terminal. Commit and push belong only to a separately trusted controller acting on current explicit authorization.
+Nightly stops after writing its audit-bound terminal. The outer Synergy Agent executing `/nightly` is the separately trusted delivery controller: issuing the command is the current explicit authorization, and the Agent commits and pushes automatically per the delivery protocols (published via delivery-guard, all other terminals as evidence commits). The Node runtime remains read-only toward Git.

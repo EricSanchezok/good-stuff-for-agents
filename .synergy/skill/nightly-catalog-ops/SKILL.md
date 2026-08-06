@@ -15,6 +15,8 @@ npm --prefix .synergy run nightly
 
 The command accepts no phase controls or caller-supplied run identity. It emits progress to stderr and one structured terminal result to stdout.
 
+**Authorization**: Issuing `/nightly` is the Git commit/push authorization for that run. The outer Agent executes the full lifecycle with zero user interaction and zero waiting points (see `.synergy/command/nightly.md` Autonomous Execution Protocol).
+
 Additional user instructions for this invocation:
 
 $ARGUMENTS
@@ -34,6 +36,15 @@ Each phase publishes immutable output and one hash-linked event. Existing output
 **Pause/resume protocol (v3+):** When accepted Issues lack semantic assessment drafts, the controller writes an `issue-assessment-handoff.json`, publishes a `paused_for_assessment` event, releases the active marker, and exits with status `paused_for_assessment`. The outer trusted Agent reads the handoff, invokes `issue-intake` subagents, writes drafts via `writeIssueDrafts`, and resumes with `--resume <runId>`. Similarly, `paused_for_targets` suspends for owner skill/subagent work, then resumes with target results. Resume validates run ID, event chain (must end with a pause phase, not terminal), handoff/workload digests, baseline/current HEAD, and rejects replay, stale, or tampered runs.
 
 The controller never stages, commits, or pushes.
+
+## Autonomous Delivery
+
+After the controller writes its terminal, the outer Agent delivers automatically with no user interaction:
+
+- **Protocol A (published)**: run `delivery-guard.mjs <runId> --fetch-remote`; on `ready: true`, fetch/verify `origin/main == baseline`, stage manifest paths exactly (never `git add -A`), commit with the required footer, push without force; commit any remaining non-manifest changes separately with the footer.
+- **Protocol B (all other terminals)**: stage only paths under `NIGHTLY_ALLOWED_PATHS` roots (never `.synergy/`, `.git/`), commit as `nightly: record <terminal> run <runId>` with footer, push when network allows; self-heal by pushing ahead-of-remote local commits before the next run.
+
+Details: `.synergy/command/nightly.md` → Git Delivery Protocol A/B.
 
 ## Phase Rules
 
@@ -82,6 +93,7 @@ Canonical response records survive across runs. Live fixed-template comments for
 npm --prefix .synergy run nightly:foundation:test
 npm --prefix .synergy run nightly:controller:test
 npm --prefix .synergy run nightly:v4:test
+npm --prefix .synergy run nightly:legacy-absence:test
 npm --prefix .synergy run issue:response-ledger:test
 npm --prefix .synergy run issue:pipeline:test
 npm --prefix .synergy run issue:stage:test
@@ -92,6 +104,8 @@ npm --prefix .synergy run publish:check
 npm --prefix .synergy run publish:links
 npm --prefix .synergy run publish:boundary
 ```
+
+The v4 suite includes autonomous-run E2E, published/non-published Git delivery E2E, whole-tree interaction-point scanning, and Node-controller git-mutation scanning.
 
 Representative production verification must start from a clean committed `HEAD`, run the single entry point, and inspect the complete event chain, one context, one gate result, one seal, one audit receipt, and one terminal as a coherent whole.
 
