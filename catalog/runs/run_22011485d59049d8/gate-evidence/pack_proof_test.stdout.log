@@ -1,0 +1,8 @@
+  ✓ Test 1: Successful promotion passed
+  ✓ Test 2: Stale analysis claim edit blocked promotion
+  ✓ Test 3: Stale relation edit blocked promotion
+  ✓ Test 4: Stale pack content blocked promotion
+  ✓ Test 5: Proof tamper blocked promotion
+  ✓ Test 6: Evaluation proof mismatch blocked promotion
+  ✓ Test 7: Stale member version blocked promotion
+pack proof promotion tests passed

@@ -1,0 +1,6 @@
+boundary-warn: README.md: contains public noun "workflow" — review and confirm it is a legitimate catalog name or public task language, not an implementation leak
+boundary-warn: docs/domains/code-review.md: contains public noun "workflow" — review and confirm it is a legitimate catalog name or public task language, not an implementation leak
+boundary-warn: docs/packs/README.md: contains public noun "workflow" — review and confirm it is a legitimate catalog name or public task language, not an implementation leak
+boundary-warn: docs/packs/code-review/pack_coderabbit-review-remediation_f00daeba.md: contains public noun "workflow" — review and confirm it is a legitimate catalog name or public task language, not an implementation leak
+boundary-warn: docs/skills/co/skl_coderabbit-autofix-src-https-github-com-coderabbit-7ec3dc4b-skills-8f2a22eb-skills-autofix-skill-md_7ec3dc4b.md: contains public noun "workflow" — review and confirm it is a legitimate catalog name or public task language, not an implementation leak
+boundary-warn: docs/sources/src_https-github-com-coderabbitai-skills-coderabbit-skills_8f2a22eb.md: contains public noun "workflow" — review and confirm it is a legitimate catalog name or public task language, not an implementation leak

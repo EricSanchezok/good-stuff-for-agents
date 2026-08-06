@@ -1,0 +1,160 @@
+{
+  "schema_version": 1,
+  "source_id": "src_https-github-com-cuga-project-cuga-agent-cuga-agent-ibm-research_5709bc42",
+  "upstream_ref": "03760b9d29625495978a98860521af4d8dfc1d83",
+  "checked_at": "2026-08-06T09:20:57.817Z",
+  "url": "https://github.com/cuga-project/cuga-agent",
+  "artifacts": [
+    {
+      "source_id": "src_https-github-com-cuga-project-cuga-agent-cuga-agent-ibm-research_5709bc42",
+      "path": ".claude/commands/cuga-commit.md",
+      "declared_name": "commands",
+      "format": "markdown",
+      "parse_confidence": "medium",
+      "content_digest": "git_sha1:044ef6947e3b0b76e0b2de141a18831d35325714",
+      "upstream_ref": "03760b9d29625495978a98860521af4d8dfc1d83",
+      "git_blob_oid": "git_sha1:044ef6947e3b0b76e0b2de141a18831d35325714",
+      "url": "https://github.com/cuga-project/cuga-agent/blob/03760b9d29625495978a98860521af4d8dfc1d83/.claude/commands/cuga-commit.md",
+      "raw_url": "https://raw.githubusercontent.com/cuga-project/cuga-agent/03760b9d29625495978a98860521af4d8dfc1d83/.claude/commands/cuga-commit.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-cuga-project-cuga-agent-cuga-agent-ibm-research_5709bc42",
+        "canonical_skill_id": null,
+        "remote_path": ".claude/commands/cuga-commit.md",
+        "pinned_commit": "03760b9d29625495978a98860521af4d8dfc1d83",
+        "git_blob_oid": "git_sha1:044ef6947e3b0b76e0b2de141a18831d35325714",
+        "raw_url": "https://raw.githubusercontent.com/cuga-project/cuga-agent/03760b9d29625495978a98860521af4d8dfc1d83/.claude/commands/cuga-commit.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:044ef6947e3b0b76e0b2de141a18831d35325714",
+        "size": 303
+      }
+    },
+    {
+      "source_id": "src_https-github-com-cuga-project-cuga-agent-cuga-agent-ibm-research_5709bc42",
+      "path": ".claude/commands/cuga-create-pr.md",
+      "declared_name": "commands",
+      "format": "markdown",
+      "parse_confidence": "medium",
+      "content_digest": "git_sha1:9612be188765abe9a434cd22f8734a7054b69212",
+      "upstream_ref": "03760b9d29625495978a98860521af4d8dfc1d83",
+      "git_blob_oid": "git_sha1:9612be188765abe9a434cd22f8734a7054b69212",
+      "url": "https://github.com/cuga-project/cuga-agent/blob/03760b9d29625495978a98860521af4d8dfc1d83/.claude/commands/cuga-create-pr.md",
+      "raw_url": "https://raw.githubusercontent.com/cuga-project/cuga-agent/03760b9d29625495978a98860521af4d8dfc1d83/.claude/commands/cuga-create-pr.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-cuga-project-cuga-agent-cuga-agent-ibm-research_5709bc42",
+        "canonical_skill_id": null,
+        "remote_path": ".claude/commands/cuga-create-pr.md",
+        "pinned_commit": "03760b9d29625495978a98860521af4d8dfc1d83",
+        "git_blob_oid": "git_sha1:9612be188765abe9a434cd22f8734a7054b69212",
+        "raw_url": "https://raw.githubusercontent.com/cuga-project/cuga-agent/03760b9d29625495978a98860521af4d8dfc1d83/.claude/commands/cuga-create-pr.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:9612be188765abe9a434cd22f8734a7054b69212",
+        "size": 2740
+      }
+    },
+    {
+      "source_id": "src_https-github-com-cuga-project-cuga-agent-cuga-agent-ibm-research_5709bc42",
+      "path": ".claude/commands/cuga-new-feature.md",
+      "declared_name": "commands",
+      "format": "markdown",
+      "parse_confidence": "medium",
+      "content_digest": "git_sha1:4aec6c9db7e3426309e94fa1a2f3a34702f7f5d8",
+      "upstream_ref": "03760b9d29625495978a98860521af4d8dfc1d83",
+      "git_blob_oid": "git_sha1:4aec6c9db7e3426309e94fa1a2f3a34702f7f5d8",
+      "url": "https://github.com/cuga-project/cuga-agent/blob/03760b9d29625495978a98860521af4d8dfc1d83/.claude/commands/cuga-new-feature.md",
+      "raw_url": "https://raw.githubusercontent.com/cuga-project/cuga-agent/03760b9d29625495978a98860521af4d8dfc1d83/.claude/commands/cuga-new-feature.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-cuga-project-cuga-agent-cuga-agent-ibm-research_5709bc42",
+        "canonical_skill_id": null,
+        "remote_path": ".claude/commands/cuga-new-feature.md",
+        "pinned_commit": "03760b9d29625495978a98860521af4d8dfc1d83",
+        "git_blob_oid": "git_sha1:4aec6c9db7e3426309e94fa1a2f3a34702f7f5d8",
+        "raw_url": "https://raw.githubusercontent.com/cuga-project/cuga-agent/03760b9d29625495978a98860521af4d8dfc1d83/.claude/commands/cuga-new-feature.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:4aec6c9db7e3426309e94fa1a2f3a34702f7f5d8",
+        "size": 3371
+      }
+    },
+    {
+      "source_id": "src_https-github-com-cuga-project-cuga-agent-cuga-agent-ibm-research_5709bc42",
+      "path": ".claude/commands/cuga-report-bug.md",
+      "declared_name": "commands",
+      "format": "markdown",
+      "parse_confidence": "medium",
+      "content_digest": "git_sha1:a909ca26d4171c35a8ae813ce938ef3b7ec08a32",
+      "upstream_ref": "03760b9d29625495978a98860521af4d8dfc1d83",
+      "git_blob_oid": "git_sha1:a909ca26d4171c35a8ae813ce938ef3b7ec08a32",
+      "url": "https://github.com/cuga-project/cuga-agent/blob/03760b9d29625495978a98860521af4d8dfc1d83/.claude/commands/cuga-report-bug.md",
+      "raw_url": "https://raw.githubusercontent.com/cuga-project/cuga-agent/03760b9d29625495978a98860521af4d8dfc1d83/.claude/commands/cuga-report-bug.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-cuga-project-cuga-agent-cuga-agent-ibm-research_5709bc42",
+        "canonical_skill_id": null,
+        "remote_path": ".claude/commands/cuga-report-bug.md",
+        "pinned_commit": "03760b9d29625495978a98860521af4d8dfc1d83",
+        "git_blob_oid": "git_sha1:a909ca26d4171c35a8ae813ce938ef3b7ec08a32",
+        "raw_url": "https://raw.githubusercontent.com/cuga-project/cuga-agent/03760b9d29625495978a98860521af4d8dfc1d83/.claude/commands/cuga-report-bug.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:a909ca26d4171c35a8ae813ce938ef3b7ec08a32",
+        "size": 2423
+      }
+    },
+    {
+      "source_id": "src_https-github-com-cuga-project-cuga-agent-cuga-agent-ibm-research_5709bc42",
+      "path": ".claude/commands/cuga-ruff-check.md",
+      "declared_name": "commands",
+      "format": "markdown",
+      "parse_confidence": "medium",
+      "content_digest": "git_sha1:8dd47e1ab482c36b1932f9e66c2d80110ae44e98",
+      "upstream_ref": "03760b9d29625495978a98860521af4d8dfc1d83",
+      "git_blob_oid": "git_sha1:8dd47e1ab482c36b1932f9e66c2d80110ae44e98",
+      "url": "https://github.com/cuga-project/cuga-agent/blob/03760b9d29625495978a98860521af4d8dfc1d83/.claude/commands/cuga-ruff-check.md",
+      "raw_url": "https://raw.githubusercontent.com/cuga-project/cuga-agent/03760b9d29625495978a98860521af4d8dfc1d83/.claude/commands/cuga-ruff-check.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-cuga-project-cuga-agent-cuga-agent-ibm-research_5709bc42",
+        "canonical_skill_id": null,
+        "remote_path": ".claude/commands/cuga-ruff-check.md",
+        "pinned_commit": "03760b9d29625495978a98860521af4d8dfc1d83",
+        "git_blob_oid": "git_sha1:8dd47e1ab482c36b1932f9e66c2d80110ae44e98",
+        "raw_url": "https://raw.githubusercontent.com/cuga-project/cuga-agent/03760b9d29625495978a98860521af4d8dfc1d83/.claude/commands/cuga-ruff-check.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:8dd47e1ab482c36b1932f9e66c2d80110ae44e98",
+        "size": 252
+      }
+    },
+    {
+      "source_id": "src_https-github-com-cuga-project-cuga-agent-cuga-agent-ibm-research_5709bc42",
+      "path": ".claude/commands/github_commands.md",
+      "declared_name": "commands",
+      "format": "markdown",
+      "parse_confidence": "medium",
+      "content_digest": "git_sha1:fe78e8ed0011fcb342963703373cd713eb5a9f33",
+      "upstream_ref": "03760b9d29625495978a98860521af4d8dfc1d83",
+      "git_blob_oid": "git_sha1:fe78e8ed0011fcb342963703373cd713eb5a9f33",
+      "url": "https://github.com/cuga-project/cuga-agent/blob/03760b9d29625495978a98860521af4d8dfc1d83/.claude/commands/github_commands.md",
+      "raw_url": "https://raw.githubusercontent.com/cuga-project/cuga-agent/03760b9d29625495978a98860521af4d8dfc1d83/.claude/commands/github_commands.md",
+      "artifact_binding": {
+        "source_id": "src_https-github-com-cuga-project-cuga-agent-cuga-agent-ibm-research_5709bc42",
+        "canonical_skill_id": null,
+        "remote_path": ".claude/commands/github_commands.md",
+        "pinned_commit": "03760b9d29625495978a98860521af4d8dfc1d83",
+        "git_blob_oid": "git_sha1:fe78e8ed0011fcb342963703373cd713eb5a9f33",
+        "raw_url": "https://raw.githubusercontent.com/cuga-project/cuga-agent/03760b9d29625495978a98860521af4d8dfc1d83/.claude/commands/github_commands.md",
+        "expected_output_path": null
+      },
+      "raw_metadata": {
+        "github_blob_oid": "git_sha1:fe78e8ed0011fcb342963703373cd713eb5a9f33",
+        "size": 7752
+      }
+    }
+  ],
+  "digest": "sha256:564fad4ce2770511b162d3bfb95f715fdffc1b105ff2c9aaced90e61c41970fb"
+}

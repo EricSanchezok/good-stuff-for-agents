@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "updated_at": "2026-08-06T09:22:51.863Z",
+  "entries": [
+    {
+      "dimension": "demand",
+      "seeds": [
+        "skl_coderabbit-code-review-src-https-github-com-codera-9e16a0ae-lls-8f2a22eb-skills-code-review-skill-md_9e16a0ae"
+      ],
+      "reason": "run_run_22011485d59049d8: 1 skill IDs in demand",
+      "source": "run_ledger",
+      "discovered_sources": [],
+      "attempts": 0,
+      "status": "pending",
+      "fingerprint": "32a12423e9d92e5fee33687bf2f8a38566b0cf24079310a5117be7bbc1ea41ec",
+      "updated_at": "2026-08-06T09:22:51.863Z",
+      "created_at": "2026-08-06T09:22:51.863Z"
+    },
+    {
+      "dimension": "new_artifacts",
+      "seeds": [],
+      "reason": "run_run_22011485d59049d8: 40 snapshots, 2 candidates",
+      "source": "run_ledger",
+      "discovered_sources": [],
+      "attempts": 0,
+      "status": "pending",
+      "fingerprint": "148309c7bfecf0be59aa54ec1a78dad9ba4fbdfb6ab89e186722fdae428cb81b",
+      "updated_at": "2026-08-06T09:22:51.863Z",
+      "created_at": "2026-08-06T09:22:51.863Z"
+    },
+    {
+      "dimension": "active_intents",
+      "seeds": [],
+      "reason": "run_run_22011485d59049d8: 1 intents",
+      "source": "run_ledger",
+      "discovered_sources": [],
+      "attempts": 0,
+      "status": "pending",
+      "fingerprint": "9f1105fdedae8eee179d56ea5092a711486882e1cab1f1f1268639a8b903bd6c",
+      "updated_at": "2026-08-06T09:22:51.863Z",
+      "created_at": "2026-08-06T09:22:51.863Z"
+    }
+  ]
+}

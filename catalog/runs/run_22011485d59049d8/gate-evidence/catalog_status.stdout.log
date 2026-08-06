@@ -1,0 +1,34 @@
+{
+  "validation": {
+    "ok": true,
+    "errors": [],
+    "warnings": []
+  },
+  "manifest": {
+    "catalog_hash": "sha256:ab3f674f19928a2123c5d848d61e371747d3251aa75a98fcb2b5f0df841032fb",
+    "counts": {
+      "domains": 1,
+      "packs": 1,
+      "skills": 2,
+      "sources": 17
+    },
+    "generated_at": "2026-08-06T09:21:20.666Z",
+    "schema_version": 1,
+    "shards": [
+      "catalog/indexes/shards/skills-00000.jsonl"
+    ]
+  },
+  "docs_drift_ok": true,
+  "docs_drift": [],
+  "public_boundary_ok": true,
+  "public_boundary_errors": [],
+  "public_boundary_warnings": [
+    "README.md: contains public noun \"workflow\" — review and confirm it is a legitimate catalog name or public task language, not an implementation leak",
+    "docs/domains/code-review.md: contains public noun \"workflow\" — review and confirm it is a legitimate catalog name or public task language, not an implementation leak",
+    "docs/packs/README.md: contains public noun \"workflow\" — review and confirm it is a legitimate catalog name or public task language, not an implementation leak",
+    "docs/packs/code-review/pack_coderabbit-review-remediation_f00daeba.md: contains public noun \"workflow\" — review and confirm it is a legitimate catalog name or public task language, not an implementation leak",
+    "docs/skills/co/skl_coderabbit-autofix-src-https-github-com-coderabbit-7ec3dc4b-skills-8f2a22eb-skills-autofix-skill-md_7ec3dc4b.md: contains public noun \"workflow\" — review and confirm it is a legitimate catalog name or public task language, not an implementation leak",
+    "docs/sources/src_https-github-com-coderabbitai-skills-coderabbit-skills_8f2a22eb.md: contains public noun \"workflow\" — review and confirm it is a legitimate catalog name or public task language, not an implementation leak"
+  ],
+  "repo": "/Users/eric/projects/good-stuff-for-agents"
+}

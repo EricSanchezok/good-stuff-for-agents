@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "kind": "target_execution_handoff",
+  "run_id": "run_22011485d59049d8",
+  "paused_at": "2026-08-06T09:22:01.886Z",
+  "context_digest": "sha256:bc136653394eb0788408bede94efa70bb3c87547aad1239dd994293eb00daa0b",
+  "intents": [
+    {
+      "domain": "demand",
+      "reason": "Controller-bound issue demand: 1 explicit skill IDs",
+      "source": "issue_demand",
+      "score": 0.95,
+      "seed_skill_ids": [
+        "skl_coderabbit-code-review-src-https-github-com-codera-9e16a0ae-lls-8f2a22eb-skills-code-review-skill-md_9e16a0ae"
+      ],
+      "max_analysis_budget": 1
+    }
+  ],
+  "required_owners": [
+    "demand"
+  ],
+  "evidence_budget": [
+    1
+  ],
+  "evidence_index_digest": "sha256:7a776d216045060c91e875361db999dba5ee56c18956fcf743274d2b1aedfc18",
+  "session_isolation": "per_intent"
+}
