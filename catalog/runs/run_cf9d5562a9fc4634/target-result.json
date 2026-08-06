@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "run_id": "run_cf9d5562a9fc4634",
+  "context_digest": "sha256:c074527b589872a3f0eb6b92b7e7b0df99c453d36018082b3e34aaa45d23c742",
+  "intents": [
+    {
+      "domain": "demand",
+      "reason": "run_run_22011485d59049d8: 1 skill IDs in demand",
+      "source": "backlog",
+      "score": 0.9,
+      "seed_skill_ids": [
+        "skl_coderabbit-code-review-src-https-github-com-codera-9e16a0ae-lls-8f2a22eb-skills-code-review-skill-md_9e16a0ae"
+      ],
+      "max_analysis_budget": 3
+    }
+  ],
+  "candidate_results": [],
+  "intent_results": [
+    {
+      "intent_digest": "sha256:880dc729c0f4f585267a8d00399a37a445b0286b057ddcd8e593b5c130b02ebb",
+      "terminal": "no_pack_clean",
+      "gap_class": "demand_already_satisfied",
+      "error": null,
+      "notes": "SOP Sequence B step 2: repeated failure fingerprint skip. Seed skill is a member of published pack pack_coderabbit-review-remediation_f00daeba; same demand_already_satisfied terminal as run_22011485d59049d8. No candidate warranted."
+    }
+  ],
+  "session_descriptors": [],
+  "created_at": "2026-08-06T09:34:38.599Z"
+}
